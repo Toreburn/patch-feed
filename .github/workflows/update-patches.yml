@@ -1,0 +1,61 @@
+name: Update Patch Data
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'  # Run every 2 hours
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-patches:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Create patches directory
+        run: mkdir -p data
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Fetch and update patch data
+        run: node scripts/fetch-patches.js
+        
+      - name: Commit and push if changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/patches.json data/vendors/*.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update patch data [skip ci]" && git push)
+
+  deploy:
+    needs: update-patches
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

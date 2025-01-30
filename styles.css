@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #14142B;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #1C1C3B;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.severity-filter {
+    background-color: #1C1C3B;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #2D2D56;
+}
+
+.severity-filter h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.severity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.severity-list label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #B4B4D9;
+}
+
+.severity-list input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #6E62E5;
+}
+
+.severity-list label[for="severity-critical"] { color: #DC3545; }
+.severity-list label[for="severity-high"] { color: #FD7E14; }
+.severity-list label[for="severity-medium"] { color: #FFC107; }
+.severity-list label[for="severity-low"] { color: #6C757D; }
+
+.vendor-controls {
+    margin: 20px 0;
+}
+
+.toggle-button {
+    background-color: #6E62E5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.toggle-button:hover {
+    background-color: #8676FF;
+}
+
+.vendor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.vendor-category {
+    font-weight: 600;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #2D2D56;
+}
+
+.vendor-list label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 4px 0;
+    color: #B4B4D9;
+    transition: opacity 0.2s ease;
+}
+
+.vendor-list label.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.vendor-list input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #6E62E5;
+}
+
+.vendor-list input[type="checkbox"]:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.date-filter {
+    background-color: #1C1C3B;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #2D2D56;
+}
+
+.date-filter h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.date-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.date-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.date-field label {
+    font-size: 0.9em;
+    color: #B4B4D9;
+}
+
+.date-field input[type="date"] {
+    padding: 8px;
+    border: 1px solid #2D2D56;
+    border-radius: 4px;
+    font-size: 0.9em;
+    background-color: #14142B;
+    color: #fff;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fetch-log {
+    font-size: 0.8em;
+    color: #666;
+    text-align: right;
+}
+
+.fetch-status {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fetch-time {
+    font-family: monospace;
+    color: #B4B4D9;
+}
+
+.fetch-count {
+    color: #6E62E5;
+    display: block;
+}
+
+.fetch-count.new-patches {
+    color: #4DB33D;
+    font-weight: 500;
+}
+
+.log-link {
+    color: #6E62E5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.log-link:hover {
+    text-decoration: underline;
+    color: #8676FF;
+}
+
+.patch-card {
+    background-color: #1C1C3B;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #2D2D56;
+    margin-bottom: 20px;
+}
+
+.patch-card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.patch-meta {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    color: #B4B4D9;
+    font-size: 0.9em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.patch-meta span {
+    background-color: rgba(110, 98, 229, 0.1);
+    padding: 4px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(110, 98, 229, 0.2);
+}
+
+.patch-meta span.new-patches {
+    background-color: rgba(77, 179, 61, 0.1);
+    border-color: rgba(77, 179, 61, 0.2);
+    color: #4DB33D;
+    font-weight: 500;
+}
+
+.new-patches-section {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: rgba(77, 179, 61, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(77, 179, 61, 0.1);
+}
+
+.new-patches-section h4 {
+    color: #4DB33D;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.patch-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 5px 0;
+    background-color: rgba(28, 28, 59, 0.5);
+}
+
+.patch-item span {
+    font-size: 0.9em;
+}
+
+.patch-item .vendor {
+    color: #6E62E5;
+    font-weight: 500;
+    min-width: 100px;
+}
+
+.patch-item .title {
+    flex: 1;
+    color: #fff;
+}
+
+.patch-item .date {
+    color: #B4B4D9;
+    white-space: nowrap;
+}
+
+.vendor-logs {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #2D2D56;
+}
+
+.vendor-logs h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.log-line {
+    padding: 4px 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #B4B4D9;
+}
+
+.log-line.success {
+    color: #4DB33D;
+}
+
+.log-line.info {
+    color: #6E62E5;
+}
+
+.log-line.error {
+    color: #DC3545;
+}
+
+.fetch-status {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.fetch-time, .fetch-count {
+    font-size: 0.9em;
+}
+
+.log-link {
+    color: #6E62E5;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.log-link:hover {
+    background-color: rgba(110, 98, 229, 0.1);
+}
+
+.back-to-patches {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.section-header {
+    color: #fff;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2D2D56;
+    font-size: 1.5em;
+}
+
+.patch-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.patch-header .date {
+    color: #B4B4D9;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.description {
+    color: #B4B4D9;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.more-info {
+    display: inline-block;
+    color: #6E62E5;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 4px 12px;
+    border: 1px solid #6E62E5;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.more-info:hover {
+    background-color: #6E62E5;
+    color: #fff;
+}
+
+/* Severity colors based on vulnerability ranking */
+.severity-critical {
+    border-left: 4px solid #DC3545;
+}
+
+.severity-high {
+    border-left: 4px solid #FD7E14;
+}
+
+.severity-medium {
+    border-left: 4px solid #FFC107;
+}
+
+.severity-low {
+    border-left: 4px solid #6C757D;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: #B4B4D9;
+    background-color: #1C1C3B;
+    border-radius: 8px;
+    border: 1px solid #2D2D56;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #B4B4D9;
+    background-color: #1C1C3B;
+    border-radius: 8px;
+    border: 1px solid #2D2D56;
+}
+
+.error {
+    text-align: center;
+    padding: 20px;
+    color: #DC3545;
+    background-color: rgba(220, 53, 69, 0.1);
+    border: 1px solid #DC3545;
+    border-radius: 8px;
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #1C1C3B;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #2D2D56;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #6E62E5;
+}

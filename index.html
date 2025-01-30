@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236E62E5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='11' width='18' height='11' rx='2' ry='2'></rect><path d='M7 11V7a5 5 0 0 1 10 0v4'></path></svg>">
+    <title>Third Party Patch Feed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Vendors</h2>
+            <div class="severity-filter">
+                <h3>Severity</h3>
+                <div class="severity-list">
+                    <label><input type="checkbox" name="severity" value="Critical" checked> Critical</label>
+                    <label><input type="checkbox" name="severity" value="High" checked> High</label>
+                </div>
+            </div>
+            <div class="date-filter">
+                <h3>Date Range</h3>
+                <div class="date-inputs">
+                    <div class="date-field">
+                        <label for="start-date">From:</label>
+                        <input type="date" id="start-date" name="start-date">
+                    </div>
+                    <div class="date-field">
+                        <label for="end-date">To:</label>
+                        <input type="date" id="end-date" name="end-date">
+                    </div>
+                </div>
+            </div>
+
+            <div class="vendor-controls">
+                <button id="toggle-all" class="toggle-button">Check All</button>
+            </div>
+
+            <div class="vendor-list">
+                <!-- Operating Systems & Core Infrastructure -->
+                <div class="vendor-category">Operating Systems & Core Infrastructure</div>
+                <label><input type="checkbox" name="vendor" value="microsoft"> Microsoft Windows</label>
+                <label><input type="checkbox" name="vendor" value="apple"> Apple macOS/iOS</label>
+                <label><input type="checkbox" name="vendor" value="redhat"> Red Hat Enterprise Linux</label>
+                <label><input type="checkbox" name="vendor" value="ubuntu"> Ubuntu</label>
+                <label><input type="checkbox" name="vendor" value="suse"> SUSE Linux</label>
+                <label><input type="checkbox" name="vendor" value="oracle-linux"> Oracle Linux</label>
+                <label><input type="checkbox" name="vendor" value="centos"> CentOS</label>
+                <label><input type="checkbox" name="vendor" value="vmware"> VMware</label>
+                <label><input type="checkbox" name="vendor" value="citrix"> Citrix Hypervisor</label>
+                <label><input type="checkbox" name="vendor" value="proxmox"> Proxmox</label>
+
+                <!-- Browsers & Communication -->
+                <div class="vendor-category">Browsers & Communication</div>
+                <label><input type="checkbox" name="vendor" value="chrome"> Google Chrome</label>
+                <label><input type="checkbox" name="vendor" value="firefox"> Mozilla Firefox</label>
+                <label><input type="checkbox" name="vendor" value="edge"> Microsoft Edge</label>
+                <label><input type="checkbox" name="vendor" value="safari"> Safari</label>
+                <label><input type="checkbox" name="vendor" value="zoom"> Zoom</label>
+                <label><input type="checkbox" name="vendor" value="slack"> Slack</label>
+                <label><input type="checkbox" name="vendor" value="teams"> Microsoft Teams</label>
+                <label><input type="checkbox" name="vendor" value="webex"> Cisco Webex</label>
+                <label><input type="checkbox" name="vendor" value="discord"> Discord</label>
+                <label><input type="checkbox" name="vendor" value="signal"> Signal</label>
+
+                <!-- Enterprise Software -->
+                <div class="vendor-category">Enterprise Software</div>
+                <label><input type="checkbox" name="vendor" value="oracle-db"> Oracle Database</label>
+                <label><input type="checkbox" name="vendor" value="sap"> SAP</label>
+                <label><input type="checkbox" name="vendor" value="salesforce"> Salesforce</label>
+                <label><input type="checkbox" name="vendor" value="mssql"> Microsoft SQL Server</label>
+                <label><input type="checkbox" name="vendor" value="postgresql"> PostgreSQL</label>
+                <label><input type="checkbox" name="vendor" value="mysql"> MySQL/MariaDB</label>
+                <label><input type="checkbox" name="vendor" value="mongodb"> MongoDB</label>
+                <label><input type="checkbox" name="vendor" value="atlassian"> Atlassian</label>
+                <label><input type="checkbox" name="vendor" value="servicenow"> ServiceNow</label>
+                <label><input type="checkbox" name="vendor" value="workday"> Workday</label>
+
+                <!-- Security & Infrastructure -->
+                <div class="vendor-category">Security & Infrastructure</div>
+                <label><input type="checkbox" name="vendor" value="cisco"> Cisco IOS</label>
+                <label><input type="checkbox" name="vendor" value="fortinet"> Fortinet FortiOS</label>
+                <label><input type="checkbox" name="vendor" value="paloalto"> Palo Alto PAN-OS</label>
+                <label><input type="checkbox" name="vendor" value="checkpoint"> Check Point GAiA</label>
+                <label><input type="checkbox" name="vendor" value="juniper"> Juniper Junos</label>
+                <label><input type="checkbox" name="vendor" value="f5"> F5 BIG-IP</label>
+                <label><input type="checkbox" name="vendor" value="sonicwall"> SonicWall</label>
+                <label><input type="checkbox" name="vendor" value="sophos"> Sophos</label>
+                <label><input type="checkbox" name="vendor" value="mcafee"> McAfee/Trellix</label>
+                <label><input type="checkbox" name="vendor" value="symantec"> Symantec/Norton</label>
+
+                <!-- Development & Creative Tools -->
+                <div class="vendor-category">Development & Creative Tools</div>
+                <label><input type="checkbox" name="vendor" value="adobe"> Adobe Creative Suite</label>
+                <label><input type="checkbox" name="vendor" value="jetbrains"> JetBrains IDEs</label>
+                <label><input type="checkbox" name="vendor" value="visualstudio"> Visual Studio</label>
+                <label><input type="checkbox" name="vendor" value="gitlab"> GitLab</label>
+                <label><input type="checkbox" name="vendor" value="github"> GitHub Enterprise</label>
+
+                <!-- Cloud Services -->
+                <div class="vendor-category">Cloud Services</div>
+                <label><input type="checkbox" name="vendor" value="aws"> AWS</label>
+                <label><input type="checkbox" name="vendor" value="azure"> Microsoft Azure</label>
+                <label><input type="checkbox" name="vendor" value="gcp"> Google Cloud Platform</label>
+                <label><input type="checkbox" name="vendor" value="ibm"> IBM Cloud</label>
+                <label><input type="checkbox" name="vendor" value="oracle-cloud"> Oracle Cloud</label>
+            </div>
+        </aside>
+        <main class="content">
+            <div class="header">
+                <h1>Patch Feed</h1>
+                <div class="fetch-log">
+                <div class="fetch-status">
+                    <span class="fetch-time"></span>
+                    <span class="fetch-count"></span>
+                    <a href="#" class="log-link" id="view-logs">View Fetch Logs</a>
+                </div>
+                </div>
+            </div>
+            <div id="patch-feed"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
