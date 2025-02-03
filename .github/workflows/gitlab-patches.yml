@@ -1,4 +1,4 @@
-name: Fetch GitLab Patches
+name: GitLab Patch Updates
 
 on:
   schedule:
@@ -6,27 +6,41 @@ on:
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
-  fetch-patches:
+  fetch-gitlab:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      id-token: write
+    
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
-          
+
       - name: Install dependencies
-        run: npm ci
-        
-      - name: Fetch patches
+        run: npm install axios cheerio
+
+      - name: Create vendor directory
+        run: mkdir -p data/vendors
+
+      - name: Fetch GitLab patches
         run: node scripts/vendors/gitlab.js
-        
-      - name: Commit and push if changes exist
+
+      - name: Update combined patches file
+        run: node scripts/fetch-patches.js
+
+      - name: Commit and push if changes
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add data/vendors/gitlab.json
-          git diff --staged --quiet || (git commit -m "Update GitLab patches" && git push)
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/vendors/gitlab.json data/patches.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update GitLab patch data [skip ci]" && git push)
+
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}

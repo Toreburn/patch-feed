@@ -1,4 +1,4 @@
-name: Symantec/Broadcom Patches
+name: Symantec/Broadcom Patch Updates
 
 on:
   schedule:
@@ -6,31 +6,41 @@ on:
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
-  fetch-patches:
+  fetch-symantec:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
     
     steps:
-    - uses: actions/checkout@v3
-      
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-        
-    - name: Install dependencies
-      run: npm ci
-      
-    - name: Fetch Symantec/Broadcom patches
-      run: node scripts/vendors/symantec.js
-      
-    - name: Commit changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add data/vendors/symantec.json
-        git diff --quiet && git diff --staged --quiet || git commit -m "Update Symantec/Broadcom patches"
-        
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install axios cheerio
+
+      - name: Create vendor directory
+        run: mkdir -p data/vendors
+
+      - name: Fetch Symantec/Broadcom patches
+        run: node scripts/vendors/symantec.js
+
+      - name: Update combined patches file
+        run: node scripts/fetch-patches.js
+
+      - name: Commit and push if changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/vendors/symantec.json data/patches.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Symantec/Broadcom patch data [skip ci]" && git push)
+
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
