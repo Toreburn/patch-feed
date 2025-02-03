@@ -1,0 +1,32 @@
+name: Fetch Webex Patches
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Run every 6 hours
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  fetch-patches:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Fetch patches
+        run: node scripts/vendors/webex.js
+        
+      - name: Commit and push if changes exist
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add data/vendors/webex.json
+          git diff --staged --quiet || (git commit -m "Update Webex patches" && git push)
