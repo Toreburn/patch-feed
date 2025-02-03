@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      id-token: write
+      pages: write
     
     steps:
       - uses: actions/checkout@v4
@@ -35,19 +37,6 @@ jobs:
           git add data/patches.json data/vendors/*.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update patch data [skip ci]" && git push)
 
-  deploy:
-    needs: update-patches
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      
       - name: Setup Pages
         uses: actions/configure-pages@v4
         

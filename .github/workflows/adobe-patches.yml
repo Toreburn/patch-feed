@@ -11,6 +11,7 @@ jobs:
     permissions:
       contents: write
       id-token: write
+      pages: write
     
     steps:
       - uses: actions/checkout@v4
@@ -37,10 +38,17 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/vendors/adobe.json data/patches.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Adobe patch data [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update patch data [skip ci]" && git push)
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
 
       - name: Deploy to GitHub Pages
+        id: deployment
         if: success()
         uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
