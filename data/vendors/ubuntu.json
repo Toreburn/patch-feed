@@ -1,7 +1,25 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2025-02-04T12:56:03.310Z",
+  "lastUpdated": "2025-02-04T16:41:57.739Z",
   "patches": [
+    {
+      "title": "USN-7238-3: Linux kernel (Low Latency) vulnerabilities",
+      "date": "2025-02-04",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Low Latency) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Network traffic ...",
+      "link": "https://ubuntu.com/security/notices/USN-7238-3"
+    },
+    {
+      "title": "USN-7234-3: Linux kernel (Azure) vulnerabilities",
+      "date": "2025-02-04",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Azure) vulnerabilities",
+      "description": "Ye Zhang and Nicolas Wu discovered that the io_uring subsystem in the Linux\nkernel did not properly handle locking for rings with IOPOLL, leading to a\ndouble-free vulnerability. A local attacker could...",
+      "link": "https://ubuntu.com/security/notices/USN-7234-3"
+    },
     {
       "title": "USN-7233-3: Linux kernel (Azure) vulnerabilities",
       "date": "2025-02-03",
@@ -28,6 +46,33 @@
       "component": "Netdata vulnerabilities",
       "description": "It was discovered that Netdata incorrectly handled parsing JSON input,\nwhich could lead to a JSON injection. An attacker could possibly use\nthis issue to execute arbitrary code. This issue only affect...",
       "link": "https://ubuntu.com/security/notices/USN-7250-1"
+    },
+    {
+      "title": "USN-7249-1: libvpx vulnerability",
+      "date": "2025-02-03",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "libvpx",
+      "description": "Xiantong Hou discovered that libvpx would overflow when attempting to\nallocate memory for very large images. If an application using libvpx\nopened a specially crafted file, a remote attacker could pos...",
+      "link": "https://ubuntu.com/security/notices/USN-7249-1"
+    },
+    {
+      "title": "USN-7248-1: libndp vulnerability",
+      "date": "2025-02-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libndp",
+      "description": "It was discovered that libndp incorrectly handled certain malformed IPv6\nrouter advertisement packets. A local attacker could possibly use this\nissue to cause NetworkManager to crash, resulting in a d...",
+      "link": "https://ubuntu.com/security/notices/USN-7248-1"
+    },
+    {
+      "title": "USN-7247-1: OpenCV vulnerabilities",
+      "date": "2025-02-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OpenCV vulnerabilities",
+      "description": "It was discovered that OpenCV did not properly manage certain XML data,\nleading to a NULL pointer dereference. If a user were tricked into\nloading a specially crafted file, a remote attacker could pos...",
+      "link": "https://ubuntu.com/security/notices/USN-7247-1"
     },
     {
       "title": "USN-7238-2: Linux kernel (Oracle) vulnerabilities",
