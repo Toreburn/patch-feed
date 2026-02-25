@@ -1,0 +1,169 @@
+name: Fetch All Patches
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: patch-updates
+  cancel-in-progress: false
+
+jobs:
+  fetch-patches:
+    name: Fetch ${{ matrix.vendor }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        vendor:
+          - adobe
+          - android
+          - apple
+          - aruba
+          - atlassian
+          - aws
+          - azure
+          - checkpoint
+          - chrome
+          - cisco
+          - citrix
+          - cloudflare
+          - crowdstrike
+          - debian
+          - dell
+          - docker
+          - edge
+          - f5
+          - firefox
+          - fortinet
+          - gcp
+          - github
+          - gitlab
+          - hpe
+          - ibm
+          - ivanti
+          - jetbrains
+          - juniper
+          - kubernetes
+          - lenovo
+          - microsoft
+          - mssql
+          - mysql
+          - nodejs
+          - oracle-db
+          - paloalto
+          - postgresql
+          - proxmox
+          - redhat
+          - safari
+          - salesforce
+          - sap
+          - servicenow
+          - signal
+          - slack
+          - sonicwall
+          - sophos
+          - suse
+          - symantec
+          - teams
+          - trendmicro
+          - ubuntu
+          - visualstudio
+          - vmware
+          - zoom
+          - zscaler
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create vendor directory
+        run: mkdir -p data/vendors
+
+      - name: Fetch ${{ matrix.vendor }} patches
+        id: fetch
+        run: node scripts/vendors/${{ matrix.vendor }}.js
+        timeout-minutes: 5
+
+      - name: Upload vendor data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vendor-${{ matrix.vendor }}
+          path: data/vendors/${{ matrix.vendor }}.json
+          retention-days: 1
+          if-no-files-found: ignore
+
+  aggregate-and-deploy:
+    name: Aggregate & Deploy
+    needs: fetch-patches
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create data directories
+        run: mkdir -p data/vendors
+
+      - name: Download all vendor artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: data/vendors
+          pattern: vendor-*
+          merge-multiple: true
+
+      - name: List downloaded artifacts
+        run: ls -la data/vendors/ || echo "No vendor files found"
+
+      - name: Aggregate patches
+        run: node scripts/fetch-patches.js
+
+      - name: Collector health check
+        run: node scripts/health-check.js
+        continue-on-error: true  # Don't block deploy, but annotations will surface
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/
+          git diff --staged --quiet || (git commit -m "Update patch data $(date -u +%Y-%m-%d)" && git push)
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
