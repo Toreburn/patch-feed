@@ -1,0 +1,36 @@
+{
+  "name": "patch-feed",
+  "version": "1.0.0",
+  "description": "A free patch monitoring dashboard that aggregates security updates from various vendors",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server . -p 8000 --cors",
+    "fetch-patches": "node scripts/fetch-patches.js",
+    "fetch-six-months": "node scripts/fetch-six-months.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toreburn/patch-feed.git"
+  },
+  "keywords": [
+    "security",
+    "patches",
+    "monitoring",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Toreburn/patch-feed/issues"
+  },
+  "homepage": "https://Toreburn.github.io/patch-feed",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "node-fetch": "^3.3.0"
+  }
+}

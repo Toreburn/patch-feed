@@ -1,0 +1,121 @@
+{
+  "vendor": "signal",
+  "lastUpdated": "2026-02-25T19:32:47.363Z",
+  "health": {
+    "lastFetchAttempt": "2026-02-25T19:32:47.363Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 8,
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-02-25T19:32:47.363Z",
+    "consecutiveEmptyFetches": 0,
+    "error": null
+  },
+  "patches": [
+    {
+      "title": "mageMagick has a possible use-after-free write in its PDB decoder",
+      "date": "2026-02-25",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "A use-after-free vulnerability exists in the PDB decoder that will use a stale pointer when a memory allocation fails and that could result in a crash or a single zero byte write.\n\n```\n==4033155==ERRO",
+      "link": "https://github.com/advisories/GHSA-3j4x-rwrx-xxj9",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Bugsink is vulnerable to Stored XSS via Pygments fallback in stacktrace rendering",
+      "date": "2026-02-25",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nAn unauthenticated attacker who can submit events to a Bugsink project can store arbitrary JavaScript in an event.\nThe payload executes only if a user explicitly views the affected Stackt",
+      "link": "https://github.com/advisories/GHSA-vp6q-7m36-pq3w",
+      "cves": [
+        "CVE-2026-27614"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Fickling has safety check bypass via REDUCE+BUILD opcode sequence",
+      "date": "2026-02-25",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# Assessment\n\nIt is believed that the analysis pass works as intended, `REDUCE` and `BUILD` are not at fault here. The few potentially unsafe modules have been added to the blocklist (https://github.c",
+      "link": "https://github.com/advisories/GHSA-mhc9-48gj-9gp3",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Fickling: OBJ opcode call invisibility bypasses all safety checks",
+      "date": "2026-02-24",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# Assessment\n\nThe interpreter so it behaves closer to CPython when dealing with `OBJ`, `NEWOBJ`, and `NEWOBJ_EX` opcodes (https://github.com/trailofbits/fickling/commit/ff423dade2bb1f72b2b48586c022fac",
+      "link": "https://github.com/advisories/GHSA-mxhj-88fx-4pcv",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Signal Desktop v7.89.0",
+      "date": "2026-02-11",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- This update fixes a bug with text formatting while Caps Lock was enabled so it will be easier to make things bold (or italic) WHILE BEING BOLD. Thanks, @DGrothe-PhD!",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v7.89.0",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "Signal Desktop v7.89.0-beta.1",
+      "date": "2026-02-04",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- This update fixes a bug with text formatting while Caps Lock was enabled so it will be easier to make things bold (or italic) WHILE BEING BOLD. Thanks, @DGrothe-PhD!\r - Signal is a 501c3 nonprofit t",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v7.89.0-beta.1",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "Signal iOS 7.92.1.1315",
+      "date": "2026-01-27",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal iOS",
+      "description": "- We fixed a bug with the emoji selection sheet background color during voice and video calls. Now you don't need to search for the rage emoji when a bright background appears during a dark-themed (or",
+      "link": "https://github.com/signalapp/Signal-iOS/releases/tag/7.92.1.1315",
+      "cves": [],
+      "platform": [
+        "iOS"
+      ]
+    },
+    {
+      "title": "Signal iOS 7.92.0.1307",
+      "date": "2026-01-21",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal iOS",
+      "description": "- We fixed a bug with the emoji selection sheet background color during voice and video calls. Now you don't need to search for the rage emoji when a bright background appears during a dark-themed (or",
+      "link": "https://github.com/signalapp/Signal-iOS/releases/tag/7.92.0.1307",
+      "cves": [],
+      "platform": [
+        "iOS"
+      ]
+    }
+  ]
+}
