@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formMessage = document.getElementById('form-message');
     const modalSubmitBtn = document.getElementById('modal-submit');
 
-    const VENDOR_API_URL = 'https://pf-api.vercel.app/api/vendor-request';
+    const VENDOR_API_URL = 'https://patch-feed-main.vercel.app/api/vendor-request';
 
     function openModal() {
         vendorModal.hidden = false;
