@@ -1,16 +1,26 @@
 {
   "vendor": "postgresql",
-  "lastUpdated": "2026-02-26T02:36:34.191Z",
+  "lastUpdated": "2026-02-26T07:08:38.716Z",
   "health": {
-    "lastFetchAttempt": "2026-02-26T02:36:34.191Z",
+    "lastFetchAttempt": "2026-02-26T07:08:38.716Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
+    "lastFetchParsedItems": 2,
     "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-02-26T02:36:34.191Z",
+    "lastSuccessWithData": "2026-02-26T07:08:38.716Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "pgvector 0.8.2 Released",
+      "date": "2026-02-26",
+      "severity": "LOW",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "pgvector 0.8.2 is now available. This release fixes a buffer overflow with parallel HNSW index builds (CVE-2026-3172), which can leak sensitive data from other relations or crash the database server. ...",
+      "link": "https://www.postgresql.org/about/news/pgvector-082-released-3245/",
+      "cve": "CVE-2026-3172"
+    },
     {
       "title": "credcheck v4.6 has been released",
       "date": "2026-02-25",
