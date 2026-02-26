@@ -45,10 +45,10 @@ jobs:
 
       - name: Prepare site directory
         run: |
-          mkdir -p _site/data
+          mkdir -p _site
           cp index.html script.js styles.css favicon.ico _site/
           cp CNAME robots.txt sitemap.xml _site/ 2>/dev/null || true
-          cp -r data/ _site/data/ 2>/dev/null || true
+          cp -r data _site/ 2>/dev/null || true
           cp logs.html logs.js _site/ 2>/dev/null || true
 
       - name: Setup Pages
