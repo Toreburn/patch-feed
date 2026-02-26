@@ -5,6 +5,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const MAX_FETCH_LOGS = 50;
+
 // Get the last week's date
 const getLastWeekDate = () => {
     const date = new Date();
@@ -27,6 +29,17 @@ async function fetchPatches() {
             fs.mkdirSync(vendorsDir, { recursive: true });
         }
 
+        // Load previous patches.json to detect genuinely new patches
+        let previousPatchKeys = new Set();
+        if (fs.existsSync(outputFile)) {
+            try {
+                const prev = JSON.parse(fs.readFileSync(outputFile, 'utf8'));
+                for (const p of (prev.patches || [])) {
+                    previousPatchKeys.add(`${p.vendor}|${p.title}|${p.date}`);
+                }
+            } catch {}
+        }
+
         // Read vendor files
         const vendorFiles = fs.readdirSync(vendorsDir);
         for (const file of vendorFiles) {
@@ -34,45 +47,34 @@ async function fetchPatches() {
                 try {
                     const vendorFilePath = path.join(vendorsDir, file);
                     const vendorData = JSON.parse(fs.readFileSync(vendorFilePath, 'utf8'));
+                    const vendorName = vendorData.vendor || file.replace('.json', '');
                     const existingPatches = vendorData.patches || [];
-                    
+
                     // Filter patches from the last week
                     const recentPatches = existingPatches.filter(patch => {
                         const patchDate = new Date(patch.date);
                         return patchDate >= lastWeekDate;
                     });
 
-                    // Add new patches that don't already exist
-                    const newPatches = recentPatches.filter(newPatch => {
-                        return !existingPatches.some(existing => 
-                            existing.vendor === newPatch.vendor && 
-                            existing.title === newPatch.title &&
-                            existing.date === newPatch.date
-                        );
-                    });
+                    allPatches.push(...recentPatches);
+
+                    // Detect patches not present in the previous aggregation
+                    const newPatches = recentPatches.filter(p =>
+                        !previousPatchKeys.has(`${p.vendor}|${p.title}|${p.date}`)
+                    );
 
                     if (newPatches.length > 0) {
-                        // Update vendor file with new patches
-                        const updatedPatches = [...existingPatches, ...newPatches];
-                        updatedPatches.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-                        fs.writeFileSync(vendorFilePath, JSON.stringify({
-                            vendor: vendorData.vendor,
-                            lastUpdated: new Date().toISOString(),
-                            patches: updatedPatches
-                        }, null, 2));
-
                         newPatchCount += newPatches.length;
-                        allPatches.push(...recentPatches);
                         allNewPatches.push(...newPatches);
-                        logs.push(`[SUCCESS] Added ${newPatches.length} new patches to ${vendorData.vendor}`);
-                    } else {
-                        allPatches.push(...recentPatches);
-                        logs.push(`[INFO] No new patches for ${vendorData.vendor} in the last week`);
+                        logs.push(`[SUCCESS] ${vendorName} - ${recentPatches.length} patches (${newPatches.length} new)`);
+                    } else if (recentPatches.length > 0) {
+                        logs.push(`[INFO] ${vendorName} - ${recentPatches.length} patches, no changes`);
                     }
+                    // Skip vendors with zero recent patches to keep logs clean
                 } catch (error) {
                     console.error(`Full error for ${file}:`, error);
-                    logs.push(`[ERROR] ${file} - fetch failed`);
+                    const vendorName = file.replace('.json', '');
+                    logs.push(`[ERROR] ${vendorName} - failed to read vendor data`);
                 }
             }
         }
@@ -80,10 +82,12 @@ async function fetchPatches() {
         // Sort all patches by date (newest first)
         allPatches.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        // Read existing patches.json if it exists
+        // Read existing patches.json for fetchLogs history
         let existingData = { fetchLogs: [] };
         if (fs.existsSync(outputFile)) {
-            existingData = JSON.parse(fs.readFileSync(outputFile, 'utf8'));
+            try {
+                existingData = JSON.parse(fs.readFileSync(outputFile, 'utf8'));
+            } catch {}
         }
 
         // Create new log entry
@@ -101,21 +105,21 @@ async function fetchPatches() {
             }))
         };
 
-        // Add new log entry to the beginning of the array
-        existingData.fetchLogs = [logEntry, ...(existingData.fetchLogs || [])];
+        // Add new log entry, cap history
+        const fetchLogs = [logEntry, ...(existingData.fetchLogs || [])].slice(0, MAX_FETCH_LOGS);
 
         // Write combined patches and logs to file
-        fs.writeFileSync(outputFile, JSON.stringify({ 
+        fs.writeFileSync(outputFile, JSON.stringify({
             lastUpdated: new Date().toISOString(),
             newPatches: newPatchCount,
             patches: allPatches,
-            fetchLogs: existingData.fetchLogs
+            fetchLogs
         }, null, 2));
 
-        logs.push(`[SUCCESS] Updated patches.json with ${allPatches.length} total patches (${newPatchCount} new)`);
+        console.log(`Aggregated ${allPatches.length} patches from ${logEntry.vendors.length} vendors (${newPatchCount} new)`);
     } catch (error) {
         console.error('Failed to fetch patches:', error);
-        logs.push(`[ERROR] Patch aggregation failed`);
+        logs.push(`[ERROR] aggregation - failed to complete`);
     }
 
     return logs;

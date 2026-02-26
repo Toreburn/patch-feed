@@ -353,10 +353,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 (log.logs || []).forEach(l => { if (l.includes('[SUCCESS]')) ok++; else if (l.includes('[ERROR]')) fail++; });
 
                 const vendorLines = (log.logs || []).map(l => {
-                    const m = l.match(/\[(SUCCESS|INFO|ERROR)\] ([^\s-]+)\s*-?\s*(.*)/);
+                    const m = l.match(/\[(SUCCESS|INFO|ERROR)\]\s+(.+?)\s+-\s+(.*)/);
                     if (m) {
                         const s = m[1].toLowerCase();
-                        return `<div class="log-line ${s}"><span class="status-icon"></span><span class="vendor-name">${escapeHtml(m[2])}</span><span class="status-text">${escapeHtml(m[3] || s)}</span></div>`;
+                        return `<div class="log-line ${s}"><span class="status-icon"></span><span class="vendor-name">${escapeHtml(m[2])}</span><span class="status-text">${escapeHtml(m[3])}</span></div>`;
                     }
                     return `<div class="log-line"><span class="status-icon"></span><span class="vendor-name">${escapeHtml(l)}</span></div>`;
                 }).join('');
