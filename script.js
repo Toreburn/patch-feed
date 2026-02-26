@@ -282,6 +282,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ── Rendering ──
+    const VALID_SEVERITIES = ['critical', 'high', 'medium', 'low', 'unknown', 'important'];
+
     function displayPatches(list) {
         if (!list.length) {
             patchFeed.innerHTML = '<div class="no-results">No patches match your filters</div>';
@@ -291,7 +293,8 @@ document.addEventListener('DOMContentLoaded', () => {
         list.sort((a, b) => new Date(b.date) - new Date(a.date));
 
         patchFeed.innerHTML = list.map(p => {
-            const sev = (p.severity || 'unknown').toLowerCase();
+            const rawSev = (p.severity || '').toLowerCase();
+            const sev = VALID_SEVERITIES.includes(rawSev) ? rawSev : 'unknown';
             let displaySev = sev.charAt(0).toUpperCase() + sev.slice(1);
             if (displaySev === 'Unknown') displaySev = 'Bug Fix';
 
@@ -300,6 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const comp = escapeHtml(p.component || '');
             const vendor = escapeHtml((p.vendor || '').toUpperCase());
             const cvss = p.cvss || p.cvssScore || null;
+            const safeCvss = cvss ? escapeHtml(String(cvss)) : null;
             const cve = escapeHtml(p.cve || '');
 
             return `<div class="patch-card severity-${sev}">
@@ -311,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="patch-meta">
                     <span class="tag tag-vendor">${vendor}</span>
                     <span class="tag tag-severity-${sev}">${displaySev}</span>
-                    ${cvss ? `<span class="tag tag-cvss" title="CVSS Base Score">CVSS ${cvss}</span>` : ''}
+                    ${safeCvss ? `<span class="tag tag-cvss" title="CVSS Base Score">CVSS ${safeCvss}</span>` : ''}
                     ${cve ? `<span class="tag tag-cve">${cve}</span>` : ''}
                     ${comp ? `<span class="tag">${comp}</span>` : ''}
                 </div>
