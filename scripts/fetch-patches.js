@@ -71,7 +71,8 @@ async function fetchPatches() {
                         logs.push(`[INFO] No new patches for ${vendorData.vendor} in the last week`);
                     }
                 } catch (error) {
-                    logs.push(`[ERROR] Failed to process ${file}: ${error.message}`);
+                    console.error(`Full error for ${file}:`, error);
+                    logs.push(`[ERROR] ${file} - fetch failed`);
                 }
             }
         }
@@ -113,7 +114,8 @@ async function fetchPatches() {
 
         logs.push(`[SUCCESS] Updated patches.json with ${allPatches.length} total patches (${newPatchCount} new)`);
     } catch (error) {
-        logs.push(`[ERROR] Failed to fetch patches: ${error.message}`);
+        console.error('Failed to fetch patches:', error);
+        logs.push(`[ERROR] Patch aggregation failed`);
     }
 
     return logs;
