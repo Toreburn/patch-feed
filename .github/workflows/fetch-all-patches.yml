@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 */6 * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/fetch-all-patches.yml'
 
 concurrency:
   group: patch-updates
