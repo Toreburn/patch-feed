@@ -41,7 +41,11 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/patches.json data/vendors/*.json
-          git diff --staged --quiet || (git commit -m "Update patch data [skip ci]" && git push)
+          if ! git diff --staged --quiet; then
+            git commit -m "Update patch data [skip ci]"
+            git pull --rebase origin master
+            git push
+          fi
 
       - name: Prepare site directory
         run: |
