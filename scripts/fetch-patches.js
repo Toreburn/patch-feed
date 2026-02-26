@@ -91,12 +91,15 @@ async function fetchPatches() {
         }
 
         // Create new log entry
+        const vendorsWithPatches = Array.from(new Set(allPatches.map(patch => patch.vendor)));
         const logEntry = {
             timestamp: new Date().toISOString(),
             logs,
             newPatchCount,
             totalPatches: allPatches.length,
-            vendors: Array.from(new Set(allPatches.map(patch => patch.vendor))),
+            vendorsScanned: vendorFiles.filter(f => f.endsWith('.json')).length,
+            vendorsWithPatches: vendorsWithPatches.length,
+            vendors: vendorsWithPatches,
             newPatches: allNewPatches.map(patch => ({
                 vendor: patch.vendor,
                 title: patch.title,

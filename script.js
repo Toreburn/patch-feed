@@ -361,18 +361,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     return `<div class="log-line"><span class="status-icon"></span><span class="vendor-name">${escapeHtml(l)}</span></div>`;
                 }).join('');
 
+                const scanned = log.vendorsScanned || log.vendors?.length || 0;
+                const active = log.vendorsWithPatches || log.vendors?.length || 0;
+                const info = (log.logs || []).filter(l => l.includes('[INFO]')).length;
+
                 return `<div class="patch-card">
                     <div class="patch-header"><h3>Fetch at ${new Date(log.timestamp).toLocaleString()}</h3></div>
                     <div class="patch-meta">
-                        <span class="tag">Vendors: ${log.vendors?.length || 0}</span>
-                        <span class="tag">${log.totalPatches || 0} patches</span>
-                        ${log.newPatchCount > 0 ? `<span class="tag" style="color:var(--success)">${log.newPatchCount} new</span>` : ''}
+                        <span class="tag">${scanned} vendors scanned</span>
+                        <span class="tag">${active} with recent patches</span>
+                        <span class="tag">${log.totalPatches || 0} total patches</span>
+                        ${log.newPatchCount > 0 ? `<span class="tag" style="color:var(--success)">+${log.newPatchCount} new</span>` : '<span class="tag" style="color:var(--text-dim)">no new patches</span>'}
                     </div>
                     ${npSection}
                     <div class="vendor-logs">
                         <h4>Vendor Status</h4>
                         <div class="log-summary">
-                            ${ok > 0 ? `<div class="log-summary-item success-count">${ok} successful</div>` : ''}
+                            ${ok > 0 ? `<div class="log-summary-item success-count">${ok} with new patches</div>` : ''}
+                            ${info > 0 ? `<div class="log-summary-item" style="background:rgba(124,110,246,0.1);color:var(--accent);border:1px solid rgba(124,110,246,0.2)">${info} unchanged</div>` : ''}
                             ${fail > 0 ? `<div class="log-summary-item error-count">${fail} failed</div>` : ''}
                         </div>
                         <div class="log-grid">${vendorLines}</div>
