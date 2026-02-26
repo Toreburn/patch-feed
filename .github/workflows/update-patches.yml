@@ -8,6 +8,10 @@ on:
     paths:
       - '.github/workflows/update-patches.yml'
 
+concurrency:
+  group: patch-updates
+  cancel-in-progress: false
+
 jobs:
   update-patches:
     runs-on: ubuntu-latest
@@ -37,14 +41,15 @@ jobs:
         run: node scripts/fetch-patches.js
 
       - name: Commit and push if changes
+        continue-on-error: true  # Don't block deploy if push conflicts
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/patches.json data/vendors/*.json
           if ! git diff --staged --quiet; then
             git commit -m "Update patch data [skip ci]"
-            git pull --rebase origin master
-            git push
+            git pull --rebase origin master || git rebase --abort
+            git push || echo "Push failed, will still deploy from working directory"
           fi
 
       - name: Prepare site directory

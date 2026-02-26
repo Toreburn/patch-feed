@@ -153,14 +153,15 @@ jobs:
         continue-on-error: true  # Don't block deploy, but annotations will surface
 
       - name: Commit and push changes
+        continue-on-error: true  # Don't block deploy if push conflicts
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/
           if ! git diff --staged --quiet; then
             git commit -m "Update patch data $(date -u +%Y-%m-%d)"
-            git pull --rebase origin master
-            git push
+            git pull --rebase origin master || git rebase --abort
+            git push || echo "Push failed, will still deploy from working directory"
           fi
 
       - name: Prepare site directory
