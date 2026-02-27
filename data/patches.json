@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-27T18:51:32.890Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-02-27T18:56:13.946Z",
+  "newPatches": 7,
   "patches": [
     {
       "title": "Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability",
@@ -11,6 +11,71 @@
       "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an unauthenticated, r...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk",
       "cve": "CVE-2026-20127"
+    },
+    {
+      "title": "Bringing more transparency to post-quantum usage, encrypted messaging, and routing security",
+      "date": "2026-02-27",
+      "severity": "CRITICAL",
+      "vendor": "cloudflare",
+      "component": "Workers",
+      "description": "Cloudflare Radar already offers a wide array of security insights — from application and network layer attacks, to malicious email messages, to digital certificates and Internet routing. And today we’...",
+      "link": "https://blog.cloudflare.com/radar-origin-pq-key-transparency-aspa/",
+      "cve": ""
+    },
+    {
+      "title": "Umbraco.Engage.Forms Allows Unauthorized Access to Multiple API Endpoints",
+      "date": "2026-02-27",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "Umbraco.Engage.Forms, Umbraco.Engage.Forms",
+      "description": "Umbraco.Engage.Forms Allows Unauthorized Access to Multiple API Endpoints",
+      "link": "https://github.com/advisories/GHSA-86vq-ccwf-rm62",
+      "cve": "CVE-2026-27449",
+      "cvss": 7.5
+    },
+    {
+      "title": "Angular i18n vulnerable to Cross-Site Scripting",
+      "date": "2026-02-27",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@angular/core, @angular/core, @angular/core",
+      "description": "Angular i18n vulnerable to Cross-Site Scripting",
+      "link": "https://github.com/advisories/GHSA-prjf-86w9-mfqv",
+      "cve": "CVE-2026-27970",
+      "cvss": 6.1
+    },
+    {
+      "title": "Vitess users with backup storage access can write to arbitrary file paths on restore",
+      "date": "2026-02-27",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vitess.io/vitess, vitess.io/vitess",
+      "description": "Vitess users with backup storage access can write to arbitrary file paths on restore",
+      "link": "https://github.com/advisories/GHSA-r492-hjgh-c9gw",
+      "cve": "CVE-2026-27969",
+      "cvss": null
+    },
+    {
+      "title": "AWS CLI: cli_history database does not restrict file permissions on Unix systems",
+      "date": "2026-02-27",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "awscli",
+      "description": "AWS CLI: cli_history database does not restrict file permissions on Unix systems",
+      "link": "https://github.com/advisories/GHSA-747p-wmpv-9c78",
+      "cve": "",
+      "cvss": 5.9
+    },
+    {
+      "title": "Langflow has Remote Code Execution in CSV Agent",
+      "date": "2026-02-27",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "langflow",
+      "description": "Langflow has Remote Code Execution in CSV Agent",
+      "link": "https://github.com/advisories/GHSA-3645-fxcv-hqr4",
+      "cve": "CVE-2026-27966",
+      "cvss": 9.8
     },
     {
       "title": "CVE-2026-23212: bonding: annotate data-races around slave->last_rx",
@@ -461,6 +526,15 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2025-61145",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-61145"
+    },
+    {
+      "title": "USN-5376-5: Git regression",
+      "date": "2026-02-27",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Git regression",
+      "description": "USN-5376-4 fixed a regression in Git. The update introduced a regression\nwhen specifying configuration includes due to additional restrictions. This\nupdate fixes the problem.\n\nWe apologize for the inc...",
+      "link": "https://ubuntu.com/security/notices/USN-5376-5"
     },
     {
       "title": "Cisco Catalyst SD-WAN Vulnerabilities",
@@ -4888,6 +4962,89 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-02-27T18:56:13.946Z",
+      "logs": [
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 22 patches, no changes",
+        "[SUCCESS] cloudflare - 1 patches (1 new)",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 4 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[SUCCESS] github - 108 patches (5 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 200 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 126 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[SUCCESS] ubuntu - 14 patches (1 new)"
+      ],
+      "newPatchCount": 7,
+      "totalPatches": 492,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "cisco",
+        "cloudflare",
+        "github",
+        "microsoft",
+        "ubuntu",
+        "crowdstrike",
+        "debian",
+        "edge",
+        "postgresql",
+        "redhat",
+        "signal",
+        "chrome",
+        "gitlab",
+        "fortinet"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cloudflare",
+          "title": "Bringing more transparency to post-quantum usage, encrypted messaging, and routing security",
+          "date": "2026-02-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Umbraco.Engage.Forms Allows Unauthorized Access to Multiple API Endpoints",
+          "date": "2026-02-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Angular i18n vulnerable to Cross-Site Scripting",
+          "date": "2026-02-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Vitess users with backup storage access can write to arbitrary file paths on restore",
+          "date": "2026-02-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "AWS CLI: cli_history database does not restrict file permissions on Unix systems",
+          "date": "2026-02-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Langflow has Remote Code Execution in CSV Agent",
+          "date": "2026-02-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-5376-5: Git regression",
+          "date": "2026-02-27",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-02-27T18:51:32.890Z",
       "logs": [
