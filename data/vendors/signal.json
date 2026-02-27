@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-02-26T13:21:08.658Z",
+  "lastUpdated": "2026-02-27T02:35:36.948Z",
   "health": {
-    "lastFetchAttempt": "2026-02-26T13:21:08.658Z",
+    "lastFetchAttempt": "2026-02-27T02:35:36.948Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-02-26T13:21:08.658Z",
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-02-27T02:35:36.948Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "psd-tools: Compression module has unguarded zlib decompression, missing dimension validation, and hardening gaps",
+      "date": "2026-02-26",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nA security review of the `psd_tools.compression` module (conducted against the `fix/invalid-rle-compression` branch, commits `7490ffa`–`2a006f5`) identified the following pre-existing issu",
+      "link": "https://github.com/advisories/GHSA-24p2-j2jr-386w",
+      "cves": [
+        "CVE-2026-27809"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "mageMagick has a possible use-after-free write in its PDB decoder",
       "date": "2026-02-25",
