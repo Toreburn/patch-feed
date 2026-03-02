@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-02T13:07:32.381Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-02T13:14:33.730Z",
+  "newPatches": 3,
   "patches": [
     {
       "title": "DSA-6153-1 lxd - security update",
@@ -2041,6 +2041,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28406.json",
       "cve": "CVE-2026-28406",
       "cvss": 8.5
+    },
+    {
+      "title": "CVE-2026-28416: Gradio: Gradio: Server-Side Request Forgery allows access to internal services via malicious Space loading",
+      "date": "2026-02-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Gradio: Gradio: Server-Side Request Forgery allows access to internal services via malicious Space loading",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28416.json",
+      "cve": "CVE-2026-28416",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-28415: Gradio: Gradio: Open Redirect vulnerability allows redirection to arbitrary external URLs.",
+      "date": "2026-02-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Gradio: Gradio: Open Redirect vulnerability allows redirection to arbitrary external URLs.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28415.json",
+      "cve": "CVE-2026-28415",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-27167: Gradio: Gradio: Information disclosure due to hardcoded secret in session cookie signing, allowing remote attackers to s",
+      "date": "2026-02-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Gradio: Gradio: Information disclosure due to hardcoded secret in session cookie signing, allowing remote attackers to steal Hugging Face tokens.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27167.json",
+      "cve": "CVE-2026-27167",
+      "cvss": 3.7
     },
     {
       "title": "USN-5376-5: Git regression",
@@ -6977,6 +7010,63 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-02T13:14:33.729Z",
+      "logs": [
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 22 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 6 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 153 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 300 patches, no changes",
+        "[INFO] postgresql - 4 patches, no changes",
+        "[SUCCESS] redhat - 185 patches (3 new)",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 14 patches, no changes"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 696,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "debian",
+        "github",
+        "postgresql",
+        "microsoft",
+        "cisco",
+        "cloudflare",
+        "redhat",
+        "ubuntu",
+        "crowdstrike",
+        "edge",
+        "signal",
+        "chrome",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28416: Gradio: Gradio: Server-Side Request Forgery allows access to internal services via malicious Space loading",
+          "date": "2026-02-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28415: Gradio: Gradio: Open Redirect vulnerability allows redirection to arbitrary external URLs.",
+          "date": "2026-02-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27167: Gradio: Gradio: Information disclosure due to hardcoded secret in session cookie signing, allowing remote attackers to s",
+          "date": "2026-02-27",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-02T13:07:32.381Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
@@ -10509,44 +10599,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-02-27T07:00:02.720Z",
-      "logs": [
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 22 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 3 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] github - 103 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 150 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 126 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 13 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 434,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "cisco",
-        "crowdstrike",
-        "debian",
-        "edge",
-        "github",
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "gitlab",
-        "fortinet"
-      ],
-      "newPatches": []
     }
   ]
 }
