@@ -1,16 +1,42 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-03-02T18:58:28.496Z",
+  "lastUpdated": "2026-03-03T02:41:35.428Z",
   "health": {
-    "lastFetchAttempt": "2026-03-02T18:58:28.496Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-02-27T18:54:59.683Z",
-    "consecutiveEmptyFetches": 12,
+    "lastFetchAttempt": "2026-03-03T02:41:35.428Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-03-03T02:41:35.428Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "OpenClaw vulnerable to path traversal (Zip Slip) in archive extraction during explicit installation commands",
+      "date": "2026-03-02",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nA path traversal (Zip Slip) issue in archive extraction during explicit installation commands could allow a crafted archive to write files outside the intended extraction directory.\n\n## Af",
+      "link": "https://github.com/advisories/GHSA-v892-hwpg-jwqp",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "OpenClaw has Signal group allowlist authorization bypass via DM pairing-store leakage",
+      "date": "2026-03-02",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nIn OpenClaw `2026.2.25`, Signal group authorization under `groupPolicy=allowlist` could accept sender identities sourced from DM pairing-store approvals. This allowed DM pairing approvals ",
+      "link": "https://github.com/advisories/GHSA-wm8r-w8pf-2v6w",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "psd-tools: Compression module has unguarded zlib decompression, missing dimension validation, and hardening gaps",
       "date": "2026-02-26",
