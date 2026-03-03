@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-03T13:06:09.696Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-03T13:12:56.554Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability",
@@ -11,6 +11,17 @@
       "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an unauthenticated, r...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk",
       "cve": "CVE-2026-20127"
+    },
+    {
+      "title": "DSA-6155-1 spip - security update",
+      "date": "2026-03-03",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "spip",
+      "description": "It was discovered that SPIP, a website engine for publishing, would allow a malicious user to access protected information, and perform various SQL injection, Cross-Side Scripting (XSS), and Server-Si...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00064.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "OpenClaw: macOS optional allowlist basename matching could bypass path-based policy",
@@ -6425,6 +6436,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-03T13:12:56.554Z",
+      "logs": [
+        "[INFO] android - 1 patches, no changes",
+        "[INFO] aws - 1 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 24 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 8 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 211 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 300 patches, no changes",
+        "[INFO] postgresql - 4 patches, no changes",
+        "[INFO] redhat - 69 patches, no changes",
+        "[INFO] signal - 6 patches, no changes",
+        "[INFO] ubuntu - 14 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 644,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "cisco",
+        "debian",
+        "github",
+        "aws",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "android",
+        "postgresql",
+        "microsoft",
+        "cloudflare",
+        "crowdstrike",
+        "edge",
+        "chrome",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6155-1 spip - security update",
+          "date": "2026-03-03",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-03T13:06:09.696Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
@@ -9326,44 +9386,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-02-28T06:44:12.877Z",
-      "logs": [
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 22 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 4 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 126 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 250 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 187 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 14 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 620,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "github",
-        "cisco",
-        "cloudflare",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "crowdstrike",
-        "debian",
-        "edge",
-        "postgresql",
-        "signal",
-        "chrome",
-        "gitlab"
-      ],
-      "newPatches": []
     }
   ]
 }
