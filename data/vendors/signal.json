@@ -1,16 +1,29 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-03-03T19:01:52.560Z",
+  "lastUpdated": "2026-03-04T02:33:41.281Z",
   "health": {
-    "lastFetchAttempt": "2026-03-03T19:01:52.560Z",
+    "lastFetchAttempt": "2026-03-04T02:33:41.281Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-03T19:01:52.560Z",
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-03-04T02:33:41.281Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "OpenClaw's Signal reaction-only status events could, in limited cases, be enqueued before access checks",
+      "date": "2026-03-03",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nIn a narrow Signal reaction-notification path, reaction-only inbound events could enqueue a status event before sender access checks were applied.\n\n### Affected Packages / Versions\n- Packa",
+      "link": "https://github.com/advisories/GHSA-792q-qw95-f446",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "OpenClaw vulnerable to path traversal (Zip Slip) in archive extraction during explicit installation commands",
       "date": "2026-03-02",
