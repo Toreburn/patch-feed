@@ -1,16 +1,29 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-03-04T13:10:29.685Z",
+  "lastUpdated": "2026-03-04T19:00:18.717Z",
   "health": {
-    "lastFetchAttempt": "2026-03-04T13:10:29.685Z",
+    "lastFetchAttempt": "2026-03-04T19:00:18.717Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-04T13:10:29.685Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-03-04T19:00:18.717Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "OpenClaw's elevated allowFrom accepted broader identity signals than specified within sender-scoped authorization",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nIn certain elevated-mode configurations, `tools.elevated.allowFrom` accepted broader identity signals than intended. The fix tightens matching to sender-scoped identity by default and make",
+      "link": "https://github.com/advisories/GHSA-f6h3-846h-2r8w",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "OpenClaw's Signal reaction-only status events could, in limited cases, be enqueued before access checks",
       "date": "2026-03-03",
