@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T18:08:02.752Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-05T19:22:37.162Z",
+  "newPatches": 37,
   "patches": [
     {
       "title": "Cisco Secure Firewall Management Center Software SQL Injection Vulnerability",
@@ -501,6 +501,94 @@
       "cvss": null
     },
     {
+      "title": "Gogs: Cross-repository LFS object overwrite via missing content hash verification",
+      "date": "2026-03-05",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "gogs.io/gogs",
+      "description": "Gogs: Cross-repository LFS object overwrite via missing content hash verification",
+      "link": "https://github.com/advisories/GHSA-cj4v-437j-jq4c",
+      "cve": "CVE-2026-25921",
+      "cvss": 9.3
+    },
+    {
+      "title": "Gokapi has privilege escalation with auth token",
+      "date": "2026-03-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/forceu/gokapi",
+      "description": "Gokapi has privilege escalation with auth token",
+      "link": "https://github.com/advisories/GHSA-m2hx-wjxc-9fp4",
+      "cve": "CVE-2026-29060",
+      "cvss": 5
+    },
+    {
+      "title": "Gokapi has Stored XSS in SVG Hotlinks",
+      "date": "2026-03-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/forceu/gokapi",
+      "description": "Gokapi has Stored XSS in SVG Hotlinks",
+      "link": "https://github.com/advisories/GHSA-3c22-5j5m-4jq7",
+      "cve": "CVE-2026-28683",
+      "cvss": 8.7
+    },
+    {
+      "title": "Gokapi has Data Leak in Upload Status Stream",
+      "date": "2026-03-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/forceu/gokapi",
+      "description": "Gokapi has Data Leak in Upload Status Stream",
+      "link": "https://github.com/advisories/GHSA-c36c-7pc2-f2ph",
+      "cve": "CVE-2026-28682",
+      "cvss": 6.4
+    },
+    {
+      "title": "Nginx-UI Vulnerable to Unauthenticated Backup Download with Encryption Key Disclosure",
+      "date": "2026-03-05",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/0xJacky/Nginx-UI",
+      "description": "Nginx-UI Vulnerable to Unauthenticated Backup Download with Encryption Key Disclosure",
+      "link": "https://github.com/advisories/GHSA-g9w5-qffc-6762",
+      "cve": "CVE-2026-27944",
+      "cvss": 9.8
+    },
+    {
+      "title": "xgrammar vulnerable to DoS via multi-layer nesting",
+      "date": "2026-03-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "xgrammar",
+      "description": "xgrammar vulnerable to DoS via multi-layer nesting",
+      "link": "https://github.com/advisories/GHSA-7rgv-gqhr-fxg3",
+      "cve": "CVE-2026-25048",
+      "cvss": null
+    },
+    {
+      "title": "Mercurius: Incorrect Content-Type parsing can lead to CSRF attack",
+      "date": "2026-03-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "mercurius",
+      "description": "Mercurius: Incorrect Content-Type parsing can lead to CSRF attack",
+      "link": "https://github.com/advisories/GHSA-v66j-6wwf-jc57",
+      "cve": "CVE-2025-64166",
+      "cvss": 5.4
+    },
+    {
+      "title": "Leantime has HTML injection through firstname and lastname fields",
+      "date": "2026-03-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "leantime/leantime",
+      "description": "Leantime has HTML injection through firstname and lastname fields",
+      "link": "https://github.com/advisories/GHSA-qrfh-cc86-vc8c",
+      "cve": "",
+      "cvss": 5.4
+    },
+    {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
       "date": "2026-03-05",
       "severity": "HIGH",
@@ -622,6 +710,24 @@
       "cvss": 7.3
     },
     {
+      "title": "USN-8077-1: Bleach vulnerabilities",
+      "date": "2026-03-05",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Bleach vulnerabilities",
+      "description": "It was discovered that Bleach did not properly sanitize URI attributes\ncontaining character entities. An attacker could possibly use this issue\nto construct a URI with a disallowed scheme that would b...",
+      "link": "https://ubuntu.com/security/notices/USN-8077-1"
+    },
+    {
+      "title": "USN-8071-2: NSS vulnerability",
+      "date": "2026-03-05",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "NSS",
+      "description": "USN-8071-1 fixed a vulnerability in nss. This update provides the\ncorresponding fix for Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS,\nand Ubuntu 20.04 LTS.\n\nOriginal advisory details:\n\n It was...",
+      "link": "https://ubuntu.com/security/notices/USN-8071-2"
+    },
+    {
       "title": "macOS 26.3.1",
       "date": "2026-03-04",
       "severity": "UNKNOWN",
@@ -688,6 +794,276 @@
       "description": "A vulnerability in the SAML 2.0 single sign-on (SSO) feature of Cisco Secure Firewall ASA Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attack...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-saml-LktTrwZP",
       "cve": "CVE-2026-20102"
+    },
+    {
+      "title": "Cisco Secure Firewall Management Center Software SQL Injection Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software, formerly Firepower Management Center Software, could allow an authenticated, remote att...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-sql-inject-2EnmTC8v",
+      "cve": "CVE-2024-20340"
+    },
+    {
+      "title": "Cisco Adaptive Security Appliance and Firepower Threat Defense Software Command Injection Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Firepower",
+      "description": "A vulnerability in the Cisco Adaptive Security Appliance (ASA) restore functionality that is available in Cisco ASA Software and Cisco Firepower Threat Defense (FTD) Software could allow an authentica...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-cmd-inj-ZJV8Wysm",
+      "cve": "CVE-2024-20358"
+    },
+    {
+      "title": "Multiple Cisco Products Snort 3 Denial of Service Vulnerabilities",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "Multiple Cisco products are affected by vulnerabilities in the Snort 3 Detection Engine that could allow an unauthenticated, remote attacker to cause the Snort 3 Detection Engine to restart, resulting...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-multi-dos-XFWkWSwz",
+      "cve": "CVE-2026-20005"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IPsec Denial of Service Vulnerability",
+      "date": "2026-03-04",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the processing of Galois/Counter Mode (GCM)-encrypted Internet Key Exchange version 2 (IKEv2) IPsec traffic of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and C...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-esp-dos-uv7yD8P5",
+      "cve": "CVE-2026-20049"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance Software Multiple Context Mode SCP Unauthorized File Access Vulnerability",
+      "date": "2026-03-04",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the CLI of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software in multiple context mode could allow an authenticated, local attacker with administrative privileges in o...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asa-scpcxt-filecpy-rgeP73nE",
+      "cve": "CVE-2026-20062"
+    },
+    {
+      "title": "Multiple Cisco Products Snort 3 Visual Basic for Applications Denial of Service Vulnerabilities",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "Multiple Cisco products are affected by vulnerabilities in the Snort 3 Visual Basic for Applications (VBA) Decompression Engine that could allow an unauthenticated, remote attacker to cause the Snort ...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-snort3-vbavuls-96UcVVed",
+      "cve": "CVE-2026-20053"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance Software TCP Flood Denial of Service Vulnerability",
+      "date": "2026-03-04",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the handling of the embryonic connection limits in Cisco Secure Firewall Adaptive Security Appliance (ASA) Software could allow an unauthenticated, remote attacker to cause incoming...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asa-dos-FCvLD6vR",
+      "cve": "CVE-2026-20082"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software VPN Web Server Denial of Service Vulnerability",
+      "date": "2026-03-04",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-dos-SpOFF2Re",
+      "cve": "CVE-2026-20039"
+    },
+    {
+      "title": "Cisco Secure Firewall Management Center and Secure Firewall Threat Defense Software Path Traversal Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the sftunnel functionality of Cisco Secure Firewall Management Center (FMC) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote att...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftdfmc-dir-trav-wERgjhWq",
+      "cve": "CVE-2026-20018"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Denial of Service Vulnerabilities",
+      "date": "2026-03-04",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "Multiple vulnerabilities in the Internet Key Exchange Version 2 (IKEv2) feature of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Softw...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ikev2-dos-eBueGdEG",
+      "cve": "CVE-2026-20013"
+    },
+    {
+      "title": "Cisco Secure Firewall Management Center Software Remote Code Execution Vulnerability",
+      "date": "2026-03-04",
+      "severity": "CRITICAL",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root &...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-rce-NKhnULJh",
+      "cve": "CVE-2026-20131"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Access Control List Bypass Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to send traf...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-aclbypass-dos-CVxVRSvQ",
+      "cve": "CVE-2026-20073"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software OSPF Protocol Vulnerabilities",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "Multiple vulnerabilities in the OSPF feature of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an adjacent attacke...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ospf-ZH8PhbSW",
+      "cve": "CVE-2026-20020"
+    },
+    {
+      "title": "ClamAV Cascading Style Sheets Image Parsing Error Handling Denial of Service Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the HTML Cascading Style Sheets (CSS) module of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. This vulne...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-css-Fn4QSZ",
+      "cve": "CVE-2026-20031"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Authenticated Command Injection Vulnerabilities",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "Multiple vulnerabilities in the CLI feature of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, lo...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-cmd-inj-mTzGZexf",
+      "cve": "CVE-2026-20016"
+    },
+    {
+      "title": "Cisco Secure Firewall Threat Defense Software SSL Decryption Policy Denial of Service Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the Do Not Decrypt exclusion feature of the SSL decryption feature of Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause a ...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-dnd-dos-bpEcg7B7",
+      "cve": "CVE-2026-20050"
+    },
+    {
+      "title": "Cisco Secure Firewall Threat Defense Software Snort Deep Inspection Bypass Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the Snort 2 and Snort 3 deep packet inspection of Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to bypass configured Snort rule...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-snort-bypass-rLggKzVF",
+      "cve": "CVE-2026-20007"
+    },
+    {
+      "title": "Cisco Secure Firewall Threat Defense Software Snort 3 SSL Memory Management Denial of Service Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the memory management handling for the Snort 3 Detection Engine of Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the S...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-snort3ssl-FBEKYXpH",
+      "cve": "CVE-2026-20052"
+    },
+    {
+      "title": "Cisco Secure Firewall Threat Defense Software TLS with Snort 3 Detection Engine Denial of Service Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the TLS cryptography functionality of the Snort 3 Detection Engine of Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause th...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ftd-tcp-dos-rHfqnwRg",
+      "cve": "CVE-2026-20006"
+    },
+    {
+      "title": "Cisco Secure Firewall Management Center Software Command Injection Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the lockdown mechanism of Cisco Secure Firewall Management Center (FMC) Software could allow an authenticated, local attacker to perform arbitrary commands as root . This vulnerabil...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-cmd-inject-S9ZM4EJf",
+      "cve": "CVE-2026-20044"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Lua Code Injection Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in a small subset of CLI commands that are used on Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow ...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-luainject-VescqgmS",
+      "cve": "CVE-2026-20008"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software VPN Web Services Cross-Site Scripting Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the VPN web services component of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthentic...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-webvpn-xss-uwjc4HR",
+      "cve": "CVE-2026-20070"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Denial of Service Vulnerabilities",
+      "date": "2026-03-04",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "Multiple vulnerabilities in the Remote Access SSL VPN functionality of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could&nb...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-vpn-m9sx6MbC",
+      "cve": "CVE-2026-20100"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software VPN Web Services Client-Side Request Smuggling Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the VPN web services component of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthentic...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-desync-n5AVzEQw",
+      "cve": "CVE-2026-20069"
+    },
+    {
+      "title": "Cisco Secure Firewall Adaptive Security Appliance Software SSH Partial Private Key Authentication Bypass Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the implementation of the proprietary SSH stack with SSH key-based authentication in Cisco Secure Firewall Adaptive Security Appliance (ASA) Software could allow an unauthenticated,...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asa-ssh-keybypass-cr5xPUSf",
+      "cve": "CVE-2026-20009"
+    },
+    {
+      "title": "Cisco Secure Firewall Management Center Software SQL Injection Vulnerabilities",
+      "date": "2026-03-04",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "Multiple vulnerabilities in the web-based management interface and REST API of Cisco Secure Firewall Management Center (FMC) Software could allow an authenticated, remote attacker to conduct SQL injec...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-sql-injection-2qH6CcJd",
+      "cve": "CVE-2026-20001"
+    },
+    {
+      "title": "Cisco Webex Services Cross-Site Scripting Vulnerability",
+      "date": "2026-03-04",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "WebEx",
+      "description": "A vulnerability in Cisco Webex could have allowed an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack. Cisco has addressed this vulnerability, and no customer action is ...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-webex-xss-TZFTbbwN",
+      "cve": "CVE-2026-20149"
     },
     {
       "title": "OpenClaw's elevated allowFrom accepted broader identity signals than specified within sender-scoped authorization",
@@ -5552,6 +5928,269 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-05T19:22:37.161Z",
+      "logs": [
+        "[INFO] android - 1 patches, no changes",
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[SUCCESS] cisco - 61 patches (27 new)",
+        "[INFO] cloudflare - 3 patches, no changes",
+        "[INFO] debian - 5 patches, no changes",
+        "[SUCCESS] github - 251 patches (8 new)",
+        "[INFO] microsoft - 161 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 59 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[SUCCESS] ubuntu - 22 patches (2 new)",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 37,
+      "totalPatches": 578,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "cisco",
+        "github",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "apple",
+        "chrome",
+        "signal",
+        "visualstudio",
+        "aws",
+        "cloudflare",
+        "debian",
+        "android",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Management Center Software SQL Injection Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Adaptive Security Appliance and Firepower Threat Defense Software Command Injection Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Multiple Cisco Products Snort 3 Denial of Service Vulnerabilities",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IPsec Denial of Service Vulnerability",
+          "date": "2026-03-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance Software Multiple Context Mode SCP Unauthorized File Access Vulnerability",
+          "date": "2026-03-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Multiple Cisco Products Snort 3 Visual Basic for Applications Denial of Service Vulnerabilities",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance Software TCP Flood Denial of Service Vulnerability",
+          "date": "2026-03-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software VPN Web Server Denial of Service Vulnerability",
+          "date": "2026-03-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Management Center and Secure Firewall Threat Defense Software Path Traversal Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software IKEv2 Denial of Service Vulnerabilities",
+          "date": "2026-03-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Management Center Software Remote Code Execution Vulnerability",
+          "date": "2026-03-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Access Control List Bypass Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software OSPF Protocol Vulnerabilities",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "ClamAV Cascading Style Sheets Image Parsing Error Handling Denial of Service Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Authenticated Command Injection Vulnerabilities",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Threat Defense Software SSL Decryption Policy Denial of Service Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Threat Defense Software Snort Deep Inspection Bypass Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Threat Defense Software Snort 3 SSL Memory Management Denial of Service Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Threat Defense Software TLS with Snort 3 Detection Engine Denial of Service Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Management Center Software Command Injection Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Lua Code Injection Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software VPN Web Services Cross-Site Scripting Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Denial of Service Vulnerabilities",
+          "date": "2026-03-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software VPN Web Services Client-Side Request Smuggling Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Adaptive Security Appliance Software SSH Partial Private Key Authentication Bypass Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Secure Firewall Management Center Software SQL Injection Vulnerabilities",
+          "date": "2026-03-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Webex Services Cross-Site Scripting Vulnerability",
+          "date": "2026-03-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Gogs: Cross-repository LFS object overwrite via missing content hash verification",
+          "date": "2026-03-05",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Gokapi has privilege escalation with auth token",
+          "date": "2026-03-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Gokapi has Stored XSS in SVG Hotlinks",
+          "date": "2026-03-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gokapi has Data Leak in Upload Status Stream",
+          "date": "2026-03-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Nginx-UI Vulnerable to Unauthenticated Backup Download with Encryption Key Disclosure",
+          "date": "2026-03-05",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "xgrammar vulnerable to DoS via multi-layer nesting",
+          "date": "2026-03-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Mercurius: Incorrect Content-Type parsing can lead to CSRF attack",
+          "date": "2026-03-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Leantime has HTML injection through firstname and lastname fields",
+          "date": "2026-03-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8077-1: Bleach vulnerabilities",
+          "date": "2026-03-05",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8071-2: NSS vulnerability",
+          "date": "2026-03-05",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-05T18:08:02.752Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
@@ -9461,44 +10100,6 @@
     },
     {
       "timestamp": "2026-03-02T10:49:28.530Z",
-      "logs": [
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 22 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 6 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 153 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 300 patches, no changes",
-        "[INFO] postgresql - 4 patches, no changes",
-        "[INFO] redhat - 182 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 14 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 693,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "debian",
-        "github",
-        "postgresql",
-        "microsoft",
-        "cisco",
-        "cloudflare",
-        "redhat",
-        "ubuntu",
-        "crowdstrike",
-        "edge",
-        "signal",
-        "chrome",
-        "gitlab"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-02T08:52:07.584Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
         "[INFO] cisco - 22 patches, no changes",
