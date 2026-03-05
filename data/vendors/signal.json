@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-03-04T19:00:18.717Z",
+  "lastUpdated": "2026-03-05T02:36:43.421Z",
   "health": {
-    "lastFetchAttempt": "2026-03-04T19:00:18.717Z",
+    "lastFetchAttempt": "2026-03-05T02:36:43.421Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
+    "lastFetchParsedItems": 1,
     "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-03-04T19:00:18.717Z",
+    "lastSuccessWithData": "2026-03-05T02:36:43.421Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -20,6 +20,21 @@
       "description": "### Summary\nIn certain elevated-mode configurations, `tools.elevated.allowFrom` accepted broader identity signals than intended. The fix tightens matching to sender-scoped identity by default and make",
       "link": "https://github.com/advisories/GHSA-f6h3-846h-2r8w",
       "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "traefik CVE-2024-45410 fix bypass: lowercase `Connection` tokens can delete traefik-managed forwarded identity headers (for example, `X-Real-Ip`)",
+      "date": "2026-03-04",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Impact\n\nThere is a potential vulnerability in Traefik managing the `Connection` header with `X-Forwarded` headers.\n\nWhen Traefik processes HTTP/1.1 requests, the protection put in place to prevent ",
+      "link": "https://github.com/advisories/GHSA-92mv-8f8w-wq52",
+      "cves": [
+        "CVE-2026-29054"
+      ],
       "platform": [
         "All Platforms"
       ]
