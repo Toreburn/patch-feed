@@ -1,16 +1,137 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-03-06T13:09:02.113Z",
+  "lastUpdated": "2026-03-06T18:55:42.626Z",
   "health": {
-    "lastFetchAttempt": "2026-03-06T13:09:02.113Z",
+    "lastFetchAttempt": "2026-03-06T18:55:42.626Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-06T13:09:02.113Z",
+    "lastFetchNewPatches": 11,
+    "lastSuccessWithData": "2026-03-06T18:55:42.626Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Flowise has Arbitrary File Upload via MIME Spoofing",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise has Arbitrary File Upload via MIME Spoofing",
+      "link": "https://github.com/advisories/GHSA-j8g8-j7fc-43v6",
+      "cve": "CVE-2026-30821",
+      "cvss": null
+    },
+    {
+      "title": "Flowise has Authorization Bypass via Spoofed x-request-from Header",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise has Authorization Bypass via Spoofed x-request-from Header",
+      "link": "https://github.com/advisories/GHSA-wvhq-wp8g-c7vq",
+      "cve": "CVE-2026-30820",
+      "cvss": null
+    },
+    {
+      "title": "Mercurius's queryDepth limit bypassed for WebSocket subscriptions",
+      "date": "2026-03-06",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "mercurius",
+      "description": "Mercurius's queryDepth limit bypassed for WebSocket subscriptions",
+      "link": "https://github.com/advisories/GHSA-m4h2-mjfm-mp55",
+      "cve": "CVE-2026-30241",
+      "cvss": null
+    },
+    {
+      "title": "parse-server's endpoint `/loginAs` allows `readOnlyMasterKey` to gain full read and write access as any user",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "parse-server's endpoint `/loginAs` allows `readOnlyMasterKey` to gain full read and write access as any user",
+      "link": "https://github.com/advisories/GHSA-79wj-8rqv-jvp5",
+      "cve": "CVE-2026-30229",
+      "cvss": null
+    },
+    {
+      "title": "parse-server's file creation and deletion bypasses `readOnlyMasterKey` write restriction",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "parse-server's file creation and deletion bypasses `readOnlyMasterKey` write restriction",
+      "link": "https://github.com/advisories/GHSA-xfh7-phr7-gr2x",
+      "cve": "CVE-2026-30228",
+      "cvss": null
+    },
+    {
+      "title": "Vercel Workflow Allows Webhook Creation with Predictable User-Specified Tokens",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "workflow, @workflow/core",
+      "description": "Vercel Workflow Allows Webhook Creation with Predictable User-Specified Tokens",
+      "link": "https://github.com/advisories/GHSA-9r75-g2cr-3h76",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "PinchTab has SSRF with Full Response Exfiltration via Download Handler",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/pinchtab/pinchtab/cmd/pinchtab",
+      "description": "PinchTab has SSRF with Full Response Exfiltration via Download Handler",
+      "link": "https://github.com/advisories/GHSA-rw8p-c6hf-q3pg",
+      "cve": "CVE-2026-30834",
+      "cvss": 7.5
+    },
+    {
+      "title": "defuddle vulnerable to XSS via unescaped string interpolation in _findContentBySchemaText image tag",
+      "date": "2026-03-06",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "defuddle",
+      "description": "defuddle vulnerable to XSS via unescaped string interpolation in _findContentBySchemaText image tag",
+      "link": "https://github.com/advisories/GHSA-5mq8-78gm-pjmq",
+      "cve": "CVE-2026-30830",
+      "cvss": null
+    },
+    {
+      "title": "express-rate-limit: IPv4-mapped IPv6 addresses bypass per-client rate limiting on servers with dual-stack network",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "express-rate-limit, express-rate-limit, express-rate-limit",
+      "description": "express-rate-limit: IPv4-mapped IPv6 addresses bypass per-client rate limiting on servers with dual-stack network",
+      "link": "https://github.com/advisories/GHSA-46wh-pxpv-q5gq",
+      "cve": "CVE-2026-30827",
+      "cvss": 7.5
+    },
+    {
+      "title": "CoreDNS ACL Bypass",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS ACL Bypass",
+      "link": "https://github.com/advisories/GHSA-c9v3-4pv7-87pr",
+      "cve": "CVE-2026-26017",
+      "cvss": 7.7
+    },
+    {
+      "title": "GitHub Copilot CLI Dangerous Shell Expansion Patterns Enable Arbitrary Code Execution",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@github/copilot",
+      "description": "GitHub Copilot CLI Dangerous Shell Expansion Patterns Enable Arbitrary Code Execution",
+      "link": "https://github.com/advisories/GHSA-g8r9-g2v8-jv6f",
+      "cve": "CVE-2026-29783",
+      "cvss": null
+    },
     {
       "title": "AVideo: Unauthenticated PHP session store exposed to host network via published memcached port",
       "date": "2026-03-05",

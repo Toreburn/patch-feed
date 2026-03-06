@@ -1,7 +1,128 @@
 {
-  "lastUpdated": "2026-03-06T18:53:11.770Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-06T18:57:32.776Z",
+  "newPatches": 11,
   "patches": [
+    {
+      "title": "Flowise has Arbitrary File Upload via MIME Spoofing",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise has Arbitrary File Upload via MIME Spoofing",
+      "link": "https://github.com/advisories/GHSA-j8g8-j7fc-43v6",
+      "cve": "CVE-2026-30821",
+      "cvss": null
+    },
+    {
+      "title": "Flowise has Authorization Bypass via Spoofed x-request-from Header",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise has Authorization Bypass via Spoofed x-request-from Header",
+      "link": "https://github.com/advisories/GHSA-wvhq-wp8g-c7vq",
+      "cve": "CVE-2026-30820",
+      "cvss": null
+    },
+    {
+      "title": "Mercurius's queryDepth limit bypassed for WebSocket subscriptions",
+      "date": "2026-03-06",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "mercurius",
+      "description": "Mercurius's queryDepth limit bypassed for WebSocket subscriptions",
+      "link": "https://github.com/advisories/GHSA-m4h2-mjfm-mp55",
+      "cve": "CVE-2026-30241",
+      "cvss": null
+    },
+    {
+      "title": "parse-server's endpoint `/loginAs` allows `readOnlyMasterKey` to gain full read and write access as any user",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "parse-server's endpoint `/loginAs` allows `readOnlyMasterKey` to gain full read and write access as any user",
+      "link": "https://github.com/advisories/GHSA-79wj-8rqv-jvp5",
+      "cve": "CVE-2026-30229",
+      "cvss": null
+    },
+    {
+      "title": "parse-server's file creation and deletion bypasses `readOnlyMasterKey` write restriction",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "parse-server's file creation and deletion bypasses `readOnlyMasterKey` write restriction",
+      "link": "https://github.com/advisories/GHSA-xfh7-phr7-gr2x",
+      "cve": "CVE-2026-30228",
+      "cvss": null
+    },
+    {
+      "title": "Vercel Workflow Allows Webhook Creation with Predictable User-Specified Tokens",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "workflow, @workflow/core",
+      "description": "Vercel Workflow Allows Webhook Creation with Predictable User-Specified Tokens",
+      "link": "https://github.com/advisories/GHSA-9r75-g2cr-3h76",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "PinchTab has SSRF with Full Response Exfiltration via Download Handler",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/pinchtab/pinchtab/cmd/pinchtab",
+      "description": "PinchTab has SSRF with Full Response Exfiltration via Download Handler",
+      "link": "https://github.com/advisories/GHSA-rw8p-c6hf-q3pg",
+      "cve": "CVE-2026-30834",
+      "cvss": 7.5
+    },
+    {
+      "title": "defuddle vulnerable to XSS via unescaped string interpolation in _findContentBySchemaText image tag",
+      "date": "2026-03-06",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "defuddle",
+      "description": "defuddle vulnerable to XSS via unescaped string interpolation in _findContentBySchemaText image tag",
+      "link": "https://github.com/advisories/GHSA-5mq8-78gm-pjmq",
+      "cve": "CVE-2026-30830",
+      "cvss": null
+    },
+    {
+      "title": "express-rate-limit: IPv4-mapped IPv6 addresses bypass per-client rate limiting on servers with dual-stack network",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "express-rate-limit, express-rate-limit, express-rate-limit",
+      "description": "express-rate-limit: IPv4-mapped IPv6 addresses bypass per-client rate limiting on servers with dual-stack network",
+      "link": "https://github.com/advisories/GHSA-46wh-pxpv-q5gq",
+      "cve": "CVE-2026-30827",
+      "cvss": 7.5
+    },
+    {
+      "title": "CoreDNS ACL Bypass",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS ACL Bypass",
+      "link": "https://github.com/advisories/GHSA-c9v3-4pv7-87pr",
+      "cve": "CVE-2026-26017",
+      "cvss": 7.7
+    },
+    {
+      "title": "GitHub Copilot CLI Dangerous Shell Expansion Patterns Enable Arbitrary Code Execution",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@github/copilot",
+      "description": "GitHub Copilot CLI Dangerous Shell Expansion Patterns Enable Arbitrary Code Execution",
+      "link": "https://github.com/advisories/GHSA-g8r9-g2v8-jv6f",
+      "cve": "CVE-2026-29783",
+      "cvss": null
+    },
     {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
       "date": "2026-03-06",
@@ -5355,6 +5476,113 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-06T18:57:32.776Z",
+      "logs": [
+        "[INFO] android - 1 patches, no changes",
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 60 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] debian - 6 patches, no changes",
+        "[SUCCESS] github - 268 patches (11 new)",
+        "[INFO] microsoft - 82 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 63 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 24 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 11,
+      "totalPatches": 523,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "github",
+        "microsoft",
+        "postgresql",
+        "redhat",
+        "chrome",
+        "cisco",
+        "debian",
+        "ubuntu",
+        "apple",
+        "signal",
+        "visualstudio",
+        "aws",
+        "cloudflare",
+        "android"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "Flowise has Arbitrary File Upload via MIME Spoofing",
+          "date": "2026-03-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Flowise has Authorization Bypass via Spoofed x-request-from Header",
+          "date": "2026-03-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Mercurius's queryDepth limit bypassed for WebSocket subscriptions",
+          "date": "2026-03-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "parse-server's endpoint `/loginAs` allows `readOnlyMasterKey` to gain full read and write access as any user",
+          "date": "2026-03-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "parse-server's file creation and deletion bypasses `readOnlyMasterKey` write restriction",
+          "date": "2026-03-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Vercel Workflow Allows Webhook Creation with Predictable User-Specified Tokens",
+          "date": "2026-03-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "PinchTab has SSRF with Full Response Exfiltration via Download Handler",
+          "date": "2026-03-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "defuddle vulnerable to XSS via unescaped string interpolation in _findContentBySchemaText image tag",
+          "date": "2026-03-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "express-rate-limit: IPv4-mapped IPv6 addresses bypass per-client rate limiting on servers with dual-stack network",
+          "date": "2026-03-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CoreDNS ACL Bypass",
+          "date": "2026-03-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "GitHub Copilot CLI Dangerous Shell Expansion Patterns Enable Arbitrary Code Execution",
+          "date": "2026-03-06",
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-06T18:53:11.770Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
@@ -9490,48 +9718,6 @@
     },
     {
       "timestamp": "2026-03-03T10:44:40.891Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[INFO] aws - 1 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 24 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 211 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 300 patches, no changes",
-        "[INFO] postgresql - 4 patches, no changes",
-        "[INFO] redhat - 69 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 14 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 643,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "cisco",
-        "github",
-        "aws",
-        "debian",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "android",
-        "postgresql",
-        "microsoft",
-        "cloudflare",
-        "crowdstrike",
-        "edge",
-        "chrome",
-        "gitlab"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-03T08:49:04.507Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
         "[INFO] aws - 1 patches, no changes",
