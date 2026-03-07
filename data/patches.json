@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-07T12:55:33.382Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-07T13:01:29.194Z",
+  "newPatches": 6,
   "patches": [
     {
       "title": "AVideo has Unauthenticated IDOR - Playlist Information Disclosure",
@@ -144,6 +144,16 @@
       "link": "https://github.com/advisories/GHSA-h343-gg57-2q67",
       "cve": "",
       "cvss": 10
+    },
+    {
+      "title": "Falcon Next-Gen SIEM Simplifies Onboarding with Sensor-Native Log Collection",
+      "date": "2026-03-06",
+      "severity": "UNKNOWN",
+      "vendor": "crowdstrike",
+      "component": "Falcon Sensor",
+      "description": "",
+      "link": "https://www.crowdstrike.com/en-us/blog/falcon-next-gen-siem-simplifies-onboarding-with-sensor-native-log-collection/",
+      "cve": ""
     },
     {
       "title": "Microsoft Edge Security Update - March 6, 2026",
@@ -884,6 +894,61 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-69649.json",
       "cve": "CVE-2025-69649",
       "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-30231: flare: Flare: Information disclosure via inconsistent access checks for private files",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "flare: Flare: Information disclosure via inconsistent access checks for private files",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30231.json",
+      "cve": "CVE-2026-30231",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-30230: flare: Flare: Unauthorized information disclosure due to improper access control in the thumbnail endpoint.",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "flare: Flare: Unauthorized information disclosure due to improper access control in the thumbnail endpoint.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30230.json",
+      "cve": "CVE-2026-30230",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-3419: fastify: Fastify: Bypass of Content-Type validation via malformed Content-Type headers",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fastify: Fastify: Bypass of Content-Type validation via malformed Content-Type headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3419.json",
+      "cve": "CVE-2026-3419",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-29089: timescaledb: TimescaleDB: Arbitrary code execution via malicious functions in user-writable schemas during extension upg",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "timescaledb: TimescaleDB: Arbitrary code execution via malicious functions in user-writable schemas during extension upgrade",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-29089.json",
+      "cve": "CVE-2026-29089",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2025-69651: binutils: Binutils: Denial of Service via crafted ELF binary processing",
+      "date": "2026-03-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "binutils: Binutils: Denial of Service via crafted ELF binary processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-69651.json",
+      "cve": "CVE-2025-69651",
+      "cvss": 2.8
     },
     {
       "title": "Chrome for Android Update",
@@ -5590,6 +5655,87 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-07T13:01:29.194Z",
+      "logs": [
+        "[INFO] android - 1 patches, no changes",
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 60 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[SUCCESS] crowdstrike - 1 patches (1 new)",
+        "[INFO] debian - 5 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 293 patches, no changes",
+        "[INFO] microsoft - 41 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 87 patches (5 new)",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 24 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 6,
+      "totalPatches": 532,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "github",
+        "crowdstrike",
+        "edge",
+        "microsoft",
+        "postgresql",
+        "redhat",
+        "chrome",
+        "cisco",
+        "debian",
+        "ubuntu",
+        "apple",
+        "signal",
+        "visualstudio",
+        "aws",
+        "cloudflare",
+        "android"
+      ],
+      "newPatches": [
+        {
+          "vendor": "crowdstrike",
+          "title": "Falcon Next-Gen SIEM Simplifies Onboarding with Sensor-Native Log Collection",
+          "date": "2026-03-06",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30231: flare: Flare: Information disclosure via inconsistent access checks for private files",
+          "date": "2026-03-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30230: flare: Flare: Unauthorized information disclosure due to improper access control in the thumbnail endpoint.",
+          "date": "2026-03-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-3419: fastify: Fastify: Bypass of Content-Type validation via malformed Content-Type headers",
+          "date": "2026-03-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-29089: timescaledb: TimescaleDB: Arbitrary code execution via malicious functions in user-writable schemas during extension upg",
+          "date": "2026-03-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-69651: binutils: Binutils: Denial of Service via crafted ELF binary processing",
+          "date": "2026-03-06",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-07T12:55:33.382Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
@@ -9619,46 +9765,6 @@
     },
     {
       "timestamp": "2026-03-04T06:54:44.214Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 12 patches, no changes",
-        "[INFO] cloudflare - 3 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 220 patches, no changes",
-        "[INFO] microsoft - 250 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 40 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 8 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 556,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "chrome",
-        "aws",
-        "cisco",
-        "cloudflare",
-        "debian",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "android",
-        "postgresql",
-        "microsoft",
-        "crowdstrike",
-        "edge"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-04T05:10:04.813Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
         "[INFO] aws - 2 patches, no changes",
