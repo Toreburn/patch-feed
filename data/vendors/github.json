@@ -1,16 +1,82 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-03-06T18:55:42.626Z",
+  "lastUpdated": "2026-03-07T02:27:40.703Z",
   "health": {
-    "lastFetchAttempt": "2026-03-06T18:55:42.626Z",
+    "lastFetchAttempt": "2026-03-07T02:27:40.703Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 11,
-    "lastSuccessWithData": "2026-03-06T18:55:42.626Z",
+    "lastFetchNewPatches": 28,
+    "lastSuccessWithData": "2026-03-07T02:27:40.703Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "AVideo has Unauthenticated IDOR - Playlist Information Disclosure",
+      "date": "2026-03-07",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wwbn/avideo",
+      "description": "AVideo has Unauthenticated IDOR - Playlist Information Disclosure",
+      "link": "https://github.com/advisories/GHSA-6w2r-cfpc-23r5",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "PowerSync: Some sync filters ignored on 1.20.0 using `config.edition: 3`",
+      "date": "2026-03-07",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@powersync/service-core, @powersync/service-sync-rules",
+      "description": "PowerSync: Some sync filters ignored on 1.20.0 using `config.edition: 3`",
+      "link": "https://github.com/advisories/GHSA-q6wc-xx4m-92fj",
+      "cve": "",
+      "cvss": 6.5
+    },
+    {
+      "title": "SiYuan Vulnerable to Path Traversal in /export Endpoint Allows Arbitrary File Read and Secret Leakage",
+      "date": "2026-03-07",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan Vulnerable to Path Traversal in /export Endpoint Allows Arbitrary File Read and Secret Leakage",
+      "link": "https://github.com/advisories/GHSA-2h2p-mvfx-868w",
+      "cve": "",
+      "cvss": 9.3
+    },
+    {
+      "title": "mcp-memory-service's Wildcard CORS with Credentials Enables Cross-Origin Memory Theft",
+      "date": "2026-03-07",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "mcp-memory-service",
+      "description": "mcp-memory-service's Wildcard CORS with Credentials Enables Cross-Origin Memory Theft",
+      "link": "https://github.com/advisories/GHSA-g9rg-8vq5-mpwm",
+      "cve": "",
+      "cvss": 8.1
+    },
+    {
+      "title": "Firefly III user API endpoints expose all users' information to any authenticated user (IDOR)",
+      "date": "2026-03-07",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "grumpydictator/firefly-iii",
+      "description": "Firefly III user API endpoints expose all users' information to any authenticated user (IDOR)",
+      "link": "https://github.com/advisories/GHSA-5q8v-j673-m5v4",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "WeKnora has Remote Code Execution (RCE) via Command Injection in MCP Stdio Configuration Validation",
+      "date": "2026-03-07",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/Tencent/WeKnora",
+      "description": "WeKnora has Remote Code Execution (RCE) via Command Injection in MCP Stdio Configuration Validation",
+      "link": "https://github.com/advisories/GHSA-r55h-3rwj-hcmg",
+      "cve": "CVE-2026-30861",
+      "cvss": 10
+    },
     {
       "title": "Flowise has Arbitrary File Upload via MIME Spoofing",
       "date": "2026-03-06",
@@ -131,6 +197,182 @@
       "link": "https://github.com/advisories/GHSA-g8r9-g2v8-jv6f",
       "cve": "CVE-2026-29783",
       "cvss": null
+    },
+    {
+      "title": "WeKnora Vulnerable to Remote Code Execution via SQL Injection Bypass in AI Database Query Tool",
+      "date": "2026-03-06",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/Tencent/WeKnora",
+      "description": "WeKnora Vulnerable to Remote Code Execution via SQL Injection Bypass in AI Database Query Tool",
+      "link": "https://github.com/advisories/GHSA-8w32-6mrw-q5wv",
+      "cve": "CVE-2026-30860",
+      "cvss": 10
+    },
+    {
+      "title": "WeKnora has Broken Access Control - Cross-Tenant Data Exposure",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/Tencent/WeKnora",
+      "description": "WeKnora has Broken Access Control - Cross-Tenant Data Exposure",
+      "link": "https://github.com/advisories/GHSA-2f4c-vrjq-rcgv",
+      "cve": "CVE-2026-30859",
+      "cvss": 7.5
+    },
+    {
+      "title": "WeKnora has DNS Rebinding Vulnerability in web_fetch Tool that Allows SSRF to Internal Resources",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/Tencent/WeKnora",
+      "description": "WeKnora has DNS Rebinding Vulnerability in web_fetch Tool that Allows SSRF to Internal Resources",
+      "link": "https://github.com/advisories/GHSA-h6gw-8f77-mmmp",
+      "cve": "CVE-2026-30858",
+      "cvss": 7.5
+    },
+    {
+      "title": "WeKnora has Unauthorized Cross‑Tenant Knowledge Base Cloning",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/Tencent/WeKnora",
+      "description": "WeKnora has Unauthorized Cross‑Tenant Knowledge Base Cloning",
+      "link": "https://github.com/advisories/GHSA-8rf9-c59g-f82f",
+      "cve": "CVE-2026-30857",
+      "cvss": 5.9
+    },
+    {
+      "title": "WeKnora Vulnerable to Tool Execution Hijacking via Ambigous Naming Convention In MCP client and Indirect Prompt Injection",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/Tencent/WeKnora",
+      "description": "WeKnora Vulnerable to Tool Execution Hijacking via Ambigous Naming Convention In MCP client and Indirect Prompt Injection",
+      "link": "https://github.com/advisories/GHSA-67q9-58vj-32qx",
+      "cve": "CVE-2026-30856",
+      "cvss": 5.4
+    },
+    {
+      "title": "WeKnora Vulnerable to Broken Access Control in Tenant Management",
+      "date": "2026-03-06",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/Tencent/WeKnora",
+      "description": "WeKnora Vulnerable to Broken Access Control in Tenant Management",
+      "link": "https://github.com/advisories/GHSA-ccj6-79j6-cq5q",
+      "cve": "CVE-2026-30855",
+      "cvss": 9.8
+    },
+    {
+      "title": "Caddy's vars_regexp double-expands user input, leaking env vars and files",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/caddyserver/caddy/v2/modules/caddyhttp",
+      "description": "Caddy's vars_regexp double-expands user input, leaking env vars and files",
+      "link": "https://github.com/advisories/GHSA-m2w3-8f23-hxxf",
+      "cve": "CVE-2026-30852",
+      "cvss": null
+    },
+    {
+      "title": "Caddy forward_auth copy_headers Does Not Strip Client-Supplied Headers, Allowing Identity Injection and Privilege Escalation",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy",
+      "description": "Caddy forward_auth copy_headers Does Not Strip Client-Supplied Headers, Allowing Identity Injection and Privilege Escalation",
+      "link": "https://github.com/advisories/GHSA-7r4p-vjf4-gxv4",
+      "cve": "CVE-2026-30851",
+      "cvss": 8.1
+    },
+    {
+      "title": "CommonMark has DisallowedRawHtml extension bypass via whitespace in HTML tag names",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "league/commonmark",
+      "description": "CommonMark has DisallowedRawHtml extension bypass via whitespace in HTML tag names",
+      "link": "https://github.com/advisories/GHSA-4v6x-c7xx-hw9f",
+      "cve": "CVE-2026-30838",
+      "cvss": null
+    },
+    {
+      "title": "parse-server: Malformed `$regex` query leaks database error details in API response",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "parse-server: Malformed `$regex` query leaks database error details in API response",
+      "link": "https://github.com/advisories/GHSA-9cp7-3q5w-j92g",
+      "cve": "CVE-2026-30835",
+      "cvss": null
+    },
+    {
+      "title": "Flowise Missing Authentication on NVIDIA NIM Endpoints",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise Missing Authentication on NVIDIA NIM Endpoints",
+      "link": "https://github.com/advisories/GHSA-5f53-522j-j454",
+      "cve": "CVE-2026-30824",
+      "cvss": null
+    },
+    {
+      "title": "Flowise has IDOR leading to Account Takeover and Enterprise Feature Bypass via SSO Configuration",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise has IDOR leading to Account Takeover and Enterprise Feature Bypass via SSO Configuration",
+      "link": "https://github.com/advisories/GHSA-cwc3-p92j-g7qm",
+      "cve": "CVE-2026-30823",
+      "cvss": 8.8
+    },
+    {
+      "title": "Flowise Allows Mass Assignment in `/api/v1/leads` Endpoint",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise Allows Mass Assignment in `/api/v1/leads` Endpoint",
+      "link": "https://github.com/advisories/GHSA-mq4r-h2gh-qv7x",
+      "cve": "CVE-2026-30822",
+      "cvss": 7.7
+    },
+    {
+      "title": "soft-serve vulnerable to SSRF via unvalidated LFS endpoint in repo import",
+      "date": "2026-03-06",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/charmbracelet/soft-serve",
+      "description": "soft-serve vulnerable to SSRF via unvalidated LFS endpoint in repo import",
+      "link": "https://github.com/advisories/GHSA-3fvx-xrxq-8jvv",
+      "cve": "CVE-2026-30832",
+      "cvss": 9.1
+    },
+    {
+      "title": "Zarf's symlink targets in archives are not validated against destination directory",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/zarf-dev/zarf/src/pkg/archive",
+      "description": "Zarf's symlink targets in archives are not validated against destination directory",
+      "link": "https://github.com/advisories/GHSA-hcm4-6hpj-vghm",
+      "cve": "CVE-2026-29064",
+      "cvss": 8.2
+    },
+    {
+      "title": "CoreDNS Loop Detection Denial of Service Vulnerability",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS Loop Detection Denial of Service Vulnerability",
+      "link": "https://github.com/advisories/GHSA-h75p-j8xm-m278",
+      "cve": "CVE-2026-26018",
+      "cvss": 7.5
     },
     {
       "title": "AVideo: Unauthenticated PHP session store exposed to host network via published memcached port",
@@ -769,6 +1011,72 @@
       "link": "https://github.com/advisories/GHSA-2jpr-83rg-v67j",
       "cve": "CVE-2026-27982",
       "cvss": 4.3
+    },
+    {
+      "title": "@perfood/couch-auth has an Observable Timing Discrepancy ",
+      "date": "2026-03-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@perfood/couch-auth",
+      "description": "@perfood/couch-auth has an Observable Timing Discrepancy ",
+      "link": "https://github.com/advisories/GHSA-mjqr-5c55-g77h",
+      "cve": "CVE-2025-70949",
+      "cvss": 7.5
+    },
+    {
+      "title": "@perfood/couch-auth has a host header injection vulnerability",
+      "date": "2026-03-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@perfood/couch-auth",
+      "description": "@perfood/couch-auth has a host header injection vulnerability",
+      "link": "https://github.com/advisories/GHSA-qw8v-34ww-6q9p",
+      "cve": "CVE-2025-70948",
+      "cvss": 9.3
+    },
+    {
+      "title": "Fonoster is vulnerable to directory traversal",
+      "date": "2026-03-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@fonoster/voice",
+      "description": "Fonoster is vulnerable to directory traversal",
+      "link": "https://github.com/advisories/GHSA-9fv2-c7v6-p45w",
+      "cve": "CVE-2024-43035",
+      "cvss": 5.8
+    },
+    {
+      "title": "Keycloak allows authentication using an Identity Provider (IdP) even after it has been disabled by an administrator",
+      "date": "2026-03-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.keycloak:keycloak-services",
+      "description": "Keycloak allows authentication using an Identity Provider (IdP) even after it has been disabled by an administrator",
+      "link": "https://github.com/advisories/GHSA-m297-3jv9-m927",
+      "cve": "CVE-2026-3009",
+      "cvss": 8.1
+    },
+    {
+      "title": "Keycloak SAML Broken has Authentication Bypass by Primary Weakness",
+      "date": "2026-03-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.keycloak:keycloak-broker-saml",
+      "description": "Keycloak SAML Broken has Authentication Bypass by Primary Weakness",
+      "link": "https://github.com/advisories/GHSA-8cr3-vpxx-92cx",
+      "cve": "CVE-2026-3047",
+      "cvss": 8.8
+    },
+    {
+      "title": "RAGAS has an Arbitrary File Read vulnerability",
+      "date": "2026-03-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "ragas",
+      "description": "RAGAS has an Arbitrary File Read vulnerability",
+      "link": "https://github.com/advisories/GHSA-v2xr-wvrv-p969",
+      "cve": "CVE-2025-45691",
+      "cvss": 7.5
     },
     {
       "title": "OpenClaw's elevated allowFrom accepted broader identity signals than specified within sender-scoped authorization",
