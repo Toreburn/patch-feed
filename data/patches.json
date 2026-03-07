@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-07T06:48:18.259Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-07T06:53:22.856Z",
+  "newPatches": 8,
   "patches": [
     {
       "title": "AVideo has Unauthenticated IDOR - Playlist Information Disclosure",
@@ -66,6 +66,83 @@
       "description": "WeKnora has Remote Code Execution (RCE) via Command Injection in MCP Stdio Configuration Validation",
       "link": "https://github.com/advisories/GHSA-r55h-3rwj-hcmg",
       "cve": "CVE-2026-30861",
+      "cvss": 10
+    },
+    {
+      "title": "Soroban: Muxed address<->ScVal conversions may break after a conversion failure",
+      "date": "2026-03-07",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "soroban-env-host",
+      "description": "Soroban: Muxed address<->ScVal conversions may break after a conversion failure",
+      "link": "https://github.com/advisories/GHSA-pm4j-7r4q-ccg8",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "OneUptime: Synthetic Monitor RCE via exposed Playwright browser object",
+      "date": "2026-03-07",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@oneuptime/common",
+      "description": "OneUptime: Synthetic Monitor RCE via exposed Playwright browser object",
+      "link": "https://github.com/advisories/GHSA-4j36-39gm-8vq8",
+      "cve": "",
+      "cvss": 10
+    },
+    {
+      "title": "x402 SDK Security Advisory",
+      "date": "2026-03-07",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@x402/svm, x402, github.com/coinbase/x402/go",
+      "description": "x402 SDK Security Advisory",
+      "link": "https://github.com/advisories/GHSA-qr2g-p6q7-w82m",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Black's vulnerable version parsing leads to RCE in GitHub Action",
+      "date": "2026-03-07",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "psf/black",
+      "description": "Black's vulnerable version parsing leads to RCE in GitHub Action",
+      "link": "https://github.com/advisories/GHSA-v53h-f6m7-xcgm",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Shescape has possible misidentification of shell due to link chains",
+      "date": "2026-03-07",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "shescape",
+      "description": "Shescape has possible misidentification of shell due to link chains",
+      "link": "https://github.com/advisories/GHSA-6f6w-6j58-rq76",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "FUXA has a hardcoded fallback JWT signing secret",
+      "date": "2026-03-07",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@frangoteam/fuxa",
+      "description": "FUXA has a hardcoded fallback JWT signing secret",
+      "link": "https://github.com/advisories/GHSA-c8m8-3jcr-6rj5",
+      "cve": "",
+      "cvss": 8.1
+    },
+    {
+      "title": "OneUpTime's Unsandboxed Code Execution in Probe Allows Any Project Member to Achieve RCE",
+      "date": "2026-03-07",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@oneuptime/common",
+      "description": "OneUpTime's Unsandboxed Code Execution in Probe Allows Any Project Member to Achieve RCE",
+      "link": "https://github.com/advisories/GHSA-h343-gg57-2q67",
+      "cve": "",
       "cvss": 10
     },
     {
@@ -374,6 +451,17 @@
       "link": "https://github.com/advisories/GHSA-h75p-j8xm-m278",
       "cve": "CVE-2026-26018",
       "cvss": 7.5
+    },
+    {
+      "title": "Snipe-IT has sensitive user attributes related to account privileges that are insufficiently protected against mass assignment",
+      "date": "2026-03-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "snipe/snipe-it",
+      "description": "Snipe-IT has sensitive user attributes related to account privileges that are insufficiently protected against mass assignment",
+      "link": "https://github.com/advisories/GHSA-5448-v74m-7mv7",
+      "cve": "CVE-2025-15602",
+      "cvss": 8.8
     },
     {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
@@ -5502,6 +5590,97 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-07T06:53:22.856Z",
+      "logs": [
+        "[INFO] android - 1 patches, no changes",
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 60 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] debian - 5 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[SUCCESS] github - 293 patches (8 new)",
+        "[INFO] microsoft - 41 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 82 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 24 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 8,
+      "totalPatches": 526,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "github",
+        "edge",
+        "microsoft",
+        "postgresql",
+        "redhat",
+        "chrome",
+        "cisco",
+        "debian",
+        "ubuntu",
+        "apple",
+        "signal",
+        "visualstudio",
+        "aws",
+        "cloudflare",
+        "android"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "Soroban: Muxed address<->ScVal conversions may break after a conversion failure",
+          "date": "2026-03-07",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "OneUptime: Synthetic Monitor RCE via exposed Playwright browser object",
+          "date": "2026-03-07",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "x402 SDK Security Advisory",
+          "date": "2026-03-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Black's vulnerable version parsing leads to RCE in GitHub Action",
+          "date": "2026-03-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Shescape has possible misidentification of shell due to link chains",
+          "date": "2026-03-07",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "FUXA has a hardcoded fallback JWT signing secret",
+          "date": "2026-03-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OneUpTime's Unsandboxed Code Execution in Probe Allows Any Project Member to Achieve RCE",
+          "date": "2026-03-07",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Snipe-IT has sensitive user attributes related to account privileges that are insufficiently protected against mass assignment",
+          "date": "2026-03-06",
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-07T06:48:18.259Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
@@ -9869,48 +10048,6 @@
     },
     {
       "timestamp": "2026-03-03T22:34:14.963Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[INFO] aws - 1 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 24 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 237 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 300 patches, no changes",
-        "[INFO] postgresql - 4 patches, no changes",
-        "[INFO] redhat - 69 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 15 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 671,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "cisco",
-        "debian",
-        "github",
-        "ubuntu",
-        "aws",
-        "redhat",
-        "signal",
-        "android",
-        "postgresql",
-        "microsoft",
-        "cloudflare",
-        "crowdstrike",
-        "edge",
-        "chrome",
-        "gitlab"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-03T20:37:00.026Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
         "[INFO] aws - 1 patches, no changes",
