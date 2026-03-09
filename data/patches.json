@@ -1,7 +1,37 @@
 {
-  "lastUpdated": "2026-03-09T13:12:18.239Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-09T13:18:58.012Z",
+  "newPatches": 4,
   "patches": [
+    {
+      "title": "USN-8018-2: Python regression",
+      "date": "2026-03-09",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Python regression",
+      "description": "USN-8018-1 fixed vulnerabilities in python3. That update introduced\nregressions.  The patches for CVE-2025-15366 and CVE-2025-15367 caused\nbehavior regressions in  IMAP and POP3 handling, which upstre...",
+      "link": "https://ubuntu.com/security/notices/USN-8018-2"
+    },
+    {
+      "title": "VS Code 1.111.0",
+      "date": "2026-03-09",
+      "severity": "UNKNOWN",
+      "vendor": "visualstudio",
+      "component": "Visual Studio Code",
+      "description": "Welcome to the 1.111 release of Visual Studio Code, the first of our weekly Stable releases! This release further enhances the agent experience with agent permissions, agent-scoped hooks, easier agent",
+      "link": "https://github.com/microsoft/vscode/releases/tag/1.111.0",
+      "cves": []
+    },
+    {
+      "title": "CVE-2026-3731: libssh: libssh: Denial of Service via out-of-bounds read in SFTP extension name handler",
+      "date": "2026-03-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libssh: libssh: Denial of Service via out-of-bounds read in SFTP extension name handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3731.json",
+      "cve": "CVE-2026-3731",
+      "cvss": 5.3
+    },
     {
       "title": "AVideo has Unauthenticated IDOR - Playlist Information Disclosure",
       "date": "2026-03-07",
@@ -144,6 +174,17 @@
       "link": "https://github.com/advisories/GHSA-h343-gg57-2q67",
       "cve": "",
       "cvss": 10
+    },
+    {
+      "title": "CVE-2026-29076: cpp-httplib: cpp-httplib: Denial of Service via crafted HTTP POST request",
+      "date": "2026-03-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cpp-httplib: cpp-httplib: Denial of Service via crafted HTTP POST request",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-29076.json",
+      "cve": "CVE-2026-29076",
+      "cvss": 5.9
     },
     {
       "title": "Falcon Next-Gen SIEM Simplifies Onboarding with Sensor-Native Log Collection",
@@ -4725,6 +4766,73 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-09T13:18:58.012Z",
+      "logs": [
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 1 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 60 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 3 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 228 patches, no changes",
+        "[INFO] microsoft - 41 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 78 patches (2 new)",
+        "[INFO] signal - 3 patches, no changes",
+        "[SUCCESS] ubuntu - 23 patches (1 new)",
+        "[SUCCESS] visualstudio - 2 patches (1 new)"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 451,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "ubuntu",
+        "visualstudio",
+        "redhat",
+        "github",
+        "crowdstrike",
+        "edge",
+        "microsoft",
+        "postgresql",
+        "chrome",
+        "cisco",
+        "debian",
+        "apple",
+        "signal",
+        "aws",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-3731: libssh: libssh: Denial of Service via out-of-bounds read in SFTP extension name handler",
+          "date": "2026-03-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-29076: cpp-httplib: cpp-httplib: Denial of Service via crafted HTTP POST request",
+          "date": "2026-03-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8018-2: Python regression",
+          "date": "2026-03-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "visualstudio",
+          "title": "VS Code 1.111.0",
+          "date": "2026-03-09",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-09T13:12:18.239Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
@@ -7391,46 +7499,6 @@
     },
     {
       "timestamp": "2026-03-06T06:56:21.077Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[INFO] apple - 3 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 60 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] debian - 5 patches, no changes",
-        "[INFO] github - 257 patches, no changes",
-        "[INFO] microsoft - 66 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 54 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 24 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 485,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "chrome",
-        "cisco",
-        "github",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "apple",
-        "signal",
-        "visualstudio",
-        "aws",
-        "cloudflare",
-        "debian",
-        "android",
-        "postgresql"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-06T05:11:22.823Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
         "[INFO] apple - 3 patches, no changes",
