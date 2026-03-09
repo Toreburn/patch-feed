@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-03-09T13:17:59.026Z",
+  "lastUpdated": "2026-03-09T19:02:00.241Z",
   "health": {
-    "lastFetchAttempt": "2026-03-09T13:17:59.026Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-05T19:21:33.255Z",
-    "consecutiveEmptyFetches": 14,
+    "lastFetchAttempt": "2026-03-09T19:02:00.241Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-03-09T19:02:00.241Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Netmaker has Insufficient Authorization in Host Token Verification",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "The Authorize middleware in Netmaker incorrectly validates host JWT tokens. When a route permits host authentication (hostAllowed=true), a valid host token bypasses all subsequent authorization checks",
+      "link": "https://github.com/advisories/GHSA-hmqr-wjmj-376c",
+      "cves": [
+        "CVE-2026-29194"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "OpenClaw's elevated allowFrom accepted broader identity signals than specified within sender-scoped authorization",
       "date": "2026-03-04",

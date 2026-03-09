@@ -1,7 +1,185 @@
 {
-  "lastUpdated": "2026-03-09T18:58:37.062Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-09T19:03:16.320Z",
+  "newPatches": 19,
   "patches": [
+    {
+      "title": "Fixing request smuggling vulnerabilities in Pingora OSS deployments",
+      "date": "2026-03-09",
+      "severity": "CRITICAL",
+      "vendor": "cloudflare",
+      "component": "WAF",
+      "description": "In December 2025, Cloudflare received reports of HTTP/1.x request smuggling vulnerabilities in the Pingora open source framework when Pingora is used to build an ingress proxy. Today we are discussing...",
+      "link": "https://blog.cloudflare.com/pingora-oss-smuggling-vulnerabilities/",
+      "cve": "CVE-2026-2833"
+    },
+    {
+      "title": "Active defense: introducing a stateful vulnerability scanner for APIs",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "cloudflare",
+      "component": "WAF",
+      "description": "Security is traditionally a game of defense. You build walls, set up gates, and write rules to block traffic that looks suspicious. For years, Cloudflare has been a leader in this space: our Applicati...",
+      "link": "https://blog.cloudflare.com/vulnerability-scanner/",
+      "cve": ""
+    },
+    {
+      "title": "SiYuan: Authorization Bypass Allows Low-Privilege Publish User to Modify Notebook Content via /api/block/appendHeadingChildren",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Authorization Bypass Allows Low-Privilege Publish User to Modify Notebook Content via /api/block/appendHeadingChildren",
+      "link": "https://github.com/advisories/GHSA-f9cq-v43p-v523",
+      "cve": "CVE-2026-30926",
+      "cvss": 7.1
+    },
+    {
+      "title": "Parse Server: JWT audience validation bypass in Google, Apple, and Facebook authentication adapters",
+      "date": "2026-03-09",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server: JWT audience validation bypass in Google, Apple, and Facebook authentication adapters",
+      "link": "https://github.com/advisories/GHSA-x6fw-778m-wr9v",
+      "cve": "CVE-2026-30863",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server: GraphQL `__type` introspection bypass via inline fragments when public introspection is disabled",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server",
+      "description": "Parse Server: GraphQL `__type` introspection bypass via inline fragments when public introspection is disabled",
+      "link": "https://github.com/advisories/GHSA-q5q9-2rhp-33qw",
+      "cve": "CVE-2026-30854",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server: File metadata endpoint bypasses `beforeFind` / `afterFind` trigger authorization",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server: File metadata endpoint bypasses `beforeFind` / `afterFind` trigger authorization",
+      "link": "https://github.com/advisories/GHSA-hwx8-q9cg-mqmc",
+      "cve": "CVE-2026-30850",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server: `PagesRouter` path traversal allows reading files outside configured pages directory",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server: `PagesRouter` path traversal allows reading files outside configured pages directory",
+      "link": "https://github.com/advisories/GHSA-hm3f-q6rw-m6wh",
+      "cve": "CVE-2026-30848",
+      "cvss": null
+    },
+    {
+      "title": "OneUptime has broken access control in GitHub App installation flow that allows unauthorized project binding",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@oneuptime/common",
+      "description": "OneUptime has broken access control in GitHub App installation flow that allows unauthorized project binding",
+      "link": "https://github.com/advisories/GHSA-656w-6f6c-m9r6",
+      "cve": "CVE-2026-30920",
+      "cvss": 8.6
+    },
+    {
+      "title": "Kubewarden: Cross-namespace data exfiltration via deprecated host callback binding",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/kubewarden/kubewarden-controller",
+      "description": "Kubewarden: Cross-namespace data exfiltration via deprecated host callback binding",
+      "link": "https://github.com/advisories/GHSA-6r7f-3fwq-hq74",
+      "cve": "CVE-2026-29773",
+      "cvss": 4.3
+    },
+    {
+      "title": "Netmaker: Service User with Network Access Can Access config files with WireGuard Private Keys",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/gravitl/netmaker",
+      "description": "Netmaker: Service User with Network Access Can Access config files with WireGuard Private Keys",
+      "link": "https://github.com/advisories/GHSA-4hgg-c4rr-6h7f",
+      "cve": "CVE-2026-29196",
+      "cvss": null
+    },
+    {
+      "title": "Netmaker has Privilege Escalation from Admin to Super-Admin via User Update",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/gravitl/netmaker",
+      "description": "Netmaker has Privilege Escalation from Admin to Super-Admin via User Update",
+      "link": "https://github.com/advisories/GHSA-ch3w-9456-38v3",
+      "cve": "CVE-2026-29195",
+      "cvss": null
+    },
+    {
+      "title": "Netmaker has Insufficient Authorization in Host Token Verification",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/gravitl/netmaker",
+      "description": "Netmaker has Insufficient Authorization in Host Token Verification",
+      "link": "https://github.com/advisories/GHSA-hmqr-wjmj-376c",
+      "cve": "CVE-2026-29194",
+      "cvss": null
+    },
+    {
+      "title": "Pocket ID: OIDC authorization code validation uses AND instead of OR, allowing cross-client token exchange",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/pocket-id/pocket-id/backend",
+      "description": "Pocket ID: OIDC authorization code validation uses AND instead of OR, allowing cross-client token exchange",
+      "link": "https://github.com/advisories/GHSA-qh6q-598w-w6m2",
+      "cve": "CVE-2026-28513",
+      "cvss": 8.5
+    },
+    {
+      "title": "Pocket ID: OAuth redirect_uri validation bypass via userinfo/host confusion",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/pocket-id/pocket-id/backend",
+      "description": "Pocket ID: OAuth redirect_uri validation bypass via userinfo/host confusion",
+      "link": "https://github.com/advisories/GHSA-9h33-g3ww-mqff",
+      "cve": "CVE-2026-28512",
+      "cvss": 7.1
+    },
+    {
+      "title": "@budibase/server: Command Injection in PostgreSQL Dump Command",
+      "date": "2026-03-09",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "@budibase/server: Command Injection in PostgreSQL Dump Command",
+      "link": "https://github.com/advisories/GHSA-726g-59wr-cj4c",
+      "cve": "CVE-2026-25041",
+      "cvss": null
+    },
+    {
+      "title": "Netmaker has Insufficient Authorization in Host Token Verification",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "The Authorize middleware in Netmaker incorrectly validates host JWT tokens. When a route permits host authentication (hostAllowed=true), a valid host token bypasses all subsequent authorization checks",
+      "link": "https://github.com/advisories/GHSA-hmqr-wjmj-376c",
+      "cves": [
+        "CVE-2026-29194"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "USN-8018-2: Python regression",
       "date": "2026-03-09",
@@ -10,6 +188,24 @@
       "component": "Python regression",
       "description": "USN-8018-1 fixed vulnerabilities in python3. That update introduced\nregressions.  The patches for CVE-2025-15366 and CVE-2025-15367 caused\nbehavior regressions in  IMAP and POP3 handling, which upstre...",
       "link": "https://ubuntu.com/security/notices/USN-8018-2"
+    },
+    {
+      "title": "USN-8080-1: YARA vulnerabilities",
+      "date": "2026-03-09",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "YARA vulnerabilities",
+      "description": "Kamil Frankowicz discovered that a number of YARA's functions\ngenerated memory exceptions when processing specially crafted\nrules or files. A remote attacker could possibly use these\nissues to cause Y...",
+      "link": "https://ubuntu.com/security/notices/USN-8080-1"
+    },
+    {
+      "title": "USN-7968-2: Apache HTTP Server regression",
+      "date": "2026-03-09",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Apache HTTP Server regression",
+      "description": "USN-7968-1 fixed vulnerabilities in Apache HTTP Server. The update\nintroduced a regression in mod_md where the MDStapleOthers setting was\nignored which resulted in OCSP being broken for some domains. ...",
+      "link": "https://ubuntu.com/security/notices/USN-7968-2"
     },
     {
       "title": "VS Code 1.111.0",
@@ -174,6 +370,17 @@
       "link": "https://github.com/advisories/GHSA-h343-gg57-2q67",
       "cve": "",
       "cvss": 10
+    },
+    {
+      "title": "Apache ZooKeeper has improper handling of configuration values",
+      "date": "2026-03-07",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.apache.zookeeper:zookeeper, org.apache.zookeeper:zookeeper",
+      "description": "Apache ZooKeeper has improper handling of configuration values",
+      "link": "https://github.com/advisories/GHSA-crhr-qqj8-rpxc",
+      "cve": "CVE-2026-24308",
+      "cvss": null
     },
     {
       "title": "CVE-2026-29076: cpp-httplib: cpp-httplib: Denial of Service via crafted HTTP POST request",
@@ -4766,6 +4973,163 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-09T19:03:16.320Z",
+      "logs": [
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 1 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 60 patches, no changes",
+        "[SUCCESS] cloudflare - 4 patches (2 new)",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 3 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[SUCCESS] github - 242 patches (14 new)",
+        "[INFO] microsoft - 41 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 78 patches, no changes",
+        "[SUCCESS] signal - 4 patches (1 new)",
+        "[SUCCESS] ubuntu - 25 patches (2 new)",
+        "[INFO] visualstudio - 2 patches, no changes"
+      ],
+      "newPatchCount": 19,
+      "totalPatches": 470,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "cloudflare",
+        "github",
+        "signal",
+        "ubuntu",
+        "visualstudio",
+        "redhat",
+        "crowdstrike",
+        "edge",
+        "microsoft",
+        "postgresql",
+        "chrome",
+        "cisco",
+        "debian",
+        "apple",
+        "aws"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cloudflare",
+          "title": "Fixing request smuggling vulnerabilities in Pingora OSS deployments",
+          "date": "2026-03-09",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "cloudflare",
+          "title": "Active defense: introducing a stateful vulnerability scanner for APIs",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Authorization Bypass Allows Low-Privilege Publish User to Modify Notebook Content via /api/block/appendHeadingChildren",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server: JWT audience validation bypass in Google, Apple, and Facebook authentication adapters",
+          "date": "2026-03-09",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server: GraphQL `__type` introspection bypass via inline fragments when public introspection is disabled",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server: File metadata endpoint bypasses `beforeFind` / `afterFind` trigger authorization",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server: `PagesRouter` path traversal allows reading files outside configured pages directory",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OneUptime has broken access control in GitHub App installation flow that allows unauthorized project binding",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Kubewarden: Cross-namespace data exfiltration via deprecated host callback binding",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Netmaker: Service User with Network Access Can Access config files with WireGuard Private Keys",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Netmaker has Privilege Escalation from Admin to Super-Admin via User Update",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Netmaker has Insufficient Authorization in Host Token Verification",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Pocket ID: OIDC authorization code validation uses AND instead of OR, allowing cross-client token exchange",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Pocket ID: OAuth redirect_uri validation bypass via userinfo/host confusion",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "@budibase/server: Command Injection in PostgreSQL Dump Command",
+          "date": "2026-03-09",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Apache ZooKeeper has improper handling of configuration values",
+          "date": "2026-03-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "signal",
+          "title": "Netmaker has Insufficient Authorization in Host Token Verification",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8080-1: YARA vulnerabilities",
+          "date": "2026-03-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-7968-2: Apache HTTP Server regression",
+          "date": "2026-03-09",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-09T18:58:37.061Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
@@ -7465,46 +7829,6 @@
     },
     {
       "timestamp": "2026-03-06T13:04:32.898Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[INFO] apple - 3 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 60 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] debian - 5 patches, no changes",
-        "[INFO] github - 257 patches, no changes",
-        "[INFO] microsoft - 66 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 54 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 24 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 485,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "chrome",
-        "cisco",
-        "github",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "apple",
-        "signal",
-        "visualstudio",
-        "aws",
-        "cloudflare",
-        "debian",
-        "android",
-        "postgresql"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-06T10:39:55.262Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
         "[INFO] apple - 3 patches, no changes",

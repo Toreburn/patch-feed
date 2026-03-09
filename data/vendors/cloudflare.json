@@ -1,16 +1,36 @@
 {
   "vendor": "cloudflare",
-  "lastUpdated": "2026-03-09T13:17:01.459Z",
+  "lastUpdated": "2026-03-09T19:01:13.050Z",
   "health": {
-    "lastFetchAttempt": "2026-03-09T13:17:01.459Z",
+    "lastFetchAttempt": "2026-03-09T19:01:13.050Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-09T13:17:01.459Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-03-09T19:01:13.050Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Fixing request smuggling vulnerabilities in Pingora OSS deployments",
+      "date": "2026-03-09",
+      "severity": "CRITICAL",
+      "vendor": "cloudflare",
+      "component": "WAF",
+      "description": "In December 2025, Cloudflare received reports of HTTP/1.x request smuggling vulnerabilities in the Pingora open source framework when Pingora is used to build an ingress proxy. Today we are discussing...",
+      "link": "https://blog.cloudflare.com/pingora-oss-smuggling-vulnerabilities/",
+      "cve": "CVE-2026-2833"
+    },
+    {
+      "title": "Active defense: introducing a stateful vulnerability scanner for APIs",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "cloudflare",
+      "component": "WAF",
+      "description": "Security is traditionally a game of defense. You build walls, set up gates, and write rules to block traffic that looks suspicious. For years, Cloudflare has been a leader in this space: our Applicati...",
+      "link": "https://blog.cloudflare.com/vulnerability-scanner/",
+      "cve": ""
+    },
     {
       "title": "How Cloudy translates complex security into human action",
       "date": "2026-03-03",

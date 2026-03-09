@@ -1,16 +1,159 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-03-09T13:17:14.844Z",
+  "lastUpdated": "2026-03-09T19:01:23.705Z",
   "health": {
-    "lastFetchAttempt": "2026-03-09T13:17:14.844Z",
+    "lastFetchAttempt": "2026-03-09T19:01:23.705Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-09T13:17:14.844Z",
+    "lastFetchNewPatches": 14,
+    "lastSuccessWithData": "2026-03-09T19:01:23.705Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "SiYuan: Authorization Bypass Allows Low-Privilege Publish User to Modify Notebook Content via /api/block/appendHeadingChildren",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Authorization Bypass Allows Low-Privilege Publish User to Modify Notebook Content via /api/block/appendHeadingChildren",
+      "link": "https://github.com/advisories/GHSA-f9cq-v43p-v523",
+      "cve": "CVE-2026-30926",
+      "cvss": 7.1
+    },
+    {
+      "title": "Parse Server: JWT audience validation bypass in Google, Apple, and Facebook authentication adapters",
+      "date": "2026-03-09",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server: JWT audience validation bypass in Google, Apple, and Facebook authentication adapters",
+      "link": "https://github.com/advisories/GHSA-x6fw-778m-wr9v",
+      "cve": "CVE-2026-30863",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server: GraphQL `__type` introspection bypass via inline fragments when public introspection is disabled",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server",
+      "description": "Parse Server: GraphQL `__type` introspection bypass via inline fragments when public introspection is disabled",
+      "link": "https://github.com/advisories/GHSA-q5q9-2rhp-33qw",
+      "cve": "CVE-2026-30854",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server: File metadata endpoint bypasses `beforeFind` / `afterFind` trigger authorization",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server: File metadata endpoint bypasses `beforeFind` / `afterFind` trigger authorization",
+      "link": "https://github.com/advisories/GHSA-hwx8-q9cg-mqmc",
+      "cve": "CVE-2026-30850",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server: `PagesRouter` path traversal allows reading files outside configured pages directory",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server: `PagesRouter` path traversal allows reading files outside configured pages directory",
+      "link": "https://github.com/advisories/GHSA-hm3f-q6rw-m6wh",
+      "cve": "CVE-2026-30848",
+      "cvss": null
+    },
+    {
+      "title": "OneUptime has broken access control in GitHub App installation flow that allows unauthorized project binding",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@oneuptime/common",
+      "description": "OneUptime has broken access control in GitHub App installation flow that allows unauthorized project binding",
+      "link": "https://github.com/advisories/GHSA-656w-6f6c-m9r6",
+      "cve": "CVE-2026-30920",
+      "cvss": 8.6
+    },
+    {
+      "title": "Kubewarden: Cross-namespace data exfiltration via deprecated host callback binding",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/kubewarden/kubewarden-controller",
+      "description": "Kubewarden: Cross-namespace data exfiltration via deprecated host callback binding",
+      "link": "https://github.com/advisories/GHSA-6r7f-3fwq-hq74",
+      "cve": "CVE-2026-29773",
+      "cvss": 4.3
+    },
+    {
+      "title": "Netmaker: Service User with Network Access Can Access config files with WireGuard Private Keys",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/gravitl/netmaker",
+      "description": "Netmaker: Service User with Network Access Can Access config files with WireGuard Private Keys",
+      "link": "https://github.com/advisories/GHSA-4hgg-c4rr-6h7f",
+      "cve": "CVE-2026-29196",
+      "cvss": null
+    },
+    {
+      "title": "Netmaker has Privilege Escalation from Admin to Super-Admin via User Update",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/gravitl/netmaker",
+      "description": "Netmaker has Privilege Escalation from Admin to Super-Admin via User Update",
+      "link": "https://github.com/advisories/GHSA-ch3w-9456-38v3",
+      "cve": "CVE-2026-29195",
+      "cvss": null
+    },
+    {
+      "title": "Netmaker has Insufficient Authorization in Host Token Verification",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/gravitl/netmaker",
+      "description": "Netmaker has Insufficient Authorization in Host Token Verification",
+      "link": "https://github.com/advisories/GHSA-hmqr-wjmj-376c",
+      "cve": "CVE-2026-29194",
+      "cvss": null
+    },
+    {
+      "title": "Pocket ID: OIDC authorization code validation uses AND instead of OR, allowing cross-client token exchange",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/pocket-id/pocket-id/backend",
+      "description": "Pocket ID: OIDC authorization code validation uses AND instead of OR, allowing cross-client token exchange",
+      "link": "https://github.com/advisories/GHSA-qh6q-598w-w6m2",
+      "cve": "CVE-2026-28513",
+      "cvss": 8.5
+    },
+    {
+      "title": "Pocket ID: OAuth redirect_uri validation bypass via userinfo/host confusion",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/pocket-id/pocket-id/backend",
+      "description": "Pocket ID: OAuth redirect_uri validation bypass via userinfo/host confusion",
+      "link": "https://github.com/advisories/GHSA-9h33-g3ww-mqff",
+      "cve": "CVE-2026-28512",
+      "cvss": 7.1
+    },
+    {
+      "title": "@budibase/server: Command Injection in PostgreSQL Dump Command",
+      "date": "2026-03-09",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "@budibase/server: Command Injection in PostgreSQL Dump Command",
+      "link": "https://github.com/advisories/GHSA-726g-59wr-cj4c",
+      "cve": "CVE-2026-25041",
+      "cvss": null
+    },
     {
       "title": "AVideo has Unauthenticated IDOR - Playlist Information Disclosure",
       "date": "2026-03-07",
@@ -153,6 +296,17 @@
       "link": "https://github.com/advisories/GHSA-h343-gg57-2q67",
       "cve": "",
       "cvss": 10
+    },
+    {
+      "title": "Apache ZooKeeper has improper handling of configuration values",
+      "date": "2026-03-07",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.apache.zookeeper:zookeeper, org.apache.zookeeper:zookeeper",
+      "description": "Apache ZooKeeper has improper handling of configuration values",
+      "link": "https://github.com/advisories/GHSA-crhr-qqj8-rpxc",
+      "cve": "CVE-2026-24308",
+      "cvss": null
     },
     {
       "title": "Flowise has Arbitrary File Upload via MIME Spoofing",
