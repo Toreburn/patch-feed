@@ -1,16 +1,38 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-03-09T19:01:56.897Z",
+  "lastUpdated": "2026-03-10T02:33:05.495Z",
   "health": {
-    "lastFetchAttempt": "2026-03-09T19:01:56.896Z",
+    "lastFetchAttempt": "2026-03-10T02:33:05.495Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 87,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-09T19:01:56.896Z",
+    "lastFetchParsedItems": 85,
+    "lastFetchNewPatches": 11,
+    "lastSuccessWithData": "2026-03-10T02:33:05.495Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2024-14027: kernel: xattr: switch to CLASS(fd)",
+      "date": "2026-03-09",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xattr: switch to CLASS(fd)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2024-14027.json",
+      "cve": "CVE-2024-14027",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2025-70034: ssh2: ssh2: Denial of Service due to inefficient regular expression complexity",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ssh2: ssh2: Denial of Service due to inefficient regular expression complexity",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-70034.json",
+      "cve": "CVE-2025-70034",
+      "cvss": 6.5
+    },
     {
       "title": "CVE-2026-3731: libssh: libssh: Denial of Service via out-of-bounds read in SFTP extension name handler",
       "date": "2026-03-08",
@@ -23,6 +45,17 @@
       "cvss": 5.3
     },
     {
+      "title": "CVE-2026-3713: libpng: libpng: Heap-based buffer overflow in pnm2png allows information disclosure and denial of service",
+      "date": "2026-03-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libpng: libpng: Heap-based buffer overflow in pnm2png allows information disclosure and denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3713.json",
+      "cve": "CVE-2026-3713",
+      "cvss": 5.3
+    },
+    {
       "title": "CVE-2026-29076: cpp-httplib: cpp-httplib: Denial of Service via crafted HTTP POST request",
       "date": "2026-03-07",
       "severity": "MEDIUM",
@@ -32,6 +65,72 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-29076.json",
       "cve": "CVE-2026-29076",
       "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-29786: node-tar: hardlink path traversal via drive-relative linkpath",
+      "date": "2026-03-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "node-tar: hardlink path traversal via drive-relative linkpath",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-29786.json",
+      "cve": "CVE-2026-29786",
+      "cvss": 8.6
+    },
+    {
+      "title": "CVE-2026-29186: backstage/plugin-techdocs-node: TechDocs Mkdocs configuration key enables arbitrary code execution",
+      "date": "2026-03-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "backstage/plugin-techdocs-node: TechDocs Mkdocs configuration key enables arbitrary code execution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-29186.json",
+      "cve": "CVE-2026-29186",
+      "cvss": 9.1
+    },
+    {
+      "title": "CVE-2026-29184: @backstage/plugin-scaffolder-backend: Backstage Scaffolder Backend: Information disclosure via malicious template bypass",
+      "date": "2026-03-07",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@backstage/plugin-scaffolder-backend: Backstage Scaffolder Backend: Information disclosure via malicious template bypassing log redaction",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-29184.json",
+      "cve": "CVE-2026-29184",
+      "cvss": 2
+    },
+    {
+      "title": "CVE-2026-24308: Apache ZooKeeper: Apache ZooKeeper: Information disclosure via improper handling of configuration values",
+      "date": "2026-03-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Apache ZooKeeper: Apache ZooKeeper: Information disclosure via improper handling of configuration values",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-24308.json",
+      "cve": "CVE-2026-24308",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-24281: Apache ZooKeeper: Apache ZooKeeper: Impersonation of servers or clients via reverse DNS spoofing",
+      "date": "2026-03-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Apache ZooKeeper: Apache ZooKeeper: Impersonation of servers or clients via reverse DNS spoofing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-24281.json",
+      "cve": "CVE-2026-24281",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-30827: express-rate-limit: express-rate-limit: Denial of Service for IPv4 clients due to incorrect IPv6 subnet masking",
+      "date": "2026-03-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "express-rate-limit: express-rate-limit: Denial of Service for IPv4 clients due to incorrect IPv6 subnet masking",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30827.json",
+      "cve": "CVE-2026-30827",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-23925: zabbix: Zabbix: Confidentiality loss via improper access control in configuration.import API",
@@ -274,6 +373,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-69651.json",
       "cve": "CVE-2025-69651",
       "cvss": 2.8
+    },
+    {
+      "title": "CVE-2025-69650: binutils: double free in readelf via crafted ELF binary with malformed relocation data",
+      "date": "2026-03-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "binutils: double free in readelf via crafted ELF binary with malformed relocation data",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-69650.json",
+      "cve": "CVE-2025-69650",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2025-69649: binutils: NULL pointer dereference in readelf via crafted ELF binary with malformed header fields",
+      "date": "2026-03-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "binutils: NULL pointer dereference in readelf via crafted ELF binary with malformed header fields",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-69649.json",
+      "cve": "CVE-2025-69649",
+      "cvss": 3.3
     },
     {
       "title": "CVE-2026-27982: django-allauth: django-allauth: Open redirect via crafted URL in SAML IdP initiated SSO",
