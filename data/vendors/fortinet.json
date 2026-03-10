@@ -1,16 +1,236 @@
 {
   "vendor": "fortinet",
-  "lastUpdated": "2026-03-10T13:14:58.881Z",
+  "lastUpdated": "2026-03-10T18:58:46.426Z",
   "health": {
-    "lastFetchAttempt": "2026-03-10T13:14:58.881Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-02-28T06:48:29.088Z",
-    "consecutiveEmptyFetches": 38,
+    "lastFetchAttempt": "2026-03-10T18:58:46.426Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 22,
+    "lastFetchNewPatches": 22,
+    "lastSuccessWithData": "2026-03-10T18:58:46.426Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Arbitrary file deletion in administrative interface",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 6.0 An Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability [CWE-88] in FortiDeceptor WEBUI may allow a privileged attacker with super-admin p...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-094",
+      "cve": ""
+    },
+    {
+      "title": "Authentication Lockout Bypass via Race Condition",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 3.4 An improper restriction of excessive authentication attempts vulnerability [CWE-307] in FortiManager and FortiAnalyzer may allow an attacker to bypass bruteforce protections via expl...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-079",
+      "cve": ""
+    },
+    {
+      "title": "Authentication rate-limit bypass permits to brute force admin logins",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 7.3 An Improper Control of Interaction Frequency vulnerability [CWE-799] in FortiWeb may allow a remote unauthenticated attacker to bypass the authentication rate-limit via crafted reque...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-082",
+      "cve": ""
+    },
+    {
+      "title": "Buffer Overflow in LLDP OUI field",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 7.7 A Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability [CWE-120] in FortiSwitchAXFixed may allow an unauthenticated attacker within the same adjacent ...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-086",
+      "cve": ""
+    },
+    {
+      "title": "Buffer overflow via fgtupdates service",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 7.0 A Stack-based Buffer Overflow vulnerability [CWE-121] in FortiManager fgtupdates service may allow a remote unauthenticated attacker to execute unauthorized commands via crafted requ...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-098",
+      "cve": ""
+    },
+    {
+      "title": "Format string vulnerability in fazsvcd",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 6.5 A use of externally-controlled format string vulnerability [CWE-134] in FortiAnalyzer, FortiAnalyzer Cloud, FortiManager and FortiManager Cloud fazsvcd daemon may allow a remote priv...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-092",
+      "cve": ""
+    },
+    {
+      "title": "Insecure Exposure of Plaintext Passwords in Debug Logs",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 3.8 A Cleartext Storage of Sensitive Information vulnerability [CWE-312] in FortiMail, FortiVoice and FortiRecorder debug logs may allow an authenticated malicious administrator to obtai...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-080",
+      "cve": ""
+    },
+    {
+      "title": "Lack of TLS Certificate Validation during initial SSO Authentication",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 6.3 An improper certificate validation [CWE-295] vulnerability in the FortiManager GUI may allow a remote unauthenticated attacker to view confidential information via a man in the middl...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-078",
+      "cve": ""
+    },
+    {
+      "title": "Local privilege escalation via improper symlink following",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 7.4 A UNIX symbolic link (Symlink) Following vulnerability [CWE-61] in FortiClientLinux may allow a local and unprivileged user to escalate their privileges to root. Revised on 2026-03-1...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-083",
+      "cve": ""
+    },
+    {
+      "title": "MFA Bypass in GUI",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 6.8 An authentication bypass using an alternate path or channel vulnerability [CWE-288] in FortiManager and FortiAnalyzer multifactor authentication may allow an attacker with knowledge ...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-090",
+      "cve": ""
+    },
+    {
+      "title": "Null Pointer Dereference in Anti-Defacement feature",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 2.5 A NULL Pointer Dereference vulnerability [CWE-476] in FortiWeb may allow an authenticated attacker to crash the HTTP daemon via crafted HTTP requests. Revised on 2026-03-10 00:00:00",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-089",
+      "cve": ""
+    },
+    {
+      "title": "OS Command injection in FortiWeb API",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "FortiWeb",
+      "description": "CVSSv3 Score: 6.7 An OS Command Injection vulnerability [CWE-78] in FortiWeb API may allow an authenticated attacked to execute arbitrary commands via a specialy crafted HTTP request. Revised on 2026-...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-088",
+      "cve": ""
+    },
+    {
+      "title": "OS command injection on vmimages update feature",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 6.7 An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] in FortiSandbox Cloud WEB UI may allow a privileged attacker with...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-096",
+      "cve": ""
+    },
+    {
+      "title": "Path traversal vulnerability in FortiSOAR Agent Connector Bridge server",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 5.5 An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in FortiSOAR Agent Connector Bridge may allow an unauthenticated attacker to ...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-084",
+      "cve": ""
+    },
+    {
+      "title": "Privilege escalation using undocumented CLI command",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 6.4 An Inclusion of Undocumented Features [CWE-1242] in FortiManager and FortiAnalyzer CLI may allow a remote authenticated read-only admin with CLI access to escalate their privilege vi...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-081",
+      "cve": ""
+    },
+    {
+      "title": "Protected hostname bypass",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 5.0 An authentication bypass by spoofing [CWE-290] vulnerability in FortiWeb protected hostname feature may allow a remote unauthenticated attacker to bypass hostname restrictions via a ...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-097",
+      "cve": ""
+    },
+    {
+      "title": "Reflected Cross Site Scripting (XSS) in error page",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 4.1 An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') [CWE-79] in FortiSIEM's error page may allow a remote unauthenticated attacker to provide arbi...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-077",
+      "cve": ""
+    },
+    {
+      "title": "SQL injection in jsonrpc api",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 5.6 An Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability [CWE-89] in FortiAnalyzer and FortiAnalyzer-BigData API may allow an authenticat...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-095",
+      "cve": ""
+    },
+    {
+      "title": "Stack buffer overflow in API",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 5.9 A Stack-based Buffer Overflow vulnerability [CWE-121] in FortiWeb may allow a remote authenticated attacker who can bypass stack protection and ASLR to execute arbitrary code or comm...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-093",
+      "cve": ""
+    },
+    {
+      "title": "Stack-based Buffer Overflow in API protection",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 5.9 A Stack-based Buffer Overflow vulnerability [CWE-121] in FortiWeb may allow a remote authenticated attacker to execute arbitrary code or commands via crafted HTTP requests. Success o...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-087",
+      "cve": ""
+    },
+    {
+      "title": "XSS in LDAP server option",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 4.6 An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability [CWE-79] in FortiSandbox LDAP Server feature may allow an authenticated privileg...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-091",
+      "cve": ""
+    },
+    {
+      "title": "shell command limitation bypass by SSH local config overriding",
+      "date": "2026-03-10",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 5.1 An Improper Access Control vulnerability [CWE-284] in FortiSwitchAXFixed may allow an authenticated admin to execute system commands via a specifically crafted SSH config file. Revis...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-085",
+      "cve": ""
+    },
     {
       "title": "SQL injection in forward module",
       "date": "2026-02-21",
