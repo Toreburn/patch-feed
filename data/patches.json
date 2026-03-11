@@ -1,7 +1,534 @@
 {
-  "lastUpdated": "2026-03-11T02:24:00.614Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-11T02:33:38.839Z",
+  "newPatches": 53,
   "patches": [
+    {
+      "title": "Quill has DoS via unbounded read of HTTP response body during notarization",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/anchore/quill",
+      "description": "Quill has DoS via unbounded read of HTTP response body during notarization",
+      "link": "https://github.com/advisories/GHSA-g32c-4pvp-769g",
+      "cve": "CVE-2026-31960",
+      "cvss": 5.3
+    },
+    {
+      "title": "Quill has unbounded memory allocation via unvalidated size fields in Mach-O binary parsing",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/anchore/quill",
+      "description": "Quill has unbounded memory allocation via unvalidated size fields in Mach-O binary parsing",
+      "link": "https://github.com/advisories/GHSA-xj69-m9qq-8m94",
+      "cve": "CVE-2026-31961",
+      "cvss": 5.5
+    },
+    {
+      "title": "Quill vulnerable to SSRF via unvalidated URL from Apple notarization log retrieval",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/anchore/quill",
+      "description": "Quill vulnerable to SSRF via unvalidated URL from Apple notarization log retrieval",
+      "link": "https://github.com/advisories/GHSA-7q3q-5px6-4c5p",
+      "cve": "CVE-2026-31959",
+      "cvss": 5.3
+    },
+    {
+      "title": "@siteboon/claude-code-ui Vulnerable to Unauthenticated RCE via WebSocket Shell Injection",
+      "date": "2026-03-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@siteboon/claude-code-ui",
+      "description": "@siteboon/claude-code-ui Vulnerable to Unauthenticated RCE via WebSocket Shell Injection",
+      "link": "https://github.com/advisories/GHSA-gv8f-wpm2-m5wr",
+      "cve": "CVE-2026-31975",
+      "cvss": 9.8
+    },
+    {
+      "title": "Parse Server vulnerable to user enumeration via email verification endpoint",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server vulnerable to user enumeration via email verification endpoint",
+      "link": "https://github.com/advisories/GHSA-w54v-hf9p-8856",
+      "cve": "CVE-2026-31901",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server's MFA recovery codes not consumed after use",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server's MFA recovery codes not consumed after use",
+      "link": "https://github.com/advisories/GHSA-4hf6-3x24-c9m8",
+      "cve": "CVE-2026-31875",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server has a protected fields bypass via dot-notation in query and sort",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server has a protected fields bypass via dot-notation in query and sort",
+      "link": "https://github.com/advisories/GHSA-r2m8-pxm9-9c4g",
+      "cve": "CVE-2026-31872",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server vulnerable to SQL Injection via dot-notation sub-key name in `Increment` operation on PostgreSQL",
+      "date": "2026-03-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server vulnerable to SQL Injection via dot-notation sub-key name in `Increment` operation on PostgreSQL",
+      "link": "https://github.com/advisories/GHSA-gqpp-xgvh-9h7h",
+      "cve": "CVE-2026-31871",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server vulnerable to stored XSS via file upload of HTML-renderable file types",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server vulnerable to stored XSS via file upload of HTML-renderable file types",
+      "link": "https://github.com/advisories/GHSA-v5hf-f4c3-m5rv",
+      "cve": "CVE-2026-31868",
+      "cvss": null
+    },
+    {
+      "title": "flagd Vulnerable to Allocation of Resources Without Limits or Throttling",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/open-feature/flagd/flagd",
+      "description": "flagd Vulnerable to Allocation of Resources Without Limits or Throttling",
+      "link": "https://github.com/advisories/GHSA-rmrf-g9r3-73pm",
+      "cve": "CVE-2026-31866",
+      "cvss": 7.5
+    },
+    {
+      "title": "Terraform Provider for SendGrid: TLS Session Resumption Bypasses Certificate Authority Trust Store Modifications in Go",
+      "date": "2026-03-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/arslanbekov/terraform-provider-sendgrid",
+      "description": "Terraform Provider for SendGrid: TLS Session Resumption Bypasses Certificate Authority Trust Store Modifications in Go",
+      "link": "https://github.com/advisories/GHSA-j443-wcqq-xprh",
+      "cve": "",
+      "cvss": 10
+    },
+    {
+      "title": "Hono vulnerable to Prototype Pollution possible through __proto__ key allowed in parseBody({ dot: true })",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "hono",
+      "description": "Hono vulnerable to Prototype Pollution possible through __proto__ key allowed in parseBody({ dot: true })",
+      "link": "https://github.com/advisories/GHSA-v8w9-8mx6-g223",
+      "cve": "",
+      "cvss": 4.8
+    },
+    {
+      "title": "actix-web-lab has host header poisoning in redirect middleware can generate attacker-controlled absolute redirects",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "actix-web-lab",
+      "description": "actix-web-lab has host header poisoning in redirect middleware can generate attacker-controlled absolute redirects",
+      "link": "https://github.com/advisories/GHSA-vhj5-x93p-67jw",
+      "cve": "",
+      "cvss": 5.4
+    },
+    {
+      "title": "CraftCMS's `ElementSearchController` Affected by Blind SQL Injection",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "craftcms/cms",
+      "description": "CraftCMS's `ElementSearchController` Affected by Blind SQL Injection",
+      "link": "https://github.com/advisories/GHSA-g7j6-fmwx-7vp8",
+      "cve": "CVE-2026-31858",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server vulnerable to SQL injection via `Increment` operation on nested object field in PostgreSQL",
+      "date": "2026-03-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server vulnerable to SQL injection via `Increment` operation on nested object field in PostgreSQL",
+      "link": "https://github.com/advisories/GHSA-q3vj-96h2-gwvg",
+      "cve": "CVE-2026-31856",
+      "cvss": null
+    },
+    {
+      "title": "CraftCMS vulnerable to reflective XSS via incomplete return URL sanitization",
+      "date": "2026-03-11",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "craftcms/cms, craftcms/cms",
+      "description": "CraftCMS vulnerable to reflective XSS via incomplete return URL sanitization",
+      "link": "https://github.com/advisories/GHSA-fvwq-45qv-xvhv",
+      "cve": "CVE-2026-31859",
+      "cvss": null
+    },
+    {
+      "title": "@siteboon/claude-code-ui is Vulnerable to Command Injection via Multiple Parameters",
+      "date": "2026-03-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@siteboon/claudecodeui",
+      "description": "@siteboon/claude-code-ui is Vulnerable to Command Injection via Multiple Parameters",
+      "link": "https://github.com/advisories/GHSA-f2fc-vc88-6w7q",
+      "cve": "CVE-2026-31862",
+      "cvss": 9.1
+    },
+    {
+      "title": "Umbraco Backoffice API Allows Unauthorized Modification of Domain Data",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "Umbraco.Cms, Umbraco.Cms",
+      "description": "Umbraco Backoffice API Allows Unauthorized Modification of Domain Data",
+      "link": "https://github.com/advisories/GHSA-fpvf-fvp5-996r",
+      "cve": "CVE-2026-31832",
+      "cvss": 5.4
+    },
+    {
+      "title": "sigstore-ruby verifier returns success for DSSE bundles with mismatched in-toto subject digest",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "sigstore",
+      "description": "sigstore-ruby verifier returns success for DSSE bundles with mismatched in-toto subject digest",
+      "link": "https://github.com/advisories/GHSA-mhg6-2q2v-9h2c",
+      "cve": "CVE-2026-31830",
+      "cvss": 7.5
+    },
+    {
+      "title": "Flowise affected by Server-Side Request Forgery (SSRF) in HTTP Node Leading to Internal Network Access",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise affected by Server-Side Request Forgery (SSRF) in HTTP Node Leading to Internal Network Access",
+      "link": "https://github.com/advisories/GHSA-fvcw-9w9r-pxc7",
+      "cve": "CVE-2026-31829",
+      "cvss": 7.1
+    },
+    {
+      "title": "Parse Server vulnerable to LDAP injection via unsanitized user input in DN and group filter construction",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server vulnerable to LDAP injection via unsanitized user input in DN and group filter construction",
+      "link": "https://github.com/advisories/GHSA-7m6r-fhh7-r47c",
+      "cve": "CVE-2026-31828",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server: Classes `_GraphQLConfig` and `_Audience` master key bypass via generic class routes",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server: Classes `_GraphQLConfig` and `_Audience` master key bypass via generic class routes",
+      "link": "https://github.com/advisories/GHSA-7xg7-rqf6-pw6c",
+      "cve": "CVE-2026-31800",
+      "cvss": null
+    },
+    {
+      "title": "@appium/support has a Zip Slip arbitrary file write in its ZIP extraction",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@appium/support",
+      "description": "@appium/support has a Zip Slip arbitrary file write in its ZIP extraction",
+      "link": "https://github.com/advisories/GHSA-rfx7-4xw3-gh4m",
+      "cve": "CVE-2026-30973",
+      "cvss": 6.5
+    },
+    {
+      "title": "Parse Server has a rate limit bypass via batch request endpoint",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server has a rate limit bypass via batch request endpoint",
+      "link": "https://github.com/advisories/GHSA-775h-3xrc-c228",
+      "cve": "CVE-2026-30972",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server OAuth2 authentication adapter account takeover via identity spoofing",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server OAuth2 authentication adapter account takeover via identity spoofing",
+      "link": "https://github.com/advisories/GHSA-fr88-w35c-r596",
+      "cve": "CVE-2026-30967",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server has role escalation and CLP bypass via direct `_Join` table write",
+      "date": "2026-03-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server has role escalation and CLP bypass via direct `_Join` table write",
+      "link": "https://github.com/advisories/GHSA-5f92-jrq3-28rc",
+      "cve": "CVE-2026-30966",
+      "cvss": 10
+    },
+    {
+      "title": "Parse Server vulnerable to session token exfiltration via `redirectClassNameForKey` query parameter",
+      "date": "2026-03-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server vulnerable to session token exfiltration via `redirectClassNameForKey` query parameter",
+      "link": "https://github.com/advisories/GHSA-6r2j-cxgf-495f",
+      "cve": "CVE-2026-30965",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server has a protected fields bypass via logical query operators",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server has a protected fields bypass via logical query operators",
+      "link": "https://github.com/advisories/GHSA-72hp-qff8-4pvv",
+      "cve": "CVE-2026-30962",
+      "cvss": null
+    },
+    {
+      "title": "Sequelize v6 Vulnerable to SQL Injection via JSON Column Cast Type",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "sequelize",
+      "description": "Sequelize v6 Vulnerable to SQL Injection via JSON Column Cast Type",
+      "link": "https://github.com/advisories/GHSA-6457-6jrx-69cr",
+      "cve": "CVE-2026-30951",
+      "cvss": 7.5
+    },
+    {
+      "title": "Parse Server missing audience validation in Keycloak authentication adapter",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server missing audience validation in Keycloak authentication adapter",
+      "link": "https://github.com/advisories/GHSA-48mh-j4p5-7j9v",
+      "cve": "CVE-2026-30949",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server vulnerable to stored cross-site scripting (XSS) via SVG file upload",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server vulnerable to stored cross-site scripting (XSS) via SVG file upload",
+      "link": "https://github.com/advisories/GHSA-hcj7-6gxh-24ww",
+      "cve": "CVE-2026-30948",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server has a bypass of class-level permissions in LiveQuery",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server has a bypass of class-level permissions in LiveQuery",
+      "link": "https://github.com/advisories/GHSA-7ch5-98q2-7289",
+      "cve": "CVE-2026-30947",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server affected by denial-of-service via unbounded query complexity in REST and GraphQL API",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server affected by denial-of-service via unbounded query complexity in REST and GraphQL API",
+      "link": "https://github.com/advisories/GHSA-cmj3-wx7h-ffvg",
+      "cve": "CVE-2026-30946",
+      "cvss": null
+    },
+    {
+      "title": "StudioCMS: IDOR — Arbitrary API Token Revocation Leading to Denial of Service",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "studiocms",
+      "description": "StudioCMS: IDOR — Arbitrary API Token Revocation Leading to Denial of Service",
+      "link": "https://github.com/advisories/GHSA-8rgj-vrfr-6hqr",
+      "cve": "CVE-2026-30945",
+      "cvss": 7.1
+    },
+    {
+      "title": "Parse Server has a NoSQL injection via token type in password reset and email verification endpoints",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server has a NoSQL injection via token type in password reset and email verification endpoints",
+      "link": "https://github.com/advisories/GHSA-vgjh-hmwf-c588",
+      "cve": "CVE-2026-30941",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: manipulated stream length values can exhaust RAM",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: manipulated stream length values can exhaust RAM",
+      "link": "https://github.com/advisories/GHSA-hqmh-ppp3-xvm7",
+      "cve": "CVE-2026-31826",
+      "cvss": null
+    },
+    {
+      "title": "Sylius has a DQL Injection via API Order Filters",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "sylius/sylius, sylius/sylius, sylius/sylius",
+      "description": "Sylius has a DQL Injection via API Order Filters",
+      "link": "https://github.com/advisories/GHSA-xcwx-r2gw-w93m",
+      "cve": "CVE-2026-31825",
+      "cvss": 5.3
+    },
+    {
+      "title": "Sylius has a Promotion Usage Limit Bypass via Race Condition",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "sylius/sylius, sylius/sylius, sylius/sylius",
+      "description": "Sylius has a Promotion Usage Limit Bypass via Race Condition",
+      "link": "https://github.com/advisories/GHSA-7mp4-25j8-hp5q",
+      "cve": "CVE-2026-31824",
+      "cvss": 8.2
+    },
+    {
+      "title": "Sylius Vulnerable to Authenticated Stored XSS",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "sylius/sylius, sylius/sylius, sylius/sylius",
+      "description": "Sylius Vulnerable to Authenticated Stored XSS",
+      "link": "https://github.com/advisories/GHSA-mx4q-xxc9-pf5q",
+      "cve": "CVE-2026-31823",
+      "cvss": 4.8
+    },
+    {
+      "title": "Sylius has a XSS vulnerability in checkout login form",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "sylius/sylius, sylius/sylius, sylius/sylius",
+      "description": "Sylius has a XSS vulnerability in checkout login form",
+      "link": "https://github.com/advisories/GHSA-vgh8-c6fp-7gcg",
+      "cve": "CVE-2026-31822",
+      "cvss": null
+    },
+    {
+      "title": "Sylius is Missing Authorization in API v2 Add Item Endpoint",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "sylius/sylius, sylius/sylius, sylius/sylius",
+      "description": "Sylius is Missing Authorization in API v2 Add Item Endpoint",
+      "link": "https://github.com/advisories/GHSA-wjmg-4cq5-m8hg",
+      "cve": "CVE-2026-31821",
+      "cvss": null
+    },
+    {
+      "title": "Sylius affected by IDOR in Cart and Checkout LiveComponents",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "sylius/sylius, sylius/sylius, sylius/sylius",
+      "description": "Sylius affected by IDOR in Cart and Checkout LiveComponents",
+      "link": "https://github.com/advisories/GHSA-2xc6-348p-c2x6",
+      "cve": "CVE-2026-31820",
+      "cvss": null
+    },
+    {
+      "title": "Sylius has an Open Redirect via Referer Header",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "sylius/sylius, sylius/sylius, sylius/sylius",
+      "description": "Sylius has an Open Redirect via Referer Header",
+      "link": "https://github.com/advisories/GHSA-9ffx-f77r-756w",
+      "cve": "CVE-2026-31819",
+      "cvss": null
+    },
+    {
+      "title": "Wisp Vulnerable to Path Traversal",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "wisp",
+      "description": "Wisp Vulnerable to Path Traversal",
+      "link": "https://github.com/advisories/GHSA-h7cj-j2vv-qw8r",
+      "cve": "CVE-2026-28807",
+      "cvss": null
+    },
+    {
+      "title": "django-unicorn affected by component state manipulation via unvalidated attribute access",
+      "date": "2026-03-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "django-unicorn",
+      "description": "django-unicorn affected by component state manipulation via unvalidated attribute access",
+      "link": "https://github.com/advisories/GHSA-ffv6-jj46-x367",
+      "cve": "CVE-2026-31815",
+      "cvss": 5.3
+    },
+    {
+      "title": "OliveTin's unsafe parsing of UniqueTrackingId can be used to write files",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/OliveTin/OliveTin",
+      "description": "OliveTin's unsafe parsing of UniqueTrackingId can be used to write files",
+      "link": "https://github.com/advisories/GHSA-364q-w7vh-vhpc",
+      "cve": "CVE-2026-31817",
+      "cvss": 8.5
+    },
+    {
+      "title": "Quinn affected by unauthenticated remote DoS via panic in QUIC transport parameter parsing",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "quinn-proto",
+      "description": "Quinn affected by unauthenticated remote DoS via panic in QUIC transport parameter parsing",
+      "link": "https://github.com/advisories/GHSA-6xvm-j4wr-6v98",
+      "cve": "CVE-2026-31812",
+      "cvss": null
+    },
+    {
+      "title": "macOS 26.3.2",
+      "date": "2026-03-10",
+      "severity": "UNKNOWN",
+      "vendor": "apple",
+      "component": "macOS",
+      "description": "Security update with 0 CVEs fixed.",
+      "link": "https://support.apple.com/en-us/100100",
+      "cve": ""
+    },
     {
       "title": "Stable Channel Update for Desktop",
       "date": "2026-03-10",
@@ -21,6 +548,15 @@
       "link": "https://chromereleases.googleblog.com/feeds/9126589575913227090/comments/default"
     },
     {
+      "title": "Chrome for Android Update",
+      "date": "2026-03-10",
+      "severity": "UNKNOWN",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "&nbsp; Hi, everyone! We've just released Chrome 146 (146.0.76380.111) for Android. It'll become&nbsp;available on Google Play&nbsp;over the next few days.&nbsp;This release includes stability and perf...",
+      "link": "https://chromereleases.googleblog.com/feeds/5937587434893601789/comments/default"
+    },
+    {
       "title": "Investigating multi-vector attacks in Log Explorer",
       "date": "2026-03-10",
       "severity": "CRITICAL",
@@ -29,6 +565,17 @@
       "description": "In the world of cybersecurity, a single data point is rarely the whole story. Modern attackers don’t just knock on the front door; they probe your APIs, flood your network with \"noise\" to distract you...",
       "link": "https://blog.cloudflare.com/investigating-multi-vector-attacks-in-log-explorer/",
       "cve": ""
+    },
+    {
+      "title": "DSA-6159-1 imagemagick - security update",
+      "date": "2026-03-10",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "imagemagick",
+      "description": "Multiple security vulnerabilities were discovered in imagemagick, a software suite used for editing and manipulating digital images, which could lead to information leaks, bypass of security policies,...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00068.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "Arbitrary file deletion in administrative interface",
@@ -590,6 +1137,39 @@
       "link": "https://github.com/advisories/GHSA-3cw6-2j68-868p",
       "cve": "CVE-2026-26310",
       "cvss": 5.9
+    },
+    {
+      "title": "SiYuan has a SVG Sanitizer Bypass via Whitespace in `javascript:` URI — Unauthenticated XSS",
+      "date": "2026-03-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan has a SVG Sanitizer Bypass via Whitespace in `javascript:` URI — Unauthenticated XSS",
+      "link": "https://github.com/advisories/GHSA-pmc9-f5qr-2pcr",
+      "cve": "CVE-2026-31809",
+      "cvss": null
+    },
+    {
+      "title": "@siteboon/claude-code-ui is Vulnerable to Shell Command Injection in Git Routes",
+      "date": "2026-03-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@siteboon/claude-code-ui",
+      "description": "@siteboon/claude-code-ui is Vulnerable to Shell Command Injection in Git Routes",
+      "link": "https://github.com/advisories/GHSA-7fv4-fmmc-86g2",
+      "cve": "CVE-2026-31861",
+      "cvss": null
+    },
+    {
+      "title": "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header",
+      "date": "2026-03-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "file-type",
+      "description": "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header",
+      "link": "https://github.com/advisories/GHSA-5v7r-6r5c-r473",
+      "cve": "CVE-2026-31808",
+      "cvss": 5.3
     },
     {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
@@ -4394,6 +4974,371 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-11T02:33:38.838Z",
+      "logs": [
+        "[SUCCESS] apple - 1 patches (1 new)",
+        "[SUCCESS] chrome - 4 patches (1 new)",
+        "[INFO] cisco - 30 patches, no changes",
+        "[INFO] cloudflare - 3 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 3 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 22 patches, no changes",
+        "[SUCCESS] github - 219 patches (50 new)",
+        "[INFO] microsoft - 125 patches, no changes",
+        "[INFO] mssql - 3 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 55 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 11 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 53,
+      "totalPatches": 483,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "github",
+        "apple",
+        "chrome",
+        "cloudflare",
+        "debian",
+        "fortinet",
+        "microsoft",
+        "mssql",
+        "paloalto",
+        "ubuntu",
+        "crowdstrike",
+        "redhat",
+        "signal",
+        "visualstudio",
+        "edge",
+        "postgresql",
+        "cisco"
+      ],
+      "newPatches": [
+        {
+          "vendor": "apple",
+          "title": "macOS 26.3.2",
+          "date": "2026-03-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "chrome",
+          "title": "Chrome for Android Update",
+          "date": "2026-03-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6159-1 imagemagick - security update",
+          "date": "2026-03-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Quill has DoS via unbounded read of HTTP response body during notarization",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Quill has unbounded memory allocation via unvalidated size fields in Mach-O binary parsing",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Quill vulnerable to SSRF via unvalidated URL from Apple notarization log retrieval",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "@siteboon/claude-code-ui Vulnerable to Unauthenticated RCE via WebSocket Shell Injection",
+          "date": "2026-03-11",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server vulnerable to user enumeration via email verification endpoint",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server's MFA recovery codes not consumed after use",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server has a protected fields bypass via dot-notation in query and sort",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server vulnerable to SQL Injection via dot-notation sub-key name in `Increment` operation on PostgreSQL",
+          "date": "2026-03-11",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server vulnerable to stored XSS via file upload of HTML-renderable file types",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "flagd Vulnerable to Allocation of Resources Without Limits or Throttling",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Terraform Provider for SendGrid: TLS Session Resumption Bypasses Certificate Authority Trust Store Modifications in Go",
+          "date": "2026-03-11",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Hono vulnerable to Prototype Pollution possible through __proto__ key allowed in parseBody({ dot: true })",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "actix-web-lab has host header poisoning in redirect middleware can generate attacker-controlled absolute redirects",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "CraftCMS's `ElementSearchController` Affected by Blind SQL Injection",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server vulnerable to SQL injection via `Increment` operation on nested object field in PostgreSQL",
+          "date": "2026-03-11",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "CraftCMS vulnerable to reflective XSS via incomplete return URL sanitization",
+          "date": "2026-03-11",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "@siteboon/claude-code-ui is Vulnerable to Command Injection via Multiple Parameters",
+          "date": "2026-03-11",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Umbraco Backoffice API Allows Unauthorized Modification of Domain Data",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "sigstore-ruby verifier returns success for DSSE bundles with mismatched in-toto subject digest",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Flowise affected by Server-Side Request Forgery (SSRF) in HTTP Node Leading to Internal Network Access",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server vulnerable to LDAP injection via unsanitized user input in DN and group filter construction",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server: Classes `_GraphQLConfig` and `_Audience` master key bypass via generic class routes",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "@appium/support has a Zip Slip arbitrary file write in its ZIP extraction",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server has a rate limit bypass via batch request endpoint",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server OAuth2 authentication adapter account takeover via identity spoofing",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server has role escalation and CLP bypass via direct `_Join` table write",
+          "date": "2026-03-11",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server vulnerable to session token exfiltration via `redirectClassNameForKey` query parameter",
+          "date": "2026-03-11",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server has a protected fields bypass via logical query operators",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Sequelize v6 Vulnerable to SQL Injection via JSON Column Cast Type",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server missing audience validation in Keycloak authentication adapter",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server vulnerable to stored cross-site scripting (XSS) via SVG file upload",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server has a bypass of class-level permissions in LiveQuery",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server affected by denial-of-service via unbounded query complexity in REST and GraphQL API",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "StudioCMS: IDOR — Arbitrary API Token Revocation Leading to Denial of Service",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server has a NoSQL injection via token type in password reset and email verification endpoints",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pypdf: manipulated stream length values can exhaust RAM",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Sylius has a DQL Injection via API Order Filters",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Sylius has a Promotion Usage Limit Bypass via Race Condition",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Sylius Vulnerable to Authenticated Stored XSS",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Sylius has a XSS vulnerability in checkout login form",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Sylius is Missing Authorization in API v2 Add Item Endpoint",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Sylius affected by IDOR in Cart and Checkout LiveComponents",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Sylius has an Open Redirect via Referer Header",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Wisp Vulnerable to Path Traversal",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "django-unicorn affected by component state manipulation via unvalidated attribute access",
+          "date": "2026-03-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OliveTin's unsafe parsing of UniqueTrackingId can be used to write files",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Quinn affected by unauthenticated remote DoS via panic in QUIC transport parameter parsing",
+          "date": "2026-03-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan has a SVG Sanitizer Bypass via Whitespace in `javascript:` URI — Unauthenticated XSS",
+          "date": "2026-03-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "@siteboon/claude-code-ui is Vulnerable to Shell Command Injection in Git Routes",
+          "date": "2026-03-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header",
+          "date": "2026-03-10",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-11T02:24:00.613Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
@@ -7682,50 +8627,6 @@
     },
     {
       "timestamp": "2026-03-07T18:39:23.829Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[INFO] apple - 3 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 60 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 5 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 293 patches, no changes",
-        "[INFO] microsoft - 41 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 87 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 24 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 532,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "github",
-        "crowdstrike",
-        "edge",
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "chrome",
-        "cisco",
-        "debian",
-        "ubuntu",
-        "apple",
-        "signal",
-        "visualstudio",
-        "aws",
-        "cloudflare",
-        "android"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-07T16:32:52.228Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
         "[INFO] apple - 3 patches, no changes",
