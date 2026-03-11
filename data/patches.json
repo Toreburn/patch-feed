@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-11T13:09:40.926Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-11T13:16:25.858Z",
+  "newPatches": 33,
   "patches": [
     {
       "title": "Quill has DoS via unbounded read of HTTP response body during notarization",
@@ -970,6 +970,15 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24290"
     },
     {
+      "title": "USN-8083-1: GeoPandas vulnerability",
+      "date": "2026-03-11",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GeoPandas",
+      "description": "It was discovered that GeoPandas incorrectly handled certain input. An\nattacker could possibly use this issue to perform SQL injection attacks....",
+      "link": "https://ubuntu.com/security/notices/USN-8083-1"
+    },
+    {
       "title": "macOS 26.3.2",
       "date": "2026-03-10",
       "severity": "UNKNOWN",
@@ -1014,6 +1023,16 @@
       "component": "WAF",
       "description": "In the world of cybersecurity, a single data point is rarely the whole story. Modern attackers don’t just knock on the front door; they probe your APIs, flood your network with \"noise\" to distract you...",
       "link": "https://blog.cloudflare.com/investigating-multi-vector-attacks-in-log-explorer/",
+      "cve": ""
+    },
+    {
+      "title": "March 2026 Patch Tuesday: Eight Critical Vulnerabilities and Two Publicly Disclosed Among 82 CVEs Patched",
+      "date": "2026-03-10",
+      "severity": "CRITICAL",
+      "vendor": "crowdstrike",
+      "component": "CrowdStrike Falcon",
+      "description": "",
+      "link": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-march-2026/",
       "cve": ""
     },
     {
@@ -2415,6 +2434,105 @@
       "cve": "CVE-2023-48795"
     },
     {
+      "title": "CVE-2026-31826: pypdf: pypdf: Denial of Service due to excessive memory consumption via crafted PDF",
+      "date": "2026-03-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service due to excessive memory consumption via crafted PDF",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31826.json",
+      "cve": "CVE-2026-31826",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-31812: quinn-proto: quinn-proto: Denial of Service via crafted QUIC Initial packet",
+      "date": "2026-03-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "quinn-proto: quinn-proto: Denial of Service via crafted QUIC Initial packet",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31812.json",
+      "cve": "CVE-2026-31812",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-31808: file-type: file-type: Denial of Service due to infinite loop in ASF file parsing",
+      "date": "2026-03-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "file-type: file-type: Denial of Service due to infinite loop in ASF file parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31808.json",
+      "cve": "CVE-2026-31808",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-30951: sequelize: Sequelize: Data exfiltration via SQL injection in JSON/JSONB where clause processing",
+      "date": "2026-03-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sequelize: Sequelize: Data exfiltration via SQL injection in JSON/JSONB where clause processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30951.json",
+      "cve": "CVE-2026-30951",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-23868: giflib: Giflib: Double-free vulnerability leading to memory corruption",
+      "date": "2026-03-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "giflib: Giflib: Double-free vulnerability leading to memory corruption",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23868.json",
+      "cve": "CVE-2026-23868",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-30942: flare: Flare: Information disclosure via authenticated path traversal",
+      "date": "2026-03-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "flare: Flare: Information disclosure via authenticated path traversal",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30942.json",
+      "cve": "CVE-2026-30942",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-23907: org.apache.pdfbox:pdfbox-examples: Apache PDFBox Example: Path Traversal via specially crafted filenames allows arbitrar",
+      "date": "2026-03-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.pdfbox:pdfbox-examples: Apache PDFBox Example: Path Traversal via specially crafted filenames allows arbitrary file write",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23907.json",
+      "cve": "CVE-2026-23907",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-23239: kernel: espintcp: Fix race condition in espintcp_close()",
+      "date": "2026-03-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: espintcp: Fix race condition in espintcp_close()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23239.json",
+      "cve": "CVE-2026-23239",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-23240: kernel: tls: Fix race condition in tls_sw_cancel_work_tx()",
+      "date": "2026-03-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: tls: Fix race condition in tls_sw_cancel_work_tx()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23240.json",
+      "cve": "CVE-2026-23240",
+      "cvss": 7
+    },
+    {
       "title": "USN-8082-1: GIMP vulnerabilities",
       "date": "2026-03-10",
       "severity": "UNKNOWN",
@@ -2888,6 +3006,204 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-69648.json",
       "cve": "CVE-2025-69648",
       "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-30937: ImageMagick: ImageMagick: Denial of Service via integer overflow in XWD encoder",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via integer overflow in XWD encoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30937.json",
+      "cve": "CVE-2026-30937",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-30936: ImageMagick: ImageMagick: Denial of Service via crafted image processing",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via crafted image processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30936.json",
+      "cve": "CVE-2026-30936",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-30935: ImageMagick: heap-based buffer over-read in BilateralBlurImage",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: heap-based buffer over-read in BilateralBlurImage",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30935.json",
+      "cve": "CVE-2026-30935",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-30931: ImageMagick: ImageMagick: Heap-based buffer overflow leading to out-of-bounds write",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Heap-based buffer overflow leading to out-of-bounds write",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30931.json",
+      "cve": "CVE-2026-30931",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-30929: ImageMagick: stack-based buffer overflow in MagnifyImage",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: stack-based buffer overflow in MagnifyImage",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30929.json",
+      "cve": "CVE-2026-30929",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-30883: ImageMagick: ImageMagick: Denial of Service due to heap overflow when processing large image profiles",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service due to heap overflow when processing large image profiles",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30883.json",
+      "cve": "CVE-2026-30883",
+      "cvss": 5.7
+    },
+    {
+      "title": "CVE-2026-28693: ImageMagick: ImageMagick: Out-of-bounds read or write due to integer overflow in DIB coder",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Out-of-bounds read or write due to integer overflow in DIB coder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28693.json",
+      "cve": "CVE-2026-28693",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-28692: ImageMagick: ImageMagick: Information disclosure and denial of service via heap over-read in MAT decoder",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Information disclosure and denial of service via heap over-read in MAT decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28692.json",
+      "cve": "CVE-2026-28692",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-28691: ImageMagick: ImageMagick: Denial of Service via uninitialized pointer dereference in JBIG decoder",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via uninitialized pointer dereference in JBIG decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28691.json",
+      "cve": "CVE-2026-28691",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-28690: ImageMagick: stack-based buffer overflow in MNG encoder",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: stack-based buffer overflow in MNG encoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28690.json",
+      "cve": "CVE-2026-28690",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-28689: ImageMagick: ImageMagick: Information disclosure and unauthorized modification via symlink TOCTOU vulnerability",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Information disclosure and unauthorized modification via symlink TOCTOU vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28689.json",
+      "cve": "CVE-2026-28689",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-28688: ImageMagick: use-after-free in the MSL encoder",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: use-after-free in the MSL encoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28688.json",
+      "cve": "CVE-2026-28688",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-28687: ImageMagick: ImageMagick: Heap use-after-free vulnerability allows denial of service via crafted MSL file",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Heap use-after-free vulnerability allows denial of service via crafted MSL file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28687.json",
+      "cve": "CVE-2026-28687",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-28686: ImageMagick: ImageMagick: Denial of Service via heap-buffer-overflow in PCL encode",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via heap-buffer-overflow in PCL encode",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28686.json",
+      "cve": "CVE-2026-28686",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-28494: ImageMagick: ImageMagick: Arbitrary code execution or denial of service via maliciously crafted kernel strings",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "ImageMagick: ImageMagick: Arbitrary code execution or denial of service via maliciously crafted kernel strings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28494.json",
+      "cve": "CVE-2026-28494",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-28493: ImageMagick: ImageMagick: Denial of Service and information disclosure via integer overflow in SIXEL decoder",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service and information disclosure via integer overflow in SIXEL decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28493.json",
+      "cve": "CVE-2026-28493",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-31802: tar: tar: File overwrite via drive-relative symlink traversal",
+      "date": "2026-03-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "tar: tar: File overwrite via drive-relative symlink traversal",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31802.json",
+      "cve": "CVE-2026-31802",
+      "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-25960: vLLM: vLLM: Server-Side Request Forgery bypass via inconsistent URL parsing",
+      "date": "2026-03-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vLLM: vLLM: Server-Side Request Forgery bypass via inconsistent URL parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-25960.json",
+      "cve": "CVE-2026-25960",
+      "cvss": 7.1
     },
     {
       "title": "Netmaker has Insufficient Authorization in Host Token Verification",
@@ -4042,6 +4358,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27139.json",
       "cve": "CVE-2026-27139",
       "cvss": 2.5
+    },
+    {
+      "title": "CVE-2026-27138: crypto/x509: Panic in name constraint checking for malformed certificates in crypto/x509",
+      "date": "2026-03-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "crypto/x509: Panic in name constraint checking for malformed certificates in crypto/x509",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27138.json",
+      "cve": "CVE-2026-27138",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-27142: html/template: URLs in meta content attribute actions are not escaped in html/template",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "html/template: URLs in meta content attribute actions are not escaped in html/template",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27142.json",
+      "cve": "CVE-2026-27142",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-25679: net/url: Incorrect parsing of IPv6 host literals in net/url",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "net/url: Incorrect parsing of IPv6 host literals in net/url",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-25679.json",
+      "cve": "CVE-2026-25679",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-27137: crypto/x509: Incorrect enforcement of email constraints in crypto/x509",
+      "date": "2026-03-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "crypto/x509: Incorrect enforcement of email constraints in crypto/x509",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27137.json",
+      "cve": "CVE-2026-27137",
+      "cvss": 5.3
     },
     {
       "title": "Chrome for Android Update",
@@ -5423,6 +5783,251 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-03-11T13:16:25.858Z",
+      "logs": [
+        "[INFO] apple - 1 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 30 patches, no changes",
+        "[INFO] cloudflare - 3 patches, no changes",
+        "[SUCCESS] crowdstrike - 3 patches (1 new)",
+        "[INFO] debian - 3 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 22 patches, no changes",
+        "[INFO] github - 219 patches, no changes",
+        "[INFO] microsoft - 175 patches, no changes",
+        "[INFO] mssql - 3 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 86 patches (31 new)",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 12 patches (1 new)",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 33,
+      "totalPatches": 566,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "github",
+        "microsoft",
+        "ubuntu",
+        "apple",
+        "chrome",
+        "cloudflare",
+        "crowdstrike",
+        "debian",
+        "fortinet",
+        "mssql",
+        "paloalto",
+        "redhat",
+        "signal",
+        "visualstudio",
+        "edge",
+        "postgresql",
+        "cisco"
+      ],
+      "newPatches": [
+        {
+          "vendor": "crowdstrike",
+          "title": "March 2026 Patch Tuesday: Eight Critical Vulnerabilities and Two Publicly Disclosed Among 82 CVEs Patched",
+          "date": "2026-03-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31826: pypdf: pypdf: Denial of Service due to excessive memory consumption via crafted PDF",
+          "date": "2026-03-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31812: quinn-proto: quinn-proto: Denial of Service via crafted QUIC Initial packet",
+          "date": "2026-03-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31808: file-type: file-type: Denial of Service due to infinite loop in ASF file parsing",
+          "date": "2026-03-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30951: sequelize: Sequelize: Data exfiltration via SQL injection in JSON/JSONB where clause processing",
+          "date": "2026-03-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23868: giflib: Giflib: Double-free vulnerability leading to memory corruption",
+          "date": "2026-03-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30942: flare: Flare: Information disclosure via authenticated path traversal",
+          "date": "2026-03-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23907: org.apache.pdfbox:pdfbox-examples: Apache PDFBox Example: Path Traversal via specially crafted filenames allows arbitrar",
+          "date": "2026-03-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23239: kernel: espintcp: Fix race condition in espintcp_close()",
+          "date": "2026-03-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23240: kernel: tls: Fix race condition in tls_sw_cancel_work_tx()",
+          "date": "2026-03-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30937: ImageMagick: ImageMagick: Denial of Service via integer overflow in XWD encoder",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30936: ImageMagick: ImageMagick: Denial of Service via crafted image processing",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30935: ImageMagick: heap-based buffer over-read in BilateralBlurImage",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30931: ImageMagick: ImageMagick: Heap-based buffer overflow leading to out-of-bounds write",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30929: ImageMagick: stack-based buffer overflow in MagnifyImage",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30883: ImageMagick: ImageMagick: Denial of Service due to heap overflow when processing large image profiles",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28693: ImageMagick: ImageMagick: Out-of-bounds read or write due to integer overflow in DIB coder",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28692: ImageMagick: ImageMagick: Information disclosure and denial of service via heap over-read in MAT decoder",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28691: ImageMagick: ImageMagick: Denial of Service via uninitialized pointer dereference in JBIG decoder",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28690: ImageMagick: stack-based buffer overflow in MNG encoder",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28689: ImageMagick: ImageMagick: Information disclosure and unauthorized modification via symlink TOCTOU vulnerability",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28688: ImageMagick: use-after-free in the MSL encoder",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28687: ImageMagick: ImageMagick: Heap use-after-free vulnerability allows denial of service via crafted MSL file",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28686: ImageMagick: ImageMagick: Denial of Service via heap-buffer-overflow in PCL encode",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28494: ImageMagick: ImageMagick: Arbitrary code execution or denial of service via maliciously crafted kernel strings",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28493: ImageMagick: ImageMagick: Denial of Service and information disclosure via integer overflow in SIXEL decoder",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31802: tar: tar: File overwrite via drive-relative symlink traversal",
+          "date": "2026-03-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-25960: vLLM: vLLM: Server-Side Request Forgery bypass via inconsistent URL parsing",
+          "date": "2026-03-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27138: crypto/x509: Panic in name constraint checking for malformed certificates in crypto/x509",
+          "date": "2026-03-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27142: html/template: URLs in meta content attribute actions are not escaped in html/template",
+          "date": "2026-03-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-25679: net/url: Incorrect parsing of IPv6 host literals in net/url",
+          "date": "2026-03-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27137: crypto/x509: Incorrect enforcement of email constraints in crypto/x509",
+          "date": "2026-03-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8083-1: GeoPandas vulnerability",
+          "date": "2026-03-11",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-03-11T13:09:40.925Z",
       "logs": [
@@ -9354,48 +9959,6 @@
     },
     {
       "timestamp": "2026-03-08T06:50:20.848Z",
-      "logs": [
-        "[INFO] apple - 3 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 60 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 4 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 279 patches, no changes",
-        "[INFO] microsoft - 41 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 87 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 24 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 515,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "github",
-        "crowdstrike",
-        "edge",
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "chrome",
-        "cisco",
-        "debian",
-        "ubuntu",
-        "apple",
-        "signal",
-        "visualstudio",
-        "aws",
-        "cloudflare"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-08T05:11:23.837Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
         "[INFO] aws - 2 patches, no changes",
