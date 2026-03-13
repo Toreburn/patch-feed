@@ -1,7 +1,216 @@
 {
-  "lastUpdated": "2026-03-13T18:49:54.279Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-13T18:54:06.206Z",
+  "newPatches": 19,
   "patches": [
+    {
+      "title": "Locutus vulnerable to RCE via unsanitized input in create_function()",
+      "date": "2026-03-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "locutus",
+      "description": "Locutus vulnerable to RCE via unsanitized input in create_function()",
+      "link": "https://github.com/advisories/GHSA-vh9h-29pq-r5m8",
+      "cve": "CVE-2026-32304",
+      "cvss": 9.8
+    },
+    {
+      "title": "SM9 Infinity-Point Ciphertext Forgery Vulnerability",
+      "date": "2026-03-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/emmansun/gmsm",
+      "description": "SM9 Infinity-Point Ciphertext Forgery Vulnerability",
+      "link": "https://github.com/advisories/GHSA-5xxp-2vrj-x855",
+      "cve": "CVE-2026-32614",
+      "cvss": 7.5
+    },
+    {
+      "title": "OpenClaw: Unavailable local auth SecretRefs could fall through to remote credentials in local mode",
+      "date": "2026-03-13",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Unavailable local auth SecretRefs could fall through to remote credentials in local mode",
+      "link": "https://github.com/advisories/GHSA-qvr7-g57c-mrc7",
+      "cve": "",
+      "cvss": 2.5
+    },
+    {
+      "title": "OpenClaw: Sandbox staged writes could escape the verified parent directory before commit",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Sandbox staged writes could escape the verified parent directory before commit",
+      "link": "https://github.com/advisories/GHSA-mj4p-rc52-m843",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "OpenClaw: Write-scoped callers could reach admin-only session reset logic through `agent`",
+      "date": "2026-03-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Write-scoped callers could reach admin-only session reset logic through `agent`",
+      "link": "https://github.com/advisories/GHSA-jf6w-m8jw-jfxc",
+      "cve": "",
+      "cvss": 6.1
+    },
+    {
+      "title": "OpenClaw: Unrecognized script runners could bypass `system.run` approval integrity",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Unrecognized script runners could bypass `system.run` approval integrity",
+      "link": "https://github.com/advisories/GHSA-qc36-x95h-7j53",
+      "cve": "",
+      "cvss": 8.1
+    },
+    {
+      "title": "OpenClaw: Channel commands could bypass account-scoped `configWrites` restrictions",
+      "date": "2026-03-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Channel commands could bypass account-scoped `configWrites` restrictions",
+      "link": "https://github.com/advisories/GHSA-8jhh-jcqg-mj5p",
+      "cve": "",
+      "cvss": 6.5
+    },
+    {
+      "title": "OpenClaw: Node-host approvals could show misleading shell payloads instead of the executed argv",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Node-host approvals could show misleading shell payloads instead of the executed argv",
+      "link": "https://github.com/advisories/GHSA-rw39-5899-8mxp",
+      "cve": "",
+      "cvss": 7.1
+    },
+    {
+      "title": "OpenClaw: Unbound interpreter and runtime commands could bypass node-host approval integrity",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Unbound interpreter and runtime commands could bypass node-host approval integrity",
+      "link": "https://github.com/advisories/GHSA-xf99-j42q-5w5p",
+      "cve": "",
+      "cvss": 7.3
+    },
+    {
+      "title": "OpenClaw: Leaf subagents could steer sibling sessions across sandbox boundaries",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Leaf subagents could steer sibling sessions across sandbox boundaries",
+      "link": "https://github.com/advisories/GHSA-4w7m-58cg-cmff",
+      "cve": "",
+      "cvss": 8.8
+    },
+    {
+      "title": "OpenClaw: Pairing-scoped device tokens could mint `operator.admin` and reach node RCE",
+      "date": "2026-03-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Pairing-scoped device tokens could mint `operator.admin` and reach node RCE",
+      "link": "https://github.com/advisories/GHSA-4jpw-hj22-2xmc",
+      "cve": "",
+      "cvss": 10
+    },
+    {
+      "title": "OpenClaw: Plugin subagent routes could bypass gateway authorization with synthetic admin scopes",
+      "date": "2026-03-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Plugin subagent routes could bypass gateway authorization with synthetic admin scopes",
+      "link": "https://github.com/advisories/GHSA-xw77-45gv-p728",
+      "cve": "",
+      "cvss": 9.4
+    },
+    {
+      "title": "OpenClaw: Sandbox `writeFile` commit could race outside the validated path",
+      "date": "2026-03-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Sandbox `writeFile` commit could race outside the validated path",
+      "link": "https://github.com/advisories/GHSA-xvx8-77m6-gwg6",
+      "cve": "",
+      "cvss": 6.3
+    },
+    {
+      "title": "flatted vulnerable to unbounded recursion DoS in parse() revive phase",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flatted",
+      "description": "flatted vulnerable to unbounded recursion DoS in parse() revive phase",
+      "link": "https://github.com/advisories/GHSA-25h7-pfq9-p65f",
+      "cve": "CVE-2026-32141",
+      "cvss": 7.5
+    },
+    {
+      "title": "Poseidon V1 variable-length input collision via implicit zero-padding",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "soroban-poseidon",
+      "description": "Poseidon V1 variable-length input collision via implicit zero-padding",
+      "link": "https://github.com/advisories/GHSA-g2p6-hh5v-7hfm",
+      "cve": "CVE-2026-32129",
+      "cvss": null
+    },
+    {
+      "title": "Magic Wormhole: \"wormhole receive\" allows arbitrary local file overwrite",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "magic-wormhole",
+      "description": "Magic Wormhole: \"wormhole receive\" allows arbitrary local file overwrite",
+      "link": "https://github.com/advisories/GHSA-4g4c-mfqg-pj8r",
+      "cve": "CVE-2026-32116",
+      "cvss": null
+    },
+    {
+      "title": "Dagu: Path Traversal via `dagRunId` in Inline DAG Execution",
+      "date": "2026-03-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/dagu-org/dagu",
+      "description": "Dagu: Path Traversal via `dagRunId` in Inline DAG Execution",
+      "link": "https://github.com/advisories/GHSA-m4q3-457p-hh2x",
+      "cve": "CVE-2026-31886",
+      "cvss": 9.1
+    },
+    {
+      "title": "Dagu: SSE Authentication Bypass in Basic Auth Mode",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "dagu",
+      "description": "Dagu: SSE Authentication Bypass in Basic Auth Mode",
+      "link": "https://github.com/advisories/GHSA-9wmw-9wph-2vwp",
+      "cve": "CVE-2026-31882",
+      "cvss": 7.5
+    },
+    {
+      "title": "SandboxJS affected by a Sandbox Escape",
+      "date": "2026-03-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@nyariv/sandboxjs",
+      "description": "SandboxJS affected by a Sandbox Escape",
+      "link": "https://github.com/advisories/GHSA-6r9f-759j-hjgv",
+      "cve": "CVE-2026-26954",
+      "cvss": 10
+    },
     {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
       "date": "2026-03-13",
@@ -7035,6 +7244,167 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-13T18:54:06.206Z",
+      "logs": [
+        "[INFO] apple - 1 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] cloudflare - 5 patches, no changes",
+        "[INFO] crowdstrike - 3 patches, no changes",
+        "[INFO] debian - 7 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 22 patches, no changes",
+        "[SUCCESS] github - 221 patches (19 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 309 patches, no changes",
+        "[INFO] mssql - 3 patches, no changes",
+        "[INFO] paloalto - 4 patches, no changes",
+        "[INFO] redhat - 113 patches, no changes",
+        "[INFO] signal - 2 patches, no changes",
+        "[INFO] ubuntu - 18 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 19,
+      "totalPatches": 722,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "github",
+        "microsoft",
+        "redhat",
+        "chrome",
+        "cloudflare",
+        "debian",
+        "edge",
+        "ubuntu",
+        "cisco",
+        "crowdstrike",
+        "gitlab",
+        "paloalto",
+        "signal",
+        "apple",
+        "fortinet",
+        "mssql",
+        "visualstudio"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "Locutus vulnerable to RCE via unsanitized input in create_function()",
+          "date": "2026-03-13",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "SM9 Infinity-Point Ciphertext Forgery Vulnerability",
+          "date": "2026-03-13",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Unavailable local auth SecretRefs could fall through to remote credentials in local mode",
+          "date": "2026-03-13",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Sandbox staged writes could escape the verified parent directory before commit",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Write-scoped callers could reach admin-only session reset logic through `agent`",
+          "date": "2026-03-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Unrecognized script runners could bypass `system.run` approval integrity",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Channel commands could bypass account-scoped `configWrites` restrictions",
+          "date": "2026-03-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Node-host approvals could show misleading shell payloads instead of the executed argv",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Unbound interpreter and runtime commands could bypass node-host approval integrity",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Leaf subagents could steer sibling sessions across sandbox boundaries",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Pairing-scoped device tokens could mint `operator.admin` and reach node RCE",
+          "date": "2026-03-13",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Plugin subagent routes could bypass gateway authorization with synthetic admin scopes",
+          "date": "2026-03-13",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Sandbox `writeFile` commit could race outside the validated path",
+          "date": "2026-03-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "flatted vulnerable to unbounded recursion DoS in parse() revive phase",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Poseidon V1 variable-length input collision via implicit zero-padding",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Magic Wormhole: \"wormhole receive\" allows arbitrary local file overwrite",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Dagu: Path Traversal via `dagRunId` in Inline DAG Execution",
+          "date": "2026-03-13",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Dagu: SSE Authentication Bypass in Basic Auth Mode",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SandboxJS affected by a Sandbox Escape",
+          "date": "2026-03-13",
+          "severity": "CRITICAL"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-13T18:49:54.279Z",
       "logs": [
         "[INFO] apple - 1 patches, no changes",
@@ -13098,48 +13468,6 @@
           "severity": "HIGH"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-10T13:09:57.387Z",
-      "logs": [
-        "[INFO] apple - 3 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 59 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 1 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 192 patches, no changes",
-        "[INFO] microsoft - 41 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 71 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 22 patches, no changes",
-        "[INFO] visualstudio - 2 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 404,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "github",
-        "paloalto",
-        "cloudflare",
-        "crowdstrike",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "visualstudio",
-        "edge",
-        "microsoft",
-        "postgresql",
-        "chrome",
-        "cisco",
-        "debian",
-        "apple"
-      ],
-      "newPatches": []
     }
   ]
 }
