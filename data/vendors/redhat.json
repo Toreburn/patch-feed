@@ -1,12 +1,12 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-03-13T18:52:51.342Z",
+  "lastUpdated": "2026-03-14T02:34:07.542Z",
   "health": {
-    "lastFetchAttempt": "2026-03-13T18:52:51.342Z",
+    "lastFetchAttempt": "2026-03-14T02:34:07.542Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 138,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-13T18:52:51.342Z",
+    "lastFetchParsedItems": 126,
+    "lastFetchNewPatches": 15,
+    "lastSuccessWithData": "2026-03-14T02:34:07.542Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -43,6 +43,105 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4105.json",
       "cve": "CVE-2026-4105",
       "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-31897: freerdp: FreeRDP has an out-of-bounds read in `freerdp_bitmap_decompress_planar`",
+      "date": "2026-03-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: FreeRDP has an out-of-bounds read in `freerdp_bitmap_decompress_planar`",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31897.json",
+      "cve": "CVE-2026-31897",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-31806: freerdp: FreeRDP: Arbitrary code execution via crafted Remote Desktop Protocol (RDP) server messages",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: FreeRDP: Arbitrary code execution via crafted Remote Desktop Protocol (RDP) server messages",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31806.json",
+      "cve": "CVE-2026-31806",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-31885: freerdp: FreeRDP has an out-of-bounds read in ADPCM decoders due to missing predictor/step_index bounds checks",
+      "date": "2026-03-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: FreeRDP has an out-of-bounds read in ADPCM decoders due to missing predictor/step_index bounds checks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31885.json",
+      "cve": "CVE-2026-31885",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-31884: freerdp: FreeRDP has a division-by-zero in ADPCM decoders when `nBlockAlign` is 0",
+      "date": "2026-03-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: FreeRDP has a division-by-zero in ADPCM decoders when `nBlockAlign` is 0",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31884.json",
+      "cve": "CVE-2026-31884",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-31883: freerdp: FreeRDP has a `size_t` underflow in ADPCM decoder leads to heap-buffer-overflow write",
+      "date": "2026-03-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: FreeRDP has a `size_t` underflow in ADPCM decoder leads to heap-buffer-overflow write",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31883.json",
+      "cve": "CVE-2026-31883",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-29776: freerdp: FreeRDP has an Integer Underflow in update_read_cache_bitmap_order Function of FreeRDP's Core Library",
+      "date": "2026-03-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: FreeRDP has an Integer Underflow in update_read_cache_bitmap_order Function of FreeRDP's Core Library",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-29776.json",
+      "cve": "CVE-2026-29776",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-29775: freerdp: FreeRDP has a heap-buffer-overflow in bitmap_cache_put via OOB cacheId",
+      "date": "2026-03-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: FreeRDP has a heap-buffer-overflow in bitmap_cache_put via OOB cacheId",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-29775.json",
+      "cve": "CVE-2026-29775",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-29774: freerdp: FreeRDP has a heap-buffer-overflow in avc420_yuv_to_rgb via OOB regionRects",
+      "date": "2026-03-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: FreeRDP has a heap-buffer-overflow in avc420_yuv_to_rgb via OOB regionRects",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-29774.json",
+      "cve": "CVE-2026-29774",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-2673: openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group",
+      "date": "2026-03-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-2673.json",
+      "cve": "CVE-2026-2673",
+      "cvss": 3.1
     },
     {
       "title": "CVE-2026-32597: pyjwt: PyJWT accepts unknown `crit` header extensions (RFC 7515 §4.1.11 MUST violation)",
@@ -219,6 +318,61 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3910.json",
       "cve": "CVE-2026-3910",
       "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-32259: ImageMagick: stack-based buffer overflow in sixel encoder",
+      "date": "2026-03-12",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: stack-based buffer overflow in sixel encoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-32259.json",
+      "cve": "CVE-2026-32259",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-32240: capnproto: Cap'n Proto: Integer overflow in KJ-HTTP chunk size",
+      "date": "2026-03-12",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "capnproto: Cap'n Proto: Integer overflow in KJ-HTTP chunk size",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-32240.json",
+      "cve": "CVE-2026-32240",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-32239: capnproto: Cap'n Proto has an integer overflow in KJ-HTTP",
+      "date": "2026-03-12",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "capnproto: Cap'n Proto has an integer overflow in KJ-HTTP",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-32239.json",
+      "cve": "CVE-2026-32239",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-32249: vim: NFA regex engine NULL pointer dereference",
+      "date": "2026-03-12",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: NFA regex engine NULL pointer dereference",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-32249.json",
+      "cve": "CVE-2026-32249",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-28356: multipart: denial of service via maliciously crafted HTTP or multipart segment headers",
+      "date": "2026-03-12",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "multipart: denial of service via maliciously crafted HTTP or multipart segment headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28356.json",
+      "cve": "CVE-2026-28356",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-2808: github.com/hashicorp/consul: HashiCorp Consul: Arbitrary file read via Kubernetes authentication configuration",
@@ -406,6 +560,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3911.json",
       "cve": "CVE-2026-3911",
       "cvss": 2.7
+    },
+    {
+      "title": "CVE-2026-4111: libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive",
+      "date": "2026-03-11",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libarchive: Infinite Loop Denial of Service in RAR5 Decompression via archive_read_data() in libarchive",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4111.json",
+      "cve": "CVE-2026-4111",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-31826: pypdf: pypdf: Denial of Service due to excessive memory consumption via crafted PDF",

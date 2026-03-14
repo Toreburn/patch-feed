@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-03-13T18:53:06.070Z",
+  "lastUpdated": "2026-03-14T02:34:16.588Z",
   "health": {
-    "lastFetchAttempt": "2026-03-13T18:53:06.070Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-12T13:15:48.658Z",
-    "consecutiveEmptyFetches": 5,
+    "lastFetchAttempt": "2026-03-14T02:34:16.588Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-03-14T02:34:16.588Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CairoSVG vulnerable to Exponential DoS via recursive <use> element amplification",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nKozea/CairoSVG has exponential denial of service via recursive `<use>` element amplification in `cairosvg/defs.py` (line ~335). This causes CPU exhaustion from a small input.\n\n## Vulnerabl",
+      "link": "https://github.com/advisories/GHSA-f38f-5xpm-9r7c",
+      "cves": [
+        "CVE-2026-31899"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": ".NET Denial of Service Vulnerability",
       "date": "2026-03-11",
