@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T13:07:26.718Z",
+  "lastUpdated": "2026-03-15T14:34:37.610Z",
   "newPatches": 0,
   "patches": [
     {
@@ -8578,6 +8578,52 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-15T14:34:37.610Z",
+      "logs": [
+        "[INFO] apple - 1 patches, no changes",
+        "[INFO] chrome - 7 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] cloudflare - 5 patches, no changes",
+        "[INFO] crowdstrike - 3 patches, no changes",
+        "[INFO] debian - 7 patches, no changes",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] fortinet - 22 patches, no changes",
+        "[INFO] github - 257 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 402 patches, no changes",
+        "[INFO] mssql - 3 patches, no changes",
+        "[INFO] paloalto - 4 patches, no changes",
+        "[INFO] redhat - 118 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 18 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 860,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "chrome",
+        "microsoft",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "cloudflare",
+        "debian",
+        "ubuntu",
+        "cisco",
+        "crowdstrike",
+        "gitlab",
+        "paloalto",
+        "apple",
+        "fortinet",
+        "mssql",
+        "visualstudio"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-03-15T13:07:26.717Z",
       "logs": [
         "[INFO] apple - 1 patches, no changes",
@@ -13372,355 +13418,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-12T07:06:36.419Z",
-      "logs": [
-        "[INFO] apple - 1 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 4 patches, no changes",
-        "[INFO] crowdstrike - 4 patches, no changes",
-        "[INFO] debian - 3 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 22 patches, no changes",
-        "[INFO] github - 173 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[SUCCESS] microsoft - 243 patches (50 new)",
-        "[INFO] mssql - 3 patches, no changes",
-        "[INFO] paloalto - 4 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 71 patches, no changes",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] ubuntu - 9 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 50,
-      "totalPatches": 550,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 18,
-      "vendors": [
-        "microsoft",
-        "cisco",
-        "cloudflare",
-        "crowdstrike",
-        "debian",
-        "github",
-        "gitlab",
-        "paloalto",
-        "signal",
-        "ubuntu",
-        "apple",
-        "chrome",
-        "fortinet",
-        "mssql",
-        "redhat",
-        "visualstudio",
-        "edge",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23235: f2fs: fix out-of-bounds access in sysfs attribute read/write",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23237: platform/x86: classmate-laptop: Add missing NULL pointer checks",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23238: romfs: check sb_set_blocksize() return value",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-3336: PKCS7_verify Certificate Chain Validation Bypass in AWS-LC",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-0038: In multiple functions of mem_protect.c, there is a possible way to execute arbitrary code due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-27601: Underscore.js has unlimited recursion in _.flatten and _.isEqual, potential for DoS attack",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-2297: SourcelessFileLoader does not use io.open_code()",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-26017: CoreDNS ACL Bypass",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-26018: CoreDNS Loop Detection Denial of Service Vulnerability",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-3731: libssh SFTP Extension Name sftp.c sftp_extensions_get_data out-of-bounds",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2025-69646: Binutils objdump contains a denial-of-service vulnerability when processing a crafted binary with malformed DWARF debug_rnglists data. A logic error in the handling of the debug_rnglists header can cause objdump to repeatedly print the same warning message and fail to terminate, resulting in an unbounded logging loop until the process is interrupted. The issue was observed in binutils 2.44. A local attacker can exploit this vulnerability by supplying a malicious input file, leading to excessive CPU and I/O usage and preventing completion of the objdump analysis.",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2025-69652: GNU Binutils thru 2.46 readelf contains a vulnerability that leads to an abort (SIGABRT) when processing a crafted ELF binary with malformed DWARF abbrev or debug information. Due to incomplete state cleanup in process_debug_info(), an invalid debug_info_p state may propagate into DWARF attribute parsing routines. When certain malformed attributes result in an unexpected data length of zero, byte_get_little_endian() triggers a fatal abort. No evidence of memory corruption or code execution was observed; the impact is limited to denial of service.",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2025-69645: Binutils objdump contains a denial-of-service vulnerability when processing a crafted binary with malformed DWARF debug information. A logic error in the handling of DWARF compilation units can result in an invalid offset_size value being used inside byte_get_little_endian, leading to an abort (SIGABRT). The issue was observed in binutils 2.44. A local attacker can trigger the crash by supplying a malicious input file.",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2025-69649: GNU Binutils thru 2.46 readelf contains a null pointer dereference vulnerability when processing a crafted ELF binary with malformed header fields. During relocation processing, an invalid or null section pointer may be passed into display_relocations(), resulting in a segmentation fault (SIGSEGV) and abrupt termination. No evidence of memory corruption beyond the null pointer dereference, nor any possibility of code execution, was observed.",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-27142: URLs in meta content attribute actions are not escaped in html/template",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-25679: Incorrect parsing of IPv6 host literals in net/url",
-          "date": "2026-03-12",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23868: CVE-2026-23868",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-3783: token leak with redirect and netrc",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23865: An integer overflow in the tt_var_load_item_variation_store function of the Freetype library in versions 2.13.2 and 2.13.3 may allow for an out of bounds read operation when parsing HVAR/VVAR/MVAR tables in OpenType variable fonts. This issue is fixed in version 2.14.2.",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23236: fbdev: smscufx: properly copy ioctl memory to kernelspace",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2025-71238: scsi: qla2xxx: Fix bsg_done() causing double free",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23231: netfilter: nf_tables: fix use-after-free in nf_tables_addchain()",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-3338: PKCS7_verify Signature Validation Bypass in AWS-LC",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-3381: Compress::Raw::Zlib versions through 2.219 for Perl use potentially insecure versions of zlib",
-          "date": "2026-03-12",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-0032: In multiple functions of mem_protect.c, there is a possible out-of-bounds write due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-0031: In multiple functions of mem_protect.c, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-3494: MariaDB Server Audit Plugin Comment Handling Bypass",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-3713: pnggroup libpng pnm2png pnm2png.c do_pnm2png heap-based overflow",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-27139: FileInfo can escape from a Root in os",
-          "date": "2026-03-12",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2024-14027: xattr: switch to CLASS(fd)",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-29786: node-tar: Hardlink Path Traversal via Drive-Relative Linkpath",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2025-69650: GNU Binutils thru 2.46 readelf contains a double free vulnerability when processing a crafted ELF binary with malformed relocation data. During GOT relocation handling, dump_relocations may return early without initializing the all_relocations array. As a result, process_got_section_contents() may pass an uninitialized r_symbol pointer to free(), leading to a double free and terminating the program with SIGABRT. No evidence of exploitable memory corruption or code execution was observed; the impact is limited to denial of service.",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2025-69651: GNU Binutils thru 2.46 readelf contains a vulnerability that leads to an invalid pointer free when processing a crafted ELF binary with malformed relocation or symbol data. If dump_relocations returns early due to parsing errors, the internal all_relocations array may remain partially uninitialized. Later, process_got_section_contents() may attempt to free an invalid r_symbol pointer, triggering memory corruption checks in glibc and causing the program to terminate with SIGABRT. No evidence of further memory corruption or code execution was observed; the impact is limited to denial of service.",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2025-69644: An issue was discovered in Binutils before 2.46. The objdump contains a denial-of-service vulnerability when processing a crafted binary with malformed debug information. A logic flaw in the handling of DWARF location list headers can cause objdump to enter an unbounded loop and produce endless output until manually interrupted. This issue affects versions prior to the upstream fix and allows a local attacker to cause excessive resource consumption by supplying a malicious input file.",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-27137: Incorrect enforcement of email constraints in crypto/x509",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-27138: Panic in name constraint checking for malformed certificates in crypto/x509",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23239: espintcp: Fix race condition in espintcp_close()",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23240: tls: Fix race condition in tls_sw_cancel_work_tx()",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-1965: bad reuse of HTTP Negotiate connection",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-3784: wrong proxy connection reuse with credentials",
-          "date": "2026-03-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-21262: SQL Server Elevation of Privilege Vulnerability",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23660: Windows Admin Center in Azure Portal Elevation of Privilege Vulnerability",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23664: Azure IoT Explorer Information Disclosure Vulnerability",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23667: Broadcast DVR Elevation of Privilege Vulnerability",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23668: Windows Graphics Component Elevation of Privilege Vulnerability",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23669: Windows Print Spooler Remote Code Execution Vulnerability",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23671: Windows Bluetooth RFCOM Protocol Driver Elevation of Privilege Vulnerability",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23672: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23673: Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
-          "date": "2026-03-12",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
