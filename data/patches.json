@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-03-16T13:21:51.871Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-16T13:28:22.819Z",
+  "newPatches": 3,
   "patches": [
+    {
+      "title": "DSA-6165-1 chromium - security update",
+      "date": "2026-03-16",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. Google is aware that exploits for both CVEs exist in th...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00074.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "Chrome for Android Update",
       "date": "2026-03-14",
@@ -2210,6 +2221,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-2673.json",
       "cve": "CVE-2026-2673",
       "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-31899: CairoSVG: CairoSVG: Denial of Service via recursive <use> element amplification",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "CairoSVG: CairoSVG: Denial of Service via recursive <use> element amplification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31899.json",
+      "cve": "CVE-2026-31899",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-30853: calibre: Calibre: Arbitrary file write via crafted RocketBook (.rb) file",
+      "date": "2026-03-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "calibre: Calibre: Arbitrary file write via crafted RocketBook (.rb) file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30853.json",
+      "cve": "CVE-2026-30853",
+      "cvss": 5
     },
     {
       "title": "CairoSVG vulnerable to Exponential DoS via recursive <use> element amplification",
@@ -7868,6 +7901,69 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-16T13:28:22.819Z",
+      "logs": [
+        "[INFO] apple - 1 patches, no changes",
+        "[INFO] chrome - 7 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] cloudflare - 3 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 7 patches (1 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 22 patches, no changes",
+        "[INFO] github - 225 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 402 patches, no changes",
+        "[INFO] mssql - 3 patches, no changes",
+        "[INFO] paloalto - 4 patches, no changes",
+        "[SUCCESS] redhat - 97 patches (2 new)",
+        "[INFO] signal - 2 patches, no changes",
+        "[INFO] ubuntu - 15 patches, no changes"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 798,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "debian",
+        "chrome",
+        "microsoft",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "cloudflare",
+        "ubuntu",
+        "cisco",
+        "crowdstrike",
+        "gitlab",
+        "paloalto",
+        "apple",
+        "fortinet",
+        "mssql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6165-1 chromium - security update",
+          "date": "2026-03-16",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31899: CairoSVG: CairoSVG: Denial of Service via recursive <use> element amplification",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-30853: calibre: Calibre: Arbitrary file write via crafted RocketBook (.rb) file",
+          "date": "2026-03-13",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-16T13:21:51.870Z",
       "logs": [
         "[INFO] apple - 1 patches, no changes",
@@ -11699,52 +11795,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-13T06:59:54.558Z",
-      "logs": [
-        "[INFO] apple - 1 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 5 patches, no changes",
-        "[INFO] crowdstrike - 3 patches, no changes",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 22 patches, no changes",
-        "[INFO] github - 202 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 259 patches, no changes",
-        "[INFO] mssql - 3 patches, no changes",
-        "[INFO] paloalto - 4 patches, no changes",
-        "[INFO] redhat - 80 patches, no changes",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] ubuntu - 17 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 619,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 17,
-      "vendors": [
-        "chrome",
-        "cloudflare",
-        "debian",
-        "edge",
-        "github",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "cisco",
-        "crowdstrike",
-        "gitlab",
-        "paloalto",
-        "signal",
-        "apple",
-        "fortinet",
-        "mssql",
-        "visualstudio"
-      ],
-      "newPatches": []
     }
   ]
 }
