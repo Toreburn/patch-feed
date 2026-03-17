@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-03-16T19:13:25.081Z",
+  "lastUpdated": "2026-03-17T02:38:46.442Z",
   "health": {
-    "lastFetchAttempt": "2026-03-16T19:13:25.081Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-16T13:27:14.161Z",
-    "consecutiveEmptyFetches": 1,
+    "lastFetchAttempt": "2026-03-17T02:38:46.442Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-03-17T02:38:46.442Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Monitoring is vulnerable to Archive Slip due to missing checks in sanitization",
+      "date": "2026-03-16",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "The `sanitizeArchivePath` function in `pkg/extract/extract.go` (lines 248–254) is vulnerable to a path traversal bypass due to a missing trailing path separator in the `strings.HasPrefix` check. A cra",
+      "link": "https://github.com/advisories/GHSA-f7cq-gvh6-qr25",
+      "cves": [
+        "CVE-2026-32771"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "CairoSVG vulnerable to Exponential DoS via recursive <use> element amplification",
       "date": "2026-03-13",
