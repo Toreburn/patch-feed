@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-03-17T13:20:28.813Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-17T13:27:09.154Z",
+  "newPatches": 7,
   "patches": [
+    {
+      "title": "",
+      "date": "2026-03-17",
+      "severity": "MEDIUM",
+      "vendor": "kubernetes",
+      "component": "CSI",
+      "description": "**CVSS Rating:**  \n[CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H](https://www.first.org/cvss/calculator/3-1#CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H) — **Medium (6.5)**\n\nA vulnerability was discov...",
+      "link": "https://github.com/kubernetes/kubernetes/issues/137797",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
       "date": "2026-03-17",
@@ -451,6 +462,26 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2025-69648",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69648"
+    },
+    {
+      "title": "Tuesday, March 24, 2026 Security Releases",
+      "date": "2026-03-17",
+      "severity": "UNKNOWN",
+      "vendor": "nodejs",
+      "component": "Node.js Runtime",
+      "description": "",
+      "link": "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "USN-8098-2: Linux kernel (GCP) vulnerabilities",
+      "date": "2026-03-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (GCP) vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8098-2"
     },
     {
       "title": "CVE-2026-4270 - AWS API MCP File Access Restriction Bypass",
@@ -1756,6 +1787,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-69693.json",
       "cve": "CVE-2025-69693",
       "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-4177: perl-YAML-Syck: YAML::Syck versions through 1.36 for Perl has several potential security vulnerabilities including a hig",
+      "date": "2026-03-16",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-YAML-Syck: YAML::Syck versions through 1.36 for Perl has several potential security vulnerabilities including a high-severity heap buffer overflow in the YAML emitter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4177.json",
+      "cve": "CVE-2026-4177",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-4271: libsoup: libsoup: Denial of Service via Use-After-Free in HTTP/2 server",
+      "date": "2026-03-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libsoup: libsoup: Denial of Service via Use-After-Free in HTTP/2 server",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4271.json",
+      "cve": "CVE-2026-4271",
+      "cvss": 5.3
     },
     {
       "title": "Monitoring is vulnerable to Archive Slip due to missing checks in sanitization",
@@ -4279,6 +4332,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-2920.json",
       "cve": "CVE-2026-2920",
       "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-32640: simpleeval: SimpleEval: Arbitrary code execution via sandbox escape due to improper object handling",
+      "date": "2026-03-13",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "simpleeval: SimpleEval: Arbitrary code execution via sandbox escape due to improper object handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-32640.json",
+      "cve": "CVE-2026-32640",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-3312: pagure: Pagure: Information disclosure via unrestricted reStructuredText include directive",
+      "date": "2026-03-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pagure: Pagure: Information disclosure via unrestricted reStructuredText include directive",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3312.json",
+      "cve": "CVE-2026-3312",
+      "cvss": 7.7
     },
     {
       "title": "CairoSVG vulnerable to Exponential DoS via recursive <use> element amplification",
@@ -7982,6 +8057,93 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-17T13:27:09.153Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 6 patches, no changes",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] github - 257 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[SUCCESS] kubernetes - 1 patches (1 new)",
+        "[INFO] microsoft - 418 patches, no changes",
+        "[SUCCESS] nodejs - 1 patches (1 new)",
+        "[INFO] paloalto - 3 patches, no changes",
+        "[SUCCESS] redhat - 83 patches (4 new)",
+        "[INFO] signal - 3 patches, no changes",
+        "[SUCCESS] ubuntu - 23 patches (1 new)"
+      ],
+      "newPatchCount": 7,
+      "totalPatches": 813,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "kubernetes",
+        "microsoft",
+        "nodejs",
+        "ubuntu",
+        "aws",
+        "debian",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "chrome",
+        "cloudflare",
+        "cisco",
+        "crowdstrike",
+        "gitlab",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "kubernetes",
+          "title": "",
+          "date": "2026-03-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "nodejs",
+          "title": "Tuesday, March 24, 2026 Security Releases",
+          "date": "2026-03-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4177: perl-YAML-Syck: YAML::Syck versions through 1.36 for Perl has several potential security vulnerabilities including a hig",
+          "date": "2026-03-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4271: libsoup: libsoup: Denial of Service via Use-After-Free in HTTP/2 server",
+          "date": "2026-03-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-32640: simpleeval: SimpleEval: Arbitrary code execution via sandbox escape due to improper object handling",
+          "date": "2026-03-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-3312: pagure: Pagure: Information disclosure via unrestricted reStructuredText include directive",
+          "date": "2026-03-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8098-2: Linux kernel (GCP) vulnerabilities",
+          "date": "2026-03-17",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-17T13:20:28.813Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
@@ -11678,52 +11840,6 @@
     },
     {
       "timestamp": "2026-03-14T06:59:01.122Z",
-      "logs": [
-        "[INFO] apple - 1 patches, no changes",
-        "[INFO] chrome - 7 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 5 patches, no changes",
-        "[INFO] crowdstrike - 3 patches, no changes",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 4 patches, no changes",
-        "[INFO] fortinet - 22 patches, no changes",
-        "[INFO] github - 257 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 352 patches, no changes",
-        "[INFO] mssql - 3 patches, no changes",
-        "[INFO] paloalto - 4 patches, no changes",
-        "[INFO] redhat - 120 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 18 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 812,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 17,
-      "vendors": [
-        "chrome",
-        "edge",
-        "github",
-        "microsoft",
-        "redhat",
-        "signal",
-        "cloudflare",
-        "debian",
-        "ubuntu",
-        "cisco",
-        "crowdstrike",
-        "gitlab",
-        "paloalto",
-        "apple",
-        "fortinet",
-        "mssql",
-        "visualstudio"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-14T06:53:59.773Z",
       "logs": [
         "[INFO] apple - 1 patches, no changes",
         "[INFO] chrome - 7 patches, no changes",
