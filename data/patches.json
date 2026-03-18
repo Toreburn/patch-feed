@@ -1,7 +1,26 @@
 {
-  "lastUpdated": "2026-03-18T02:35:20.608Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-18T02:46:03.644Z",
+  "newPatches": 26,
   "patches": [
+    {
+      "title": "Cisco Catalyst SD-WAN Vulnerabilities",
+      "date": "2026-03-18",
+      "severity": "CRITICAL",
+      "vendor": "cisco",
+      "component": "SD-WAN",
+      "description": "Multiple vulnerabilities in Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an attacker to access an affected system, elevate privileges to&nbsp; root, gain access to sensitive inf...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-authbp-qwCX8D4v",
+      "cve": "CVE-2026-20122"
+    },
+    {
+      "title": "Arbitrary code execution via crafted project files in Kiro IDE",
+      "date": "2026-03-17",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "Arbitrary",
+      "description": "<p><b>Bulletin ID:</b> 2026-009-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 2026/03/17 12:15 PM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-009-aws/"
+    },
     {
       "title": "Chrome Stable for iOS Update",
       "date": "2026-03-17",
@@ -10,6 +29,28 @@
       "component": "Chrome Browser",
       "description": "Hi everyone! We've just released Chrome Stable 146 (146.0.7680.151) for iOS; it'll become available on App Store in the next few hours.This release includes stability and performance improvements. You...",
       "link": "https://chromereleases.googleblog.com/feeds/71993060389713429/comments/default"
+    },
+    {
+      "title": "DSA-6167-1 gst-plugins-base1.0 - security update",
+      "date": "2026-03-17",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "gst-plugins-base1.0",
+      "description": "An integer overflow was discovered in the RIFF parser of the GStreamer media framework, which may result in denial of service or potentially the execution of arbitrary code if a malformed media file i...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00076.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6166-1 nodejs - security update",
+      "date": "2026-03-17",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "nodejs",
+      "description": "Multiple vulnerabilities were discovered in Node.js, which could result in denial of service or information disclosure or bypass of file restrictions. https://security-tracker.debian.org/tracker/DSA-6...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00075.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "Micronaut Framework vulnerable to a Denial of Service in HTML error response caching",
@@ -317,6 +358,160 @@
       "description": "Uncontrolled recursion DoS in JustHTML() via deeply nested HTML",
       "link": "https://github.com/advisories/GHSA-v7cf-c9rm-wm3j",
       "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Improper S3 ownership verification in Bedrock AgentCore Starter Toolkit",
+      "date": "2026-03-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "bedrock-agentcore-starter-toolkit",
+      "description": "Improper S3 ownership verification in Bedrock AgentCore Starter Toolkit",
+      "link": "https://github.com/advisories/GHSA-xfhr-q72q-jcrj",
+      "cve": "CVE-2026-4269",
+      "cvss": 7.5
+    },
+    {
+      "title": "AWS API MCP File Access Restriction Bypass",
+      "date": "2026-03-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "awslabs.aws-api-mcp-server",
+      "description": "AWS API MCP File Access Restriction Bypass",
+      "link": "https://github.com/advisories/GHSA-2cpp-j2fc-qhp7",
+      "cve": "CVE-2026-4270",
+      "cvss": 5.5
+    },
+    {
+      "title": "AVideo vulnerable to unauthenticated SSRF via HTTP redirect bypass in LiveLinks proxy",
+      "date": "2026-03-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "wwbn/avideo",
+      "description": "AVideo vulnerable to unauthenticated SSRF via HTTP redirect bypass in LiveLinks proxy",
+      "link": "https://github.com/advisories/GHSA-9x67-f2v7-63rw",
+      "cve": "CVE-2026-33039",
+      "cvss": 8.6
+    },
+    {
+      "title": "Unauthenticated Reflected XSS via innerHTML in AVideo",
+      "date": "2026-03-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wwbn/avideo",
+      "description": "Unauthenticated Reflected XSS via innerHTML in AVideo",
+      "link": "https://github.com/advisories/GHSA-wfq5-qgqp-hvhv",
+      "cve": "CVE-2026-33035",
+      "cvss": null
+    },
+    {
+      "title": "Unauthenticated Remote Code Execution in Langflow via Public Flow Build Endpoint",
+      "date": "2026-03-17",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "langflow",
+      "description": "Unauthenticated Remote Code Execution in Langflow via Public Flow Build Endpoint",
+      "link": "https://github.com/advisories/GHSA-vwmf-pq79-vjvx",
+      "cve": "CVE-2026-33017",
+      "cvss": null
+    },
+    {
+      "title": "music-metadata has an infinite loop vulnerability in ASF parser",
+      "date": "2026-03-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "music-metadata",
+      "description": "music-metadata has an infinite loop vulnerability in ASF parser",
+      "link": "https://github.com/advisories/GHSA-v6c2-xwv6-8xf7",
+      "cve": "CVE-2026-32256",
+      "cvss": 7.5
+    },
+    {
+      "title": "AVideo affected by Session Hijacking via Unauthenticated Session ID Disclosure with Permissive CORS",
+      "date": "2026-03-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "wwbn/avideo",
+      "description": "AVideo affected by Session Hijacking via Unauthenticated Session ID Disclosure with Permissive CORS",
+      "link": "https://github.com/advisories/GHSA-qc3p-398r-p59j",
+      "cve": "CVE-2026-33043",
+      "cvss": 8.1
+    },
+    {
+      "title": "Parse Server affected by empty authData bypassing credential requirement on signup",
+      "date": "2026-03-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server affected by empty authData bypassing credential requirement on signup",
+      "link": "https://github.com/advisories/GHSA-wjqw-r9x4-j59v",
+      "cve": "CVE-2026-33042",
+      "cvss": null
+    },
+    {
+      "title": "astral-tokio-tar insufficiently validates PAX extensions during extraction",
+      "date": "2026-03-17",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "astral-tokio-tar",
+      "description": "astral-tokio-tar insufficiently validates PAX extensions during extraction",
+      "link": "https://github.com/advisories/GHSA-6gx3-4362-rf54",
+      "cve": "CVE-2026-32766",
+      "cvss": null
+    },
+    {
+      "title": "AVideo has an Unauthenticated Password Hash Oracle via encryptPass.json.php",
+      "date": "2026-03-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wwbn/avideo",
+      "description": "AVideo has an Unauthenticated Password Hash Oracle via encryptPass.json.php",
+      "link": "https://github.com/advisories/GHSA-px7x-gq96-rmp5",
+      "cve": "CVE-2026-33041",
+      "cvss": 5.3
+    },
+    {
+      "title": "AVideo affected by unauthenticated application takeover via exposed web installer on uninitialized deployments",
+      "date": "2026-03-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "wwbn/avideo",
+      "description": "AVideo affected by unauthenticated application takeover via exposed web installer on uninitialized deployments",
+      "link": "https://github.com/advisories/GHSA-2f9h-23f7-8gcx",
+      "cve": "CVE-2026-33038",
+      "cvss": 8.1
+    },
+    {
+      "title": "Tekton Pipelines controller panic via long resolver name in TaskRun/PipelineRun",
+      "date": "2026-03-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/tektoncd/pipeline",
+      "description": "Tekton Pipelines controller panic via long resolver name in TaskRun/PipelineRun",
+      "link": "https://github.com/advisories/GHSA-cv4x-93xx-wgfj",
+      "cve": "CVE-2026-33022",
+      "cvss": 6.5
+    },
+    {
+      "title": "fast-xml-parser affected by numeric entity expansion bypassing all entity expansion limits (incomplete fix for CVE-2026-26278)",
+      "date": "2026-03-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "fast-xml-parser",
+      "description": "fast-xml-parser affected by numeric entity expansion bypassing all entity expansion limits (incomplete fix for CVE-2026-26278)",
+      "link": "https://github.com/advisories/GHSA-8gc5-j5rx-235r",
+      "cve": "CVE-2026-33036",
+      "cvss": 7.5
+    },
+    {
+      "title": "Tillitis TKey Client has an Error in Protocol Implementation",
+      "date": "2026-03-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/tillitis/tkeyclient",
+      "description": "Tillitis TKey Client has an Error in Protocol Implementation",
+      "link": "https://github.com/advisories/GHSA-4w7r-3222-8h6v",
+      "cve": "CVE-2026-32953",
       "cvss": null
     },
     {
@@ -792,6 +987,39 @@
       "cves": []
     },
     {
+      "title": "CVE-2026-4324: rubygem-katello: Katello: Denial of Service and potential information disclosure via SQL injection",
+      "date": "2026-03-17",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rubygem-katello: Katello: Denial of Service and potential information disclosure via SQL injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4324.json",
+      "cve": "CVE-2026-4324",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-23241: kernel: audit: add missing syscalls to read class",
+      "date": "2026-03-17",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: audit: add missing syscalls to read class",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23241.json",
+      "cve": "CVE-2026-23241",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2025-71239: kernel: audit: add fchmodat2() to change attributes class",
+      "date": "2026-03-17",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: audit: add fchmodat2() to change attributes class",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-71239.json",
+      "cve": "CVE-2025-71239",
+      "cvss": null
+    },
+    {
       "title": "USN-8098-2: Linux kernel (GCP) vulnerabilities",
       "date": "2026-03-17",
       "severity": "LOW",
@@ -808,6 +1036,42 @@
       "component": "snapd",
       "description": "Qualys discovered that snapd incorrectly handled certain operations in the\nsnap's private /tmp directory. If systemd-tmpfiles is enabled to automatically\nclean up this directory, a local attacker coul...",
       "link": "https://ubuntu.com/security/notices/USN-8102-1"
+    },
+    {
+      "title": "USN-8096-4: Linux kernel (Real-time) vulnerabilities",
+      "date": "2026-03-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Real-time) vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8096-4"
+    },
+    {
+      "title": "USN-8096-3: Linux kernel vulnerabilities",
+      "date": "2026-03-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8096-3"
+    },
+    {
+      "title": "USN-8094-2: Linux kernel vulnerabilities",
+      "date": "2026-03-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8094-2"
+    },
+    {
+      "title": "USN-8095-3: Linux kernel (Real-time) vulnerabilities",
+      "date": "2026-03-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Real-time) vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8095-3"
     },
     {
       "title": "CVE-2026-4270 - AWS API MCP File Access Restriction Bypass",
@@ -2135,6 +2399,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4271.json",
       "cve": "CVE-2026-4271",
       "cvss": 5.3
+    },
+    {
+      "title": "CVE-2025-69196: fastmcp: FastMCP: Improper token issuance due to incorrect resource parameter handling",
+      "date": "2026-03-16",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fastmcp: FastMCP: Improper token issuance due to incorrect resource parameter handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-69196.json",
+      "cve": "CVE-2025-69196",
+      "cvss": 7.4
     },
     {
       "title": "Monitoring is vulnerable to Archive Slip due to missing checks in sanitization",
@@ -6541,6 +6816,201 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-18T02:46:03.643Z",
+      "logs": [
+        "[SUCCESS] aws - 3 patches (1 new)",
+        "[INFO] chrome - 5 patches, no changes",
+        "[SUCCESS] cisco - 1 patches (1 new)",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] debian - 7 patches (2 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[SUCCESS] github - 234 patches (14 new)",
+        "[INFO] kubernetes - 1 patches, no changes",
+        "[INFO] microsoft - 334 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[SUCCESS] redhat - 69 patches (4 new)",
+        "[INFO] signal - 2 patches, no changes",
+        "[SUCCESS] ubuntu - 24 patches (4 new)"
+      ],
+      "newPatchCount": 26,
+      "totalPatches": 685,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "cisco",
+        "aws",
+        "chrome",
+        "debian",
+        "github",
+        "kubernetes",
+        "microsoft",
+        "nodejs",
+        "redhat",
+        "ubuntu",
+        "edge",
+        "signal",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "Arbitrary code execution via crafted project files in Kiro IDE",
+          "date": "2026-03-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Catalyst SD-WAN Vulnerabilities",
+          "date": "2026-03-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6167-1 gst-plugins-base1.0 - security update",
+          "date": "2026-03-17",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6166-1 nodejs - security update",
+          "date": "2026-03-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Improper S3 ownership verification in Bedrock AgentCore Starter Toolkit",
+          "date": "2026-03-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AWS API MCP File Access Restriction Bypass",
+          "date": "2026-03-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AVideo vulnerable to unauthenticated SSRF via HTTP redirect bypass in LiveLinks proxy",
+          "date": "2026-03-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Unauthenticated Reflected XSS via innerHTML in AVideo",
+          "date": "2026-03-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Unauthenticated Remote Code Execution in Langflow via Public Flow Build Endpoint",
+          "date": "2026-03-17",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "music-metadata has an infinite loop vulnerability in ASF parser",
+          "date": "2026-03-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AVideo affected by Session Hijacking via Unauthenticated Session ID Disclosure with Permissive CORS",
+          "date": "2026-03-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server affected by empty authData bypassing credential requirement on signup",
+          "date": "2026-03-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "astral-tokio-tar insufficiently validates PAX extensions during extraction",
+          "date": "2026-03-17",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "AVideo has an Unauthenticated Password Hash Oracle via encryptPass.json.php",
+          "date": "2026-03-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AVideo affected by unauthenticated application takeover via exposed web installer on uninitialized deployments",
+          "date": "2026-03-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Tekton Pipelines controller panic via long resolver name in TaskRun/PipelineRun",
+          "date": "2026-03-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "fast-xml-parser affected by numeric entity expansion bypassing all entity expansion limits (incomplete fix for CVE-2026-26278)",
+          "date": "2026-03-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Tillitis TKey Client has an Error in Protocol Implementation",
+          "date": "2026-03-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4324: rubygem-katello: Katello: Denial of Service and potential information disclosure via SQL injection",
+          "date": "2026-03-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23241: kernel: audit: add missing syscalls to read class",
+          "date": "2026-03-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-71239: kernel: audit: add fchmodat2() to change attributes class",
+          "date": "2026-03-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-69196: fastmcp: FastMCP: Improper token issuance due to incorrect resource parameter handling",
+          "date": "2026-03-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8096-4: Linux kernel (Real-time) vulnerabilities",
+          "date": "2026-03-17",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8096-3: Linux kernel vulnerabilities",
+          "date": "2026-03-17",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8094-2: Linux kernel vulnerabilities",
+          "date": "2026-03-17",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8095-3: Linux kernel (Real-time) vulnerabilities",
+          "date": "2026-03-17",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-18T02:35:20.608Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
@@ -10136,52 +10606,6 @@
     },
     {
       "timestamp": "2026-03-14T18:51:01.986Z",
-      "logs": [
-        "[INFO] apple - 1 patches, no changes",
-        "[INFO] chrome - 7 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 5 patches, no changes",
-        "[INFO] crowdstrike - 3 patches, no changes",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 4 patches, no changes",
-        "[INFO] fortinet - 22 patches, no changes",
-        "[INFO] github - 257 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 402 patches, no changes",
-        "[INFO] mssql - 3 patches, no changes",
-        "[INFO] paloalto - 4 patches, no changes",
-        "[INFO] redhat - 120 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 18 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 862,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 17,
-      "vendors": [
-        "chrome",
-        "microsoft",
-        "edge",
-        "github",
-        "redhat",
-        "signal",
-        "cloudflare",
-        "debian",
-        "ubuntu",
-        "cisco",
-        "crowdstrike",
-        "gitlab",
-        "paloalto",
-        "apple",
-        "fortinet",
-        "mssql",
-        "visualstudio"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-14T18:44:26.097Z",
       "logs": [
         "[INFO] apple - 1 patches, no changes",
         "[INFO] chrome - 7 patches, no changes",
