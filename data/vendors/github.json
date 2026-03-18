@@ -1,16 +1,148 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-03-18T07:10:02.994Z",
+  "lastUpdated": "2026-03-18T13:26:16.967Z",
   "health": {
-    "lastFetchAttempt": "2026-03-18T07:10:02.994Z",
+    "lastFetchAttempt": "2026-03-18T13:26:16.967Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-18T07:10:02.994Z",
+    "lastFetchNewPatches": 12,
+    "lastSuccessWithData": "2026-03-18T13:26:16.967Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "UltraJSON has an integer overflow handling large indent leads to buffer overflow or infinite loop",
+      "date": "2026-03-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "ujson",
+      "description": "UltraJSON has an integer overflow handling large indent leads to buffer overflow or infinite loop",
+      "link": "https://github.com/advisories/GHSA-c8rr-9gxc-jprv",
+      "cve": "CVE-2026-32875",
+      "cvss": 7.5
+    },
+    {
+      "title": "UltraJSON has a Memory Leak parsing large integers allows DoS ",
+      "date": "2026-03-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "ujson",
+      "description": "UltraJSON has a Memory Leak parsing large integers allows DoS ",
+      "link": "https://github.com/advisories/GHSA-wgvc-ghv9-3pmm",
+      "cve": "CVE-2026-32874",
+      "cvss": 7.5
+    },
+    {
+      "title": "Heimdall: Path received via Envoy gRPC corrupted when containing query string",
+      "date": "2026-03-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/dadrus/heimdall",
+      "description": "Heimdall: Path received via Envoy gRPC corrupted when containing query string",
+      "link": "https://github.com/advisories/GHSA-r8x2-fhmf-6mxp",
+      "cve": "CVE-2026-32811",
+      "cvss": 8.2
+    },
+    {
+      "title": "Denial of service in github.com/jackc/pgproto3/v2",
+      "date": "2026-03-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/jackc/pgproto3/v2",
+      "description": "Denial of service in github.com/jackc/pgproto3/v2",
+      "link": "https://github.com/advisories/GHSA-jqcq-xjh3-6g23",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "Denial of service in github.com/buger/jsonparser",
+      "date": "2026-03-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/buger/jsonparser",
+      "description": "Denial of service in github.com/buger/jsonparser",
+      "link": "https://github.com/advisories/GHSA-6g7g-w4f8-9c9x",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "Denial of service in github.com/shamaton/msgpack",
+      "date": "2026-03-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/shamaton/msgpack/v2, github.com/shamaton/msgpack/v3",
+      "description": "Denial of service in github.com/shamaton/msgpack",
+      "link": "https://github.com/advisories/GHSA-h9q6-hc68-35rp",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "SSRF in @aborruso/ckan-mcp-server via base_url allows access to internal networks",
+      "date": "2026-03-18",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@aborruso/ckan-mcp-server",
+      "description": "SSRF in @aborruso/ckan-mcp-server via base_url allows access to internal networks",
+      "link": "https://github.com/advisories/GHSA-3xm7-qw7j-qc8v",
+      "cve": "CVE-2026-33060",
+      "cvss": 5.3
+    },
+    {
+      "title": "SQL Injection via unsanitized JSON path keys when ignoring/silencing compilation errors or using `Kysely<any>`.",
+      "date": "2026-03-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "kysely",
+      "description": "SQL Injection via unsanitized JSON path keys when ignoring/silencing compilation errors or using `Kysely<any>`.",
+      "link": "https://github.com/advisories/GHSA-wmrf-hv6w-mr66",
+      "cve": "CVE-2026-32763",
+      "cvss": 8.2
+    },
+    {
+      "title": "File Browser has an Authorization Policy Bypass in Public Share Download Flow",
+      "date": "2026-03-18",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "https://github.com/filebrowser/filebrowser",
+      "description": "File Browser has an Authorization Policy Bypass in Public Share Download Flow",
+      "link": "https://github.com/advisories/GHSA-68j5-4m99-w9w9",
+      "cve": "CVE-2026-32761",
+      "cvss": 6.5
+    },
+    {
+      "title": "Terraform Provider for ArgoCD has possible exposure to GO-2026-4337 / CVE-2025-68121",
+      "date": "2026-03-18",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/argoproj-labs/terraform-provider-argocd",
+      "description": "Terraform Provider for ArgoCD has possible exposure to GO-2026-4337 / CVE-2025-68121",
+      "link": "https://github.com/advisories/GHSA-594f-3595-c47v",
+      "cve": "",
+      "cvss": 4.8
+    },
+    {
+      "title": "Langflow is Missing Ownership Verification in API Key Deletion (IDOR)",
+      "date": "2026-03-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "langflow",
+      "description": "Langflow is Missing Ownership Verification in API Key Deletion (IDOR)",
+      "link": "https://github.com/advisories/GHSA-rf6x-r45m-xv3w",
+      "cve": "CVE-2026-33053",
+      "cvss": null
+    },
+    {
+      "title": "Craft CMS Vulnerable to Stored XSS in Revision Context Menu",
+      "date": "2026-03-18",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "craftcms/cms",
+      "description": "Craft CMS Vulnerable to Stored XSS in Revision Context Menu",
+      "link": "https://github.com/advisories/GHSA-3x4w-mxpf-fhqq",
+      "cve": "CVE-2026-33051",
+      "cvss": null
+    },
     {
       "title": "Micronaut Framework vulnerable to a Denial of Service in HTML error response caching",
       "date": "2026-03-17",
