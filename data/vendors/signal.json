@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-03-19T13:19:53.087Z",
+  "lastUpdated": "2026-03-19T19:07:32.154Z",
   "health": {
-    "lastFetchAttempt": "2026-03-19T13:19:53.087Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-17T19:12:03.795Z",
-    "consecutiveEmptyFetches": 7,
+    "lastFetchAttempt": "2026-03-19T19:07:32.154Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-03-19T19:07:32.154Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Denial of service via non-terminating SYLT frame parsing loop in tinytag",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\n`tinytag` `2.2.0` allows an attacker who can supply MP3 files for parsing to trigger a non-terminating loop while the library parses an ID3v2 `SYLT` (synchronized lyrics) frame. In server",
+      "link": "https://github.com/advisories/GHSA-f4rq-2259-hv29",
+      "cves": [
+        "CVE-2026-32889"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Monitoring is vulnerable to Archive Slip due to missing checks in sanitization",
       "date": "2026-03-16",
