@@ -1,16 +1,466 @@
 {
   "vendor": "microsoft",
-  "lastUpdated": "2026-03-19T02:46:13.659Z",
+  "lastUpdated": "2026-03-19T07:05:50.622Z",
   "health": {
-    "lastFetchAttempt": "2026-03-19T02:46:13.659Z",
+    "lastFetchAttempt": "2026-03-19T07:05:50.622Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-19T02:46:13.659Z",
+    "lastFetchNewPatches": 50,
+    "lastSuccessWithData": "2026-03-19T07:05:50.622Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23234",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23234"
+    },
+    {
+      "title": "CVE-2026-23235: f2fs: fix out-of-bounds access in sysfs attribute read/write",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23235",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23235"
+    },
+    {
+      "title": "CVE-2026-23237: platform/x86: classmate-laptop: Add missing NULL pointer checks",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23237",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23237"
+    },
+    {
+      "title": "CVE-2026-23238: romfs: check sb_set_blocksize() return value",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23238",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23238"
+    },
+    {
+      "title": "CVE-2026-3336: PKCS7_verify Certificate Chain Validation Bypass in AWS-LC",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3336",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3336"
+    },
+    {
+      "title": "CVE-2026-0038: In multiple functions of mem_protect.c, there is a possible way to execute arbitrary code due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-0038",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-0038"
+    },
+    {
+      "title": "CVE-2026-27601: Underscore.js has unlimited recursion in _.flatten and _.isEqual, potential for DoS attack",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-27601",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-27601"
+    },
+    {
+      "title": "CVE-2026-2297: SourcelessFileLoader does not use io.open_code()",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-2297",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-2297"
+    },
+    {
+      "title": "CVE-2026-26017: CoreDNS ACL Bypass",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-26017",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26017"
+    },
+    {
+      "title": "CVE-2026-26018: CoreDNS Loop Detection Denial of Service Vulnerability",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-26018",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26018"
+    },
+    {
+      "title": "CVE-2026-3731: libssh SFTP Extension Name sftp.c sftp_extensions_get_data out-of-bounds",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3731",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3731"
+    },
+    {
+      "title": "CVE-2025-69646: Binutils objdump contains a denial-of-service vulnerability when processing a crafted binary with malformed DWARF debug_rnglists data. A logic error in the handling of the debug_rnglists header can cause objdump to repeatedly print the same warning message and fail to terminate, resulting in an unbounded logging loop until the process is interrupted. The issue was observed in binutils 2.44. A local attacker can exploit this vulnerability by supplying a malicious input file, leading to excessive CPU and I/O usage and preventing completion of the objdump analysis.",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-69646",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69646"
+    },
+    {
+      "title": "CVE-2025-69652: GNU Binutils thru 2.46 readelf contains a vulnerability that leads to an abort (SIGABRT) when processing a crafted ELF binary with malformed DWARF abbrev or debug information. Due to incomplete state cleanup in process_debug_info(), an invalid debug_info_p state may propagate into DWARF attribute parsing routines. When certain malformed attributes result in an unexpected data length of zero, byte_get_little_endian() triggers a fatal abort. No evidence of memory corruption or code execution was observed; the impact is limited to denial of service.",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-69652",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69652"
+    },
+    {
+      "title": "CVE-2025-69645: Binutils objdump contains a denial-of-service vulnerability when processing a crafted binary with malformed DWARF debug information. A logic error in the handling of DWARF compilation units can result in an invalid offset_size value being used inside byte_get_little_endian, leading to an abort (SIGABRT). The issue was observed in binutils 2.44. A local attacker can trigger the crash by supplying a malicious input file.",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-69645",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69645"
+    },
+    {
+      "title": "CVE-2025-69649: GNU Binutils thru 2.46 readelf contains a null pointer dereference vulnerability when processing a crafted ELF binary with malformed header fields. During relocation processing, an invalid or null section pointer may be passed into display_relocations(), resulting in a segmentation fault (SIGSEGV) and abrupt termination. No evidence of memory corruption beyond the null pointer dereference, nor any possibility of code execution, was observed.",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-69649",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69649"
+    },
+    {
+      "title": "CVE-2026-27142: URLs in meta content attribute actions are not escaped in html/template",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-27142",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-27142"
+    },
+    {
+      "title": "CVE-2026-25679: Incorrect parsing of IPv6 host literals in net/url",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25679",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25679"
+    },
+    {
+      "title": "CVE-2026-23868: CVE-2026-23868",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23868",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23868"
+    },
+    {
+      "title": "CVE-2026-3783: token leak with redirect and netrc",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3783",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3783"
+    },
+    {
+      "title": "CVE-2026-31802: node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31802",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31802"
+    },
+    {
+      "title": "CVE-2025-66413: Git for Windows leaks NTLM hash when cloning from an attacker-controlled server",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-66413",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-66413"
+    },
+    {
+      "title": "CVE-2026-32775: CVE-2026-32775",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32775",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32775"
+    },
+    {
+      "title": "CVE-2026-23941: Request smuggling via first-wins Content-Length parsing in inets httpd",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23941",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23941"
+    },
+    {
+      "title": "CVE-2026-23943: Pre-auth SSH DoS via unbounded zlib inflate",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23943",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23943"
+    },
+    {
+      "title": "CVE-2026-23241: audit: add missing syscalls to read class",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23241",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23241"
+    },
+    {
+      "title": "CVE-2025-71239: audit: add fchmodat2() to change attributes class",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-71239",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-71239"
+    },
+    {
+      "title": "CVE-2026-23233: f2fs: fix to avoid mapping wrong physical block for swapfile",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23233",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23233"
+    },
+    {
+      "title": "CVE-2026-23242: RDMA/siw: Fix potential NULL pointer dereference in header processing",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23242",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23242"
+    },
+    {
+      "title": "CVE-2026-23245: net/sched: act_gate: snapshot parameters with RCU on replace",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23245",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23245"
+    },
+    {
+      "title": "CVE-2025-71266: fs: ntfs3: check return value of indx_find to avoid infinite loop",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-71266",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-71266"
+    },
+    {
+      "title": "CVE-2025-71267: fs: ntfs3: fix infinite loop triggered by zero-sized ATTR_LIST",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-71267",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-71267"
+    },
+    {
+      "title": "CVE-2026-23244: nvme: fix memory allocation in nvme_pr_read_keys()",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23244",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23244"
+    },
+    {
+      "title": "CVE-2026-23243: RDMA/umad: Reject negative data_len in ib_umad_write",
+      "date": "2026-03-19",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23243",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23243"
+    },
+    {
+      "title": "CVE-2026-4224: Stack overflow parsing XML with deeply nested DTD content models",
+      "date": "2026-03-19",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-4224",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-4224"
+    },
+    {
+      "title": "CVE-2026-3644: Incomplete control character validation in http.cookies",
+      "date": "2026-03-19",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3644",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3644"
+    },
+    {
+      "title": "CVE-2026-23865: An integer overflow in the tt_var_load_item_variation_store function of the Freetype library in versions 2.13.2 and 2.13.3 may allow for an out of bounds read operation when parsing HVAR/VVAR/MVAR tables in OpenType variable fonts. This issue is fixed in version 2.14.2.",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23865",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23865"
+    },
+    {
+      "title": "CVE-2026-23236: fbdev: smscufx: properly copy ioctl memory to kernelspace",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23236",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23236"
+    },
+    {
+      "title": "CVE-2025-71238: scsi: qla2xxx: Fix bsg_done() causing double free",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-71238",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-71238"
+    },
+    {
+      "title": "CVE-2026-23231: netfilter: nf_tables: fix use-after-free in nf_tables_addchain()",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23231",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23231"
+    },
+    {
+      "title": "CVE-2026-3338: PKCS7_verify Signature Validation Bypass in AWS-LC",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3338",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3338"
+    },
+    {
+      "title": "CVE-2026-3381: Compress::Raw::Zlib versions through 2.219 for Perl use potentially insecure versions of zlib",
+      "date": "2026-03-19",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3381",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3381"
+    },
+    {
+      "title": "CVE-2026-0032: In multiple functions of mem_protect.c, there is a possible out-of-bounds write due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-0032",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-0032"
+    },
+    {
+      "title": "CVE-2026-0031: In multiple functions of mem_protect.c, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-0031",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-0031"
+    },
+    {
+      "title": "CVE-2026-3494: MariaDB Server Audit Plugin Comment Handling Bypass",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3494",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3494"
+    },
+    {
+      "title": "CVE-2026-3713: pnggroup libpng pnm2png pnm2png.c do_pnm2png heap-based overflow",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3713",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3713"
+    },
+    {
+      "title": "CVE-2026-27139: FileInfo can escape from a Root in os",
+      "date": "2026-03-19",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-27139",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-27139"
+    },
+    {
+      "title": "CVE-2024-14027: xattr: switch to CLASS(fd)",
+      "date": "2026-03-19",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2024-14027",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2024-14027"
+    },
+    {
+      "title": "CVE-2026-29786: node-tar: Hardlink Path Traversal via Drive-Relative Linkpath",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-29786",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-29786"
+    },
+    {
+      "title": "CVE-2025-69650: GNU Binutils thru 2.46 readelf contains a double free vulnerability when processing a crafted ELF binary with malformed relocation data. During GOT relocation handling, dump_relocations may return early without initializing the all_relocations array. As a result, process_got_section_contents() may pass an uninitialized r_symbol pointer to free(), leading to a double free and terminating the program with SIGABRT. No evidence of exploitable memory corruption or code execution was observed; the impact is limited to denial of service.",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-69650",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69650"
+    },
+    {
+      "title": "CVE-2025-69651: GNU Binutils thru 2.46 readelf contains a vulnerability that leads to an invalid pointer free when processing a crafted ELF binary with malformed relocation or symbol data. If dump_relocations returns early due to parsing errors, the internal all_relocations array may remain partially uninitialized. Later, process_got_section_contents() may attempt to free an invalid r_symbol pointer, triggering memory corruption checks in glibc and causing the program to terminate with SIGABRT. No evidence of further memory corruption or code execution was observed; the impact is limited to denial of service.",
+      "date": "2026-03-19",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-69651",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69651"
+    },
     {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
       "date": "2026-03-18",
