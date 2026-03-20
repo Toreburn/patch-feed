@@ -1,7 +1,172 @@
 {
-  "lastUpdated": "2026-03-20T18:55:48.417Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-20T19:00:29.384Z",
+  "newPatches": 66,
   "patches": [
+    {
+      "title": "oRPC has Stored XSS in OpenAPI Reference Plugin via unescaped JSON.stringify",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@orpc/openapi",
+      "description": "oRPC has Stored XSS in OpenAPI Reference Plugin via unescaped JSON.stringify",
+      "link": "https://github.com/advisories/GHSA-7f6v-3gx7-27q8",
+      "cve": "CVE-2026-33331",
+      "cvss": 8.2
+    },
+    {
+      "title": "Vikunja’s Improper Access Control Enables Bypass of Administrator-Imposed Account Disablement ",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "code.vikunja.io/api",
+      "description": "Vikunja’s Improper Access Control Enables Bypass of Administrator-Imposed Account Disablement ",
+      "link": "https://github.com/advisories/GHSA-vq4q-79hh-q767",
+      "cve": "CVE-2026-33316",
+      "cvss": 8.1
+    },
+    {
+      "title": "Vikunja has a 2FA Bypass via Caldav Basic Auth",
+      "date": "2026-03-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "code.vikunja.io/api",
+      "description": "Vikunja has a 2FA Bypass via Caldav Basic Auth",
+      "link": "https://github.com/advisories/GHSA-47cr-f226-r4pq",
+      "cve": "CVE-2026-33315",
+      "cvss": null
+    },
+    {
+      "title": "Vikunja has an IDOR in Task Comments Allows Reading Arbitrary Comments",
+      "date": "2026-03-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "code.vikunja.io/api",
+      "description": "Vikunja has an IDOR in Task Comments Allows Reading Arbitrary Comments",
+      "link": "https://github.com/advisories/GHSA-mr3j-p26x-72x4",
+      "cve": "CVE-2026-33313",
+      "cvss": null
+    },
+    {
+      "title": "Vikunja read-only users can delete project background images via broken object-level authorization",
+      "date": "2026-03-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "code.vikunja.io/api",
+      "description": "Vikunja read-only users can delete project background images via broken object-level authorization",
+      "link": "https://github.com/advisories/GHSA-564f-wx8x-878h",
+      "cve": "CVE-2026-33312",
+      "cvss": null
+    },
+    {
+      "title": "tar-rs `unpack_in` can chmod arbitrary directories by following symlinks",
+      "date": "2026-03-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "tar",
+      "description": "tar-rs `unpack_in` can chmod arbitrary directories by following symlinks",
+      "link": "https://github.com/advisories/GHSA-j4xf-2g29-59ph",
+      "cve": "CVE-2026-33056",
+      "cvss": null
+    },
+    {
+      "title": "tar-rs incorrectly ignores PAX size headers if header size is nonzero",
+      "date": "2026-03-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "tar",
+      "description": "tar-rs incorrectly ignores PAX size headers if header size is nonzero",
+      "link": "https://github.com/advisories/GHSA-gchp-q4r4-x4ff",
+      "cve": "CVE-2026-33055",
+      "cvss": null
+    },
+    {
+      "title": "Graphiti Affected by Arbitrary Method Execution via Unvalidated Relationship Names",
+      "date": "2026-03-20",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "graphiti",
+      "description": "Graphiti Affected by Arbitrary Method Execution via Unvalidated Relationship Names",
+      "link": "https://github.com/advisories/GHSA-3m5v-4xp5-gjg2",
+      "cve": "CVE-2026-33286",
+      "cvss": 9.1
+    },
+    {
+      "title": "pydicom has a path traversal in FileSet/DICOMDIR ReferencedFileID allows file access outside the File-set root",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pydicom, pydicom",
+      "description": "pydicom has a path traversal in FileSet/DICOMDIR ReferencedFileID allows file access outside the File-set root",
+      "link": "https://github.com/advisories/GHSA-v856-2rf8-9f28",
+      "cve": "CVE-2026-32711",
+      "cvss": 7.8
+    },
+    {
+      "title": "Qwik City has array method pollution in FormData processing allows type confusion and DoS",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@builder.io/qwik-city",
+      "description": "Qwik City has array method pollution in FormData processing allows type confusion and DoS",
+      "link": "https://github.com/advisories/GHSA-whhv-gg5v-864r",
+      "cve": "CVE-2026-32701",
+      "cvss": 7.5
+    },
+    {
+      "title": "Traefik Affected by BasicAuth Middleware Timing Attack Allows Username Enumeration",
+      "date": "2026-03-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/traefik/traefik, github.com/traefik/traefik/v2, github.com/traefik/traefik/v3",
+      "description": "Traefik Affected by BasicAuth Middleware Timing Attack Allows Username Enumeration",
+      "link": "https://github.com/advisories/GHSA-g3hg-j4jv-cwfr",
+      "cve": "CVE-2026-32595",
+      "cvss": null
+    },
+    {
+      "title": "Traefik has a Potential mTLS Bypass via Fragmented TLS ClientHello Causing Pre-SNI Sniff Fallback to Default Non-mTLS TLS Config",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/traefik/traefik/v3, github.com/traefik/traefik/v3, github.com/traefik/traefik/v2",
+      "description": "Traefik has a Potential mTLS Bypass via Fragmented TLS ClientHello Causing Pre-SNI Sniff Fallback to Default Non-mTLS TLS Config",
+      "link": "https://github.com/advisories/GHSA-wvvq-wgcr-9q48",
+      "cve": "CVE-2026-32305",
+      "cvss": null
+    },
+    {
+      "title": "Duplicate Advisory: OpenClaw: WebSocket shared-auth connections could self-declare elevated scopes",
+      "date": "2026-03-20",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "Duplicate Advisory: OpenClaw: WebSocket shared-auth connections could self-declare elevated scopes",
+      "link": "https://github.com/advisories/GHSA-x49q-fhhm-r9jf",
+      "cve": "",
+      "cvss": 10
+    },
+    {
+      "title": "Vikunja has a Rate-Limit Bypass for Unauthenticated Users via Spoofed Headers",
+      "date": "2026-03-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "code.vikunja.io/api",
+      "description": "Vikunja has a Rate-Limit Bypass for Unauthenticated Users via Spoofed Headers",
+      "link": "https://github.com/advisories/GHSA-m547-hp4w-j6jx",
+      "cve": "CVE-2026-29794",
+      "cvss": 5.3
+    },
+    {
+      "title": "ingress-nginx comment-based nginx configuration injection",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "k8s.io/ingress-nginx",
+      "description": "ingress-nginx comment-based nginx configuration injection",
+      "link": "https://github.com/advisories/GHSA-f53h-mxv9-cp98",
+      "cve": "CVE-2026-4342",
+      "cvss": 8.8
+    },
     {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
       "date": "2026-03-20",
@@ -453,6 +618,456 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3494"
     },
     {
+      "title": "CVE-2026-3942: Chromium: CVE-2026-3942 Incorrect security UI in PictureInPicture",
+      "date": "2026-03-20",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3942",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3942"
+    },
+    {
+      "title": "CVE-2026-3931: Chromium: CVE-2026-3931 Heap buffer overflow in Skia",
+      "date": "2026-03-20",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3931",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3931"
+    },
+    {
+      "title": "CVE-2026-21262: SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-21262",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21262"
+    },
+    {
+      "title": "CVE-2026-23660: Windows Admin Center in Azure Portal Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23660",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23660"
+    },
+    {
+      "title": "CVE-2026-23664: Azure IoT Explorer Information Disclosure Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23664",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23664"
+    },
+    {
+      "title": "CVE-2026-23667: Broadcast DVR Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23667",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23667"
+    },
+    {
+      "title": "CVE-2026-23668: Windows Graphics Component Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23668",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23668"
+    },
+    {
+      "title": "CVE-2026-23669: Windows Print Spooler Remote Code Execution Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23669",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23669"
+    },
+    {
+      "title": "CVE-2026-23671: Windows Bluetooth RFCOM Protocol Driver Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23671",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23671"
+    },
+    {
+      "title": "CVE-2026-23672: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23672",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23672"
+    },
+    {
+      "title": "CVE-2026-23673: Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23673",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23673"
+    },
+    {
+      "title": "CVE-2026-24282: Push message Routing Service Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24282",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24282"
+    },
+    {
+      "title": "CVE-2026-24283: Multiple UNC Provider Kernel Driver Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24283",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24283"
+    },
+    {
+      "title": "CVE-2026-24285: Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24285",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24285"
+    },
+    {
+      "title": "CVE-2026-24287: Windows Kernel Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24287",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24287"
+    },
+    {
+      "title": "CVE-2026-24288: Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24288",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24288"
+    },
+    {
+      "title": "CVE-2026-24289: Windows Kernel Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24289",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24289"
+    },
+    {
+      "title": "CVE-2026-24290: Windows Projected File System Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24290",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24290"
+    },
+    {
+      "title": "CVE-2026-24291: Windows Accessibility Infrastructure (ATBroker.exe) Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24291",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24291"
+    },
+    {
+      "title": "CVE-2026-24292: Windows Connected Devices Platform Service Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24292",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24292"
+    },
+    {
+      "title": "CVE-2026-24293: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24293",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24293"
+    },
+    {
+      "title": "CVE-2026-24294: Windows SMB Server Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24294",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24294"
+    },
+    {
+      "title": "CVE-2026-24295: Windows Device Association Service Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24295",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24295"
+    },
+    {
+      "title": "CVE-2026-24296: Windows Device Association Service Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24296",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24296"
+    },
+    {
+      "title": "CVE-2026-24297: Windows Kerberos Security Feature Bypass Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-24297",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-24297"
+    },
+    {
+      "title": "CVE-2026-25165: Performance Counters for Windows Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25165",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25165"
+    },
+    {
+      "title": "CVE-2026-25166: Windows System Image Manager Assessment and Deployment Kit (ADK) Remote Code Execution Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25166",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25166"
+    },
+    {
+      "title": "CVE-2026-25167: Microsoft Brokering File System Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25167",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25167"
+    },
+    {
+      "title": "CVE-2026-25168: Windows Graphics Component Denial of Service Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25168",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25168"
+    },
+    {
+      "title": "CVE-2026-25169: Windows Graphics Component Denial of Service Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25169",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25169"
+    },
+    {
+      "title": "CVE-2026-25170: Windows Hyper-V Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25170",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25170"
+    },
+    {
+      "title": "CVE-2026-25171: Windows Authentication Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25171",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25171"
+    },
+    {
+      "title": "CVE-2026-25172: Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25172",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25172"
+    },
+    {
+      "title": "CVE-2026-25173: Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25173",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25173"
+    },
+    {
+      "title": "CVE-2026-25174: Windows Extensible File Allocation Table Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25174",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25174"
+    },
+    {
+      "title": "CVE-2026-25175: Windows NTFS Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25175",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25175"
+    },
+    {
+      "title": "CVE-2026-25176: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25176",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25176"
+    },
+    {
+      "title": "CVE-2026-25177: Active Directory Domain Services Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25177",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25177"
+    },
+    {
+      "title": "CVE-2026-25178: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25178",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25178"
+    },
+    {
+      "title": "CVE-2026-25179: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25179",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25179"
+    },
+    {
+      "title": "CVE-2026-25180: Windows Graphics Component Information Disclosure Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25180",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25180"
+    },
+    {
+      "title": "CVE-2026-25181: GDI+ Information Disclosure Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25181",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25181"
+    },
+    {
+      "title": "CVE-2026-25185: Windows Shell Link Processing Spoofing Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25185",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25185"
+    },
+    {
+      "title": "CVE-2026-25186: Windows Accessibility Infrastructure (ATBroker.exe) Information Disclosure Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25186",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25186"
+    },
+    {
+      "title": "CVE-2026-25187: Winlogon Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25187",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25187"
+    },
+    {
+      "title": "CVE-2026-25188: Windows Telephony Service Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25188",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25188"
+    },
+    {
+      "title": "CVE-2026-25189: Windows DWM Core Library Elevation of Privilege Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25189",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25189"
+    },
+    {
+      "title": "CVE-2026-25190: GDI Remote Code Execution Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25190",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25190"
+    },
+    {
+      "title": "CVE-2026-26105: Microsoft SharePoint Server Spoofing Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-26105",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26105"
+    },
+    {
+      "title": "CVE-2026-26111: Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+      "date": "2026-03-20",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-26111",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26111"
+    },
+    {
       "title": "Oracle Security Alert for CVE-2026-21992 - 19 March 2026",
       "date": "2026-03-20",
       "severity": "UNKNOWN",
@@ -545,6 +1160,15 @@
       "component": "Linux kernel vulnerabilities",
       "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - x86 architecture...",
       "link": "https://ubuntu.com/security/notices/USN-8112-1"
+    },
+    {
+      "title": "USN-8107-1: Linux kernel (AWS FIPS) vulnerabilities",
+      "date": "2026-03-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (AWS FIPS) vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8107-1"
     },
     {
       "title": "CVE-2026-4428: Issues with AWS-LC - CRL Distribution Point Scope Check Logic Error",
@@ -7969,6 +8593,445 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-20T19:00:29.384Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 6 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[SUCCESS] github - 257 patches (15 new)",
+        "[INFO] kubernetes - 2 patches, no changes",
+        "[SUCCESS] microsoft - 400 patches (50 new)",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] redhat - 142 patches, no changes",
+        "[INFO] signal - 2 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 35 patches (1 new)"
+      ],
+      "newPatchCount": 66,
+      "totalPatches": 861,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "github",
+        "microsoft",
+        "oracle-db",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "crowdstrike",
+        "debian",
+        "kubernetes",
+        "signal",
+        "slack",
+        "chrome",
+        "cisco",
+        "nodejs",
+        "edge"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "oRPC has Stored XSS in OpenAPI Reference Plugin via unescaped JSON.stringify",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Vikunja’s Improper Access Control Enables Bypass of Administrator-Imposed Account Disablement ",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Vikunja has a 2FA Bypass via Caldav Basic Auth",
+          "date": "2026-03-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Vikunja has an IDOR in Task Comments Allows Reading Arbitrary Comments",
+          "date": "2026-03-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Vikunja read-only users can delete project background images via broken object-level authorization",
+          "date": "2026-03-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "tar-rs `unpack_in` can chmod arbitrary directories by following symlinks",
+          "date": "2026-03-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "tar-rs incorrectly ignores PAX size headers if header size is nonzero",
+          "date": "2026-03-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Graphiti Affected by Arbitrary Method Execution via Unvalidated Relationship Names",
+          "date": "2026-03-20",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "pydicom has a path traversal in FileSet/DICOMDIR ReferencedFileID allows file access outside the File-set root",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Qwik City has array method pollution in FormData processing allows type confusion and DoS",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Traefik Affected by BasicAuth Middleware Timing Attack Allows Username Enumeration",
+          "date": "2026-03-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Traefik has a Potential mTLS Bypass via Fragmented TLS ClientHello Causing Pre-SNI Sniff Fallback to Default Non-mTLS TLS Config",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Duplicate Advisory: OpenClaw: WebSocket shared-auth connections could self-declare elevated scopes",
+          "date": "2026-03-20",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Vikunja has a Rate-Limit Bypass for Unauthenticated Users via Spoofed Headers",
+          "date": "2026-03-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "ingress-nginx comment-based nginx configuration injection",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-3942: Chromium: CVE-2026-3942 Incorrect security UI in PictureInPicture",
+          "date": "2026-03-20",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-3931: Chromium: CVE-2026-3931 Heap buffer overflow in Skia",
+          "date": "2026-03-20",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-21262: SQL Server Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23660: Windows Admin Center in Azure Portal Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23664: Azure IoT Explorer Information Disclosure Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23667: Broadcast DVR Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23668: Windows Graphics Component Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23669: Windows Print Spooler Remote Code Execution Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23671: Windows Bluetooth RFCOM Protocol Driver Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23672: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23673: Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24282: Push message Routing Service Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24283: Multiple UNC Provider Kernel Driver Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24285: Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24287: Windows Kernel Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24288: Windows Mobile Broadband Driver Remote Code Execution Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24289: Windows Kernel Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24290: Windows Projected File System Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24291: Windows Accessibility Infrastructure (ATBroker.exe) Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24292: Windows Connected Devices Platform Service Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24293: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24294: Windows SMB Server Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24295: Windows Device Association Service Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24296: Windows Device Association Service Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-24297: Windows Kerberos Security Feature Bypass Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25165: Performance Counters for Windows Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25166: Windows System Image Manager Assessment and Deployment Kit (ADK) Remote Code Execution Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25167: Microsoft Brokering File System Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25168: Windows Graphics Component Denial of Service Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25169: Windows Graphics Component Denial of Service Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25170: Windows Hyper-V Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25171: Windows Authentication Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25172: Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25173: Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25174: Windows Extensible File Allocation Table Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25175: Windows NTFS Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25176: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25177: Active Directory Domain Services Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25178: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25179: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25180: Windows Graphics Component Information Disclosure Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25181: GDI+ Information Disclosure Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25185: Windows Shell Link Processing Spoofing Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25186: Windows Accessibility Infrastructure (ATBroker.exe) Information Disclosure Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25187: Winlogon Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25188: Windows Telephony Service Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25189: Windows DWM Core Library Elevation of Privilege Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25190: GDI Remote Code Execution Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-26105: Microsoft SharePoint Server Spoofing Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-26111: Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+          "date": "2026-03-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8107-1: Linux kernel (AWS FIPS) vulnerabilities",
+          "date": "2026-03-20",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-20T18:55:48.417Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -13258,46 +14321,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-17T13:20:28.813Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 6 patches, no changes",
-        "[INFO] edge - 4 patches, no changes",
-        "[INFO] github - 257 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 418 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] redhat - 79 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 22 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 806,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "debian",
-        "edge",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "cloudflare",
-        "cisco",
-        "crowdstrike",
-        "gitlab",
-        "paloalto"
-      ],
-      "newPatches": []
     }
   ]
 }
