@@ -1,7 +1,28 @@
 {
-  "lastUpdated": "2026-03-21T18:41:29.545Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-21T18:46:26.384Z",
+  "newPatches": 1,
   "patches": [
+    {
+      "title": "DSA-6172-1 webkit2gtk - security update",
+      "date": "2026-03-21",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "webkit2gtk",
+      "description": "The following vulnerabilities have been discovered in the WebKitGTK web engine: CVE-2025-43214 shandikri discovered that processing maliciously crafted web content may lead to an unexpected process cr...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00081.html",
+      "cve": "CVE-2025-43214",
+      "cves": [
+        "CVE-2025-43214",
+        "CVE-2025-43457",
+        "CVE-2025-43511",
+        "CVE-2026-20608",
+        "CVE-2026-20635",
+        "CVE-2026-20636",
+        "CVE-2026-20644",
+        "CVE-2026-20652",
+        "CVE-2026-20676"
+      ]
+    },
     {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
       "date": "2026-03-21",
@@ -9443,6 +9464,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-21T18:46:26.384Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 8 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 307 patches, no changes",
+        "[INFO] kubernetes - 2 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] redhat - 169 patches, no changes",
+        "[INFO] signal - 2 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 35 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 939,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "edge",
+        "github",
+        "oracle-db",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "crowdstrike",
+        "kubernetes",
+        "signal",
+        "slack",
+        "chrome",
+        "cisco",
+        "nodejs"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6172-1 webkit2gtk - security update",
+          "date": "2026-03-21",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-21T18:41:29.545Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -15243,44 +15313,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-18T13:21:50.607Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 234 patches, no changes",
-        "[INFO] kubernetes - 1 patches, no changes",
-        "[INFO] microsoft - 384 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] redhat - 69 patches, no changes",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] ubuntu - 25 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 736,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "cisco",
-        "microsoft",
-        "aws",
-        "chrome",
-        "debian",
-        "github",
-        "kubernetes",
-        "nodejs",
-        "redhat",
-        "ubuntu",
-        "edge",
-        "signal",
-        "cloudflare"
-      ],
-      "newPatches": []
     }
   ]
 }
