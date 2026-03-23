@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-23T19:00:40.059Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-23T19:05:18.646Z",
+  "newPatches": 8,
   "patches": [
     {
       "title": "Falcon Next-Gen SIEM Supports Third-Party EDR Tools, Starting with Microsoft Defender",
@@ -988,6 +988,69 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4628.json",
       "cve": "CVE-2026-4628",
       "cvss": 4.3
+    },
+    {
+      "title": "USN-8118-1: sized-chunks vulnerabilities",
+      "date": "2026-03-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "sized-chunks vulnerabilities",
+      "description": "Yechan Bae discovered that sized-chunks did not properly validate array\nsize when constructing Chunk. An attacker could possibly use these\nissues to cause out-of-bounds access, leading to memory corru...",
+      "link": "https://ubuntu.com/security/notices/USN-8118-1"
+    },
+    {
+      "title": "USN-8095-4: Linux kernel (AWS) vulnerabilities",
+      "date": "2026-03-23",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (AWS) vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8095-4"
+    },
+    {
+      "title": "USN-8096-5: Linux kernel (NVIDIA Tegra IGX) vulnerabilities",
+      "date": "2026-03-23",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (NVIDIA Tegra IGX) vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8096-5"
+    },
+    {
+      "title": "USN-8116-1: Linux kernel (Intel IoTG Real-time) vulnerabilities",
+      "date": "2026-03-23",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Intel IoTG Real-time) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - PowerPC architec...",
+      "link": "https://ubuntu.com/security/notices/USN-8116-1"
+    },
+    {
+      "title": "USN-8115-1: pyOpenSSL vulnerabilities",
+      "date": "2026-03-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "pyOpenSSL vulnerabilities",
+      "description": "It was discovered that pyOpenSSL incorrectly handled exceptions in the\ntlsext_servername callback. This could result in connections being\naccepted after an exception, contrary to expectations. (CVE-20...",
+      "link": "https://ubuntu.com/security/notices/USN-8115-1"
+    },
+    {
+      "title": "USN-8114-1: GVfs vulnerabilities",
+      "date": "2026-03-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GVfs vulnerabilities",
+      "description": "It was discovered that the GVfs FTP backend incorrectly handled IP\naddresses and ports returned by passive mode responses. A malicious remote\nserver could possibly use this issue to help scan for open...",
+      "link": "https://ubuntu.com/security/notices/USN-8114-1"
+    },
+    {
+      "title": "USN-8113-1: LibTIFF vulnerabilities",
+      "date": "2026-03-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "LibTIFF vulnerabilities",
+      "description": "It was discovered that LibTIFF did not properly handle memory when\nprocessing certain images. An attacker could possibly use this issue to\ncause LibTIFF to crash, resulting in a denial of service. (CV...",
+      "link": "https://ubuntu.com/security/notices/USN-8113-1"
     },
     {
       "title": "DSA-6174-1 spip - security update",
@@ -2250,6 +2313,17 @@
       "link": "https://github.com/advisories/GHSA-rfx7-8w68-q57q",
       "cve": "CVE-2026-33343",
       "cvss": null
+    },
+    {
+      "title": "webpki: CRLs not considered authoritative by Distribution Point due to faulty matching logic",
+      "date": "2026-03-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "rustls-webpki, rustls-webpki",
+      "description": "webpki: CRLs not considered authoritative by Distribution Point due to faulty matching logic",
+      "link": "https://github.com/advisories/GHSA-pwjx-qhcg-rvj4",
+      "cve": "",
+      "cvss": 4.4
     },
     {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
@@ -9186,6 +9260,97 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-23T19:05:18.646Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] crowdstrike - 3 patches, no changes",
+        "[INFO] debian - 10 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[SUCCESS] github - 244 patches (1 new)",
+        "[INFO] kubernetes - 2 patches, no changes",
+        "[INFO] microsoft - 450 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] redhat - 177 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 31 patches (7 new)"
+      ],
+      "newPatchCount": 8,
+      "totalPatches": 929,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "crowdstrike",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "debian",
+        "edge",
+        "github",
+        "oracle-db",
+        "aws",
+        "kubernetes",
+        "signal",
+        "slack",
+        "chrome",
+        "cisco",
+        "nodejs"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "webpki: CRLs not considered authoritative by Distribution Point due to faulty matching logic",
+          "date": "2026-03-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8118-1: sized-chunks vulnerabilities",
+          "date": "2026-03-23",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8095-4: Linux kernel (AWS) vulnerabilities",
+          "date": "2026-03-23",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8096-5: Linux kernel (NVIDIA Tegra IGX) vulnerabilities",
+          "date": "2026-03-23",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8116-1: Linux kernel (Intel IoTG Real-time) vulnerabilities",
+          "date": "2026-03-23",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8115-1: pyOpenSSL vulnerabilities",
+          "date": "2026-03-23",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8114-1: GVfs vulnerabilities",
+          "date": "2026-03-23",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8113-1: LibTIFF vulnerabilities",
+          "date": "2026-03-23",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-23T19:00:40.059Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
@@ -13406,48 +13571,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-20T13:08:06.888Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 6 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 242 patches, no changes",
-        "[INFO] kubernetes - 2 patches, no changes",
-        "[INFO] microsoft - 350 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] redhat - 111 patches, no changes",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 32 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 762,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "oracle-db",
-        "aws",
-        "crowdstrike",
-        "debian",
-        "github",
-        "kubernetes",
-        "redhat",
-        "signal",
-        "slack",
-        "ubuntu",
-        "chrome",
-        "cisco",
-        "nodejs",
-        "edge"
-      ],
-      "newPatches": []
     }
   ]
 }
