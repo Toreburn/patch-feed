@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-24T07:09:59.883Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-24T07:14:10.875Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "Chrome for Android Update",
@@ -1406,6 +1406,24 @@
       "component": "strongSwan",
       "description": "Kazuma Matsumoto discovered that strongSwan incorrectly handled EAP-TTLS\nAVPs when using the eap-ttls plugin. An attacker could possibly use this\nissue to cause strongSwan to consume resources and cra...",
       "link": "https://ubuntu.com/security/notices/USN-8117-1"
+    },
+    {
+      "title": "USN-8119-2: systemd vulnerabilities",
+      "date": "2026-03-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "systemd vulnerabilities",
+      "description": "USN-8119-1 fixed vulnerabilities in systemd. This update provides the\ncorresponding updates for Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, Ubuntu 18.04\nLTS, and Ubuntu 20.04 LTS.\n\nOriginal advisory details:\n...",
+      "link": "https://ubuntu.com/security/notices/USN-8119-2"
+    },
+    {
+      "title": "USN-8119-1: systemd vulnerabilities",
+      "date": "2026-03-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "systemd vulnerabilities",
+      "description": "It was discovered that systemd incorrectly handled certain cgroup paths.\nA local attacker could possibly use this issue to cause systemd to crash,\nresulting in a denial of service. (CVE-2026-29111)\n\nI...",
+      "link": "https://ubuntu.com/security/notices/USN-8119-1"
     },
     {
       "title": "DSA-6174-1 spip - security update",
@@ -8490,6 +8508,59 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-24T07:14:10.875Z",
+      "logs": [
+        "[INFO] aws - 1 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] crowdstrike - 3 patches, no changes",
+        "[INFO] debian - 9 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 228 patches, no changes",
+        "[INFO] kubernetes - 1 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] redhat - 171 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 28 patches (2 new)"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 851,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "chrome",
+        "crowdstrike",
+        "debian",
+        "github",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "edge",
+        "oracle-db",
+        "aws",
+        "kubernetes",
+        "signal",
+        "slack",
+        "cisco"
+      ],
+      "newPatches": [
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8119-2: systemd vulnerabilities",
+          "date": "2026-03-23",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8119-1: systemd vulnerabilities",
+          "date": "2026-03-23",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-24T07:09:59.883Z",
       "logs": [
         "[INFO] aws - 1 patches, no changes",
@@ -12346,48 +12417,6 @@
       ],
       "newPatchCount": 0,
       "totalPatches": 808,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "github",
-        "microsoft",
-        "oracle-db",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "crowdstrike",
-        "debian",
-        "kubernetes",
-        "signal",
-        "slack",
-        "chrome",
-        "cisco",
-        "nodejs",
-        "edge"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-20T22:33:05.405Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 6 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 257 patches, no changes",
-        "[INFO] kubernetes - 2 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] redhat - 142 patches, no changes",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 35 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 861,
       "vendorsScanned": 56,
       "vendorsWithPatches": 15,
       "vendors": [
