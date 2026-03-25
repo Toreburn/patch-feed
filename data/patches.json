@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-25T13:19:42.881Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-25T13:26:17.422Z",
+  "newPatches": 13,
   "patches": [
     {
       "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
@@ -10,6 +10,17 @@
       "component": "Chrome Browser",
       "description": "The ChromeOS Stable channel is being updated to OS version&nbsp;16581.42.0&nbsp;(Browser version&nbsp;146.0.7680.169) for most ChromeOS devices.If you find new issues, please let us know one of the fo...",
       "link": "https://chromereleases.googleblog.com/feeds/3495194682725449178/comments/default"
+    },
+    {
+      "title": "DSA-6177-1 chromium - security update",
+      "date": "2026-03-25",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6177-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00086.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "GitLab Patch Release: 18.10.1, 18.9.3, 18.8.7",
@@ -469,6 +480,39 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-4438",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-4438"
+    },
+    {
+      "title": "CVE-2026-3608: Kea: Kea: Denial of Service via maliciously crafted message",
+      "date": "2026-03-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Kea: Kea: Denial of Service via maliciously crafted message",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3608.json",
+      "cve": "CVE-2026-3608",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-23322: kernel: ipmi: Fix use-after-free and list corruption on sender error",
+      "date": "2026-03-25",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ipmi: Fix use-after-free and list corruption on sender error",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23322.json",
+      "cve": "CVE-2026-23322",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-23327: kernel: cxl/mbox: validate payload size before accessing contents in cxl_payload_from_user_allowed()",
+      "date": "2026-03-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: cxl/mbox: validate payload size before accessing contents in cxl_payload_from_user_allowed()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23327.json",
+      "cve": "CVE-2026-23327",
+      "cvss": 7
     },
     {
       "title": "macOS 26.4",
@@ -1716,6 +1760,105 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33554.json",
       "cve": "CVE-2026-33554",
       "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-3889: thunderbird: Spoofing issue in Thunderbird",
+      "date": "2026-03-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thunderbird: Spoofing issue in Thunderbird",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3889.json",
+      "cve": "CVE-2026-3889",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-4729: firefox: Memory safety bugs fixed in Firefox 149 and Thunderbird 149",
+      "date": "2026-03-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Memory safety bugs fixed in Firefox 149 and Thunderbird 149",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4729.json",
+      "cve": "CVE-2026-4729",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-4728: firefox: Spoofing issue in the Privacy: Anti-Tracking component",
+      "date": "2026-03-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Spoofing issue in the Privacy: Anti-Tracking component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4728.json",
+      "cve": "CVE-2026-4728",
+      "cvss": 3.4
+    },
+    {
+      "title": "CVE-2026-4727: firefox: Denial-of-service in the Libraries component in NSS",
+      "date": "2026-03-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Denial-of-service in the Libraries component in NSS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4727.json",
+      "cve": "CVE-2026-4727",
+      "cvss": 3.4
+    },
+    {
+      "title": "CVE-2026-4726: firefox: Denial-of-service in the XML component",
+      "date": "2026-03-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Denial-of-service in the XML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4726.json",
+      "cve": "CVE-2026-4726",
+      "cvss": 3.4
+    },
+    {
+      "title": "CVE-2026-4725: firefox: Sandbox escape due to use-after-free in the Graphics: Canvas2D component",
+      "date": "2026-03-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Sandbox escape due to use-after-free in the Graphics: Canvas2D component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4725.json",
+      "cve": "CVE-2026-4725",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-4723: firefox: Use-after-free in the JavaScript Engine component",
+      "date": "2026-03-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Use-after-free in the JavaScript Engine component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4723.json",
+      "cve": "CVE-2026-4723",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-4724: firefox: Undefined behavior in the Audio/Video component",
+      "date": "2026-03-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Undefined behavior in the Audio/Video component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4724.json",
+      "cve": "CVE-2026-4724",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-4722: firefox: Privilege escalation in the IPC component",
+      "date": "2026-03-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Privilege escalation in the IPC component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4722.json",
+      "cve": "CVE-2026-4722",
+      "cvss": 7.5
     },
     {
       "title": "USN-8112-5: Linux kernel (Azure) vulnerabilities",
@@ -8185,6 +8328,129 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-25T13:26:17.421Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[INFO] aws - 1 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] crowdstrike - 3 patches, no changes",
+        "[SUCCESS] debian - 9 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 217 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] kubernetes - 1 patches, no changes",
+        "[INFO] microsoft - 450 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[SUCCESS] redhat - 121 patches (12 new)",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 28 patches, no changes"
+      ],
+      "newPatchCount": 13,
+      "totalPatches": 844,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "chrome",
+        "debian",
+        "gitlab",
+        "microsoft",
+        "redhat",
+        "apple",
+        "crowdstrike",
+        "github",
+        "nodejs",
+        "ubuntu",
+        "edge",
+        "oracle-db",
+        "aws",
+        "kubernetes",
+        "signal",
+        "slack"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6177-1 chromium - security update",
+          "date": "2026-03-25",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-3608: Kea: Kea: Denial of Service via maliciously crafted message",
+          "date": "2026-03-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23322: kernel: ipmi: Fix use-after-free and list corruption on sender error",
+          "date": "2026-03-25",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23327: kernel: cxl/mbox: validate payload size before accessing contents in cxl_payload_from_user_allowed()",
+          "date": "2026-03-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-3889: thunderbird: Spoofing issue in Thunderbird",
+          "date": "2026-03-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4729: firefox: Memory safety bugs fixed in Firefox 149 and Thunderbird 149",
+          "date": "2026-03-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4728: firefox: Spoofing issue in the Privacy: Anti-Tracking component",
+          "date": "2026-03-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4727: firefox: Denial-of-service in the Libraries component in NSS",
+          "date": "2026-03-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4726: firefox: Denial-of-service in the XML component",
+          "date": "2026-03-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4725: firefox: Sandbox escape due to use-after-free in the Graphics: Canvas2D component",
+          "date": "2026-03-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4723: firefox: Use-after-free in the JavaScript Engine component",
+          "date": "2026-03-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4724: firefox: Undefined behavior in the Audio/Video component",
+          "date": "2026-03-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4722: firefox: Privilege escalation in the IPC component",
+          "date": "2026-03-24",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-25T13:19:42.881Z",
       "logs": [
         "[INFO] apple - 5 patches, no changes",
@@ -12523,48 +12789,6 @@
     },
     {
       "timestamp": "2026-03-22T07:01:10.426Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 307 patches, no changes",
-        "[INFO] kubernetes - 2 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] redhat - 167 patches, no changes",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 35 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 938,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "edge",
-        "github",
-        "oracle-db",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "crowdstrike",
-        "kubernetes",
-        "signal",
-        "slack",
-        "chrome",
-        "cisco",
-        "nodejs"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-22T06:57:01.238Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",
