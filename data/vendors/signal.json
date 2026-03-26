@@ -1,16 +1,44 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-03-25T19:04:35.685Z",
+  "lastUpdated": "2026-03-26T02:51:06.095Z",
   "health": {
-    "lastFetchAttempt": "2026-03-25T19:04:35.685Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-03-20T18:59:15.110Z",
-    "consecutiveEmptyFetches": 20,
+    "lastFetchAttempt": "2026-03-26T02:51:06.095Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-03-26T02:51:06.095Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Signal Desktop v8.5.0-beta.1",
+      "date": "2026-03-25",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- This version contains a number of small tweaks and bug fixes to keep Signal running smoothly.",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.5.0-beta.1",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "Zoraxy: Authenticated Path Traversal in Config Import leads to RCE",
+      "date": "2026-03-25",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# Authenticated Path Traversal to RCE via Configuration Import\n\n## Summary\n\nAn authenticated path traversal vulnerability in the configuration import endpoint allows an authenticated user to write arb",
+      "link": "https://github.com/advisories/GHSA-7pq3-326h-f8q9",
+      "cves": [
+        "CVE-2026-33529"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Denial of service via non-terminating SYLT frame parsing loop in tinytag",
       "date": "2026-03-19",
