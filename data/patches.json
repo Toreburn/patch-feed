@@ -1,7 +1,457 @@
 {
-  "lastUpdated": "2026-03-28T13:02:56.912Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-28T13:09:06.367Z",
+  "newPatches": 87,
   "patches": [
+    {
+      "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23234",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23234"
+    },
+    {
+      "title": "CVE-2026-23235: f2fs: fix out-of-bounds access in sysfs attribute read/write",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23235",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23235"
+    },
+    {
+      "title": "CVE-2026-23237: platform/x86: classmate-laptop: Add missing NULL pointer checks",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23237",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23237"
+    },
+    {
+      "title": "CVE-2026-23238: romfs: check sb_set_blocksize() return value",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23238",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23238"
+    },
+    {
+      "title": "CVE-2026-3336: PKCS7_verify Certificate Chain Validation Bypass in AWS-LC",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3336",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3336"
+    },
+    {
+      "title": "CVE-2026-0038: In multiple functions of mem_protect.c, there is a possible way to execute arbitrary code due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-0038",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-0038"
+    },
+    {
+      "title": "CVE-2026-27601: Underscore.js has unlimited recursion in _.flatten and _.isEqual, potential for DoS attack",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-27601",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-27601"
+    },
+    {
+      "title": "CVE-2026-2297: SourcelessFileLoader does not use io.open_code()",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-2297",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-2297"
+    },
+    {
+      "title": "CVE-2026-26017: CoreDNS ACL Bypass",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-26017",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26017"
+    },
+    {
+      "title": "CVE-2026-26018: CoreDNS Loop Detection Denial of Service Vulnerability",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-26018",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26018"
+    },
+    {
+      "title": "CVE-2026-3731: libssh SFTP Extension Name sftp.c sftp_extensions_get_data out-of-bounds",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3731",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3731"
+    },
+    {
+      "title": "CVE-2025-69646: Binutils objdump contains a denial-of-service vulnerability when processing a crafted binary with malformed DWARF debug_rnglists data. A logic error in the handling of the debug_rnglists header can cause objdump to repeatedly print the same warning message and fail to terminate, resulting in an unbounded logging loop until the process is interrupted. The issue was observed in binutils 2.44. A local attacker can exploit this vulnerability by supplying a malicious input file, leading to excessive CPU and I/O usage and preventing completion of the objdump analysis.",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-69646",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69646"
+    },
+    {
+      "title": "CVE-2025-69652: GNU Binutils thru 2.46 readelf contains a vulnerability that leads to an abort (SIGABRT) when processing a crafted ELF binary with malformed DWARF abbrev or debug information. Due to incomplete state cleanup in process_debug_info(), an invalid debug_info_p state may propagate into DWARF attribute parsing routines. When certain malformed attributes result in an unexpected data length of zero, byte_get_little_endian() triggers a fatal abort. No evidence of memory corruption or code execution was observed; the impact is limited to denial of service.",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-69652",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69652"
+    },
+    {
+      "title": "CVE-2025-69645: Binutils objdump contains a denial-of-service vulnerability when processing a crafted binary with malformed DWARF debug information. A logic error in the handling of DWARF compilation units can result in an invalid offset_size value being used inside byte_get_little_endian, leading to an abort (SIGABRT). The issue was observed in binutils 2.44. A local attacker can trigger the crash by supplying a malicious input file.",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-69645",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69645"
+    },
+    {
+      "title": "CVE-2025-69649: GNU Binutils thru 2.46 readelf contains a null pointer dereference vulnerability when processing a crafted ELF binary with malformed header fields. During relocation processing, an invalid or null section pointer may be passed into display_relocations(), resulting in a segmentation fault (SIGSEGV) and abrupt termination. No evidence of memory corruption beyond the null pointer dereference, nor any possibility of code execution, was observed.",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-69649",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-69649"
+    },
+    {
+      "title": "CVE-2026-27142: URLs in meta content attribute actions are not escaped in html/template",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-27142",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-27142"
+    },
+    {
+      "title": "CVE-2026-25679: Incorrect parsing of IPv6 host literals in net/url",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-25679",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-25679"
+    },
+    {
+      "title": "CVE-2026-23868: CVE-2026-23868",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23868",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23868"
+    },
+    {
+      "title": "CVE-2026-3783: token leak with redirect and netrc",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3783",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3783"
+    },
+    {
+      "title": "CVE-2026-31802: node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31802",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31802"
+    },
+    {
+      "title": "CVE-2025-66413: Git for Windows leaks NTLM hash when cloning from an attacker-controlled server",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-66413",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-66413"
+    },
+    {
+      "title": "CVE-2026-32775: CVE-2026-32775",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32775",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32775"
+    },
+    {
+      "title": "CVE-2026-23941: Request smuggling via first-wins Content-Length parsing in inets httpd",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23941",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23941"
+    },
+    {
+      "title": "CVE-2026-23943: Pre-auth SSH DoS via unbounded zlib inflate",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23943",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23943"
+    },
+    {
+      "title": "CVE-2026-23241: audit: add missing syscalls to read class",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23241",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23241"
+    },
+    {
+      "title": "CVE-2025-71239: audit: add fchmodat2() to change attributes class",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-71239",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-71239"
+    },
+    {
+      "title": "CVE-2026-23233: f2fs: fix to avoid mapping wrong physical block for swapfile",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23233",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23233"
+    },
+    {
+      "title": "CVE-2026-23242: RDMA/siw: Fix potential NULL pointer dereference in header processing",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23242",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23242"
+    },
+    {
+      "title": "CVE-2026-23245: net/sched: act_gate: snapshot parameters with RCU on replace",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23245",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23245"
+    },
+    {
+      "title": "CVE-2025-71266: fs: ntfs3: check return value of indx_find to avoid infinite loop",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-71266",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-71266"
+    },
+    {
+      "title": "CVE-2025-71267: fs: ntfs3: fix infinite loop triggered by zero-sized ATTR_LIST",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-71267",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-71267"
+    },
+    {
+      "title": "CVE-2026-23244: nvme: fix memory allocation in nvme_pr_read_keys()",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23244",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23244"
+    },
+    {
+      "title": "CVE-2026-23243: RDMA/umad: Reject negative data_len in ib_umad_write",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23243",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23243"
+    },
+    {
+      "title": "CVE-2026-4224: Stack overflow parsing XML with deeply nested DTD content models",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-4224",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-4224"
+    },
+    {
+      "title": "CVE-2026-3644: Incomplete control character validation in http.cookies",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3644",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3644"
+    },
+    {
+      "title": "CVE-2026-23269: apparmor: validate DFA start states are in bounds in unpack_pdb",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23269",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23269"
+    },
+    {
+      "title": "CVE-2026-23259: io_uring/rw: free potentially allocated iovec on cache put failure",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23259",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23259"
+    },
+    {
+      "title": "CVE-2026-23268: apparmor: fix unprivileged local user can do privileged policy management",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23268",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23268"
+    },
+    {
+      "title": "CVE-2026-23266: fbdev: rivafb: fix divide error in nv3_arb()",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23266",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23266"
+    },
+    {
+      "title": "CVE-2026-23265: f2fs: fix to do sanity check on node footer in {read,write}_end_io",
+      "date": "2026-03-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23265",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23265"
+    },
+    {
+      "title": "CVE-2006-10002: XML::Parser versions through 2.47 for Perl could overflow the pre-allocated buffer size cause a heap corruption (double free or corruption) and crashes",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2006-10002",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2006-10002"
+    },
+    {
+      "title": "CVE-2026-23274: netfilter: xt_IDLETIMER: reject rev0 reuse of ALARM timer labels",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23274",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23274"
+    },
+    {
+      "title": "CVE-2026-23278: netfilter: nf_tables: always walk all pending catchall elements",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23278",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23278"
+    },
+    {
+      "title": "CVE-2026-23272: netfilter: nf_tables: unconditionally bump set->nelems before insertion",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23272",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23272"
+    },
+    {
+      "title": "CVE-2026-23276: net: add xmit recursion limit to tunnel xmit functions",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23276",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23276"
+    },
+    {
+      "title": "CVE-2026-3634: Libsoup: libsoup: http header injection and response splitting via crlf injection in content-type header",
+      "date": "2026-03-28",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3634",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3634"
+    },
+    {
+      "title": "CVE-2026-3632: Libsoup: libsoup: http smuggling and server-side request forgery via malformed hostnames",
+      "date": "2026-03-28",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3632",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3632"
+    },
+    {
+      "title": "CVE-2026-3479: pkgutil.get_data() does not enforce documented restrictions",
+      "date": "2026-03-28",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-3479",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-3479"
+    },
+    {
+      "title": "CVE-2026-4437: gethostbyaddr and gethostbyaddr_r may incorrectly handle DNS response",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-4437",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-4437"
+    },
+    {
+      "title": "CVE-2026-4438: gethostbyaddr and gethostbyaddr_r return invalid DNS hostnames",
+      "date": "2026-03-28",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-4438",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-4438"
+    },
     {
       "title": "DSA-6181-1 bind9 - security update",
       "date": "2026-03-27",
@@ -1758,6 +2208,358 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4948.json",
       "cve": "CVE-2026-4948",
       "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-33943: happy-dom: Happy DOM: Remote Code Execution via JavaScript expression injection",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "happy-dom: Happy DOM: Remote Code Execution via JavaScript expression injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33943.json",
+      "cve": "CVE-2026-33943",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-33941: handlebars.js: Handlebars: Arbitrary code execution via CLI precompiler input sanitization flaw",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "handlebars.js: Handlebars: Arbitrary code execution via CLI precompiler input sanitization flaw",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33941.json",
+      "cve": "CVE-2026-33941",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-33940: handlebars.js: Handlebars.js: Arbitrary code execution via crafted template context",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "handlebars.js: Handlebars.js: Arbitrary code execution via crafted template context",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33940.json",
+      "cve": "CVE-2026-33940",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-33939: handlebars.js: Handlebars.js: Denial of Service via malformed decorator syntax in template compilation",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "handlebars.js: Handlebars.js: Denial of Service via malformed decorator syntax in template compilation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33939.json",
+      "cve": "CVE-2026-33939",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-33938: handlebars: Handlebars: Arbitrary code execution via @partial-block overwrite",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "handlebars: Handlebars: Arbitrary code execution via @partial-block overwrite",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33938.json",
+      "cve": "CVE-2026-33938",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-33937: handlebars.js: Handlebars: Remote Code Execution via crafted Abstract Syntax Tree object in compile()",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "handlebars.js: Handlebars: Remote Code Execution via crafted Abstract Syntax Tree object in compile()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33937.json",
+      "cve": "CVE-2026-33937",
+      "cvss": 9.8
+    },
+    {
+      "title": "CVE-2026-33916: handlebars.js: Handlebars: Cross-Site Scripting (XSS) via prototype pollution in partial resolution",
+      "date": "2026-03-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "handlebars.js: Handlebars: Cross-Site Scripting (XSS) via prototype pollution in partial resolution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33916.json",
+      "cve": "CVE-2026-33916",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-33896: node-forge: Forge (node-forge): Certificate validation bypass allows unauthorized certificate issuance",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "node-forge: Forge (node-forge): Certificate validation bypass allows unauthorized certificate issuance",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33896.json",
+      "cve": "CVE-2026-33896",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-33895: node-forge: Forge: Authentication bypass via forged Ed25519 cryptographic signatures",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "node-forge: Forge: Authentication bypass via forged Ed25519 cryptographic signatures",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33895.json",
+      "cve": "CVE-2026-33895",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-33894: node-forge: Forge: Signature Forgery via Weak RSASSA PKCS#1 v1.5 Verification",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "node-forge: Forge: Signature Forgery via Weak RSASSA PKCS#1 v1.5 Verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33894.json",
+      "cve": "CVE-2026-33894",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-33891: node-forge: node-forge: Denial of Service via infinite loop in BigInteger.modInverse()",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "node-forge: node-forge: Denial of Service via infinite loop in BigInteger.modInverse()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33891.json",
+      "cve": "CVE-2026-33891",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-33870: io.netty/netty-codec-http: Netty: Request smuggling via incorrect parsing of HTTP/1.1 chunked transfer encoding extensio",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "io.netty/netty-codec-http: Netty: Request smuggling via incorrect parsing of HTTP/1.1 chunked transfer encoding extension values",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33870.json",
+      "cve": "CVE-2026-33870",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-27879: Grafana: Grafana: Denial of Service via resample query",
+      "date": "2026-03-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Grafana: Grafana: Denial of Service via resample query",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27879.json",
+      "cve": "CVE-2026-27879",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-28375: grafana: Grafana: Denial of Service via testdata data-source",
+      "date": "2026-03-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grafana: Grafana: Denial of Service via testdata data-source",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28375.json",
+      "cve": "CVE-2026-28375",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-27876: grafana: grafana-enterprise-plugin: Grafana: Remote arbitrary code execution via chained SQL Expressions and Enterprise ",
+      "date": "2026-03-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grafana: grafana-enterprise-plugin: Grafana: Remote arbitrary code execution via chained SQL Expressions and Enterprise plugin attack",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27876.json",
+      "cve": "CVE-2026-27876",
+      "cvss": 9.1
+    },
+    {
+      "title": "CVE-2026-33758: OpenBao: reflected XSS in OpenBao OIDC authentication error message",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenBao: reflected XSS in OpenBao OIDC authentication error message",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33758.json",
+      "cve": "CVE-2026-33758",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-27880: Grafana: Grafana: Denial of Service via unbounded memory read in feature toggle evaluation",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Grafana: Grafana: Denial of Service via unbounded memory read in feature toggle evaluation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27880.json",
+      "cve": "CVE-2026-27880",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-33757: OpenBao: lack of user confirmation for OpenBao OIDC direct callback mode",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenBao: lack of user confirmation for OpenBao OIDC direct callback mode",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33757.json",
+      "cve": "CVE-2026-33757",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-27877: grafana: Grafana: Information disclosure of data-source passwords via public dashboards",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grafana: Grafana: Information disclosure of data-source passwords via public dashboards",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27877.json",
+      "cve": "CVE-2026-27877",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-33433: github.com/traefik/traefik: Traefik: Authentication bypass via non-canonical HTTP header injection",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/traefik/traefik: Traefik: Authentication bypass via non-canonical HTTP header injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33433.json",
+      "cve": "CVE-2026-33433",
+      "cvss": 7.7
+    },
+    {
+      "title": "CVE-2026-32695: github.com/traefik/traefik: Traefik: Cross-tenant traffic exposure and host restriction bypass via rule-syntax injection",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/traefik/traefik: Traefik: Cross-tenant traffic exposure and host restriction bypass via rule-syntax injection in Knative provider",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-32695.json",
+      "cve": "CVE-2026-32695",
+      "cvss": 7.7
+    },
+    {
+      "title": "CVE-2026-27860: dovecot: Dovecot: Authentication bypass and information disclosure via LDAP filter injection",
+      "date": "2026-03-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dovecot: Dovecot: Authentication bypass and information disclosure via LDAP filter injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27860.json",
+      "cve": "CVE-2026-27860",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-27859: dovecot: Dovecot: Denial of Service via excessive RFC 2231 MIME parameters",
+      "date": "2026-03-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dovecot: Dovecot: Denial of Service via excessive RFC 2231 MIME parameters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27859.json",
+      "cve": "CVE-2026-27859",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-27858: dovecot: denial of service via crafted message before authentication",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dovecot: denial of service via crafted message before authentication",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27858.json",
+      "cve": "CVE-2026-27858",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-27857: dovecot: denial of service via specially crafted NOOP command",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dovecot: denial of service via specially crafted NOOP command",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27857.json",
+      "cve": "CVE-2026-27857",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-27855: dovecot: Dovecot: Replay attack allows unauthorized login via observed One-Time Password (OTP) exchange",
+      "date": "2026-03-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dovecot: Dovecot: Replay attack allows unauthorized login via observed One-Time Password (OTP) exchange",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27855.json",
+      "cve": "CVE-2026-27855",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-24031: dovecot: Dovecot: Authentication bypass and user enumeration due to cleared auth_username_chars configuration",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dovecot: Dovecot: Authentication bypass and user enumeration due to cleared auth_username_chars configuration",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-24031.json",
+      "cve": "CVE-2026-24031",
+      "cvss": 7.7
+    },
+    {
+      "title": "CVE-2026-0394: dovecot: Dovecot: Information disclosure and authentication bypass via path traversal",
+      "date": "2026-03-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dovecot: Dovecot: Information disclosure and authentication bypass via path traversal",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-0394.json",
+      "cve": "CVE-2026-0394",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2025-59031: dovecot: Dovecot: Information disclosure via specially crafted OOXML documents",
+      "date": "2026-03-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dovecot: Dovecot: Information disclosure via specially crafted OOXML documents",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-59031.json",
+      "cve": "CVE-2025-59031",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2025-59028: dovecot: Dovecot: Denial of Service via invalid SASL data",
+      "date": "2026-03-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dovecot: Dovecot: Denial of Service via invalid SASL data",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-59028.json",
+      "cve": "CVE-2025-59028",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-33701: io.opentelemetry.javaagent/opentelemetry-javaagent: OpenTelemetry Java Instrumentation: Remote code execution via deseri",
+      "date": "2026-03-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "io.opentelemetry.javaagent/opentelemetry-javaagent: OpenTelemetry Java Instrumentation: Remote code execution via deserialization vulnerability in RMI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33701.json",
+      "cve": "CVE-2026-33701",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-4981: rhacs: Red Hat Advanced Cluster Security (ACS): Open Redirect and Content Spoofing via OAuth callback endpoint",
+      "date": "2026-03-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rhacs: Red Hat Advanced Cluster Security (ACS): Open Redirect and Content Spoofing via OAuth callback endpoint",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4981.json",
+      "cve": "CVE-2026-4981",
+      "cvss": 5.4
     },
     {
       "title": "Signal Desktop v8.5.0-beta.2",
@@ -4140,6 +4942,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23398.json",
       "cve": "CVE-2026-23398",
       "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-32285: github.com/buger/jsonparser: github.com/buger/jsonparser: Denial of Service via malformed JSON input",
+      "date": "2026-03-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/buger/jsonparser: github.com/buger/jsonparser: Denial of Service via malformed JSON input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-32285.json",
+      "cve": "CVE-2026-32285",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-32286: github.com/jackc/pgproto3/v2: github.com/jackc/pgproto3/v2: Denial of Service via malicious PostgreSQL server",
+      "date": "2026-03-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/jackc/pgproto3/v2: github.com/jackc/pgproto3/v2: Denial of Service via malicious PostgreSQL server",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-32286.json",
+      "cve": "CVE-2026-32286",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-4926: path-to-regexp: path-to-regexp: Denial of Service via crafted regular expressions",
+      "date": "2026-03-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "path-to-regexp: path-to-regexp: Denial of Service via crafted regular expressions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4926.json",
+      "cve": "CVE-2026-4926",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-33487: github.com/russellhaering/goxmldsig: goxmlsig: Integrity bypass due to incorrect XML Digital Signature validation via lo",
+      "date": "2026-03-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/russellhaering/goxmldsig: goxmlsig: Integrity bypass due to incorrect XML Digital Signature validation via loop variable capture issue",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33487.json",
+      "cve": "CVE-2026-33487",
+      "cvss": 7.5
     },
     {
       "title": "USN-8128-1: CryptX vulnerabilities",
@@ -7097,6 +7943,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-30892.json",
       "cve": "CVE-2026-30892",
       "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-25645: requests: Requests: Security bypass due to predictable temporary file creation",
+      "date": "2026-03-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "requests: Requests: Security bypass due to predictable temporary file creation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-25645.json",
+      "cve": "CVE-2026-25645",
+      "cvss": 4.7
     },
     {
       "title": "Signal Desktop v8.5.0-beta.1",
@@ -10765,6 +11622,569 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-03-28T13:09:06.367Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 14 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 8 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 304 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[SUCCESS] microsoft - 450 patches (50 new)",
+        "[INFO] nodejs - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 319 patches (37 new)",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 30 patches, no changes"
+      ],
+      "newPatchCount": 87,
+      "totalPatches": 1146,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "github",
+        "postgresql",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "edge",
+        "cisco",
+        "gitlab",
+        "apple",
+        "crowdstrike",
+        "nodejs"
+      ],
+      "newPatches": [
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23235: f2fs: fix out-of-bounds access in sysfs attribute read/write",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23237: platform/x86: classmate-laptop: Add missing NULL pointer checks",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23238: romfs: check sb_set_blocksize() return value",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-3336: PKCS7_verify Certificate Chain Validation Bypass in AWS-LC",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-0038: In multiple functions of mem_protect.c, there is a possible way to execute arbitrary code due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-27601: Underscore.js has unlimited recursion in _.flatten and _.isEqual, potential for DoS attack",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-2297: SourcelessFileLoader does not use io.open_code()",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-26017: CoreDNS ACL Bypass",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-26018: CoreDNS Loop Detection Denial of Service Vulnerability",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-3731: libssh SFTP Extension Name sftp.c sftp_extensions_get_data out-of-bounds",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-69646: Binutils objdump contains a denial-of-service vulnerability when processing a crafted binary with malformed DWARF debug_rnglists data. A logic error in the handling of the debug_rnglists header can cause objdump to repeatedly print the same warning message and fail to terminate, resulting in an unbounded logging loop until the process is interrupted. The issue was observed in binutils 2.44. A local attacker can exploit this vulnerability by supplying a malicious input file, leading to excessive CPU and I/O usage and preventing completion of the objdump analysis.",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-69652: GNU Binutils thru 2.46 readelf contains a vulnerability that leads to an abort (SIGABRT) when processing a crafted ELF binary with malformed DWARF abbrev or debug information. Due to incomplete state cleanup in process_debug_info(), an invalid debug_info_p state may propagate into DWARF attribute parsing routines. When certain malformed attributes result in an unexpected data length of zero, byte_get_little_endian() triggers a fatal abort. No evidence of memory corruption or code execution was observed; the impact is limited to denial of service.",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-69645: Binutils objdump contains a denial-of-service vulnerability when processing a crafted binary with malformed DWARF debug information. A logic error in the handling of DWARF compilation units can result in an invalid offset_size value being used inside byte_get_little_endian, leading to an abort (SIGABRT). The issue was observed in binutils 2.44. A local attacker can trigger the crash by supplying a malicious input file.",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-69649: GNU Binutils thru 2.46 readelf contains a null pointer dereference vulnerability when processing a crafted ELF binary with malformed header fields. During relocation processing, an invalid or null section pointer may be passed into display_relocations(), resulting in a segmentation fault (SIGSEGV) and abrupt termination. No evidence of memory corruption beyond the null pointer dereference, nor any possibility of code execution, was observed.",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-27142: URLs in meta content attribute actions are not escaped in html/template",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-25679: Incorrect parsing of IPv6 host literals in net/url",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23868: CVE-2026-23868",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-3783: token leak with redirect and netrc",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31802: node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-66413: Git for Windows leaks NTLM hash when cloning from an attacker-controlled server",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-32775: CVE-2026-32775",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23941: Request smuggling via first-wins Content-Length parsing in inets httpd",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23943: Pre-auth SSH DoS via unbounded zlib inflate",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23241: audit: add missing syscalls to read class",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-71239: audit: add fchmodat2() to change attributes class",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23233: f2fs: fix to avoid mapping wrong physical block for swapfile",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23242: RDMA/siw: Fix potential NULL pointer dereference in header processing",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23245: net/sched: act_gate: snapshot parameters with RCU on replace",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-71266: fs: ntfs3: check return value of indx_find to avoid infinite loop",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-71267: fs: ntfs3: fix infinite loop triggered by zero-sized ATTR_LIST",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23244: nvme: fix memory allocation in nvme_pr_read_keys()",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23243: RDMA/umad: Reject negative data_len in ib_umad_write",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-4224: Stack overflow parsing XML with deeply nested DTD content models",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-3644: Incomplete control character validation in http.cookies",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23269: apparmor: validate DFA start states are in bounds in unpack_pdb",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23259: io_uring/rw: free potentially allocated iovec on cache put failure",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23268: apparmor: fix unprivileged local user can do privileged policy management",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23266: fbdev: rivafb: fix divide error in nv3_arb()",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23265: f2fs: fix to do sanity check on node footer in {read,write}_end_io",
+          "date": "2026-03-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2006-10002: XML::Parser versions through 2.47 for Perl could overflow the pre-allocated buffer size cause a heap corruption (double free or corruption) and crashes",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23274: netfilter: xt_IDLETIMER: reject rev0 reuse of ALARM timer labels",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23278: netfilter: nf_tables: always walk all pending catchall elements",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23272: netfilter: nf_tables: unconditionally bump set->nelems before insertion",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23276: net: add xmit recursion limit to tunnel xmit functions",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-3634: Libsoup: libsoup: http header injection and response splitting via crlf injection in content-type header",
+          "date": "2026-03-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-3632: Libsoup: libsoup: http smuggling and server-side request forgery via malformed hostnames",
+          "date": "2026-03-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-3479: pkgutil.get_data() does not enforce documented restrictions",
+          "date": "2026-03-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-4437: gethostbyaddr and gethostbyaddr_r may incorrectly handle DNS response",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-4438: gethostbyaddr and gethostbyaddr_r return invalid DNS hostnames",
+          "date": "2026-03-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33943: happy-dom: Happy DOM: Remote Code Execution via JavaScript expression injection",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33941: handlebars.js: Handlebars: Arbitrary code execution via CLI precompiler input sanitization flaw",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33940: handlebars.js: Handlebars.js: Arbitrary code execution via crafted template context",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33939: handlebars.js: Handlebars.js: Denial of Service via malformed decorator syntax in template compilation",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33938: handlebars: Handlebars: Arbitrary code execution via @partial-block overwrite",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33937: handlebars.js: Handlebars: Remote Code Execution via crafted Abstract Syntax Tree object in compile()",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33916: handlebars.js: Handlebars: Cross-Site Scripting (XSS) via prototype pollution in partial resolution",
+          "date": "2026-03-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33896: node-forge: Forge (node-forge): Certificate validation bypass allows unauthorized certificate issuance",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33895: node-forge: Forge: Authentication bypass via forged Ed25519 cryptographic signatures",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33894: node-forge: Forge: Signature Forgery via Weak RSASSA PKCS#1 v1.5 Verification",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33891: node-forge: node-forge: Denial of Service via infinite loop in BigInteger.modInverse()",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33870: io.netty/netty-codec-http: Netty: Request smuggling via incorrect parsing of HTTP/1.1 chunked transfer encoding extensio",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27879: Grafana: Grafana: Denial of Service via resample query",
+          "date": "2026-03-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28375: grafana: Grafana: Denial of Service via testdata data-source",
+          "date": "2026-03-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27876: grafana: grafana-enterprise-plugin: Grafana: Remote arbitrary code execution via chained SQL Expressions and Enterprise ",
+          "date": "2026-03-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33758: OpenBao: reflected XSS in OpenBao OIDC authentication error message",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27880: Grafana: Grafana: Denial of Service via unbounded memory read in feature toggle evaluation",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33757: OpenBao: lack of user confirmation for OpenBao OIDC direct callback mode",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27877: grafana: Grafana: Information disclosure of data-source passwords via public dashboards",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33433: github.com/traefik/traefik: Traefik: Authentication bypass via non-canonical HTTP header injection",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-32695: github.com/traefik/traefik: Traefik: Cross-tenant traffic exposure and host restriction bypass via rule-syntax injection",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27860: dovecot: Dovecot: Authentication bypass and information disclosure via LDAP filter injection",
+          "date": "2026-03-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27859: dovecot: Dovecot: Denial of Service via excessive RFC 2231 MIME parameters",
+          "date": "2026-03-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27858: dovecot: denial of service via crafted message before authentication",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27857: dovecot: denial of service via specially crafted NOOP command",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27855: dovecot: Dovecot: Replay attack allows unauthorized login via observed One-Time Password (OTP) exchange",
+          "date": "2026-03-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-24031: dovecot: Dovecot: Authentication bypass and user enumeration due to cleared auth_username_chars configuration",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-0394: dovecot: Dovecot: Information disclosure and authentication bypass via path traversal",
+          "date": "2026-03-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-59031: dovecot: Dovecot: Information disclosure via specially crafted OOXML documents",
+          "date": "2026-03-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-59028: dovecot: Dovecot: Denial of Service via invalid SASL data",
+          "date": "2026-03-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33701: io.opentelemetry.javaagent/opentelemetry-javaagent: OpenTelemetry Java Instrumentation: Remote code execution via deseri",
+          "date": "2026-03-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4981: rhacs: Red Hat Advanced Cluster Security (ACS): Open Redirect and Content Spoofing via OAuth callback endpoint",
+          "date": "2026-03-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-32285: github.com/buger/jsonparser: github.com/buger/jsonparser: Denial of Service via malformed JSON input",
+          "date": "2026-03-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-32286: github.com/jackc/pgproto3/v2: github.com/jackc/pgproto3/v2: Denial of Service via malicious PostgreSQL server",
+          "date": "2026-03-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4926: path-to-regexp: path-to-regexp: Denial of Service via crafted regular expressions",
+          "date": "2026-03-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33487: github.com/russellhaering/goxmldsig: goxmlsig: Integrity bypass due to incorrect XML Digital Signature validation via lo",
+          "date": "2026-03-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-25645: requests: Requests: Security bypass due to predictable temporary file creation",
+          "date": "2026-03-25",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-03-28T13:02:56.912Z",
       "logs": [
@@ -17298,48 +18718,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-25T07:07:34.811Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] aws - 1 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] crowdstrike - 3 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 217 patches, no changes",
-        "[INFO] kubernetes - 1 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] redhat - 109 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 28 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 779,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "apple",
-        "crowdstrike",
-        "github",
-        "microsoft",
-        "nodejs",
-        "redhat",
-        "ubuntu",
-        "chrome",
-        "debian",
-        "edge",
-        "oracle-db",
-        "aws",
-        "kubernetes",
-        "signal",
-        "slack"
-      ],
-      "newPatches": []
     }
   ]
 }
