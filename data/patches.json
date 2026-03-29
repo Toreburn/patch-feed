@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-03-29T02:47:29.223Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-29T02:58:38.819Z",
+  "newPatches": 1,
   "patches": [
+    {
+      "title": "DSA-6182-1 libxml-parser-perl - security update",
+      "date": "2026-03-28",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "libxml-parser-perl",
+      "description": "Joris van Rantwijk discovered that libxml-parser-perl, a Perl module for parsing XML files, is prone to a heap-based buffer overflow flaw when parsing an XML file with very deep element nesting. https...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00091.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "CVE-2026-23234: f2fs: fix to avoid UAF in f2fs_write_end_io()",
       "date": "2026-03-28",
@@ -11579,6 +11590,53 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-29T02:58:38.819Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 14 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 7 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 304 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 450 patches, no changes",
+        "[INFO] nodejs - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 317 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 30 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1143,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "github",
+        "postgresql",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "edge",
+        "cisco",
+        "gitlab",
+        "apple",
+        "crowdstrike",
+        "nodejs"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6182-1 libxml-parser-perl - security update",
+          "date": "2026-03-28",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-29T02:47:29.223Z",
       "logs": [
         "[INFO] apple - 5 patches, no changes",
@@ -18210,50 +18268,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-25T19:01:12.024Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] aws - 1 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] crowdstrike - 3 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 217 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] kubernetes - 1 patches, no changes",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] redhat - 121 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 28 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 844,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "chrome",
-        "debian",
-        "gitlab",
-        "microsoft",
-        "redhat",
-        "apple",
-        "crowdstrike",
-        "github",
-        "nodejs",
-        "ubuntu",
-        "edge",
-        "oracle-db",
-        "aws",
-        "kubernetes",
-        "signal",
-        "slack"
-      ],
-      "newPatches": []
     }
   ]
 }
