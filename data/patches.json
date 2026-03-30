@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-30T19:04:31.160Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-30T19:10:00.112Z",
+  "newPatches": 3,
   "patches": [
     {
       "title": "Cloudflare Client-Side Security: smarter detection, now open to everyone",
@@ -44,6 +44,33 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5119.json",
       "cve": "CVE-2026-5119",
       "cvss": 5.9
+    },
+    {
+      "title": "USN-8131-1: GStreamer Good Plugins vulnerabilities",
+      "date": "2026-03-30",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GStreamer Good Plugins vulnerabilities",
+      "description": "It was discovered that GStreamer Good Plugins incorrectly handled certain\nX-QDM RTP payloads. A remote attacker could use this issue to cause\nGStreamer Good Plugins to crash, resulting in a denial of ...",
+      "link": "https://ubuntu.com/security/notices/USN-8131-1"
+    },
+    {
+      "title": "USN-8130-1: GStreamer Base Plugins vulnerability",
+      "date": "2026-03-30",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GStreamer Base Plugins",
+      "description": "It was discovered that GStreamer Base Plugins incorrectly handled certain\nAVI media files. A remote attacker could use this issue to cause GStreamer\nBase Plugins to crash, resulting in a denial of ser...",
+      "link": "https://ubuntu.com/security/notices/USN-8130-1"
+    },
+    {
+      "title": "USN-8129-1: pyasn1 vulnerability",
+      "date": "2026-03-30",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "pyasn1",
+      "description": "It was discovered that pyasn1 incorrectly handled recursion when decoding\nASN.1 data. An attacker could use this issue to cause pyasn1 to consume\nresources, leading to a denial of service._...",
+      "link": "https://ubuntu.com/security/notices/USN-8129-1"
     },
     {
       "title": "DSA-6184-1 incus - security update",
@@ -10957,6 +10984,67 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-30T19:10:00.112Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 14 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 312 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] nodejs - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 299 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[SUCCESS] ubuntu - 22 patches (3 new)"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 1077,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "cloudflare",
+        "github",
+        "redhat",
+        "ubuntu",
+        "debian",
+        "microsoft",
+        "postgresql",
+        "signal",
+        "chrome",
+        "edge",
+        "cisco",
+        "gitlab",
+        "apple",
+        "crowdstrike",
+        "nodejs"
+      ],
+      "newPatches": [
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8131-1: GStreamer Good Plugins vulnerabilities",
+          "date": "2026-03-30",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8130-1: GStreamer Base Plugins vulnerability",
+          "date": "2026-03-30",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8129-1: pyasn1 vulnerability",
+          "date": "2026-03-30",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-30T19:04:31.160Z",
       "logs": [
         "[INFO] apple - 5 patches, no changes",
@@ -15008,44 +15096,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-27T13:15:04.060Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 14 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 243 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] nodejs - 2 patches, no changes",
-        "[INFO] redhat - 252 patches, no changes",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] ubuntu - 29 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 966,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "chrome",
-        "debian",
-        "edge",
-        "github",
-        "redhat",
-        "ubuntu",
-        "cisco",
-        "gitlab",
-        "signal",
-        "apple",
-        "crowdstrike",
-        "nodejs"
-      ],
-      "newPatches": []
     }
   ]
 }
