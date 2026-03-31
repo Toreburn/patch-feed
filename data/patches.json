@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-03-31T19:07:09.597Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-03-31T19:12:10.561Z",
+  "newPatches": 1,
   "patches": [
+    {
+      "title": "Cisco Nexus Dashboard Fabric Controller Arbitrary Command Execution Vulnerability",
+      "date": "2026-03-31",
+      "severity": "CRITICAL",
+      "vendor": "cisco",
+      "component": "Nexus",
+      "description": "A vulnerability in the REST API and web UI of Cisco Nexus Dashboard Fabric Controller (NDFC) could allow an authenticated, low-privileged, remote attacker to perform a command injection attack against...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ndfc-cmdinj-UvYZrKfr",
+      "cve": "CVE-2024-20432"
+    },
     {
       "title": "CVE-2026-3942: Chromium: CVE-2026-3942 Incorrect security UI in PictureInPicture",
       "date": "2026-03-31",
@@ -10828,6 +10838,51 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-03-31T19:12:10.561Z",
+      "logs": [
+        "[INFO] chrome - 3 patches, no changes",
+        "[SUCCESS] cisco - 15 patches (1 new)",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 306 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 450 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 259 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 18 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1071,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "cisco",
+        "microsoft",
+        "ubuntu",
+        "cloudflare",
+        "github",
+        "redhat",
+        "debian",
+        "gcp",
+        "postgresql",
+        "signal",
+        "chrome",
+        "edge",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Cisco Nexus Dashboard Fabric Controller Arbitrary Command Execution Vulnerability",
+          "date": "2026-03-31",
+          "severity": "CRITICAL"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-03-31T19:07:09.597Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
@@ -14992,46 +15047,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-28T13:02:56.912Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 14 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 304 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] nodejs - 2 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 282 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1059,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "debian",
-        "github",
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "edge",
-        "cisco",
-        "gitlab",
-        "apple",
-        "crowdstrike",
-        "nodejs"
-      ],
-      "newPatches": []
     }
   ]
 }
