@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-01T05:57:03.099Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-01T07:44:50.446Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "Cisco Nexus Dashboard Fabric Controller Arbitrary Command Execution Vulnerability",
@@ -258,6 +258,16 @@
       "description": "A vulnerability in the REST API and web UI of Cisco Nexus Dashboard Fabric Controller (NDFC) could allow an authenticated, low-privileged, remote attacker to perform a command injection attack against...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ndfc-cmdinj-UvYZrKfr",
       "cve": "CVE-2024-20432"
+    },
+    {
+      "title": "Detecting CVE-2026-20929: Kerberos Authentication Relay via CNAME Abuse",
+      "date": "2026-03-31",
+      "severity": "UNKNOWN",
+      "vendor": "crowdstrike",
+      "component": "CrowdStrike Falcon",
+      "description": "",
+      "link": "https://www.crowdstrike.com/en-us/blog/detecting-kerberos-relay-attack-via-dns-cname-abuse/",
+      "cve": "CVE-2026-20929"
     },
     {
       "title": "DSA-6189-1 libpng1.6 - security update",
@@ -1591,6 +1601,15 @@
       "component": "Go Networking vulnerabilities",
       "description": "USN-8089-1 fixed vulnerabilities in Go Networking. This update provides\nthe corresponding update to code vendored in golang-golang-x-net-dev.\n\nOriginal advisory details:\n\n Bahruz Jabiyev, Tommaso Inno...",
       "link": "https://ubuntu.com/security/notices/USN-8089-2"
+    },
+    {
+      "title": "USN-8137-1: Ruby vulnerability",
+      "date": "2026-03-31",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Ruby",
+      "description": "It was discovered that the Ruby URI gem did not properly handle sensitive\ninformation when combining URIs. A remote attacker could possibly use this\nissue to leak authentication credentials....",
+      "link": "https://ubuntu.com/security/notices/USN-8137-1"
     },
     {
       "title": "Cloudflare Client-Side Security: smarter detection, now open to everyone",
@@ -8626,6 +8645,59 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-01T07:44:50.446Z",
+      "logs": [
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] crowdstrike - 1 patches (1 new)",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 289 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 135 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 13 patches (1 new)"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 861,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "cisco",
+        "github",
+        "paloalto",
+        "chrome",
+        "crowdstrike",
+        "debian",
+        "edge",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "cloudflare",
+        "gcp",
+        "postgresql",
+        "signal"
+      ],
+      "newPatches": [
+        {
+          "vendor": "crowdstrike",
+          "title": "Detecting CVE-2026-20929: Kerberos Authentication Relay via CNAME Abuse",
+          "date": "2026-03-31",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8137-1: Ruby vulnerability",
+          "date": "2026-03-31",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-01T05:57:03.098Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
@@ -12686,46 +12758,6 @@
     },
     {
       "timestamp": "2026-03-28T22:33:48.226Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 14 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 304 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] nodejs - 2 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 319 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1146,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "github",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "edge",
-        "cisco",
-        "gitlab",
-        "apple",
-        "crowdstrike",
-        "nodejs"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-28T20:35:50.806Z",
       "logs": [
         "[INFO] apple - 5 patches, no changes",
         "[INFO] chrome - 5 patches, no changes",
