@@ -1,16 +1,44 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-01T19:12:48.099Z",
+  "lastUpdated": "2026-04-02T02:48:42.559Z",
   "health": {
-    "lastFetchAttempt": "2026-04-01T19:12:48.099Z",
+    "lastFetchAttempt": "2026-04-02T02:48:42.559Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-01T19:12:48.099Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-04-02T02:48:42.559Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Juju has Improper TLS Client/Server authentication and certificate verification on Database Cluster",
+      "date": "2026-04-02",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\nAny Juju controller since 3.2.0.\n\nAn attacker with only route-ability to the target juju controller Dqlite cluster endpoint may join the Dqlite cluster, read and modify all information, inc",
+      "link": "https://github.com/advisories/GHSA-gvrj-cjch-728p",
+      "cves": [
+        "CVE-2026-4370"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Signal Desktop v8.5.0",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- This version contains a number of small tweaks and bug fixes to keep Signal running smoothly.",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.5.0",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
     {
       "title": "Signal Desktop v8.5.0-beta.2",
       "date": "2026-03-27",

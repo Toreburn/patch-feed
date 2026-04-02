@@ -1,7 +1,33 @@
 {
-  "lastUpdated": "2026-04-02T02:39:45.350Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-02T02:49:49.660Z",
+  "newPatches": 86,
   "patches": [
+    {
+      "title": "Juju has Improper TLS Client/Server authentication and certificate verification on Database Cluster",
+      "date": "2026-04-02",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/juju/juju",
+      "description": "Juju has Improper TLS Client/Server authentication and certificate verification on Database Cluster",
+      "link": "https://github.com/advisories/GHSA-gvrj-cjch-728p",
+      "cve": "CVE-2026-4370",
+      "cvss": 10
+    },
+    {
+      "title": "Juju has Improper TLS Client/Server authentication and certificate verification on Database Cluster",
+      "date": "2026-04-02",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\nAny Juju controller since 3.2.0.\n\nAn attacker with only route-ability to the target juju controller Dqlite cluster endpoint may join the Dqlite cluster, read and modify all information, inc",
+      "link": "https://github.com/advisories/GHSA-gvrj-cjch-728p",
+      "cves": [
+        "CVE-2026-4370"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Chrome Stable for iOS Update",
       "date": "2026-04-01",
@@ -10,6 +36,15 @@
       "component": "Chrome Browser",
       "description": "Hi everyone! We've just released Chrome Stable 147 (147.0.7727.47) for iOS; it'll become available on App Store in the next few hours.This release includes stability and performance improvements. You ...",
       "link": "https://chromereleases.googleblog.com/feeds/878663456763515458/comments/default"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "&nbsp;Hello Everyone! We've just released Chrome 147 (147.0.7727.49) for Android to a small percentage of users. It'll become&nbsp;available on Google Play&nbsp;over the next few days. You can find mo...",
+      "link": "https://chromereleases.googleblog.com/feeds/9132397779616760668/comments/default"
     },
     {
       "title": "Cisco Nexus Dashboard Fabric Controller Arbitrary Command Execution Vulnerability",
@@ -110,6 +145,28 @@
       "description": "A vulnerability in the change password functionality of Cisco Integrated Management Controller (IMC) could allow an unauthenticated, remote attacker to bypass authentication and gain access to the sys...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-auth-bypass-AgG2BxTn",
       "cve": "CVE-2026-20093"
+    },
+    {
+      "title": "DSA-6191-1 gst-plugins-ugly1.0 - security update",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "gst-plugins-ugly1.0",
+      "description": "Multiple vulnerabilities were discovered in plugins for the GStreamer media framework and its codecs and demuxers, which may result in denial of service or potentially the execution of arbitrary code ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00100.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6190-1 gst-plugins-bad1.0 - security update",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "gst-plugins-bad1.0",
+      "description": "Multiple multiple vulnerabilities were discovered in plugins for the GStreamer media framework and its codecs and demuxers, which may result in denial of service or potentially the execution of arbitr...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00099.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "SiYuan vulnerable to reflected XSS via SVG namespace prefix bypass in SanitizeSVG (getDynamicIcon, unauthenticated)",
@@ -332,6 +389,545 @@
       "cvss": 9.1
     },
     {
+      "title": "mcp-handler has a tool response leak across concurrent client sessions ('Race Condition')",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "mcp-handler",
+      "description": "mcp-handler has a tool response leak across concurrent client sessions ('Race Condition')",
+      "link": "https://github.com/advisories/GHSA-w2fm-25vw-vh7f",
+      "cve": "",
+      "cvss": 7.1
+    },
+    {
+      "title": "EnhancedLinq.Async is Vulnerable to Denial of Service via Transitive Dependency Microsoft.Bcl.Memory",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "EnhancedLinq.Async",
+      "description": "EnhancedLinq.Async is Vulnerable to Denial of Service via Transitive Dependency Microsoft.Bcl.Memory",
+      "link": "https://github.com/advisories/GHSA-32wq-ppwg-3w4m",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "lodash vulnerable to Code Injection via `_.template` imports key names",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "lodash, lodash-es, lodash-amd",
+      "description": "lodash vulnerable to Code Injection via `_.template` imports key names",
+      "link": "https://github.com/advisories/GHSA-r5fr-rjxr-66jc",
+      "cve": "CVE-2026-4800",
+      "cvss": 8.1
+    },
+    {
+      "title": "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "lodash, lodash-es, lodash-amd",
+      "description": "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`",
+      "link": "https://github.com/advisories/GHSA-f23m-r3pf-42rh",
+      "cve": "CVE-2026-2950",
+      "cvss": 6.5
+    },
+    {
+      "title": "listmonk's active sessions remain valid after password reset and password change",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/knadh/listmonk",
+      "description": "listmonk's active sessions remain valid after password reset and password change",
+      "link": "https://github.com/advisories/GHSA-h5j9-cvrw-v5qh",
+      "cve": "CVE-2026-34828",
+      "cvss": 7.1
+    },
+    {
+      "title": "NocoBase Has SQL Injection via template variable substitution in workflow SQL node",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@nocobase/plugin-workflow-sql",
+      "description": "NocoBase Has SQL Injection via template variable substitution in workflow SQL node",
+      "link": "https://github.com/advisories/GHSA-vx58-fwwq-5g8j",
+      "cve": "CVE-2026-34825",
+      "cvss": null
+    },
+    {
+      "title": "phpMyFAQ: SVG Sanitizer Bypass via HTML Entity Encoding Leads to Stored XSS and Privilege Escalation",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "thorsten/phpmyfaq",
+      "description": "phpMyFAQ: SVG Sanitizer Bypass via HTML Entity Encoding Leads to Stored XSS and Privilege Escalation",
+      "link": "https://github.com/advisories/GHSA-5crx-pfhq-4hgg",
+      "cve": "CVE-2026-34974",
+      "cvss": 5.4
+    },
+    {
+      "title": "phpMyFAQ has a LIKE Wildcard Injection in Search.php — Unescaped % and _ Metacharacters Enable Broad Content Disclosure",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "thorsten/phpmyfaq",
+      "description": "phpMyFAQ has a LIKE Wildcard Injection in Search.php — Unescaped % and _ Metacharacters Enable Broad Content Disclosure",
+      "link": "https://github.com/advisories/GHSA-gcp9-5jc8-976x",
+      "cve": "CVE-2026-34973",
+      "cvss": null
+    },
+    {
+      "title": "ONNX: TOCTOU arbitrary file read/write in save_external_dat ",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "onnx",
+      "description": "ONNX: TOCTOU arbitrary file read/write in save_external_dat ",
+      "link": "https://github.com/advisories/GHSA-q56x-g2fj-4rj6",
+      "cve": "",
+      "cvss": 7.1
+    },
+    {
+      "title": "Ferret: Path Traversal in IO::FS::WRITE allows arbitrary file write when scraping malicious websites",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/MontFerret/ferret/v2, github.com/MontFerret/ferret",
+      "description": "Ferret: Path Traversal in IO::FS::WRITE allows arbitrary file write when scraping malicious websites",
+      "link": "https://github.com/advisories/GHSA-j6v5-g24h-vg4j",
+      "cve": "CVE-2026-34783",
+      "cvss": 8.1
+    },
+    {
+      "title": "Nhost Leaks Refresh Tokens via URL Query Parameter in OAuth Provider Callback",
+      "date": "2026-04-01",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/nhost/nhost",
+      "description": "Nhost Leaks Refresh Tokens via URL Query Parameter in OAuth Provider Callback",
+      "link": "https://github.com/advisories/GHSA-g2qj-prgh-4g9r",
+      "cve": "CVE-2026-34969",
+      "cvss": null
+    },
+    {
+      "title": "PraisonAI Has Authentication Bypass via OAuthManager.validate_token()",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "praisonai",
+      "description": "PraisonAI Has Authentication Bypass via OAuthManager.validate_token()",
+      "link": "https://github.com/advisories/GHSA-98f9-fqg5-hvq5",
+      "cve": "CVE-2026-34953",
+      "cvss": 9.1
+    },
+    {
+      "title": "PraisonAI Has Missing Authentication in WebSocket Gateway",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "praisonai",
+      "description": "PraisonAI Has Missing Authentication in WebSocket Gateway",
+      "link": "https://github.com/advisories/GHSA-cfh6-vr3j-qc3g",
+      "cve": "CVE-2026-34952",
+      "cvss": 9.1
+    },
+    {
+      "title": "PraisonAI Has SSRF in FileTools.download_file() via Unvalidated URL",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "praisonaiagents",
+      "description": "PraisonAI Has SSRF in FileTools.download_file() via Unvalidated URL",
+      "link": "https://github.com/advisories/GHSA-44c2-3rw4-5gvh",
+      "cve": "CVE-2026-34954",
+      "cvss": 8.6
+    },
+    {
+      "title": "PraisonAI Has Sandbox Escape via shell=True and Bypassable Blocklist in SubprocessSandbox",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "praisonai",
+      "description": "PraisonAI Has Sandbox Escape via shell=True and Bypassable Blocklist in SubprocessSandbox",
+      "link": "https://github.com/advisories/GHSA-r4f2-3m54-pp7q",
+      "cve": "CVE-2026-34955",
+      "cvss": 8.8
+    },
+    {
+      "title": "AVideo has Stored XSS via Unescaped Menu Item Fields in TopMenu Plugin",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wwbn/avideo",
+      "description": "AVideo has Stored XSS via Unescaped Menu Item Fields in TopMenu Plugin",
+      "link": "https://github.com/advisories/GHSA-gmpc-fxg2-vcmq",
+      "cve": "",
+      "cvss": 6.1
+    },
+    {
+      "title": "KubeAI: OS Command Injection via Model URL in Ollama Engine startup probe allows arbitrary command execution in model pods",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/kubeai-project/kubeai",
+      "description": "KubeAI: OS Command Injection via Model URL in Ollama Engine startup probe allows arbitrary command execution in model pods",
+      "link": "https://github.com/advisories/GHSA-324q-cwx9-7crr",
+      "cve": "CVE-2026-34940",
+      "cvss": 8.7
+    },
+    {
+      "title": "PraisonAI: SSRF via Unvalidated api_base in passthrough() Fallback",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "praisonai",
+      "description": "PraisonAI: SSRF via Unvalidated api_base in passthrough() Fallback",
+      "link": "https://github.com/advisories/GHSA-x6m9-gxvr-7jpv",
+      "cve": "CVE-2026-34936",
+      "cvss": 7.7
+    },
+    {
+      "title": "PraisonAI Has ReDoS via Unvalidated User-Controlled Regex in MCPToolIndex.search_tools()",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "praisonai",
+      "description": "PraisonAI Has ReDoS via Unvalidated User-Controlled Regex in MCPToolIndex.search_tools()",
+      "link": "https://github.com/advisories/GHSA-8w9j-hc3g-3g7f",
+      "cve": "CVE-2026-34939",
+      "cvss": 6.5
+    },
+    {
+      "title": "PraisonAI Has Second-Order SQL Injection in `get_all_user_threads`",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "praisonai",
+      "description": "PraisonAI Has Second-Order SQL Injection in `get_all_user_threads`",
+      "link": "https://github.com/advisories/GHSA-9cq8-3v94-434g",
+      "cve": "CVE-2026-34934",
+      "cvss": 9.8
+    },
+    {
+      "title": "PraisonAI: OS Command Injection in MCPHandler.parse_mcp_command()",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "praisonai",
+      "description": "PraisonAI: OS Command Injection in MCPHandler.parse_mcp_command()",
+      "link": "https://github.com/advisories/GHSA-9gm9-c8mq-vq7m",
+      "cve": "CVE-2026-34935",
+      "cvss": 9.8
+    },
+    {
+      "title": "PraisonAI: Shell Injection in run_python() via Unescaped $() Substitution",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "praisonaiagents",
+      "description": "PraisonAI: Shell Injection in run_python() via Unescaped $() Substitution",
+      "link": "https://github.com/advisories/GHSA-w37c-qqfp-c67f",
+      "cve": "CVE-2026-34937",
+      "cvss": 7.8
+    },
+    {
+      "title": "PraisonAI: Python Sandbox Escape via str Subclass startswith() Override in execute_code",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "praisonaiagents",
+      "description": "PraisonAI: Python Sandbox Escape via str Subclass startswith() Override in execute_code",
+      "link": "https://github.com/advisories/GHSA-6vh2-h83c-9294",
+      "cve": "CVE-2026-34938",
+      "cvss": 10
+    },
+    {
+      "title": "Parser Server's streaming file download bypasses afterFind file trigger authorization",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parser Server's streaming file download bypasses afterFind file trigger authorization",
+      "link": "https://github.com/advisories/GHSA-hpm8-9qx6-jvwv",
+      "cve": "CVE-2026-34784",
+      "cvss": null
+    },
+    {
+      "title": "Tesla Fleet Telemetry allows spoofing telemetry for arbitrary vehicles via compromised vehicle credentials",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/teslamotors/fleet-telemetry",
+      "description": "Tesla Fleet Telemetry allows spoofing telemetry for arbitrary vehicles via compromised vehicle credentials",
+      "link": "https://github.com/advisories/GHSA-prxj-3gcv-cqrh",
+      "cve": "",
+      "cvss": 5.9
+    },
+    {
+      "title": "Ella Core Has Audit Log Falsification via Path/Body IMSI Mismatch in UpdateSubscriber",
+      "date": "2026-04-01",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/ellanetworks/core",
+      "description": "Ella Core Has Audit Log Falsification via Path/Body IMSI Mismatch in UpdateSubscriber",
+      "link": "https://github.com/advisories/GHSA-xw45-cc32-442f",
+      "cve": "CVE-2026-34762",
+      "cvss": 2.7
+    },
+    {
+      "title": "Ella Core Panics Upon NGAP handover failure",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/ellanetworks/core",
+      "description": "Ella Core Panics Upon NGAP handover failure",
+      "link": "https://github.com/advisories/GHSA-6gm8-3g4h-w82m",
+      "cve": "CVE-2026-34761",
+      "cvss": 5.8
+    },
+    {
+      "title": "Haraka affected by DoS via `__proto__` email header",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "Haraka",
+      "description": "Haraka affected by DoS via `__proto__` email header",
+      "link": "https://github.com/advisories/GHSA-xph3-r2jf-4vp3",
+      "cve": "CVE-2026-34752",
+      "cvss": null
+    },
+    {
+      "title": "Copier `_external_data` allows path traversal and absolute-path local file read without unsafe mode",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "copier",
+      "description": "Copier `_external_data` allows path traversal and absolute-path local file read without unsafe mode",
+      "link": "https://github.com/advisories/GHSA-hgjq-p8cr-gg4h",
+      "cve": "CVE-2026-34730",
+      "cvss": 5.5
+    },
+    {
+      "title": "phpMyFAQ: Stored XSS via Regex Bypass in Filter::removeAttributes()",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "phpmyfaq/phpmyfaq",
+      "description": "phpMyFAQ: Stored XSS via Regex Bypass in Filter::removeAttributes()",
+      "link": "https://github.com/advisories/GHSA-cv2g-8cj8-vgc7",
+      "cve": "CVE-2026-34729",
+      "cvss": 6.1
+    },
+    {
+      "title": "phpMyFAQ: Path Traversal - Arbitrary File Deletion in MediaBrowserController",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "phpmyfaq/phpmyfaq",
+      "description": "phpMyFAQ: Path Traversal - Arbitrary File Deletion in MediaBrowserController",
+      "link": "https://github.com/advisories/GHSA-38m8-xrfj-v38x",
+      "cve": "CVE-2026-34728",
+      "cvss": 8.7
+    },
+    {
+      "title": "Copier `_subdirectory` allows template root escape via parent-directory traversal",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "copier",
+      "description": "Copier `_subdirectory` allows template root escape via parent-directory traversal",
+      "link": "https://github.com/advisories/GHSA-85v3-4m8g-hrh6",
+      "cve": "CVE-2026-34726",
+      "cvss": 4.4
+    },
+    {
+      "title": "dbgate-web: Stored XSS in applicationIcon leads to potential RCE in Electron due to unsafe renderer configuration",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "dbgate-web",
+      "description": "dbgate-web: Stored XSS in applicationIcon leads to potential RCE in Electron due to unsafe renderer configuration",
+      "link": "https://github.com/advisories/GHSA-35xm-qvjg-8m42",
+      "cve": "CVE-2026-34725",
+      "cvss": 8.3
+    },
+    {
+      "title": "ewe Has Improper Neutralization of CRLF Sequences in HTTP Headers (HTTP Request/Response Splitting)",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ewe",
+      "description": "ewe Has Improper Neutralization of CRLF Sequences in HTTP Headers (HTTP Request/Response Splitting)",
+      "link": "https://github.com/advisories/GHSA-x2w3-23jr-hrpf",
+      "cve": "CVE-2026-34715",
+      "cvss": 5.3
+    },
+    {
+      "title": "Poetry Has Wheel Path Traversal Which Can Lead to Arbitrary File Write",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "poetry",
+      "description": "Poetry Has Wheel Path Traversal Which Can Lead to Arbitrary File Write",
+      "link": "https://github.com/advisories/GHSA-2599-h6xx-hpxp",
+      "cve": "CVE-2026-34591",
+      "cvss": null
+    },
+    {
+      "title": "StableLib Ed25519 Signature Malleability via Missing S < L Check",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@stablelib/ed25519",
+      "description": "StableLib Ed25519 Signature Malleability via Missing S < L Check",
+      "link": "https://github.com/advisories/GHSA-x3ff-w252-2g7j",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "CI4MS: Account Deactivation Module Grants Full Persistent Unauthorized Access for All‑Roles via Improper Session Invalidation (Logic Flaw)",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Account Deactivation Module Grants Full Persistent Unauthorized Access for All‑Roles via Improper Session Invalidation (Logic Flaw)",
+      "link": "https://github.com/advisories/GHSA-8fq3-c5w3-pj3q",
+      "cve": "CVE-2026-34572",
+      "cvss": 8
+    },
+    {
+      "title": "CI4MS: Stored Cross‑Site Scripting (Stored XSS) in Backend User Management Allows Session Hijacking and Full Administrative Account Compromise",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Stored Cross‑Site Scripting (Stored XSS) in Backend User Management Allows Session Hijacking and Full Administrative Account Compromise",
+      "link": "https://github.com/advisories/GHSA-fc4p-p49v-r948",
+      "cve": "CVE-2026-34571",
+      "cvss": 10
+    },
+    {
+      "title": "CI4MS: Account Deletion Module Grants Full Persistent Unauthorized Access for All‑Roles via Improper Session Invalidation (Logic Flaw)",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Account Deletion Module Grants Full Persistent Unauthorized Access for All‑Roles via Improper Session Invalidation (Logic Flaw)",
+      "link": "https://github.com/advisories/GHSA-4vxv-4xq4-p84h",
+      "cve": "CVE-2026-34570",
+      "cvss": 8.8
+    },
+    {
+      "title": "CI4MS: Blogs Categories Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Blogs Categories Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "link": "https://github.com/advisories/GHSA-fhrf-q333-82fm",
+      "cve": "CVE-2026-34569",
+      "cvss": 10
+    },
+    {
+      "title": "CI4MS: Blogs Posts Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Blogs Posts Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "link": "https://github.com/advisories/GHSA-x7wh-g25g-53vg",
+      "cve": "CVE-2026-34568",
+      "cvss": 9.1
+    },
+    {
+      "title": "CI4MS: Blogs Posts (Categories) Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Blogs Posts (Categories) Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "link": "https://github.com/advisories/GHSA-r33w-c82v-x5v7",
+      "cve": "CVE-2026-34567",
+      "cvss": 9.1
+    },
+    {
+      "title": "CI4MS: Pages Management Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Pages Management Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "link": "https://github.com/advisories/GHSA-458r-h248-29c5",
+      "cve": "CVE-2026-34566",
+      "cvss": 9.1
+    },
+    {
+      "title": "CI4MS: Menu Management (Posts) Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Menu Management (Posts) Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "link": "https://github.com/advisories/GHSA-xgh5-w62m-8mpr",
+      "cve": "CVE-2026-34565",
+      "cvss": 9.1
+    },
+    {
+      "title": "CI4MS: Menu Management (Pages) Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Menu Management (Pages) Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "link": "https://github.com/advisories/GHSA-g4pp-fhgf-8653",
+      "cve": "CVE-2026-34564",
+      "cvss": 9.1
+    },
+    {
+      "title": "CI4MS: Backup Management Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM Blind XSS",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Backup Management Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM Blind XSS",
+      "link": "https://github.com/advisories/GHSA-85m8-g393-jcxf",
+      "cve": "CVE-2026-34563",
+      "cvss": 9.1
+    },
+    {
+      "title": "CI4MS: System Settings (Company Information) Full Platform Compromise & Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: System Settings (Company Information) Full Platform Compromise & Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "link": "https://github.com/advisories/GHSA-v897-c6vq-6cr3",
+      "cve": "CVE-2026-34562",
+      "cvss": 4.7
+    },
+    {
+      "title": "CI4MS: System Settings (Social Media Management) Full Platform Compromise & Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: System Settings (Social Media Management) Full Platform Compromise & Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "link": "https://github.com/advisories/GHSA-gcfj-cf7j-vwgj",
+      "cve": "CVE-2026-34561",
+      "cvss": 4.7
+    },
+    {
+      "title": "CI4MS: Logs Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "date": "2026-04-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS: Logs Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+      "link": "https://github.com/advisories/GHSA-r4v5-rwr2-q7r4",
+      "cve": "CVE-2026-34560",
+      "cvss": 9.1
+    },
+    {
       "title": "CVE-2025-4615 PAN-OS: Improper Neutralization of Input in the Management Web Interface (Severity: MEDIUM)",
       "date": "2026-04-01",
       "severity": "MEDIUM",
@@ -340,6 +936,305 @@
       "description": "",
       "link": "https://security.paloaltonetworks.com/CVE-2025-4615",
       "cve": "CVE-2025-4615"
+    },
+    {
+      "title": "CVE-2026-34525: aiohttp: aiohttp: Security bypass via multiple Host headers",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aiohttp: aiohttp: Security bypass via multiple Host headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34525.json",
+      "cve": "CVE-2026-34525",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-34520: aiohttp: AIOHTTP: Header injection vulnerability due to improper character handling",
+      "date": "2026-04-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aiohttp: AIOHTTP: Header injection vulnerability due to improper character handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34520.json",
+      "cve": "CVE-2026-34520",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-34519: aiohttp: aiohttp: Header injection vulnerability via reason parameter",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aiohttp: aiohttp: Header injection vulnerability via reason parameter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34519.json",
+      "cve": "CVE-2026-34519",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-34518: aiohttp: AIOHTTP: Information disclosure via retained Cookie and Proxy-Authorization headers during redirects",
+      "date": "2026-04-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aiohttp: AIOHTTP: Information disclosure via retained Cookie and Proxy-Authorization headers during redirects",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34518.json",
+      "cve": "CVE-2026-34518",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-34517: aiohttp: AIOHTTP: Denial of Service via large multipart form fields",
+      "date": "2026-04-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aiohttp: AIOHTTP: Denial of Service via large multipart form fields",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34517.json",
+      "cve": "CVE-2026-34517",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-34516: aiohttp: AIOHTTP: Denial of Service via excessive multipart headers",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aiohttp: AIOHTTP: Denial of Service via excessive multipart headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34516.json",
+      "cve": "CVE-2026-34516",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-34515: aiohttp: AIOHTTP: Information disclosure via static resource handler on Windows",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aiohttp: AIOHTTP: Information disclosure via static resource handler on Windows",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34515.json",
+      "cve": "CVE-2026-34515",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-34514: aiohttp: AIOHTTP: Header Injection via content_type parameter manipulation",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aiohttp: AIOHTTP: Header Injection via content_type parameter manipulation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34514.json",
+      "cve": "CVE-2026-34514",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-22815: aiohttp: AIOHTTP: Denial of Service via insufficient header/trailer handling",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aiohttp: AIOHTTP: Denial of Service via insufficient header/trailer handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-22815.json",
+      "cve": "CVE-2026-22815",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-34513: aiohttp: AIOHTTP: Denial of Service due to unbounded DNS cache",
+      "date": "2026-04-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aiohttp: AIOHTTP: Denial of Service due to unbounded DNS cache",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34513.json",
+      "cve": "CVE-2026-34513",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-27489: onnx: ONNX: Information Disclosure via Path Traversal Vulnerability",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "onnx: ONNX: Information Disclosure via Path Traversal Vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27489.json",
+      "cve": "CVE-2026-27489",
+      "cvss": 8.6
+    },
+    {
+      "title": "CVE-2026-34445: ONNX: python: ONNX: Denial of Service and potential information disclosure via malicious model metadata",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ONNX: python: ONNX: Denial of Service and potential information disclosure via malicious model metadata",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34445.json",
+      "cve": "CVE-2026-34445",
+      "cvss": 6.6
+    },
+    {
+      "title": "CVE-2026-35092: corosync: Corosync: Denial of Service via integer overflow in join message validation",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "corosync: Corosync: Denial of Service via integer overflow in join message validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35092.json",
+      "cve": "CVE-2026-35092",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-35091: corosync: Corosync: Denial of Service and information disclosure via crafted UDP packet",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "corosync: Corosync: Denial of Service and information disclosure via crafted UDP packet",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35091.json",
+      "cve": "CVE-2026-35091",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-23406: kernel: apparmor: fix side-effect bug in match_char() macro usage",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix side-effect bug in match_char() macro usage",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23406.json",
+      "cve": "CVE-2026-23406",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-23411: kernel: apparmor: fix race between freeing data and fs accessing it",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix race between freeing data and fs accessing it",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23411.json",
+      "cve": "CVE-2026-23411",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-23410: kernel: apparmor: fix race on rawdata dereference",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix race on rawdata dereference",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23410.json",
+      "cve": "CVE-2026-23410",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-23407: kernel: apparmor: fix missing bounds check on DEFAULT table in verify_dfa()",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix missing bounds check on DEFAULT table in verify_dfa()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23407.json",
+      "cve": "CVE-2026-23407",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-23405: kernel: apparmor: fix: limit the number of levels of policy namespaces",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix: limit the number of levels of policy namespaces",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23405.json",
+      "cve": "CVE-2026-23405",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-23403: kernel: apparmor: fix memory leak in verify_header",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix memory leak in verify_header",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23403.json",
+      "cve": "CVE-2026-23403",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-23408: kernel: apparmor: Fix double free of ns_name in aa_replace_profiles()",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: Fix double free of ns_name in aa_replace_profiles()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23408.json",
+      "cve": "CVE-2026-23408",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-23404: kernel: apparmor: replace recursive profile removal with iterative approach",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: replace recursive profile removal with iterative approach",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23404.json",
+      "cve": "CVE-2026-23404",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-23402: kernel: KVM: x86/mmu: Only WARN in direct MMUs when overwriting shadow-present SPTE",
+      "date": "2026-04-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: x86/mmu: Only WARN in direct MMUs when overwriting shadow-present SPTE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23402.json",
+      "cve": "CVE-2026-23402",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-23409: kernel: apparmor: fix differential encoding verification",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix differential encoding verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23409.json",
+      "cve": "CVE-2026-23409",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-35093: libinput: libinput: Unauthorized code execution and information disclosure through Lua bytecode plugins",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libinput: libinput: Unauthorized code execution and information disclosure through Lua bytecode plugins",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35093.json",
+      "cve": "CVE-2026-35093",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-35094: libinput: libinput: Information disclosure via dangling pointer in Lua plugin handling",
+      "date": "2026-04-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libinput: libinput: Information disclosure via dangling pointer in Lua plugin handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35094.json",
+      "cve": "CVE-2026-35094",
+      "cvss": 3.3
+    },
+    {
+      "title": "Signal Desktop v8.5.0",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- This version contains a number of small tweaks and bug fixes to keep Signal running smoothly.",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.5.0",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
     },
     {
       "title": "USN-8095-5: Linux kernel (Raspberry Pi) vulnerabilities",
@@ -385,6 +1280,24 @@
       "component": "tar-rs",
       "description": "It was discovered that tar-rs incorrectly handled symlinks when unpacking a\ntar archive. If a user or automated system were tricked into processing a\nspecially crafted tar archive, a remote attacker c...",
       "link": "https://ubuntu.com/security/notices/USN-8138-1"
+    },
+    {
+      "title": "USN-8143-1: Linux kernel vulnerabilities",
+      "date": "2026-04-01",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Cryptographic AP...",
+      "link": "https://ubuntu.com/security/notices/USN-8143-1"
+    },
+    {
+      "title": "USN-8142-1: Linux kernel vulnerability",
+      "date": "2026-04-01",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel",
+      "description": "A security issue was discovered in the Linux kernel.\nAn attacker could possibly use this to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Network traffic control;...",
+      "link": "https://ubuntu.com/security/notices/USN-8142-1"
     },
     {
       "title": "Chrome for Android Update",
@@ -1927,6 +2840,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5281.json",
       "cve": "CVE-2026-5281",
       "cvss": 9
+    },
+    {
+      "title": "CVE-2026-4800: lodash: lodash: Arbitrary code execution via untrusted input in template imports",
+      "date": "2026-03-31",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "lodash: lodash: Arbitrary code execution via untrusted input in template imports",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4800.json",
+      "cve": "CVE-2026-4800",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-34043: serialize-javascript: serialize-javascript: Denial of Service via specially crafted array-like object serialization",
+      "date": "2026-03-31",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "serialize-javascript: serialize-javascript: Denial of Service via specially crafted array-like object serialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34043.json",
+      "cve": "CVE-2026-34043",
+      "cvss": 5.9
     },
     {
       "title": "USN-8136-1: Dovecot vulnerabilities",
@@ -6572,6 +7507,17 @@
       "cvss": 6.5
     },
     {
+      "title": "CVE-2026-34475: Varnish Cache: Varnish Cache and Varnish Enterprise: Cache poisoning and authentication bypass via unchecked URL handlin",
+      "date": "2026-03-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Varnish Cache: Varnish Cache and Varnish Enterprise: Cache poisoning and authentication bypass via unchecked URL handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34475.json",
+      "cve": "CVE-2026-34475",
+      "cvss": 5.4
+    },
+    {
       "title": "Signal Desktop v8.5.0-beta.2",
       "date": "2026-03-27",
       "severity": "UNKNOWN",
@@ -6595,6 +7541,563 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-04-02T02:49:49.659Z",
+      "logs": [
+        "[SUCCESS] chrome - 4 patches (1 new)",
+        "[INFO] cisco - 11 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 11 patches (2 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 249 patches (50 new)",
+        "[INFO] microsoft - 300 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 141 patches (29 new)",
+        "[SUCCESS] signal - 3 patches (2 new)",
+        "[SUCCESS] ubuntu - 19 patches (2 new)"
+      ],
+      "newPatchCount": 86,
+      "totalPatches": 744,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "github",
+        "signal",
+        "chrome",
+        "cisco",
+        "debian",
+        "paloalto",
+        "redhat",
+        "ubuntu",
+        "crowdstrike",
+        "edge",
+        "microsoft",
+        "cloudflare",
+        "gcp",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "chrome",
+          "title": "Chrome for Android Update",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6191-1 gst-plugins-ugly1.0 - security update",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6190-1 gst-plugins-bad1.0 - security update",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Juju has Improper TLS Client/Server authentication and certificate verification on Database Cluster",
+          "date": "2026-04-02",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "mcp-handler has a tool response leak across concurrent client sessions ('Race Condition')",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "EnhancedLinq.Async is Vulnerable to Denial of Service via Transitive Dependency Microsoft.Bcl.Memory",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "lodash vulnerable to Code Injection via `_.template` imports key names",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "listmonk's active sessions remain valid after password reset and password change",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "NocoBase Has SQL Injection via template variable substitution in workflow SQL node",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "phpMyFAQ: SVG Sanitizer Bypass via HTML Entity Encoding Leads to Stored XSS and Privilege Escalation",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "phpMyFAQ has a LIKE Wildcard Injection in Search.php — Unescaped % and _ Metacharacters Enable Broad Content Disclosure",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "ONNX: TOCTOU arbitrary file read/write in save_external_dat ",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Ferret: Path Traversal in IO::FS::WRITE allows arbitrary file write when scraping malicious websites",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Nhost Leaks Refresh Tokens via URL Query Parameter in OAuth Provider Callback",
+          "date": "2026-04-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI Has Authentication Bypass via OAuthManager.validate_token()",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI Has Missing Authentication in WebSocket Gateway",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI Has SSRF in FileTools.download_file() via Unvalidated URL",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI Has Sandbox Escape via shell=True and Bypassable Blocklist in SubprocessSandbox",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AVideo has Stored XSS via Unescaped Menu Item Fields in TopMenu Plugin",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "KubeAI: OS Command Injection via Model URL in Ollama Engine startup probe allows arbitrary command execution in model pods",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI: SSRF via Unvalidated api_base in passthrough() Fallback",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI Has ReDoS via Unvalidated User-Controlled Regex in MCPToolIndex.search_tools()",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI Has Second-Order SQL Injection in `get_all_user_threads`",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI: OS Command Injection in MCPHandler.parse_mcp_command()",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI: Shell Injection in run_python() via Unescaped $() Substitution",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI: Python Sandbox Escape via str Subclass startswith() Override in execute_code",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Parser Server's streaming file download bypasses afterFind file trigger authorization",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Tesla Fleet Telemetry allows spoofing telemetry for arbitrary vehicles via compromised vehicle credentials",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Ella Core Has Audit Log Falsification via Path/Body IMSI Mismatch in UpdateSubscriber",
+          "date": "2026-04-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Ella Core Panics Upon NGAP handover failure",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Haraka affected by DoS via `__proto__` email header",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Copier `_external_data` allows path traversal and absolute-path local file read without unsafe mode",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "phpMyFAQ: Stored XSS via Regex Bypass in Filter::removeAttributes()",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "phpMyFAQ: Path Traversal - Arbitrary File Deletion in MediaBrowserController",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Copier `_subdirectory` allows template root escape via parent-directory traversal",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "dbgate-web: Stored XSS in applicationIcon leads to potential RCE in Electron due to unsafe renderer configuration",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "ewe Has Improper Neutralization of CRLF Sequences in HTTP Headers (HTTP Request/Response Splitting)",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Poetry Has Wheel Path Traversal Which Can Lead to Arbitrary File Write",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "StableLib Ed25519 Signature Malleability via Missing S < L Check",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Account Deactivation Module Grants Full Persistent Unauthorized Access for All‑Roles via Improper Session Invalidation (Logic Flaw)",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Stored Cross‑Site Scripting (Stored XSS) in Backend User Management Allows Session Hijacking and Full Administrative Account Compromise",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Account Deletion Module Grants Full Persistent Unauthorized Access for All‑Roles via Improper Session Invalidation (Logic Flaw)",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Blogs Categories Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Blogs Posts Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Blogs Posts (Categories) Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Pages Management Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Menu Management (Posts) Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Menu Management (Pages) Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Backup Management Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM Blind XSS",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: System Settings (Company Information) Full Platform Compromise & Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: System Settings (Social Media Management) Full Platform Compromise & Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS: Logs Full Account Takeover for All-Roles & Privilege-Escalation via Stored DOM XSS",
+          "date": "2026-04-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34525: aiohttp: aiohttp: Security bypass via multiple Host headers",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34520: aiohttp: AIOHTTP: Header injection vulnerability due to improper character handling",
+          "date": "2026-04-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34519: aiohttp: aiohttp: Header injection vulnerability via reason parameter",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34518: aiohttp: AIOHTTP: Information disclosure via retained Cookie and Proxy-Authorization headers during redirects",
+          "date": "2026-04-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34517: aiohttp: AIOHTTP: Denial of Service via large multipart form fields",
+          "date": "2026-04-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34516: aiohttp: AIOHTTP: Denial of Service via excessive multipart headers",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34515: aiohttp: AIOHTTP: Information disclosure via static resource handler on Windows",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34514: aiohttp: AIOHTTP: Header Injection via content_type parameter manipulation",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-22815: aiohttp: AIOHTTP: Denial of Service via insufficient header/trailer handling",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34513: aiohttp: AIOHTTP: Denial of Service due to unbounded DNS cache",
+          "date": "2026-04-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27489: onnx: ONNX: Information Disclosure via Path Traversal Vulnerability",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34445: ONNX: python: ONNX: Denial of Service and potential information disclosure via malicious model metadata",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35092: corosync: Corosync: Denial of Service via integer overflow in join message validation",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35091: corosync: Corosync: Denial of Service and information disclosure via crafted UDP packet",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23406: kernel: apparmor: fix side-effect bug in match_char() macro usage",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23411: kernel: apparmor: fix race between freeing data and fs accessing it",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23410: kernel: apparmor: fix race on rawdata dereference",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23407: kernel: apparmor: fix missing bounds check on DEFAULT table in verify_dfa()",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23405: kernel: apparmor: fix: limit the number of levels of policy namespaces",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23403: kernel: apparmor: fix memory leak in verify_header",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23408: kernel: apparmor: Fix double free of ns_name in aa_replace_profiles()",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23404: kernel: apparmor: replace recursive profile removal with iterative approach",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23402: kernel: KVM: x86/mmu: Only WARN in direct MMUs when overwriting shadow-present SPTE",
+          "date": "2026-04-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23409: kernel: apparmor: fix differential encoding verification",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35093: libinput: libinput: Unauthorized code execution and information disclosure through Lua bytecode plugins",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35094: libinput: libinput: Information disclosure via dangling pointer in Lua plugin handling",
+          "date": "2026-04-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4800: lodash: lodash: Arbitrary code execution via untrusted input in template imports",
+          "date": "2026-03-31",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34043: serialize-javascript: serialize-javascript: Denial of Service via specially crafted array-like object serialization",
+          "date": "2026-03-31",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34475: Varnish Cache: Varnish Cache and Varnish Enterprise: Cache poisoning and authentication bypass via unchecked URL handlin",
+          "date": "2026-03-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "signal",
+          "title": "Juju has Improper TLS Client/Server authentication and certificate verification on Database Cluster",
+          "date": "2026-04-02",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal Desktop v8.5.0",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8143-1: Linux kernel vulnerabilities",
+          "date": "2026-04-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8142-1: Linux kernel vulnerability",
+          "date": "2026-04-01",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-04-02T02:39:45.350Z",
       "logs": [
@@ -10610,46 +12113,6 @@
           "severity": "HIGH"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-29T18:50:15.295Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 14 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 304 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] nodejs - 2 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 319 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1195,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "redhat",
-        "github",
-        "postgresql",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "edge",
-        "cisco",
-        "gitlab",
-        "apple",
-        "crowdstrike",
-        "nodejs"
-      ],
-      "newPatches": []
     }
   ]
 }
