@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-02T19:02:00.326Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-02T19:06:16.704Z",
+  "newPatches": 7,
   "patches": [
     {
       "title": "Juju has Improper TLS Client/Server authentication and certificate verification on Database Cluster",
@@ -12,6 +12,50 @@
       "link": "https://github.com/advisories/GHSA-gvrj-cjch-728p",
       "cve": "CVE-2026-4370",
       "cvss": 10
+    },
+    {
+      "title": "Rack:: Static header_rules bypass via URL-encoded paths",
+      "date": "2026-04-02",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "rack, rack, rack",
+      "description": "Rack:: Static header_rules bypass via URL-encoded paths",
+      "link": "https://github.com/advisories/GHSA-q4qf-9j86-f5mh",
+      "cve": "CVE-2026-34786",
+      "cvss": 5.3
+    },
+    {
+      "title": "Rack::Static prefix matching can expose unintended files under the static root",
+      "date": "2026-04-02",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "rack, rack, rack",
+      "description": "Rack::Static prefix matching can expose unintended files under the static root",
+      "link": "https://github.com/advisories/GHSA-h2jq-g4cq-5ppq",
+      "cve": "CVE-2026-34785",
+      "cvss": 7.5
+    },
+    {
+      "title": "Axios supply chain attack - dependency in @lightdash/cli may resolve to compromised axios versions",
+      "date": "2026-04-02",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@lightdash/cli",
+      "description": "Axios supply chain attack - dependency in @lightdash/cli may resolve to compromised axios versions",
+      "link": "https://github.com/advisories/GHSA-3hfp-gqgh-xc5g",
+      "cve": "",
+      "cvss": 9.7
+    },
+    {
+      "title": "Axios npm Supply Chain Incident Impacting @usebruno/cli",
+      "date": "2026-04-02",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@usebruno/cli",
+      "description": "Axios npm Supply Chain Incident Impacting @usebruno/cli",
+      "link": "https://github.com/advisories/GHSA-658g-p7jg-wx5g",
+      "cve": "CVE-2026-34841",
+      "cvss": 9.8
     },
     {
       "title": "CloudNativePG 1.29.0 Released!",
@@ -68,6 +112,33 @@
       "component": "Undertow",
       "description": "It was discovered that Undertow incorrectly validated the Host header in\nincoming HTTP requests. A remote attacker could possibly use this issue\nto gain unintended access to user sessions....",
       "link": "https://ubuntu.com/security/notices/USN-8144-1"
+    },
+    {
+      "title": "USN-8149-1: Linux kernel vulnerabilities",
+      "date": "2026-04-02",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Cryptographic AP...",
+      "link": "https://ubuntu.com/security/notices/USN-8149-1"
+    },
+    {
+      "title": "USN-8148-1: Linux kernel vulnerabilities",
+      "date": "2026-04-02",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Cryptographic AP...",
+      "link": "https://ubuntu.com/security/notices/USN-8148-1"
+    },
+    {
+      "title": "USN-8145-1: Linux kernel vulnerabilities",
+      "date": "2026-04-02",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architectu...",
+      "link": "https://ubuntu.com/security/notices/USN-8145-1"
     },
     {
       "title": "Chrome Stable for iOS Update",
@@ -7714,6 +7785,89 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-02T19:06:16.704Z",
+      "logs": [
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 11 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 253 patches (4 new)",
+        "[INFO] microsoft - 300 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 154 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[SUCCESS] ubuntu - 23 patches (3 new)"
+      ],
+      "newPatchCount": 7,
+      "totalPatches": 767,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "github",
+        "postgresql",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "cisco",
+        "crowdstrike",
+        "debian",
+        "paloalto",
+        "edge",
+        "microsoft",
+        "cloudflare",
+        "gcp"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "Rack:: Static header_rules bypass via URL-encoded paths",
+          "date": "2026-04-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Rack::Static prefix matching can expose unintended files under the static root",
+          "date": "2026-04-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios supply chain attack - dependency in @lightdash/cli may resolve to compromised axios versions",
+          "date": "2026-04-02",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios npm Supply Chain Incident Impacting @usebruno/cli",
+          "date": "2026-04-02",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8149-1: Linux kernel vulnerabilities",
+          "date": "2026-04-02",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8148-1: Linux kernel vulnerabilities",
+          "date": "2026-04-02",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8145-1: Linux kernel vulnerabilities",
+          "date": "2026-04-02",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-02T19:02:00.326Z",
       "logs": [
         "[INFO] chrome - 4 patches, no changes",
@@ -12107,46 +12261,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-30T13:42:02.315Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 14 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 311 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] nodejs - 2 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 291 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 19 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1064,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "debian",
-        "github",
-        "microsoft",
-        "redhat",
-        "postgresql",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "edge",
-        "cisco",
-        "gitlab",
-        "apple",
-        "crowdstrike",
-        "nodejs"
-      ],
-      "newPatches": []
     }
   ]
 }
