@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-02T07:18:48.785Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-02T07:23:36.781Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "Juju has Improper TLS Client/Server authentication and certificate verification on Database Cluster",
@@ -145,6 +145,16 @@
       "description": "A vulnerability in the change password functionality of Cisco Integrated Management Controller (IMC) could allow an unauthenticated, remote attacker to bypass authentication and gain access to the sys...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-auth-bypass-AgG2BxTn",
       "cve": "CVE-2026-20093"
+    },
+    {
+      "title": "Falcon for IT Supports Windows Secure Boot Certificate Lifecycle Management",
+      "date": "2026-04-01",
+      "severity": "UNKNOWN",
+      "vendor": "crowdstrike",
+      "component": "CrowdStrike Falcon",
+      "description": "",
+      "link": "https://www.crowdstrike.com/en-us/blog/falcon-for-it-supports-windows-secure-boot-certificate-lifecycle-management/",
+      "cve": ""
     },
     {
       "title": "DSA-6191-1 gst-plugins-ugly1.0 - security update",
@@ -7542,6 +7552,53 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-02T07:23:36.781Z",
+      "logs": [
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 11 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] crowdstrike - 2 patches (1 new)",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 249 patches, no changes",
+        "[INFO] microsoft - 300 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 141 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 19 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 745,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "github",
+        "signal",
+        "chrome",
+        "cisco",
+        "crowdstrike",
+        "debian",
+        "paloalto",
+        "redhat",
+        "ubuntu",
+        "edge",
+        "microsoft",
+        "cloudflare",
+        "gcp",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "crowdstrike",
+          "title": "Falcon for IT Supports Windows Secure Boot Certificate Lifecycle Management",
+          "date": "2026-04-01",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-02T07:18:48.784Z",
       "logs": [
         "[INFO] chrome - 4 patches, no changes",
@@ -11849,46 +11906,6 @@
       ],
       "newPatchCount": 0,
       "totalPatches": 1059,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "debian",
-        "github",
-        "microsoft",
-        "redhat",
-        "postgresql",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "edge",
-        "cisco",
-        "gitlab",
-        "apple",
-        "crowdstrike",
-        "nodejs"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-03-29T22:35:51.351Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 14 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 336 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] nodejs - 2 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 319 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1229,
       "vendorsScanned": 56,
       "vendorsWithPatches": 14,
       "vendors": [
