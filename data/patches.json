@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-03T18:53:51.621Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-03T18:57:45.875Z",
+  "newPatches": 7,
   "patches": [
     {
       "title": "Cisco IOS XE Software Denial of Service Vulnerability",
@@ -11,6 +11,28 @@
       "description": "A vulnerability in the CLI of Cisco IOS XE Software could allow an authenticated, local attacker to cause a denial of service (DoS) condition on an affected device. This vulnerability exists because i...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-iosxe-mntc-dos-LZweQcyq",
       "cve": "CVE-2026-20110"
+    },
+    {
+      "title": "DSA-6194-1 pyasn1 - security update",
+      "date": "2026-04-03",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "pyasn1",
+      "description": "It was discovered that pyasn1, a generic ASN.1 library for Python, is prone to a denial of service vulnerability when decoding ASN.1 data with deeply nested structures. https://security-tracker.debian...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00103.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6193-1 inetutils - security update",
+      "date": "2026-04-03",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "inetutils",
+      "description": "Several vulnerabilities were discovered in the inetutils implementation of telnetd and telnet, which may result in privilege escalation or information disclosure. https://security-tracker.debian.org/t...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00102.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "OpenClaw: Media download follows cross-origin redirects with Authorization headers intact",
@@ -761,6 +783,39 @@
       "cvss": null
     },
     {
+      "title": "Juju has a resource poisoning vulnerability",
+      "date": "2026-04-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/juju/juju",
+      "description": "Juju has a resource poisoning vulnerability",
+      "link": "https://github.com/advisories/GHSA-245v-p8fj-vwm2",
+      "cve": "CVE-2025-68153",
+      "cvss": null
+    },
+    {
+      "title": "Juju: Read All Controller Logs From Compromised Workload",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/juju/juju",
+      "description": "Juju: Read All Controller Logs From Compromised Workload",
+      "link": "https://github.com/advisories/GHSA-j6f6-jp3p-53mw",
+      "cve": "CVE-2025-68152",
+      "cvss": null
+    },
+    {
+      "title": "vLLM: Unauthenticated OOM Denial of Service via Unbounded `n` Parameter in OpenAI API Server",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vllm",
+      "description": "vLLM: Unauthenticated OOM Denial of Service via Unbounded `n` Parameter in OpenAI API Server",
+      "link": "https://github.com/advisories/GHSA-3mwp-wvh9-7528",
+      "cve": "CVE-2026-34756",
+      "cvss": 6.5
+    },
+    {
       "title": "CVE-2026-23401: KVM: x86/mmu: Drop/zap existing present SPTE even when creating an MMIO SPTE",
       "date": "2026-04-03",
       "severity": "HIGH",
@@ -1004,6 +1059,21 @@
       "link": "https://github.com/advisories/GHSA-qh3j-mrg8-f234",
       "cves": [
         "CVE-2026-35038"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Juju: Read All Controller Logs From Compromised Workload",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nIt is possible that a compromised workload machine under a Juju controller can read any log file for any entity in any model at any level.\n\nThere is a debug log endpoint in the API server ",
+      "link": "https://github.com/advisories/GHSA-j6f6-jp3p-53mw",
+      "cves": [
+        "CVE-2025-68152"
       ],
       "platform": [
         "All Platforms"
@@ -2151,6 +2221,18 @@
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00099.html",
       "cve": "",
       "cves": []
+    },
+    {
+      "title": "Microsoft Edge Security Update - April 1, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-04-01",
+      "description": "Security fixes for 1 vulnerabilities: CVE-2026-5281",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": [
+        "CVE-2026-5281"
+      ]
     },
     {
       "title": "SiYuan vulnerable to reflected XSS via SVG namespace prefix bypass in SanitizeSVG (getDynamicIcon, unauthenticated)",
@@ -7388,6 +7470,89 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-03T18:57:45.875Z",
+      "logs": [
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 13 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 13 patches (2 new)",
+        "[SUCCESS] edge - 2 patches (1 new)",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 281 patches (3 new)",
+        "[INFO] microsoft - 252 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 127 patches, no changes",
+        "[SUCCESS] signal - 4 patches (1 new)",
+        "[INFO] ubuntu - 28 patches, no changes"
+      ],
+      "newPatchCount": 7,
+      "totalPatches": 730,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "cisco",
+        "debian",
+        "github",
+        "microsoft",
+        "signal",
+        "gcp",
+        "postgresql",
+        "redhat",
+        "ubuntu",
+        "chrome",
+        "crowdstrike",
+        "edge",
+        "paloalto",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6194-1 pyasn1 - security update",
+          "date": "2026-04-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6193-1 inetutils - security update",
+          "date": "2026-04-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - April 1, 2026",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Juju has a resource poisoning vulnerability",
+          "date": "2026-04-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Juju: Read All Controller Logs From Compromised Workload",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "vLLM: Unauthenticated OOM Denial of Service via Unbounded `n` Parameter in OpenAI API Server",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "signal",
+          "title": "Juju: Read All Controller Logs From Compromised Workload",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-03T18:53:51.621Z",
       "logs": [
         "[INFO] chrome - 4 patches, no changes",
@@ -11801,44 +11966,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-03-31T13:28:28.663Z",
-      "logs": [
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 14 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 306 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 259 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 15 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1067,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "cloudflare",
-        "github",
-        "redhat",
-        "ubuntu",
-        "debian",
-        "gcp",
-        "postgresql",
-        "signal",
-        "chrome",
-        "edge",
-        "cisco",
-        "gitlab"
-      ],
-      "newPatches": []
     }
   ]
 }
