@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-03T02:51:28.623Z",
+  "lastUpdated": "2026-04-03T07:19:07.685Z",
   "health": {
-    "lastFetchAttempt": "2026-04-03T02:51:28.623Z",
+    "lastFetchAttempt": "2026-04-03T07:19:07.685Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-03T02:51:28.623Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-04-03T07:19:07.685Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Signal K Server: Arbitrary Prototype Read via `from` Field Bypass",
+      "date": "2026-04-03",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary \n\nThe /signalk/v1/applicationData/... JSON-patch endpoint allows users to modify stored application data. To prevent Prototype Pollution, the developers implemented an isPrototypePollutionP",
+      "link": "https://github.com/advisories/GHSA-qh3j-mrg8-f234",
+      "cves": [
+        "CVE-2026-35038"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Juju has Improper TLS Client/Server authentication and certificate verification on Database Cluster",
       "date": "2026-04-02",
