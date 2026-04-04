@@ -1,16 +1,29 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-04T02:41:41.872Z",
+  "lastUpdated": "2026-04-04T07:09:50.897Z",
   "health": {
-    "lastFetchAttempt": "2026-04-04T02:41:41.872Z",
+    "lastFetchAttempt": "2026-04-04T07:09:50.897Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 7,
-    "lastFetchNewPatches": 4,
-    "lastSuccessWithData": "2026-04-04T02:41:41.872Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-04-04T07:09:50.897Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "web3.py: SSRF via CCIP Read (EIP-3668) OffchainLookup URL handling",
+      "date": "2026-04-04",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nweb3.py implements CCIP Read / `OffchainLookup` (EIP-3668) by performing HTTP requests to URLs supplied by smart contracts in `offchain_lookup_payload[\"urls\"]`. The implementation uses the",
+      "link": "https://github.com/advisories/GHSA-5hr4-253g-cpx2",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal K Server: Arbitrary Prototype Read via `from` Field Bypass",
       "date": "2026-04-03",
