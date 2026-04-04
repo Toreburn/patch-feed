@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-03T18:56:35.189Z",
+  "lastUpdated": "2026-04-04T02:41:41.872Z",
   "health": {
-    "lastFetchAttempt": "2026-04-03T18:56:35.189Z",
+    "lastFetchAttempt": "2026-04-04T02:41:41.872Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-04-03T18:56:35.189Z",
+    "lastFetchParsedItems": 7,
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-04-04T02:41:41.872Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -36,6 +36,66 @@
       "link": "https://github.com/advisories/GHSA-j6f6-jp3p-53mw",
       "cves": [
         "CVE-2025-68152"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "OpenEXR: integer overflow to OOB write in uncompress_b44_impl()",
+      "date": "2026-04-03",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nThe B44/B44A decoder in OpenEXR reconstructs row pointers into a scratch buffer using int. When the channel width (nx) is large enough, the product y * nx overflows int, causing the row po",
+      "link": "https://github.com/advisories/GHSA-h762-rhv3-h25v",
+      "cves": [
+        "CVE-2026-34544"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Signal K Server: OAuth Authorization Code Theft via Unvalidated Host Header in OIDC Flow",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nSignalK Server contains a code-level vulnerability in its OIDC login and logout handlers where the unvalidated HTTP Host header is used to construct the OAuth2 redirect_uri. Because the re",
+      "link": "https://github.com/advisories/GHSA-cxj8-ggf2-p57c",
+      "cves": [
+        "CVE-2026-34083"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Signal K Server: Unauthenticated Source Priorities Manipulation ",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe SignalK Server exposes an unauthenticated HTTP endpoint that allows remote attackers to modify navigation data source priorities. This endpoint, accessible via `PUT /signalk/v1/api/sou",
+      "link": "https://github.com/advisories/GHSA-gfmv-vh34-h2x5",
+      "cves": [
+        "CVE-2026-33951"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Signal K Server: Privilege Escalation by Admin Role Injection via /enableSecurity ",
+      "date": "2026-04-03",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nAccording to SignalK's security documentation, when a server is first initialized without security enabled, the **/skServer/enableSecurity** endpoint is intentionally exposed to allow the ",
+      "link": "https://github.com/advisories/GHSA-x8hc-fqv3-7gwf",
+      "cves": [
+        "CVE-2026-33950"
       ],
       "platform": [
         "All Platforms"
