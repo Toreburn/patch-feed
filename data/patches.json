@@ -1,7 +1,16 @@
 {
-  "lastUpdated": "2026-04-07T02:44:48.715Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-07T02:55:06.777Z",
+  "newPatches": 55,
   "patches": [
+    {
+      "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
+      "date": "2026-04-06",
+      "severity": "LOW",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "The ChromeOS Stable channel is being updated to OS version&nbsp;16581.54.0&nbsp;(Browser version&nbsp;146.0.7680.184) for most ChromeOS devices.If you find new issues, please let us know one of the fo...",
+      "link": "https://chromereleases.googleblog.com/feeds/5029322580100997861/comments/default"
+    },
     {
       "title": "Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling",
       "date": "2026-04-06",
@@ -223,6 +232,127 @@
       "cvss": 5.3
     },
     {
+      "title": "PraisonAI Has Path Traversal in FileTools",
+      "date": "2026-04-06",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "PraisonAI",
+      "description": "PraisonAI Has Path Traversal in FileTools",
+      "link": "https://github.com/advisories/GHSA-693f-pf34-72c5",
+      "cve": "CVE-2026-35615",
+      "cvss": null
+    },
+    {
+      "title": "PraisonAI recipe registry publish path traversal allows out-of-root file write",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "PraisonAI",
+      "description": "PraisonAI recipe registry publish path traversal allows out-of-root file write",
+      "link": "https://github.com/advisories/GHSA-r9x3-wx45-2v7f",
+      "cve": "CVE-2026-39308",
+      "cvss": 7.1
+    },
+    {
+      "title": "PraisonAI recipe registry pull path traversal writes files outside the chosen output directory",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "PraisonAI",
+      "description": "PraisonAI recipe registry pull path traversal writes files outside the chosen output directory",
+      "link": "https://github.com/advisories/GHSA-4rx4-4r3x-6534",
+      "cve": "CVE-2026-39306",
+      "cvss": 7.3
+    },
+    {
+      "title": "PraisonAI Vulnerable to Arbitrary File Write / Path Traversal in Action Orchestrator",
+      "date": "2026-04-06",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "PraisonAI",
+      "description": "PraisonAI Vulnerable to Arbitrary File Write / Path Traversal in Action Orchestrator",
+      "link": "https://github.com/advisories/GHSA-jfxc-v5g9-38xr",
+      "cve": "CVE-2026-39305",
+      "cvss": 9
+    },
+    {
+      "title": "PraisonAI Has Arbitrary File Write (Zip Slip) in Templates Extraction",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "PraisonAI",
+      "description": "PraisonAI Has Arbitrary File Write (Zip Slip) in Templates Extraction",
+      "link": "https://github.com/advisories/GHSA-4ph2-f6pf-79wv",
+      "cve": "CVE-2026-39307",
+      "cvss": 8.1
+    },
+    {
+      "title": "go-ipld-prime: DAG-CBOR decoder unbounded memory allocation from CBOR headers",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/ipld/go-ipld-prime",
+      "description": "go-ipld-prime: DAG-CBOR decoder unbounded memory allocation from CBOR headers",
+      "link": "https://github.com/advisories/GHSA-378j-3jfj-8r9f",
+      "cve": "CVE-2026-35480",
+      "cvss": 6.2
+    },
+    {
+      "title": "PocketMine-MP: Player entities can still die and drop items in flaggedForDespawn state",
+      "date": "2026-04-06",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "pocketmine/pocketmine-mp",
+      "description": "PocketMine-MP: Player entities can still die and drop items in flaggedForDespawn state",
+      "link": "https://github.com/advisories/GHSA-f9jp-856v-8642",
+      "cve": "",
+      "cvss": 3.7
+    },
+    {
+      "title": "PocketMine-MP: Network amplification vulnerability with `ActorEventPacket`",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "pocketmine/pocketmine-mp",
+      "description": "PocketMine-MP: Network amplification vulnerability with `ActorEventPacket`",
+      "link": "https://github.com/advisories/GHSA-7hmv-4j2j-pp6f",
+      "cve": "",
+      "cvss": 4.3
+    },
+    {
+      "title": "PocketMine-MP: JSON decoding of unlimited size large arrays/objects in ModalFormResponse Handling",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pocketmine/pocketmine-mp",
+      "description": "PocketMine-MP: JSON decoding of unlimited size large arrays/objects in ModalFormResponse Handling",
+      "link": "https://github.com/advisories/GHSA-788v-5pfp-93ff",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "PocketMine-MP: LogDoS by large complex unknown property logging in clientData in LoginPacket",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pocketmine/pocketmine-mp",
+      "description": "PocketMine-MP: LogDoS by large complex unknown property logging in clientData in LoginPacket",
+      "link": "https://github.com/advisories/GHSA-h6rj-3m53-887h",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "OpenClaw's complex interpreter pipelines could skip exec script preflight validation",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw's complex interpreter pipelines could skip exec script preflight validation",
+      "link": "https://github.com/advisories/GHSA-fvx6-pj3r-5q4q",
+      "cve": "CVE-2026-34425",
+      "cvss": null
+    },
+    {
       "title": "CVE-2026-5673: libtheora: libtheora: Denial of Service or Information Disclosure via malformed AVI file processing",
       "date": "2026-04-06",
       "severity": "MEDIUM",
@@ -245,6 +375,237 @@
       "cvss": 3.7
     },
     {
+      "title": "CVE-2026-35177: vim: zip.vim: Vim zip.vim plugin: Arbitrary file overwrite via path traversal bypass",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: zip.vim: Vim zip.vim plugin: Arbitrary file overwrite via path traversal bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35177.json",
+      "cve": "CVE-2026-35177",
+      "cvss": 4.1
+    },
+    {
+      "title": "CVE-2026-35166: hugo: github.com/gohugoio/hugo: Hugo: Information disclosure and content manipulation via improper markdown link escapin",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "hugo: github.com/gohugoio/hugo: Hugo: Information disclosure and content manipulation via improper markdown link escaping",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35166.json",
+      "cve": "CVE-2026-35166",
+      "cvss": 4.6
+    },
+    {
+      "title": "CVE-2026-34764: Electron: Electron: Memory corruption or crash due to use-after-free in offscreen rendering with shared textures.",
+      "date": "2026-04-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Electron: Electron: Memory corruption or crash due to use-after-free in offscreen rendering with shared textures.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34764.json",
+      "cve": "CVE-2026-34764",
+      "cvss": 2.3
+    },
+    {
+      "title": "CVE-2026-34756: vllm: vLLM: Denial of Service via excessively large 'n' parameter in OpenAI-compatible API",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Denial of Service via excessively large 'n' parameter in OpenAI-compatible API",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34756.json",
+      "cve": "CVE-2026-34756",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-34755: vLLM: vLLM: Denial of Service due to excessive video frame processing",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vLLM: vLLM: Denial of Service due to excessive video frame processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34755.json",
+      "cve": "CVE-2026-34755",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-34753: vllm: vLLM: Server-Side Request Forgery allows access to internal services via controlled batch input",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Server-Side Request Forgery allows access to internal services via controlled batch input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34753.json",
+      "cve": "CVE-2026-34753",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-34589: OpenEXR: OpenEXR: Memory corruption leading to arbitrary code execution or denial of service",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenEXR: OpenEXR: Memory corruption leading to arbitrary code execution or denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34589.json",
+      "cve": "CVE-2026-34589",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-34588: OpenEXR: OpenEXR: Arbitrary code execution and information disclosure via crafted EXR file",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenEXR: OpenEXR: Arbitrary code execution and information disclosure via crafted EXR file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34588.json",
+      "cve": "CVE-2026-34588",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-34444: lupa: Lupa: Arbitrary Code Execution due to inconsistent attribute filtering",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "lupa: Lupa: Arbitrary Code Execution due to inconsistent attribute filtering",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34444.json",
+      "cve": "CVE-2026-34444",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-34380: OpenEXR: OpenEXR: Denial of Service due to signed integer overflow in image decoding",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenEXR: OpenEXR: Denial of Service due to signed integer overflow in image decoding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34380.json",
+      "cve": "CVE-2026-34380",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-34379: OpenEXR: OpenEXR: Denial of Service due to misaligned memory write during EXR file decoding",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenEXR: OpenEXR: Denial of Service due to misaligned memory write during EXR file decoding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34379.json",
+      "cve": "CVE-2026-34379",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-34378: OpenEXR: OpenEXR: Denial of Service via crafted EXR file integer overflow",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenEXR: OpenEXR: Denial of Service via crafted EXR file integer overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34378.json",
+      "cve": "CVE-2026-34378",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-34982: vim: arbitrary command execution via modeline sandbox bypass",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: arbitrary command execution via modeline sandbox bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34982.json",
+      "cve": "CVE-2026-34982",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-33540: github.com/distribution/distribution: Distribution: Information disclosure via improper validation of authentication rea",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/distribution/distribution: Distribution: Information disclosure via improper validation of authentication realm URL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33540.json",
+      "cve": "CVE-2026-33540",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-5704: tar: tar: Hidden file injection via crafted archives",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "tar: tar: Hidden file injection via crafted archives",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5704.json",
+      "cve": "CVE-2026-5704",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-31407: kernel: netfilter: conntrack: add missing netlink policy validations",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: conntrack: add missing netlink policy validations",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31407.json",
+      "cve": "CVE-2026-31407",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-31406: kernel: xfrm: Fix work re-schedule after cancel in xfrm_nat_keepalive_net_fini()",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfrm: Fix work re-schedule after cancel in xfrm_nat_keepalive_net_fini()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31406.json",
+      "cve": "CVE-2026-31406",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-31408: kernel: Bluetooth: SCO: Fix use-after-free in sco_recv_frame() due to missing sock_hold",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Bluetooth: SCO: Fix use-after-free in sco_recv_frame() due to missing sock_hold",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31408.json",
+      "cve": "CVE-2026-31408",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-31405: kernel: media: dvb-net: fix OOB access in ULE extension header tables",
+      "date": "2026-04-06",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: dvb-net: fix OOB access in ULE extension header tables",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31405.json",
+      "cve": "CVE-2026-31405",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-31409: kernel: ksmbd: unset conn->binding on failed binding request",
+      "date": "2026-04-06",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ksmbd: unset conn->binding on failed binding request",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31409.json",
+      "cve": "CVE-2026-31409",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-31410: kernel: ksmbd: use volume UUID in FS_OBJECT_ID_INFORMATION",
+      "date": "2026-04-06",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ksmbd: use volume UUID in FS_OBJECT_ID_INFORMATION",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31410.json",
+      "cve": "CVE-2026-31410",
+      "cvss": null
+    },
+    {
       "title": "USN-8150-1: SPIP vulnerabilities",
       "date": "2026-04-06",
       "severity": "UNKNOWN",
@@ -261,6 +622,33 @@
       "component": "lambdaisland/uri",
       "description": "It was discovered that lambdaisland/uri did not properly sanitize\nthe backslash character in URI strings. An attacker could possibly\nuse this issue to bypass security checks or redirect users....",
       "link": "https://ubuntu.com/security/notices/USN-8151-1"
+    },
+    {
+      "title": "USN-8152-1: Linux kernel (OEM) vulnerabilities",
+      "date": "2026-04-06",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (OEM) vulnerabilities",
+      "description": "It was discovered that some AMD Zen 5 processors supporting RDSEED\ninstruction did not properly handle entropy, potentially resulting in the\nconsumption of insufficiently random values. A local attack...",
+      "link": "https://ubuntu.com/security/notices/USN-8152-1"
+    },
+    {
+      "title": "USN-8148-4: Linux kernel (Real-time) vulnerabilities",
+      "date": "2026-04-06",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Real-time) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Cryptographic AP...",
+      "link": "https://ubuntu.com/security/notices/USN-8148-4"
+    },
+    {
+      "title": "USN-8145-3: Linux kernel (GCP) vulnerabilities",
+      "date": "2026-04-06",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (GCP) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architectu...",
+      "link": "https://ubuntu.com/security/notices/USN-8145-3"
     },
     {
       "title": "DSA-6200-1 tor - security update",
@@ -1167,6 +1555,17 @@
       "link": "https://github.com/advisories/GHSA-2m67-wjpj-xhg9",
       "cve": "",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-34780: electron: Electron: Context Isolation bypass via VideoFrame object transfer",
+      "date": "2026-04-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "electron: Electron: Context Isolation bypass via VideoFrame object transfer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34780.json",
+      "cve": "CVE-2026-34780",
+      "cvss": 8
     },
     {
       "title": "web3.py: SSRF via CCIP Read (EIP-3668) OffchainLookup URL handling",
@@ -3450,6 +3849,182 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-34778: Electron: Electron: Integrity issue due to IPC channel spoofing by a service worker",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Electron: Electron: Integrity issue due to IPC channel spoofing by a service worker",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34778.json",
+      "cve": "CVE-2026-34778",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-34777: Electron: Electron: Unauthorized permission granting and information disclosure via incorrect iframe origin",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Electron: Electron: Unauthorized permission granting and information disclosure via incorrect iframe origin",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34777.json",
+      "cve": "CVE-2026-34777",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-34776: Electron: Electron: Information disclosure via crafted second-instance message",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Electron: Electron: Information disclosure via crafted second-instance message",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34776.json",
+      "cve": "CVE-2026-34776",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-34775: Electron: Electron: Arbitrary code execution and information disclosure due to incorrect Node.js integration scoping",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Electron: Electron: Arbitrary code execution and information disclosure due to incorrect Node.js integration scoping",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34775.json",
+      "cve": "CVE-2026-34775",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-34774: Electron: Electron: Memory corruption and crash due to use-after-free in offscreen rendering",
+      "date": "2026-04-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Electron: Electron: Memory corruption and crash due to use-after-free in offscreen rendering",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34774.json",
+      "cve": "CVE-2026-34774",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-34773: electron: Electron: Protocol handler hijacking via improper validation of protocol names",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "electron: Electron: Protocol handler hijacking via improper validation of protocol names",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34773.json",
+      "cve": "CVE-2026-34773",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-34772: Electron: Electron: Use-after-free vulnerability leads to memory corruption or crash",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Electron: Electron: Use-after-free vulnerability leads to memory corruption or crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34772.json",
+      "cve": "CVE-2026-34772",
+      "cvss": 5.8
+    },
+    {
+      "title": "CVE-2026-34771: electron: Electron: Memory corruption or application crash via use-after-free in permission request handling",
+      "date": "2026-04-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "electron: Electron: Memory corruption or application crash via use-after-free in permission request handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34771.json",
+      "cve": "CVE-2026-34771",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-34768: electron: Electron: Arbitrary code execution via unquoted path in Run registry key",
+      "date": "2026-04-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "electron: Electron: Arbitrary code execution via unquoted path in Run registry key",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34768.json",
+      "cve": "CVE-2026-34768",
+      "cvss": 3.9
+    },
+    {
+      "title": "CVE-2026-34767: electron: Electron: HTTP Response Header Injection via attacker-controlled input",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "electron: Electron: HTTP Response Header Injection via attacker-controlled input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34767.json",
+      "cve": "CVE-2026-34767",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-34766: Electron: Electron: Unauthorized USB device access via select-usb-device event callback validation bypass",
+      "date": "2026-04-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Electron: Electron: Unauthorized USB device access via select-usb-device event callback validation bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34766.json",
+      "cve": "CVE-2026-34766",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-34769: Electron: Electron: Arbitrary code execution and security bypass via undocumented command-line switches",
+      "date": "2026-04-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Electron: Electron: Arbitrary code execution and security bypass via undocumented command-line switches",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34769.json",
+      "cve": "CVE-2026-34769",
+      "cvss": 7.7
+    },
+    {
+      "title": "CVE-2026-34933: avahi: avahi-daemon: Avahi: Denial of Service via D-Bus method call",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "avahi: avahi-daemon: Avahi: Denial of Service via D-Bus method call",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34933.json",
+      "cve": "CVE-2026-34933",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-27456: util-linux: TOCTOU in the mount program when setting up loop devices",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "util-linux: TOCTOU in the mount program when setting up loop devices",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27456.json",
+      "cve": "CVE-2026-27456",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-27124: FastMCP: FastMCP OAuthProxy: FastMCP OAuthProxy: Unauthorized actions due to improper consent validation in GitHub OAuth",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FastMCP: FastMCP OAuthProxy: FastMCP OAuthProxy: Unauthorized actions due to improper consent validation in GitHub OAuth",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-27124.json",
+      "cve": "CVE-2026-27124",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-35549: MariaDB Server: MariaDB Server: Denial of Service via large packet with caching_sha2_password authentication plugin",
+      "date": "2026-04-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "MariaDB Server: MariaDB Server: Denial of Service via large packet with caching_sha2_password authentication plugin",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35549.json",
+      "cve": "CVE-2026-35549",
+      "cvss": 6.5
+    },
+    {
       "title": "Signal K Server: Arbitrary Prototype Read via `from` Field Bypass",
       "date": "2026-04-03",
       "severity": "LOW",
@@ -4657,6 +5232,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35385.json",
       "cve": "CVE-2026-35385",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-34760: vLLM: Librosa: numpy: Librosa: AI model data integrity impact due to audio processing discrepancy",
+      "date": "2026-04-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vLLM: Librosa: numpy: Librosa: AI model data integrity impact due to audio processing discrepancy",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34760.json",
+      "cve": "CVE-2026-34760",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-32871: fastmcp: FastMCP: Authenticated Server-Side Request Forgery via path traversal in OpenAPI path parameters",
+      "date": "2026-04-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fastmcp: FastMCP: Authenticated Server-Side Request Forgery via path traversal in OpenAPI path parameters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-32871.json",
+      "cve": "CVE-2026-32871",
+      "cvss": 8.5
     },
     {
       "title": "Juju has Improper TLS Client/Server authentication and certificate verification on Database Cluster",
@@ -6208,6 +6805,379 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-04-07T02:55:06.777Z",
+      "logs": [
+        "[INFO] android - 1 patches, no changes",
+        "[SUCCESS] chrome - 3 patches (1 new)",
+        "[INFO] cisco - 12 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 271 patches (11 new)",
+        "[INFO] microsoft - 99 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 204 patches (40 new)",
+        "[INFO] signal - 9 patches, no changes",
+        "[SUCCESS] ubuntu - 23 patches (3 new)"
+      ],
+      "newPatchCount": 55,
+      "totalPatches": 639,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "chrome",
+        "github",
+        "redhat",
+        "ubuntu",
+        "debian",
+        "microsoft",
+        "fortinet",
+        "signal",
+        "cisco",
+        "gcp",
+        "postgresql",
+        "android",
+        "crowdstrike",
+        "edge",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "chrome",
+          "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
+          "date": "2026-04-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI Has Path Traversal in FileTools",
+          "date": "2026-04-06",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI recipe registry publish path traversal allows out-of-root file write",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI recipe registry pull path traversal writes files outside the chosen output directory",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI Vulnerable to Arbitrary File Write / Path Traversal in Action Orchestrator",
+          "date": "2026-04-06",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "PraisonAI Has Arbitrary File Write (Zip Slip) in Templates Extraction",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "go-ipld-prime: DAG-CBOR decoder unbounded memory allocation from CBOR headers",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "PocketMine-MP: Player entities can still die and drop items in flaggedForDespawn state",
+          "date": "2026-04-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "PocketMine-MP: Network amplification vulnerability with `ActorEventPacket`",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "PocketMine-MP: JSON decoding of unlimited size large arrays/objects in ModalFormResponse Handling",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PocketMine-MP: LogDoS by large complex unknown property logging in clientData in LoginPacket",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw's complex interpreter pipelines could skip exec script preflight validation",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35177: vim: zip.vim: Vim zip.vim plugin: Arbitrary file overwrite via path traversal bypass",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35166: hugo: github.com/gohugoio/hugo: Hugo: Information disclosure and content manipulation via improper markdown link escapin",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34764: Electron: Electron: Memory corruption or crash due to use-after-free in offscreen rendering with shared textures.",
+          "date": "2026-04-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34756: vllm: vLLM: Denial of Service via excessively large 'n' parameter in OpenAI-compatible API",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34755: vLLM: vLLM: Denial of Service due to excessive video frame processing",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34753: vllm: vLLM: Server-Side Request Forgery allows access to internal services via controlled batch input",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34589: OpenEXR: OpenEXR: Memory corruption leading to arbitrary code execution or denial of service",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34588: OpenEXR: OpenEXR: Arbitrary code execution and information disclosure via crafted EXR file",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34444: lupa: Lupa: Arbitrary Code Execution due to inconsistent attribute filtering",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34380: OpenEXR: OpenEXR: Denial of Service due to signed integer overflow in image decoding",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34379: OpenEXR: OpenEXR: Denial of Service due to misaligned memory write during EXR file decoding",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34378: OpenEXR: OpenEXR: Denial of Service via crafted EXR file integer overflow",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34982: vim: arbitrary command execution via modeline sandbox bypass",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-33540: github.com/distribution/distribution: Distribution: Information disclosure via improper validation of authentication rea",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5704: tar: tar: Hidden file injection via crafted archives",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31407: kernel: netfilter: conntrack: add missing netlink policy validations",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31406: kernel: xfrm: Fix work re-schedule after cancel in xfrm_nat_keepalive_net_fini()",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31408: kernel: Bluetooth: SCO: Fix use-after-free in sco_recv_frame() due to missing sock_hold",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31405: kernel: media: dvb-net: fix OOB access in ULE extension header tables",
+          "date": "2026-04-06",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31409: kernel: ksmbd: unset conn->binding on failed binding request",
+          "date": "2026-04-06",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31410: kernel: ksmbd: use volume UUID in FS_OBJECT_ID_INFORMATION",
+          "date": "2026-04-06",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34780: electron: Electron: Context Isolation bypass via VideoFrame object transfer",
+          "date": "2026-04-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34778: Electron: Electron: Integrity issue due to IPC channel spoofing by a service worker",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34777: Electron: Electron: Unauthorized permission granting and information disclosure via incorrect iframe origin",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34776: Electron: Electron: Information disclosure via crafted second-instance message",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34775: Electron: Electron: Arbitrary code execution and information disclosure due to incorrect Node.js integration scoping",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34774: Electron: Electron: Memory corruption and crash due to use-after-free in offscreen rendering",
+          "date": "2026-04-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34773: electron: Electron: Protocol handler hijacking via improper validation of protocol names",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34772: Electron: Electron: Use-after-free vulnerability leads to memory corruption or crash",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34771: electron: Electron: Memory corruption or application crash via use-after-free in permission request handling",
+          "date": "2026-04-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34768: electron: Electron: Arbitrary code execution via unquoted path in Run registry key",
+          "date": "2026-04-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34767: electron: Electron: HTTP Response Header Injection via attacker-controlled input",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34766: Electron: Electron: Unauthorized USB device access via select-usb-device event callback validation bypass",
+          "date": "2026-04-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34769: Electron: Electron: Arbitrary code execution and security bypass via undocumented command-line switches",
+          "date": "2026-04-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34933: avahi: avahi-daemon: Avahi: Denial of Service via D-Bus method call",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27456: util-linux: TOCTOU in the mount program when setting up loop devices",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-27124: FastMCP: FastMCP OAuthProxy: FastMCP OAuthProxy: Unauthorized actions due to improper consent validation in GitHub OAuth",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35549: MariaDB Server: MariaDB Server: Denial of Service via large packet with caching_sha2_password authentication plugin",
+          "date": "2026-04-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34760: vLLM: Librosa: numpy: Librosa: AI model data integrity impact due to audio processing discrepancy",
+          "date": "2026-04-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-32871: fastmcp: FastMCP: Authenticated Server-Side Request Forgery via path traversal in OpenAPI path parameters",
+          "date": "2026-04-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8152-1: Linux kernel (OEM) vulnerabilities",
+          "date": "2026-04-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8148-4: Linux kernel (Real-time) vulnerabilities",
+          "date": "2026-04-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8145-3: Linux kernel (GCP) vulnerabilities",
+          "date": "2026-04-06",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-04-07T02:44:48.715Z",
       "logs": [
@@ -9784,46 +10754,6 @@
     },
     {
       "timestamp": "2026-04-03T18:53:51.621Z",
-      "logs": [
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 13 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 278 patches, no changes",
-        "[INFO] microsoft - 252 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 127 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 28 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 723,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "cisco",
-        "github",
-        "microsoft",
-        "signal",
-        "debian",
-        "gcp",
-        "postgresql",
-        "redhat",
-        "ubuntu",
-        "chrome",
-        "crowdstrike",
-        "paloalto",
-        "edge",
-        "cloudflare"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-03T16:46:31.213Z",
       "logs": [
         "[INFO] chrome - 4 patches, no changes",
         "[INFO] cisco - 13 patches, no changes",
