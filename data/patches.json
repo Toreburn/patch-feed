@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-07T13:40:13.908Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-07T13:45:40.661Z",
+  "newPatches": 4,
   "patches": [
     {
       "title": "CVE-2026-35414: CVE-2026-35414",
@@ -460,6 +460,19 @@
       "component": "Chrome Browser",
       "description": "The ChromeOS Stable channel is being updated to OS version&nbsp;16581.54.0&nbsp;(Browser version&nbsp;146.0.7680.184) for most ChromeOS devices.If you find new issues, please let us know one of the fo...",
       "link": "https://chromereleases.googleblog.com/feeds/5029322580100997861/comments/default"
+    },
+    {
+      "title": "DSA-6197-2 dovecot - regression update",
+      "date": "2026-04-06",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "dovecot",
+      "description": "The Bookworm backport of the security fix for CVE-2025-59032 introduced a regression in authenticating against managesieved. https://security-tracker.debian.org/tracker/DSA-6197-2",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00110.html",
+      "cve": "CVE-2025-59032",
+      "cves": [
+        "CVE-2025-59032"
+      ]
     },
     {
       "title": "Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling",
@@ -1054,6 +1067,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31410.json",
       "cve": "CVE-2026-31410",
       "cvss": null
+    },
+    {
+      "title": "CVE-2026-34972: github.com/openfga/openfga: OpenFGA: Improper policy enforcement via specific BatchCheck calls",
+      "date": "2026-04-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/openfga/openfga: OpenFGA: Improper policy enforcement via specific BatchCheck calls",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34972.json",
+      "cve": "CVE-2026-34972",
+      "cvss": 4.2
+    },
+    {
+      "title": "CVE-2026-34986: github.com/go-jose/go-jose/v3: github.com/go-jose/go-jose/v4: Go JOSE: Denial of Service via crafted JSON Web Encryption",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/go-jose/go-jose/v3: github.com/go-jose/go-jose/v4: Go JOSE: Denial of Service via crafted JSON Web Encryption (JWE) object",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34986.json",
+      "cve": "CVE-2026-34986",
+      "cvss": 7.5
     },
     {
       "title": "USN-8150-1: SPIP vulnerabilities",
@@ -7178,6 +7213,17 @@
       "cvss": 4.7
     },
     {
+      "title": "CVE-2026-23401: kernel: KVM: x86/mmu: Drop/zap existing present SPTE even when creating an MMIO SPTE",
+      "date": "2026-04-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: x86/mmu: Drop/zap existing present SPTE even when creating an MMIO SPTE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23401.json",
+      "cve": "CVE-2026-23401",
+      "cvss": 8.1
+    },
+    {
       "title": "Signal Desktop v8.5.0",
       "date": "2026-04-01",
       "severity": "UNKNOWN",
@@ -7255,6 +7301,73 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-04-07T13:45:40.661Z",
+      "logs": [
+        "[INFO] android - 1 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 12 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 12 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 271 patches, no changes",
+        "[INFO] microsoft - 149 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 207 patches (3 new)",
+        "[INFO] signal - 9 patches, no changes",
+        "[INFO] ubuntu - 23 patches, no changes"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 693,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "chrome",
+        "debian",
+        "github",
+        "redhat",
+        "ubuntu",
+        "fortinet",
+        "signal",
+        "cisco",
+        "gcp",
+        "postgresql",
+        "android",
+        "crowdstrike",
+        "edge",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6197-2 dovecot - regression update",
+          "date": "2026-04-06",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34972: github.com/openfga/openfga: OpenFGA: Improper policy enforcement via specific BatchCheck calls",
+          "date": "2026-04-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34986: github.com/go-jose/go-jose/v3: github.com/go-jose/go-jose/v4: Go JOSE: Denial of Service via crafted JSON Web Encryption",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-23401: kernel: KVM: x86/mmu: Drop/zap existing present SPTE even when creating an MMIO SPTE",
+          "date": "2026-04-01",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-04-07T13:40:13.908Z",
       "logs": [
@@ -10605,48 +10718,6 @@
     },
     {
       "timestamp": "2026-04-04T07:06:07.052Z",
-      "logs": [
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 13 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 310 patches, no changes",
-        "[INFO] microsoft - 202 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 220 patches, no changes",
-        "[INFO] signal - 8 patches, no changes",
-        "[INFO] ubuntu - 28 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 807,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "fortinet",
-        "cisco",
-        "debian",
-        "github",
-        "microsoft",
-        "redhat",
-        "signal",
-        "gcp",
-        "postgresql",
-        "ubuntu",
-        "chrome",
-        "crowdstrike",
-        "edge",
-        "paloalto",
-        "cloudflare"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-04T05:22:38.520Z",
       "logs": [
         "[INFO] chrome - 4 patches, no changes",
         "[INFO] cisco - 13 patches, no changes",
