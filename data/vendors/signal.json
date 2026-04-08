@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-07T19:14:10.631Z",
+  "lastUpdated": "2026-04-08T02:55:14.595Z",
   "health": {
-    "lastFetchAttempt": "2026-04-07T19:14:10.631Z",
+    "lastFetchAttempt": "2026-04-08T02:55:14.595Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-07T19:14:10.631Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-04-08T02:55:14.595Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Parse Server has a login timing side-channel reveals user existence",
+      "date": "2026-04-08",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\n\nThe login endpoint response time differs measurably depending on whether the submitted username or email exists in the database. When a user is not found, the server responds immediately. ",
+      "link": "https://github.com/advisories/GHSA-mmpq-5hcv-hf2v",
+      "cves": [
+        "CVE-2026-39321"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "web3.py: SSRF via CCIP Read (EIP-3668) OffchainLookup URL handling",
       "date": "2026-04-04",
