@@ -1,12 +1,12 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-04-09T19:16:42.933Z",
+  "lastUpdated": "2026-04-10T03:20:40.280Z",
   "health": {
-    "lastFetchAttempt": "2026-04-09T19:16:42.933Z",
+    "lastFetchAttempt": "2026-04-10T03:20:40.279Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 26,
-    "lastSuccessWithData": "2026-04-09T19:16:42.933Z",
+    "lastFetchNewPatches": 15,
+    "lastSuccessWithData": "2026-04-10T03:20:40.279Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -295,6 +295,171 @@
       "description": "OpenClaw: Lower-trust background runtime output is injected into trusted `System:` events, and local async exec completion misses the intended `exec-event` downgrade",
       "link": "https://github.com/advisories/GHSA-gfmx-pph7-g46x",
       "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Gramps Web API: Private Sub-Object Data in Non-Private Objects Exposed to Guest Users",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "gramps-webapi",
+      "description": "Gramps Web API: Private Sub-Object Data in Non-Private Objects Exposed to Guest Users",
+      "link": "https://github.com/advisories/GHSA-9gjv-jvm7-vv2v",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "OpenClaw: GIT_DIR and related git plumbing env vars missing from exec env denylist (GHSA-m866-6qv5-p2fg variant)",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: GIT_DIR and related git plumbing env vars missing from exec env denylist (GHSA-m866-6qv5-p2fg variant)",
+      "link": "https://github.com/advisories/GHSA-cm8v-2vh9-cxf3",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "bsv-sdk ARC broadcaster treats INVALID/MALFORMED/ORPHAN responses as successful broadcasts",
+      "date": "2026-04-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "bsv-sdk",
+      "description": "bsv-sdk ARC broadcaster treats INVALID/MALFORMED/ORPHAN responses as successful broadcasts",
+      "link": "https://github.com/advisories/GHSA-9hfr-gw99-8rhx",
+      "cve": "CVE-2026-40069",
+      "cvss": 7.5
+    },
+    {
+      "title": "bsv-sdk and bsv-wallet persist unverified certifier signatures in acquire_certificate (direct and issuance paths)",
+      "date": "2026-04-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "bsv-sdk, bsv-wallet",
+      "description": "bsv-sdk and bsv-wallet persist unverified certifier signatures in acquire_certificate (direct and issuance paths)",
+      "link": "https://github.com/advisories/GHSA-hc36-c89j-5f4j",
+      "cve": "CVE-2026-40070",
+      "cvss": 8.1
+    },
+    {
+      "title": "Unhead has a hasDangerousProtocol() bypass via leading-zero padded HTML entities in useHeadSafe()",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "unhead",
+      "description": "Unhead has a hasDangerousProtocol() bypass via leading-zero padded HTML entities in useHeadSafe()",
+      "link": "https://github.com/advisories/GHSA-95h2-gj7x-gx9w",
+      "cve": "CVE-2026-39315",
+      "cvss": 6.1
+    },
+    {
+      "title": "Wasmtime has out-of-bounds write or crash when transcoding component model strings",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime has out-of-bounds write or crash when transcoding component model strings",
+      "link": "https://github.com/advisories/GHSA-394w-hwhg-8vgm",
+      "cve": "CVE-2026-35195",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime has data leakage between pooling allocator instances",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime has data leakage between pooling allocator instances",
+      "link": "https://github.com/advisories/GHSA-6wgr-89rj-399p",
+      "cve": "CVE-2026-34988",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime has use-after-free bug after cloning `wasmtime::Linker`",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "wasmtime",
+      "description": "Wasmtime has use-after-free bug after cloning `wasmtime::Linker`",
+      "link": "https://github.com/advisories/GHSA-hfr4-7c6c-48w2",
+      "cve": "CVE-2026-34983",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime: Miscompiled guest heap access enables sandbox escape on aarch64 Cranelift",
+      "date": "2026-04-09",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime: Miscompiled guest heap access enables sandbox escape on aarch64 Cranelift",
+      "link": "https://github.com/advisories/GHSA-jhxm-h53p-jm7w",
+      "cve": "CVE-2026-34971",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime has host panic when Winch compiler executes `table.fill`",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime has host panic when Winch compiler executes `table.fill`",
+      "link": "https://github.com/advisories/GHSA-q49f-xg75-m9xw",
+      "cve": "CVE-2026-34946",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime has host data leakage with 64-bit tables and Winch",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime has host data leakage with 64-bit tables and Winch",
+      "link": "https://github.com/advisories/GHSA-m9w2-8782-2946",
+      "cve": "CVE-2026-34945",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime segfault or unused out-of-sandbox load with `f64x2.splat` operator on x86-64 ",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime segfault or unused out-of-sandbox load with `f64x2.splat` operator on x86-64 ",
+      "link": "https://github.com/advisories/GHSA-qqfj-4vcm-26hv",
+      "cve": "CVE-2026-34944",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime has a possible panic when lifting `flags` component value",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime has a possible panic when lifting `flags` component value",
+      "link": "https://github.com/advisories/GHSA-m758-wjhj-p3jq",
+      "cve": "CVE-2026-34943",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime: Panic when transcoding misaligned utf-16 strings",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime: Panic when transcoding misaligned utf-16 strings",
+      "link": "https://github.com/advisories/GHSA-jxhv-7h78-9775",
+      "cve": "CVE-2026-34942",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime: Heap OOB read in component model UTF-16 to latin1+utf16 string transcoding",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime: Heap OOB read in component model UTF-16 to latin1+utf16 string transcoding",
+      "link": "https://github.com/advisories/GHSA-hx6p-xpx3-jvvv",
+      "cve": "CVE-2026-34941",
       "cvss": null
     },
     {

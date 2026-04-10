@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-10T02:52:21.130Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-10T03:22:33.564Z",
+  "newPatches": 53,
   "patches": [
     {
       "title": "macOS 26.4.1",
@@ -11,6 +11,17 @@
       "description": "Security update with 0 CVEs fixed.",
       "link": "https://support.apple.com/en-us/100100",
       "cve": ""
+    },
+    {
+      "title": "DSA-6204-1 openssh - security update",
+      "date": "2026-04-09",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "openssh",
+      "description": "Jeremy Brown discovered a flaw in the GSSAPI Key Exchange patch applied in Debian to OpenSSH, an implementation of the SSH protocol suite, affecting non-default configurations with the GSSAPIKeyExchan...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00114.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "OpenClaw: Multiple Code Paths Missing Base64 Pre-Allocation Size Checks",
@@ -296,6 +307,171 @@
       "description": "OpenClaw: Lower-trust background runtime output is injected into trusted `System:` events, and local async exec completion misses the intended `exec-event` downgrade",
       "link": "https://github.com/advisories/GHSA-gfmx-pph7-g46x",
       "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Gramps Web API: Private Sub-Object Data in Non-Private Objects Exposed to Guest Users",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "gramps-webapi",
+      "description": "Gramps Web API: Private Sub-Object Data in Non-Private Objects Exposed to Guest Users",
+      "link": "https://github.com/advisories/GHSA-9gjv-jvm7-vv2v",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "OpenClaw: GIT_DIR and related git plumbing env vars missing from exec env denylist (GHSA-m866-6qv5-p2fg variant)",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: GIT_DIR and related git plumbing env vars missing from exec env denylist (GHSA-m866-6qv5-p2fg variant)",
+      "link": "https://github.com/advisories/GHSA-cm8v-2vh9-cxf3",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "bsv-sdk ARC broadcaster treats INVALID/MALFORMED/ORPHAN responses as successful broadcasts",
+      "date": "2026-04-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "bsv-sdk",
+      "description": "bsv-sdk ARC broadcaster treats INVALID/MALFORMED/ORPHAN responses as successful broadcasts",
+      "link": "https://github.com/advisories/GHSA-9hfr-gw99-8rhx",
+      "cve": "CVE-2026-40069",
+      "cvss": 7.5
+    },
+    {
+      "title": "bsv-sdk and bsv-wallet persist unverified certifier signatures in acquire_certificate (direct and issuance paths)",
+      "date": "2026-04-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "bsv-sdk, bsv-wallet",
+      "description": "bsv-sdk and bsv-wallet persist unverified certifier signatures in acquire_certificate (direct and issuance paths)",
+      "link": "https://github.com/advisories/GHSA-hc36-c89j-5f4j",
+      "cve": "CVE-2026-40070",
+      "cvss": 8.1
+    },
+    {
+      "title": "Unhead has a hasDangerousProtocol() bypass via leading-zero padded HTML entities in useHeadSafe()",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "unhead",
+      "description": "Unhead has a hasDangerousProtocol() bypass via leading-zero padded HTML entities in useHeadSafe()",
+      "link": "https://github.com/advisories/GHSA-95h2-gj7x-gx9w",
+      "cve": "CVE-2026-39315",
+      "cvss": 6.1
+    },
+    {
+      "title": "Wasmtime has out-of-bounds write or crash when transcoding component model strings",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime has out-of-bounds write or crash when transcoding component model strings",
+      "link": "https://github.com/advisories/GHSA-394w-hwhg-8vgm",
+      "cve": "CVE-2026-35195",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime has data leakage between pooling allocator instances",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime has data leakage between pooling allocator instances",
+      "link": "https://github.com/advisories/GHSA-6wgr-89rj-399p",
+      "cve": "CVE-2026-34988",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime has use-after-free bug after cloning `wasmtime::Linker`",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "wasmtime",
+      "description": "Wasmtime has use-after-free bug after cloning `wasmtime::Linker`",
+      "link": "https://github.com/advisories/GHSA-hfr4-7c6c-48w2",
+      "cve": "CVE-2026-34983",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime: Miscompiled guest heap access enables sandbox escape on aarch64 Cranelift",
+      "date": "2026-04-09",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime: Miscompiled guest heap access enables sandbox escape on aarch64 Cranelift",
+      "link": "https://github.com/advisories/GHSA-jhxm-h53p-jm7w",
+      "cve": "CVE-2026-34971",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime has host panic when Winch compiler executes `table.fill`",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime has host panic when Winch compiler executes `table.fill`",
+      "link": "https://github.com/advisories/GHSA-q49f-xg75-m9xw",
+      "cve": "CVE-2026-34946",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime has host data leakage with 64-bit tables and Winch",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime has host data leakage with 64-bit tables and Winch",
+      "link": "https://github.com/advisories/GHSA-m9w2-8782-2946",
+      "cve": "CVE-2026-34945",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime segfault or unused out-of-sandbox load with `f64x2.splat` operator on x86-64 ",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime segfault or unused out-of-sandbox load with `f64x2.splat` operator on x86-64 ",
+      "link": "https://github.com/advisories/GHSA-qqfj-4vcm-26hv",
+      "cve": "CVE-2026-34944",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime has a possible panic when lifting `flags` component value",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime has a possible panic when lifting `flags` component value",
+      "link": "https://github.com/advisories/GHSA-m758-wjhj-p3jq",
+      "cve": "CVE-2026-34943",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime: Panic when transcoding misaligned utf-16 strings",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime: Panic when transcoding misaligned utf-16 strings",
+      "link": "https://github.com/advisories/GHSA-jxhv-7h78-9775",
+      "cve": "CVE-2026-34942",
+      "cvss": null
+    },
+    {
+      "title": "Wasmtime: Heap OOB read in component model UTF-16 to latin1+utf16 string transcoding",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wasmtime, wasmtime, wasmtime",
+      "description": "Wasmtime: Heap OOB read in component model UTF-16 to latin1+utf16 string transcoding",
+      "link": "https://github.com/advisories/GHSA-hx6p-xpx3-jvvv",
+      "cve": "CVE-2026-34941",
       "cvss": null
     },
     {
@@ -749,6 +925,201 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5292"
     },
     {
+      "title": "CVE-2026-5447: wolfSSL: wolfSSL: Heap buffer overflow via AuthorityKeyIdentifier size confusion",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wolfSSL: wolfSSL: Heap buffer overflow via AuthorityKeyIdentifier size confusion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5447.json",
+      "cve": "CVE-2026-5447",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-5194: wolfSSL: wolfSSL: Reduced security of ECDSA authentication via missing digest size checks",
+      "date": "2026-04-09",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wolfSSL: wolfSSL: Reduced security of ECDSA authentication via missing digest size checks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5194.json",
+      "cve": "CVE-2026-5194",
+      "cvss": 10
+    },
+    {
+      "title": "CVE-2026-35195: Wasmtime: Wasmtime: Data corruption and potential arbitrary code execution via unvalidated memory reallocation",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wasmtime: Wasmtime: Data corruption and potential arbitrary code execution via unvalidated memory reallocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35195.json",
+      "cve": "CVE-2026-35195",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-35186: Wasmtime: github.com/bytecodealliance/wasmtime: Wasmtime: Denial of Service and potential information disclosure via Win",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wasmtime: github.com/bytecodealliance/wasmtime: Wasmtime: Denial of Service and potential information disclosure via Winch compiler type confusion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35186.json",
+      "cve": "CVE-2026-35186",
+      "cvss": 6.9
+    },
+    {
+      "title": "CVE-2026-34988: wasmtime: Wasmtime: Information disclosure due to improper memory handling in pooling allocator",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Information disclosure due to improper memory handling in pooling allocator",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34988.json",
+      "cve": "CVE-2026-34988",
+      "cvss": 5.6
+    },
+    {
+      "title": "CVE-2026-34987: wasmtime: bytecodealliance/wasmtime: Wasmtime: Arbitrary code execution via incorrect memory offset handling in Winch co",
+      "date": "2026-04-09",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: bytecodealliance/wasmtime: Wasmtime: Arbitrary code execution via incorrect memory offset handling in Winch compiler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34987.json",
+      "cve": "CVE-2026-34987",
+      "cvss": 8.5
+    },
+    {
+      "title": "CVE-2026-34983: wasmtime: Wasmtime: Use-after-free due to unsound linker cloning",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Use-after-free due to unsound linker cloning",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34983.json",
+      "cve": "CVE-2026-34983",
+      "cvss": 2.5
+    },
+    {
+      "title": "CVE-2026-34971: wasmtime: cranelift: Wasmtime: Sandbox escape due to miscompiled heap access on aarch64",
+      "date": "2026-04-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: cranelift: Wasmtime: Sandbox escape due to miscompiled heap access on aarch64",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34971.json",
+      "cve": "CVE-2026-34971",
+      "cvss": 8.5
+    },
+    {
+      "title": "CVE-2026-34946: wasmtime: Wasmtime: Denial of Service via WebAssembly compilation error",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Denial of Service via WebAssembly compilation error",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34946.json",
+      "cve": "CVE-2026-34946",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-34945: wasmtime: winch: Wasmtime Winch compiler: Information disclosure via incorrect table.size instruction translation",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: winch: Wasmtime Winch compiler: Information disclosure via incorrect table.size instruction translation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34945.json",
+      "cve": "CVE-2026-34945",
+      "cvss": 5.6
+    },
+    {
+      "title": "CVE-2026-34944: wasmtime: Wasmtime: Denial of Service due to out-of-bounds read during WebAssembly compilation",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Denial of Service due to out-of-bounds read during WebAssembly compilation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34944.json",
+      "cve": "CVE-2026-34944",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-34943: Wasmtime: Wasmtime: Denial of Service due to malformed flags-typed component model value processing",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wasmtime: Wasmtime: Denial of Service due to malformed flags-typed component model value processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34943.json",
+      "cve": "CVE-2026-34943",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-34942: wasmtime: Wasmtime: Denial of Service via improper string alignment verification",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Denial of Service via improper string alignment verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34942.json",
+      "cve": "CVE-2026-34942",
+      "cvss": 5.6
+    },
+    {
+      "title": "CVE-2026-34941: wasmtime: Wasmtime: Denial of Service and potential information disclosure via incorrect UTF-16 string validation",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Denial of Service and potential information disclosure via incorrect UTF-16 string validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34941.json",
+      "cve": "CVE-2026-34941",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-34757: libpng: libpng: Information disclosure and data corruption via use-after-free vulnerability",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libpng: libpng: Information disclosure and data corruption via use-after-free vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34757.json",
+      "cve": "CVE-2026-34757",
+      "cvss": 4.4
+    },
+    {
+      "title": "Wasmtime: Miscompiled guest heap access enables sandbox escape on aarch64 Cranelift",
+      "date": "2026-04-09",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\n\nWasmtime's Cranelift compilation backend contains a bug on aarch64 when performing a certain shape of heap accesses which means that the wrong address is accessed. When combined with expli",
+      "link": "https://github.com/advisories/GHSA-jhxm-h53p-jm7w",
+      "cves": [
+        "CVE-2026-34971"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Wasmtime segfault or unused out-of-sandbox load with `f64x2.splat` operator on x86-64 ",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "On x86-64 platforms with SSE3 disabled Wasmtime's compilation of the `f64x2.splat` WebAssembly instruction with Cranelift may load 8 more bytes than is necessary. When [signals-based-traps](https://do",
+      "link": "https://github.com/advisories/GHSA-qqfj-4vcm-26hv",
+      "cves": [
+        "CVE-2026-34944"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
       "title": "USN-8149-2: Linux kernel vulnerabilities",
       "date": "2026-04-09",
       "severity": "LOW",
@@ -765,6 +1136,69 @@
       "component": "Linux kernel vulnerabilities",
       "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Cryptographic AP...",
       "link": "https://ubuntu.com/security/notices/USN-8148-5"
+    },
+    {
+      "title": "USN-8165-1: Linux kernel (Azure FIPS) vulnerabilities",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Azure FIPS) vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8165-1"
+    },
+    {
+      "title": "USN-8164-1: Linux kernel (Intel IoTG Real-time) vulnerabilities",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Intel IoTG Real-time) vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8164-1"
+    },
+    {
+      "title": "USN-8163-1: Linux kernel (Azure FIPS) vulnerabilities",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Azure FIPS) vulnerabilities",
+      "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
+      "link": "https://ubuntu.com/security/notices/USN-8163-1"
+    },
+    {
+      "title": "USN-8145-4: Linux kernel (HWE) vulnerabilities",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (HWE) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architectu...",
+      "link": "https://ubuntu.com/security/notices/USN-8145-4"
+    },
+    {
+      "title": "USN-8162-1: Linux kernel (NVIDIA Tegra) vulnerabilities",
+      "date": "2026-04-09",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (NVIDIA Tegra) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architectu...",
+      "link": "https://ubuntu.com/security/notices/USN-8162-1"
+    },
+    {
+      "title": "USN-8155-2: OpenSSL vulnerabilities",
+      "date": "2026-04-09",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OpenSSL vulnerabilities",
+      "description": "USN-8155-1 fixed vulnerabilities in OpenSSL. This update provides the\ncorresponding updates for openssl and openssl1.0 packages for Ubuntu 14.04\nLTS, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20....",
+      "link": "https://ubuntu.com/security/notices/USN-8155-2"
+    },
+    {
+      "title": "USN-8154-2: Django vulnerabilities",
+      "date": "2026-04-09",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Django vulnerabilities",
+      "description": "USN-8154-1 fixed vulnerabilities in Django. This update provides the\ncorresponding updates for Ubuntu 14.04 LTS and Ubuntu 16.04 LTS.\n\nOriginal advisory details:\n\n Seokchan Yoon discovered that Django...",
+      "link": "https://ubuntu.com/security/notices/USN-8154-2"
     },
     {
       "title": "iOS and iPadOS 26.4.1",
@@ -2516,6 +2950,72 @@
       "cvss": 7
     },
     {
+      "title": "CVE-2026-5894: Google Chrome: Chromium: Google Chrome/Chromium: Navigation restriction bypass via crafted HTML page",
+      "date": "2026-04-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Google Chrome: Chromium: Google Chrome/Chromium: Navigation restriction bypass via crafted HTML page",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5894.json",
+      "cve": "CVE-2026-5894",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-5874: Google Chrome: Chromium: Google Chrome: Sandbox escape via use-after-free in PrivateAI",
+      "date": "2026-04-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Google Chrome: Chromium: Google Chrome: Sandbox escape via use-after-free in PrivateAI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5874.json",
+      "cve": "CVE-2026-5874",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-5858: Google Chrome: WebML: Chromium: Google Chrome: Arbitrary code execution via heap buffer overflow in WebML",
+      "date": "2026-04-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Google Chrome: WebML: Chromium: Google Chrome: Arbitrary code execution via heap buffer overflow in WebML",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5858.json",
+      "cve": "CVE-2026-5858",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-39892: cryptography: Cryptography: Buffer overflow via non-contiguous buffer in API",
+      "date": "2026-04-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cryptography: Cryptography: Buffer overflow via non-contiguous buffer in API",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-39892.json",
+      "cve": "CVE-2026-39892",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-20709: microcode_ctl: Intel Processors: Escalation of privilege due to default cryptographic key",
+      "date": "2026-04-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "microcode_ctl: Intel Processors: Escalation of privilege due to default cryptographic key",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-20709.json",
+      "cve": "CVE-2026-20709",
+      "cvss": 6.6
+    },
+    {
+      "title": "CVE-2026-32282: golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root",
+      "date": "2026-04-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-32282.json",
+      "cve": "CVE-2026-32282",
+      "cvss": 7.8
+    },
+    {
       "title": "Parse Server has a login timing side-channel reveals user existence",
       "date": "2026-04-08",
       "severity": "MEDIUM",
@@ -4095,6 +4595,72 @@
       "cvss": 7.5
     },
     {
+      "title": "CVE-2026-35406: aardvark-dns: Aardvark-dns: Denial of Service via truncated TCP DNS query and connection reset",
+      "date": "2026-04-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aardvark-dns: Aardvark-dns: Denial of Service via truncated TCP DNS query and connection reset",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35406.json",
+      "cve": "CVE-2026-35406",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-5861: chromium-browser: Use after free in V8",
+      "date": "2026-04-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in V8",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5861.json",
+      "cve": "CVE-2026-5861",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-5860: chromium-browser: Use after free in WebRTC",
+      "date": "2026-04-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebRTC",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5860.json",
+      "cve": "CVE-2026-5860",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-5876: chromium-browser: Side-channel information leakage in Navigation",
+      "date": "2026-04-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Side-channel information leakage in Navigation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5876.json",
+      "cve": "CVE-2026-5876",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-5875: chromium-browser: Policy bypass in Blink",
+      "date": "2026-04-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Policy bypass in Blink",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5875.json",
+      "cve": "CVE-2026-5875",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-5859: chromium-browser: Integer overflow in WebML",
+      "date": "2026-04-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in WebML",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5859.json",
+      "cve": "CVE-2026-5859",
+      "cvss": 9.6
+    },
+    {
       "title": "USN-8153-1: Salt vulnerabilities",
       "date": "2026-04-07",
       "severity": "LOW",
@@ -4802,6 +5368,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35029.json",
       "cve": "CVE-2026-35029",
       "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-4878: libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file()",
+      "date": "2026-04-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4878.json",
+      "cve": "CVE-2026-4878",
+      "cvss": 6.7
     },
     {
       "title": "USN-8150-1: SPIP vulnerabilities",
@@ -5780,6 +6357,365 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-04-10T03:22:33.564Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] debian - 9 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 237 patches (15 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 199 patches, no changes",
+        "[INFO] paloalto - 6 patches, no changes",
+        "[SUCCESS] redhat - 125 patches (28 new)",
+        "[SUCCESS] signal - 7 patches (2 new)",
+        "[SUCCESS] ubuntu - 24 patches (7 new)"
+      ],
+      "newPatchCount": 53,
+      "totalPatches": 617,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "apple",
+        "debian",
+        "github",
+        "microsoft",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "edge",
+        "gitlab",
+        "paloalto",
+        "chrome",
+        "cloudflare",
+        "gcp",
+        "fortinet"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6204-1 openssh - security update",
+          "date": "2026-04-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Gramps Web API: Private Sub-Object Data in Non-Private Objects Exposed to Guest Users",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: GIT_DIR and related git plumbing env vars missing from exec env denylist (GHSA-m866-6qv5-p2fg variant)",
+          "date": "2026-04-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "bsv-sdk ARC broadcaster treats INVALID/MALFORMED/ORPHAN responses as successful broadcasts",
+          "date": "2026-04-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "bsv-sdk and bsv-wallet persist unverified certifier signatures in acquire_certificate (direct and issuance paths)",
+          "date": "2026-04-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Unhead has a hasDangerousProtocol() bypass via leading-zero padded HTML entities in useHeadSafe()",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Wasmtime has out-of-bounds write or crash when transcoding component model strings",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Wasmtime has data leakage between pooling allocator instances",
+          "date": "2026-04-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Wasmtime has use-after-free bug after cloning `wasmtime::Linker`",
+          "date": "2026-04-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Wasmtime: Miscompiled guest heap access enables sandbox escape on aarch64 Cranelift",
+          "date": "2026-04-09",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Wasmtime has host panic when Winch compiler executes `table.fill`",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Wasmtime has host data leakage with 64-bit tables and Winch",
+          "date": "2026-04-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Wasmtime segfault or unused out-of-sandbox load with `f64x2.splat` operator on x86-64 ",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Wasmtime has a possible panic when lifting `flags` component value",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Wasmtime: Panic when transcoding misaligned utf-16 strings",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Wasmtime: Heap OOB read in component model UTF-16 to latin1+utf16 string transcoding",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5447: wolfSSL: wolfSSL: Heap buffer overflow via AuthorityKeyIdentifier size confusion",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5194: wolfSSL: wolfSSL: Reduced security of ECDSA authentication via missing digest size checks",
+          "date": "2026-04-09",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35195: Wasmtime: Wasmtime: Data corruption and potential arbitrary code execution via unvalidated memory reallocation",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35186: Wasmtime: github.com/bytecodealliance/wasmtime: Wasmtime: Denial of Service and potential information disclosure via Win",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34988: wasmtime: Wasmtime: Information disclosure due to improper memory handling in pooling allocator",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34987: wasmtime: bytecodealliance/wasmtime: Wasmtime: Arbitrary code execution via incorrect memory offset handling in Winch co",
+          "date": "2026-04-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34983: wasmtime: Wasmtime: Use-after-free due to unsound linker cloning",
+          "date": "2026-04-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34971: wasmtime: cranelift: Wasmtime: Sandbox escape due to miscompiled heap access on aarch64",
+          "date": "2026-04-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34946: wasmtime: Wasmtime: Denial of Service via WebAssembly compilation error",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34945: wasmtime: winch: Wasmtime Winch compiler: Information disclosure via incorrect table.size instruction translation",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34944: wasmtime: Wasmtime: Denial of Service due to out-of-bounds read during WebAssembly compilation",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34943: Wasmtime: Wasmtime: Denial of Service due to malformed flags-typed component model value processing",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34942: wasmtime: Wasmtime: Denial of Service via improper string alignment verification",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34941: wasmtime: Wasmtime: Denial of Service and potential information disclosure via incorrect UTF-16 string validation",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34757: libpng: libpng: Information disclosure and data corruption via use-after-free vulnerability",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5894: Google Chrome: Chromium: Google Chrome/Chromium: Navigation restriction bypass via crafted HTML page",
+          "date": "2026-04-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5874: Google Chrome: Chromium: Google Chrome: Sandbox escape via use-after-free in PrivateAI",
+          "date": "2026-04-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5858: Google Chrome: WebML: Chromium: Google Chrome: Arbitrary code execution via heap buffer overflow in WebML",
+          "date": "2026-04-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-39892: cryptography: Cryptography: Buffer overflow via non-contiguous buffer in API",
+          "date": "2026-04-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-20709: microcode_ctl: Intel Processors: Escalation of privilege due to default cryptographic key",
+          "date": "2026-04-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-32282: golang: internal/syscall/unix: Root.Chmod can follow symlinks out of the root",
+          "date": "2026-04-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35406: aardvark-dns: Aardvark-dns: Denial of Service via truncated TCP DNS query and connection reset",
+          "date": "2026-04-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5861: chromium-browser: Use after free in V8",
+          "date": "2026-04-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5860: chromium-browser: Use after free in WebRTC",
+          "date": "2026-04-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5876: chromium-browser: Side-channel information leakage in Navigation",
+          "date": "2026-04-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5875: chromium-browser: Policy bypass in Blink",
+          "date": "2026-04-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5859: chromium-browser: Integer overflow in WebML",
+          "date": "2026-04-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4878: libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file()",
+          "date": "2026-04-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "signal",
+          "title": "Wasmtime: Miscompiled guest heap access enables sandbox escape on aarch64 Cranelift",
+          "date": "2026-04-09",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "signal",
+          "title": "Wasmtime segfault or unused out-of-sandbox load with `f64x2.splat` operator on x86-64 ",
+          "date": "2026-04-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8165-1: Linux kernel (Azure FIPS) vulnerabilities",
+          "date": "2026-04-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8164-1: Linux kernel (Intel IoTG Real-time) vulnerabilities",
+          "date": "2026-04-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8163-1: Linux kernel (Azure FIPS) vulnerabilities",
+          "date": "2026-04-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8145-4: Linux kernel (HWE) vulnerabilities",
+          "date": "2026-04-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8162-1: Linux kernel (NVIDIA Tegra) vulnerabilities",
+          "date": "2026-04-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8155-2: OpenSSL vulnerabilities",
+          "date": "2026-04-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8154-2: Django vulnerabilities",
+          "date": "2026-04-09",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-04-10T02:52:21.130Z",
       "logs": [
@@ -10713,46 +11649,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-04-06T19:06:49.282Z",
-      "logs": [
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 13 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 271 patches, no changes",
-        "[INFO] microsoft - 199 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 191 patches, no changes",
-        "[INFO] signal - 9 patches, no changes",
-        "[INFO] ubuntu - 23 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 731,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "redhat",
-        "ubuntu",
-        "debian",
-        "microsoft",
-        "fortinet",
-        "github",
-        "signal",
-        "cisco",
-        "gcp",
-        "postgresql",
-        "chrome",
-        "crowdstrike",
-        "edge",
-        "paloalto"
-      ],
-      "newPatches": []
     }
   ]
 }

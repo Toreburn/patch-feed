@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-09T19:17:21.996Z",
+  "lastUpdated": "2026-04-10T03:21:20.358Z",
   "health": {
-    "lastFetchAttempt": "2026-04-09T19:17:21.996Z",
+    "lastFetchAttempt": "2026-04-10T03:21:20.358Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-09T19:17:21.996Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-04-10T03:21:20.358Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Wasmtime: Miscompiled guest heap access enables sandbox escape on aarch64 Cranelift",
+      "date": "2026-04-09",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\n\nWasmtime's Cranelift compilation backend contains a bug on aarch64 when performing a certain shape of heap accesses which means that the wrong address is accessed. When combined with expli",
+      "link": "https://github.com/advisories/GHSA-jhxm-h53p-jm7w",
+      "cves": [
+        "CVE-2026-34971"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Wasmtime segfault or unused out-of-sandbox load with `f64x2.splat` operator on x86-64 ",
+      "date": "2026-04-09",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "On x86-64 platforms with SSE3 disabled Wasmtime's compilation of the `f64x2.splat` WebAssembly instruction with Cranelift may load 8 more bytes than is necessary. When [signals-based-traps](https://do",
+      "link": "https://github.com/advisories/GHSA-qqfj-4vcm-26hv",
+      "cves": [
+        "CVE-2026-34944"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Parse Server has a login timing side-channel reveals user existence",
       "date": "2026-04-08",
