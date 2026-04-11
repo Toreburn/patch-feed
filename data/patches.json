@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-11T13:06:24.148Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-11T13:12:50.189Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "CVE-2026-35414: CVE-2026-35414",
@@ -1278,6 +1278,17 @@
       "link": "https://github.com/advisories/GHSA-ffp3-3562-8cv3",
       "cve": "",
       "cvss": 5.5
+    },
+    {
+      "title": "",
+      "date": "2026-04-10",
+      "severity": "MEDIUM",
+      "vendor": "kubernetes",
+      "component": "CSI",
+      "description": "**CVSS Rating:**  \n[CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H](https://www.first.org/cvss/calculator/3-1#CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H) — **Medium (6.5)**\n\nA vulnerability was discov...",
+      "link": "https://github.com/kubernetes/kubernetes/issues/138319",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "CVE-2026-35414: CVE-2026-35414",
@@ -8985,6 +8996,53 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-11T13:12:50.189Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] debian - 9 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 274 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[SUCCESS] kubernetes - 1 patches (1 new)",
+        "[INFO] microsoft - 349 patches, no changes",
+        "[INFO] paloalto - 6 patches, no changes",
+        "[INFO] redhat - 202 patches, no changes",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 26 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 884,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "edge",
+        "github",
+        "kubernetes",
+        "redhat",
+        "signal",
+        "apple",
+        "ubuntu",
+        "gitlab",
+        "paloalto",
+        "chrome",
+        "cloudflare",
+        "gcp"
+      ],
+      "newPatches": [
+        {
+          "vendor": "kubernetes",
+          "title": "",
+          "date": "2026-04-10",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-11T13:06:24.148Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
@@ -14535,42 +14593,6 @@
           "severity": "CRITICAL"
         }
       ]
-    },
-    {
-      "timestamp": "2026-04-08T07:27:14.506Z",
-      "logs": [
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 2 patches, no changes",
-        "[INFO] github - 282 patches, no changes",
-        "[INFO] microsoft - 151 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 196 patches, no changes",
-        "[INFO] signal - 9 patches, no changes",
-        "[INFO] ubuntu - 19 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 678,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "github",
-        "signal",
-        "chrome",
-        "cloudflare",
-        "debian",
-        "gcp",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "fortinet",
-        "cisco",
-        "postgresql"
-      ],
-      "newPatches": []
     }
   ]
 }
