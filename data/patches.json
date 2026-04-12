@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-04-12T02:55:27.404Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-12T03:25:50.341Z",
+  "newPatches": 1,
   "patches": [
+    {
+      "title": "DSA-6206-1 gdk-pixbuf - security update",
+      "date": "2026-04-11",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "gdk-pixbuf",
+      "description": "It was discovered that gdk-pixbuf, the GDK Pixbuf library, does not properly validate color component counts in the JPEG image loader, which may result in the execution of arbitrary code or denial of ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00116.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "CVE-2026-35414: CVE-2026-35414",
       "date": "2026-04-11",
@@ -8518,6 +8529,53 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-12T03:25:50.341Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] debian - 6 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 274 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] kubernetes - 1 patches, no changes",
+        "[INFO] microsoft - 302 patches, no changes",
+        "[INFO] paloalto - 6 patches, no changes",
+        "[INFO] redhat - 201 patches, no changes",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 26 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 833,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "edge",
+        "github",
+        "kubernetes",
+        "redhat",
+        "signal",
+        "apple",
+        "ubuntu",
+        "gitlab",
+        "paloalto",
+        "chrome",
+        "cloudflare",
+        "gcp"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6206-1 gdk-pixbuf - security update",
+          "date": "2026-04-11",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-12T02:55:27.404Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
@@ -13677,44 +13735,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-04-08T19:22:34.477Z",
-      "logs": [
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 2 patches, no changes",
-        "[INFO] github - 282 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 201 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 215 patches, no changes",
-        "[INFO] signal - 9 patches, no changes",
-        "[INFO] ubuntu - 19 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 748,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "github",
-        "gitlab",
-        "microsoft",
-        "signal",
-        "chrome",
-        "cloudflare",
-        "debian",
-        "gcp",
-        "redhat",
-        "ubuntu",
-        "fortinet",
-        "cisco",
-        "postgresql"
-      ],
-      "newPatches": []
     }
   ]
 }
