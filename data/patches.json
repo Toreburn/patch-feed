@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-13T06:17:44.699Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-13T08:14:31.398Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "DSA-6208-1 mediawiki - security update",
@@ -473,6 +473,15 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-39316",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-39316"
+    },
+    {
+      "title": "USN-8166-1: RetroArch vulnerability",
+      "date": "2026-04-12",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "RetroArch",
+      "description": "It was discovered that RetroArch did not correctly handle certain memory\noperations, which could lead to a buffer overflow. If a user or automated\nsystem were tricked into opening a specially crafted ...",
+      "link": "https://ubuntu.com/security/notices/USN-8166-1"
     },
     {
       "title": "DSA-6206-1 gdk-pixbuf - security update",
@@ -8263,6 +8272,53 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-13T08:14:31.398Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] debian - 7 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 243 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] kubernetes - 1 patches, no changes",
+        "[INFO] microsoft - 352 patches, no changes",
+        "[INFO] paloalto - 6 patches, no changes",
+        "[INFO] redhat - 171 patches, no changes",
+        "[INFO] signal - 7 patches, no changes",
+        "[SUCCESS] ubuntu - 22 patches (1 new)"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 818,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "ubuntu",
+        "edge",
+        "github",
+        "kubernetes",
+        "redhat",
+        "signal",
+        "apple",
+        "gitlab",
+        "paloalto",
+        "chrome",
+        "cloudflare",
+        "gcp"
+      ],
+      "newPatches": [
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8166-1: RetroArch vulnerability",
+          "date": "2026-04-12",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-13T06:17:44.699Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
@@ -12702,211 +12758,6 @@
         "cisco"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-09T19:18:24.430Z",
-      "logs": [
-        "[SUCCESS] apple - 2 patches (1 new)",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[SUCCESS] github - 322 patches (26 new)",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 225 patches, no changes",
-        "[INFO] paloalto - 6 patches, no changes",
-        "[INFO] redhat - 194 patches, no changes",
-        "[INFO] signal - 11 patches, no changes",
-        "[INFO] ubuntu - 17 patches, no changes"
-      ],
-      "newPatchCount": 27,
-      "totalPatches": 797,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "apple",
-        "github",
-        "microsoft",
-        "ubuntu",
-        "debian",
-        "edge",
-        "gitlab",
-        "paloalto",
-        "redhat",
-        "signal",
-        "chrome",
-        "cloudflare",
-        "gcp",
-        "fortinet",
-        "cisco"
-      ],
-      "newPatches": [
-        {
-          "vendor": "apple",
-          "title": "macOS 26.4.1",
-          "date": "2026-04-09",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Multiple Code Paths Missing Base64 Pre-Allocation Size Checks",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw B-M3: ClawHub package downloads are not enforced with integrity verification",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: `fetchWithSsrFGuard` replays unsafe request bodies across cross-origin redirects",
-          "date": "2026-04-09",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw Host-Exec Environment Variable Injection",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Strict browser SSRF bypass in Playwright redirect handling leaves private targets reachable",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Gateway plugin HTTP `auth: gateway` widens identity-bearing `operator.read` requests into runtime `operator.write`",
-          "date": "2026-04-09",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw has Browser SSRF Policy Bypass via Interaction-Triggered Navigation",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw `node.pair.approve` placed in `operator.write` scope instead of `operator.pairing` allows unprivileged pairing approval",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Feishu docx upload_file/upload_image Bypasses Workspace-Only Filesystem Policy (GHSA-qf48-qfv4-jjm9 Incomplete Fix)",
-          "date": "2026-04-09",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw QQ Bot Extension missing SSRF Protection on All Media Fetch Paths",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Existing WS sessions survive shared gateway token rotation",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Concurrent async auth attempts can bypass the intended shared-secret rate-limit budget on Tailscale-capable paths",
-          "date": "2026-04-09",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Node Pairing Reconnect Command Escalation Bypasses operator.admin Scope Requirement",
-          "date": "2026-04-09",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: /allowlist omits owner-only enforcement for cross-channel allowlist writes",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: resolvedAuth closure becomes stale after config reload",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw `node.invoke(browser.proxy)` bypasses `browser.request` persistent profile-mutation guard",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw `device.token.rotate` mints tokens for unapproved roles, bypassing device role-upgrade pairing",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Shared reply MEDIA - paths are treated as trusted and can trigger cross-channel local file exfiltration",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: strictInlineEval explicit-approval boundary bypassed by approval-timeout fallback on gateway and node exec hosts",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MinIO affected a DoS via Unbounded Memory Allocation in S3 Select CSV Parsing",
-          "date": "2026-04-09",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Axios has a NO_PROXY Hostname Normalization Bypass Leads to SSRF",
-          "date": "2026-04-09",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-jwt has a ReDoS when using RegExp in allowed* leading to CPU exhaustion during token verification",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-jwt: Stateful RegExp (/g or /y) causes non-deterministic allowed-claim validation (logical DoS)",
-          "date": "2026-04-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: HGRCPATH, CARGO_BUILD_RUSTC_WRAPPER, RUSTC_WRAPPER, and MAKEFLAGS missing from exec env denylist — RCE via build tool env injection (GHSA-cm8v-2vh9-cxf3 class)",
-          "date": "2026-04-09",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Authenticated `/hooks/wake` and mapped `wake` payloads are promoted into the trusted `System:` prompt channel",
-          "date": "2026-04-09",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Lower-trust background runtime output is injected into trusted `System:` events, and local async exec completion misses the intended `exec-event` downgrade",
-          "date": "2026-04-09",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
