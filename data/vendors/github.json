@@ -1,16 +1,104 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-04-13T13:53:36.792Z",
+  "lastUpdated": "2026-04-13T19:21:23.923Z",
   "health": {
-    "lastFetchAttempt": "2026-04-13T13:53:36.792Z",
+    "lastFetchAttempt": "2026-04-13T19:21:23.923Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-13T13:53:36.792Z",
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-04-13T19:21:23.923Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "ImageMagick has an integer overflow in despeckle operation causing a heap buffer overflow on 32-bit builds",
+      "date": "2026-04-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "Magick.NET-Q16-AnyCPU, Magick.NET-Q16-HDRI-AnyCPU, Magick.NET-Q16-HDRI-x86",
+      "description": "ImageMagick has an integer overflow in despeckle operation causing a heap buffer overflow on 32-bit builds",
+      "link": "https://github.com/advisories/GHSA-26qp-ffjh-2x4v",
+      "cve": "CVE-2026-34238",
+      "cvss": 5.1
+    },
+    {
+      "title": "ImageMagick has a heap overflow caused by integer overflow/wraparound in viff encoder on 32-bit builds",
+      "date": "2026-04-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "Magick.NET-Q16-AnyCPU, Magick.NET-Q16-HDRI-AnyCPU, Magick.NET-Q16-HDRI-x86",
+      "description": "ImageMagick has a heap overflow caused by integer overflow/wraparound in viff encoder on 32-bit builds",
+      "link": "https://github.com/advisories/GHSA-v67w-737x-v2c9",
+      "cve": "CVE-2026-33900",
+      "cvss": 5.9
+    },
+    {
+      "title": "Prometheus has Stored XSS via metric names and label values in Prometheus web UI tooltips and metrics explorer",
+      "date": "2026-04-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/prometheus/prometheus, github.com/prometheus/prometheus, github.com/prometheus/prometheus",
+      "description": "Prometheus has Stored XSS via metric names and label values in Prometheus web UI tooltips and metrics explorer",
+      "link": "https://github.com/advisories/GHSA-vffh-x6r8-xx99",
+      "cve": "CVE-2026-40179",
+      "cvss": null
+    },
+    {
+      "title": "Emissary has an OS Command Injection via Unvalidated IN_FILE_ENDING / OUT_FILE_ENDING in Executrix",
+      "date": "2026-04-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "gov.nsa.emissary:emissary",
+      "description": "Emissary has an OS Command Injection via Unvalidated IN_FILE_ENDING / OUT_FILE_ENDING in Executrix",
+      "link": "https://github.com/advisories/GHSA-3p24-9x7v-7789",
+      "cve": "CVE-2026-35582",
+      "cvss": 8.8
+    },
+    {
+      "title": "External Secrets Operator has DNS-based secret exfiltration via getHostByName in External Secrets v2 template engine",
+      "date": "2026-04-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/external-secrets/external-secrets, github.com/external-secrets/external-secrets",
+      "description": "External Secrets Operator has DNS-based secret exfiltration via getHostByName in External Secrets v2 template engine",
+      "link": "https://github.com/advisories/GHSA-r2pg-r6h7-crf3",
+      "cve": "CVE-2026-34984",
+      "cvss": null
+    },
+    {
+      "title": "nimiq-consensus panics via RequestMacroChain micro-block locator",
+      "date": "2026-04-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nimiq-consensus",
+      "description": "nimiq-consensus panics via RequestMacroChain micro-block locator",
+      "link": "https://github.com/advisories/GHSA-48m6-486p-9j8p",
+      "cve": "CVE-2026-34069",
+      "cvss": 5.3
+    },
+    {
+      "title": "simple-git Affected by Command Execution via Option-Parsing Bypass",
+      "date": "2026-04-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "simple-git",
+      "description": "simple-git Affected by Command Execution via Option-Parsing Bypass",
+      "link": "https://github.com/advisories/GHSA-jcxm-m3jx-f287",
+      "cve": "CVE-2026-28291",
+      "cvss": 8.1
+    },
+    {
+      "title": "Decidim has a cross-site scripting (XSS) in user name",
+      "date": "2026-04-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "decidim-core, decidim-core",
+      "description": "Decidim has a cross-site scripting (XSS) in user name",
+      "link": "https://github.com/advisories/GHSA-fc46-r95f-hq7g",
+      "cve": "CVE-2026-23891",
+      "cvss": null
+    },
     {
       "title": "Beszel has an IDOR in hub API endpoints that read system ID from URL parameter",
       "date": "2026-04-10",

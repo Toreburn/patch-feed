@@ -1,7 +1,163 @@
 {
-  "lastUpdated": "2026-04-13T19:18:29.752Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-13T19:23:07.753Z",
+  "newPatches": 15,
   "patches": [
+    {
+      "title": "ImageMagick has an integer overflow in despeckle operation causing a heap buffer overflow on 32-bit builds",
+      "date": "2026-04-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "Magick.NET-Q16-AnyCPU, Magick.NET-Q16-HDRI-AnyCPU, Magick.NET-Q16-HDRI-x86",
+      "description": "ImageMagick has an integer overflow in despeckle operation causing a heap buffer overflow on 32-bit builds",
+      "link": "https://github.com/advisories/GHSA-26qp-ffjh-2x4v",
+      "cve": "CVE-2026-34238",
+      "cvss": 5.1
+    },
+    {
+      "title": "ImageMagick has a heap overflow caused by integer overflow/wraparound in viff encoder on 32-bit builds",
+      "date": "2026-04-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "Magick.NET-Q16-AnyCPU, Magick.NET-Q16-HDRI-AnyCPU, Magick.NET-Q16-HDRI-x86",
+      "description": "ImageMagick has a heap overflow caused by integer overflow/wraparound in viff encoder on 32-bit builds",
+      "link": "https://github.com/advisories/GHSA-v67w-737x-v2c9",
+      "cve": "CVE-2026-33900",
+      "cvss": 5.9
+    },
+    {
+      "title": "Prometheus has Stored XSS via metric names and label values in Prometheus web UI tooltips and metrics explorer",
+      "date": "2026-04-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/prometheus/prometheus, github.com/prometheus/prometheus, github.com/prometheus/prometheus",
+      "description": "Prometheus has Stored XSS via metric names and label values in Prometheus web UI tooltips and metrics explorer",
+      "link": "https://github.com/advisories/GHSA-vffh-x6r8-xx99",
+      "cve": "CVE-2026-40179",
+      "cvss": null
+    },
+    {
+      "title": "Emissary has an OS Command Injection via Unvalidated IN_FILE_ENDING / OUT_FILE_ENDING in Executrix",
+      "date": "2026-04-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "gov.nsa.emissary:emissary",
+      "description": "Emissary has an OS Command Injection via Unvalidated IN_FILE_ENDING / OUT_FILE_ENDING in Executrix",
+      "link": "https://github.com/advisories/GHSA-3p24-9x7v-7789",
+      "cve": "CVE-2026-35582",
+      "cvss": 8.8
+    },
+    {
+      "title": "External Secrets Operator has DNS-based secret exfiltration via getHostByName in External Secrets v2 template engine",
+      "date": "2026-04-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/external-secrets/external-secrets, github.com/external-secrets/external-secrets",
+      "description": "External Secrets Operator has DNS-based secret exfiltration via getHostByName in External Secrets v2 template engine",
+      "link": "https://github.com/advisories/GHSA-r2pg-r6h7-crf3",
+      "cve": "CVE-2026-34984",
+      "cvss": null
+    },
+    {
+      "title": "nimiq-consensus panics via RequestMacroChain micro-block locator",
+      "date": "2026-04-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nimiq-consensus",
+      "description": "nimiq-consensus panics via RequestMacroChain micro-block locator",
+      "link": "https://github.com/advisories/GHSA-48m6-486p-9j8p",
+      "cve": "CVE-2026-34069",
+      "cvss": 5.3
+    },
+    {
+      "title": "simple-git Affected by Command Execution via Option-Parsing Bypass",
+      "date": "2026-04-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "simple-git",
+      "description": "simple-git Affected by Command Execution via Option-Parsing Bypass",
+      "link": "https://github.com/advisories/GHSA-jcxm-m3jx-f287",
+      "cve": "CVE-2026-28291",
+      "cvss": 8.1
+    },
+    {
+      "title": "Decidim has a cross-site scripting (XSS) in user name",
+      "date": "2026-04-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "decidim-core, decidim-core",
+      "description": "Decidim has a cross-site scripting (XSS) in user name",
+      "link": "https://github.com/advisories/GHSA-fc46-r95f-hq7g",
+      "cve": "CVE-2026-23891",
+      "cvss": null
+    },
+    {
+      "title": "Signal Desktop v8.7.0-beta.2",
+      "date": "2026-04-13",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.7.0-beta.2",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "Managing context in long-run agentic applications",
+      "date": "2026-04-13",
+      "severity": "CRITICAL",
+      "vendor": "slack",
+      "component": "Slack",
+      "description": "Excerpt In complex, long-running agentic systems, maintaining alignment and coherent reasoning between agents requires careful design. In this second article of our series, we explore these challenges...",
+      "link": "https://slack.engineering/managing-context-in-long-run-agentic-applications/",
+      "cve": ""
+    },
+    {
+      "title": "USN-8172-1: kvmtool vulnerabilities",
+      "date": "2026-04-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "kvmtool vulnerabilities",
+      "description": "It was discovered that kvmtool did not properly manage memory under certain\ncircumstances. A malicious guest attacker could use this issue to cause\nkvmtool to crash, leading to a denial of service, or...",
+      "link": "https://ubuntu.com/security/notices/USN-8172-1"
+    },
+    {
+      "title": "USN-8170-1: Corosync vulnerabilities",
+      "date": "2026-04-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Corosync vulnerabilities",
+      "description": "It was discovered that Corosync incorrectly handled the membership commit\ntoken validity check. A remote attacker could use this issue to cause\nCorosync to crash, resulting in a denial of service, or ...",
+      "link": "https://ubuntu.com/security/notices/USN-8170-1"
+    },
+    {
+      "title": "USN-8168-1: Rust vulnerability",
+      "date": "2026-04-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Rust",
+      "description": "It was discovered that tar-rs embedded in rustc incorrectly handled\nsymlinks when unpacking a tar archive. If a user or automated system were\ntricked into processing a specially crafted tar archive, a...",
+      "link": "https://ubuntu.com/security/notices/USN-8168-1"
+    },
+    {
+      "title": "USN-8167-1: xdg-dbus-proxy vulnerability",
+      "date": "2026-04-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "xdg-dbus-proxy",
+      "description": "It was discovered that xdg-dbus-proxy incorrectly handled eavesdropping\nin policy rules. A local attacker could possibly use this issue to\nintercept certain D-Bus messages....",
+      "link": "https://ubuntu.com/security/notices/USN-8167-1"
+    },
+    {
+      "title": "LSN-0119-1: Kernel Live Patch Security Notice",
+      "date": "2026-04-13",
+      "severity": "HIGH",
+      "vendor": "ubuntu",
+      "component": "Multiple Products",
+      "description": "In the Linux kernel, the following vulnerability has been\nresolved: btrfs: ref-verify: fix use-after-free after invalid ref action At\nbtrfs_ref_tree_mod() after we successfully inserted the new ref en...",
+      "link": "https://ubuntu.com/security/notices/LSN-0119-1"
+    },
     {
       "title": "DSA-6208-1 mediawiki - security update",
       "date": "2026-04-12",
@@ -8448,6 +8604,139 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-13T19:23:07.753Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] debian - 7 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 251 patches (8 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] kubernetes - 1 patches, no changes",
+        "[INFO] microsoft - 352 patches, no changes",
+        "[INFO] paloalto - 6 patches, no changes",
+        "[INFO] redhat - 187 patches, no changes",
+        "[SUCCESS] signal - 8 patches (1 new)",
+        "[SUCCESS] slack - 1 patches (1 new)",
+        "[SUCCESS] ubuntu - 27 patches (5 new)"
+      ],
+      "newPatchCount": 15,
+      "totalPatches": 849,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "github",
+        "signal",
+        "slack",
+        "ubuntu",
+        "debian",
+        "microsoft",
+        "redhat",
+        "edge",
+        "kubernetes",
+        "apple",
+        "gitlab",
+        "paloalto",
+        "chrome",
+        "cloudflare",
+        "gcp"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "ImageMagick has an integer overflow in despeckle operation causing a heap buffer overflow on 32-bit builds",
+          "date": "2026-04-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "ImageMagick has a heap overflow caused by integer overflow/wraparound in viff encoder on 32-bit builds",
+          "date": "2026-04-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Prometheus has Stored XSS via metric names and label values in Prometheus web UI tooltips and metrics explorer",
+          "date": "2026-04-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Emissary has an OS Command Injection via Unvalidated IN_FILE_ENDING / OUT_FILE_ENDING in Executrix",
+          "date": "2026-04-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "External Secrets Operator has DNS-based secret exfiltration via getHostByName in External Secrets v2 template engine",
+          "date": "2026-04-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "nimiq-consensus panics via RequestMacroChain micro-block locator",
+          "date": "2026-04-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "simple-git Affected by Command Execution via Option-Parsing Bypass",
+          "date": "2026-04-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Decidim has a cross-site scripting (XSS) in user name",
+          "date": "2026-04-13",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal Desktop v8.7.0-beta.2",
+          "date": "2026-04-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "slack",
+          "title": "Managing context in long-run agentic applications",
+          "date": "2026-04-13",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8172-1: kvmtool vulnerabilities",
+          "date": "2026-04-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8170-1: Corosync vulnerabilities",
+          "date": "2026-04-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8168-1: Rust vulnerability",
+          "date": "2026-04-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8167-1: xdg-dbus-proxy vulnerability",
+          "date": "2026-04-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "LSN-0119-1: Kernel Live Patch Security Notice",
+          "date": "2026-04-13",
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-13T19:18:29.752Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
@@ -12330,46 +12619,6 @@
     },
     {
       "timestamp": "2026-04-10T10:59:16.132Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 237 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 249 patches, no changes",
-        "[INFO] paloalto - 6 patches, no changes",
-        "[INFO] redhat - 125 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 24 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 667,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "apple",
-        "debian",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "edge",
-        "gitlab",
-        "paloalto",
-        "chrome",
-        "cloudflare",
-        "gcp",
-        "fortinet"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-10T09:15:35.550Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",

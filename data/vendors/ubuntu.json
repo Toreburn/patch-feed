@@ -1,16 +1,61 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-04-13T13:54:25.067Z",
+  "lastUpdated": "2026-04-13T19:22:18.003Z",
   "health": {
-    "lastFetchAttempt": "2026-04-13T13:54:25.067Z",
+    "lastFetchAttempt": "2026-04-13T19:22:18.003Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-13T13:54:25.067Z",
+    "lastFetchNewPatches": 5,
+    "lastSuccessWithData": "2026-04-13T19:22:18.003Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "USN-8172-1: kvmtool vulnerabilities",
+      "date": "2026-04-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "kvmtool vulnerabilities",
+      "description": "It was discovered that kvmtool did not properly manage memory under certain\ncircumstances. A malicious guest attacker could use this issue to cause\nkvmtool to crash, leading to a denial of service, or...",
+      "link": "https://ubuntu.com/security/notices/USN-8172-1"
+    },
+    {
+      "title": "USN-8170-1: Corosync vulnerabilities",
+      "date": "2026-04-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Corosync vulnerabilities",
+      "description": "It was discovered that Corosync incorrectly handled the membership commit\ntoken validity check. A remote attacker could use this issue to cause\nCorosync to crash, resulting in a denial of service, or ...",
+      "link": "https://ubuntu.com/security/notices/USN-8170-1"
+    },
+    {
+      "title": "USN-8168-1: Rust vulnerability",
+      "date": "2026-04-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Rust",
+      "description": "It was discovered that tar-rs embedded in rustc incorrectly handled\nsymlinks when unpacking a tar archive. If a user or automated system were\ntricked into processing a specially crafted tar archive, a...",
+      "link": "https://ubuntu.com/security/notices/USN-8168-1"
+    },
+    {
+      "title": "USN-8167-1: xdg-dbus-proxy vulnerability",
+      "date": "2026-04-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "xdg-dbus-proxy",
+      "description": "It was discovered that xdg-dbus-proxy incorrectly handled eavesdropping\nin policy rules. A local attacker could possibly use this issue to\nintercept certain D-Bus messages....",
+      "link": "https://ubuntu.com/security/notices/USN-8167-1"
+    },
+    {
+      "title": "LSN-0119-1: Kernel Live Patch Security Notice",
+      "date": "2026-04-13",
+      "severity": "HIGH",
+      "vendor": "ubuntu",
+      "component": "Multiple Products",
+      "description": "In the Linux kernel, the following vulnerability has been\nresolved: btrfs: ref-verify: fix use-after-free after invalid ref action At\nbtrfs_ref_tree_mod() after we successfully inserted the new ref en...",
+      "link": "https://ubuntu.com/security/notices/LSN-0119-1"
+    },
     {
       "title": "USN-8166-1: RetroArch vulnerability",
       "date": "2026-04-12",
