@@ -1,7 +1,27 @@
 {
-  "lastUpdated": "2026-04-14T13:52:02.160Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-14T14:00:25.075Z",
+  "newPatches": 14,
   "patches": [
+    {
+      "title": "Securing non-human identities: automated revocation, OAuth, and scoped permissions",
+      "date": "2026-04-14",
+      "severity": "HIGH",
+      "vendor": "cloudflare",
+      "component": "DNS",
+      "description": "Agents let you build software faster than ever, but securing your environment and the code you write — from both mistakes and malice — takes real effort. Open Web Application Security Project (OWASP) ...",
+      "link": "https://blog.cloudflare.com/improved-developer-security/",
+      "cve": ""
+    },
+    {
+      "title": "Scaling MCP adoption: Our reference architecture for simpler, safer and cheaper enterprise deployments of MCP",
+      "date": "2026-04-14",
+      "severity": "CRITICAL",
+      "vendor": "cloudflare",
+      "component": "WAF",
+      "description": "We at Cloudflare have aggressively adopted Model Context Protocol (MCP) as a core part of our AI strategy. This shift has moved well beyond our engineering organization, with employees across product,...",
+      "link": "https://blog.cloudflare.com/enterprise-mcp/",
+      "cve": ""
+    },
     {
       "title": "gdown Affected by Arbitrary File Write via Path Traversal in gdown.extractall",
       "date": "2026-04-14",
@@ -713,6 +733,24 @@
       "link": "https://ubuntu.com/security/notices/USN-8149-3"
     },
     {
+      "title": "USN-8174-1: XML::Parser vulnerabilities",
+      "date": "2026-04-14",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Multiple Products",
+      "description": "It was discovered that XML::Parser incorrectly handled certain multi-byte\nUTF-8 characters. If a user or automated system were tricked into\nprocessing specially crafted XML data, a remote attacker cou...",
+      "link": "https://ubuntu.com/security/notices/USN-8174-1"
+    },
+    {
+      "title": "USN-8173-1: polkit vulnerabilities",
+      "date": "2026-04-14",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "polkit vulnerabilities",
+      "description": "It was discovered that polkit incorrectly handled nested elements in XML\npolicy files. If an administrator were tricked into installing a malicious\npolicy file, a remote attacker could possibly use th...",
+      "link": "https://ubuntu.com/security/notices/USN-8173-1"
+    },
+    {
       "title": "DSA-6209-1 xdg-dbus-proxy - security update",
       "date": "2026-04-13",
       "severity": "LOW",
@@ -1228,6 +1266,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33555.json",
       "cve": "CVE-2026-33555",
       "cvss": 4
+    },
+    {
+      "title": "CVE-2026-31416: kernel: netfilter: nfnetlink_log: account for netlink header size",
+      "date": "2026-04-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: nfnetlink_log: account for netlink header size",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31416.json",
+      "cve": "CVE-2026-31416",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-31419: kernel: net: bonding: fix use-after-free in bond_xmit_broadcast()",
+      "date": "2026-04-13",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: bonding: fix use-after-free in bond_xmit_broadcast()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31419.json",
+      "cve": "CVE-2026-31419",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-31414: kernel: netfilter: nf_conntrack_expect: use expect->helper",
+      "date": "2026-04-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: nf_conntrack_expect: use expect->helper",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31414.json",
+      "cve": "CVE-2026-31414",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-31418: kernel: netfilter: ipset: drop logically empty buckets in mtype_del",
+      "date": "2026-04-13",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: ipset: drop logically empty buckets in mtype_del",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31418.json",
+      "cve": "CVE-2026-31418",
+      "cvss": null
     },
     {
       "title": "Signal Desktop v8.7.0-beta.2",
@@ -4399,6 +4481,61 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6068.json",
       "cve": "CVE-2026-6068",
       "cvss": null
+    },
+    {
+      "title": "CVE-2026-6069: nasm: NASM: Arbitrary code execution via stack-based buffer overflow in `disasm()`",
+      "date": "2026-04-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nasm: NASM: Arbitrary code execution via stack-based buffer overflow in `disasm()`",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6069.json",
+      "cve": "CVE-2026-6069",
+      "cvss": 9.4
+    },
+    {
+      "title": "CVE-2026-6068: nasm: NASM: Heap use after free vulnerability in response file processing",
+      "date": "2026-04-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nasm: NASM: Heap use after free vulnerability in response file processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6068.json",
+      "cve": "CVE-2026-6068",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-6067: nasm: Netwide Assembler (NASM): Arbitrary code execution via malicious assembly file processing",
+      "date": "2026-04-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nasm: Netwide Assembler (NASM): Arbitrary code execution via malicious assembly file processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6067.json",
+      "cve": "CVE-2026-6067",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-6042: musl libc: GB18030 4-byte Decoder: musl libc: Denial of Service via inefficient algorithmic complexity in iconv",
+      "date": "2026-04-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "musl libc: GB18030 4-byte Decoder: musl libc: Denial of Service via inefficient algorithmic complexity in iconv",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6042.json",
+      "cve": "CVE-2026-6042",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-40200: musl: musl libc: Arbitrary code execution and denial of service via stack-based memory corruption in qsort",
+      "date": "2026-04-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "musl: musl libc: Arbitrary code execution and denial of service via stack-based memory corruption in qsort",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40200.json",
+      "cve": "CVE-2026-40200",
+      "cvss": 7.8
     },
     {
       "title": "phpseclib has a variable-time HMAC comparison in SSH2::get_binary_packet() using != instead of hash_equals()",
@@ -7744,6 +7881,17 @@
       "cvss": 8.8
     },
     {
+      "title": "CVE-2026-40024: sleuthkit: tsk_recover: The Sleuth Kit: Arbitrary code execution via path traversal in tsk_recover",
+      "date": "2026-04-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sleuthkit: tsk_recover: The Sleuth Kit: Arbitrary code execution via path traversal in tsk_recover",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40024.json",
+      "cve": "CVE-2026-40024",
+      "cvss": 7.9
+    },
+    {
       "title": "Parse Server has a login timing side-channel reveals user existence",
       "date": "2026-04-08",
       "severity": "MEDIUM",
@@ -7864,6 +8012,129 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-04-14T14:00:25.075Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[SUCCESS] cloudflare - 2 patches (2 new)",
+        "[INFO] debian - 7 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 242 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] kubernetes - 1 patches, no changes",
+        "[INFO] microsoft - 350 patches, no changes",
+        "[INFO] paloalto - 6 patches, no changes",
+        "[SUCCESS] redhat - 143 patches (10 new)",
+        "[INFO] signal - 8 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 31 patches (2 new)"
+      ],
+      "newPatchCount": 14,
+      "totalPatches": 796,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "cloudflare",
+        "github",
+        "microsoft",
+        "ubuntu",
+        "debian",
+        "redhat",
+        "signal",
+        "slack",
+        "edge",
+        "kubernetes",
+        "apple",
+        "gitlab",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cloudflare",
+          "title": "Securing non-human identities: automated revocation, OAuth, and scoped permissions",
+          "date": "2026-04-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cloudflare",
+          "title": "Scaling MCP adoption: Our reference architecture for simpler, safer and cheaper enterprise deployments of MCP",
+          "date": "2026-04-14",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31416: kernel: netfilter: nfnetlink_log: account for netlink header size",
+          "date": "2026-04-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31419: kernel: net: bonding: fix use-after-free in bond_xmit_broadcast()",
+          "date": "2026-04-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31414: kernel: netfilter: nf_conntrack_expect: use expect->helper",
+          "date": "2026-04-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31418: kernel: netfilter: ipset: drop logically empty buckets in mtype_del",
+          "date": "2026-04-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6069: nasm: NASM: Arbitrary code execution via stack-based buffer overflow in `disasm()`",
+          "date": "2026-04-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6068: nasm: NASM: Heap use after free vulnerability in response file processing",
+          "date": "2026-04-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6067: nasm: Netwide Assembler (NASM): Arbitrary code execution via malicious assembly file processing",
+          "date": "2026-04-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6042: musl libc: GB18030 4-byte Decoder: musl libc: Denial of Service via inefficient algorithmic complexity in iconv",
+          "date": "2026-04-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-40200: musl: musl libc: Arbitrary code execution and denial of service via stack-based memory corruption in qsort",
+          "date": "2026-04-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-40024: sleuthkit: tsk_recover: The Sleuth Kit: Arbitrary code execution via path traversal in tsk_recover",
+          "date": "2026-04-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8174-1: XML::Parser vulnerabilities",
+          "date": "2026-04-14",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8173-1: polkit vulnerabilities",
+          "date": "2026-04-14",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-04-14T13:52:02.160Z",
       "logs": [
@@ -12131,44 +12402,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-04-11T02:36:16.130Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 224 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 249 patches, no changes",
-        "[INFO] paloalto - 6 patches, no changes",
-        "[INFO] redhat - 193 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 26 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 721,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "github",
-        "microsoft",
-        "apple",
-        "debian",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "edge",
-        "gitlab",
-        "paloalto",
-        "chrome",
-        "cloudflare",
-        "gcp"
-      ],
-      "newPatches": []
     }
   ]
 }
