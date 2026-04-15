@@ -1,16 +1,104 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-04-15T13:52:09.107Z",
+  "lastUpdated": "2026-04-15T19:26:28.767Z",
   "health": {
-    "lastFetchAttempt": "2026-04-15T13:52:09.107Z",
+    "lastFetchAttempt": "2026-04-15T19:26:28.767Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-15T13:52:09.107Z",
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-04-15T19:26:28.767Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "thin-vec: Use-After-Free and Double Free in IntoIter::drop When Element Drop Panics",
+      "date": "2026-04-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "thin-vec",
+      "description": "thin-vec: Use-After-Free and Double Free in IntoIter::drop When Element Drop Panics",
+      "link": "https://github.com/advisories/GHSA-xphw-cqx3-667j",
+      "cve": "",
+      "cvss": 7.3
+    },
+    {
+      "title": "Fastify has a Body Schema Validation Bypass via Leading Space in Content-Type Header",
+      "date": "2026-04-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "fastify",
+      "description": "Fastify has a Body Schema Validation Bypass via Leading Space in Content-Type Header",
+      "link": "https://github.com/advisories/GHSA-247c-9743-5963",
+      "cve": "CVE-2026-33806",
+      "cvss": 7.5
+    },
+    {
+      "title": "OAuth2 Proxy has an Authentication Bypass via Fragment Confusion in skip_auth_routes and skip_auth_regex",
+      "date": "2026-04-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/oauth2-proxy/oauth2-proxy/v7",
+      "description": "OAuth2 Proxy has an Authentication Bypass via Fragment Confusion in skip_auth_routes and skip_auth_regex",
+      "link": "https://github.com/advisories/GHSA-pxq7-h93f-9jrg",
+      "cve": "",
+      "cvss": 8.2
+    },
+    {
+      "title": "OAuth2 Proxy has an Authorization Bypass in Email Domain Validation via Malformed Multi-@ Email Claims",
+      "date": "2026-04-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/oauth2-proxy/oauth2-proxy/v7",
+      "description": "OAuth2 Proxy has an Authorization Bypass in Email Domain Validation via Malformed Multi-@ Email Claims",
+      "link": "https://github.com/advisories/GHSA-c5c4-8r6x-56w3",
+      "cve": "CVE-2026-40574",
+      "cvss": 6.8
+    },
+    {
+      "title": "OAuth2 Proxy has an Authentication Bypass via X-Forwarded-Uri Header Spoofing",
+      "date": "2026-04-15",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/oauth2-proxy/oauth2-proxy/v7",
+      "description": "OAuth2 Proxy has an Authentication Bypass via X-Forwarded-Uri Header Spoofing",
+      "link": "https://github.com/advisories/GHSA-7x63-xv5r-3p2x",
+      "cve": "CVE-2026-40575",
+      "cvss": 9.1
+    },
+    {
+      "title": "Data Sharing Framework has an Inverted Time Comparison in OIDC JWKS and Token Cache",
+      "date": "2026-04-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "dev.dsf:dsf-bpe-process-api-v2, dev.dsf:dsf-bpe-server",
+      "description": "Data Sharing Framework has an Inverted Time Comparison in OIDC JWKS and Token Cache",
+      "link": "https://github.com/advisories/GHSA-xmj9-7625-f634",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Data Sharing Framework is Missing Session Timeout for OIDC Sessions",
+      "date": "2026-04-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "dev.dsf:dsf-common-jetty, dev.dsf:dsf-fhir-server, dev.dsf:dsf-bpe-server",
+      "description": "Data Sharing Framework is Missing Session Timeout for OIDC Sessions",
+      "link": "https://github.com/advisories/GHSA-gj7p-595x-qwf5",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Sync-in Server has Username Enumeration via Timing Attack",
+      "date": "2026-04-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@sync-in/server",
+      "description": "Sync-in Server has Username Enumeration via Timing Attack",
+      "link": "https://github.com/advisories/GHSA-43fj-qp3h-hrh5",
+      "cve": "",
+      "cvss": null
+    },
     {
       "title": "gdown Affected by Arbitrary File Write via Path Traversal in gdown.extractall",
       "date": "2026-04-14",
