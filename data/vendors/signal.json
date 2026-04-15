@@ -1,16 +1,29 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-14T19:26:00.483Z",
+  "lastUpdated": "2026-04-15T03:19:28.970Z",
   "health": {
-    "lastFetchAttempt": "2026-04-14T19:26:00.483Z",
+    "lastFetchAttempt": "2026-04-15T03:19:28.970Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-14T19:26:00.483Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-04-15T03:19:28.970Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "WWBN AVideo: Missing CSRF Protection on State-Changing JSON Endpoints Enables Forced Comment Creation, Vote Manipulation, and Category Asset Deletion",
+      "date": "2026-04-14",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nMultiple AVideo JSON endpoints under `objects/` accept state-changing requests via `$_REQUEST`/`$_GET` and persist changes tied to the caller's session user, without any anti-CSRF token, o",
+      "link": "https://github.com/advisories/GHSA-x2pw-9c38-cp2j",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.7.0-beta.2",
       "date": "2026-04-13",
