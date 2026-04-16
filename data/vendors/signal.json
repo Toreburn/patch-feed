@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-15T19:27:06.540Z",
+  "lastUpdated": "2026-04-16T03:27:45.507Z",
   "health": {
-    "lastFetchAttempt": "2026-04-15T19:27:06.540Z",
+    "lastFetchAttempt": "2026-04-16T03:27:45.507Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 4,
-    "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-04-15T19:27:06.540Z",
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-04-16T03:27:45.507Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Fastify's connection header abuse enables stripping of proxy-added headers",
+      "date": "2026-04-16",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\n`@fastify/reply-from` and `@fastify/http-proxy` process the client's `Connection` header after the proxy has added its own headers via `rewriteRequestHeaders`. This allows attackers to re",
+      "link": "https://github.com/advisories/GHSA-gwhp-pf74-vj37",
+      "cves": [
+        "CVE-2026-33805"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.7.0",
       "date": "2026-04-15",
@@ -19,6 +34,19 @@
       "component": "Signal Desktop",
       "description": "- Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!",
       "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.7.0",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "Signal Desktop v8.8.0-beta.1",
+      "date": "2026-04-15",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "Handful of bug fixes to keep your app running smoothly. More exciting changes on the horizon!",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.8.0-beta.1",
       "cves": [],
       "platform": [
         "Desktop"
