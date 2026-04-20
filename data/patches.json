@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-20T13:50:14.642Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-20T13:58:36.779Z",
+  "newPatches": 5,
   "patches": [
     {
       "title": "credcheck v4.7 has been released",
@@ -21,6 +21,17 @@
       "description": "Antananarivo, Madagascar - April 19, 2026 PostgreSQL DBMS_JOB compatibility extension pg_dbms_job is a new PostgreSQL extension to create, manage and use Oracle-style DBMS_JOB scheduled job. The use a...",
       "link": "https://www.postgresql.org/about/news/pg_dbms_job-v20-released-3278/",
       "cve": ""
+    },
+    {
+      "title": "CVE-2026-6587: vibrantlabsai RAGAS: vibrantlabsai RAGAS: Server-Side Request Forgery via retrieved_contexts argument manipulation",
+      "date": "2026-04-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vibrantlabsai RAGAS: vibrantlabsai RAGAS: Server-Side Request Forgery via retrieved_contexts argument manipulation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6587.json",
+      "cve": "CVE-2026-6587",
+      "cvss": 8.1
     },
     {
       "title": "DSA-6219-1 pillow - security update",
@@ -680,6 +691,17 @@
       "link": "https://github.com/advisories/GHSA-xvj8-ph7x-65gf",
       "cve": "CVE-2026-40880",
       "cvss": null
+    },
+    {
+      "title": "CVE-2026-41254: Little CMS: lcms2: mm2/Little-CMS: Little CMS: Information disclosure or denial of service via integer overflow in CubeS",
+      "date": "2026-04-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Little CMS: lcms2: mm2/Little-CMS: Little CMS: Information disclosure or denial of service via integer overflow in CubeSize",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41254.json",
+      "cve": "CVE-2026-41254",
+      "cvss": 6.1
     },
     {
       "title": "CVE-2026-6437 - Mount Option Injection in Amazon EFS CSI Driver",
@@ -2084,6 +2106,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3605.json",
       "cve": "CVE-2026-3605",
       "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-40340: libgphoto2: libgphoto2: Information disclosure and denial of service via out-of-bounds read",
+      "date": "2026-04-17",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libgphoto2: libgphoto2: Information disclosure and denial of service via out-of-bounds read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40340.json",
+      "cve": "CVE-2026-40340",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-40299: next-intl: next-intl: Open Redirect vulnerability allows off-site redirection via crafted URLs",
+      "date": "2026-04-17",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "next-intl: next-intl: Open Redirect vulnerability allows off-site redirection via crafted URLs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40299.json",
+      "cve": "CVE-2026-40299",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-6437: github.com/kubernetes-sigs/aws-efs-csi-driver: AWS EFS CSI Driver: Arbitrary mount option injection",
+      "date": "2026-04-17",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/kubernetes-sigs/aws-efs-csi-driver: AWS EFS CSI Driver: Arbitrary mount option injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6437.json",
+      "cve": "CVE-2026-6437",
+      "cvss": 6.5
     },
     {
       "title": "Dapr: Service Invocation path traversal ACL bypass",
@@ -8194,6 +8249,81 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-20T13:58:36.779Z",
+      "logs": [
+        "[INFO] aws - 6 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 12 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 10 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 26 patches, no changes",
+        "[INFO] gcp - 2 patches, no changes",
+        "[INFO] github - 217 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] mssql - 3 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 113 patches (5 new)",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 26 patches, no changes"
+      ],
+      "newPatchCount": 5,
+      "totalPatches": 831,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "postgresql",
+        "redhat",
+        "debian",
+        "microsoft",
+        "github",
+        "aws",
+        "signal",
+        "ubuntu",
+        "cisco",
+        "edge",
+        "gcp",
+        "chrome",
+        "fortinet",
+        "cloudflare",
+        "crowdstrike",
+        "mssql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6587: vibrantlabsai RAGAS: vibrantlabsai RAGAS: Server-Side Request Forgery via retrieved_contexts argument manipulation",
+          "date": "2026-04-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-41254: Little CMS: lcms2: mm2/Little-CMS: Little CMS: Information disclosure or denial of service via integer overflow in CubeS",
+          "date": "2026-04-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-40340: libgphoto2: libgphoto2: Information disclosure and denial of service via out-of-bounds read",
+          "date": "2026-04-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-40299: next-intl: next-intl: Open Redirect vulnerability allows off-site redirection via crafted URLs",
+          "date": "2026-04-17",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6437: github.com/kubernetes-sigs/aws-efs-csi-driver: AWS EFS CSI Driver: Arbitrary mount option injection",
+          "date": "2026-04-17",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-20T13:50:14.641Z",
       "logs": [
         "[INFO] aws - 6 patches, no changes",
@@ -12284,52 +12414,6 @@
         "crowdstrike",
         "mssql",
         "slack"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-16T22:46:18.563Z",
-      "logs": [
-        "[INFO] aws - 5 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 12 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 26 patches, no changes",
-        "[INFO] gcp - 2 patches, no changes",
-        "[INFO] github - 205 patches, no changes",
-        "[INFO] kubernetes - 1 patches, no changes",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] mssql - 3 patches, no changes",
-        "[INFO] redhat - 147 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 22 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 898,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 17,
-      "vendors": [
-        "cisco",
-        "gcp",
-        "github",
-        "microsoft",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "debian",
-        "edge",
-        "fortinet",
-        "redhat",
-        "aws",
-        "cloudflare",
-        "crowdstrike",
-        "mssql",
-        "slack",
-        "kubernetes"
       ],
       "newPatches": []
     }
