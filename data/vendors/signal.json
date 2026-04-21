@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-21T13:57:28.419Z",
+  "lastUpdated": "2026-04-21T19:21:33.225Z",
   "health": {
-    "lastFetchAttempt": "2026-04-21T13:57:28.419Z",
+    "lastFetchAttempt": "2026-04-21T19:21:33.225Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-21T13:57:28.419Z",
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-04-21T19:21:33.225Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Signal K Server has an Unauthenticated Regular Expression Denial of Service (ReDoS) via WebSocket Subscription Paths",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\nThe SignalK server is vulnerable to an unauthenticated Regular Expression Denial of Service (ReDoS) attack within its WebSocket subscription handling logic. By injecting unescaped regex met",
+      "link": "https://github.com/advisories/GHSA-7gcj-phff-2884",
+      "cves": [
+        "CVE-2026-39320"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Dapr: Service Invocation path traversal ACL bypass",
       "date": "2026-04-17",
