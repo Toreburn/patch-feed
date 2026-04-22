@@ -1,12 +1,12 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-04-21T19:20:54.709Z",
+  "lastUpdated": "2026-04-22T03:21:03.838Z",
   "health": {
-    "lastFetchAttempt": "2026-04-21T19:20:54.709Z",
+    "lastFetchAttempt": "2026-04-22T03:21:03.838Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 31,
-    "lastSuccessWithData": "2026-04-21T19:20:54.709Z",
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-04-22T03:21:03.838Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -353,6 +353,83 @@
       "cvss": 8.1
     },
     {
+      "title": "Astro: XSS in define:vars via incomplete </script> tag sanitization",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "astro",
+      "description": "Astro: XSS in define:vars via incomplete </script> tag sanitization",
+      "link": "https://github.com/advisories/GHSA-j687-52p2-xcff",
+      "cve": "CVE-2026-41067",
+      "cvss": 6.1
+    },
+    {
+      "title": "lxml: Default configuration of iterparse() and ETCompatXMLParser() allows XXE to local files",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "lxml",
+      "description": "lxml: Default configuration of iterparse() and ETCompatXMLParser() allows XXE to local files",
+      "link": "https://github.com/advisories/GHSA-vfmq-68hx-4jfw",
+      "cve": "CVE-2026-41066",
+      "cvss": 7.5
+    },
+    {
+      "title": "Tekton Pipeline: Git Resolver Unsanitized Revision Parameter Enables git Argument Injection Leading to RCE",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/tektoncd/pipeline",
+      "description": "Tekton Pipeline: Git Resolver Unsanitized Revision Parameter Enables git Argument Injection Leading to RCE",
+      "link": "https://github.com/advisories/GHSA-94jr-7pqp-xhcq",
+      "cve": "CVE-2026-40938",
+      "cvss": 7.5
+    },
+    {
+      "title": "Tekton Pipelines: HTTP Resolver Unbounded Response Body Read Enables Denial of Service via Memory Exhaustion",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/tektoncd/pipeline",
+      "description": "Tekton Pipelines: HTTP Resolver Unbounded Response Body Read Enables Denial of Service via Memory Exhaustion",
+      "link": "https://github.com/advisories/GHSA-m2cx-gpqf-qf74",
+      "cve": "CVE-2026-40924",
+      "cvss": 6.5
+    },
+    {
+      "title": "Tekton Pipelines: VolumeMount path restriction bypass via missing filepath.Clean in /tekton/ check",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/tektoncd/pipeline",
+      "description": "Tekton Pipelines: VolumeMount path restriction bypass via missing filepath.Clean in /tekton/ check",
+      "link": "https://github.com/advisories/GHSA-rx35-6rhx-7858",
+      "cve": "CVE-2026-40923",
+      "cvss": 5.4
+    },
+    {
+      "title": "Flowise: CSV Agent Prompt Injection Remote Code Execution Vulnerability",
+      "date": "2026-04-21",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "flowise, flowise-components",
+      "description": "Flowise: CSV Agent Prompt Injection Remote Code Execution Vulnerability",
+      "link": "https://github.com/advisories/GHSA-3hjv-c53m-58jj",
+      "cve": "CVE-2026-41264",
+      "cvss": null
+    },
+    {
+      "title": "Brillig: Heap corruption in foreign call results with nested tuple arrays",
+      "date": "2026-04-21",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "brillig",
+      "description": "Brillig: Heap corruption in foreign call results with nested tuple arrays",
+      "link": "https://github.com/advisories/GHSA-jj7c-x25r-r8r3",
+      "cve": "CVE-2026-41197",
+      "cvss": null
+    },
+    {
       "title": "Zebra Vulnerable to Consensus Divergence in Transparent Sighash Hash-Type Handling",
       "date": "2026-04-18",
       "severity": "CRITICAL",
@@ -538,6 +615,17 @@
       "link": "https://github.com/advisories/GHSA-xvj8-ph7x-65gf",
       "cve": "CVE-2026-40880",
       "cvss": null
+    },
+    {
+      "title": "Apache Airflow allows code execution through crafted XCom payloads",
+      "date": "2026-04-18",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "apache-airflow-core",
+      "description": "Apache Airflow allows code execution through crafted XCom payloads",
+      "link": "https://github.com/advisories/GHSA-6ffj-2wg2-w45j",
+      "cve": "CVE-2026-25917",
+      "cvss": 9.8
     },
     {
       "title": "elFinder: Command injection in resize background color parameter when using ImageMagick CLI",

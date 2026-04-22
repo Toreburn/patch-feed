@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-04-22T02:53:00.174Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-22T03:22:42.083Z",
+  "newPatches": 15,
   "patches": [
+    {
+      "title": "CrowdStrike Falcon Platform Achieves 441% ROI in Three Years",
+      "date": "2026-04-21",
+      "severity": "UNKNOWN",
+      "vendor": "crowdstrike",
+      "component": "Falcon Platform",
+      "description": "",
+      "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-falcon-platform-achieves-441-percent-roi-in-three-years/",
+      "cve": ""
+    },
     {
       "title": "DSA-6221-1 ntfs-3g - security update",
       "date": "2026-04-21",
@@ -10,6 +20,17 @@
       "component": "ntfs-3g",
       "description": "Andrea Bocchetti discovered a heap-based buffer overflow in NTFS-3G, a read-write NTFS driver for FUSE. A local user can take advantage of this flaw for local root privilege escalation. https://securi...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00131.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6222-1 ngtcp2 - security update",
+      "date": "2026-04-21",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "ngtcp2",
+      "description": "Zou Dikai discovered a buffer overflow in ngtcp2, a QUIC protocol library. https://security-tracker.debian.org/tracker/DSA-6222-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00132.html",
       "cve": "",
       "cves": []
     },
@@ -353,6 +374,83 @@
       "link": "https://github.com/advisories/GHSA-fg79-cr9c-7369",
       "cve": "CVE-2026-25524",
       "cvss": 8.1
+    },
+    {
+      "title": "Astro: XSS in define:vars via incomplete </script> tag sanitization",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "astro",
+      "description": "Astro: XSS in define:vars via incomplete </script> tag sanitization",
+      "link": "https://github.com/advisories/GHSA-j687-52p2-xcff",
+      "cve": "CVE-2026-41067",
+      "cvss": 6.1
+    },
+    {
+      "title": "lxml: Default configuration of iterparse() and ETCompatXMLParser() allows XXE to local files",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "lxml",
+      "description": "lxml: Default configuration of iterparse() and ETCompatXMLParser() allows XXE to local files",
+      "link": "https://github.com/advisories/GHSA-vfmq-68hx-4jfw",
+      "cve": "CVE-2026-41066",
+      "cvss": 7.5
+    },
+    {
+      "title": "Tekton Pipeline: Git Resolver Unsanitized Revision Parameter Enables git Argument Injection Leading to RCE",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/tektoncd/pipeline",
+      "description": "Tekton Pipeline: Git Resolver Unsanitized Revision Parameter Enables git Argument Injection Leading to RCE",
+      "link": "https://github.com/advisories/GHSA-94jr-7pqp-xhcq",
+      "cve": "CVE-2026-40938",
+      "cvss": 7.5
+    },
+    {
+      "title": "Tekton Pipelines: HTTP Resolver Unbounded Response Body Read Enables Denial of Service via Memory Exhaustion",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/tektoncd/pipeline",
+      "description": "Tekton Pipelines: HTTP Resolver Unbounded Response Body Read Enables Denial of Service via Memory Exhaustion",
+      "link": "https://github.com/advisories/GHSA-m2cx-gpqf-qf74",
+      "cve": "CVE-2026-40924",
+      "cvss": 6.5
+    },
+    {
+      "title": "Tekton Pipelines: VolumeMount path restriction bypass via missing filepath.Clean in /tekton/ check",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/tektoncd/pipeline",
+      "description": "Tekton Pipelines: VolumeMount path restriction bypass via missing filepath.Clean in /tekton/ check",
+      "link": "https://github.com/advisories/GHSA-rx35-6rhx-7858",
+      "cve": "CVE-2026-40923",
+      "cvss": 5.4
+    },
+    {
+      "title": "Flowise: CSV Agent Prompt Injection Remote Code Execution Vulnerability",
+      "date": "2026-04-21",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "flowise, flowise-components",
+      "description": "Flowise: CSV Agent Prompt Injection Remote Code Execution Vulnerability",
+      "link": "https://github.com/advisories/GHSA-3hjv-c53m-58jj",
+      "cve": "CVE-2026-41264",
+      "cvss": null
+    },
+    {
+      "title": "Brillig: Heap corruption in foreign call results with nested tuple arrays",
+      "date": "2026-04-21",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "brillig",
+      "description": "Brillig: Heap corruption in foreign call results with nested tuple arrays",
+      "link": "https://github.com/advisories/GHSA-jj7c-x25r-r8r3",
+      "cve": "CVE-2026-41197",
+      "cvss": null
     },
     {
       "title": "CVE-2026-35414: CVE-2026-35414",
@@ -1255,6 +1353,38 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32157"
     },
     {
+      "title": "Oracle Critical Patch Update Advisory - April 2026",
+      "date": "2026-04-21",
+      "severity": "CRITICAL",
+      "vendor": "oracle-db",
+      "component": "Oracle Products",
+      "description": "",
+      "link": "https://www.oracle.com/security-alerts/cpuapr2026.html",
+      "cve": ""
+    },
+    {
+      "title": "CVE-2026-39946: OpenBao: OpenBao: SQL injection via improper database quoting during PostgreSQL role revocation",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenBao: OpenBao: SQL injection via improper database quoting during PostgreSQL role revocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-39946.json",
+      "cve": "CVE-2026-39946",
+      "cvss": 4.9
+    },
+    {
+      "title": "CVE-2026-39377: nbconvert: nbconvert: Arbitrary file write via crafted Jupyter notebook cell attachment filenames",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nbconvert: nbconvert: Arbitrary file write via crafted Jupyter notebook cell attachment filenames",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-39377.json",
+      "cve": "CVE-2026-39377",
+      "cvss": 6.5
+    },
+    {
       "title": "Signal K Server has an Unauthenticated Regular Expression Denial of Service (ReDoS) via WebSocket Subscription Paths",
       "date": "2026-04-21",
       "severity": "HIGH",
@@ -1801,6 +1931,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31429.json",
       "cve": "CVE-2026-31429",
       "cvss": 6.6
+    },
+    {
+      "title": "CVE-2026-6654: thin-vec: mozilla/thin-vec: Memory corruption vulnerability via Double-Free/Use-After-Free",
+      "date": "2026-04-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thin-vec: mozilla/thin-vec: Memory corruption vulnerability via Double-Free/Use-After-Free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6654.json",
+      "cve": "CVE-2026-6654",
+      "cvss": 7.3
     },
     {
       "title": "DSA-6219-1 pillow - security update",
@@ -2460,6 +2601,17 @@
       "link": "https://github.com/advisories/GHSA-xvj8-ph7x-65gf",
       "cve": "CVE-2026-40880",
       "cvss": null
+    },
+    {
+      "title": "Apache Airflow allows code execution through crafted XCom payloads",
+      "date": "2026-04-18",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "apache-airflow-core",
+      "description": "Apache Airflow allows code execution through crafted XCom payloads",
+      "link": "https://github.com/advisories/GHSA-6ffj-2wg2-w45j",
+      "cve": "CVE-2026-25917",
+      "cvss": 9.8
     },
     {
       "title": "CVE-2026-41254: Little CMS: lcms2: mm2/Little-CMS: Little CMS: Information disclosure or denial of service via integer overflow in CubeS",
@@ -4029,6 +4181,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40477.json",
       "cve": "CVE-2026-40477",
       "cvss": 8.5
+    },
+    {
+      "title": "CVE-2026-40293: OpenFGA: github.com/openfga/openfga: OpenFGA: Information disclosure of preshared API key via playground endpoint",
+      "date": "2026-04-17",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenFGA: github.com/openfga/openfga: OpenFGA: Information disclosure of preshared API key via playground endpoint",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40293.json",
+      "cve": "CVE-2026-40293",
+      "cvss": 7.5
     },
     {
       "title": "Dapr: Service Invocation path traversal ACL bypass",
@@ -5613,6 +5776,135 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-04-22T03:22:42.082Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[SUCCESS] crowdstrike - 2 patches (1 new)",
+        "[SUCCESS] debian - 9 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 160 patches (8 new)",
+        "[INFO] microsoft - 350 patches, no changes",
+        "[SUCCESS] oracle-db - 1 patches (1 new)",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 41 patches (4 new)",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 17 patches, no changes"
+      ],
+      "newPatchCount": 15,
+      "totalPatches": 591,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "crowdstrike",
+        "debian",
+        "github",
+        "microsoft",
+        "oracle-db",
+        "redhat",
+        "signal",
+        "aws",
+        "postgresql",
+        "ubuntu",
+        "cisco",
+        "edge",
+        "gcp"
+      ],
+      "newPatches": [
+        {
+          "vendor": "crowdstrike",
+          "title": "CrowdStrike Falcon Platform Achieves 441% ROI in Three Years",
+          "date": "2026-04-21",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6222-1 ngtcp2 - security update",
+          "date": "2026-04-21",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Astro: XSS in define:vars via incomplete </script> tag sanitization",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "lxml: Default configuration of iterparse() and ETCompatXMLParser() allows XXE to local files",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Tekton Pipeline: Git Resolver Unsanitized Revision Parameter Enables git Argument Injection Leading to RCE",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Tekton Pipelines: HTTP Resolver Unbounded Response Body Read Enables Denial of Service via Memory Exhaustion",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Tekton Pipelines: VolumeMount path restriction bypass via missing filepath.Clean in /tekton/ check",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Flowise: CSV Agent Prompt Injection Remote Code Execution Vulnerability",
+          "date": "2026-04-21",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Brillig: Heap corruption in foreign call results with nested tuple arrays",
+          "date": "2026-04-21",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Apache Airflow allows code execution through crafted XCom payloads",
+          "date": "2026-04-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "oracle-db",
+          "title": "Oracle Critical Patch Update Advisory - April 2026",
+          "date": "2026-04-21",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-39946: OpenBao: OpenBao: SQL injection via improper database quoting during PostgreSQL role revocation",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-39377: nbconvert: nbconvert: Arbitrary file write via crafted Jupyter notebook cell attachment filenames",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6654: thin-vec: mozilla/thin-vec: Memory corruption vulnerability via Double-Free/Use-After-Free",
+          "date": "2026-04-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-40293: OpenFGA: github.com/openfga/openfga: OpenFGA: Information disclosure of preshared API key via playground endpoint",
+          "date": "2026-04-17",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-04-22T02:53:00.174Z",
       "logs": [
@@ -9223,50 +9515,6 @@
     },
     {
       "timestamp": "2026-04-18T13:15:56.932Z",
-      "logs": [
-        "[INFO] aws - 6 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 12 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 26 patches, no changes",
-        "[INFO] gcp - 2 patches, no changes",
-        "[INFO] github - 231 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] mssql - 3 patches, no changes",
-        "[INFO] redhat - 162 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 35 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 904,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "github",
-        "aws",
-        "debian",
-        "microsoft",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "cisco",
-        "edge",
-        "gcp",
-        "chrome",
-        "fortinet",
-        "cloudflare",
-        "crowdstrike",
-        "mssql",
-        "slack"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-18T13:10:00.942Z",
       "logs": [
         "[INFO] aws - 6 patches, no changes",
         "[INFO] chrome - 4 patches, no changes",
