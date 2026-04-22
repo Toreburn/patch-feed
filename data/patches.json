@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-04-22T13:50:53.365Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-22T13:59:04.931Z",
+  "newPatches": 61,
   "patches": [
+    {
+      "title": "DSA-6225-1 firefox-esr - security update",
+      "date": "2026-04-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "firefox-esr",
+      "description": "Multiple security issues have been found in the Mozilla Firefox web browser, which could potentially result in the execution of arbitrary code, spoofing, information disclosure or privilege escalation...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00135.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6224-1 xdg-dbus-proxy - security update",
+      "date": "2026-04-22",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "xdg-dbus-proxy",
+      "description": "It was discovered that incorrect parsing of policy rules in the xdg-dbus-proxy (a filtering proxy for D-Bus connections) allowed the bypass of eavesdrop restrictions, which could result in information...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00134.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6223-1 flatpak - security update",
+      "date": "2026-04-22",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "flatpak",
+      "description": "Multiple security vulnerabilities were discovered in Flatpak, an application deployment framework for desktop apps, which could allow a Flatpak app to delete arbitrary hosts on the host or break out o...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00133.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "GitLab Patch Release: 18.11.1, 18.10.4, 18.9.6",
       "date": "2026-04-22",
@@ -10,6 +43,39 @@
       "component": "GitLab CE/EE",
       "description": "Security fixes for CVE-2026-4922, CVE-2026-4922, CVE-2026-5816...",
       "link": "https://about.gitlab.com/releases/2026/04/22/patch-release-gitlab-18-11-1-released/"
+    },
+    {
+      "title": "CVE-2026-31433: kernel: ksmbd: fix potencial OOB in get_file_all_info() for compound requests",
+      "date": "2026-04-22",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ksmbd: fix potencial OOB in get_file_all_info() for compound requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31433.json",
+      "cve": "CVE-2026-31433",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-31432: kernel: ksmbd: fix OOB write in QUERY_INFO for compound requests",
+      "date": "2026-04-22",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ksmbd: fix OOB write in QUERY_INFO for compound requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31432.json",
+      "cve": "CVE-2026-31432",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-31431: kernel: crypto: algif_aead - Revert to operating out-of-place",
+      "date": "2026-04-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: algif_aead - Revert to operating out-of-place",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31431.json",
+      "cve": "CVE-2026-31431",
+      "cvss": 5.5
     },
     {
       "title": "CrowdStrike Falcon Platform Achieves 441% ROI in Three Years",
@@ -1394,6 +1460,556 @@
       "cvss": 6.5
     },
     {
+      "title": "CVE-2026-40906: electric-sql: ElectricSQL: Critical data compromise and loss via SQL injection",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "electric-sql: ElectricSQL: Critical data compromise and loss via SQL injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40906.json",
+      "cve": "CVE-2026-40906",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-22008: openjdk: OpenJDK: Improved Arena allocations (Oracle CPU 2026-04)",
+      "date": "2026-04-21",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openjdk: OpenJDK: Improved Arena allocations (Oracle CPU 2026-04)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-22008.json",
+      "cve": "CVE-2026-22008",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-22007: openjdk: OpenJDK: Enhance crypto algorithm support (Oracle CPU 2026-04)",
+      "date": "2026-04-21",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openjdk: OpenJDK: Enhance crypto algorithm support (Oracle CPU 2026-04)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-22007.json",
+      "cve": "CVE-2026-22007",
+      "cvss": 2.9
+    },
+    {
+      "title": "CVE-2026-22016: openjdk: OpenJDK: Enhance Path Factories Redux (Oracle CPU 2026-04)",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openjdk: OpenJDK: Enhance Path Factories Redux (Oracle CPU 2026-04)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-22016.json",
+      "cve": "CVE-2026-22016",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-22013: openjdk: OpenJDK: Improve Kerberos credentialing (Oracle CPU 2026-04)",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openjdk: OpenJDK: Improve Kerberos credentialing (Oracle CPU 2026-04)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-22013.json",
+      "cve": "CVE-2026-22013",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-22018: openjdk: OpenJDK: Enhance Zip file reading (Oracle CPU 2026-04)",
+      "date": "2026-04-21",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openjdk: OpenJDK: Enhance Zip file reading (Oracle CPU 2026-04)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-22018.json",
+      "cve": "CVE-2026-22018",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-34268: openjdk: OpenJDK: Enhance key generation (Oracle CPU 2026-04)",
+      "date": "2026-04-21",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openjdk: OpenJDK: Enhance key generation (Oracle CPU 2026-04)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34268.json",
+      "cve": "CVE-2026-34268",
+      "cvss": 2.9
+    },
+    {
+      "title": "CVE-2026-6786: firefox: thunderbird: Memory safety bugs fixed in Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbir",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Memory safety bugs fixed in Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbird 150",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6786.json",
+      "cve": "CVE-2026-6786",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6784: Firefox: Thunderbird: Firefox and Thunderbird: Arbitrary code execution via memory safety bugs",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Firefox: Thunderbird: Firefox and Thunderbird: Arbitrary code execution via memory safety bugs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6784.json",
+      "cve": "CVE-2026-6784",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6785: firefox: thunderbird: Memory safety bugs fixed in Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird ESR 140.10, Firefo",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Memory safety bugs fixed in Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbird 150",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6785.json",
+      "cve": "CVE-2026-6785",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6783: firefox: Firefox: Arbitrary code execution or denial of service in Audio/Video Playback component",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Firefox: Arbitrary code execution or denial of service in Audio/Video Playback component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6783.json",
+      "cve": "CVE-2026-6783",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-6782: Firefox: Firefox: Information disclosure in the IP Protection component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Firefox: Firefox: Information disclosure in the IP Protection component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6782.json",
+      "cve": "CVE-2026-6782",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-6781: firefox: Firefox: Denial of Service in Audio/Video Playback component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Firefox: Denial of Service in Audio/Video Playback component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6781.json",
+      "cve": "CVE-2026-6781",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6780: firefox: Firefox: Denial of Service in Audio/Video Playback component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Firefox: Denial of Service in Audio/Video Playback component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6780.json",
+      "cve": "CVE-2026-6780",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6778: CVE-2026-6778",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6778.json",
+      "cve": "CVE-2026-6778",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-6779: JavaScript Engine: Firefox: Firefox: Unspecified vulnerability in JavaScript Engine",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "JavaScript Engine: Firefox: Firefox: Unspecified vulnerability in JavaScript Engine",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6779.json",
+      "cve": "CVE-2026-6779",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-6777: Firefox: Firefox: Unspecified security flaw in Networking: DNS component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Firefox: Firefox: Unspecified security flaw in Networking: DNS component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6777.json",
+      "cve": "CVE-2026-6777",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-6776: firefox: Incorrect boundary conditions in the WebRTC: Networking component",
+      "date": "2026-04-21",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Incorrect boundary conditions in the WebRTC: Networking component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6776.json",
+      "cve": "CVE-2026-6776",
+      "cvss": 3.4
+    },
+    {
+      "title": "CVE-2026-6775: WebRTC: Firefox: WebRTC: System disruption and unauthorized control via incorrect boundary conditions",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "WebRTC: Firefox: WebRTC: System disruption and unauthorized control via incorrect boundary conditions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6775.json",
+      "cve": "CVE-2026-6775",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-6774: Firefox: Firefox: Mitigation bypass in DOM Security component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Firefox: Firefox: Mitigation bypass in DOM Security component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6774.json",
+      "cve": "CVE-2026-6774",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6773: WebGPU: Firefox: WebGPU: Denial of Service via integer overflow",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "WebGPU: Firefox: WebGPU: Denial of Service via integer overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6773.json",
+      "cve": "CVE-2026-6773",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6772: firefox: Incorrect boundary conditions in the Libraries component in NSS",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Incorrect boundary conditions in the Libraries component in NSS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6772.json",
+      "cve": "CVE-2026-6772",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6770: firefox: Other issue in the Storage: IndexedDB component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Other issue in the Storage: IndexedDB component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6770.json",
+      "cve": "CVE-2026-6770",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6771: firefox: Mitigation bypass in the DOM: Security component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Mitigation bypass in the DOM: Security component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6771.json",
+      "cve": "CVE-2026-6771",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6769: firefox: Privilege escalation in the Debugger component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Privilege escalation in the Debugger component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6769.json",
+      "cve": "CVE-2026-6769",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6768: Firefox: Networking: Cookies: Firefox: Mitigation bypass in Networking: Cookies component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Firefox: Networking: Cookies: Firefox: Mitigation bypass in Networking: Cookies component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6768.json",
+      "cve": "CVE-2026-6768",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-6767: firefox: Other issue in the Libraries component in NSS",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Other issue in the Libraries component in NSS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6767.json",
+      "cve": "CVE-2026-6767",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6766: firefox: Incorrect boundary conditions in the Libraries component in NSS",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Incorrect boundary conditions in the Libraries component in NSS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6766.json",
+      "cve": "CVE-2026-6766",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6764: firefox: Incorrect boundary conditions in the DOM: Device Interfaces component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Incorrect boundary conditions in the DOM: Device Interfaces component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6764.json",
+      "cve": "CVE-2026-6764",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6765: firefox: Information disclosure in the Form Autofill component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Information disclosure in the Form Autofill component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6765.json",
+      "cve": "CVE-2026-6765",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6763: firefox: Mitigation bypass in the File Handling component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Mitigation bypass in the File Handling component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6763.json",
+      "cve": "CVE-2026-6763",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6762: firefox: Spoofing issue in the DOM: Core & HTML component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Spoofing issue in the DOM: Core & HTML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6762.json",
+      "cve": "CVE-2026-6762",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6761: firefox: Privilege escalation in the Networking component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Privilege escalation in the Networking component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6761.json",
+      "cve": "CVE-2026-6761",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6760: firefox: Mitigation bypass in the Networking: Cookies component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Mitigation bypass in the Networking: Cookies component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6760.json",
+      "cve": "CVE-2026-6760",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6759: firefox: Use-after-free in the Widget: Cocoa component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Use-after-free in the Widget: Cocoa component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6759.json",
+      "cve": "CVE-2026-6759",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6758: firefox: Use-after-free in the JavaScript: WebAssembly component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Use-after-free in the JavaScript: WebAssembly component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6758.json",
+      "cve": "CVE-2026-6758",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6756: firefox: Mitigation bypass in Firefox for Android",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Mitigation bypass in Firefox for Android",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6756.json",
+      "cve": "CVE-2026-6756",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6757: firefox: Invalid pointer in the JavaScript: WebAssembly component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Invalid pointer in the JavaScript: WebAssembly component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6757.json",
+      "cve": "CVE-2026-6757",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6755: firefox: Mitigation bypass in the DOM: postMessage component",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Mitigation bypass in the DOM: postMessage component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6755.json",
+      "cve": "CVE-2026-6755",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-6754: firefox: Use-after-free in the JavaScript Engine component",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Use-after-free in the JavaScript Engine component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6754.json",
+      "cve": "CVE-2026-6754",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6752: firefox: Incorrect boundary conditions in the WebRTC component",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Incorrect boundary conditions in the WebRTC component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6752.json",
+      "cve": "CVE-2026-6752",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6753: firefox: Incorrect boundary conditions in the WebRTC component",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Incorrect boundary conditions in the WebRTC component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6753.json",
+      "cve": "CVE-2026-6753",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6751: firefox: Uninitialized memory in the Audio/Video: Web Codecs component",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Uninitialized memory in the Audio/Video: Web Codecs component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6751.json",
+      "cve": "CVE-2026-6751",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6750: firefox: Privilege escalation in the Graphics: WebRender component",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Privilege escalation in the Graphics: WebRender component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6750.json",
+      "cve": "CVE-2026-6750",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6749: firefox: Information disclosure due to uninitialized memory in the Graphics: Canvas2D component",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Information disclosure due to uninitialized memory in the Graphics: Canvas2D component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6749.json",
+      "cve": "CVE-2026-6749",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6747: firefox: Use-after-free in the WebRTC component",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Use-after-free in the WebRTC component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6747.json",
+      "cve": "CVE-2026-6747",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6748: firefox: Uninitialized memory in the Audio/Video: Web Codecs component",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Uninitialized memory in the Audio/Video: Web Codecs component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6748.json",
+      "cve": "CVE-2026-6748",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6746: firefox: Use-after-free in the DOM: Core & HTML component",
+      "date": "2026-04-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Use-after-free in the DOM: Core & HTML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6746.json",
+      "cve": "CVE-2026-6746",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-40250: OpenEXR: OpenEXR: Integer overflow leads to memory corruption and denial of service",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenEXR: OpenEXR: Integer overflow leads to memory corruption and denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40250.json",
+      "cve": "CVE-2026-40250",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-39886: OpenEXR: OpenEXR: Signed integer overflow in HTJ2K decompression can lead to denial of service.",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenEXR: OpenEXR: Signed integer overflow in HTJ2K decompression can lead to denial of service.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-39886.json",
+      "cve": "CVE-2026-39886",
+      "cvss": 6.5
+    },
+    {
       "title": "Signal K Server has an Unauthenticated Regular Expression Denial of Service (ReDoS) via WebSocket Subscription Paths",
       "date": "2026-04-21",
       "severity": "HIGH",
@@ -1951,6 +2567,61 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6654.json",
       "cve": "CVE-2026-6654",
       "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-5450: glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width",
+      "date": "2026-04-20",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5450.json",
+      "cve": "CVE-2026-5450",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-5928: glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings",
+      "date": "2026-04-20",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5928.json",
+      "cve": "CVE-2026-5928",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-5358: glibc: glibc: Data corruption or denial of service via buffer overflow in nis_local_principal function",
+      "date": "2026-04-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "glibc: glibc: Data corruption or denial of service via buffer overflow in nis_local_principal function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5358.json",
+      "cve": "CVE-2026-5358",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-28684: python-dotenv: python-dotenv: Arbitrary file overwrite via symbolic link following",
+      "date": "2026-04-20",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python-dotenv: python-dotenv: Arbitrary file overwrite via symbolic link following",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-28684.json",
+      "cve": "CVE-2026-28684",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-41245: junrar: Junrar: Arbitrary file write via path traversal when extracting crafted RAR archives.",
+      "date": "2026-04-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "junrar: Junrar: Arbitrary file write via path traversal when extracting crafted RAR archives.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41245.json",
+      "cve": "CVE-2026-41245",
+      "cvss": 9.3
     },
     {
       "title": "DSA-6219-1 pillow - security update",
@@ -5786,6 +6457,413 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-22T13:59:04.930Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 12 patches (3 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 160 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 350 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 99 patches (58 new)",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 17 patches, no changes"
+      ],
+      "newPatchCount": 61,
+      "totalPatches": 653,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "debian",
+        "gitlab",
+        "redhat",
+        "crowdstrike",
+        "github",
+        "microsoft",
+        "oracle-db",
+        "signal",
+        "aws",
+        "postgresql",
+        "ubuntu",
+        "cisco",
+        "edge",
+        "gcp"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6225-1 firefox-esr - security update",
+          "date": "2026-04-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6224-1 xdg-dbus-proxy - security update",
+          "date": "2026-04-22",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6223-1 flatpak - security update",
+          "date": "2026-04-22",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31433: kernel: ksmbd: fix potencial OOB in get_file_all_info() for compound requests",
+          "date": "2026-04-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31432: kernel: ksmbd: fix OOB write in QUERY_INFO for compound requests",
+          "date": "2026-04-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31431: kernel: crypto: algif_aead - Revert to operating out-of-place",
+          "date": "2026-04-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-40906: electric-sql: ElectricSQL: Critical data compromise and loss via SQL injection",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-22008: openjdk: OpenJDK: Improved Arena allocations (Oracle CPU 2026-04)",
+          "date": "2026-04-21",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-22007: openjdk: OpenJDK: Enhance crypto algorithm support (Oracle CPU 2026-04)",
+          "date": "2026-04-21",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-22016: openjdk: OpenJDK: Enhance Path Factories Redux (Oracle CPU 2026-04)",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-22013: openjdk: OpenJDK: Improve Kerberos credentialing (Oracle CPU 2026-04)",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-22018: openjdk: OpenJDK: Enhance Zip file reading (Oracle CPU 2026-04)",
+          "date": "2026-04-21",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-34268: openjdk: OpenJDK: Enhance key generation (Oracle CPU 2026-04)",
+          "date": "2026-04-21",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6786: firefox: thunderbird: Memory safety bugs fixed in Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbir",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6784: Firefox: Thunderbird: Firefox and Thunderbird: Arbitrary code execution via memory safety bugs",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6785: firefox: thunderbird: Memory safety bugs fixed in Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird ESR 140.10, Firefo",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6783: firefox: Firefox: Arbitrary code execution or denial of service in Audio/Video Playback component",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6782: Firefox: Firefox: Information disclosure in the IP Protection component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6781: firefox: Firefox: Denial of Service in Audio/Video Playback component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6780: firefox: Firefox: Denial of Service in Audio/Video Playback component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6778: CVE-2026-6778",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6779: JavaScript Engine: Firefox: Firefox: Unspecified vulnerability in JavaScript Engine",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6777: Firefox: Firefox: Unspecified security flaw in Networking: DNS component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6776: firefox: Incorrect boundary conditions in the WebRTC: Networking component",
+          "date": "2026-04-21",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6775: WebRTC: Firefox: WebRTC: System disruption and unauthorized control via incorrect boundary conditions",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6774: Firefox: Firefox: Mitigation bypass in DOM Security component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6773: WebGPU: Firefox: WebGPU: Denial of Service via integer overflow",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6772: firefox: Incorrect boundary conditions in the Libraries component in NSS",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6770: firefox: Other issue in the Storage: IndexedDB component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6771: firefox: Mitigation bypass in the DOM: Security component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6769: firefox: Privilege escalation in the Debugger component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6768: Firefox: Networking: Cookies: Firefox: Mitigation bypass in Networking: Cookies component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6767: firefox: Other issue in the Libraries component in NSS",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6766: firefox: Incorrect boundary conditions in the Libraries component in NSS",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6764: firefox: Incorrect boundary conditions in the DOM: Device Interfaces component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6765: firefox: Information disclosure in the Form Autofill component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6763: firefox: Mitigation bypass in the File Handling component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6762: firefox: Spoofing issue in the DOM: Core & HTML component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6761: firefox: Privilege escalation in the Networking component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6760: firefox: Mitigation bypass in the Networking: Cookies component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6759: firefox: Use-after-free in the Widget: Cocoa component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6758: firefox: Use-after-free in the JavaScript: WebAssembly component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6756: firefox: Mitigation bypass in Firefox for Android",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6757: firefox: Invalid pointer in the JavaScript: WebAssembly component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6755: firefox: Mitigation bypass in the DOM: postMessage component",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6754: firefox: Use-after-free in the JavaScript Engine component",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6752: firefox: Incorrect boundary conditions in the WebRTC component",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6753: firefox: Incorrect boundary conditions in the WebRTC component",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6751: firefox: Uninitialized memory in the Audio/Video: Web Codecs component",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6750: firefox: Privilege escalation in the Graphics: WebRender component",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6749: firefox: Information disclosure due to uninitialized memory in the Graphics: Canvas2D component",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6747: firefox: Use-after-free in the WebRTC component",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6748: firefox: Uninitialized memory in the Audio/Video: Web Codecs component",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6746: firefox: Use-after-free in the DOM: Core & HTML component",
+          "date": "2026-04-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-40250: OpenEXR: OpenEXR: Integer overflow leads to memory corruption and denial of service",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-39886: OpenEXR: OpenEXR: Signed integer overflow in HTJ2K decompression can lead to denial of service.",
+          "date": "2026-04-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5450: glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width",
+          "date": "2026-04-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5928: glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings",
+          "date": "2026-04-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5358: glibc: glibc: Data corruption or denial of service via buffer overflow in nis_local_principal function",
+          "date": "2026-04-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-28684: python-dotenv: python-dotenv: Arbitrary file overwrite via symbolic link following",
+          "date": "2026-04-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-41245: junrar: Junrar: Arbitrary file write via path traversal when extracting crafted RAR archives.",
+          "date": "2026-04-20",
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-22T13:50:53.365Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
@@ -9458,50 +10536,6 @@
     },
     {
       "timestamp": "2026-04-18T22:39:34.037Z",
-      "logs": [
-        "[INFO] aws - 6 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 12 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 12 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 26 patches, no changes",
-        "[INFO] gcp - 2 patches, no changes",
-        "[INFO] github - 231 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] mssql - 3 patches, no changes",
-        "[INFO] redhat - 162 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 35 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 905,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "debian",
-        "github",
-        "aws",
-        "microsoft",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "cisco",
-        "edge",
-        "gcp",
-        "chrome",
-        "fortinet",
-        "cloudflare",
-        "crowdstrike",
-        "mssql",
-        "slack"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-18T20:41:17.634Z",
       "logs": [
         "[INFO] aws - 6 patches, no changes",
         "[INFO] chrome - 4 patches, no changes",
