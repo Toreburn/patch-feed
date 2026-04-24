@@ -1,7 +1,27 @@
 {
-  "lastUpdated": "2026-04-24T13:43:35.099Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-24T13:51:47.000Z",
+  "newPatches": 4,
   "patches": [
+    {
+      "title": "Continued Evolution of Persistence Mechanism Against Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
+      "date": "2026-04-24",
+      "severity": "UNKNOWN",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "On April 23, 2026, the U.S. Cybersecurity and Infrastructure Security Agency (CISA) issued an update to V1: Emergency Directive (ED) 25-03: Identify and Mitigate Potential Compromise of Cisco Devices ...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-persist-CISAED25-03",
+      "cve": ""
+    },
+    {
+      "title": "Cisco ACI Multi-Site CloudSec Encryption Information Disclosure Vulnerability",
+      "date": "2026-04-24",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the Cisco ACI Multi-Site CloudSec encryption feature of Cisco Nexus 9000 Series Fabric Switches in ACI mode could allow an unauthenticated, remote attacker to read or modify intersi...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-aci-cloudsec-enc-Vs5Wn2sX",
+      "cve": "CVE-2023-20185"
+    },
     {
       "title": "CVE-2026-35414: CVE-2026-35414",
       "date": "2026-04-24",
@@ -451,6 +471,15 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-5448",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-5448"
+    },
+    {
+      "title": "USN-8180-5: Linux kernel (IBM) vulnerabilities",
+      "date": "2026-04-24",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (IBM) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architectu...",
+      "link": "https://ubuntu.com/security/notices/USN-8180-5"
     },
     {
       "title": "Continued Evolution of Persistence Mechanism Against Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
@@ -1794,6 +1823,15 @@
       "component": "jq vulnerabilities",
       "description": "It was discovered that jq did not correctly handle certain string\nconcatenations. An attacker could possibly use this issue to cause a denial\nof service or execute arbitrary code. This issue was addre...",
       "link": "https://ubuntu.com/security/notices/USN-8202-1"
+    },
+    {
+      "title": "USN-8205-1: GStreamer Bad Plugins vulnerabilities",
+      "date": "2026-04-23",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "GStreamer Bad Plugins vulnerabilities",
+      "description": "It was discovered that multiple plugins in GStreamer contained arithmetic\noverflows. An attacker could possibly use this issue to cause applications\nusing the plugins to crash, resulting in a denial o...",
+      "link": "https://ubuntu.com/security/notices/USN-8205-1"
     },
     {
       "title": "iOS and iPadOS 26.4.2",
@@ -8399,6 +8437,73 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-04-24T13:51:47.000Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] aws - 1 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[SUCCESS] cisco - 6 patches (2 new)",
+        "[INFO] crowdstrike - 3 patches, no changes",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 145 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 248 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[SUCCESS] ubuntu - 14 patches (2 new)"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 843,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "cisco",
+        "microsoft",
+        "ubuntu",
+        "edge",
+        "github",
+        "postgresql",
+        "redhat",
+        "apple",
+        "chrome",
+        "crowdstrike",
+        "debian",
+        "gitlab",
+        "signal",
+        "oracle-db",
+        "aws"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Continued Evolution of Persistence Mechanism Against Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
+          "date": "2026-04-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco ACI Multi-Site CloudSec Encryption Information Disclosure Vulnerability",
+          "date": "2026-04-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8180-5: Linux kernel (IBM) vulnerabilities",
+          "date": "2026-04-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8205-1: GStreamer Bad Plugins vulnerabilities",
+          "date": "2026-04-23",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-04-24T13:43:35.099Z",
       "logs": [
@@ -15047,50 +15152,6 @@
         "gcp",
         "chrome",
         "fortinet"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-20T22:50:07.074Z",
-      "logs": [
-        "[INFO] aws - 6 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 12 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 10 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 26 patches, no changes",
-        "[INFO] gcp - 2 patches, no changes",
-        "[INFO] github - 217 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] mssql - 3 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 113 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 26 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 832,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "crowdstrike",
-        "postgresql",
-        "redhat",
-        "debian",
-        "microsoft",
-        "github",
-        "aws",
-        "signal",
-        "ubuntu",
-        "cisco",
-        "edge",
-        "gcp",
-        "chrome",
-        "fortinet",
-        "cloudflare",
-        "mssql"
       ],
       "newPatches": []
     }
