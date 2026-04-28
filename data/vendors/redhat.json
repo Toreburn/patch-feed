@@ -1,16 +1,49 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-04-28T08:33:45.205Z",
+  "lastUpdated": "2026-04-28T14:27:45.625Z",
   "health": {
-    "lastFetchAttempt": "2026-04-28T08:33:45.205Z",
+    "lastFetchAttempt": "2026-04-28T14:27:45.625Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 387,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-28T08:33:45.205Z",
+    "lastFetchParsedItems": 400,
+    "lastFetchNewPatches": 13,
+    "lastSuccessWithData": "2026-04-28T14:27:45.625Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-7233: mupdf: Artifex MuPDF: Information disclosure due to out-of-bounds read",
+      "date": "2026-04-28",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mupdf: Artifex MuPDF: Information disclosure due to out-of-bounds read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7233.json",
+      "cve": "CVE-2026-7233",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-40356: krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40356.json",
+      "cve": "CVE-2026-40356",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-40355: krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40355.json",
+      "cve": "CVE-2026-40355",
+      "cvss": 5.9
+    },
     {
       "title": "CVE-2026-3006: winfsp: winfsp: Local privilege escalation via race condition and kernel heap overflow",
       "date": "2026-04-27",
@@ -100,6 +133,17 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-7141: vllm: vllm: Uninitialized resource in KV Block Handler via has_mamba_layers function",
+      "date": "2026-04-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vllm: Uninitialized resource in KV Block Handler via has_mamba_layers function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7141.json",
+      "cve": "CVE-2026-7141",
+      "cvss": 5.6
+    },
+    {
       "title": "CVE-2018-25282: nmap: zenmap: Nmap/ZenMap: Denial of Service via XML entity expansion",
       "date": "2026-04-26",
       "severity": "MEDIUM",
@@ -109,6 +153,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-25282.json",
       "cve": "CVE-2018-25282",
       "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-7020: Ollama: Ollama: Path traversal vulnerability in Tensor Model Transfer Handler",
+      "date": "2026-04-26",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Ollama: Ollama: Path traversal vulnerability in Tensor Model Transfer Handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7020.json",
+      "cve": "CVE-2026-7020",
+      "cvss": 5.6
     },
     {
       "title": "CVE-2026-31673: kernel: af_unix: read UNIX_DIAG_VFS data under unix_state_lock",
@@ -1849,6 +1904,39 @@
       "cvss": 6.6
     },
     {
+      "title": "CVE-2026-41488: langchain-openai: Langchain-openai: Server-Side Request Forgery (SSRF) protection bypass via DNS rebinding",
+      "date": "2026-04-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "langchain-openai: Langchain-openai: Server-Side Request Forgery (SSRF) protection bypass via DNS rebinding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41488.json",
+      "cve": "CVE-2026-41488",
+      "cvss": 3.4
+    },
+    {
+      "title": "CVE-2026-41481: langchain-text-splitters: LangChain: Information Disclosure via Server-Side Request Forgery (SSRF) Redirect Bypass",
+      "date": "2026-04-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "langchain-text-splitters: LangChain: Information Disclosure via Server-Side Request Forgery (SSRF) Redirect Bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41481.json",
+      "cve": "CVE-2026-41481",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-41415: pjproject: PJSIP: Denial of service via malformed Content-ID URI in SIP multipart message",
+      "date": "2026-04-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pjproject: PJSIP: Denial of service via malformed Content-ID URI in SIP multipart message",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41415.json",
+      "cve": "CVE-2026-41415",
+      "cvss": 7.5
+    },
+    {
       "title": "CVE-2026-41196: luanti: minetest: luajit: Luanti (Minetest): Arbitrary code execution and full filesystem access via malicious mod sandb",
       "date": "2026-04-23",
       "severity": "HIGH",
@@ -2034,6 +2122,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41205.json",
       "cve": "CVE-2026-41205",
       "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-6920: Google Chrome: Chromium: chromium-browser: Out of bounds read in GPU",
+      "date": "2026-04-23",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Google Chrome: Chromium: chromium-browser: Out of bounds read in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6920.json",
+      "cve": "CVE-2026-6920",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-6919: Google Chrome: Chromium: chromium-browser: Use after free in DevTools",
+      "date": "2026-04-23",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Google Chrome: Chromium: chromium-browser: Use after free in DevTools",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6919.json",
+      "cve": "CVE-2026-6919",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-41990: Libgcrypt: Libgcrypt: Denial of Service or data integrity issues from missing bounds check during Dilithium signing.",
+      "date": "2026-04-23",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Libgcrypt: Libgcrypt: Denial of Service or data integrity issues from missing bounds check during Dilithium signing.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41990.json",
+      "cve": "CVE-2026-41990",
+      "cvss": 3.3
     },
     {
       "title": "CVE-2026-31433: kernel: ksmbd: fix potencial OOB in get_file_all_info() for compound requests",
@@ -4718,6 +4839,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40938.json",
       "cve": "CVE-2026-40938",
       "cvss": 8.5
+    },
+    {
+      "title": "CVE-2026-41131: openfga: OpenFGA: Incorrect authorization decisions due to cache key collision",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openfga: OpenFGA: Incorrect authorization decisions due to cache key collision",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41131.json",
+      "cve": "CVE-2026-41131",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-40923: github.com/tektoncd/pipeline: Tekton Pipelines: Unauthorized access and information disclosure via path validation bypas",
+      "date": "2026-04-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/tektoncd/pipeline: Tekton Pipelines: Unauthorized access and information disclosure via path validation bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40923.json",
+      "cve": "CVE-2026-40923",
+      "cvss": 5.4
     },
     {
       "title": "CVE-2026-6587: vibrantlabsai RAGAS: vibrantlabsai RAGAS: Server-Side Request Forgery via retrieved_contexts argument manipulation",
