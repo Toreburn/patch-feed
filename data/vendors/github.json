@@ -1,16 +1,126 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-04-28T19:49:10.980Z",
+  "lastUpdated": "2026-04-29T03:40:27.694Z",
   "health": {
-    "lastFetchAttempt": "2026-04-28T19:49:10.980Z",
+    "lastFetchAttempt": "2026-04-29T03:40:27.694Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-28T19:49:10.980Z",
+    "lastFetchNewPatches": 10,
+    "lastSuccessWithData": "2026-04-29T03:40:27.694Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "OpenTelemetry's Zipkin remote endpoint cache could grow without bounds and increase memory pressure",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "OpenTelemetry.Exporter.Zipkin",
+      "description": "OpenTelemetry's Zipkin remote endpoint cache could grow without bounds and increase memory pressure",
+      "link": "https://github.com/advisories/GHSA-88hf-wf7h-7w4m",
+      "cve": "CVE-2026-41310",
+      "cvss": 5.3
+    },
+    {
+      "title": "PhpSpreadsheet has XSS via number format code with @ text placeholder bypasses htmlspecialchars in HTML writer",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "phpoffice/phpspreadsheet, phpoffice/phpspreadsheet, phpoffice/phpspreadsheet",
+      "description": "PhpSpreadsheet has XSS via number format code with @ text placeholder bypasses htmlspecialchars in HTML writer",
+      "link": "https://github.com/advisories/GHSA-hrmw-qprp-wgmc",
+      "cve": "CVE-2026-40296",
+      "cvss": 5.4
+    },
+    {
+      "title": "CoreDNS has TSIG authentication bypass on gRPC and QUIC transports",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS has TSIG authentication bypass on gRPC and QUIC transports",
+      "link": "https://github.com/advisories/GHSA-vp29-5652-4fw9",
+      "cve": "CVE-2026-35579",
+      "cvss": 7.5
+    },
+    {
+      "title": "PhpSpreadsheet has XSS via NumberFormat @ Text Substitution in HTML Writer",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "phpoffice/phpspreadsheet, phpoffice/phpspreadsheet, phpoffice/phpspreadsheet",
+      "description": "PhpSpreadsheet has XSS via NumberFormat @ Text Substitution in HTML Writer",
+      "link": "https://github.com/advisories/GHSA-6wpp-88cp-7q68",
+      "cve": "CVE-2026-35453",
+      "cvss": null
+    },
+    {
+      "title": "CoreDNS has TSIG authentication bypass on DoT, DoH, DoH3, DoQ, and gRPC",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS has TSIG authentication bypass on DoT, DoH, DoH3, DoQ, and gRPC",
+      "link": "https://github.com/advisories/GHSA-qhmp-q7xh-99rh",
+      "cve": "CVE-2026-33190",
+      "cvss": 7.5
+    },
+    {
+      "title": "CoreDNS' transfer stanza selection uses lexicographic compare (subzone ACL bypass)",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS' transfer stanza selection uses lexicographic compare (subzone ACL bypass)",
+      "link": "https://github.com/advisories/GHSA-h8mm-c463-wjq3",
+      "cve": "CVE-2026-33489",
+      "cvss": 7.5
+    },
+    {
+      "title": "CoreDNS DoH GET oversized dns= query parameter causes pre-validation CPU and memory amplification",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS DoH GET oversized dns= query parameter causes pre-validation CPU and memory amplification",
+      "link": "https://github.com/advisories/GHSA-63cw-r7xf-jmwr",
+      "cve": "CVE-2026-32936",
+      "cvss": 7.5
+    },
+    {
+      "title": "CoreDNS' DoQ worker pool does not bound stream backlog",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS' DoQ worker pool does not bound stream backlog",
+      "link": "https://github.com/advisories/GHSA-2wpx-qpw2-g5h5",
+      "cve": "CVE-2026-32934",
+      "cvss": 7.5
+    },
+    {
+      "title": "FacturaScripts has Insecure Parameter Handling: Unauthorized Modification of Immutable 'nick' Field",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "facturascripts/facturascripts",
+      "description": "FacturaScripts has Insecure Parameter Handling: Unauthorized Modification of Immutable 'nick' Field",
+      "link": "https://github.com/advisories/GHSA-pp79-hqv6-vmc3",
+      "cve": "CVE-2026-32699",
+      "cvss": 4.3
+    },
+    {
+      "title": "Fiber's cache middleware default key generator ignores query string, causing response mix-up across distinct query parameters",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/gofiber/fiber/v3",
+      "description": "Fiber's cache middleware default key generator ignores query string, causing response mix-up across distinct query parameters",
+      "link": "https://github.com/advisories/GHSA-35hp-hqmv-8qg8",
+      "cve": "CVE-2026-30246",
+      "cvss": 6.5
+    },
     {
       "title": "OpenClaw: Agent gateway config mutations could change protected operator settings",
       "date": "2026-04-25",

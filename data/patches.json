@@ -1,7 +1,25 @@
 {
-  "lastUpdated": "2026-04-29T03:32:10.930Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-29T03:42:01.205Z",
+  "newPatches": 28,
   "patches": [
+    {
+      "title": "Chrome for Android Update",
+      "date": "2026-04-28",
+      "severity": "UNKNOWN",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "&nbsp; &nbsp; Hi, everyone! We've just released Chrome 147 (147.0.7727.137) for Android. It'll become&nbsp;available on Google Play&nbsp;over the next few days.&nbsp;This release includes stability an...",
+      "link": "https://chromereleases.googleblog.com/feeds/1820732298210247432/comments/default"
+    },
+    {
+      "title": "Stable Channel Update for Desktop",
+      "date": "2026-04-28",
+      "severity": "CRITICAL",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "The Stable channel has been updated to 147.0.7727.137/138 for Windows/Mac&nbsp; and&nbsp;147.0.7727.137 for Linux, which will roll out over the coming days/weeks. A full list of changes in this build ...",
+      "link": "https://chromereleases.googleblog.com/feeds/8648659824579220769/comments/default"
+    },
     {
       "title": "Cisco Identity Services Engine Remote Code Execution and Path Traversal Vulnerabilities",
       "date": "2026-04-28",
@@ -67,6 +85,16 @@
       "cves": []
     },
     {
+      "title": "Microsoft Edge Security Update - April 28, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-04-28",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
+    },
+    {
       "title": "GKE: GCP-2026-023",
       "date": "2026-04-28",
       "severity": "HIGH",
@@ -83,6 +111,116 @@
         "CVE-2026-23074",
         "CVE-2026-23074"
       ]
+    },
+    {
+      "title": "OpenTelemetry's Zipkin remote endpoint cache could grow without bounds and increase memory pressure",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "OpenTelemetry.Exporter.Zipkin",
+      "description": "OpenTelemetry's Zipkin remote endpoint cache could grow without bounds and increase memory pressure",
+      "link": "https://github.com/advisories/GHSA-88hf-wf7h-7w4m",
+      "cve": "CVE-2026-41310",
+      "cvss": 5.3
+    },
+    {
+      "title": "PhpSpreadsheet has XSS via number format code with @ text placeholder bypasses htmlspecialchars in HTML writer",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "phpoffice/phpspreadsheet, phpoffice/phpspreadsheet, phpoffice/phpspreadsheet",
+      "description": "PhpSpreadsheet has XSS via number format code with @ text placeholder bypasses htmlspecialchars in HTML writer",
+      "link": "https://github.com/advisories/GHSA-hrmw-qprp-wgmc",
+      "cve": "CVE-2026-40296",
+      "cvss": 5.4
+    },
+    {
+      "title": "CoreDNS has TSIG authentication bypass on gRPC and QUIC transports",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS has TSIG authentication bypass on gRPC and QUIC transports",
+      "link": "https://github.com/advisories/GHSA-vp29-5652-4fw9",
+      "cve": "CVE-2026-35579",
+      "cvss": 7.5
+    },
+    {
+      "title": "PhpSpreadsheet has XSS via NumberFormat @ Text Substitution in HTML Writer",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "phpoffice/phpspreadsheet, phpoffice/phpspreadsheet, phpoffice/phpspreadsheet",
+      "description": "PhpSpreadsheet has XSS via NumberFormat @ Text Substitution in HTML Writer",
+      "link": "https://github.com/advisories/GHSA-6wpp-88cp-7q68",
+      "cve": "CVE-2026-35453",
+      "cvss": null
+    },
+    {
+      "title": "CoreDNS has TSIG authentication bypass on DoT, DoH, DoH3, DoQ, and gRPC",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS has TSIG authentication bypass on DoT, DoH, DoH3, DoQ, and gRPC",
+      "link": "https://github.com/advisories/GHSA-qhmp-q7xh-99rh",
+      "cve": "CVE-2026-33190",
+      "cvss": 7.5
+    },
+    {
+      "title": "CoreDNS' transfer stanza selection uses lexicographic compare (subzone ACL bypass)",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS' transfer stanza selection uses lexicographic compare (subzone ACL bypass)",
+      "link": "https://github.com/advisories/GHSA-h8mm-c463-wjq3",
+      "cve": "CVE-2026-33489",
+      "cvss": 7.5
+    },
+    {
+      "title": "CoreDNS DoH GET oversized dns= query parameter causes pre-validation CPU and memory amplification",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS DoH GET oversized dns= query parameter causes pre-validation CPU and memory amplification",
+      "link": "https://github.com/advisories/GHSA-63cw-r7xf-jmwr",
+      "cve": "CVE-2026-32936",
+      "cvss": 7.5
+    },
+    {
+      "title": "CoreDNS' DoQ worker pool does not bound stream backlog",
+      "date": "2026-04-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/coredns/coredns",
+      "description": "CoreDNS' DoQ worker pool does not bound stream backlog",
+      "link": "https://github.com/advisories/GHSA-2wpx-qpw2-g5h5",
+      "cve": "CVE-2026-32934",
+      "cvss": 7.5
+    },
+    {
+      "title": "FacturaScripts has Insecure Parameter Handling: Unauthorized Modification of Immutable 'nick' Field",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "facturascripts/facturascripts",
+      "description": "FacturaScripts has Insecure Parameter Handling: Unauthorized Modification of Immutable 'nick' Field",
+      "link": "https://github.com/advisories/GHSA-pp79-hqv6-vmc3",
+      "cve": "CVE-2026-32699",
+      "cvss": 4.3
+    },
+    {
+      "title": "Fiber's cache middleware default key generator ignores query string, causing response mix-up across distinct query parameters",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/gofiber/fiber/v3",
+      "description": "Fiber's cache middleware default key generator ignores query string, causing response mix-up across distinct query parameters",
+      "link": "https://github.com/advisories/GHSA-35hp-hqmv-8qg8",
+      "cve": "CVE-2026-30246",
+      "cvss": 6.5
     },
     {
       "title": "CVE-2026-32210: Microsoft Dynamics 365 (online) Spoofing Vulnerability",
@@ -568,6 +706,28 @@
       "cvss": 5.9
     },
     {
+      "title": "CVE-2026-5435: glibc: glibc: Out-of-bounds write via TSIG record processing",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "glibc: glibc: Out-of-bounds write via TSIG record processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5435.json",
+      "cve": "CVE-2026-5435",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-7309: openshift-controller-manager: OpenShift Container Platform: Information disclosure via environment variable injection",
+      "date": "2026-04-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "OpenShift",
+      "description": "openshift-controller-manager: OpenShift Container Platform: Information disclosure via environment variable injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7309.json",
+      "cve": "CVE-2026-7309",
+      "cvss": 4.3
+    },
+    {
       "title": "USN-8202-2: jq vulnerabilities",
       "date": "2026-04-28",
       "severity": "UNKNOWN",
@@ -640,6 +800,24 @@
       "link": "https://ubuntu.com/security/notices/USN-8215-1"
     },
     {
+      "title": "USN-8198-2: Tornado vulnerabilities",
+      "date": "2026-04-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Tornado vulnerabilities",
+      "description": "USN-8198-1 fixed vulnerabilities in Tornado. This update provides the\ncorresponding updates for Ubuntu 26.04 LTS.\n\nOriginal advisory details:\n\n It was discovered that Tornado incorrectly handled parsi...",
+      "link": "https://ubuntu.com/security/notices/USN-8198-2"
+    },
+    {
+      "title": "USN-8217-1: follow-redirects vulnerabilities",
+      "date": "2026-04-28",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "follow-redirects vulnerabilities",
+      "description": "It was discovered that follow-redirects did not properly protect sensitive\nuser information during redirects. An attacker could possibly use this\nissue to expose sensitive information. This issue only...",
+      "link": "https://ubuntu.com/security/notices/USN-8217-1"
+    },
+    {
       "title": "CVE-2026-7191- Arbitrary Code Execution via Sandbox Bypass in QnABot on AWS",
       "date": "2026-04-27",
       "severity": "HIGH",
@@ -657,6 +835,16 @@
       "description": "Several vulnerabilities have been discovered in the OpenJDK Java runtime, which may result in incorrect generation of cryptographic keys, denial of service, information disclosure, XEE/XEE attacks or ...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00141.html",
       "cve": "",
+      "cves": []
+    },
+    {
+      "title": "Microsoft Edge Security Update - April 27, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-04-27",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
       "cves": []
     },
     {
@@ -1657,6 +1845,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7141.json",
       "cve": "CVE-2026-7141",
       "cvss": 5.6
+    },
+    {
+      "title": "CVE-2026-40970: Spring Boot: Spring Boot: Missing hostname verification in Elasticsearch auto-configuration allows information disclosur",
+      "date": "2026-04-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Spring Boot: Spring Boot: Missing hostname verification in Elasticsearch auto-configuration allows information disclosure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40970.json",
+      "cve": "CVE-2026-40970",
+      "cvss": 4.2
+    },
+    {
+      "title": "CVE-2026-31690: kernel: firmware: thead: Fix buffer overflow and use standard endian macros",
+      "date": "2026-04-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: firmware: thead: Fix buffer overflow and use standard endian macros",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31690.json",
+      "cve": "CVE-2026-31690",
+      "cvss": null
     },
     {
       "title": "USN-8212-1: authd vulnerability",
@@ -3019,6 +3229,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31680.json",
       "cve": "CVE-2026-31680",
       "cvss": 7
+    },
+    {
+      "title": "CVE-2026-6993: net/http: golang: github.com/go-kratos/kratos: go-kratos kratos: Information disclosure via unintended HTTP server inter",
+      "date": "2026-04-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "net/http: golang: github.com/go-kratos/kratos: go-kratos kratos: Information disclosure via unintended HTTP server intermediary",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6993.json",
+      "cve": "CVE-2026-6993",
+      "cvss": 5.3
     },
     {
       "title": "Issue with AWS Ops Wheel (CVE-2026-6911 and CVE-2026-6912",
@@ -6059,6 +6280,61 @@
       "cvss": 7.5
     },
     {
+      "title": "CVE-2026-42037: axios: Node.js: Axios: Information disclosure via CRLF injection in multipart Content-Type header",
+      "date": "2026-04-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "axios: Node.js: Axios: Information disclosure via CRLF injection in multipart Content-Type header",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42037.json",
+      "cve": "CVE-2026-42037",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-42035: axios: Axios: Arbitrary HTTP header injection via prototype pollution",
+      "date": "2026-04-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "axios: Axios: Arbitrary HTTP header injection via prototype pollution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42035.json",
+      "cve": "CVE-2026-42035",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-41411: vim: Vim: Command injection allows arbitrary code execution via malicious tag files",
+      "date": "2026-04-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: Vim: Command injection allows arbitrary code execution via malicious tag files",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41411.json",
+      "cve": "CVE-2026-41411",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-41066: lxml: python: lxml: Information disclosure via untrusted XML input leading to local file read",
+      "date": "2026-04-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "lxml: python: lxml: Information disclosure via untrusted XML input leading to local file read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41066.json",
+      "cve": "CVE-2026-41066",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-41043: Apache ActiveMQ: Apache ActiveMQ Web: Apache ActiveMQ: Information disclosure via Cross-Site Scripting in web console",
+      "date": "2026-04-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Apache ActiveMQ: Apache ActiveMQ Web: Apache ActiveMQ: Information disclosure via Cross-Site Scripting in web console",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41043.json",
+      "cve": "CVE-2026-41043",
+      "cvss": 4.6
+    },
+    {
       "title": "USN-8180-5: Linux kernel (IBM) vulnerabilities",
       "date": "2026-04-24",
       "severity": "LOW",
@@ -7460,6 +7736,28 @@
       "cvss": 3.3
     },
     {
+      "title": "CVE-2026-6921: Google Chrome: Chromium: chromium-browser: Race in GPU",
+      "date": "2026-04-23",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Google Chrome: Chromium: chromium-browser: Race in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6921.json",
+      "cve": "CVE-2026-6921",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-41240: DOMPurify: DOMPurify: Cross-Site Scripting (XSS) via inconsistent tag sanitization",
+      "date": "2026-04-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "DOMPurify: DOMPurify: Cross-Site Scripting (XSS) via inconsistent tag sanitization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41240.json",
+      "cve": "CVE-2026-41240",
+      "cvss": 8.1
+    },
+    {
       "title": "USN-8180-4: Linux kernel (Azure FIPS) vulnerabilities",
       "date": "2026-04-23",
       "severity": "LOW",
@@ -7542,6 +7840,211 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-04-29T03:42:01.205Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[SUCCESS] chrome - 2 patches (2 new)",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] debian - 7 patches, no changes",
+        "[SUCCESS] edge - 4 patches (2 new)",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 95 patches (10 new)",
+        "[INFO] microsoft - 450 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 207 patches (12 new)",
+        "[INFO] signal - 2 patches, no changes",
+        "[SUCCESS] ubuntu - 22 patches (2 new)"
+      ],
+      "newPatchCount": 28,
+      "totalPatches": 798,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 12,
+      "vendors": [
+        "chrome",
+        "cisco",
+        "debian",
+        "edge",
+        "gcp",
+        "github",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "signal",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "chrome",
+          "title": "Chrome for Android Update",
+          "date": "2026-04-28",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "chrome",
+          "title": "Stable Channel Update for Desktop",
+          "date": "2026-04-28",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - April 28, 2026",
+          "date": "2026-04-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - April 27, 2026",
+          "date": "2026-04-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenTelemetry's Zipkin remote endpoint cache could grow without bounds and increase memory pressure",
+          "date": "2026-04-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "PhpSpreadsheet has XSS via number format code with @ text placeholder bypasses htmlspecialchars in HTML writer",
+          "date": "2026-04-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "CoreDNS has TSIG authentication bypass on gRPC and QUIC transports",
+          "date": "2026-04-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PhpSpreadsheet has XSS via NumberFormat @ Text Substitution in HTML Writer",
+          "date": "2026-04-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "CoreDNS has TSIG authentication bypass on DoT, DoH, DoH3, DoQ, and gRPC",
+          "date": "2026-04-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CoreDNS' transfer stanza selection uses lexicographic compare (subzone ACL bypass)",
+          "date": "2026-04-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CoreDNS DoH GET oversized dns= query parameter causes pre-validation CPU and memory amplification",
+          "date": "2026-04-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CoreDNS' DoQ worker pool does not bound stream backlog",
+          "date": "2026-04-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "FacturaScripts has Insecure Parameter Handling: Unauthorized Modification of Immutable 'nick' Field",
+          "date": "2026-04-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Fiber's cache middleware default key generator ignores query string, causing response mix-up across distinct query parameters",
+          "date": "2026-04-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5435: glibc: glibc: Out-of-bounds write via TSIG record processing",
+          "date": "2026-04-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-7309: openshift-controller-manager: OpenShift Container Platform: Information disclosure via environment variable injection",
+          "date": "2026-04-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-40970: Spring Boot: Spring Boot: Missing hostname verification in Elasticsearch auto-configuration allows information disclosur",
+          "date": "2026-04-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31690: kernel: firmware: thead: Fix buffer overflow and use standard endian macros",
+          "date": "2026-04-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6993: net/http: golang: github.com/go-kratos/kratos: go-kratos kratos: Information disclosure via unintended HTTP server inter",
+          "date": "2026-04-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42037: axios: Node.js: Axios: Information disclosure via CRLF injection in multipart Content-Type header",
+          "date": "2026-04-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42035: axios: Axios: Arbitrary HTTP header injection via prototype pollution",
+          "date": "2026-04-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-41411: vim: Vim: Command injection allows arbitrary code execution via malicious tag files",
+          "date": "2026-04-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-41066: lxml: python: lxml: Information disclosure via untrusted XML input leading to local file read",
+          "date": "2026-04-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-41043: Apache ActiveMQ: Apache ActiveMQ Web: Apache ActiveMQ: Information disclosure via Cross-Site Scripting in web console",
+          "date": "2026-04-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6921: Google Chrome: Chromium: chromium-browser: Race in GPU",
+          "date": "2026-04-23",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-41240: DOMPurify: DOMPurify: Cross-Site Scripting (XSS) via inconsistent tag sanitization",
+          "date": "2026-04-23",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8198-2: Tornado vulnerabilities",
+          "date": "2026-04-28",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8217-1: follow-redirects vulnerabilities",
+          "date": "2026-04-28",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-04-29T03:32:10.930Z",
       "logs": [
@@ -11407,355 +11910,6 @@
         "oracle-db"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-25T07:28:36.043Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 6 patches, no changes",
-        "[INFO] crowdstrike - 3 patches, no changes",
-        "[SUCCESS] debian - 12 patches (1 new)",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 167 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[SUCCESS] microsoft - 500 patches (50 new)",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 388 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 14 patches, no changes"
-      ],
-      "newPatchCount": 51,
-      "totalPatches": 1109,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "cisco",
-        "debian",
-        "edge",
-        "github",
-        "redhat",
-        "ubuntu",
-        "postgresql",
-        "apple",
-        "chrome",
-        "crowdstrike",
-        "gitlab",
-        "signal",
-        "oracle-db"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6230-1 chromium - security update",
-          "date": "2026-04-24",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35414: CVE-2026-35414",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35386: CVE-2026-35386",
-          "date": "2026-04-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34743: XZ Utils: Buffer overflow in lzma_index_append()",
-          "date": "2026-04-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34978: OpenPrinting CUPS: Path traversal in RSS notify-recipient-uri enables file write outside CacheDir/rss (and clobbering of job.cache)",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-27447: OpenPrinting CUPS: Authorization bypass via case-insensitive group-member lookup",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23473: io_uring/poll: fix multishot recv missing EOF on wakeup race",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31394: mac80211: fix crash in ieee80211_chan_bw_change for AP_VLAN stations",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23468: drm/amdgpu: Limit BO list entry count to prevent resource exhaustion",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23442: ipv6: add NULL checks for idev in SRv6 paths",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-27456: util-linux: TOCTOU Race Condition in util-linux mount(8) - Loop Device Setup",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35535: CVE-2026-35535",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31410: ksmbd: use volume UUID in FS_OBJECT_ID_INFORMATION",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31407: netfilter: conntrack: add missing netlink policy validations",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-3184: Util-linux: util-linux: access control bypass due to improper hostname canonicalization",
-          "date": "2026-04-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34591: Poetry Has Wheel Path Traversal Which Can Lead to Arbitrary File Write",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34982: Vim modeline bypass via various options affects Vim < 9.2.0276",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34933: Avahi: Reachable assertion in `transport_flags_from_domain()` via conflicting publish flags crashes avahi-daemon",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-39314: CUPS has an integer underflow in `_ppdCreateFromIPP` causes root cupsd crash via negative `job-password-supported`",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31789: Heap Buffer Overflow in Hexadecimal Conversion",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-28387: Potential Use-after-free in DANE Client Code",
-          "date": "2026-04-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31790: Incorrect Failure Handling in RSA KEM RSASVE Encapsulation",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-28388: NULL Pointer Dereference When Processing a Delta CRL",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34446: ONNX: Arbitrary File Read via ExternalData Hardlink Bypass in ONNX load",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-23405: apparmor: fix: limit the number of levels of policy namespaces",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-28810: Predictable DNS Transaction IDs Enable Cache Poisoning in Built-in Resolver",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-29181: OpenTelemetry-Go multi-value `baggage` header extraction causes excessive allocations (remote dos amplification)",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-27144: Miscompilation allows memory corruption via CONVNOP-wrapped array copy in cmd/compile",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-32282: TOCTOU permits root escape on Linux via Root.Chmod in os in internal/syscall/unix",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33810: Case-sensitive excludedSubtrees name constraints cause Auth Bypass in crypto/x509",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-4878: Libcap: libcap: privilege escalation via toctou race condition in cap_set_file()",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35206: Helm Chart extraction output directory collapse via `Chart.yaml` name dot-segment",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34757: LIBPNG has a yse-after-free in png_set_PLTE, png_set_tRNS and png_set_hIST leading to corrupted chunk data and potential heap information disclosure",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40226: CVE-2026-40226",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-39853: osslsigncode has a Stack Buffer Overflow via Unbounded Digest Copy During Signature Verification",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-39855: osslsigncode has an Integer Underflow in PE Page Hash Calculation Can Cause Out-of-Bounds Read",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-39856: osslsigncode has an Out-of-Bounds Read via Unvalidated Section Bounds in PE Page Hash Calculation",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40385: CVE-2026-40385",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40393: CVE-2026-40393",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31416: netfilter: nfnetlink_log: account for netlink header size",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31423: net/sched: sch_hfsc: fix divide-by-zero in rtsc_min()",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31424: netfilter: x_tables: restrict xt_check_match/xt_check_target extensions for NFPROTO_ARP",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31427: netfilter: nf_conntrack_sip: fix use of uninitialized rtp_addr in process_sdp",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31419: net: bonding: fix use-after-free in bond_xmit_broadcast()",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31421: net/sched: cls_fw: fix NULL pointer dereference on shared blocks",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31428: netfilter: nfnetlink_log: fix uninitialized padding leak in NFULA_PAYLOAD",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31418: netfilter: ipset: drop logically empty buckets in mtype_del",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33555: CVE-2026-33555",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-5466: wc_VerifyEccsiHash missing sanity check",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-5194: wolfSSL ECDSA Certificate Verification",
-          "date": "2026-04-25",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-5448: 1-2 Byte Buffer Overflow in wolfSSL_X509_notAfter/notBefore",
-          "date": "2026-04-25",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
