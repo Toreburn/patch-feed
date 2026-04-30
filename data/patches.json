@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-04-30T19:27:38.198Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-04-30T19:43:14.688Z",
+  "newPatches": 16,
   "patches": [
+    {
+      "title": "Continued Evolution of Persistence Mechanism Against Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
+      "date": "2026-04-30",
+      "severity": "UNKNOWN",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "On April 23, 2026, the U.S. Cybersecurity and Infrastructure Security Agency (CISA) issued an update to V1: Emergency Directive (ED) 25-03: Identify and Mitigate Potential Compromise of Cisco Devices ...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-persist-CISAED25-03",
+      "cve": ""
+    },
     {
       "title": "Post-quantum encryption for Cloudflare IPsec is generally available",
       "date": "2026-04-30",
@@ -11,6 +21,138 @@
       "description": "While more than two-thirds of human-generated TLS traffic to Cloudflare is already protected by post-quantum cryptography, the world of site-to-site networking has been a different story. For years, t...",
       "link": "https://blog.cloudflare.com/post-quantum-ipsec/",
       "cve": ""
+    },
+    {
+      "title": "OpenTelemetry's disk retry default temp path enables local blob injection via OTLP Exporter",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+      "description": "OpenTelemetry's disk retry default temp path enables local blob injection via OTLP Exporter",
+      "link": "https://github.com/advisories/GHSA-4625-4j76-fww9",
+      "cve": "CVE-2026-42191",
+      "cvss": 6.5
+    },
+    {
+      "title": "ydb-go-sdk's transactions are not committed using the `options.WithCommit()` option on last call `table.Transaction.Execute` in transaction",
+      "date": "2026-04-30",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/ydb-platform/ydb-go-sdk/v3",
+      "description": "ydb-go-sdk's transactions are not committed using the `options.WithCommit()` option on last call `table.Transaction.Execute` in transaction",
+      "link": "https://github.com/advisories/GHSA-28xx-pppm-vqff",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Clerk has an authorization bypass when combining organization, billing, or reverification checks",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@clerk/shared, @clerk/shared, @clerk/backend",
+      "description": "Clerk has an authorization bypass when combining organization, billing, or reverification checks",
+      "link": "https://github.com/advisories/GHSA-w24r-5266-9c3c",
+      "cve": "CVE-2026-42349",
+      "cvss": null
+    },
+    {
+      "title": "n8n-mcp's IPv4-mapped IPv6 addresses bypass SSRF protection in validateUrlSync(), enabling full SSRF for SDK embedders",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "n8n-mcp",
+      "description": "n8n-mcp's IPv4-mapped IPv6 addresses bypass SSRF protection in validateUrlSync(), enabling full SSRF for SDK embedders",
+      "link": "https://github.com/advisories/GHSA-56c3-vfp2-5qqj",
+      "cve": "CVE-2026-42449",
+      "cvss": 8.5
+    },
+    {
+      "title": "Hickory DNS's Record Cache Accepts AUTHORITY-Section NS from Sibling Zone via Parent-Pool Zone-Context Elevation",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "hickory-recursor, hickory-recursor",
+      "description": "Hickory DNS's Record Cache Accepts AUTHORITY-Section NS from Sibling Zone via Parent-Pool Zone-Context Elevation",
+      "link": "https://github.com/advisories/GHSA-83hf-93m4-rgwq",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "CKAN has Unauthenticated Authorization Bypass in `datastore_search_sql`",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ckan, ckan",
+      "description": "CKAN has Unauthenticated Authorization Bypass in `datastore_search_sql`",
+      "link": "https://github.com/advisories/GHSA-cg4x-64p3-x59h",
+      "cve": "CVE-2026-42032",
+      "cvss": null
+    },
+    {
+      "title": "Weblate Vulnerable to Authenticated SSRF via Project Backup Import bypassing validate_repo_url",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "weblate",
+      "description": "Weblate Vulnerable to Authenticated SSRF via Project Backup Import bypassing validate_repo_url",
+      "link": "https://github.com/advisories/GHSA-cwcx-382v-8m9g",
+      "cve": "CVE-2026-41654",
+      "cvss": null
+    },
+    {
+      "title": "Weblate Doesn't Invalidate API Token on Password Change",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "weblate",
+      "description": "Weblate Doesn't Invalidate API Token on Password Change",
+      "link": "https://github.com/advisories/GHSA-6j8j-4qp3-36p2",
+      "cve": "CVE-2026-41519",
+      "cvss": 4.2
+    },
+    {
+      "title": "Gotenberg has ExifTool stdin argument injection via metadata value newlines (bypass of key sanitization fix)",
+      "date": "2026-04-30",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/gotenberg/gotenberg/v8",
+      "description": "Gotenberg has ExifTool stdin argument injection via metadata value newlines (bypass of key sanitization fix)",
+      "link": "https://github.com/advisories/GHSA-q7r4-hc83-hf2q",
+      "cve": "CVE-2026-40281",
+      "cvss": 10
+    },
+    {
+      "title": "Jupyter Notebook Vulnerable to Authentication Token Theft via CommandLinker XSS",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@jupyter-notebook/help-extension, notebook, jupyterlab",
+      "description": "Jupyter Notebook Vulnerable to Authentication Token Theft via CommandLinker XSS",
+      "link": "https://github.com/advisories/GHSA-rch3-82jr-f9w9",
+      "cve": "CVE-2026-40171",
+      "cvss": null
+    },
+    {
+      "title": "Gotenberg Vulnerable to Unauthenticated SSRF via Unfiltered Webhook URL",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/gotenberg/gotenberg/v8",
+      "description": "Gotenberg Vulnerable to Unauthenticated SSRF via Unfiltered Webhook URL",
+      "link": "https://github.com/advisories/GHSA-5vh4-rgv7-p9g4",
+      "cve": "CVE-2026-39383",
+      "cvss": 8.6
+    },
+    {
+      "title": "Gotenberg has case-insensitive URL scheme that bypasses webhook and downloadFrom deny-list SSRF protection",
+      "date": "2026-04-30",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/gotenberg/gotenberg/v8",
+      "description": "Gotenberg has case-insensitive URL scheme that bypasses webhook and downloadFrom deny-list SSRF protection",
+      "link": "https://github.com/advisories/GHSA-5q7p-7jgv-ww56",
+      "cve": "CVE-2026-40280",
+      "cvss": 9.3
     },
     {
       "title": "CVE-2026-32210: Microsoft Dynamics 365 (online) Spoofing Vulnerability",
@@ -507,6 +649,34 @@
       "cvss": 5
     },
     {
+      "title": "Signal Desktop v8.9.0-beta.2",
+      "date": "2026-04-30",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Hard at work fixing bugs and making other performance improvements to keep the app running smoothly for you.",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.9.0-beta.2",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "OpenTelemetry's disk retry default temp path enables local blob injection via OTLP Exporter",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nThe OTLP disk retry feature in `OpenTelemetry.Exporter.OpenTelemetryProtocol` silently fell back to `Path.GetTempPath()` when `OTEL_DOTNET_EXPERIMENTAL_OTLP_RETRY=disk` was set but `OTEL_",
+      "link": "https://github.com/advisories/GHSA-4625-4j76-fww9",
+      "cves": [
+        "CVE-2026-42191"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
       "title": "USN-8225-1: Python marshmallow vulnerabilities",
       "date": "2026-04-30",
       "severity": "LOW",
@@ -514,6 +684,16 @@
       "component": "Python marshmallow vulnerabilities",
       "description": "Jared Deckard discovered that Python marshmallow did not correctly\nhandle hiding certain fields. An attacker could possibly use this issue\nto leak sensitive information. This issue only affected Ubunt...",
       "link": "https://ubuntu.com/security/notices/USN-8225-1"
+    },
+    {
+      "title": "VS Code 1.118.1",
+      "date": "2026-04-30",
+      "severity": "UNKNOWN",
+      "vendor": "visualstudio",
+      "component": "Visual Studio Code",
+      "description": "Fixed GitHub Copilot CLI not working from VS Code.",
+      "link": "https://github.com/microsoft/vscode/releases/tag/1.118.1",
+      "cves": []
     },
     {
       "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
@@ -8938,6 +9118,141 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-04-30T19:43:14.688Z",
+      "logs": [
+        "[INFO] aws - 6 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[SUCCESS] cisco - 4 patches (1 new)",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] debian - 9 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] gcp - 2 patches, no changes",
+        "[SUCCESS] github - 135 patches (12 new)",
+        "[INFO] microsoft - 500 patches, no changes",
+        "[INFO] redhat - 233 patches, no changes",
+        "[SUCCESS] signal - 5 patches (2 new)",
+        "[INFO] ubuntu - 20 patches, no changes",
+        "[SUCCESS] visualstudio - 1 patches (1 new)"
+      ],
+      "newPatchCount": 16,
+      "totalPatches": 922,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "cisco",
+        "cloudflare",
+        "github",
+        "microsoft",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "visualstudio",
+        "aws",
+        "chrome",
+        "debian",
+        "edge",
+        "gcp"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Continued Evolution of Persistence Mechanism Against Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
+          "date": "2026-04-30",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenTelemetry's disk retry default temp path enables local blob injection via OTLP Exporter",
+          "date": "2026-04-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "ydb-go-sdk's transactions are not committed using the `options.WithCommit()` option on last call `table.Transaction.Execute` in transaction",
+          "date": "2026-04-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Clerk has an authorization bypass when combining organization, billing, or reverification checks",
+          "date": "2026-04-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n-mcp's IPv4-mapped IPv6 addresses bypass SSRF protection in validateUrlSync(), enabling full SSRF for SDK embedders",
+          "date": "2026-04-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Hickory DNS's Record Cache Accepts AUTHORITY-Section NS from Sibling Zone via Parent-Pool Zone-Context Elevation",
+          "date": "2026-04-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CKAN has Unauthenticated Authorization Bypass in `datastore_search_sql`",
+          "date": "2026-04-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Weblate Vulnerable to Authenticated SSRF via Project Backup Import bypassing validate_repo_url",
+          "date": "2026-04-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Weblate Doesn't Invalidate API Token on Password Change",
+          "date": "2026-04-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Gotenberg has ExifTool stdin argument injection via metadata value newlines (bypass of key sanitization fix)",
+          "date": "2026-04-30",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Jupyter Notebook Vulnerable to Authentication Token Theft via CommandLinker XSS",
+          "date": "2026-04-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gotenberg Vulnerable to Unauthenticated SSRF via Unfiltered Webhook URL",
+          "date": "2026-04-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gotenberg has case-insensitive URL scheme that bypasses webhook and downloadFrom deny-list SSRF protection",
+          "date": "2026-04-30",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal Desktop v8.9.0-beta.2",
+          "date": "2026-04-30",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "signal",
+          "title": "OpenTelemetry's disk retry default temp path enables local blob injection via OTLP Exporter",
+          "date": "2026-04-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "visualstudio",
+          "title": "VS Code 1.118.1",
+          "date": "2026-04-30",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-04-30T19:27:38.198Z",
       "logs": [
         "[INFO] aws - 6 patches, no changes",
@@ -13841,48 +14156,6 @@
     },
     {
       "timestamp": "2026-04-26T19:00:45.081Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 6 patches, no changes",
-        "[INFO] crowdstrike - 3 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 190 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 405 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 14 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1148,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "github",
-        "aws",
-        "cisco",
-        "debian",
-        "edge",
-        "redhat",
-        "ubuntu",
-        "postgresql",
-        "apple",
-        "chrome",
-        "crowdstrike",
-        "gitlab",
-        "signal",
-        "oracle-db"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-26T16:50:26.512Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
         "[INFO] aws - 3 patches, no changes",

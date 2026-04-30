@@ -1,16 +1,44 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-30T14:11:37.507Z",
+  "lastUpdated": "2026-04-30T19:42:07.442Z",
   "health": {
-    "lastFetchAttempt": "2026-04-30T14:11:37.507Z",
+    "lastFetchAttempt": "2026-04-30T19:42:07.442Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-30T14:11:37.507Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-04-30T19:42:07.442Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Signal Desktop v8.9.0-beta.2",
+      "date": "2026-04-30",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Hard at work fixing bugs and making other performance improvements to keep the app running smoothly for you.",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.9.0-beta.2",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "OpenTelemetry's disk retry default temp path enables local blob injection via OTLP Exporter",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nThe OTLP disk retry feature in `OpenTelemetry.Exporter.OpenTelemetryProtocol` silently fell back to `Path.GetTempPath()` when `OTEL_DOTNET_EXPERIMENTAL_OTLP_RETRY=disk` was set but `OTEL_",
+      "link": "https://github.com/advisories/GHSA-4625-4j76-fww9",
+      "cves": [
+        "CVE-2026-42191"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "GoBGP has Remote Denial of Service (Panic) via Malformed Well-known Path Attribute",
       "date": "2026-04-29",

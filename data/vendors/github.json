@@ -1,16 +1,148 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-04-30T14:10:36.500Z",
+  "lastUpdated": "2026-04-30T19:41:30.023Z",
   "health": {
-    "lastFetchAttempt": "2026-04-30T14:10:36.500Z",
+    "lastFetchAttempt": "2026-04-30T19:41:30.023Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-30T14:10:36.500Z",
+    "lastFetchNewPatches": 12,
+    "lastSuccessWithData": "2026-04-30T19:41:30.023Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "OpenTelemetry's disk retry default temp path enables local blob injection via OTLP Exporter",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+      "description": "OpenTelemetry's disk retry default temp path enables local blob injection via OTLP Exporter",
+      "link": "https://github.com/advisories/GHSA-4625-4j76-fww9",
+      "cve": "CVE-2026-42191",
+      "cvss": 6.5
+    },
+    {
+      "title": "ydb-go-sdk's transactions are not committed using the `options.WithCommit()` option on last call `table.Transaction.Execute` in transaction",
+      "date": "2026-04-30",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/ydb-platform/ydb-go-sdk/v3",
+      "description": "ydb-go-sdk's transactions are not committed using the `options.WithCommit()` option on last call `table.Transaction.Execute` in transaction",
+      "link": "https://github.com/advisories/GHSA-28xx-pppm-vqff",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Clerk has an authorization bypass when combining organization, billing, or reverification checks",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@clerk/shared, @clerk/shared, @clerk/backend",
+      "description": "Clerk has an authorization bypass when combining organization, billing, or reverification checks",
+      "link": "https://github.com/advisories/GHSA-w24r-5266-9c3c",
+      "cve": "CVE-2026-42349",
+      "cvss": null
+    },
+    {
+      "title": "n8n-mcp's IPv4-mapped IPv6 addresses bypass SSRF protection in validateUrlSync(), enabling full SSRF for SDK embedders",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "n8n-mcp",
+      "description": "n8n-mcp's IPv4-mapped IPv6 addresses bypass SSRF protection in validateUrlSync(), enabling full SSRF for SDK embedders",
+      "link": "https://github.com/advisories/GHSA-56c3-vfp2-5qqj",
+      "cve": "CVE-2026-42449",
+      "cvss": 8.5
+    },
+    {
+      "title": "Hickory DNS's Record Cache Accepts AUTHORITY-Section NS from Sibling Zone via Parent-Pool Zone-Context Elevation",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "hickory-recursor, hickory-recursor",
+      "description": "Hickory DNS's Record Cache Accepts AUTHORITY-Section NS from Sibling Zone via Parent-Pool Zone-Context Elevation",
+      "link": "https://github.com/advisories/GHSA-83hf-93m4-rgwq",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "CKAN has Unauthenticated Authorization Bypass in `datastore_search_sql`",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ckan, ckan",
+      "description": "CKAN has Unauthenticated Authorization Bypass in `datastore_search_sql`",
+      "link": "https://github.com/advisories/GHSA-cg4x-64p3-x59h",
+      "cve": "CVE-2026-42032",
+      "cvss": null
+    },
+    {
+      "title": "Weblate Vulnerable to Authenticated SSRF via Project Backup Import bypassing validate_repo_url",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "weblate",
+      "description": "Weblate Vulnerable to Authenticated SSRF via Project Backup Import bypassing validate_repo_url",
+      "link": "https://github.com/advisories/GHSA-cwcx-382v-8m9g",
+      "cve": "CVE-2026-41654",
+      "cvss": null
+    },
+    {
+      "title": "Weblate Doesn't Invalidate API Token on Password Change",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "weblate",
+      "description": "Weblate Doesn't Invalidate API Token on Password Change",
+      "link": "https://github.com/advisories/GHSA-6j8j-4qp3-36p2",
+      "cve": "CVE-2026-41519",
+      "cvss": 4.2
+    },
+    {
+      "title": "Gotenberg has ExifTool stdin argument injection via metadata value newlines (bypass of key sanitization fix)",
+      "date": "2026-04-30",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/gotenberg/gotenberg/v8",
+      "description": "Gotenberg has ExifTool stdin argument injection via metadata value newlines (bypass of key sanitization fix)",
+      "link": "https://github.com/advisories/GHSA-q7r4-hc83-hf2q",
+      "cve": "CVE-2026-40281",
+      "cvss": 10
+    },
+    {
+      "title": "Jupyter Notebook Vulnerable to Authentication Token Theft via CommandLinker XSS",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@jupyter-notebook/help-extension, notebook, jupyterlab",
+      "description": "Jupyter Notebook Vulnerable to Authentication Token Theft via CommandLinker XSS",
+      "link": "https://github.com/advisories/GHSA-rch3-82jr-f9w9",
+      "cve": "CVE-2026-40171",
+      "cvss": null
+    },
+    {
+      "title": "Gotenberg Vulnerable to Unauthenticated SSRF via Unfiltered Webhook URL",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/gotenberg/gotenberg/v8",
+      "description": "Gotenberg Vulnerable to Unauthenticated SSRF via Unfiltered Webhook URL",
+      "link": "https://github.com/advisories/GHSA-5vh4-rgv7-p9g4",
+      "cve": "CVE-2026-39383",
+      "cvss": 8.6
+    },
+    {
+      "title": "Gotenberg has case-insensitive URL scheme that bypasses webhook and downloadFrom deny-list SSRF protection",
+      "date": "2026-04-30",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/gotenberg/gotenberg/v8",
+      "description": "Gotenberg has case-insensitive URL scheme that bypasses webhook and downloadFrom deny-list SSRF protection",
+      "link": "https://github.com/advisories/GHSA-5q7p-7jgv-ww56",
+      "cve": "CVE-2026-40280",
+      "cvss": 9.3
+    },
     {
       "title": "OpenTelemetry.Resources.Azure has an unbounded HTTP response body read",
       "date": "2026-04-29",
