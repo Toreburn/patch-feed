@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-04-29T19:45:15.996Z",
+  "lastUpdated": "2026-04-30T03:42:04.015Z",
   "health": {
-    "lastFetchAttempt": "2026-04-29T19:45:15.996Z",
+    "lastFetchAttempt": "2026-04-30T03:42:04.015Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-29T19:45:15.996Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-04-30T03:42:04.015Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "GoBGP has Remote Denial of Service (Panic) via Malformed Well-known Path Attribute",
+      "date": "2026-04-29",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nA remote Denial of Service (DoS) vulnerability exists in GoBGP due to a nil pointer dereference. When a malformed BGP UPDATE message contains an unrecognized Path Attribute marked as \"Well",
+      "link": "https://github.com/advisories/GHSA-7235-89m6-f4px",
+      "cves": [
+        "CVE-2026-41642"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.9.0-beta.1",
       "date": "2026-04-26",
