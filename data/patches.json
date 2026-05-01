@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-01T19:17:05.003Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-01T19:21:20.364Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "DSA-6239-1 chromium - security update",
@@ -12,6 +12,19 @@
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00149.html",
       "cve": "",
       "cves": []
+    },
+    {
+      "title": "DSA-6197-3 dovecot - regression update",
+      "date": "2026-05-01",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "dovecot",
+      "description": "The oldstable (bookworm) backport of the security fix for CVE-2026-0394 introduced a regression in the passwd-file path normalization. Updated packages are now available to correct this issue. https:/...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00150.html",
+      "cve": "CVE-2026-0394",
+      "cves": [
+        "CVE-2026-0394"
+      ]
     },
     {
       "title": "pgEdge Launches AI DBA Workbench, an AI Co-Pilot for Database Administrators",
@@ -6317,6 +6330,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-01T19:21:20.364Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 10 patches (1 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] gcp - 4 patches, no changes",
+        "[INFO] github - 101 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 90 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 22 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 648,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "postgresql",
+        "cisco",
+        "cloudflare",
+        "crowdstrike",
+        "edge",
+        "gcp",
+        "github",
+        "microsoft",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "visualstudio",
+        "aws",
+        "chrome"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6197-3 dovecot - regression update",
+          "date": "2026-05-01",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-01T19:17:05.003Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -11402,55 +11464,6 @@
         "oracle-db"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-27T19:43:34.558Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 6 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 10 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 190 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 408 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[SUCCESS] ubuntu - 15 patches (1 new)"
-      ],
-      "newPatchCount": 1,
-      "totalPatches": 1099,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "redhat",
-        "ubuntu",
-        "microsoft",
-        "signal",
-        "github",
-        "aws",
-        "cisco",
-        "debian",
-        "edge",
-        "postgresql",
-        "apple",
-        "chrome",
-        "crowdstrike",
-        "gitlab",
-        "oracle-db"
-      ],
-      "newPatches": [
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8212-1: authd vulnerability",
-          "date": "2026-04-27",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
