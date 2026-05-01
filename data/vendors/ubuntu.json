@@ -1,12 +1,12 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-04-30T14:11:47.661Z",
+  "lastUpdated": "2026-05-01T13:41:54.102Z",
   "health": {
-    "lastFetchAttempt": "2026-04-30T14:11:47.661Z",
+    "lastFetchAttempt": "2026-05-01T13:41:54.102Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-04-30T14:11:47.661Z",
+    "lastFetchNewPatches": 3,
+    "lastSuccessWithData": "2026-05-01T13:41:54.102Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -19,6 +19,33 @@
       "component": "Python marshmallow vulnerabilities",
       "description": "Jared Deckard discovered that Python marshmallow did not correctly\nhandle hiding certain fields. An attacker could possibly use this issue\nto leak sensitive information. This issue only affected Ubunt...",
       "link": "https://ubuntu.com/security/notices/USN-8225-1"
+    },
+    {
+      "title": "USN-8226-2: kmod update",
+      "date": "2026-04-30",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "kmod",
+      "description": "USN-8226-1 added a mitigation to kmod to disable loading the algif_aead\nmodule. This update adds the same mitigation to Ubuntu 14.04 LTS,\nUbuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS.\n\nOri...",
+      "link": "https://ubuntu.com/security/notices/USN-8226-2"
+    },
+    {
+      "title": "USN-8226-1: kmod update",
+      "date": "2026-04-30",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "kmod",
+      "description": "It was discovered that the Linux kernel algif_aead module contained a logic\nflaw allowing a local attacker to escalate privileges to root. This update\nto the kmod package disables loading the algif_ae...",
+      "link": "https://ubuntu.com/security/notices/USN-8226-1"
+    },
+    {
+      "title": "USN-8218-1: zuluCrypt vulnerability",
+      "date": "2026-04-30",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "zuluCrypt",
+      "description": "Aaron Rainbolt discovered that zuluCrypt used insecure PolicyKit\nsettings in zuluPolkit. An attacker could possibly use this issue to\ncause local privilege escalation to root. (CVE-2025-53391)...",
+      "link": "https://ubuntu.com/security/notices/USN-8218-1"
     },
     {
       "title": "USN-8221-1: wheel vulnerability",

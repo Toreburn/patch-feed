@@ -1,7 +1,28 @@
 {
-  "lastUpdated": "2026-05-01T13:25:48.303Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-01T13:42:12.358Z",
+  "newPatches": 5,
   "patches": [
+    {
+      "title": "DSA-6239-1 chromium - security update",
+      "date": "2026-05-01",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6239-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00149.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "pgEdge Launches AI DBA Workbench, an AI Co-Pilot for Database Administrators",
+      "date": "2026-05-01",
+      "severity": "HIGH",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "Open source tool gives database teams an always-on Postgres expert with human oversight ALEXANDRIA, Va., April 22, 2026 — pgEdge, the leading open-source enterprise Postgres company, today announced t...",
+      "link": "https://www.postgresql.org/about/news/pgedge-launches-ai-dba-workbench-an-ai-co-pilot-for-database-administrators-3281/",
+      "cve": ""
+    },
     {
       "title": "Continued Evolution of Persistence Mechanism Against Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
       "date": "2026-04-30",
@@ -882,6 +903,33 @@
       "component": "Python marshmallow vulnerabilities",
       "description": "Jared Deckard discovered that Python marshmallow did not correctly\nhandle hiding certain fields. An attacker could possibly use this issue\nto leak sensitive information. This issue only affected Ubunt...",
       "link": "https://ubuntu.com/security/notices/USN-8225-1"
+    },
+    {
+      "title": "USN-8226-2: kmod update",
+      "date": "2026-04-30",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "kmod",
+      "description": "USN-8226-1 added a mitigation to kmod to disable loading the algif_aead\nmodule. This update adds the same mitigation to Ubuntu 14.04 LTS,\nUbuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS.\n\nOri...",
+      "link": "https://ubuntu.com/security/notices/USN-8226-2"
+    },
+    {
+      "title": "USN-8226-1: kmod update",
+      "date": "2026-04-30",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "kmod",
+      "description": "It was discovered that the Linux kernel algif_aead module contained a logic\nflaw allowing a local attacker to escalate privileges to root. This update\nto the kmod package disables loading the algif_ae...",
+      "link": "https://ubuntu.com/security/notices/USN-8226-1"
+    },
+    {
+      "title": "USN-8218-1: zuluCrypt vulnerability",
+      "date": "2026-04-30",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "zuluCrypt",
+      "description": "Aaron Rainbolt discovered that zuluCrypt used insecure PolicyKit\nsettings in zuluPolkit. An attacker could possibly use this issue to\ncause local privilege escalation to root. (CVE-2025-53391)...",
+      "link": "https://ubuntu.com/security/notices/USN-8218-1"
     },
     {
       "title": "VS Code 1.118.1",
@@ -6269,6 +6317,79 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-01T13:42:12.358Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 9 patches (1 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] gcp - 4 patches, no changes",
+        "[INFO] github - 101 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[SUCCESS] postgresql - 1 patches (1 new)",
+        "[INFO] redhat - 90 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[SUCCESS] ubuntu - 22 patches (3 new)",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 5,
+      "totalPatches": 647,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "postgresql",
+        "cisco",
+        "cloudflare",
+        "crowdstrike",
+        "edge",
+        "gcp",
+        "github",
+        "microsoft",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "visualstudio",
+        "aws",
+        "chrome"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6239-1 chromium - security update",
+          "date": "2026-05-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "postgresql",
+          "title": "pgEdge Launches AI DBA Workbench, an AI Co-Pilot for Database Administrators",
+          "date": "2026-05-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8226-2: kmod update",
+          "date": "2026-04-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8226-1: kmod update",
+          "date": "2026-04-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8218-1: zuluCrypt vulnerability",
+          "date": "2026-04-30",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-01T13:25:48.302Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -11415,48 +11536,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-04-27T14:03:00.623Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 6 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 10 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 190 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 394 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 14 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1084,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "signal",
-        "github",
-        "aws",
-        "cisco",
-        "debian",
-        "edge",
-        "redhat",
-        "ubuntu",
-        "postgresql",
-        "apple",
-        "chrome",
-        "crowdstrike",
-        "gitlab",
-        "oracle-db"
-      ],
-      "newPatches": []
     }
   ]
 }
