@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-01T13:42:12.358Z",
-  "newPatches": 5,
+  "lastUpdated": "2026-05-01T14:58:58.448Z",
+  "newPatches": 0,
   "patches": [
     {
       "title": "DSA-6239-1 chromium - security update",
@@ -6317,6 +6317,48 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-01T14:58:58.448Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 9 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] gcp - 4 patches, no changes",
+        "[INFO] github - 101 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 90 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 22 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 647,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "postgresql",
+        "cisco",
+        "cloudflare",
+        "crowdstrike",
+        "edge",
+        "gcp",
+        "github",
+        "microsoft",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "visualstudio",
+        "aws",
+        "chrome"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-05-01T13:42:12.358Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -11409,133 +11451,6 @@
         "oracle-db"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-27T14:10:07.740Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 6 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 10 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 190 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[SUCCESS] redhat - 408 patches (14 new)",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 14 patches, no changes"
-      ],
-      "newPatchCount": 14,
-      "totalPatches": 1098,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "redhat",
-        "microsoft",
-        "signal",
-        "github",
-        "aws",
-        "cisco",
-        "debian",
-        "edge",
-        "ubuntu",
-        "postgresql",
-        "apple",
-        "chrome",
-        "crowdstrike",
-        "gitlab",
-        "oracle-db"
-      ],
-      "newPatches": [
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-3006: winfsp: winfsp: Local privilege escalation via race condition and kernel heap overflow",
-          "date": "2026-04-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31673: kernel: af_unix: read UNIX_DIAG_VFS data under unix_state_lock",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31681: kernel: netfilter: xt_multiport: validate range encoding in checkentry",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31682: kernel: bridge: br_nd_send: linearize skb before parsing ND options",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31676: kernel: rxrpc: only handle RESPONSE during service challenge",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31683: kernel: batman-adv: avoid OGM aggregation when skb tailroom is insufficient",
-          "date": "2026-04-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31684: kernel: net: sched: act_csum: validate nested VLAN headers",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31674: kernel: netfilter: ip6t_rt: reject oversized addrnr in rt_mt6_check()",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31685: kernel: netfilter: ip6t_eui64: reject invalid MAC header for all packets",
-          "date": "2026-04-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31675: kernel: net/sched: sch_netem: fix out-of-bounds access in packet corruption",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31678: kernel: openvswitch: defer tunnel netdev_put to RCU release",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31679: kernel: openvswitch: validate MPLS set/set_masked payload length",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31677: kernel: crypto: af_alg - limit RX SG extraction by receive buffer budget",
-          "date": "2026-04-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31680: kernel: net: ipv6: flowlabel: defer exclusive option free until RCU teardown",
-          "date": "2026-04-25",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
