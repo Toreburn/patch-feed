@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-02T13:20:24.997Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-02T13:25:39.919Z",
+  "newPatches": 14,
   "patches": [
     {
       "title": "pgagroal 2.1",
@@ -30,6 +30,16 @@
       "component": "PostgreSQL",
       "description": "The pgexporter community is happy to announce version 0.8.0 . New Features New vault security (migration needed) A lot of new metrics - including for PostgreSQL 18 Use Grafana 12 Initial alert subsyst...",
       "link": "https://www.postgresql.org/about/news/pgexporter-08-3287/",
+      "cve": ""
+    },
+    {
+      "title": "PgQue v0.1 - Zero-bloat Postgres queue",
+      "date": "2026-05-02",
+      "severity": "HIGH",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "PgQue v0.1 has been released. PgQue is a zero-bloat Postgres event/message queue implemented in pure SQL and PL/pgSQL. It brings the PgQ architecture, originally developed at Skype, to modern Postgres...",
+      "link": "https://www.postgresql.org/about/news/pgque-v01-zero-bloat-postgres-queue-3284/",
       "cve": ""
     },
     {
@@ -1576,6 +1586,149 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31694.json",
       "cve": "CVE-2026-31694",
       "cvss": 7
+    },
+    {
+      "title": "CVE-2026-31785: kernel: drm/xe/xe_pagefault: Disallow writes to read-only VMAs",
+      "date": "2026-05-01",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/xe/xe_pagefault: Disallow writes to read-only VMAs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31785.json",
+      "cve": "CVE-2026-31785",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-31778: kernel: ALSA: caiaq: fix stack out-of-bounds read in init_card",
+      "date": "2026-05-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: caiaq: fix stack out-of-bounds read in init_card",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31778.json",
+      "cve": "CVE-2026-31778",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-31782: kernel: perf/x86: Fix potential bad container_of in intel_pmu_hw_config",
+      "date": "2026-05-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: perf/x86: Fix potential bad container_of in intel_pmu_hw_config",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31782.json",
+      "cve": "CVE-2026-31782",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-31777: kernel: ALSA: ctxfi: Check the error for index mapping",
+      "date": "2026-05-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: ctxfi: Check the error for index mapping",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31777.json",
+      "cve": "CVE-2026-31777",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-31775: kernel: ALSA: ctxfi: Don't enumerate SPDIF1 at DAIO initialization",
+      "date": "2026-05-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: ctxfi: Don't enumerate SPDIF1 at DAIO initialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31775.json",
+      "cve": "CVE-2026-31775",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-31783: kernel: spi: amlogic: spifc-a4: unregister ECC engine on probe failure and remove() callback",
+      "date": "2026-05-01",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: spi: amlogic: spifc-a4: unregister ECC engine on probe failure and remove() callback",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31783.json",
+      "cve": "CVE-2026-31783",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-31780: kernel: wifi: wilc1000: fix u8 overflow in SSID scan buffer size calculation",
+      "date": "2026-05-01",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: wifi: wilc1000: fix u8 overflow in SSID scan buffer size calculation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31780.json",
+      "cve": "CVE-2026-31780",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-31774: kernel: io_uring/net: fix slab-out-of-bounds read in io_bundle_nbufs()",
+      "date": "2026-05-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: io_uring/net: fix slab-out-of-bounds read in io_bundle_nbufs()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31774.json",
+      "cve": "CVE-2026-31774",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-31773: kernel: Bluetooth: SMP: derive legacy responder STK authentication from MITM state",
+      "date": "2026-05-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Bluetooth: SMP: derive legacy responder STK authentication from MITM state",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31773.json",
+      "cve": "CVE-2026-31773",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-31781: kernel: drm/ioc32: stop speculation on the drm_compat_ioctl path",
+      "date": "2026-05-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/ioc32: stop speculation on the drm_compat_ioctl path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31781.json",
+      "cve": "CVE-2026-31781",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-31784: kernel: drm/xe/pxp: Clear restart flag in pxp_start after jumping back",
+      "date": "2026-05-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/xe/pxp: Clear restart flag in pxp_start after jumping back",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31784.json",
+      "cve": "CVE-2026-31784",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-31776: kernel: ALSA: ctxfi: Fix missing SPDIFI1 index handling",
+      "date": "2026-05-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: ctxfi: Fix missing SPDIFI1 index handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31776.json",
+      "cve": "CVE-2026-31776",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-31779: kernel: wifi: iwlwifi: mvm: fix potential out-of-bounds read in iwl_mvm_nd_match_info_handler()",
+      "date": "2026-05-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: wifi: iwlwifi: mvm: fix potential out-of-bounds read in iwl_mvm_nd_match_info_handler()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-31779.json",
+      "cve": "CVE-2026-31779",
+      "cvss": 5.5
     },
     {
       "title": "Continued Evolution of Persistence Mechanism Against Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
@@ -7080,6 +7233,133 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-02T13:25:39.918Z",
+      "logs": [
+        "[INFO] aws - 5 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 13 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] gcp - 5 patches, no changes",
+        "[INFO] github - 78 patches, no changes",
+        "[INFO] microsoft - 350 patches, no changes",
+        "[SUCCESS] postgresql - 5 patches (1 new)",
+        "[SUCCESS] redhat - 226 patches (13 new)",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 22 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 14,
+      "totalPatches": 721,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "postgresql",
+        "aws",
+        "crowdstrike",
+        "debian",
+        "gcp",
+        "redhat",
+        "cisco",
+        "cloudflare",
+        "edge",
+        "github",
+        "microsoft",
+        "signal",
+        "ubuntu",
+        "visualstudio",
+        "chrome"
+      ],
+      "newPatches": [
+        {
+          "vendor": "postgresql",
+          "title": "PgQue v0.1 - Zero-bloat Postgres queue",
+          "date": "2026-05-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31785: kernel: drm/xe/xe_pagefault: Disallow writes to read-only VMAs",
+          "date": "2026-05-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31778: kernel: ALSA: caiaq: fix stack out-of-bounds read in init_card",
+          "date": "2026-05-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31782: kernel: perf/x86: Fix potential bad container_of in intel_pmu_hw_config",
+          "date": "2026-05-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31777: kernel: ALSA: ctxfi: Check the error for index mapping",
+          "date": "2026-05-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31775: kernel: ALSA: ctxfi: Don't enumerate SPDIF1 at DAIO initialization",
+          "date": "2026-05-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31783: kernel: spi: amlogic: spifc-a4: unregister ECC engine on probe failure and remove() callback",
+          "date": "2026-05-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31780: kernel: wifi: wilc1000: fix u8 overflow in SSID scan buffer size calculation",
+          "date": "2026-05-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31774: kernel: io_uring/net: fix slab-out-of-bounds read in io_bundle_nbufs()",
+          "date": "2026-05-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31773: kernel: Bluetooth: SMP: derive legacy responder STK authentication from MITM state",
+          "date": "2026-05-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31781: kernel: drm/ioc32: stop speculation on the drm_compat_ioctl path",
+          "date": "2026-05-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31784: kernel: drm/xe/pxp: Clear restart flag in pxp_start after jumping back",
+          "date": "2026-05-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31776: kernel: ALSA: ctxfi: Fix missing SPDIFI1 index handling",
+          "date": "2026-05-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-31779: kernel: wifi: iwlwifi: mvm: fix potential out-of-bounds read in iwl_mvm_nd_match_info_handler()",
+          "date": "2026-05-01",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-02T13:20:24.997Z",
       "logs": [
         "[INFO] aws - 5 patches, no changes",
@@ -12204,46 +12484,6 @@
     },
     {
       "timestamp": "2026-04-28T19:45:31.946Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 6 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 10 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 152 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 308 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 20 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 964,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "debian",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "microsoft",
-        "signal",
-        "github",
-        "cisco",
-        "edge",
-        "postgresql",
-        "apple",
-        "chrome",
-        "crowdstrike",
-        "gitlab"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-28T17:48:37.126Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
         "[INFO] aws - 3 patches, no changes",
