@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-05-03T19:05:04.596Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-03T19:09:57.613Z",
+  "newPatches": 2,
   "patches": [
+    {
+      "title": "DSA-6246-1 openjdk-25 - security update",
+      "date": "2026-05-03",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "openjdk-25",
+      "description": "Several vulnerabilities have been discovered in the OpenJDK Java runtime, which may result in incorrect generation of cryptographic keys, denial of service, information disclosure, XEE/XEE attacks or ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00157.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6245-1 imagemagick - security update",
+      "date": "2026-05-03",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "imagemagick",
+      "description": "Multiple security vulnerabilities were discovered in imagemagick, a software suite used for editing and manipulating digital images, which could lead to denial of service, information disclosure or po...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00156.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
       "date": "2026-05-03",
@@ -7117,6 +7139,61 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-03T19:09:57.613Z",
+      "logs": [
+        "[INFO] aws - 5 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 16 patches (2 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] gcp - 5 patches, no changes",
+        "[INFO] github - 78 patches, no changes",
+        "[INFO] microsoft - 340 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[INFO] redhat - 225 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 22 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 711,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "postgresql",
+        "aws",
+        "crowdstrike",
+        "gcp",
+        "redhat",
+        "cisco",
+        "cloudflare",
+        "edge",
+        "github",
+        "signal",
+        "ubuntu",
+        "visualstudio",
+        "chrome"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6246-1 openjdk-25 - security update",
+          "date": "2026-05-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6245-1 imagemagick - security update",
+          "date": "2026-05-03",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-03T19:05:04.596Z",
       "logs": [
         "[INFO] aws - 5 patches, no changes",
@@ -10975,347 +11052,6 @@
         "redhat"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-04-30T03:43:10.247Z",
-      "logs": [
-        "[INFO] aws - 6 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] gcp - 2 patches, no changes",
-        "[SUCCESS] github - 123 patches (48 new)",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[SUCCESS] redhat - 222 patches (2 new)",
-        "[SUCCESS] signal - 3 patches (1 new)",
-        "[INFO] ubuntu - 19 patches, no changes"
-      ],
-      "newPatchCount": 51,
-      "totalPatches": 843,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 11,
-      "vendors": [
-        "aws",
-        "chrome",
-        "debian",
-        "github",
-        "microsoft",
-        "signal",
-        "ubuntu",
-        "cisco",
-        "edge",
-        "gcp",
-        "redhat"
-      ],
-      "newPatches": [
-        {
-          "vendor": "github",
-          "title": "CKAN has Unauthenticated SQL Injection and Authorization Bypass in `datastore_search_sql`",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Claude SDK for TypeScript has Insecure Default File Permissions in Local Filesystem Memory Tool",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "i18next-http-middleware has path traversal / SSRF via user-controlled language and namespace parameters",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "netfoil's optional seccomp sandboxing was not applied",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Netfoil has incorrect allowlist enforcement",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "pygeoapi 0.23.x: Unauthenticated SSRF via OGC API - Processes Subscriber  ",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pygeoapi 0.23.x: Path Traversal in STAC FileSystemProvider",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Marked Vulnerable to OOM Denial of Service via Infinite Recursion in marked Tokenizer",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio: OIDC Token Introspection Endpoint Returns Active for All Tokens Without Validation",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio Sends SAML Response to Unvalidated Assertion Consumer Service URL from AuthnRequest",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio Ignores SAML Signature Validation Result, Processes Forged AuthnRequests and LogoutRequests",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio has CSRF on Admin Preferences that Triggers Unauthorized Backup, .htaccess Write, and Email Send",
-          "date": "2026-04-29",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio Missing Minimum Administrator Check in Role Membership Removal",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio vulnerable to reflected XSS in msg_window.php via Square Bracket to HTML Tag Conversion",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio has Inverted 2FA Reset Authorization Check that Lets Group Leaders Strip Admin TOTP",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio Leaks Hidden Profile Field Values via Blind Search Oracle in Member Assignment",
-          "date": "2026-04-29",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio's Missing Authorization on Inventory Module Destructive Endpoints Allows Any Authenticated User to Delete Items",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio Exposes Cross-Organization Member Data via Permission Check Mismatch in contacts_data.php",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio has Path Traversal via Unvalidated `name` Parameter in Document Add Mode that Enables Arbitrary Server File Read",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Admidio has Path Traversal in ECard Preview that Allows Reading Arbitrary Server Files Including Database Credentials",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Webchat audio embedding could read local files without local-root containment",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenClaw: Owner-enforced commands could accept wildcard channel senders as command owners",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n has XML Node Prototype Pollution that to RCE",
-          "date": "2026-04-29",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n has Prototype Pollution in XML Webhook Body Parser that Leads to RCE",
-          "date": "2026-04-29",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n Vulnerable to XSS via MCP OAuth client",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n's Credential Authorization Bypass in dynamic-node-parameters Allows Foreign API Key Replay",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n has a Python Task Runner Sandbox Escape Vulnerability",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n has Public API Variables IDOR that Allows Cross-Project Secret Disclosure",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n Vulnerable to Unauthenticated Denial of Service via MCP Client Registration",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n Vulnerable to Hijacking of Unauthenticated Chat Execution ",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n has SQL Injection in SeaTable Node",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n has Open Redirect in MCP OAuth Consent Flow",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n has SQL Injection in Oracle Database Node via Limit Field",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n has SQL Injection in Snowflake and MySQL Nodes",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "ipl/web is vulnerable to reflected XSS by malformed search requests",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "appsmith has SQL Injection in FilterDataService via Unsafe DROP TABLE Execution",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Nginx-UI has Server-Side Request Forgery (SSRF) via Cluster Proxy Middleware that Allows Access to Internal Services",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenID Connect nonce generated but never validated — ID token replay attack",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "GoBGP has Remote Denial of Service (Panic) in UpdatePathAttrs4ByteAs via Malformed BGP UPDATE",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "GoBGP has Remote Denial of Service (Panic) via Malformed Well-known Path Attribute",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "CI4MS has Unrestricted PHP File Upload via Theme Installation that Leads to Authenticated Remote Code Execution",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "fabric-sdk-java has ObjectInputStream.readObject() without ObjectInputFilter, which allows Java deserialization RCE",
-          "date": "2026-04-29",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "CKAN has CSRF exemption primed by anonymous requests",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "CKAN has no certificate validation on STMP connection",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "PhpSpreadsheet has CPU Denial of Service via Unbounded Row Number in XLSX Row Dimensions",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PhpSpreadsheet has CPU Denial of Service via Unbounded Row Index in SpreadsheetML XML Reader",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PhpSpreadsheet has SSRF/RCE in IOFactory::load when $filename is user controlled",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OneCollector exporter reads unbounded HTTP response bodies",
-          "date": "2026-04-29",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-42208: LiteLLM: LiteLLM: Unauthorized data access and modification via SQL injection",
-          "date": "2026-04-28",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-32952: go-ntlmssp: go-ntlmssp: Denial of Service via malicious NTLM challenge",
-          "date": "2026-04-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "GoBGP has Remote Denial of Service (Panic) via Malformed Well-known Path Attribute",
-          "date": "2026-04-29",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
