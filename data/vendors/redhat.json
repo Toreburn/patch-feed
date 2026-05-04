@@ -1,16 +1,38 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-05-04T08:37:34.974Z",
+  "lastUpdated": "2026-05-04T14:16:54.451Z",
   "health": {
-    "lastFetchAttempt": "2026-05-04T08:37:34.974Z",
+    "lastFetchAttempt": "2026-05-04T14:16:54.451Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 225,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-04T08:37:34.974Z",
+    "lastFetchParsedItems": 267,
+    "lastFetchNewPatches": 42,
+    "lastSuccessWithData": "2026-05-04T14:16:54.451Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-33846: gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33846.json",
+      "cve": "CVE-2026-33846",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-43058: kernel: media: vidtv: fix pass-by-value structs causing MSAN warnings",
+      "date": "2026-05-02",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: vidtv: fix pass-by-value structs causing MSAN warnings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43058.json",
+      "cve": "CVE-2026-43058",
+      "cvss": null
+    },
     {
       "title": "CVE-2026-43021: CVE-2026-43021",
       "date": "2026-05-01",
@@ -1607,6 +1629,28 @@
       "cvss": 7
     },
     {
+      "title": "CVE-2026-42404: Apache Neethi: Apache Neethi: Information disclosure and network access bypass via PolicyReference API",
+      "date": "2026-05-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Apache Neethi: Apache Neethi: Information disclosure and network access bypass via PolicyReference API",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42404.json",
+      "cve": "CVE-2026-42404",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-43056: kernel: net: mana: fix use-after-free in add_adev() error path",
+      "date": "2026-05-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: mana: fix use-after-free in add_adev() error path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43056.json",
+      "cve": "CVE-2026-43056",
+      "cvss": 7
+    },
+    {
       "title": "CVE-2026-6868: wireshark: Wireshark: Denial of Service via malicious network capture file",
       "date": "2026-04-30",
       "severity": "MEDIUM",
@@ -1761,6 +1805,380 @@
       "cvss": 7
     },
     {
+      "title": "CVE-2026-5404: wireshark: Wireshark: Denial of service due to K12 RF5 file parser crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of service due to K12 RF5 file parser crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5404.json",
+      "cve": "CVE-2026-5404",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-41263: github.com/traefik/traefik: Traefik: Username enumeration via timing side-channel in BasicAuth middleware",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/traefik/traefik: Traefik: Username enumeration via timing side-channel in BasicAuth middleware",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41263.json",
+      "cve": "CVE-2026-41263",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-41174: Traefik: github.com/traefik/traefik: Traefik: Cross-namespace isolation bypass via nested middleware references",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Traefik: github.com/traefik/traefik: Traefik: Cross-namespace isolation bypass via nested middleware references",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41174.json",
+      "cve": "CVE-2026-41174",
+      "cvss": 5.2
+    },
+    {
+      "title": "CVE-2026-7246: github.com/pallets/click: Pallets Click: Arbitrary command execution via command injection in click.edit()",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/pallets/click: Pallets Click: Arbitrary command execution via command injection in click.edit()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7246.json",
+      "cve": "CVE-2026-7246",
+      "cvss": 7.2
+    },
+    {
+      "title": "CVE-2026-5409: wireshark: Wireshark: Denial of service via Monero protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of service via Monero protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5409.json",
+      "cve": "CVE-2026-5409",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-5408: wireshark: Wireshark: Denial of service via BT-DHT protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of service via BT-DHT protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5408.json",
+      "cve": "CVE-2026-5408",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-5406: wireshark: Wireshark: Denial of Service via FC-SWILS protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service via FC-SWILS protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5406.json",
+      "cve": "CVE-2026-5406",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-5407: Wireshark: Wireshark: Denial of Service from malicious SMB2 protocol data",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of Service from malicious SMB2 protocol data",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5407.json",
+      "cve": "CVE-2026-5407",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-5401: wireshark: Wireshark: Denial of service via AFP Spotlight protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of service via AFP Spotlight protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5401.json",
+      "cve": "CVE-2026-5401",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-5654: wireshark: Wireshark: Denial of service vulnerability in AMR-NB codec",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of service vulnerability in AMR-NB codec",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5654.json",
+      "cve": "CVE-2026-5654",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-5655: wireshark: Wireshark: Denial of Service due to SDP protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service due to SDP protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5655.json",
+      "cve": "CVE-2026-5655",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-5657: Wireshark: Wireshark: Denial of service via iLBC codec crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of service via iLBC codec crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5657.json",
+      "cve": "CVE-2026-5657",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-5653: wireshark: Wireshark: Denial of Service via DCP-ETSI protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service via DCP-ETSI protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5653.json",
+      "cve": "CVE-2026-5653",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6538: Wireshark: Wireshark: Denial of Service via BEEP protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of Service via BEEP protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6538.json",
+      "cve": "CVE-2026-6538",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6537: Wireshark: Wireshark: Denial of Service via ZigBee protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of Service via ZigBee protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6537.json",
+      "cve": "CVE-2026-6537",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6536: wireshark: Wireshark: Denial of Service via DLMS/COSEM protocol dissector infinite loop",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service via DLMS/COSEM protocol dissector infinite loop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6536.json",
+      "cve": "CVE-2026-6536",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6535: wireshark: Wireshark: Denial of service via zlib decompression crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of service via zlib decompression crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6535.json",
+      "cve": "CVE-2026-6535",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6534: wireshark: Wireshark: Denial of Service via USB HID protocol dissector infinite loop",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service via USB HID protocol dissector infinite loop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6534.json",
+      "cve": "CVE-2026-6534",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-6533: Wireshark: Wireshark: Denial of service via LZ77 decompression crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of service via LZ77 decompression crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6533.json",
+      "cve": "CVE-2026-6533",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6532: wireshark: Wireshark: Denial of service via Kismet protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of service via Kismet protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6532.json",
+      "cve": "CVE-2026-6532",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-6531: Wireshark: Wireshark: Denial of Service via SANE protocol dissector infinite loop",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of Service via SANE protocol dissector infinite loop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6531.json",
+      "cve": "CVE-2026-6531",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-6530: wireshark: Wireshark: Denial of Service via DCP-ETSI protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service via DCP-ETSI protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6530.json",
+      "cve": "CVE-2026-6530",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6529: wireshark: Wireshark: Denial of Service via iLBC audio codec processing",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service via iLBC audio codec processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6529.json",
+      "cve": "CVE-2026-6529",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6528: Wireshark: Wireshark: Denial of service via TLS protocol dissector infinite loop",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of service via TLS protocol dissector infinite loop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6528.json",
+      "cve": "CVE-2026-6528",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6527: wireshark: Wireshark: Denial of Service due to ASN.1 PER protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service due to ASN.1 PER protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6527.json",
+      "cve": "CVE-2026-6527",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-6526: wireshark: Wireshark: Denial of Service due to RTSP protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service due to RTSP protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6526.json",
+      "cve": "CVE-2026-6526",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6524: wireshark: Wireshark: Denial of Service via MySQL protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service via MySQL protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6524.json",
+      "cve": "CVE-2026-6524",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6521: Wireshark: Wireshark: Denial of Service via OpenFlow v5 protocol dissector infinite loop",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of Service via OpenFlow v5 protocol dissector infinite loop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6521.json",
+      "cve": "CVE-2026-6521",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6520: Wireshark: Wireshark: Denial of Service via OpenFlow v6 protocol dissector infinite loop",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of Service via OpenFlow v6 protocol dissector infinite loop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6520.json",
+      "cve": "CVE-2026-6520",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6519: Wireshark: Wireshark: Denial of Service via MBIM protocol dissector infinite loop",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of Service via MBIM protocol dissector infinite loop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6519.json",
+      "cve": "CVE-2026-6519",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6522: Wireshark: Wireshark: Denial of Service via RPKI-Router protocol dissector infinite loop",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of Service via RPKI-Router protocol dissector infinite loop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6522.json",
+      "cve": "CVE-2026-6522",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6870: Wireshark: Wireshark: Denial of service via GSM RP protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Wireshark: Wireshark: Denial of service via GSM RP protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6870.json",
+      "cve": "CVE-2026-6870",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-6869: wireshark: Wireshark: Denial of Service via WebSocket protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of Service via WebSocket protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6869.json",
+      "cve": "CVE-2026-6869",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-6867: wireshark: Wireshark: Denial of service via SMB2 protocol dissector crash",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Wireshark: Denial of service via SMB2 protocol dissector crash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6867.json",
+      "cve": "CVE-2026-6867",
+      "cvss": 6.5
+    },
+    {
       "title": "CVE-2026-4873: curl: curl: Information disclosure due to incorrect TLS connection reuse",
       "date": "2026-04-29",
       "severity": "MEDIUM",
@@ -1836,6 +2254,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-38993.json",
       "cve": "CVE-2026-38993",
       "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-42519: Jenkins Script Security Plugin: Jenkins Script Security Plugin: Information disclosure via missing permission check",
+      "date": "2026-04-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Jenkins Script Security Plugin: Jenkins Script Security Plugin: Information disclosure via missing permission check",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42519.json",
+      "cve": "CVE-2026-42519",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-22741: Spring MVC: Spring WebFlux: Spring MVC and Spring WebFlux: Denial of Service via cache poisoning",
+      "date": "2026-04-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Spring MVC: Spring WebFlux: Spring MVC and Spring WebFlux: Denial of Service via cache poisoning",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-22741.json",
+      "cve": "CVE-2026-22741",
+      "cvss": 5.9
     },
     {
       "title": "CVE-2026-7233: mupdf: Artifex MuPDF: Information disclosure due to out-of-bounds read",
@@ -2485,6 +2925,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41409.json",
       "cve": "CVE-2026-41409",
       "cvss": 9.8
+    },
+    {
+      "title": "CVE-2026-40974: Spring Boot: Cassandra: Spring Boot: Security bypass in Cassandra SSL connections",
+      "date": "2026-04-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Spring Boot: Cassandra: Spring Boot: Security bypass in Cassandra SSL connections",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40974.json",
+      "cve": "CVE-2026-40974",
+      "cvss": 6.4
+    },
+    {
+      "title": "CVE-2026-40971: Spring Boot: Spring Boot: Information disclosure and data tampering via missing hostname verification",
+      "date": "2026-04-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Spring Boot: Spring Boot: Information disclosure and data tampering via missing hostname verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40971.json",
+      "cve": "CVE-2026-40971",
+      "cvss": 4.2
     },
     {
       "title": "CVE-2018-25282: nmap: zenmap: Nmap/ZenMap: Denial of Service via XML entity expansion",
