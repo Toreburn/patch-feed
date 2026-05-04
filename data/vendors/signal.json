@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-04T14:16:50.449Z",
+  "lastUpdated": "2026-05-04T19:48:47.521Z",
   "health": {
-    "lastFetchAttempt": "2026-05-04T14:16:50.449Z",
+    "lastFetchAttempt": "2026-05-04T19:48:47.521Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-04T14:16:50.449Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-05-04T19:48:47.521Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Incus has a Nil-Pointer Dereference via Custom Volume Import",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nMissing validation logic in the storage volume import logic allows an authenticated user with access to Incus' storage volume feature to cause the Incus daemon to crash. Repeated use of th",
+      "link": "https://github.com/advisories/GHSA-r7w7-mmxr-47r9",
+      "cves": [
+        "CVE-2026-40197"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Incus has a Nil-Pointer Dereference Panic via Bucket Metadata",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nMissing validation logic in the storage bucket import logic allows an authenticated user with access to Incus' storage bucket feature to cause the Incus daemon to crash. Repeated use of th",
+      "link": "https://github.com/advisories/GHSA-gc7j-g665-rxr9",
+      "cves": [
+        "CVE-2026-40195"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.9.0-beta.2",
       "date": "2026-04-30",
