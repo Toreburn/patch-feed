@@ -1,7 +1,196 @@
 {
-  "lastUpdated": "2026-05-05T03:21:33.564Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-05T03:32:01.332Z",
+  "newPatches": 67,
   "patches": [
+    {
+      "title": "Axios: CRLF Injection in multipart/form-data body via unsanitized blob.type in formDataToStream",
+      "date": "2026-05-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "axios",
+      "description": "Axios: CRLF Injection in multipart/form-data body via unsanitized blob.type in formDataToStream",
+      "link": "https://github.com/advisories/GHSA-445q-vr5w-6q77",
+      "cve": "CVE-2026-42037",
+      "cvss": 5.3
+    },
+    {
+      "title": "Axios: no_proxy bypass via IP alias allows SSRF",
+      "date": "2026-05-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "Axios: no_proxy bypass via IP alias allows SSRF",
+      "link": "https://github.com/advisories/GHSA-m7pr-hjqh-92cm",
+      "cve": "CVE-2026-42038",
+      "cvss": 6.8
+    },
+    {
+      "title": "Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
+      "date": "2026-05-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
+      "link": "https://github.com/advisories/GHSA-62hf-57xw-28j9",
+      "cve": "CVE-2026-42039",
+      "cvss": 7.5
+    },
+    {
+      "title": "Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
+      "date": "2026-05-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
+      "link": "https://github.com/advisories/GHSA-5c9x-8gcm-mpgx",
+      "cve": "CVE-2026-42034",
+      "cvss": 5.3
+    },
+    {
+      "title": "Axios: HTTP adapter streamed responses bypass maxContentLength",
+      "date": "2026-05-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "Axios: HTTP adapter streamed responses bypass maxContentLength",
+      "link": "https://github.com/advisories/GHSA-vf2m-468p-8v99",
+      "cve": "CVE-2026-42036",
+      "cvss": 5.3
+    },
+    {
+      "title": "Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",
+      "date": "2026-05-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",
+      "link": "https://github.com/advisories/GHSA-pf86-5x62-jrwf",
+      "cve": "CVE-2026-42033",
+      "cvss": 7.4
+    },
+    {
+      "title": "Axios: Header Injection via Prototype Pollution",
+      "date": "2026-05-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "Axios: Header Injection via Prototype Pollution",
+      "link": "https://github.com/advisories/GHSA-6chq-wfr3-2hj9",
+      "cve": "CVE-2026-42035",
+      "cvss": 7.4
+    },
+    {
+      "title": "Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion",
+      "date": "2026-05-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion",
+      "link": "https://github.com/advisories/GHSA-xx6v-rp6x-q39c",
+      "cve": "CVE-2026-42042",
+      "cvss": 5.4
+    },
+    {
+      "title": "Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy",
+      "date": "2026-05-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy",
+      "link": "https://github.com/advisories/GHSA-w9j2-pvgh-6h63",
+      "cve": "CVE-2026-42041",
+      "cvss": 4.8
+    },
+    {
+      "title": "Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0",
+      "date": "2026-05-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0",
+      "link": "https://github.com/advisories/GHSA-pmwg-cvhr-8vh7",
+      "cve": "CVE-2026-42043",
+      "cvss": 7.2
+    },
+    {
+      "title": "Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget in `parseReviver`",
+      "date": "2026-05-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "axios",
+      "description": "Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget in `parseReviver`",
+      "link": "https://github.com/advisories/GHSA-3w6x-2g7m-8v23",
+      "cve": "CVE-2026-42044",
+      "cvss": 6.5
+    },
+    {
+      "title": "Axios has prototype pollution read-side gadgets in HTTP adapter that allow credential injection and request hijacking",
+      "date": "2026-05-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "axios",
+      "description": "Axios has prototype pollution read-side gadgets in HTTP adapter that allow credential injection and request hijacking",
+      "link": "https://github.com/advisories/GHSA-q8qp-cvcw-x6jj",
+      "cve": "CVE-2026-42264",
+      "cvss": 7.4
+    },
+    {
+      "title": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+      "date": "2026-05-05",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+      "link": "https://github.com/advisories/GHSA-xhjh-pmcv-23jw",
+      "cve": "CVE-2026-42040",
+      "cvss": 3.7
+    },
+    {
+      "title": "ogham-mcp had credentials embedded in published PyPI sdists -- Neon postgres URLs and Voyage API key",
+      "date": "2026-05-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ogham-mcp",
+      "description": "ogham-mcp had credentials embedded in published PyPI sdists -- Neon postgres URLs and Voyage API key",
+      "link": "https://github.com/advisories/GHSA-8pqq-224h-x875",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+      "date": "2026-05-05",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# Vulnerability Disclosure: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams\n\n## Summary\n\nThe `encode()` function in `lib/helpers/AxiosURLSearchParams.js` contains a character mapping ",
+      "link": "https://github.com/advisories/GHSA-xhjh-pmcv-23jw",
+      "cves": [
+        "CVE-2026-42040"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "CVE-2026-7791 - Local Privilege Escalation via TOCTOU Race Condition in Amazon WorkSpaces Skylight Agent",
+      "date": "2026-05-04",
+      "severity": "CRITICAL",
+      "vendor": "aws",
+      "component": "CVE-2026-7791",
+      "description": "<p><b>Bulletin ID:</b> 2026-025-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 2026/05/04 15:30 PM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-025-aws/"
+    },
+    {
+      "title": "DSA-6247-1 lxd - security update",
+      "date": "2026-05-04",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "lxd",
+      "description": "Multiple security issues were discovered in LXD, a system container and virtual machine manager, which could result in denial of service. https://security-tracker.debian.org/tracker/DSA-6247-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00158.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "Incus is affected by unbounded binary import disk exhaustion",
       "date": "2026-05-04",
@@ -201,6 +390,402 @@
       "cvss": 9.8
     },
     {
+      "title": "sequoia-git has broken hard revocation handling",
+      "date": "2026-05-04",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "sequoia-git",
+      "description": "sequoia-git has broken hard revocation handling",
+      "link": "https://github.com/advisories/GHSA-g27r-r6ph-vf5r",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "webonyx/graphql-php has quadratic validation cost in OverlappingFieldsCanBeMerged via inline fragments",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "webonyx/graphql-php",
+      "description": "webonyx/graphql-php has quadratic validation cost in OverlappingFieldsCanBeMerged via inline fragments",
+      "link": "https://github.com/advisories/GHSA-fc86-6rv6-2jpm",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "livewire-markdown-editor has arbitrary file upload that allows stored XSS via attachment handler",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "mckenziearts/livewire-markdown-editor",
+      "description": "livewire-markdown-editor has arbitrary file upload that allows stored XSS via attachment handler",
+      "link": "https://github.com/advisories/GHSA-gxxh-8vcj-w2mh",
+      "cve": "",
+      "cvss": 7.1
+    },
+    {
+      "title": "pyload-ng: non-admin SETTINGS users can redirect all outbound traffic through an attacker-controlled proxy via unrestricted `proxy.*` config (incomplete fix for CVE-2026-33509 / -35463 / -35464 / -35586)",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pyload-ng",
+      "description": "pyload-ng: non-admin SETTINGS users can redirect all outbound traffic through an attacker-controlled proxy via unrestricted `proxy.*` config (incomplete fix for CVE-2026-33509 / -35463 / -35464 / -355...",
+      "link": "https://github.com/advisories/GHSA-pg67-9wjv-mr85",
+      "cve": "CVE-2026-42313",
+      "cvss": 8.3
+    },
+    {
+      "title": "pyload-ng: non-admin SETTINGS users can disable outbound TLS peer verification via unrestricted `ssl_verify` config (incomplete fix for CVE-2026-33509 / -35463 / -35464 / -35586)",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "pyload-ng",
+      "description": "pyload-ng: non-admin SETTINGS users can disable outbound TLS peer verification via unrestricted `ssl_verify` config (incomplete fix for CVE-2026-33509 / -35463 / -35464 / -35586)",
+      "link": "https://github.com/advisories/GHSA-ccxc-x975-4hh9",
+      "cve": "CVE-2026-42312",
+      "cvss": 6.8
+    },
+    {
+      "title": "net-imap vulnerable to command Injection via \"raw\" arguments to multiple commands",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "net-imap, net-imap, net-imap",
+      "description": "net-imap vulnerable to command Injection via \"raw\" arguments to multiple commands",
+      "link": "https://github.com/advisories/GHSA-hm49-wcqc-g2xg",
+      "cve": "CVE-2026-42257",
+      "cvss": null
+    },
+    {
+      "title": "net-imap vulnerable to command Injection via unvalidated Symbol inputs",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "net-imap, net-imap, net-imap",
+      "description": "net-imap vulnerable to command Injection via unvalidated Symbol inputs",
+      "link": "https://github.com/advisories/GHSA-75xq-5h9v-w6px",
+      "cve": "CVE-2026-42258",
+      "cvss": null
+    },
+    {
+      "title": "net-imap vulnerable to denial of service via high iteration count for `SCRAM-*` authentication",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "net-imap, net-imap, net-imap",
+      "description": "net-imap vulnerable to denial of service via high iteration count for `SCRAM-*` authentication",
+      "link": "https://github.com/advisories/GHSA-87pf-fpwv-p7m7",
+      "cve": "CVE-2026-42256",
+      "cvss": null
+    },
+    {
+      "title": "net-imap has quadratic complexity when reading response literals",
+      "date": "2026-05-04",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "net-imap, net-imap, net-imap",
+      "description": "net-imap has quadratic complexity when reading response literals",
+      "link": "https://github.com/advisories/GHSA-q2mw-fvj9-vvcw",
+      "cve": "CVE-2026-42245",
+      "cvss": null
+    },
+    {
+      "title": "net-imap vulnerable to STARTTLS stripping via invalid response timing",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "net-imap, net-imap, net-imap",
+      "description": "net-imap vulnerable to STARTTLS stripping via invalid response timing",
+      "link": "https://github.com/advisories/GHSA-vcgp-9326-pqcp",
+      "cve": "CVE-2026-42246",
+      "cvss": null
+    },
+    {
+      "title": "`mysten-metrics` was removed from crates.io for malicious code",
+      "date": "2026-05-04",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "mysten-metrics",
+      "description": "`mysten-metrics` was removed from crates.io for malicious code",
+      "link": "https://github.com/advisories/GHSA-g38r-8gmr-ghrf",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "`sui-execution-cut` was removed from crates.io for malicious code",
+      "date": "2026-05-04",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "sui-execution-cut",
+      "description": "`sui-execution-cut` was removed from crates.io for malicious code",
+      "link": "https://github.com/advisories/GHSA-qprh-m6p3-hwxc",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "ArchiveBox Vulnerable to RCE via unvalidated per-crawl config overrides in AddView",
+      "date": "2026-05-04",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "archivebox",
+      "description": "ArchiveBox Vulnerable to RCE via unvalidated per-crawl config overrides in AddView",
+      "link": "https://github.com/advisories/GHSA-3h23-7824-pj8r",
+      "cve": "CVE-2026-42601",
+      "cvss": null
+    },
+    {
+      "title": "apko doesn't verify downloaded apk packages against APKINDEX checksum (package substitution possible)",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "chainguard.dev/apko",
+      "description": "apko doesn't verify downloaded apk packages against APKINDEX checksum (package substitution possible)",
+      "link": "https://github.com/advisories/GHSA-hcwr-pq9g-rq3m",
+      "cve": "CVE-2026-42575",
+      "cvss": 7.5
+    },
+    {
+      "title": "apko dirFS has a symlink-following path traversal that allows multiple entry points to escape the build root",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "chainguard.dev/apko",
+      "description": "apko dirFS has a symlink-following path traversal that allows multiple entry points to escape the build root",
+      "link": "https://github.com/advisories/GHSA-qq3r-w4hj-gjp6",
+      "cve": "CVE-2026-42574",
+      "cvss": 7.5
+    },
+    {
+      "title": "apko `DiscoverKeys` has a panic on non-rsa jwks key that causes crash during key discovery",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "chainguard.dev/apko",
+      "description": "apko `DiscoverKeys` has a panic on non-rsa jwks key that causes crash during key discovery",
+      "link": "https://github.com/advisories/GHSA-m7hm-vm4x-28jf",
+      "cve": "CVE-2026-42576",
+      "cvss": 6.5
+    },
+    {
+      "title": "Pelican Web UI Affected by a Privilege Escalation Attack",
+      "date": "2026-05-04",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/pelicanplatform/pelican",
+      "description": "Pelican Web UI Affected by a Privilege Escalation Attack",
+      "link": "https://github.com/advisories/GHSA-rpfr-x88x-xwcw",
+      "cve": "CVE-2026-42571",
+      "cvss": null
+    },
+    {
+      "title": "phpVMS has an /importer authorization bypass causing full database wipe",
+      "date": "2026-05-04",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "nabeel/phpvms",
+      "description": "phpVMS has an /importer authorization bypass causing full database wipe",
+      "link": "https://github.com/advisories/GHSA-fv26-4939-62fh",
+      "cve": "CVE-2026-42569",
+      "cvss": 9.4
+    },
+    {
+      "title": "AzuraCast Vulnerable to Liquidsoap Code Injection via Incomplete cleanUpString-to-toRawString Migration in Remote Relay Password Field",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "azuracast/azuracast",
+      "description": "AzuraCast Vulnerable to Liquidsoap Code Injection via Incomplete cleanUpString-to-toRawString Migration in Remote Relay Password Field",
+      "link": "https://github.com/advisories/GHSA-q4ph-8x8g-95f8",
+      "cve": "",
+      "cvss": 8.8
+    },
+    {
+      "title": "AzuraCast has Missing Permissions Check on Media File Download, Allowing Cross-Station Data Exfiltration",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "azuracast/azuracast",
+      "description": "AzuraCast has Missing Permissions Check on Media File Download, Allowing Cross-Station Data Exfiltration",
+      "link": "https://github.com/advisories/GHSA-qff7-q5fm-8p76",
+      "cve": "",
+      "cvss": 6.5
+    },
+    {
+      "title": "AzuraCast's Missing RequireInternalConnection on Liquidsoap API Allows Low-Privilege Metadata Injection and Broadcast Disruption",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "azuracast/azuracast",
+      "description": "AzuraCast's Missing RequireInternalConnection on Liquidsoap API Allows Low-Privilege Metadata Injection and Broadcast Disruption",
+      "link": "https://github.com/advisories/GHSA-4fm3-ggg2-c6qx",
+      "cve": "",
+      "cvss": 6.3
+    },
+    {
+      "title": "AzuraCast has Password Reset Poisoning via Untrusted X-Forwarded-Host Header that Leads to Account Takeover and 2FA Bypass",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "azuracast/azuracast",
+      "description": "AzuraCast has Password Reset Poisoning via Untrusted X-Forwarded-Host Header that Leads to Account Takeover and 2FA Bypass",
+      "link": "https://github.com/advisories/GHSA-gv7r-3mr9-h5x8",
+      "cve": "CVE-2026-42606",
+      "cvss": 8.1
+    },
+    {
+      "title": "AzuraCast has Path Traversal in `currentDirectory` Parameter that Enables Remote Code Execution via Media Upload",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "azuracast/azuracast",
+      "description": "AzuraCast has Path Traversal in `currentDirectory` Parameter that Enables Remote Code Execution via Media Upload",
+      "link": "https://github.com/advisories/GHSA-vp2f-cqqp-478j",
+      "cve": "CVE-2026-42605",
+      "cvss": 8.8
+    },
+    {
+      "title": "quarkus-openapi-generator has overly broad path-parameter matching that sends authentication headers to unintended operations",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "io.quarkiverse.openapi.generator:quarkus-openapi-generator, io.quarkiverse.openapi.generator:quarkus-openapi-generator",
+      "description": "quarkus-openapi-generator has overly broad path-parameter matching that sends authentication headers to unintended operations",
+      "link": "https://github.com/advisories/GHSA-fr8f-rwjx-f32v",
+      "cve": "CVE-2026-42333",
+      "cvss": null
+    },
+    {
+      "title": "Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns",
+      "date": "2026-05-04",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "org.thymeleaf:thymeleaf, org.thymeleaf:thymeleaf-spring5, org.thymeleaf:thymeleaf-spring6",
+      "description": "Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns",
+      "link": "https://github.com/advisories/GHSA-c9ph-gxww-7744",
+      "cve": "CVE-2026-41901",
+      "cvss": 9
+    },
+    {
+      "title": "OpenClaw's Gateway Control UI bootstrap config required Gateway auth",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw's Gateway Control UI bootstrap config required Gateway auth",
+      "link": "https://github.com/advisories/GHSA-93rg-2xm5-2p9v",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "OpenClaw: OpenShell FS bridge reads pin and verify the opened file before returning bytes",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: OpenShell FS bridge reads pin and verify the opened file before returning bytes",
+      "link": "https://github.com/advisories/GHSA-5h3g-6xhh-rg6p",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "OpenClaw: OpenShell FS bridge writes stay pinned to the sandbox mount root",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: OpenShell FS bridge writes stay pinned to the sandbox mount root",
+      "link": "https://github.com/advisories/GHSA-wppj-c6mr-83jj",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "changedetection.io project has an XXE vulnerability",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "changedetection.io",
+      "description": "changedetection.io project has an XXE vulnerability",
+      "link": "https://github.com/advisories/GHSA-v7cp-2cx9-x793",
+      "cve": "CVE-2026-41895",
+      "cvss": null
+    },
+    {
+      "title": "Signal K Server's WebSocket Login Endpoint Lacks Rate Limiting (Credential Brute-Force)",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "signalk-server",
+      "description": "Signal K Server's WebSocket Login Endpoint Lacks Rate Limiting (Credential Brute-Force)",
+      "link": "https://github.com/advisories/GHSA-vmfm-ch9h-5c7g",
+      "cve": "CVE-2026-41893",
+      "cvss": null
+    },
+    {
+      "title": "CI4MS has a Deactivated User Session Bypass (active=0)",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS has a Deactivated User Session Bypass (active=0)",
+      "link": "https://github.com/advisories/GHSA-5hfv-c864-qcq9",
+      "cve": "CVE-2026-41891",
+      "cvss": null
+    },
+    {
+      "title": "CI4MS Vulnerable to Arbitrary Database Table Drop via Theme deleteProcess",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ci4-cms-erp/ci4ms",
+      "description": "CI4MS Vulnerable to Arbitrary Database Table Drop via Theme deleteProcess",
+      "link": "https://github.com/advisories/GHSA-vgrf-pr28-vf98",
+      "cve": "CVE-2026-41890",
+      "cvss": null
+    },
+    {
+      "title": "Distribution's tag deletion bypasses `storage.delete.enabled` configuration",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/distribution/distribution/v3, github.com/distribution/distribution",
+      "description": "Distribution's tag deletion bypasses `storage.delete.enabled` configuration",
+      "link": "https://github.com/advisories/GHSA-6pjf-3r9x-m592",
+      "cve": "CVE-2026-41888",
+      "cvss": null
+    },
+    {
+      "title": "OpenClaw's exec allowlist analysis rejects shell expansion in unquoted heredocs",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw's exec allowlist analysis rejects shell expansion in unquoted heredocs",
+      "link": "https://github.com/advisories/GHSA-x3h8-jrgh-p8jx",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "OpenClaw: MCP loopback owner context is derived from server-issued bearer tokens",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: MCP loopback owner context is derived from server-issued bearer tokens",
+      "link": "https://github.com/advisories/GHSA-r6xh-pqhr-v4xh",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "OpenClaw: Workspace dotenv files cannot override connector endpoint hosts",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Workspace dotenv files cannot override connector endpoint hosts",
+      "link": "https://github.com/advisories/GHSA-55cf-xx38-4p9p",
+      "cve": "",
+      "cvss": null
+    },
+    {
       "title": "CVE-2026-33846: gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly",
       "date": "2026-05-04",
       "severity": "HIGH",
@@ -209,6 +794,72 @@
       "description": "gnutls: GnuTLS: Denial of Service via heap buffer overflow in DTLS handshake fragment reassembly",
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33846.json",
       "cve": "CVE-2026-33846",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-6266: aap-controller: aap-gateway: Account hijacking and unauthorized access via unverified email linking",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aap-controller: aap-gateway: Account hijacking and unauthorized access via unverified email linking",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6266.json",
+      "cve": "CVE-2026-6266",
+      "cvss": 8.3
+    },
+    {
+      "title": "CVE-2025-70072: Assimp: Assimp: Denial of Service via FBXConverter components",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Assimp: Assimp: Denial of Service via FBXConverter components",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-70072.json",
+      "cve": "CVE-2025-70072",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2025-70070: Assimp: Assimp: Denial of Service via FBXMeshGeometry.cpp, MeshGeometry::MeshGeometry()",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Assimp: Assimp: Denial of Service via FBXMeshGeometry.cpp, MeshGeometry::MeshGeometry()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-70070.json",
+      "cve": "CVE-2025-70070",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2025-70069: Assimp: Assimp: Denial of Service via FBXConverter.cpp and ConvertMeshMultiMaterial() method",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Assimp: Assimp: Denial of Service via FBXConverter.cpp and ConvertMeshMultiMaterial() method",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-70069.json",
+      "cve": "CVE-2025-70069",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2025-70067: Assimp: Assimp: Buffer overflow in FBX Importer allows arbitrary code execution via crafted file.",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Assimp: Assimp: Buffer overflow in FBX Importer allows arbitrary code execution via crafted file.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-70067.json",
+      "cve": "CVE-2025-70067",
+      "cvss": 5.6
+    },
+    {
+      "title": "CVE-2025-70071: Assimp: Assimp: Denial of Service via FBXParser.cpp ParseVectorDataArray() function",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Assimp: Assimp: Denial of Service via FBXParser.cpp ParseVectorDataArray() function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-70071.json",
+      "cve": "CVE-2025-70071",
       "cvss": 7.5
     },
     {
@@ -236,6 +887,21 @@
       "link": "https://github.com/advisories/GHSA-gc7j-g665-rxr9",
       "cves": [
         "CVE-2026-40195"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Signal K Server's WebSocket Login Endpoint Lacks Rate Limiting (Credential Brute-Force)",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe HTTP login endpoints (`POST /login` and `POST /signalk/v1/auth/login`) are protected by `express-rate-limit` (default: 100 attempts per 10-minute window, configurable via `HTTP_RATE_LI",
+      "link": "https://github.com/advisories/GHSA-vmfm-ch9h-5c7g",
+      "cves": [
+        "CVE-2026-41893"
       ],
       "platform": [
         "All Platforms"
@@ -711,6 +1377,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43058.json",
       "cve": "CVE-2026-43058",
       "cvss": null
+    },
+    {
+      "title": "CVE-2026-6525: wireshark: NULL Pointer Dereference in Wireshark",
+      "date": "2026-05-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: NULL Pointer Dereference in Wireshark",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6525.json",
+      "cve": "CVE-2026-6525",
+      "cvss": 5.5
     },
     {
       "title": "CVE-2026-7461 - OS Command Injection in Amazon ECS Agent via FSx Windows File Server Volume Credentials",
@@ -3707,6 +4384,72 @@
       "cvss": 6.5
     },
     {
+      "title": "CVE-2026-5403: wireshark: Heap-based Buffer Overflow in Wireshark",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Heap-based Buffer Overflow in Wireshark",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5403.json",
+      "cve": "CVE-2026-5403",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-5656: wireshark: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') in Wireshark",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') in Wireshark",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5656.json",
+      "cve": "CVE-2026-5656",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-5405: wireshark: Heap-based Buffer Overflow in Wireshark",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Heap-based Buffer Overflow in Wireshark",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5405.json",
+      "cve": "CVE-2026-5405",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-5299: wireshark: Uncontrolled Recursion in Wireshark",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Uncontrolled Recursion in Wireshark",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5299.json",
+      "cve": "CVE-2026-5299",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-5402: wireshark: Heap-based Buffer Overflow in Wireshark",
+      "date": "2026-04-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Heap-based Buffer Overflow in Wireshark",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5402.json",
+      "cve": "CVE-2026-5402",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-6523: wireshark: Loop with Unreachable Exit Condition ('Infinite Loop') in Wireshark",
+      "date": "2026-04-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: Loop with Unreachable Exit Condition ('Infinite Loop') in Wireshark",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6523.json",
+      "cve": "CVE-2026-6523",
+      "cvss": 5.5
+    },
+    {
       "title": "Signal Desktop v8.9.0-beta.2",
       "date": "2026-04-30",
       "severity": "UNKNOWN",
@@ -5458,6 +6201,453 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-05-05T03:32:01.332Z",
+      "logs": [
+        "[SUCCESS] aws - 5 patches (1 new)",
+        "[INFO] chrome - 1 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 12 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] gcp - 3 patches, no changes",
+        "[SUCCESS] github - 136 patches (50 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 190 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 219 patches (13 new)",
+        "[SUCCESS] signal - 7 patches (2 new)",
+        "[INFO] ubuntu - 12 patches, no changes",
+        "[INFO] visualstudio - 1 patches, no changes"
+      ],
+      "newPatchCount": 67,
+      "totalPatches": 597,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "github",
+        "signal",
+        "aws",
+        "debian",
+        "redhat",
+        "ubuntu",
+        "microsoft",
+        "postgresql",
+        "crowdstrike",
+        "gcp",
+        "cisco",
+        "cloudflare",
+        "edge",
+        "visualstudio",
+        "chrome",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-7791 - Local Privilege Escalation via TOCTOU Race Condition in Amazon WorkSpaces Skylight Agent",
+          "date": "2026-05-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6247-1 lxd - security update",
+          "date": "2026-05-04",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: CRLF Injection in multipart/form-data body via unsanitized blob.type in formDataToStream",
+          "date": "2026-05-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: no_proxy bypass via IP alias allows SSRF",
+          "date": "2026-05-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
+          "date": "2026-05-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
+          "date": "2026-05-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: HTTP adapter streamed responses bypass maxContentLength",
+          "date": "2026-05-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",
+          "date": "2026-05-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: Header Injection via Prototype Pollution",
+          "date": "2026-05-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion",
+          "date": "2026-05-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy",
+          "date": "2026-05-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0",
+          "date": "2026-05-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget in `parseReviver`",
+          "date": "2026-05-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios has prototype pollution read-side gadgets in HTTP adapter that allow credential injection and request hijacking",
+          "date": "2026-05-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+          "date": "2026-05-05",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "ogham-mcp had credentials embedded in published PyPI sdists -- Neon postgres URLs and Voyage API key",
+          "date": "2026-05-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "sequoia-git has broken hard revocation handling",
+          "date": "2026-05-04",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "webonyx/graphql-php has quadratic validation cost in OverlappingFieldsCanBeMerged via inline fragments",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "livewire-markdown-editor has arbitrary file upload that allows stored XSS via attachment handler",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pyload-ng: non-admin SETTINGS users can redirect all outbound traffic through an attacker-controlled proxy via unrestricted `proxy.*` config (incomplete fix for CVE-2026-33509 / -35463 / -35464 / -35586)",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pyload-ng: non-admin SETTINGS users can disable outbound TLS peer verification via unrestricted `ssl_verify` config (incomplete fix for CVE-2026-33509 / -35463 / -35464 / -35586)",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "net-imap vulnerable to command Injection via \"raw\" arguments to multiple commands",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "net-imap vulnerable to command Injection via unvalidated Symbol inputs",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "net-imap vulnerable to denial of service via high iteration count for `SCRAM-*` authentication",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "net-imap has quadratic complexity when reading response literals",
+          "date": "2026-05-04",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "net-imap vulnerable to STARTTLS stripping via invalid response timing",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "`mysten-metrics` was removed from crates.io for malicious code",
+          "date": "2026-05-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "`sui-execution-cut` was removed from crates.io for malicious code",
+          "date": "2026-05-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "ArchiveBox Vulnerable to RCE via unvalidated per-crawl config overrides in AddView",
+          "date": "2026-05-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "apko doesn't verify downloaded apk packages against APKINDEX checksum (package substitution possible)",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "apko dirFS has a symlink-following path traversal that allows multiple entry points to escape the build root",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "apko `DiscoverKeys` has a panic on non-rsa jwks key that causes crash during key discovery",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Pelican Web UI Affected by a Privilege Escalation Attack",
+          "date": "2026-05-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "phpVMS has an /importer authorization bypass causing full database wipe",
+          "date": "2026-05-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "AzuraCast Vulnerable to Liquidsoap Code Injection via Incomplete cleanUpString-to-toRawString Migration in Remote Relay Password Field",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AzuraCast has Missing Permissions Check on Media File Download, Allowing Cross-Station Data Exfiltration",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AzuraCast's Missing RequireInternalConnection on Liquidsoap API Allows Low-Privilege Metadata Injection and Broadcast Disruption",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AzuraCast has Password Reset Poisoning via Untrusted X-Forwarded-Host Header that Leads to Account Takeover and 2FA Bypass",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AzuraCast has Path Traversal in `currentDirectory` Parameter that Enables Remote Code Execution via Media Upload",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "quarkus-openapi-generator has overly broad path-parameter matching that sends authentication headers to unintended operations",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Sandboxed Thymeleaf expressions vulnerable to improper recognition of unauthorized syntax patterns",
+          "date": "2026-05-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw's Gateway Control UI bootstrap config required Gateway auth",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: OpenShell FS bridge reads pin and verify the opened file before returning bytes",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: OpenShell FS bridge writes stay pinned to the sandbox mount root",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "changedetection.io project has an XXE vulnerability",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Signal K Server's WebSocket Login Endpoint Lacks Rate Limiting (Credential Brute-Force)",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS has a Deactivated User Session Bypass (active=0)",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "CI4MS Vulnerable to Arbitrary Database Table Drop via Theme deleteProcess",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Distribution's tag deletion bypasses `storage.delete.enabled` configuration",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw's exec allowlist analysis rejects shell expansion in unquoted heredocs",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: MCP loopback owner context is derived from server-issued bearer tokens",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Workspace dotenv files cannot override connector endpoint hosts",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6266: aap-controller: aap-gateway: Account hijacking and unauthorized access via unverified email linking",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-70072: Assimp: Assimp: Denial of Service via FBXConverter components",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-70070: Assimp: Assimp: Denial of Service via FBXMeshGeometry.cpp, MeshGeometry::MeshGeometry()",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-70069: Assimp: Assimp: Denial of Service via FBXConverter.cpp and ConvertMeshMultiMaterial() method",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-70067: Assimp: Assimp: Buffer overflow in FBX Importer allows arbitrary code execution via crafted file.",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-70071: Assimp: Assimp: Denial of Service via FBXParser.cpp ParseVectorDataArray() function",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6525: wireshark: NULL Pointer Dereference in Wireshark",
+          "date": "2026-05-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5403: wireshark: Heap-based Buffer Overflow in Wireshark",
+          "date": "2026-04-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5656: wireshark: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') in Wireshark",
+          "date": "2026-04-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5405: wireshark: Heap-based Buffer Overflow in Wireshark",
+          "date": "2026-04-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5299: wireshark: Uncontrolled Recursion in Wireshark",
+          "date": "2026-04-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5402: wireshark: Heap-based Buffer Overflow in Wireshark",
+          "date": "2026-04-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6523: wireshark: Loop with Unreachable Exit Condition ('Infinite Loop') in Wireshark",
+          "date": "2026-04-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "signal",
+          "title": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+          "date": "2026-05-05",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal K Server's WebSocket Login Endpoint Lacks Rate Limiting (Credential Brute-Force)",
+          "date": "2026-05-04",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-05-05T03:21:33.564Z",
       "logs": [
@@ -9144,46 +10334,6 @@
     },
     {
       "timestamp": "2026-05-01T13:25:48.302Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] gcp - 4 patches, no changes",
-        "[INFO] github - 101 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] redhat - 90 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 19 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 642,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "cisco",
-        "cloudflare",
-        "crowdstrike",
-        "debian",
-        "edge",
-        "gcp",
-        "github",
-        "microsoft",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "visualstudio",
-        "aws",
-        "chrome"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-01T11:09:35.625Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",

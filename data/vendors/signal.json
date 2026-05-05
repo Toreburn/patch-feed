@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-04T19:48:47.521Z",
+  "lastUpdated": "2026-05-05T03:30:50.168Z",
   "health": {
-    "lastFetchAttempt": "2026-05-04T19:48:47.521Z",
+    "lastFetchAttempt": "2026-05-05T03:30:50.168Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 4,
+    "lastFetchParsedItems": 3,
     "lastFetchNewPatches": 2,
-    "lastSuccessWithData": "2026-05-04T19:48:47.521Z",
+    "lastSuccessWithData": "2026-05-05T03:30:50.168Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+      "date": "2026-05-05",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# Vulnerability Disclosure: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams\n\n## Summary\n\nThe `encode()` function in `lib/helpers/AxiosURLSearchParams.js` contains a character mapping ",
+      "link": "https://github.com/advisories/GHSA-xhjh-pmcv-23jw",
+      "cves": [
+        "CVE-2026-42040"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Incus has a Nil-Pointer Dereference via Custom Volume Import",
       "date": "2026-05-04",
@@ -36,6 +51,21 @@
       "link": "https://github.com/advisories/GHSA-gc7j-g665-rxr9",
       "cves": [
         "CVE-2026-40195"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Signal K Server's WebSocket Login Endpoint Lacks Rate Limiting (Credential Brute-Force)",
+      "date": "2026-05-04",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe HTTP login endpoints (`POST /login` and `POST /signalk/v1/auth/login`) are protected by `express-rate-limit` (default: 100 attempts per 10-minute window, configurable via `HTTP_RATE_LI",
+      "link": "https://github.com/advisories/GHSA-vmfm-ch9h-5c7g",
+      "cves": [
+        "CVE-2026-41893"
       ],
       "platform": [
         "All Platforms"
