@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-05T08:20:21.684Z",
+  "lastUpdated": "2026-05-05T19:43:18.364Z",
   "health": {
-    "lastFetchAttempt": "2026-05-05T08:20:21.684Z",
+    "lastFetchAttempt": "2026-05-05T19:43:18.364Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-05T08:20:21.684Z",
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-05-05T19:43:18.364Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -22,6 +22,34 @@
       "cves": [
         "CVE-2026-42040"
       ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Magento LTS has Weak API Session ID — Predictable MD5 of Time-Derived Inputs",
+      "date": "2026-05-05",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "Affected Version: OpenMage LTS ≤ 20.16.0 (confirmed on `20.16.0`)\n\nAffected File: `https://github.com/OpenMage/magento-lts/blob/main/app/code/core/Mage/Api/Model/Session.php` – `start()` method\n\n\n## S",
+      "link": "https://github.com/advisories/GHSA-2cwr-gcf9-pvxr",
+      "cves": [
+        "CVE-2026-42155"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "webonyx/graphql-php has unbounded recursion in parser that causes stack overflow on crafted nested input",
+      "date": "2026-05-05",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\n`GraphQL\\Language\\Parser` is a recursive descent parser with no recursion depth limit and no `zend.max_allowed_stack_size` interaction. Crafted nested queries trigger a SIGSEGV in the PHP ",
+      "link": "https://github.com/advisories/GHSA-r7cg-qjjm-xhqq",
+      "cves": [],
       "platform": [
         "All Platforms"
       ]
