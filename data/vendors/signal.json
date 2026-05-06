@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-05T19:43:18.364Z",
+  "lastUpdated": "2026-05-06T03:41:57.033Z",
   "health": {
-    "lastFetchAttempt": "2026-05-05T19:43:18.364Z",
+    "lastFetchAttempt": "2026-05-06T03:41:57.033Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 3,
     "lastFetchNewPatches": 2,
-    "lastSuccessWithData": "2026-05-05T19:43:18.364Z",
+    "lastSuccessWithData": "2026-05-06T03:41:57.033Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -50,6 +50,36 @@
       "description": "## Summary\n\n`GraphQL\\Language\\Parser` is a recursive descent parser with no recursion depth limit and no `zend.max_allowed_stack_size` interaction. Crafted nested queries trigger a SIGSEGV in the PHP ",
       "link": "https://github.com/advisories/GHSA-r7cg-qjjm-xhqq",
       "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "AVideo has Blind SSRF in YPTWallet Donation Webhook via Missing isSSRFSafeURL() Check and CURLOPT_FOLLOWLOCATION Redirect Bypass",
+      "date": "2026-05-05",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nAn authenticated user can configure their own donation-notification webhook URL to point at internal/loopback/metadata hosts (e.g. `http://127.0.0.1:8080/...`, `http://169.254.169.254/late",
+      "link": "https://github.com/advisories/GHSA-wp38-whx3-xffh",
+      "cves": [
+        "CVE-2026-43879"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "GoBGP has a panic in AdjRib.Update via malformed BGP Update message (Nil Pointer Dereference)",
+      "date": "2026-05-05",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nRemote Denial of Service (DoS) via Nil Pointer Dereference in BGP Update Processing\nAn unauthenticated remote BGP peer can trigger a fatal panic in GoBGP by sending a specially crafted BGP",
+      "link": "https://github.com/advisories/GHSA-p3w2-64xm-833j",
+      "cves": [
+        "CVE-2026-42285"
+      ],
       "platform": [
         "All Platforms"
       ]
