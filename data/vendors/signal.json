@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-06T19:54:30.519Z",
+  "lastUpdated": "2026-05-07T03:41:48.895Z",
   "health": {
-    "lastFetchAttempt": "2026-05-06T19:54:30.519Z",
+    "lastFetchAttempt": "2026-05-07T03:41:48.895Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-06T19:54:30.519Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-05-07T03:41:48.895Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Gotenberg has Unauthenticated RCE via ExifTool Metadata Key Injection",
+      "date": "2026-05-07",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# Unauthenticated RCE in Gotenberg via Metadata Key Newline Injection\n\n## Summary\n\nGotenberg's `/forms/pdfengines/metadata/write` HTTP endpoint accepts a JSON metadata object and passes its keys direc",
+      "link": "https://github.com/advisories/GHSA-rqgh-gxv4-6657",
+      "cves": [
+        "CVE-2026-42589"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
       "date": "2026-05-05",
