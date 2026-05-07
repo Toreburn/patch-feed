@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-07T03:41:48.895Z",
+  "lastUpdated": "2026-05-07T08:43:00.545Z",
   "health": {
-    "lastFetchAttempt": "2026-05-07T03:41:48.895Z",
+    "lastFetchAttempt": "2026-05-07T08:43:00.545Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 2,
     "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-05-07T03:41:48.895Z",
+    "lastSuccessWithData": "2026-05-07T08:43:00.545Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -21,6 +21,21 @@
       "link": "https://github.com/advisories/GHSA-rqgh-gxv4-6657",
       "cves": [
         "CVE-2026-42589"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Bandit trusts client-supplied URI scheme on plaintext connections",
+      "date": "2026-05-07",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nBandit reflects the client-supplied URI scheme into `conn.scheme` without verifying the actual transport. Over a plaintext HTTP/1.1 connection (or h2c), an unauthenticated attacker can sen",
+      "link": "https://github.com/advisories/GHSA-375f-4r2h-f99j",
+      "cves": [
+        "CVE-2026-39807"
       ],
       "platform": [
         "All Platforms"
