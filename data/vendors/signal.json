@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-07T19:49:01.608Z",
+  "lastUpdated": "2026-05-08T03:35:36.943Z",
   "health": {
-    "lastFetchAttempt": "2026-05-07T19:49:01.608Z",
+    "lastFetchAttempt": "2026-05-08T03:35:36.943Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-05-07T19:49:01.608Z",
+    "lastFetchParsedItems": 5,
+    "lastFetchNewPatches": 3,
+    "lastSuccessWithData": "2026-05-08T03:35:36.943Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -52,6 +52,47 @@
       "cves": [],
       "platform": [
         "Desktop"
+      ]
+    },
+    {
+      "title": "Ech0 allows PUT /api/echo/like/:id unauthenticated: anonymous callers to modify any echo's fav_count",
+      "date": "2026-05-07",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\n`PUT /api/echo/like/:id` at `internal/router/echo.go:12` is registered on `PublicRouterGroup` with no authentication and no rate limit. Anonymous callers increment the `fav_count` counter ",
+      "link": "https://github.com/advisories/GHSA-pj6q-4vq4-r8cg",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Webauthn has a User Verification Downgrade via Default-Open ClientOverridePolicy",
+      "date": "2026-05-07",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nIn version 5.3.0 of the Symfony bundle, `Webauthn\\Bundle\\Policy\\ClientOverridePolicy` defaulted to allowing all client overrides, including `userVerification`. A client could send `{\"userV",
+      "link": "https://github.com/advisories/GHSA-h4fw-6r7f-w494",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Zebra has Consensus Divergence in Transparent Sighash Hash-Type Handling due to Stale Buffer",
+      "date": "2026-05-07",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# CVE-2026-44497: Consensus Divergence in Transparent Sighash Hash-Type Handling due to Stale Buffer\n\n## Summary\n\nThe fix for https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-8m29-fpq",
+      "link": "https://github.com/advisories/GHSA-gq4h-3grw-2rhv",
+      "cves": [
+        "CVE-2026-44497"
+      ],
+      "platform": [
+        "All Platforms"
       ]
     },
     {
