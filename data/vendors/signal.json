@@ -1,16 +1,44 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-08T14:03:56.320Z",
+  "lastUpdated": "2026-05-08T19:27:19.300Z",
   "health": {
-    "lastFetchAttempt": "2026-05-08T14:03:56.320Z",
+    "lastFetchAttempt": "2026-05-08T19:27:19.300Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 5,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-08T14:03:56.320Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-05-08T19:27:19.300Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Signal Desktop v8.9.1",
+      "date": "2026-05-08",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Hard at work fixing bugs and making other performance improvements to keep the app running smoothly for you.",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.9.1",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "ex_webrtc client-role handshake is missing DTLS peer fingerprint validation",
+      "date": "2026-05-08",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nMissing DTLS peer certificate fingerprint validation in the DTLS client (active) role removes one side of WebRTC's mutual authentication. The bug is not independently exploitable for media",
+      "link": "https://github.com/advisories/GHSA-qwfw-ggxw-577c",
+      "cves": [
+        "CVE-2026-44700"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Gotenberg has Unauthenticated RCE via ExifTool Metadata Key Injection",
       "date": "2026-05-07",
