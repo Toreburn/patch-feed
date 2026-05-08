@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-08T13:58:12.361Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-08T14:05:13.881Z",
+  "newPatches": 4,
   "patches": [
     {
       "title": "Dirty Frag and other issues in Amazon Linux kernels",
@@ -460,6 +460,15 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-43049",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43049"
+    },
+    {
+      "title": "USN-8262-1: Lua vulnerability",
+      "date": "2026-05-08",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Lua",
+      "description": "It was discovered that the Lua parser incorrectly handled garbage collection\nwhen processing specially crafted Lua scripts. A remote attacker could possibly\nuse this issue to cause a denial of service...",
+      "link": "https://ubuntu.com/security/notices/USN-8262-1"
     },
     {
       "title": "CVE-2026-31431",
@@ -2534,6 +2543,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41139.json",
       "cve": "CVE-2026-41139",
       "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-43284: kernel: \"Dirty Frag\" is a new universal Local Privilege Escalation (LPE) vulnerability in the Linux kernel",
+      "date": "2026-05-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: \"Dirty Frag\" is a new universal Local Privilege Escalation (LPE) vulnerability in the Linux kernel",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43284.json",
+      "cve": "CVE-2026-43284",
+      "cvss": 7.8
     },
     {
       "title": "Gotenberg has Unauthenticated RCE via ExifTool Metadata Key Injection",
@@ -9042,6 +9062,28 @@
       "cvss": 9.8
     },
     {
+      "title": "CVE-2026-24072: Apache HTTP Server: mod_rewrite: Apache HTTP Server: Privilege Escalation via .htaccess file manipulation",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Apache HTTP Server: mod_rewrite: Apache HTTP Server: Privilege Escalation via .htaccess file manipulation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-24072.json",
+      "cve": "CVE-2026-24072",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-43864: mutt: Mutt: Denial of Service via null pointer dereference in show_sig_summary",
+      "date": "2026-05-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mutt: Mutt: Denial of Service via null pointer dereference in show_sig_summary",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43864.json",
+      "cve": "CVE-2026-43864",
+      "cvss": 4.7
+    },
+    {
       "title": "Incus has a Nil-Pointer Dereference via Custom Volume Import",
       "date": "2026-05-04",
       "severity": "MEDIUM",
@@ -9570,6 +9612,73 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-05-08T14:05:13.881Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 9 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 9 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 299 patches, no changes",
+        "[INFO] microsoft - 274 patches, no changes",
+        "[INFO] paloalto - 3 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 269 patches (3 new)",
+        "[INFO] signal - 14 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 35 patches (1 new)"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 928,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "aws",
+        "microsoft",
+        "ubuntu",
+        "chrome",
+        "cloudflare",
+        "debian",
+        "edge",
+        "github",
+        "paloalto",
+        "redhat",
+        "signal",
+        "cisco",
+        "crowdstrike",
+        "postgresql",
+        "slack"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-43284: kernel: \"Dirty Frag\" is a new universal Local Privilege Escalation (LPE) vulnerability in the Linux kernel",
+          "date": "2026-05-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-24072: Apache HTTP Server: mod_rewrite: Apache HTTP Server: Privilege Escalation via .htaccess file manipulation",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-43864: mutt: Mutt: Denial of Service via null pointer dereference in show_sig_summary",
+          "date": "2026-05-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8262-1: Lua vulnerability",
+          "date": "2026-05-08",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-05-08T13:58:12.361Z",
       "logs": [
@@ -17233,48 +17342,6 @@
     },
     {
       "timestamp": "2026-05-04T14:10:04.672Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 15 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] gcp - 5 patches, no changes",
-        "[INFO] github - 78 patches, no changes",
-        "[INFO] microsoft - 240 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[INFO] redhat - 210 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 20 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 591,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "postgresql",
-        "aws",
-        "crowdstrike",
-        "gcp",
-        "redhat",
-        "cisco",
-        "cloudflare",
-        "edge",
-        "github",
-        "signal",
-        "ubuntu",
-        "visualstudio",
-        "chrome"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-04T10:17:07.303Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",
