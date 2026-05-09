@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-09T19:07:30.890Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-09T19:13:38.163Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "DSA-6258-1 linux - security update",
@@ -10,6 +10,17 @@
       "component": "linux",
       "description": "Two vulnerabilities have been discovered in the Linux kernel that may lead to local privilege escalation. https://security-tracker.debian.org/tracker/DSA-6258-1",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00169.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6259-1 pyjwt - security update",
+      "date": "2026-05-09",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "pyjwt",
+      "description": "It was discovered that PyJWT, a Python implementation of JSON web tokens insufficiently validated the \"crit\" header parameter, which could result in incomplete enforcement of authentication settings. ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00170.html",
       "cve": "",
       "cves": []
     },
@@ -14012,6 +14023,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-09T19:13:38.163Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 9 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 15 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 387 patches, no changes",
+        "[INFO] microsoft - 274 patches, no changes",
+        "[INFO] paloalto - 3 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 574 patches, no changes",
+        "[INFO] signal - 17 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 36 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1328,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "github",
+        "signal",
+        "aws",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "chrome",
+        "cloudflare",
+        "edge",
+        "paloalto",
+        "cisco",
+        "crowdstrike",
+        "postgresql",
+        "slack"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6259-1 pyjwt - security update",
+          "date": "2026-05-09",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-09T19:07:30.890Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -22748,48 +22808,6 @@
           "severity": "HIGH"
         }
       ]
-    },
-    {
-      "timestamp": "2026-05-06T03:33:13.878Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 3 patches, no changes",
-        "[INFO] debian - 10 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] gcp - 3 patches, no changes",
-        "[INFO] github - 136 patches, no changes",
-        "[INFO] microsoft - 131 patches, no changes",
-        "[INFO] postgresql - 6 patches, no changes",
-        "[INFO] redhat - 210 patches, no changes",
-        "[INFO] signal - 8 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 10 patches, no changes",
-        "[INFO] visualstudio - 1 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 525,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "cisco",
-        "crowdstrike",
-        "github",
-        "microsoft",
-        "postgresql",
-        "signal",
-        "slack",
-        "ubuntu",
-        "aws",
-        "debian",
-        "redhat",
-        "gcp",
-        "cloudflare",
-        "edge",
-        "visualstudio"
-      ],
-      "newPatches": []
     }
   ]
 }
