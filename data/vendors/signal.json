@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-08T19:27:19.300Z",
+  "lastUpdated": "2026-05-09T03:35:43.992Z",
   "health": {
-    "lastFetchAttempt": "2026-05-08T19:27:19.300Z",
+    "lastFetchAttempt": "2026-05-09T03:35:43.992Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 4,
-    "lastFetchNewPatches": 2,
-    "lastSuccessWithData": "2026-05-08T19:27:19.300Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-05-09T03:35:43.992Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Hono's Cache Middleware ignores Vary: Authorization / Vary: Cookie leading to cross-user cache leakage",
+      "date": "2026-05-09",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nCache Middleware does not skip caching for responses that declare per-user variance via `Vary: Authorization` or `Vary: Cookie`. As a result, a response cached for one authenticated user ",
+      "link": "https://github.com/advisories/GHSA-p77w-8qqv-26rm",
+      "cves": [
+        "CVE-2026-44457"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.9.1",
       "date": "2026-05-08",
