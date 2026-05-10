@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-10T19:09:55.380Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-10T19:14:52.396Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "DSA-6260-1 tor - security update",
@@ -10,6 +10,17 @@
       "component": "tor",
       "description": "Multiple security vulnerabilities were discovered in Tor, a connection- based low-latency anonymous communication system, which could result in denial of service. https://security-tracker.debian.org/t...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00171.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6261-1 corosync - security update",
+      "date": "2026-05-10",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "corosync",
+      "description": "Two security vulnerabilities were discovered in the Corosync cluster engine, which could result in denial of service or memory disclosure. https://security-tracker.debian.org/tracker/DSA-6261-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00172.html",
       "cve": "",
       "cves": []
     },
@@ -14102,6 +14113,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-10T19:14:52.396Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 9 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 15 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 387 patches, no changes",
+        "[INFO] microsoft - 284 patches, no changes",
+        "[INFO] paloalto - 3 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 574 patches, no changes",
+        "[INFO] signal - 17 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 36 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1338,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "github",
+        "signal",
+        "aws",
+        "redhat",
+        "ubuntu",
+        "chrome",
+        "cloudflare",
+        "edge",
+        "paloalto",
+        "cisco",
+        "crowdstrike",
+        "postgresql",
+        "slack"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6261-1 corosync - security update",
+          "date": "2026-05-10",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-10T19:09:55.380Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -20592,48 +20652,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-05-07T06:39:00.758Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 9 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 251 patches, no changes",
-        "[INFO] microsoft - 124 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 6 patches, no changes",
-        "[INFO] redhat - 372 patches, no changes",
-        "[INFO] signal - 9 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 12 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 807,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "aws",
-        "github",
-        "paloalto",
-        "signal",
-        "cisco",
-        "debian",
-        "edge",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "chrome",
-        "crowdstrike",
-        "postgresql",
-        "slack",
-        "gcp"
-      ],
-      "newPatches": []
     }
   ]
 }
