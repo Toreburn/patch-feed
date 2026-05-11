@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-11T03:52:38.354Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-11T04:03:19.996Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "DSA-6260-1 tor - security update",
@@ -21,6 +21,28 @@
       "component": "corosync",
       "description": "Two security vulnerabilities were discovered in the Corosync cluster engine, which could result in denial of service or memory disclosure. https://security-tracker.debian.org/tracker/DSA-6261-1",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00172.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6263-1 libpng1.6 - security update",
+      "date": "2026-05-10",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libpng1.6",
+      "description": "A use-after-free was discovered in libpng, a library implementing an interface for reading and writing PNG (Portable Network Graphics) files. https://security-tracker.debian.org/tracker/DSA-6263-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00174.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6262-1 lcms2 - security update",
+      "date": "2026-05-10",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "lcms2",
+      "description": "Two integer overflows were discovered in the LittleCMS 2 colour management library. https://security-tracker.debian.org/tracker/DSA-6262-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00173.html",
       "cve": "",
       "cves": []
     },
@@ -13185,6 +13207,61 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-11T04:03:19.996Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 9 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 16 patches (2 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 333 patches, no changes",
+        "[INFO] microsoft - 284 patches, no changes",
+        "[INFO] paloalto - 3 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 552 patches, no changes",
+        "[INFO] signal - 14 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 33 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 1256,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "github",
+        "signal",
+        "aws",
+        "redhat",
+        "ubuntu",
+        "chrome",
+        "cloudflare",
+        "edge",
+        "paloalto",
+        "cisco",
+        "crowdstrike",
+        "postgresql",
+        "slack"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6263-1 libpng1.6 - security update",
+          "date": "2026-05-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6262-1 lcms2 - security update",
+          "date": "2026-05-10",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-11T03:52:38.354Z",
       "logs": [
         "[INFO] aws - 3 patches, no changes",
@@ -18976,321 +19053,6 @@
         "gcp"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-07T14:30:55.004Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[SUCCESS] chrome - 3 patches (1 new)",
-        "[INFO] cisco - 9 patches, no changes",
-        "[SUCCESS] cloudflare - 1 patches (1 new)",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 269 patches, no changes",
-        "[INFO] microsoft - 174 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 6 patches, no changes",
-        "[SUCCESS] redhat - 406 patches (34 new)",
-        "[INFO] signal - 10 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 24 patches (9 new)"
-      ],
-      "newPatchCount": 45,
-      "totalPatches": 924,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "aws",
-        "chrome",
-        "cloudflare",
-        "github",
-        "microsoft",
-        "paloalto",
-        "signal",
-        "ubuntu",
-        "cisco",
-        "debian",
-        "edge",
-        "redhat",
-        "crowdstrike",
-        "postgresql",
-        "slack",
-        "gcp"
-      ],
-      "newPatches": [
-        {
-          "vendor": "chrome",
-          "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
-          "date": "2026-05-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "cloudflare",
-          "title": "How Cloudflare responded to the “Copy Fail” Linux vulnerability",
-          "date": "2026-05-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43262: CVE-2026-43262",
-          "date": "2026-05-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43271: kernel: md-cluster: fix NULL pointer dereference in process_metadata_update",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43269: kernel: drm/atmel-hlcdc: fix memory leak from the atomic_destroy_state callback",
-          "date": "2026-05-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43260: kernel: bnxt_en: Fix RSS context delete logic",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43281: kernel: mailbox: Prevent out-of-bounds access in fw_mbox_index_xlate()",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43255: kernel: wifi: libertas: fix WARNING in usb_tx_block",
-          "date": "2026-05-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43259: kernel: phy: fsl-imx8mq-usb: set platform driver data",
-          "date": "2026-05-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43276: kernel: net: mana: Fix double destroy_workqueue on service rescan PCI path",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43261: kernel: arm64: Add support for TSV110 Spectre-BHB mitigation",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43265: kernel: KVM: x86: Ignore -EBUSY when checking nested events from vcpu_block()",
-          "date": "2026-05-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43272: kernel: ring-buffer: Fix possible dereference of uninitialized pointer",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43270: kernel: media: mtk-mdp: Fix a reference leak bug in mtk_mdp_remove()",
-          "date": "2026-05-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43266: kernel: EFI/CPER: don't go past the ARM processor CPER record buffer",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43280: kernel: drm/xe: Add bounds check on pat_index to prevent OOB kernel read in madvise",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43258: kernel: alpha: fix user-space corruption during memory compaction",
-          "date": "2026-05-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43267: kernel: wifi: rtw89: fix potential zero beacon interval in beacon tracking",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43278: kernel: dm: clear cloned request bio pointer when last clone bio completes",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43268: kernel: hfsplus: pretend special inodes as regular files",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43254: kernel: ovpn: tcp - fix packet extraction from stream",
-          "date": "2026-05-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43263: kernel: media: chips-media: wave5: Fix Null reference while testing fluster",
-          "date": "2026-05-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43273: kernel: ceph: supply snapshot context in ceph_zero_partial_object()",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43253: kernel: iommu/amd: move wait_on_sem() out of spinlock",
-          "date": "2026-05-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43257: kernel: media: cx88: Add missing unmap in snd_cx88_hw_params()",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43282: kernel: RDMA/ionic: Fix potential NULL pointer dereference in ionic_query_port",
-          "date": "2026-05-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43283: kernel: net: ethernet: ec_bhf: Fix dma_free_coherent() dma handle",
-          "date": "2026-05-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43264: kernel: fbdev: of: display_timing: fix refcount leak in of_get_display_timings()",
-          "date": "2026-05-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43256: kernel: media: qcom: camss: vfe: Fix out-of-bounds access in vfe_isr_reg_update()",
-          "date": "2026-05-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43252: kernel: mptcp: pm: in-kernel: always set ID as avail when rm endp",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43277: kernel: APEI/GHES: ensure that won't go past CPER allocated record",
-          "date": "2026-05-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43863: mutt: Mutt: Remote Denial of Service via crafted input",
-          "date": "2026-05-04",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43862: mutt: Mutt: Security bypass due to mishandled IMAP authentication",
-          "date": "2026-05-04",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43861: mutt: Mutt: URL processing vulnerability due to improper null character handling",
-          "date": "2026-05-04",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43860: mutt: mutt: Authentication bypass due to IMAP CRAM-MD5 hash truncation",
-          "date": "2026-05-04",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43859: mutt: Mutt: Low integrity impact in IMAP authentication due to cryptographic digest mishandling",
-          "date": "2026-05-04",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8251-1: libpng vulnerabilities",
-          "date": "2026-05-07",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8250-1: Little CMS vulnerability",
-          "date": "2026-05-07",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8249-1: dpkg vulnerability",
-          "date": "2026-05-07",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8248-1: NASM vulnerabilities",
-          "date": "2026-05-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8247-1: OWSLib vulnerability",
-          "date": "2026-05-07",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8245-1: Linux kernel vulnerabilities",
-          "date": "2026-05-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8244-1: Linux kernel vulnerabilities",
-          "date": "2026-05-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8243-1: Linux kernel (Azure) vulnerabilities",
-          "date": "2026-05-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8235-1: ITK vulnerabilities",
-          "date": "2026-05-07",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
