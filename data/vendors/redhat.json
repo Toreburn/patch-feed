@@ -1,16 +1,38 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-05-11T19:56:10.167Z",
+  "lastUpdated": "2026-05-12T03:45:36.553Z",
   "health": {
-    "lastFetchAttempt": "2026-05-11T19:56:10.167Z",
+    "lastFetchAttempt": "2026-05-12T03:45:36.553Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 577,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-11T19:56:10.167Z",
+    "lastFetchParsedItems": 563,
+    "lastFetchNewPatches": 11,
+    "lastSuccessWithData": "2026-05-12T03:45:36.553Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-4802: cockpit: Cockpit: Arbitrary command execution via crafted links in system logs UI",
+      "date": "2026-05-11",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit: Cockpit: Arbitrary command execution via crafted links in system logs UI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4802.json",
+      "cve": "CVE-2026-4802",
+      "cvss": 8
+    },
+    {
+      "title": "CVE-2026-43500: kernel: \"Dirty Frag\" RxRPC variant is a new universal Local Privilege Escalation (LPE) vulnerability in the Linux kernel",
+      "date": "2026-05-11",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: \"Dirty Frag\" RxRPC variant is a new universal Local Privilege Escalation (LPE) vulnerability in the Linux kernel",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43500.json",
+      "cve": "CVE-2026-43500",
+      "cvss": 7.8
+    },
     {
       "title": "CVE-2026-43309: kernel: md raid: fix hang when stopping arrays with metadata through dm-raid",
       "date": "2026-05-08",
@@ -1926,6 +1948,83 @@
       "cvss": 7
     },
     {
+      "title": "CVE-2026-43318: kernel: drm/amdgpu: fix sync handling in amdgpu_dma_buf_move_notify",
+      "date": "2026-05-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/amdgpu: fix sync handling in amdgpu_dma_buf_move_notify",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43318.json",
+      "cve": "CVE-2026-43318",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-43301: kernel: media: chips-media: wave5: Fix PM runtime usage count underflow",
+      "date": "2026-05-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: chips-media: wave5: Fix PM runtime usage count underflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43301.json",
+      "cve": "CVE-2026-43301",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-43357: kernel: iio: gyro: mpu3050-core: fix pm_runtime error handling",
+      "date": "2026-05-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: iio: gyro: mpu3050-core: fix pm_runtime error handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43357.json",
+      "cve": "CVE-2026-43357",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-43425: kernel: usb: image: mdc800: kill download URB on timeout",
+      "date": "2026-05-08",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: usb: image: mdc800: kill download URB on timeout",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43425.json",
+      "cve": "CVE-2026-43425",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-43371: kernel: net: macb: Shuffle the tx ring before enabling tx",
+      "date": "2026-05-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: macb: Shuffle the tx ring before enabling tx",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43371.json",
+      "cve": "CVE-2026-43371",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-43356: kernel: iio: imu: adis: Fix NULL pointer dereference in adis_init",
+      "date": "2026-05-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: iio: imu: adis: Fix NULL pointer dereference in adis_init",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43356.json",
+      "cve": "CVE-2026-43356",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-43449: kernel: Linux kernel: NVMe PCI driver slab-out-of-bounds can lead to privilege escalation or denial of service",
+      "date": "2026-05-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Linux kernel: NVMe PCI driver slab-out-of-bounds can lead to privilege escalation or denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43449.json",
+      "cve": "CVE-2026-43449",
+      "cvss": 5.5
+    },
+    {
       "title": "CVE-2026-41139: mathjs: math.js: Arbitrary code execution via expression parser",
       "date": "2026-05-07",
       "severity": "HIGH",
@@ -2000,6 +2099,28 @@
       "description": "kernel: \"Dirty Frag\", RxRpc variant is a new universal Local Privilege Escalation (LPE) vulnerability in the Linux kernel",
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43500.json",
       "cve": "CVE-2026-43500",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-8093: firefox: Memory safety bugs fixed in Firefox 150.0.2",
+      "date": "2026-05-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: Memory safety bugs fixed in Firefox 150.0.2",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-8093.json",
+      "cve": "CVE-2026-8093",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-43284: kernel: \"Dirty Frag\" ESP XFRM variant is a new universal Local Privilege Escalation (LPE) vulnerability in the Linux ker",
+      "date": "2026-05-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: \"Dirty Frag\" ESP XFRM variant is a new universal Local Privilege Escalation (LPE) vulnerability in the Linux kernel",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43284.json",
+      "cve": "CVE-2026-43284",
       "cvss": 7.8
     },
     {

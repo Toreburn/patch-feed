@@ -1,16 +1,27 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-05-11T19:55:35.525Z",
+  "lastUpdated": "2026-05-12T03:45:04.838Z",
   "health": {
-    "lastFetchAttempt": "2026-05-11T19:55:35.525Z",
+    "lastFetchAttempt": "2026-05-12T03:45:04.838Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 50,
-    "lastSuccessWithData": "2026-05-11T19:55:35.525Z",
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-05-12T03:45:04.838Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Malware in @tanstack/* packages exfiltrates cloud credentials, GitHub tokens, and SSH keys",
+      "date": "2026-05-12",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@tanstack/arktype-adapter, @tanstack/eslint-plugin-router, @tanstack/eslint-plugin-start",
+      "description": "Malware in @tanstack/* packages exfiltrates cloud credentials, GitHub tokens, and SSH keys",
+      "link": "https://github.com/advisories/GHSA-g7cv-rxg3-hmpx",
+      "cve": "CVE-2026-45321",
+      "cvss": 9.6
+    },
     {
       "title": "Ella Core Vulnerable to UE Downlink Redirection via Forged PDUSessionResourceSetupResponse",
       "date": "2026-05-11",
@@ -879,6 +890,17 @@
       "link": "https://github.com/advisories/GHSA-492v-c6pp-mqqv",
       "cve": "CVE-2026-44574",
       "cvss": 8.1
+    },
+    {
+      "title": "Gryph Agents Payload Filter Fails to Strip Tool Payload for Sensitive Content",
+      "date": "2026-05-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/safedep/gryph",
+      "description": "Gryph Agents Payload Filter Fails to Strip Tool Payload for Sensitive Content",
+      "link": "https://github.com/advisories/GHSA-f3jg-756w-gm35",
+      "cve": "CVE-2026-45046",
+      "cvss": 5.5
     },
     {
       "title": "Hono has CSS Declaration Injection via Style Object Values in JSX SSR",
