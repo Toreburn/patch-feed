@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-12T14:39:18.631Z",
-  "newPatches": 3,
+  "lastUpdated": "2026-05-12T18:02:03.718Z",
+  "newPatches": 0,
   "patches": [
     {
       "title": "Malware in @tanstack/* packages exfiltrates cloud credentials, GitHub tokens, and SSH keys",
@@ -12407,6 +12407,48 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-12T18:02:03.718Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 1 patches, no changes",
+        "[INFO] cisco - 8 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] debian - 17 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 300 patches, no changes",
+        "[INFO] microsoft - 393 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 421 patches, no changes",
+        "[INFO] signal - 9 patches, no changes",
+        "[INFO] ubuntu - 38 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 1205,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "github",
+        "microsoft",
+        "apple",
+        "debian",
+        "gcp",
+        "postgresql",
+        "redhat",
+        "ubuntu",
+        "signal",
+        "aws",
+        "chrome",
+        "cloudflare",
+        "edge",
+        "paloalto",
+        "cisco"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-05-12T14:39:18.631Z",
       "logs": [
         "[INFO] apple - 6 patches, no changes",
@@ -18606,301 +18648,6 @@
         "slack"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-08T19:28:27.892Z",
-      "logs": [
-        "[SUCCESS] aws - 4 patches (1 new)",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 9 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 337 patches (38 new)",
-        "[INFO] microsoft - 274 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[INFO] redhat - 269 patches, no changes",
-        "[SUCCESS] signal - 16 patches (2 new)",
-        "[INFO] slack - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 36 patches (1 new)"
-      ],
-      "newPatchCount": 42,
-      "totalPatches": 970,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "aws",
-        "github",
-        "microsoft",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "cloudflare",
-        "debian",
-        "edge",
-        "paloalto",
-        "redhat",
-        "cisco",
-        "crowdstrike",
-        "postgresql",
-        "slack"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "MikroORM has SQL injection via runtime-controlled identifiers and JSON-path keys",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-uri vulnerable to host confusion via percent-encoded authority delimiters",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Zebra has Permanent Block Discovery Halt via Gossip Queue Saturation and Syncer Poisoning",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Bunsink has an SSRF bypass in `validate_webhook_url`",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SiYuan: Electron Renderer RCE via decodeURIComponent-driven tooltip XSS in aria-label sink (incomplete fix for CVE-2026-34585)",
-          "date": "2026-05-08",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "open-webui Vulnerable to Stored XSS via Model Description",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Electerm users can run dangrous code through link or command line",
-          "date": "2026-05-08",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Electerm Security Vulnerability: RCE via malicious SSH server filename in openFileWithEditor",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Electerm's full process.env exposed to renderer via window.pre.env",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Electerm has an unvalidated shell.openExternal that allows arbitrary protocol execution via terminal link click",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Electerm runWidget has a path traversal that leads to arbitrary code execution",
-          "date": "2026-05-08",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Zebra v4.4.0 still accepts V5 SIGHASH_SINGLE without a corresponding output",
-          "date": "2026-05-08",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "phpseclib guardrails needed on OID length",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "justhtml introduces denial-of-service hardening",
-          "date": "2026-05-08",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "bitcoinj has a ScriptExecution P2PKH/P2WPKH Verification Bypass",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "nhost has Session Persistence After Password Change",
-          "date": "2026-05-08",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "gitsign --verify panics on empty-certificate PKCS7 and exits 0, bypassing exit-code callers",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "`potato-annotation` has a Project-Boundary Bypass",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "ExternalSecrets vulnerable to privilege escalation with secret overwriting",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MCP Registry has an unauthenticated SSRF: HTTP namespace verification dials 6to4 / NAT64 / site-local IPv6 addresses, bypassing private-address allowlist",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MCP Registry vulnerable to stored XSS in catalogue UI via attribute-quote breakout in publisher-controlled `websiteUrl`",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-uri vulnerable to path traversal via percent-encoded dot segments",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "@fastify/accepts-serializer Vulnerable to Denial of Service via Unbounded Accept Header Cache Growth",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "ZITADEL has LDAP Filter Injection in Login Flow",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "ex_webrtc client-role handshake is missing DTLS peer fingerprint validation",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "MCP Registry's GitHub OIDC tokens are replayable across registry deployments due to shared audience",
-          "date": "2026-05-08",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "MCP Registry has open redirect via protocol-relative path in trailing-slash middleware",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n-mcp affected by path traversal, redirect-following SSRF, and telemetry payload exposure",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n-mcp webhook and API client paths has an authenticated SSRF",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PrestaShop has a stored XSS executable in customer service view",
-          "date": "2026-05-08",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "SiYuan Affected by Stored XSS via Attribute View Name to Electron Renderer RCE",
-          "date": "2026-05-08",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "gmaps-mcp's unauthenticated HTTP transport allows unlimited Google Maps API calls at operator expense",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-xml-builder allows attribute values with unwanted quotes to bypass malicious or unwanted attributes",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-xml-builder Comment Value regex can be bypassed",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "vm2 has access to `VM2_INTERNAL_STATE_DO_NOT_USE_OR_PROGRAM_WILL_FAIL`",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "vm2 has Sandbox Breakout Through Null Proto Exception",
-          "date": "2026-05-08",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "vm2 has sandbox breakout via `neutralizeArraySpeciesBatch`",
-          "date": "2026-05-08",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Devise has an Open Redirect via Unvalidated `request.referrer` in Timeoutable Session Timeout Handler",
-          "date": "2026-05-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "Signal Desktop v8.9.1",
-          "date": "2026-05-08",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "signal",
-          "title": "ex_webrtc client-role handshake is missing DTLS peer fingerprint validation",
-          "date": "2026-05-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8248-2: NASM regression",
-          "date": "2026-05-08",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
