@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-12T14:32:36.099Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-12T14:39:18.631Z",
+  "newPatches": 3,
   "patches": [
     {
       "title": "Malware in @tanstack/* packages exfiltrates cloud credentials, GitHub tokens, and SSH keys",
@@ -2385,6 +2385,17 @@
       "cvss": 7.8
     },
     {
+      "title": "CVE-2026-43894: jq: jq: Arbitrary Code Execution or Denial of Service via Signed Integer Overflow",
+      "date": "2026-05-11",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jq: jq: Arbitrary Code Execution or Denial of Service via Signed Integer Overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43894.json",
+      "cve": "CVE-2026-43894",
+      "cvss": 6.2
+    },
+    {
       "title": "USN-8266-1: Linux kernel vulnerabilities",
       "date": "2026-05-11",
       "severity": "LOW",
@@ -2446,6 +2457,15 @@
       "component": "Linux kernel vulnerabilities",
       "description": "Qualys discovered that several vulnerabilities existed in the AppArmor\nLinux kernel Security Module (LSM). An unprivileged local attacker could\nuse these issues to load, replace, and remove arbitrary ...",
       "link": "https://ubuntu.com/security/notices/USN-8267-1"
+    },
+    {
+      "title": "USN-8263-1: ImageMagick vulnerabilities",
+      "date": "2026-05-11",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "ImageMagick vulnerabilities",
+      "description": "It was discovered that ImageMagick incorrectly handled certain malformed\nimage files in certain instances. If a user or automated system using\nImageMagick were tricked into opening a specially crafted...",
+      "link": "https://ubuntu.com/security/notices/USN-8263-1"
     },
     {
       "title": "DSA-6260-1 tor - security update",
@@ -3061,6 +3081,17 @@
       "link": "https://github.com/advisories/GHSA-97wc-2hqc-cjgr",
       "cve": "CVE-2026-44983",
       "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-42257: net-imap: Net::IMAP: Arbitrary IMAP command injection via CRLF sequences in unvalidated input",
+      "date": "2026-05-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "net-imap: Net::IMAP: Arbitrary IMAP command injection via CRLF sequences in unvalidated input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42257.json",
+      "cve": "CVE-2026-42257",
+      "cvss": 6.1
     },
     {
       "title": "Hono's Cache Middleware ignores Vary: Authorization / Vary: Cookie leading to cross-user cache leakage",
@@ -12376,6 +12407,67 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-12T14:39:18.631Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 1 patches, no changes",
+        "[INFO] cisco - 8 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] debian - 17 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 300 patches, no changes",
+        "[INFO] microsoft - 393 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[SUCCESS] redhat - 421 patches (2 new)",
+        "[INFO] signal - 9 patches, no changes",
+        "[SUCCESS] ubuntu - 38 patches (1 new)"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 1205,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "github",
+        "microsoft",
+        "apple",
+        "debian",
+        "gcp",
+        "postgresql",
+        "redhat",
+        "ubuntu",
+        "signal",
+        "aws",
+        "chrome",
+        "cloudflare",
+        "edge",
+        "paloalto",
+        "cisco"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-43894: jq: jq: Arbitrary Code Execution or Denial of Service via Signed Integer Overflow",
+          "date": "2026-05-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42257: net-imap: Net::IMAP: Arbitrary IMAP command injection via CRLF sequences in unvalidated input",
+          "date": "2026-05-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8263-1: ImageMagick vulnerabilities",
+          "date": "2026-05-11",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-12T14:32:36.098Z",
       "logs": [
         "[INFO] apple - 6 patches, no changes",
@@ -18809,48 +18901,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-05-08T19:24:11.406Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 9 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 299 patches, no changes",
-        "[INFO] microsoft - 274 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[INFO] redhat - 269 patches, no changes",
-        "[INFO] signal - 14 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 35 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 928,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "aws",
-        "microsoft",
-        "ubuntu",
-        "chrome",
-        "cloudflare",
-        "debian",
-        "edge",
-        "github",
-        "paloalto",
-        "redhat",
-        "signal",
-        "cisco",
-        "crowdstrike",
-        "postgresql",
-        "slack"
-      ],
-      "newPatches": []
     }
   ]
 }
