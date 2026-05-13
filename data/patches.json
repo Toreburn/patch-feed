@@ -1,7 +1,62 @@
 {
-  "lastUpdated": "2026-05-13T03:44:08.416Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-13T03:56:26.263Z",
+  "newPatches": 23,
   "patches": [
+    {
+      "title": "OpenLearnX: Critical Authentication Bypass via JWT Signature Verification Disabled Leading to Account Takeover",
+      "date": "2026-05-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openlearnx",
+      "description": "OpenLearnX: Critical Authentication Bypass via JWT Signature Verification Disabled Leading to Account Takeover",
+      "link": "https://github.com/advisories/GHSA-223g-f5mq-gw33",
+      "cve": "CVE-2026-44720",
+      "cvss": null
+    },
+    {
+      "title": "Astro: Server island encrypted parameters vulnerable to cross-component replay",
+      "date": "2026-05-13",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "astro",
+      "description": "Astro: Server island encrypted parameters vulnerable to cross-component replay",
+      "link": "https://github.com/advisories/GHSA-xr5h-phrj-8vxv",
+      "cve": "CVE-2026-45028",
+      "cvss": null
+    },
+    {
+      "title": "Klever-Go MultiDataInterceptor has remote OOM via crafted compressed P2P payload",
+      "date": "2026-05-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/klever-io/klever-go",
+      "description": "Klever-Go MultiDataInterceptor has remote OOM via crafted compressed P2P payload",
+      "link": "https://github.com/advisories/GHSA-87m7-qffr-542v",
+      "cve": "CVE-2026-44697",
+      "cvss": 8.6
+    },
+    {
+      "title": "Authlib OIDC Implicit/Hybrid Authorization Vulnerable to Open Redirect",
+      "date": "2026-05-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "authlib, authlib",
+      "description": "Authlib OIDC Implicit/Hybrid Authorization Vulnerable to Open Redirect",
+      "link": "https://github.com/advisories/GHSA-r95x-qfjj-fjj2",
+      "cve": "CVE-2026-44681",
+      "cvss": 6.1
+    },
+    {
+      "title": "Mapfish Print: Remote Code Injection (RCE) in Dynamic table",
+      "date": "2026-05-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "org.mapfish.print:print-lib, org.mapfish.print:print-lib, org.mapfish.print:print-lib",
+      "description": "Mapfish Print: Remote Code Injection (RCE) in Dynamic table",
+      "link": "https://github.com/advisories/GHSA-q7m6-wpvf-mvwx",
+      "cve": "CVE-2026-44672",
+      "cvss": null
+    },
     {
       "title": "Chrome for Android Update",
       "date": "2026-05-12",
@@ -347,6 +402,94 @@
       "link": "https://github.com/advisories/GHSA-f84p-cvgm-xgjj",
       "cve": "CVE-2026-42290",
       "cvss": 7.8
+    },
+    {
+      "title": "UltraJSON has a Memory Leak in ujson.dump() on Write Failure",
+      "date": "2026-05-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "ujson",
+      "description": "UltraJSON has a Memory Leak in ujson.dump() on Write Failure",
+      "link": "https://github.com/advisories/GHSA-c38f-wx89-p2xg",
+      "cve": "CVE-2026-44660",
+      "cvss": null
+    },
+    {
+      "title": "SillyTavern has a SSRF vulnerability in the CORS proxy middleware",
+      "date": "2026-05-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "sillytavern",
+      "description": "SillyTavern has a SSRF vulnerability in the CORS proxy middleware",
+      "link": "https://github.com/advisories/GHSA-ccfq-2454-f5xw",
+      "cve": "CVE-2026-44652",
+      "cvss": null
+    },
+    {
+      "title": "SillyTavern has a reflected XSS vulnerability in the CORS proxy middleware",
+      "date": "2026-05-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "sillytavern",
+      "description": "SillyTavern has a reflected XSS vulnerability in the CORS proxy middleware",
+      "link": "https://github.com/advisories/GHSA-xc4x-2452-5gc9",
+      "cve": "CVE-2026-44651",
+      "cvss": null
+    },
+    {
+      "title": "SillyTavern has a Path Traversal issue",
+      "date": "2026-05-12",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "sillytavern",
+      "description": "SillyTavern has a Path Traversal issue",
+      "link": "https://github.com/advisories/GHSA-886q-f44j-h6wh",
+      "cve": "CVE-2026-44650",
+      "cvss": 9.1
+    },
+    {
+      "title": "SillyTavern has Authentication Bypass via SSO Header Injection",
+      "date": "2026-05-12",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "sillytavern",
+      "description": "SillyTavern has Authentication Bypass via SSO Header Injection",
+      "link": "https://github.com/advisories/GHSA-gxx6-h3g6-vwjh",
+      "cve": "CVE-2026-44649",
+      "cvss": 9.8
+    },
+    {
+      "title": "SillyTavern: Existing sessions are not invalidated after password change, allowing session reuse and account takeover",
+      "date": "2026-05-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "sillytavern",
+      "description": "SillyTavern: Existing sessions are not invalidated after password change, allowing session reuse and account takeover",
+      "link": "https://github.com/advisories/GHSA-wmm3-h9qj-p5v6",
+      "cve": "CVE-2026-44648",
+      "cvss": 7.5
+    },
+    {
+      "title": "esm.sh: Path Traversal via package.json browser field allows reading arbitrary server files",
+      "date": "2026-05-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/esm-dev/esm.sh",
+      "description": "esm.sh: Path Traversal via package.json browser field allows reading arbitrary server files",
+      "link": "https://github.com/advisories/GHSA-rg65-45m7-hq57",
+      "cve": "CVE-2026-44594",
+      "cvss": 7.5
+    },
+    {
+      "title": "esm.sh: Legacy Route Path Traversal Can Lead to RCE",
+      "date": "2026-05-12",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/esm-dev/esm.sh",
+      "description": "esm.sh: Legacy Route Path Traversal Can Lead to RCE",
+      "link": "https://github.com/advisories/GHSA-3636-h3vx-6465",
+      "cve": "CVE-2026-44593",
+      "cvss": null
     },
     {
       "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
@@ -1258,6 +1401,17 @@
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40370"
     },
     {
+      "title": "CVE-2026-6402: webpack-dev-server: webpack-dev-server: Information disclosure due to cross-origin source code exposure",
+      "date": "2026-05-12",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "webpack-dev-server: webpack-dev-server: Information disclosure due to cross-origin source code exposure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6402.json",
+      "cve": "CVE-2026-6402",
+      "cvss": 5.3
+    },
+    {
       "title": "USN-8270-1: Exim vulnerability",
       "date": "2026-05-12",
       "severity": "UNKNOWN",
@@ -1336,6 +1490,21 @@
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00175.html",
       "cve": "",
       "cves": []
+    },
+    {
+      "title": "Microsoft Edge Security Update - May 11, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-05-11",
+      "description": "Security fixes for 4 vulnerabilities: CVE-2026-42838, CVE-2026-40416, CVE-2026-41107...",
+      "severity": "LOW",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": [
+        "CVE-2026-42838",
+        "CVE-2026-40416",
+        "CVE-2026-41107",
+        "CVE-2026-42838"
+      ]
     },
     {
       "title": "GKE: GCP-2026-030",
@@ -3895,6 +4064,94 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42257.json",
       "cve": "CVE-2026-42257",
       "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-42310: Pillow: Pillow: Denial of Service via malicious PDF processing",
+      "date": "2026-05-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Pillow: Pillow: Denial of Service via malicious PDF processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42310.json",
+      "cve": "CVE-2026-42310",
+      "cvss": 4
+    },
+    {
+      "title": "CVE-2026-42309: Pillow: Pillow: Denial of Service via specially crafted coordinate input",
+      "date": "2026-05-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Pillow: Pillow: Denial of Service via specially crafted coordinate input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42309.json",
+      "cve": "CVE-2026-42309",
+      "cvss": 5.1
+    },
+    {
+      "title": "CVE-2026-2291: dnsmasq: dnsmasq: heap buffer overflow in cache via NAME_ESCAPE expansion",
+      "date": "2026-05-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dnsmasq: dnsmasq: heap buffer overflow in cache via NAME_ESCAPE expansion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-2291.json",
+      "cve": "CVE-2026-2291",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-4890: dnsmasq: NSEC bitmap parsing infinite loop",
+      "date": "2026-05-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dnsmasq: NSEC bitmap parsing infinite loop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4890.json",
+      "cve": "CVE-2026-4890",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-4891: dnsmasq: RRSIG rdlen underflow leading to heap OOB read",
+      "date": "2026-05-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dnsmasq: RRSIG rdlen underflow leading to heap OOB read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4891.json",
+      "cve": "CVE-2026-4891",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-4892: dnsmasq: DHCPv6 CLID buffer overflow in helper process",
+      "date": "2026-05-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dnsmasq: DHCPv6 CLID buffer overflow in helper process",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4892.json",
+      "cve": "CVE-2026-4892",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-4893: dnsmasq: Broken ECS source validation bypass",
+      "date": "2026-05-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dnsmasq: Broken ECS source validation bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4893.json",
+      "cve": "CVE-2026-4893",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-5172: dnsmasq: extract_addresses() OOB read via malformed rdlen",
+      "date": "2026-05-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dnsmasq: extract_addresses() OOB read via malformed rdlen",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5172.json",
+      "cve": "CVE-2026-5172",
+      "cvss": 7.5
     },
     {
       "title": "Hono's Cache Middleware ignores Vary: Authorization / Vary: Cookie leading to cross-user cache leakage",
@@ -9778,6 +10035,189 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-13T03:56:26.263Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] debian - 16 patches, no changes",
+        "[SUCCESS] edge - 2 patches (1 new)",
+        "[INFO] fortinet - 11 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 297 patches (13 new)",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] mssql - 1 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[SUCCESS] redhat - 203 patches (9 new)",
+        "[INFO] signal - 9 patches, no changes",
+        "[INFO] ubuntu - 32 patches, no changes"
+      ],
+      "newPatchCount": 23,
+      "totalPatches": 990,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "github",
+        "chrome",
+        "debian",
+        "fortinet",
+        "microsoft",
+        "mssql",
+        "redhat",
+        "ubuntu",
+        "apple",
+        "edge",
+        "gcp",
+        "postgresql",
+        "signal",
+        "aws",
+        "cloudflare",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - May 11, 2026",
+          "date": "2026-05-11",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenLearnX: Critical Authentication Bypass via JWT Signature Verification Disabled Leading to Account Takeover",
+          "date": "2026-05-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Astro: Server island encrypted parameters vulnerable to cross-component replay",
+          "date": "2026-05-13",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Klever-Go MultiDataInterceptor has remote OOM via crafted compressed P2P payload",
+          "date": "2026-05-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Authlib OIDC Implicit/Hybrid Authorization Vulnerable to Open Redirect",
+          "date": "2026-05-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Mapfish Print: Remote Code Injection (RCE) in Dynamic table",
+          "date": "2026-05-13",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "UltraJSON has a Memory Leak in ujson.dump() on Write Failure",
+          "date": "2026-05-12",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SillyTavern has a SSRF vulnerability in the CORS proxy middleware",
+          "date": "2026-05-12",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SillyTavern has a reflected XSS vulnerability in the CORS proxy middleware",
+          "date": "2026-05-12",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SillyTavern has a Path Traversal issue",
+          "date": "2026-05-12",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "SillyTavern has Authentication Bypass via SSO Header Injection",
+          "date": "2026-05-12",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "SillyTavern: Existing sessions are not invalidated after password change, allowing session reuse and account takeover",
+          "date": "2026-05-12",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "esm.sh: Path Traversal via package.json browser field allows reading arbitrary server files",
+          "date": "2026-05-12",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "esm.sh: Legacy Route Path Traversal Can Lead to RCE",
+          "date": "2026-05-12",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6402: webpack-dev-server: webpack-dev-server: Information disclosure due to cross-origin source code exposure",
+          "date": "2026-05-12",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42310: Pillow: Pillow: Denial of Service via malicious PDF processing",
+          "date": "2026-05-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42309: Pillow: Pillow: Denial of Service via specially crafted coordinate input",
+          "date": "2026-05-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-2291: dnsmasq: dnsmasq: heap buffer overflow in cache via NAME_ESCAPE expansion",
+          "date": "2026-05-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4890: dnsmasq: NSEC bitmap parsing infinite loop",
+          "date": "2026-05-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4891: dnsmasq: RRSIG rdlen underflow leading to heap OOB read",
+          "date": "2026-05-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4892: dnsmasq: DHCPv6 CLID buffer overflow in helper process",
+          "date": "2026-05-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4893: dnsmasq: Broken ECS source validation bypass",
+          "date": "2026-05-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5172: dnsmasq: extract_addresses() OOB read via malformed rdlen",
+          "date": "2026-05-09",
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-13T03:44:08.416Z",
       "logs": [
         "[INFO] apple - 6 patches, no changes",
@@ -14572,48 +15012,6 @@
     },
     {
       "timestamp": "2026-05-09T08:04:58.904Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 9 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 387 patches, no changes",
-        "[INFO] microsoft - 274 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 525 patches, no changes",
-        "[INFO] signal - 17 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 36 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1277,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "github",
-        "signal",
-        "aws",
-        "debian",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "chrome",
-        "cloudflare",
-        "edge",
-        "paloalto",
-        "cisco",
-        "crowdstrike",
-        "postgresql",
-        "slack"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-09T06:19:30.178Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",
