@@ -1,7 +1,35 @@
 {
-  "lastUpdated": "2026-05-14T03:42:44.925Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-14T03:55:34.152Z",
+  "newPatches": 7,
   "patches": [
+    {
+      "title": "Ongoing updates on Copy.fail and variants",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "Ongoing",
+      "description": "<p><b>Bulletin ID:</b> 2026-030-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 05/13/2026 10:00 PM PDT</p> \n<p><b>This is an ongoing iss...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-030-aws/"
+    },
+    {
+      "title": "Fragnesia Local Privilege Escalation report via ESP-in-TCP in the Linux Kernel",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "Fragnesia",
+      "description": "<p><b>Bulletin ID:</b> 2026-029-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 05/13/2026 18:45 PM PDT</p> \n<p><b>This is an ongoing iss...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-029-aws/"
+    },
+    {
+      "title": "Falcon AIDR Detects Threats at the Prompt Layer in Kubernetes AI Applications",
+      "date": "2026-05-13",
+      "severity": "UNKNOWN",
+      "vendor": "crowdstrike",
+      "component": "CrowdStrike Falcon",
+      "description": "",
+      "link": "https://www.crowdstrike.com/en-us/blog/falcon-aidr-detects-threats-at-prompt-layer-in-kubernetes-ai-apps/",
+      "cve": ""
+    },
     {
       "title": "Linux Kernel Vulnerability copy.fail - CVE-2026-31431",
       "date": "2026-05-13",
@@ -297,6 +325,37 @@
       "link": "https://github.com/advisories/GHSA-hvx9-hwr7-wjj9",
       "cve": "CVE-2026-44724",
       "cvss": 7.8
+    },
+    {
+      "title": "Strapi: Password Reset Does Not Revoke Existing Refresh Sessions",
+      "date": "2026-05-13",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "@strapi/admin, @strapi/plugin-users-permissions",
+      "description": "Strapi: Password Reset Does Not Revoke Existing Refresh Sessions",
+      "link": "https://github.com/advisories/GHSA-hvp3-26wx-g2w4",
+      "cve": "CVE-2026-22706",
+      "cvss": null
+    },
+    {
+      "title": "Strapi Vulnerable to SQL Injection in Content Type Builder",
+      "date": "2026-05-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@strapi/content-type-builder, @strapi/plugin-content-type-builder",
+      "description": "Strapi Vulnerable to SQL Injection in Content Type Builder",
+      "link": "https://github.com/advisories/GHSA-3xcq-8mjw-h6mx",
+      "cve": "CVE-2026-22599",
+      "cvss": null
+    },
+    {
+      "title": "GitLab Patch Release: 18.11.3, 18.10.6, 18.9.7",
+      "date": "2026-05-13",
+      "severity": "CRITICAL",
+      "vendor": "gitlab",
+      "component": "GitLab CE/EE",
+      "description": "Security fixes for CVE-2026-7481, CVE-2026-7481, CVE-2026-5297...",
+      "link": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-18-11-3-released/"
     },
     {
       "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
@@ -2889,6 +2948,15 @@
       "description": "Security update with 0 CVEs fixed.",
       "link": "https://support.apple.com/en-us/127112",
       "cve": ""
+    },
+    {
+      "title": "Dirty Frag and other issues in Amazon Linux kernels",
+      "date": "2026-05-11",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "Dirty",
+      "description": "<p><b>Bulletin ID:</b> 2026-027-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 2026/05/07 19:45 PM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-027-aws/"
     },
     {
       "title": "DSA-6264-1 dnsmasq - security update",
@@ -9010,6 +9078,95 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-14T03:55:34.152Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[SUCCESS] aws - 5 patches (3 new)",
+        "[INFO] chrome - 3 patches, no changes",
+        "[SUCCESS] crowdstrike - 2 patches (1 new)",
+        "[INFO] debian - 13 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 12 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 222 patches (2 new)",
+        "[SUCCESS] gitlab - 1 patches (1 new)",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] mssql - 1 patches, no changes",
+        "[INFO] paloalto - 25 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 194 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 12 patches, no changes"
+      ],
+      "newPatchCount": 7,
+      "totalPatches": 904,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "aws",
+        "crowdstrike",
+        "fortinet",
+        "github",
+        "gitlab",
+        "microsoft",
+        "paloalto",
+        "chrome",
+        "debian",
+        "mssql",
+        "redhat",
+        "ubuntu",
+        "apple",
+        "edge",
+        "gcp",
+        "postgresql",
+        "signal"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "Ongoing updates on Copy.fail and variants",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "aws",
+          "title": "Fragnesia Local Privilege Escalation report via ESP-in-TCP in the Linux Kernel",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "aws",
+          "title": "Dirty Frag and other issues in Amazon Linux kernels",
+          "date": "2026-05-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "crowdstrike",
+          "title": "Falcon AIDR Detects Threats at the Prompt Layer in Kubernetes AI Applications",
+          "date": "2026-05-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Strapi: Password Reset Does Not Revoke Existing Refresh Sessions",
+          "date": "2026-05-13",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Strapi Vulnerable to SQL Injection in Content Type Builder",
+          "date": "2026-05-13",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "gitlab",
+          "title": "GitLab Patch Release: 18.11.3, 18.10.6, 18.9.7",
+          "date": "2026-05-13",
+          "severity": "CRITICAL"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-14T03:42:44.924Z",
       "logs": [
         "[INFO] apple - 6 patches, no changes",
@@ -14589,48 +14746,6 @@
       ],
       "newPatchCount": 0,
       "totalPatches": 1286,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "debian",
-        "github",
-        "signal",
-        "aws",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "chrome",
-        "cloudflare",
-        "edge",
-        "paloalto",
-        "cisco",
-        "crowdstrike",
-        "postgresql",
-        "slack"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-09T22:51:07.588Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 9 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 15 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 387 patches, no changes",
-        "[INFO] microsoft - 274 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 574 patches, no changes",
-        "[INFO] signal - 17 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 36 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1328,
       "vendorsScanned": 56,
       "vendorsWithPatches": 15,
       "vendors": [
