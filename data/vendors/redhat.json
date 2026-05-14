@@ -1,16 +1,181 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-05-14T08:45:21.169Z",
+  "lastUpdated": "2026-05-14T14:28:08.597Z",
   "health": {
-    "lastFetchAttempt": "2026-05-14T08:45:21.169Z",
+    "lastFetchAttempt": "2026-05-14T14:28:08.597Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 200,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-14T08:45:21.169Z",
+    "lastFetchParsedItems": 223,
+    "lastFetchNewPatches": 23,
+    "lastSuccessWithData": "2026-05-14T14:28:08.597Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-42945: nginx: NGINX: Arbitrary Code Execution Vulnerability",
+      "date": "2026-05-13",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nginx: NGINX: Arbitrary Code Execution Vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42945.json",
+      "cve": "CVE-2026-42945",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-46300: kernel: \"Fragnesia\" is a variant of Dirty Frag vulnerability in the ESP/XFRM leading to Local Privilege Escalation (LPE)",
+      "date": "2026-05-13",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: \"Fragnesia\" is a variant of Dirty Frag vulnerability in the ESP/XFRM leading to Local Privilege Escalation (LPE) vulnerability in the Linux kernel",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46300.json",
+      "cve": "CVE-2026-46300",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-43481: kernel: net-shapers: don't free reply skb after genlmsg_reply()",
+      "date": "2026-05-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net-shapers: don't free reply skb after genlmsg_reply()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43481.json",
+      "cve": "CVE-2026-43481",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-43478: kernel: ASoC: codecs: rt1011: Use component to get the dapm context in spk_mode_put",
+      "date": "2026-05-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ASoC: codecs: rt1011: Use component to get the dapm context in spk_mode_put",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43478.json",
+      "cve": "CVE-2026-43478",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-43480: kernel: ASoC: amd: acp3x-rt5682-max9836: Add missing error check for clock acquisition",
+      "date": "2026-05-13",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ASoC: amd: acp3x-rt5682-max9836: Add missing error check for clock acquisition",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43480.json",
+      "cve": "CVE-2026-43480",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-43483: kernel: KVM: SVM: Set/clear CR8 write interception when AVIC is (de)activated",
+      "date": "2026-05-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: SVM: Set/clear CR8 write interception when AVIC is (de)activated",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43483.json",
+      "cve": "CVE-2026-43483",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-43482: kernel: sched_ext: Disable preemption between scx_claim_exit() and kicking helper work",
+      "date": "2026-05-13",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: sched_ext: Disable preemption between scx_claim_exit() and kicking helper work",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43482.json",
+      "cve": "CVE-2026-43482",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-43484: kernel: mmc: core: Avoid bitfield RMW for claim/retune flags",
+      "date": "2026-05-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mmc: core: Avoid bitfield RMW for claim/retune flags",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43484.json",
+      "cve": "CVE-2026-43484",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-43488: kernel: usb: xhci: Prevent interrupt storm on host controller error (HCE)",
+      "date": "2026-05-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: usb: xhci: Prevent interrupt storm on host controller error (HCE)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43488.json",
+      "cve": "CVE-2026-43488",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-43485: kernel: nouveau/gsp: drop WARN_ON in ACPI probes",
+      "date": "2026-05-13",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: nouveau/gsp: drop WARN_ON in ACPI probes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43485.json",
+      "cve": "CVE-2026-43485",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-43477: kernel: drm/i915/vrr: Configure VRR timings after enabling TRANS_DDI_FUNC_CTL",
+      "date": "2026-05-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/i915/vrr: Configure VRR timings after enabling TRANS_DDI_FUNC_CTL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43477.json",
+      "cve": "CVE-2026-43477",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-43489: kernel: liveupdate: luo_file: remember retrieve() status",
+      "date": "2026-05-13",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: liveupdate: luo_file: remember retrieve() status",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43489.json",
+      "cve": "CVE-2026-43489",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-43479: kernel: net: usb: lan78xx: fix WARN in __netif_napi_del_locked on disconnect",
+      "date": "2026-05-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: usb: lan78xx: fix WARN in __netif_napi_del_locked on disconnect",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43479.json",
+      "cve": "CVE-2026-43479",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-43486: kernel: arm64: contpte: fix set_access_flags() no-op check for SMMU/ATS faults",
+      "date": "2026-05-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: arm64: contpte: fix set_access_flags() no-op check for SMMU/ATS faults",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43486.json",
+      "cve": "CVE-2026-43486",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-43476: kernel: iio: chemical: sps30_i2c: fix buffer size in sps30_i2c_read_meas()",
+      "date": "2026-05-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: iio: chemical: sps30_i2c: fix buffer size in sps30_i2c_read_meas()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43476.json",
+      "cve": "CVE-2026-43476",
+      "cvss": null
+    },
     {
       "title": "CVE-2026-6402: webpack-dev-server: webpack-dev-server: Information disclosure due to cross-origin source code exposure",
       "date": "2026-05-12",
@@ -21,6 +186,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6402.json",
       "cve": "CVE-2026-6402",
       "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-8449: kernel: ksmbd: Linux ksmbd: Privilege Escalation via crafted DACL in ACL inheritance",
+      "date": "2026-05-12",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ksmbd: Linux ksmbd: Privilege Escalation via crafted DACL in ACL inheritance",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-8449.json",
+      "cve": "CVE-2026-8449",
+      "cvss": 8.8
     },
     {
       "title": "CVE-2026-4802: cockpit: Cockpit: Arbitrary command execution via crafted links in system logs UI",
@@ -54,6 +230,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43894.json",
       "cve": "CVE-2026-43894",
       "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-43896: jq: stack overflow in recursive object merge",
+      "date": "2026-05-11",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jq: stack overflow in recursive object merge",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43896.json",
+      "cve": "CVE-2026-43896",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-44777: jq: stack overflow in module loading on mutual include",
+      "date": "2026-05-11",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jq: stack overflow in module loading on mutual include",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44777.json",
+      "cve": "CVE-2026-44777",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-40612: jq: stack overflow via unbounded recursion in jv_contains",
+      "date": "2026-05-11",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jq: stack overflow via unbounded recursion in jv_contains",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40612.json",
+      "cve": "CVE-2026-40612",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-41257: jq: signed-int overflow in stack_reallocate",
+      "date": "2026-05-11",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jq: signed-int overflow in stack_reallocate",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41257.json",
+      "cve": "CVE-2026-41257",
+      "cvss": 5.5
     },
     {
       "title": "CVE-2026-42257: net-imap: Net::IMAP: Arbitrary IMAP command injection via CRLF sequences in unvalidated input",
@@ -2146,6 +2366,28 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-42203: litellm: LiteLLM: Arbitrary code execution via unsandboxed prompt templates",
+      "date": "2026-05-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "litellm: LiteLLM: Arbitrary code execution via unsandboxed prompt templates",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42203.json",
+      "cve": "CVE-2026-42203",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-43330: kernel: crypto: caam - fix overflow on long hmac keys",
+      "date": "2026-05-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: caam - fix overflow on long hmac keys",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43330.json",
+      "cve": "CVE-2026-43330",
+      "cvss": 5.5
+    },
+    {
       "title": "CVE-2026-41139: mathjs: math.js: Arbitrary code execution via expression parser",
       "date": "2026-05-07",
       "severity": "HIGH",
@@ -2243,6 +2485,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43284.json",
       "cve": "CVE-2026-43284",
       "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-41674: xmldom: xmldom: Arbitrary XML markup injection",
+      "date": "2026-05-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xmldom: xmldom: Arbitrary XML markup injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41674.json",
+      "cve": "CVE-2026-41674",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-6420: keylime: Keylime: Security bypass due to hardcoded TPM quote nonce",
