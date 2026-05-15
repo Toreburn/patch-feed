@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-15T03:48:19.665Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-15T03:59:21.106Z",
+  "newPatches": 56,
   "patches": [
     {
       "title": "Ongoing updates on Copy.fail and variants",
@@ -19,6 +19,15 @@
       "component": "Fragnesia",
       "description": "<p><b>Bulletin ID:</b> 2026-029-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 05/13/2026 18:45 PM PDT</p> \n<p><b>This is an ongoing iss...",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-029-aws/"
+    },
+    {
+      "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 &amp: CVE-2026-8597)",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "Issue",
+      "description": "<p><b>Bulletin ID:</b> 2026-031-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 05/14/2026 13:00 PM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/"
     },
     {
       "title": "Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability",
@@ -113,6 +122,17 @@
       "component": "thunderbird",
       "description": "Multiple security issues were discovered in Thunderbird, which could result in the execution of arbitrary code. https://security-tracker.debian.org/tracker/DSA-6267-1",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00178.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6272-1 nodejs - security update",
+      "date": "2026-05-14",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "nodejs",
+      "description": "Multiple vulnerabilities were discovered in Node.js, which could result in denial of service or information disclosure. https://security-tracker.debian.org/tracker/DSA-6272-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00183.html",
       "cve": "",
       "cves": []
     },
@@ -777,6 +797,556 @@
       "cvss": null
     },
     {
+      "title": "vm2 Has a Sandbox Breakout Using Async Generator",
+      "date": "2026-05-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 Has a Sandbox Breakout Using Async Generator",
+      "link": "https://github.com/advisories/GHSA-248r-7h7q-cr24",
+      "cve": "CVE-2026-45411",
+      "cvss": 9.8
+    },
+    {
+      "title": "python-utcp: Full Process Environment Exposed to CLI Subprocess - Secrets Leakage via Command Injection",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "utcp-cli",
+      "description": "python-utcp: Full Process Environment Exposed to CLI Subprocess - Secrets Leakage via Command Injection",
+      "link": "https://github.com/advisories/GHSA-5v57-8rxj-3p2r",
+      "cve": "CVE-2026-45370",
+      "cvss": 7.7
+    },
+    {
+      "title": "utcp-cli Vulnerable to Command Injection via Unsanitized Argument Substitution in CLI Communication Protocol",
+      "date": "2026-05-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "utcp-cli",
+      "description": "utcp-cli Vulnerable to Command Injection via Unsanitized Argument Substitution in CLI Communication Protocol",
+      "link": "https://github.com/advisories/GHSA-33p6-5jxp-p3x4",
+      "cve": "CVE-2026-45369",
+      "cvss": 10
+    },
+    {
+      "title": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') in @ranfdev/deepobj",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@ranfdev/deepobj",
+      "description": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') in @ranfdev/deepobj",
+      "link": "https://github.com/advisories/GHSA-x7q7-fchv-8h2j",
+      "cve": "CVE-2026-46509",
+      "cvss": 8.2
+    },
+    {
+      "title": "@utcp/http: SSRF via attacker-controlled OpenAPI servers[0].url in HTTP communication protocol",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@utcp/http",
+      "description": "@utcp/http: SSRF via attacker-controlled OpenAPI servers[0].url in HTTP communication protocol",
+      "link": "https://github.com/advisories/GHSA-r8j5-8747-88cm",
+      "cve": "CVE-2026-45366",
+      "cvss": 4.7
+    },
+    {
+      "title": "slack-go `SecretsVerifier` accepts empty signing secret without precondition",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/slack-go/slack",
+      "description": "slack-go `SecretsVerifier` accepts empty signing secret without precondition",
+      "link": "https://github.com/advisories/GHSA-gxhx-2686-5h9g",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Marten has an injection vulnerability in its full-text search regConfig parameter",
+      "date": "2026-05-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "Marten",
+      "description": "Marten has an injection vulnerability in its full-text search regConfig parameter",
+      "link": "https://github.com/advisories/GHSA-vmw2-qwm8-x84c",
+      "cve": "CVE-2026-45288",
+      "cvss": 9.8
+    },
+    {
+      "title": "@samanhappy/mcphub: SSE Endpoint Accepts Arbitrary Username from URL Path Without Authentication, Enabling User Impersonation",
+      "date": "2026-05-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@samanhappy/mcphub",
+      "description": "@samanhappy/mcphub: SSE Endpoint Accepts Arbitrary Username from URL Path Without Authentication, Enabling User Impersonation",
+      "link": "https://github.com/advisories/GHSA-wf8q-wvv8-p8jf",
+      "cve": "",
+      "cvss": 9.1
+    },
+    {
+      "title": "Svelte: SSR XSS via Insecure Promise Serialization in hydratable",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "svelte",
+      "description": "Svelte: SSR XSS via Insecure Promise Serialization in hydratable",
+      "link": "https://github.com/advisories/GHSA-f3cj-j4f6-wq85",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "electerm's encrypt method not safe enough",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "electerm",
+      "description": "electerm's encrypt method not safe enough",
+      "link": "https://github.com/advisories/GHSA-g29v-q6h7-76wh",
+      "cve": "CVE-2026-45787",
+      "cvss": null
+    },
+    {
+      "title": "Electerm Local code through electerm's single-instance socket",
+      "date": "2026-05-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "electerm",
+      "description": "Electerm Local code through electerm's single-instance socket",
+      "link": "https://github.com/advisories/GHSA-7p5m-v798-f8vv",
+      "cve": "CVE-2026-45353",
+      "cvss": null
+    },
+    {
+      "title": "DeepSeek TUI: task_create Insecure Defaults Enable RCE via Prompt Injection in Project Files",
+      "date": "2026-05-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "deepseek-tui",
+      "description": "DeepSeek TUI: task_create Insecure Defaults Enable RCE via Prompt Injection in Project Files",
+      "link": "https://github.com/advisories/GHSA-72w5-pf8h-xfp4",
+      "cve": "CVE-2026-45374",
+      "cvss": 9.6
+    },
+    {
+      "title": "DeepSeek TUI has SSRF‌ IPV6 bypass",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "deepseek-tui",
+      "description": "DeepSeek TUI has SSRF‌ IPV6 bypass",
+      "link": "https://github.com/advisories/GHSA-88gh-2526-gfrr",
+      "cve": "CVE-2026-45373",
+      "cvss": 7.4
+    },
+    {
+      "title": "DeepSeek TUI: run_tests Tool Enables RCE via Malicious Repository Without Approval",
+      "date": "2026-05-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui-cli, deepseek-tui",
+      "description": "DeepSeek TUI: run_tests Tool Enables RCE via Malicious Repository Without Approval",
+      "link": "https://github.com/advisories/GHSA-wx44-2q6h-j6p8",
+      "cve": "CVE-2026-45311",
+      "cvss": 9.6
+    },
+    {
+      "title": "DeepSeek TUI has SSRF via HTTP Redirect Bypass in fetch_url Tool",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui-cli, deepseek-tui",
+      "description": "DeepSeek TUI has SSRF via HTTP Redirect Bypass in fetch_url Tool",
+      "link": "https://github.com/advisories/GHSA-96ff-gc8g-wpvg",
+      "cve": "CVE-2026-45310",
+      "cvss": 7.4
+    },
+    {
+      "title": "Svelte Vulnerable to XSS via DOM Clobbering of Internal Framework State",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "svelte",
+      "description": "Svelte Vulnerable to XSS via DOM Clobbering of Internal Framework State",
+      "link": "https://github.com/advisories/GHSA-rcqx-6q8c-2c42",
+      "cve": "CVE-2026-42573",
+      "cvss": null
+    },
+    {
+      "title": "Svelte: ReDoS in `<svelte:element>` Tag Validation",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "svelte",
+      "description": "Svelte: ReDoS in `<svelte:element>` Tag Validation",
+      "link": "https://github.com/advisories/GHSA-9rmh-mm8f-r9h6",
+      "cve": "CVE-2026-42567",
+      "cvss": null
+    },
+    {
+      "title": "Open WebUI: LDAP and OAuth First-User Race Condition Allows Multiple Admin Accounts",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: LDAP and OAuth First-User Race Condition Allows Multiple Admin Accounts",
+      "link": "https://github.com/advisories/GHSA-h3ww-q6xx-w7x3",
+      "cve": "CVE-2026-45675",
+      "cvss": 8.1
+    },
+    {
+      "title": "Open WebUI: Jupyter code execution works despite `ENABLE_CODE_EXECUTION=false` — feature gate bypassed",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Jupyter code execution works despite `ENABLE_CODE_EXECUTION=false` — feature gate bypassed",
+      "link": "https://github.com/advisories/GHSA-482j-2pq6-q5w4",
+      "cve": "CVE-2026-45672",
+      "cvss": 8.8
+    },
+    {
+      "title": "Open WebUI: shared-chat branch ignores access_type, allowing unauthorized file deletion",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: shared-chat branch ignores access_type, allowing unauthorized file deletion",
+      "link": "https://github.com/advisories/GHSA-26g9-27vm-x3q8",
+      "cve": "CVE-2026-45671",
+      "cvss": 8
+    },
+    {
+      "title": "Open WebUI: Unauthenticated endpoint can trigger embedding generation (cost/DoS)",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Unauthenticated endpoint can trigger embedding generation (cost/DoS)",
+      "link": "https://github.com/advisories/GHSA-m69w-p7m4-585j",
+      "cve": "CVE-2026-45667",
+      "cvss": 6.5
+    },
+    {
+      "title": "Open WebUI has an Indirect Object Reference (IDOR) in user notes",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI has an Indirect Object Reference (IDOR) in user notes",
+      "link": "https://github.com/advisories/GHSA-x3qm-p8hr-3c3h",
+      "cve": "CVE-2026-45666",
+      "cvss": 6.5
+    },
+    {
+      "title": "Open WebUI has Stored XSS in Banner Component via Improper Sanitization Order",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI has Stored XSS in Banner Component via Improper Sanitization Order",
+      "link": "https://github.com/advisories/GHSA-cqp4-qqvg-3787",
+      "cve": "CVE-2026-45665",
+      "cvss": 8.1
+    },
+    {
+      "title": "Open WebUI: Cross-User File Access via Unchecked file_id in Folder Knowledge and Knowledge-Base Attach Endpoints",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Cross-User File Access via Unchecked file_id in Folder Knowledge and Knowledge-Base Attach Endpoints",
+      "link": "https://github.com/advisories/GHSA-r472-mw7m-967f",
+      "cve": "CVE-2026-45402",
+      "cvss": 8.1
+    },
+    {
+      "title": "Open WebUI vulnerable to stored XSS via OAuth picture claim stored as SVG data URI in profile_image_url",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI vulnerable to stored XSS via OAuth picture claim stored as SVG data URI in profile_image_url",
+      "link": "https://github.com/advisories/GHSA-3wgj-c2hg-vm6q",
+      "cve": "",
+      "cvss": 7.3
+    },
+    {
+      "title": "Open WebUI has a SSRF Bypass via HTTP Redirect Following in Web-Fetch and Image-Load Endpoints (not addressed by CVE-2025-65958)",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI has a SSRF Bypass via HTTP Redirect Following in Web-Fetch and Image-Load Endpoints (not addressed by CVE-2025-65958)",
+      "link": "https://github.com/advisories/GHSA-rh5x-h6pp-cjj6",
+      "cve": "CVE-2026-45401",
+      "cvss": 8.5
+    },
+    {
+      "title": "Open WebUI has a Server-Side Request Forgery (SSRF) bypass in `validate_url`",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI has a Server-Side Request Forgery (SSRF) bypass in `validate_url`",
+      "link": "https://github.com/advisories/GHSA-8w7q-q5jp-jvgx",
+      "cve": "CVE-2026-45400",
+      "cvss": 8.5
+    },
+    {
+      "title": "Open WebUI: Low-privilege authenticated users can enumerate and stop global background tasks, causing system-wide chat disruption",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Low-privilege authenticated users can enumerate and stop global background tasks, causing system-wide chat disruption",
+      "link": "https://github.com/advisories/GHSA-8jjp-r2w2-4v22",
+      "cve": "CVE-2026-45399",
+      "cvss": 7.1
+    },
+    {
+      "title": "Open WebUI Vulnerable to IDOR: Retrieval API Bypasses Knowledge Base Access Controls",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI Vulnerable to IDOR: Retrieval API Bypasses Knowledge Base Access Controls",
+      "link": "https://github.com/advisories/GHSA-4g37-7p2c-38r9",
+      "cve": "CVE-2026-45398",
+      "cvss": 7.5
+    },
+    {
+      "title": "Open WebUI Vulnerable to Unauthenticated RAG Configuration Disclosure",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI Vulnerable to Unauthenticated RAG Configuration Disclosure",
+      "link": "https://github.com/advisories/GHSA-65pg-qhhw-mxwg",
+      "cve": "CVE-2026-45397",
+      "cvss": 5.3
+    },
+    {
+      "title": "Open WebUI: Mass Assignment via FeedbackForm extra=allow Allows Feedback User ID Spoofing and Evaluation Data Manipulation",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Mass Assignment via FeedbackForm extra=allow Allows Feedback User ID Spoofing and Evaluation Data Manipulation",
+      "link": "https://github.com/advisories/GHSA-rjmp-vjf2-qf4g",
+      "cve": "CVE-2026-45396",
+      "cvss": 5.4
+    },
+    {
+      "title": "Open WebUI: Missing `workspace.tools` Authorization Check on Tool Update Endpoint Allows Privilege Escalation to Code Execution",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Missing `workspace.tools` Authorization Check on Tool Update Endpoint Allows Privilege Escalation to Code Execution",
+      "link": "https://github.com/advisories/GHSA-p4fx-23fq-jfg6",
+      "cve": "CVE-2026-45395",
+      "cvss": 7.2
+    },
+    {
+      "title": "Open WebUI: Sharing models for others to use (read permission) also exposes model details (system prompt leakage)",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Sharing models for others to use (read permission) also exposes model details (system prompt leakage)",
+      "link": "https://github.com/advisories/GHSA-h2cw-7qw9-56xr",
+      "cve": "CVE-2026-45387",
+      "cvss": 4.3
+    },
+    {
+      "title": "Open WebUI has an IDOR vulnerability in the pin_channel_message API endpoint",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI has an IDOR vulnerability in the pin_channel_message API endpoint",
+      "link": "https://github.com/advisories/GHSA-5gc6-xhv4-2wg6",
+      "cve": "CVE-2026-45386",
+      "cvss": 4.3
+    },
+    {
+      "title": "Open WebUI has an IDOR vulnerability in the update_message_by_id API endpoint",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI has an IDOR vulnerability in the update_message_by_id API endpoint",
+      "link": "https://github.com/advisories/GHSA-wwhq-cx22-f7vv",
+      "cve": "CVE-2026-45385",
+      "cvss": 4.3
+    },
+    {
+      "title": "Open WebUI: Authenticated users can bypass model access control via exposed query parameter [AI-ASSISTED]",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Authenticated users can bypass model access control via exposed query parameter [AI-ASSISTED]",
+      "link": "https://github.com/advisories/GHSA-v6qf-75pr-p96m",
+      "cve": "CVE-2026-45365",
+      "cvss": 5.4
+    },
+    {
+      "title": "Open WebUI Exposes System Prompt to Regular User [Non-Admin]",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI Exposes System Prompt to Regular User [Non-Admin]",
+      "link": "https://github.com/advisories/GHSA-jh9g-8jqw-m2qx",
+      "cve": "CVE-2026-45351",
+      "cvss": 6.5
+    },
+    {
+      "title": "Open WebUI's chat completion API allows tool restrictions to be bypassed",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI's chat completion API allows tool restrictions to be bypassed",
+      "link": "https://github.com/advisories/GHSA-4pcg-253r-rf9w",
+      "cve": "CVE-2026-45350",
+      "cvss": 7.1
+    },
+    {
+      "title": "Open WebUI has Broken Access Control for Completions API",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI has Broken Access Control for Completions API",
+      "link": "https://github.com/advisories/GHSA-gfm2-xm6c-37qc",
+      "cve": "CVE-2026-45349",
+      "cvss": 7.1
+    },
+    {
+      "title": "pyLoad is vulnerable to stored XSS in Downloads view via unsanitized link URL in packages.js template literal",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pyload-ng",
+      "description": "pyLoad is vulnerable to stored XSS in Downloads view via unsanitized link URL in packages.js template literal",
+      "link": "https://github.com/advisories/GHSA-fcjq-435v-jx94",
+      "cve": "CVE-2026-45348",
+      "cvss": 8.7
+    },
+    {
+      "title": "Svelte devalue: DoS via sparse array deserialization",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "devalue",
+      "description": "Svelte devalue: DoS via sparse array deserialization",
+      "link": "https://github.com/advisories/GHSA-77vg-94rm-hx3p",
+      "cve": "CVE-2026-42570",
+      "cvss": 7.5
+    },
+    {
+      "title": "Open WebUI vulnerable to blind server side request forgery (SSRF) via the PDF generate function",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI vulnerable to blind server side request forgery (SSRF) via the PDF generate function",
+      "link": "https://github.com/advisories/GHSA-f776-fp4w-266c",
+      "cve": "CVE-2026-45347",
+      "cvss": 4.3
+    },
+    {
+      "title": "Open WebUI Has Stored Cross-Site Scripting in SVG Renderer",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI Has Stored Cross-Site Scripting in SVG Renderer",
+      "link": "https://github.com/advisories/GHSA-r29h-37fj-x2w6",
+      "cve": "CVE-2026-45346",
+      "cvss": null
+    },
+    {
+      "title": "Open WebUI missing authorization check at the model update function - models from other users can be updated",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI missing authorization check at the model update function - models from other users can be updated",
+      "link": "https://github.com/advisories/GHSA-gm54-m39w-grjp",
+      "cve": "CVE-2026-45345",
+      "cvss": 6.5
+    },
+    {
+      "title": "Open WebUI's API key endpoint restrictions bypassed via `x-api-key` header — full message processing on restricted endpoints",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webu",
+      "description": "Open WebUI's API key endpoint restrictions bypassed via `x-api-key` header — full message processing on restricted endpoints",
+      "link": "https://github.com/advisories/GHSA-57q6-fvp4-pqmm",
+      "cve": "CVE-2026-45339",
+      "cvss": 6.5
+    },
+    {
+      "title": "Open WebUI Vulnerable to SSRF via OAuth Profile Picture URL in _process_picture_url (oauth.py)",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI Vulnerable to SSRF via OAuth Profile Picture URL in _process_picture_url (oauth.py)",
+      "link": "https://github.com/advisories/GHSA-24c9-2m8q-qhmh",
+      "cve": "CVE-2026-45338",
+      "cvss": 7.7
+    },
+    {
+      "title": "Svelte SSR vulnerable to cross-site scripting via spread attributes",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "svelte",
+      "description": "Svelte SSR vulnerable to cross-site scripting via spread attributes",
+      "link": "https://github.com/advisories/GHSA-pr6f-5x2q-rwfp",
+      "cve": "CVE-2026-42599",
+      "cvss": null
+    },
+    {
+      "title": "Open WebUI has a full SSRF Vulnerability in the RAG Web Search Feature",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI has a full SSRF Vulnerability in the RAG Web Search Feature",
+      "link": "https://github.com/advisories/GHSA-4v7r-f4w8-8972",
+      "cve": "CVE-2026-45331",
+      "cvss": 8.5
+    },
+    {
+      "title": "Open WebUI Vulnerable to Cross-Site Request Forgery (CSRF) via Image URL Manipulation",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI Vulnerable to Cross-Site Request Forgery (CSRF) via Image URL Manipulation",
+      "link": "https://github.com/advisories/GHSA-j6w6-986j-2m2m",
+      "cve": "CVE-2026-45317",
+      "cvss": 4.6
+    },
+    {
+      "title": "Open WebUI has stored XSS via unsanitized Office/Excel/DOCX file preview rendering ({@html} without DOMPurify)",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI has stored XSS via unsanitized Office/Excel/DOCX file preview rendering ({@html} without DOMPurify)",
+      "link": "https://github.com/advisories/GHSA-hcwp-82g6-8wxc",
+      "cve": "CVE-2026-45318",
+      "cvss": 5.4
+    },
+    {
       "title": "CVE-2026-40379: Microsoft Enterprise Security Token Service (ESTS) Spoofing Vulnerability",
       "date": "2026-05-14",
       "severity": "CRITICAL",
@@ -1285,6 +1855,36 @@
       "description": "",
       "link": "https://security.paloaltonetworks.com/CVE-2026-0264",
       "cve": "CVE-2026-0264"
+    },
+    {
+      "title": "CVE-2026-0251 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "paloalto",
+      "component": "GlobalProtect",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0251",
+      "cve": "CVE-2026-0251"
+    },
+    {
+      "title": "CVE-2026-0300 PAN-OS: Unauthenticated user initiated Buffer Overflow Vulnerability in User-ID™ Authentication Portal (Severity: CRITICAL)",
+      "date": "2026-05-14",
+      "severity": "CRITICAL",
+      "vendor": "paloalto",
+      "component": "PAN-OS",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0300",
+      "cve": "CVE-2026-0300"
+    },
+    {
+      "title": "CVE-2026-0257 PAN-OS: GlobalProtect Authentication Bypass Vulnerabilities (Severity: MEDIUM)",
+      "date": "2026-05-14",
+      "severity": "MEDIUM",
+      "vendor": "paloalto",
+      "component": "PAN-OS",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0257",
+      "cve": "CVE-2026-0257"
     },
     {
       "title": "PostgreSQL 18.4, 17.10, 16.14, 15.18, and 14.23 Released!",
@@ -4351,6 +4951,15 @@
       "link": "https://ubuntu.com/security/notices/USN-8268-1"
     },
     {
+      "title": "USN-8269-1: Avahi vulnerabilities",
+      "date": "2026-05-12",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Avahi vulnerabilities",
+      "description": "It is discovered that Avahi incorrectly handled crafted input. A\nremote attacker could possibly use this issue to crash the program,\nresulting in a denial of service. This issue only affected Ubuntu\n1...",
+      "link": "https://ubuntu.com/security/notices/USN-8269-1"
+    },
+    {
       "title": "macOS 26.5",
       "date": "2026-05-11",
       "severity": "UNKNOWN",
@@ -7153,6 +7762,391 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-05-15T03:59:21.106Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[SUCCESS] aws - 4 patches (1 new)",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 15 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 12 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 253 patches (50 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] mssql - 1 patches, no changes",
+        "[SUCCESS] paloalto - 34 patches (3 new)",
+        "[INFO] postgresql - 4 patches, no changes",
+        "[INFO] redhat - 33 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 12 patches (1 new)"
+      ],
+      "newPatchCount": 56,
+      "totalPatches": 786,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "aws",
+        "cisco",
+        "debian",
+        "github",
+        "microsoft",
+        "paloalto",
+        "postgresql",
+        "ubuntu",
+        "crowdstrike",
+        "fortinet",
+        "gitlab",
+        "redhat",
+        "chrome",
+        "mssql",
+        "apple",
+        "edge",
+        "gcp",
+        "signal"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 &amp: CVE-2026-8597)",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6272-1 nodejs - security update",
+          "date": "2026-05-14",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 Has a Sandbox Breakout Using Async Generator",
+          "date": "2026-05-14",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "python-utcp: Full Process Environment Exposed to CLI Subprocess - Secrets Leakage via Command Injection",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "utcp-cli Vulnerable to Command Injection via Unsanitized Argument Substitution in CLI Communication Protocol",
+          "date": "2026-05-14",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') in @ranfdev/deepobj",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "@utcp/http: SSRF via attacker-controlled OpenAPI servers[0].url in HTTP communication protocol",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "slack-go `SecretsVerifier` accepts empty signing secret without precondition",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Marten has an injection vulnerability in its full-text search regConfig parameter",
+          "date": "2026-05-14",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "@samanhappy/mcphub: SSE Endpoint Accepts Arbitrary Username from URL Path Without Authentication, Enabling User Impersonation",
+          "date": "2026-05-14",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Svelte: SSR XSS via Insecure Promise Serialization in hydratable",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "electerm's encrypt method not safe enough",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Electerm Local code through electerm's single-instance socket",
+          "date": "2026-05-14",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "DeepSeek TUI: task_create Insecure Defaults Enable RCE via Prompt Injection in Project Files",
+          "date": "2026-05-14",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "DeepSeek TUI has SSRF‌ IPV6 bypass",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "DeepSeek TUI: run_tests Tool Enables RCE via Malicious Repository Without Approval",
+          "date": "2026-05-14",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "DeepSeek TUI has SSRF via HTTP Redirect Bypass in fetch_url Tool",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Svelte Vulnerable to XSS via DOM Clobbering of Internal Framework State",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Svelte: ReDoS in `<svelte:element>` Tag Validation",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: LDAP and OAuth First-User Race Condition Allows Multiple Admin Accounts",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Jupyter code execution works despite `ENABLE_CODE_EXECUTION=false` — feature gate bypassed",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: shared-chat branch ignores access_type, allowing unauthorized file deletion",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Unauthenticated endpoint can trigger embedding generation (cost/DoS)",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI has an Indirect Object Reference (IDOR) in user notes",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI has Stored XSS in Banner Component via Improper Sanitization Order",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Cross-User File Access via Unchecked file_id in Folder Knowledge and Knowledge-Base Attach Endpoints",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI vulnerable to stored XSS via OAuth picture claim stored as SVG data URI in profile_image_url",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI has a SSRF Bypass via HTTP Redirect Following in Web-Fetch and Image-Load Endpoints (not addressed by CVE-2025-65958)",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI has a Server-Side Request Forgery (SSRF) bypass in `validate_url`",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Low-privilege authenticated users can enumerate and stop global background tasks, causing system-wide chat disruption",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI Vulnerable to IDOR: Retrieval API Bypasses Knowledge Base Access Controls",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI Vulnerable to Unauthenticated RAG Configuration Disclosure",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Mass Assignment via FeedbackForm extra=allow Allows Feedback User ID Spoofing and Evaluation Data Manipulation",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Missing `workspace.tools` Authorization Check on Tool Update Endpoint Allows Privilege Escalation to Code Execution",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Sharing models for others to use (read permission) also exposes model details (system prompt leakage)",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI has an IDOR vulnerability in the pin_channel_message API endpoint",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI has an IDOR vulnerability in the update_message_by_id API endpoint",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Authenticated users can bypass model access control via exposed query parameter [AI-ASSISTED]",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI Exposes System Prompt to Regular User [Non-Admin]",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI's chat completion API allows tool restrictions to be bypassed",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI has Broken Access Control for Completions API",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pyLoad is vulnerable to stored XSS in Downloads view via unsanitized link URL in packages.js template literal",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Svelte devalue: DoS via sparse array deserialization",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI vulnerable to blind server side request forgery (SSRF) via the PDF generate function",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI Has Stored Cross-Site Scripting in SVG Renderer",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI missing authorization check at the model update function - models from other users can be updated",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI's API key endpoint restrictions bypassed via `x-api-key` header — full message processing on restricted endpoints",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI Vulnerable to SSRF via OAuth Profile Picture URL in _process_picture_url (oauth.py)",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Svelte SSR vulnerable to cross-site scripting via spread attributes",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI has a full SSRF Vulnerability in the RAG Web Search Feature",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI Vulnerable to Cross-Site Request Forgery (CSRF) via Image URL Manipulation",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI has stored XSS via unsanitized Office/Excel/DOCX file preview rendering ({@html} without DOMPurify)",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-0251 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-0300 PAN-OS: Unauthenticated user initiated Buffer Overflow Vulnerability in User-ID™ Authentication Portal (Severity: CRITICAL)",
+          "date": "2026-05-14",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-0257 PAN-OS: GlobalProtect Authentication Bypass Vulnerabilities (Severity: MEDIUM)",
+          "date": "2026-05-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8269-1: Avahi vulnerabilities",
+          "date": "2026-05-12",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-05-15T03:48:19.665Z",
       "logs": [
@@ -13433,55 +14427,6 @@
         "slack"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-10T19:14:52.396Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 9 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[SUCCESS] debian - 15 patches (1 new)",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 387 patches, no changes",
-        "[INFO] microsoft - 284 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 574 patches, no changes",
-        "[INFO] signal - 17 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 36 patches, no changes"
-      ],
-      "newPatchCount": 1,
-      "totalPatches": 1338,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "github",
-        "signal",
-        "aws",
-        "redhat",
-        "ubuntu",
-        "chrome",
-        "cloudflare",
-        "edge",
-        "paloalto",
-        "cisco",
-        "crowdstrike",
-        "postgresql",
-        "slack"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6261-1 corosync - security update",
-          "date": "2026-05-10",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
