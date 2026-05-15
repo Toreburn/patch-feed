@@ -1,7 +1,301 @@
 {
-  "lastUpdated": "2026-05-15T19:43:17.754Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-15T19:47:24.839Z",
+  "newPatches": 31,
   "patches": [
+    {
+      "title": "CVE-2026-8686 - Heap out-of-bounds read in coreMQTT MQTT5 property parsing",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "CVE-2026-8686",
+      "description": "<p><b>Bulletin ID:</b> 2026-032-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 05/15/2026 11:45 AM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-032-aws/"
+    },
+    {
+      "title": "Microsoft Edge Security Update - May 15, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-05-15",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
+    },
+    {
+      "title": "AVideo CVE-2026-43884 incomplete fix - six (or more) `isSSRFSafeURL()` call sites still discard the `$resolvedIP` out-param at master HEAD post-`603e7bf`",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "WWBN/AVideo",
+      "description": "AVideo CVE-2026-43884 incomplete fix - six (or more) `isSSRFSafeURL()` call sites still discard the `$resolvedIP` out-param at master HEAD post-`603e7bf`",
+      "link": "https://github.com/advisories/GHSA-c3ch-22rq-xfwr",
+      "cve": "CVE-2026-45619",
+      "cvss": 6.5
+    },
+    {
+      "title": "AVideo: 2FA toggle endpoint has no CSRF protection, letting an attacker page silently disable a logged-in victim's 2FA",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "WWBN/AVideo",
+      "description": "AVideo: 2FA toggle endpoint has no CSRF protection, letting an attacker page silently disable a logged-in victim's 2FA",
+      "link": "https://github.com/advisories/GHSA-3mv2-vmwh-rwfx",
+      "cve": "CVE-2026-45610",
+      "cvss": 5.7
+    },
+    {
+      "title": "AVideo: stored XSS via unescaped stream key in modeYoutubeLive.php class attribute",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "WWBN/AVideo",
+      "description": "AVideo: stored XSS via unescaped stream key in modeYoutubeLive.php class attribute",
+      "link": "https://github.com/advisories/GHSA-m5j4-7r85-2cj2",
+      "cve": "CVE-2026-45580",
+      "cvss": 5.4
+    },
+    {
+      "title": "AVideo: OS command injection in on_publish.php execAsync via unescaped m3u8 URL",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "WWBN/AVideo",
+      "description": "AVideo: OS command injection in on_publish.php execAsync via unescaped m3u8 URL",
+      "link": "https://github.com/advisories/GHSA-xw67-cg5f-4m2r",
+      "cve": "CVE-2026-45578",
+      "cvss": 8.8
+    },
+    {
+      "title": "Improper Verification of Cryptographic Signature in com.oviva.telematik:epa4all-client",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "com.oviva.telematik:epa4all-client",
+      "description": "Improper Verification of Cryptographic Signature in com.oviva.telematik:epa4all-client",
+      "link": "https://github.com/advisories/GHSA-gqx7-6552-67hf",
+      "cve": "CVE-2026-45575",
+      "cvss": 7.4
+    },
+    {
+      "title": "epa4all-client: TLS Certificate Validation Disabled in Production",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "com.oviva.telematik:epa4all-client",
+      "description": "epa4all-client: TLS Certificate Validation Disabled in Production",
+      "link": "https://github.com/advisories/GHSA-5hhf-xmfx-4vvr",
+      "cve": "CVE-2026-45574",
+      "cvss": 8.1
+    },
+    {
+      "title": "Microsoft APM: Windows absolute-path tar member overwrite during legacy-bundle probing in `apm install`",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "apm-cli",
+      "description": "Microsoft APM: Windows absolute-path tar member overwrite during legacy-bundle probing in `apm install`",
+      "link": "https://github.com/advisories/GHSA-mq5j-pw29-jcv3",
+      "cve": "CVE-2026-46383",
+      "cvss": 5.5
+    },
+    {
+      "title": "AVideo's Meet plugin: `uploadRecordedVideo.json.php` derives `users_id` from the uploaded filename and calls passwordless `User->login()`, allowing any caller with the Meet shared secret to obtain a session as arbitrary users including admin",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "WWBN/AVideo",
+      "description": "AVideo's Meet plugin: `uploadRecordedVideo.json.php` derives `users_id` from the uploaded filename and calls passwordless `User->login()`, allowing any caller with the Meet shared secret to obtain a s...",
+      "link": "https://github.com/advisories/GHSA-qxvm-r42f-5p8j",
+      "cve": "",
+      "cvss": 8.1
+    },
+    {
+      "title": "arnika is affected by medium-severity issues in UDP rotation, PQC handling, and KMS TLS",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/arnika-project/arnika",
+      "description": "arnika is affected by medium-severity issues in UDP rotation, PQC handling, and KMS TLS",
+      "link": "https://github.com/advisories/GHSA-rc6v-5rmx-w5mv",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "rkyv: Panic safety bugs in `InlineVec::clear` and `SerVec::clear` enable arbitrary code execution",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "rkyv",
+      "description": "rkyv: Panic safety bugs in `InlineVec::clear` and `SerVec::clear` enable arbitrary code execution",
+      "link": "https://github.com/advisories/GHSA-vfvv-c25p-m7mm",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "SimpleSAMLphp casserver FileSystemTicketStore path traversal allows out-of-ticket-directory read/unserialize and conditional deletion",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "simplesamlphp/simplesamlphp-module-casserver",
+      "description": "SimpleSAMLphp casserver FileSystemTicketStore path traversal allows out-of-ticket-directory read/unserialize and conditional deletion",
+      "link": "https://github.com/advisories/GHSA-jrrg-99xh-5j2q",
+      "cve": "CVE-2026-46491",
+      "cvss": 8.6
+    },
+    {
+      "title": "Authenticated Sharp users can download unrelated Laravel Storage objects through the generic download endpoint",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "code16/sharp",
+      "description": "Authenticated Sharp users can download unrelated Laravel Storage objects through the generic download endpoint",
+      "link": "https://github.com/advisories/GHSA-748w-hm6r-qc7v",
+      "cve": "CVE-2026-44692",
+      "cvss": 7.7
+    },
+    {
+      "title": "Budibase: `PUT /api/datasources/:datasourceId` is protected only by `TABLE/READ` permission instead of builder access, allowing any authenticated app user to overwrite datasource connection parameters including host, port, and URL",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase: `PUT /api/datasources/:datasourceId` is protected only by `TABLE/READ` permission instead of builder access, allowing any authenticated app user to overwrite datasource connection parameters...",
+      "link": "https://github.com/advisories/GHSA-44m2-crh7-f4q2",
+      "cve": "CVE-2026-45717",
+      "cvss": 8.8
+    },
+    {
+      "title": "Budibase: SSRF Bypass via HTTP Redirect in REST Datasource Integration",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase: SSRF Bypass via HTTP Redirect in REST Datasource Integration",
+      "link": "https://github.com/advisories/GHSA-fgqv-jh4g-pvg2",
+      "cve": "CVE-2026-45715",
+      "cvss": 7.7
+    },
+    {
+      "title": "Budibase: SSRF in AI Extract File Automation Step via Missing IP Blacklist Validation",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase: SSRF in AI Extract File Automation Step via Missing IP Blacklist Validation",
+      "link": "https://github.com/advisories/GHSA-rpj4-7x2v-wjrf",
+      "cve": "CVE-2026-45548",
+      "cvss": 7.7
+    },
+    {
+      "title": "Better Auth: Rate limiter keys IPv6 addresses individually and is bypassable via prefix rotation",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "better-auth, better-auth",
+      "description": "Better Auth: Rate limiter keys IPv6 addresses individually and is bypassable via prefix rotation",
+      "link": "https://github.com/advisories/GHSA-p6v2-xcpg-h6xw",
+      "cve": "CVE-2026-45364",
+      "cvss": 7.3
+    },
+    {
+      "title": "Better Auth: OAuth callback accepts mismatched `state` when cookie-backed state storage is used without PKCE",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "better-auth",
+      "description": "Better Auth: OAuth callback accepts mismatched `state` when cookie-backed state storage is used without PKCE",
+      "link": "https://github.com/advisories/GHSA-wxw3-q3m9-c3jr",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "goshs: SSH host key verification disabled, allowing transparent MITM of every tunnelled HTTP request",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "goshs.de/goshs/v2",
+      "description": "goshs: SSH host key verification disabled, allowing transparent MITM of every tunnelled HTTP request",
+      "link": "https://github.com/advisories/GHSA-mxg3-432p-mr72",
+      "cve": "",
+      "cvss": 7.4
+    },
+    {
+      "title": "Weblate: Stored HTML injection in editor search preview",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "weblate",
+      "description": "Weblate: Stored HTML injection in editor search preview",
+      "link": "https://github.com/advisories/GHSA-6wxc-8mgq-w26m",
+      "cve": "CVE-2026-45106",
+      "cvss": 4.6
+    },
+    {
+      "title": "FrankenPHP: Unsafe Unicode Handling in CGI Path Splitting Allows Execution of Non-PHP Files",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/dunglas/frankenphp",
+      "description": "FrankenPHP: Unsafe Unicode Handling in CGI Path Splitting Allows Execution of Non-PHP Files",
+      "link": "https://github.com/advisories/GHSA-3g8v-8r37-cgjm",
+      "cve": "CVE-2026-45062",
+      "cvss": 8.1
+    },
+    {
+      "title": "Pipecat: Path Traversal in Pipecat Runner `/files` Endpoint — Arbitrary File Read via `%2F`-Encoded Separator",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pipecat-ai",
+      "description": "Pipecat: Path Traversal in Pipecat Runner `/files` Endpoint — Arbitrary File Read via `%2F`-Encoded Separator",
+      "link": "https://github.com/advisories/GHSA-3363-2ph6-35wh",
+      "cve": "CVE-2026-44716",
+      "cvss": 7.5
+    },
+    {
+      "title": "NukeViet CMS: Stored Cross-Site Scripting (XSS) via insufficient server-side input sanitization in Request class",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nukeviet/nukeviet",
+      "description": "NukeViet CMS: Stored Cross-Site Scripting (XSS) via insufficient server-side input sanitization in Request class",
+      "link": "https://github.com/advisories/GHSA-64rr-pp78-62ww",
+      "cve": "CVE-2026-41147",
+      "cvss": 8.7
+    },
+    {
+      "title": "nimiq-keys: Unchecked Ed25519 signature length in TaggedPublicKey::verify causes remote node panic via DHT",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nimiq-keys",
+      "description": "nimiq-keys: Unchecked Ed25519 signature length in TaggedPublicKey::verify causes remote node panic via DHT",
+      "link": "https://github.com/advisories/GHSA-27w2-87xv-37c6",
+      "cve": "CVE-2026-40092",
+      "cvss": 7.5
+    },
+    {
+      "title": "@joplin/onenote-converter: Path traversal in OneNote importer allows overwriting arbitrary files",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@joplin/onenote-converter",
+      "description": "@joplin/onenote-converter: Path traversal in OneNote importer allows overwriting arbitrary files",
+      "link": "https://github.com/advisories/GHSA-gcmj-c9gg-9vh6",
+      "cve": "CVE-2026-22810",
+      "cvss": 8.2
+    },
+    {
+      "title": "SimpleSAMLphp casserver: Open Redirect in logout",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "simplesamlphp/simplesamlphp-module-casserver, simplesamlphp/simplesamlphp-module-casserver",
+      "description": "SimpleSAMLphp casserver: Open Redirect in logout",
+      "link": "https://github.com/advisories/GHSA-cvrm-5hp6-h523",
+      "cve": "CVE-2025-65954",
+      "cvss": 4.7
+    },
     {
       "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
       "date": "2026-05-15",
@@ -903,6 +1197,35 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40414"
     },
     {
+      "title": "CVE-2026-40415: Windows TCP/IP Remote Code Execution Vulnerability",
+      "date": "2026-05-15",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40415",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40415"
+    },
+    {
+      "title": "CVE-2026-0262 PAN-OS: Denial of Service Vulnerabilities in Network Traffic Parsing (Severity: MEDIUM)",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "paloalto",
+      "component": "PAN-OS",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0262",
+      "cve": "CVE-2026-0262"
+    },
+    {
+      "title": "CVE-2026-0257 PAN-OS: GlobalProtect Authentication Bypass Vulnerabilities (Severity: MEDIUM)",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "paloalto",
+      "component": "PAN-OS",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0257",
+      "cve": "CVE-2026-0257"
+    },
+    {
       "title": "CloudNativePG 1.29.1 and 1.28.3 released: critical CVE fix",
       "date": "2026-05-15",
       "severity": "CRITICAL",
@@ -943,6 +1266,15 @@
     },
     {
       "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 &amp: CVE-2026-8597)",
+      "date": "2026-05-14",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "Issue",
+      "description": "<p><b>Bulletin ID:</b> 2026-031-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 05/14/2026 13:00 PM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/"
+    },
+    {
+      "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 &amp; CVE-2026-8597)",
       "date": "2026-05-14",
       "severity": "HIGH",
       "vendor": "aws",
@@ -9582,6 +9914,241 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-15T19:47:24.839Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[SUCCESS] aws - 6 patches (2 new)",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 15 patches, no changes",
+        "[SUCCESS] edge - 2 patches (1 new)",
+        "[INFO] fortinet - 12 patches, no changes",
+        "[INFO] gcp - 2 patches, no changes",
+        "[SUCCESS] github - 278 patches (25 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[SUCCESS] microsoft - 501 patches (1 new)",
+        "[INFO] mssql - 1 patches, no changes",
+        "[SUCCESS] paloalto - 36 patches (2 new)",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[INFO] redhat - 114 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 12 patches, no changes"
+      ],
+      "newPatchCount": 31,
+      "totalPatches": 1000,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "aws",
+        "edge",
+        "github",
+        "microsoft",
+        "paloalto",
+        "postgresql",
+        "redhat",
+        "cisco",
+        "debian",
+        "gcp",
+        "ubuntu",
+        "crowdstrike",
+        "fortinet",
+        "gitlab",
+        "chrome",
+        "mssql",
+        "apple",
+        "signal"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-8686 - Heap out-of-bounds read in coreMQTT MQTT5 property parsing",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "aws",
+          "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 &amp; CVE-2026-8597)",
+          "date": "2026-05-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - May 15, 2026",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AVideo CVE-2026-43884 incomplete fix - six (or more) `isSSRFSafeURL()` call sites still discard the `$resolvedIP` out-param at master HEAD post-`603e7bf`",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AVideo: 2FA toggle endpoint has no CSRF protection, letting an attacker page silently disable a logged-in victim's 2FA",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AVideo: stored XSS via unescaped stream key in modeYoutubeLive.php class attribute",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AVideo: OS command injection in on_publish.php execAsync via unescaped m3u8 URL",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Improper Verification of Cryptographic Signature in com.oviva.telematik:epa4all-client",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "epa4all-client: TLS Certificate Validation Disabled in Production",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Microsoft APM: Windows absolute-path tar member overwrite during legacy-bundle probing in `apm install`",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AVideo's Meet plugin: `uploadRecordedVideo.json.php` derives `users_id` from the uploaded filename and calls passwordless `User->login()`, allowing any caller with the Meet shared secret to obtain a session as arbitrary users including admin",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "arnika is affected by medium-severity issues in UDP rotation, PQC handling, and KMS TLS",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "rkyv: Panic safety bugs in `InlineVec::clear` and `SerVec::clear` enable arbitrary code execution",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SimpleSAMLphp casserver FileSystemTicketStore path traversal allows out-of-ticket-directory read/unserialize and conditional deletion",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Authenticated Sharp users can download unrelated Laravel Storage objects through the generic download endpoint",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase: `PUT /api/datasources/:datasourceId` is protected only by `TABLE/READ` permission instead of builder access, allowing any authenticated app user to overwrite datasource connection parameters including host, port, and URL",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase: SSRF Bypass via HTTP Redirect in REST Datasource Integration",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase: SSRF in AI Extract File Automation Step via Missing IP Blacklist Validation",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Better Auth: Rate limiter keys IPv6 addresses individually and is bypassable via prefix rotation",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Better Auth: OAuth callback accepts mismatched `state` when cookie-backed state storage is used without PKCE",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "goshs: SSH host key verification disabled, allowing transparent MITM of every tunnelled HTTP request",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Weblate: Stored HTML injection in editor search preview",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "FrankenPHP: Unsafe Unicode Handling in CGI Path Splitting Allows Execution of Non-PHP Files",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Pipecat: Path Traversal in Pipecat Runner `/files` Endpoint — Arbitrary File Read via `%2F`-Encoded Separator",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "NukeViet CMS: Stored Cross-Site Scripting (XSS) via insufficient server-side input sanitization in Request class",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "nimiq-keys: Unchecked Ed25519 signature length in TaggedPublicKey::verify causes remote node panic via DHT",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "@joplin/onenote-converter: Path traversal in OneNote importer allows overwriting arbitrary files",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SimpleSAMLphp casserver: Open Redirect in logout",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40415: Windows TCP/IP Remote Code Execution Vulnerability",
+          "date": "2026-05-15",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-0262 PAN-OS: Denial of Service Vulnerabilities in Network Traffic Parsing (Severity: MEDIUM)",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-0257 PAN-OS: GlobalProtect Authentication Bypass Vulnerabilities (Severity: MEDIUM)",
+          "date": "2026-05-15",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-15T19:43:17.753Z",
       "logs": [
         "[INFO] apple - 6 patches, no changes",
@@ -17032,48 +17599,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-05-11T15:18:20.060Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 9 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 333 patches, no changes",
-        "[INFO] microsoft - 334 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 552 patches, no changes",
-        "[INFO] signal - 14 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 33 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1306,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "github",
-        "signal",
-        "aws",
-        "redhat",
-        "ubuntu",
-        "chrome",
-        "cloudflare",
-        "edge",
-        "paloalto",
-        "cisco",
-        "crowdstrike",
-        "postgresql",
-        "slack"
-      ],
-      "newPatches": []
     }
   ]
 }
