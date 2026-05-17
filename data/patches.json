@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-17T03:48:58.834Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-17T03:59:50.411Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
@@ -550,6 +550,19 @@
       "description": "",
       "link": "https://security.paloaltonetworks.com/CVE-2026-0264",
       "cve": "CVE-2026-0264"
+    },
+    {
+      "title": "Signal iOS 8.11.0.1584",
+      "date": "2026-05-16",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal iOS",
+      "description": "- Now you can disable the default outgoing message sound to give yourself the silent treatment (Signal Settings > Notifications > Sounds > Message Sent Sound).\r - We fixed a bug that made it possible ",
+      "link": "https://github.com/signalapp/Signal-iOS/releases/tag/8.11.0.1584",
+      "cves": [],
+      "platform": [
+        "iOS"
+      ]
     },
     {
       "title": "CVE-2026-8686 - Heap out-of-bounds read in coreMQTT MQTT5 property parsing",
@@ -9850,6 +9863,61 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-17T03:59:50.410Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[INFO] aws - 7 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 14 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 12 patches, no changes",
+        "[INFO] gcp - 2 patches, no changes",
+        "[INFO] github - 269 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 502 patches, no changes",
+        "[INFO] mssql - 2 patches, no changes",
+        "[INFO] paloalto - 46 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[INFO] redhat - 108 patches, no changes",
+        "[SUCCESS] signal - 1 patches (1 new)",
+        "[INFO] ubuntu - 12 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 997,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "microsoft",
+        "mssql",
+        "paloalto",
+        "signal",
+        "aws",
+        "debian",
+        "edge",
+        "github",
+        "postgresql",
+        "redhat",
+        "cisco",
+        "gcp",
+        "ubuntu",
+        "crowdstrike",
+        "fortinet",
+        "gitlab",
+        "chrome",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "signal",
+          "title": "Signal iOS 8.11.0.1584",
+          "date": "2026-05-16",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-17T03:48:58.834Z",
       "logs": [
         "[INFO] apple - 6 patches, no changes",
@@ -16159,50 +16227,6 @@
           "severity": "HIGH"
         }
       ]
-    },
-    {
-      "timestamp": "2026-05-13T03:44:08.416Z",
-      "logs": [
-        "[INFO] apple - 6 patches, no changes",
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 11 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 284 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 194 patches, no changes",
-        "[INFO] signal - 9 patches, no changes",
-        "[INFO] ubuntu - 32 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 967,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "chrome",
-        "debian",
-        "fortinet",
-        "github",
-        "microsoft",
-        "mssql",
-        "ubuntu",
-        "apple",
-        "gcp",
-        "postgresql",
-        "redhat",
-        "signal",
-        "aws",
-        "cloudflare",
-        "edge",
-        "paloalto"
-      ],
-      "newPatches": []
     }
   ]
 }
