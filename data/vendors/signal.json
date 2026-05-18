@@ -1,16 +1,74 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-18T15:45:28.355Z",
+  "lastUpdated": "2026-05-18T19:52:10.133Z",
   "health": {
-    "lastFetchAttempt": "2026-05-18T15:45:28.355Z",
+    "lastFetchAttempt": "2026-05-18T19:52:10.133Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-18T15:45:28.355Z",
+    "lastFetchParsedItems": 5,
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-05-18T19:52:10.133Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "shopper/framework: Race condition on Discount.usage_limit allows silent over-redemption",
+      "date": "2026-05-18",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Impact\n\n`CreateOrderFromCartAction::execute` previously created the `Order` row before checking and incrementing the discount's `total_use` counter. Under concurrent checkout pressure (Black Friday",
+      "link": "https://github.com/advisories/GHSA-9rh9-hf3w-9fgg",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "iskorotkov/avro: CPU Exhaustion in Decoder",
+      "date": "2026-05-18",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# CPU Exhaustion in Avro Decoder via Unbounded Block-Count Iteration\n\n## Summary\n\nThe Avro array and map decoders looped over an attacker-controlled block-count value without checking the underlying r",
+      "link": "https://github.com/advisories/GHSA-w8j3-pq8g-8m7w",
+      "cves": [
+        "CVE-2026-46385"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "iskorotkov/avro: Integer Overflow in Decoder",
+      "date": "2026-05-18",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# Integer Overflow in Avro Decoder\n\n## Summary\n\nSeveral Avro decoder paths read attacker-controlled 64-bit values from the wire format and either narrowed them to platform-sized `int` before bounds-ch",
+      "link": "https://github.com/advisories/GHSA-mc57-h6j3-3hmv",
+      "cves": [
+        "CVE-2026-46384"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "CI4MS Fileeditor allows deletion and rename of critical application files due to missing extension allowlist on destructive operations",
+      "date": "2026-05-18",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe Fileeditor module enforces an extension allowlist (`['css','js','html','txt','json','sql','md']`) on content-write operations (`saveFile`, `createFile`), but two destructive endpoints ",
+      "link": "https://github.com/advisories/GHSA-245j-xjvr-xvm5",
+      "cves": [
+        "CVE-2026-45139"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal iOS 8.11.0.1584",
       "date": "2026-05-16",
