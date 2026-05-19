@@ -1,7 +1,183 @@
 {
-  "lastUpdated": "2026-05-19T15:32:03.244Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-19T15:41:12.864Z",
+  "newPatches": 26,
   "patches": [
+    {
+      "title": "zrok copy writes attacker-controlled WebDAV paths outside the destination root",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/openziti/zrok/v2, github.com/openziti/zrok",
+      "description": "zrok copy writes attacker-controlled WebDAV paths outside the destination root",
+      "link": "https://github.com/advisories/GHSA-c656-jcx2-7pqj",
+      "cve": "CVE-2026-45576",
+      "cvss": null
+    },
+    {
+      "title": "go-git: Crafted repositories may modify main and submodule .git directories",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/go-git/go-git/v5, github.com/go-git/go-git/v6, github.com/go-git/go-git",
+      "description": "go-git: Crafted repositories may modify main and submodule .git directories",
+      "link": "https://github.com/advisories/GHSA-crhj-59gh-8x96",
+      "cve": "CVE-2026-45571",
+      "cvss": 5.4
+    },
+    {
+      "title": "go-git: Improper single-quote escaping in go-git SSH transport",
+      "date": "2026-05-19",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/go-git/go-git/v5, github.com/go-git/go-git/v6, github.com/go-git/go-git",
+      "description": "go-git: Improper single-quote escaping in go-git SSH transport",
+      "link": "https://github.com/advisories/GHSA-m7cr-m3pv-hgrp",
+      "cve": "CVE-2026-45570",
+      "cvss": null
+    },
+    {
+      "title": "rok Python ProxyShare can be used as an SSRF proxy through absolute URL paths",
+      "date": "2026-05-19",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "zrok",
+      "description": "rok Python ProxyShare can be used as an SSRF proxy through absolute URL paths",
+      "link": "https://github.com/advisories/GHSA-jh67-hwqw-m5r7",
+      "cve": "CVE-2026-45568",
+      "cvss": null
+    },
+    {
+      "title": "HAXcms: Mass Token Exfiltration and Cross-Tenant Hijack ",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@haxtheweb/haxcms-nodejs",
+      "description": "HAXcms: Mass Token Exfiltration and Cross-Tenant Hijack ",
+      "link": "https://github.com/advisories/GHSA-x3x5-7h4h-gwxg",
+      "cve": "CVE-2026-46511",
+      "cvss": null
+    },
+    {
+      "title": "Stored XSS via <iframe> in HAX CMS allows access to sensitive client-side data and account takeover",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@haxtheweb/haxcms-nodejs, @haxtheweb/video-player, @haxtheweb/iframe-loader",
+      "description": "Stored XSS via <iframe> in HAX CMS allows access to sensitive client-side data and account takeover",
+      "link": "https://github.com/advisories/GHSA-jh3h-rpxg-fr36",
+      "cve": "CVE-2026-46396",
+      "cvss": null
+    },
+    {
+      "title": "HAXcms: Private Key Disclosure via Broken HMAC Implementation",
+      "date": "2026-05-19",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@haxtheweb/haxcms-nodejs",
+      "description": "HAXcms: Private Key Disclosure via Broken HMAC Implementation",
+      "link": "https://github.com/advisories/GHSA-6c8g-9hfh-pq5h",
+      "cve": "CVE-2026-46395",
+      "cvss": null
+    },
+    {
+      "title": "HAX open-apis: Credential Theft via Server-Side Request Forgery (SSRF) in open-apis",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@haxtheweb/open-apis",
+      "description": "HAX open-apis: Credential Theft via Server-Side Request Forgery (SSRF) in open-apis",
+      "link": "https://github.com/advisories/GHSA-4fg7-f244-3j49",
+      "cve": "CVE-2026-46391",
+      "cvss": null
+    },
+    {
+      "title": "HAX CMS: Stored XSS via '<video-player>' component allows arbitrary JavaScript execution and token theft",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@haxtheweb/haxcms-nodejs, @haxtheweb/video-player",
+      "description": "HAX CMS: Stored XSS via '<video-player>' component allows arbitrary JavaScript execution and token theft",
+      "link": "https://github.com/advisories/GHSA-2m6p-hm3w-6jm3",
+      "cve": "CVE-2026-46496",
+      "cvss": null
+    },
+    {
+      "title": "HAXcms createSite SSRF Enables Arbitrary File Read",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@haxtheweb/haxcms-nodejs",
+      "description": "HAXcms createSite SSRF Enables Arbitrary File Read",
+      "link": "https://github.com/advisories/GHSA-q862-gcgq-5m6g",
+      "cve": "CVE-2026-46393",
+      "cvss": null
+    },
+    {
+      "title": "Algernon: Auto-refresh SSE event server binds to all interfaces with Access-Control-Allow-Origin: * and no authentication",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/xyproto/algernon",
+      "description": "Algernon: Auto-refresh SSE event server binds to all interfaces with Access-Control-Allow-Origin: * and no authentication",
+      "link": "https://github.com/advisories/GHSA-9v4j-7g44-qcqw",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "Algernon: handler.lua discovery walks parent directories above the server root",
+      "date": "2026-05-19",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/xyproto/algernon",
+      "description": "Algernon: handler.lua discovery walks parent directories above the server root",
+      "link": "https://github.com/advisories/GHSA-xwcr-wm99-g9jc",
+      "cve": "CVE-2026-45721",
+      "cvss": 9
+    },
+    {
+      "title": "Algernon: Single-file mode unconditionally enables debug mode",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/xyproto/algernon",
+      "description": "Algernon: Single-file mode unconditionally enables debug mode",
+      "link": "https://github.com/advisories/GHSA-fwqx-8365-9983",
+      "cve": "CVE-2026-45728",
+      "cvss": 7.5
+    },
+    {
+      "title": "Scriban: array.insert_at index parameter DoS bypasses LoopLimit and LimitToString",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "scriban",
+      "description": "Scriban: array.insert_at index parameter DoS bypasses LoopLimit and LimitToString",
+      "link": "https://github.com/advisories/GHSA-24c8-4792-22hx",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Malware in @opensearch-project/opensearch",
+      "date": "2026-05-19",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@opensearch-project/opensearch, @opensearch-project/opensearch, @opensearch-project/opensearch",
+      "description": "Malware in @opensearch-project/opensearch",
+      "link": "https://github.com/advisories/GHSA-27f5-xjrr-q9ff",
+      "cve": "",
+      "cvss": 9.6
+    },
+    {
+      "title": "Internationalized Domain Names in Applications (IDNA): Specially crafted inputs to idna.encode() can bypass CVE-2024-3651 fix",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "idna",
+      "description": "Internationalized Domain Names in Applications (IDNA): Specially crafted inputs to idna.encode() can bypass CVE-2024-3651 fix",
+      "link": "https://github.com/advisories/GHSA-65pc-fj4g-8rjx",
+      "cve": "CVE-2026-45409",
+      "cvss": null
+    },
     {
       "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
       "date": "2026-05-19",
@@ -460,6 +636,116 @@
       "component": "Microsoft SQL Server",
       "description": "Information published....",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6473"
+    },
+    {
+      "title": "CVE-2026-7504: org.keycloak/keycloak-services: Open redirect when using wildcard valid redirect URIs in Keycloak",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.keycloak/keycloak-services: Open redirect when using wildcard valid redirect URIs in Keycloak",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7504.json",
+      "cve": "CVE-2026-7504",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-7507: org.keycloak/keycloak-services: Session fixation in OIDC login flow that can lead to account takeover",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.keycloak/keycloak-services: Session fixation in OIDC login flow that can lead to account takeover",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7507.json",
+      "cve": "CVE-2026-7507",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-7571: keycloak: Keycloak: Access token disclosure and implicit flow bypass via forged client data",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: Keycloak: Access token disclosure and implicit flow bypass via forged client data",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7571.json",
+      "cve": "CVE-2026-7571",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-37978: keycloak: org.keycloak.services: Keycloak: Information Disclosure via evaluate-scopes Admin API",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: org.keycloak.services: Keycloak: Information Disclosure via evaluate-scopes Admin API",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-37978.json",
+      "cve": "CVE-2026-37978",
+      "cvss": 4.9
+    },
+    {
+      "title": "CVE-2026-7307: keycloak: Keycloak: Denial of Service via specially crafted SAML input",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: Keycloak: Denial of Service via specially crafted SAML input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7307.json",
+      "cve": "CVE-2026-7307",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-37981: keycloak: org.keycloak.authorization: Keycloak: Information disclosure via broken access control in user lookup endpoint",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: org.keycloak.authorization: Keycloak: Information disclosure via broken access control in user lookup endpoint",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-37981.json",
+      "cve": "CVE-2026-37981",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-8922: org.keycloak/keycloak-services: keycloak: org.keycloak.protocol.oidc: Security flaw in org.keycloak/keycloak-services",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.keycloak/keycloak-services: keycloak: org.keycloak.protocol.oidc: Security flaw in org.keycloak/keycloak-services",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-8922.json",
+      "cve": "CVE-2026-8922",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-8830: keycloak: org.keycloak/keycloak-services: Keycloak: Policy bypass during WebAuthn credential registration via client-sid",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: org.keycloak/keycloak-services: Keycloak: Policy bypass during WebAuthn credential registration via client-side JavaScript manipulation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-8830.json",
+      "cve": "CVE-2026-8830",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-37979: keycloak: Keycloak: Information disclosure via OIDC token introspection endpoint audience bypass",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: Keycloak: Information disclosure via OIDC token introspection endpoint audience bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-37979.json",
+      "cve": "CVE-2026-37979",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-37982: keycloak: org.keycloak.authentication: Keycloak: Unauthorized account takeover via WebAuthn token replay",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: org.keycloak.authentication: Keycloak: Unauthorized account takeover via WebAuthn token replay",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-37982.json",
+      "cve": "CVE-2026-37982",
+      "cvss": 6.8
     },
     {
       "title": "USN-8275-1: Linux kernel (Xilinx ZynqMP) vulnerabilities",
@@ -9276,6 +9562,209 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-19T15:41:12.864Z",
+      "logs": [
+        "[INFO] aws - 7 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 12 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 263 patches (16 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 502 patches, no changes",
+        "[INFO] mssql - 2 patches, no changes",
+        "[INFO] paloalto - 46 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[SUCCESS] redhat - 111 patches (10 new)",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 6 patches, no changes"
+      ],
+      "newPatchCount": 26,
+      "totalPatches": 966,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "github",
+        "microsoft",
+        "mssql",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "cloudflare",
+        "postgresql",
+        "signal",
+        "paloalto",
+        "debian",
+        "edge",
+        "cisco",
+        "gcp",
+        "crowdstrike",
+        "fortinet",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "zrok copy writes attacker-controlled WebDAV paths outside the destination root",
+          "date": "2026-05-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "go-git: Crafted repositories may modify main and submodule .git directories",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "go-git: Improper single-quote escaping in go-git SSH transport",
+          "date": "2026-05-19",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "rok Python ProxyShare can be used as an SSRF proxy through absolute URL paths",
+          "date": "2026-05-19",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "HAXcms: Mass Token Exfiltration and Cross-Tenant Hijack ",
+          "date": "2026-05-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Stored XSS via <iframe> in HAX CMS allows access to sensitive client-side data and account takeover",
+          "date": "2026-05-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "HAXcms: Private Key Disclosure via Broken HMAC Implementation",
+          "date": "2026-05-19",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "HAX open-apis: Credential Theft via Server-Side Request Forgery (SSRF) in open-apis",
+          "date": "2026-05-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "HAX CMS: Stored XSS via '<video-player>' component allows arbitrary JavaScript execution and token theft",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "HAXcms createSite SSRF Enables Arbitrary File Read",
+          "date": "2026-05-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Algernon: Auto-refresh SSE event server binds to all interfaces with Access-Control-Allow-Origin: * and no authentication",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Algernon: handler.lua discovery walks parent directories above the server root",
+          "date": "2026-05-19",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Algernon: Single-file mode unconditionally enables debug mode",
+          "date": "2026-05-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Scriban: array.insert_at index parameter DoS bypasses LoopLimit and LimitToString",
+          "date": "2026-05-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Malware in @opensearch-project/opensearch",
+          "date": "2026-05-19",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Internationalized Domain Names in Applications (IDNA): Specially crafted inputs to idna.encode() can bypass CVE-2024-3651 fix",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-7504: org.keycloak/keycloak-services: Open redirect when using wildcard valid redirect URIs in Keycloak",
+          "date": "2026-05-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-7507: org.keycloak/keycloak-services: Session fixation in OIDC login flow that can lead to account takeover",
+          "date": "2026-05-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-7571: keycloak: Keycloak: Access token disclosure and implicit flow bypass via forged client data",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-37978: keycloak: org.keycloak.services: Keycloak: Information Disclosure via evaluate-scopes Admin API",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-7307: keycloak: Keycloak: Denial of Service via specially crafted SAML input",
+          "date": "2026-05-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-37981: keycloak: org.keycloak.authorization: Keycloak: Information disclosure via broken access control in user lookup endpoint",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-8922: org.keycloak/keycloak-services: keycloak: org.keycloak.protocol.oidc: Security flaw in org.keycloak/keycloak-services",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-8830: keycloak: org.keycloak/keycloak-services: Keycloak: Policy bypass during WebAuthn credential registration via client-sid",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-37979: keycloak: Keycloak: Information disclosure via OIDC token introspection endpoint audience bypass",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-37982: keycloak: org.keycloak.authentication: Keycloak: Unauthorized account takeover via WebAuthn token replay",
+          "date": "2026-05-19",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-19T15:32:03.243Z",
       "logs": [
         "[INFO] aws - 7 patches, no changes",
@@ -14014,841 +14503,6 @@
         "signal"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-15T14:22:57.838Z",
-      "logs": [
-        "[INFO] apple - 6 patches, no changes",
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 15 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 12 patches, no changes",
-        "[INFO] gcp - 2 patches, no changes",
-        "[INFO] github - 253 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[SUCCESS] microsoft - 500 patches (50 new)",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] paloalto - 34 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[SUCCESS] redhat - 114 patches (81 new)",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 12 patches, no changes"
-      ],
-      "newPatchCount": 131,
-      "totalPatches": 969,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 18,
-      "vendors": [
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "aws",
-        "cisco",
-        "debian",
-        "gcp",
-        "github",
-        "paloalto",
-        "ubuntu",
-        "crowdstrike",
-        "fortinet",
-        "gitlab",
-        "chrome",
-        "mssql",
-        "apple",
-        "edge",
-        "signal"
-      ],
-      "newPatches": [
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-32207: Azure Machine Learning Notebook Spoofing Vulnerability",
-          "date": "2026-05-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33109: Azure Managed Instance for Apache Cassandra Remote Code Execution Vulnerability",
-          "date": "2026-05-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-32204: Azure Monitor Agent Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-32177: .NET Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-21530: Windows Rich Text Edit Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33117: Azure SDK for Java Security Feature Bypass Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33834: Windows Event Logging Service Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33839: Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33840: Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33841: Windows Kernel Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34329: Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34330: Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34331: Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34333: Windows Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34342: Windows Print Spooler Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34343: Windows Application Identity (AppID) Subsystem Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34344: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34345: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34347: Windows Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34350: Windows Storport Miniport Driver Denial of Service Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34351: Windows TCP/IP Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35415: Windows Storage Spaces Controller Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35416: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35417: Windows Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35418: Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35419: Windows DWM Core Library Information Disclosure  Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35420: Windows Kernel Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35421: Windows GDI Remote Code Execution Vulnerability",
-          "date": "2026-05-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35422: Windows TCP/IP Driver Security Feature Bypass Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35423: Windows 11 Telnet Client Information Disclosure Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35424: Internet Key Exchange (IKE) Protocol Denial of Service Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35433: .NET Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35438: Windows Admin Center Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35439: Microsoft SharePoint Server Remote Code Execution Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35440: Microsoft Word Information Disclosure Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40360: Microsoft Excel Information Disclosure Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40363: Microsoft Office Remote Code Execution Vulnerability",
-          "date": "2026-05-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40364: Microsoft Word Remote Code Execution Vulnerability",
-          "date": "2026-05-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40366: Microsoft Word Remote Code Execution Vulnerability",
-          "date": "2026-05-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40368: Microsoft SharePoint Server Remote Code Execution Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40374: Microsoft Power Automate Desktop Information Disclosure Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40377: Microsoft Cryptographic Services Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40380: Windows Volume Manager Extension Driver Remote Code Execution Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40399: Windows TCP/IP Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40405: Windows TCP/IP Denial of Service Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40406: Windows TCP/IP Information Disclosure Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40407: Windows Common Log File System Driver Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40408: Windows WAN ARP Driver Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40410: Windows SMB Client Elevation of Privilege Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40414: Windows TCP/IP Denial of Service Vulnerability",
-          "date": "2026-05-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43490: kernel: ksmbd: validate inherited ACE SID length",
-          "date": "2026-05-15",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8587: chromium-browser: chromium-browser: Use after free in Extensions",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8586: chromium-browser: chromium-browser: Inappropriate implementation in Chromoting",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8582: chromium-browser: chromium-browser: Object lifecycle issue in Dawn",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8583: chromium-browser: chromium-browser: Insufficient policy enforcement in WebXR",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8581: chromium-browser: chromium-browser: Use after free in GPU",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8578: chromium-browser: chromium-browser: Out of bounds read in GPU",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8579: chromium-browser: chromium-browser: Insufficient validation of untrusted input in Skia",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8580: chromium-browser: chromium-browser: Use after free in Mojo",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8576: chromium-browser: chromium-browser: Inappropriate implementation in CORS",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8577: chromium-browser: chromium-browser: Integer overflow in Fonts",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8575: chromium-browser: chromium-browser: Use after free in UI",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8574: chromium-browser: chromium-browser: Use after free in Core",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8573: chromium-browser: chromium-browser: Integer overflow in Codecs",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8570: chromium-browser: chromium-browser: Type Confusion in V8",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8572: chromium-browser: chromium-browser: Insufficient policy enforcement in Network",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8571: chromium-browser: chromium-browser: Insufficient policy enforcement in GPU",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8568: chromium-browser: chromium-browser: Insufficient policy enforcement in AI",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8569: chromium-browser: chromium-browser: Out of bounds write in Codecs",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8565: chromium-browser: chromium-browser: Inappropriate implementation in Downloads",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8567: chromium-browser: chromium-browser: Integer overflow in ANGLE",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8566: chromium-browser: chromium-browser: Insufficient policy enforcement in Payments",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8564: chromium-browser: chromium-browser: Incorrect security UI in Downloads",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8562: chromium-browser: chromium-browser: Side-channel information leakage in Navigation",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8563: chromium-browser: chromium-browser: Insufficient policy enforcement in IFrame Sandbox",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8561: chromium-browser: chromium-browser: Incorrect security UI in Fullscreen",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8559: chromium-browser: chromium-browser: Integer overflow in Internationalization",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8555: chromium-browser: chromium-browser: Use after free in GTK",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8557: chromium-browser: chromium-browser: Use after free in Accessibility",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8556: chromium-browser: chromium-browser: Inappropriate implementation in ANGLE",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8554: chromium-browser: chromium-browser: Type Confusion in ANGLE",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8553: chromium-browser: chromium-browser: Use after free in GPU",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8550: chromium-browser: chromium-browser: Use after free in Google Lens",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8551: chromium-browser: chromium-browser: Use after free in Downloads",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8552: chromium-browser: chromium-browser: Heap buffer overflow in GPU",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8548: chromium-browser: chromium-browser: Out of bounds write in Media",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8549: chromium-browser: chromium-browser: Use after free in Media",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8547: chromium-browser: chromium-browser: Insufficient policy enforcement in Passwords",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8545: chromium-browser: chromium-browser: Object corruption in Compositing",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8544: chromium-browser: chromium-browser: Use after free in Media",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8546: chromium-browser: chromium-browser: Out of bounds read in GPU",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8541: chromium-browser: chromium-browser: Out of bounds read in UI",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8543: chromium-browser: chromium-browser: Out of bounds read in FileSystem",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8542: chromium-browser: chromium-browser: Use after free in Core",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8540: chromium-browser: chromium-browser: Type Confusion in V8",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8538: chromium-browser: chromium-browser: Insufficient validation of untrusted input in GPU",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8539: chromium-browser: chromium-browser: Script injection in SanitizerAPI",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8536: chromium-browser: chromium-browser: Insufficient validation of untrusted input in ReadingMode",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8537: chromium-browser: chromium-browser: Insufficient policy enforcement in ViewTransitions",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8534: chromium-browser: chromium-browser: Integer overflow in GPU",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8533: chromium-browser: chromium-browser: Use after free in Accessibility",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8535: chromium-browser: chromium-browser: Out of bounds read in Media",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8530: chromium-browser: chromium-browser: Use after free in Network",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8531: chromium-browser: chromium-browser: Heap buffer overflow in WebML",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8532: chromium-browser: chromium-browser: Integer overflow in XML",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8528: chromium-browser: chromium-browser: Insufficient validation of untrusted input in SiteIsolation",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8529: chromium-browser: chromium-browser: Heap buffer overflow in Codecs",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8525: chromium-browser: chromium-browser: Heap buffer overflow in ANGLE",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8526: chromium-browser: chromium-browser: Out of bounds write in WebRTC",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8527: chromium-browser: chromium-browser: Insufficient validation of untrusted input in Downloads",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8524: chromium-browser: chromium-browser: Out of bounds write in WebAudio",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8558: chromium-browser: chromium-browser: Out of bounds write in Fonts",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8523: chromium-browser: chromium-browser: Use after free in Mojo",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8521: chromium-browser: chromium-browser: Use after free in Tab Groups",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8522: chromium-browser: chromium-browser: Use after free in Downloads",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8518: chromium-browser: chromium-browser: Use after free in Blink",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8520: chromium-browser: chromium-browser: Race in Payments",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8519: chromium-browser: chromium-browser: Integer overflow in ANGLE",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8517: chromium-browser: chromium-browser: Object lifecycle issue in WebShare",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8516: chromium-browser: chromium-browser: Insufficient validation of untrusted input in DataTransfer",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8515: chromium-browser: chromium-browser: Use after free in HID",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8514: chromium-browser: chromium-browser: Use after free in Aura",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8512: chromium-browser: chromium-browser: Use after free in FileSystem",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8513: chromium-browser: chromium-browser: Use after free in Input",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8510: chromium-browser: chromium-browser: Integer overflow in Skia",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8511: chromium-browser: chromium-browser: Use after free in UI",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8509: chromium-browser: chromium-browser: Heap buffer overflow in WebML",
-          "date": "2026-05-14",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-44484: pytorch-lightning: PyTorch Lightning: Credential harvesting via introduced functionality",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8295: simdjson: simdjson: Memory corruption via integer overflow in string processing",
-          "date": "2026-05-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43895: jq: embedded NUL in jq import paths causes local redaction-policy bypass and preserves sensitive fields in published art",
-          "date": "2026-05-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-41256: jq: embedded NUL truncates top-level jq programs loaded with -f",
-          "date": "2026-05-11",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
