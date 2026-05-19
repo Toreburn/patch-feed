@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-19T15:40:03.565Z",
+  "lastUpdated": "2026-05-19T19:58:47.018Z",
   "health": {
-    "lastFetchAttempt": "2026-05-19T15:40:03.565Z",
+    "lastFetchAttempt": "2026-05-19T19:58:47.018Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-19T15:40:03.565Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-05-19T19:58:47.018Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Coder: Unauthenticated SSRF via Azure Instance Identity Endpoint",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nUnauthenticated semi-blind Server-Side Request Forgery (SSRF) via the Azure instance identity endpoint (`POST /api/v2/workspaceagents/azure-instance-identity`). An external attacker can fo",
+      "link": "https://github.com/advisories/GHSA-686c-7vgv-v3fx",
+      "cves": [
+        "CVE-2026-45796"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Caddy: Remote Admin Authorization Bypass in `/config` API via Array Index Normalization",
+      "date": "2026-05-19",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "This report is not about a normal textual prefix-expansion case.\n\n The issue here is that the authorization layer and the `/config` traversal layer do **not agree on what object the path refers to**.\n",
+      "link": "https://github.com/advisories/GHSA-x5w9-xh9r-mvfc",
+      "cves": [
+        "CVE-2026-45692"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "shopper/framework: Race condition on Discount.usage_limit allows silent over-redemption",
       "date": "2026-05-18",

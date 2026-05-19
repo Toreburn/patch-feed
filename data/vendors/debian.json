@@ -1,16 +1,52 @@
 {
   "vendor": "debian",
-  "lastUpdated": "2026-05-19T09:56:21.829Z",
+  "lastUpdated": "2026-05-19T19:57:50.385Z",
   "health": {
-    "lastFetchAttempt": "2026-05-19T09:56:21.829Z",
+    "lastFetchAttempt": "2026-05-19T19:57:50.385Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 12,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-19T09:56:21.829Z",
+    "lastFetchParsedItems": 15,
+    "lastFetchNewPatches": 3,
+    "lastSuccessWithData": "2026-05-19T19:57:50.385Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "DSA-6280-1 netatalk - security update",
+      "date": "2026-05-18",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "netatalk",
+      "description": "Multiple security vulnerabilities were found in Netatalk, an implementation of the Apple Filing Protocol (AFP), which could result in denial of service, information disclosure or the execution of arbi...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00191.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6279-1 redis - security update",
+      "date": "2026-05-17",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "redis",
+      "description": "Brief introduction CVE-2025-67733 A flaw in the Lua scripting error path allowed an authenticated user to embed CR/LF byte sequences in an error reply produced via redis.error_reply() or the Lua error...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00190.html",
+      "cve": "CVE-2025-67733",
+      "cves": [
+        "CVE-2025-67733",
+        "CVE-2026-21863"
+      ]
+    },
+    {
+      "title": "DSA-6278-1 nginx - security update",
+      "date": "2026-05-16",
+      "severity": "HIGH",
+      "vendor": "debian",
+      "component": "nginx",
+      "description": "Multiple vulnerabilities were discoverd in Nginx, a high-performance web and reverse proxy server, which could result in bypass of authorisation rules or rate limits, denial of service or memory discl...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00189.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "DSA-6277-1 openjpeg2 - security update",
       "date": "2026-05-15",
