@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-19T19:58:47.018Z",
+  "lastUpdated": "2026-05-20T04:05:48.764Z",
   "health": {
-    "lastFetchAttempt": "2026-05-19T19:58:47.018Z",
+    "lastFetchAttempt": "2026-05-20T04:05:48.763Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 2,
-    "lastSuccessWithData": "2026-05-19T19:58:47.018Z",
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-05-20T04:05:48.763Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -36,6 +36,21 @@
       "link": "https://github.com/advisories/GHSA-x5w9-xh9r-mvfc",
       "cves": [
         "CVE-2026-45692"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "@libp2p/kad-dht: Unvalidated PUT_VALUE records allow unbounded disk exhaustion on DHT server nodes",
+      "date": "2026-05-19",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nAn unauthenticated remote peer can exhaust the disk storage of any `@libp2p/kad-dht` node running in server mode by sending an unbounded stream of `PUT_VALUE` messages whose keys bypass al",
+      "link": "https://github.com/advisories/GHSA-32mq-hpph-xfvr",
+      "cves": [
+        "CVE-2026-45783"
       ],
       "platform": [
         "All Platforms"
