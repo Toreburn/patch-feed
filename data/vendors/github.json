@@ -1,16 +1,115 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-05-20T09:45:08.831Z",
+  "lastUpdated": "2026-05-20T15:36:16.984Z",
   "health": {
-    "lastFetchAttempt": "2026-05-20T09:45:08.831Z",
+    "lastFetchAttempt": "2026-05-20T15:36:16.984Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-20T09:45:08.831Z",
+    "lastFetchNewPatches": 9,
+    "lastSuccessWithData": "2026-05-20T15:36:16.984Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "OpenTofu: Excessive resource usage in \"tofu init\" when installing dependencies from attacker-controlled server",
+      "date": "2026-05-20",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/opentofu/opentofu",
+      "description": "OpenTofu: Excessive resource usage in \"tofu init\" when installing dependencies from attacker-controlled server",
+      "link": "https://github.com/advisories/GHSA-pxh5-6rrc-8rjv",
+      "cve": "",
+      "cvss": 3.1
+    },
+    {
+      "title": "Plug: Unbounded buffer accumulation in multipart header parsing causes denial of service",
+      "date": "2026-05-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "plug, plug, plug",
+      "description": "Plug: Unbounded buffer accumulation in multipart header parsing causes denial of service",
+      "link": "https://github.com/advisories/GHSA-468c-vq7p-gh64",
+      "cve": "CVE-2026-8468",
+      "cvss": null
+    },
+    {
+      "title": "Algernon: Auto-refresh SSE event server sets Access-Control-Allow-Origin: *",
+      "date": "2026-05-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/xyproto/algernon",
+      "description": "Algernon: Auto-refresh SSE event server sets Access-Control-Allow-Origin: *",
+      "link": "https://github.com/advisories/GHSA-hw27-4v2q-5qff",
+      "cve": "CVE-2026-46431",
+      "cvss": 4.3
+    },
+    {
+      "title": "Algernon: Auto-refresh SSE event server binds to all interfaces by default on Linux/macOS",
+      "date": "2026-05-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/xyproto/algernon",
+      "description": "Algernon: Auto-refresh SSE event server binds to all interfaces by default on Linux/macOS",
+      "link": "https://github.com/advisories/GHSA-gj84-924c-48fx",
+      "cve": "CVE-2026-46430",
+      "cvss": 4.3
+    },
+    {
+      "title": " Supply chain compromise via malicious package versions (@cap-js/sqlite,  @cap-js/postgres, @cap-js/db-service)",
+      "date": "2026-05-20",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@cap-js/sqlite, @cap-js/postgres, @cap-js/db-service",
+      "description": " Supply chain compromise via malicious package versions (@cap-js/sqlite,  @cap-js/postgres, @cap-js/db-service)",
+      "link": "https://github.com/advisories/GHSA-pvw4-cvr4-97p8",
+      "cve": "CVE-2026-46421",
+      "cvss": null
+    },
+    {
+      "title": "Setup PHP: GitHub tokens configured by setup-php may be exposed through pinned affected Composer versions",
+      "date": "2026-05-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "shivammathur/setup-php",
+      "description": "Setup PHP: GitHub tokens configured by setup-php may be exposed through pinned affected Composer versions",
+      "link": "https://github.com/advisories/GHSA-5wxr-w449-57cm",
+      "cve": "",
+      "cvss": 5.9
+    },
+    {
+      "title": "Setup PHP: Command Injection in Repository-Derived PHP Version Resolution",
+      "date": "2026-05-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "shivammathur/setup-php",
+      "description": "Setup PHP: Command Injection in Repository-Derived PHP Version Resolution",
+      "link": "https://github.com/advisories/GHSA-pqwm-q9pv-ph8r",
+      "cve": "CVE-2026-46420",
+      "cvss": 5.6
+    },
+    {
+      "title": "Diffusers: TOCTOU Trust Remote Code Bypass",
+      "date": "2026-05-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "diffusers",
+      "description": "Diffusers: TOCTOU Trust Remote Code Bypass",
+      "link": "https://github.com/advisories/GHSA-7wx4-6vff-v64p",
+      "cve": "CVE-2026-45804",
+      "cvss": 7.5
+    },
+    {
+      "title": "RTK improperly trusts project-local filter configuration, allowing silent tampering of command output shown to LLM",
+      "date": "2026-05-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "rtk",
+      "description": "RTK improperly trusts project-local filter configuration, allowing silent tampering of command output shown to LLM",
+      "link": "https://github.com/advisories/GHSA-fvvm-949w-qj4w",
+      "cve": "CVE-2026-45792",
+      "cvss": null
+    },
     {
       "title": "zrok copy writes attacker-controlled WebDAV paths outside the destination root",
       "date": "2026-05-19",
