@@ -1,12 +1,12 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-05-20T20:25:16.913Z",
+  "lastUpdated": "2026-05-21T04:14:43.021Z",
   "health": {
-    "lastFetchAttempt": "2026-05-20T20:25:16.913Z",
+    "lastFetchAttempt": "2026-05-21T04:14:43.021Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 126,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-20T20:25:16.913Z",
+    "lastFetchParsedItems": 114,
+    "lastFetchNewPatches": 7,
+    "lastSuccessWithData": "2026-05-21T04:14:43.021Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -20,6 +20,72 @@
       "description": "389-ds-base: 389-ds-base: unbounded LDAP controls count in get_ldapmessage_controls_ext() causes CPU and heap amplification (remote DoS)",
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9064.json",
       "cve": "CVE-2026-9064",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-9150: libsolv: Stack-based buffer overflow in libsolv's Debian metadata parser when handling SHA384/SHA512 checksums",
+      "date": "2026-05-20",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libsolv: Stack-based buffer overflow in libsolv's Debian metadata parser when handling SHA384/SHA512 checksums",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9150.json",
+      "cve": "CVE-2026-9150",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9149: libsolv: Heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file",
+      "date": "2026-05-20",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libsolv: Heap buffer overflow in libsolv repo_add_solv via negative maxsize from crafted .solv file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9149.json",
+      "cve": "CVE-2026-9149",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9087: keycloak: Cross-Session Email Verification Proof Not Bound to Upstream Identity in First-Broker-Login",
+      "date": "2026-05-20",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: Cross-Session Email Verification Proof Not Bound to Upstream Identity in First-Broker-Login",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9087.json",
+      "cve": "CVE-2026-9087",
+      "cvss": 6.4
+    },
+    {
+      "title": "CVE-2026-33278: unbound: Unbound DNSSEC Validator Use-After-Free via Deep Copy Pointer Overwrite Leading to DoS and Possible Remote Code",
+      "date": "2026-05-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "unbound: Unbound DNSSEC Validator Use-After-Free via Deep Copy Pointer Overwrite Leading to DoS and Possible Remote Code Execution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-33278.json",
+      "cve": "CVE-2026-33278",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-42944: unbound: Heap overflow and crash with multiple nsid, cookie, padding EDNS options",
+      "date": "2026-05-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "unbound: Heap overflow and crash with multiple nsid, cookie, padding EDNS options",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42944.json",
+      "cve": "CVE-2026-42944",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-42959: unbound: Unbound DNSSEC Validator Denial of Service via Incorrect Write Offset Counter in Chase-Reply Messages",
+      "date": "2026-05-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "unbound: Unbound DNSSEC Validator Denial of Service via Incorrect Write Offset Counter in Chase-Reply Messages",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42959.json",
+      "cve": "CVE-2026-42959",
       "cvss": 7.5
     },
     {
@@ -296,6 +362,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-34253.json",
       "cve": "CVE-2026-34253",
       "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-46483: vim: command injection when decompressing .tgz archives",
+      "date": "2026-05-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: command injection when decompressing .tgz archives",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46483.json",
+      "cve": "CVE-2026-46483",
+      "cvss": 7
     },
     {
       "title": "CVE-2026-8587: chromium-browser: chromium-browser: Use after free in Extensions",
