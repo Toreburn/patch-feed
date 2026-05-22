@@ -1,7 +1,25 @@
 {
-  "lastUpdated": "2026-05-22T19:52:20.879Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-22T19:57:37.803Z",
+  "newPatches": 8,
   "patches": [
+    {
+      "title": "CVE-2026-9255 - Tool Execution Without Authorization via Piped Stdin in Kiro CLI",
+      "date": "2026-05-22",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "CVE-2026-9255",
+      "description": "<p><b>Bulletin ID:</b> 2026-035-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 05/22/2026 09:45 AM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-035-aws/"
+    },
+    {
+      "title": "CVE-2026-9291 - Insecure Deserialization in Amazon Braket SDK Job Results Processing",
+      "date": "2026-05-22",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "CVE-2026-9291",
+      "description": "<p><b>Bulletin ID:</b> 2026-036-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 05/22/2026 11:15 AM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-036-aws/"
+    },
     {
       "title": "ImageMagick: Heap Buffer Over-Read in distributed pixel cache server ",
       "date": "2026-05-22",
@@ -45,6 +63,61 @@
       "link": "https://github.com/advisories/GHSA-p93h-f2jc-477j",
       "cve": "CVE-2026-46692",
       "cvss": 4.1
+    },
+    {
+      "title": "Flask-Security-Too OAuth reauthentication freshness bypass via cross-   user OAuth identity acceptance",
+      "date": "2026-05-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "Flask-Security-Too",
+      "description": "Flask-Security-Too OAuth reauthentication freshness bypass via cross-   user OAuth identity acceptance",
+      "link": "https://github.com/advisories/GHSA-97r5-pg8x-p63p",
+      "cve": "CVE-2026-46715",
+      "cvss": null
+    },
+    {
+      "title": "aiosend: Deserialization of request body before signature verification (Pre-auth DoS) in webhook handler",
+      "date": "2026-05-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "aiosend",
+      "description": "aiosend: Deserialization of request body before signature verification (Pre-auth DoS) in webhook handler",
+      "link": "https://github.com/advisories/GHSA-7m8f-hgjq-8gc9",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "qs has a remotely triggerable DoS: qs.stringify crashes with TypeError on null/undefined entries in comma-format arrays when encodeValuesOnly is set",
+      "date": "2026-05-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "qs",
+      "description": "qs has a remotely triggerable DoS: qs.stringify crashes with TypeError on null/undefined entries in comma-format arrays when encodeValuesOnly is set",
+      "link": "https://github.com/advisories/GHSA-q8mj-m7cp-5q26",
+      "cve": "CVE-2026-8723",
+      "cvss": 5.3
+    },
+    {
+      "title": "FileBrowser Quantum: Path traversal in public share PATCH allows file ops outside shared directory",
+      "date": "2026-05-22",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/gtsteffaniak/filebrowser/backend",
+      "description": "FileBrowser Quantum: Path traversal in public share PATCH allows file ops outside shared directory",
+      "link": "https://github.com/advisories/GHSA-qqqm-5547-774x",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "YesWiki: Unauthenticated SQL Injection",
+      "date": "2026-05-22",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "yeswiki/yeswiki",
+      "description": "YesWiki: Unauthenticated SQL Injection",
+      "link": "https://github.com/advisories/GHSA-jwvv-qr7q-cv8j",
+      "cve": "CVE-2026-46670",
+      "cvss": 9.8
     },
     {
       "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
@@ -2535,6 +2608,15 @@
       "component": "Bind vulnerabilities",
       "description": "Vitaly Simonovich discovered that Bind could exhaust memory during GSS-API\nTKEY negotiation. A remote attacker could possibly use this issue to cause\nBind to use excessive resources, leading to a deni...",
       "link": "https://ubuntu.com/security/notices/USN-8293-1"
+    },
+    {
+      "title": "USN-8290-1: Path-to-Regexp vulnerability",
+      "date": "2026-05-21",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Path-to-Regexp",
+      "description": "It was discovered that Path-to-Regexp incorrectly handled route patterns\ncontaining multiple named parameters separated by non-delimiter characters\nsuch as hyphens. An attacker could possibly use this...",
+      "link": "https://ubuntu.com/security/notices/USN-8290-1"
     },
     {
       "title": "CVE-2026-9133 - Arbitrary file read in rabbitmq-aws plugin",
@@ -9397,6 +9479,97 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-05-22T19:57:37.803Z",
+      "logs": [
+        "[SUCCESS] aws - 4 patches (2 new)",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 13 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[SUCCESS] github - 255 patches (5 new)",
+        "[INFO] microsoft - 560 patches, no changes",
+        "[INFO] mssql - 2 patches, no changes",
+        "[INFO] paloalto - 19 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 63 patches, no changes",
+        "[INFO] signal - 8 patches, no changes",
+        "[SUCCESS] ubuntu - 30 patches (1 new)"
+      ],
+      "newPatchCount": 8,
+      "totalPatches": 970,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "aws",
+        "github",
+        "microsoft",
+        "ubuntu",
+        "crowdstrike",
+        "debian",
+        "edge",
+        "postgresql",
+        "redhat",
+        "chrome",
+        "cisco",
+        "paloalto",
+        "mssql",
+        "signal",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-9255 - Tool Execution Without Authorization via Piped Stdin in Kiro CLI",
+          "date": "2026-05-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-9291 - Insecure Deserialization in Amazon Braket SDK Job Results Processing",
+          "date": "2026-05-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Flask-Security-Too OAuth reauthentication freshness bypass via cross-   user OAuth identity acceptance",
+          "date": "2026-05-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "aiosend: Deserialization of request body before signature verification (Pre-auth DoS) in webhook handler",
+          "date": "2026-05-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "qs has a remotely triggerable DoS: qs.stringify crashes with TypeError on null/undefined entries in comma-format arrays when encodeValuesOnly is set",
+          "date": "2026-05-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "FileBrowser Quantum: Path traversal in public share PATCH allows file ops outside shared directory",
+          "date": "2026-05-22",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "YesWiki: Unauthenticated SQL Injection",
+          "date": "2026-05-22",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8290-1: Path-to-Regexp vulnerability",
+          "date": "2026-05-21",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-05-22T19:52:20.879Z",
       "logs": [
@@ -16666,52 +16839,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-05-18T10:11:53.243Z",
-      "logs": [
-        "[INFO] aws - 6 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 12 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 189 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 452 patches, no changes",
-        "[INFO] mssql - 2 patches, no changes",
-        "[INFO] paloalto - 46 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 99 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 4 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 837,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 17,
-      "vendors": [
-        "microsoft",
-        "mssql",
-        "paloalto",
-        "signal",
-        "aws",
-        "debian",
-        "edge",
-        "github",
-        "postgresql",
-        "redhat",
-        "cisco",
-        "gcp",
-        "ubuntu",
-        "crowdstrike",
-        "fortinet",
-        "gitlab",
-        "chrome"
-      ],
-      "newPatches": []
     }
   ]
 }
