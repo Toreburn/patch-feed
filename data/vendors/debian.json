@@ -1,16 +1,60 @@
 {
   "vendor": "debian",
-  "lastUpdated": "2026-05-22T19:55:32.343Z",
+  "lastUpdated": "2026-05-23T03:48:18.181Z",
   "health": {
-    "lastFetchAttempt": "2026-05-22T19:55:32.343Z",
+    "lastFetchAttempt": "2026-05-23T03:48:18.181Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 13,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-22T19:55:32.343Z",
+    "lastFetchParsedItems": 16,
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-05-23T03:48:18.181Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "DSA-6294-1 libgcrypt20 - security update",
+      "date": "2026-05-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libgcrypt20",
+      "description": "It was discovered that an incorrect implementation of ECDH encryption (with NIST, Brainpool, X448, or X25519 curves) within Libgcrypt could result in denial of service. https://security-tracker.debian...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00205.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6293-1 krb5 - security update",
+      "date": "2026-05-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "krb5",
+      "description": "Cem Onat Karagun discovered two vulnerabilities in the NegoEx parsing in krb5, the MIT implementation of Kerberos. An unauthenticated remote attacker can take advantage of these flaws to cause a denia...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00204.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6292-1 haveged - security update",
+      "date": "2026-05-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "haveged",
+      "description": "Dirk Mueller discovered that a flaw in the function performing a credential check on the command socket of haveged, a userspace entropy daemon, may result in local privilege escalation. https://securi...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00203.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6291-1 haproxy - security update",
+      "date": "2026-05-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "haproxy",
+      "description": "Martino Spagnuolo reported that the HTTP/3 parsing code in HAProxy, a fast and reliable load balancing reverse proxy, does not properly validate the received body size and the announced content-length...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00202.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "DSA-6288-1 thunderbird - security update",
       "date": "2026-05-21",

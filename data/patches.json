@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-05-23T03:35:55.727Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-23T03:50:29.905Z",
+  "newPatches": 16,
   "patches": [
+    {
+      "title": "Nezha Monitoring: Nezha WebSocket server stream discloses cross-tenant server telemetry to authenticated members",
+      "date": "2026-05-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha",
+      "description": "Nezha Monitoring: Nezha WebSocket server stream discloses cross-tenant server telemetry to authenticated members",
+      "link": "https://github.com/advisories/GHSA-hvv7-hfrh-7gxj",
+      "cve": "CVE-2026-47124",
+      "cvss": 6.5
+    },
+    {
+      "title": "Nezha Monitoring: RoleMember can run shell on every server (cross-tenant RCE) via POST /api/v1/cron",
+      "date": "2026-05-23",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha",
+      "description": "Nezha Monitoring: RoleMember can run shell on every server (cross-tenant RCE) via POST /api/v1/cron",
+      "link": "https://github.com/advisories/GHSA-99gv-2m7h-3hh9",
+      "cve": "CVE-2026-46716",
+      "cvss": 9.9
+    },
+    {
+      "title": "Arcane: Missing admin authorization on global variables endpoint",
+      "date": "2026-05-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/getarcaneapp/arcane/backend",
+      "description": "Arcane: Missing admin authorization on global variables endpoint",
+      "link": "https://github.com/advisories/GHSA-jpjh-jm2p-39hh",
+      "cve": "CVE-2026-47125",
+      "cvss": 8.8
+    },
+    {
+      "title": "instagrapi: Unsafe signup challenge path handling in instagrapi",
+      "date": "2026-05-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "instagrapi",
+      "description": "instagrapi: Unsafe signup challenge path handling in instagrapi",
+      "link": "https://github.com/advisories/GHSA-ggxf-37hm-9wqf",
+      "cve": "",
+      "cvss": 6.5
+    },
+    {
+      "title": "aiograpi: Unsafe signup challenge path handling",
+      "date": "2026-05-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "aiograpi",
+      "description": "aiograpi: Unsafe signup challenge path handling",
+      "link": "https://github.com/advisories/GHSA-jh37-x3fv-4x72",
+      "cve": "CVE-2026-47157",
+      "cvss": 6.5
+    },
+    {
+      "title": "Parse Server: Pre-authentication denial of service via client version header regex backtracking",
+      "date": "2026-05-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server: Pre-authentication denial of service via client version header regex backtracking",
+      "link": "https://github.com/advisories/GHSA-38m6-82c8-4xfm",
+      "cve": "CVE-2026-47138",
+      "cvss": null
+    },
+    {
+      "title": "Nezha Monitoring: RoleMember can fire other users' cron tasks via AlertRule.FailTriggerTasks (no ownership check)",
+      "date": "2026-05-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha",
+      "description": "Nezha Monitoring: RoleMember can fire other users' cron tasks via AlertRule.FailTriggerTasks (no ownership check)",
+      "link": "https://github.com/advisories/GHSA-rxf6-wjh4-jfj6",
+      "cve": "CVE-2026-47120",
+      "cvss": 5.4
+    },
+    {
+      "title": "Nezha Monitoring: RoleMember-reachable SSRF with full response-body reflection via POST /api/v1/notification",
+      "date": "2026-05-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha",
+      "description": "Nezha Monitoring: RoleMember-reachable SSRF with full response-body reflection via POST /api/v1/notification",
+      "link": "https://github.com/advisories/GHSA-w4g9-mxgg-j532",
+      "cve": "CVE-2026-46717",
+      "cvss": 8.5
+    },
     {
       "title": "CVE-2026-9255 - Tool Execution Without Authorization via Piped Stdin in Kiro CLI",
       "date": "2026-05-22",
@@ -19,6 +107,50 @@
       "component": "CVE-2026-9291",
       "description": "<p><b>Bulletin ID:</b> 2026-036-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 05/22/2026 11:15 AM PDT</p> \n<p><b>Description:</b></p> \n...",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-036-aws/"
+    },
+    {
+      "title": "DSA-6294-1 libgcrypt20 - security update",
+      "date": "2026-05-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libgcrypt20",
+      "description": "It was discovered that an incorrect implementation of ECDH encryption (with NIST, Brainpool, X448, or X25519 curves) within Libgcrypt could result in denial of service. https://security-tracker.debian...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00205.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6293-1 krb5 - security update",
+      "date": "2026-05-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "krb5",
+      "description": "Cem Onat Karagun discovered two vulnerabilities in the NegoEx parsing in krb5, the MIT implementation of Kerberos. An unauthenticated remote attacker can take advantage of these flaws to cause a denia...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00204.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6292-1 haveged - security update",
+      "date": "2026-05-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "haveged",
+      "description": "Dirk Mueller discovered that a flaw in the function performing a credential check on the command socket of haveged, a userspace entropy daemon, may result in local privilege escalation. https://securi...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00203.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6291-1 haproxy - security update",
+      "date": "2026-05-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "haproxy",
+      "description": "Martino Spagnuolo reported that the HTTP/3 parsing code in HAProxy, a fast and reliable load balancing reverse proxy, does not properly validate the received body size and the announced content-length...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00202.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "ImageMagick: Heap Buffer Over-Read in distributed pixel cache server ",
@@ -1054,6 +1186,42 @@
       "component": "Evince",
       "description": "It was discovered that Evince did not properly sanitize command-line\narguments in PDF /GoToR actions. If a user opened a specially crafted PDF\nfile, an attacker could possibly use this issue to execut...",
       "link": "https://ubuntu.com/security/notices/USN-8295-1"
+    },
+    {
+      "title": "USN-8279-2: Linux kernel (GCP) vulnerabilities",
+      "date": "2026-05-22",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (GCP) vulnerabilities",
+      "description": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privil...",
+      "link": "https://ubuntu.com/security/notices/USN-8279-2"
+    },
+    {
+      "title": "USN-8297-1: Linux kernel (GCP) vulnerabilities",
+      "date": "2026-05-22",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (GCP) vulnerabilities",
+      "description": "Stonejiajia, Shir Tamari and Sagi Tzadik discovered that the OverlayFS\nimplementation in the Ubuntu Linux kernel did not properly perform\npermission checks in certain situations. A local attacker coul...",
+      "link": "https://ubuntu.com/security/notices/USN-8297-1"
+    },
+    {
+      "title": "USN-8280-2: Linux kernel (Azure)vulnerabilities",
+      "date": "2026-05-22",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Azure)vulnerabilities",
+      "description": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privil...",
+      "link": "https://ubuntu.com/security/notices/USN-8280-2"
+    },
+    {
+      "title": "USN-8281-2: Linux kernel (Azure) vulnerabilities",
+      "date": "2026-05-22",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Azure) vulnerabilities",
+      "description": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privil...",
+      "link": "https://ubuntu.com/security/notices/USN-8281-2"
     },
     {
       "title": "New Claude Integration Brings Audit Data into the Falcon Platform",
@@ -8896,6 +9064,145 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-23T03:50:29.905Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 16 patches (4 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[SUCCESS] github - 263 patches (8 new)",
+        "[INFO] microsoft - 510 patches, no changes",
+        "[INFO] mssql - 1 patches, no changes",
+        "[INFO] paloalto - 10 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 62 patches, no changes",
+        "[INFO] signal - 7 patches, no changes",
+        "[SUCCESS] ubuntu - 34 patches (4 new)"
+      ],
+      "newPatchCount": 16,
+      "totalPatches": 923,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "github",
+        "aws",
+        "debian",
+        "microsoft",
+        "ubuntu",
+        "crowdstrike",
+        "edge",
+        "postgresql",
+        "redhat",
+        "chrome",
+        "cisco",
+        "paloalto",
+        "mssql",
+        "signal",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6294-1 libgcrypt20 - security update",
+          "date": "2026-05-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6293-1 krb5 - security update",
+          "date": "2026-05-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6292-1 haveged - security update",
+          "date": "2026-05-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6291-1 haproxy - security update",
+          "date": "2026-05-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Nezha Monitoring: Nezha WebSocket server stream discloses cross-tenant server telemetry to authenticated members",
+          "date": "2026-05-23",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Nezha Monitoring: RoleMember can run shell on every server (cross-tenant RCE) via POST /api/v1/cron",
+          "date": "2026-05-23",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Arcane: Missing admin authorization on global variables endpoint",
+          "date": "2026-05-23",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "instagrapi: Unsafe signup challenge path handling in instagrapi",
+          "date": "2026-05-23",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "aiograpi: Unsafe signup challenge path handling",
+          "date": "2026-05-23",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server: Pre-authentication denial of service via client version header regex backtracking",
+          "date": "2026-05-23",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Nezha Monitoring: RoleMember can fire other users' cron tasks via AlertRule.FailTriggerTasks (no ownership check)",
+          "date": "2026-05-23",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Nezha Monitoring: RoleMember-reachable SSRF with full response-body reflection via POST /api/v1/notification",
+          "date": "2026-05-23",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8279-2: Linux kernel (GCP) vulnerabilities",
+          "date": "2026-05-22",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8297-1: Linux kernel (GCP) vulnerabilities",
+          "date": "2026-05-22",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8280-2: Linux kernel (Azure)vulnerabilities",
+          "date": "2026-05-22",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8281-2: Linux kernel (Azure) vulnerabilities",
+          "date": "2026-05-22",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-23T03:35:55.727Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -15747,54 +16054,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-05-18T18:03:04.777Z",
-      "logs": [
-        "[INFO] aws - 6 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 12 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 212 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 502 patches, no changes",
-        "[INFO] mssql - 2 patches, no changes",
-        "[INFO] paloalto - 46 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 99 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 4 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 911,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 18,
-      "vendors": [
-        "cloudflare",
-        "github",
-        "microsoft",
-        "mssql",
-        "paloalto",
-        "signal",
-        "aws",
-        "debian",
-        "edge",
-        "postgresql",
-        "redhat",
-        "cisco",
-        "gcp",
-        "ubuntu",
-        "crowdstrike",
-        "fortinet",
-        "gitlab",
-        "chrome"
-      ],
-      "newPatches": []
     }
   ]
 }

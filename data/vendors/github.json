@@ -1,16 +1,104 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-05-22T19:55:45.415Z",
+  "lastUpdated": "2026-05-23T03:48:33.654Z",
   "health": {
-    "lastFetchAttempt": "2026-05-22T19:55:45.415Z",
+    "lastFetchAttempt": "2026-05-23T03:48:33.654Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 5,
-    "lastSuccessWithData": "2026-05-22T19:55:45.415Z",
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-05-23T03:48:33.654Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Nezha Monitoring: Nezha WebSocket server stream discloses cross-tenant server telemetry to authenticated members",
+      "date": "2026-05-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha",
+      "description": "Nezha Monitoring: Nezha WebSocket server stream discloses cross-tenant server telemetry to authenticated members",
+      "link": "https://github.com/advisories/GHSA-hvv7-hfrh-7gxj",
+      "cve": "CVE-2026-47124",
+      "cvss": 6.5
+    },
+    {
+      "title": "Nezha Monitoring: RoleMember can run shell on every server (cross-tenant RCE) via POST /api/v1/cron",
+      "date": "2026-05-23",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha",
+      "description": "Nezha Monitoring: RoleMember can run shell on every server (cross-tenant RCE) via POST /api/v1/cron",
+      "link": "https://github.com/advisories/GHSA-99gv-2m7h-3hh9",
+      "cve": "CVE-2026-46716",
+      "cvss": 9.9
+    },
+    {
+      "title": "Arcane: Missing admin authorization on global variables endpoint",
+      "date": "2026-05-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/getarcaneapp/arcane/backend",
+      "description": "Arcane: Missing admin authorization on global variables endpoint",
+      "link": "https://github.com/advisories/GHSA-jpjh-jm2p-39hh",
+      "cve": "CVE-2026-47125",
+      "cvss": 8.8
+    },
+    {
+      "title": "instagrapi: Unsafe signup challenge path handling in instagrapi",
+      "date": "2026-05-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "instagrapi",
+      "description": "instagrapi: Unsafe signup challenge path handling in instagrapi",
+      "link": "https://github.com/advisories/GHSA-ggxf-37hm-9wqf",
+      "cve": "",
+      "cvss": 6.5
+    },
+    {
+      "title": "aiograpi: Unsafe signup challenge path handling",
+      "date": "2026-05-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "aiograpi",
+      "description": "aiograpi: Unsafe signup challenge path handling",
+      "link": "https://github.com/advisories/GHSA-jh37-x3fv-4x72",
+      "cve": "CVE-2026-47157",
+      "cvss": 6.5
+    },
+    {
+      "title": "Parse Server: Pre-authentication denial of service via client version header regex backtracking",
+      "date": "2026-05-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server: Pre-authentication denial of service via client version header regex backtracking",
+      "link": "https://github.com/advisories/GHSA-38m6-82c8-4xfm",
+      "cve": "CVE-2026-47138",
+      "cvss": null
+    },
+    {
+      "title": "Nezha Monitoring: RoleMember can fire other users' cron tasks via AlertRule.FailTriggerTasks (no ownership check)",
+      "date": "2026-05-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha",
+      "description": "Nezha Monitoring: RoleMember can fire other users' cron tasks via AlertRule.FailTriggerTasks (no ownership check)",
+      "link": "https://github.com/advisories/GHSA-rxf6-wjh4-jfj6",
+      "cve": "CVE-2026-47120",
+      "cvss": 5.4
+    },
+    {
+      "title": "Nezha Monitoring: RoleMember-reachable SSRF with full response-body reflection via POST /api/v1/notification",
+      "date": "2026-05-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha",
+      "description": "Nezha Monitoring: RoleMember-reachable SSRF with full response-body reflection via POST /api/v1/notification",
+      "link": "https://github.com/advisories/GHSA-w4g9-mxgg-j532",
+      "cve": "CVE-2026-46717",
+      "cvss": 8.5
+    },
     {
       "title": "ImageMagick: Heap Buffer Over-Read in distributed pixel cache server ",
       "date": "2026-05-22",
