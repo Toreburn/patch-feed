@@ -1,7 +1,457 @@
 {
-  "lastUpdated": "2026-05-24T07:27:34.215Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-24T08:39:01.597Z",
+  "newPatches": 50,
   "patches": [
+    {
+      "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31706",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31706"
+    },
+    {
+      "title": "CVE-2026-31723: usb: gadget: f_subset: Fix net_device lifecycle with device_move",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31723",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31723"
+    },
+    {
+      "title": "CVE-2026-31724: usb: gadget: f_eem: Fix net_device lifecycle with device_move",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31724",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31724"
+    },
+    {
+      "title": "CVE-2026-43036: net: use skb_header_pointer() for TCPv4 GSO frag_off check",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43036",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43036"
+    },
+    {
+      "title": "CVE-2026-31769: gpib: fix use-after-free in IO ioctl handlers",
+      "date": "2026-05-24",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31769",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31769"
+    },
+    {
+      "title": "CVE-2026-31707: ksmbd: validate response sizes in ipc_validate_msg()",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31707",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31707"
+    },
+    {
+      "title": "CVE-2026-43042: mpls: add seqcount to protect the platform_label{,s} pair",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43042",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43042"
+    },
+    {
+      "title": "CVE-2026-31771: Bluetooth: hci_event: move wake reason storage into validated event handlers",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31771",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31771"
+    },
+    {
+      "title": "CVE-2026-43052: wifi: mac80211: check tdls flag in ieee80211_tdls_oper",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43052",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43052"
+    },
+    {
+      "title": "CVE-2026-31709: smb: client: validate the whole DACL before rewriting it in cifsacl",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31709",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31709"
+    },
+    {
+      "title": "CVE-2026-43021: Bluetooth: hci_sync: fix leaks when hci_cmd_sync_queue_once fails",
+      "date": "2026-05-24",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43021",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43021"
+    },
+    {
+      "title": "CVE-2026-43010: bpf: Reject sleepable kprobe_multi programs at attach time",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43010",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43010"
+    },
+    {
+      "title": "CVE-2026-43045: mshv: Fix error handling in mshv_region_pin",
+      "date": "2026-05-24",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43045",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43045"
+    },
+    {
+      "title": "CVE-2026-31721: usb: gadget: f_hid: move list and spinlock inits from bind to alloc",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31721",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31721"
+    },
+    {
+      "title": "CVE-2026-31711: smb: server: fix active_num_conn leak on transport allocation failure",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31711",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31711"
+    },
+    {
+      "title": "CVE-2026-31699: crypto: ccp: Don't attempt to copy CSR to userspace if PSP command failed",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31699",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31699"
+    },
+    {
+      "title": "CVE-2026-31694: fuse: reject oversized dirents in page cache",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31694",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31694"
+    },
+    {
+      "title": "CVE-2026-31705: ksmbd: fix out-of-bounds write in smb2_get_ea() EA alignment",
+      "date": "2026-05-24",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31705",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31705"
+    },
+    {
+      "title": "CVE-2026-43033: crypto: authencesn - Do not place hiseq at end of dst for out-of-place decryption",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43033",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43033"
+    },
+    {
+      "title": "CVE-2026-31696: rxrpc: Fix missing validation of ticket length in non-XDR key preparsing",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31696",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31696"
+    },
+    {
+      "title": "CVE-2026-31704: ksmbd: use check_add_overflow() to prevent u16 DACL size overflow",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31704",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31704"
+    },
+    {
+      "title": "CVE-2026-31702: f2fs: fix use-after-free of sbi in f2fs_compress_write_end_io()",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31702",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31702"
+    },
+    {
+      "title": "CVE-2026-31700: net/packet: fix TOCTOU race on mmap'd vnet_hdr in tpacket_snd()",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-31700",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-31700"
+    },
+    {
+      "title": "CVE-2026-37457: An off-by-one out-of-bounds write vulnerability in the bgp_flowspec_op_decode() function (bgpd/bgp_flowspec_util.c) of FRRouting (FRR) stable/10.0 allows attackers to cause a Denial of Service (DoS) via supplying a crafted FlowSpec component.",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-37457",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-37457"
+    },
+    {
+      "title": "CVE-2026-43037: ip6_tunnel: clear skb2->cb[] in ip4ip6_err()",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43037",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43037"
+    },
+    {
+      "title": "CVE-2026-33190: CoreDNS TSIG authentication bypass on encrypted DNS transports",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33190",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33190"
+    },
+    {
+      "title": "CVE-2026-32936: CoreDNS DoH GET path missing size validation causes CPU and memory amplification",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32936",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32936"
+    },
+    {
+      "title": "CVE-2026-35579: CoreDNS TSIG authentication bypass on gRPC, QUIC, DoH, and DoH3 transports",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35579",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35579"
+    },
+    {
+      "title": "CVE-2026-42151: Prometheus Azure AD remote write OAuth client secret exposed via config API",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42151",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42151"
+    },
+    {
+      "title": "CVE-2026-42154: Prometheus: remote read endpoint allows denial of service via crafted snappy payload",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42154",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42154"
+    },
+    {
+      "title": "CVE-2026-43248: vhost: move vdpa group bound check to vhost_vdpa",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43248",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43248"
+    },
+    {
+      "title": "CVE-2026-43127: ntfs3: fix circular locking dependency in run_unpack_ex",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43127",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43127"
+    },
+    {
+      "title": "CVE-2026-43161: iommu/vt-d: Skip dev-iotlb flush for inaccessible PCIe device without scalable mode",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43161",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43161"
+    },
+    {
+      "title": "CVE-2026-43245: ntfs: ->d_compare() must not block",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43245",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43245"
+    },
+    {
+      "title": "CVE-2026-43137: ASoC: SOF: Intel: hda: Fix NULL pointer dereference",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43137",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43137"
+    },
+    {
+      "title": "CVE-2026-43234: team: avoid NETDEV_CHANGEMTU event when unregistering slave",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43234",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43234"
+    },
+    {
+      "title": "CVE-2026-43185: ksmbd: fix signededness bug in smb_direct_prepare_negotiation()",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43185",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43185"
+    },
+    {
+      "title": "CVE-2025-71273: wifi: rtw88: Use devm_kmemdup() in rtw_set_supported_band()",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-71273",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-71273"
+    },
+    {
+      "title": "CVE-2026-43153: xfs: remove xfs_attr_leaf_hasname",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43153",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43153"
+    },
+    {
+      "title": "CVE-2026-43116: netfilter: ctnetlink: ensure safe access to master conntrack",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43116",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43116"
+    },
+    {
+      "title": "CVE-2026-43244: kcm: fix zero-frag skb in frag_list on partial sendmsg error",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43244",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43244"
+    },
+    {
+      "title": "CVE-2026-43191: drm/amd/display: Adjust PHY FSM transition to TX_EN-to-PLL_ON for TMDS on DCN35",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43191",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43191"
+    },
+    {
+      "title": "CVE-2025-71272: most: core: fix resource leak in most_register_interface error paths",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-71272",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-71272"
+    },
+    {
+      "title": "CVE-2026-41673: xmldom: Denial of service via uncontrolled recursion in XML serialization",
+      "date": "2026-05-24",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-41673",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-41673"
+    },
+    {
+      "title": "CVE-2026-43474: fs: init flags_valid before calling vfs_fileattr_get",
+      "date": "2026-05-24",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43474",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43474"
+    },
+    {
+      "title": "CVE-2025-71302: drm/panthor: fix for dma-fence safe access rules",
+      "date": "2026-05-24",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-71302",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-71302"
+    },
+    {
+      "title": "CVE-2026-43309: md raid: fix hang when stopping arrays with metadata through dm-raid",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43309",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43309"
+    },
+    {
+      "title": "CVE-2026-43320: drm/amd/display: Fix dsc eDP issue",
+      "date": "2026-05-24",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43320",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43320"
+    },
+    {
+      "title": "CVE-2026-43300: drm/panel: Fix a possible null-pointer dereference in jdi_panel_dsi_remove()",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43300",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43300"
+    },
+    {
+      "title": "CVE-2026-43306: bpf: crypto: Use the correct destructor kfunc type",
+      "date": "2026-05-24",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-43306",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43306"
+    },
     {
       "title": "DSA-6295-1 linux - security update",
       "date": "2026-05-23",
@@ -9127,6 +9577,349 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-24T08:39:01.596Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 16 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 263 patches, no changes",
+        "[SUCCESS] microsoft - 560 patches (50 new)",
+        "[INFO] mssql - 1 patches, no changes",
+        "[INFO] paloalto - 10 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 68 patches, no changes",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 34 patches, no changes"
+      ],
+      "newPatchCount": 50,
+      "totalPatches": 979,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "github",
+        "aws",
+        "ubuntu",
+        "crowdstrike",
+        "edge",
+        "postgresql",
+        "redhat",
+        "chrome",
+        "cisco",
+        "paloalto",
+        "mssql",
+        "signal",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31723: usb: gadget: f_subset: Fix net_device lifecycle with device_move",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31724: usb: gadget: f_eem: Fix net_device lifecycle with device_move",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43036: net: use skb_header_pointer() for TCPv4 GSO frag_off check",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31769: gpib: fix use-after-free in IO ioctl handlers",
+          "date": "2026-05-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31707: ksmbd: validate response sizes in ipc_validate_msg()",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43042: mpls: add seqcount to protect the platform_label{,s} pair",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31771: Bluetooth: hci_event: move wake reason storage into validated event handlers",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43052: wifi: mac80211: check tdls flag in ieee80211_tdls_oper",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31709: smb: client: validate the whole DACL before rewriting it in cifsacl",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43021: Bluetooth: hci_sync: fix leaks when hci_cmd_sync_queue_once fails",
+          "date": "2026-05-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43010: bpf: Reject sleepable kprobe_multi programs at attach time",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43045: mshv: Fix error handling in mshv_region_pin",
+          "date": "2026-05-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31721: usb: gadget: f_hid: move list and spinlock inits from bind to alloc",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31711: smb: server: fix active_num_conn leak on transport allocation failure",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31699: crypto: ccp: Don't attempt to copy CSR to userspace if PSP command failed",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31694: fuse: reject oversized dirents in page cache",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31705: ksmbd: fix out-of-bounds write in smb2_get_ea() EA alignment",
+          "date": "2026-05-24",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43033: crypto: authencesn - Do not place hiseq at end of dst for out-of-place decryption",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31696: rxrpc: Fix missing validation of ticket length in non-XDR key preparsing",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31704: ksmbd: use check_add_overflow() to prevent u16 DACL size overflow",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31702: f2fs: fix use-after-free of sbi in f2fs_compress_write_end_io()",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-31700: net/packet: fix TOCTOU race on mmap'd vnet_hdr in tpacket_snd()",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-37457: An off-by-one out-of-bounds write vulnerability in the bgp_flowspec_op_decode() function (bgpd/bgp_flowspec_util.c) of FRRouting (FRR) stable/10.0 allows attackers to cause a Denial of Service (DoS) via supplying a crafted FlowSpec component.",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43037: ip6_tunnel: clear skb2->cb[] in ip4ip6_err()",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33190: CoreDNS TSIG authentication bypass on encrypted DNS transports",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-32936: CoreDNS DoH GET path missing size validation causes CPU and memory amplification",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35579: CoreDNS TSIG authentication bypass on gRPC, QUIC, DoH, and DoH3 transports",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42151: Prometheus Azure AD remote write OAuth client secret exposed via config API",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42154: Prometheus: remote read endpoint allows denial of service via crafted snappy payload",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43248: vhost: move vdpa group bound check to vhost_vdpa",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43127: ntfs3: fix circular locking dependency in run_unpack_ex",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43161: iommu/vt-d: Skip dev-iotlb flush for inaccessible PCIe device without scalable mode",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43245: ntfs: ->d_compare() must not block",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43137: ASoC: SOF: Intel: hda: Fix NULL pointer dereference",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43234: team: avoid NETDEV_CHANGEMTU event when unregistering slave",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43185: ksmbd: fix signededness bug in smb_direct_prepare_negotiation()",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-71273: wifi: rtw88: Use devm_kmemdup() in rtw_set_supported_band()",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43153: xfs: remove xfs_attr_leaf_hasname",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43116: netfilter: ctnetlink: ensure safe access to master conntrack",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43244: kcm: fix zero-frag skb in frag_list on partial sendmsg error",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43191: drm/amd/display: Adjust PHY FSM transition to TX_EN-to-PLL_ON for TMDS on DCN35",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-71272: most: core: fix resource leak in most_register_interface error paths",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-41673: xmldom: Denial of service via uncontrolled recursion in XML serialization",
+          "date": "2026-05-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43474: fs: init flags_valid before calling vfs_fileattr_get",
+          "date": "2026-05-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-71302: drm/panthor: fix for dma-fence safe access rules",
+          "date": "2026-05-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43309: md raid: fix hang when stopping arrays with metadata through dm-raid",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43320: drm/amd/display: Fix dsc eDP issue",
+          "date": "2026-05-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43300: drm/panel: Fix a possible null-pointer dereference in jdi_panel_dsi_remove()",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-43306: bpf: crypto: Use the correct destructor kfunc type",
+          "date": "2026-05-24",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-24T07:27:34.215Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -14284,571 +15077,6 @@
         "gcp"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-20T04:07:02.481Z",
-      "logs": [
-        "[INFO] aws - 7 patches, no changes",
-        "[SUCCESS] chrome - 2 patches (2 new)",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 15 patches, no changes",
-        "[SUCCESS] edge - 2 patches (1 new)",
-        "[INFO] gcp - 1 patches, no changes",
-        "[SUCCESS] github - 296 patches (14 new)",
-        "[SUCCESS] microsoft - 452 patches (50 new)",
-        "[INFO] mssql - 2 patches, no changes",
-        "[SUCCESS] paloalto - 23 patches (2 new)",
-        "[SUCCESS] postgresql - 4 patches (1 new)",
-        "[SUCCESS] redhat - 106 patches (11 new)",
-        "[SUCCESS] signal - 8 patches (1 new)",
-        "[SUCCESS] ubuntu - 13 patches (5 new)"
-      ],
-      "newPatchCount": 87,
-      "totalPatches": 936,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "postgresql",
-        "chrome",
-        "cisco",
-        "edge",
-        "github",
-        "microsoft",
-        "mssql",
-        "paloalto",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "aws",
-        "cloudflare",
-        "debian",
-        "gcp"
-      ],
-      "newPatches": [
-        {
-          "vendor": "chrome",
-          "title": "Chrome for Android Update",
-          "date": "2026-05-19",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Stable Channel Update for Desktop",
-          "date": "2026-05-19",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "edge",
-          "title": "Microsoft Edge Security Update - May 19, 2026",
-          "date": "2026-05-19",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "@angular/platform-server: SSRF via Hostname Hijacking",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Caddy Defender trusted proxy client IP bypass",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Malicious code in @beproduct/nestjs-auth (0.1.2 through 0.1.19) — Mini Shai-Hulud worm",
-          "date": "2026-05-19",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "FileBrowser Quantum: unauthenticated user share share info ",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "CamoFox MCP: Unauthenticated HTTP MCP browser-control surface",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "SQLFluff: Uncontrolled Resource Consumption in SQLFluff Parser",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "SQLFluff: Recursive Stack Overflow in Parser",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "SillyTavern: SSRF in SearXNG Search Proxy via Unvalidated baseUrl",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Dasel: Denial of service in dasel selector lexer due to infinite loop on unterminated regex literal",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Dasel: Index-out-of-range panic in dasel selector lexer on trailing backslash in quoted string",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "@libp2p/kad-dht: Unvalidated PUT_VALUE records allow unbounded disk exhaustion on DHT server nodes",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Coder: PKCS#7 signature bypass in Azure instance identity allows unauthenticated agent token theft",
-          "date": "2026-05-19",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt: `__nuxt_island` endpoint does not bind responses to request props, enabling shared-cache poisoning",
-          "date": "2026-05-19",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Regression in pymdownx.snippets reintroduces sibling-prefix path traversal bypass despite restrict_base_path",
-          "date": "2026-05-19",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40379: Azure Entra ID Spoofing Vulnerability",
-          "date": "2026-05-19",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-32207: Azure Machine Learning Notebook Spoofing Vulnerability",
-          "date": "2026-05-19",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33109: Azure Managed Instance for Apache Cassandra Remote Code Execution Vulnerability",
-          "date": "2026-05-19",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-32204: Azure Monitor Agent Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-32177: .NET Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33117: Azure SDK for Java Security Feature Bypass Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33834: Windows Event Logging Service Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33839: Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33840: Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33841: Windows Kernel Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34329: Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34330: Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34331: Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34333: Windows Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34342: Windows Print Spooler Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34343: Windows Application Identity (AppID) Subsystem Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34344: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34345: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34347: Windows Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34350: Windows Storport Miniport Driver Denial of Service Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34351: Windows TCP/IP Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35415: Windows Storage Spaces Controller Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35416: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35417: Windows Win32k Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35418: Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35419: Windows DWM Core Library Information Disclosure  Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35420: Windows Kernel Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35421: Windows GDI Remote Code Execution Vulnerability",
-          "date": "2026-05-19",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35422: Windows TCP/IP Driver Security Feature Bypass Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35423: Windows 11 Telnet Client Information Disclosure Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35424: Internet Key Exchange (IKE) Protocol Denial of Service Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35433: .NET Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35438: Windows Admin Center Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35439: Microsoft SharePoint Server Remote Code Execution Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-35440: Microsoft Word Information Disclosure Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40360: Microsoft Excel Information Disclosure Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40363: Microsoft Office Remote Code Execution Vulnerability",
-          "date": "2026-05-19",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40364: Microsoft Word Remote Code Execution Vulnerability",
-          "date": "2026-05-19",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40366: Microsoft Word Remote Code Execution Vulnerability",
-          "date": "2026-05-19",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40368: Microsoft SharePoint Server Remote Code Execution Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40374: Microsoft Power Automate Desktop Information Disclosure Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40377: Microsoft Cryptographic Services Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40380: Windows Volume Manager Extension Driver Remote Code Execution Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40399: Windows TCP/IP Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40405: Windows TCP/IP Denial of Service Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40406: Windows TCP/IP Information Disclosure Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40407: Windows Common Log File System Driver Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40408: Windows WAN ARP Driver Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40410: Windows SMB Client Elevation of Privilege Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40414: Windows TCP/IP Denial of Service Vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0264 PAN-OS: Heap-Based Buffer Overflow in DNS Proxy and DNS Server Allows Unauthenticated Remote Code Execution (Severity: HIGH)",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0251 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
-          "date": "2026-05-19",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "postgresql",
-          "title": "plpgsql_wrap v1.0 released",
-          "date": "2026-05-20",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-32882: libheif: libheif: Denial of Service and Information Disclosure vulnerability",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-32741: libheif: libheif: Heap buffer overflow vulnerability in image decoding",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-32814: libheif: libheif: Information Disclosure via Crafted HEIF/AVIF Files",
-          "date": "2026-05-19",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-32740: libheif: libheif: Arbitrary code execution or denial of service via crafted HEIF/AVIF file",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-32739: libheif: libheif: Denial of Service via crafted HEIF sequence file",
-          "date": "2026-05-19",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-32738: libheif: libheif: Unsigned integer underflow leads to Denial of Service",
-          "date": "2026-05-19",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43493: kernel: crypto: pcrypt - Fix handling of MAY_BACKLOG requests",
-          "date": "2026-05-19",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43491: kernel: net: qrtr: ns: Limit the maximum server registration per node",
-          "date": "2026-05-19",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43492: kernel: lib/crypto: mpi: Fix integer underflow in mpi_read_raw_from_sgl()",
-          "date": "2026-05-19",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-31072: apscheduler: APScheduler: Remote Code Execution via Insecure Deserialization",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-42327: rust-openssl: rust-openssl: Arbitrary code execution via specially crafted certificate",
-          "date": "2026-05-14",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "signal",
-          "title": "@libp2p/kad-dht: Unvalidated PUT_VALUE records allow unbounded disk exhaustion on DHT server nodes",
-          "date": "2026-05-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8281-1: Linux kernel vulnerabilities",
-          "date": "2026-05-19",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8280-1: Linux kernel vulnerabilities",
-          "date": "2026-05-19",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8279-1: Linux kernel vulnerabilities",
-          "date": "2026-05-19",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8278-1: Linux kernel vulnerabilities",
-          "date": "2026-05-19",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8277-1: Linux kernel vulnerabilities",
-          "date": "2026-05-19",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
