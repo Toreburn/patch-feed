@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-05-24T03:58:10.270Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-24T04:10:07.385Z",
+  "newPatches": 1,
   "patches": [
+    {
+      "title": "DSA-6295-1 linux - security update",
+      "date": "2026-05-23",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "linux",
+      "description": "Several vulnerabilities have been discovered in the Linux kernel that may lead to a privilege escalation, denial of service or information leaks. https://security-tracker.debian.org/tracker/DSA-6295-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00206.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "Nezha Monitoring: Nezha WebSocket server stream discloses cross-tenant server telemetry to authenticated members",
       "date": "2026-05-23",
@@ -9116,6 +9127,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-24T04:10:07.385Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 16 patches (1 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 263 patches, no changes",
+        "[INFO] microsoft - 510 patches, no changes",
+        "[INFO] mssql - 1 patches, no changes",
+        "[INFO] paloalto - 10 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 68 patches, no changes",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 34 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 929,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "github",
+        "microsoft",
+        "aws",
+        "ubuntu",
+        "crowdstrike",
+        "edge",
+        "postgresql",
+        "redhat",
+        "chrome",
+        "cisco",
+        "paloalto",
+        "mssql",
+        "signal",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6295-1 linux - security update",
+          "date": "2026-05-23",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-24T03:58:10.269Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -14785,52 +14845,6 @@
         "paloalto",
         "edge",
         "gcp"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-19T23:06:00.993Z",
-      "logs": [
-        "[INFO] aws - 7 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 15 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 310 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 502 patches, no changes",
-        "[INFO] mssql - 2 patches, no changes",
-        "[INFO] paloalto - 46 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 111 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 8 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1021,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 17,
-      "vendors": [
-        "cisco",
-        "github",
-        "microsoft",
-        "mssql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "aws",
-        "cloudflare",
-        "debian",
-        "postgresql",
-        "paloalto",
-        "edge",
-        "gcp",
-        "crowdstrike",
-        "fortinet",
-        "gitlab"
       ],
       "newPatches": []
     }
