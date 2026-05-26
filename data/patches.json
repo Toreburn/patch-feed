@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-26T03:55:07.743Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-26T04:07:00.288Z",
+  "newPatches": 7,
   "patches": [
     {
       "title": "DSA-6296-1 spip - security update",
@@ -498,6 +498,60 @@
       "component": "Linux kernel (NVIDIA Tegra) vulnerabilities",
       "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architectu...",
       "link": "https://ubuntu.com/security/notices/USN-8296-2"
+    },
+    {
+      "title": "USN-8305-1: Linux kernel (Intel IoTG Real-time) vulnerabilities",
+      "date": "2026-05-25",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Intel IoTG Real-time) vulnerabilities",
+      "description": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privil...",
+      "link": "https://ubuntu.com/security/notices/USN-8305-1"
+    },
+    {
+      "title": "USN-8279-3: Linux kernel (NVIDIA Tegra IGX) vulnerabilities",
+      "date": "2026-05-25",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (NVIDIA Tegra IGX) vulnerabilities",
+      "description": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privil...",
+      "link": "https://ubuntu.com/security/notices/USN-8279-3"
+    },
+    {
+      "title": "USN-8304-1: Vim vulnerabilities",
+      "date": "2026-05-25",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Vim vulnerabilities",
+      "description": "Joshua Rogers discovered that Vim incorrectly handled certain URL schemes\nin the netrw plugin. An attacker could possibly use this issue to execute\narbitrary commands. (CVE-2026-42307)\n\nIt was discove...",
+      "link": "https://ubuntu.com/security/notices/USN-8304-1"
+    },
+    {
+      "title": "USN-8289-2: Linux kernel (NVIDIA) vulnerabilities",
+      "date": "2026-05-25",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (NVIDIA) vulnerabilities",
+      "description": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privil...",
+      "link": "https://ubuntu.com/security/notices/USN-8289-2"
+    },
+    {
+      "title": "USN-8302-1: NLTK vulnerabilities",
+      "date": "2026-05-25",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "NLTK vulnerabilities",
+      "description": "It was discovered that NLTK incorrectly validated file paths when\nopening files using the nltk.util module. An attacker could possibly\nuse this issue to obtain sensitive information. (CVE-2026-0846)\n\n...",
+      "link": "https://ubuntu.com/security/notices/USN-8302-1"
+    },
+    {
+      "title": "USN-8301-1: SimpleEval vulnerability",
+      "date": "2026-05-25",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "SimpleEval",
+      "description": "Byambadalai Sumiya discovered that SimpleEval did not properly restrict\nattribute access and callback handling inside a sandbox. An attacker could\npossibly use this issue to execute arbitrary code....",
+      "link": "https://ubuntu.com/security/notices/USN-8301-1"
     },
     {
       "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
@@ -2590,6 +2644,17 @@
       "description": "shell-quote: shell-quote: Arbitrary code execution via command injection due to unescaped line terminators",
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9277.json",
       "cve": "CVE-2026-9277",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-9256: nginx: ngx_http_rewrite_module: code execution and denial of service",
+      "date": "2026-05-22",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nginx: ngx_http_rewrite_module: code execution and denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9256.json",
+      "cve": "CVE-2026-9256",
       "cvss": 8.1
     },
     {
@@ -5786,6 +5851,85 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-05-26T04:07:00.288Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 1 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 15 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 102 patches, no changes",
+        "[INFO] microsoft - 410 patches, no changes",
+        "[INFO] paloalto - 8 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 34 patches (1 new)",
+        "[SUCCESS] ubuntu - 32 patches (6 new)"
+      ],
+      "newPatchCount": 7,
+      "totalPatches": 614,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 12,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "ubuntu",
+        "github",
+        "redhat",
+        "aws",
+        "crowdstrike",
+        "edge",
+        "postgresql",
+        "chrome",
+        "cisco",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9256: nginx: ngx_http_rewrite_module: code execution and denial of service",
+          "date": "2026-05-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8305-1: Linux kernel (Intel IoTG Real-time) vulnerabilities",
+          "date": "2026-05-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8279-3: Linux kernel (NVIDIA Tegra IGX) vulnerabilities",
+          "date": "2026-05-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8304-1: Vim vulnerabilities",
+          "date": "2026-05-25",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8289-2: Linux kernel (NVIDIA) vulnerabilities",
+          "date": "2026-05-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8302-1: NLTK vulnerabilities",
+          "date": "2026-05-25",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8301-1: SimpleEval vulnerability",
+          "date": "2026-05-25",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-05-26T03:55:07.743Z",
       "logs": [
@@ -9608,48 +9752,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-05-22T07:51:37.013Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 246 patches, no changes",
-        "[INFO] microsoft - 460 patches, no changes",
-        "[INFO] mssql - 2 patches, no changes",
-        "[INFO] paloalto - 19 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 63 patches, no changes",
-        "[INFO] signal - 8 patches, no changes",
-        "[INFO] ubuntu - 25 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 854,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "crowdstrike",
-        "debian",
-        "edge",
-        "github",
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "cisco",
-        "paloalto",
-        "mssql",
-        "signal",
-        "cloudflare"
-      ],
-      "newPatches": []
     }
   ]
 }
