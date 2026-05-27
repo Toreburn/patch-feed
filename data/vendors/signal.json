@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-26T20:17:40.608Z",
+  "lastUpdated": "2026-05-27T04:19:50.640Z",
   "health": {
-    "lastFetchAttempt": "2026-05-26T20:17:40.608Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-23T13:49:26.550Z",
-    "consecutiveEmptyFetches": 13,
+    "lastFetchAttempt": "2026-05-27T04:19:50.640Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-05-27T04:19:50.640Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Kata Containers have VM Escape via virtiofsd Argument Injection through Default-Enabled Pod Annotations",
+      "date": "2026-05-26",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nKata Containers ships with a default configuration that allows pod creators to inject arbitrary command-line arguments into the virtiofsd process through the `io.katacontainers.config.hype",
+      "link": "https://github.com/advisories/GHSA-rr59-xxvx-96qr",
+      "cves": [
+        "CVE-2026-44210"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Coder: Unauthenticated SSRF via Azure Instance Identity Endpoint",
       "date": "2026-05-19",
