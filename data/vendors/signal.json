@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-27T15:58:50.718Z",
+  "lastUpdated": "2026-05-27T20:25:36.373Z",
   "health": {
-    "lastFetchAttempt": "2026-05-27T15:58:50.718Z",
+    "lastFetchAttempt": "2026-05-27T20:25:36.373Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-27T15:58:50.718Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-05-27T20:25:36.373Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CrowdSec AppSec silently drops request body for chunked / HTTP-2 requests",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe CrowdSec AppSec component fails to read the HTTP request body for any request whose `Content-Length` is not positive — most notably HTTP/1.1 requests using `Transfer-Encoding: chunked`",
+      "link": "https://github.com/advisories/GHSA-rw47-hm26-6wr7",
+      "cves": [
+        "CVE-2026-44982"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Kata Containers have VM Escape via virtiofsd Argument Injection through Default-Enabled Pod Annotations",
       "date": "2026-05-26",
