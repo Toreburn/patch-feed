@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-28T03:57:06.289Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-28T04:09:31.282Z",
+  "newPatches": 244,
   "patches": [
     {
       "title": "Chrome Stable for iOS Update",
@@ -19,6 +19,69 @@
       "component": "Chrome Browser",
       "description": "The Stable channel has been updated to 148.0.7778.216/217 for Windows and&nbsp;148.0.7778.215/216&nbsp;Mac&nbsp; and 148.0.7778.215 for Linux, which will roll out over the coming days/weeks. A full li...",
       "link": "https://chromereleases.googleblog.com/feeds/7947813140505896904/comments/default"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "&nbsp; &nbsp;Hi, everyone! We've just released&nbsp;Chrome 148 (148.0.7778.215)&nbsp;for Android. It'll become&nbsp;available on Google Play&nbsp;over the next few days.&nbsp;This release includes sta...",
+      "link": "https://chromereleases.googleblog.com/feeds/2537236400409696332/comments/default"
+    },
+    {
+      "title": "Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "cisco",
+      "component": "SD-WAN",
+      "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerabili...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa2-v69WY2SW",
+      "cve": "CVE-2026-20182"
+    },
+    {
+      "title": "DSA-6304-1 unbound - security update",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "unbound",
+      "description": "Multiple security vulnerabilities were discovered in Unbound, a validating, recursive, caching DNS resolver, which could result in denial of service, cache poisoning or potentially the execution of ar...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00215.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6303-1 varnish - security update",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "varnish",
+      "description": "Two security issues were discovered in the the Varnish web accelerator, which could result in cache poisoning or authentication bypass. https://security-tracker.debian.org/tracker/DSA-6303-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00214.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6302-1 starlette - security update",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "starlette",
+      "description": "It was discovered that missing validation of Host: headers in the Starlette ASGI framework could result in a bypass of security checks. https://security-tracker.debian.org/tracker/DSA-6302-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00213.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6301-1 roundcube - security update",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "roundcube",
+      "description": "Multiple security vulnerabilities were discovered in RoundCube Webmail, which could result in cross-site scripting, SQL injection, SSRF bypass, information disclosure, denial of service or code inject...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00212.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "@hapi/wreck leaks sensitive `Proxy-Authorization` header across cross-hostname redirects",
@@ -315,6 +378,248 @@
       "description": "Symfony Vulnerable to Identity Spoofing via Unanchored DN Regex in X509Authenticator",
       "link": "https://github.com/advisories/GHSA-ph86-p8f6-f9r2",
       "cve": "CVE-2026-45063",
+      "cvss": null
+    },
+    {
+      "title": "compliance-trestle Remote Fetching Mechanism has an Arbitrary File Write via Cache Path Traversal",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "compliance-trestle, compliance-trestle",
+      "description": "compliance-trestle Remote Fetching Mechanism has an Arbitrary File Write via Cache Path Traversal",
+      "link": "https://github.com/advisories/GHSA-g3vg-vx23-3858",
+      "cve": "CVE-2026-45725",
+      "cvss": null
+    },
+    {
+      "title": "FUXA's Unauthenticated Project Data Disclosure Exposes Server-Side Scripts and Device Configurations",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "fuxa-server",
+      "description": "FUXA's Unauthenticated Project Data Disclosure Exposes Server-Side Scripts and Device Configurations",
+      "link": "https://github.com/advisories/GHSA-q3w6-q3hc-c5x6",
+      "cve": "CVE-2026-47717",
+      "cvss": 7.5
+    },
+    {
+      "title": "Kata guest escape: runtime-rs guest-root to host-root escape via virtiofs",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/kata-containers/kata-containers",
+      "description": "Kata guest escape: runtime-rs guest-root to host-root escape via virtiofs",
+      "link": "https://github.com/advisories/GHSA-2gv2-cffp-j227",
+      "cve": "CVE-2026-47243",
+      "cvss": null
+    },
+    {
+      "title": "Yamcs Vulnerable to Authenticated Remote Code Execution (RCE) via Jython Algorithm Code Injection",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "org.yamcs:yamcs-core",
+      "description": "Yamcs Vulnerable to Authenticated Remote Code Execution (RCE) via Jython Algorithm Code Injection",
+      "link": "https://github.com/advisories/GHSA-2g95-6x5q-xjwj",
+      "cve": "CVE-2026-46621",
+      "cvss": 9.1
+    },
+    {
+      "title": "Yamcs Vulnerable to Remote Code Execution via Mission Database algorithm override",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "org.yamcs:yamcs-core",
+      "description": "Yamcs Vulnerable to Remote Code Execution via Mission Database algorithm override",
+      "link": "https://github.com/advisories/GHSA-vmwp-vh32-rj75",
+      "cve": "CVE-2026-46562",
+      "cvss": 9.8
+    },
+    {
+      "title": "Pimcore has a CustomReports Share Bypass",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pimcore/pimcore",
+      "description": "Pimcore has a CustomReports Share Bypass",
+      "link": "https://github.com/advisories/GHSA-jwcc-gv4m-93x6",
+      "cve": "CVE-2026-45704",
+      "cvss": null
+    },
+    {
+      "title": "Pimcore has a WordExport Authorization Bypass for Unauthorized Document Export",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "pimcore/pimcore",
+      "description": "Pimcore has a WordExport Authorization Bypass for Unauthorized Document Export",
+      "link": "https://github.com/advisories/GHSA-332x-r494-54fq",
+      "cve": "CVE-2026-45703",
+      "cvss": 6.4
+    },
+    {
+      "title": "AsyncSSH `AuthorizedKeysFile %u` path traversal allows attacker-selected authorized keys to authenticate a traversal username",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "asyncssh",
+      "description": "AsyncSSH `AuthorizedKeysFile %u` path traversal allows attacker-selected authorized keys to authenticate a traversal username",
+      "link": "https://github.com/advisories/GHSA-g794-3fmp-753h",
+      "cve": "CVE-2026-45309",
+      "cvss": null
+    },
+    {
+      "title": "Symfony's YAML Parser has a ReDoS via Catastrophic Backtracking in Parser::cleanup() Regex",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "symfony/yaml, symfony/symfony, symfony/symfony",
+      "description": "Symfony's YAML Parser has a ReDoS via Catastrophic Backtracking in Parser::cleanup() Regex",
+      "link": "https://github.com/advisories/GHSA-9frc-8383-795m",
+      "cve": "CVE-2026-45305",
+      "cvss": null
+    },
+    {
+      "title": "Symfony's YAML Parser Vulnerable to Exponential Memory Allocation via Recursive Collection-Alias Expansion (\"Billion Laughs\")",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "symfony/yaml, symfony/symfony, symfony/symfony",
+      "description": "Symfony's YAML Parser Vulnerable to Exponential Memory Allocation via Recursive Collection-Alias Expansion (\"Billion Laughs\")",
+      "link": "https://github.com/advisories/GHSA-4qpc-3hr4-r2p4",
+      "cve": "CVE-2026-45304",
+      "cvss": null
+    },
+    {
+      "title": "Symfony hardened the parser when handling untrusted input",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "symfony/yaml, symfony/symfony, symfony/symfony",
+      "description": "Symfony hardened the parser when handling untrusted input",
+      "link": "https://github.com/advisories/GHSA-c2p3-7m5p-cv8x",
+      "cve": "CVE-2026-45133",
+      "cvss": null
+    },
+    {
+      "title": "Automad has Broken Access Control: Unauthenticated exposure of administrator bcrypt password hashes and TOTP secrets via public API endpoint",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "automad/automad",
+      "description": "Automad has Broken Access Control: Unauthenticated exposure of administrator bcrypt password hashes and TOTP secrets via public API endpoint",
+      "link": "https://github.com/advisories/GHSA-xm76-r88j-vm3g",
+      "cve": "CVE-2026-45332",
+      "cvss": 7.5
+    },
+    {
+      "title": "Symfony has Unauthenticated PHP Object Deserialization in MonologBridge server:log Listener",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "symfony/monolog-bridge, symfony/symfony, symfony/monolog-bridge",
+      "description": "Symfony has Unauthenticated PHP Object Deserialization in MonologBridge server:log Listener",
+      "link": "https://github.com/advisories/GHSA-m7v2-7gxm-vc2v",
+      "cve": "CVE-2026-45077",
+      "cvss": null
+    },
+    {
+      "title": "Synfony's HEAD Request Bypasses methods: ['GET'] Filter in #[IsGranted] / #[IsSignatureValid] / #[IsCsrfTokenValid]",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "symfony/http-kernel, symfony/http-kernel, symfony/security-http",
+      "description": "Synfony's HEAD Request Bypasses methods: ['GET'] Filter in #[IsGranted] / #[IsSignatureValid] / #[IsCsrfTokenValid]",
+      "link": "https://github.com/advisories/GHSA-6439-2f28-8p8q",
+      "cve": "CVE-2026-45075",
+      "cvss": null
+    },
+    {
+      "title": "Symfony's Cas2Handler Derives CAS service URL from Client Host Header → Cross-Service Ticket Replay",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "symfony/security-http, symfony/security-http, symfony/symfony",
+      "description": "Symfony's Cas2Handler Derives CAS service URL from Client Host Header → Cross-Service Ticket Replay",
+      "link": "https://github.com/advisories/GHSA-j8gj-9rm5-4xhx",
+      "cve": "CVE-2026-45074",
+      "cvss": null
+    },
+    {
+      "title": "Symfony Vulnerable to SQL Injection in PdoAdapter::doClear() via Unsanitized $prefix",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "symfony/cache, symfony/cache, symfony/cache",
+      "description": "Symfony Vulnerable to SQL Injection in PdoAdapter::doClear() via Unsanitized $prefix",
+      "link": "https://github.com/advisories/GHSA-6qh9-h6wf-jgqc",
+      "cve": "CVE-2026-45073",
+      "cvss": null
+    },
+    {
+      "title": "Symfony Vulnerable to stored XSS in WebProfiler CodeExtension::fileExcerpt() — Unescaped Non-PHP File Rendering",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "symfony/symfony, symfony/symfony, symfony/symfony",
+      "description": "Symfony Vulnerable to stored XSS in WebProfiler CodeExtension::fileExcerpt() — Unescaped Non-PHP File Rendering",
+      "link": "https://github.com/advisories/GHSA-hmr5-2xcr-v8pp",
+      "cve": "CVE-2026-45072",
+      "cvss": null
+    },
+    {
+      "title": "Symfony has XXE (Local File Disclosure) in DomCrawler::addXmlContent() via validateOnParse = true",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "symfony/dom-crawler, symfony/symfony, symfony/dom-crawler",
+      "description": "Symfony has XXE (Local File Disclosure) in DomCrawler::addXmlContent() via validateOnParse = true",
+      "link": "https://github.com/advisories/GHSA-x6g4-fwcc-jj8w",
+      "cve": "CVE-2026-45071",
+      "cvss": null
+    },
+    {
+      "title": "Symfony has Email Header Injection via Non-Token Characters in Mime Parameter Names",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "symfony/mime, symfony/symfony, symfony/mime",
+      "description": "Symfony has Email Header Injection via Non-Token Characters in Mime Parameter Names",
+      "link": "https://github.com/advisories/GHSA-vqc8-7275-q272",
+      "cve": "CVE-2026-45070",
+      "cvss": null
+    },
+    {
+      "title": "Symfony's OidcTokenHandler Accepts JWTs Missing aud/iss/exp Claims",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "symfony/security-http, symfony/security-http, symfony/security-http",
+      "description": "Symfony's OidcTokenHandler Accepts JWTs Missing aud/iss/exp Claims",
+      "link": "https://github.com/advisories/GHSA-29fc-p6c4-24cg",
+      "cve": "CVE-2026-45069",
+      "cvss": null
+    },
+    {
+      "title": "Symfony has an Argument Injection in SendmailTransport via Dash-Prefixed Recipient Address",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "symfony/mailer, symfony/symfony, symfony/mailer",
+      "description": "Symfony has an Argument Injection in SendmailTransport via Dash-Prefixed Recipient Address",
+      "link": "https://github.com/advisories/GHSA-xx3c-qf5g-hc39",
+      "cve": "CVE-2026-45068",
+      "cvss": null
+    },
+    {
+      "title": "Symfony has Email Header / SMTP Command Injection via CRLF in Symfony\\Component\\Mime\\Address",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "symfony/mime, symfony/symfony, symfony/mime",
+      "description": "Symfony has Email Header / SMTP Command Injection via CRLF in Symfony\\Component\\Mime\\Address",
+      "link": "https://github.com/advisories/GHSA-qpmx-3rfj-7rhv",
+      "cve": "CVE-2026-45067",
       "cvss": null
     },
     {
@@ -784,6 +1089,2227 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-43306",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43306"
+    },
+    {
+      "title": "CVE-2026-40379: Azure Entra ID Spoofing Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40379",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40379"
+    },
+    {
+      "title": "CVE-2026-32207: Azure Machine Learning Notebook Spoofing Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32207",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32207"
+    },
+    {
+      "title": "CVE-2026-33109: Azure Managed Instance for Apache Cassandra Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33109",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33109"
+    },
+    {
+      "title": "CVE-2026-40412: Azure Orbital Spatio Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40412",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40412"
+    },
+    {
+      "title": "CVE-2026-23652: Microsoft Power Pages Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23652",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23652"
+    },
+    {
+      "title": "CVE-2026-35430: Azure Privileged Identity Management (PIM) Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35430",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35430"
+    },
+    {
+      "title": "CVE-2026-40411: Azure Virtual Network Gateway Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40411",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40411"
+    },
+    {
+      "title": "CVE-2026-47280: Azure Resource Manager Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-47280",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47280"
+    },
+    {
+      "title": "CVE-2026-42827: M365 Copilot Information Disclosure Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42827",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42827"
+    },
+    {
+      "title": "CVE-2026-41090: Microsoft Copilot Tampering Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-41090",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-41090"
+    },
+    {
+      "title": "CVE-2026-26147: Azure Stack HCI Information Disclosure Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-26147",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26147"
+    },
+    {
+      "title": "CVE-2026-33843: Microsoft Azure Active Directory B2C Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33843",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33843"
+    },
+    {
+      "title": "CVE-2026-32204: Azure Monitor Agent Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32204",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32204"
+    },
+    {
+      "title": "CVE-2026-32177: .NET Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32177",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32177"
+    },
+    {
+      "title": "CVE-2026-21530: Windows Rich Text Edit Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-21530",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21530"
+    },
+    {
+      "title": "CVE-2026-33117: Azure SDK for Java Security Feature Bypass Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33117",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33117"
+    },
+    {
+      "title": "CVE-2026-33834: Windows Event Logging Service Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33834",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33834"
+    },
+    {
+      "title": "CVE-2026-33839: Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33839",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33839"
+    },
+    {
+      "title": "CVE-2026-33840: Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33840",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33840"
+    },
+    {
+      "title": "CVE-2026-33841: Windows Kernel Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33841",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33841"
+    },
+    {
+      "title": "CVE-2026-34329: Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34329",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34329"
+    },
+    {
+      "title": "CVE-2026-34330: Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34330",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34330"
+    },
+    {
+      "title": "CVE-2026-34331: Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34331",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34331"
+    },
+    {
+      "title": "CVE-2026-34333: Windows Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34333",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34333"
+    },
+    {
+      "title": "CVE-2026-34342: Windows Print Spooler Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34342",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34342"
+    },
+    {
+      "title": "CVE-2026-34343: Windows Application Identity (AppID) Subsystem Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34343",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34343"
+    },
+    {
+      "title": "CVE-2026-34344: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34344",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34344"
+    },
+    {
+      "title": "CVE-2026-34345: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34345",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34345"
+    },
+    {
+      "title": "CVE-2026-34347: Windows Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34347",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34347"
+    },
+    {
+      "title": "CVE-2026-34350: Windows Storport Miniport Driver Denial of Service Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34350",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34350"
+    },
+    {
+      "title": "CVE-2026-34351: Windows TCP/IP Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34351",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34351"
+    },
+    {
+      "title": "CVE-2026-35415: Windows Storage Spaces Controller Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35415",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35415"
+    },
+    {
+      "title": "CVE-2026-35416: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35416",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35416"
+    },
+    {
+      "title": "CVE-2026-35417: Windows Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35417",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35417"
+    },
+    {
+      "title": "CVE-2026-35418: Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35418",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35418"
+    },
+    {
+      "title": "CVE-2026-35419: Windows DWM Core Library Information Disclosure  Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35419",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35419"
+    },
+    {
+      "title": "CVE-2026-35420: Windows Kernel Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35420",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35420"
+    },
+    {
+      "title": "CVE-2026-35421: Windows GDI Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35421",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35421"
+    },
+    {
+      "title": "CVE-2026-35422: Windows TCP/IP Driver Security Feature Bypass Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35422",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35422"
+    },
+    {
+      "title": "CVE-2026-35423: Windows 11 Telnet Client Information Disclosure Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35423",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35423"
+    },
+    {
+      "title": "CVE-2026-35424: Internet Key Exchange (IKE) Protocol Denial of Service Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35424",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35424"
+    },
+    {
+      "title": "CVE-2026-35433: .NET Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35433",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35433"
+    },
+    {
+      "title": "CVE-2026-35438: Windows Admin Center Elevation of Privilege Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35438",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35438"
+    },
+    {
+      "title": "CVE-2026-35439: Microsoft SharePoint Server Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35439",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35439"
+    },
+    {
+      "title": "CVE-2026-35440: Microsoft Word Information Disclosure Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35440",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35440"
+    },
+    {
+      "title": "CVE-2026-40360: Microsoft Excel Information Disclosure Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40360",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40360"
+    },
+    {
+      "title": "CVE-2026-40363: Microsoft Office Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40363",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40363"
+    },
+    {
+      "title": "CVE-2026-40364: Microsoft Word Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40364",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40364"
+    },
+    {
+      "title": "CVE-2026-40366: Microsoft Word Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40366",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40366"
+    },
+    {
+      "title": "CVE-2026-40368: Microsoft SharePoint Server Remote Code Execution Vulnerability",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40368",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40368"
+    },
+    {
+      "title": "CVE-2026-8643: python-pip: Path traversal via malicious entry point name in pip wheel installation allows arbitrary file overwrite",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python-pip: Path traversal via malicious entry point name in pip wheel installation allows arbitrary file overwrite",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-8643.json",
+      "cve": "CVE-2026-8643",
+      "cvss": 8
+    },
+    {
+      "title": "CVE-2026-9704: keycloak: Keycloak: Privilege escalation due to oversized subject_token JWT",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: Keycloak: Privilege escalation due to oversized subject_token JWT",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9704.json",
+      "cve": "CVE-2026-9704",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-1933: samba: Missing access check on reparse point operations",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "samba: Missing access check on reparse point operations",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-1933.json",
+      "cve": "CVE-2026-1933",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-2340: samba: vfs_worm does not block directory modification",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "samba: vfs_worm does not block directory modification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-2340.json",
+      "cve": "CVE-2026-2340",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9689: keycloak: org.keycloak.protocol.oidc: HTTP Parameter Pollution in OIDC redirect URI allows response parameter duplicatio",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: org.keycloak.protocol.oidc: HTTP Parameter Pollution in OIDC redirect URI allows response parameter duplication - #GHI-604",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9689.json",
+      "cve": "CVE-2026-9689",
+      "cvss": 4.2
+    },
+    {
+      "title": "CVE-2026-3012: samba: group policy certificate enrollment uses http:// without validation",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "samba: group policy certificate enrollment uses http:// without validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3012.json",
+      "cve": "CVE-2026-3012",
+      "cvss": 8
+    },
+    {
+      "title": "CVE-2026-45981: CVE-2026-45981",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45981.json",
+      "cve": "CVE-2026-45981",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45840: kernel: openvswitch: cap upcall PID array size and pre-size vport replies",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: openvswitch: cap upcall PID array size and pre-size vport replies",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45840.json",
+      "cve": "CVE-2026-45840",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45842: kernel: slip: reject VJ receive packets on instances with no rstate array",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: slip: reject VJ receive packets on instances with no rstate array",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45842.json",
+      "cve": "CVE-2026-45842",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45844: kernel: netfilter: arp_tables: fix IEEE1394 ARP payload parsing",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: arp_tables: fix IEEE1394 ARP payload parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45844.json",
+      "cve": "CVE-2026-45844",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45839: kernel: bpf: reject negative CO-RE accessor indices in bpf_core_parse_spec()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: bpf: reject negative CO-RE accessor indices in bpf_core_parse_spec()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45839.json",
+      "cve": "CVE-2026-45839",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45845: kernel: net/sched: taprio: fix NULL pointer dereference in class dump",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net/sched: taprio: fix NULL pointer dereference in class dump",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45845.json",
+      "cve": "CVE-2026-45845",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45841: kernel: netfilter: nfnetlink_osf: fix divide-by-zero in OSF_WSS_MODULO",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: nfnetlink_osf: fix divide-by-zero in OSF_WSS_MODULO",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45841.json",
+      "cve": "CVE-2026-45841",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45846: kernel: bareudp: fix NULL pointer dereference in bareudp_fill_metadata_dst()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: bareudp: fix NULL pointer dereference in bareudp_fill_metadata_dst()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45846.json",
+      "cve": "CVE-2026-45846",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45843: kernel: slip: bound decode() reads against the compressed packet length",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: slip: bound decode() reads against the compressed packet length",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45843.json",
+      "cve": "CVE-2026-45843",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45838: kernel: bpf: fix end-of-list detection in cgroup_storage_get_next_key()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: bpf: fix end-of-list detection in cgroup_storage_get_next_key()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45838.json",
+      "cve": "CVE-2026-45838",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45837: kernel: bpf: Fix use-after-free in arena_vm_close on fork",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: bpf: Fix use-after-free in arena_vm_close on fork",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45837.json",
+      "cve": "CVE-2026-45837",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46001: kernel: hwmon: (pt5161l) Fix bugs in pt5161l_read_block_data()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: hwmon: (pt5161l) Fix bugs in pt5161l_read_block_data()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46001.json",
+      "cve": "CVE-2026-46001",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46020: kernel: mm/damon/core: validate damos_quota_goal->nid for node_mem_{used,free}_bp",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/damon/core: validate damos_quota_goal->nid for node_mem_{used,free}_bp",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46020.json",
+      "cve": "CVE-2026-46020",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46011: kernel: media: mtk-jpeg: fix use-after-free in release path due to uncancelled work",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: mtk-jpeg: fix use-after-free in release path due to uncancelled work",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46011.json",
+      "cve": "CVE-2026-46011",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45963: kernel: ASoC: nau8821: Cancel delayed work on component remove",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ASoC: nau8821: Cancel delayed work on component remove",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45963.json",
+      "cve": "CVE-2026-45963",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45992: kernel: ALSA: caiaq: Fix potentially leftover ep1_in_urb at error path",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: caiaq: Fix potentially leftover ep1_in_urb at error path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45992.json",
+      "cve": "CVE-2026-45992",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46060: kernel: crypto: qat - fix IRQ cleanup on 6xxx probe failure",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: qat - fix IRQ cleanup on 6xxx probe failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46060.json",
+      "cve": "CVE-2026-46060",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46035: kernel: mm/page_alloc: return NULL early from alloc_frozen_pages_nolock() in NMI on UP",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/page_alloc: return NULL early from alloc_frozen_pages_nolock() in NMI on UP",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46035.json",
+      "cve": "CVE-2026-46035",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46084: kernel: RDMA/mana_ib: Disable RX steering on RSS QP destroy",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/mana_ib: Disable RX steering on RSS QP destroy",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46084.json",
+      "cve": "CVE-2026-46084",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46068: kernel: crypto: nx - fix bounce buffer leaks in nx842_crypto_{alloc,free}_ctx",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: nx - fix bounce buffer leaks in nx842_crypto_{alloc,free}_ctx",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46068.json",
+      "cve": "CVE-2026-46068",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45984: kernel: gfs2: Fix use-after-free in iomap inline data write path",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: gfs2: Fix use-after-free in iomap inline data write path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45984.json",
+      "cve": "CVE-2026-45984",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46072: kernel: ntfs3: add buffer boundary checks to run_unpack()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ntfs3: add buffer boundary checks to run_unpack()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46072.json",
+      "cve": "CVE-2026-46072",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46024: kernel: libceph: Prevent potential null-ptr-deref in ceph_handle_auth_reply()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Ceph Storage",
+      "description": "kernel: libceph: Prevent potential null-ptr-deref in ceph_handle_auth_reply()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46024.json",
+      "cve": "CVE-2026-46024",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45996: kernel: spi: imx: fix use-after-free on unbind",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: spi: imx: fix use-after-free on unbind",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45996.json",
+      "cve": "CVE-2026-45996",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46080: kernel: ocfs2: split transactions in dio completion to avoid credit exhaustion",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ocfs2: split transactions in dio completion to avoid credit exhaustion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46080.json",
+      "cve": "CVE-2026-46080",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46046: kernel: ext4: fix missing brelse() in ext4_xattr_inode_dec_ref_all()",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ext4: fix missing brelse() in ext4_xattr_inode_dec_ref_all()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46046.json",
+      "cve": "CVE-2026-46046",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45973: kernel: RDMA/mlx5: Fix UMR hang in LAG error state unload",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/mlx5: Fix UMR hang in LAG error state unload",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45973.json",
+      "cve": "CVE-2026-45973",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46039: kernel: rxgk: Fix potential integer overflow in length check",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: rxgk: Fix potential integer overflow in length check",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46039.json",
+      "cve": "CVE-2026-46039",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45975: kernel: ublk: use READ_ONCE() to read struct ublksrv_ctrl_cmd",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ublk: use READ_ONCE() to read struct ublksrv_ctrl_cmd",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45975.json",
+      "cve": "CVE-2026-45975",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46093: kernel: mm/vmalloc: take vmap_purge_lock in shrinker",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/vmalloc: take vmap_purge_lock in shrinker",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46093.json",
+      "cve": "CVE-2026-46093",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46006: kernel: drm/nouveau: fix u32 overflow in pushbuf reloc bounds check",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/nouveau: fix u32 overflow in pushbuf reloc bounds check",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46006.json",
+      "cve": "CVE-2026-46006",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46059: kernel: KVM: nSVM: Always use NextRIP as vmcb02's NextRIP after first L2 VMRUN",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: nSVM: Always use NextRIP as vmcb02's NextRIP after first L2 VMRUN",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46059.json",
+      "cve": "CVE-2026-46059",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46079: kernel: rbd: fix null-ptr-deref when device_add_disk() fails",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: rbd: fix null-ptr-deref when device_add_disk() fails",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46079.json",
+      "cve": "CVE-2026-46079",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45959: kernel: crypto: ccp - Fix a crash due to incorrect cleanup usage of kfree",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: ccp - Fix a crash due to incorrect cleanup usage of kfree",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45959.json",
+      "cve": "CVE-2026-45959",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46025: kernel: mm/damon/core: fix damon_call() vs kdamond_fn() exit race",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/damon/core: fix damon_call() vs kdamond_fn() exit race",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46025.json",
+      "cve": "CVE-2026-46025",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46022: kernel: misc: ibmasm: fix OOB MMIO read in ibmasm_handle_mouse_interrupt()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: misc: ibmasm: fix OOB MMIO read in ibmasm_handle_mouse_interrupt()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46022.json",
+      "cve": "CVE-2026-46022",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45956: kernel: drm/exynos: vidi: use priv->vidi_dev for ctx lookup in vidi_connection_ioctl()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/exynos: vidi: use priv->vidi_dev for ctx lookup in vidi_connection_ioctl()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45956.json",
+      "cve": "CVE-2026-45956",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46051: kernel: md/raid5: fix soft lockup in retry_aligned_read()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: md/raid5: fix soft lockup in retry_aligned_read()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46051.json",
+      "cve": "CVE-2026-46051",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45962: kernel: ublk: Validate SQE128 flag before accessing the cmd",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ublk: Validate SQE128 flag before accessing the cmd",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45962.json",
+      "cve": "CVE-2026-45962",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45966: kernel: apparmor: fix NULL pointer dereference in __unix_needs_revalidation",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix NULL pointer dereference in __unix_needs_revalidation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45966.json",
+      "cve": "CVE-2026-45966",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46034: kernel: vfio/cdx: Fix NULL pointer dereference in interrupt trigger path",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: vfio/cdx: Fix NULL pointer dereference in interrupt trigger path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46034.json",
+      "cve": "CVE-2026-46034",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45990: kernel: slub: fix data loss and overflow in krealloc()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: slub: fix data loss and overflow in krealloc()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45990.json",
+      "cve": "CVE-2026-45990",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46057: kernel: landlock: Fix LOG_SUBDOMAINS_OFF inheritance across fork()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: landlock: Fix LOG_SUBDOMAINS_OFF inheritance across fork()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46057.json",
+      "cve": "CVE-2026-46057",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46053: kernel: net: rds: fix MR cleanup on copy error",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: rds: fix MR cleanup on copy error",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46053.json",
+      "cve": "CVE-2026-46053",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46045: kernel: md/md-llbitmap: skip reading rdevs that are not in_sync",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: md/md-llbitmap: skip reading rdevs that are not in_sync",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46045.json",
+      "cve": "CVE-2026-46045",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45974: kernel: btrfs: fix invalid leaf access in btrfs_quota_enable() if ref key not found",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: btrfs: fix invalid leaf access in btrfs_quota_enable() if ref key not found",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45974.json",
+      "cve": "CVE-2026-45974",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46100: kernel: fs: afs: revert mmap_prepare() change",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: fs: afs: revert mmap_prepare() change",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46100.json",
+      "cve": "CVE-2026-46100",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46099: kernel: net: ipv6: fix NOREF dst use in seg6 and rpl lwtunnels",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: ipv6: fix NOREF dst use in seg6 and rpl lwtunnels",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46099.json",
+      "cve": "CVE-2026-46099",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45972: kernel: smb: client: fix potential UAF and double free in smb2_open_file()",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: smb: client: fix potential UAF and double free in smb2_open_file()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45972.json",
+      "cve": "CVE-2026-45972",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45982: kernel: ACPICA: Fix NULL pointer dereference in acpi_ev_address_space_dispatch()",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ACPICA: Fix NULL pointer dereference in acpi_ev_address_space_dispatch()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45982.json",
+      "cve": "CVE-2026-45982",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45977: kernel: fbnic: close fw_log race between users and teardown",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: fbnic: close fw_log race between users and teardown",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45977.json",
+      "cve": "CVE-2026-45977",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46016: kernel: remoteproc: xlnx: Only access buffer information if IPI is buffered",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: remoteproc: xlnx: Only access buffer information if IPI is buffered",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46016.json",
+      "cve": "CVE-2026-46016",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46090: kernel: ALSA: aloop: Fix peer runtime UAF during format-change stop",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: aloop: Fix peer runtime UAF during format-change stop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46090.json",
+      "cve": "CVE-2026-46090",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45983: kernel: nfsd: never defer requests during idmap lookup",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: nfsd: never defer requests during idmap lookup",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45983.json",
+      "cve": "CVE-2026-45983",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45995: kernel: io_uring/zcrx: fix user_struct uaf",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: io_uring/zcrx: fix user_struct uaf",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45995.json",
+      "cve": "CVE-2026-45995",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46086: kernel: net: bridge: use a stable FDB dst snapshot in RCU readers",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: bridge: use a stable FDB dst snapshot in RCU readers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46086.json",
+      "cve": "CVE-2026-46086",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45993: kernel: LoongArch: Add spectre boundry for syscall dispatch table",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: LoongArch: Add spectre boundry for syscall dispatch table",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45993.json",
+      "cve": "CVE-2026-45993",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46076: kernel: KVM: nSVM: Raise #UD if unhandled VMMCALL isn't intercepted by L1",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: nSVM: Raise #UD if unhandled VMMCALL isn't intercepted by L1",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46076.json",
+      "cve": "CVE-2026-46076",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46058: kernel: media: amphion: Fix race between m2m job_abort and device_run",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: amphion: Fix race between m2m job_abort and device_run",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46058.json",
+      "cve": "CVE-2026-46058",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46067: kernel: mm/damon/core: validate damos_quota_goal->nid for node_memcg_{used,free}_bp",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/damon/core: validate damos_quota_goal->nid for node_memcg_{used,free}_bp",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46067.json",
+      "cve": "CVE-2026-46067",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45955: kernel: md/md-llbitmap: fix percpu_ref not resurrected on suspend timeout",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: md/md-llbitmap: fix percpu_ref not resurrected on suspend timeout",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45955.json",
+      "cve": "CVE-2026-45955",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46063: kernel: x86/shstk: Prevent deadlock during shstk sigreturn",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: x86/shstk: Prevent deadlock during shstk sigreturn",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46063.json",
+      "cve": "CVE-2026-46063",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46033: kernel: crypto: authencesn - reject short ahash digests during instance creation",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: authencesn - reject short ahash digests during instance creation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46033.json",
+      "cve": "CVE-2026-46033",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45985: kernel: ext4: don't set EXT4_GET_BLOCKS_CONVERT when splitting before submitting I/O",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ext4: don't set EXT4_GET_BLOCKS_CONVERT when splitting before submitting I/O",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45985.json",
+      "cve": "CVE-2026-45985",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46055: kernel: apparmor: Fix string overrun due to missing termination",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: Fix string overrun due to missing termination",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46055.json",
+      "cve": "CVE-2026-46055",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46018: kernel: ALSA: usb-audio: stop parsing UAC2 rates at MAX_NR_RATES",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: usb-audio: stop parsing UAC2 rates at MAX_NR_RATES",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46018.json",
+      "cve": "CVE-2026-46018",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45970: kernel: bonding: alb: fix UAF in rlb_arp_recv during bond up/down",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: bonding: alb: fix UAF in rlb_arp_recv during bond up/down",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45970.json",
+      "cve": "CVE-2026-45970",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46096: kernel: tpm2-sessions: Fix missing tpm_buf_destroy() in tpm2_read_public()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: tpm2-sessions: Fix missing tpm_buf_destroy() in tpm2_read_public()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46096.json",
+      "cve": "CVE-2026-46096",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46023: kernel: dm mirror: fix integer overflow in create_dirty_log()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: dm mirror: fix integer overflow in create_dirty_log()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46023.json",
+      "cve": "CVE-2026-46023",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45957: kernel: rcu: Fix rcu_read_unlock() deadloop due to softirq",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: rcu: Fix rcu_read_unlock() deadloop due to softirq",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45957.json",
+      "cve": "CVE-2026-45957",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45968: kernel: cpuidle: Skip governor when only one idle state is available",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: cpuidle: Skip governor when only one idle state is available",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45968.json",
+      "cve": "CVE-2026-45968",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45960: kernel: hfsplus: return error when node already exists in hfs_bnode_create",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: hfsplus: return error when node already exists in hfs_bnode_create",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45960.json",
+      "cve": "CVE-2026-45960",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46047: kernel: net: qrtr: ns: Fix use-after-free in driver remove()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: qrtr: ns: Fix use-after-free in driver remove()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46047.json",
+      "cve": "CVE-2026-46047",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46049: kernel: ALSA: ctxfi: Add fallback to default RSR for S/PDIF",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: ctxfi: Add fallback to default RSR for S/PDIF",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46049.json",
+      "cve": "CVE-2026-46049",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45998: kernel: rxrpc: Fix potential UAF after skb_unshare() failure",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: rxrpc: Fix potential UAF after skb_unshare() failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45998.json",
+      "cve": "CVE-2026-45998",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46054: kernel: selinux: fix overlayfs mmap() and mprotect() access checks",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: selinux: fix overlayfs mmap() and mprotect() access checks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46054.json",
+      "cve": "CVE-2026-46054",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46008: kernel: mm/damon/core: fix damos_walk() vs kdamond_fn() exit race",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/damon/core: fix damos_walk() vs kdamond_fn() exit race",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46008.json",
+      "cve": "CVE-2026-46008",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46066: kernel: ceph: fix num_ops off-by-one when crypto allocation fails",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Ceph Storage",
+      "description": "kernel: ceph: fix num_ops off-by-one when crypto allocation fails",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46066.json",
+      "cve": "CVE-2026-46066",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46052: kernel: ceph: only d_add() negative dentries when they are unhashed",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Ceph Storage",
+      "description": "kernel: ceph: only d_add() negative dentries when they are unhashed",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46052.json",
+      "cve": "CVE-2026-46052",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46042: kernel: mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46042.json",
+      "cve": "CVE-2026-46042",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46040: kernel: inotify: fix watch count leak when fsnotify_add_inode_mark_locked() fails",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: inotify: fix watch count leak when fsnotify_add_inode_mark_locked() fails",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46040.json",
+      "cve": "CVE-2026-46040",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46032: kernel: KVM: nSVM: Triple fault if restore host CR3 fails on nested #VMEXIT",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: nSVM: Triple fault if restore host CR3 fails on nested #VMEXIT",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46032.json",
+      "cve": "CVE-2026-46032",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46083: kernel: spi: fix resource leaks on device setup failure",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: spi: fix resource leaks on device setup failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46083.json",
+      "cve": "CVE-2026-46083",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45994: kernel: ibmasm: fix OOB reads in command_file_write due to missing size checks",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ibmasm: fix OOB reads in command_file_write due to missing size checks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45994.json",
+      "cve": "CVE-2026-45994",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45997: kernel: scsi: sd: fix missing put_disk() when device_add(&#38;disk_dev) fails",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: scsi: sd: fix missing put_disk() when device_add(&#38;disk_dev) fails",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45997.json",
+      "cve": "CVE-2026-45997",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45969: kernel: HID: playstation: Add missing check for input_ff_create_memless",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: HID: playstation: Add missing check for input_ff_create_memless",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45969.json",
+      "cve": "CVE-2026-45969",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46071: kernel: KVM: nSVM: Avoid clearing VMCB_LBR in vmcb12",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: nSVM: Avoid clearing VMCB_LBR in vmcb12",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46071.json",
+      "cve": "CVE-2026-46071",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46098: kernel: net: caif: clear client service pointer on teardown",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: caif: clear client service pointer on teardown",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46098.json",
+      "cve": "CVE-2026-46098",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46088: kernel: ALSA: control: Validate buf_len before strnlen() in snd_ctl_elem_init_enum_names()",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: control: Validate buf_len before strnlen() in snd_ctl_elem_init_enum_names()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46088.json",
+      "cve": "CVE-2026-46088",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46038: kernel: net: qrtr: ns: Free the node during ctrl_cmd_bye()",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: qrtr: ns: Free the node during ctrl_cmd_bye()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46038.json",
+      "cve": "CVE-2026-46038",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46037: kernel: ipv4: icmp: validate reply type before using icmp_pointers",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ipv4: icmp: validate reply type before using icmp_pointers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46037.json",
+      "cve": "CVE-2026-46037",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46103: kernel: can: ucan: fix devres lifetime",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: can: ucan: fix devres lifetime",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46103.json",
+      "cve": "CVE-2026-46103",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46005: kernel: xfs: fix a resource leak in xfs_alloc_buftarg()",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: fix a resource leak in xfs_alloc_buftarg()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46005.json",
+      "cve": "CVE-2026-46005",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46030: kernel: EDAC/versalnet: Fix device_node leak in mc_probe()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: EDAC/versalnet: Fix device_node leak in mc_probe()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46030.json",
+      "cve": "CVE-2026-46030",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46075: kernel: crypto: atmel-sha204a - Fix potential UAF and memory leak in remove path",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: atmel-sha204a - Fix potential UAF and memory leak in remove path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46075.json",
+      "cve": "CVE-2026-46075",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45965: kernel: apparmor: fix invalid deref of rawdata when export_binary is unset",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix invalid deref of rawdata when export_binary is unset",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45965.json",
+      "cve": "CVE-2026-45965",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45976: kernel: drm/amdgpu: Fix memory leak in amdgpu_ras_init()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/amdgpu: Fix memory leak in amdgpu_ras_init()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45976.json",
+      "cve": "CVE-2026-45976",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46095: kernel: md/md-llbitmap: raise barrier before state machine transition",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: md/md-llbitmap: raise barrier before state machine transition",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46095.json",
+      "cve": "CVE-2026-46095",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46036: kernel: vfio/cdx: Serialize VFIO_DEVICE_SET_IRQS with a per-device mutex",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: vfio/cdx: Serialize VFIO_DEVICE_SET_IRQS with a per-device mutex",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46036.json",
+      "cve": "CVE-2026-46036",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46028: kernel: crypto: algif_aead - snapshot IV for async AEAD requests",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: algif_aead - snapshot IV for async AEAD requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46028.json",
+      "cve": "CVE-2026-46028",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45980: kernel: accel/amdxdna: Stop job scheduling across aie2_release_resource()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: accel/amdxdna: Stop job scheduling across aie2_release_resource()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45980.json",
+      "cve": "CVE-2026-45980",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46091: kernel: media: rc: igorplugusb: heed coherency rules",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: rc: igorplugusb: heed coherency rules",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46091.json",
+      "cve": "CVE-2026-46091",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46002: kernel: ext2: reject inodes with zero i_nlink and valid mode in ext2_iget()",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ext2: reject inodes with zero i_nlink and valid mode in ext2_iget()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46002.json",
+      "cve": "CVE-2026-46002",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46004: kernel: ALSA: caiaq: Handle probe errors properly",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: caiaq: Handle probe errors properly",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46004.json",
+      "cve": "CVE-2026-46004",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46097: kernel: Input: edt-ft5x06 - fix use-after-free in debugfs teardown",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Input: edt-ft5x06 - fix use-after-free in debugfs teardown",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46097.json",
+      "cve": "CVE-2026-46097",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46061: kernel: jbd2: fix deadlock in jbd2_journal_cancel_revoke()",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: jbd2: fix deadlock in jbd2_journal_cancel_revoke()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46061.json",
+      "cve": "CVE-2026-46061",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46041: kernel: greybus: gb-beagleplay: fix sleep in atomic context in hdlc_tx_frames()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: greybus: gb-beagleplay: fix sleep in atomic context in hdlc_tx_frames()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46041.json",
+      "cve": "CVE-2026-46041",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46013: kernel: mm/memfd_luo: fix physical address conversion in put_folios cleanup",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/memfd_luo: fix physical address conversion in put_folios cleanup",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46013.json",
+      "cve": "CVE-2026-46013",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45964: kernel: SUNRPC: fix gss_auth kref leak in gss_alloc_msg error path",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: SUNRPC: fix gss_auth kref leak in gss_alloc_msg error path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45964.json",
+      "cve": "CVE-2026-45964",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46003: kernel: net: qrtr: ns: Limit the total number of nodes",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: qrtr: ns: Limit the total number of nodes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46003.json",
+      "cve": "CVE-2026-46003",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46044: kernel: ipmi:ssif: Clean up kthread on errors",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ipmi:ssif: Clean up kthread on errors",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46044.json",
+      "cve": "CVE-2026-46044",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46026: kernel: net: qrtr: ns: Limit the maximum number of lookups",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: qrtr: ns: Limit the maximum number of lookups",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46026.json",
+      "cve": "CVE-2026-46026",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45979: kernel: drm/amdgpu: clean up the amdgpu_cs_parser_bos",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/amdgpu: clean up the amdgpu_cs_parser_bos",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45979.json",
+      "cve": "CVE-2026-45979",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46019: kernel: crypto: atmel-aes - Fix 3-page memory leak in atmel_aes_buff_cleanup",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: atmel-aes - Fix 3-page memory leak in atmel_aes_buff_cleanup",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46019.json",
+      "cve": "CVE-2026-46019",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46017: kernel: mm: fix deferred split queue races during migration",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm: fix deferred split queue races during migration",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46017.json",
+      "cve": "CVE-2026-46017",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-45961: kernel: gfs2: fix memory leaks in gfs2_fill_super error path",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: gfs2: fix memory leaks in gfs2_fill_super error path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45961.json",
+      "cve": "CVE-2026-45961",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45967: kernel: bpf: Return proper address for non-zero offsets in insn array",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: bpf: Return proper address for non-zero offsets in insn array",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45967.json",
+      "cve": "CVE-2026-45967",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46050: kernel: md/raid10: fix deadlock with check operation and nowait requests",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: md/raid10: fix deadlock with check operation and nowait requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46050.json",
+      "cve": "CVE-2026-46050",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46082: kernel: KVM: SVM: Inject #UD for INVLPGA if EFER.SVME=0",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: SVM: Inject #UD for INVLPGA if EFER.SVME=0",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46082.json",
+      "cve": "CVE-2026-46082",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46000: kernel: rxrpc: Fix conn-level packet handling to unshare RESPONSE packets",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: rxrpc: Fix conn-level packet handling to unshare RESPONSE packets",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46000.json",
+      "cve": "CVE-2026-46000",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46089: kernel: zram: do not forget to endio for partial discard requests",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: zram: do not forget to endio for partial discard requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46089.json",
+      "cve": "CVE-2026-46089",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45991: kernel: udf: fix partition descriptor append bookkeeping",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: udf: fix partition descriptor append bookkeeping",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45991.json",
+      "cve": "CVE-2026-45991",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46069: kernel: wifi: mwifiex: fix use-after-free in mwifiex_adapter_cleanup()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: wifi: mwifiex: fix use-after-free in mwifiex_adapter_cleanup()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46069.json",
+      "cve": "CVE-2026-46069",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46102: kernel: net: strparser: fix skb_head leak in strp_abort_strp()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: strparser: fix skb_head leak in strp_abort_strp()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46102.json",
+      "cve": "CVE-2026-46102",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46021: kernel: thermal: core: Fix thermal zone governor cleanup issues",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: thermal: core: Fix thermal zone governor cleanup issues",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46021.json",
+      "cve": "CVE-2026-46021",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46048: kernel: ALSA: caiaq: fix usb_dev refcount leak on probe failure",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: caiaq: fix usb_dev refcount leak on probe failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46048.json",
+      "cve": "CVE-2026-46048",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45988: kernel: rxrpc: Fix re-decryption of RESPONSE packets",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: rxrpc: Fix re-decryption of RESPONSE packets",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45988.json",
+      "cve": "CVE-2026-45988",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46031: kernel: net: ks8851: Reinstate disabling of BHs around IRQ handler",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: ks8851: Reinstate disabling of BHs around IRQ handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46031.json",
+      "cve": "CVE-2026-46031",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46043: kernel: RDMA/rxe: Validate pad and ICRC before payload_size() in rxe_rcv",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/rxe: Validate pad and ICRC before payload_size() in rxe_rcv",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46043.json",
+      "cve": "CVE-2026-46043",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46014: kernel: KVM: SVM: Add missing save/restore handling of LBR MSRs",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: SVM: Add missing save/restore handling of LBR MSRs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46014.json",
+      "cve": "CVE-2026-46014",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45989: kernel: of: unittest: fix use-after-free in testdrv_probe()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: of: unittest: fix use-after-free in testdrv_probe()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45989.json",
+      "cve": "CVE-2026-45989",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46081: kernel: crypto: acomp - fix wrong pointer stored by acomp_save_req()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: acomp - fix wrong pointer stored by acomp_save_req()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46081.json",
+      "cve": "CVE-2026-46081",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46078: kernel: erofs: fix the out-of-bounds nameoff handling for trailing dirents",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: erofs: fix the out-of-bounds nameoff handling for trailing dirents",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46078.json",
+      "cve": "CVE-2026-46078",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46065: kernel: fbdev: defio: Disconnect deferred I/O from the lifetime of struct fb_info",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: fbdev: defio: Disconnect deferred I/O from the lifetime of struct fb_info",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46065.json",
+      "cve": "CVE-2026-46065",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46101: kernel: netfilter: reject zero shift in nft_bitwise",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: reject zero shift in nft_bitwise",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46101.json",
+      "cve": "CVE-2026-46101",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46087: kernel: mm/damon/stat: fix memory leak on damon_start() failure in damon_stat_start()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/damon/stat: fix memory leak on damon_start() failure in damon_stat_start()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46087.json",
+      "cve": "CVE-2026-46087",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46085: kernel: rxrpc: Fix rxkad crypto unalignment handling",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: rxrpc: Fix rxkad crypto unalignment handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46085.json",
+      "cve": "CVE-2026-46085",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45971: kernel: bpf: Limit bpf program signature size",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: bpf: Limit bpf program signature size",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45971.json",
+      "cve": "CVE-2026-45971",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46062: kernel: ntfs3: fix integer overflow in run_unpack() volume boundary check",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ntfs3: fix integer overflow in run_unpack() volume boundary check",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46062.json",
+      "cve": "CVE-2026-46062",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45999: kernel: erofs: fix unsigned underflow in z_erofs_lz4_handle_overlap()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: erofs: fix unsigned underflow in z_erofs_lz4_handle_overlap()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45999.json",
+      "cve": "CVE-2026-45999",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45958: kernel: drm/exynos: vidi: fix to avoid directly dereferencing user pointer",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/exynos: vidi: fix to avoid directly dereferencing user pointer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45958.json",
+      "cve": "CVE-2026-45958",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46009: kernel: PCI: endpoint: pci-epf-ntb: Remove duplicate resource teardown",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: PCI: endpoint: pci-epf-ntb: Remove duplicate resource teardown",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46009.json",
+      "cve": "CVE-2026-46009",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46092: kernel: wifi: rtw88: check for PCI upstream bridge existence",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: wifi: rtw88: check for PCI upstream bridge existence",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46092.json",
+      "cve": "CVE-2026-46092",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46073: kernel: hwmon: (powerz) Fix missing usb_kill_urb() on signal interrupt",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: hwmon: (powerz) Fix missing usb_kill_urb() on signal interrupt",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46073.json",
+      "cve": "CVE-2026-46073",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46027: kernel: net/smc: avoid early lgr access in smc_clc_wait_msg",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net/smc: avoid early lgr access in smc_clc_wait_msg",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46027.json",
+      "cve": "CVE-2026-46027",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46070: kernel: md/raid5: validate payload size before accessing journal metadata",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: md/raid5: validate payload size before accessing journal metadata",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46070.json",
+      "cve": "CVE-2026-46070",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46029: kernel: mm/slab: return NULL early from kmalloc_nolock() in NMI on UP",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/slab: return NULL early from kmalloc_nolock() in NMI on UP",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46029.json",
+      "cve": "CVE-2026-46029",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45987: kernel: KVM: nSVM: Sync interrupt shadow to cached vmcb12 after VMRUN of L2",
+      "date": "2026-05-27",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: nSVM: Sync interrupt shadow to cached vmcb12 after VMRUN of L2",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45987.json",
+      "cve": "CVE-2026-45987",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46007: kernel: hwmon: (powerz) Avoid cacheline sharing for DMA buffer",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: hwmon: (powerz) Avoid cacheline sharing for DMA buffer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46007.json",
+      "cve": "CVE-2026-46007",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46010: kernel: rxrpc: Fix error handling in rxgk_extract_token()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: rxrpc: Fix error handling in rxgk_extract_token()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46010.json",
+      "cve": "CVE-2026-46010",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46056: kernel: Bluetooth: hci_event: fix potential UAF in SSP passkey handlers",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Bluetooth: hci_event: fix potential UAF in SSP passkey handlers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46056.json",
+      "cve": "CVE-2026-46056",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46074: kernel: spi: ch341: fix memory leaks on probe failures",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: spi: ch341: fix memory leaks on probe failures",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46074.json",
+      "cve": "CVE-2026-46074",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-45986: kernel: crypto: ccree - fix a memory leak in cc_mac_digest()",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: ccree - fix a memory leak in cc_mac_digest()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45986.json",
+      "cve": "CVE-2026-45986",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46064: kernel: ibmasm: fix heap over-read in ibmasm_send_i2o_message()",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ibmasm: fix heap over-read in ibmasm_send_i2o_message()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46064.json",
+      "cve": "CVE-2026-46064",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45978: kernel: staging: greybus: lights: avoid NULL deref",
+      "date": "2026-05-27",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: staging: greybus: lights: avoid NULL deref",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45978.json",
+      "cve": "CVE-2026-45978",
+      "cvss": null
     },
     {
       "title": "CrowdSec AppSec silently drops request body for chunked / HTTP-2 requests",
@@ -2191,6 +4717,50 @@
       "cvss": 9.9
     },
     {
+      "title": "CVE-2026-48710: starlette: Starlette: Security restriction bypass via malformed HTTP Host header",
+      "date": "2026-05-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "starlette: Starlette: Security restriction bypass via malformed HTTP Host header",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48710.json",
+      "cve": "CVE-2026-48710",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-45836: kernel: Bluetooth: L2CAP: Fix null-ptr-deref in l2cap_sock_get_sndtimeo_cb()",
+      "date": "2026-05-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Bluetooth: L2CAP: Fix null-ptr-deref in l2cap_sock_get_sndtimeo_cb()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45836.json",
+      "cve": "CVE-2026-45836",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45834: kernel: Bluetooth: L2CAP: Fix null-ptr-deref in l2cap_sock_state_change_cb()",
+      "date": "2026-05-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Bluetooth: L2CAP: Fix null-ptr-deref in l2cap_sock_state_change_cb()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45834.json",
+      "cve": "CVE-2026-45834",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-45835: kernel: Bluetooth: L2CAP: Fix null-ptr-deref in l2cap_sock_new_connection_cb()",
+      "date": "2026-05-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Bluetooth: L2CAP: Fix null-ptr-deref in l2cap_sock_new_connection_cb()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45835.json",
+      "cve": "CVE-2026-45835",
+      "cvss": 5.5
+    },
+    {
       "title": "Kata Containers have VM Escape via virtiofsd Argument Injection through Default-Enabled Pod Annotations",
       "date": "2026-05-26",
       "severity": "MEDIUM",
@@ -2764,6 +5334,17 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-43306",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43306"
+    },
+    {
+      "title": "CVE-2026-2651: github.com/mlflow/mlflow: MLflow: Arbitrary code execution via unauthorized multipart upload access",
+      "date": "2026-05-25",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/mlflow/mlflow: MLflow: Arbitrary code execution via unauthorized multipart upload access",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-2651.json",
+      "cve": "CVE-2026-2651",
+      "cvss": 9
     },
     {
       "title": "USN-8299-1: Rclone vulnerabilities",
@@ -5033,6 +7614,1505 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-05-28T04:09:31.282Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[SUCCESS] chrome - 3 patches (1 new)",
+        "[SUCCESS] cisco - 1 patches (1 new)",
+        "[SUCCESS] debian - 14 patches (4 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[SUCCESS] github - 87 patches (22 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[SUCCESS] microsoft - 450 patches (50 new)",
+        "[SUCCESS] redhat - 178 patches (166 new)",
+        "[INFO] signal - 2 patches, no changes",
+        "[INFO] ubuntu - 42 patches, no changes"
+      ],
+      "newPatchCount": 244,
+      "totalPatches": 782,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 11,
+      "vendors": [
+        "chrome",
+        "cisco",
+        "debian",
+        "github",
+        "gitlab",
+        "microsoft",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "edge",
+        "aws"
+      ],
+      "newPatches": [
+        {
+          "vendor": "chrome",
+          "title": "Chrome for Android Update",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6304-1 unbound - security update",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6303-1 varnish - security update",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6302-1 starlette - security update",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6301-1 roundcube - security update",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "compliance-trestle Remote Fetching Mechanism has an Arbitrary File Write via Cache Path Traversal",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "FUXA's Unauthenticated Project Data Disclosure Exposes Server-Side Scripts and Device Configurations",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Kata guest escape: runtime-rs guest-root to host-root escape via virtiofs",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Yamcs Vulnerable to Authenticated Remote Code Execution (RCE) via Jython Algorithm Code Injection",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Yamcs Vulnerable to Remote Code Execution via Mission Database algorithm override",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Pimcore has a CustomReports Share Bypass",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Pimcore has a WordExport Authorization Bypass for Unauthorized Document Export",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AsyncSSH `AuthorizedKeysFile %u` path traversal allows attacker-selected authorized keys to authenticate a traversal username",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony's YAML Parser has a ReDoS via Catastrophic Backtracking in Parser::cleanup() Regex",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony's YAML Parser Vulnerable to Exponential Memory Allocation via Recursive Collection-Alias Expansion (\"Billion Laughs\")",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony hardened the parser when handling untrusted input",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Automad has Broken Access Control: Unauthenticated exposure of administrator bcrypt password hashes and TOTP secrets via public API endpoint",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony has Unauthenticated PHP Object Deserialization in MonologBridge server:log Listener",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Synfony's HEAD Request Bypasses methods: ['GET'] Filter in #[IsGranted] / #[IsSignatureValid] / #[IsCsrfTokenValid]",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony's Cas2Handler Derives CAS service URL from Client Host Header → Cross-Service Ticket Replay",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony Vulnerable to SQL Injection in PdoAdapter::doClear() via Unsanitized $prefix",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony Vulnerable to stored XSS in WebProfiler CodeExtension::fileExcerpt() — Unescaped Non-PHP File Rendering",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony has XXE (Local File Disclosure) in DomCrawler::addXmlContent() via validateOnParse = true",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony has Email Header Injection via Non-Token Characters in Mime Parameter Names",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony's OidcTokenHandler Accepts JWTs Missing aud/iss/exp Claims",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony has an Argument Injection in SendmailTransport via Dash-Prefixed Recipient Address",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Symfony has Email Header / SMTP Command Injection via CRLF in Symfony\\Component\\Mime\\Address",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40379: Azure Entra ID Spoofing Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-32207: Azure Machine Learning Notebook Spoofing Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33109: Azure Managed Instance for Apache Cassandra Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40412: Azure Orbital Spatio Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23652: Microsoft Power Pages Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35430: Azure Privileged Identity Management (PIM) Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40411: Azure Virtual Network Gateway Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-47280: Azure Resource Manager Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42827: M365 Copilot Information Disclosure Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-41090: Microsoft Copilot Tampering Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-26147: Azure Stack HCI Information Disclosure Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33843: Microsoft Azure Active Directory B2C Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-32204: Azure Monitor Agent Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-32177: .NET Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-21530: Windows Rich Text Edit Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33117: Azure SDK for Java Security Feature Bypass Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33834: Windows Event Logging Service Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33839: Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33840: Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33841: Windows Kernel Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34329: Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34330: Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34331: Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34333: Windows Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34342: Windows Print Spooler Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34343: Windows Application Identity (AppID) Subsystem Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34344: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34345: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34347: Windows Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34350: Windows Storport Miniport Driver Denial of Service Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34351: Windows TCP/IP Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35415: Windows Storage Spaces Controller Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35416: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35417: Windows Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35418: Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35419: Windows DWM Core Library Information Disclosure  Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35420: Windows Kernel Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35421: Windows GDI Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35422: Windows TCP/IP Driver Security Feature Bypass Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35423: Windows 11 Telnet Client Information Disclosure Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35424: Internet Key Exchange (IKE) Protocol Denial of Service Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35433: .NET Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35438: Windows Admin Center Elevation of Privilege Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35439: Microsoft SharePoint Server Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35440: Microsoft Word Information Disclosure Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40360: Microsoft Excel Information Disclosure Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40363: Microsoft Office Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40364: Microsoft Word Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40366: Microsoft Word Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40368: Microsoft SharePoint Server Remote Code Execution Vulnerability",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-8643: python-pip: Path traversal via malicious entry point name in pip wheel installation allows arbitrary file overwrite",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9704: keycloak: Keycloak: Privilege escalation due to oversized subject_token JWT",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-1933: samba: Missing access check on reparse point operations",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-2340: samba: vfs_worm does not block directory modification",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9689: keycloak: org.keycloak.protocol.oidc: HTTP Parameter Pollution in OIDC redirect URI allows response parameter duplicatio",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-3012: samba: group policy certificate enrollment uses http:// without validation",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45981: CVE-2026-45981",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45840: kernel: openvswitch: cap upcall PID array size and pre-size vport replies",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45842: kernel: slip: reject VJ receive packets on instances with no rstate array",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45844: kernel: netfilter: arp_tables: fix IEEE1394 ARP payload parsing",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45839: kernel: bpf: reject negative CO-RE accessor indices in bpf_core_parse_spec()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45845: kernel: net/sched: taprio: fix NULL pointer dereference in class dump",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45841: kernel: netfilter: nfnetlink_osf: fix divide-by-zero in OSF_WSS_MODULO",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45846: kernel: bareudp: fix NULL pointer dereference in bareudp_fill_metadata_dst()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45843: kernel: slip: bound decode() reads against the compressed packet length",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45838: kernel: bpf: fix end-of-list detection in cgroup_storage_get_next_key()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45837: kernel: bpf: Fix use-after-free in arena_vm_close on fork",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46001: kernel: hwmon: (pt5161l) Fix bugs in pt5161l_read_block_data()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46020: kernel: mm/damon/core: validate damos_quota_goal->nid for node_mem_{used,free}_bp",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46011: kernel: media: mtk-jpeg: fix use-after-free in release path due to uncancelled work",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45963: kernel: ASoC: nau8821: Cancel delayed work on component remove",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45992: kernel: ALSA: caiaq: Fix potentially leftover ep1_in_urb at error path",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46060: kernel: crypto: qat - fix IRQ cleanup on 6xxx probe failure",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46035: kernel: mm/page_alloc: return NULL early from alloc_frozen_pages_nolock() in NMI on UP",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46084: kernel: RDMA/mana_ib: Disable RX steering on RSS QP destroy",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46068: kernel: crypto: nx - fix bounce buffer leaks in nx842_crypto_{alloc,free}_ctx",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45984: kernel: gfs2: Fix use-after-free in iomap inline data write path",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46072: kernel: ntfs3: add buffer boundary checks to run_unpack()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46024: kernel: libceph: Prevent potential null-ptr-deref in ceph_handle_auth_reply()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45996: kernel: spi: imx: fix use-after-free on unbind",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46080: kernel: ocfs2: split transactions in dio completion to avoid credit exhaustion",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46046: kernel: ext4: fix missing brelse() in ext4_xattr_inode_dec_ref_all()",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45973: kernel: RDMA/mlx5: Fix UMR hang in LAG error state unload",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46039: kernel: rxgk: Fix potential integer overflow in length check",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45975: kernel: ublk: use READ_ONCE() to read struct ublksrv_ctrl_cmd",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46093: kernel: mm/vmalloc: take vmap_purge_lock in shrinker",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46006: kernel: drm/nouveau: fix u32 overflow in pushbuf reloc bounds check",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46059: kernel: KVM: nSVM: Always use NextRIP as vmcb02's NextRIP after first L2 VMRUN",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46079: kernel: rbd: fix null-ptr-deref when device_add_disk() fails",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45959: kernel: crypto: ccp - Fix a crash due to incorrect cleanup usage of kfree",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46025: kernel: mm/damon/core: fix damon_call() vs kdamond_fn() exit race",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46022: kernel: misc: ibmasm: fix OOB MMIO read in ibmasm_handle_mouse_interrupt()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45956: kernel: drm/exynos: vidi: use priv->vidi_dev for ctx lookup in vidi_connection_ioctl()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46051: kernel: md/raid5: fix soft lockup in retry_aligned_read()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45962: kernel: ublk: Validate SQE128 flag before accessing the cmd",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45966: kernel: apparmor: fix NULL pointer dereference in __unix_needs_revalidation",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46034: kernel: vfio/cdx: Fix NULL pointer dereference in interrupt trigger path",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45990: kernel: slub: fix data loss and overflow in krealloc()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46057: kernel: landlock: Fix LOG_SUBDOMAINS_OFF inheritance across fork()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46053: kernel: net: rds: fix MR cleanup on copy error",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46045: kernel: md/md-llbitmap: skip reading rdevs that are not in_sync",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45974: kernel: btrfs: fix invalid leaf access in btrfs_quota_enable() if ref key not found",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46100: kernel: fs: afs: revert mmap_prepare() change",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46099: kernel: net: ipv6: fix NOREF dst use in seg6 and rpl lwtunnels",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45972: kernel: smb: client: fix potential UAF and double free in smb2_open_file()",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45982: kernel: ACPICA: Fix NULL pointer dereference in acpi_ev_address_space_dispatch()",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45977: kernel: fbnic: close fw_log race between users and teardown",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46016: kernel: remoteproc: xlnx: Only access buffer information if IPI is buffered",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46090: kernel: ALSA: aloop: Fix peer runtime UAF during format-change stop",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45983: kernel: nfsd: never defer requests during idmap lookup",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45995: kernel: io_uring/zcrx: fix user_struct uaf",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46086: kernel: net: bridge: use a stable FDB dst snapshot in RCU readers",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45993: kernel: LoongArch: Add spectre boundry for syscall dispatch table",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46076: kernel: KVM: nSVM: Raise #UD if unhandled VMMCALL isn't intercepted by L1",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46058: kernel: media: amphion: Fix race between m2m job_abort and device_run",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46067: kernel: mm/damon/core: validate damos_quota_goal->nid for node_memcg_{used,free}_bp",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45955: kernel: md/md-llbitmap: fix percpu_ref not resurrected on suspend timeout",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46063: kernel: x86/shstk: Prevent deadlock during shstk sigreturn",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46033: kernel: crypto: authencesn - reject short ahash digests during instance creation",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45985: kernel: ext4: don't set EXT4_GET_BLOCKS_CONVERT when splitting before submitting I/O",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46055: kernel: apparmor: Fix string overrun due to missing termination",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46018: kernel: ALSA: usb-audio: stop parsing UAC2 rates at MAX_NR_RATES",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45970: kernel: bonding: alb: fix UAF in rlb_arp_recv during bond up/down",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46096: kernel: tpm2-sessions: Fix missing tpm_buf_destroy() in tpm2_read_public()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46023: kernel: dm mirror: fix integer overflow in create_dirty_log()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45957: kernel: rcu: Fix rcu_read_unlock() deadloop due to softirq",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45968: kernel: cpuidle: Skip governor when only one idle state is available",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45960: kernel: hfsplus: return error when node already exists in hfs_bnode_create",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46047: kernel: net: qrtr: ns: Fix use-after-free in driver remove()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46049: kernel: ALSA: ctxfi: Add fallback to default RSR for S/PDIF",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45998: kernel: rxrpc: Fix potential UAF after skb_unshare() failure",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46054: kernel: selinux: fix overlayfs mmap() and mprotect() access checks",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46008: kernel: mm/damon/core: fix damos_walk() vs kdamond_fn() exit race",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46066: kernel: ceph: fix num_ops off-by-one when crypto allocation fails",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46052: kernel: ceph: only d_add() negative dentries when they are unhashed",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46042: kernel: mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46040: kernel: inotify: fix watch count leak when fsnotify_add_inode_mark_locked() fails",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46032: kernel: KVM: nSVM: Triple fault if restore host CR3 fails on nested #VMEXIT",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46083: kernel: spi: fix resource leaks on device setup failure",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45994: kernel: ibmasm: fix OOB reads in command_file_write due to missing size checks",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45997: kernel: scsi: sd: fix missing put_disk() when device_add(&#38;disk_dev) fails",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45969: kernel: HID: playstation: Add missing check for input_ff_create_memless",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46071: kernel: KVM: nSVM: Avoid clearing VMCB_LBR in vmcb12",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46098: kernel: net: caif: clear client service pointer on teardown",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46088: kernel: ALSA: control: Validate buf_len before strnlen() in snd_ctl_elem_init_enum_names()",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46038: kernel: net: qrtr: ns: Free the node during ctrl_cmd_bye()",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46037: kernel: ipv4: icmp: validate reply type before using icmp_pointers",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46103: kernel: can: ucan: fix devres lifetime",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46005: kernel: xfs: fix a resource leak in xfs_alloc_buftarg()",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46030: kernel: EDAC/versalnet: Fix device_node leak in mc_probe()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46075: kernel: crypto: atmel-sha204a - Fix potential UAF and memory leak in remove path",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45965: kernel: apparmor: fix invalid deref of rawdata when export_binary is unset",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45976: kernel: drm/amdgpu: Fix memory leak in amdgpu_ras_init()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46095: kernel: md/md-llbitmap: raise barrier before state machine transition",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46036: kernel: vfio/cdx: Serialize VFIO_DEVICE_SET_IRQS with a per-device mutex",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46028: kernel: crypto: algif_aead - snapshot IV for async AEAD requests",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45980: kernel: accel/amdxdna: Stop job scheduling across aie2_release_resource()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46091: kernel: media: rc: igorplugusb: heed coherency rules",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46002: kernel: ext2: reject inodes with zero i_nlink and valid mode in ext2_iget()",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46004: kernel: ALSA: caiaq: Handle probe errors properly",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46097: kernel: Input: edt-ft5x06 - fix use-after-free in debugfs teardown",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46061: kernel: jbd2: fix deadlock in jbd2_journal_cancel_revoke()",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46041: kernel: greybus: gb-beagleplay: fix sleep in atomic context in hdlc_tx_frames()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46013: kernel: mm/memfd_luo: fix physical address conversion in put_folios cleanup",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45964: kernel: SUNRPC: fix gss_auth kref leak in gss_alloc_msg error path",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46003: kernel: net: qrtr: ns: Limit the total number of nodes",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46044: kernel: ipmi:ssif: Clean up kthread on errors",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46026: kernel: net: qrtr: ns: Limit the maximum number of lookups",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45979: kernel: drm/amdgpu: clean up the amdgpu_cs_parser_bos",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46019: kernel: crypto: atmel-aes - Fix 3-page memory leak in atmel_aes_buff_cleanup",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46017: kernel: mm: fix deferred split queue races during migration",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45961: kernel: gfs2: fix memory leaks in gfs2_fill_super error path",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45967: kernel: bpf: Return proper address for non-zero offsets in insn array",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46050: kernel: md/raid10: fix deadlock with check operation and nowait requests",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46082: kernel: KVM: SVM: Inject #UD for INVLPGA if EFER.SVME=0",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46000: kernel: rxrpc: Fix conn-level packet handling to unshare RESPONSE packets",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46089: kernel: zram: do not forget to endio for partial discard requests",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45991: kernel: udf: fix partition descriptor append bookkeeping",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46069: kernel: wifi: mwifiex: fix use-after-free in mwifiex_adapter_cleanup()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46102: kernel: net: strparser: fix skb_head leak in strp_abort_strp()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46021: kernel: thermal: core: Fix thermal zone governor cleanup issues",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46048: kernel: ALSA: caiaq: fix usb_dev refcount leak on probe failure",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45988: kernel: rxrpc: Fix re-decryption of RESPONSE packets",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46031: kernel: net: ks8851: Reinstate disabling of BHs around IRQ handler",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46043: kernel: RDMA/rxe: Validate pad and ICRC before payload_size() in rxe_rcv",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46014: kernel: KVM: SVM: Add missing save/restore handling of LBR MSRs",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45989: kernel: of: unittest: fix use-after-free in testdrv_probe()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46081: kernel: crypto: acomp - fix wrong pointer stored by acomp_save_req()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46078: kernel: erofs: fix the out-of-bounds nameoff handling for trailing dirents",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46065: kernel: fbdev: defio: Disconnect deferred I/O from the lifetime of struct fb_info",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46101: kernel: netfilter: reject zero shift in nft_bitwise",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46087: kernel: mm/damon/stat: fix memory leak on damon_start() failure in damon_stat_start()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46085: kernel: rxrpc: Fix rxkad crypto unalignment handling",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45971: kernel: bpf: Limit bpf program signature size",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46062: kernel: ntfs3: fix integer overflow in run_unpack() volume boundary check",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45999: kernel: erofs: fix unsigned underflow in z_erofs_lz4_handle_overlap()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45958: kernel: drm/exynos: vidi: fix to avoid directly dereferencing user pointer",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46009: kernel: PCI: endpoint: pci-epf-ntb: Remove duplicate resource teardown",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46092: kernel: wifi: rtw88: check for PCI upstream bridge existence",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46073: kernel: hwmon: (powerz) Fix missing usb_kill_urb() on signal interrupt",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46027: kernel: net/smc: avoid early lgr access in smc_clc_wait_msg",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46070: kernel: md/raid5: validate payload size before accessing journal metadata",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46029: kernel: mm/slab: return NULL early from kmalloc_nolock() in NMI on UP",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45987: kernel: KVM: nSVM: Sync interrupt shadow to cached vmcb12 after VMRUN of L2",
+          "date": "2026-05-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46007: kernel: hwmon: (powerz) Avoid cacheline sharing for DMA buffer",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46010: kernel: rxrpc: Fix error handling in rxgk_extract_token()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46056: kernel: Bluetooth: hci_event: fix potential UAF in SSP passkey handlers",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46074: kernel: spi: ch341: fix memory leaks on probe failures",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45986: kernel: crypto: ccree - fix a memory leak in cc_mac_digest()",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46064: kernel: ibmasm: fix heap over-read in ibmasm_send_i2o_message()",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45978: kernel: staging: greybus: lights: avoid NULL deref",
+          "date": "2026-05-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-48710: starlette: Starlette: Security restriction bypass via malformed HTTP Host header",
+          "date": "2026-05-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45836: kernel: Bluetooth: L2CAP: Fix null-ptr-deref in l2cap_sock_get_sndtimeo_cb()",
+          "date": "2026-05-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45834: kernel: Bluetooth: L2CAP: Fix null-ptr-deref in l2cap_sock_state_change_cb()",
+          "date": "2026-05-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45835: kernel: Bluetooth: L2CAP: Fix null-ptr-deref in l2cap_sock_new_connection_cb()",
+          "date": "2026-05-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-2651: github.com/mlflow/mlflow: MLflow: Arbitrary code execution via unauthorized multipart upload access",
+          "date": "2026-05-25",
+          "severity": "CRITICAL"
+        }
+      ]
+    },
     {
       "timestamp": "2026-05-28T03:57:06.289Z",
       "logs": [
@@ -9026,48 +13106,6 @@
     },
     {
       "timestamp": "2026-05-23T19:20:53.936Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 263 patches, no changes",
-        "[INFO] microsoft - 560 patches, no changes",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] paloalto - 10 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 68 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 34 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 979,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "github",
-        "microsoft",
-        "aws",
-        "debian",
-        "ubuntu",
-        "crowdstrike",
-        "edge",
-        "postgresql",
-        "redhat",
-        "chrome",
-        "cisco",
-        "paloalto",
-        "mssql",
-        "signal",
-        "cloudflare"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-23T19:15:51.304Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",
