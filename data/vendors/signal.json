@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-28T16:13:13.793Z",
+  "lastUpdated": "2026-05-28T20:31:50.941Z",
   "health": {
-    "lastFetchAttempt": "2026-05-28T16:13:13.793Z",
+    "lastFetchAttempt": "2026-05-28T20:31:50.941Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-28T16:13:13.793Z",
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-05-28T20:31:50.941Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "local-deep-research has an SSRF bypass in `safe_get`",
+      "date": "2026-05-28",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nThe URL checking logic in local-deep-research has a logical flaw that could be bypassed by attackers, leading to SSRF attacks.\n\n### Details\nThe current project uses `validate_url` to valid",
+      "link": "https://github.com/advisories/GHSA-g23j-2vwm-5c25",
+      "cves": [
+        "CVE-2026-46526"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "CrowdSec AppSec silently drops request body for chunked / HTTP-2 requests",
       "date": "2026-05-27",
