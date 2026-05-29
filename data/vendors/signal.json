@@ -1,16 +1,29 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-05-29T15:54:24.517Z",
+  "lastUpdated": "2026-05-29T20:33:54.914Z",
   "health": {
-    "lastFetchAttempt": "2026-05-29T15:54:24.517Z",
+    "lastFetchAttempt": "2026-05-29T20:33:54.914Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-29T15:54:24.517Z",
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-05-29T20:33:54.914Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Nerdbank.MessagePack has a memory amplification DoS in collection deserialization",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "Nerdbank.MessagePack deserializers for many collection-shaped types trusted the element count declared in MessagePack array and map headers when allocating destination storage. A crafted payload could",
+      "link": "https://github.com/advisories/GHSA-qjvr-435c-5fjh",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "local-deep-research has an SSRF bypass in `safe_get`",
       "date": "2026-05-28",

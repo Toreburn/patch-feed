@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-05-29T20:30:13.916Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-29T20:35:05.256Z",
+  "newPatches": 53,
   "patches": [
+    {
+      "title": "DSA-6311-1 php-twig - security update",
+      "date": "2026-05-29",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "php-twig",
+      "description": "Multiple security vulnerabilities were discovered in Twig, a template engine for PHP, which could result in PHP code injection, sandbox bypass or cross-site scripting. https://security-tracker.debian....",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00222.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6310-1 imagemagick - security update",
+      "date": "2026-05-29",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "imagemagick",
+      "description": "Multiple security vulnerabilities were discovered in imagemagick, a software suite used for editing and manipulating digital images, which could lead to denial of service, information disclosure or po...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00221.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6309-1 exim4 - security update",
+      "date": "2026-05-29",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "exim4",
+      "description": "Warisjeet Singh discovered that Exim, a mail transport agent, does not properly handle PROXY frames whose declared payload length is too short for the claimed address family, which may result in infor...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00220.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "Axios has a Patch Bypass: Proxy-Authorization Header Injection via Prototype Pollution — Incomplete Null-Prototype Fix",
       "date": "2026-05-29",
@@ -67,6 +100,501 @@
       "link": "https://github.com/advisories/GHSA-g2g8-95qg-v35h",
       "cve": "CVE-2026-48527",
       "cvss": 8.7
+    },
+    {
+      "title": "authentik's XML Signature Wrapping in SAML Source ACS allows authentication as arbitrary federated user",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "goauthentik.io",
+      "description": "authentik's XML Signature Wrapping in SAML Source ACS allows authentication as arbitrary federated user",
+      "link": "https://github.com/advisories/GHSA-c3m2-jqmq-pvp3",
+      "cve": "CVE-2026-47201",
+      "cvss": 8.5
+    },
+    {
+      "title": "CC-Tweaked has an SSRF Protection Bypass with NAT64",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "cc.tweaked:cc-tweaked-1.21-core, cc.tweaked:cc-tweaked-1.20.1-core, cc.tweaked:cc-tweaked-1.20.4-core",
+      "description": "CC-Tweaked has an SSRF Protection Bypass with NAT64",
+      "link": "https://github.com/advisories/GHSA-5jh9-2h63-pw4q",
+      "cve": "CVE-2026-47695",
+      "cvss": null
+    },
+    {
+      "title": "zeroconf has unbounded DNS record cache that allows LAN-local memory exhaustion via multicast flood",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "zeroconf",
+      "description": "zeroconf has unbounded DNS record cache that allows LAN-local memory exhaustion via multicast flood",
+      "link": "https://github.com/advisories/GHSA-rfg2-pjw2-56x2",
+      "cve": "CVE-2026-47184",
+      "cvss": 6.5
+    },
+    {
+      "title": "zeroconf: Unbounded exception-dedup state retains packet buffers via traceback frame locals, enabling LAN-local memory exhaustion",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "zeroconf",
+      "description": "zeroconf: Unbounded exception-dedup state retains packet buffers via traceback frame locals, enabling LAN-local memory exhaustion",
+      "link": "https://github.com/advisories/GHSA-phvx-9mgw-67r5",
+      "cve": "CVE-2026-47183",
+      "cvss": 6.5
+    },
+    {
+      "title": "zeroconf has unbounded recursion in DNS compression-pointer decoder that allows LAN-local denial of service",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "zeroconf",
+      "description": "zeroconf has unbounded recursion in DNS compression-pointer decoder that allows LAN-local denial of service",
+      "link": "https://github.com/advisories/GHSA-9pgc-3ccv-5297",
+      "cve": "CVE-2026-47180",
+      "cvss": 6.5
+    },
+    {
+      "title": "Nerdbank.MessagePack has Inefficient CPU Computation",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "Nerdbank.MessagePack",
+      "description": "Nerdbank.MessagePack has Inefficient CPU Computation",
+      "link": "https://github.com/advisories/GHSA-92vj-hp7m-gwcj",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "Koel Vulnerable to SSRF via Podcast Episode Enclosure URLs",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "phanan/koel",
+      "description": "Koel Vulnerable to SSRF via Podcast Episode Enclosure URLs",
+      "link": "https://github.com/advisories/GHSA-7j2f-6h2r-6cqc",
+      "cve": "CVE-2026-47260",
+      "cvss": 7.7
+    },
+    {
+      "title": "Nerdbank.MessagePack has a memory amplification DoS in collection deserialization",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "Nerdbank.MessagePack",
+      "description": "Nerdbank.MessagePack has a memory amplification DoS in collection deserialization",
+      "link": "https://github.com/advisories/GHSA-qjvr-435c-5fjh",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "Sparkle's AppInstaller post-stage-1 XPC listener accepts unvalidated connections, allowing spoofed appcast item data injection",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/sparkle-project/Sparkle",
+      "description": "Sparkle's AppInstaller post-stage-1 XPC listener accepts unvalidated connections, allowing spoofed appcast item data injection",
+      "link": "https://github.com/advisories/GHSA-g3hp-f6mg-559v",
+      "cve": "CVE-2026-47122",
+      "cvss": 4.2
+    },
+    {
+      "title": "Sparkle: Binary delta apply intermediate-symlink traversal in malicious .delta",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/sparkle-project/Sparkle",
+      "description": "Sparkle: Binary delta apply intermediate-symlink traversal in malicious .delta",
+      "link": "https://github.com/advisories/GHSA-hg88-v3cw-3qrh",
+      "cve": "CVE-2026-47121",
+      "cvss": 6.1
+    },
+    {
+      "title": "go-git: Malformed Git object data may cause panics or resource exhaustion",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/go-git/go-git/v5, github.com/go-git/go-git/v6",
+      "description": "go-git: Malformed Git object data may cause panics or resource exhaustion",
+      "link": "https://github.com/advisories/GHSA-w5pp-99ch-qj29",
+      "cve": "",
+      "cvss": 6.5
+    },
+    {
+      "title": "russh server userauth state is not reset when authentication principal changes",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "russh",
+      "description": "russh server userauth state is not reset when authentication principal changes",
+      "link": "https://github.com/advisories/GHSA-hpv4-5h6f-wqr3",
+      "cve": "CVE-2026-46705",
+      "cvss": 5.3
+    },
+    {
+      "title": "russh: Post-decompression SSH packet size was not bounded, allowing remote oversized compressed packets",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "russh",
+      "description": "russh: Post-decompression SSH packet size was not bounded, allowing remote oversized compressed packets",
+      "link": "https://github.com/advisories/GHSA-wwx6-x28x-8259",
+      "cve": "CVE-2026-46702",
+      "cvss": 7.5
+    },
+    {
+      "title": "amazon-redshift-python-driver vulnerable to Remote Code Execution via eval() Injection",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "redshift-connector",
+      "description": "amazon-redshift-python-driver vulnerable to Remote Code Execution via eval() Injection",
+      "link": "https://github.com/advisories/GHSA-29h4-r29x-hchv",
+      "cve": "CVE-2026-8838",
+      "cvss": 9.8
+    },
+    {
+      "title": "uv is vulnerable to arbitrary file write through entry point names",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "uv, uv",
+      "description": "uv is vulnerable to arbitrary file write through entry point names",
+      "link": "https://github.com/advisories/GHSA-4gg8-gxpx-9rph",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "AgenticMail API/storage and outbound relay hardening fixes",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@agenticmail/api, @agenticmail/core",
+      "description": "AgenticMail API/storage and outbound relay hardening fixes",
+      "link": "https://github.com/advisories/GHSA-wjjv-3mj2-39hf",
+      "cve": "CVE-2026-47255",
+      "cvss": null
+    },
+    {
+      "title": "Parse Server's GraphQL \"Did you mean ...?\" validation suggestions disclose schema to unauthenticated callers",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "parse-server, parse-server",
+      "description": "Parse Server's GraphQL \"Did you mean ...?\" validation suggestions disclose schema to unauthenticated callers",
+      "link": "https://github.com/advisories/GHSA-8cph-rgr4-g5vj",
+      "cve": "CVE-2026-47248",
+      "cvss": null
+    },
+    {
+      "title": "tar has a PAX header desynchronization issue",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "tar",
+      "description": "tar has a PAX header desynchronization issue",
+      "link": "https://github.com/advisories/GHSA-3pv8-6f4r-ffg2",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "astral-tokio-tar has a PAX Header Desynchronization issue",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "astral-tokio-tar",
+      "description": "astral-tokio-tar has a PAX Header Desynchronization issue",
+      "link": "https://github.com/advisories/GHSA-3cv2-h65g-fgmm",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "ezsystems/ezpublish-legacy has a SQL injection in dfscleanup",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "ezsystems/ezpublish-legacy",
+      "description": "ezsystems/ezpublish-legacy has a SQL injection in dfscleanup",
+      "link": "https://github.com/advisories/GHSA-xg9x-h37w-h3r3",
+      "cve": "CVE-2026-38739",
+      "cvss": 7.1
+    },
+    {
+      "title": "unbounded-spsc: Sender::send pointer-as-value transmute causes OOB read and fake-Arc drop under TX/RX race",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "unbounded-spsc",
+      "description": "unbounded-spsc: Sender::send pointer-as-value transmute causes OOB read and fake-Arc drop under TX/RX race",
+      "link": "https://github.com/advisories/GHSA-6m57-8r3p-pqx6",
+      "cve": "CVE-2026-46690",
+      "cvss": 5.8
+    },
+    {
+      "title": "CAPM3 vulnerable to Cross-Namespace resource access",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/metal3-io/cluster-api-provider-metal3, github.com/metal3-io/cluster-api-provider-metal3",
+      "description": "CAPM3 vulnerable to Cross-Namespace resource access",
+      "link": "https://github.com/advisories/GHSA-rf84-wr5g-m3rp",
+      "cve": "",
+      "cvss": 5.5
+    },
+    {
+      "title": "IPAM controller service account granted unnecessary full access to Secrets",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/metal3-io/ip-address-manager, github.com/metal3-io/ip-address-manager",
+      "description": "IPAM controller service account granted unnecessary full access to Secrets",
+      "link": "https://github.com/advisories/GHSA-49pm-43hf-6xfq",
+      "cve": "CVE-2026-47190",
+      "cvss": 4.4
+    },
+    {
+      "title": "Ironic Standalone Operator's controller modifies user-owned resources without consent",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/metal3-io/ironic-standalone-operator, github.com/metal3-io/ironic-standalone-operator",
+      "description": "Ironic Standalone Operator's controller modifies user-owned resources without consent",
+      "link": "https://github.com/advisories/GHSA-hfc8-w5f4-3x6m",
+      "cve": "",
+      "cvss": 4.3
+    },
+    {
+      "title": "Ironic Standalone Operator's prometheus metrics exporter bound to all interfaces",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/metal3-io/ironic-standalone-operator",
+      "description": "Ironic Standalone Operator's prometheus metrics exporter bound to all interfaces",
+      "link": "https://github.com/advisories/GHSA-7cwm-fpfh-rrch",
+      "cve": "",
+      "cvss": 4.3
+    },
+    {
+      "title": "NodeVM observability builtins leak host process and HTTP request data",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "NodeVM observability builtins leak host process and HTTP request data",
+      "link": "https://github.com/advisories/GHSA-9g8x-92q2-p28f",
+      "cve": "CVE-2026-47141",
+      "cvss": null
+    },
+    {
+      "title": "NodeVM network builtin exclusions bypass via internal _http_client and _http_server",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "NodeVM network builtin exclusions bypass via internal _http_client and _http_server",
+      "link": "https://github.com/advisories/GHSA-r9pm-gxmw-wv6p",
+      "cve": "CVE-2026-47139",
+      "cvss": 8.6
+    },
+    {
+      "title": "NodeVM builtin denylist bypass via process and inspector/promises allows host code execution",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "NodeVM builtin denylist bypass via process and inspector/promises allows host code execution",
+      "link": "https://github.com/advisories/GHSA-rp36-8xq3-r6c4",
+      "cve": "CVE-2026-47140",
+      "cvss": 10
+    },
+    {
+      "title": "ExifReader is vulnerable to denial of service via crafted ICC `mluc` tag",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "exifreader",
+      "description": "ExifReader is vulnerable to denial of service via crafted ICC `mluc` tag",
+      "link": "https://github.com/advisories/GHSA-h64w-w9pr-82m4",
+      "cve": "CVE-2026-8813",
+      "cvss": 7.5
+    },
+    {
+      "title": "ExifReader is vulnerable to denial of service via unbounded decompression of image metadata",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "exifreader",
+      "description": "ExifReader is vulnerable to denial of service via unbounded decompression of image metadata",
+      "link": "https://github.com/advisories/GHSA-rr89-w3h9-m66j",
+      "cve": "CVE-2026-8814",
+      "cvss": 5.3
+    },
+    {
+      "title": "vm2 sandbox escape via JSPI-backed Promise `.finally()` species bypass",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 sandbox escape via JSPI-backed Promise `.finally()` species bypass",
+      "link": "https://github.com/advisories/GHSA-6j2x-vhqr-qr7q",
+      "cve": "CVE-2026-47210",
+      "cvss": 9.8
+    },
+    {
+      "title": "vm2 has a CVE-2023-37903 patch bypass: nesting:true without explicit require still allows full RCE",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 has a CVE-2023-37903 patch bypass: nesting:true without explicit require still allows full RCE",
+      "link": "https://github.com/advisories/GHSA-m4wx-m65x-ghrr",
+      "cve": "CVE-2026-47137",
+      "cvss": 10
+    },
+    {
+      "title": "vm2's Bridge Proxy set trap ignores receiver parameter, enabling host object property injection via prototype chain",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2's Bridge Proxy set trap ignores receiver parameter, enabling host object property injection via prototype chain",
+      "link": "https://github.com/advisories/GHSA-c4cf-2hgv-2qv6",
+      "cve": "CVE-2026-47209",
+      "cvss": 8.6
+    },
+    {
+      "title": "vm2 has a sandbox escape via unblocked cross-realm Symbol.for keys + missing bridge write-trap symbol checks",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 has a sandbox escape via unblocked cross-realm Symbol.for keys + missing bridge write-trap symbol checks",
+      "link": "https://github.com/advisories/GHSA-m5q2-4fm3-vfqp",
+      "cve": "CVE-2026-47135",
+      "cvss": 8.7
+    },
+    {
+      "title": "vm2 is Vulnerable to Sandbox Breakout Through Promise Species",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 is Vulnerable to Sandbox Breakout Through Promise Species",
+      "link": "https://github.com/advisories/GHSA-76w7-j9cq-rx2j",
+      "cve": "CVE-2026-47208",
+      "cvss": 10
+    },
+    {
+      "title": "vm2 setup-sandbox.js violates Defense Invariant #11 in stack-trace formatter",
+      "date": "2026-05-29",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 setup-sandbox.js violates Defense Invariant #11 in stack-trace formatter",
+      "link": "https://github.com/advisories/GHSA-q3fm-4wcw-g57x",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "vm2 has a Sandbox Escape issue",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 has a Sandbox Escape issue",
+      "link": "https://github.com/advisories/GHSA-v6mx-mf47-r5wg",
+      "cve": "CVE-2026-47131",
+      "cvss": 10
+    },
+    {
+      "title": "Nuxt's route middleware is not enforced when rendering `.server.vue` pages via `/__nuxt_island/page_*`",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nuxt, @nuxt/nitro-server, @nuxt/nitro-server",
+      "description": "Nuxt's route middleware is not enforced when rendering `.server.vue` pages via `/__nuxt_island/page_*`",
+      "link": "https://github.com/advisories/GHSA-hg3f-28rg-4jxj",
+      "cve": "CVE-2026-47200",
+      "cvss": null
+    },
+    {
+      "title": "Gotenberg has a Race Condition via Multipart `downloadFrom` Handling",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/gotenberg/gotenberg/v8",
+      "description": "Gotenberg has a Race Condition via Multipart `downloadFrom` Handling",
+      "link": "https://github.com/advisories/GHSA-vp73-vjw8-8f32",
+      "cve": "CVE-2026-45742",
+      "cvss": 7.5
+    },
+    {
+      "title": "Gotenberg has an SSRF deny-list bypass in IsPublicIP via IPv6 6to4 / NAT64 / site-local prefixes",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/gotenberg/gotenberg/v8",
+      "description": "Gotenberg has an SSRF deny-list bypass in IsPublicIP via IPv6 6to4 / NAT64 / site-local prefixes",
+      "link": "https://github.com/advisories/GHSA-86m8-88fq-xfxp",
+      "cve": "CVE-2026-45741",
+      "cvss": 7.5
+    },
+    {
+      "title": "Gotenberg has path traversal in zip entry name via Windows-style separators in upload filename",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/gotenberg/gotenberg/v8",
+      "description": "Gotenberg has path traversal in zip entry name via Windows-style separators in upload filename",
+      "link": "https://github.com/advisories/GHSA-hwc4-gmrw-5222",
+      "cve": "CVE-2026-44829",
+      "cvss": 8.8
+    },
+    {
+      "title": "axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
+      "link": "https://github.com/advisories/GHSA-3g43-6gmg-66jw",
+      "cve": "CVE-2026-44495",
+      "cvss": 7
+    },
+    {
+      "title": "axios Vulnerable to Full Man-in-the-Middle via Prototype Pollution Gadget in `config.proxy`",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "axios",
+      "description": "axios Vulnerable to Full Man-in-the-Middle via Prototype Pollution Gadget in `config.proxy`",
+      "link": "https://github.com/advisories/GHSA-35jp-ww65-95wh",
+      "cve": "CVE-2026-44494",
+      "cvss": 8.7
+    },
+    {
+      "title": "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
+      "link": "https://github.com/advisories/GHSA-pjwm-pj3p-43mv",
+      "cve": "CVE-2026-44492",
+      "cvss": 8.6
+    },
+    {
+      "title": "axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "axios, axios",
+      "description": "axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
+      "link": "https://github.com/advisories/GHSA-898c-q2cr-xwhg",
+      "cve": "CVE-2026-44490",
+      "cvss": 4.8
     },
     {
       "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
@@ -967,6 +1495,29 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-40368",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40368"
+    },
+    {
+      "title": "CVE-2026-0257 PAN-OS: GlobalProtect Authentication Bypass Vulnerabilities (Severity: HIGH)",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "paloalto",
+      "component": "PAN-OS",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0257",
+      "cve": "CVE-2026-0257"
+    },
+    {
+      "title": "Nerdbank.MessagePack has a memory amplification DoS in collection deserialization",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "Nerdbank.MessagePack deserializers for many collection-shaped types trusted the element count declared in MessagePack array and map headers when allocating destination storage. A crafted payload could",
+      "link": "https://github.com/advisories/GHSA-qjvr-435c-5fjh",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
     },
     {
       "title": "USN-8338-2: Apache HTTP Server regression",
@@ -3708,6 +4259,33 @@
       "component": "OpenJDK 25 vulnerabilities",
       "description": "Thomas Beckers discovered that the JAXP component of OpenJDK 25 did not\ncorrectly authenticate certain APIs. A remote unauthenticated attacker\ncould possibly use this issue to gain unauthorized access...",
       "link": "https://ubuntu.com/security/notices/USN-8339-1"
+    },
+    {
+      "title": "USN-8347-1: QT WebEngine vulnerability",
+      "date": "2026-05-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "QT WebEngine",
+      "description": "It was discovered that the vendored LibTIFF in QT WebEngine incorrectly\nhandled memory when parsing malformed TIFF image metadata. An attacker\ncould possibly use this issue to cause a denial of servic...",
+      "link": "https://ubuntu.com/security/notices/USN-8347-1"
+    },
+    {
+      "title": "USN-8346-1: Texmaker vulnerabilities",
+      "date": "2026-05-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Texmaker vulnerabilities",
+      "description": "It was discovered that the vendored LibTIFF in Texmaker incorrectly\nhandled memory when parsing malformed TIFF image metadata. An attacker\ncould possibly use this issue to cause a denial of service, o...",
+      "link": "https://ubuntu.com/security/notices/USN-8346-1"
+    },
+    {
+      "title": "USN-8345-1: GDAL vulnerability",
+      "date": "2026-05-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GDAL",
+      "description": "It was discovered that the vendored LibTIFF in GDAL incorrectly handled\nmemory when parsing malformed TIFF image metadata. An attacker could\npossibly use this issue to cause a denial of service, obtai...",
+      "link": "https://ubuntu.com/security/notices/USN-8345-1"
     },
     {
       "title": "Chrome Stable for iOS Update",
@@ -13115,6 +13693,363 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-05-29T20:35:05.256Z",
+      "logs": [
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[SUCCESS] debian - 17 patches (3 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[SUCCESS] github - 155 patches (45 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 500 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[SUCCESS] paloalto - 13 patches (1 new)",
+        "[INFO] redhat - 595 patches, no changes",
+        "[SUCCESS] signal - 4 patches (1 new)",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 52 patches (3 new)"
+      ],
+      "newPatchCount": 53,
+      "totalPatches": 1346,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "debian",
+        "github",
+        "microsoft",
+        "paloalto",
+        "signal",
+        "ubuntu",
+        "edge",
+        "oracle-db",
+        "redhat",
+        "slack",
+        "chrome",
+        "cisco",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6311-1 php-twig - security update",
+          "date": "2026-05-29",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6310-1 imagemagick - security update",
+          "date": "2026-05-29",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6309-1 exim4 - security update",
+          "date": "2026-05-29",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "authentik's XML Signature Wrapping in SAML Source ACS allows authentication as arbitrary federated user",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CC-Tweaked has an SSRF Protection Bypass with NAT64",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "zeroconf has unbounded DNS record cache that allows LAN-local memory exhaustion via multicast flood",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "zeroconf: Unbounded exception-dedup state retains packet buffers via traceback frame locals, enabling LAN-local memory exhaustion",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "zeroconf has unbounded recursion in DNS compression-pointer decoder that allows LAN-local denial of service",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Nerdbank.MessagePack has Inefficient CPU Computation",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Koel Vulnerable to SSRF via Podcast Episode Enclosure URLs",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Nerdbank.MessagePack has a memory amplification DoS in collection deserialization",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Sparkle's AppInstaller post-stage-1 XPC listener accepts unvalidated connections, allowing spoofed appcast item data injection",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Sparkle: Binary delta apply intermediate-symlink traversal in malicious .delta",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "go-git: Malformed Git object data may cause panics or resource exhaustion",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "russh server userauth state is not reset when authentication principal changes",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "russh: Post-decompression SSH packet size was not bounded, allowing remote oversized compressed packets",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "amazon-redshift-python-driver vulnerable to Remote Code Execution via eval() Injection",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "uv is vulnerable to arbitrary file write through entry point names",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AgenticMail API/storage and outbound relay hardening fixes",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Parse Server's GraphQL \"Did you mean ...?\" validation suggestions disclose schema to unauthenticated callers",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "tar has a PAX header desynchronization issue",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "astral-tokio-tar has a PAX Header Desynchronization issue",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "ezsystems/ezpublish-legacy has a SQL injection in dfscleanup",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "unbounded-spsc: Sender::send pointer-as-value transmute causes OOB read and fake-Arc drop under TX/RX race",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "CAPM3 vulnerable to Cross-Namespace resource access",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "IPAM controller service account granted unnecessary full access to Secrets",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Ironic Standalone Operator's controller modifies user-owned resources without consent",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Ironic Standalone Operator's prometheus metrics exporter bound to all interfaces",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "NodeVM observability builtins leak host process and HTTP request data",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "NodeVM network builtin exclusions bypass via internal _http_client and _http_server",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "NodeVM builtin denylist bypass via process and inspector/promises allows host code execution",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "ExifReader is vulnerable to denial of service via crafted ICC `mluc` tag",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "ExifReader is vulnerable to denial of service via unbounded decompression of image metadata",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 sandbox escape via JSPI-backed Promise `.finally()` species bypass",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 has a CVE-2023-37903 patch bypass: nesting:true without explicit require still allows full RCE",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2's Bridge Proxy set trap ignores receiver parameter, enabling host object property injection via prototype chain",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 has a sandbox escape via unblocked cross-realm Symbol.for keys + missing bridge write-trap symbol checks",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 is Vulnerable to Sandbox Breakout Through Promise Species",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 setup-sandbox.js violates Defense Invariant #11 in stack-trace formatter",
+          "date": "2026-05-29",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 has a Sandbox Escape issue",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Nuxt's route middleware is not enforced when rendering `.server.vue` pages via `/__nuxt_island/page_*`",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Gotenberg has a Race Condition via Multipart `downloadFrom` Handling",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gotenberg has an SSRF deny-list bypass in IsPublicIP via IPv6 6to4 / NAT64 / site-local prefixes",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gotenberg has path traversal in zip entry name via Windows-style separators in upload filename",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "axios Vulnerable to Full Man-in-the-Middle via Prototype Pollution Gadget in `config.proxy`",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-0257 PAN-OS: GlobalProtect Authentication Bypass Vulnerabilities (Severity: HIGH)",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "signal",
+          "title": "Nerdbank.MessagePack has a memory amplification DoS in collection deserialization",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8347-1: QT WebEngine vulnerability",
+          "date": "2026-05-28",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8346-1: Texmaker vulnerabilities",
+          "date": "2026-05-28",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8345-1: GDAL vulnerability",
+          "date": "2026-05-28",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-05-29T20:30:13.916Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
@@ -22031,48 +22966,6 @@
         "paloalto",
         "mssql",
         "signal"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-24T23:00:04.527Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 263 patches, no changes",
-        "[INFO] microsoft - 560 patches, no changes",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] paloalto - 10 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 68 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 34 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 979,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "github",
-        "aws",
-        "ubuntu",
-        "crowdstrike",
-        "edge",
-        "postgresql",
-        "redhat",
-        "chrome",
-        "cisco",
-        "paloalto",
-        "mssql",
-        "signal",
-        "cloudflare"
       ],
       "newPatches": []
     }
