@@ -1,16 +1,82 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-05-29T10:03:47.816Z",
+  "lastUpdated": "2026-05-29T15:53:47.077Z",
   "health": {
-    "lastFetchAttempt": "2026-05-29T10:03:47.816Z",
+    "lastFetchAttempt": "2026-05-29T15:53:47.077Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-05-29T10:03:47.816Z",
+    "lastFetchNewPatches": 6,
+    "lastSuccessWithData": "2026-05-29T15:53:47.077Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Axios has a Patch Bypass: Proxy-Authorization Header Injection via Prototype Pollution — Incomplete Null-Prototype Fix",
+      "date": "2026-05-29",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "axios",
+      "description": "Axios has a Patch Bypass: Proxy-Authorization Header Injection via Prototype Pollution — Incomplete Null-Prototype Fix",
+      "link": "https://github.com/advisories/GHSA-654m-c8p4-x5fp",
+      "cve": "CVE-2026-44489",
+      "cvss": 3.7
+    },
+    {
+      "title": "Froxlor has an incomplete fix for CVE-2026-30932",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "froxlor/froxlor",
+      "description": "Froxlor has an incomplete fix for CVE-2026-30932",
+      "link": "https://github.com/advisories/GHSA-j6fm-9rfm-j5hx",
+      "cve": "CVE-2026-41237",
+      "cvss": null
+    },
+    {
+      "title": "Froxlor has privilege escalation in SSH key synchronization via symlinked `authorized_keys` path",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "froxlor/froxlor",
+      "description": "Froxlor has privilege escalation in SSH key synchronization via symlinked `authorized_keys` path",
+      "link": "https://github.com/advisories/GHSA-mq5v-pxpm-8jw2",
+      "cve": "CVE-2026-41236",
+      "cvss": 8.8
+    },
+    {
+      "title": "Froxlor has an authorization bypass in FTP shell assignment via missing server-side `available_shells` enforcement",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "froxlor/froxlor",
+      "description": "Froxlor has an authorization bypass in FTP shell assignment via missing server-side `available_shells` enforcement",
+      "link": "https://github.com/advisories/GHSA-gcv3-5v9q-fmhh",
+      "cve": "CVE-2026-41235",
+      "cvss": 8.8
+    },
+    {
+      "title": "GitHub CLI has an incorrect authorization header in API requests to TUF repository mirrors via `gh attestation`, `gh release verify`, and `gh release verify-asset` commands",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/cli/cli/v2",
+      "description": "GitHub CLI has an incorrect authorization header in API requests to TUF repository mirrors via `gh attestation`, `gh release verify`, and `gh release verify-asset` commands",
+      "link": "https://github.com/advisories/GHSA-8xvp-7hj6-mcj9",
+      "cve": "CVE-2026-48501",
+      "cvss": 7.4
+    },
+    {
+      "title": "HaxCMS has a stored Cross-Site Scripting (XSS) bypass in its saveNode endpoint",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@haxtheweb/haxcms-nodejs",
+      "description": "HaxCMS has a stored Cross-Site Scripting (XSS) bypass in its saveNode endpoint",
+      "link": "https://github.com/advisories/GHSA-g2g8-95qg-v35h",
+      "cve": "CVE-2026-48527",
+      "cvss": 8.7
+    },
     {
       "title": "Shamefile has an arbitrary file read via shamefile.yaml in shame next",
       "date": "2026-05-28",

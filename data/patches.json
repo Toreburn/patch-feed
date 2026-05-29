@@ -1,7 +1,73 @@
 {
-  "lastUpdated": "2026-05-29T12:48:18.862Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-05-29T15:55:41.596Z",
+  "newPatches": 203,
   "patches": [
+    {
+      "title": "Axios has a Patch Bypass: Proxy-Authorization Header Injection via Prototype Pollution — Incomplete Null-Prototype Fix",
+      "date": "2026-05-29",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "axios",
+      "description": "Axios has a Patch Bypass: Proxy-Authorization Header Injection via Prototype Pollution — Incomplete Null-Prototype Fix",
+      "link": "https://github.com/advisories/GHSA-654m-c8p4-x5fp",
+      "cve": "CVE-2026-44489",
+      "cvss": 3.7
+    },
+    {
+      "title": "Froxlor has an incomplete fix for CVE-2026-30932",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "froxlor/froxlor",
+      "description": "Froxlor has an incomplete fix for CVE-2026-30932",
+      "link": "https://github.com/advisories/GHSA-j6fm-9rfm-j5hx",
+      "cve": "CVE-2026-41237",
+      "cvss": null
+    },
+    {
+      "title": "Froxlor has privilege escalation in SSH key synchronization via symlinked `authorized_keys` path",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "froxlor/froxlor",
+      "description": "Froxlor has privilege escalation in SSH key synchronization via symlinked `authorized_keys` path",
+      "link": "https://github.com/advisories/GHSA-mq5v-pxpm-8jw2",
+      "cve": "CVE-2026-41236",
+      "cvss": 8.8
+    },
+    {
+      "title": "Froxlor has an authorization bypass in FTP shell assignment via missing server-side `available_shells` enforcement",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "froxlor/froxlor",
+      "description": "Froxlor has an authorization bypass in FTP shell assignment via missing server-side `available_shells` enforcement",
+      "link": "https://github.com/advisories/GHSA-gcv3-5v9q-fmhh",
+      "cve": "CVE-2026-41235",
+      "cvss": 8.8
+    },
+    {
+      "title": "GitHub CLI has an incorrect authorization header in API requests to TUF repository mirrors via `gh attestation`, `gh release verify`, and `gh release verify-asset` commands",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/cli/cli/v2",
+      "description": "GitHub CLI has an incorrect authorization header in API requests to TUF repository mirrors via `gh attestation`, `gh release verify`, and `gh release verify-asset` commands",
+      "link": "https://github.com/advisories/GHSA-8xvp-7hj6-mcj9",
+      "cve": "CVE-2026-48501",
+      "cvss": 7.4
+    },
+    {
+      "title": "HaxCMS has a stored Cross-Site Scripting (XSS) bypass in its saveNode endpoint",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@haxtheweb/haxcms-nodejs",
+      "description": "HaxCMS has a stored Cross-Site Scripting (XSS) bypass in its saveNode endpoint",
+      "link": "https://github.com/advisories/GHSA-g2g8-95qg-v35h",
+      "cve": "CVE-2026-48527",
+      "cvss": 8.7
+    },
     {
       "title": "CVE-2026-31706: ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()",
       "date": "2026-05-29",
@@ -451,6 +517,465 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-43306",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43306"
+    },
+    {
+      "title": "CVE-2026-40379: Azure Entra ID Spoofing Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40379",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40379"
+    },
+    {
+      "title": "CVE-2026-32207: Azure Machine Learning Notebook Spoofing Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32207",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32207"
+    },
+    {
+      "title": "CVE-2026-33109: Azure Managed Instance for Apache Cassandra Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33109",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33109"
+    },
+    {
+      "title": "CVE-2026-40412: Azure Orbital Spatio Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40412",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40412"
+    },
+    {
+      "title": "CVE-2026-23652: Microsoft Power Pages Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-23652",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-23652"
+    },
+    {
+      "title": "CVE-2026-35430: Azure Privileged Identity Management (PIM) Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35430",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35430"
+    },
+    {
+      "title": "CVE-2026-40411: Azure Virtual Network Gateway Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40411",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40411"
+    },
+    {
+      "title": "CVE-2026-47280: Azure Resource Manager Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-47280",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47280"
+    },
+    {
+      "title": "CVE-2026-42827: M365 Copilot Information Disclosure Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42827",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42827"
+    },
+    {
+      "title": "CVE-2026-41090: Microsoft Copilot Tampering Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-41090",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-41090"
+    },
+    {
+      "title": "CVE-2026-26147: Azure Stack HCI Information Disclosure Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-26147",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26147"
+    },
+    {
+      "title": "CVE-2026-33843: Microsoft Azure Active Directory B2C Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33843",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33843"
+    },
+    {
+      "title": "CVE-2026-32204: Azure Monitor Agent Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32204",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32204"
+    },
+    {
+      "title": "CVE-2026-32177: .NET Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32177",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32177"
+    },
+    {
+      "title": "CVE-2026-21530: Windows Rich Text Edit Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-21530",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-21530"
+    },
+    {
+      "title": "CVE-2026-33117: Azure SDK for Java Security Feature Bypass Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33117",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33117"
+    },
+    {
+      "title": "CVE-2026-33834: Windows Event Logging Service Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33834",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33834"
+    },
+    {
+      "title": "CVE-2026-33839: Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33839",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33839"
+    },
+    {
+      "title": "CVE-2026-33840: Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33840",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33840"
+    },
+    {
+      "title": "CVE-2026-33841: Windows Kernel Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33841",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33841"
+    },
+    {
+      "title": "CVE-2026-34329: Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34329",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34329"
+    },
+    {
+      "title": "CVE-2026-34330: Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34330",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34330"
+    },
+    {
+      "title": "CVE-2026-34331: Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34331",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34331"
+    },
+    {
+      "title": "CVE-2026-34333: Windows Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34333",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34333"
+    },
+    {
+      "title": "CVE-2026-34342: Windows Print Spooler Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34342",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34342"
+    },
+    {
+      "title": "CVE-2026-34343: Windows Application Identity (AppID) Subsystem Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34343",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34343"
+    },
+    {
+      "title": "CVE-2026-34344: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34344",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34344"
+    },
+    {
+      "title": "CVE-2026-34345: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34345",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34345"
+    },
+    {
+      "title": "CVE-2026-34347: Windows Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34347",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34347"
+    },
+    {
+      "title": "CVE-2026-34350: Windows Storport Miniport Driver Denial of Service Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34350",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34350"
+    },
+    {
+      "title": "CVE-2026-34351: Windows TCP/IP Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34351",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34351"
+    },
+    {
+      "title": "CVE-2026-35415: Windows Storage Spaces Controller Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35415",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35415"
+    },
+    {
+      "title": "CVE-2026-35416: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35416",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35416"
+    },
+    {
+      "title": "CVE-2026-35417: Windows Win32k Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35417",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35417"
+    },
+    {
+      "title": "CVE-2026-35418: Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35418",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35418"
+    },
+    {
+      "title": "CVE-2026-35419: Windows DWM Core Library Information Disclosure  Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35419",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35419"
+    },
+    {
+      "title": "CVE-2026-35420: Windows Kernel Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35420",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35420"
+    },
+    {
+      "title": "CVE-2026-35421: Windows GDI Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35421",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35421"
+    },
+    {
+      "title": "CVE-2026-35422: Windows TCP/IP Driver Security Feature Bypass Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35422",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35422"
+    },
+    {
+      "title": "CVE-2026-35423: Windows 11 Telnet Client Information Disclosure Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35423",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35423"
+    },
+    {
+      "title": "CVE-2026-35424: Internet Key Exchange (IKE) Protocol Denial of Service Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35424",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35424"
+    },
+    {
+      "title": "CVE-2026-35433: .NET Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35433",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35433"
+    },
+    {
+      "title": "CVE-2026-35438: Windows Admin Center Elevation of Privilege Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35438",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35438"
+    },
+    {
+      "title": "CVE-2026-35439: Microsoft SharePoint Server Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35439",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35439"
+    },
+    {
+      "title": "CVE-2026-35440: Microsoft Word Information Disclosure Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-35440",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-35440"
+    },
+    {
+      "title": "CVE-2026-40360: Microsoft Excel Information Disclosure Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40360",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40360"
+    },
+    {
+      "title": "CVE-2026-40363: Microsoft Office Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40363",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40363"
+    },
+    {
+      "title": "CVE-2026-40364: Microsoft Word Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40364",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40364"
+    },
+    {
+      "title": "CVE-2026-40366: Microsoft Word Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40366",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40366"
+    },
+    {
+      "title": "CVE-2026-40368: Microsoft SharePoint Server Remote Code Execution Vulnerability",
+      "date": "2026-05-29",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40368",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40368"
+    },
+    {
+      "title": "USN-8338-2: Apache HTTP Server regression",
+      "date": "2026-05-29",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Apache HTTP Server regression",
+      "description": "USN-8338-1 fixed vulnerabilities in Apache HTTP Server. The update\nintroduced a regression that prevented mod_http2 from loading on Ubuntu\n18.04 LTS. This update fixes the problem.\n\nWe apologize for t...",
+      "link": "https://ubuntu.com/security/notices/USN-8338-2"
     },
     {
       "title": "DSA-6306-1 linux - security update",
@@ -7825,6 +8350,1612 @@
       "cvss": null
     },
     {
+      "title": "CVE-2026-10007: CVE-2026-10007",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10007.json",
+      "cve": "CVE-2026-10007",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9990: chromium-browser: Use after free in WebAppInstalls",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebAppInstalls",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9990.json",
+      "cve": "CVE-2026-9990",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9938: chromium-browser: Inappropriate implementation in V8",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in V8",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9938.json",
+      "cve": "CVE-2026-9938",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9976: chromium-browser: Inappropriate implementation in USB",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in USB",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9976.json",
+      "cve": "CVE-2026-9976",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9980: chromium-browser: Insufficient validation of untrusted input in Printing",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in Printing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9980.json",
+      "cve": "CVE-2026-9980",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-9917: chromium-browser: Uninitialized Use in WebGL",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Uninitialized Use in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9917.json",
+      "cve": "CVE-2026-9917",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9957: chromium-browser: Use after free in PDF",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in PDF",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9957.json",
+      "cve": "CVE-2026-9957",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9923: chromium-browser: Use after free in Skia",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9923.json",
+      "cve": "CVE-2026-9923",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-10004: chromium-browser: Insufficient validation of untrusted input in Passwords",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in Passwords",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10004.json",
+      "cve": "CVE-2026-10004",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-10020: chromium-browser: Insufficient validation of untrusted input in Skia",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10020.json",
+      "cve": "CVE-2026-10020",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9930: chromium-browser: Out of bounds write in Dawn",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in Dawn",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9930.json",
+      "cve": "CVE-2026-9930",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9915: chromium-browser: Heap buffer overflow in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Heap buffer overflow in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9915.json",
+      "cve": "CVE-2026-9915",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9887: chromium-browser: Use after free in Proxy",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Proxy",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9887.json",
+      "cve": "CVE-2026-9887",
+      "cvss": 9.8
+    },
+    {
+      "title": "CVE-2026-9881: chromium-browser: Use after free in Bluetooth",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Bluetooth",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9881.json",
+      "cve": "CVE-2026-9881",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-10021: chromium-browser: Insufficient validation of untrusted input in USB",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in USB",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10021.json",
+      "cve": "CVE-2026-10021",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-10013: chromium-browser: Use after free in WebCodecs",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebCodecs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10013.json",
+      "cve": "CVE-2026-10013",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9885: chromium-browser: Insufficient validation of untrusted input in UI",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in UI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9885.json",
+      "cve": "CVE-2026-9885",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9875: chromium-browser: Out of bounds read in WebGL",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9875.json",
+      "cve": "CVE-2026-9875",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9928: chromium-browser: Out of bounds read in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9928.json",
+      "cve": "CVE-2026-9928",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9970: chromium-browser: Use after free in WebGL",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9970.json",
+      "cve": "CVE-2026-9970",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9932: chromium-browser: Use after free in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9932.json",
+      "cve": "CVE-2026-9932",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9904: chromium-browser: Use after free in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9904.json",
+      "cve": "CVE-2026-9904",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9874: chromium-browser: Use after free in Dawn",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Dawn",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9874.json",
+      "cve": "CVE-2026-9874",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9922: chromium-browser: Use after free in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9922.json",
+      "cve": "CVE-2026-9922",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9959: chromium-browser: Race in WebRTC",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Race in WebRTC",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9959.json",
+      "cve": "CVE-2026-9959",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9951: chromium-browser: Use after free in UI",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in UI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9951.json",
+      "cve": "CVE-2026-9951",
+      "cvss": 9.3
+    },
+    {
+      "title": "CVE-2026-10000: chromium-browser: Use after free in Passwords",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Passwords",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10000.json",
+      "cve": "CVE-2026-10000",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9986: chromium-browser: Insufficient validation of untrusted input in OptimizationGuide",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in OptimizationGuide",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9986.json",
+      "cve": "CVE-2026-9986",
+      "cvss": 5.7
+    },
+    {
+      "title": "CVE-2026-10018: chromium-browser: Integer overflow in ANGLE",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10018.json",
+      "cve": "CVE-2026-10018",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9905: chromium-browser: Use after free in Accessibility",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Accessibility",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9905.json",
+      "cve": "CVE-2026-9905",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9879: chromium-browser: Out of bounds write in ANGLE",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9879.json",
+      "cve": "CVE-2026-9879",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9889: chromium-browser: Out of bounds read and write in Dawn",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read and write in Dawn",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9889.json",
+      "cve": "CVE-2026-9889",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9899: chromium-browser: Use after free in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9899.json",
+      "cve": "CVE-2026-9899",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9940: chromium-browser: Heap buffer overflow in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Heap buffer overflow in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9940.json",
+      "cve": "CVE-2026-9940",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9925: chromium-browser: Use after free in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9925.json",
+      "cve": "CVE-2026-9925",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9888: chromium-browser: Use after free in WebView",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebView",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9888.json",
+      "cve": "CVE-2026-9888",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9872: chromium-browser: Out of bounds write in GPU",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9872.json",
+      "cve": "CVE-2026-9872",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9934: chromium-browser: Use after free in Aura",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Aura",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9934.json",
+      "cve": "CVE-2026-9934",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9939: chromium-browser: Heap buffer overflow in WebCodecs",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Heap buffer overflow in WebCodecs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9939.json",
+      "cve": "CVE-2026-9939",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9948: chromium-browser: Use after free in Views",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Views",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9948.json",
+      "cve": "CVE-2026-9948",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9965: chromium-browser: Out of bounds write in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9965.json",
+      "cve": "CVE-2026-9965",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9994: chromium-browser: Use after free in Core",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Core",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9994.json",
+      "cve": "CVE-2026-9994",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9920: chromium-browser: Uninitialized Use in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Uninitialized Use in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9920.json",
+      "cve": "CVE-2026-9920",
+      "cvss": 5.8
+    },
+    {
+      "title": "CVE-2026-10003: chromium-browser: Use after free in Views",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Views",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10003.json",
+      "cve": "CVE-2026-10003",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9926: chromium-browser: Heap buffer overflow in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Heap buffer overflow in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9926.json",
+      "cve": "CVE-2026-9926",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9877: chromium-browser: Use after free in ANGLE",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9877.json",
+      "cve": "CVE-2026-9877",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9927: chromium-browser: Use after free in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9927.json",
+      "cve": "CVE-2026-9927",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9946: chromium-browser: Use after free in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9946.json",
+      "cve": "CVE-2026-9946",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9999: chromium-browser: Inappropriate implementation in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9999.json",
+      "cve": "CVE-2026-9999",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9882: chromium-browser: Integer overflow in ANGLE",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9882.json",
+      "cve": "CVE-2026-9882",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-9891: chromium-browser: Use after free in Extensions",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Extensions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9891.json",
+      "cve": "CVE-2026-9891",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9910: chromium-browser: Out of bounds memory access in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds memory access in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9910.json",
+      "cve": "CVE-2026-9910",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9890: chromium-browser: Use after free in XR",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in XR",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9890.json",
+      "cve": "CVE-2026-9890",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-10006: chromium-browser: Race in WebAudio",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Race in WebAudio",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10006.json",
+      "cve": "CVE-2026-10006",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-10022: chromium-browser: Type Confusion in V8",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Type Confusion in V8",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10022.json",
+      "cve": "CVE-2026-10022",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9958: chromium-browser: Use after free in PDFium",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in PDFium",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9958.json",
+      "cve": "CVE-2026-9958",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9909: chromium-browser: Integer overflow in Skia",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9909.json",
+      "cve": "CVE-2026-9909",
+      "cvss": 8
+    },
+    {
+      "title": "CVE-2026-9985: chromium-browser: Insufficient validation of untrusted input in Media",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in Media",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9985.json",
+      "cve": "CVE-2026-9985",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-10008: chromium-browser: Uninitialized Use in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Uninitialized Use in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10008.json",
+      "cve": "CVE-2026-10008",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9876: chromium-browser: Use after free in WebGL",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9876.json",
+      "cve": "CVE-2026-9876",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9908: chromium-browser: Out of bounds read in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9908.json",
+      "cve": "CVE-2026-9908",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9924: chromium-browser: Heap buffer overflow in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Heap buffer overflow in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9924.json",
+      "cve": "CVE-2026-9924",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9977: chromium-browser: Insufficient validation of untrusted input in WebShare",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in WebShare",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9977.json",
+      "cve": "CVE-2026-9977",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9988: chromium-browser: Use after free in WebRTC",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebRTC",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9988.json",
+      "cve": "CVE-2026-9988",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9993: chromium-browser: Use after free in Views",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Views",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9993.json",
+      "cve": "CVE-2026-9993",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9896: chromium-browser: Out of bounds write in V8",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in V8",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9896.json",
+      "cve": "CVE-2026-9896",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-10012: chromium-browser: Use after free in Skia",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10012.json",
+      "cve": "CVE-2026-10012",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9944: chromium-browser: Uninitialized Use in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Uninitialized Use in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9944.json",
+      "cve": "CVE-2026-9944",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-9898: chromium-browser: Insufficient validation of untrusted input in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9898.json",
+      "cve": "CVE-2026-9898",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9933: chromium-browser: Use after free in Input",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9933.json",
+      "cve": "CVE-2026-9933",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9953: chromium-browser: Out of bounds read in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9953.json",
+      "cve": "CVE-2026-9953",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9931: chromium-browser: Use after free in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9931.json",
+      "cve": "CVE-2026-9931",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9975: chromium-browser: Out of bounds read and write in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read and write in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9975.json",
+      "cve": "CVE-2026-9975",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9982: chromium-browser: Insufficient validation of untrusted input in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9982.json",
+      "cve": "CVE-2026-9982",
+      "cvss": 8
+    },
+    {
+      "title": "CVE-2026-9918: chromium-browser: Inappropriate implementation in Tint",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in Tint",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9918.json",
+      "cve": "CVE-2026-9918",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9984: chromium-browser: Use after free in UI",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in UI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9984.json",
+      "cve": "CVE-2026-9984",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9893: chromium-browser: Use after free in Skia",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9893.json",
+      "cve": "CVE-2026-9893",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9987: chromium-browser: Insufficient validation of untrusted input in WebAppInstalls",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in WebAppInstalls",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9987.json",
+      "cve": "CVE-2026-9987",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-10002: chromium-browser: Use after free in PDFium",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in PDFium",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10002.json",
+      "cve": "CVE-2026-10002",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9903: chromium-browser: Insufficient validation of untrusted input in Site Isolation",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in Site Isolation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9903.json",
+      "cve": "CVE-2026-9903",
+      "cvss": 8.7
+    },
+    {
+      "title": "CVE-2026-9914: chromium-browser: Insufficient validation of untrusted input in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9914.json",
+      "cve": "CVE-2026-9914",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9947: chromium-browser: Use after free in XML",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in XML",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9947.json",
+      "cve": "CVE-2026-9947",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9996: chromium-browser: Out of bounds read in WebRTC",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in WebRTC",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9996.json",
+      "cve": "CVE-2026-9996",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9966: chromium-browser: Integer overflow in XML",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in XML",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9966.json",
+      "cve": "CVE-2026-9966",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9936: chromium-browser: Use after free in GFX",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in GFX",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9936.json",
+      "cve": "CVE-2026-9936",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9981: chromium-browser: Inappropriate implementation in Skia",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9981.json",
+      "cve": "CVE-2026-9981",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9941: chromium-browser: Use after free in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9941.json",
+      "cve": "CVE-2026-9941",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-10019: chromium-browser: Integer overflow in ANGLE",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10019.json",
+      "cve": "CVE-2026-10019",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-9878: chromium-browser: Use after free in ANGLE",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9878.json",
+      "cve": "CVE-2026-9878",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9901: chromium-browser: Use after free in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9901.json",
+      "cve": "CVE-2026-9901",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9960: chromium-browser: Integer overflow in PDFium",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in PDFium",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9960.json",
+      "cve": "CVE-2026-9960",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9998: chromium-browser: Integer overflow in Skia",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9998.json",
+      "cve": "CVE-2026-9998",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-10017: chromium-browser: Out of bounds read in Headless",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in Headless",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10017.json",
+      "cve": "CVE-2026-10017",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9883: chromium-browser: Use after free in Base",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Base",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9883.json",
+      "cve": "CVE-2026-9883",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9995: chromium-browser: Use after free in WebXR",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebXR",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9995.json",
+      "cve": "CVE-2026-9995",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9961: chromium-browser: Use after free in SurfaceCapture",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in SurfaceCapture",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9961.json",
+      "cve": "CVE-2026-9961",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9900: chromium-browser: Out of bounds write in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9900.json",
+      "cve": "CVE-2026-9900",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9969: chromium-browser: Insufficient validation of untrusted input in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9969.json",
+      "cve": "CVE-2026-9969",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9897: chromium-browser: Use after free in DOM",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in DOM",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9897.json",
+      "cve": "CVE-2026-9897",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-10011: chromium-browser: Inappropriate implementation in Skia",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10011.json",
+      "cve": "CVE-2026-10011",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-9954: chromium-browser: Use after free in TabStrip",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in TabStrip",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9954.json",
+      "cve": "CVE-2026-9954",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9886: chromium-browser: Use after free in Base",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Base",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9886.json",
+      "cve": "CVE-2026-9886",
+      "cvss": 9.3
+    },
+    {
+      "title": "CVE-2026-9929: chromium-browser: Inappropriate implementation in WebGL",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9929.json",
+      "cve": "CVE-2026-9929",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9952: chromium-browser: Use after free in WebAudio",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebAudio",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9952.json",
+      "cve": "CVE-2026-9952",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9992: chromium-browser: Use after free in Network",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Network",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9992.json",
+      "cve": "CVE-2026-9992",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9907: chromium-browser: Out of bounds read in Dawn",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in Dawn",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9907.json",
+      "cve": "CVE-2026-9907",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9978: chromium-browser: Use after free in Glic",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Glic",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9978.json",
+      "cve": "CVE-2026-9978",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-10015: chromium-browser: Integer overflow in WTF",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in WTF",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10015.json",
+      "cve": "CVE-2026-10015",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9989: chromium-browser: Inappropriate implementation in Media",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in Media",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9989.json",
+      "cve": "CVE-2026-9989",
+      "cvss": 9.3
+    },
+    {
+      "title": "CVE-2026-9935: chromium-browser: Uninitialized Use in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Uninitialized Use in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9935.json",
+      "cve": "CVE-2026-9935",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-10014: chromium-browser: Use after free in WebMIDI",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebMIDI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10014.json",
+      "cve": "CVE-2026-10014",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9979: chromium-browser: Insufficient validation of untrusted input in Input",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in Input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9979.json",
+      "cve": "CVE-2026-9979",
+      "cvss": 7.9
+    },
+    {
+      "title": "CVE-2026-9911: chromium-browser: Integer overflow in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9911.json",
+      "cve": "CVE-2026-9911",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9921: chromium-browser: Uninitialized Use in WebGL",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Uninitialized Use in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9921.json",
+      "cve": "CVE-2026-9921",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-9949: chromium-browser: Use after free in Core",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Core",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9949.json",
+      "cve": "CVE-2026-9949",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9964: chromium-browser: Use after free in Bluetooth",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Bluetooth",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9964.json",
+      "cve": "CVE-2026-9964",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9967: chromium-browser: Out of bounds write in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9967.json",
+      "cve": "CVE-2026-9967",
+      "cvss": 9.3
+    },
+    {
+      "title": "CVE-2026-9913: chromium-browser: Inappropriate implementation in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9913.json",
+      "cve": "CVE-2026-9913",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9873: chromium-browser: Use after free in Network",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Network",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9873.json",
+      "cve": "CVE-2026-9873",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9906: chromium-browser: Out of bounds write in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9906.json",
+      "cve": "CVE-2026-9906",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9937: chromium-browser: Use after free in UI",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in UI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9937.json",
+      "cve": "CVE-2026-9937",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9912: chromium-browser: Inappropriate implementation in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9912.json",
+      "cve": "CVE-2026-9912",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9919: chromium-browser: Out of bounds read in WebGL",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9919.json",
+      "cve": "CVE-2026-9919",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-9962: chromium-browser: Use after free in WebRTC",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebRTC",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9962.json",
+      "cve": "CVE-2026-9962",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9968: chromium-browser: Integer overflow in V8",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in V8",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9968.json",
+      "cve": "CVE-2026-9968",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9895: chromium-browser: Out of bounds read in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9895.json",
+      "cve": "CVE-2026-9895",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9894: chromium-browser: Use after free in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9894.json",
+      "cve": "CVE-2026-9894",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9880: chromium-browser: Insufficient validation of untrusted input in WebGL",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Insufficient validation of untrusted input in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9880.json",
+      "cve": "CVE-2026-9880",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9972: chromium-browser: Uninitialized Use in Gamepad",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Uninitialized Use in Gamepad",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9972.json",
+      "cve": "CVE-2026-9972",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-10016: chromium-browser: Use after free in DOM",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in DOM",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10016.json",
+      "cve": "CVE-2026-10016",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9942: chromium-browser: Uninitialized Use in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Uninitialized Use in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9942.json",
+      "cve": "CVE-2026-9942",
+      "cvss": 8.7
+    },
+    {
+      "title": "CVE-2026-10005: chromium-browser: Use after free in WebAppInstalls",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in WebAppInstalls",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10005.json",
+      "cve": "CVE-2026-10005",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9892: chromium-browser: Inappropriate implementation in Skia",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9892.json",
+      "cve": "CVE-2026-9892",
+      "cvss": 8.7
+    },
+    {
+      "title": "CVE-2026-10010: chromium-browser: Inappropriate implementation in Input",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in Input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10010.json",
+      "cve": "CVE-2026-10010",
+      "cvss": 5.8
+    },
+    {
+      "title": "CVE-2026-9974: chromium-browser: Out of bounds write in GPU",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9974.json",
+      "cve": "CVE-2026-9974",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9991: chromium-browser: Inappropriate implementation in Media",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Inappropriate implementation in Media",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9991.json",
+      "cve": "CVE-2026-9991",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-10001: chromium-browser: Use after free in PerformanceManager",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in PerformanceManager",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10001.json",
+      "cve": "CVE-2026-10001",
+      "cvss": 8.7
+    },
+    {
+      "title": "CVE-2026-9983: chromium-browser: Type Confusion in Skia",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Type Confusion in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9983.json",
+      "cve": "CVE-2026-9983",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9945: chromium-browser: Use after free in Media",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Media",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9945.json",
+      "cve": "CVE-2026-9945",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9884: chromium-browser: Use after free in Browser",
+      "date": "2026-05-27",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Browser",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9884.json",
+      "cve": "CVE-2026-9884",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-9916: chromium-browser: Out of bounds write in ANGLE",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9916.json",
+      "cve": "CVE-2026-9916",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-9973: chromium-browser: Out of bounds write in V8",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds write in V8",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9973.json",
+      "cve": "CVE-2026-9973",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9997: chromium-browser: Use after free in Input",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9997.json",
+      "cve": "CVE-2026-9997",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-10009: chromium-browser: Integer overflow in Skia",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10009.json",
+      "cve": "CVE-2026-10009",
+      "cvss": 9
+    },
+    {
+      "title": "CVE-2026-9943: chromium-browser: Out of bounds read in WebGL",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9943.json",
+      "cve": "CVE-2026-9943",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-9902: chromium-browser: Use after free in Accessibility",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in Accessibility",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9902.json",
+      "cve": "CVE-2026-9902",
+      "cvss": 9
+    },
+    {
       "title": "CrowdSec AppSec silently drops request body for chunked / HTTP-2 requests",
       "date": "2026-05-27",
       "severity": "HIGH",
@@ -10983,6 +13114,1263 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-05-29T15:55:41.596Z",
+      "logs": [
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] debian - 14 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[SUCCESS] github - 110 patches (6 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[SUCCESS] microsoft - 500 patches (50 new)",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 12 patches, no changes",
+        "[SUCCESS] redhat - 595 patches (146 new)",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 49 patches (1 new)"
+      ],
+      "newPatchCount": 203,
+      "totalPatches": 1293,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "github",
+        "microsoft",
+        "ubuntu",
+        "debian",
+        "edge",
+        "oracle-db",
+        "paloalto",
+        "redhat",
+        "signal",
+        "slack",
+        "chrome",
+        "cisco",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "Axios has a Patch Bypass: Proxy-Authorization Header Injection via Prototype Pollution — Incomplete Null-Prototype Fix",
+          "date": "2026-05-29",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Froxlor has an incomplete fix for CVE-2026-30932",
+          "date": "2026-05-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Froxlor has privilege escalation in SSH key synchronization via symlinked `authorized_keys` path",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Froxlor has an authorization bypass in FTP shell assignment via missing server-side `available_shells` enforcement",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "GitHub CLI has an incorrect authorization header in API requests to TUF repository mirrors via `gh attestation`, `gh release verify`, and `gh release verify-asset` commands",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "HaxCMS has a stored Cross-Site Scripting (XSS) bypass in its saveNode endpoint",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40379: Azure Entra ID Spoofing Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-32207: Azure Machine Learning Notebook Spoofing Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33109: Azure Managed Instance for Apache Cassandra Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40412: Azure Orbital Spatio Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-23652: Microsoft Power Pages Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35430: Azure Privileged Identity Management (PIM) Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40411: Azure Virtual Network Gateway Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-47280: Azure Resource Manager Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42827: M365 Copilot Information Disclosure Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-41090: Microsoft Copilot Tampering Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-26147: Azure Stack HCI Information Disclosure Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33843: Microsoft Azure Active Directory B2C Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-32204: Azure Monitor Agent Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-32177: .NET Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-21530: Windows Rich Text Edit Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33117: Azure SDK for Java Security Feature Bypass Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33834: Windows Event Logging Service Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33839: Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33840: Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33841: Windows Kernel Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34329: Microsoft Message Queuing (MSMQ) Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34330: Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34331: Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34333: Windows Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34342: Windows Print Spooler Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34343: Windows Application Identity (AppID) Subsystem Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34344: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34345: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34347: Windows Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34350: Windows Storport Miniport Driver Denial of Service Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34351: Windows TCP/IP Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35415: Windows Storage Spaces Controller Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35416: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35417: Windows Win32k Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35418: Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35419: Windows DWM Core Library Information Disclosure  Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35420: Windows Kernel Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35421: Windows GDI Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35422: Windows TCP/IP Driver Security Feature Bypass Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35423: Windows 11 Telnet Client Information Disclosure Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35424: Internet Key Exchange (IKE) Protocol Denial of Service Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35433: .NET Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35438: Windows Admin Center Elevation of Privilege Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35439: Microsoft SharePoint Server Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-35440: Microsoft Word Information Disclosure Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40360: Microsoft Excel Information Disclosure Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40363: Microsoft Office Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40364: Microsoft Word Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40366: Microsoft Word Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40368: Microsoft SharePoint Server Remote Code Execution Vulnerability",
+          "date": "2026-05-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10007: CVE-2026-10007",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9990: chromium-browser: Use after free in WebAppInstalls",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9938: chromium-browser: Inappropriate implementation in V8",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9976: chromium-browser: Inappropriate implementation in USB",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9980: chromium-browser: Insufficient validation of untrusted input in Printing",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9917: chromium-browser: Uninitialized Use in WebGL",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9957: chromium-browser: Use after free in PDF",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9923: chromium-browser: Use after free in Skia",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10004: chromium-browser: Insufficient validation of untrusted input in Passwords",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10020: chromium-browser: Insufficient validation of untrusted input in Skia",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9930: chromium-browser: Out of bounds write in Dawn",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9915: chromium-browser: Heap buffer overflow in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9887: chromium-browser: Use after free in Proxy",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9881: chromium-browser: Use after free in Bluetooth",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10021: chromium-browser: Insufficient validation of untrusted input in USB",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10013: chromium-browser: Use after free in WebCodecs",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9885: chromium-browser: Insufficient validation of untrusted input in UI",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9875: chromium-browser: Out of bounds read in WebGL",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9928: chromium-browser: Out of bounds read in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9970: chromium-browser: Use after free in WebGL",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9932: chromium-browser: Use after free in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9904: chromium-browser: Use after free in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9874: chromium-browser: Use after free in Dawn",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9922: chromium-browser: Use after free in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9959: chromium-browser: Race in WebRTC",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9951: chromium-browser: Use after free in UI",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10000: chromium-browser: Use after free in Passwords",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9986: chromium-browser: Insufficient validation of untrusted input in OptimizationGuide",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10018: chromium-browser: Integer overflow in ANGLE",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9905: chromium-browser: Use after free in Accessibility",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9879: chromium-browser: Out of bounds write in ANGLE",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9889: chromium-browser: Out of bounds read and write in Dawn",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9899: chromium-browser: Use after free in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9940: chromium-browser: Heap buffer overflow in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9925: chromium-browser: Use after free in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9888: chromium-browser: Use after free in WebView",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9872: chromium-browser: Out of bounds write in GPU",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9934: chromium-browser: Use after free in Aura",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9939: chromium-browser: Heap buffer overflow in WebCodecs",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9948: chromium-browser: Use after free in Views",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9965: chromium-browser: Out of bounds write in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9994: chromium-browser: Use after free in Core",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9920: chromium-browser: Uninitialized Use in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10003: chromium-browser: Use after free in Views",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9926: chromium-browser: Heap buffer overflow in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9877: chromium-browser: Use after free in ANGLE",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9927: chromium-browser: Use after free in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9946: chromium-browser: Use after free in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9999: chromium-browser: Inappropriate implementation in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9882: chromium-browser: Integer overflow in ANGLE",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9891: chromium-browser: Use after free in Extensions",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9910: chromium-browser: Out of bounds memory access in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9890: chromium-browser: Use after free in XR",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10006: chromium-browser: Race in WebAudio",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10022: chromium-browser: Type Confusion in V8",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9958: chromium-browser: Use after free in PDFium",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9909: chromium-browser: Integer overflow in Skia",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9985: chromium-browser: Insufficient validation of untrusted input in Media",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10008: chromium-browser: Uninitialized Use in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9876: chromium-browser: Use after free in WebGL",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9908: chromium-browser: Out of bounds read in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9924: chromium-browser: Heap buffer overflow in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9977: chromium-browser: Insufficient validation of untrusted input in WebShare",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9988: chromium-browser: Use after free in WebRTC",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9993: chromium-browser: Use after free in Views",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9896: chromium-browser: Out of bounds write in V8",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10012: chromium-browser: Use after free in Skia",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9944: chromium-browser: Uninitialized Use in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9898: chromium-browser: Insufficient validation of untrusted input in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9933: chromium-browser: Use after free in Input",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9953: chromium-browser: Out of bounds read in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9931: chromium-browser: Use after free in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9975: chromium-browser: Out of bounds read and write in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9982: chromium-browser: Insufficient validation of untrusted input in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9918: chromium-browser: Inappropriate implementation in Tint",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9984: chromium-browser: Use after free in UI",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9893: chromium-browser: Use after free in Skia",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9987: chromium-browser: Insufficient validation of untrusted input in WebAppInstalls",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10002: chromium-browser: Use after free in PDFium",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9903: chromium-browser: Insufficient validation of untrusted input in Site Isolation",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9914: chromium-browser: Insufficient validation of untrusted input in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9947: chromium-browser: Use after free in XML",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9996: chromium-browser: Out of bounds read in WebRTC",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9966: chromium-browser: Integer overflow in XML",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9936: chromium-browser: Use after free in GFX",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9981: chromium-browser: Inappropriate implementation in Skia",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9941: chromium-browser: Use after free in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10019: chromium-browser: Integer overflow in ANGLE",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9878: chromium-browser: Use after free in ANGLE",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9901: chromium-browser: Use after free in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9960: chromium-browser: Integer overflow in PDFium",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9998: chromium-browser: Integer overflow in Skia",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10017: chromium-browser: Out of bounds read in Headless",
+          "date": "2026-05-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9883: chromium-browser: Use after free in Base",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9995: chromium-browser: Use after free in WebXR",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9961: chromium-browser: Use after free in SurfaceCapture",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9900: chromium-browser: Out of bounds write in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9969: chromium-browser: Insufficient validation of untrusted input in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9897: chromium-browser: Use after free in DOM",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10011: chromium-browser: Inappropriate implementation in Skia",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9954: chromium-browser: Use after free in TabStrip",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9886: chromium-browser: Use after free in Base",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9929: chromium-browser: Inappropriate implementation in WebGL",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9952: chromium-browser: Use after free in WebAudio",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9992: chromium-browser: Use after free in Network",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9907: chromium-browser: Out of bounds read in Dawn",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9978: chromium-browser: Use after free in Glic",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10015: chromium-browser: Integer overflow in WTF",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9989: chromium-browser: Inappropriate implementation in Media",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9935: chromium-browser: Uninitialized Use in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10014: chromium-browser: Use after free in WebMIDI",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9979: chromium-browser: Insufficient validation of untrusted input in Input",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9911: chromium-browser: Integer overflow in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9921: chromium-browser: Uninitialized Use in WebGL",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9949: chromium-browser: Use after free in Core",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9964: chromium-browser: Use after free in Bluetooth",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9967: chromium-browser: Out of bounds write in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9913: chromium-browser: Inappropriate implementation in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9873: chromium-browser: Use after free in Network",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9906: chromium-browser: Out of bounds write in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9937: chromium-browser: Use after free in UI",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9912: chromium-browser: Inappropriate implementation in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9919: chromium-browser: Out of bounds read in WebGL",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9962: chromium-browser: Use after free in WebRTC",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9968: chromium-browser: Integer overflow in V8",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9895: chromium-browser: Out of bounds read in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9894: chromium-browser: Use after free in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9880: chromium-browser: Insufficient validation of untrusted input in WebGL",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9972: chromium-browser: Uninitialized Use in Gamepad",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10016: chromium-browser: Use after free in DOM",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9942: chromium-browser: Uninitialized Use in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10005: chromium-browser: Use after free in WebAppInstalls",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9892: chromium-browser: Inappropriate implementation in Skia",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10010: chromium-browser: Inappropriate implementation in Input",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9974: chromium-browser: Out of bounds write in GPU",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9991: chromium-browser: Inappropriate implementation in Media",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10001: chromium-browser: Use after free in PerformanceManager",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9983: chromium-browser: Type Confusion in Skia",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9945: chromium-browser: Use after free in Media",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9884: chromium-browser: Use after free in Browser",
+          "date": "2026-05-27",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9916: chromium-browser: Out of bounds write in ANGLE",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9973: chromium-browser: Out of bounds write in V8",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9997: chromium-browser: Use after free in Input",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10009: chromium-browser: Integer overflow in Skia",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9943: chromium-browser: Out of bounds read in WebGL",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9902: chromium-browser: Use after free in Accessibility",
+          "date": "2026-05-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8338-2: Apache HTTP Server regression",
+          "date": "2026-05-29",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-05-29T12:48:18.862Z",
       "logs": [
@@ -18656,48 +22044,6 @@
     },
     {
       "timestamp": "2026-05-24T19:25:52.754Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 263 patches, no changes",
-        "[INFO] microsoft - 560 patches, no changes",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] paloalto - 10 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 68 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 34 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 979,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "github",
-        "aws",
-        "ubuntu",
-        "crowdstrike",
-        "edge",
-        "postgresql",
-        "redhat",
-        "chrome",
-        "cisco",
-        "paloalto",
-        "mssql",
-        "signal",
-        "cloudflare"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-24T19:21:46.346Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",
