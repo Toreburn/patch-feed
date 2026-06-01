@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-01T04:52:01.559Z",
-  "newPatches": 4,
+  "lastUpdated": "2026-06-01T11:42:03.499Z",
+  "newPatches": 0,
   "patches": [
     {
       "title": "DSA-6312-1 symfony - security update",
@@ -13562,6 +13562,44 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-01T11:42:03.498Z",
+      "logs": [
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] debian - 20 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 187 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 450 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 13 patches, no changes",
+        "[INFO] redhat - 595 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 43 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 1323,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "github",
+        "paloalto",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "edge",
+        "oracle-db",
+        "slack",
+        "chrome",
+        "cisco",
+        "gitlab"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-06-01T04:52:01.559Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
@@ -21901,193 +21939,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-27T20:26:45.552Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[SUCCESS] chrome - 2 patches (2 new)",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 15 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 133 patches (15 new)",
-        "[SUCCESS] gitlab - 2 patches (2 new)",
-        "[INFO] microsoft - 459 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 25 patches, no changes",
-        "[SUCCESS] signal - 2 patches (1 new)",
-        "[SUCCESS] ubuntu - 48 patches (5 new)"
-      ],
-      "newPatchCount": 25,
-      "totalPatches": 692,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "chrome",
-        "github",
-        "gitlab",
-        "microsoft",
-        "signal",
-        "ubuntu",
-        "debian",
-        "edge",
-        "redhat",
-        "aws",
-        "crowdstrike",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "chrome",
-          "title": "Chrome Stable for iOS Update",
-          "date": "2026-05-27",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Stable Channel Update for Desktop",
-          "date": "2026-05-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Symfony has an HtmlSanitizer allowLinkHosts() / allowMediaHosts() Bypass via URL-Parser Differentials and <area> Misclassification",
-          "date": "2026-05-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Symfony's HtmlSanitizer URL Attributes Pass Through BiDi Override Characters → Visual href Spoofing",
-          "date": "2026-05-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "CrowdSec AppSec silently drops request body for chunked / HTTP-2 requests",
-          "date": "2026-05-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "CrowdSec LAPI: Denial of Service via Unbounded Gzip Decompression",
-          "date": "2026-05-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Deno's TLS retry copies stale upgrade hook, risking plaintext traffic",
-          "date": "2026-05-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Langroid has Prompt to SQL Injection, Leading to RCE",
-          "date": "2026-05-27",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "LiquidJS is Vulnerable to Remote Code Execution",
-          "date": "2026-05-27",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "LiquidJS Vulnerable to ReDoS via Quadratic Backtracking in `strip_html` Filter Regex",
-          "date": "2026-05-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Kirby CMS vulnerable to cross-site scripting (XSS) from links in KirbyTags and image blocks in the site frontend",
-          "date": "2026-05-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "LiquidJS has a memory and render limit bypass via unbounded width padding in `date` filter (strftime)",
-          "date": "2026-05-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Kirby CMS's content locks disclose IDs and emails of inaccessible users from `users.access/list` permissions",
-          "date": "2026-05-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Pimcore: Missing Authorization in WebDAV MOVE via unchecked asset move handling",
-          "date": "2026-05-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Pimcore has Unsafe PHP Deserialization in Multiple Locations Without allowed_classes Restriction",
-          "date": "2026-05-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Symfony has a UrlGenerator Route-Requirement Bypass via Unanchored Regex Alternation → Off-Site //host URL Injection",
-          "date": "2026-05-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Symfony Vulnerable to Identity Spoofing via Unanchored DN Regex in X509Authenticator",
-          "date": "2026-05-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "gitlab",
-          "title": "GitLab Patch Release: 18.9.8, 18.8.10, 18.7.7, 18.6.8, 18.5.7",
-          "date": "2026-05-27",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "gitlab",
-          "title": "GitLab Patch Release: 19.0.1, 18.11.4, 18.10.7",
-          "date": "2026-05-27",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "signal",
-          "title": "CrowdSec AppSec silently drops request body for chunked / HTTP-2 requests",
-          "date": "2026-05-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8326-1: Foomuuri vulnerabilities",
-          "date": "2026-05-27",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8325-1: tgt vulnerability",
-          "date": "2026-05-27",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8324-1: Apache Tika vulnerabilities",
-          "date": "2026-05-27",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8323-1: Postorius vulnerability",
-          "date": "2026-05-27",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8322-1: Apache Commons BeanUtils vulnerability",
-          "date": "2026-05-27",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
