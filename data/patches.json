@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-01T04:25:02.081Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-01T04:52:01.559Z",
+  "newPatches": 4,
   "patches": [
     {
       "title": "DSA-6312-1 symfony - security update",
@@ -10,6 +10,50 @@
       "component": "symfony",
       "description": "Multiple vulnerabilities have been found in the Symfony PHP framework which could lead to a bypass of security controls, cross-site scripting, denial of service, SQL injection, email header injection,...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00223.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6316-1 chromium - security update",
+      "date": "2026-05-31",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6316-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00227.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6315-1 cyborg - security update",
+      "date": "2026-05-31",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "cyborg",
+      "description": "Two security vulnerabilities have been discovered in Cyborg, the OpenStack component for management of hardware accelerators, which could result in incomplete access controls. https://security-tracker...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00226.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6314-1 swift - security update",
+      "date": "2026-05-31",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "swift",
+      "description": "Alistair Coles discovered that the s3api middleware of Swift, a distributed virtual object store, was susceptible to denial of service. The oldstable distribution (bookworm) is not affected. https://s...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00225.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6313-1 dovecot - security update",
+      "date": "2026-05-31",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "dovecot",
+      "description": "Multiple vulnerabilities have been discovered in the Dovecot IMAP server which way result in denial of service, SQL injection or man-in-the-midddle attacks https://security-tracker.debian.org/tracker/...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00224.html",
       "cve": "",
       "cves": []
     },
@@ -13518,6 +13562,69 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-01T04:52:01.559Z",
+      "logs": [
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[SUCCESS] debian - 20 patches (4 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 187 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 450 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 13 patches, no changes",
+        "[INFO] redhat - 595 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 43 patches, no changes"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 1323,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "github",
+        "paloalto",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "edge",
+        "oracle-db",
+        "slack",
+        "chrome",
+        "cisco",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6316-1 chromium - security update",
+          "date": "2026-05-31",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6315-1 cyborg - security update",
+          "date": "2026-05-31",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6314-1 swift - security update",
+          "date": "2026-05-31",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6313-1 dovecot - security update",
+          "date": "2026-05-31",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-01T04:25:02.081Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
@@ -21981,38 +22088,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-05-27T20:22:51.549Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 15 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 118 patches, no changes",
-        "[INFO] microsoft - 459 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 25 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 43 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 667,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 10,
-      "vendors": [
-        "github",
-        "microsoft",
-        "ubuntu",
-        "debian",
-        "edge",
-        "redhat",
-        "signal",
-        "aws",
-        "crowdstrike",
-        "postgresql"
-      ],
-      "newPatches": []
     }
   ]
 }
