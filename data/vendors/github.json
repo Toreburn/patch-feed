@@ -1,16 +1,159 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-06-01T11:46:36.570Z",
+  "lastUpdated": "2026-06-01T17:52:20.102Z",
   "health": {
-    "lastFetchAttempt": "2026-06-01T11:46:36.570Z",
+    "lastFetchAttempt": "2026-06-01T17:52:20.102Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-01T11:46:36.570Z",
+    "lastFetchNewPatches": 13,
+    "lastSuccessWithData": "2026-06-01T17:52:20.102Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "kas checks out SHA-like git branches as valid commits",
+      "date": "2026-06-01",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "kas",
+      "description": "kas checks out SHA-like git branches as valid commits",
+      "link": "https://github.com/advisories/GHSA-qjwp-hrq6-r26r",
+      "cve": "CVE-2026-47191",
+      "cvss": null
+    },
+    {
+      "title": "praisonai-platform: Any workspace member can delete the entire workspace via DELETE /workspaces/{id}",
+      "date": "2026-06-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "praisonai-platform",
+      "description": "praisonai-platform: Any workspace member can delete the entire workspace via DELETE /workspaces/{id}",
+      "link": "https://github.com/advisories/GHSA-g8rr-7rj2-f627",
+      "cve": "CVE-2026-47412",
+      "cvss": 8.1
+    },
+    {
+      "title": "praisonai-platform: Issue endpoints accept any issue_id without workspace ownership check, cross-workspace read/update/delete IDOR",
+      "date": "2026-06-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "praisonai-platform",
+      "description": "praisonai-platform: Issue endpoints accept any issue_id without workspace ownership check, cross-workspace read/update/delete IDOR",
+      "link": "https://github.com/advisories/GHSA-xwq8-frcg-77q8",
+      "cve": "CVE-2026-47415",
+      "cvss": 8.3
+    },
+    {
+      "title": "praisonai-platform: Any workspace member can add arbitrary user as owner via POST /workspaces/{id}/members",
+      "date": "2026-06-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "praisonai-platform",
+      "description": "praisonai-platform: Any workspace member can add arbitrary user as owner via POST /workspaces/{id}/members",
+      "link": "https://github.com/advisories/GHSA-8g2p-pqm3-fcfh",
+      "cve": "CVE-2026-47413",
+      "cvss": 9.6
+    },
+    {
+      "title": "praisonai-platform: Any workspace member can rewrite workspace name, description, and settings via PATCH /workspaces/{id}",
+      "date": "2026-06-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "praisonai-platform",
+      "description": "praisonai-platform: Any workspace member can rewrite workspace name, description, and settings via PATCH /workspaces/{id}",
+      "link": "https://github.com/advisories/GHSA-rcmc-q9rj-4wmq",
+      "cve": "CVE-2026-47411",
+      "cvss": 6.5
+    },
+    {
+      "title": "praisonai-platform: Comment endpoints accept any issue_id without workspace ownership check, cross-workspace comment read and post IDOR",
+      "date": "2026-06-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "praisonai-platform",
+      "description": "praisonai-platform: Comment endpoints accept any issue_id without workspace ownership check, cross-workspace comment read and post IDOR",
+      "link": "https://github.com/advisories/GHSA-cp4f-5m9r-5jc2",
+      "cve": "CVE-2026-47417",
+      "cvss": 8.1
+    },
+    {
+      "title": "praisonai-platform: Project endpoints accept any project_id without workspace ownership check, cross-workspace read/update/delete IDOR",
+      "date": "2026-06-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "praisonai-platform",
+      "description": "praisonai-platform: Project endpoints accept any project_id without workspace ownership check, cross-workspace read/update/delete IDOR",
+      "link": "https://github.com/advisories/GHSA-943m-6wx2-rc2j",
+      "cve": "CVE-2026-47418",
+      "cvss": 8.1
+    },
+    {
+      "title": "rattler has an entry-point path traversal in noarch:python install (arbitrary file write)",
+      "date": "2026-06-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "rattler",
+      "description": "rattler has an entry-point path traversal in noarch:python install (arbitrary file write)",
+      "link": "https://github.com/advisories/GHSA-q53q-5r4j-5729",
+      "cve": "CVE-2026-47425",
+      "cvss": null
+    },
+    {
+      "title": "Vitest browser mode serves unsanitized otelCarrier query parameter as inline script",
+      "date": "2026-06-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@vitest/browser, @vitest/browser",
+      "description": "Vitest browser mode serves unsanitized otelCarrier query parameter as inline script",
+      "link": "https://github.com/advisories/GHSA-2h32-95rg-cppp",
+      "cve": "CVE-2026-47428",
+      "cvss": 9.6
+    },
+    {
+      "title": "When Vitest UI server is listening, arbitrary file can be read and executed",
+      "date": "2026-06-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vitest",
+      "description": "When Vitest UI server is listening, arbitrary file can be read and executed",
+      "link": "https://github.com/advisories/GHSA-5xrq-8626-4rwp",
+      "cve": "CVE-2026-47429",
+      "cvss": 9.8
+    },
+    {
+      "title": "DOMPurify XSS via selectedcontent re-clone",
+      "date": "2026-06-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "dompurify",
+      "description": "DOMPurify XSS via selectedcontent re-clone",
+      "link": "https://github.com/advisories/GHSA-87xg-pxx2-7hvx",
+      "cve": "CVE-2026-47423",
+      "cvss": 8.2
+    },
+    {
+      "title": "Nezha's authenticated agents can forge service-monitor results for other users' services",
+      "date": "2026-06-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha, github.com/nezhahq/nezha",
+      "description": "Nezha's authenticated agents can forge service-monitor results for other users' services",
+      "link": "https://github.com/advisories/GHSA-4g6j-g789-rghm",
+      "cve": "CVE-2026-48119",
+      "cvss": 7.1
+    },
+    {
+      "title": "@agenticmail/mcp Missing Authentication for Critical Function",
+      "date": "2026-06-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@agenticmail/mcp",
+      "description": "@agenticmail/mcp Missing Authentication for Critical Function",
+      "link": "https://github.com/advisories/GHSA-63gr-g7jc-v8rg",
+      "cve": "",
+      "cvss": null
+    },
     {
       "title": "Axios has a Patch Bypass: Proxy-Authorization Header Injection via Prototype Pollution — Incomplete Null-Prototype Fix",
       "date": "2026-05-29",
