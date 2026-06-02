@@ -1,16 +1,104 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-06-02T10:46:30.140Z",
+  "lastUpdated": "2026-06-02T16:44:12.722Z",
   "health": {
-    "lastFetchAttempt": "2026-06-02T10:46:30.140Z",
+    "lastFetchAttempt": "2026-06-02T16:44:12.722Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 594,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-02T10:46:30.140Z",
+    "lastFetchParsedItems": 611,
+    "lastFetchNewPatches": 17,
+    "lastSuccessWithData": "2026-06-02T16:44:12.722Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-1784: ose-cluster-ingress-operator: Remote Code Execution Through HAProxy Configuration Injection",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ose-cluster-ingress-operator: Remote Code Execution Through HAProxy Configuration Injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-1784.json",
+      "cve": "CVE-2026-1784",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2024-52011: launch-editor: vite: launch-editor: Arbitrary command execution via insufficient file argument sanitization",
+      "date": "2026-06-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "launch-editor: vite: launch-editor: Arbitrary command execution via insufficient file argument sanitization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2024-52011.json",
+      "cve": "CVE-2024-52011",
+      "cvss": 8.3
+    },
+    {
+      "title": "CVE-2026-43958: rrdtool: rrdtool: Stack buffer overflow allows local code execution or denial of service",
+      "date": "2026-06-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rrdtool: rrdtool: Stack buffer overflow allows local code execution or denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43958.json",
+      "cve": "CVE-2026-43958",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-10118: poppler: Integer overflow in Poppler SplashOutputDev::tilingPatternFill leads to heap buffer overflow via unchecked dime",
+      "date": "2026-06-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "poppler: Integer overflow in Poppler SplashOutputDev::tilingPatternFill leads to heap buffer overflow via unchecked dimension multiplication",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10118.json",
+      "cve": "CVE-2026-10118",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-10230: assimp: Assimp: Local heap-based buffer overflow in Half-Life 1 MDL Loader",
+      "date": "2026-06-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "assimp: Assimp: Local heap-based buffer overflow in Half-Life 1 MDL Loader",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10230.json",
+      "cve": "CVE-2026-10230",
+      "cvss": 5.6
+    },
+    {
+      "title": "CVE-2026-10201: assimp: Assimp: Denial of Service via divide-by-zero in FBXExporter",
+      "date": "2026-05-31",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "assimp: Assimp: Denial of Service via divide-by-zero in FBXExporter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10201.json",
+      "cve": "CVE-2026-10201",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-10200: assimp: Assimp: Heap-based buffer overflow in glTFCommon::CopyValue function",
+      "date": "2026-05-31",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "assimp: Assimp: Heap-based buffer overflow in glTFCommon::CopyValue function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10200.json",
+      "cve": "CVE-2026-10200",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-46242: kernel: eventpoll: fix ep_remove struct eventpoll / struct file UAF",
+      "date": "2026-05-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: eventpoll: fix ep_remove struct eventpoll / struct file UAF",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46242.json",
+      "cve": "CVE-2026-46242",
+      "cvss": 7
+    },
     {
       "title": "CVE-2026-10101: assisted-service: assisted-service: InfraEnv status leaks referenced pull-secret contents to namespace view users",
       "date": "2026-05-29",
@@ -21,6 +109,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10101.json",
       "cve": "CVE-2026-10101",
       "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-46344: liboqs: liboqs: Denial of Service due to out-of-bounds read in XMSS/XMSS^MT signature verification",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "liboqs: liboqs: Denial of Service due to out-of-bounds read in XMSS/XMSS^MT signature verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46344.json",
+      "cve": "CVE-2026-46344",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-44518: liboqs: liboqs: Denial of Service due to out-of-bounds read in XMSS/XMSS^MT signature verification",
+      "date": "2026-05-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "liboqs: liboqs: Denial of Service due to out-of-bounds read in XMSS/XMSS^MT signature verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44518.json",
+      "cve": "CVE-2026-44518",
+      "cvss": 5.3
     },
     {
       "title": "CVE-2026-9804: kubevirt: kubevirt: VMExport directory symlink escape enables exporter pod file read",
@@ -6414,6 +6524,72 @@
       "cvss": 7.8
     },
     {
+      "title": "CVE-2026-9759: wireshark: NULL Pointer Dereference in Wireshark",
+      "date": "2026-05-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wireshark: NULL Pointer Dereference in Wireshark",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9759.json",
+      "cve": "CVE-2026-9759",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-9950: chromium-browser: chromium-browser: Insufficient validation of untrusted input in iOS",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Insufficient validation of untrusted input in iOS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9950.json",
+      "cve": "CVE-2026-9950",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9955: chromium-browser: chromium-browser: Inappropriate implementation in iOS",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Inappropriate implementation in iOS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9955.json",
+      "cve": "CVE-2026-9955",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9956: chromium-browser: chromium-browser: Use after free in iOS",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Use after free in iOS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9956.json",
+      "cve": "CVE-2026-9956",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9963: chromium-browser: chromium-browser: Uninitialized Use in iOS",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Uninitialized Use in iOS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9963.json",
+      "cve": "CVE-2026-9963",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-9971: chromium-browser: chromium-browser: Inappropriate implementation in iOS",
+      "date": "2026-05-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Inappropriate implementation in iOS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9971.json",
+      "cve": "CVE-2026-9971",
+      "cvss": 8.8
+    },
+    {
       "title": "CVE-2026-9530: libredwg: GNU LibreDWG: Denial of Service via out-of-bounds read in Dwgbmp Utility",
       "date": "2026-05-26",
       "severity": "LOW",
@@ -6555,6 +6731,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4408.json",
       "cve": "CVE-2026-4408",
       "cvss": 9
+    },
+    {
+      "title": "CVE-2026-46243: kernel: Linux kernel: smb: client: reject userspace cifs.spnego descriptions",
+      "date": "2026-05-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Linux kernel: smb: client: reject userspace cifs.spnego descriptions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46243.json",
+      "cve": "CVE-2026-46243",
+      "cvss": 7.8
     },
     {
       "title": "CVE-2026-2651: github.com/mlflow/mlflow: MLflow: Arbitrary code execution via unauthorized multipart upload access",
