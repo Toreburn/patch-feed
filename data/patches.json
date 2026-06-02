@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-06-02T04:18:17.156Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-02T04:41:00.766Z",
+  "newPatches": 2,
   "patches": [
+    {
+      "title": "CVE-2026-0251 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
+      "date": "2026-06-02",
+      "severity": "MEDIUM",
+      "vendor": "paloalto",
+      "component": "GlobalProtect",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0251",
+      "cve": "CVE-2026-0251"
+    },
     {
       "title": "macOS 26.5.1",
       "date": "2026-06-01",
@@ -351,6 +361,15 @@
       "component": "Exim",
       "description": "Warisjeet Singh discovered that Exim with SUPPORT_PROXY enabled did not\nproperly handle memory before SMTP authentication. A remote attacker could\npossibly use this issue to obtain sensitive informati...",
       "link": "https://ubuntu.com/security/notices/USN-8353-1"
+    },
+    {
+      "title": "USN-8361-1: Linux kernel vulnerability",
+      "date": "2026-06-01",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel",
+      "description": "A security issue was discovered in the Linux kernel.\nAn attacker could possibly use this to compromise the system.\nThis update corrects flaws in the following subsystem:\n  - Packet sockets;\n(CVE-2026-...",
+      "link": "https://ubuntu.com/security/notices/USN-8361-1"
     },
     {
       "title": "DSA-6312-1 symfony - security update",
@@ -12479,6 +12498,61 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-02T04:41:00.765Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 18 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 179 patches, no changes",
+        "[INFO] gitlab - 3 patches, no changes",
+        "[INFO] microsoft - 350 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[SUCCESS] paloalto - 14 patches (1 new)",
+        "[INFO] redhat - 582 patches, no changes",
+        "[INFO] signal - 4 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 48 patches (1 new)"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 1210,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "paloalto",
+        "apple",
+        "crowdstrike",
+        "debian",
+        "edge",
+        "github",
+        "ubuntu",
+        "microsoft",
+        "redhat",
+        "signal",
+        "oracle-db",
+        "slack",
+        "chrome",
+        "cisco",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-0251 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
+          "date": "2026-06-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8361-1: Linux kernel vulnerability",
+          "date": "2026-06-01",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-02T04:18:17.156Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
@@ -18535,42 +18609,6 @@
     },
     {
       "timestamp": "2026-05-28T20:27:43.449Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] debian - 14 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 87 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] redhat - 298 patches, no changes",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 46 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 957,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "microsoft",
-        "redhat",
-        "slack",
-        "ubuntu",
-        "chrome",
-        "cisco",
-        "debian",
-        "github",
-        "gitlab",
-        "signal",
-        "edge",
-        "aws"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-28T17:35:19.749Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",
