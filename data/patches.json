@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-06-02T10:42:20.580Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-02T10:47:51.889Z",
+  "newPatches": 1,
   "patches": [
+    {
+      "title": "DSA-6319-1 yelp - security update",
+      "date": "2026-06-02",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "yelp",
+      "description": "A vulnerability was discovered in yelp, the GNOME help browser, that allows a crafted help document to read files accessible to the user and exfiltrate them to a remote server through resources loaded...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00230.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "CVE-2026-0251 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
       "date": "2026-06-02",
@@ -12498,6 +12509,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-02T10:47:51.889Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 19 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 179 patches, no changes",
+        "[INFO] gitlab - 3 patches, no changes",
+        "[INFO] microsoft - 350 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 14 patches, no changes",
+        "[INFO] redhat - 582 patches, no changes",
+        "[INFO] signal - 4 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 48 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1211,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "paloalto",
+        "apple",
+        "crowdstrike",
+        "edge",
+        "github",
+        "ubuntu",
+        "microsoft",
+        "redhat",
+        "signal",
+        "oracle-db",
+        "slack",
+        "chrome",
+        "cisco",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6319-1 yelp - security update",
+          "date": "2026-06-02",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-02T10:42:20.580Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
@@ -18369,285 +18429,6 @@
         "aws"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-28T20:33:12.594Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[SUCCESS] debian - 16 patches (2 new)",
-        "[INFO] edge - 1 patches, no changes",
-        "[SUCCESS] github - 107 patches (20 new)",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[SUCCESS] paloalto - 10 patches (10 new)",
-        "[INFO] redhat - 298 patches, no changes",
-        "[SUCCESS] signal - 3 patches (1 new)",
-        "[INFO] slack - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 53 patches (7 new)"
-      ],
-      "newPatchCount": 40,
-      "totalPatches": 997,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "debian",
-        "github",
-        "microsoft",
-        "paloalto",
-        "redhat",
-        "signal",
-        "slack",
-        "ubuntu",
-        "chrome",
-        "cisco",
-        "gitlab",
-        "edge",
-        "aws"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6306-1 linux - security update",
-          "date": "2026-05-28",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "debian",
-          "title": "DSA-6305-1 linux - security update",
-          "date": "2026-05-28",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "github",
-          "title": "Shamefile has an arbitrary file read via shamefile.yaml in shame next",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "nono: Sandbox escape on Linux via D-Bus: `systemd-run --user`",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "symfony/polyfill-intl-idn: xn-- labels with ASCII-only Punycode payloads are treated as equivalent to their decoded form",
-          "date": "2026-05-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "local-deep-research has an SSRF bypass in `safe_get`",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "compliance-trestle Vulnerable to Remote Code Execution via Recursive Server-Side Template Injection (SSTI)",
-          "date": "2026-05-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenBao's Kerberos Auth Method Accumulates Unaccessible Tokens",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "compliance-trestle Vulnerable to SSRF in Remote Fetching Subsystem",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenCTI: Privilege escalation via graphQL API is abusable by organization admins, due to incorrect ACL on userEdit relationAdd",
-          "date": "2026-05-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenBao's Inline Auth Incorrectly Redacted Headers",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "compliance-trestle - jinja has an Arbitrary File Write via Path Traversal",
-          "date": "2026-05-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenBao's cross-namespace lease revocation via legacy sys/revoke path bypasses ACL",
-          "date": "2026-05-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "compliance-trestle Profile Import has an Arbitrary File Read via trestle:// URI and Relative Path Traversal",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Symfony's JsonPath Evaluates Attacker-Controlled Regular Expressions in match()/search() Without Limits — ReDoS",
-          "date": "2026-05-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Symfony's Mailtrap Mailer Webhook Parser Never Verifies the X-Mt-Signature HMAC — Unauthenticated Webhook Event Injection",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Symfony's Mailjet Mailer Webhook Parser Never Verifies the Configured Secret — Unauthenticated Webhook Event Injection",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "opentelemetry-go's Schema ParseFile leaks file descriptors on each parse",
-          "date": "2026-05-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "opentelemetry-go's baggage parsing no longer caps raw header length",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Capsule TenantResource RawItems Cluster-Scoped Resource Creation Vulnerability",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Capsule Namespace Hijacking via subresource",
-          "date": "2026-05-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Symfony's HtmlSanitizer UrlAttributeSanitizer Omits action/formaction/poster/cite — `javascript`: URI Survives Sanitization (XSS)",
-          "date": "2026-05-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0264 PAN-OS: Heap-Based Buffer Overflow in DNS Proxy and DNS Server Allows Unauthenticated Remote Code Execution (Severity: HIGH)",
-          "date": "2026-05-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0256 PAN-OS: Stored Cross-Site Scripting (XSS) Vulnerability in the Web Interface (Severity: MEDIUM)",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0300 PAN-OS: Unauthenticated user initiated Buffer Overflow Vulnerability in User-ID™ Authentication Portal (Severity: CRITICAL)",
-          "date": "2026-05-28",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0259 WildFire WF-500 and WF-500-B: Arbitrary File Read and Delete Vulnerability in WildFire Appliance (WF-500, WF-500-B) (Severity: MEDIUM)",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0263 PAN-OS: Remote Code Execution (RCE) in IKEv2 Processing (Severity: HIGH)",
-          "date": "2026-05-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0258 PAN-OS: Server-Side Request Forgery (SSRF) in IKEv2 Certificate URL Fetching (Severity: MEDIUM)",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0261 PAN-OS: Authenticated Admin Command Injection Vulnerability (Severity: MEDIUM)",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0262 PAN-OS: Denial of Service Vulnerabilities in Network Traffic Parsing (Severity: MEDIUM)",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0265 PAN-OS: Authentication Bypass with Cloud Authentication Service (CAS) enabled (Severity: HIGH)",
-          "date": "2026-05-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0257 PAN-OS: GlobalProtect Authentication Bypass Vulnerabilities (Severity: MEDIUM)",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "local-deep-research has an SSRF bypass in `safe_get`",
-          "date": "2026-05-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8344-1: pip vulnerabilities",
-          "date": "2026-05-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8342-1: Vim vulnerability",
-          "date": "2026-05-28",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8343-1: multipart vulnerability",
-          "date": "2026-05-28",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8340-1: LibreOffice vulnerability",
-          "date": "2026-05-28",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8338-1: Apache HTTP Server vulnerabilities",
-          "date": "2026-05-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8334-1: CRaC JDK 25 vulnerabilities",
-          "date": "2026-05-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8333-1: CRaC JDK 21 vulnerabilities",
-          "date": "2026-05-28",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
