@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-06-04T15:29:36.153Z",
+  "lastUpdated": "2026-06-04T20:12:06.563Z",
   "health": {
-    "lastFetchAttempt": "2026-06-04T15:29:36.153Z",
+    "lastFetchAttempt": "2026-06-04T20:12:06.562Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-04T15:29:36.153Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-06-04T20:12:06.562Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "AdGuard Home: DoQ-to-UDP State Reduction and Source-Port Oracle",
+      "date": "2026-06-04",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThis report covers the client-triggered DoQ forwarding path in:\n\n- `dnsproxy` `v0.81.2` (`adguard/dnsproxy:v0.81.2`)\n- `AdGuard Home` `v0.107.74` (`adguard/adguardhome:latest`, image versi",
+      "link": "https://github.com/advisories/GHSA-xgx4-4h9w-53pv",
+      "cves": [
+        "CVE-2026-47703"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Shopware SSO referer trust leading to an arbitrary redirect target",
+      "date": "2026-06-04",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Description\n\nThis report describes an open redirect in Shopware's public SSO entry point at `GET /api/oauth/sso/auth`. When the endpoint is reached without the expected SSO session state, the appli",
+      "link": "https://github.com/advisories/GHSA-4x3x-869w-xx3m",
+      "cves": [
+        "CVE-2026-48012"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.14.0-beta.1",
       "date": "2026-06-03",
