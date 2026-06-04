@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-04T04:22:37.752Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-04T04:44:17.152Z",
+  "newPatches": 48,
   "patches": [
     {
       "title": "Chrome for Android Update",
@@ -40,6 +40,17 @@
       "description": "A vulnerability in Cisco Finesse could allow an unauthenticated, remote attacker to load arbitrary files from remote locations into an active user session on an affected device, possibly leading to br...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-finesse-rfi-gwpkdc89",
       "cve": "CVE-2026-20175"
+    },
+    {
+      "title": "DSA-6321-1 ceph - security update",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "ceph",
+      "description": "Multiple vulnerabilities were discovered in Ceph, a distributed storage and file system, which may result in privilege escalation, denial of service or information disclosure. https://security-tracker...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00232.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "Linux Kernel vulnerability Dirty Frag",
@@ -261,6 +272,83 @@
       "cvss": null
     },
     {
+      "title": "Froxlor's API Authentication bypasses 2FA Authentication",
+      "date": "2026-06-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "froxlor/froxlor",
+      "description": "Froxlor's API Authentication bypasses 2FA Authentication",
+      "link": "https://github.com/advisories/GHSA-f9rx-7wf7-jr36",
+      "cve": "",
+      "cvss": 8.1
+    },
+    {
+      "title": "browserstack-runner vulnerable to Remote Code Execution via vm sandbox escape in _log HTTP handler",
+      "date": "2026-06-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "browserstack-runner",
+      "description": "browserstack-runner vulnerable to Remote Code Execution via vm sandbox escape in _log HTTP handler",
+      "link": "https://github.com/advisories/GHSA-6vr3-7wcx-v5g5",
+      "cve": "CVE-2026-49143",
+      "cvss": 8.8
+    },
+    {
+      "title": "browserstack-runner has an unauthenticated arbitrary file read via path traversal in HTTP server",
+      "date": "2026-06-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "browserstack-runner",
+      "description": "browserstack-runner has an unauthenticated arbitrary file read via path traversal in HTTP server",
+      "link": "https://github.com/advisories/GHSA-8rpw-6cqh-2v9h",
+      "cve": "CVE-2026-49144",
+      "cvss": 6.5
+    },
+    {
+      "title": "Jupyter Enterprise Gateway: Kubernetes Manifest Injection in Jinja2 Template Rendering",
+      "date": "2026-06-03",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "jupyter_enterprise_gateway",
+      "description": "Jupyter Enterprise Gateway: Kubernetes Manifest Injection in Jinja2 Template Rendering",
+      "link": "https://github.com/advisories/GHSA-cfw7-6c5v-2wjq",
+      "cve": "CVE-2026-44182",
+      "cvss": null
+    },
+    {
+      "title": "Jupyter Enterprise Gateway: Jinja2 Template Server Side Template Injection resulting in Remote Code Execution",
+      "date": "2026-06-03",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "jupyter_enterprise_gateway",
+      "description": "Jupyter Enterprise Gateway: Jinja2 Template Server Side Template Injection resulting in Remote Code Execution",
+      "link": "https://github.com/advisories/GHSA-f49j-v924-fx9w",
+      "cve": "CVE-2026-44181",
+      "cvss": null
+    },
+    {
+      "title": "AIOHTTP is vulnerable to cross-origin redirect with per-request cookies",
+      "date": "2026-06-03",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "aiohttp",
+      "description": "AIOHTTP is vulnerable to cross-origin redirect with per-request cookies",
+      "link": "https://github.com/advisories/GHSA-hg6j-4rv6-33pg",
+      "cve": "CVE-2026-47265",
+      "cvss": null
+    },
+    {
+      "title": "Jupyter Enterprise Gateway: ContainerProcessProxy._enforce_prohibited_ids Bypass",
+      "date": "2026-06-03",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "jupyter_enterprise_gateway",
+      "description": "Jupyter Enterprise Gateway: ContainerProcessProxy._enforce_prohibited_ids Bypass",
+      "link": "https://github.com/advisories/GHSA-chq7-94j8-cj28",
+      "cve": "CVE-2026-44180",
+      "cvss": 9.8
+    },
+    {
       "title": "CVE-2026-0257 PAN-OS: GlobalProtect Authentication Bypass Vulnerabilities (Severity: HIGH)",
       "date": "2026-06-03",
       "severity": "HIGH",
@@ -280,6 +368,437 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50031.json",
       "cve": "CVE-2026-50031",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-3276: python: Python unicodedata: Denial of Service due to excessive CPU consumption",
+      "date": "2026-06-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python: Python unicodedata: Denial of Service due to excessive CPU consumption",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3276.json",
+      "cve": "CVE-2026-3276",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-48587: django: Django: Information disclosure via improper handling of Vary header whitespace",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "django: Django: Information disclosure via improper handling of Vary header whitespace",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48587.json",
+      "cve": "CVE-2026-48587",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-35193: django: Django: Information disclosure due to improper caching of authenticated responses",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "django: Django: Information disclosure due to improper caching of authenticated responses",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-35193.json",
+      "cve": "CVE-2026-35193",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-8404: Django: Django: Information disclosure due to improper handling of Cache-Control directives",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Django: Django: Information disclosure due to improper handling of Cache-Control directives",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-8404.json",
+      "cve": "CVE-2026-8404",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-7666: django: Django: Information disclosure via failed STARTTLS handshake in EmailBackend",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "django: Django: Information disclosure via failed STARTTLS handshake in EmailBackend",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7666.json",
+      "cve": "CVE-2026-7666",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-6873: python-django: Django: Information disclosure via non-injective cookie salt derivation",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python-django: Django: Information disclosure via non-injective cookie salt derivation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6873.json",
+      "cve": "CVE-2026-6873",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-5241: python-transformers: python-transformers: Arbitrary code execution due to overridden trust_remote_code setting",
+      "date": "2026-06-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python-transformers: python-transformers: Arbitrary code execution due to overridden trust_remote_code setting",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5241.json",
+      "cve": "CVE-2026-5241",
+      "cvss": 7.7
+    },
+    {
+      "title": "CVE-2026-46258: kernel: gpio: cdev: Avoid NULL dereference in linehandle_create()",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: gpio: cdev: Avoid NULL dereference in linehandle_create()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46258.json",
+      "cve": "CVE-2026-46258",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46260: kernel: ipv6: Fix out-of-bound access in fib6_add_rt2node()",
+      "date": "2026-06-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ipv6: Fix out-of-bound access in fib6_add_rt2node()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46260.json",
+      "cve": "CVE-2026-46260",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46273: kernel: ibmveth: Disable GSO for packets with small MSS",
+      "date": "2026-06-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ibmveth: Disable GSO for packets with small MSS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46273.json",
+      "cve": "CVE-2026-46273",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46245: kernel: drm/amd/display: Fix dc_link NULL handling in HPD init",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/amd/display: Fix dc_link NULL handling in HPD init",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46245.json",
+      "cve": "CVE-2026-46245",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46254: kernel: AppArmor: Allow apparmor to handle unaligned dfa tables",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: AppArmor: Allow apparmor to handle unaligned dfa tables",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46254.json",
+      "cve": "CVE-2026-46254",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46250: kernel: MIPS: Work around LLVM bug when gp is used as global register variable",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: MIPS: Work around LLVM bug when gp is used as global register variable",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46250.json",
+      "cve": "CVE-2026-46250",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46271: kernel: wifi: ath12k: do WoW offloads only on primary link",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: wifi: ath12k: do WoW offloads only on primary link",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46271.json",
+      "cve": "CVE-2026-46271",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46268: kernel: PCI/P2PDMA: Fix p2pmem_alloc_mmap() warning condition",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: PCI/P2PDMA: Fix p2pmem_alloc_mmap() warning condition",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46268.json",
+      "cve": "CVE-2026-46268",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46262: kernel: ASoC: fsl_xcvr: Revert fix missing lock in fsl_xcvr_mode_put()",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ASoC: fsl_xcvr: Revert fix missing lock in fsl_xcvr_mode_put()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46262.json",
+      "cve": "CVE-2026-46262",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46244: kernel: netfilter: nft_inner: Fix IPv6 inner_thoff desync",
+      "date": "2026-06-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: nft_inner: Fix IPv6 inner_thoff desync",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46244.json",
+      "cve": "CVE-2026-46244",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46270: kernel: power: supply: rt9455: Fix use-after-free in power_supply_changed()",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: power: supply: rt9455: Fix use-after-free in power_supply_changed()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46270.json",
+      "cve": "CVE-2026-46270",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46269: kernel: pinctrl: canaan: k230: Fix NULL pointer dereference when parsing devicetree",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: pinctrl: canaan: k230: Fix NULL pointer dereference when parsing devicetree",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46269.json",
+      "cve": "CVE-2026-46269",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46266: kernel: inet: RAW sockets using IPPROTO_RAW MUST drop incoming ICMP",
+      "date": "2026-06-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: inet: RAW sockets using IPPROTO_RAW MUST drop incoming ICMP",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46266.json",
+      "cve": "CVE-2026-46266",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46252: kernel: regulator: core: fix locking in regulator_resolve_supply() error path",
+      "date": "2026-06-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: regulator: core: fix locking in regulator_resolve_supply() error path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46252.json",
+      "cve": "CVE-2026-46252",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46256: kernel: NFS/localio: prevent direct reclaim recursion into NFS via nfs_writepages",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: NFS/localio: prevent direct reclaim recursion into NFS via nfs_writepages",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46256.json",
+      "cve": "CVE-2026-46256",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46247: kernel: clk: qcom: gfx3d: add parent to parent request map",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: clk: qcom: gfx3d: add parent to parent request map",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46247.json",
+      "cve": "CVE-2026-46247",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46264: kernel: drm/xe/pf: Fix sysfs initialization",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/xe/pf: Fix sysfs initialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46264.json",
+      "cve": "CVE-2026-46264",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46251: kernel: btrfs: fix block_group_tree dirty_list corruption",
+      "date": "2026-06-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: btrfs: fix block_group_tree dirty_list corruption",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46251.json",
+      "cve": "CVE-2026-46251",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46267: kernel: nfc: hci: shdlc: Stop timers and work before freeing context",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: nfc: hci: shdlc: Stop timers and work before freeing context",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46267.json",
+      "cve": "CVE-2026-46267",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46257: kernel: clocksource/drivers/timer-sp804: Fix an Oops when read_current_timer is called on ARM32 platforms where the SP80",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: clocksource/drivers/timer-sp804: Fix an Oops when read_current_timer is called on ARM32 platforms where the SP804 is not registered as the sched_clock",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46257.json",
+      "cve": "CVE-2026-46257",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46246: kernel: power: supply: pm8916_lbc: Fix use-after-free for extcon in IRQ handler",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: power: supply: pm8916_lbc: Fix use-after-free for extcon in IRQ handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46246.json",
+      "cve": "CVE-2026-46246",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2025-71314: kernel: drm/panthor: Recover from panthor_gpu_flush_caches() failures",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/panthor: Recover from panthor_gpu_flush_caches() failures",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-71314.json",
+      "cve": "CVE-2025-71314",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2025-71313: kernel: PCI: endpoint: Add missing NULL check for alloc_workqueue()",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: PCI: endpoint: Add missing NULL check for alloc_workqueue()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-71313.json",
+      "cve": "CVE-2025-71313",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46253: kernel: pstore/ram: fix buffer overflow in persistent_ram_save_old()",
+      "date": "2026-06-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: pstore/ram: fix buffer overflow in persistent_ram_save_old()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46253.json",
+      "cve": "CVE-2026-46253",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46249: kernel: octeontx2-af: Fix PF driver crash with kexec kernel booting",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: octeontx2-af: Fix PF driver crash with kexec kernel booting",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46249.json",
+      "cve": "CVE-2026-46249",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46259: kernel: procfs: fix missing RCU protection when reading real_parent in do_task_stat()",
+      "date": "2026-06-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: procfs: fix missing RCU protection when reading real_parent in do_task_stat()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46259.json",
+      "cve": "CVE-2026-46259",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46248: kernel: wifi: ath12k: clear stale link mapping of ahvif->links_map",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: wifi: ath12k: clear stale link mapping of ahvif->links_map",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46248.json",
+      "cve": "CVE-2026-46248",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46265: kernel: RDMA/hns: Fix WQ_MEM_RECLAIM warning",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/hns: Fix WQ_MEM_RECLAIM warning",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46265.json",
+      "cve": "CVE-2026-46265",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46272: kernel: coresight: tmc-etr: Fix race condition between sysfs and perf mode",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: coresight: tmc-etr: Fix race condition between sysfs and perf mode",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46272.json",
+      "cve": "CVE-2026-46272",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46263: kernel: drm/amd/display: Fix out-of-bounds stream encoder index v3",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/amd/display: Fix out-of-bounds stream encoder index v3",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46263.json",
+      "cve": "CVE-2026-46263",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46255: kernel: dmaengine: fsl-edma: don't explicitly disable clocks in .remove()",
+      "date": "2026-06-03",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: dmaengine: fsl-edma: don't explicitly disable clocks in .remove()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46255.json",
+      "cve": "CVE-2026-46255",
+      "cvss": 5.5
+    },
+    {
+      "title": "Signal Desktop v8.14.0-beta.1",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.14.0-beta.1",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
     },
     {
       "title": "USN-8348-1: GoBGP vulnerabilities",
@@ -562,6 +1081,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43660.json",
       "cve": "CVE-2026-43660",
       "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-5422: jupyter-server: jupyter-server: Sensitive data exposure via path traversal vulnerability",
+      "date": "2026-06-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jupyter-server: jupyter-server: Sensitive data exposure via path traversal vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-5422.json",
+      "cve": "CVE-2026-5422",
+      "cvss": 6.8
     },
     {
       "title": "USN-8371-1: Linux kernel vulnerabilities",
@@ -4148,6 +4678,335 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-04T04:44:17.151Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 13 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[SUCCESS] github - 130 patches (7 new)",
+        "[INFO] microsoft - 200 patches, no changes",
+        "[INFO] paloalto - 3 patches, no changes",
+        "[SUCCESS] redhat - 70 patches (39 new)",
+        "[SUCCESS] signal - 3 patches (1 new)",
+        "[INFO] ubuntu - 37 patches, no changes"
+      ],
+      "newPatchCount": 48,
+      "totalPatches": 469,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "chrome",
+        "cisco",
+        "debian",
+        "fortinet",
+        "github",
+        "paloalto",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "aws",
+        "apple",
+        "crowdstrike",
+        "edge",
+        "microsoft"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6321-1 ceph - security update",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Froxlor's API Authentication bypasses 2FA Authentication",
+          "date": "2026-06-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "browserstack-runner vulnerable to Remote Code Execution via vm sandbox escape in _log HTTP handler",
+          "date": "2026-06-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "browserstack-runner has an unauthenticated arbitrary file read via path traversal in HTTP server",
+          "date": "2026-06-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Jupyter Enterprise Gateway: Kubernetes Manifest Injection in Jinja2 Template Rendering",
+          "date": "2026-06-03",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Jupyter Enterprise Gateway: Jinja2 Template Server Side Template Injection resulting in Remote Code Execution",
+          "date": "2026-06-03",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "AIOHTTP is vulnerable to cross-origin redirect with per-request cookies",
+          "date": "2026-06-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Jupyter Enterprise Gateway: ContainerProcessProxy._enforce_prohibited_ids Bypass",
+          "date": "2026-06-03",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-3276: python: Python unicodedata: Denial of Service due to excessive CPU consumption",
+          "date": "2026-06-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-48587: django: Django: Information disclosure via improper handling of Vary header whitespace",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-35193: django: Django: Information disclosure due to improper caching of authenticated responses",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-8404: Django: Django: Information disclosure due to improper handling of Cache-Control directives",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-7666: django: Django: Information disclosure via failed STARTTLS handshake in EmailBackend",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6873: python-django: Django: Information disclosure via non-injective cookie salt derivation",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5241: python-transformers: python-transformers: Arbitrary code execution due to overridden trust_remote_code setting",
+          "date": "2026-06-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46258: kernel: gpio: cdev: Avoid NULL dereference in linehandle_create()",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46260: kernel: ipv6: Fix out-of-bound access in fib6_add_rt2node()",
+          "date": "2026-06-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46273: kernel: ibmveth: Disable GSO for packets with small MSS",
+          "date": "2026-06-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46245: kernel: drm/amd/display: Fix dc_link NULL handling in HPD init",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46254: kernel: AppArmor: Allow apparmor to handle unaligned dfa tables",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46250: kernel: MIPS: Work around LLVM bug when gp is used as global register variable",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46271: kernel: wifi: ath12k: do WoW offloads only on primary link",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46268: kernel: PCI/P2PDMA: Fix p2pmem_alloc_mmap() warning condition",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46262: kernel: ASoC: fsl_xcvr: Revert fix missing lock in fsl_xcvr_mode_put()",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46244: kernel: netfilter: nft_inner: Fix IPv6 inner_thoff desync",
+          "date": "2026-06-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46270: kernel: power: supply: rt9455: Fix use-after-free in power_supply_changed()",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46269: kernel: pinctrl: canaan: k230: Fix NULL pointer dereference when parsing devicetree",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46266: kernel: inet: RAW sockets using IPPROTO_RAW MUST drop incoming ICMP",
+          "date": "2026-06-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46252: kernel: regulator: core: fix locking in regulator_resolve_supply() error path",
+          "date": "2026-06-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46256: kernel: NFS/localio: prevent direct reclaim recursion into NFS via nfs_writepages",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46247: kernel: clk: qcom: gfx3d: add parent to parent request map",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46264: kernel: drm/xe/pf: Fix sysfs initialization",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46251: kernel: btrfs: fix block_group_tree dirty_list corruption",
+          "date": "2026-06-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46267: kernel: nfc: hci: shdlc: Stop timers and work before freeing context",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46257: kernel: clocksource/drivers/timer-sp804: Fix an Oops when read_current_timer is called on ARM32 platforms where the SP80",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46246: kernel: power: supply: pm8916_lbc: Fix use-after-free for extcon in IRQ handler",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-71314: kernel: drm/panthor: Recover from panthor_gpu_flush_caches() failures",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-71313: kernel: PCI: endpoint: Add missing NULL check for alloc_workqueue()",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46253: kernel: pstore/ram: fix buffer overflow in persistent_ram_save_old()",
+          "date": "2026-06-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46249: kernel: octeontx2-af: Fix PF driver crash with kexec kernel booting",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46259: kernel: procfs: fix missing RCU protection when reading real_parent in do_task_stat()",
+          "date": "2026-06-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46248: kernel: wifi: ath12k: clear stale link mapping of ahvif->links_map",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46265: kernel: RDMA/hns: Fix WQ_MEM_RECLAIM warning",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46272: kernel: coresight: tmc-etr: Fix race condition between sysfs and perf mode",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46263: kernel: drm/amd/display: Fix out-of-bounds stream encoder index v3",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46255: kernel: dmaengine: fsl-edma: don't explicitly disable clocks in .remove()",
+          "date": "2026-06-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-5422: jupyter-server: jupyter-server: Sensitive data exposure via path traversal vulnerability",
+          "date": "2026-06-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal Desktop v8.14.0-beta.1",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-04T04:22:37.751Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
@@ -7173,44 +8032,6 @@
     },
     {
       "timestamp": "2026-05-30T13:46:15.182Z",
-      "logs": [
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 187 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 13 patches, no changes",
-        "[INFO] redhat - 596 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 53 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1380,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "github",
-        "paloalto",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "edge",
-        "oracle-db",
-        "slack",
-        "chrome",
-        "cisco",
-        "gitlab"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-30T10:02:58.325Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
         "[INFO] cisco - 1 patches, no changes",
