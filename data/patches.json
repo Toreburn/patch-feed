@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-05T04:06:02.898Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-05T04:18:22.049Z",
+  "newPatches": 13,
   "patches": [
     {
       "title": "DSA-6322-1 frr - security update",
@@ -11,6 +11,26 @@
       "description": "Several vulnerabilities were discovered in FRRouting (frr), a suite of internet routing protocol daemons. A remote attacker could trigger these issues by sending specially crafted protocol packets to ...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00233.html",
       "cve": "",
+      "cves": []
+    },
+    {
+      "title": "Cisco Catalyst SD-WAN Manager Authenticated Privilege Escalation Vulnerability",
+      "date": "2026-06-04",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "SD-WAN",
+      "description": "A vulnerability in the CLI of Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to ...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-privesc-4uxFrdzx",
+      "cve": "CVE-2026-20245"
+    },
+    {
+      "title": "Microsoft Edge Security Update - June 4, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-06-04",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
       "cves": []
     },
     {
@@ -474,6 +494,98 @@
       "link": "https://github.com/advisories/GHSA-4vqc-wpwg-vh7j",
       "cve": "CVE-2026-47192",
       "cvss": null
+    },
+    {
+      "title": "MCP-for-Stata: Command injection via log_file_name parameter in Stata command wrapper",
+      "date": "2026-06-04",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "stata-mcp",
+      "description": "MCP-for-Stata: Command injection via log_file_name parameter in Stata command wrapper",
+      "link": "https://github.com/advisories/GHSA-4p62-hqp5-g644",
+      "cve": "CVE-2026-47708",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-48567: Azure HorizonDB  Elevation of Privilege Vulnerability",
+      "date": "2026-06-04",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-48567",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-48567"
+    },
+    {
+      "title": "CVE-2026-42824: M365 Copilot Information Disclosure Vulnerability",
+      "date": "2026-06-04",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42824",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42824"
+    },
+    {
+      "title": "CVE-2026-45497: Microsoft M365 Copilot Remote Code Execution Vulnerability",
+      "date": "2026-06-04",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45497",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45497"
+    },
+    {
+      "title": "CVE-2026-47644: Copilot Chat (Microsoft Edge) Information Disclosure Vulnerability",
+      "date": "2026-06-04",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-47644",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47644"
+    },
+    {
+      "title": "CVE-2026-47655: Microsoft Graph Information Disclosure Vulnerability",
+      "date": "2026-06-04",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-47655",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47655"
+    },
+    {
+      "title": "CVE-2026-48579: Microsoft Exchange Online Information Disclosure Vulnerability",
+      "date": "2026-06-04",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-48579",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-48579"
+    },
+    {
+      "title": "CVE-2026-46243: smb: client: reject userspace cifs.spnego descriptions",
+      "date": "2026-06-04",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-46243",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46243"
+    },
+    {
+      "title": "CVE-2026-8643: pip can extract console_scripts and gui_scripts outside installation directory",
+      "date": "2026-06-04",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-8643",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-8643"
+    },
+    {
+      "title": "CVE-2026-50031: ipmi-oem in FreeIPMI before 1.6.18 has exploitable buffer overflows on response messages. The Intelligent Platform Management Interface (IPMI) specification defines a set of interfaces for platform management. It is implemented by a large number of hardware manufacturers to support system management. It is most commonly used for sensor reading (e.g., CPU temperatures through the ipmi-sensors command within FreeIPMI) and remote power control (the ipmipower command). The ipmi-oem client command implements a set of a IPMI OEM commands for specific hardware vendors. If a user has supported hardware, they may wish to use the ipmi-oem command to send a request to a server to retrieve specific information. Two subcommands \"ipmi-oem dell get-active-directory-config\" and \"ipmi-oem fujitsu get-sel-entry-long-text\" were found to have exploitable buffer overflows on response messages.",
+      "date": "2026-06-04",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-50031",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-50031"
     },
     {
       "title": "PostgreSQL 19 Beta 1 Released!",
@@ -1310,6 +1422,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46255.json",
       "cve": "CVE-2026-46255",
       "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46261: kernel: spi: wpcm-fiu: Fix potential NULL pointer dereference in wpcm_fiu_probe()",
+      "date": "2026-06-03",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: spi: wpcm-fiu: Fix potential NULL pointer dereference in wpcm_fiu_probe()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46261.json",
+      "cve": "CVE-2026-46261",
+      "cvss": null
     },
     {
       "title": "Signal Desktop v8.14.0-beta.1",
@@ -3189,6 +3312,127 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-05T04:18:22.049Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[SUCCESS] cisco - 4 patches (1 new)",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 11 patches, no changes",
+        "[SUCCESS] edge - 2 patches (1 new)",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[SUCCESS] github - 82 patches (1 new)",
+        "[SUCCESS] microsoft - 109 patches (9 new)",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 70 patches (1 new)",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 35 patches, no changes"
+      ],
+      "newPatchCount": 13,
+      "totalPatches": 328,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "cisco",
+        "edge",
+        "github",
+        "microsoft",
+        "postgresql",
+        "redhat",
+        "signal",
+        "chrome",
+        "fortinet",
+        "paloalto",
+        "ubuntu",
+        "aws",
+        "apple",
+        "crowdstrike"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Cisco Catalyst SD-WAN Manager Authenticated Privilege Escalation Vulnerability",
+          "date": "2026-06-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - June 4, 2026",
+          "date": "2026-06-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "MCP-for-Stata: Command injection via log_file_name parameter in Stata command wrapper",
+          "date": "2026-06-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-48567: Azure HorizonDB  Elevation of Privilege Vulnerability",
+          "date": "2026-06-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42824: M365 Copilot Information Disclosure Vulnerability",
+          "date": "2026-06-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45497: Microsoft M365 Copilot Remote Code Execution Vulnerability",
+          "date": "2026-06-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-47644: Copilot Chat (Microsoft Edge) Information Disclosure Vulnerability",
+          "date": "2026-06-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-47655: Microsoft Graph Information Disclosure Vulnerability",
+          "date": "2026-06-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-48579: Microsoft Exchange Online Information Disclosure Vulnerability",
+          "date": "2026-06-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-46243: smb: client: reject userspace cifs.spnego descriptions",
+          "date": "2026-06-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-8643: pip can extract console_scripts and gui_scripts outside installation directory",
+          "date": "2026-06-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-50031: ipmi-oem in FreeIPMI before 1.6.18 has exploitable buffer overflows on response messages. The Intelligent Platform Management Interface (IPMI) specification defines a set of interfaces for platform management. It is implemented by a large number of hardware manufacturers to support system management. It is most commonly used for sensor reading (e.g., CPU temperatures through the ipmi-sensors command within FreeIPMI) and remote power control (the ipmipower command). The ipmi-oem client command implements a set of a IPMI OEM commands for specific hardware vendors. If a user has supported hardware, they may wish to use the ipmi-oem command to send a request to a server to retrieve specific information. Two subcommands \"ipmi-oem dell get-active-directory-config\" and \"ipmi-oem fujitsu get-sel-entry-long-text\" were found to have exploitable buffer overflows on response messages.",
+          "date": "2026-06-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46261: kernel: spi: wpcm-fiu: Fix potential NULL pointer dereference in wpcm_fiu_probe()",
+          "date": "2026-06-03",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-05T04:06:02.898Z",
       "logs": [
@@ -6826,44 +7070,6 @@
     },
     {
       "timestamp": "2026-05-31T08:50:52.104Z",
-      "logs": [
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 187 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 13 patches, no changes",
-        "[INFO] redhat - 596 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 53 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1330,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "github",
-        "paloalto",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "edge",
-        "oracle-db",
-        "slack",
-        "chrome",
-        "cisco",
-        "gitlab"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-31T04:23:04.753Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
         "[INFO] cisco - 1 patches, no changes",
