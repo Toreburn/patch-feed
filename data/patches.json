@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-06-05T12:44:27.816Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-05T15:18:03.712Z",
+  "newPatches": 15,
   "patches": [
+    {
+      "title": "Cisco Catalyst SD-WAN Manager Authenticated Privilege Escalation Vulnerability",
+      "date": "2026-06-05",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "SD-WAN",
+      "description": "A vulnerability in the CLI of Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to ...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-privesc-4uxFrdzx",
+      "cve": "CVE-2026-20245"
+    },
     {
       "title": "DSA-6322-1 frr - security update",
       "date": "2026-06-05",
@@ -12,6 +22,39 @@
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00233.html",
       "cve": "",
       "cves": []
+    },
+    {
+      "title": "CVE-2026-9088: keycloak: Keycloak: Information disclosure due to user profile permission bypass",
+      "date": "2026-06-05",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: Keycloak: Information disclosure due to user profile permission bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9088.json",
+      "cve": "CVE-2026-9088",
+      "cvss": 2.7
+    },
+    {
+      "title": "CVE-2026-11332: ansible-core: argument injection in ansible-galaxy role install leads to arbitrary code execution",
+      "date": "2026-06-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Ansible",
+      "description": "ansible-core: argument injection in ansible-galaxy role install leads to arbitrary code execution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-11332.json",
+      "cve": "CVE-2026-11332",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50265: libinput: local privilege escalation via crafted uinput devices",
+      "date": "2026-06-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libinput: local privilege escalation via crafted uinput devices",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50265.json",
+      "cve": "CVE-2026-50265",
+      "cvss": 7
     },
     {
       "title": "Cisco Catalyst SD-WAN Manager Authenticated Privilege Escalation Vulnerability",
@@ -1435,6 +1478,28 @@
       "cvss": null
     },
     {
+      "title": "CVE-2026-6657: jupyter-server: jupyter-server: Arbitrary code execution due to CORS origin validation bypass",
+      "date": "2026-06-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jupyter-server: jupyter-server: Arbitrary code execution due to CORS origin validation bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6657.json",
+      "cve": "CVE-2026-6657",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-4035: python-mlflow: MLflow: Sensitive credential exfiltration via environment variable resolution in AI Gateway secrets",
+      "date": "2026-06-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python-mlflow: MLflow: Sensitive credential exfiltration via environment variable resolution in AI Gateway secrets",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4035.json",
+      "cve": "CVE-2026-4035",
+      "cvss": 7.7
+    },
+    {
       "title": "Signal Desktop v8.14.0-beta.1",
       "date": "2026-06-03",
       "severity": "UNKNOWN",
@@ -1750,6 +1815,105 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47265.json",
       "cve": "CVE-2026-47265",
       "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-50256: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in font alias resolution due to libXfo",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in font alias resolution due to libXfont2 name length mismatch",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50256.json",
+      "cve": "CVE-2026-50256",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50257: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in miSyncDestroyFence()",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in miSyncDestroyFence()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50257.json",
+      "cve": "CVE-2026-50257",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50258: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in XKB key types due to unchecked shif",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in XKB key types due to unchecked shift levels",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50258.json",
+      "cve": "CVE-2026-50258",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50259: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in XKB SetMap request via mapWidths in",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in XKB SetMap request via mapWidths indexing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50259.json",
+      "cve": "CVE-2026-50259",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50260: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in FreeCounter()",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in FreeCounter()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50260.json",
+      "cve": "CVE-2026-50260",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50261: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in SyncChangeCounter()",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in SyncChangeCounter()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50261.json",
+      "cve": "CVE-2026-50261",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50262: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: out-of-bounds read/write in GLX ChangeDrawableAttributes",
+      "date": "2026-06-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: out-of-bounds read/write in GLX ChangeDrawableAttributes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50262.json",
+      "cve": "CVE-2026-50262",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-50263: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free information disclosure in CreateSaverWindow()",
+      "date": "2026-06-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free information disclosure in CreateSaverWindow()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50263.json",
+      "cve": "CVE-2026-50263",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-50264: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: out-of-bounds heap write in DRI2 DRIGetBuffers/DRIGetBuffers",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: out-of-bounds heap write in DRI2 DRIGetBuffers/DRIGetBuffersWithFormat",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50264.json",
+      "cve": "CVE-2026-50264",
+      "cvss": 7.8
     },
     {
       "title": "USN-8371-1: Linux kernel vulnerabilities",
@@ -3312,6 +3476,139 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-05T15:18:03.712Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[SUCCESS] cisco - 5 patches (1 new)",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] github - 82 patches, no changes",
+        "[INFO] microsoft - 109 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 84 patches (14 new)",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 35 patches, no changes"
+      ],
+      "newPatchCount": 15,
+      "totalPatches": 343,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "cisco",
+        "debian",
+        "redhat",
+        "edge",
+        "github",
+        "microsoft",
+        "postgresql",
+        "signal",
+        "chrome",
+        "fortinet",
+        "paloalto",
+        "ubuntu",
+        "aws",
+        "apple",
+        "crowdstrike"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Cisco Catalyst SD-WAN Manager Authenticated Privilege Escalation Vulnerability",
+          "date": "2026-06-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9088: keycloak: Keycloak: Information disclosure due to user profile permission bypass",
+          "date": "2026-06-05",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-11332: ansible-core: argument injection in ansible-galaxy role install leads to arbitrary code execution",
+          "date": "2026-06-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50265: libinput: local privilege escalation via crafted uinput devices",
+          "date": "2026-06-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6657: jupyter-server: jupyter-server: Arbitrary code execution due to CORS origin validation bypass",
+          "date": "2026-06-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-4035: python-mlflow: MLflow: Sensitive credential exfiltration via environment variable resolution in AI Gateway secrets",
+          "date": "2026-06-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50256: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in font alias resolution due to libXfo",
+          "date": "2026-06-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50257: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in miSyncDestroyFence()",
+          "date": "2026-06-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50258: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in XKB key types due to unchecked shif",
+          "date": "2026-06-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50259: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in XKB SetMap request via mapWidths in",
+          "date": "2026-06-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50260: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in FreeCounter()",
+          "date": "2026-06-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50261: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in SyncChangeCounter()",
+          "date": "2026-06-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50262: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: out-of-bounds read/write in GLX ChangeDrawableAttributes",
+          "date": "2026-06-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50263: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free information disclosure in CreateSaverWindow()",
+          "date": "2026-06-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50264: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: out-of-bounds heap write in DRI2 DRIGetBuffers/DRIGetBuffers",
+          "date": "2026-06-02",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-05T12:44:27.816Z",
       "logs": [
@@ -6743,44 +7040,6 @@
     },
     {
       "timestamp": "2026-05-31T13:58:39.456Z",
-      "logs": [
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 187 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 13 patches, no changes",
-        "[INFO] redhat - 596 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 53 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1380,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "github",
-        "paloalto",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "edge",
-        "oracle-db",
-        "slack",
-        "chrome",
-        "cisco",
-        "gitlab"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-05-31T13:51:40.409Z",
       "logs": [
         "[INFO] chrome - 3 patches, no changes",
         "[INFO] cisco - 1 patches, no changes",

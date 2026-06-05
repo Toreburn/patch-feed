@@ -1,16 +1,49 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-06-05T10:02:16.574Z",
+  "lastUpdated": "2026-06-05T15:16:44.711Z",
   "health": {
-    "lastFetchAttempt": "2026-06-05T10:02:16.574Z",
+    "lastFetchAttempt": "2026-06-05T15:16:44.711Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 73,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-05T10:02:16.574Z",
+    "lastFetchParsedItems": 87,
+    "lastFetchNewPatches": 14,
+    "lastSuccessWithData": "2026-06-05T15:16:44.711Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-9088: keycloak: Keycloak: Information disclosure due to user profile permission bypass",
+      "date": "2026-06-05",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: Keycloak: Information disclosure due to user profile permission bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9088.json",
+      "cve": "CVE-2026-9088",
+      "cvss": 2.7
+    },
+    {
+      "title": "CVE-2026-11332: ansible-core: argument injection in ansible-galaxy role install leads to arbitrary code execution",
+      "date": "2026-06-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Ansible",
+      "description": "ansible-core: argument injection in ansible-galaxy role install leads to arbitrary code execution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-11332.json",
+      "cve": "CVE-2026-11332",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50265: libinput: local privilege escalation via crafted uinput devices",
+      "date": "2026-06-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libinput: local privilege escalation via crafted uinput devices",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50265.json",
+      "cve": "CVE-2026-50265",
+      "cvss": 7
+    },
     {
       "title": "CVE-2026-10805: NetworkManager: NetworkManager: Local privilege escalation via malformed MUD URLs in dhclient backend",
       "date": "2026-06-04",
@@ -463,6 +496,28 @@
       "cvss": null
     },
     {
+      "title": "CVE-2026-6657: jupyter-server: jupyter-server: Arbitrary code execution due to CORS origin validation bypass",
+      "date": "2026-06-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jupyter-server: jupyter-server: Arbitrary code execution due to CORS origin validation bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6657.json",
+      "cve": "CVE-2026-6657",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-4035: python-mlflow: MLflow: Sensitive credential exfiltration via environment variable resolution in AI Gateway secrets",
+      "date": "2026-06-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python-mlflow: MLflow: Sensitive credential exfiltration via environment variable resolution in AI Gateway secrets",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-4035.json",
+      "cve": "CVE-2026-4035",
+      "cvss": 7.7
+    },
+    {
       "title": "CVE-2026-1784: ose-cluster-ingress-operator: Remote Code Execution Through HAProxy Configuration Injection",
       "date": "2026-06-02",
       "severity": "HIGH",
@@ -670,6 +725,105 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47265.json",
       "cve": "CVE-2026-47265",
       "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-50256: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in font alias resolution due to libXfo",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in font alias resolution due to libXfont2 name length mismatch",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50256.json",
+      "cve": "CVE-2026-50256",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50257: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in miSyncDestroyFence()",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in miSyncDestroyFence()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50257.json",
+      "cve": "CVE-2026-50257",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50258: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in XKB key types due to unchecked shif",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in XKB key types due to unchecked shift levels",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50258.json",
+      "cve": "CVE-2026-50258",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50259: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in XKB SetMap request via mapWidths in",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: stack buffer overflow in XKB SetMap request via mapWidths indexing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50259.json",
+      "cve": "CVE-2026-50259",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50260: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in FreeCounter()",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in FreeCounter()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50260.json",
+      "cve": "CVE-2026-50260",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50261: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in SyncChangeCounter()",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free in SyncChangeCounter()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50261.json",
+      "cve": "CVE-2026-50261",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50262: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: out-of-bounds read/write in GLX ChangeDrawableAttributes",
+      "date": "2026-06-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: out-of-bounds read/write in GLX ChangeDrawableAttributes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50262.json",
+      "cve": "CVE-2026-50262",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-50263: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free information disclosure in CreateSaverWindow()",
+      "date": "2026-06-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: use-after-free information disclosure in CreateSaverWindow()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50263.json",
+      "cve": "CVE-2026-50263",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-50264: xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: out-of-bounds heap write in DRI2 DRIGetBuffers/DRIGetBuffers",
+      "date": "2026-06-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg-x11-server: xorg-x11-server-Xwayland: xorg-x11-server: out-of-bounds heap write in DRI2 DRIGetBuffers/DRIGetBuffersWithFormat",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50264.json",
+      "cve": "CVE-2026-50264",
+      "cvss": 7.8
     },
     {
       "title": "CVE-2024-52011: launch-editor: vite: launch-editor: Arbitrary command execution via insufficient file argument sanitization",
