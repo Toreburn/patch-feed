@@ -1,16 +1,29 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-06-05T15:16:59.888Z",
+  "lastUpdated": "2026-06-05T20:02:33.836Z",
   "health": {
-    "lastFetchAttempt": "2026-06-05T15:16:59.888Z",
+    "lastFetchAttempt": "2026-06-05T20:02:33.836Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-05T15:16:59.888Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-06-05T20:02:33.836Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Klever-Go KVM: Unauthenticated remote node crash (nil-pointer DoS) in klever-go P2P transaction interceptor (txVersionChecker nil RawData) - potential chain halt",
+      "date": "2026-06-05",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\nEvery transaction gossiped on the klever-go P2P network is decoded and validated\nsynchronously inside the libp2p pubsub topic-validator callback. The validator\n`txVersionChecker.CheckTxVers",
+      "link": "https://github.com/advisories/GHSA-rm5c-5x2p-48wr",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "AdGuard Home: DoQ-to-UDP State Reduction and Source-Port Oracle",
       "date": "2026-06-04",
