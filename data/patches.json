@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06T13:57:31.256Z",
+  "lastUpdated": "2026-06-06T15:18:32.990Z",
   "newPatches": 0,
   "patches": [
     {
@@ -4759,6 +4759,48 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-06T15:18:32.990Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] aws - 60 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] github - 136 patches, no changes",
+        "[INFO] microsoft - 109 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 84 patches, no changes",
+        "[INFO] signal - 4 patches, no changes",
+        "[INFO] ubuntu - 52 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 473,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "aws",
+        "cisco",
+        "debian",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "edge",
+        "postgresql",
+        "chrome",
+        "fortinet",
+        "paloalto",
+        "apple",
+        "crowdstrike"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-06-06T13:57:31.256Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
@@ -9278,173 +9320,6 @@
         "gitlab"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-01T17:54:07.533Z",
-      "logs": [
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 20 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 200 patches (13 new)",
-        "[SUCCESS] gitlab - 3 patches (1 new)",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 13 patches, no changes",
-        "[INFO] redhat - 595 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 51 patches (7 new)"
-      ],
-      "newPatchCount": 21,
-      "totalPatches": 1346,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "crowdstrike",
-        "github",
-        "ubuntu",
-        "debian",
-        "microsoft",
-        "paloalto",
-        "redhat",
-        "signal",
-        "edge",
-        "oracle-db",
-        "slack",
-        "chrome",
-        "cisco",
-        "gitlab"
-      ],
-      "newPatches": [
-        {
-          "vendor": "github",
-          "title": "kas checks out SHA-like git branches as valid commits",
-          "date": "2026-06-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonai-platform: Any workspace member can delete the entire workspace via DELETE /workspaces/{id}",
-          "date": "2026-06-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonai-platform: Issue endpoints accept any issue_id without workspace ownership check, cross-workspace read/update/delete IDOR",
-          "date": "2026-06-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonai-platform: Any workspace member can add arbitrary user as owner via POST /workspaces/{id}/members",
-          "date": "2026-06-01",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonai-platform: Any workspace member can rewrite workspace name, description, and settings via PATCH /workspaces/{id}",
-          "date": "2026-06-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonai-platform: Comment endpoints accept any issue_id without workspace ownership check, cross-workspace comment read and post IDOR",
-          "date": "2026-06-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonai-platform: Project endpoints accept any project_id without workspace ownership check, cross-workspace read/update/delete IDOR",
-          "date": "2026-06-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "rattler has an entry-point path traversal in noarch:python install (arbitrary file write)",
-          "date": "2026-06-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Vitest browser mode serves unsanitized otelCarrier query parameter as inline script",
-          "date": "2026-06-01",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "When Vitest UI server is listening, arbitrary file can be read and executed",
-          "date": "2026-06-01",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "DOMPurify XSS via selectedcontent re-clone",
-          "date": "2026-06-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Nezha's authenticated agents can forge service-monitor results for other users' services",
-          "date": "2026-06-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "@agenticmail/mcp Missing Authentication for Critical Function",
-          "date": "2026-06-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "gitlab",
-          "title": "GitLab patch release notes",
-          "date": "2026-05-27",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8055-2: Evolution Data Server vulnerability",
-          "date": "2026-06-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8357-1: Qt Declarative vulnerability",
-          "date": "2026-06-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8356-1: GNU SASL vulnerability",
-          "date": "2026-06-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8352-1: LibreOffice vulnerability",
-          "date": "2026-06-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8351-1: Linux kernel (Low Latency) vulnerabilities",
-          "date": "2026-06-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8350-1: Linux kernel (NVIDIA Tegra) vulnerabilities",
-          "date": "2026-06-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "LSN-120-1: Kernel Live Patch Security Notice",
-          "date": "2026-06-01",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
