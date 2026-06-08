@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-06-08T04:20:41.035Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-08T04:43:28.860Z",
+  "newPatches": 3,
   "patches": [
+    {
+      "title": "DSA-6327-1 request-tracker4 - security update",
+      "date": "2026-06-07",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "request-tracker4",
+      "description": "Multiple vulnerabilities have been discovered in Request Tracker, an extensible trouble-ticket tracking system, which could result privilege escalation, information disclosure, SQL injections, LDAP au...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00238.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6326-1 nginx - security update",
+      "date": "2026-06-07",
+      "severity": "HIGH",
+      "vendor": "debian",
+      "component": "nginx",
+      "description": "Multiple vulnerabilities were discoverd in Nginx, a high-performance web and reverse proxy server, which could result in remote code execution, denial of service or memory disclosure. https://security...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00237.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6325-1 chromium - security update",
+      "date": "2026-06-07",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6325-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00236.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
       "date": "2026-06-07",
@@ -8734,6 +8767,63 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-08T04:43:28.860Z",
+      "logs": [
+        "[INFO] aws - 60 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[SUCCESS] debian - 9 patches (3 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] github - 123 patches, no changes",
+        "[INFO] microsoft - 109 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 481 patches, no changes",
+        "[INFO] signal - 4 patches, no changes",
+        "[INFO] ubuntu - 36 patches, no changes"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 834,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "aws",
+        "cisco",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "edge",
+        "postgresql",
+        "chrome",
+        "fortinet",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6327-1 request-tracker4 - security update",
+          "date": "2026-06-07",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6326-1 nginx - security update",
+          "date": "2026-06-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6325-1 chromium - security update",
+          "date": "2026-06-07",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-08T04:20:41.034Z",
       "logs": [
         "[INFO] aws - 60 patches, no changes",
@@ -15484,50 +15574,6 @@
           "severity": "HIGH"
         }
       ]
-    },
-    {
-      "timestamp": "2026-06-03T21:18:55.726Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] github - 130 patches, no changes",
-        "[INFO] microsoft - 250 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 16 patches, no changes",
-        "[INFO] redhat - 185 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 54 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 670,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "chrome",
-        "cisco",
-        "fortinet",
-        "paloalto",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "debian",
-        "apple",
-        "crowdstrike",
-        "edge",
-        "github",
-        "microsoft",
-        "signal",
-        "oracle-db",
-        "slack"
-      ],
-      "newPatches": []
     }
   ]
 }
