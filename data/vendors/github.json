@@ -1,12 +1,12 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-06-08T16:04:05.219Z",
+  "lastUpdated": "2026-06-08T20:25:34.047Z",
   "health": {
-    "lastFetchAttempt": "2026-06-08T16:04:05.219Z",
+    "lastFetchAttempt": "2026-06-08T20:25:34.047Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-06-08T16:04:05.219Z",
+    "lastFetchNewPatches": 7,
+    "lastSuccessWithData": "2026-06-08T20:25:34.047Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -21,6 +21,83 @@
       "link": "https://github.com/advisories/GHSA-hw9r-6m78-w6h3",
       "cve": "CVE-2026-39922",
       "cvss": 6.3
+    },
+    {
+      "title": "Netty: HAProxy SSL TLV parsing leaks retained slice on invalid TLV length",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-codec-haproxy, io.netty:netty-codec-haproxy",
+      "description": "Netty: HAProxy SSL TLV parsing leaks retained slice on invalid TLV length",
+      "link": "https://github.com/advisories/GHSA-cc37-9q2j-3hfv",
+      "cve": "CVE-2026-44893",
+      "cvss": 7.5
+    },
+    {
+      "title": "Netty has a Vulnerable Default Configuration Which Leads to Denial of Service via Unbounded HTTP/3 Header Size",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-codec-http3",
+      "description": "Netty has a Vulnerable Default Configuration Which Leads to Denial of Service via Unbounded HTTP/3 Header Size",
+      "link": "https://github.com/advisories/GHSA-c2rx-5r8w-8xr2",
+      "cve": "CVE-2026-44892",
+      "cvss": 7.5
+    },
+    {
+      "title": "Netty has Unbounded Direct Memory Consumption in its RedisDecoder",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-codec-redis, io.netty:netty-codec-redis",
+      "description": "Netty has Unbounded Direct Memory Consumption in its RedisDecoder",
+      "link": "https://github.com/advisories/GHSA-6ghj-frrj-jjj3",
+      "cve": "CVE-2026-44890",
+      "cvss": 7.5
+    },
+    {
+      "title": "Netty: Memory Exhaustion in RedisArrayAggregator due to Deeply Nested Arrays",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-codec-redis, io.netty:netty-codec-redis",
+      "description": "Netty: Memory Exhaustion in RedisArrayAggregator due to Deeply Nested Arrays",
+      "link": "https://github.com/advisories/GHSA-3244-j874-rhc2",
+      "cve": "CVE-2026-44250",
+      "cvss": 7.5
+    },
+    {
+      "title": "Netty has an IPv6 Subnet Filter Bypass via Incorrect Comparator Masking",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-handler, io.netty:netty-handler",
+      "description": "Netty has an IPv6 Subnet Filter Bypass via Incorrect Comparator Masking",
+      "link": "https://github.com/advisories/GHSA-3qp7-7mw8-wx86",
+      "cve": "CVE-2026-44249",
+      "cvss": 8.1
+    },
+    {
+      "title": "actual Allows Electron to Run As Node",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "actual",
+      "description": "actual Allows Electron to Run As Node",
+      "link": "https://github.com/advisories/GHSA-7rvm-xjpp-63r9",
+      "cve": "CVE-2026-42890",
+      "cvss": null
+    },
+    {
+      "title": "Authlib OAuth 2.0 has Open Redirect in Authorization API that allows attacker-controlled redirect_uri through unsupported response_type",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "authlib, authlib",
+      "description": "Authlib OAuth 2.0 has Open Redirect in Authorization API that allows attacker-controlled redirect_uri through unsupported response_type",
+      "link": "https://github.com/advisories/GHSA-w8p2-r796-3vmq",
+      "cve": "CVE-2026-41479",
+      "cvss": 5.4
     },
     {
       "title": "skillctl: Path traversal and symlink-follow in skillctl allow arbitrary file disclosure and deletion",
