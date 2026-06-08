@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-06-08T15:58:58.478Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-08T16:05:58.612Z",
+  "newPatches": 11,
   "patches": [
+    {
+      "title": "Turning Cloudflare’s threat indicators into real-time WAF rules",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "cloudflare",
+      "component": "WAF",
+      "description": "Cloudflare’s Threat Events provides security analysts with a window into the global threat landscape. The platform offers a peek into the immense traffic that Cloudflare processes every day, so you ca...",
+      "link": "https://blog.cloudflare.com/realtime-threat-intel-waf-rules/",
+      "cve": ""
+    },
+    {
+      "title": "GeoNode contains a server-side request forgery vulnerability in the service registration endpoint",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "geonode, geonode",
+      "description": "GeoNode contains a server-side request forgery vulnerability in the service registration endpoint",
+      "link": "https://github.com/advisories/GHSA-hw9r-6m78-w6h3",
+      "cve": "CVE-2026-39922",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-11569: quay: quay: Stored XSS via Filedrop SVG Upload",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "quay: quay: Stored XSS via Filedrop SVG Upload",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-11569.json",
+      "cve": "CVE-2026-11569",
+      "cvss": 5.4
+    },
+    {
+      "title": "USN-8402-1: systemd vulnerabilities",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "systemd vulnerabilities",
+      "description": "It was discovered that systemd-nspawn incorrectly handled certain optional\nconfiguration files. A local attacker could possibly use this issue to\nescape to the host system and execute arbitrary code. ...",
+      "link": "https://ubuntu.com/security/notices/USN-8402-1"
+    },
+    {
+      "title": "USN-8400-1: poppler vulnerability",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "poppler",
+      "description": "It was discovered that poppler incorrectly handled certain malformed PDF\ntiling patterns in the Splash backend. An attacker could possibly use this\nissue to execute arbitrary code, obtain sensitive in...",
+      "link": "https://ubuntu.com/security/notices/USN-8400-1"
+    },
+    {
+      "title": "USN-8399-1: Pillow vulnerabilities",
+      "date": "2026-06-08",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Pillow vulnerabilities",
+      "description": "It was discovered that Pillow incorrectly handled large glyph advance\nvalues in fonts. An attacker could possibly use this issue to cause Pillow\nto crash, resulting in a denial of service. (CVE-2026-4...",
+      "link": "https://ubuntu.com/security/notices/USN-8399-1"
+    },
+    {
+      "title": "USN-8398-1: nginx vulnerability",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "nginx",
+      "description": "It was discovered that nginx incorrectly handled certain cookie headers in\nthe HTTP/2 implementation. A remote attacker could possibly use this issue\nto cause nginx to consume excessive resources, res...",
+      "link": "https://ubuntu.com/security/notices/USN-8398-1"
+    },
+    {
+      "title": "USN-8397-1: libjxl vulnerability",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libjxl",
+      "description": "It was discovered that libjxl did not properly handle certain crafted PBM\nimages. An attacker could possibly use this issue to cause libjxl to crash,\nresulting in a denial of service, or execute arbit...",
+      "link": "https://ubuntu.com/security/notices/USN-8397-1"
+    },
     {
       "title": "DSA-6327-1 request-tracker4 - security update",
       "date": "2026-06-07",
@@ -2743,6 +2820,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10805.json",
       "cve": "CVE-2026-10805",
       "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-10803: mlflow: MLflow: Use of weak hash in Dataset Digest Computation",
+      "date": "2026-06-04",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mlflow: MLflow: Use of weak hash in Dataset Digest Computation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10803.json",
+      "cve": "CVE-2026-10803",
+      "cvss": 2.5
+    },
+    {
+      "title": "CVE-2026-50219: expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking",
+      "date": "2026-06-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50219.json",
+      "cve": "CVE-2026-50219",
+      "cvss": 4.9
     },
     {
       "title": "AdGuard Home: DoQ-to-UDP State Reduction and Source-Port Oracle",
@@ -8630,6 +8729,17 @@
       "cvss": 9.6
     },
     {
+      "title": "CVE-2026-3198: mlflow: MLflow: Information disclosure via insufficient authorization checks in Gateway API endpoints",
+      "date": "2026-06-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mlflow: MLflow: Information disclosure via insufficient authorization checks in Gateway API endpoints",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-3198.json",
+      "cve": "CVE-2026-3198",
+      "cvss": 6.5
+    },
+    {
       "title": "USN-8371-1: Linux kernel vulnerabilities",
       "date": "2026-06-02",
       "severity": "LOW",
@@ -8766,6 +8876,113 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-08T16:05:58.612Z",
+      "logs": [
+        "[INFO] aws - 60 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[SUCCESS] cloudflare - 1 patches (1 new)",
+        "[INFO] debian - 9 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[SUCCESS] github - 124 patches (1 new)",
+        "[INFO] microsoft - 109 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 485 patches (4 new)",
+        "[INFO] signal - 4 patches, no changes",
+        "[SUCCESS] ubuntu - 41 patches (5 new)"
+      ],
+      "newPatchCount": 11,
+      "totalPatches": 845,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "cloudflare",
+        "github",
+        "redhat",
+        "ubuntu",
+        "debian",
+        "microsoft",
+        "aws",
+        "cisco",
+        "signal",
+        "edge",
+        "postgresql",
+        "chrome",
+        "fortinet",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cloudflare",
+          "title": "Turning Cloudflare’s threat indicators into real-time WAF rules",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "GeoNode contains a server-side request forgery vulnerability in the service registration endpoint",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-11569: quay: quay: Stored XSS via Filedrop SVG Upload",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10803: mlflow: MLflow: Use of weak hash in Dataset Digest Computation",
+          "date": "2026-06-04",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50219: expat: libexpat: Use-after-free vulnerability due to improper handler call depth tracking",
+          "date": "2026-06-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-3198: mlflow: MLflow: Information disclosure via insufficient authorization checks in Gateway API endpoints",
+          "date": "2026-06-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8402-1: systemd vulnerabilities",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8400-1: poppler vulnerability",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8399-1: Pillow vulnerabilities",
+          "date": "2026-06-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8398-1: nginx vulnerability",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8397-1: libjxl vulnerability",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-08T15:58:58.478Z",
       "logs": [
@@ -15116,335 +15333,6 @@
         "microsoft"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-04T04:44:17.151Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[SUCCESS] debian - 13 patches (1 new)",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[SUCCESS] github - 130 patches (7 new)",
-        "[INFO] microsoft - 200 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[SUCCESS] redhat - 70 patches (39 new)",
-        "[SUCCESS] signal - 3 patches (1 new)",
-        "[INFO] ubuntu - 37 patches, no changes"
-      ],
-      "newPatchCount": 48,
-      "totalPatches": 469,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "chrome",
-        "cisco",
-        "debian",
-        "fortinet",
-        "github",
-        "paloalto",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "aws",
-        "apple",
-        "crowdstrike",
-        "edge",
-        "microsoft"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6321-1 ceph - security update",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "github",
-          "title": "Froxlor's API Authentication bypasses 2FA Authentication",
-          "date": "2026-06-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "browserstack-runner vulnerable to Remote Code Execution via vm sandbox escape in _log HTTP handler",
-          "date": "2026-06-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "browserstack-runner has an unauthenticated arbitrary file read via path traversal in HTTP server",
-          "date": "2026-06-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Jupyter Enterprise Gateway: Kubernetes Manifest Injection in Jinja2 Template Rendering",
-          "date": "2026-06-03",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Jupyter Enterprise Gateway: Jinja2 Template Server Side Template Injection resulting in Remote Code Execution",
-          "date": "2026-06-03",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "AIOHTTP is vulnerable to cross-origin redirect with per-request cookies",
-          "date": "2026-06-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Jupyter Enterprise Gateway: ContainerProcessProxy._enforce_prohibited_ids Bypass",
-          "date": "2026-06-03",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-3276: python: Python unicodedata: Denial of Service due to excessive CPU consumption",
-          "date": "2026-06-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48587: django: Django: Information disclosure via improper handling of Vary header whitespace",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-35193: django: Django: Information disclosure due to improper caching of authenticated responses",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-8404: Django: Django: Information disclosure due to improper handling of Cache-Control directives",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-7666: django: Django: Information disclosure via failed STARTTLS handshake in EmailBackend",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-6873: python-django: Django: Information disclosure via non-injective cookie salt derivation",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-5241: python-transformers: python-transformers: Arbitrary code execution due to overridden trust_remote_code setting",
-          "date": "2026-06-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46258: kernel: gpio: cdev: Avoid NULL dereference in linehandle_create()",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46260: kernel: ipv6: Fix out-of-bound access in fib6_add_rt2node()",
-          "date": "2026-06-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46273: kernel: ibmveth: Disable GSO for packets with small MSS",
-          "date": "2026-06-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46245: kernel: drm/amd/display: Fix dc_link NULL handling in HPD init",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46254: kernel: AppArmor: Allow apparmor to handle unaligned dfa tables",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46250: kernel: MIPS: Work around LLVM bug when gp is used as global register variable",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46271: kernel: wifi: ath12k: do WoW offloads only on primary link",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46268: kernel: PCI/P2PDMA: Fix p2pmem_alloc_mmap() warning condition",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46262: kernel: ASoC: fsl_xcvr: Revert fix missing lock in fsl_xcvr_mode_put()",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46244: kernel: netfilter: nft_inner: Fix IPv6 inner_thoff desync",
-          "date": "2026-06-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46270: kernel: power: supply: rt9455: Fix use-after-free in power_supply_changed()",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46269: kernel: pinctrl: canaan: k230: Fix NULL pointer dereference when parsing devicetree",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46266: kernel: inet: RAW sockets using IPPROTO_RAW MUST drop incoming ICMP",
-          "date": "2026-06-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46252: kernel: regulator: core: fix locking in regulator_resolve_supply() error path",
-          "date": "2026-06-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46256: kernel: NFS/localio: prevent direct reclaim recursion into NFS via nfs_writepages",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46247: kernel: clk: qcom: gfx3d: add parent to parent request map",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46264: kernel: drm/xe/pf: Fix sysfs initialization",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46251: kernel: btrfs: fix block_group_tree dirty_list corruption",
-          "date": "2026-06-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46267: kernel: nfc: hci: shdlc: Stop timers and work before freeing context",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46257: kernel: clocksource/drivers/timer-sp804: Fix an Oops when read_current_timer is called on ARM32 platforms where the SP80",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46246: kernel: power: supply: pm8916_lbc: Fix use-after-free for extcon in IRQ handler",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2025-71314: kernel: drm/panthor: Recover from panthor_gpu_flush_caches() failures",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2025-71313: kernel: PCI: endpoint: Add missing NULL check for alloc_workqueue()",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46253: kernel: pstore/ram: fix buffer overflow in persistent_ram_save_old()",
-          "date": "2026-06-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46249: kernel: octeontx2-af: Fix PF driver crash with kexec kernel booting",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46259: kernel: procfs: fix missing RCU protection when reading real_parent in do_task_stat()",
-          "date": "2026-06-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46248: kernel: wifi: ath12k: clear stale link mapping of ahvif->links_map",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46265: kernel: RDMA/hns: Fix WQ_MEM_RECLAIM warning",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46272: kernel: coresight: tmc-etr: Fix race condition between sysfs and perf mode",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46263: kernel: drm/amd/display: Fix out-of-bounds stream encoder index v3",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46255: kernel: dmaengine: fsl-edma: don't explicitly disable clocks in .remove()",
-          "date": "2026-06-03",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-5422: jupyter-server: jupyter-server: Sensitive data exposure via path traversal vulnerability",
-          "date": "2026-06-02",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "Signal Desktop v8.14.0-beta.1",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
