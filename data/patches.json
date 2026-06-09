@@ -1,7 +1,27 @@
 {
-  "lastUpdated": "2026-06-09T15:15:23.775Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-09T15:18:55.083Z",
+  "newPatches": 9,
   "patches": [
+    {
+      "title": "Cisco Catalyst SD-WAN Controller, Catalyst SD-WAN Manager, and Catalyst SD-WAN Validator Authenticated Privilege Escalation Vulnerability",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "SD-WAN",
+      "description": "A vulnerability in the CLI of Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator , formerly SD-WAN vB...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-privesc-4uxFrdzx",
+      "cve": "CVE-2026-20245"
+    },
+    {
+      "title": "Defend against frontier cyber models: Cloudflare's architecture as customer zero",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "cloudflare",
+      "component": "WAF",
+      "description": "A few weeks ago, we wrote about Project Glasswing and what we observed when we pointed cyber frontier models at our own code. Since then, we’ve seen that the part of the post that has resonated most d...",
+      "link": "https://blog.cloudflare.com/frontier-model-defense/",
+      "cve": ""
+    },
     {
       "title": "Puma PROXY Protocol v1 Accepts Repeated Protocol Headers on Persistent Connections",
       "date": "2026-06-09",
@@ -12,6 +32,17 @@
       "link": "https://github.com/advisories/GHSA-2vqw-3mp8-cgmx",
       "cve": "CVE-2026-47737",
       "cvss": 7.5
+    },
+    {
+      "title": "shell-quote quote() does not escape newlines in object .op values",
+      "date": "2026-06-09",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "shell-quote",
+      "description": "shell-quote quote() does not escape newlines in object .op values",
+      "link": "https://github.com/advisories/GHSA-w7jw-789q-3m8p",
+      "cve": "CVE-2026-9277",
+      "cvss": 8.1
     },
     {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
@@ -462,6 +493,65 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-10897",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-10897"
+    },
+    {
+      "title": "PostgreSQL Anonymizer 3.1 : Introducing Local Differential Privacy",
+      "date": "2026-06-09",
+      "severity": "CRITICAL",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "Eymoutiers, France, May 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.1 introducing innovative data masking techniques to protect your data ! Enhanced Privacy Protection for Your Da...",
+      "link": "https://www.postgresql.org/about/news/postgresql-anonymizer-31-introducing-local-differential-privacy-3311/",
+      "cve": "CVE-2026-9617"
+    },
+    {
+      "title": "CVE-2026-52903: manageiq: YAML safe_load production fallback to unsafe_load enables RCE via deserialization",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "manageiq: YAML safe_load production fallback to unsafe_load enables RCE via deserialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52903.json",
+      "cve": "CVE-2026-52903",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-52902: awxkit: path traversal via YAML !include directive",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "awxkit: path traversal via YAML !include directive",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52902.json",
+      "cve": "CVE-2026-52902",
+      "cvss": 4.7
+    },
+    {
+      "title": "USN-8398-2: nginx regression",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "nginx regression",
+      "description": "USN-8398-1 fixed a vulnerability in nginx. The update introduced a\nregression causing nginx to crash when being used with external modules.\nThis update reverts the fix for CVE-2026-49975 pending furth...",
+      "link": "https://ubuntu.com/security/notices/USN-8398-2"
+    },
+    {
+      "title": "USN-8044-2: alsa-lib vulnerability",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "alsa-lib",
+      "description": "USN-8044-1 fixed a vulnerability in alsa-lib. This update provides the\ncorresponding fix for alsa-lib on Ubuntu 20.04 LTS.\n\nOriginal advisory details:\n\n It was discovered that alsa-lib incorrectly han...",
+      "link": "https://ubuntu.com/security/notices/USN-8044-2"
+    },
+    {
+      "title": "USN-8410-1: shell-quote vulnerability",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "shell-quote",
+      "description": "Akshat Sinha discovered that shell-quote improperly validated object-token\ninputs. An attacker could possibly use this issue to cause shell-quote to\ncrash, resulting in a denial of service, or execute...",
+      "link": "https://ubuntu.com/security/notices/USN-8410-1"
     },
     {
       "title": "CVE-2026-11393 - Code Injection via Improper Triple-Quote Escaping in AgentCore CLI Bedrock Agent Import",
@@ -5281,6 +5371,101 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-09T15:18:55.083Z",
+      "logs": [
+        "[INFO] aws - 59 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[SUCCESS] cisco - 7 patches (1 new)",
+        "[SUCCESS] cloudflare - 2 patches (1 new)",
+        "[INFO] debian - 10 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[SUCCESS] github - 156 patches (1 new)",
+        "[INFO] microsoft - 159 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[SUCCESS] postgresql - 2 patches (1 new)",
+        "[SUCCESS] redhat - 93 patches (2 new)",
+        "[INFO] signal - 4 patches, no changes",
+        "[SUCCESS] ubuntu - 37 patches (3 new)"
+      ],
+      "newPatchCount": 9,
+      "totalPatches": 535,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "cisco",
+        "cloudflare",
+        "github",
+        "microsoft",
+        "postgresql",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "debian",
+        "signal",
+        "edge",
+        "fortinet",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Cisco Catalyst SD-WAN Controller, Catalyst SD-WAN Manager, and Catalyst SD-WAN Validator Authenticated Privilege Escalation Vulnerability",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cloudflare",
+          "title": "Defend against frontier cyber models: Cloudflare's architecture as customer zero",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "shell-quote quote() does not escape newlines in object .op values",
+          "date": "2026-06-09",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "postgresql",
+          "title": "PostgreSQL Anonymizer 3.1 : Introducing Local Differential Privacy",
+          "date": "2026-06-09",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-52903: manageiq: YAML safe_load production fallback to unsafe_load enables RCE via deserialization",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-52902: awxkit: path traversal via YAML !include directive",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8398-2: nginx regression",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8044-2: alsa-lib vulnerability",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8410-1: shell-quote vulnerability",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-09T15:15:23.774Z",
       "logs": [
@@ -12099,48 +12284,6 @@
     },
     {
       "timestamp": "2026-06-05T10:03:35.494Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] github - 82 patches, no changes",
-        "[INFO] microsoft - 109 patches, no changes",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 70 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 35 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 328,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "debian",
-        "cisco",
-        "edge",
-        "github",
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "signal",
-        "chrome",
-        "fortinet",
-        "paloalto",
-        "ubuntu",
-        "aws",
-        "apple",
-        "crowdstrike"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-05T09:57:52.356Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
         "[INFO] aws - 2 patches, no changes",
