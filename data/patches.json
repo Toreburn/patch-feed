@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-06-09T03:51:56.971Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-09T04:04:17.464Z",
+  "newPatches": 70,
   "patches": [
+    {
+      "title": "Puma PROXY Protocol v1 Accepts Repeated Protocol Headers on Persistent Connections",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "puma, puma",
+      "description": "Puma PROXY Protocol v1 Accepts Repeated Protocol Headers on Persistent Connections",
+      "link": "https://github.com/advisories/GHSA-2vqw-3mp8-cgmx",
+      "cve": "CVE-2026-47737",
+      "cvss": 7.5
+    },
     {
       "title": "CVE-2026-11393 - Code Injection via Improper Triple-Quote Escaping in AgentCore CLI Bedrock Agent Import",
       "date": "2026-06-08",
@@ -10,6 +21,24 @@
       "component": "CVE-2026-11393",
       "description": "<p><b>Bulletin ID:</b> 2026-040-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 06/08/2026 11:45 AM PDT</p> \n<p><b>Description:</b></p> \n...",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-040-aws/"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "Hi, everyone! We've just released&nbsp;Chrome 149 (149.0.7827.102)&nbsp;for Android. It'll become&nbsp;available on Google Play&nbsp;over the next few days.&nbsp;This release includes stability and pe...",
+      "link": "https://chromereleases.googleblog.com/feeds/8462838854397259489/comments/default"
+    },
+    {
+      "title": "Stable Channel Update for Desktop",
+      "date": "2026-06-08",
+      "severity": "CRITICAL",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "The Stable channel has been updated to 149.0.7827.102/.103 for Windows and&nbsp;Mac and 149.0.7827.102 for Linux, which will roll out over the coming days/weeks. A full list of changes in this build i...",
+      "link": "https://chromereleases.googleblog.com/feeds/4002642496994494201/comments/default"
     },
     {
       "title": "Cisco Catalyst SD-WAN Manager Authenticated Privilege Escalation Vulnerability",
@@ -50,6 +79,17 @@
       "component": "tomcat10",
       "description": "Multiple security vulnerabilities have been discovered in Tomcat 10, a Java based web server, servlet and JSP engine which may result in a denial of service, authentication bypass or the disclosure of...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00239.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6331-1 keystone - security update",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "keystone",
+      "description": "Multiple vulnerabilities were discovered in Keystone, the OpenStack identity service, which may result in authorisation bypass, privilege escalation, user impersonation or incomplete termination of ac...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00241.html",
       "cve": "",
       "cves": []
     },
@@ -142,6 +182,259 @@
       "cvss": 5.4
     },
     {
+      "title": "Puma PROXY Protocol v1 Parser Allows Remote Memory Exhaustion ",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "puma, puma",
+      "description": "Puma PROXY Protocol v1 Parser Allows Remote Memory Exhaustion ",
+      "link": "https://github.com/advisories/GHSA-qpgp-93vx-g8v8",
+      "cve": "CVE-2026-47736",
+      "cvss": 7.5
+    },
+    {
+      "title": "Arc has an authenticated arbitrary local-file read via DuckDB I/O functions that bypasses RBAC table-level checks",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/basekick-labs/arc",
+      "description": "Arc has an authenticated arbitrary local-file read via DuckDB I/O functions that bypasses RBAC table-level checks",
+      "link": "https://github.com/advisories/GHSA-p2j4-c4g6-rpf5",
+      "cve": "CVE-2026-47735",
+      "cvss": null
+    },
+    {
+      "title": "Dulwich has unbounded memory allocation in receive-pack from crafted thin packs",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "dulwich",
+      "description": "Dulwich has unbounded memory allocation in receive-pack from crafted thin packs",
+      "link": "https://github.com/advisories/GHSA-xrvj-v92f-53gj",
+      "cve": "CVE-2026-47734",
+      "cvss": 5.7
+    },
+    {
+      "title": "nebula-mesh: GET /api/v1/audit-log discloses all entries to any operator",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/juev/nebula-mesh",
+      "description": "nebula-mesh: GET /api/v1/audit-log discloses all entries to any operator",
+      "link": "https://github.com/advisories/GHSA-qm33-p5p9-f8vg",
+      "cve": "CVE-2026-47726",
+      "cvss": null
+    },
+    {
+      "title": "nebula-mesh's web UI lacks CSRF tokens on /ui/* mutating endpoints",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/juev/nebula-mesh",
+      "description": "nebula-mesh's web UI lacks CSRF tokens on /ui/* mutating endpoints",
+      "link": "https://github.com/advisories/GHSA-273q-qgh5-wrj6",
+      "cve": "CVE-2026-47725",
+      "cvss": null
+    },
+    {
+      "title": "nebula-mesh: API endpoints lack ownership checks, enabling cross-operator privilege escalation",
+      "date": "2026-06-08",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/juev/nebula-mesh",
+      "description": "nebula-mesh: API endpoints lack ownership checks, enabling cross-operator privilege escalation",
+      "link": "https://github.com/advisories/GHSA-598g-h2vc-h5vg",
+      "cve": "CVE-2026-47724",
+      "cvss": 9.9
+    },
+    {
+      "title": "nebula-mesh: Web UI and API responses lack security headers (CSP, X-Frame-Options, HSTS, etc.)",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/juev/nebula-mesh",
+      "description": "nebula-mesh: Web UI and API responses lack security headers (CSP, X-Frame-Options, HSTS, etc.)",
+      "link": "https://github.com/advisories/GHSA-w7w5-5gcp-38rw",
+      "cve": "CVE-2026-47723",
+      "cvss": null
+    },
+    {
+      "title": "nebula-mesh: Host advanced overrides allow YAML injection into agent config.yml",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/juev/nebula-mesh",
+      "description": "nebula-mesh: Host advanced overrides allow YAML injection into agent config.yml",
+      "link": "https://github.com/advisories/GHSA-7hp6-g3pq-3pc3",
+      "cve": "CVE-2026-47722",
+      "cvss": null
+    },
+    {
+      "title": "FUXA's scheduler API missing admin check enables operator-to-admin escalation via scheduled device actions",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "fuxa-server",
+      "description": "FUXA's scheduler API missing admin check enables operator-to-admin escalation via scheduled device actions",
+      "link": "https://github.com/advisories/GHSA-8ghr-w65f-j3qr",
+      "cve": "CVE-2026-47721",
+      "cvss": 6.3
+    },
+    {
+      "title": "FUXA has SQL Injection in its TDengine DAQ connector via backslash bypass of escapeTdString",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "fuxa-server",
+      "description": "FUXA has SQL Injection in its TDengine DAQ connector via backslash bypass of escapeTdString",
+      "link": "https://github.com/advisories/GHSA-h9fj-c2qr-76g2",
+      "cve": "CVE-2026-47720",
+      "cvss": 5.3
+    },
+    {
+      "title": "FUXA: Unauthenticated SSRF via Socket.IO DEVICE_WEBAPI_REQUEST and DEVICE_PROPERTY with response reading",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "fuxa-server",
+      "description": "FUXA: Unauthenticated SSRF via Socket.IO DEVICE_WEBAPI_REQUEST and DEVICE_PROPERTY with response reading",
+      "link": "https://github.com/advisories/GHSA-w86f-rf9w-h3x6",
+      "cve": "CVE-2026-47719",
+      "cvss": 8.2
+    },
+    {
+      "title": "Dulwich doesn't sanitize commit subjects in `porcelain.format_patch`",
+      "date": "2026-06-08",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "dulwich",
+      "description": "Dulwich doesn't sanitize commit subjects in `porcelain.format_patch`",
+      "link": "https://github.com/advisories/GHSA-555p-6grf-mh7f",
+      "cve": "CVE-2026-47712",
+      "cvss": 3.3
+    },
+    {
+      "title": "Poweradmin: CSV Injection in log export endpoints allows formula execution in spreadsheet applications",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "poweradmin/poweradmin, poweradmin/poweradmin",
+      "description": "Poweradmin: CSV Injection in log export endpoints allows formula execution in spreadsheet applications",
+      "link": "https://github.com/advisories/GHSA-3h6h-67x3-cv5x",
+      "cve": "CVE-2026-47693",
+      "cvss": 6.9
+    },
+    {
+      "title": "Anyquery: AppleScript/JXA Code Injection via Unescaped URL in macOS Chrome Plugin",
+      "date": "2026-06-08",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/julien040/anyquery/plugins/chrome, github.com/julien040/anyquery/plugins/brave, github.com/julien040/anyquery/plugins/edge",
+      "description": "Anyquery: AppleScript/JXA Code Injection via Unescaped URL in macOS Chrome Plugin",
+      "link": "https://github.com/advisories/GHSA-hrj8-hjv8-mgwc",
+      "cve": "CVE-2026-47252",
+      "cvss": 9
+    },
+    {
+      "title": "Netty has Insufficient Bailiwick Validation for NS Records",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-resolver-dns, io.netty:netty-resolver-dns",
+      "description": "Netty has Insufficient Bailiwick Validation for NS Records",
+      "link": "https://github.com/advisories/GHSA-5pvg-856g-cp85",
+      "cve": "CVE-2026-47691",
+      "cvss": 8.7
+    },
+    {
+      "title": "Netty HTTP/2: Advertised MAX_CONCURRENT_STREAMS are not enforced",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "io.netty:netty-codec-http2, io.netty:netty-codec-http2",
+      "description": "Netty HTTP/2: Advertised MAX_CONCURRENT_STREAMS are not enforced",
+      "link": "https://github.com/advisories/GHSA-5x3r-wrvg-rp6q",
+      "cve": "CVE-2026-47244",
+      "cvss": 5.3
+    },
+    {
+      "title": "Netty: SCTP reassembly nests buffers without bound",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-transport-sctp, io.netty:netty-transport-sctp",
+      "description": "Netty: SCTP reassembly nests buffers without bound",
+      "link": "https://github.com/advisories/GHSA-5xrh-qmmq-w6ch",
+      "cve": "CVE-2026-46340",
+      "cvss": 7.5
+    },
+    {
+      "title": "Netty Vulnerable to DNS Cache Poisoning via Missing Bailiwick Checks in CNAME Records",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-resolver-dns, io.netty:netty-resolver-dns",
+      "description": "Netty Vulnerable to DNS Cache Poisoning via Missing Bailiwick Checks in CNAME Records",
+      "link": "https://github.com/advisories/GHSA-676x-f7gg-47vc",
+      "cve": "CVE-2026-45674",
+      "cvss": 8.7
+    },
+    {
+      "title": "Netty: DNS Cache Poisoning due to Predictable PRNG and Default Static Source Port",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "io.netty:netty-resolver-dns, io.netty:netty-resolver-dns",
+      "description": "Netty: DNS Cache Poisoning due to Predictable PRNG and Default Static Source Port",
+      "link": "https://github.com/advisories/GHSA-xmv7-r254-6q78",
+      "cve": "CVE-2026-45673",
+      "cvss": 6.8
+    },
+    {
+      "title": "Netty: Unix-socket fd receive leaks descriptors when peer sends two at once",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "io.netty:netty-transport-native-epoll, io.netty:netty-transport-native-kqueue, io.netty:netty-transport-native-kqueue",
+      "description": "Netty: Unix-socket fd receive leaks descriptors when peer sends two at once",
+      "link": "https://github.com/advisories/GHSA-w573-9ffj-6ff9",
+      "cve": "CVE-2026-45536",
+      "cvss": 4
+    },
+    {
+      "title": "Netty: SNI handler pre-allocates up to 16 MiB from nine attacker bytes",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-handler, io.netty:netty-handler",
+      "description": "Netty: SNI handler pre-allocates up to 16 MiB from nine attacker bytes",
+      "link": "https://github.com/advisories/GHSA-x4gw-5cx5-pgmh",
+      "cve": "CVE-2026-45416",
+      "cvss": 7.5
+    },
+    {
+      "title": "PHPSpreadsheet has a patch bypass for CVE-2026-34084 ",
+      "date": "2026-06-08",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "phpoffice/phpspreadsheet",
+      "description": "PHPSpreadsheet has a patch bypass for CVE-2026-34084 ",
+      "link": "https://github.com/advisories/GHSA-87m4-826x-3crx",
+      "cve": "CVE-2026-45034",
+      "cvss": null
+    },
+    {
+      "title": "Netty's Default QUIC token handler accepts any client-supplied token",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-codec-classes-quic",
+      "description": "Netty's Default QUIC token handler accepts any client-supplied token",
+      "link": "https://github.com/advisories/GHSA-cmm3-54f8-px4j",
+      "cve": "CVE-2026-44894",
+      "cvss": 7.5
+    },
+    {
       "title": "CVE-2026-11569: quay: quay: Stored XSS via Filedrop SVG Upload",
       "date": "2026-06-08",
       "severity": "MEDIUM",
@@ -151,6 +444,446 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-11569.json",
       "cve": "CVE-2026-11569",
       "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-11577: keycloak: keycloak: privilege escalation via partialImport FGAP permission bypass",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak: keycloak: privilege escalation via partialImport FGAP permission bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-11577.json",
+      "cve": "CVE-2026-11577",
+      "cvss": 7.2
+    },
+    {
+      "title": "CVE-2025-71315: kernel: drm/vkms: Convert to DRM's vblank timer",
+      "date": "2026-06-08",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/vkms: Convert to DRM's vblank timer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-71315.json",
+      "cve": "CVE-2025-71315",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46275: kernel: Bluetooth: hci_uart: fix UAFs and race conditions in close and init paths",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Bluetooth: hci_uart: fix UAFs and race conditions in close and init paths",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46275.json",
+      "cve": "CVE-2026-46275",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46274: kernel: io-wq: check that the predecessor is hashed in io_wq_remove_pending()",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: io-wq: check that the predecessor is hashed in io_wq_remove_pending()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46274.json",
+      "cve": "CVE-2026-46274",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-46292: kernel: pmdomain: core: Fix detach procedure for virtual devices in genpd",
+      "date": "2026-06-08",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: pmdomain: core: Fix detach procedure for virtual devices in genpd",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46292.json",
+      "cve": "CVE-2026-46292",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46313: kernel: media: intel/ipu6: fix error pointer dereference",
+      "date": "2026-06-08",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: intel/ipu6: fix error pointer dereference",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46313.json",
+      "cve": "CVE-2026-46313",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46299: kernel: hfsplus: fix held lock freed on hfsplus_fill_super()",
+      "date": "2026-06-08",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: hfsplus: fix held lock freed on hfsplus_fill_super()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46299.json",
+      "cve": "CVE-2026-46299",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46302: kernel: selinux: allow multiple opens of /sys/fs/selinux/policy",
+      "date": "2026-06-08",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: selinux: allow multiple opens of /sys/fs/selinux/policy",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46302.json",
+      "cve": "CVE-2026-46302",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46295: kernel: KVM: x86: Do IRR scan in __kvm_apic_update_irr even if PIR is empty",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: x86: Do IRR scan in __kvm_apic_update_irr even if PIR is empty",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46295.json",
+      "cve": "CVE-2026-46295",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46289: kernel: lib/scatterlist: fix length calculations in extract_kvec_to_sg",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: lib/scatterlist: fix length calculations in extract_kvec_to_sg",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46289.json",
+      "cve": "CVE-2026-46289",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46279: kernel: mm/alloc_tag: clear codetag for pages allocated before page_ext initialization",
+      "date": "2026-06-08",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/alloc_tag: clear codetag for pages allocated before page_ext initialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46279.json",
+      "cve": "CVE-2026-46279",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46312: kernel: media: videobuf2: Set vma_flags in vb2_dma_sg_mmap",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: videobuf2: Set vma_flags in vb2_dma_sg_mmap",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46312.json",
+      "cve": "CVE-2026-46312",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46305: kernel: staging: rtl8723bs: os_dep: avoid NULL pointer dereference in rtw_cbuf_alloc",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: staging: rtl8723bs: os_dep: avoid NULL pointer dereference in rtw_cbuf_alloc",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46305.json",
+      "cve": "CVE-2026-46305",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46308: kernel: pmdomain: mediatek: fix use-after-free in scpsys_get_bus_protection_legacy()",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: pmdomain: mediatek: fix use-after-free in scpsys_get_bus_protection_legacy()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46308.json",
+      "cve": "CVE-2026-46308",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46310: kernel: media: renesas: vsp1: Fix NULL pointer deref on module unload",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: renesas: vsp1: Fix NULL pointer deref on module unload",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46310.json",
+      "cve": "CVE-2026-46310",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46296: kernel: spi: s3c64xx: fix NULL-deref on driver unbind",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: spi: s3c64xx: fix NULL-deref on driver unbind",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46296.json",
+      "cve": "CVE-2026-46296",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46277: kernel: mm/zone_device: do not touch device folio after calling ->folio_free()",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/zone_device: do not touch device folio after calling ->folio_free()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46277.json",
+      "cve": "CVE-2026-46277",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46283: kernel: tpm: Use kfree_sensitive() to free auth session in tpm_dev_release()",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: tpm: Use kfree_sensitive() to free auth session in tpm_dev_release()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46283.json",
+      "cve": "CVE-2026-46283",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46285: kernel: mtd: docg3: fix use-after-free in docg3_release()",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mtd: docg3: fix use-after-free in docg3_release()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46285.json",
+      "cve": "CVE-2026-46285",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46304: kernel: nvmet: avoid recursive nvmet-wq flush in nvmet_ctrl_free",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: nvmet: avoid recursive nvmet-wq flush in nvmet_ctrl_free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46304.json",
+      "cve": "CVE-2026-46304",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46280: kernel: lib: test_hmm: evict device pages on file close to avoid use-after-free",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: lib: test_hmm: evict device pages on file close to avoid use-after-free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46280.json",
+      "cve": "CVE-2026-46280",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46301: kernel: spi: topcliff-pch: fix use-after-free on unbind",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: spi: topcliff-pch: fix use-after-free on unbind",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46301.json",
+      "cve": "CVE-2026-46301",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46278: kernel: drm/imagination: Fix segfault when updating ftrace mask",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/imagination: Fix segfault when updating ftrace mask",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46278.json",
+      "cve": "CVE-2026-46278",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46314: kernel: drm/v3d: Reject empty multisync extension to prevent infinite loop",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/v3d: Reject empty multisync extension to prevent infinite loop",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46314.json",
+      "cve": "CVE-2026-46314",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46294: kernel: dm: fix a buffer overflow in ioctl processing",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: dm: fix a buffer overflow in ioctl processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46294.json",
+      "cve": "CVE-2026-46294",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46281: kernel: vmalloc: fix buffer overflow in vrealloc_node_align()",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: vmalloc: fix buffer overflow in vrealloc_node_align()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46281.json",
+      "cve": "CVE-2026-46281",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46307: kernel: wifi: ath5k: do not access array OOB",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: wifi: ath5k: do not access array OOB",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46307.json",
+      "cve": "CVE-2026-46307",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46290: kernel: x86/efi: Fix graceful fault handling after FPU softirq changes",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: x86/efi: Fix graceful fault handling after FPU softirq changes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46290.json",
+      "cve": "CVE-2026-46290",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46282: kernel: iio: frequency: admv1013: fix NULL pointer dereference on str",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: iio: frequency: admv1013: fix NULL pointer dereference on str",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46282.json",
+      "cve": "CVE-2026-46282",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46306: kernel: flow_dissector: do not dissect PPPoE PFC frames",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: flow_dissector: do not dissect PPPoE PFC frames",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46306.json",
+      "cve": "CVE-2026-46306",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46291: kernel: crypto: caam - guard HMAC key hex dumps in hash_digest_key",
+      "date": "2026-06-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: caam - guard HMAC key hex dumps in hash_digest_key",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46291.json",
+      "cve": "CVE-2026-46291",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46287: kernel: net: txgbe: fix RTNL assertion warning when remove module",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: txgbe: fix RTNL assertion warning when remove module",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46287.json",
+      "cve": "CVE-2026-46287",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46309: kernel: drm/xe/uapi: Reject coh_none PAT index for CPU cached memory in madvise",
+      "date": "2026-06-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/xe/uapi: Reject coh_none PAT index for CPU cached memory in madvise",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46309.json",
+      "cve": "CVE-2026-46309",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46288: kernel: of: unittest: fix use-after-free in of_unittest_changeset()",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: of: unittest: fix use-after-free in of_unittest_changeset()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46288.json",
+      "cve": "CVE-2026-46288",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46311: kernel: drm/amdgpu/userq: fix access to stale wptr mapping",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/amdgpu/userq: fix access to stale wptr mapping",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46311.json",
+      "cve": "CVE-2026-46311",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46293: kernel: clk: microchip: mpfs-ccc: fix out of bounds access during output registration",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: clk: microchip: mpfs-ccc: fix out of bounds access during output registration",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46293.json",
+      "cve": "CVE-2026-46293",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46284: kernel: mm/hugetlb: fix early boot crash on parameters without '=' separator",
+      "date": "2026-06-08",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/hugetlb: fix early boot crash on parameters without '=' separator",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46284.json",
+      "cve": "CVE-2026-46284",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46297: kernel: net: libwx: use request_irq for VF misc interrupt",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: libwx: use request_irq for VF misc interrupt",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46297.json",
+      "cve": "CVE-2026-46297",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46276: kernel: drm/amdgpu: fix zero-size GDS range init on RDNA4",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/amdgpu: fix zero-size GDS range init on RDNA4",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46276.json",
+      "cve": "CVE-2026-46276",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46298: kernel: pseries/papr-hvpipe: Fix race with interrupt handler",
+      "date": "2026-06-08",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: pseries/papr-hvpipe: Fix race with interrupt handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46298.json",
+      "cve": "CVE-2026-46298",
+      "cvss": 5.5
     },
     {
       "title": "USN-8402-1: systemd vulnerabilities",
@@ -250,6 +983,24 @@
       "component": "Netty vulnerabilities",
       "description": "It was discovered that Netty's HTTP proxy handler did not properly\nvalidate headers when constructing CONNECT requests. An\nattacker could possibly use this issue to inject arbitrary HTTP\nheaders into ...",
       "link": "https://ubuntu.com/security/notices/USN-8401-1"
+    },
+    {
+      "title": "USN-8408-1: Twig vulnerability",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Twig",
+      "description": "It was discovered that Twig did not properly validate PHP callables when\nusing a source policy. An authenticated user could possibly use this issue\nto execute arbitrary code....",
+      "link": "https://ubuntu.com/security/notices/USN-8408-1"
+    },
+    {
+      "title": "USN-8407-1: strongSwan vulnerability",
+      "date": "2026-06-08",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "strongSwan",
+      "description": "Elliott Childre discovered that strongSwan incorrectly handled the cloning\nof certain identities. A remote attacker could use this issue to cause\nstrongSwan to crash, resulting in a denial of service,...",
+      "link": "https://ubuntu.com/security/notices/USN-8407-1"
     },
     {
       "title": "DSA-6327-1 request-tracker4 - security update",
@@ -2377,6 +3128,17 @@
       "cvss": 7
     },
     {
+      "title": "CVE-2026-50292: libinput: local privilege escalation via crafted uinput devices",
+      "date": "2026-06-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libinput: local privilege escalation via crafted uinput devices",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50292.json",
+      "cve": "CVE-2026-50292",
+      "cvss": 7
+    },
+    {
       "title": "Klever-Go KVM: Unauthenticated remote node crash (nil-pointer DoS) in klever-go P2P transaction interceptor (txVersionChecker nil RawData) - potential chain halt",
       "date": "2026-06-05",
       "severity": "HIGH",
@@ -4069,6 +4831,467 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-09T04:04:17.464Z",
+      "logs": [
+        "[INFO] aws - 59 patches, no changes",
+        "[SUCCESS] chrome - 3 patches (2 new)",
+        "[INFO] cisco - 6 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] debian - 10 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[SUCCESS] github - 155 patches (24 new)",
+        "[INFO] microsoft - 109 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 91 patches (41 new)",
+        "[INFO] signal - 4 patches, no changes",
+        "[SUCCESS] ubuntu - 34 patches (2 new)"
+      ],
+      "newPatchCount": 70,
+      "totalPatches": 476,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "github",
+        "aws",
+        "chrome",
+        "cisco",
+        "cloudflare",
+        "debian",
+        "redhat",
+        "ubuntu",
+        "microsoft",
+        "signal",
+        "edge",
+        "postgresql",
+        "fortinet",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "chrome",
+          "title": "Chrome for Android Update",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "chrome",
+          "title": "Stable Channel Update for Desktop",
+          "date": "2026-06-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6331-1 keystone - security update",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Puma PROXY Protocol v1 Accepts Repeated Protocol Headers on Persistent Connections",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Puma PROXY Protocol v1 Parser Allows Remote Memory Exhaustion ",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Arc has an authenticated arbitrary local-file read via DuckDB I/O functions that bypasses RBAC table-level checks",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Dulwich has unbounded memory allocation in receive-pack from crafted thin packs",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "nebula-mesh: GET /api/v1/audit-log discloses all entries to any operator",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "nebula-mesh's web UI lacks CSRF tokens on /ui/* mutating endpoints",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "nebula-mesh: API endpoints lack ownership checks, enabling cross-operator privilege escalation",
+          "date": "2026-06-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "nebula-mesh: Web UI and API responses lack security headers (CSP, X-Frame-Options, HSTS, etc.)",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "nebula-mesh: Host advanced overrides allow YAML injection into agent config.yml",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "FUXA's scheduler API missing admin check enables operator-to-admin escalation via scheduled device actions",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "FUXA has SQL Injection in its TDengine DAQ connector via backslash bypass of escapeTdString",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "FUXA: Unauthenticated SSRF via Socket.IO DEVICE_WEBAPI_REQUEST and DEVICE_PROPERTY with response reading",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Dulwich doesn't sanitize commit subjects in `porcelain.format_patch`",
+          "date": "2026-06-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Poweradmin: CSV Injection in log export endpoints allows formula execution in spreadsheet applications",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Anyquery: AppleScript/JXA Code Injection via Unescaped URL in macOS Chrome Plugin",
+          "date": "2026-06-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Netty has Insufficient Bailiwick Validation for NS Records",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Netty HTTP/2: Advertised MAX_CONCURRENT_STREAMS are not enforced",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Netty: SCTP reassembly nests buffers without bound",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Netty Vulnerable to DNS Cache Poisoning via Missing Bailiwick Checks in CNAME Records",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Netty: DNS Cache Poisoning due to Predictable PRNG and Default Static Source Port",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Netty: Unix-socket fd receive leaks descriptors when peer sends two at once",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Netty: SNI handler pre-allocates up to 16 MiB from nine attacker bytes",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PHPSpreadsheet has a patch bypass for CVE-2026-34084 ",
+          "date": "2026-06-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Netty's Default QUIC token handler accepts any client-supplied token",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-11577: keycloak: keycloak: privilege escalation via partialImport FGAP permission bypass",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-71315: kernel: drm/vkms: Convert to DRM's vblank timer",
+          "date": "2026-06-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46275: kernel: Bluetooth: hci_uart: fix UAFs and race conditions in close and init paths",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46274: kernel: io-wq: check that the predecessor is hashed in io_wq_remove_pending()",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46292: kernel: pmdomain: core: Fix detach procedure for virtual devices in genpd",
+          "date": "2026-06-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46313: kernel: media: intel/ipu6: fix error pointer dereference",
+          "date": "2026-06-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46299: kernel: hfsplus: fix held lock freed on hfsplus_fill_super()",
+          "date": "2026-06-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46302: kernel: selinux: allow multiple opens of /sys/fs/selinux/policy",
+          "date": "2026-06-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46295: kernel: KVM: x86: Do IRR scan in __kvm_apic_update_irr even if PIR is empty",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46289: kernel: lib/scatterlist: fix length calculations in extract_kvec_to_sg",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46279: kernel: mm/alloc_tag: clear codetag for pages allocated before page_ext initialization",
+          "date": "2026-06-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46312: kernel: media: videobuf2: Set vma_flags in vb2_dma_sg_mmap",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46305: kernel: staging: rtl8723bs: os_dep: avoid NULL pointer dereference in rtw_cbuf_alloc",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46308: kernel: pmdomain: mediatek: fix use-after-free in scpsys_get_bus_protection_legacy()",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46310: kernel: media: renesas: vsp1: Fix NULL pointer deref on module unload",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46296: kernel: spi: s3c64xx: fix NULL-deref on driver unbind",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46277: kernel: mm/zone_device: do not touch device folio after calling ->folio_free()",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46283: kernel: tpm: Use kfree_sensitive() to free auth session in tpm_dev_release()",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46285: kernel: mtd: docg3: fix use-after-free in docg3_release()",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46304: kernel: nvmet: avoid recursive nvmet-wq flush in nvmet_ctrl_free",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46280: kernel: lib: test_hmm: evict device pages on file close to avoid use-after-free",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46301: kernel: spi: topcliff-pch: fix use-after-free on unbind",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46278: kernel: drm/imagination: Fix segfault when updating ftrace mask",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46314: kernel: drm/v3d: Reject empty multisync extension to prevent infinite loop",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46294: kernel: dm: fix a buffer overflow in ioctl processing",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46281: kernel: vmalloc: fix buffer overflow in vrealloc_node_align()",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46307: kernel: wifi: ath5k: do not access array OOB",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46290: kernel: x86/efi: Fix graceful fault handling after FPU softirq changes",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46282: kernel: iio: frequency: admv1013: fix NULL pointer dereference on str",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46306: kernel: flow_dissector: do not dissect PPPoE PFC frames",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46291: kernel: crypto: caam - guard HMAC key hex dumps in hash_digest_key",
+          "date": "2026-06-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46287: kernel: net: txgbe: fix RTNL assertion warning when remove module",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46309: kernel: drm/xe/uapi: Reject coh_none PAT index for CPU cached memory in madvise",
+          "date": "2026-06-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46288: kernel: of: unittest: fix use-after-free in of_unittest_changeset()",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46311: kernel: drm/amdgpu/userq: fix access to stale wptr mapping",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46293: kernel: clk: microchip: mpfs-ccc: fix out of bounds access during output registration",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46284: kernel: mm/hugetlb: fix early boot crash on parameters without '=' separator",
+          "date": "2026-06-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46297: kernel: net: libwx: use request_irq for VF misc interrupt",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46276: kernel: drm/amdgpu: fix zero-size GDS range init on RDNA4",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46298: kernel: pseries/papr-hvpipe: Fix race with interrupt handler",
+          "date": "2026-06-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50292: libinput: local privilege escalation via crafted uinput devices",
+          "date": "2026-06-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8408-1: Twig vulnerability",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8407-1: strongSwan vulnerability",
+          "date": "2026-06-08",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-09T03:51:56.971Z",
       "logs": [
@@ -10480,48 +11703,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-06-04T20:09:10.630Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] github - 144 patches, no changes",
-        "[INFO] microsoft - 200 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 72 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 37 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 486,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "github",
-        "postgresql",
-        "redhat",
-        "chrome",
-        "cisco",
-        "debian",
-        "fortinet",
-        "paloalto",
-        "signal",
-        "ubuntu",
-        "aws",
-        "apple",
-        "crowdstrike",
-        "edge",
-        "microsoft"
-      ],
-      "newPatches": []
     }
   ]
 }
