@@ -1,16 +1,126 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-06-10T10:12:19.434Z",
+  "lastUpdated": "2026-06-10T15:50:56.420Z",
   "health": {
-    "lastFetchAttempt": "2026-06-10T10:12:19.434Z",
+    "lastFetchAttempt": "2026-06-10T15:50:56.420Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-10T10:12:19.434Z",
+    "lastFetchNewPatches": 10,
+    "lastSuccessWithData": "2026-06-10T15:50:56.420Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Nezha's private services (`EnableShowInService: false`) are enumerable via per-server endpoints, leaking name and timing data",
+      "date": "2026-06-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha",
+      "description": "Nezha's private services (`EnableShowInService: false`) are enumerable via per-server endpoints, leaking name and timing data",
+      "link": "https://github.com/advisories/GHSA-vrmh-5mmx-hjwx",
+      "cve": "CVE-2026-49397",
+      "cvss": 5.3
+    },
+    {
+      "title": "Nezha has cross-site GET request that can trigger stored cron commands on a victim's agents",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/nezhahq/nezha",
+      "description": "Nezha has cross-site GET request that can trigger stored cron commands on a victim's agents",
+      "link": "https://github.com/advisories/GHSA-8qhj-4f8c-j8qg",
+      "cve": "CVE-2026-49396",
+      "cvss": 7.1
+    },
+    {
+      "title": "Go Restful API Boilerplate: Hardcoded JWT Secret \"random\" Allows Token Forgery",
+      "date": "2026-06-10",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/dhax/go-base",
+      "description": "Go Restful API Boilerplate: Hardcoded JWT Secret \"random\" Allows Token Forgery",
+      "link": "https://github.com/advisories/GHSA-mqq6-462x-jxmm",
+      "cve": "CVE-2026-48031",
+      "cvss": 9.1
+    },
+    {
+      "title": "Papra HTTP redirect bypass can lead to SSRF via webhook delivery system",
+      "date": "2026-06-10",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "@papra/webhooks",
+      "description": "Papra HTTP redirect bypass can lead to SSRF via webhook delivery system",
+      "link": "https://github.com/advisories/GHSA-5g86-85rp-f9hx",
+      "cve": "CVE-2026-48051",
+      "cvss": 3.5
+    },
+    {
+      "title": "@hulumi/baseline: AccountFoundation reuse paths silently downgrade GuardDuty / Security Hub posture",
+      "date": "2026-06-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@hulumi/baseline",
+      "description": "@hulumi/baseline: AccountFoundation reuse paths silently downgrade GuardDuty / Security Hub posture",
+      "link": "https://github.com/advisories/GHSA-cj8g-prcm-mfg5",
+      "cve": "CVE-2026-48037",
+      "cvss": null
+    },
+    {
+      "title": "@hulumi/drift: Drift classifier fails open on adapter errors and over-promotes Mixed verdicts",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@hulumi/drift",
+      "description": "@hulumi/drift: Drift classifier fails open on adapter errors and over-promotes Mixed verdicts",
+      "link": "https://github.com/advisories/GHSA-32g3-35g9-wc9g",
+      "cve": "CVE-2026-48036",
+      "cvss": null
+    },
+    {
+      "title": "@hulumi/baseline: AccountFoundation audit-delivery S3 bucket could be silently weakened",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@hulumi/baseline",
+      "description": "@hulumi/baseline: AccountFoundation audit-delivery S3 bucket could be silently weakened",
+      "link": "https://github.com/advisories/GHSA-2mxr-p26x-mj73",
+      "cve": "CVE-2026-48035",
+      "cvss": null
+    },
+    {
+      "title": "@hulumi/policies has a HULUMI-H5 bypass via decoy sibling resources targeting a different bucket",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@hulumi/policies",
+      "description": "@hulumi/policies has a HULUMI-H5 bypass via decoy sibling resources targeting a different bucket",
+      "link": "https://github.com/advisories/GHSA-9vc9-4jv3-rf86",
+      "cve": "CVE-2026-48034",
+      "cvss": null
+    },
+    {
+      "title": "@hulumi/policies bypasses policy packs with a forged Pulumi-URN logical name",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@hulumi/policies",
+      "description": "@hulumi/policies bypasses policy packs with a forged Pulumi-URN logical name",
+      "link": "https://github.com/advisories/GHSA-rhgj-6g2c-frmm",
+      "cve": "CVE-2026-48033",
+      "cvss": null
+    },
+    {
+      "title": "@hulumi/policies bypasses IAM-role policy checks when the role trusts multiple OIDC providers",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@hulumi/policies",
+      "description": "@hulumi/policies bypasses IAM-role policy checks when the role trusts multiple OIDC providers",
+      "link": "https://github.com/advisories/GHSA-g759-4pxw-6692",
+      "cve": "CVE-2026-48032",
+      "cvss": null
+    },
     {
       "title": "Puma PROXY Protocol v1 Accepts Repeated Protocol Headers on Persistent Connections",
       "date": "2026-06-09",
