@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-06-10T15:51:47.714Z",
+  "lastUpdated": "2026-06-10T20:38:18.556Z",
   "health": {
-    "lastFetchAttempt": "2026-06-10T15:51:47.714Z",
+    "lastFetchAttempt": "2026-06-10T20:38:18.556Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
+    "lastFetchParsedItems": 3,
     "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-06-10T15:51:47.714Z",
+    "lastSuccessWithData": "2026-06-10T20:38:18.556Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -21,6 +21,21 @@
       "link": "https://github.com/advisories/GHSA-32g3-35g9-wc9g",
       "cves": [
         "CVE-2026-48036"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "nebula-mesh: Session and OIDC state cookies lack the Secure attribute",
+      "date": "2026-06-10",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "`internal/web/session.go` and `internal/web/oidc.go` set `HttpOnly` and `SameSite=Lax` on every cookie but never `Secure`. A single plaintext request to the origin (operator on a LAN, mistyped URL, HT",
+      "link": "https://github.com/advisories/GHSA-rqfj-vv8r-xhqc",
+      "cves": [
+        "CVE-2026-48058"
       ],
       "platform": [
         "All Platforms"
