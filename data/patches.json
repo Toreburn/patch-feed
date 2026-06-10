@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-10T04:03:04.752Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-10T04:15:43.153Z",
+  "newPatches": 42,
   "patches": [
     {
       "title": "Cisco Catalyst SD-WAN Controller, Catalyst SD-WAN Manager, and Catalyst SD-WAN Validator Authenticated Privilege Escalation Vulnerability",
@@ -21,6 +21,50 @@
       "description": "A few weeks ago, we wrote about Project Glasswing and what we observed when we pointed cyber frontier models at our own code. Since then, we’ve seen that the part of the post that has resonated most d...",
       "link": "https://blog.cloudflare.com/frontier-model-defense/",
       "cve": ""
+    },
+    {
+      "title": "DSA-6335-1 openssl - security update",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "openssl",
+      "description": "Multiple vulnerabilities have been discovered in OpenSSL, a Secure Sockets Layer toolkit, which may result in denial of service, information leaks, or potentially remote code execution. Additional det...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00245.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6334-1 poppler - security update",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "poppler",
+      "description": "Several vulnerabilities were discovered in poppler, a PDF rendering library, which could result in denial of service, information disclosure, or potentially the execution of arbitrary code if a specia...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00244.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6333-1 mistral - security update",
+      "date": "2026-06-09",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "mistral",
+      "description": "Eduardo Gonzalez Gutierrez and Arnaud Morin discovered that multiple API endpoints of Mistral, the OpenStack Workflow, improperly enforced access policies, which could result in information disclosure...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00243.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6332-1 okular - security update",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "okular",
+      "description": "George Karagiannidis discovered multiple security vulnerabilities in the fax backend of the Okular document viewer, which could potentially result in the execution of arbitrary code if a malformed G3/...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00242.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "Improper access control in API endpoints",
@@ -94,6 +138,83 @@
       "description": "Net::IMAP: Command Injection via non-synchronizing literal in \"raw\" argument",
       "link": "https://github.com/advisories/GHSA-8p34-64r3-mwg8",
       "cve": "CVE-2026-47240",
+      "cvss": null
+    },
+    {
+      "title": "Pheditor: OS Command Injection in terminal handler via unsanitized 'dir' parameter",
+      "date": "2026-06-09",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "pheditor/pheditor",
+      "description": "Pheditor: OS Command Injection in terminal handler via unsanitized 'dir' parameter",
+      "link": "https://github.com/advisories/GHSA-jvc5-6g7q-c843",
+      "cve": "CVE-2026-48030",
+      "cvss": 9.9
+    },
+    {
+      "title": "Dex: Token-exchange endpoint is missing AllowedConnectors enforcement",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/dexidp/dex",
+      "description": "Dex: Token-exchange endpoint is missing AllowedConnectors enforcement",
+      "link": "https://github.com/advisories/GHSA-7qjx-gp9h-65qj",
+      "cve": "",
+      "cvss": 8.7
+    },
+    {
+      "title": "PhoenixStorybook has cross-session PubSub topic injection via URL parameter",
+      "date": "2026-06-09",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "phoenix_storybook",
+      "description": "PhoenixStorybook has cross-session PubSub topic injection via URL parameter",
+      "link": "https://github.com/advisories/GHSA-mrhx-6pw9-q5fh",
+      "cve": "CVE-2026-47068",
+      "cvss": null
+    },
+    {
+      "title": "PhoenixStorybook: Unbounded atom creation from LiveView event params (atom-table DoS)",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "phoenix_storybook",
+      "description": "PhoenixStorybook: Unbounded atom creation from LiveView event params (atom-table DoS)",
+      "link": "https://github.com/advisories/GHSA-833p-95jq-929q",
+      "cve": "CVE-2026-8469",
+      "cvss": null
+    },
+    {
+      "title": "PhoenixStorybook: Unauthenticated remote code execution via HEEx template injection in phoenix_storybook playground",
+      "date": "2026-06-09",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "phoenix_storybook",
+      "description": "PhoenixStorybook: Unauthenticated remote code execution via HEEx template injection in phoenix_storybook playground",
+      "link": "https://github.com/advisories/GHSA-55hg-8qxv-qj4p",
+      "cve": "CVE-2026-8467",
+      "cvss": null
+    },
+    {
+      "title": "SymfonyRuntime CVE-2024-50340 Patch Bypass: Web Requests Can Still Set APP_ENV/APP_DEBUG via parse_str/SAPI Argv Mismatch",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "symfony/runtime, symfony/runtime, symfony/runtime",
+      "description": "SymfonyRuntime CVE-2024-50340 Patch Bypass: Web Requests Can Still Set APP_ENV/APP_DEBUG via parse_str/SAPI Argv Mismatch",
+      "link": "https://github.com/advisories/GHSA-fqc7-9xjw-jrh3",
+      "cve": "CVE-2026-47767",
+      "cvss": null
+    },
+    {
+      "title": "Net::IMAP: Command Injection via ID command argument",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "net-imap, net-imap",
+      "description": "Net::IMAP: Command Injection via ID command argument",
+      "link": "https://github.com/advisories/GHSA-46q3-7gv7-qmgg",
+      "cve": "CVE-2026-47242",
       "cvss": null
     },
     {
@@ -997,6 +1118,87 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45655"
     },
     {
+      "title": "CVE-2026-10984: Chromium: CVE-2026-10984 Inappropriate implementation in Accessibility",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-10984",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-10984"
+    },
+    {
+      "title": "CVE-2026-11291: Chromium: CVE-2026-11291 Policy bypass in Android Autofill",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-11291",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-11291"
+    },
+    {
+      "title": "CVE-2026-11178: Chromium: CVE-2026-11178 Policy bypass in WebView",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-11178",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-11178"
+    },
+    {
+      "title": "CVE-2026-45500: Microsoft Exchange Server Spoofing Vulnerability",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45500",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45500"
+    },
+    {
+      "title": "CVE-2026-45501: Microsoft Exchange Server Spoofing Vulnerability",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45501",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45501"
+    },
+    {
+      "title": "CVE-2026-45502: Microsoft Exchange Server Information Disclosure Vulnerability",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45502",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45502"
+    },
+    {
+      "title": "CVE-2026-45503: Microsoft Exchange Server Information Disclosure Vulnerability",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45503",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45503"
+    },
+    {
+      "title": "CVE-2026-45504: Microsoft Exchange Server Elevation of Privilege Vulnerability",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45504",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45504"
+    },
+    {
+      "title": "CVE-2026-45583: Microsoft Exchange Server Remote Code Execution Vulnerability",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45583",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45583"
+    },
+    {
       "title": "SQL Server Security Update: CVE-2026-47292 Visual Studio Code MSSQL Extension Remote Code Execution Vulnerability",
       "date": "2026-06-09",
       "severity": "LOW",
@@ -1036,6 +1238,226 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52902.json",
       "cve": "CVE-2026-52902",
       "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-46315: kernel: io_uring/waitid: clear waitid info before copying it to userspace",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: io_uring/waitid: clear waitid info before copying it to userspace",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46315.json",
+      "cve": "CVE-2026-46315",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46317: kernel: KVM: arm64: Reassign nested_mmus array behind mmu_lock",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: arm64: Reassign nested_mmus array behind mmu_lock",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46317.json",
+      "cve": "CVE-2026-46317",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46321: kernel: tun: free page on short-frame rejection in tun_xdp_one()",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: tun: free page on short-frame rejection in tun_xdp_one()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46321.json",
+      "cve": "CVE-2026-46321",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46319: kernel: net/sched: act_ct: Only release RCU read lock after ct_ft",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net/sched: act_ct: Only release RCU read lock after ct_ft",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46319.json",
+      "cve": "CVE-2026-46319",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46324: kernel: netfilter: nf_tables: use list_del_rcu for netlink hooks",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: nf_tables: use list_del_rcu for netlink hooks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46324.json",
+      "cve": "CVE-2026-46324",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46316: kernel: KVM: arm64: vgic-its: Drop the translation cache reference only for the erased entry",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: arm64: vgic-its: Drop the translation cache reference only for the erased entry",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46316.json",
+      "cve": "CVE-2026-46316",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46318: kernel: Revert \"mm/hugetlbfs: update hugetlbfs to use mmap_prepare\"",
+      "date": "2026-06-09",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Revert \"mm/hugetlbfs: update hugetlbfs to use mmap_prepare\"",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46318.json",
+      "cve": "CVE-2026-46318",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46320: kernel: tap: free page on error paths in tap_get_user_xdp()",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: tap: free page on error paths in tap_get_user_xdp()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46320.json",
+      "cve": "CVE-2026-46320",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46322: kernel: tun: free page on build_skb failure in tun_xdp_one()",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: tun: free page on build_skb failure in tun_xdp_one()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46322.json",
+      "cve": "CVE-2026-46322",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46327: kernel: dm: fix unlocked test for dm_suspended_md",
+      "date": "2026-06-09",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: dm: fix unlocked test for dm_suspended_md",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46327.json",
+      "cve": "CVE-2026-46327",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-46332: kernel: greybus: gb-beagleplay: bound bootloader receive buffering",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: greybus: gb-beagleplay: bound bootloader receive buffering",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46332.json",
+      "cve": "CVE-2026-46332",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46326: kernel: iio: pressure: mprls0025pa: fix spi_transfer struct initialisation",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: iio: pressure: mprls0025pa: fix spi_transfer struct initialisation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46326.json",
+      "cve": "CVE-2026-46326",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-52906: kernel: 9p: fix access mode flags being ORed instead of replaced",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: 9p: fix access mode flags being ORed instead of replaced",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52906.json",
+      "cve": "CVE-2026-52906",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46330: kernel: Revert \"net/smc: Introduce TCP ULP support\"",
+      "date": "2026-06-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Revert \"net/smc: Introduce TCP ULP support\"",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46330.json",
+      "cve": "CVE-2026-46330",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-46328: kernel: apparmor: fix rlimit for posix cpu timers",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix rlimit for posix cpu timers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46328.json",
+      "cve": "CVE-2026-46328",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-52907: kernel: media: rockchip: rkcif: fix off by one bugs",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: rockchip: rkcif: fix off by one bugs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52907.json",
+      "cve": "CVE-2026-52907",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46325: kernel: RDMA/rxe: Fix iova-to-va conversion for MR page sizes != PAGE_SIZE",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/rxe: Fix iova-to-va conversion for MR page sizes != PAGE_SIZE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46325.json",
+      "cve": "CVE-2026-46325",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-52904: kernel: drm/nouveau: fix nvkm_device leak on aperture removal failure",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/nouveau: fix nvkm_device leak on aperture removal failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52904.json",
+      "cve": "CVE-2026-52904",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-52905: kernel: mm/damon/core: disallow non-power of two min_region_sz on damon_start()",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/damon/core: disallow non-power of two min_region_sz on damon_start()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52905.json",
+      "cve": "CVE-2026-52905",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-46329: kernel: erofs: handle end of filesystem properly for file-backed mounts",
+      "date": "2026-06-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: erofs: handle end of filesystem properly for file-backed mounts",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46329.json",
+      "cve": "CVE-2026-46329",
+      "cvss": 5.5
     },
     {
       "title": "USN-8398-2: nginx regression",
@@ -1135,6 +1557,15 @@
       "component": "Lodash vulnerabilities",
       "description": "It was discovered that Lodash was vulnerable to a prototype pollution\nissue in the zipObjectDeep function. An attacker could possibly use this\nissue to modify application behavior. This issue only aff...",
       "link": "https://ubuntu.com/security/notices/USN-8411-1"
+    },
+    {
+      "title": "USN-8415-1: Vim vulnerabilities",
+      "date": "2026-06-09",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Vim vulnerabilities",
+      "description": "It was discovered that Vim incorrectly handled marked filenames in the\nnetrw plugin. An attacker could possibly use this issue to execute\narbitrary code. (CVE-2026-43961)\n\nIt was discovered that Vim i...",
+      "link": "https://ubuntu.com/security/notices/USN-8415-1"
     },
     {
       "title": "CVE-2026-11393 - Code Injection via Improper Triple-Quote Escaping in AgentCore CLI Bedrock Agent Import",
@@ -4262,6 +4693,17 @@
       "cvss": 7
     },
     {
+      "title": "CVE-2026-10732: decompress: Decompress: Arbitrary file write leading to remote code execution via crafted ZIP archive (Zip Slip)",
+      "date": "2026-06-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "decompress: Decompress: Arbitrary file write leading to remote code execution via crafted ZIP archive (Zip Slip)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10732.json",
+      "cve": "CVE-2026-10732",
+      "cvss": 7.5
+    },
+    {
       "title": "Klever-Go KVM: Unauthenticated remote node crash (nil-pointer DoS) in klever-go P2P transaction interceptor (txVersionChecker nil RawData) - potential chain halt",
       "date": "2026-06-05",
       "severity": "HIGH",
@@ -5031,6 +5473,299 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-10T04:15:43.153Z",
+      "logs": [
+        "[INFO] aws - 59 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[SUCCESS] debian - 13 patches (4 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 3 patches, no changes",
+        "[SUCCESS] github - 139 patches (7 new)",
+        "[SUCCESS] microsoft - 218 patches (9 new)",
+        "[INFO] mssql - 1 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 71 patches (21 new)",
+        "[INFO] signal - 3 patches, no changes",
+        "[SUCCESS] ubuntu - 37 patches (1 new)"
+      ],
+      "newPatchCount": 42,
+      "totalPatches": 555,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "cisco",
+        "cloudflare",
+        "debian",
+        "fortinet",
+        "github",
+        "microsoft",
+        "mssql",
+        "postgresql",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "signal",
+        "edge"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6335-1 openssl - security update",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6334-1 poppler - security update",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6333-1 mistral - security update",
+          "date": "2026-06-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6332-1 okular - security update",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Pheditor: OS Command Injection in terminal handler via unsanitized 'dir' parameter",
+          "date": "2026-06-09",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Dex: Token-exchange endpoint is missing AllowedConnectors enforcement",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PhoenixStorybook has cross-session PubSub topic injection via URL parameter",
+          "date": "2026-06-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "PhoenixStorybook: Unbounded atom creation from LiveView event params (atom-table DoS)",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PhoenixStorybook: Unauthenticated remote code execution via HEEx template injection in phoenix_storybook playground",
+          "date": "2026-06-09",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "SymfonyRuntime CVE-2024-50340 Patch Bypass: Web Requests Can Still Set APP_ENV/APP_DEBUG via parse_str/SAPI Argv Mismatch",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Net::IMAP: Command Injection via ID command argument",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-10984: Chromium: CVE-2026-10984 Inappropriate implementation in Accessibility",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-11291: Chromium: CVE-2026-11291 Policy bypass in Android Autofill",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-11178: Chromium: CVE-2026-11178 Policy bypass in WebView",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45500: Microsoft Exchange Server Spoofing Vulnerability",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45501: Microsoft Exchange Server Spoofing Vulnerability",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45502: Microsoft Exchange Server Information Disclosure Vulnerability",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45503: Microsoft Exchange Server Information Disclosure Vulnerability",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45504: Microsoft Exchange Server Elevation of Privilege Vulnerability",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45583: Microsoft Exchange Server Remote Code Execution Vulnerability",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46315: kernel: io_uring/waitid: clear waitid info before copying it to userspace",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46317: kernel: KVM: arm64: Reassign nested_mmus array behind mmu_lock",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46321: kernel: tun: free page on short-frame rejection in tun_xdp_one()",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46319: kernel: net/sched: act_ct: Only release RCU read lock after ct_ft",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46324: kernel: netfilter: nf_tables: use list_del_rcu for netlink hooks",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46316: kernel: KVM: arm64: vgic-its: Drop the translation cache reference only for the erased entry",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46318: kernel: Revert \"mm/hugetlbfs: update hugetlbfs to use mmap_prepare\"",
+          "date": "2026-06-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46320: kernel: tap: free page on error paths in tap_get_user_xdp()",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46322: kernel: tun: free page on build_skb failure in tun_xdp_one()",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46327: kernel: dm: fix unlocked test for dm_suspended_md",
+          "date": "2026-06-09",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46332: kernel: greybus: gb-beagleplay: bound bootloader receive buffering",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46326: kernel: iio: pressure: mprls0025pa: fix spi_transfer struct initialisation",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-52906: kernel: 9p: fix access mode flags being ORed instead of replaced",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46330: kernel: Revert \"net/smc: Introduce TCP ULP support\"",
+          "date": "2026-06-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46328: kernel: apparmor: fix rlimit for posix cpu timers",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-52907: kernel: media: rockchip: rkcif: fix off by one bugs",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46325: kernel: RDMA/rxe: Fix iova-to-va conversion for MR page sizes != PAGE_SIZE",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-52904: kernel: drm/nouveau: fix nvkm_device leak on aperture removal failure",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-52905: kernel: mm/damon/core: disallow non-power of two min_region_sz on damon_start()",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46329: kernel: erofs: handle end of filesystem properly for file-backed mounts",
+          "date": "2026-06-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10732: decompress: Decompress: Arbitrary file write leading to remote code execution via crafted ZIP archive (Zip Slip)",
+          "date": "2026-06-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8415-1: Vim vulnerabilities",
+          "date": "2026-06-09",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-10T04:03:04.751Z",
       "logs": [
@@ -11582,697 +12317,6 @@
         "crowdstrike"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-05T20:03:40.362Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[SUCCESS] aws - 60 patches (58 new)",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[SUCCESS] github - 121 patches (39 new)",
-        "[INFO] microsoft - 109 patches, no changes",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 84 patches, no changes",
-        "[SUCCESS] signal - 4 patches (1 new)",
-        "[SUCCESS] ubuntu - 45 patches (10 new)"
-      ],
-      "newPatchCount": 108,
-      "totalPatches": 451,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "aws",
-        "cisco",
-        "debian",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "edge",
-        "microsoft",
-        "postgresql",
-        "chrome",
-        "fortinet",
-        "paloalto",
-        "apple",
-        "crowdstrike"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "Ongoing updates on Copy.fail and variants",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Issue with AWS-LC: an open-source, general-purpose cryptographic library (CVE-2026-3336, CVE-2026-3337, CVE-2026-3338)",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Issues with AWS Research and Engineering Studio (RES)",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Security Findings in SageMaker Python SDK",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 &amp; CVE-2026-8597)",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-7424 - Integer Underflow in DHCPv6 Sub-Option Parser in FreeRTOS-Plus-TCP",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Issues with Amazon Athena ODBC Driver",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-11400 and CVE-2026-11401",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Fragnesia Local Privilege Escalation report via ESP-in-TCP in the Linux Kernel",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-6437 - Mount Option Injection in Amazon EFS CSI Driver",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-1386 - Arbitrary Host File Overwrite via Symlink in Firecracker Jailer",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-8686 - Heap out-of-bounds read in coreMQTT MQTT5 property parsing",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "[Redirected] Memory Dump Issue in AWS CodeBuild",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Unanchored ACCOUNT_ID webhook filters for CodeBuild",
-          "date": "2026-06-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "aws",
-          "title": "[Redirected] Security Update for Amazon Q Developer Extension for Visual Studio Code (Version #1.84)",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-8838 - Remote Code Execution in amazon-redshift-python-driver",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2025-8069 - AWS Client VPN Windows Client Local Privilege Escalation",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-7191- Arbitrary Code Execution via Sandbox Bypass in QnABot on AWS",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2025-6031 - Insecure device pairing in end-of-life Amazon Cloud Cam",
-          "date": "2026-06-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-5747 - Out-of-bounds Write in Firecracker virtio-pci Transport",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Amazon Q Developer and Kiro – Prompt Injection Issues in Kiro and Q IDE plugins",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2025-9039 - Issue with Amazon ECS agent introspection server",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2025-8904 - Issue with Amazon EMR Secret Agent component",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-9255 - Tool Execution Without Authorization via Piped Stdin in Kiro CLI",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Buffer Over-read when receiving improperly sized ICMPv6 packets",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2025-11573 - Denial of Service issue in Amazon.IonDotnet",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Issue with AWS Ops Wheel (CVE-2026-6911 and CVE-2026-6912",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "IMDS impersonation",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2025-11462 AWS ClientVPN macOS Client Local Privilege Escalation",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-0830 - Command Injection in Kiro GitLab Merge Request Helper",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Dirty Frag and other issues in Amazon Linux kernels",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-6550 - Key commitment policy bypass via shared key cache in AWS Encryption SDK for Python",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Arbitrary code execution via crafted project files in Kiro IDE",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-9133 - Arbitrary file read in rabbitmq-aws plugin",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2025-12829 - Integer Overflow issue in Amazon Ion-C",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-31431",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2025-12815 - RES web portal may display preview of Virtual Desktops that the user shouldn't have access to",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Improper authentication token handling in the Amazon WorkSpaces client for Linux",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2025-31133, CVE-2025-52565, CVE-2025-52881 - runc container issues",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Privilege Escalation in Aurora PostgreSQL using AWS JDBC Wrapper, AWS Go Wrapper, AWS NodeJS Wrapper, AWS Python Wrapper, AWS PGSQL ODBC driver",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2025-66478: RCE in React Server Components",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Key Commitment Issues in S3 Encryption Clients",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-4270 - AWS API MCP File Access Restriction Bypass",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Overly Permissive Trust Policy in Harmonix on AWS EKS",
-          "date": "2026-06-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-10584 - HTTPS Fallback to HTTP in Graph Explorer",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-4269 - Improper S3 ownership verification in Bedrock AgentCore Starter Toolkit",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-4428: Issues with AWS-LC - CRL Distribution Point Scope Check Logic Error",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-5429 - Kiro IDE Webview Cross-Site Scripting via Workspace Color Theme",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-7791 - Local Privilege Escalation via TOCTOU Race Condition in Amazon WorkSpaces Skylight Agent",
-          "date": "2026-06-05",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "aws",
-          "title": "Issue with FreeRTOS-Plus-TCP - IPv6 Router Advertisement Memory Safety Issues",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-9291 - Insecure Deserialization in Amazon Braket SDK Job Results Processing",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Issues in tough library and tuftool CLI utility",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "MariaDB Server Audit Plugin Comment Handling Bypass",
-          "date": "2026-06-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-10591 - Kiro IDE Insufficient File Write Restrictions to Execution-Sensitive Paths",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-7461 - OS Command Injection in Amazon ECS Agent via FSx Windows File Server Volume Credentials",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-5190 - AWS C Event Stream Streaming Decoder Stack Buffer Overflow",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "skillctl: Path traversal and symlink-follow in skillctl allow arbitrary file disclosure and deletion",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "NASA AMMOS Instrument Toolkit: Path traversal resulting in arbitrary file append (can be triggered over the network by unauthenticated attacker)",
-          "date": "2026-06-05",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Improper Access Control in vantage6 node",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Vantage6: Set admin user and password from environment or configuration",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: OAuth Tokens Persist Through Security Events",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Klever-Go KVM: Unauthenticated remote node crash (nil-pointer DoS) in klever-go P2P transaction interceptor (txVersionChecker nil RawData) - potential chain halt",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "klever-go: REST API slow-header connection exhaustion via Gin Engine.Run",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "klever-go: Unbounded goroutine spawn on direct-message ingress enables peer-driven DoS",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Klever-Go KVM: Throttler slot leak in trie account-data sync causes epoch bootstrap / state sync DoS",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "DbGate: Remote Code Execution via functionName injection in loadReader endpoint",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Sync-in Server: SSRF protection bypass via IPv4-mapped IPv6 addresses in regExpPrivateIP",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Source controller: Improper path handling allows traversal",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Authenticated Remote Code Execution via loadReader functionName code injection in DbGate",
-          "date": "2026-06-05",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonai-platform: Agent endpoints accept any agent_id without workspace ownership check, cross-workspace read/update/delete IDOR",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "DbGate: Zip Slip in archive/unzip allows arbitrary file write leading to RCE",
-          "date": "2026-06-05",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "DbGate: Unauthenticated Remote Code Execution via JSON Script Runner",
-          "date": "2026-06-05",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Missing Ownership Check in MCP Attachment Read",
-          "date": "2026-06-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Stored Cross-Site Scripting via Form View Redirect URL",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: OAuth Authorization Code Race Condition",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Path Traversal via SQLite Source Filename",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: SQL Injection via Column Title in Bulk GroupBy",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Stored Cross-Site Scripting via Row Comments",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Server-Side Request Forgery via Database Connection Host",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Cross-Workspace Integration Use in Connection Test",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: User Enumeration via Sign-In Timing",
-          "date": "2026-06-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Plaintext Password Comparison in Shared Views",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Hidden Column Exposure in Public Shared View Endpoints",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Open Redirect via Hash Fragment in hashRedirect Plugin",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Reflected Cross-Site Scripting via Password Reset Token",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Postgres SQL Injection in Formula `ARRAYSORT`",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Hidden LTAR Column Exposure in Public Shared-View Relation Endpoints",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "wasmtime-wasi: WASI path_open(TRUNCATE) bypasses `FilePerms::WRITE` host restriction",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "MCP Server Kubernetes: kubectl-generic flag injection enables Kubernetes bearer token exfiltration",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Klever-Go KVM: Hash-array amplification in P2P resolver request handling",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Omni: Reader-level users can retrieve imported cluster CA keys via ResourceService",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Omni: Operator can traverse image-factory API paths via unsanitized `talos_version` in CreateSchematic",
-          "date": "2026-06-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Omni has a TOCTOU race condition that allows multiple concurrent uses of a single-use SAML session token",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Vantage6: 2FA can be circumvented with hacked email access",
-          "date": "2026-06-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Vantage6: No limit on emails sent for password/MFA reset",
-          "date": "2026-06-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "signal",
-          "title": "Klever-Go KVM: Unauthenticated remote node crash (nil-pointer DoS) in klever-go P2P transaction interceptor (txVersionChecker nil RawData) - potential chain halt",
-          "date": "2026-06-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8394-1: YARD vulnerability",
-          "date": "2026-06-05",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8386-1: Nano vulnerabilities",
-          "date": "2026-06-04",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8385-1: Robocode vulnerabilities",
-          "date": "2026-06-04",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8383-1: Tomcat vulnerabilities",
-          "date": "2026-06-04",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8384-1: Apache HTTP Server vulnerability",
-          "date": "2026-06-04",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8253-2: Postfix vulnerability",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8382-1: Exim vulnerabilities",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8380-1: Twisted vulnerability",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8379-1: urllib3 vulnerabilities",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8378-1: libwww-perl vulnerability",
-          "date": "2026-06-03",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
