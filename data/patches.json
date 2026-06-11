@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-11T16:08:46.624Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-11T16:14:10.798Z",
+  "newPatches": 27,
   "patches": [
     {
       "title": "DSA-6339-1 libinput - security update",
@@ -23,6 +23,193 @@
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00249.html",
       "cve": "",
       "cves": []
+    },
+    {
+      "title": "python-zeroconf: Unbounded TC-deferred queue allows LAN-local memory exhaustion via spoofed-source flood",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "zeroconf",
+      "description": "python-zeroconf: Unbounded TC-deferred queue allows LAN-local memory exhaustion via spoofed-source flood",
+      "link": "https://github.com/advisories/GHSA-9663-mqmp-p9mm",
+      "cve": "CVE-2026-48045",
+      "cvss": 6.5
+    },
+    {
+      "title": "netty-codec-http2: ByteBuf Reference-Count Leak in DelegatingDecompressorFrameListener Leads to Memory Exhaustion",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "io.netty:netty-codec-http2, io.netty:netty-codec-http2",
+      "description": "netty-codec-http2: ByteBuf Reference-Count Leak in DelegatingDecompressorFrameListener Leads to Memory Exhaustion",
+      "link": "https://github.com/advisories/GHSA-c2gf-v879-257j",
+      "cve": "CVE-2026-48043",
+      "cvss": 5.3
+    },
+    {
+      "title": "netty-incubator-codec-ohttp's Incorrect Native Pointer Derivation in Pooled Direct ByteBuf Fallback Leads to Out-of-Bounds Native Memory Access",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "io.netty.incubator:netty-incubator-codec-ohttp-hpke-native-boringssl",
+      "description": "netty-incubator-codec-ohttp's Incorrect Native Pointer Derivation in Pooled Direct ByteBuf Fallback Leads to Out-of-Bounds Native Memory Access",
+      "link": "https://github.com/advisories/GHSA-32hf-8jw3-v4qq",
+      "cve": "CVE-2026-48040",
+      "cvss": null
+    },
+    {
+      "title": "Meta Ads MCP: Unauthenticated HTTP MCP Tool Execution Leaks Operator Meta Access Token",
+      "date": "2026-06-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "meta-ads-mcp",
+      "description": "Meta Ads MCP: Unauthenticated HTTP MCP Tool Execution Leaks Operator Meta Access Token",
+      "link": "https://github.com/advisories/GHSA-9gw6-46qc-99vr",
+      "cve": "CVE-2026-48039",
+      "cvss": 9.1
+    },
+    {
+      "title": "@grpc/grpc-js: A malformed request can cause a server crash",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@grpc/grpc-js, @grpc/grpc-js, @grpc/grpc-js",
+      "description": "@grpc/grpc-js: A malformed request can cause a server crash",
+      "link": "https://github.com/advisories/GHSA-5375-pq7m-f5r2",
+      "cve": "CVE-2026-48068",
+      "cvss": 7.5
+    },
+    {
+      "title": "@grpc/grpc-js: An incoming malformed compressed message can cause a client or server crash",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@grpc/grpc-js, @grpc/grpc-js, @grpc/grpc-js",
+      "description": "@grpc/grpc-js: An incoming malformed compressed message can cause a client or server crash",
+      "link": "https://github.com/advisories/GHSA-99f4-grh7-6pcq",
+      "cve": "CVE-2026-48069",
+      "cvss": 7.5
+    },
+    {
+      "title": "joi has an uncaught RangeError on deeply nested input through recursive `link()` schemas",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "joi",
+      "description": "joi has an uncaught RangeError on deeply nested input through recursive `link()` schemas",
+      "link": "https://github.com/advisories/GHSA-q7cg-457f-vx79",
+      "cve": "CVE-2026-48038",
+      "cvss": 5.3
+    },
+    {
+      "title": "OpenZeppelin Contracts Wizard has Code Injection in Generated Hardhat and Foundry Tests via Unsanitized opts.name / opts.uri",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@openzeppelin/wizard",
+      "description": "OpenZeppelin Contracts Wizard has Code Injection in Generated Hardhat and Foundry Tests via Unsanitized opts.name / opts.uri",
+      "link": "https://github.com/advisories/GHSA-4x76-22x2-rx8v",
+      "cve": "CVE-2026-48054",
+      "cvss": 8.8
+    },
+    {
+      "title": "@hapi/wreck: Sensitive credential headers leak across cross-port and cross-scheme redirects",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@hapi/wreck",
+      "description": "@hapi/wreck: Sensitive credential headers leak across cross-port and cross-scheme redirects",
+      "link": "https://github.com/advisories/GHSA-x426-x7cc-3fpc",
+      "cve": "CVE-2026-48022",
+      "cvss": 6.5
+    },
+    {
+      "title": "Traefik has a StripPrefix Route-Level Auth Bypass via Path Normalization",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/traefik/traefik/v2, github.com/traefik/traefik/v3, github.com/traefik/traefik/v3",
+      "description": "Traefik has a StripPrefix Route-Level Auth Bypass via Path Normalization",
+      "link": "https://github.com/advisories/GHSA-xf64-8mw2-4gr2",
+      "cve": "CVE-2026-48020",
+      "cvss": null
+    },
+    {
+      "title": "Element Call reports full URLs of visited pages to analytics server",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@element-hq/element-call-embedded",
+      "description": "Element Call reports full URLs of visited pages to analytics server",
+      "link": "https://github.com/advisories/GHSA-6vhh-4xw6-h2h2",
+      "cve": "CVE-2026-48007",
+      "cvss": null
+    },
+    {
+      "title": "Netty's Lack of Lifecycle Cleanup Leads to Pooled ByteBuf Leak in RedisArrayAggregator",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-codec-redis, io.netty:netty-codec-redis",
+      "description": "Netty's Lack of Lifecycle Cleanup Leads to Pooled ByteBuf Leak in RedisArrayAggregator",
+      "link": "https://github.com/advisories/GHSA-6jv9-x5w9-2ccm",
+      "cve": "CVE-2026-48006",
+      "cvss": null
+    },
+    {
+      "title": "PDM: Project-Controlled `.pdm-plugins` Content Executes Before CLI Parsing",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pdm",
+      "description": "PDM: Project-Controlled `.pdm-plugins` Content Executes Before CLI Parsing",
+      "link": "https://github.com/advisories/GHSA-qq6c-99pv-prvf",
+      "cve": "CVE-2026-47781",
+      "cvss": null
+    },
+    {
+      "title": "free5GC UDR has improper `ueId` validation in EE subscription handlers that allows arbitrary identifier persistence",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/free5gc/udr",
+      "description": "free5GC UDR has improper `ueId` validation in EE subscription handlers that allows arbitrary identifier persistence",
+      "link": "https://github.com/advisories/GHSA-6gxq-gpr8-xgjp",
+      "cve": "CVE-2026-47780",
+      "cvss": null
+    },
+    {
+      "title": "guzzlehttp/guzzle-services' XML Request Serialization Vulnerable to XML Injection via CDATA Terminator",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "guzzlehttp/guzzle-services",
+      "description": "guzzlehttp/guzzle-services' XML Request Serialization Vulnerable to XML Injection via CDATA Terminator",
+      "link": "https://github.com/advisories/GHSA-q8r6-5hfw-5jff",
+      "cve": "CVE-2026-53723",
+      "cvss": 5.8
+    },
+    {
+      "title": "guzzlehttp/psr7 has Host Confusion via Authority Reinterpretation",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "guzzlehttp/psr7",
+      "description": "guzzlehttp/psr7 has Host Confusion via Authority Reinterpretation",
+      "link": "https://github.com/advisories/GHSA-34xg-wgjx-8xph",
+      "cve": "CVE-2026-48998",
+      "cvss": 5.3
+    },
+    {
+      "title": "guzzlehttp/psr7 has CRLF Injection via URI Host Component",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "guzzlehttp/psr7",
+      "description": "guzzlehttp/psr7 has CRLF Injection via URI Host Component",
+      "link": "https://github.com/advisories/GHSA-hq7v-mx3g-29hw",
+      "cve": "CVE-2026-49214",
+      "cvss": 5.3
     },
     {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
@@ -493,6 +680,25 @@
       "description": "",
       "link": "https://security.paloaltonetworks.com/CVE-2026-0273",
       "cve": "CVE-2026-0273"
+    },
+    {
+      "title": "Agentic Testing: Where Agents Fit in the E2E Testing Stack",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "slack",
+      "component": "Slack",
+      "description": "Abstract Agent-driven end-to-end (E2E) tests add a new exploratory layer to testing, but should they replace traditional deterministic tests? We ran more than 200 agentic E2E workflows using the Playw...",
+      "link": "https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/",
+      "cve": ""
+    },
+    {
+      "title": "USN-8422-1: Mistral vulnerability",
+      "date": "2026-06-11",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Mistral",
+      "description": "Eduardo Gonzalez Gutierrez and Arnaud Morin discovered that Mistral\ndid not properly enforce access policies on some API endpoints. An\nattacker could possibly execute arbitrary code on a Mistral worke...",
+      "link": "https://ubuntu.com/security/notices/USN-8422-1"
     },
     {
       "title": "CVE-2026-10740 - Excessive memory allocation in s2n-quic",
@@ -1868,6 +2074,94 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6893.json",
       "cve": "CVE-2026-6893",
       "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-46520: ImageMagick: ImageMagick: Denial of Service via out-of-bounds write when processing multiple images",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via out-of-bounds write when processing multiple images",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46520.json",
+      "cve": "CVE-2026-46520",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-45664: ImageMagick: ImageMagick: Denial of Service due to excessive resource use in MNG coder",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service due to excessive resource use in MNG coder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45664.json",
+      "cve": "CVE-2026-45664",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-46522: ImageMagick: ImageMagick: Denial of Service via crafted MIFF file",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via crafted MIFF file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46522.json",
+      "cve": "CVE-2026-46522",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-45624: ImageMagick: ImageMagick: Data exposure due to image processing vulnerability",
+      "date": "2026-06-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Data exposure due to image processing vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45624.json",
+      "cve": "CVE-2026-45624",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-45359: ImageMagick: ImageMagick: Information Disclosure via Invalid Connected-Components Value",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Information Disclosure via Invalid Connected-Components Value",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45359.json",
+      "cve": "CVE-2026-45359",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-42326: ImageMagick: ImageMagick: Information disclosure via malicious IPTC input file",
+      "date": "2026-06-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Information disclosure via malicious IPTC input file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42326.json",
+      "cve": "CVE-2026-42326",
+      "cvss": 5.1
+    },
+    {
+      "title": "CVE-2026-45031: ImageMagick: ImageMagick: Denial of Service due to resource policy bypass in PSD decoder",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service due to resource policy bypass in PSD decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45031.json",
+      "cve": "CVE-2026-45031",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-46523: ImageMagick: ImageMagick: Denial of Service via crafted MSL image leading to heap-use-after-free",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via crafted MSL image leading to heap-use-after-free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46523.json",
+      "cve": "CVE-2026-46523",
+      "cvss": 7.5
     },
     {
       "title": "@hulumi/drift: Drift classifier fails open on adapter errors and over-promotes Mixed verdicts",
@@ -7846,6 +8140,221 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-11T16:14:10.798Z",
+      "logs": [
+        "[INFO] aws - 60 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 18 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 3 patches, no changes",
+        "[SUCCESS] github - 137 patches (17 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 359 patches, no changes",
+        "[INFO] mssql - 1 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 12 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 181 patches (8 new)",
+        "[INFO] signal - 4 patches, no changes",
+        "[SUCCESS] slack - 1 patches (1 new)",
+        "[SUCCESS] ubuntu - 32 patches (1 new)"
+      ],
+      "newPatchCount": 27,
+      "totalPatches": 824,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 20,
+      "vendors": [
+        "debian",
+        "github",
+        "microsoft",
+        "oracle-db",
+        "paloalto",
+        "slack",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "cisco",
+        "gitlab",
+        "redhat",
+        "signal",
+        "cloudflare",
+        "crowdstrike",
+        "fortinet",
+        "mssql",
+        "nodejs",
+        "postgresql",
+        "edge"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "python-zeroconf: Unbounded TC-deferred queue allows LAN-local memory exhaustion via spoofed-source flood",
+          "date": "2026-06-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "netty-codec-http2: ByteBuf Reference-Count Leak in DelegatingDecompressorFrameListener Leads to Memory Exhaustion",
+          "date": "2026-06-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "netty-incubator-codec-ohttp's Incorrect Native Pointer Derivation in Pooled Direct ByteBuf Fallback Leads to Out-of-Bounds Native Memory Access",
+          "date": "2026-06-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Meta Ads MCP: Unauthenticated HTTP MCP Tool Execution Leaks Operator Meta Access Token",
+          "date": "2026-06-11",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "@grpc/grpc-js: A malformed request can cause a server crash",
+          "date": "2026-06-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "@grpc/grpc-js: An incoming malformed compressed message can cause a client or server crash",
+          "date": "2026-06-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "joi has an uncaught RangeError on deeply nested input through recursive `link()` schemas",
+          "date": "2026-06-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenZeppelin Contracts Wizard has Code Injection in Generated Hardhat and Foundry Tests via Unsanitized opts.name / opts.uri",
+          "date": "2026-06-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "@hapi/wreck: Sensitive credential headers leak across cross-port and cross-scheme redirects",
+          "date": "2026-06-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Traefik has a StripPrefix Route-Level Auth Bypass via Path Normalization",
+          "date": "2026-06-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Element Call reports full URLs of visited pages to analytics server",
+          "date": "2026-06-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Netty's Lack of Lifecycle Cleanup Leads to Pooled ByteBuf Leak in RedisArrayAggregator",
+          "date": "2026-06-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PDM: Project-Controlled `.pdm-plugins` Content Executes Before CLI Parsing",
+          "date": "2026-06-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "free5GC UDR has improper `ueId` validation in EE subscription handlers that allows arbitrary identifier persistence",
+          "date": "2026-06-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "guzzlehttp/guzzle-services' XML Request Serialization Vulnerable to XML Injection via CDATA Terminator",
+          "date": "2026-06-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "guzzlehttp/psr7 has Host Confusion via Authority Reinterpretation",
+          "date": "2026-06-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "guzzlehttp/psr7 has CRLF Injection via URI Host Component",
+          "date": "2026-06-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46520: ImageMagick: ImageMagick: Denial of Service via out-of-bounds write when processing multiple images",
+          "date": "2026-06-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45664: ImageMagick: ImageMagick: Denial of Service due to excessive resource use in MNG coder",
+          "date": "2026-06-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46522: ImageMagick: ImageMagick: Denial of Service via crafted MIFF file",
+          "date": "2026-06-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45624: ImageMagick: ImageMagick: Data exposure due to image processing vulnerability",
+          "date": "2026-06-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45359: ImageMagick: ImageMagick: Information Disclosure via Invalid Connected-Components Value",
+          "date": "2026-06-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42326: ImageMagick: ImageMagick: Information disclosure via malicious IPTC input file",
+          "date": "2026-06-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45031: ImageMagick: ImageMagick: Denial of Service due to resource policy bypass in PSD decoder",
+          "date": "2026-06-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46523: ImageMagick: ImageMagick: Denial of Service via crafted MSL image leading to heap-use-after-free",
+          "date": "2026-06-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "slack",
+          "title": "Agentic Testing: Where Agents Fit in the E2E Testing Stack",
+          "date": "2026-06-11",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8422-1: Mistral vulnerability",
+          "date": "2026-06-11",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-11T16:08:46.624Z",
       "logs": [
@@ -16124,61 +16633,6 @@
         "crowdstrike"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-06T19:41:34.074Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 60 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[SUCCESS] debian - 13 patches (2 new)",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] github - 136 patches, no changes",
-        "[INFO] microsoft - 109 patches, no changes",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 84 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 52 patches, no changes"
-      ],
-      "newPatchCount": 2,
-      "totalPatches": 475,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "aws",
-        "cisco",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "edge",
-        "postgresql",
-        "chrome",
-        "fortinet",
-        "paloalto",
-        "apple",
-        "crowdstrike"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6324-1 request-tracker5 - security update",
-          "date": "2026-06-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "debian",
-          "title": "DSA-6323-1 apache2 - security update",
-          "date": "2026-06-06",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
