@@ -1,16 +1,29 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-06-12T15:28:41.530Z",
+  "lastUpdated": "2026-06-12T20:18:24.406Z",
   "health": {
-    "lastFetchAttempt": "2026-06-12T15:28:41.529Z",
+    "lastFetchAttempt": "2026-06-12T20:18:24.406Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-12T15:28:41.529Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-06-12T20:18:24.406Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Appsmith Super User Creation Race Condition Allows Multiple Instance Administrators",
+      "date": "2026-06-12",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe `/api/v1/users/super` endpoint enforces a restriction that only one super user (Instance Administrator) can be created during initial setup. However, due to a Time-of-Check-Time-of-Use",
+      "link": "https://github.com/advisories/GHSA-9wcp-79g5-5c3c",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Russh SSH message fields were decoded through allocation-first parsers before field-specific bounds",
       "date": "2026-06-11",
