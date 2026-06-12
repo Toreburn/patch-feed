@@ -1,16 +1,137 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-06-12T10:22:40.605Z",
+  "lastUpdated": "2026-06-12T15:27:46.745Z",
   "health": {
-    "lastFetchAttempt": "2026-06-12T10:22:40.605Z",
+    "lastFetchAttempt": "2026-06-12T15:27:46.745Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-12T10:22:40.605Z",
+    "lastFetchNewPatches": 11,
+    "lastSuccessWithData": "2026-06-12T15:27:46.745Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Budibase: SSRF via OAuth2 Config Validation — Missing fetchWithBlacklist Protection",
+      "date": "2026-06-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase: SSRF via OAuth2 Config Validation — Missing fetchWithBlacklist Protection",
+      "link": "https://github.com/advisories/GHSA-g6qx-g4pr-92v7",
+      "cve": "CVE-2026-48146",
+      "cvss": 7.7
+    },
+    {
+      "title": "Budibase: SSRF via User-Controlled queryId in Automation Execute Query Step",
+      "date": "2026-06-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "budibase",
+      "description": "Budibase: SSRF via User-Controlled queryId in Automation Execute Query Step",
+      "link": "https://github.com/advisories/GHSA-6964-pp88-6wp9",
+      "cve": "CVE-2026-48128",
+      "cvss": null
+    },
+    {
+      "title": "SwiftNIO HTTP/2: HTTP/2-to-HTTP/1 Request Smuggling via unvalidated :path pseudo-header in HTTP2ToHTTP1Codec",
+      "date": "2026-06-12",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/apple/swift-nio-http2",
+      "description": "SwiftNIO HTTP/2: HTTP/2-to-HTTP/1 Request Smuggling via unvalidated :path pseudo-header in HTTP2ToHTTP1Codec",
+      "link": "https://github.com/advisories/GHSA-4px2-pw77-vc85",
+      "cve": "CVE-2026-28898",
+      "cvss": null
+    },
+    {
+      "title": "NIOExtras: NIOHTTPRequestDecompressor ratio limit bypass via inflated Content-Length",
+      "date": "2026-06-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/apple/swift-nio-extras",
+      "description": "NIOExtras: NIOHTTPRequestDecompressor ratio limit bypass via inflated Content-Length",
+      "link": "https://github.com/advisories/GHSA-6ph5-fww6-vfwv",
+      "cve": "CVE-2026-28975",
+      "cvss": null
+    },
+    {
+      "title": "SwiftNIO NIOHTTP1:  HTTPDecoder accepts unbounded HTTP/1 header blocks, enabling remote DoS",
+      "date": "2026-06-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/apple/swift-nio",
+      "description": "SwiftNIO NIOHTTP1:  HTTPDecoder accepts unbounded HTTP/1 header blocks, enabling remote DoS",
+      "link": "https://github.com/advisories/GHSA-rj37-6j9x-74q6",
+      "cve": "CVE-2026-28980",
+      "cvss": null
+    },
+    {
+      "title": "SwiftNIO: Out-of-bounds write via ByteBuffer index and length UInt32 overflow",
+      "date": "2026-06-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/apple/swift-nio",
+      "description": "SwiftNIO: Out-of-bounds write via ByteBuffer index and length UInt32 overflow",
+      "link": "https://github.com/advisories/GHSA-r3rc-9hpw-54v9",
+      "cve": "CVE-2026-43671",
+      "cvss": null
+    },
+    {
+      "title": "SwiftNIO: CRLF Injection in outbound HTTP request URI via NIOHTTPRequestHeadersValidator",
+      "date": "2026-06-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/apple/swift-nio",
+      "description": "SwiftNIO: CRLF Injection in outbound HTTP request URI via NIOHTTPRequestHeadersValidator",
+      "link": "https://github.com/advisories/GHSA-cq87-8r7h-962v",
+      "cve": "CVE-2026-28970",
+      "cvss": null
+    },
+    {
+      "title": "LangGraph has NoSQL parameter injection in MongoDBSaver, allowing cross-tenant state access",
+      "date": "2026-06-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@langchain/langgraph-checkpoint-mongodb",
+      "description": "LangGraph has NoSQL parameter injection in MongoDBSaver, allowing cross-tenant state access",
+      "link": "https://github.com/advisories/GHSA-98xf-r82g-9mhx",
+      "cve": "CVE-2026-48121",
+      "cvss": 6.7
+    },
+    {
+      "title": "Firefly II has Stored XSS in Audit Log Entry view via piggy bank name (ale.twig)",
+      "date": "2026-06-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "grumpydictator/firefly-iii",
+      "description": "Firefly II has Stored XSS in Audit Log Entry view via piggy bank name (ale.twig)",
+      "link": "https://github.com/advisories/GHSA-6jq6-x4cx-qvcm",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Go-Attestation: Hash injection into trusted measurement list via unskipped SignatureHeaderSize vendor bytes in parseEfiSignatureList()",
+      "date": "2026-06-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/google/go-attestation",
+      "description": "Go-Attestation: Hash injection into trusted measurement list via unskipped SignatureHeaderSize vendor bytes in parseEfiSignatureList()",
+      "link": "https://github.com/advisories/GHSA-9r4w-jg96-92mv",
+      "cve": "",
+      "cvss": 6.8
+    },
+    {
+      "title": "Chisel has an ACL Bypass via Post-Handshake SSH Channel ExtraData Injection",
+      "date": "2026-06-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/jpillora/chisel",
+      "description": "Chisel has an ACL Bypass via Post-Handshake SSH Channel ExtraData Injection",
+      "link": "https://github.com/advisories/GHSA-24fp-5v3p-rvpw",
+      "cve": "CVE-2026-48113",
+      "cvss": null
+    },
     {
       "title": "python-zeroconf: Unbounded TC-deferred queue allows LAN-local memory exhaustion via spoofed-source flood",
       "date": "2026-06-11",
