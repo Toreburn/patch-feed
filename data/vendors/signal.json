@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-06-11T20:28:57.099Z",
+  "lastUpdated": "2026-06-12T04:39:54.820Z",
   "health": {
-    "lastFetchAttempt": "2026-06-11T20:28:57.099Z",
+    "lastFetchAttempt": "2026-06-12T04:39:54.820Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-11T20:28:57.099Z",
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-06-12T04:39:54.820Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Russh SSH message fields were decoded through allocation-first parsers before field-specific bounds",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# SSH message fields were decoded through allocation-first parsers before field-specific bounds\n\n### Summary\n\nSeveral `russh` client and server message handlers decoded attacker-controlled SSH strings",
+      "link": "https://github.com/advisories/GHSA-4r3c-5hpg-58qr",
+      "cves": [
+        "CVE-2026-48110"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "@hulumi/drift: Drift classifier fails open on adapter errors and over-promotes Mixed verdicts",
       "date": "2026-06-10",

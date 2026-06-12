@@ -1,12 +1,12 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-06-11T16:12:17.696Z",
+  "lastUpdated": "2026-06-12T04:39:15.437Z",
   "health": {
-    "lastFetchAttempt": "2026-06-11T16:12:17.696Z",
+    "lastFetchAttempt": "2026-06-12T04:39:15.437Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 17,
-    "lastSuccessWithData": "2026-06-11T16:12:17.696Z",
+    "lastFetchNewPatches": 15,
+    "lastSuccessWithData": "2026-06-12T04:39:15.437Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -196,6 +196,171 @@
       "description": "guzzlehttp/psr7 has CRLF Injection via URI Host Component",
       "link": "https://github.com/advisories/GHSA-hq7v-mx3g-29hw",
       "cve": "CVE-2026-49214",
+      "cvss": 5.3
+    },
+    {
+      "title": " MessagePack's LZ4 decompression may fail with AccessViolationException after dereferencing memory from bad input",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "MessagePack, MessagePack",
+      "description": " MessagePack's LZ4 decompression may fail with AccessViolationException after dereferencing memory from bad input",
+      "link": "https://github.com/advisories/GHSA-hv8m-jj95-wg3x",
+      "cve": "CVE-2026-48109",
+      "cvss": 8.2
+    },
+    {
+      "title": "GeoServer DB2 DataStore Extension has a JNDI Vulnerability via Store Connection",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.geoserver.extension:gs-db2",
+      "description": "GeoServer DB2 DataStore Extension has a JNDI Vulnerability via Store Connection",
+      "link": "https://github.com/advisories/GHSA-g628-r368-6vh7",
+      "cve": "CVE-2025-27511",
+      "cvss": 7.2
+    },
+    {
+      "title": "Russh SSH message fields were decoded through allocation-first parsers before field-specific bounds",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "russh",
+      "description": "Russh SSH message fields were decoded through allocation-first parsers before field-specific bounds",
+      "link": "https://github.com/advisories/GHSA-4r3c-5hpg-58qr",
+      "cve": "CVE-2026-48110",
+      "cvss": 7.5
+    },
+    {
+      "title": "AWS Advanced Go Wrapper has Privilege Escalation in Aurora PostgreSQL instance",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/aws/aws-advanced-go-wrapper/awssql/v2, github.com/aws/aws-advanced-go-wrapper/xray, github.com/aws/aws-advanced-go-wrapper/aws-secrets-manager",
+      "description": "AWS Advanced Go Wrapper has Privilege Escalation in Aurora PostgreSQL instance",
+      "link": "https://github.com/advisories/GHSA-r236-5pc3-3qcp",
+      "cve": "CVE-2026-11401",
+      "cvss": 8
+    },
+    {
+      "title": "Russh: SSH identification parsing accepted non-canonical client banners and did not bound pre-banner input",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "russh",
+      "description": "Russh: SSH identification parsing accepted non-canonical client banners and did not bound pre-banner input",
+      "link": "https://github.com/advisories/GHSA-76r6-x97p-67vr",
+      "cve": "CVE-2026-48108",
+      "cvss": 5.3
+    },
+    {
+      "title": "Russh: Unchecked keyboard-interactive prompt count in client auth path",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "russh",
+      "description": "Russh: Unchecked keyboard-interactive prompt count in client auth path",
+      "link": "https://github.com/advisories/GHSA-g9g7-5cgw-6v28",
+      "cve": "CVE-2026-48107",
+      "cvss": 6.5
+    },
+    {
+      "title": "WsgiDAV encoded dot segments can escape filesystem share roots",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "wsgidav",
+      "description": "WsgiDAV encoded dot segments can escape filesystem share roots",
+      "link": "https://github.com/advisories/GHSA-wxq4-cc2q-338q",
+      "cve": "CVE-2026-48099",
+      "cvss": 7.1
+    },
+    {
+      "title": "OpenFGA has cache-key delimiter injection in shared-iterator and v2 iterator that caches enables intra-store authorization-decision poisoning",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/openfga/openfga",
+      "description": "OpenFGA has cache-key delimiter injection in shared-iterator and v2 iterator that caches enables intra-store authorization-decision poisoning",
+      "link": "https://github.com/advisories/GHSA-8396-jffm-qx4w",
+      "cve": "CVE-2026-48096",
+      "cvss": 5
+    },
+    {
+      "title": "DevGuard has improper authorization on public assets",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/l3montree-dev/devguard",
+      "description": "DevGuard has improper authorization on public assets",
+      "link": "https://github.com/advisories/GHSA-6p54-fw2f-q7gf",
+      "cve": "CVE-2026-48089",
+      "cvss": null
+    },
+    {
+      "title": "Filament has inconsistent scope enforcement for its AttachAction and AssociateAction Select fields",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "filament/tables, filament/actions, filament/actions",
+      "description": "Filament has inconsistent scope enforcement for its AttachAction and AssociateAction Select fields",
+      "link": "https://github.com/advisories/GHSA-7q3w-xqjw-g3cr",
+      "cve": "CVE-2026-48067",
+      "cvss": 6.5
+    },
+    {
+      "title": "Netty HAProxy: Unbalanced Reference Count in Nested PP2_TYPE_SSL TLV Parsing Leads to Memory Exhaustion",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "io.netty:netty-codec-haproxy, io.netty:netty-codec-haproxy",
+      "description": "Netty HAProxy: Unbalanced Reference Count in Nested PP2_TYPE_SSL TLV Parsing Leads to Memory Exhaustion",
+      "link": "https://github.com/advisories/GHSA-h2qv-fj59-j46j",
+      "cve": "CVE-2026-48059",
+      "cvss": null
+    },
+    {
+      "title": "CodeIgniter4 has a validation bypass when uploading file extensions via `ext_in` rule",
+      "date": "2026-06-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "codeigniter4/framework",
+      "description": "CodeIgniter4 has a validation bypass when uploading file extensions via `ext_in` rule",
+      "link": "https://github.com/advisories/GHSA-2gr4-ppc7-7mhx",
+      "cve": "CVE-2026-48062",
+      "cvss": 9.8
+    },
+    {
+      "title": "Kolibri has Unauthenticated Server-Side Request Forgery (SSRF) in RemoteFacilityUserViewset",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "kolibri",
+      "description": "Kolibri has Unauthenticated Server-Side Request Forgery (SSRF) in RemoteFacilityUserViewset",
+      "link": "https://github.com/advisories/GHSA-4mj9-pf4r-cqrc",
+      "cve": "CVE-2026-48053",
+      "cvss": 5.8
+    },
+    {
+      "title": "Arc: Unauthenticated access to Go debug pprof endpoints leaks runtime state and enables CPU-burn DoS",
+      "date": "2026-06-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/basekick-labs/arc",
+      "description": "Arc: Unauthenticated access to Go debug pprof endpoints leaks runtime state and enables CPU-burn DoS",
+      "link": "https://github.com/advisories/GHSA-j93g-rp6m-j32m",
+      "cve": "CVE-2026-48050",
+      "cvss": null
+    },
+    {
+      "title": "@hapi/inert has a static-file confinement bypass via sibling-prefix path",
+      "date": "2026-06-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@hapi/inert",
+      "description": "@hapi/inert has a static-file confinement bypass via sibling-prefix path",
+      "link": "https://github.com/advisories/GHSA-rcvq-m9j9-6f4g",
+      "cve": "CVE-2026-48049",
       "cvss": 5.3
     },
     {
