@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-06-14T04:24:41.955Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-14T04:47:20.366Z",
+  "newPatches": 1,
   "patches": [
+    {
+      "title": "DSA-6344-1 chromium - security update",
+      "date": "2026-06-13",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6344-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00255.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
       "date": "2026-06-13",
@@ -8365,6 +8376,65 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-14T04:47:20.365Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 17 patches (1 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 3 patches, no changes",
+        "[INFO] github - 153 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 359 patches, no changes",
+        "[INFO] mssql - 1 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 14 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 223 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 36 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 836,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 20,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "paloalto",
+        "aws",
+        "chrome",
+        "cisco",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "oracle-db",
+        "slack",
+        "ubuntu",
+        "gitlab",
+        "cloudflare",
+        "crowdstrike",
+        "fortinet",
+        "mssql",
+        "nodejs",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6344-1 chromium - security update",
+          "date": "2026-06-13",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-14T04:24:41.954Z",
       "logs": [
         "[INFO] aws - 3 patches, no changes",
@@ -15241,46 +15311,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-06-09T07:52:52.163Z",
-      "logs": [
-        "[INFO] aws - 59 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 6 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 10 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] github - 155 patches, no changes",
-        "[INFO] microsoft - 109 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 91 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 34 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 476,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "github",
-        "aws",
-        "chrome",
-        "cisco",
-        "cloudflare",
-        "debian",
-        "redhat",
-        "ubuntu",
-        "microsoft",
-        "signal",
-        "edge",
-        "postgresql",
-        "fortinet",
-        "paloalto"
-      ],
-      "newPatches": []
     }
   ]
 }
