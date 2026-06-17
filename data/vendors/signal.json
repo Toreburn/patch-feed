@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-06-17T11:07:35.490Z",
+  "lastUpdated": "2026-06-17T15:50:49.859Z",
   "health": {
-    "lastFetchAttempt": "2026-06-17T11:07:35.490Z",
+    "lastFetchAttempt": "2026-06-17T15:50:49.859Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-17T11:07:35.490Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-06-17T15:50:49.859Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Open WebUI: Forged chat-file link allows cross-user file read and deletion",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nOpen WebUI `v0.9.5` lets an authenticated user attach arbitrary `file_id` values to their own chat message without checking whether they own or can read those files. If the attacker then s",
+      "link": "https://github.com/advisories/GHSA-vrhc-3fr6-pc3c",
+      "cves": [
+        "CVE-2026-54010"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server same-origin check bypassed when Sec-Fetch-Site, Origin, and Referer are all absent (incomplete fix for GHSA-6m52-m754-pw2g)",
       "date": "2026-06-16",

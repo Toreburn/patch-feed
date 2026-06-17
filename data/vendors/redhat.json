@@ -1,12 +1,12 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-06-17T11:07:21.452Z",
+  "lastUpdated": "2026-06-17T15:50:39.273Z",
   "health": {
-    "lastFetchAttempt": "2026-06-17T11:07:21.452Z",
+    "lastFetchAttempt": "2026-06-17T15:50:39.273Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 111,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-17T11:07:21.452Z",
+    "lastFetchParsedItems": 119,
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-06-17T15:50:39.273Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -43,6 +43,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12398.json",
       "cve": "CVE-2026-12398",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-48782: pydantic-ai: Pydantic AI: Information Disclosure via Cloud-Metadata Blocklist Bypass",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pydantic-ai: Pydantic AI: Information Disclosure via Cloud-Metadata Blocklist Bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48782.json",
+      "cve": "CVE-2026-48782",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-48775: langgraph: langgraph-checkpoint: LangGraph: Arbitrary code execution via insecure deserialization of modified checkpoint",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "langgraph: langgraph-checkpoint: LangGraph: Arbitrary code execution via insecure deserialization of modified checkpoint bytes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48775.json",
+      "cve": "CVE-2026-48775",
+      "cvss": 6.4
     },
     {
       "title": "CVE-2026-44188: ansible-lightspeed: Ansible Lightspeed: Session hijacking and unauthorized data access due to insufficient session expir",
@@ -560,6 +582,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47131.json",
       "cve": "CVE-2026-47131",
       "cvss": 4.1
+    },
+    {
+      "title": "CVE-2026-50632: cxf: org.apache.cxf/cxf-rt-transports-jms: Apache CXF: Arbitrary code execution via untrusted JMS configuration",
+      "date": "2026-06-12",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cxf: org.apache.cxf/cxf-rt-transports-jms: Apache CXF: Arbitrary code execution via untrusted JMS configuration",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50632.json",
+      "cve": "CVE-2026-50632",
+      "cvss": 8.8
     },
     {
       "title": "CVE-2026-44490: axios: Axios: Information disclosure and denial of service due to prototype pollution",
@@ -1231,6 +1264,61 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53438.json",
       "cve": "CVE-2026-53438",
       "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-53461: ImageMagick: ImageMagick: Denial of Service via out-of-bounds heap write in ICON decoder",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via out-of-bounds heap write in ICON decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53461.json",
+      "cve": "CVE-2026-53461",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-53460: ImageMagick: ImageMagick: Denial of Service via missing memory request check",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via missing memory request check",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53460.json",
+      "cve": "CVE-2026-53460",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-49218: ImageMagick: ImageMagick: Denial of Service via crafted DCM image with invalid dimensions",
+      "date": "2026-06-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via crafted DCM image with invalid dimensions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-49218.json",
+      "cve": "CVE-2026-49218",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-53441: jenkins: Jenkins: Stored Cross-Site Scripting (XSS) via unescaped user-provided description",
+      "date": "2026-06-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jenkins: Jenkins: Stored Cross-Site Scripting (XSS) via unescaped user-provided description",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53441.json",
+      "cve": "CVE-2026-53441",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-12491: vllm: vllm: image EXIF Rotation & PNG tRNS Transparency Not Normalized, Causing Mismatch Between Model Input and Expecta",
+      "date": "2026-06-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vllm: image EXIF Rotation & PNG tRNS Transparency Not Normalized, Causing Mismatch Between Model Input and Expectations",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12491.json",
+      "cve": "CVE-2026-12491",
+      "cvss": 4.8
     },
     {
       "title": "CVE-2026-52903: manageiq: YAML safe_load production fallback to unsafe_load enables RCE via deserialization",
