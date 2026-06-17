@@ -1,7 +1,16 @@
 {
-  "lastUpdated": "2026-06-17T04:25:40.363Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-17T04:47:26.081Z",
+  "newPatches": 40,
   "patches": [
+    {
+      "title": "Chrome for Android Update",
+      "date": "2026-06-17",
+      "severity": "UNKNOWN",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "Hi, everyone! We've just released&nbsp;Chrome 149 (149.0.7827.159)&nbsp;for Android. It'll become&nbsp;available on Google Play&nbsp;over the next few days.&nbsp;This release includes stability and pe...",
+      "link": "https://chromereleases.googleblog.com/feeds/3633229446653367016/comments/default"
+    },
     {
       "title": "CVE-2026-41108: Windows DNS Client Elevation of Privilege Vulnerability",
       "date": "2026-06-17",
@@ -453,6 +462,15 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45640"
     },
     {
+      "title": "Stable Channel Update for Desktop",
+      "date": "2026-06-16",
+      "severity": "CRITICAL",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "The Stable channel has been updated to 149.0.7827.155/.156 for Windows and Mac and 149.0.7827.155 for Linux, which will roll out over the coming days/weeks. A full list of changes in this build is ava...",
+      "link": "https://chromereleases.googleblog.com/feeds/1047251504119477823/comments/default"
+    },
+    {
       "title": "Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability",
       "date": "2026-06-16",
       "severity": "CRITICAL",
@@ -461,6 +479,16 @@
       "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, ...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk",
       "cve": "CVE-2026-20127"
+    },
+    {
+      "title": "Falcon Exposure Management Now Available for Third-Party Environments",
+      "date": "2026-06-16",
+      "severity": "UNKNOWN",
+      "vendor": "crowdstrike",
+      "component": "CrowdStrike Falcon",
+      "description": "",
+      "link": "https://www.crowdstrike.com/en-us/blog/falcon-exposure-management-now-available-for-third-party-environments/",
+      "cve": ""
     },
     {
       "title": "DSA-6348-1 gsasl - security update",
@@ -1165,6 +1193,314 @@
       "link": "https://github.com/advisories/GHSA-9c59-2mvc-vfr8",
       "cve": "CVE-2026-33760",
       "cvss": 8.8
+    },
+    {
+      "title": "Pi Agent: Potential XSS in HTML session exports via Markdown URL sanitization bypass",
+      "date": "2026-06-16",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "@mariozechner/pi-coding-agent, @earendil-works/pi-coding-agent",
+      "description": "Pi Agent: Potential XSS in HTML session exports via Markdown URL sanitization bypass",
+      "link": "https://github.com/advisories/GHSA-7v5m-pr3q-6453",
+      "cve": "CVE-2026-54326",
+      "cvss": 2.5
+    },
+    {
+      "title": "Gitea: Token scope bypass on web archive download endpoint",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "code.gitea.io/gitea",
+      "description": "Gitea: Token scope bypass on web archive download endpoint",
+      "link": "https://github.com/advisories/GHSA-cr4g-f395-h25h",
+      "cve": "CVE-2026-20706",
+      "cvss": null
+    },
+    {
+      "title": "Gitea: Missing repository-unit authorization on issue-template API endpoints",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "code.gitea.io/gitea",
+      "description": "Gitea: Missing repository-unit authorization on issue-template API endpoints",
+      "link": "https://github.com/advisories/GHSA-3fwp-p5rj-2pxf",
+      "cve": "CVE-2026-27783",
+      "cvss": 4.3
+    },
+    {
+      "title": "Gitea: Incomplete CVE-2025-68941 fix: /user/orgs missing checkTokenPublicOnly + switch-case logic flaw",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "code.gitea.io/gitea",
+      "description": "Gitea: Incomplete CVE-2025-68941 fix: /user/orgs missing checkTokenPublicOnly + switch-case logic flaw",
+      "link": "https://github.com/advisories/GHSA-8629-vc8r-5p58",
+      "cve": "CVE-2026-25714",
+      "cvss": 4.3
+    },
+    {
+      "title": "Gitea: Authorization Bypass via \"Allow edits from maintainers\" allows unauthorized commits to any readable repo",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "code.gitea.io/gitea",
+      "description": "Gitea: Authorization Bypass via \"Allow edits from maintainers\" allows unauthorized commits to any readable repo",
+      "link": "https://github.com/advisories/GHSA-mm7c-rhg6-qr4r",
+      "cve": "CVE-2026-26231",
+      "cvss": 8.5
+    },
+    {
+      "title": "Gitea: OAuth2 access token scope enforcement bypass via HTTP Basic authentication",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "code.gitea.io/gitea",
+      "description": "Gitea: OAuth2 access token scope enforcement bypass via HTTP Basic authentication",
+      "link": "https://github.com/advisories/GHSA-9r5x-wg6m-x2rc",
+      "cve": "CVE-2026-28699",
+      "cvss": 8.1
+    },
+    {
+      "title": "Gogs: Overwriting critical files results in a denial of service",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "gogs.io/gogs",
+      "description": "Gogs: Overwriting critical files results in a denial of service",
+      "link": "https://github.com/advisories/GHSA-pm6v-2h4w-4rp2",
+      "cve": "CVE-2026-52797",
+      "cvss": 8.5
+    },
+    {
+      "title": "Rclone: Unauthenticated command execution in `rclone rcd --rc-serve` via inline remote instantiation, bypassing CVE-2026-41179 fix",
+      "date": "2026-06-16",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/rclone/rclone",
+      "description": "Rclone: Unauthenticated command execution in `rclone rcd --rc-serve` via inline remote instantiation, bypassing CVE-2026-41179 fix",
+      "link": "https://github.com/advisories/GHSA-qw24-gh76-8rvv",
+      "cve": "CVE-2026-49980",
+      "cvss": 9.8
+    },
+    {
+      "title": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server same-origin check bypassed when Sec-Fetch-Site, Origin, and Referer are all absent (incomplete fix for GHSA-6m52-m754-pw2g)",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@nuxt/webpack-builder, @nuxt/webpack-builder, @nuxt/rspack-builder",
+      "description": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server same-origin check bypassed when Sec-Fetch-Site, Origin, and Referer are all absent (incomplete fix for GHSA-6m52-m754-pw2g)",
+      "link": "https://github.com/advisories/GHSA-x6qj-4h56-5rj5",
+      "cve": "CVE-2026-49993",
+      "cvss": null
+    },
+    {
+      "title": "Cross-site scripting via <NoScript> slot content in Nuxt's head components",
+      "date": "2026-06-16",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "nuxt, nuxt",
+      "description": "Cross-site scripting via <NoScript> slot content in Nuxt's head components",
+      "link": "https://github.com/advisories/GHSA-m3q2-p4fw-w38m",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "LiteLLM: Authentication Bypass via Host Header Injection",
+      "date": "2026-06-16",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "litellm",
+      "description": "LiteLLM: Authentication Bypass via Host Header Injection",
+      "link": "https://github.com/advisories/GHSA-4xpc-pv4p-pm3w",
+      "cve": "CVE-2026-49468",
+      "cvss": null
+    },
+    {
+      "title": "Gitea: Git Smart HTTP Skips Repository Token Scopes for Bearer Tokens",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "code.gitea.io/gitea",
+      "description": "Gitea: Git Smart HTTP Skips Repository Token Scopes for Bearer Tokens",
+      "link": "https://github.com/advisories/GHSA-cc8w-r4qh-3v65",
+      "cve": "CVE-2026-28744",
+      "cvss": 8.1
+    },
+    {
+      "title": "n8n: SecurityScorecard Node Leaks API Token to User-Controlled Host",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "n8n, n8n, n8n",
+      "description": "n8n: SecurityScorecard Node Leaks API Token to User-Controlled Host",
+      "link": "https://github.com/advisories/GHSA-rm2v-h48j-895m",
+      "cve": "CVE-2026-54304",
+      "cvss": 7.7
+    },
+    {
+      "title": "n8n: MCP Browser HTTP Transport Exposes Unauthenticated Browser-Control Sessions",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "n8n, n8n",
+      "description": "n8n: MCP Browser HTTP Transport Exposes Unauthenticated Browser-Control Sessions",
+      "link": "https://github.com/advisories/GHSA-qrx8-25qr-5r7v",
+      "cve": "CVE-2026-54309",
+      "cvss": 10
+    },
+    {
+      "title": "n8n: Cross-Tenant Credential Takeover via Dynamic Credentials EE Endpoints",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "n8n, n8n, n8n",
+      "description": "n8n: Cross-Tenant Credential Takeover via Dynamic Credentials EE Endpoints",
+      "link": "https://github.com/advisories/GHSA-2j5h-858j-5mpf",
+      "cve": "CVE-2026-54305",
+      "cvss": 9.9
+    },
+    {
+      "title": "n8n: Credential Exfiltration via Permission Bypass",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "n8n, n8n, n8n",
+      "description": "n8n: Credential Exfiltration via Permission Bypass",
+      "link": "https://github.com/advisories/GHSA-pmqw-72cg-wx85",
+      "cve": "CVE-2026-54307",
+      "cvss": 9.6
+    },
+    {
+      "title": "n8n: Denial of Service via ZIP decompression in webhook workflow",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n",
+      "description": "n8n: Denial of Service via ZIP decompression in webhook workflow",
+      "link": "https://github.com/advisories/GHSA-jqpw-qww5-cj4c",
+      "cve": "CVE-2026-54314",
+      "cvss": 5.9
+    },
+    {
+      "title": "n8n: Public API Execution Retry Authorization Bypass",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n",
+      "description": "n8n: Public API Execution Retry Authorization Bypass",
+      "link": "https://github.com/advisories/GHSA-h3jj-5f3v-3685",
+      "cve": "",
+      "cvss": 6.4
+    },
+    {
+      "title": "n8n: Python Code Node AST Validator Bypass",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n",
+      "description": "n8n: Python Code Node AST Validator Bypass",
+      "link": "https://github.com/advisories/GHSA-jwm3-qcfw-c5pp",
+      "cve": "",
+      "cvss": 5
+    },
+    {
+      "title": "n8n: Stored XSS in Chat Trigger Node",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "n8n, n8n, n8n",
+      "description": "n8n: Stored XSS in Chat Trigger Node",
+      "link": "https://github.com/advisories/GHSA-42h7-m79w-wvg5",
+      "cve": "CVE-2026-54302",
+      "cvss": 7.6
+    },
+    {
+      "title": "n8n: Reflected XSS via Facebook, WhatsApp, and Microsoft Teams Trigger Webhook Verification Endpoints",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n",
+      "description": "n8n: Reflected XSS via Facebook, WhatsApp, and Microsoft Teams Trigger Webhook Verification Endpoints",
+      "link": "https://github.com/advisories/GHSA-h86q-fx34-gfjr",
+      "cve": "CVE-2026-54303",
+      "cvss": 7.6
+    },
+    {
+      "title": "n8n: Microsoft SQL Node Prototype Pollution",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "n8n",
+      "description": "n8n: Microsoft SQL Node Prototype Pollution",
+      "link": "https://github.com/advisories/GHSA-x6p3-m6h9-fx7r",
+      "cve": "CVE-2026-54312",
+      "cvss": 8.5
+    },
+    {
+      "title": "yt-dlp: Arbitrary command injection possible if --exec option used with yt-dlp",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "yt-dlp",
+      "description": "yt-dlp: Arbitrary command injection possible if --exec option used with yt-dlp",
+      "link": "https://github.com/advisories/GHSA-69qj-pvh9-c5wg",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "Daytona: Cross-org IDOR in organization role update/delete — any org owner can rewrite or destroy another org's roles",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/daytonaio/daytona",
+      "description": "Daytona: Cross-org IDOR in organization role update/delete — any org owner can rewrite or destroy another org's roles",
+      "link": "https://github.com/advisories/GHSA-qxvm-pcfm-qc39",
+      "cve": "CVE-2026-54322",
+      "cvss": 7.7
+    },
+    {
+      "title": "Caddy: stripHTML template function bypass",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/caddyserver/caddy/v2, github.com/caddyserver/caddy",
+      "description": "Caddy: stripHTML template function bypass",
+      "link": "https://github.com/advisories/GHSA-vcc4-2c75-vc9v",
+      "cve": "CVE-2026-52846",
+      "cvss": 4.2
+    },
+    {
+      "title": "Caddy: FastCGI header normalization bypass in `forward_auth copy_headers`",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/caddyserver/caddy/v2, github.com/caddyserver/caddy",
+      "description": "Caddy: FastCGI header normalization bypass in `forward_auth copy_headers`",
+      "link": "https://github.com/advisories/GHSA-f59h-q822-g45g",
+      "cve": "CVE-2026-52845",
+      "cvss": 8.1
+    },
+    {
+      "title": "Caddy: Windows `file_server` path authorization bypass via encoded backslash",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/caddyserver/caddy/v2, github.com/caddyserver/caddy",
+      "description": "Caddy: Windows `file_server` path authorization bypass via encoded backslash",
+      "link": "https://github.com/advisories/GHSA-qrp7-cvwr-j2c6",
+      "cve": "CVE-2026-52844",
+      "cvss": 7.5
+    },
+    {
+      "title": "yt-dlp: Arbitrary code execution via manifest downloads with aria2c",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "yt-dlp",
+      "description": "yt-dlp: Arbitrary code execution via manifest downloads with aria2c",
+      "link": "https://github.com/advisories/GHSA-vx4q-3cr2-7cg2",
+      "cve": "CVE-2026-50574",
+      "cvss": 8.3
     },
     {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
@@ -2097,6 +2433,54 @@
       "cve": ""
     },
     {
+      "title": "CVE-2026-10649: pacemaker: Pacemaker: Denial of Service via integer overflow in remote message decompression",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pacemaker: Pacemaker: Denial of Service via integer overflow in remote message decompression",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10649.json",
+      "cve": "CVE-2026-10649",
+      "cvss": 8.6
+    },
+    {
+      "title": "CVE-2026-46655: virtio-win: viosock.sys: integer overflow in VIOSockSelect leads to heap-based buffer overflow",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "virtio-win: viosock.sys: integer overflow in VIOSockSelect leads to heap-based buffer overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46655.json",
+      "cve": "CVE-2026-46655",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-12398: galaxy_ng: shell injection in legacy role import via unsanitized git ref names",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "galaxy_ng: shell injection in legacy role import via unsanitized git ref names",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12398.json",
+      "cve": "CVE-2026-12398",
+      "cvss": 7.5
+    },
+    {
+      "title": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server same-origin check bypassed when Sec-Fetch-Site, Origin, and Referer are all absent (incomplete fix for GHSA-6m52-m754-pw2g)",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nThis is an incomplete fix for [GHSA-6m52-m754-pw2g](https://github.com/nuxt/nuxt/security/advisories/GHSA-6m52-m754-pw2g). Source code may still be stolen during dev when using the webpack",
+      "link": "https://github.com/advisories/GHSA-x6qj-4h56-5rj5",
+      "cves": [
+        "CVE-2026-49993"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
       "title": "USN-8432-1: FreeRDP vulnerabilities",
       "date": "2026-06-16",
       "severity": "UNKNOWN",
@@ -2131,6 +2515,15 @@
       "component": "OpenStack Keystone vulnerabilities",
       "description": "It was discovered that OpenStack Keystone allowed restricted application\ncredentials to create EC2 credentials. An authenticated attacker with only\na reader role could possibly use this issue to bypas...",
       "link": "https://ubuntu.com/security/notices/USN-8433-1"
+    },
+    {
+      "title": "USN-8438-1: OpenImageIO vulnerabilities",
+      "date": "2026-06-16",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "OpenImageIO vulnerabilities",
+      "description": "It was discovered that OpenImageIO incorrectly performed bounds\nchecking when processing SGI files. An attacker could possibly\nuse this issue to cause a denial of service or execute arbitrary\ncode. (C...",
+      "link": "https://ubuntu.com/security/notices/USN-8438-1"
     },
     {
       "title": "CVE-2026-11931 - Insecure Permissions on Authentication Token Cache File in Kiro IDE",
@@ -3766,6 +4159,28 @@
       "cvss": 5
     },
     {
+      "title": "CVE-2026-6045: libreoffice: LibreOffice: Heap buffer overflow via crafted EMF+ graphics import",
+      "date": "2026-06-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libreoffice: LibreOffice: Heap buffer overflow via crafted EMF+ graphics import",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6045.json",
+      "cve": "CVE-2026-6045",
+      "cvss": 6.6
+    },
+    {
+      "title": "CVE-2026-6039: libreoffice: LibreOffice: Denial of Service via specially crafted DXF polyline import",
+      "date": "2026-06-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libreoffice: LibreOffice: Denial of Service via specially crafted DXF polyline import",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6039.json",
+      "cve": "CVE-2026-6039",
+      "cvss": 5.5
+    },
+    {
       "title": "Microsoft Security Advisory CVE-2026-45591 – ASP.NET Core Denial of Service Vulnerability",
       "date": "2026-06-15",
       "severity": "HIGH",
@@ -3833,6 +4248,28 @@
       "component": "ADSys vulnerabilities",
       "description": "It was discovered that ADSys did not properly handle certain HTTP/2 frames.\nA remote attacker could possibly use this issue to cause a denial of\nservice. This issue only affected Ubuntu 26.04 LTS. (CV...",
       "link": "https://ubuntu.com/security/notices/USN-8430-1"
+    },
+    {
+      "title": "CVE-2026-54411: linux-pam: From CVEorg collector",
+      "date": "2026-06-14",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "linux-pam: From CVEorg collector",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54411.json",
+      "cve": "CVE-2026-54411",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-54421: openstack ironic: OpenStack Ironic: Information disclosure via PATCH request on volume properties",
+      "date": "2026-06-14",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openstack ironic: OpenStack Ironic: Information disclosure via PATCH request on volume properties",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54421.json",
+      "cve": "CVE-2026-54421",
+      "cvss": 6.5
     },
     {
       "title": "DSA-6344-1 chromium - security update",
@@ -6948,6 +7385,289 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-17T04:47:26.081Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[SUCCESS] chrome - 4 patches (2 new)",
+        "[INFO] cisco - 4 patches, no changes",
+        "[SUCCESS] crowdstrike - 1 patches (1 new)",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[SUCCESS] github - 228 patches (28 new)",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] oracle-db - 2 patches, no changes",
+        "[INFO] paloalto - 3 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 67 patches (7 new)",
+        "[SUCCESS] signal - 4 patches (1 new)",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 17 patches (1 new)"
+      ],
+      "newPatchCount": 40,
+      "totalPatches": 748,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "chrome",
+        "microsoft",
+        "cisco",
+        "crowdstrike",
+        "debian",
+        "github",
+        "oracle-db",
+        "postgresql",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "aws",
+        "edge",
+        "paloalto",
+        "slack"
+      ],
+      "newPatches": [
+        {
+          "vendor": "chrome",
+          "title": "Chrome for Android Update",
+          "date": "2026-06-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "chrome",
+          "title": "Stable Channel Update for Desktop",
+          "date": "2026-06-16",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "crowdstrike",
+          "title": "Falcon Exposure Management Now Available for Third-Party Environments",
+          "date": "2026-06-16",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Pi Agent: Potential XSS in HTML session exports via Markdown URL sanitization bypass",
+          "date": "2026-06-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Gitea: Token scope bypass on web archive download endpoint",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Gitea: Missing repository-unit authorization on issue-template API endpoints",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Gitea: Incomplete CVE-2025-68941 fix: /user/orgs missing checkTokenPublicOnly + switch-case logic flaw",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Gitea: Authorization Bypass via \"Allow edits from maintainers\" allows unauthorized commits to any readable repo",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gitea: OAuth2 access token scope enforcement bypass via HTTP Basic authentication",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gogs: Overwriting critical files results in a denial of service",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Rclone: Unauthenticated command execution in `rclone rcd --rc-serve` via inline remote instantiation, bypassing CVE-2026-41179 fix",
+          "date": "2026-06-16",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server same-origin check bypassed when Sec-Fetch-Site, Origin, and Referer are all absent (incomplete fix for GHSA-6m52-m754-pw2g)",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Cross-site scripting via <NoScript> slot content in Nuxt's head components",
+          "date": "2026-06-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "LiteLLM: Authentication Bypass via Host Header Injection",
+          "date": "2026-06-16",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Gitea: Git Smart HTTP Skips Repository Token Scopes for Bearer Tokens",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: SecurityScorecard Node Leaks API Token to User-Controlled Host",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: MCP Browser HTTP Transport Exposes Unauthenticated Browser-Control Sessions",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Cross-Tenant Credential Takeover via Dynamic Credentials EE Endpoints",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Credential Exfiltration via Permission Bypass",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Denial of Service via ZIP decompression in webhook workflow",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Public API Execution Retry Authorization Bypass",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Python Code Node AST Validator Bypass",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Stored XSS in Chat Trigger Node",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Reflected XSS via Facebook, WhatsApp, and Microsoft Teams Trigger Webhook Verification Endpoints",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Microsoft SQL Node Prototype Pollution",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "yt-dlp: Arbitrary command injection possible if --exec option used with yt-dlp",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Daytona: Cross-org IDOR in organization role update/delete — any org owner can rewrite or destroy another org's roles",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Caddy: stripHTML template function bypass",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Caddy: FastCGI header normalization bypass in `forward_auth copy_headers`",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Caddy: Windows `file_server` path authorization bypass via encoded backslash",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "yt-dlp: Arbitrary code execution via manifest downloads with aria2c",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10649: pacemaker: Pacemaker: Denial of Service via integer overflow in remote message decompression",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46655: virtio-win: viosock.sys: integer overflow in VIOSockSelect leads to heap-based buffer overflow",
+          "date": "2026-06-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-12398: galaxy_ng: shell injection in legacy role import via unsanitized git ref names",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6045: libreoffice: LibreOffice: Heap buffer overflow via crafted EMF+ graphics import",
+          "date": "2026-06-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6039: libreoffice: LibreOffice: Denial of Service via specially crafted DXF polyline import",
+          "date": "2026-06-15",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-54411: linux-pam: From CVEorg collector",
+          "date": "2026-06-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-54421: openstack ironic: OpenStack Ironic: Information disclosure via PATCH request on volume properties",
+          "date": "2026-06-14",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "signal",
+          "title": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server same-origin check bypassed when Sec-Fetch-Site, Origin, and Referer are all absent (incomplete fix for GHSA-6m52-m754-pw2g)",
+          "date": "2026-06-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8438-1: OpenImageIO vulnerabilities",
+          "date": "2026-06-16",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-17T04:25:40.363Z",
       "logs": [
@@ -13164,317 +13884,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-12T04:41:04.608Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[SUCCESS] chrome - 5 patches (1 new)",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 19 patches, no changes",
-        "[SUCCESS] edge - 2 patches (1 new)",
-        "[INFO] fortinet - 3 patches, no changes",
-        "[SUCCESS] github - 98 patches (15 new)",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 359 patches, no changes",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 12 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[SUCCESS] redhat - 198 patches (22 new)",
-        "[SUCCESS] signal - 4 patches (1 new)",
-        "[INFO] slack - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 36 patches (3 new)"
-      ],
-      "newPatchCount": 43,
-      "totalPatches": 752,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 20,
-      "vendors": [
-        "chrome",
-        "cisco",
-        "debian",
-        "github",
-        "microsoft",
-        "oracle-db",
-        "paloalto",
-        "redhat",
-        "signal",
-        "slack",
-        "ubuntu",
-        "aws",
-        "gitlab",
-        "cloudflare",
-        "crowdstrike",
-        "edge",
-        "fortinet",
-        "mssql",
-        "nodejs",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "chrome",
-          "title": "Chrome for Android Update",
-          "date": "2026-06-12",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "edge",
-          "title": "Microsoft Edge Security Update - June 9, 2026",
-          "date": "2026-06-09",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": " MessagePack's LZ4 decompression may fail with AccessViolationException after dereferencing memory from bad input",
-          "date": "2026-06-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "GeoServer DB2 DataStore Extension has a JNDI Vulnerability via Store Connection",
-          "date": "2026-06-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Russh SSH message fields were decoded through allocation-first parsers before field-specific bounds",
-          "date": "2026-06-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "AWS Advanced Go Wrapper has Privilege Escalation in Aurora PostgreSQL instance",
-          "date": "2026-06-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Russh: SSH identification parsing accepted non-canonical client banners and did not bound pre-banner input",
-          "date": "2026-06-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Russh: Unchecked keyboard-interactive prompt count in client auth path",
-          "date": "2026-06-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "WsgiDAV encoded dot segments can escape filesystem share roots",
-          "date": "2026-06-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenFGA has cache-key delimiter injection in shared-iterator and v2 iterator that caches enables intra-store authorization-decision poisoning",
-          "date": "2026-06-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "DevGuard has improper authorization on public assets",
-          "date": "2026-06-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Filament has inconsistent scope enforcement for its AttachAction and AssociateAction Select fields",
-          "date": "2026-06-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Netty HAProxy: Unbalanced Reference Count in Nested PP2_TYPE_SSL TLV Parsing Leads to Memory Exhaustion",
-          "date": "2026-06-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "CodeIgniter4 has a validation bypass when uploading file extensions via `ext_in` rule",
-          "date": "2026-06-11",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Kolibri has Unauthenticated Server-Side Request Forgery (SSRF) in RemoteFacilityUserViewset",
-          "date": "2026-06-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Arc: Unauthenticated access to Go debug pprof endpoints leaks runtime state and enables CPU-burn DoS",
-          "date": "2026-06-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "@hapi/inert has a static-file confinement bypass via sibling-prefix path",
-          "date": "2026-06-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-44490: axios: Axios: Information disclosure and denial of service due to prototype pollution",
-          "date": "2026-06-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-44489: axios: Axios: Information disclosure via Prototype Pollution",
-          "date": "2026-06-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-11986: keycloak-rest-admin-ui-ext: Authorization Bypass vulnerability in the admin-ui-ext bulk role-mapping-delete endpoints of",
-          "date": "2026-06-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-47734: dulwich: Dulwich: Denial of Service via crafted Git thin pack",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53465: ImageMagick: ImageMagick: Denial of Service via crafted multi-frame image leading to heap buffer overwrite",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53464: ImageMagick: ImageMagick: Memory leak via invalid options to wand option parser",
-          "date": "2026-06-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53462: ImageMagick: ImageMagick: Denial of Service due to heap-use-after-free in CheckPrimitiveExtent",
-          "date": "2026-06-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-47712: dulwich: Dulwich: Arbitrary file write via malicious commit subject in format_patch",
-          "date": "2026-06-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48994: ImageMagick: ImageMagick: Denial of Service via heap buffer over-write in MAT decoder",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48734: ImageMagick: ImageMagick: Denial of Service via crafted MVG file leading to stack overflow",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48733: ImageMagick: ImageMagick: Denial of Service via crafted image in subimage-search",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48724: ImageMagick: ImageMagick: Denial of Service via heap buffer overwrite in Floyd-Steinberg dithering",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-47165: ImageMagick: ImageMagick: Information disclosure due to missing authentication in distributed pixel cache",
-          "date": "2026-06-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46521: ImageMagick: ImageMagick: Denial of Service via out-of-bounds write in LZMA MIFF encoder",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46529: atril: evince: xreader: PDF /GoToR action argv injection enables single-click RCE via --gtk-module dlopen",
-          "date": "2026-06-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53442: jenkins: Jenkins: Information disclosure of secrets via unencrypted storage",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53439: jenkins: Jenkins: Information Disclosure via Missing Permission Checks",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-11850: krb5: krb5: integer underflow in berval2tl_data() leads to heap out-of-bounds read",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53701: gstreamer1-plugins-bad-free: GStreamer: Out-of-bounds write in H.266/VVC PPS picture partition parser",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53702: gstreamer1-plugins-bad-free: GStreamer: Stack buffer overflow in H.265 buffering period SEI parser",
-          "date": "2026-06-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-41726: spring-kafka: Spring-kafka: Denial of Service due to unbounded heap growth via unique header values",
-          "date": "2026-06-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-42570: devalue: devalue: Excessive memory consumption via deserialization of sparse arrays",
-          "date": "2026-06-09",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "signal",
-          "title": "Russh SSH message fields were decoded through allocation-first parsers before field-specific bounds",
-          "date": "2026-06-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8426-1: Linux kernel (Azure) vulnerabilities",
-          "date": "2026-06-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8423-1: lwIP vulnerabilities",
-          "date": "2026-06-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8421-1: Ironic vulnerabilities",
-          "date": "2026-06-11",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
