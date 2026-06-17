@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-17T18:22:56.308Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-17T20:23:04.558Z",
+  "newPatches": 40,
   "patches": [
     {
       "title": "Chrome for Android Update",
@@ -10,6 +10,68 @@
       "component": "Chrome Browser",
       "description": "Hi, everyone! We've just released&nbsp;Chrome 149 (149.0.7827.159)&nbsp;for Android. It'll become&nbsp;available on Google Play&nbsp;over the next few days.&nbsp;This release includes stability and pe...",
       "link": "https://chromereleases.googleblog.com/feeds/3633229446653367016/comments/default"
+    },
+    {
+      "title": "Cisco Identity Services Engine Remote Code Execution and Information Disclosure Vulnerabilities",
+      "date": "2026-06-17",
+      "severity": "CRITICAL",
+      "vendor": "cisco",
+      "component": "Identity Services",
+      "description": "Multiple vulnerabilities in Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) could allow a remote attacker to achieve remote code execution or conduct informatio...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-G5WP8vv",
+      "cve": "CVE-2026-20181"
+    },
+    {
+      "title": "Cisco Crosswork Network Controller Server-Side Template Injection Vulnerability",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the web-based management interface of Cisco Crosswork Network Controller could allow an&nbsp;authenticated, remote attacker to execute arbitrary commands on an affected device. This...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cnc-inj-QNMeEmxk",
+      "cve": "CVE-2026-20220"
+    },
+    {
+      "title": "Cisco Webex App Open Redirect Vulnerability",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "WebEx",
+      "description": "A vulnerability in the browser-based version of Cisco Webex App could have allowed an unauthenticated, remote attacker to redirect users to a malicious webpage. Cisco has addressed this vulnerability ...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-webex-app-redirect-KOyxhffH",
+      "cve": "CVE-2026-20178"
+    },
+    {
+      "title": "Cisco Umbrella Virtual Appliance Privilege Escalation Vulnerability",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "A vulnerability in the vmadmin CLI of Cisco Umbrella Virtual Appliance could allow an authenticated, local attacker to elevate privileges on an affected device. This vulnerability is due to insufficie...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-umbrella-priv-esc-F4wJB7AU",
+      "cve": "CVE-2026-20246"
+    },
+    {
+      "title": "DSA-6350-1 firefox-esr - security update",
+      "date": "2026-06-17",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "firefox-esr",
+      "description": "Multiple security issues have been found in the Mozilla Firefox web browser, which could potentially result in the execution of arbitrary code, bypass of the same-origin policy, privilege escalation, ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00261.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6349-1 atril - security update",
+      "date": "2026-06-17",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "atril",
+      "description": "It was discovered that atril, the MATE document viewer, is prone to a command injection vulnerability if a specially crafted PDF file is opened. https://security-tracker.debian.org/tracker/DSA-6349-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00260.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "Open WebUI BOLA: `search_knowledge_files` Allows Unauthorized Knowledge Base File Enumeration",
@@ -329,6 +391,291 @@
       "link": "https://github.com/advisories/GHSA-5vg9-5847-vvmq",
       "cve": "",
       "cvss": 8.9
+    },
+    {
+      "title": "CakePHP Authentication: Open redirect weakness via backslash bypass",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "cakephp/authentication, cakephp/authentication",
+      "description": "CakePHP Authentication: Open redirect weakness via backslash bypass",
+      "link": "https://github.com/advisories/GHSA-hhpq-7wg4-36jm",
+      "cve": "CVE-2026-55590",
+      "cvss": null
+    },
+    {
+      "title": "Avo: Missing Authorization in Avo Association Attach Endpoint Allows Unauthorized Relationship Manipulation and Privilege Escalation",
+      "date": "2026-06-17",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "avo, avo",
+      "description": "Avo: Missing Authorization in Avo Association Attach Endpoint Allows Unauthorized Relationship Manipulation and Privilege Escalation",
+      "link": "https://github.com/advisories/GHSA-8fq9-273g-6mrg",
+      "cve": "CVE-2026-55518",
+      "cvss": 9.6
+    },
+    {
+      "title": "Deno: Denial of service via non-ASCII bytes in WebSocket response headers",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "deno",
+      "description": "Deno: Denial of service via non-ASCII bytes in WebSocket response headers",
+      "link": "https://github.com/advisories/GHSA-x2qc-cmh9-f4hf",
+      "cve": "CVE-2026-55517",
+      "cvss": 4.3
+    },
+    {
+      "title": "HAPI FHIR: XXE in XsltUtilities.saxonTransform via unhardened Saxon TransformerFactory",
+      "date": "2026-06-17",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "ca.uhn.hapi.fhir:org.hl7.fhir.utilities",
+      "description": "HAPI FHIR: XXE in XsltUtilities.saxonTransform via unhardened Saxon TransformerFactory",
+      "link": "https://github.com/advisories/GHSA-2f55-g35j-5jmf",
+      "cve": "CVE-2026-55471",
+      "cvss": null
+    },
+    {
+      "title": "HAPI FHIR: Incomplete fix for CVE-2026-45367: DSTU2 FHIRPathEngine.matches() missing RegexTimeout protection allows ReDoS",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "ca.uhn.hapi.fhir:org.hl7.fhir.dstu2, ca.uhn.hapi.fhir:org.hl7.fhir.convertors, ca.uhn.hapi.fhir:org.hl7.fhir.validation",
+      "description": "HAPI FHIR: Incomplete fix for CVE-2026-45367: DSTU2 FHIRPathEngine.matches() missing RegexTimeout protection allows ReDoS",
+      "link": "https://github.com/advisories/GHSA-fxj4-p9xp-37v5",
+      "cve": "CVE-2026-55470",
+      "cvss": 7.5
+    },
+    {
+      "title": "Langflow: Unauthenticated file upload leads to DoS (space exhaustion) and information leak",
+      "date": "2026-06-17",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "langflow",
+      "description": "Langflow: Unauthenticated file upload leads to DoS (space exhaustion) and information leak",
+      "link": "https://github.com/advisories/GHSA-x223-p2gf-v735",
+      "cve": "CVE-2026-55450",
+      "cvss": 9.3
+    },
+    {
+      "title": "handlebars.java FileTemplateLoader Path Traversal",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "com.github.jknack:handlebars",
+      "description": "handlebars.java FileTemplateLoader Path Traversal",
+      "link": "https://github.com/advisories/GHSA-r4gv-qr8j-p3pg",
+      "cve": "CVE-2026-55760",
+      "cvss": 7.5
+    },
+    {
+      "title": "Filament: Disabled RichEditor field state can be used for XSS",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "filament/forms",
+      "description": "Filament: Disabled RichEditor field state can be used for XSS",
+      "link": "https://github.com/advisories/GHSA-m9cv-24rx-8mv7",
+      "cve": "CVE-2026-55409",
+      "cvss": 7.6
+    },
+    {
+      "title": "LangChain4j: SQL injection via metadata filters in langchain4j-mariadb and langchain4j-pgvector",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "dev.langchain4j:langchain4j-mariadb, dev.langchain4j:langchain4j-mariadb, dev.langchain4j:langchain4j-mariadb",
+      "description": "LangChain4j: SQL injection via metadata filters in langchain4j-mariadb and langchain4j-pgvector",
+      "link": "https://github.com/advisories/GHSA-2mfg-cc43-9pcj",
+      "cve": "CVE-2026-55405",
+      "cvss": 7.6
+    },
+    {
+      "title": "Capsule: Incomplete fix of CVE-2026-30963: singular/plural typo leaves namespaces/finalize unprotected",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/projectcapsule/capsule",
+      "description": "Capsule: Incomplete fix of CVE-2026-30963: singular/plural typo leaves namespaces/finalize unprotected",
+      "link": "https://github.com/advisories/GHSA-gwxr-7h77-7777",
+      "cve": "CVE-2026-55636",
+      "cvss": 5.7
+    },
+    {
+      "title": "webpack-dev-server vulnerable to HMR WebSocket interception via permissive user proxies",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "webpack-dev-server",
+      "description": "webpack-dev-server vulnerable to HMR WebSocket interception via permissive user proxies",
+      "link": "https://github.com/advisories/GHSA-mx8g-39q3-5c79",
+      "cve": "CVE-2026-9595",
+      "cvss": 5.3
+    },
+    {
+      "title": "Multer vulnerable to Denial of Service via deeply nested field names",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "multer, multer",
+      "description": "Multer vulnerable to Denial of Service via deeply nested field names",
+      "link": "https://github.com/advisories/GHSA-72gw-mp4g-v24j",
+      "cve": "CVE-2026-5079",
+      "cvss": 7.5
+    },
+    {
+      "title": "Multer vulnerable to Denial of Service via incomplete cleanup of aborted uploads",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "multer, multer",
+      "description": "Multer vulnerable to Denial of Service via incomplete cleanup of aborted uploads",
+      "link": "https://github.com/advisories/GHSA-3p4h-7m6x-2hcm",
+      "cve": "CVE-2026-5038",
+      "cvss": 5.3
+    },
+    {
+      "title": "Gitea: Open Redirect via redirect_to",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/go-gitea/gitea",
+      "description": "Gitea: Open Redirect via redirect_to",
+      "link": "https://github.com/advisories/GHSA-j5r2-4c8j-xc3m",
+      "cve": "CVE-2026-25779",
+      "cvss": null
+    },
+    {
+      "title": "Gitea: Stored XSS via glTF `extensionsRequired` in Gitea 3D File Viewer",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "code.gitea.io/gitea",
+      "description": "Gitea: Stored XSS via glTF `extensionsRequired` in Gitea 3D File Viewer",
+      "link": "https://github.com/advisories/GHSA-9cpj-qc93-vw8v",
+      "cve": "CVE-2026-28737",
+      "cvss": 8.7
+    },
+    {
+      "title": "Gitea: Public-only tokens bypass private-resource restrictions on `/api/v1/user` self routes",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "code.gitea.io/gitea",
+      "description": "Gitea: Public-only tokens bypass private-resource restrictions on `/api/v1/user` self routes",
+      "link": "https://github.com/advisories/GHSA-wrr5-99h5-gq57",
+      "cve": "CVE-2026-24791",
+      "cvss": 8.1
+    },
+    {
+      "title": "Gitea: API Fork Missing CanCreateOrgRepo Check Allows Org Secret Exfiltration",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "code.gitea.io/gitea",
+      "description": "Gitea: API Fork Missing CanCreateOrgRepo Check Allows Org Secret Exfiltration",
+      "link": "https://github.com/advisories/GHSA-fhx7-m96w-mv29",
+      "cve": "CVE-2026-22555",
+      "cvss": 8.1
+    },
+    {
+      "title": "Daytona: Cross-tenant data leak in notification WebSocket gateway via unverified organizationId join",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/daytonaio/daytona",
+      "description": "Daytona: Cross-tenant data leak in notification WebSocket gateway via unverified organizationId join",
+      "link": "https://github.com/advisories/GHSA-qwxf-2m7m-2m3x",
+      "cve": "CVE-2026-54324",
+      "cvss": 6.5
+    },
+    {
+      "title": "Claude Code: Out-of-Band Data Exfiltration via Pre-Approved HuggingFace Domain in WebFetch",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@anthropic-ai/claude-code",
+      "description": "Claude Code: Out-of-Band Data Exfiltration via Pre-Approved HuggingFace Domain in WebFetch",
+      "link": "https://github.com/advisories/GHSA-fg94-h982-f3mm",
+      "cve": "CVE-2026-54316",
+      "cvss": null
+    },
+    {
+      "title": "Open WebUI: Any authenticated user can read other users' private notes via Socket.IO",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Any authenticated user can read other users' private notes via Socket.IO",
+      "link": "https://github.com/advisories/GHSA-8788-j68r-3cgh",
+      "cve": "CVE-2026-54022",
+      "cvss": 5.3
+    },
+    {
+      "title": "Open WebUI: Authenticated users can target arbitrary configured Ollama backends via unguarded url_idx path parameter",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Authenticated users can target arbitrary configured Ollama backends via unguarded url_idx path parameter",
+      "link": "https://github.com/advisories/GHSA-9rpj-v7hf-vv2w",
+      "cve": "CVE-2026-54021",
+      "cvss": 6.3
+    },
+    {
+      "title": "Open WebUI: RAG ACL Bypass in Milvus Multitenancy Mode",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: RAG ACL Bypass in Milvus Multitenancy Mode",
+      "link": "https://github.com/advisories/GHSA-p5cp-r7rg-qpxc",
+      "cve": "CVE-2026-54019",
+      "cvss": 6.5
+    },
+    {
+      "title": "Open WebUI: SSRF Protection Bypass in Playwright Web Loader via HTTP Redirects",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: SSRF Protection Bypass in Playwright Web Loader via HTTP Redirects",
+      "link": "https://github.com/advisories/GHSA-jrfp-m64g-pcwv",
+      "cve": "CVE-2026-54018",
+      "cvss": 7.7
+    },
+    {
+      "title": "Open WebUI: Path traversal / SSRF in terminal server proxy via encoded path traversal",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Path traversal / SSRF in terminal server proxy via encoded path traversal",
+      "link": "https://github.com/advisories/GHSA-r2wg-2mcr-66rv",
+      "cve": "CVE-2026-54017",
+      "cvss": 7.7
+    },
+    {
+      "title": "OpenClaw: MCP Streamable HTTP redirects could forward configured custom headers to another origin",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: MCP Streamable HTTP redirects could forward configured custom headers to another origin",
+      "link": "https://github.com/advisories/GHSA-rjxq-qqhf-8hwh",
+      "cve": "CVE-2026-53840",
+      "cvss": 7.1
+    },
+    {
+      "title": "JetBrains Marketplace Ecosystem Security Update: Addressing Malicious Third-Party AI Plugins",
+      "date": "2026-06-17",
+      "severity": "CRITICAL",
+      "vendor": "jetbrains",
+      "component": "JetBrains Products",
+      "description": "At JetBrains, we build tools that empower developers to create, automate, and innovate. In today’s rapidly evolving software supply chain and threat landscape, we believe responsible transparency must...",
+      "link": "https://blog.jetbrains.com/platform/2026/06/marketplace-ecosystem-security-update-malicious-ai-plugins/",
+      "cve": ""
     },
     {
       "title": "CVE-2026-41108: Windows DNS Client Elevation of Privilege Vulnerability",
@@ -803,6 +1150,55 @@
       "platform": [
         "All Platforms"
       ]
+    },
+    {
+      "title": "Signal iOS 8.16.0.1664",
+      "date": "2026-06-17",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal iOS",
+      "description": "- Now you can enable the new \"Optimize On-Device Storage\" setting on a paid backup plan to securely offload older Signal attachments and free up space on your phone. These end-to-end encrypted files c",
+      "link": "https://github.com/signalapp/Signal-iOS/releases/tag/8.16.0.1664",
+      "cves": [],
+      "platform": [
+        "iOS"
+      ]
+    },
+    {
+      "title": "USN-8442-1: kitty vulnerabilities",
+      "date": "2026-06-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "kitty vulnerabilities",
+      "description": "It was discovered that kitty incorrectly handled certain image data. An\nattacker able to write to the terminal's input could possibly use this\nissue to cause kitty to crash, resulting in a denial of s...",
+      "link": "https://ubuntu.com/security/notices/USN-8442-1"
+    },
+    {
+      "title": "USN-8390-2: Linux kernel vulnerability",
+      "date": "2026-06-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Linux kernel",
+      "description": "It was discovered that the Linux kernel did not properly handle shared page\nfragments during socket buffer operations, collectively known as Dirty\nFrag. A logic flaw existed in the XFRM ESP-in-TCP sub...",
+      "link": "https://ubuntu.com/security/notices/USN-8390-2"
+    },
+    {
+      "title": "USN-8441-1: Linux kernel vulnerabilities",
+      "date": "2026-06-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privil...",
+      "link": "https://ubuntu.com/security/notices/USN-8441-1"
+    },
+    {
+      "title": "USN-8361-3: Linux kernel vulnerability",
+      "date": "2026-06-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel",
+      "description": "A security issue was discovered in the Linux kernel.\nAn attacker could possibly use this to compromise the system.\nThis update corrects flaws in the following subsystem:\n  - Packet sockets;\n(CVE-2026-...",
+      "link": "https://ubuntu.com/security/notices/USN-8361-3"
     },
     {
       "title": "Stable Channel Update for Desktop",
@@ -2889,6 +3285,33 @@
       "component": "OpenImageIO vulnerabilities",
       "description": "It was discovered that OpenImageIO incorrectly performed bounds\nchecking when processing SGI files. An attacker could possibly\nuse this issue to cause a denial of service or execute arbitrary\ncode. (C...",
       "link": "https://ubuntu.com/security/notices/USN-8438-1"
+    },
+    {
+      "title": "USN-8440-1: Linux kernel (Azure) vulnerabilities",
+      "date": "2026-06-16",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Azure) vulnerabilities",
+      "description": "Josh Eads, Kristoffer Janke, Eduardo Vela Nava, Tavis Ormandy, and Matteo\nRizzo discovered that some AMD Zen processors did not properly verify the\nsignature of CPU microcode. This flaw is known as En...",
+      "link": "https://ubuntu.com/security/notices/USN-8440-1"
+    },
+    {
+      "title": "USN-8426-2: Linux kernel (Azure) vulnerabilities",
+      "date": "2026-06-16",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Azure) vulnerabilities",
+      "description": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privil...",
+      "link": "https://ubuntu.com/security/notices/USN-8426-2"
+    },
+    {
+      "title": "USN-8439-1: Linux kernel (Oracle) vulnerabilities",
+      "date": "2026-06-16",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Oracle) vulnerabilities",
+      "description": "Stonejiajia, Shir Tamari and Sagi Tzadik discovered that the OverlayFS\nimplementation in the Ubuntu Linux kernel did not properly perform\npermission checks in certain situations. A local attacker coul...",
+      "link": "https://ubuntu.com/security/notices/USN-8439-1"
     },
     {
       "title": "CVE-2026-11931 - Insecure Permissions on Authentication Token Cache File in Kiro IDE",
@@ -7761,6 +8184,291 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-17T20:23:04.557Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[SUCCESS] cisco - 8 patches (4 new)",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 13 patches (2 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[SUCCESS] github - 282 patches (25 new)",
+        "[SUCCESS] jetbrains - 1 patches (1 new)",
+        "[INFO] microsoft - 401 patches, no changes",
+        "[INFO] oracle-db - 2 patches, no changes",
+        "[INFO] paloalto - 3 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 70 patches, no changes",
+        "[SUCCESS] signal - 6 patches (1 new)",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 24 patches (7 new)"
+      ],
+      "newPatchCount": 40,
+      "totalPatches": 822,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "chrome",
+        "cisco",
+        "debian",
+        "github",
+        "jetbrains",
+        "microsoft",
+        "signal",
+        "ubuntu",
+        "crowdstrike",
+        "oracle-db",
+        "postgresql",
+        "redhat",
+        "aws",
+        "edge",
+        "paloalto",
+        "slack"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Cisco Identity Services Engine Remote Code Execution and Information Disclosure Vulnerabilities",
+          "date": "2026-06-17",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Crosswork Network Controller Server-Side Template Injection Vulnerability",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Webex App Open Redirect Vulnerability",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Umbrella Virtual Appliance Privilege Escalation Vulnerability",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6350-1 firefox-esr - security update",
+          "date": "2026-06-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6349-1 atril - security update",
+          "date": "2026-06-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "CakePHP Authentication: Open redirect weakness via backslash bypass",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Avo: Missing Authorization in Avo Association Attach Endpoint Allows Unauthorized Relationship Manipulation and Privilege Escalation",
+          "date": "2026-06-17",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Deno: Denial of service via non-ASCII bytes in WebSocket response headers",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "HAPI FHIR: XXE in XsltUtilities.saxonTransform via unhardened Saxon TransformerFactory",
+          "date": "2026-06-17",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "HAPI FHIR: Incomplete fix for CVE-2026-45367: DSTU2 FHIRPathEngine.matches() missing RegexTimeout protection allows ReDoS",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Langflow: Unauthenticated file upload leads to DoS (space exhaustion) and information leak",
+          "date": "2026-06-17",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "handlebars.java FileTemplateLoader Path Traversal",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Filament: Disabled RichEditor field state can be used for XSS",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "LangChain4j: SQL injection via metadata filters in langchain4j-mariadb and langchain4j-pgvector",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Capsule: Incomplete fix of CVE-2026-30963: singular/plural typo leaves namespaces/finalize unprotected",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "webpack-dev-server vulnerable to HMR WebSocket interception via permissive user proxies",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Multer vulnerable to Denial of Service via deeply nested field names",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Multer vulnerable to Denial of Service via incomplete cleanup of aborted uploads",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Gitea: Open Redirect via redirect_to",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Gitea: Stored XSS via glTF `extensionsRequired` in Gitea 3D File Viewer",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gitea: Public-only tokens bypass private-resource restrictions on `/api/v1/user` self routes",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gitea: API Fork Missing CanCreateOrgRepo Check Allows Org Secret Exfiltration",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Daytona: Cross-tenant data leak in notification WebSocket gateway via unverified organizationId join",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Claude Code: Out-of-Band Data Exfiltration via Pre-Approved HuggingFace Domain in WebFetch",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Any authenticated user can read other users' private notes via Socket.IO",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Authenticated users can target arbitrary configured Ollama backends via unguarded url_idx path parameter",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: RAG ACL Bypass in Milvus Multitenancy Mode",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: SSRF Protection Bypass in Playwright Web Loader via HTTP Redirects",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Path traversal / SSRF in terminal server proxy via encoded path traversal",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: MCP Streamable HTTP redirects could forward configured custom headers to another origin",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "jetbrains",
+          "title": "JetBrains Marketplace Ecosystem Security Update: Addressing Malicious Third-Party AI Plugins",
+          "date": "2026-06-17",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal iOS 8.16.0.1664",
+          "date": "2026-06-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8442-1: kitty vulnerabilities",
+          "date": "2026-06-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8390-2: Linux kernel vulnerability",
+          "date": "2026-06-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8441-1: Linux kernel vulnerabilities",
+          "date": "2026-06-17",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8361-3: Linux kernel vulnerability",
+          "date": "2026-06-17",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8440-1: Linux kernel (Azure) vulnerabilities",
+          "date": "2026-06-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8426-2: Linux kernel (Azure) vulnerabilities",
+          "date": "2026-06-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8439-1: Linux kernel (Oracle) vulnerabilities",
+          "date": "2026-06-16",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-17T18:22:56.308Z",
       "logs": [
@@ -13778,275 +14486,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-12T20:19:37.133Z",
-      "logs": [
-        "[SUCCESS] aws - 3 patches (1 new)",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[SUCCESS] debian - 21 patches (2 new)",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 3 patches, no changes",
-        "[SUCCESS] github - 141 patches (32 new)",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 409 patches, no changes",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 12 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 198 patches, no changes",
-        "[SUCCESS] signal - 5 patches (1 new)",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 36 patches, no changes"
-      ],
-      "newPatchCount": 36,
-      "totalPatches": 849,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 20,
-      "vendors": [
-        "aws",
-        "chrome",
-        "debian",
-        "github",
-        "microsoft",
-        "signal",
-        "cisco",
-        "oracle-db",
-        "paloalto",
-        "redhat",
-        "slack",
-        "ubuntu",
-        "gitlab",
-        "cloudflare",
-        "crowdstrike",
-        "edge",
-        "fortinet",
-        "mssql",
-        "nodejs",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-12043 - Heap double-free in AWS Common Runtime aws-c-http",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "debian",
-          "title": "DSA-6343-1 librabbitmq - security update",
-          "date": "2026-06-12",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "debian",
-          "title": "DSA-6342-1 jpeg-xl - security update",
-          "date": "2026-06-12",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "github",
-          "title": "PyO3 has a missing `Sync` bound on `PyCFunction::new_closure` closures",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "esbuild: Missing binary integrity verification in Deno module enables remote code execution via NPM_CONFIG_REGISTRY",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "esbuild allows arbitrary file read when running the development server on Windows",
-          "date": "2026-06-12",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Radius Controller May Delete a Container Resource via an Injected Deployment Annotation (Multi-Tenant Installs)",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS has Broken Access Control in its Form Framework",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS has Broken Access Control in the Recycler Module",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS has an Open Redirect Vulnerability via Core Utilities",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS: Destructive Actions on File Mount Folders",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 HTML Sanitizer allows Cross-site Scripting",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "PyO3 has an Out-of-bounds Read in `nth` / `nth_back` for `PyList` and `PyTuple` iterators",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS has Privilege Escalation & SQL Injection in its Form Framework",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS has Broken Access Control in its DataHandler",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS has Broken Access Control in its Media Module",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS has Insecure Deserialization via Core API",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS has Broken Access Control in its File Abstraction Layer",
-          "date": "2026-06-12",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS has Broken Access Control in Backend API",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS: Broken Access Control in Media Module",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "TYPO3 CMS has Cross-Site Scripting in Indexed Search",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Tornado has out-of-bounds memory access via C extension",
-          "date": "2026-06-12",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "nebula-mesh: POST /api/v1/hosts/{id}/mobile-bundle response lacks Cache-Control: no-store",
-          "date": "2026-06-12",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "pypdf: Possible long runtimes for zero-only width values in cross-reference streamsuntimes for zero-only width values in cross-reference streams",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "pypdf: Possible large memory usage for large offsets for layout mode text",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "gorest InMemorySecret2FA race condition allows process crash via concurrent map access (CWE-362)",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Appsmith: Configuration-dependent origin validation bypass in password reset and email verification link generation",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Budibase: Basic app users can exfiltrate stored REST datasource auth by rewriting datasource base URL",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Budibase: Webhook schema endpoint authorization bypass allows unauthenticated mutation of webhook and automation schema",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Budibase: Workspace-scoped builder escalates to global admin via /api/public/v1/roles/assign",
-          "date": "2026-06-12",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Appsmith Super User Creation Race Condition Allows Multiple Instance Administrators",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Budibase: Unvalidated VectorDB Host Parameter Enables SSRF",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Budibase: Unanchored Regex in `matchers.ts` Allows CSRF Bypass via Query String Injection in Budibase Worker ",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "GeoServer has a Server-Side Request Forgery (SSRF) Vulnerability in its XML Entity Resolution",
-          "date": "2026-06-12",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "GeoServer has an arbitrary file write vulnerability in its Master Password Dump Page",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "signal",
-          "title": "Appsmith Super User Creation Race Condition Allows Multiple Instance Administrators",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
