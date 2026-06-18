@@ -1,7 +1,16 @@
 {
-  "lastUpdated": "2026-06-18T04:18:31.773Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-18T04:41:31.883Z",
+  "newPatches": 4,
   "patches": [
+    {
+      "title": "CVE-2026-12530 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
+      "date": "2026-06-17",
+      "severity": "CRITICAL",
+      "vendor": "aws",
+      "component": "CVE-2026-12530",
+      "description": "<p><b>Bulletin ID:</b> 2026-044-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 06/17/2026 14:15 PM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-044-aws/"
+    },
     {
       "title": "Chrome for Android Update",
       "date": "2026-06-17",
@@ -10,6 +19,24 @@
       "component": "Chrome Browser",
       "description": "Hi, everyone! We've just released&nbsp;Chrome 149 (149.0.7827.159)&nbsp;for Android. It'll become&nbsp;available on Google Play&nbsp;over the next few days.&nbsp;This release includes stability and pe...",
       "link": "https://chromereleases.googleblog.com/feeds/3633229446653367016/comments/default"
+    },
+    {
+      "title": "Chrome Stable for iOS Update",
+      "date": "2026-06-17",
+      "severity": "UNKNOWN",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "Hi everyone! We've just released Chrome Stable 150 (150.0.7871.34) for iOS; it'll become available on App Store in the next few hours.This release includes stability and performance improvements. You ...",
+      "link": "https://chromereleases.googleblog.com/feeds/3171892583413953473/comments/default"
+    },
+    {
+      "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
+      "date": "2026-06-17",
+      "severity": "LOW",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "The ChromeOS Stable channel is being updated to OS version 16667.47.0 (Browser version 149.0.7827.153) for most ChromeOS devices.If you find new issues, please let us know one of the following ways:Fi...",
+      "link": "https://chromereleases.googleblog.com/feeds/7672484240470424303/comments/default"
     },
     {
       "title": "Cisco Identity Services Engine Remote Code Execution and Information Disclosure Vulnerabilities",
@@ -1162,6 +1189,19 @@
       "cves": [],
       "platform": [
         "iOS"
+      ]
+    },
+    {
+      "title": "Signal Desktop v8.16.0-beta.1",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the wor",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.16.0-beta.1",
+      "cves": [],
+      "platform": [
+        "Desktop"
       ]
     },
     {
@@ -7033,6 +7073,73 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-18T04:41:31.883Z",
+      "logs": [
+        "[SUCCESS] aws - 3 patches (1 new)",
+        "[SUCCESS] chrome - 5 patches (2 new)",
+        "[INFO] cisco - 7 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 9 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 250 patches, no changes",
+        "[INFO] jetbrains - 1 patches, no changes",
+        "[INFO] microsoft - 351 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 53 patches, no changes",
+        "[SUCCESS] signal - 6 patches (1 new)",
+        "[INFO] ubuntu - 18 patches, no changes"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 711,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "aws",
+        "chrome",
+        "cisco",
+        "debian",
+        "github",
+        "jetbrains",
+        "microsoft",
+        "signal",
+        "ubuntu",
+        "crowdstrike",
+        "oracle-db",
+        "postgresql",
+        "redhat",
+        "edge",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-12530 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
+          "date": "2026-06-17",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "chrome",
+          "title": "Chrome Stable for iOS Update",
+          "date": "2026-06-17",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "chrome",
+          "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
+          "date": "2026-06-17",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal Desktop v8.16.0-beta.1",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-18T04:18:31.773Z",
       "logs": [
@@ -13265,58 +13372,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-06-13T04:07:25.984Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 19 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 3 patches, no changes",
-        "[INFO] github - 141 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 359 patches, no changes",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 12 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 198 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 36 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 797,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 20,
-      "vendors": [
-        "aws",
-        "chrome",
-        "debian",
-        "github",
-        "microsoft",
-        "signal",
-        "cisco",
-        "oracle-db",
-        "paloalto",
-        "redhat",
-        "slack",
-        "ubuntu",
-        "gitlab",
-        "cloudflare",
-        "crowdstrike",
-        "edge",
-        "fortinet",
-        "mssql",
-        "nodejs",
-        "postgresql"
-      ],
-      "newPatches": []
     }
   ]
 }
