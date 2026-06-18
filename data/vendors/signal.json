@@ -1,16 +1,57 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-06-18T10:39:10.433Z",
+  "lastUpdated": "2026-06-18T15:38:44.383Z",
   "health": {
-    "lastFetchAttempt": "2026-06-18T10:39:10.432Z",
+    "lastFetchAttempt": "2026-06-18T15:38:44.383Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-18T10:39:10.432Z",
+    "lastFetchParsedItems": 5,
+    "lastFetchNewPatches": 3,
+    "lastSuccessWithData": "2026-06-18T15:38:44.383Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "tract-nnef: integer overflow in NNEF `.dat` tensor parser yields an out-of-bounds read on model load",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "- **Component:** `tract-nnef` (`nnef/src/tensors.rs::read_tensor`) + `tract-data` (`data/src/tensor.rs`)\n- **Affected versions:** `< 0.21.16`, `0.22.0`–`0.22.2`, `0.23.0`–`0.23.1` — the dense `DatLoad",
+      "link": "https://github.com/advisories/GHSA-x5mv-8wgw-29hg",
+      "cves": [
+        "CVE-2026-55093"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "praisonai-platform: default JWT signing secret 'dev-secret-change-me' enables token forgery",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# praisonai-platform: default JWT signing secret `dev-secret-change-me`\n\n**Researcher:** Kai Aizen — SnailSploit (@SnailSploit), Adversarial & Offensive Security Research\n**Target:** https://github.co",
+      "link": "https://github.com/advisories/GHSA-cwj8-7gp2-ggcw",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "npm PraisonAI AgentLoop onToolCall approval runs after tool execution",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe published npm package `praisonai` exports `createAgentLoop()`, whose `onToolCall` callback is documented and exampled as an approval hook. The implementation calls PraisonAI's `generat",
+      "link": "https://github.com/advisories/GHSA-h2w2-v7j6-xqm4",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Open WebUI: Forged chat-file link allows cross-user file read and deletion",
       "date": "2026-06-17",
