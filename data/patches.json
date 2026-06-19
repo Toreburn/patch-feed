@@ -1,7 +1,26 @@
 {
-  "lastUpdated": "2026-06-19T04:46:17.630Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-19T04:58:52.945Z",
+  "newPatches": 76,
   "patches": [
+    {
+      "title": "Issue with containerd CRI Plugin - CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, CVE-2026-47262",
+      "date": "2026-06-19",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "Issue",
+      "description": "<p><b>Bulletin ID:</b> 2026-046-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 06/18/2026 17:30 PM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-046-aws/"
+    },
+    {
+      "title": "pgAdmin 4 v9.16 Released",
+      "date": "2026-06-19",
+      "severity": "CRITICAL",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.16. This release of pgAdmin 4 includes 64 bug fixes and new features, including fixes for seven security vulnerab...",
+      "link": "https://www.postgresql.org/about/news/pgadmin-4-v916-released-3324/",
+      "cve": "CVE-2026-12044"
+    },
     {
       "title": "Build your own vulnerability harness",
       "date": "2026-06-18",
@@ -11,6 +30,42 @@
       "description": "A few weeks ago, we published our initial findings from Project Glasswing , looking at what happens when you point frontier security models at an enterprise codebase. We also explored how our defensiv...",
       "link": "https://blog.cloudflare.com/build-your-own-vulnerability-harness/",
       "cve": ""
+    },
+    {
+      "title": "Microsoft Edge Security Update - June 18, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-06-18",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
+    },
+    {
+      "title": "GKE: GCP-2026-037",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "gcp",
+      "component": "GKE",
+      "description": "Security bulletin for GKE: CVE-2026-50195, CVE-2026-50195, CVE-2026-53488",
+      "link": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-037",
+      "cves": [
+        "CVE-2026-50195",
+        "CVE-2026-50195",
+        "CVE-2026-53488",
+        "CVE-2026-53488",
+        "CVE-2026-53492",
+        "CVE-2026-53492",
+        "CVE-2026-53489",
+        "CVE-2026-53489",
+        "CVE-2026-47262",
+        "CVE-2026-47262",
+        "CVE-2026-50195",
+        "CVE-2026-53488",
+        "CVE-2026-53492",
+        "CVE-2026-53489",
+        "CVE-2026-47262"
+      ]
     },
     {
       "title": "OpenFGA Improper Policy Enforcement",
@@ -816,6 +871,182 @@
       "cvss": 4.2
     },
     {
+      "title": "Signal K Server: Server-Side Request Forgery via Remote Connection Endpoints",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "signalk-server",
+      "description": "Signal K Server: Server-Side Request Forgery via Remote Connection Endpoints",
+      "link": "https://github.com/advisories/GHSA-q59x-jc9f-gfqf",
+      "cve": "CVE-2026-55591",
+      "cvss": 5.8
+    },
+    {
+      "title": "PHP JWT Library: RSA1_5 (RSAES-PKCS1-v1_5) decryption lacks implicit rejection, exposing a Bleichenbacher/Marvin padding oracle",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "web-token/jwt-library, web-token/jwt-framework, web-token/jwt-library",
+      "description": "PHP JWT Library: RSA1_5 (RSAES-PKCS1-v1_5) decryption lacks implicit rejection, exposing a Bleichenbacher/Marvin padding oracle",
+      "link": "https://github.com/advisories/GHSA-5739-39v2-5754",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "PHP JWT Framework: JWSVerifier uses algorithm from unprotected header, enabling algorithm confusion attacks",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "web-token/jwt-framework, web-token/jwt-library, web-token/jwt-library",
+      "description": "PHP JWT Framework: JWSVerifier uses algorithm from unprotected header, enabling algorithm confusion attacks",
+      "link": "https://github.com/advisories/GHSA-jc38-x7x8-2xc8",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "PHP JWT Library: PBES2-HS*+A*KW unwrap accepts an unbounded p2c iteration count, enabling CPU-amplification denial of service",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "web-token/jwt-library, web-token/jwt-framework, web-token/jwt-library",
+      "description": "PHP JWT Library: PBES2-HS*+A*KW unwrap accepts an unbounded p2c iteration count, enabling CPU-amplification denial of service",
+      "link": "https://github.com/advisories/GHSA-3prj-6hqw-cm82",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "PHP JWT Framework: Chacha20Poly1305 key-encryption algorithm discards the Poly1305 authentication tag, performing no authentication on decryption",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "web-token/jwt-experimental, web-token/jwt-library, web-token/jwt-library",
+      "description": "PHP JWT Framework: Chacha20Poly1305 key-encryption algorithm discards the Poly1305 authentication tag, performing no authentication on decryption",
+      "link": "https://github.com/advisories/GHSA-6vvh-pxr4-25r7",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "spomky-labs/otphp: Mass-assignment in Factory::loadFromProvisioningUri lets a hostile provisioning URI corrupt OTP state or leak an uncaught TypeError",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "spomky-labs/otphp",
+      "description": "spomky-labs/otphp: Mass-assignment in Factory::loadFromProvisioningUri lets a hostile provisioning URI corrupt OTP state or leak an uncaught TypeError",
+      "link": "https://github.com/advisories/GHSA-2jx3-65f3-xr8r",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "spomky-labs/otphp: Unbounded digits parameter in a provisioning URI triggers an uncaught DivisionByZeroError in OTP generation",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "spomky-labs/otphp",
+      "description": "spomky-labs/otphp: Unbounded digits parameter in a provisioning URI triggers an uncaught DivisionByZeroError in OTP generation",
+      "link": "https://github.com/advisories/GHSA-g7m4-839x-ch6v",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "gemini-mcp-tool vulnerable to OS command injection and @file exfiltration via prompt quoting (CVE-2026-0755)",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "gemini-mcp-tool",
+      "description": "gemini-mcp-tool vulnerable to OS command injection and @file exfiltration via prompt quoting (CVE-2026-0755)",
+      "link": "https://github.com/advisories/GHSA-4h5r-5jm8-jxjm",
+      "cve": "CVE-2026-0755",
+      "cvss": 9.8
+    },
+    {
+      "title": "OpenClaw: Internal/webchat command auth could inherit ownerAllowFrom wildcard state",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Internal/webchat command auth could inherit ownerAllowFrom wildcard state",
+      "link": "https://github.com/advisories/GHSA-4hpg-mp64-x7xq",
+      "cve": "CVE-2026-53854",
+      "cvss": null
+    },
+    {
+      "title": "OpenClaw: Empty-scope device re-pairing could confuse caller scope containment",
+      "date": "2026-06-18",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Empty-scope device re-pairing could confuse caller scope containment",
+      "link": "https://github.com/advisories/GHSA-8mg9-j9cf-54cj",
+      "cve": "CVE-2026-53852",
+      "cvss": 5.4
+    },
+    {
+      "title": "OpenClaw: Workspace-derived service PATH could influence trash command selection",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Workspace-derived service PATH could influence trash command selection",
+      "link": "https://github.com/advisories/GHSA-rx78-29qr-5hq8",
+      "cve": "CVE-2026-53865",
+      "cvss": 7.1
+    },
+    {
+      "title": "OpenClaw: Workspace .env STATE_DIRECTORY could influence bundled runtime dependency roots",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Workspace .env STATE_DIRECTORY could influence bundled runtime dependency roots",
+      "link": "https://github.com/advisories/GHSA-wc84-j36w-pw4x",
+      "cve": "CVE-2026-53858",
+      "cvss": 7.1
+    },
+    {
+      "title": "OpenClaw: Discord allowFrom could bind to mutable display names",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Discord allowFrom could bind to mutable display names",
+      "link": "https://github.com/advisories/GHSA-cw4q-gqg5-g38h",
+      "cve": "CVE-2026-53849",
+      "cvss": 8.1
+    },
+    {
+      "title": "OpenClaw: Focus command could miss controlScope enforcement",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Focus command could miss controlScope enforcement",
+      "link": "https://github.com/advisories/GHSA-mpc8-jxjh-qpgh",
+      "cve": "CVE-2026-53850",
+      "cvss": null
+    },
+    {
+      "title": "OpenClaw: Workspace .env npm_execpath could influence bundled runtime dependency install",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Workspace .env npm_execpath could influence bundled runtime dependency install",
+      "link": "https://github.com/advisories/GHSA-24vr-rprv-67rf",
+      "cve": "CVE-2026-53846",
+      "cvss": 7.1
+    },
+    {
+      "title": "OpenClaw: Linux and macOS exec allowlists skipped configured argument patterns",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openclaw",
+      "description": "OpenClaw: Linux and macOS exec allowlists skipped configured argument patterns",
+      "link": "https://github.com/advisories/GHSA-v2ww-5rh7-2h5v",
+      "cve": "CVE-2026-53853",
+      "cvss": 7.1
+    },
+    {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
       "date": "2026-06-18",
       "severity": "MEDIUM",
@@ -1266,6 +1497,456 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46273"
     },
     {
+      "title": "CVE-2026-41108: Windows DNS Client Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-41108",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-41108"
+    },
+    {
+      "title": "CVE-2026-45467: Microsoft SharePoint Server Spoofing Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45467",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45467"
+    },
+    {
+      "title": "CVE-2026-45468: Microsoft SharePoint Server Spoofing Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45468",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45468"
+    },
+    {
+      "title": "CVE-2026-45469: Microsoft Excel Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45469",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45469"
+    },
+    {
+      "title": "CVE-2026-45475: Microsoft Office Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45475",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45475"
+    },
+    {
+      "title": "CVE-2026-45472: Microsoft Office Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45472",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45472"
+    },
+    {
+      "title": "CVE-2026-45471: Microsoft Word Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45471",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45471"
+    },
+    {
+      "title": "CVE-2026-45474: Microsoft Office Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45474",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45474"
+    },
+    {
+      "title": "CVE-2026-45479: Microsoft SharePoint Server Spoofing Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45479",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45479"
+    },
+    {
+      "title": "CVE-2026-45486: Microsoft Word Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45486",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45486"
+    },
+    {
+      "title": "CVE-2026-45485: Microsoft Office Information Disclosure Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45485",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45485"
+    },
+    {
+      "title": "CVE-2026-45483: Microsoft Office Project Server Spoofing Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45483",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45483"
+    },
+    {
+      "title": "CVE-2026-47644: Copilot Chat (Microsoft Edge) Information Disclosure Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-47644",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47644"
+    },
+    {
+      "title": "CVE-2026-47655: Microsoft Graph Information Disclosure Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-47655",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47655"
+    },
+    {
+      "title": "CVE-2026-10984: Chromium: CVE-2026-10984 Inappropriate implementation in Accessibility",
+      "date": "2026-06-18",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-10984",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-10984"
+    },
+    {
+      "title": "CVE-2026-11291: Chromium: CVE-2026-11291 Policy bypass in Android Autofill",
+      "date": "2026-06-18",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-11291",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-11291"
+    },
+    {
+      "title": "CVE-2026-11178: Chromium: CVE-2026-11178 Policy bypass in WebView",
+      "date": "2026-06-18",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-11178",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-11178"
+    },
+    {
+      "title": "CVE-2026-12012: Chromium: CVE-2026-12012 Use after free  Network",
+      "date": "2026-06-18",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-12012",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-12012"
+    },
+    {
+      "title": "CVE-2026-12008: Chromium: CVE-2026-12008 Use after free  DigitalCredentials",
+      "date": "2026-06-18",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-12008",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-12008"
+    },
+    {
+      "title": "CVE-2026-47633: Microsoft Cost Management Information Disclosure Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-47633",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47633"
+    },
+    {
+      "title": "CVE-2026-32208: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32208",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32208"
+    },
+    {
+      "title": "CVE-2026-32174: Azure Bot Service Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-32174",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-32174"
+    },
+    {
+      "title": "CVE-2026-45480: Azure Active Directory Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45480",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45480"
+    },
+    {
+      "title": "CVE-2026-42895: Microsoft Copilot Tampering Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42895",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42895"
+    },
+    {
+      "title": "CVE-2026-54130: M365 Copilot Information Disclosure Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-54130",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-54130"
+    },
+    {
+      "title": "CVE-2026-47647: Dynamics 365 Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-47647",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47647"
+    },
+    {
+      "title": "CVE-2026-48584: Microsoft Azure Synapse Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-48584",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-48584"
+    },
+    {
+      "title": "CVE-2025-10263: ARM: CVE-2025-10263 Completion of affected memory accesses might not be guaranteed by completion of a TLBI [kernel]",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-10263",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-10263"
+    },
+    {
+      "title": "CVE-2026-40409: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40409",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40409"
+    },
+    {
+      "title": "CVE-2026-40404: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-40404",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-40404"
+    },
+    {
+      "title": "CVE-2026-33828: Windows Device Health Attestation (DHA) Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-33828",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33828"
+    },
+    {
+      "title": "CVE-2026-34335: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34335",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34335"
+    },
+    {
+      "title": "CVE-2026-42902: Microsoft PowerToys Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42902",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42902"
+    },
+    {
+      "title": "CVE-2026-44817: Microsoft Excel Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-44817",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-44817"
+    },
+    {
+      "title": "CVE-2026-44818: Microsoft Excel Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-44818",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-44818"
+    },
+    {
+      "title": "CVE-2026-44819: Microsoft Office Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-44819",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-44819"
+    },
+    {
+      "title": "CVE-2026-44820: Microsoft Excel Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-44820",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-44820"
+    },
+    {
+      "title": "CVE-2026-44821: Microsoft Office Information Disclosure Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-44821",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-44821"
+    },
+    {
+      "title": "CVE-2026-44823: Microsoft Excel Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-44823",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-44823"
+    },
+    {
+      "title": "CVE-2026-44824: Microsoft Office Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-44824",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-44824"
+    },
+    {
+      "title": "CVE-2026-45453: Microsoft SharePoint Server Spoofing Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45453",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45453"
+    },
+    {
+      "title": "CVE-2026-45456: Microsoft Outlook and Word Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45456",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45456"
+    },
+    {
+      "title": "CVE-2026-45458: Microsoft Outlook and Word Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45458",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45458"
+    },
+    {
+      "title": "CVE-2026-45460: Microsoft Office Information Disclosure Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45460",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45460"
+    },
+    {
+      "title": "CVE-2026-45461: Microsoft Office Remote Code Execution Vulnerability",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45461",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45461"
+    },
+    {
+      "title": "CVE-2026-45466: Microsoft Word Information Disclosure Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45466",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45466"
+    },
+    {
+      "title": "CVE-2026-45487: Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45487",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45487"
+    },
+    {
+      "title": "CVE-2026-45490: .NET SDK Elevation of Privilege Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45490",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45490"
+    },
+    {
+      "title": "CVE-2026-45491: .NET Tampering Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45491",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45491"
+    },
+    {
+      "title": "CVE-2026-45500: Microsoft Exchange Server Spoofing Vulnerability",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45500",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45500"
+    },
+    {
       "title": "Thursday, June 18, 2026 Security Releases",
       "date": "2026-06-18",
       "severity": "UNKNOWN",
@@ -1275,6 +1956,17 @@
       "link": "https://nodejs.org/en/blog/vulnerability/june-2026-security-releases",
       "cve": "",
       "cves": []
+    },
+    {
+      "title": "CVE-2026-44942: libzypp: libzypp: Denial of Service via path traversal in .repo file handling",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libzypp: libzypp: Denial of Service via path traversal in .repo file handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44942.json",
+      "cve": "CVE-2026-44942",
+      "cvss": 6.5
     },
     {
       "title": "tract-nnef: integer overflow in NNEF `.dat` tensor parser yields an out-of-bounds read on model load",
@@ -1313,6 +2005,21 @@
       "description": "## Summary\n\nThe published npm package `praisonai` exports `createAgentLoop()`, whose `onToolCall` callback is documented and exampled as an approval hook. The implementation calls PraisonAI's `generat",
       "link": "https://github.com/advisories/GHSA-h2w2-v7j6-xqm4",
       "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Signal K Server: Server-Side Request Forgery via Remote Connection Endpoints",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nsignalk-server versions up to and including 2.27.0 contain a Server-Side Request Forgery (SSRF) vulnerability in three administrative endpoints used for remote Signal K server connection m",
+      "link": "https://github.com/advisories/GHSA-q59x-jc9f-gfqf",
+      "cves": [
+        "CVE-2026-55591"
+      ],
       "platform": [
         "All Platforms"
       ]
@@ -1370,6 +2077,15 @@
       "component": "Tomcat vulnerabilities",
       "description": "It was discovered that Tomcat did not properly limit the size of\nWebDAV LOCK and PROPFIND request bodies. A remote attacker could\npossibly use this issue to cause Tomcat to consume excessive memory,\nr...",
       "link": "https://ubuntu.com/security/notices/USN-8450-1"
+    },
+    {
+      "title": "USN-8447-2: LXD vulnerabilities",
+      "date": "2026-06-18",
+      "severity": "CRITICAL",
+      "vendor": "ubuntu",
+      "component": "LXD vulnerabilities",
+      "description": "USN-8447-1 fixed vulnerabilities in Go Cryptography. This update provides\nthe corresponding updates for Go Cryptography code embedded in LXD for\nCVE-2026-39830, CVE-2026-39833, CVE-2026-39834, and CVE...",
+      "link": "https://ubuntu.com/security/notices/USN-8447-2"
     },
     {
       "title": "CVE-2026-12530 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
@@ -2685,6 +3401,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55225.json",
       "cve": "CVE-2026-55225",
       "cvss": 8
+    },
+    {
+      "title": "CVE-2026-48990: joserfc: joserfc: Resource exhaustion via oversized JSON Web Signature (JWS) payloads",
+      "date": "2026-06-17",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "joserfc: joserfc: Resource exhaustion via oversized JSON Web Signature (JWS) payloads",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48990.json",
+      "cve": "CVE-2026-48990",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-9675: undici: undici WebSocket client vulnerable to denial of service via cumulative fragment bypass",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici WebSocket client vulnerable to denial of service via cumulative fragment bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9675.json",
+      "cve": "CVE-2026-9675",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-42530: nginx: ngx_http_v3_module: use-after-free issue leads to denial of service",
+      "date": "2026-06-17",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nginx: ngx_http_v3_module: use-after-free issue leads to denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42530.json",
+      "cve": "CVE-2026-42530",
+      "cvss": 8.1
     },
     {
       "title": "Open WebUI: Forged chat-file link allows cross-user file read and deletion",
@@ -7490,6 +8239,511 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-19T04:58:52.945Z",
+      "logs": [
+        "[SUCCESS] aws - 3 patches (1 new)",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 6 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 7 patches, no changes",
+        "[SUCCESS] edge - 2 patches (1 new)",
+        "[SUCCESS] gcp - 1 patches (1 new)",
+        "[SUCCESS] github - 284 patches (16 new)",
+        "[INFO] jetbrains - 1 patches, no changes",
+        "[SUCCESS] microsoft - 401 patches (50 new)",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[SUCCESS] postgresql - 3 patches (1 new)",
+        "[SUCCESS] redhat - 73 patches (4 new)",
+        "[SUCCESS] signal - 9 patches (1 new)",
+        "[SUCCESS] ubuntu - 25 patches (1 new)"
+      ],
+      "newPatchCount": 76,
+      "totalPatches": 825,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "aws",
+        "postgresql",
+        "cloudflare",
+        "edge",
+        "gcp",
+        "github",
+        "microsoft",
+        "nodejs",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "cisco",
+        "debian",
+        "jetbrains",
+        "crowdstrike",
+        "oracle-db",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "Issue with containerd CRI Plugin - CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, CVE-2026-47262",
+          "date": "2026-06-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - June 18, 2026",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "gcp",
+          "title": "GKE: GCP-2026-037",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Signal K Server: Server-Side Request Forgery via Remote Connection Endpoints",
+          "date": "2026-06-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "PHP JWT Library: RSA1_5 (RSAES-PKCS1-v1_5) decryption lacks implicit rejection, exposing a Bleichenbacher/Marvin padding oracle",
+          "date": "2026-06-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "PHP JWT Framework: JWSVerifier uses algorithm from unprotected header, enabling algorithm confusion attacks",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PHP JWT Library: PBES2-HS*+A*KW unwrap accepts an unbounded p2c iteration count, enabling CPU-amplification denial of service",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "PHP JWT Framework: Chacha20Poly1305 key-encryption algorithm discards the Poly1305 authentication tag, performing no authentication on decryption",
+          "date": "2026-06-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "spomky-labs/otphp: Mass-assignment in Factory::loadFromProvisioningUri lets a hostile provisioning URI corrupt OTP state or leak an uncaught TypeError",
+          "date": "2026-06-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "spomky-labs/otphp: Unbounded digits parameter in a provisioning URI triggers an uncaught DivisionByZeroError in OTP generation",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "gemini-mcp-tool vulnerable to OS command injection and @file exfiltration via prompt quoting (CVE-2026-0755)",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Internal/webchat command auth could inherit ownerAllowFrom wildcard state",
+          "date": "2026-06-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Empty-scope device re-pairing could confuse caller scope containment",
+          "date": "2026-06-18",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Workspace-derived service PATH could influence trash command selection",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Workspace .env STATE_DIRECTORY could influence bundled runtime dependency roots",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Discord allowFrom could bind to mutable display names",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Focus command could miss controlScope enforcement",
+          "date": "2026-06-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Workspace .env npm_execpath could influence bundled runtime dependency install",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenClaw: Linux and macOS exec allowlists skipped configured argument patterns",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-41108: Windows DNS Client Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45467: Microsoft SharePoint Server Spoofing Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45468: Microsoft SharePoint Server Spoofing Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45469: Microsoft Excel Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45475: Microsoft Office Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45472: Microsoft Office Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45471: Microsoft Word Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45474: Microsoft Office Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45479: Microsoft SharePoint Server Spoofing Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45486: Microsoft Word Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45485: Microsoft Office Information Disclosure Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45483: Microsoft Office Project Server Spoofing Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-47644: Copilot Chat (Microsoft Edge) Information Disclosure Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-47655: Microsoft Graph Information Disclosure Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-10984: Chromium: CVE-2026-10984 Inappropriate implementation in Accessibility",
+          "date": "2026-06-18",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-11291: Chromium: CVE-2026-11291 Policy bypass in Android Autofill",
+          "date": "2026-06-18",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-11178: Chromium: CVE-2026-11178 Policy bypass in WebView",
+          "date": "2026-06-18",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-12012: Chromium: CVE-2026-12012 Use after free  Network",
+          "date": "2026-06-18",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-12008: Chromium: CVE-2026-12008 Use after free  DigitalCredentials",
+          "date": "2026-06-18",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-47633: Microsoft Cost Management Information Disclosure Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-32208: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-32174: Azure Bot Service Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45480: Azure Active Directory Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42895: Microsoft Copilot Tampering Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-54130: M365 Copilot Information Disclosure Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-47647: Dynamics 365 Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-48584: Microsoft Azure Synapse Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-10263: ARM: CVE-2025-10263 Completion of affected memory accesses might not be guaranteed by completion of a TLBI [kernel]",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40409: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-40404: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-33828: Windows Device Health Attestation (DHA) Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34335: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42902: Microsoft PowerToys Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-44817: Microsoft Excel Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-44818: Microsoft Excel Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-44819: Microsoft Office Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-44820: Microsoft Excel Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-44821: Microsoft Office Information Disclosure Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-44823: Microsoft Excel Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-44824: Microsoft Office Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45453: Microsoft SharePoint Server Spoofing Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45456: Microsoft Outlook and Word Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45458: Microsoft Outlook and Word Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45460: Microsoft Office Information Disclosure Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45461: Microsoft Office Remote Code Execution Vulnerability",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45466: Microsoft Word Information Disclosure Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45487: Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45490: .NET SDK Elevation of Privilege Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45491: .NET Tampering Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45500: Microsoft Exchange Server Spoofing Vulnerability",
+          "date": "2026-06-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "postgresql",
+          "title": "pgAdmin 4 v9.16 Released",
+          "date": "2026-06-19",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-44942: libzypp: libzypp: Denial of Service via path traversal in .repo file handling",
+          "date": "2026-06-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-48990: joserfc: joserfc: Resource exhaustion via oversized JSON Web Signature (JWS) payloads",
+          "date": "2026-06-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9675: undici: undici WebSocket client vulnerable to denial of service via cumulative fragment bypass",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42530: nginx: ngx_http_v3_module: use-after-free issue leads to denial of service",
+          "date": "2026-06-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal K Server: Server-Side Request Forgery via Remote Connection Endpoints",
+          "date": "2026-06-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8447-2: LXD vulnerabilities",
+          "date": "2026-06-18",
+          "severity": "CRITICAL"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-19T04:46:17.630Z",
       "logs": [
@@ -14128,58 +15382,6 @@
     },
     {
       "timestamp": "2026-06-13T21:19:59.315Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 19 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 3 patches, no changes",
-        "[INFO] github - 153 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 409 patches, no changes",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 14 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 231 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 36 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 896,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 20,
-      "vendors": [
-        "microsoft",
-        "paloalto",
-        "aws",
-        "chrome",
-        "cisco",
-        "debian",
-        "edge",
-        "github",
-        "redhat",
-        "signal",
-        "oracle-db",
-        "slack",
-        "ubuntu",
-        "gitlab",
-        "cloudflare",
-        "crowdstrike",
-        "fortinet",
-        "mssql",
-        "nodejs",
-        "postgresql"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-13T19:45:50.805Z",
       "logs": [
         "[INFO] aws - 3 patches, no changes",
         "[INFO] chrome - 5 patches, no changes",
