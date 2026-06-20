@@ -1,16 +1,71 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-06-19T19:55:40.149Z",
+  "lastUpdated": "2026-06-20T04:11:48.568Z",
   "health": {
-    "lastFetchAttempt": "2026-06-19T19:55:40.149Z",
+    "lastFetchAttempt": "2026-06-20T04:11:48.568Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 144,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-19T19:55:40.149Z",
+    "lastFetchParsedItems": 119,
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-06-20T04:11:48.568Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-12726: awx: automation-controller: awx: GitHub webhook second-order SSRF via unvalidated statuses_url exfiltrates PAT credentia",
+      "date": "2026-06-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "awx: automation-controller: awx: GitHub webhook second-order SSRF via unvalidated statuses_url exfiltrates PAT credential",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12726.json",
+      "cve": "CVE-2026-12726",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-56208: libaom: libaom: heap buffer overflow in AV1 encoder first-pass stats buffer via LAP mode",
+      "date": "2026-06-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libaom: libaom: heap buffer overflow in AV1 encoder first-pass stats buffer via LAP mode",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56208.json",
+      "cve": "CVE-2026-56208",
+      "cvss": 7.6
+    },
+    {
+      "title": "CVE-2026-56209: libaom: libaom: arbitrary address write via SVC layer context OOB and cyclic refresh map pointer hijack",
+      "date": "2026-06-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libaom: libaom: arbitrary address write via SVC layer context OOB and cyclic refresh map pointer hijack",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56209.json",
+      "cve": "CVE-2026-56209",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-56210: libaom: libaom: heap-buffer-overflow read via missing bounds check in ctrl_set_layer_id",
+      "date": "2026-06-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libaom: libaom: heap-buffer-overflow read via missing bounds check in ctrl_set_layer_id",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56210.json",
+      "cve": "CVE-2026-56210",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-56211: libaom: libaom: remote code execution via SVC layer context handling with attacker-controlled frames",
+      "date": "2026-06-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libaom: libaom: remote code execution via SVC layer context handling with attacker-controlled frames",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56211.json",
+      "cve": "CVE-2026-56211",
+      "cvss": 7.1
+    },
     {
       "title": "CVE-2026-44942: libzypp: libzypp: Denial of Service via path traversal in .repo file handling",
       "date": "2026-06-18",
@@ -76,6 +131,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12050.json",
       "cve": "CVE-2026-12050",
       "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-45696: OpenEXR: OpenEXR: Denial of Service and potential information disclosure via crafted EXR file",
+      "date": "2026-06-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenEXR: OpenEXR: Denial of Service and potential information disclosure via crafted EXR file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45696.json",
+      "cve": "CVE-2026-45696",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-44663: OpenEXR: OpenEXR: Denial of Service via crafted HTJ2K-compressed EXR file",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpenEXR: OpenEXR: Denial of Service via crafted HTJ2K-compressed EXR file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44663.json",
+      "cve": "CVE-2026-44663",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-43915: coturn: Coturn: Cross-Site Scripting (XSS) via crafted username in TURN allocation",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "coturn: Coturn: Cross-Site Scripting (XSS) via crafted username in TURN allocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43915.json",
+      "cve": "CVE-2026-43915",
+      "cvss": 5.4
     },
     {
       "title": "CVE-2026-48817: starlette: Starlette: Information disclosure and unintended method execution via non-standard HTTP methods",
