@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-21T19:47:48.080Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-21T19:53:03.354Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "DSA-6355-1 linux - security update",
@@ -10,6 +10,17 @@
       "component": "linux",
       "description": "Several vulnerabilities have been discovered in the Linux kernel that may lead to a privilege escalation, denial of service or information leaks. https://security-tracker.debian.org/tracker/DSA-6355-1",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00266.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6356-1 imagemagick - security update",
+      "date": "2026-06-21",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "imagemagick",
+      "description": "Multiple security vulnerabilities were discovered in imagemagick, a software suite used for editing and manipulating digital images, which could lead to denial of service, information disclosure or po...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00267.html",
       "cve": "",
       "cves": []
     },
@@ -11032,6 +11043,59 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-21T19:53:03.354Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 7 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 11 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 409 patches, no changes",
+        "[INFO] jetbrains - 1 patches, no changes",
+        "[INFO] microsoft - 501 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] postgresql - 4 patches, no changes",
+        "[INFO] redhat - 117 patches, no changes",
+        "[INFO] signal - 9 patches, no changes",
+        "[INFO] ubuntu - 25 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1098,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "postgresql",
+        "aws",
+        "cisco",
+        "github",
+        "redhat",
+        "cloudflare",
+        "edge",
+        "gcp",
+        "nodejs",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "jetbrains",
+        "crowdstrike",
+        "oracle-db"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6356-1 imagemagick - security update",
+          "date": "2026-06-21",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-21T19:47:48.080Z",
       "logs": [
         "[INFO] aws - 3 patches, no changes",
@@ -17487,48 +17551,6 @@
         "paloalto",
         "chrome",
         "slack"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-16T23:25:22.508Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 224 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] oracle-db - 2 patches, no changes",
-        "[INFO] paloalto - 14 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 102 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 21 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 900,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "cisco",
-        "debian",
-        "github",
-        "oracle-db",
-        "postgresql",
-        "ubuntu",
-        "aws",
-        "edge",
-        "redhat",
-        "signal",
-        "paloalto",
-        "chrome",
-        "slack",
-        "gitlab"
       ],
       "newPatches": []
     }
