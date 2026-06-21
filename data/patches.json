@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T21:18:02.474Z",
+  "lastUpdated": "2026-06-21T23:18:04.096Z",
   "newPatches": 0,
   "patches": [
     {
@@ -11043,6 +11043,52 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-21T23:18:04.095Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 7 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 409 patches, no changes",
+        "[INFO] jetbrains - 1 patches, no changes",
+        "[INFO] microsoft - 501 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] postgresql - 4 patches, no changes",
+        "[INFO] redhat - 117 patches, no changes",
+        "[INFO] signal - 9 patches, no changes",
+        "[INFO] ubuntu - 25 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 1098,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "postgresql",
+        "aws",
+        "cisco",
+        "github",
+        "redhat",
+        "cloudflare",
+        "edge",
+        "gcp",
+        "nodejs",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "jetbrains",
+        "crowdstrike",
+        "oracle-db"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-06-21T21:18:02.474Z",
       "logs": [
         "[INFO] aws - 3 patches, no changes",
@@ -17276,289 +17322,6 @@
         "slack"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-17T04:47:26.081Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[SUCCESS] chrome - 4 patches (2 new)",
-        "[INFO] cisco - 4 patches, no changes",
-        "[SUCCESS] crowdstrike - 1 patches (1 new)",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 228 patches (28 new)",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] oracle-db - 2 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[SUCCESS] redhat - 67 patches (7 new)",
-        "[SUCCESS] signal - 4 patches (1 new)",
-        "[INFO] slack - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 17 patches (1 new)"
-      ],
-      "newPatchCount": 40,
-      "totalPatches": 748,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "chrome",
-        "microsoft",
-        "cisco",
-        "crowdstrike",
-        "debian",
-        "github",
-        "oracle-db",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "aws",
-        "edge",
-        "paloalto",
-        "slack"
-      ],
-      "newPatches": [
-        {
-          "vendor": "chrome",
-          "title": "Chrome for Android Update",
-          "date": "2026-06-17",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Stable Channel Update for Desktop",
-          "date": "2026-06-16",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "crowdstrike",
-          "title": "Falcon Exposure Management Now Available for Third-Party Environments",
-          "date": "2026-06-16",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "github",
-          "title": "Pi Agent: Potential XSS in HTML session exports via Markdown URL sanitization bypass",
-          "date": "2026-06-16",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Gitea: Token scope bypass on web archive download endpoint",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Gitea: Missing repository-unit authorization on issue-template API endpoints",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Gitea: Incomplete CVE-2025-68941 fix: /user/orgs missing checkTokenPublicOnly + switch-case logic flaw",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Gitea: Authorization Bypass via \"Allow edits from maintainers\" allows unauthorized commits to any readable repo",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Gitea: OAuth2 access token scope enforcement bypass via HTTP Basic authentication",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Gogs: Overwriting critical files results in a denial of service",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Rclone: Unauthenticated command execution in `rclone rcd --rc-serve` via inline remote instantiation, bypassing CVE-2026-41179 fix",
-          "date": "2026-06-16",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server same-origin check bypassed when Sec-Fetch-Site, Origin, and Referer are all absent (incomplete fix for GHSA-6m52-m754-pw2g)",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Cross-site scripting via <NoScript> slot content in Nuxt's head components",
-          "date": "2026-06-16",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "LiteLLM: Authentication Bypass via Host Header Injection",
-          "date": "2026-06-16",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Gitea: Git Smart HTTP Skips Repository Token Scopes for Bearer Tokens",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: SecurityScorecard Node Leaks API Token to User-Controlled Host",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: MCP Browser HTTP Transport Exposes Unauthenticated Browser-Control Sessions",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: Cross-Tenant Credential Takeover via Dynamic Credentials EE Endpoints",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: Credential Exfiltration via Permission Bypass",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: Denial of Service via ZIP decompression in webhook workflow",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: Public API Execution Retry Authorization Bypass",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: Python Code Node AST Validator Bypass",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: Stored XSS in Chat Trigger Node",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: Reflected XSS via Facebook, WhatsApp, and Microsoft Teams Trigger Webhook Verification Endpoints",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: Microsoft SQL Node Prototype Pollution",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "yt-dlp: Arbitrary command injection possible if --exec option used with yt-dlp",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Daytona: Cross-org IDOR in organization role update/delete — any org owner can rewrite or destroy another org's roles",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Caddy: stripHTML template function bypass",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Caddy: FastCGI header normalization bypass in `forward_auth copy_headers`",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Caddy: Windows `file_server` path authorization bypass via encoded backslash",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "yt-dlp: Arbitrary code execution via manifest downloads with aria2c",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-10649: pacemaker: Pacemaker: Denial of Service via integer overflow in remote message decompression",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-46655: virtio-win: viosock.sys: integer overflow in VIOSockSelect leads to heap-based buffer overflow",
-          "date": "2026-06-16",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-12398: galaxy_ng: shell injection in legacy role import via unsanitized git ref names",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-6045: libreoffice: LibreOffice: Heap buffer overflow via crafted EMF+ graphics import",
-          "date": "2026-06-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-6039: libreoffice: LibreOffice: Denial of Service via specially crafted DXF polyline import",
-          "date": "2026-06-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54411: linux-pam: From CVEorg collector",
-          "date": "2026-06-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54421: openstack ironic: OpenStack Ironic: Information disclosure via PATCH request on volume properties",
-          "date": "2026-06-14",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server same-origin check bypassed when Sec-Fetch-Site, Origin, and Referer are all absent (incomplete fix for GHSA-6m52-m754-pw2g)",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8438-1: OpenImageIO vulnerabilities",
-          "date": "2026-06-16",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
