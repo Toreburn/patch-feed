@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-22T04:48:13.237Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-22T05:03:10.558Z",
+  "newPatches": 4,
   "patches": [
     {
       "title": "DSA-6355-1 linux - security update",
@@ -21,6 +21,50 @@
       "component": "imagemagick",
       "description": "Multiple security vulnerabilities were discovered in imagemagick, a software suite used for editing and manipulating digital images, which could lead to denial of service, information disclosure or po...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00267.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6360-1 squid - security update",
+      "date": "2026-06-21",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "squid",
+      "description": "Multiple security issues were discovered in the Squid proxy caching server, which could result in information disclosure or denial of service. https://security-tracker.debian.org/tracker/DSA-6360-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00271.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6359-1 gst-plugins-good1.0 - security update",
+      "date": "2026-06-21",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "gst-plugins-good1.0",
+      "description": "Multiple security vulnerabilities were discovered in plugins for the GStreamer media framework and its codecs and demuxers, which may result in denial of service or potentially the execution of arbitr...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00270.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6358-1 libhttp-daemon-perl - security update",
+      "date": "2026-06-21",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libhttp-daemon-perl",
+      "description": "A flaw was discovered in libhttp-daemon-perl, a simple http server class for Perl, which may result in the execution of arbitrary shell commands or file overwrite when processing specially crafted inp...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00269.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6357-1 pillow - security update",
+      "date": "2026-06-21",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "pillow",
+      "description": "Multiple security vulnerabilities have been discovered in Pillow, a Python imaging library, which could result in denial of service or the execution of arbitrary code if malformed files are processed....",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00268.html",
       "cve": "",
       "cves": []
     },
@@ -9297,6 +9341,77 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-22T05:03:10.557Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 6 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 12 patches (4 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 359 patches, no changes",
+        "[INFO] jetbrains - 1 patches, no changes",
+        "[INFO] microsoft - 401 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] postgresql - 4 patches, no changes",
+        "[INFO] redhat - 102 patches, no changes",
+        "[INFO] signal - 8 patches, no changes",
+        "[INFO] ubuntu - 19 patches, no changes"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 924,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "postgresql",
+        "aws",
+        "cisco",
+        "github",
+        "redhat",
+        "cloudflare",
+        "edge",
+        "gcp",
+        "nodejs",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "jetbrains",
+        "crowdstrike",
+        "oracle-db"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6360-1 squid - security update",
+          "date": "2026-06-21",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6359-1 gst-plugins-good1.0 - security update",
+          "date": "2026-06-21",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6358-1 libhttp-daemon-perl - security update",
+          "date": "2026-06-21",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6357-1 pillow - security update",
+          "date": "2026-06-21",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-22T04:48:13.237Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
@@ -15499,48 +15614,6 @@
     },
     {
       "timestamp": "2026-06-17T15:41:31.844Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 228 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] oracle-db - 2 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 67 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 17 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 748,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "chrome",
-        "microsoft",
-        "cisco",
-        "crowdstrike",
-        "debian",
-        "github",
-        "oracle-db",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "aws",
-        "edge",
-        "paloalto",
-        "slack"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-17T11:08:49.494Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
         "[INFO] chrome - 4 patches, no changes",
