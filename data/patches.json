@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-22T12:10:26.656Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-22T12:16:03.076Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "DSA-6355-1 linux - security update",
@@ -67,6 +67,28 @@
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00268.html",
       "cve": "",
       "cves": []
+    },
+    {
+      "title": "CVE-2026-12805: dcmtk: OFFIS DCMTK: Heap-based buffer overflow in XML parsing",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dcmtk: OFFIS DCMTK: Heap-based buffer overflow in XML parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12805.json",
+      "cve": "CVE-2026-12805",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-12804: lemonldap-ng: Lemonldap-NG: Open Redirect via URL manipulation in SAML Common Domain Cookie Endpoint",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "lemonldap-ng: Lemonldap-NG: Open Redirect via URL manipulation in SAML Common Domain Cookie Endpoint",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12804.json",
+      "cve": "CVE-2026-12804",
+      "cvss": 4.3
     },
     {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
@@ -9341,6 +9363,65 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-22T12:16:03.076Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 6 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 12 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 359 patches, no changes",
+        "[INFO] jetbrains - 1 patches, no changes",
+        "[INFO] microsoft - 401 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] postgresql - 4 patches, no changes",
+        "[SUCCESS] redhat - 104 patches (2 new)",
+        "[INFO] signal - 8 patches, no changes",
+        "[INFO] ubuntu - 19 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 926,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "debian",
+        "redhat",
+        "microsoft",
+        "postgresql",
+        "aws",
+        "cisco",
+        "github",
+        "cloudflare",
+        "edge",
+        "gcp",
+        "nodejs",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "jetbrains",
+        "crowdstrike",
+        "oracle-db"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-12805: dcmtk: OFFIS DCMTK: Heap-based buffer overflow in XML parsing",
+          "date": "2026-06-21",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-12804: lemonldap-ng: Lemonldap-NG: Open Redirect via URL manipulation in SAML Common Domain Cookie Endpoint",
+          "date": "2026-06-21",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-22T12:10:26.656Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
@@ -15410,253 +15491,6 @@
         "slack"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-17T15:52:10.950Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 257 patches (29 new)",
-        "[SUCCESS] microsoft - 401 patches (1 new)",
-        "[INFO] oracle-db - 2 patches, no changes",
-        "[INFO] paloalto - 3 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[SUCCESS] redhat - 70 patches (3 new)",
-        "[SUCCESS] signal - 5 patches (1 new)",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 17 patches, no changes"
-      ],
-      "newPatchCount": 34,
-      "totalPatches": 782,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "chrome",
-        "github",
-        "microsoft",
-        "signal",
-        "cisco",
-        "crowdstrike",
-        "debian",
-        "oracle-db",
-        "postgresql",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "edge",
-        "paloalto",
-        "slack"
-      ],
-      "newPatches": [
-        {
-          "vendor": "github",
-          "title": "Open WebUI BOLA: `search_knowledge_files` Allows Unauthorized Knowledge Base File Enumeration",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI Prompt history IDOR: unbound history_id allows cross-prompt read and deletion",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI: Sibling-Prefix Path Traversal via /cache/{path}",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI: Stored XSS to Account Takeover via Model Profile Images ",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI: Forged model meta.knowledge allows cross-user file read and deletion",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI: Stored XSS in Mermaid Markdown Preview",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI: Forged chat-file link allows cross-user file read and deletion",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI: Cross-user file disclosure via /api/chat/completions image_url field",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI: Redirect-Bypass SSRF in OAuth `_process_picture_url` (incomplete-fix sibling of CVE-2026-45401)",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI: Cross-origin postMessage confirmation bypass via action:submit",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI IDOR: Calendar event re-parenting allows writing events into another user's calendar",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Server-Side Request Forgery via Spreadsheet Import Endpoint",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Server-Side Request Forgery via Base Migration URL",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Stored Cross-Site Scripting via Secure Attachment",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Refresh Tokens Persist Through Password Recovery",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "NocoDB: Server-Side Request Forgery via Spreadsheet Fetch URL",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "vLLM: OOM Denial of Service via Audio Decompression Bomb",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "vLLM: incomplete CVE-2026-22778 fix leaks PIL repr addresses via Anthropic router",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "vLLM: GGUF dequantize kernel int truncation exposes uninitialized GPU memory in multi-tenant serving",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "vLLM: image EXIF Rotation & PNG tRNS Transparency Not Normalized, Causing Mismatch Between Model Input and Expectations",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "vLLM: temperature=NaN and temperature=Infinity bypass validation and propagate to GPU kernels",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Traefik: Kubernetes Gateway crossProviderNamespaces bypass allows HTTPRoute outside the allowlist to expose internal Traefik services",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Chrome DevTools for agents: daemon.pid write follows symlinks in /tmp fallback runtime directory",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "n8n: Wrong OAuth Scope on Evaluation Test Runs Endpoints",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Pi Agent: Pi loads project-local extensions without approval",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Pi Agent: Predictable temporary extension install paths allow local privilege escalation on shared Linux hosts",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Pi Agent: Race condition in Pi auth.json writes could expose stored credentials",
-          "date": "2026-06-17",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Laravel Framework: Temporary Signed URL Path Confusion",
-          "date": "2026-06-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Laravel Framework: CRLF injection in default email rule ",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-45606: Microsoft UxTheme Library (uxtheme.dll) Denial of Service Vulnerability",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48782: pydantic-ai: Pydantic AI: Information Disclosure via Cloud-Metadata Blocklist Bypass",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48775: langgraph: langgraph-checkpoint: LangGraph: Arbitrary code execution via insecure deserialization of modified checkpoint",
-          "date": "2026-06-16",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-50632: cxf: org.apache.cxf/cxf-rt-transports-jms: Apache CXF: Arbitrary code execution via untrusted JMS configuration",
-          "date": "2026-06-12",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "signal",
-          "title": "Open WebUI: Forged chat-file link allows cross-user file read and deletion",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
