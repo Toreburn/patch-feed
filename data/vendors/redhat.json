@@ -1,16 +1,60 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-06-23T09:53:32.699Z",
+  "lastUpdated": "2026-06-23T15:13:46.242Z",
   "health": {
-    "lastFetchAttempt": "2026-06-23T09:53:32.699Z",
+    "lastFetchAttempt": "2026-06-23T15:13:46.241Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 104,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-23T09:53:32.699Z",
+    "lastFetchParsedItems": 128,
+    "lastFetchNewPatches": 24,
+    "lastSuccessWithData": "2026-06-23T15:13:46.241Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-55655: openssh: Local MITM of X11 forwarding via abstract UNIX socket pre-binding in Red Hat Enterprise Linux OpenSSH client ve",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openssh: Local MITM of X11 forwarding via abstract UNIX socket pre-binding in Red Hat Enterprise Linux OpenSSH client versions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55655.json",
+      "cve": "CVE-2026-55655",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-55654: openssh: Heap out-of-bounds read in Red Hat Enterprise Linux versions of OpenSSH GSSAPI indicator cleanup due to missing",
+      "date": "2026-06-22",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openssh: Heap out-of-bounds read in Red Hat Enterprise Linux versions of OpenSSH GSSAPI indicator cleanup due to missing NULL sentinel termination",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55654.json",
+      "cve": "CVE-2026-55654",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-55653: openssh: Double free in Red Hat Enterprise Linux versions of OpenSSH DH-GEX client path during FIPS known-group validati",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openssh: Double free in Red Hat Enterprise Linux versions of OpenSSH DH-GEX client path during FIPS known-group validation leads to client-side denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55653.json",
+      "cve": "CVE-2026-55653",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-10601: grafana: tempo: loki: Tempo and Loki Datasource Plugins: Information disclosure and unauthorized actions via path traver",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grafana: tempo: loki: Tempo and Loki Datasource Plugins: Information disclosure and unauthorized actions via path traversal",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10601.json",
+      "cve": "CVE-2026-10601",
+      "cvss": 5.4
+    },
     {
       "title": "CVE-2026-12805: dcmtk: OFFIS DCMTK: Heap-based buffer overflow in XML parsing",
       "date": "2026-06-21",
@@ -32,6 +76,138 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12804.json",
       "cve": "CVE-2026-12804",
       "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-56412: libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libexpat: libexpat: Use-after-free vulnerability due to improper handling of XML CDATA sections",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56412.json",
+      "cve": "CVE-2026-56412",
+      "cvss": 4.9
+    },
+    {
+      "title": "CVE-2026-56411: expat: libexpat: Integer Overflow Vulnerability Leading to Information Disclosure or Code Execution",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "expat: libexpat: Integer Overflow Vulnerability Leading to Information Disclosure or Code Execution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56411.json",
+      "cve": "CVE-2026-56411",
+      "cvss": 6.9
+    },
+    {
+      "title": "CVE-2026-56410: libexpat: libexpat: Integer overflow in xmlwf can lead to information disclosure and arbitrary code execution.",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libexpat: libexpat: Integer overflow in xmlwf can lead to information disclosure and arbitrary code execution.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56410.json",
+      "cve": "CVE-2026-56410",
+      "cvss": 6.9
+    },
+    {
+      "title": "CVE-2026-56405: libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libexpat: libexpat: Information disclosure and arbitrary code execution via integer overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56405.json",
+      "cve": "CVE-2026-56405",
+      "cvss": 4.9
+    },
+    {
+      "title": "CVE-2026-56403: libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libexpat: libexpat: Arbitrary code execution due to integer overflow in storeAtts",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56403.json",
+      "cve": "CVE-2026-56403",
+      "cvss": 6.9
+    },
+    {
+      "title": "CVE-2026-56378: Magick.NET: ImageMagick: Denial of Service and Information Disclosure via crafted PCD file",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Magick.NET: ImageMagick: Denial of Service and Information Disclosure via crafted PCD file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56378.json",
+      "cve": "CVE-2026-56378",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-12799: litellm: BerriAI litellm: Information Disclosure via improper authorization in ui_view_users function",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "litellm: BerriAI litellm: Information Disclosure via improper authorization in ui_view_users function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12799.json",
+      "cve": "CVE-2026-12799",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-12798: litellm: BerriAI litellm: Server-Side Request Forgery via spec_path argument manipulation",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "litellm: BerriAI litellm: Server-Side Request Forgery via spec_path argument manipulation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12798.json",
+      "cve": "CVE-2026-12798",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-12797: litellm: BerriAI litellm: Incorrect authorization via prompt manipulation",
+      "date": "2026-06-21",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "litellm: BerriAI litellm: Incorrect authorization via prompt manipulation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12797.json",
+      "cve": "CVE-2026-12797",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-12796: litellm: litellm: Session expiration vulnerability in SSO Authentication Flow",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "litellm: litellm: Session expiration vulnerability in SSO Authentication Flow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12796.json",
+      "cve": "CVE-2026-12796",
+      "cvss": 4.6
+    },
+    {
+      "title": "CVE-2026-12774: litellm: BerriAI litellm: Server-Side Request Forgery in MCP Server Connection Testing",
+      "date": "2026-06-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "litellm: BerriAI litellm: Server-Side Request Forgery in MCP Server Connection Testing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12774.json",
+      "cve": "CVE-2026-12774",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-52911: kernel: ksmbd: scope conn->binding slowpath to bound sessions only",
+      "date": "2026-06-21",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ksmbd: scope conn->binding slowpath to bound sessions only",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52911.json",
+      "cve": "CVE-2026-52911",
+      "cvss": null
     },
     {
       "title": "CVE-2026-12726: awx: automation-controller: awx: GitHub webhook second-order SSRF via unvalidated statuses_url exfiltrates PAT credentia",
@@ -87,6 +263,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56211.json",
       "cve": "CVE-2026-56211",
       "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-52910: kernel: bpf: Free reuseport cBPF prog after RCU grace period",
+      "date": "2026-06-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: bpf: Free reuseport cBPF prog after RCU grace period",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52910.json",
+      "cve": "CVE-2026-52910",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-52908: kernel: RDMA: During rereg_mr ensure that REREG_ACCESS is compatible",
+      "date": "2026-06-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA: During rereg_mr ensure that REREG_ACCESS is compatible",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52908.json",
+      "cve": "CVE-2026-52908",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-52909: kernel: ip6_vti: set netns_immutable on the fallback device",
+      "date": "2026-06-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ip6_vti: set netns_immutable on the fallback device",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52909.json",
+      "cve": "CVE-2026-52909",
+      "cvss": 5.5
     },
     {
       "title": "CVE-2026-44942: libzypp: libzypp: Denial of Service via path traversal in .repo file handling",
@@ -186,6 +395,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43915.json",
       "cve": "CVE-2026-43915",
       "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-55392: nilfs-utils: NILFS utilities: Denial of Service via crafted NILFS2 images",
+      "date": "2026-06-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nilfs-utils: NILFS utilities: Denial of Service via crafted NILFS2 images",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55392.json",
+      "cve": "CVE-2026-55392",
+      "cvss": 5.5
     },
     {
       "title": "CVE-2026-48817: starlette: Starlette: Information disclosure and unintended method execution via non-standard HTTP methods",
@@ -1154,6 +1374,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12505.json",
       "cve": "CVE-2026-12505",
       "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-42089: yeoman-environment: Yeoman Environment: Arbitrary code execution via unconfirmed package installation",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "yeoman-environment: Yeoman Environment: Arbitrary code execution via unconfirmed package installation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42089.json",
+      "cve": "CVE-2026-42089",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-44932: wicked: wicked: Arbitrary code execution via unsanitized DHCP replies",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wicked: wicked: Arbitrary code execution via unsanitized DHCP replies",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44932.json",
+      "cve": "CVE-2026-44932",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-12301: firefox: thunderbird: Memory safety bug fixed in Firefox 152",
+      "date": "2026-06-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Memory safety bug fixed in Firefox 152",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12301.json",
+      "cve": "CVE-2026-12301",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-12293: firefox: thunderbird: Use-after-free in the Graphics: WebGPU component",
+      "date": "2026-06-16",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Graphics: WebGPU component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12293.json",
+      "cve": "CVE-2026-12293",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-44188: ansible-lightspeed: Ansible Lightspeed: Session hijacking and unauthorized data access due to insufficient session expir",
