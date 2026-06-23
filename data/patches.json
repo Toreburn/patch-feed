@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-06-23T03:52:58.279Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-23T04:03:07.436Z",
+  "newPatches": 32,
   "patches": [
+    {
+      "title": "Gogs has the ability to import local repositories via Mirror Settings",
+      "date": "2026-06-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "gogs.io/gogs",
+      "description": "Gogs has the ability to import local repositories via Mirror Settings",
+      "link": "https://github.com/advisories/GHSA-wv27-2vqp-j7g5",
+      "cve": "CVE-2026-52801",
+      "cvss": 8.1
+    },
+    {
+      "title": "Gogs Vulnerable to CSRF Leading to Organization Owner Takeover",
+      "date": "2026-06-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "gogs.io/gogs",
+      "description": "Gogs Vulnerable to CSRF Leading to Organization Owner Takeover",
+      "link": "https://github.com/advisories/GHSA-pwx3-qcgw-vh7h",
+      "cve": "CVE-2026-52800",
+      "cvss": 8.8
+    },
     {
       "title": "Cisco Packaged Contact Center Enterprise and Cisco Unified Contact Center Enterprise Cross-Site Scripting Vulnerabilities",
       "date": "2026-06-22",
@@ -11,6 +33,27 @@
       "description": "Multiple vulnerabilities in the web-based management interface of Cisco Packaged Contact Center Enterprise (Packaged CCE) and Cisco Unified Contact Center Enterprise (Unified CCE) could allow an authe...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ucce-pcce-xss-2JVyg3uD",
       "cve": "CVE-2026-20055"
+    },
+    {
+      "title": "DSA-6361-1 ffmpeg - security update",
+      "date": "2026-06-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "ffmpeg",
+      "description": "Several vulnerabilities have been discovered in the FFmpeg multimedia framework, which could result in denial of service or potentially the execution of arbitrary code if malformed files/streams are p...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00272.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "Microsoft Edge Security Update - June 22, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-06-22",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
     },
     {
       "title": "Spinnaker has uon-safe yaml deserialization, allowing RCE when using specific types",
@@ -275,6 +318,320 @@
       "link": "https://github.com/advisories/GHSA-4mvw-j8r9-xcgc",
       "cve": "CVE-2024-37155",
       "cvss": 6.5
+    },
+    {
+      "title": "Gogs Missing Authorization in Attachment Download",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "gogs.io/gogs",
+      "description": "Gogs Missing Authorization in Attachment Download",
+      "link": "https://github.com/advisories/GHSA-p9f5-h3rx-j5qw",
+      "cve": "CVE-2026-52799",
+      "cvss": 7.5
+    },
+    {
+      "title": "Gogs has Stored XSS in `.ipynb` Preview",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "gogs.io/gogs",
+      "description": "Gogs has Stored XSS in `.ipynb` Preview",
+      "link": "https://github.com/advisories/GHSA-jq8v-rmf6-65jw",
+      "cve": "CVE-2026-52798",
+      "cvss": 8.9
+    },
+    {
+      "title": "Gogs has DoS in rendering issue index pattern",
+      "date": "2026-06-22",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "gogs.io/gogs",
+      "description": "Gogs has DoS in rendering issue index pattern",
+      "link": "https://github.com/advisories/GHSA-4j89-2c4f-44c6",
+      "cve": "CVE-2026-52796",
+      "cvss": 3.5
+    },
+    {
+      "title": "@actual-app/web has CSV Formula Injection in Transaction Export via Imported Payee/Notes Fields",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@actual-app/web",
+      "description": "@actual-app/web has CSV Formula Injection in Transaction Export via Imported Payee/Notes Fields",
+      "link": "https://github.com/advisories/GHSA-xqjm-27pc-rvwm",
+      "cve": "CVE-2026-50179",
+      "cvss": 4.2
+    },
+    {
+      "title": "@budibase/backend-core has potential SSRF DNS rebinding bypass in outbound fetch validation",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/backend-core",
+      "description": "@budibase/backend-core has potential SSRF DNS rebinding bypass in outbound fetch validation",
+      "link": "https://github.com/advisories/GHSA-gfq7-5x4g-3xhf",
+      "cve": "CVE-2026-54353",
+      "cvss": 8.5
+    },
+    {
+      "title": "Budibase has arbitrary file read by workspace-builder via PWA-zip symlink upload",
+      "date": "2026-06-22",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase has arbitrary file read by workspace-builder via PWA-zip symlink upload",
+      "link": "https://github.com/advisories/GHSA-w7mq-r738-x278",
+      "cve": "CVE-2026-54352",
+      "cvss": 9.6
+    },
+    {
+      "title": "Budibase: Mass Assignment in Webhook Trigger Allows Cross-Workspace Automation Execution via appId Override",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase: Mass Assignment in Webhook Trigger Allows Cross-Workspace Automation Execution via appId Override",
+      "link": "https://github.com/advisories/GHSA-rgvg-3wpc-h44p",
+      "cve": "CVE-2026-54351",
+      "cvss": 8.2
+    },
+    {
+      "title": "@actual-app/sync-server: Disabled OpenID users keep access through existing session tokens",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@actual-app/sync-server",
+      "description": "@actual-app/sync-server: Disabled OpenID users keep access through existing session tokens",
+      "link": "https://github.com/advisories/GHSA-cq9c-6w48-qmfg",
+      "cve": "CVE-2026-49229",
+      "cvss": 8.3
+    },
+    {
+      "title": "Budibase: POST /api/attachments/:datasourceId/url is unauthenticated and lets anonymous callers mint S3 PUT pre-signed URLs using stored datasource IAM credentials",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase: POST /api/attachments/:datasourceId/url is unauthenticated and lets anonymous callers mint S3 PUT pre-signed URLs using stored datasource IAM credentials",
+      "link": "https://github.com/advisories/GHSA-35c4-rvc8-frhm",
+      "cve": "CVE-2026-50137",
+      "cvss": null
+    },
+    {
+      "title": "Budibase: Unauthenticated S3 signed upload URL generation allows arbitrary writes with stored datasource credentials",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase: Unauthenticated S3 signed upload URL generation allows arbitrary writes with stored datasource credentials",
+      "link": "https://github.com/advisories/GHSA-jj36-r9w3-3pfh",
+      "cve": "CVE-2026-50136",
+      "cvss": 7.4
+    },
+    {
+      "title": "Budibase has an Account Impersonation Issue — Chat Identity Link Hijacking via Missing Consent & CSRF",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase has an Account Impersonation Issue — Chat Identity Link Hijacking via Missing Consent & CSRF",
+      "link": "https://github.com/advisories/GHSA-v7j5-vc4m-723w",
+      "cve": "CVE-2026-50132",
+      "cvss": 7.3
+    },
+    {
+      "title": "zeroconf: Unvalidated rdlength in record payload readers allows LAN-local cache corruption via crafted mDNS packet",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "zeroconf",
+      "description": "zeroconf: Unvalidated rdlength in record payload readers allows LAN-local cache corruption via crafted mDNS packet",
+      "link": "https://github.com/advisories/GHSA-qc2x-6f54-m6h9",
+      "cve": "CVE-2026-48487",
+      "cvss": 6.5
+    },
+    {
+      "title": "devbridge-autocomplete has XSS in its default formatters: formatGroup and formatResult fail to escape HTML in untrusted inputs",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "devbridge-autocomplete",
+      "description": "devbridge-autocomplete has XSS in its default formatters: formatGroup and formatResult fail to escape HTML in untrusted inputs",
+      "link": "https://github.com/advisories/GHSA-hvqh-jw65-wcpq",
+      "cve": "",
+      "cvss": 5.4
+    },
+    {
+      "title": "scimPatch vulnerable to prototype pollution via unfiltered keys in patch",
+      "date": "2026-06-22",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "scim-patch",
+      "description": "scimPatch vulnerable to prototype pollution via unfiltered keys in patch",
+      "link": "https://github.com/advisories/GHSA-9m6g-wc8r-q59c",
+      "cve": "CVE-2026-48170",
+      "cvss": 9.1
+    },
+    {
+      "title": "nebula-mesh's stores enrollment tokens unhashed in SQLite",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/juev/nebula-mesh",
+      "description": "nebula-mesh's stores enrollment tokens unhashed in SQLite",
+      "link": "https://github.com/advisories/GHSA-ghmh-jhmj-wcmf",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Budibase: SSRF via OAuth2 token endpoint URL reaches internal hosts and cloud metadata",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase: SSRF via OAuth2 token endpoint URL reaches internal hosts and cloud metadata",
+      "link": "https://github.com/advisories/GHSA-4q6h-8p4v-67vq",
+      "cve": "CVE-2026-48153",
+      "cvss": 8.5
+    },
+    {
+      "title": "skillctl: argument injection, path traversal in --dest, FIFO/device DoS, hardlink exfiltration, and commit-trailer forgery",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "skillctl",
+      "description": "skillctl: argument injection, path traversal in --dest, FIFO/device DoS, hardlink exfiltration, and commit-trailer forgery",
+      "link": "https://github.com/advisories/GHSA-74p7-6h78-gw8p",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Gogs has SSRF in webhook deliveries",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "gogs.io/gogs",
+      "description": "Gogs has SSRF in webhook deliveries",
+      "link": "https://github.com/advisories/GHSA-c4v7-xg93-qf8g",
+      "cve": "CVE-2026-47267",
+      "cvss": null
+    },
+    {
+      "title": "@actual-app/sync-server's missing authorization on GET /secret/:name allows non-admin OpenID users to enumerate admin-configured bank-sync secrets",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@actual-app/sync-server",
+      "description": "@actual-app/sync-server's missing authorization on GET /secret/:name allows non-admin OpenID users to enumerate admin-configured bank-sync secrets",
+      "link": "https://github.com/advisories/GHSA-3f62-qv96-4p78",
+      "cve": "CVE-2026-46700",
+      "cvss": 4.3
+    },
+    {
+      "title": "@actual-app/cli `--format csv` Output Vulnerable to CSV Formula Injection via Custom `escapeCsv` Helper",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@actual-app/cli",
+      "description": "@actual-app/cli `--format csv` Output Vulnerable to CSV Formula Injection via Custom `escapeCsv` Helper",
+      "link": "https://github.com/advisories/GHSA-7gh7-258j-4mpq",
+      "cve": "CVE-2026-46672",
+      "cvss": 4.6
+    },
+    {
+      "title": "Glances: XML-RPC Server Missing Host Header Validation Enables DNS Rebinding Attack",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "glances",
+      "description": "Glances: XML-RPC Server Missing Host Header Validation Enables DNS Rebinding Attack",
+      "link": "https://github.com/advisories/GHSA-w856-8p3r-p338",
+      "cve": "CVE-2026-46611",
+      "cvss": 5.3
+    },
+    {
+      "title": "Glances: XML-RPC Multi-Origin CORS Configuration Silently Falls Back to Wildcard (Incomplete Fix for CVE-2026-33533)",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "glances",
+      "description": "Glances: XML-RPC Multi-Origin CORS Configuration Silently Falls Back to Wildcard (Incomplete Fix for CVE-2026-33533)",
+      "link": "https://github.com/advisories/GHSA-87qc-fj39-wccr",
+      "cve": "CVE-2026-46608",
+      "cvss": 7.4
+    },
+    {
+      "title": "Glances has Insecure Pickle Deserialization in its Version Cache that Leads to Arbitrary Code Execution",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "glances",
+      "description": "Glances has Insecure Pickle Deserialization in its Version Cache that Leads to Arbitrary Code Execution",
+      "link": "https://github.com/advisories/GHSA-9837-48hr-q32j",
+      "cve": "CVE-2026-46607",
+      "cvss": 7.8
+    },
+    {
+      "title": "Glances is Vulnerable to Command Injection via KVM/QEMU VM Domain Names in glances/plugins/vms/engines/virsh.py",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "glances",
+      "description": "Glances is Vulnerable to Command Injection via KVM/QEMU VM Domain Names in glances/plugins/vms/engines/virsh.py",
+      "link": "https://github.com/advisories/GHSA-v5r2-qh84-fjx5",
+      "cve": "CVE-2026-46606",
+      "cvss": 7.8
+    },
+    {
+      "title": "OpenDJ Pre-Auth RCE via Java Deserialization in JMX RMI",
+      "date": "2026-06-22",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "org.openidentityplatform.opendj:opendj-server-legacy",
+      "description": "OpenDJ Pre-Auth RCE via Java Deserialization in JMX RMI",
+      "link": "https://github.com/advisories/GHSA-43x2-g84q-fmqx",
+      "cve": "CVE-2026-46495",
+      "cvss": null
+    },
+    {
+      "title": "motionEye: Authentication possible via password hash",
+      "date": "2026-06-22",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "motioneye",
+      "description": "motionEye: Authentication possible via password hash",
+      "link": "https://github.com/advisories/GHSA-r3cw-c95m-wfh9",
+      "cve": "CVE-2026-46488",
+      "cvss": null
+    },
+    {
+      "title": "skillctl: argument injection, path traversal in --dest, FIFO/device DoS, hardlink exfiltration, and commit-trailer forgery",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Impact\n\nFollowing the path-safety patches in [GHSA-wx3m-whqv-xv47](https://github.com/umanio-agency/skillctl/security/advisories/GHSA-wx3m-whqv-xv47) (v0.1.2), a comprehensive multi-angle audit sur",
+      "link": "https://github.com/advisories/GHSA-74p7-6h78-gw8p",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "@actual-app/sync-server's missing authorization on GET /secret/:name allows non-admin OpenID users to enumerate admin-configured bank-sync secrets",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nIn `@actual-app/sync-server`, the `GET /secret/:name` endpoint (`app-secrets.js:53`) checks only that the caller has a valid session — it does not verify the caller is an admin. The siblin",
+      "link": "https://github.com/advisories/GHSA-3f62-qv96-4p78",
+      "cves": [
+        "CVE-2026-46700"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
     },
     {
       "title": "DSA-6355-1 linux - security update",
@@ -7172,6 +7529,241 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-23T04:03:07.436Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 6 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] debian - 12 patches (1 new)",
+        "[SUCCESS] edge - 2 patches (1 new)",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 320 patches (28 new)",
+        "[INFO] jetbrains - 1 patches, no changes",
+        "[INFO] microsoft - 301 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 67 patches, no changes",
+        "[SUCCESS] signal - 9 patches (2 new)",
+        "[INFO] ubuntu - 11 patches, no changes"
+      ],
+      "newPatchCount": 32,
+      "totalPatches": 739,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "github",
+        "cisco",
+        "debian",
+        "edge",
+        "signal",
+        "redhat",
+        "microsoft",
+        "postgresql",
+        "aws",
+        "cloudflare",
+        "gcp",
+        "nodejs",
+        "ubuntu",
+        "chrome",
+        "jetbrains"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6361-1 ffmpeg - security update",
+          "date": "2026-06-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - June 22, 2026",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gogs has the ability to import local repositories via Mirror Settings",
+          "date": "2026-06-23",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gogs Vulnerable to CSRF Leading to Organization Owner Takeover",
+          "date": "2026-06-23",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gogs Missing Authorization in Attachment Download",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gogs has Stored XSS in `.ipynb` Preview",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gogs has DoS in rendering issue index pattern",
+          "date": "2026-06-22",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "@actual-app/web has CSV Formula Injection in Transaction Export via Imported Payee/Notes Fields",
+          "date": "2026-06-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "@budibase/backend-core has potential SSRF DNS rebinding bypass in outbound fetch validation",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase has arbitrary file read by workspace-builder via PWA-zip symlink upload",
+          "date": "2026-06-22",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase: Mass Assignment in Webhook Trigger Allows Cross-Workspace Automation Execution via appId Override",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "@actual-app/sync-server: Disabled OpenID users keep access through existing session tokens",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase: POST /api/attachments/:datasourceId/url is unauthenticated and lets anonymous callers mint S3 PUT pre-signed URLs using stored datasource IAM credentials",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase: Unauthenticated S3 signed upload URL generation allows arbitrary writes with stored datasource credentials",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase has an Account Impersonation Issue — Chat Identity Link Hijacking via Missing Consent & CSRF",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "zeroconf: Unvalidated rdlength in record payload readers allows LAN-local cache corruption via crafted mDNS packet",
+          "date": "2026-06-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "devbridge-autocomplete has XSS in its default formatters: formatGroup and formatResult fail to escape HTML in untrusted inputs",
+          "date": "2026-06-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "scimPatch vulnerable to prototype pollution via unfiltered keys in patch",
+          "date": "2026-06-22",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "nebula-mesh's stores enrollment tokens unhashed in SQLite",
+          "date": "2026-06-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase: SSRF via OAuth2 token endpoint URL reaches internal hosts and cloud metadata",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "skillctl: argument injection, path traversal in --dest, FIFO/device DoS, hardlink exfiltration, and commit-trailer forgery",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gogs has SSRF in webhook deliveries",
+          "date": "2026-06-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "@actual-app/sync-server's missing authorization on GET /secret/:name allows non-admin OpenID users to enumerate admin-configured bank-sync secrets",
+          "date": "2026-06-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "@actual-app/cli `--format csv` Output Vulnerable to CSV Formula Injection via Custom `escapeCsv` Helper",
+          "date": "2026-06-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Glances: XML-RPC Server Missing Host Header Validation Enables DNS Rebinding Attack",
+          "date": "2026-06-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Glances: XML-RPC Multi-Origin CORS Configuration Silently Falls Back to Wildcard (Incomplete Fix for CVE-2026-33533)",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Glances has Insecure Pickle Deserialization in its Version Cache that Leads to Arbitrary Code Execution",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Glances is Vulnerable to Command Injection via KVM/QEMU VM Domain Names in glances/plugins/vms/engines/virsh.py",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenDJ Pre-Auth RCE via Java Deserialization in JMX RMI",
+          "date": "2026-06-22",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "motionEye: Authentication possible via password hash",
+          "date": "2026-06-22",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "signal",
+          "title": "skillctl: argument injection, path traversal in --dest, FIFO/device DoS, hardlink exfiltration, and commit-trailer forgery",
+          "date": "2026-06-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "signal",
+          "title": "@actual-app/sync-server's missing authorization on GET /secret/:name allows non-admin OpenID users to enumerate admin-configured bank-sync secrets",
+          "date": "2026-06-22",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-23T03:52:58.279Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
@@ -13151,73 +13743,6 @@
         "paloalto"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-18T04:41:31.883Z",
-      "logs": [
-        "[SUCCESS] aws - 3 patches (1 new)",
-        "[SUCCESS] chrome - 5 patches (2 new)",
-        "[INFO] cisco - 7 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 250 patches, no changes",
-        "[INFO] jetbrains - 1 patches, no changes",
-        "[INFO] microsoft - 351 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 53 patches, no changes",
-        "[SUCCESS] signal - 6 patches (1 new)",
-        "[INFO] ubuntu - 18 patches, no changes"
-      ],
-      "newPatchCount": 4,
-      "totalPatches": 711,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "aws",
-        "chrome",
-        "cisco",
-        "debian",
-        "github",
-        "jetbrains",
-        "microsoft",
-        "signal",
-        "ubuntu",
-        "crowdstrike",
-        "oracle-db",
-        "postgresql",
-        "redhat",
-        "edge",
-        "paloalto"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-12530 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
-          "date": "2026-06-17",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Chrome Stable for iOS Update",
-          "date": "2026-06-17",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
-          "date": "2026-06-17",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "signal",
-          "title": "Signal Desktop v8.16.0-beta.1",
-          "date": "2026-06-17",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }

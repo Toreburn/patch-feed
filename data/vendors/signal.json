@@ -1,16 +1,44 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-06-22T20:55:18.323Z",
+  "lastUpdated": "2026-06-23T04:01:59.648Z",
   "health": {
-    "lastFetchAttempt": "2026-06-22T20:55:18.323Z",
+    "lastFetchAttempt": "2026-06-23T04:01:59.648Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-22T20:55:18.323Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-06-23T04:01:59.648Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "skillctl: argument injection, path traversal in --dest, FIFO/device DoS, hardlink exfiltration, and commit-trailer forgery",
+      "date": "2026-06-22",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Impact\n\nFollowing the path-safety patches in [GHSA-wx3m-whqv-xv47](https://github.com/umanio-agency/skillctl/security/advisories/GHSA-wx3m-whqv-xv47) (v0.1.2), a comprehensive multi-angle audit sur",
+      "link": "https://github.com/advisories/GHSA-74p7-6h78-gw8p",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "@actual-app/sync-server's missing authorization on GET /secret/:name allows non-admin OpenID users to enumerate admin-configured bank-sync secrets",
+      "date": "2026-06-22",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nIn `@actual-app/sync-server`, the `GET /secret/:name` endpoint (`app-secrets.js:53`) checks only that the caller has a valid session — it does not verify the caller is an admin. The siblin",
+      "link": "https://github.com/advisories/GHSA-3f62-qv96-4p78",
+      "cves": [
+        "CVE-2026-46700"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "tract-nnef: integer overflow in NNEF `.dat` tensor parser yields an out-of-bounds read on model load",
       "date": "2026-06-18",
