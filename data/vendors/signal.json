@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-06-26T14:36:33.187Z",
+  "lastUpdated": "2026-06-26T19:58:43.366Z",
   "health": {
-    "lastFetchAttempt": "2026-06-26T14:36:33.187Z",
+    "lastFetchAttempt": "2026-06-26T19:58:43.366Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-26T14:36:33.187Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-06-26T19:58:43.366Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Incus: CreateCustomVolumeFromBackup nil-pointer dereference on volume_snapshots[*].expires_at (sibling-field variant of GHSA-r7w7)",
+      "date": "2026-06-26",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\n`(*backend).CreateCustomVolumeFromBackup` in [`internal/server/storage/backend.go`](https://github.com/lxc/incus/blob/985a1dedf9f3e7ba729c93b654905ed510de25c2/internal/server/storage/backe",
+      "link": "https://github.com/advisories/GHSA-xhqx-mgh3-3h7q",
+      "cves": [
+        "CVE-2026-48756"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Incus: Nil-pointer dereference in createDependentVolumesFromBackup on disk.{Volume,VolumeSnapshots,Pool}",
+      "date": "2026-06-26",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\n`(*backend).createDependentVolumesFromBackup` in [`internal/server/storage/backend.go`](https://github.com/lxc/incus/blob/d768f81c0a1d985f35ae56219519822b080bf5e3/internal/server/storage/b",
+      "link": "https://github.com/advisories/GHSA-4xg6-52mh-fpw8",
+      "cves": [
+        "CVE-2026-48754"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.16.0",
       "date": "2026-06-24",
