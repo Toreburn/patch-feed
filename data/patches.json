@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-28T13:53:49.062Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-28T14:02:03.761Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
@@ -5713,6 +5713,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57234.json",
       "cve": "CVE-2026-57234",
       "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-57453: vim: Vim: Arbitrary code execution via crafted zip archive entry names",
+      "date": "2026-06-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: Vim: Arbitrary code execution via crafted zip archive entry names",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57453.json",
+      "cve": "CVE-2026-57453",
+      "cvss": 5.8
     },
     {
       "title": "USN-8475-1: AMD Microcode vulnerabilities",
@@ -11985,6 +11996,51 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-06-28T14:02:03.761Z",
+      "logs": [
+        "[INFO] aws - 1 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] debian - 10 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 251 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 462 patches (1 new)",
+        "[INFO] signal - 9 patches, no changes",
+        "[INFO] ubuntu - 11 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1165,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "microsoft",
+        "github",
+        "chrome",
+        "debian",
+        "edge",
+        "postgresql",
+        "redhat",
+        "signal",
+        "cisco",
+        "ubuntu",
+        "gitlab",
+        "aws",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-57453: vim: Vim: Arbitrary code execution via crafted zip archive entry names",
+          "date": "2026-06-25",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-06-28T13:53:49.061Z",
       "logs": [
@@ -19165,347 +19221,6 @@
         "ubuntu"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-24T09:42:03.929Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] debian - 12 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 326 patches, no changes",
-        "[SUCCESS] microsoft - 400 patches (50 new)",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 44 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 7 patches, no changes"
-      ],
-      "newPatchCount": 50,
-      "totalPatches": 809,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "chrome",
-        "cloudflare",
-        "debian",
-        "github",
-        "redhat",
-        "cisco",
-        "edge",
-        "signal",
-        "postgresql",
-        "gcp",
-        "nodejs",
-        "ubuntu"
-      ],
-      "newPatches": [
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46250: MIPS: Work around LLVM bug when gp is used as global register variable",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46252: regulator: core: fix locking in regulator_resolve_supply() error path",
-          "date": "2026-06-24",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46244: netfilter: nft_inner: Fix IPv6 inner_thoff desync",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-42504: Quadratic complexity in WordDecoder.DecodeHeader in mime",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50219: libexpat before 2.8.2 lacks handler call depth tracking for calls to XML_GetBuffer, XML_Parse, XML_ParseBuffer, XML_ParserFree, or XML_ParserReset from within handlers in cases of a policy violation. Thus, a use-after-free can occur,",
-          "date": "2026-06-24",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-10722: cilium ebpf LoadCollectionSpec/LoadCollectionSpecFromReader btf.go loadRawSpec integer overflow",
-          "date": "2026-06-24",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-43958: Rrdtool: rrdtool: stack buffer overflow allows local code execution or denial of service",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-11463: USCiLab Cereal Shared Pointer type confusion",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49975: Apache HTTP Server: mod_http2 denial of service",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40930: LIBPNG: Chunk smuggling in push-mode APNG parser via unconsumed chunk body",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-10879: DBI versions before 1.648 for Perl have a heap overflow when preparsing SQL statements with more than 9 binders",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50256: Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: stack buffer overflow in font alias resolution due to libxfont2 name length mismatch",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50262: Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: out-of-bounds read/write in glx changedrawableattributes",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50260: Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: use-after-free in freecounter()",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50257: Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: use-after-free in misyncdestroyfence()",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50258: Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: stack buffer overflow in xkb key types due to unchecked shift levels",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50263: Xorg-x11-server: xorg-x11-server-xwayland: xorg-x11-server: use-after-free information disclosure in createsaverwindow()",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46275: Bluetooth: hci_uart: fix UAFs and race conditions in close and init paths",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46285: mtd: docg3: fix use-after-free in docg3_release()",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46280: lib: test_hmm: evict device pages on file close to avoid use-after-free",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46282: iio: frequency: admv1013: fix NULL pointer dereference on str",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46312: media: videobuf2: Set vma_flags in vb2_dma_sg_mmap",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46301: spi: topcliff-pch: fix use-after-free on unbind",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46302: selinux: allow multiple opens of /sys/fs/selinux/policy",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46314: drm/v3d: Reject empty multisync extension to prevent infinite loop",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2025-71315: drm/vkms: Convert to DRM's vblank timer",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46296: spi: s3c64xx: fix NULL-deref on driver unbind",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46287: net: txgbe: fix RTNL assertion warning when remove module",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46299: hfsplus: fix held lock freed on hfsplus_fill_super()",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46321: tun: free page on short-frame rejection in tun_xdp_one()",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46319: net/sched: act_ct: Only release RCU read lock after ct_ft",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46323: net: gro: don't merge zcopy skbs",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46324: netfilter: nf_tables: use list_del_rcu for netlink hooks",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46320: tap: free page on error paths in tap_get_user_xdp()",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-11822: SQLite before 3.53.2 Memory Corruption in FTS5 Extension",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-42536: Apache HTTP Server: mod_xml2enc heap overflow",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-46643: Snappy: Binary path is never shell-escaped due to an inverted is_executable check",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-47162: Vim: Vimscript Code Injection in netrw NetrwBookHistSave() via crafted directory name",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-45445: AES-OCB IV Ignored on EVP_Cipher() Path",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-45447: Heap Use-After-Free in the PKCS7_verify() Function",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-42764: NULL Pointer Dereference in QUIC Server Initial Packet Handling",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34181: PKCS#12 Files with PBMAC1 Are Accepted with Short HMAC Keys",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-48914: Qemu-kvm: heap buffer overflow in virtio-blk scsi request handling",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-48854: Unbounded request body accumulation causes memory exhaustion in elixir-grpc/grpc",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-42014: Gnutls: fix use-after-free in gnutls_pkcs11_token_set_pin",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-53689: CVE-2026-53689",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-12087: Socket versions before 2.041 for Perl have an out-of-bounds heap read",
-          "date": "2026-06-24",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-9669: bz2.BZ2Decompressor reuse after error can cause a stack buffer overflow",
-          "date": "2026-06-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-43966: HTTP Response Splitting via Non-VCHAR Bytes in cow_http_struct_hd:escape_string/2",
-          "date": "2026-06-24",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
