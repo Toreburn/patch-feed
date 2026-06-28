@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-06-28T19:25:33.384Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-28T19:39:44.853Z",
+  "newPatches": 3,
   "patches": [
+    {
+      "title": "DSA-6373-1 lxd - security update",
+      "date": "2026-06-28",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "lxd",
+      "description": "Multiple security issues were discovered in LXD, a system container and virtual machine manager, which could result in a bypass of security restrictions or the execution of arbitrary commands. https:/...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00284.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6372-1 tor - security update",
+      "date": "2026-06-28",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "tor",
+      "description": "Multiple security vulnerabilities were discovered in Tor, a connection- based low-latency anonymous communication system, would could result in denial of service. https://security-tracker.debian.org/t...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00283.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
       "date": "2026-06-28",
@@ -451,6 +473,16 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-43966",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-43966"
+    },
+    {
+      "title": "pgtt v4.5 has been released",
+      "date": "2026-06-28",
+      "severity": "UNKNOWN",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "Bangkok, Thailand - June 21, 2026 PostgreSQL Global Temporary Tables pgtt is a PostgreSQL extension to create, manage and use DB2 or Oracle-style Global Temporary Tables. Once created the use is just ...",
+      "link": "https://www.postgresql.org/about/news/pgtt-v45-has-been-released-3330/",
+      "cve": ""
     },
     {
       "title": "pnpm: Path traversal in configDependencies env lockfile allows symlink creation outside node_modules/.pnpm-config",
@@ -11997,6 +12029,63 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-28T19:39:44.853Z",
+      "logs": [
+        "[INFO] aws - 1 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[SUCCESS] debian - 12 patches (2 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 251 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[SUCCESS] postgresql - 6 patches (1 new)",
+        "[INFO] redhat - 462 patches, no changes",
+        "[INFO] signal - 9 patches, no changes",
+        "[INFO] ubuntu - 11 patches, no changes"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 1168,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "postgresql",
+        "github",
+        "chrome",
+        "edge",
+        "redhat",
+        "signal",
+        "cisco",
+        "ubuntu",
+        "gitlab",
+        "aws",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6373-1 lxd - security update",
+          "date": "2026-06-28",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6372-1 tor - security update",
+          "date": "2026-06-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "postgresql",
+          "title": "pgtt v4.5 has been released",
+          "date": "2026-06-28",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-28T19:25:33.384Z",
       "logs": [
         "[INFO] aws - 1 patches, no changes",
@@ -19078,46 +19167,6 @@
           "severity": "CRITICAL"
         }
       ]
-    },
-    {
-      "timestamp": "2026-06-24T17:58:06.645Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] debian - 12 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 326 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 60 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 7 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 825,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "chrome",
-        "cloudflare",
-        "debian",
-        "github",
-        "redhat",
-        "cisco",
-        "edge",
-        "signal",
-        "postgresql",
-        "gcp",
-        "nodejs",
-        "ubuntu"
-      ],
-      "newPatches": []
     }
   ]
 }
