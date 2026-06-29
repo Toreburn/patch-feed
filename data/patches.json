@@ -1,7 +1,60 @@
 {
-  "lastUpdated": "2026-06-29T18:10:08.076Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-06-29T20:08:14.463Z",
+  "newPatches": 7,
   "patches": [
+    {
+      "title": "macOS 26.5.2",
+      "date": "2026-06-29",
+      "severity": "UNKNOWN",
+      "vendor": "apple",
+      "component": "macOS",
+      "description": "Security update with 0 CVEs fixed.",
+      "link": "https://support.apple.com/en-us/127595",
+      "cve": ""
+    },
+    {
+      "title": "iOS and iPadOS 26.5.2",
+      "date": "2026-06-29",
+      "severity": "UNKNOWN",
+      "vendor": "apple",
+      "component": "iOS / iPadOS",
+      "description": "Security update with 0 CVEs fixed.",
+      "link": "https://support.apple.com/en-us/127594",
+      "cve": ""
+    },
+    {
+      "title": "OpenAM OAuth Authorization Bypass via PKCE Challenge",
+      "date": "2026-06-29",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "org.openidentityplatform.openam:openam-oauth2",
+      "description": "OpenAM OAuth Authorization Bypass via PKCE Challenge",
+      "link": "https://github.com/advisories/GHSA-4v2w-2wqp-mc85",
+      "cve": "CVE-2026-48717",
+      "cvss": null
+    },
+    {
+      "title": "OpenAM OAuth Client Impersonation via JWKS Resolver Cache",
+      "date": "2026-06-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.openidentityplatform.openam:openam-oauth2",
+      "description": "OpenAM OAuth Client Impersonation via JWKS Resolver Cache",
+      "link": "https://github.com/advisories/GHSA-f2cx-463q-7m2c",
+      "cve": "CVE-2026-47426",
+      "cvss": null
+    },
+    {
+      "title": "OpenAM Authenticated RCE via Groovy Sandbox Escape",
+      "date": "2026-06-29",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.openidentityplatform.openam:openam-scripting",
+      "description": "OpenAM Authenticated RCE via Groovy Sandbox Escape",
+      "link": "https://github.com/advisories/GHSA-69j4-qvqr-hpw3",
+      "cve": "CVE-2026-47424",
+      "cvss": null
+    },
     {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
       "date": "2026-06-29",
@@ -462,6 +515,24 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53325.json",
       "cve": "CVE-2026-53325",
       "cvss": 5.5
+    },
+    {
+      "title": "USN-8480-1: SQLite vulnerabilities",
+      "date": "2026-06-29",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "SQLite vulnerabilities",
+      "description": "It was discovered that SQLite incorrectly handled certain memory operations\nin the FTS5 full-text search extension. An attacker could use this issue to\ncause SQLite to crash, resulting in a denial of ...",
+      "link": "https://ubuntu.com/security/notices/USN-8480-1"
+    },
+    {
+      "title": "USN-8479-1: libheif vulnerabilities",
+      "date": "2026-06-29",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libheif vulnerabilities",
+      "description": "It was discovered that libheif incorrectly handled certain crafted HEIF\nfiles. An attacker could possibly use this issue to cause a denial of\nservice or execute arbitrary code. (CVE-2026-47178)\n\nIt wa...",
+      "link": "https://ubuntu.com/security/notices/USN-8479-1"
     },
     {
       "title": "DSA-6373-1 lxd - security update",
@@ -11748,6 +11819,89 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-06-29T20:08:14.463Z",
+      "logs": [
+        "[SUCCESS] apple - 2 patches (2 new)",
+        "[INFO] aws - 1 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] debian - 11 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[SUCCESS] github - 204 patches (3 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] postgresql - 6 patches, no changes",
+        "[INFO] redhat - 491 patches, no changes",
+        "[INFO] signal - 7 patches, no changes",
+        "[SUCCESS] ubuntu - 14 patches (2 new)"
+      ],
+      "newPatchCount": 7,
+      "totalPatches": 1150,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "apple",
+        "github",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "debian",
+        "postgresql",
+        "chrome",
+        "edge",
+        "signal",
+        "cisco",
+        "gitlab",
+        "aws",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "apple",
+          "title": "macOS 26.5.2",
+          "date": "2026-06-29",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "apple",
+          "title": "iOS and iPadOS 26.5.2",
+          "date": "2026-06-29",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenAM OAuth Authorization Bypass via PKCE Challenge",
+          "date": "2026-06-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenAM OAuth Client Impersonation via JWKS Resolver Cache",
+          "date": "2026-06-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenAM Authenticated RCE via Groovy Sandbox Escape",
+          "date": "2026-06-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8480-1: SQLite vulnerabilities",
+          "date": "2026-06-29",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8479-1: libheif vulnerabilities",
+          "date": "2026-06-29",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-06-29T18:10:08.076Z",
       "logs": [
         "[INFO] aws - 1 patches, no changes",
@@ -18777,42 +18931,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-06-25T14:38:43.054Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 242 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 350 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 112 patches, no changes",
-        "[INFO] signal - 3 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 732,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "microsoft",
-        "chrome",
-        "cisco",
-        "github",
-        "gitlab",
-        "redhat",
-        "signal",
-        "aws",
-        "cloudflare",
-        "debian",
-        "edge",
-        "postgresql"
-      ],
-      "newPatches": []
     }
   ]
 }
