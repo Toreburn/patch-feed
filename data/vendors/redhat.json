@@ -1,16 +1,181 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-06-30T20:05:40.371Z",
+  "lastUpdated": "2026-07-01T04:22:48.772Z",
   "health": {
-    "lastFetchAttempt": "2026-06-30T20:05:40.371Z",
+    "lastFetchAttempt": "2026-07-01T04:22:48.772Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 556,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-30T20:05:40.371Z",
+    "lastFetchParsedItems": 537,
+    "lastFetchNewPatches": 19,
+    "lastSuccessWithData": "2026-07-01T04:22:48.772Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-13455: postgresql_anonymizer: PostgreSQL Anonymizer: Information Disclosure via brute-force attack on hash function",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "postgresql_anonymizer: PostgreSQL Anonymizer: Information Disclosure via brute-force attack on hash function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13455.json",
+      "cve": "CVE-2026-13455",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-53433: fzf: fzf: Denial of Service via inefficient HTTP body processing",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fzf: fzf: Denial of Service via inefficient HTTP body processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53433.json",
+      "cve": "CVE-2026-53433",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-53432: github.com/junegunn/fzf: fzf: Denial of Service via Integer Overflow in FuzzyMatchV2 function",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/junegunn/fzf: fzf: Denial of Service via Integer Overflow in FuzzyMatchV2 function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53432.json",
+      "cve": "CVE-2026-53432",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-12388: keycloak-broker: Keycloak: Privilege escalation to realm administrator via improper authorization in identity provider m",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-broker: Keycloak: Privilege escalation to realm administrator via improper authorization in identity provider mapper",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12388.json",
+      "cve": "CVE-2026-12388",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-14209: keycloak-admin-ui: keycloak-admin-ui: Keycloak: Admin UI extension brute-force-user endpoint bypasses FGAPv2 user view r",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-admin-ui: keycloak-admin-ui: Keycloak: Admin UI extension brute-force-user endpoint bypasses FGAPv2 user view restrictions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14209.json",
+      "cve": "CVE-2026-14209",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-49434: org.apache.activemq/activemq-broker: org.apache.activemq/activemq-core: org.apache.activemq/activemq-all: Apache ActiveM",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.activemq/activemq-broker: org.apache.activemq/activemq-core: org.apache.activemq/activemq-all: Apache ActiveMQ: Unauthorized broker instantiation via improper input validation in LDAP entri...",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-49434.json",
+      "cve": "CVE-2026-49434",
+      "cvss": 7.6
+    },
+    {
+      "title": "CVE-2026-49432: org.apache.activemq/activemq: org.apache.activemq/activemq-all: org.apache.activemq/activemq-stomp: Apache ActiveMQ: Den",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.activemq/activemq: org.apache.activemq/activemq-all: org.apache.activemq/activemq-stomp: Apache ActiveMQ: Denial of Service via improper input validation in STOMP connector",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-49432.json",
+      "cve": "CVE-2026-49432",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-50734: Apache ActiveMQ Client: Apache ActiveMQ: Apache ActiveMQ All: Apache ActiveMQ: Denial of Service via crafted WireFormatI",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Apache ActiveMQ Client: Apache ActiveMQ: Apache ActiveMQ All: Apache ActiveMQ: Denial of Service via crafted WireFormatInfo frame",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50734.json",
+      "cve": "CVE-2026-50734",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-50750: activemq: Apache ActiveMQ: Denial of Service via repeated BrokerInfo commands",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "activemq: Apache ActiveMQ: Denial of Service via repeated BrokerInfo commands",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50750.json",
+      "cve": "CVE-2026-50750",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-53916: Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp: Unbounded header buffer in STOMP NIO codec",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp: Unbounded header buffer in STOMP NIO codec",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53916.json",
+      "cve": "CVE-2026-53916",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-53917: activemq: activemq-all: activemq-client: activemq-broker: Apache ActiveMQ: Denial of Service via crafted OpenWire Messag",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "activemq: activemq-all: activemq-client: activemq-broker: Apache ActiveMQ: Denial of Service via crafted OpenWire Message",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53917.json",
+      "cve": "CVE-2026-53917",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-54475: org.apache.activemq/activemq-broker: org.apache.activemq/activemq-all: org.apache.activemq/activemq: Apache ActiveMQ: In",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.activemq/activemq-broker: org.apache.activemq/activemq-all: org.apache.activemq/activemq: Apache ActiveMQ: Information disclosure due to broken temporary destination isolation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54475.json",
+      "cve": "CVE-2026-54475",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-13149: brace-expansion: Brace-expansion: Denial of Service due to exponential-time complexity",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "brace-expansion: Brace-expansion: Denial of Service due to exponential-time complexity",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13149.json",
+      "cve": "CVE-2026-13149",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-45822: decode-uri-component: decode-uri-component: Denial of Service via crafted input",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "decode-uri-component: decode-uri-component: Denial of Service via crafted input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45822.json",
+      "cve": "CVE-2026-45822",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-12243: nltk: NLTK: Information disclosure via path traversal vulnerability",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nltk: NLTK: Information disclosure via path traversal vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12243.json",
+      "cve": "CVE-2026-12243",
+      "cvss": 7.5
+    },
     {
       "title": "CVE-2026-53325: kernel: agp/amd64: Fix broken error propagation in agp_amd64_probe()",
       "date": "2026-06-29",
@@ -153,6 +318,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41991.json",
       "cve": "CVE-2026-41991",
       "cvss": 6
+    },
+    {
+      "title": "CVE-2026-55607: Claude Code: @anthropic-ai/claude-code: Claude Code: Arbitrary code execution through git directory confusion",
+      "date": "2026-06-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Claude Code: @anthropic-ai/claude-code: Claude Code: Arbitrary code execution through git directory confusion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55607.json",
+      "cve": "CVE-2026-55607",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-46406: @anthropic-ai/claude-code: Claude Code: Information disclosure and file overwrite via insecure temporary file in /copy c",
+      "date": "2026-06-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@anthropic-ai/claude-code: Claude Code: Information disclosure and file overwrite via insecure temporary file in /copy command",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46406.json",
+      "cve": "CVE-2026-46406",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-13573: llvm: llvm: Denial of Service via stack-based buffer overflow in StringMap::insert",
+      "date": "2026-06-29",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "llvm: llvm: Denial of Service via stack-based buffer overflow in StringMap::insert",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13573.json",
+      "cve": "CVE-2026-13573",
+      "cvss": 3.3
     },
     {
       "title": "CVE-2026-13606: GraphicsMagick: GraphicsMagick: Memory corruption via crafted Photo CD (PCD) file",
@@ -945,6 +1143,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6658.json",
       "cve": "CVE-2026-6658",
       "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-57231: podman: Podman: Information disclosure via malicious container image environment variables",
+      "date": "2026-06-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "podman: Podman: Information disclosure via malicious container image environment variables",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57231.json",
+      "cve": "CVE-2026-57231",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-47770: jq: jq: Denial of Service via deeply nested array comparison",

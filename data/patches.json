@@ -1,7 +1,46 @@
 {
-  "lastUpdated": "2026-07-01T04:12:27.472Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-01T04:24:00.760Z",
+  "newPatches": 26,
   "patches": [
+    {
+      "title": "Chrome for Android Update",
+      "date": "2026-06-30",
+      "severity": "UNKNOWN",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "&nbsp;Hi, everyone! We've just released Chrome 150 (150.0.7871.63) for Android. It'll become available on Google Play over the next few days.&nbsp;This release includes stability and performance impro...",
+      "link": "https://chromereleases.googleblog.com/feeds/4700279404197442107/comments/default"
+    },
+    {
+      "title": "Stable Channel Update for Desktop",
+      "date": "2026-06-30",
+      "severity": "CRITICAL",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "The Chrome team is delighted to announce the promotion of Chrome 151 to the stable channel for Windows, Mac and Linux. This will roll out over the coming days/weeks.Chrome 150.0.7871.46 (Linux)&nbsp;1...",
+      "link": "https://chromereleases.googleblog.com/feeds/3524029030943773870/comments/default"
+    },
+    {
+      "title": "DSA-6374-1 nginx - security update",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "debian",
+      "component": "nginx",
+      "description": "Multiple vulnerabilities were discoverd in Nginx, a high-performance web and reverse proxy server, which could result in remote code execution, denial of service or memory disclosure. https://security...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00285.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "Microsoft Edge Security Update - June 30, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-06-30",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
+    },
     {
       "title": "Paymenter has race condition in payWithCredit() that enables credit double-spend",
       "date": "2026-06-30",
@@ -364,6 +403,28 @@
       "link": "https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
       "cve": "CVE-2026-49451",
       "cvss": 7.5
+    },
+    {
+      "title": "Open Babel has heap buffer overflow in SMILES OBSmilesParser::ParseSmiles",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openbabel",
+      "description": "Open Babel has heap buffer overflow in SMILES OBSmilesParser::ParseSmiles",
+      "link": "https://github.com/advisories/GHSA-j35x-w4gj-pf7w",
+      "cve": "CVE-2025-10996",
+      "cvss": 7.8
+    },
+    {
+      "title": "Open Babel has out-of-bounds write (overlapping memcpy) in zipstream basic_unzip_streambuf::underflow",
+      "date": "2026-06-30",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "openbabel",
+      "description": "Open Babel has out-of-bounds write (overlapping memcpy) in zipstream basic_unzip_streambuf::underflow",
+      "link": "https://github.com/advisories/GHSA-8j3x-m868-cpw8",
+      "cve": "CVE-2025-10995",
+      "cvss": 7.8
     },
     {
       "title": "CVE-2026-46245: drm/amd/display: Fix dc_link NULL handling in HPD init",
@@ -1266,6 +1327,171 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45500"
     },
     {
+      "title": "CVE-2026-13455: postgresql_anonymizer: PostgreSQL Anonymizer: Information Disclosure via brute-force attack on hash function",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "postgresql_anonymizer: PostgreSQL Anonymizer: Information Disclosure via brute-force attack on hash function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13455.json",
+      "cve": "CVE-2026-13455",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-53433: fzf: fzf: Denial of Service via inefficient HTTP body processing",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fzf: fzf: Denial of Service via inefficient HTTP body processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53433.json",
+      "cve": "CVE-2026-53433",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-53432: github.com/junegunn/fzf: fzf: Denial of Service via Integer Overflow in FuzzyMatchV2 function",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/junegunn/fzf: fzf: Denial of Service via Integer Overflow in FuzzyMatchV2 function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53432.json",
+      "cve": "CVE-2026-53432",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-12388: keycloak-broker: Keycloak: Privilege escalation to realm administrator via improper authorization in identity provider m",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-broker: Keycloak: Privilege escalation to realm administrator via improper authorization in identity provider mapper",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12388.json",
+      "cve": "CVE-2026-12388",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-14209: keycloak-admin-ui: keycloak-admin-ui: Keycloak: Admin UI extension brute-force-user endpoint bypasses FGAPv2 user view r",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-admin-ui: keycloak-admin-ui: Keycloak: Admin UI extension brute-force-user endpoint bypasses FGAPv2 user view restrictions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14209.json",
+      "cve": "CVE-2026-14209",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-49434: org.apache.activemq/activemq-broker: org.apache.activemq/activemq-core: org.apache.activemq/activemq-all: Apache ActiveM",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.activemq/activemq-broker: org.apache.activemq/activemq-core: org.apache.activemq/activemq-all: Apache ActiveMQ: Unauthorized broker instantiation via improper input validation in LDAP entri...",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-49434.json",
+      "cve": "CVE-2026-49434",
+      "cvss": 7.6
+    },
+    {
+      "title": "CVE-2026-49432: org.apache.activemq/activemq: org.apache.activemq/activemq-all: org.apache.activemq/activemq-stomp: Apache ActiveMQ: Den",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.activemq/activemq: org.apache.activemq/activemq-all: org.apache.activemq/activemq-stomp: Apache ActiveMQ: Denial of Service via improper input validation in STOMP connector",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-49432.json",
+      "cve": "CVE-2026-49432",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-50734: Apache ActiveMQ Client: Apache ActiveMQ: Apache ActiveMQ All: Apache ActiveMQ: Denial of Service via crafted WireFormatI",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Apache ActiveMQ Client: Apache ActiveMQ: Apache ActiveMQ All: Apache ActiveMQ: Denial of Service via crafted WireFormatInfo frame",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50734.json",
+      "cve": "CVE-2026-50734",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-50750: activemq: Apache ActiveMQ: Denial of Service via repeated BrokerInfo commands",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "activemq: Apache ActiveMQ: Denial of Service via repeated BrokerInfo commands",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50750.json",
+      "cve": "CVE-2026-50750",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-53916: Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp: Unbounded header buffer in STOMP NIO codec",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp: Unbounded header buffer in STOMP NIO codec",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53916.json",
+      "cve": "CVE-2026-53916",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-53917: activemq: activemq-all: activemq-client: activemq-broker: Apache ActiveMQ: Denial of Service via crafted OpenWire Messag",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "activemq: activemq-all: activemq-client: activemq-broker: Apache ActiveMQ: Denial of Service via crafted OpenWire Message",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53917.json",
+      "cve": "CVE-2026-53917",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-54475: org.apache.activemq/activemq-broker: org.apache.activemq/activemq-all: org.apache.activemq/activemq: Apache ActiveMQ: In",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.activemq/activemq-broker: org.apache.activemq/activemq-all: org.apache.activemq/activemq: Apache ActiveMQ: Information disclosure due to broken temporary destination isolation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54475.json",
+      "cve": "CVE-2026-54475",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-13149: brace-expansion: Brace-expansion: Denial of Service due to exponential-time complexity",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "brace-expansion: Brace-expansion: Denial of Service due to exponential-time complexity",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13149.json",
+      "cve": "CVE-2026-13149",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-45822: decode-uri-component: decode-uri-component: Denial of Service via crafted input",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "decode-uri-component: decode-uri-component: Denial of Service via crafted input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-45822.json",
+      "cve": "CVE-2026-45822",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-12243: nltk: NLTK: Information disclosure via path traversal vulnerability",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nltk: NLTK: Information disclosure via path traversal vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12243.json",
+      "cve": "CVE-2026-12243",
+      "cvss": 7.5
+    },
+    {
       "title": "USN-8482-1: Roundcube Webmail vulnerability",
       "date": "2026-06-30",
       "severity": "UNKNOWN",
@@ -1309,6 +1535,15 @@
       "component": "libssh2 vulnerabilities",
       "description": "It was discovered that libssh2 incorrectly handled the sftp_symlink()\nfunction. A malicious SSH server or machine-in-the-middle attacker could\npossibly use this issue to obtain sensitive information o...",
       "link": "https://ubuntu.com/security/notices/USN-8486-1"
+    },
+    {
+      "title": "USN-8487-1: curl vulnerabilities",
+      "date": "2026-06-30",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "curl vulnerabilities",
+      "description": "Andrew Nesbitt discovered that curl could reuse an existing live\nconnection during STARTTLS-based connection upgrades even when the TLS\nconfiguration did not match. A remote attacker could possibly us...",
+      "link": "https://ubuntu.com/security/notices/USN-8487-1"
     },
     {
       "title": "macOS 26.5.2",
@@ -1995,6 +2230,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41991.json",
       "cve": "CVE-2026-41991",
       "cvss": 6
+    },
+    {
+      "title": "CVE-2026-55607: Claude Code: @anthropic-ai/claude-code: Claude Code: Arbitrary code execution through git directory confusion",
+      "date": "2026-06-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Claude Code: @anthropic-ai/claude-code: Claude Code: Arbitrary code execution through git directory confusion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55607.json",
+      "cve": "CVE-2026-55607",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-46406: @anthropic-ai/claude-code: Claude Code: Information disclosure and file overwrite via insecure temporary file in /copy c",
+      "date": "2026-06-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@anthropic-ai/claude-code: Claude Code: Information disclosure and file overwrite via insecure temporary file in /copy command",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46406.json",
+      "cve": "CVE-2026-46406",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-13573: llvm: llvm: Denial of Service via stack-based buffer overflow in StringMap::insert",
+      "date": "2026-06-29",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "llvm: llvm: Denial of Service via stack-based buffer overflow in StringMap::insert",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13573.json",
+      "cve": "CVE-2026-13573",
+      "cvss": 3.3
     },
     {
       "title": "USN-8480-1: SQLite vulnerabilities",
@@ -5109,6 +5377,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6658.json",
       "cve": "CVE-2026-6658",
       "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-57231: podman: Podman: Information disclosure via malicious container image environment variables",
+      "date": "2026-06-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "podman: Podman: Information disclosure via malicious container image environment variables",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57231.json",
+      "cve": "CVE-2026-57231",
+      "cvss": 7.5
     },
     {
       "title": "Incus: CreateCustomVolumeFromBackup nil-pointer dereference on volume_snapshots[*].expires_at (sibling-field variant of GHSA-r7w7)",
@@ -8928,6 +9207,201 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-07-01T04:24:00.759Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] aws - 1 patches, no changes",
+        "[SUCCESS] chrome - 5 patches (2 new)",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 10 patches (1 new)",
+        "[SUCCESS] edge - 4 patches (1 new)",
+        "[SUCCESS] github - 173 patches (2 new)",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] postgresql - 6 patches, no changes",
+        "[SUCCESS] redhat - 286 patches (19 new)",
+        "[INFO] signal - 6 patches, no changes",
+        "[SUCCESS] ubuntu - 18 patches (1 new)"
+      ],
+      "newPatchCount": 26,
+      "totalPatches": 913,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "chrome",
+        "debian",
+        "edge",
+        "github",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "apple",
+        "aws",
+        "crowdstrike",
+        "postgresql",
+        "signal",
+        "cisco"
+      ],
+      "newPatches": [
+        {
+          "vendor": "chrome",
+          "title": "Chrome for Android Update",
+          "date": "2026-06-30",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "chrome",
+          "title": "Stable Channel Update for Desktop",
+          "date": "2026-06-30",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6374-1 nginx - security update",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - June 30, 2026",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open Babel has heap buffer overflow in SMILES OBSmilesParser::ParseSmiles",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open Babel has out-of-bounds write (overlapping memcpy) in zipstream basic_unzip_streambuf::underflow",
+          "date": "2026-06-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-13455: postgresql_anonymizer: PostgreSQL Anonymizer: Information Disclosure via brute-force attack on hash function",
+          "date": "2026-06-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53433: fzf: fzf: Denial of Service via inefficient HTTP body processing",
+          "date": "2026-06-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53432: github.com/junegunn/fzf: fzf: Denial of Service via Integer Overflow in FuzzyMatchV2 function",
+          "date": "2026-06-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-12388: keycloak-broker: Keycloak: Privilege escalation to realm administrator via improper authorization in identity provider m",
+          "date": "2026-06-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-14209: keycloak-admin-ui: keycloak-admin-ui: Keycloak: Admin UI extension brute-force-user endpoint bypasses FGAPv2 user view r",
+          "date": "2026-06-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-49434: org.apache.activemq/activemq-broker: org.apache.activemq/activemq-core: org.apache.activemq/activemq-all: Apache ActiveM",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-49432: org.apache.activemq/activemq: org.apache.activemq/activemq-all: org.apache.activemq/activemq-stomp: Apache ActiveMQ: Den",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50734: Apache ActiveMQ Client: Apache ActiveMQ: Apache ActiveMQ All: Apache ActiveMQ: Denial of Service via crafted WireFormatI",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50750: activemq: Apache ActiveMQ: Denial of Service via repeated BrokerInfo commands",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53916: Apache ActiveMQ, Apache ActiveMQ All, Apache ActiveMQ Stomp: Unbounded header buffer in STOMP NIO codec",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53917: activemq: activemq-all: activemq-client: activemq-broker: Apache ActiveMQ: Denial of Service via crafted OpenWire Messag",
+          "date": "2026-06-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-54475: org.apache.activemq/activemq-broker: org.apache.activemq/activemq-all: org.apache.activemq/activemq: Apache ActiveMQ: In",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-13149: brace-expansion: Brace-expansion: Denial of Service due to exponential-time complexity",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-45822: decode-uri-component: decode-uri-component: Denial of Service via crafted input",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-12243: nltk: NLTK: Information disclosure via path traversal vulnerability",
+          "date": "2026-06-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55607: Claude Code: @anthropic-ai/claude-code: Claude Code: Arbitrary code execution through git directory confusion",
+          "date": "2026-06-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46406: @anthropic-ai/claude-code: Claude Code: Information disclosure and file overwrite via insecure temporary file in /copy c",
+          "date": "2026-06-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-13573: llvm: llvm: Denial of Service via stack-based buffer overflow in StringMap::insert",
+          "date": "2026-06-29",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-57231: podman: Podman: Information disclosure via malicious container image environment variables",
+          "date": "2026-06-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8487-1: curl vulnerabilities",
+          "date": "2026-06-30",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-07-01T04:12:27.472Z",
       "logs": [
@@ -13972,44 +14446,6 @@
     },
     {
       "timestamp": "2026-06-26T23:10:02.066Z",
-      "logs": [
-        "[INFO] aws - 1 patches, no changes",
-        "[INFO] chrome - 6 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] debian - 15 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 201 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] postgresql - 6 patches, no changes",
-        "[INFO] redhat - 383 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 11 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1037,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "chrome",
-        "github",
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "signal",
-        "cisco",
-        "debian",
-        "edge",
-        "ubuntu",
-        "gitlab",
-        "aws",
-        "cloudflare"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-26T21:21:58.847Z",
       "logs": [
         "[INFO] aws - 1 patches, no changes",
         "[INFO] chrome - 6 patches, no changes",
