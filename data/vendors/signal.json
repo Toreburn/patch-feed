@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-07-02T14:20:23.748Z",
+  "lastUpdated": "2026-07-02T19:40:46.434Z",
   "health": {
-    "lastFetchAttempt": "2026-07-02T14:20:23.748Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-01T20:03:41.596Z",
-    "consecutiveEmptyFetches": 3,
+    "lastFetchAttempt": "2026-07-02T19:40:46.434Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-07-02T19:40:46.434Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "zebrad has mempool transaction admission denial via single-peer inbound queue saturation",
+      "date": "2026-07-02",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Am I affected\n\nYou are affected if:\n\n1. You run `zebrad` up to and including `v4.4.1`.\n2. Your node accepts inbound P2P connections (`network.listen_addr` is set, which is the default).\n3. Your no",
+      "link": "https://github.com/advisories/GHSA-4fc2-h7jh-287c",
+      "cves": [
+        "CVE-2026-52732"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Incus: CreateCustomVolumeFromBackup nil-pointer dereference on volume_snapshots[*].expires_at (sibling-field variant of GHSA-r7w7)",
       "date": "2026-06-26",
