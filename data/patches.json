@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-03T14:13:58.764Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-03T14:22:27.880Z",
+  "newPatches": 13,
   "patches": [
     {
       "title": "CVE-2026-53355: net: rds: clear i_sends on setup unwind",
@@ -226,6 +226,17 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-54998",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-54998"
+    },
+    {
+      "title": "CVE-2026-14544: HPLIP: Incomplete Fix for CVE-2026-8631",
+      "date": "2026-07-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "HPLIP: Incomplete Fix for CVE-2026-8631",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14544.json",
+      "cve": "CVE-2026-14544",
+      "cvss": 9.8
     },
     {
       "title": "ClamAV Vulnerabilities Affecting Cisco Products: July 2026",
@@ -1559,6 +1570,83 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-54891: erlang: Erlang SSL: Unauthenticated data injection during TLS handshake",
+      "date": "2026-07-02",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: Erlang SSL: Unauthenticated data injection during TLS handshake",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54891.json",
+      "cve": "CVE-2026-54891",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-54886: erlang: Erlang OTP ssh: Denial of Service via infinite loop in SFTP channel",
+      "date": "2026-07-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: Erlang OTP ssh: Denial of Service via infinite loop in SFTP channel",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54886.json",
+      "cve": "CVE-2026-54886",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-55952: erlang: Erlang/OTP: Denial of Service in TLS 1.3 session ticket handling",
+      "date": "2026-07-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: Erlang/OTP: Denial of Service in TLS 1.3 session ticket handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55952.json",
+      "cve": "CVE-2026-55952",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-54431: liboauth2: liboauth2: DPoP verifier accepts malformed proof with private key material",
+      "date": "2026-07-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "liboauth2: liboauth2: DPoP verifier accepts malformed proof with private key material",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54431.json",
+      "cve": "CVE-2026-54431",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-54430: liboauth2: liboauth2: Server-Side Request Forgery allows unauthorized internal network access",
+      "date": "2026-07-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "liboauth2: liboauth2: Server-Side Request Forgery allows unauthorized internal network access",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54430.json",
+      "cve": "CVE-2026-54430",
+      "cvss": 5.8
+    },
+    {
+      "title": "CVE-2026-9563: org.eclipse.parsson/parsson: Eclipse Parsson: Denial of Service via uncontrolled resource consumption in JSON parsing",
+      "date": "2026-07-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.eclipse.parsson/parsson: Eclipse Parsson: Denial of Service via uncontrolled resource consumption in JSON parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9563.json",
+      "cve": "CVE-2026-9563",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-38969: webrick: rubygem-webrick: WEBrick: Request smuggling via re-parsing of Content-Length header",
+      "date": "2026-07-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "webrick: rubygem-webrick: WEBrick: Request smuggling via re-parsing of Content-Length header",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-38969.json",
+      "cve": "CVE-2026-38969",
+      "cvss": 6.5
+    },
+    {
       "title": "zebrad has mempool transaction admission denial via single-peer inbound queue saturation",
       "date": "2026-07-02",
       "severity": "MEDIUM",
@@ -1680,6 +1768,15 @@
       "component": "Linux kernel (Raspberry Pi) vulnerabilities",
       "description": "It was discovered that some AMD processors did not properly clear data in\nthe floating point divider unit during speculative execution. A local\nattacker could use this to expose sensitive information....",
       "link": "https://ubuntu.com/security/notices/USN-8488-2"
+    },
+    {
+      "title": "USN-8503-1: ncurses vulnerability",
+      "date": "2026-07-02",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "ncurses",
+      "description": "It was discovered that ncurses incorrectly handled certain terminfo\nentries in the infocmp tool. An attacker could possibly use this issue\nto cause a denial of service via a crafted terminfo file.\n\nTh...",
+      "link": "https://ubuntu.com/security/notices/USN-8503-1"
     },
     {
       "title": "CVE-2026-13769 – Insecure file permissions in AWS CLI",
@@ -3293,6 +3390,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-15666.json",
       "cve": "CVE-2025-15666",
       "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-12480: keras: Keras: Information disclosure via malicious model archive with Virtual Dataset",
+      "date": "2026-07-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keras: Keras: Information disclosure via malicious model archive with Virtual Dataset",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12480.json",
+      "cve": "CVE-2026-12480",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-20216: ClamAV: ClamAV: Denial of Service via crafted InstallShield file",
+      "date": "2026-07-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ClamAV: ClamAV: Denial of Service via crafted InstallShield file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-20216.json",
+      "cve": "CVE-2026-20216",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-58038: timeline: EasyTimeline: Wikimedia Foundation Timeline: Cross-site Scripting vulnerability",
+      "date": "2026-07-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "timeline: EasyTimeline: Wikimedia Foundation Timeline: Cross-site Scripting vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58038.json",
+      "cve": "CVE-2026-58038",
+      "cvss": 3.7
     },
     {
       "title": "USN-8488-1: Linux kernel vulnerabilities",
@@ -5710,6 +5840,17 @@
       "cvss": 7.1
     },
     {
+      "title": "CVE-2026-13574: llvm: llvm-project: LLVM: Denial of service via heap-based buffer overflow in Bitcode File Handler",
+      "date": "2026-06-29",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "llvm: llvm-project: LLVM: Denial of service via heap-based buffer overflow in Bitcode File Handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13574.json",
+      "cve": "CVE-2026-13574",
+      "cvss": 3.3
+    },
+    {
       "title": "USN-8480-1: SQLite vulnerabilities",
       "date": "2026-06-29",
       "severity": "UNKNOWN",
@@ -6350,6 +6491,127 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-07-03T14:22:27.880Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 4 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 221 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 246 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 120 patches (12 new)",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 29 patches (1 new)"
+      ],
+      "newPatchCount": 13,
+      "totalPatches": 642,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "redhat",
+        "cisco",
+        "debian",
+        "edge",
+        "github",
+        "signal",
+        "ubuntu",
+        "aws",
+        "cloudflare",
+        "gitlab",
+        "chrome",
+        "apple",
+        "crowdstrike",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-14544: HPLIP: Incomplete Fix for CVE-2026-8631",
+          "date": "2026-07-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-54891: erlang: Erlang SSL: Unauthenticated data injection during TLS handshake",
+          "date": "2026-07-02",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-54886: erlang: Erlang OTP ssh: Denial of Service via infinite loop in SFTP channel",
+          "date": "2026-07-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55952: erlang: Erlang/OTP: Denial of Service in TLS 1.3 session ticket handling",
+          "date": "2026-07-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-54431: liboauth2: liboauth2: DPoP verifier accepts malformed proof with private key material",
+          "date": "2026-07-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-54430: liboauth2: liboauth2: Server-Side Request Forgery allows unauthorized internal network access",
+          "date": "2026-07-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-9563: org.eclipse.parsson/parsson: Eclipse Parsson: Denial of Service via uncontrolled resource consumption in JSON parsing",
+          "date": "2026-07-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-38969: webrick: rubygem-webrick: WEBrick: Request smuggling via re-parsing of Content-Length header",
+          "date": "2026-07-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-12480: keras: Keras: Information disclosure via malicious model archive with Virtual Dataset",
+          "date": "2026-07-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-20216: ClamAV: ClamAV: Denial of Service via crafted InstallShield file",
+          "date": "2026-07-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-58038: timeline: EasyTimeline: Wikimedia Foundation Timeline: Cross-site Scripting vulnerability",
+          "date": "2026-07-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-13574: llvm: llvm-project: LLVM: Denial of service via heap-based buffer overflow in Bitcode File Handler",
+          "date": "2026-06-29",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8503-1: ncurses vulnerability",
+          "date": "2026-07-02",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-07-03T14:13:58.764Z",
       "logs": [
@@ -12394,44 +12656,6 @@
     },
     {
       "timestamp": "2026-06-29T04:28:13.449Z",
-      "logs": [
-        "[INFO] aws - 1 patches, no changes",
-        "[INFO] chrome - 6 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 201 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 350 patches, no changes",
-        "[INFO] postgresql - 6 patches, no changes",
-        "[INFO] redhat - 431 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 11 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1032,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "postgresql",
-        "github",
-        "chrome",
-        "edge",
-        "redhat",
-        "signal",
-        "cisco",
-        "ubuntu",
-        "gitlab",
-        "aws",
-        "cloudflare"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-06-29T04:15:48.186Z",
       "logs": [
         "[INFO] aws - 1 patches, no changes",
         "[INFO] chrome - 6 patches, no changes",
