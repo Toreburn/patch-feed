@@ -1,16 +1,49 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-07-02T19:40:29.654Z",
+  "lastUpdated": "2026-07-03T03:47:22.480Z",
   "health": {
-    "lastFetchAttempt": "2026-07-02T19:40:29.654Z",
+    "lastFetchAttempt": "2026-07-03T03:47:22.480Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 348,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-02T19:40:29.654Z",
+    "lastFetchParsedItems": 183,
+    "lastFetchNewPatches": 23,
+    "lastSuccessWithData": "2026-07-03T03:47:22.480Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-11946: open62541: open62541: Denial of Service via unvalidated endpoint URL length",
+      "date": "2026-07-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "open62541: open62541: Denial of Service via unvalidated endpoint URL length",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-11946.json",
+      "cve": "CVE-2026-11946",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-53357: kernel: Bluetooth: fix UAF in l2cap_sock_cleanup_listen() vs l2cap_conn_del()",
+      "date": "2026-07-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Bluetooth: fix UAF in l2cap_sock_cleanup_listen() vs l2cap_conn_del()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53357.json",
+      "cve": "CVE-2026-53357",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-53358: kernel: Bluetooth: L2CAP: use chan timer to close channels in cleanup_listen()",
+      "date": "2026-07-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Bluetooth: L2CAP: use chan timer to close channels in cleanup_listen()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53358.json",
+      "cve": "CVE-2026-53358",
+      "cvss": 5.5
+    },
     {
       "title": "CVE-2026-58031: MediaWiki: MediaWiki: Cross-site scripting vulnerability due to improper input neutralization",
       "date": "2026-07-01",
@@ -540,6 +573,105 @@
       "cvss": null
     },
     {
+      "title": "CVE-2026-55153: com.mchange/mchange-commons-java: mchange-commons-java: Remote code execution via JNDI injection",
+      "date": "2026-07-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "com.mchange/mchange-commons-java: mchange-commons-java: Remote code execution via JNDI injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55153.json",
+      "cve": "CVE-2026-55153",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-14363: Cargo: Mediawiki Cargo Extension: SQL Injection vulnerability",
+      "date": "2026-07-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Cargo: Mediawiki Cargo Extension: SQL Injection vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14363.json",
+      "cve": "CVE-2026-14363",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-58517: wikilambda: WikiLambda Extension: Authentication bypass due to improper input neutralization",
+      "date": "2026-07-01",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wikilambda: WikiLambda Extension: Authentication bypass due to improper input neutralization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58517.json",
+      "cve": "CVE-2026-58517",
+      "cvss": 9.1
+    },
+    {
+      "title": "CVE-2026-53489: github.com/containerd/containerd: containerd: Arbitrary host file read via symlink following in CRI checkpoint restore",
+      "date": "2026-07-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "github.com/containerd/containerd: containerd: Arbitrary host file read via symlink following in CRI checkpoint restore",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53489.json",
+      "cve": "CVE-2026-53489",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-53492: github.com/containerd/containerd: containerd: Security bypass via Container Device Interface (CDI) annotation smuggling ",
+      "date": "2026-07-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "github.com/containerd/containerd: containerd: Security bypass via Container Device Interface (CDI) annotation smuggling during checkpoint restoration.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53492.json",
+      "cve": "CVE-2026-53492",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-50195: github.com/containerd/containerd: containerd: Arbitrary code execution via CRI checkpoint image tag poisoning",
+      "date": "2026-07-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "github.com/containerd/containerd: containerd: Arbitrary code execution via CRI checkpoint image tag poisoning",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50195.json",
+      "cve": "CVE-2026-50195",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-47262: github.com/containerd/containerd: containerd: Denial of Service via maliciously crafted image leading to unbounded group",
+      "date": "2026-07-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "github.com/containerd/containerd: containerd: Denial of Service via maliciously crafted image leading to unbounded group parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47262.json",
+      "cve": "CVE-2026-47262",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-46680: github.com/containerd/containerd: containerd: Privilege escalation via incorrect user ID handling",
+      "date": "2026-07-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "github.com/containerd/containerd: containerd: Privilege escalation via incorrect user ID handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46680.json",
+      "cve": "CVE-2026-46680",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2025-15666: assimp: Assimp: Heap-based buffer overflow via crafted model file",
+      "date": "2026-07-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "assimp: Assimp: Heap-based buffer overflow via crafted model file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-15666.json",
+      "cve": "CVE-2025-15666",
+      "cvss": 6.1
+    },
+    {
       "title": "CVE-2026-13455: postgresql_anonymizer: PostgreSQL Anonymizer: Information Disclosure via brute-force attack on hash function",
       "date": "2026-06-30",
       "severity": "MEDIUM",
@@ -780,6 +912,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14101.json",
       "cve": "CVE-2026-14101",
       "cvss": 5.7
+    },
+    {
+      "title": "CVE-2026-37106: DokuWiki: DokuWiki: Unauthorized account creation via registration function",
+      "date": "2026-06-30",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "DokuWiki: DokuWiki: Unauthorized account creation via registration function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-37106.json",
+      "cve": "CVE-2026-37106",
+      "cvss": 3.7
     },
     {
       "title": "CVE-2026-53325: kernel: agp/amd64: Fix broken error propagation in agp_amd64_probe()",
@@ -1814,6 +1957,116 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47214.json",
       "cve": "CVE-2026-47214",
       "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-48090: envoy: Envoy HTTP: OAuth2 filter late async token completion after stream teardown (UAF / crash risk)",
+      "date": "2026-06-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "envoy: Envoy HTTP: OAuth2 filter late async token completion after stream teardown (UAF / crash risk)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48090.json",
+      "cve": "CVE-2026-48090",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-47205: envoy: Envoy: ext_authz Use-After-Free during Stream Teardown with Per-Route Overrides",
+      "date": "2026-06-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "envoy: Envoy: ext_authz Use-After-Free during Stream Teardown with Per-Route Overrides",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47205.json",
+      "cve": "CVE-2026-47205",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-47692: envoy: Envoy: PROXY Protocol v2 header generator emits \"skipped\" TLVs, causing 65 KB attacker-controlled spillover into ",
+      "date": "2026-06-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "envoy: Envoy: PROXY Protocol v2 header generator emits \"skipped\" TLVs, causing 65 KB attacker-controlled spillover into the upstream application stream",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47692.json",
+      "cve": "CVE-2026-47692",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-48706: envoy: Envoy Heap Buffer Overflow in TcpStatsdSink",
+      "date": "2026-06-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "envoy: Envoy Heap Buffer Overflow in TcpStatsdSink",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48706.json",
+      "cve": "CVE-2026-48706",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-47204: envoy: Envoy: Denial of Service via Connect protocol request",
+      "date": "2026-06-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "envoy: Envoy: Denial of Service via Connect protocol request",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47204.json",
+      "cve": "CVE-2026-47204",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-47221: envoy: Envoy: Null pointer deref in internal redirects",
+      "date": "2026-06-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "envoy: Envoy: Null pointer deref in internal redirects",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47221.json",
+      "cve": "CVE-2026-47221",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-48743: envoy: Envoy: Request desynchronization allows security policy bypass via HTTP/3 to HTTP/1 translation",
+      "date": "2026-06-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "envoy: Envoy: Request desynchronization allows security policy bypass via HTTP/3 to HTTP/1 translation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48743.json",
+      "cve": "CVE-2026-48743",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-48044: Envoy: Envoy: Denial of Service via specially crafted zstd payload",
+      "date": "2026-06-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Envoy: Envoy: Denial of Service via specially crafted zstd payload",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48044.json",
+      "cve": "CVE-2026-48044",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-48042: envoy: Envoy: Denial of Service via deeply nested JSON objects",
+      "date": "2026-06-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "envoy: Envoy: Denial of Service via deeply nested JSON objects",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48042.json",
+      "cve": "CVE-2026-48042",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-47778: envoy: Envoy: Information disclosure via malicious certificate with NUL byte in DNS Subject Alternative Name (SAN)",
+      "date": "2026-06-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "envoy: Envoy: Information disclosure via malicious certificate with NUL byte in DNS Subject Alternative Name (SAN)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47778.json",
+      "cve": "CVE-2026-47778",
+      "cvss": 4.4
     },
     {
       "title": "CVE-2026-47770: jq: jq: Denial of Service via deeply nested array comparison",
