@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T23:07:13.333Z",
+  "lastUpdated": "2026-07-04T03:27:47.864Z",
   "newPatches": 0,
   "patches": [
     {
@@ -6455,42 +6455,51 @@
       "component": "QEMU regression",
       "description": "USN-8412-1 fixed vulnerabilities QEMU. On Ubuntu 20.04 LTS, the fix for\nCVE-2024-4467 was incomplete and prevented the creation of boot volumes\nfrom qcow2 images. This update fixes the problem.\n\nWe ap...",
       "link": "https://ubuntu.com/security/notices/USN-8412-3"
-    },
-    {
-      "title": "pnpm: Path traversal in configDependencies env lockfile allows symlink creation outside node_modules/.pnpm-config",
-      "date": "2026-06-27",
-      "severity": "HIGH",
-      "vendor": "github",
-      "component": "pnpm, pnpm",
-      "description": "pnpm: Path traversal in configDependencies env lockfile allows symlink creation outside node_modules/.pnpm-config",
-      "link": "https://github.com/advisories/GHSA-qrv3-253h-g69c",
-      "cve": "",
-      "cvss": 8.2
-    },
-    {
-      "title": "pnpm: `patch-remove` could delete project-selected files outside the patches directory",
-      "date": "2026-06-27",
-      "severity": "HIGH",
-      "vendor": "github",
-      "component": "pnpm, pnpm",
-      "description": "pnpm: `patch-remove` could delete project-selected files outside the patches directory",
-      "link": "https://github.com/advisories/GHSA-72r4-9c5j-mj57",
-      "cve": "",
-      "cvss": 7.1
-    },
-    {
-      "title": "pnpm: Hoisted install imports lockfile alias outside node_modules",
-      "date": "2026-06-27",
-      "severity": "HIGH",
-      "vendor": "github",
-      "component": "pnpm, pnpm",
-      "description": "pnpm: Hoisted install imports lockfile alias outside node_modules",
-      "link": "https://github.com/advisories/GHSA-fr4h-3cph-29xv",
-      "cve": "",
-      "cvss": 7.1
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-07-04T03:27:47.864Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 4 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 218 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 246 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 120 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 29 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 639,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "redhat",
+        "cisco",
+        "debian",
+        "edge",
+        "github",
+        "signal",
+        "ubuntu",
+        "aws",
+        "cloudflare",
+        "gitlab",
+        "chrome",
+        "apple",
+        "crowdstrike",
+        "postgresql"
+      ],
+      "newPatches": []
+    },
     {
       "timestamp": "2026-07-03T23:07:13.333Z",
       "logs": [
@@ -12005,44 +12014,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-06-29T18:10:08.076Z",
-      "logs": [
-        "[INFO] aws - 1 patches, no changes",
-        "[INFO] chrome - 6 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 201 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] postgresql - 6 patches, no changes",
-        "[INFO] redhat - 491 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 12 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1143,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "redhat",
-        "debian",
-        "postgresql",
-        "ubuntu",
-        "github",
-        "chrome",
-        "edge",
-        "signal",
-        "cisco",
-        "gitlab",
-        "aws",
-        "cloudflare"
-      ],
-      "newPatches": []
     }
   ]
 }
