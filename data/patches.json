@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-07-05T13:46:47.545Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-05T13:53:15.104Z",
+  "newPatches": 4,
   "patches": [
+    {
+      "title": "DSA-6379-1 bird3 - security update",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "bird3",
+      "description": "Multiple security vulnerabilities were discovered in the BIRD internet routing daemon, which could result in denial of service. https://security-tracker.debian.org/tracker/DSA-6379-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00290.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6378-1 chromium - security update",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6378-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00289.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "CVE-2026-14781: keycloak-services: keycloak-services: OIDC email_verified claim incorrectly applied to userinfo email",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: OIDC email_verified claim incorrectly applied to userinfo email",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14781.json",
+      "cve": "CVE-2026-14781",
+      "cvss": 4.8
+    },
     {
       "title": "DSA-6377-1 php8.4 - security update",
       "date": "2026-07-04",
@@ -5633,6 +5666,17 @@
       "cvss": 3.7
     },
     {
+      "title": "CVE-2026-14209: keycloak-admin-ui: keycloak-admin-ui:Admin UI extension brute-force-user endpoint bypasses FGAPv2 user view restrictions",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-admin-ui: keycloak-admin-ui:Admin UI extension brute-force-user endpoint bypasses FGAPv2 user view restrictions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14209.json",
+      "cve": "CVE-2026-14209",
+      "cvss": 4.3
+    },
+    {
       "title": "USN-8482-1: Roundcube Webmail vulnerability",
       "date": "2026-06-30",
       "severity": "UNKNOWN",
@@ -6456,6 +6500,71 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-07-05T13:53:15.104Z",
+      "logs": [
+        "[INFO] apple - 2 patches, no changes",
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 6 patches (2 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 218 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 242 patches, no changes",
+        "[SUCCESS] redhat - 126 patches (2 new)",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 29 patches, no changes"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 642,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "debian",
+        "redhat",
+        "microsoft",
+        "ubuntu",
+        "cisco",
+        "edge",
+        "github",
+        "signal",
+        "aws",
+        "cloudflare",
+        "gitlab",
+        "chrome",
+        "apple",
+        "crowdstrike"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6379-1 bird3 - security update",
+          "date": "2026-07-05",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6378-1 chromium - security update",
+          "date": "2026-07-05",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-14781: keycloak-services: keycloak-services: OIDC email_verified claim incorrectly applied to userinfo email",
+          "date": "2026-07-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-14209: keycloak-admin-ui: keycloak-admin-ui:Admin UI extension brute-force-user endpoint bypasses FGAPv2 user view restrictions",
+          "date": "2026-06-30",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-07-05T13:46:47.545Z",
       "logs": [
@@ -10936,44 +11045,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-07-01T12:35:59.571Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 1 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 10 patches, no changes",
-        "[INFO] edge - 4 patches, no changes",
-        "[INFO] github - 173 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] postgresql - 6 patches, no changes",
-        "[INFO] redhat - 286 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 18 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 913,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "chrome",
-        "debian",
-        "edge",
-        "github",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "apple",
-        "aws",
-        "crowdstrike",
-        "postgresql",
-        "signal",
-        "cisco"
-      ],
-      "newPatches": []
     }
   ]
 }
