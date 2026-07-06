@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-07-06T15:45:24.465Z",
+  "lastUpdated": "2026-07-06T20:06:09.334Z",
   "health": {
-    "lastFetchAttempt": "2026-07-06T15:45:24.465Z",
+    "lastFetchAttempt": "2026-07-06T20:06:09.334Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-06T15:45:24.465Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-07-06T20:06:09.334Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "`kill -1` is incorrectly parsed as a positional `pid = -1`; combined with the default SIGTERM this calls `kill(-1, SIGTERM)`, signaling nearly every process the caller can see. GNU `kill` recognizes `",
+      "link": "https://github.com/advisories/GHSA-p6rv-2qpm-fwvg",
+      "cves": [
+        "CVE-2026-35369"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "chmod: recursive mode returns exit code 0 even when some files fail (last-file-wins)",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "In `Chmoder::chmod()` the recursive branch overwrites the running result instead of accumulating it, so the exit code reflects only the *last* file processed:\n\n```\nif self.recursive {\n    r = self.wal",
+      "link": "https://github.com/advisories/GHSA-4x34-chg5-mwjj",
+      "cves": [
+        "CVE-2026-35339"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "zebrad has mempool transaction admission denial via single-peer inbound queue saturation",
       "date": "2026-07-02",

@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-06T20:01:59.607Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-06T20:07:21.686Z",
+  "newPatches": 21,
   "patches": [
     {
       "title": "Cisco Catalyst Center Arbitrary File Read Vulnerability",
@@ -11,6 +11,214 @@
       "description": "A vulnerability in Cisco Catalyst Center could allow an unauthenticated, remote attacker to read arbitrary files from a restricted container.&nbsp; This vulnerability is due to insufficient validation...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-catc-file-read-wLH2vf8X",
       "cve": "CVE-2026-20191"
+    },
+    {
+      "title": "Cisco Identity Services Engine Remote Code Execution and Information Disclosure Vulnerabilities",
+      "date": "2026-07-06",
+      "severity": "CRITICAL",
+      "vendor": "cisco",
+      "component": "Identity Services",
+      "description": "Multiple vulnerabilities in Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) could allow a remote attacker to achieve remote code execution or conduct informatio...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-G5WP8vv",
+      "cve": "CVE-2026-20181"
+    },
+    {
+      "title": "id: pretty-print uses effective GID instead of effective UID for name lookup",
+      "date": "2026-07-06",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "uu_id",
+      "description": "id: pretty-print uses effective GID instead of effective UID for name lookup",
+      "link": "https://github.com/advisories/GHSA-xv5w-cw7x-72gj",
+      "cve": "CVE-2026-35371",
+      "cvss": 3.3
+    },
+    {
+      "title": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "uu_kill",
+      "description": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
+      "link": "https://github.com/advisories/GHSA-p6rv-2qpm-fwvg",
+      "cve": "CVE-2026-35369",
+      "cvss": 5.5
+    },
+    {
+      "title": "install -D: symlink race in directory creation allows arbitrary file overwrite",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "uu_install",
+      "description": "install -D: symlink race in directory creation allows arbitrary file overwrite",
+      "link": "https://github.com/advisories/GHSA-gwm6-q8ch-hcfr",
+      "cve": "CVE-2026-35356",
+      "cvss": 6.3
+    },
+    {
+      "title": "cut: -s (only-delimited) ignored when delimiter is a newline",
+      "date": "2026-07-06",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "uu_cut",
+      "description": "cut: -s (only-delimited) ignored when delimiter is a newline",
+      "link": "https://github.com/advisories/GHSA-wv33-5pxh-r7j7",
+      "cve": "CVE-2026-35343",
+      "cvss": 3.3
+    },
+    {
+      "title": "install: TOCTOU symlink race (unlink-then-create without O_EXCL) allows arbitrary file overwrite",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "uu_install",
+      "description": "install: TOCTOU symlink race (unlink-then-create without O_EXCL) allows arbitrary file overwrite",
+      "link": "https://github.com/advisories/GHSA-239g-2685-54x3",
+      "cve": "CVE-2026-35355",
+      "cvss": 6.3
+    },
+    {
+      "title": "ln: rejects non-UTF-8 source filenames in target-directory mode",
+      "date": "2026-07-06",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "uu_ln",
+      "description": "ln: rejects non-UTF-8 source filenames in target-directory mode",
+      "link": "https://github.com/advisories/GHSA-jcjr-rh8q-7xqf",
+      "cve": "CVE-2026-35373",
+      "cvss": 3.3
+    },
+    {
+      "title": "comm: lossy UTF-8 conversion silently corrupts non-UTF-8 output",
+      "date": "2026-07-06",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "uu_comm",
+      "description": "comm: lossy UTF-8 conversion silently corrupts non-UTF-8 output",
+      "link": "https://github.com/advisories/GHSA-6gcw-w7cp-94g9",
+      "cve": "CVE-2026-35346",
+      "cvss": 3.3
+    },
+    {
+      "title": "mktemp: empty TMPDIR creates temp files in CWD instead of /tmp",
+      "date": "2026-07-06",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "uu_mktemp",
+      "description": "mktemp: empty TMPDIR creates temp files in CWD instead of /tmp",
+      "link": "https://github.com/advisories/GHSA-2w8r-9xj7-69j5",
+      "cve": "CVE-2026-35342",
+      "cvss": 3.3
+    },
+    {
+      "title": "chmod: recursive mode returns exit code 0 even when some files fail (last-file-wins)",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "uu_chmod",
+      "description": "chmod: recursive mode returns exit code 0 even when some files fail (last-file-wins)",
+      "link": "https://github.com/advisories/GHSA-4x34-chg5-mwjj",
+      "cve": "CVE-2026-35339",
+      "cvss": 5.5
+    },
+    {
+      "title": "chmod: --preserve-root bypassed by any path that resolves to root (e.g. /../)",
+      "date": "2026-07-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "uu_chmod",
+      "description": "chmod: --preserve-root bypassed by any path that resolves to root (e.g. /../)",
+      "link": "https://github.com/advisories/GHSA-4c7q-4928-8445",
+      "cve": "CVE-2026-35338",
+      "cvss": 7.3
+    },
+    {
+      "title": "flyto-core has Unauthenticated Command Execution via HTTP MCP `execute_module`",
+      "date": "2026-07-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flyto-core",
+      "description": "flyto-core has Unauthenticated Command Execution via HTTP MCP `execute_module`",
+      "link": "https://github.com/advisories/GHSA-h9f9-h6gm-wc85",
+      "cve": "CVE-2026-55786",
+      "cvss": 8.4
+    },
+    {
+      "title": "flyto-core has SSRF guard bypass via IPv6 transition addresses (IPv4-mapped / 6to4 / NAT64) in validate_url_ssrf",
+      "date": "2026-07-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flyto-core",
+      "description": "flyto-core has SSRF guard bypass via IPv6 transition addresses (IPv4-mapped / 6to4 / NAT64) in validate_url_ssrf",
+      "link": "https://github.com/advisories/GHSA-794r-5rp2-fpg8",
+      "cve": "CVE-2026-55787",
+      "cvss": 7.1
+    },
+    {
+      "title": "Scriban: Template Writes to Arbitrary CLR Properties via `TypedObjectAccessor` (Mass Assignment + `private` / `init` / `internal` Setter Bypass)",
+      "date": "2026-07-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "Scriban",
+      "description": "Scriban: Template Writes to Arbitrary CLR Properties via `TypedObjectAccessor` (Mass Assignment + `private` / `init` / `internal` Setter Bypass)",
+      "link": "https://github.com/advisories/GHSA-7jvp-hj45-2f2m",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "WeasyPrint has CSS Injection via Presentational Hints",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "weasyprint",
+      "description": "WeasyPrint has CSS Injection via Presentational Hints",
+      "link": "https://github.com/advisories/GHSA-jhhc-3hcp-qhm5",
+      "cve": "CVE-2026-49452",
+      "cvss": 6.5
+    },
+    {
+      "title": "Cilium vulnerable to sensitive information disclosure and cluster disruption via local Envoy admin socket access",
+      "date": "2026-07-06",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/cilium/cilium, github.com/cilium/cilium, github.com/cilium/cilium",
+      "description": "Cilium vulnerable to sensitive information disclosure and cluster disruption via local Envoy admin socket access",
+      "link": "https://github.com/advisories/GHSA-3fcv-jvfp-m4q9",
+      "cve": "CVE-2026-49445",
+      "cvss": 9.2
+    },
+    {
+      "title": "OpenRemote read-only asset users can write predicted datapoints",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "io.openremote:openremote-manager",
+      "description": "OpenRemote read-only asset users can write predicted datapoints",
+      "link": "https://github.com/advisories/GHSA-xj53-j257-hxvg",
+      "cve": "CVE-2026-49439",
+      "cvss": 4.3
+    },
+    {
+      "title": "Formie Hidden field defaults vulnerable to Server-Side Template Injection",
+      "date": "2026-07-06",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "verbb/formie",
+      "description": "Formie Hidden field defaults vulnerable to Server-Side Template Injection",
+      "link": "https://github.com/advisories/GHSA-565m-g33j-jq96",
+      "cve": "CVE-2026-52889",
+      "cvss": 9.8
+    },
+    {
+      "title": "Open Babel has out-of-bounds write in MOPAC translationVectors[] (UNIT CELL TRANSLATION)",
+      "date": "2026-07-06",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "openbabel",
+      "description": "Open Babel has out-of-bounds write in MOPAC translationVectors[] (UNIT CELL TRANSLATION)",
+      "link": "https://github.com/advisories/GHSA-55f6-pf8r-c2f4",
+      "cve": "CVE-2022-46292",
+      "cvss": 7.8
     },
     {
       "title": "PostgreSQL JDBC 42.7.12 Security Release",
@@ -42,6 +250,36 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9165.json",
       "cve": "CVE-2026-9165",
       "cvss": 7.7
+    },
+    {
+      "title": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "`kill -1` is incorrectly parsed as a positional `pid = -1`; combined with the default SIGTERM this calls `kill(-1, SIGTERM)`, signaling nearly every process the caller can see. GNU `kill` recognizes `",
+      "link": "https://github.com/advisories/GHSA-p6rv-2qpm-fwvg",
+      "cves": [
+        "CVE-2026-35369"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "chmod: recursive mode returns exit code 0 even when some files fail (last-file-wins)",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "In `Chmoder::chmod()` the recursive branch overwrites the running result instead of accumulating it, so the exit code reflects only the *last* file processed:\n\n```\nif self.recursive {\n    r = self.wal",
+      "link": "https://github.com/advisories/GHSA-4x34-chg5-mwjj",
+      "cves": [
+        "CVE-2026-35339"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
     },
     {
       "title": "USN-8492-3: Linux kernel (Raspberry Pi Real-time) vulnerabilities",
@@ -6549,6 +6787,171 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-06T20:07:21.686Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[SUCCESS] cisco - 7 patches (1 new)",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] debian - 8 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[SUCCESS] github - 232 patches (18 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 242 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[INFO] redhat - 124 patches, no changes",
+        "[SUCCESS] signal - 3 patches (2 new)",
+        "[INFO] ubuntu - 38 patches, no changes"
+      ],
+      "newPatchCount": 21,
+      "totalPatches": 669,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "cisco",
+        "github",
+        "postgresql",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "debian",
+        "microsoft",
+        "edge",
+        "aws",
+        "cloudflare",
+        "gitlab",
+        "chrome"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Cisco Identity Services Engine Remote Code Execution and Information Disclosure Vulnerabilities",
+          "date": "2026-07-06",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "id: pretty-print uses effective GID instead of effective UID for name lookup",
+          "date": "2026-07-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "install -D: symlink race in directory creation allows arbitrary file overwrite",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "cut: -s (only-delimited) ignored when delimiter is a newline",
+          "date": "2026-07-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "install: TOCTOU symlink race (unlink-then-create without O_EXCL) allows arbitrary file overwrite",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "ln: rejects non-UTF-8 source filenames in target-directory mode",
+          "date": "2026-07-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "comm: lossy UTF-8 conversion silently corrupts non-UTF-8 output",
+          "date": "2026-07-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "mktemp: empty TMPDIR creates temp files in CWD instead of /tmp",
+          "date": "2026-07-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "chmod: recursive mode returns exit code 0 even when some files fail (last-file-wins)",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "chmod: --preserve-root bypassed by any path that resolves to root (e.g. /../)",
+          "date": "2026-07-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "flyto-core has Unauthenticated Command Execution via HTTP MCP `execute_module`",
+          "date": "2026-07-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "flyto-core has SSRF guard bypass via IPv6 transition addresses (IPv4-mapped / 6to4 / NAT64) in validate_url_ssrf",
+          "date": "2026-07-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Scriban: Template Writes to Arbitrary CLR Properties via `TypedObjectAccessor` (Mass Assignment + `private` / `init` / `internal` Setter Bypass)",
+          "date": "2026-07-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "WeasyPrint has CSS Injection via Presentational Hints",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Cilium vulnerable to sensitive information disclosure and cluster disruption via local Envoy admin socket access",
+          "date": "2026-07-06",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenRemote read-only asset users can write predicted datapoints",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Formie Hidden field defaults vulnerable to Server-Side Template Injection",
+          "date": "2026-07-06",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Open Babel has out-of-bounds write in MOPAC translationVectors[] (UNIT CELL TRANSLATION)",
+          "date": "2026-07-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "signal",
+          "title": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "signal",
+          "title": "chmod: recursive mode returns exit code 0 even when some files fail (last-file-wins)",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-07-06T20:01:59.607Z",
       "logs": [
         "[INFO] aws - 3 patches, no changes",
@@ -10556,48 +10959,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-07-02T19:34:50.732Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 4 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 197 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 300 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[INFO] redhat - 164 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 19 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 716,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "github",
-        "ubuntu",
-        "aws",
-        "cisco",
-        "cloudflare",
-        "gitlab",
-        "redhat",
-        "chrome",
-        "debian",
-        "edge",
-        "microsoft",
-        "apple",
-        "crowdstrike",
-        "postgresql",
-        "signal"
-      ],
-      "newPatches": []
     }
   ]
 }
