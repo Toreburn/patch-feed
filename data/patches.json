@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-06T03:53:23.686Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-06T04:06:01.605Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "DSA-6379-1 bird3 - security update",
@@ -21,6 +21,28 @@
       "component": "chromium",
       "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6378-1",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00289.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6381-1 linux - security update",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "linux",
+      "description": "Several vulnerabilities have been discovered in the Linux kernel that may lead to a privilege escalation, denial of service or information leaks. https://security-tracker.debian.org/tracker/DSA-6381-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00292.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6380-1 mediawiki - security update",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "mediawiki",
+      "description": "Multiple security issues were discovered in MediaWiki, a website engine for collaborative work, which could result in information disclosure, code execution via unsafe deserialisation or cross-site sc...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00291.html",
       "cve": "",
       "cves": []
     },
@@ -5763,6 +5785,57 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-06T04:06:01.605Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] debian - 8 patches (2 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 214 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 192 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 108 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 26 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 567,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "debian",
+        "postgresql",
+        "redhat",
+        "microsoft",
+        "ubuntu",
+        "cisco",
+        "edge",
+        "github",
+        "signal",
+        "aws",
+        "cloudflare",
+        "gitlab",
+        "chrome"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6381-1 linux - security update",
+          "date": "2026-07-05",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6380-1 mediawiki - security update",
+          "date": "2026-07-05",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-07-06T03:53:23.685Z",
       "logs": [
         "[INFO] aws - 3 patches, no changes",
@@ -9413,583 +9486,6 @@
         "signal"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-02T04:03:19.338Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 4 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[SUCCESS] github - 195 patches (43 new)",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 300 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[SUCCESS] redhat - 150 patches (46 new)",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 16 patches, no changes"
-      ],
-      "newPatchCount": 89,
-      "totalPatches": 697,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "aws",
-        "cisco",
-        "cloudflare",
-        "github",
-        "gitlab",
-        "redhat",
-        "ubuntu",
-        "chrome",
-        "debian",
-        "edge",
-        "microsoft",
-        "apple",
-        "crowdstrike",
-        "postgresql",
-        "signal"
-      ],
-      "newPatches": [
-        {
-          "vendor": "github",
-          "title": "OpenClaw MCP SSE redirects could forward Authorization headers",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Apify Model Context Protocol (MCP) server: Actor MCP path authority injection leaks Apify token",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "goshs: Share-link ?token=… redemption races past download limit",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Cache-poisoning XSS in Ghost frontend via x-ghost-preview header",
-          "date": "2026-07-01",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "goshs: WebDAV listener ignores --read-only, --upload-only, and --no-delete mode flags",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "ORAS Go forwards registry credentials across registry redirects",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OnGres SCRAM silent channel-binding authentication downgrade via unsupported certificate algorithms",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "`oras-go` tar extraction: Hardlink entry with relative Linkname escapes extract dir via process CWD resolution",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "oras-go has file store write outside workingDir via symlink traversal",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "oras-go blob upload vulnerable to credential forwarding via unvalidated Location header",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Keycloak has privilege escalation via improper scope mapping enforcement",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "oras-go: Malicious registry can hijack Bearer token realm to exfiltrate credentials and refresh tokens",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Rancher has Privilege Escalation from Project Owner to Host",
-          "date": "2026-07-01",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Mailpit: Sibling-endpoint memory-exhaustion DoS via unbounded JSON body on /api/v1/messages, /api/v1/tags, and /api/v1/message/{id}/release (incomplete fix of GHSA-fpxj-m5q8-fphw)",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "@hey-api/openapi-ts's `buildClientParams` template: prototype chain substitution via unknown `$<slot>___proto__` key",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Rancher has over-inclusive team membership expansion in GitHub App authentication provider",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Rancher Fleet vulnerable to cross namespace secret disclosure via unvalidated `valuesFrom` references in Helm Deployer",
-          "date": "2026-07-01",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Rancher Fleet has SSRF in Bundle Reader via Unvalidated Helm Repository URL in fleet.yaml",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Rancher vulnerable to command injection through unsanitized YAML parameter",
-          "date": "2026-07-01",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Rancher Fleet has Unauthenticated Webhook: Regex Injection via Unsanitized Repository URL Components",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Fleet has PSS Bypass through addLabelsFromOptions in Fleet Agent",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "QUIC has Broken TLS verification",
-          "date": "2026-07-01",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "land.oras:oras-java-sdk: Symlink-based path traversal in ArchiveUtils.untar / unzip allows arbitrary file write outside extraction directory",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Centrifugo's dynamic JWKS key cache keyed only by `kid` allows cross-issuer JWT authentication bypass",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: Edge PERMISSIONS FOR delete bypassed when a connected node is deleted",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: ES512 silently downgraded to ES384 due to jsonwebtoken crate limitation",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: Field-level SELECT permissions bypassed via indexed COUNT fast paths",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: USE NS/DB implicit creation bypasses DEFINE authorization",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: Port-specific --deny-net rules silently bypassed on HTTP redirect",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: Authenticated subscribers can read records hidden by SELECT permissions via LIVE subscriptions",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: `RELATE` overwrites existing edge records without `UPDATE` permission",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB has bypass of field-level SELECT permissions through JSON Patch `copy` and `move` with empty `from`",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: Authenticated callers can read fields hidden by field-level SELECT permissions via error messages",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: LIVE query subscriptions survive session state changes, bypassing access controls",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB vulnerable to pre-auth memory amplification via unbounded `/sql` WebSocket frames",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: Authorization Bypass in KILL Statement Allows Termination of Other Users' Live Queries",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: Crafting malicious LIVE queries writes to the database, resulting in DoS, without permission to the table required",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB has an Authorization Bypass via Composite Record-id Paths",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: Graph traversal bypasses table SELECT permissions",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB: Scraping a TABLE with no available PERMISSIONS to current auth level",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB vulnerable to Denial of Service due to nested types annotations",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB has unauthenticated remote DoS via malformed RPC `use` call",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "SurrealDB has Denial of Service in JSON parser due to nested objects",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-58031: MediaWiki: MediaWiki: Cross-site scripting vulnerability due to improper input neutralization",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-5138: foreman: Foreman: Information disclosure via improper validation of nested request parameters",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-5136: foreman: Foreman: Privilege escalation to administrator-level access via usergroup role assignment manipulation",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-56016: perl-CGI-Session: perl-CGI-Session: Authentication bypass via predictable session IDs",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53488: github.com/containerd/containerd: containerd: Host-root command execution via unvalidated image config labels in CRI plu",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-14324: pipewire: RAOP RTSP NULL Deref",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-14330: pipewire: Pulse Server alloca Stack Overflow",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53333: kernel: mm/mincore: handle non-swap entries before !CONFIG_SWAP guard",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53353: kernel: hsr: Remove WARN_ONCE() in hsr_addr_is_self()",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53349: kernel: netfilter: nf_conntrack: destroy stale expectfn expectations on unregister",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53352: kernel: signal: clear JOBCTL_PENDING_MASK for caller in zap_other_threads()",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53338: kernel: net: airoha: Add NULL check for of_reserved_mem_lookup() in airoha_qdma_init_hfwd_queues()",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53348: kernel: ASoC: SDCA: fix NULL pointer dereference in sdca_dev_unregister_functions",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53343: kernel: ARM: 9475/1: entry: use byte load for KASAN VMAP stack shadow",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53334: kernel: mm/damon/reclaim: handle ctx allocation failure",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53344: kernel: pinctrl: mcp23s08: Initialize mcp->dev and mcp->addr before regmap init",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53345: kernel: KVM: Don't WARN if memory is dirtied without a vCPU when the VM is dying",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53341: kernel: fhandle: fix UAF due to unlocked ->mnt_ns read in may_decode_fh()",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53354: kernel: arm64: errata: Mitigate TLBI errata on various Arm CPUs",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53351: kernel: riscv/ptrace: Use USER_REGSET_NOTE_TYPE for REGSET_CFI",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53329: kernel: drm/amd/display: Use krealloc_array() in dal_vector_reserve()",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53355: kernel: net: rds: clear i_sends on setup unwind",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53328: kernel: sched_ext: Don't warn on NULL cgrp_moving_from in scx_cgroup_move_task()",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53332: kernel: slimbus: qcom-ngd-ctrl: Register callbacks after creating the ngd",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53342: kernel: arm64: mm: call pagetable dtor when freeing hot-removed page tables",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53335: kernel: mm/damon/lru_sort: handle ctx allocation failure",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53326: kernel: debugobjects: Don't call fill_pool() in early boot hardirq context",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53339: kernel: i2c: qcom-cci: Fix NULL pointer dereference in cci_remove()",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53356: kernel: drm/i915/gem: Fix phys BO pread/pwrite with offset",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53331: kernel: slimbus: qcom-ngd-ctrl: Avoid ABBA on tx_lock/ctrl->lock",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53327: kernel: debugobjects: Do not fill_pool() if pi_blocked_on",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53336: kernel: nvmem: layouts: onie-tlv: fix hang on unknown types",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53350: kernel: ASoC: wm_adsp: Fix NULL dereference when removing firmware controls",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53347: kernel: drm/virtio: Fix driver removal with disabled KMS",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53340: kernel: i2c: imx: fix clock and pinctrl state inconsistency in runtime PM",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53330: kernel: drm/amd/display: Fix out-of-bounds read in dp_get_eq_aux_rd_interval()",
-          "date": "2026-07-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-53337: kernel: net: bonding: fix NULL pointer dereference in bond_do_ioctl()",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-14101: chromium-browser: chromium-browser: Insufficient policy enforcement in Sandbox",
-          "date": "2026-06-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54672: electron-updater: app-builder-lib: Electron-updater: Arbitrary code execution through AppImage library loading vulnerabi",
-          "date": "2026-06-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54673: electron-updater: electron-builder: Electron-updater: Information disclosure via unstripped credential headers during HT",
-          "date": "2026-06-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-56377: Imagemagick: ImageMagick - Policy Bypass via Incorrect Path Validation",
-          "date": "2026-06-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-56365: Magick.NET-Q16-AnyCPU: Magick.NET-Q16-HDRI-AnyCPU: Magick.NET-Q16-HDRI-OpenMP-arm64: Magick.NET-Q16-HDRI-arm64: Magick.N",
-          "date": "2026-06-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54371: attr: Symlink Traversal Privilege Escalation via getfattr and setfattr",
-          "date": "2026-06-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-13500: antlr: ANTLR4: Remote code injection vulnerability",
-          "date": "2026-06-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-13484: mlflow: MLflow: Unauthorized access and data manipulation via missing API authorization",
-          "date": "2026-06-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-44018: docling: Docling: Denial of Service via crafted document archives",
-          "date": "2026-06-26",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
