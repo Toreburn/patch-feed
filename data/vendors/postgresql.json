@@ -1,16 +1,36 @@
 {
   "vendor": "postgresql",
-  "lastUpdated": "2026-07-06T04:04:31.985Z",
+  "lastUpdated": "2026-07-06T10:48:58.481Z",
   "health": {
-    "lastFetchAttempt": "2026-07-06T04:04:31.985Z",
+    "lastFetchAttempt": "2026-07-06T10:48:58.481Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-06T04:04:31.985Z",
+    "lastFetchParsedItems": 5,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-07-06T10:48:58.481Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "PostgreSQL JDBC 42.7.12 Security Release",
+      "date": "2026-07-06",
+      "severity": "LOW",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "Silent channel-binding authentication downgrade (CVE-2026-54291) channelBinding=require connections can be silently downgraded from SCRAM-SHA-256-PLUS (with channel binding) to plain SCRAM-SHA-256 (wi...",
+      "link": "https://www.postgresql.org/about/news/postgresql-jdbc-42712-security-release-3340/",
+      "cve": "CVE-2026-54291"
+    },
+    {
+      "title": "CloudNativePG 1.30.0 Released!",
+      "date": "2026-07-06",
+      "severity": "HIGH",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "The CloudNativePG Community is excited to announce the immediate availability of CloudNativePG 1.30.0 ! This minor release introduces the new DatabaseRole CRD for declarative, GitOps-friendly PostgreS...",
+      "link": "https://www.postgresql.org/about/news/cloudnativepg-1300-released-3337/",
+      "cve": "CVE-2026-55769"
+    },
     {
       "title": "pg_dbms_errlog v2.4 released",
       "date": "2026-07-05",

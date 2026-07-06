@@ -1,16 +1,466 @@
 {
   "vendor": "microsoft",
-  "lastUpdated": "2026-07-06T04:04:24.284Z",
+  "lastUpdated": "2026-07-06T10:48:46.920Z",
   "health": {
-    "lastFetchAttempt": "2026-07-06T04:04:24.284Z",
+    "lastFetchAttempt": "2026-07-06T10:48:46.920Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-06T04:04:24.284Z",
+    "lastFetchNewPatches": 50,
+    "lastSuccessWithData": "2026-07-06T10:48:46.920Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-53355: net: rds: clear i_sends on setup unwind",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53355",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53355"
+    },
+    {
+      "title": "CVE-2026-53347: drm/virtio: Fix driver removal with disabled KMS",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53347",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53347"
+    },
+    {
+      "title": "CVE-2026-53343: ARM: 9475/1: entry: use byte load for KASAN VMAP stack shadow",
+      "date": "2026-07-05",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53343",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53343"
+    },
+    {
+      "title": "CVE-2026-53329: drm/amd/display: Use krealloc_array() in dal_vector_reserve()",
+      "date": "2026-07-05",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53329",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53329"
+    },
+    {
+      "title": "CVE-2026-53352: signal: clear JOBCTL_PENDING_MASK for caller in zap_other_threads()",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53352",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53352"
+    },
+    {
+      "title": "CVE-2026-53349: netfilter: nf_conntrack: destroy stale expectfn expectations on unregister",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53349",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53349"
+    },
+    {
+      "title": "CVE-2026-56149: Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-56149",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-56149"
+    },
+    {
+      "title": "CVE-2026-14258: Dhcpcd: dhcpcd infinite loop and out-of-bounds read via zero-length ipv6 nd option in router advertisement handling",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-14258",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-14258"
+    },
+    {
+      "title": "CVE-2026-50721: IKEv1 Denial of Service via RSA-SHA1 (PKCS#1 Version 1.5 Encrypted) authentication payload",
+      "date": "2026-07-05",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-50721",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-50721"
+    },
+    {
+      "title": "CVE-2026-50722: IKEv2 Denial of Service via RSA-SHA1 (PKCS#1 RSASSA-PKCS1-v1_5) authentication payload",
+      "date": "2026-07-05",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-50722",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-50722"
+    },
+    {
+      "title": "CVE-2026-9545: exposing HTTP/3 early data",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-9545",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-9545"
+    },
+    {
+      "title": "CVE-2026-12413: IKEv2 Denial of Service via malformed fragmentation",
+      "date": "2026-07-05",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-12413",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-12413"
+    },
+    {
+      "title": "CVE-2026-8932: incomplete mTLS config matching in conn reuse",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-8932",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-8932"
+    },
+    {
+      "title": "CVE-2026-9547: SSH improper host validation",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-9547",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-9547"
+    },
+    {
+      "title": "CVE-2026-8458: wrong reuse for different services",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-8458",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-8458"
+    },
+    {
+      "title": "CVE-2026-8924: trailing dot domain super cookie",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-8924",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-8924"
+    },
+    {
+      "title": "CVE-2026-10536: HTTP/2 stream-dependency tree UAF",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-10536",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-10536"
+    },
+    {
+      "title": "CVE-2026-11856: cross-origin Digest auth state leak",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-11856",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-11856"
+    },
+    {
+      "title": "CVE-2026-8286: wrong STARTTLS connection reuse",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-8286",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-8286"
+    },
+    {
+      "title": "CVE-2026-8926: password leak with netrc and user in URL",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-8926",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-8926"
+    },
+    {
+      "title": "CVE-2026-9080: UAF after pause in socket callback",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-9080",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-9080"
+    },
+    {
+      "title": "CVE-2026-8925: SASL double-free",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-8925",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-8925"
+    },
+    {
+      "title": "CVE-2026-53362: ipv6: account for fraggap on the paged allocation path",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53362",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53362"
+    },
+    {
+      "title": "CVE-2026-53359: KVM: x86: Fix shadow paging use-after-free due to unexpected role",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53359",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53359"
+    },
+    {
+      "title": "CVE-2026-14355: ext/openssl: Memory corruption in openssl_encrypt with AES-WRAP-PAD",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-14355",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-14355"
+    },
+    {
+      "title": "CVE-2026-53361: af_unix: Set gc_in_progress to true in unix_gc().",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53361",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53361"
+    },
+    {
+      "title": "CVE-2026-53354: arm64: errata: Mitigate TLBI errata on various Arm CPUs",
+      "date": "2026-07-05",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53354",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53354"
+    },
+    {
+      "title": "CVE-2026-41579: runc: Malicious image with /dev symlink can trigger limited host filesystem integrity violations",
+      "date": "2026-07-05",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-41579",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-41579"
+    },
+    {
+      "title": "CVE-2026-53345: KVM: Don't WARN if memory is dirtied without a vCPU when the VM is dying",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53345",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53345"
+    },
+    {
+      "title": "CVE-2026-53332: slimbus: qcom-ngd-ctrl: Register callbacks after creating the ngd",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53332",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53332"
+    },
+    {
+      "title": "CVE-2026-53336: nvmem: layouts: onie-tlv: fix hang on unknown types",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53336",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53336"
+    },
+    {
+      "title": "CVE-2026-53327: debugobjects: Do not fill_pool() if pi_blocked_on",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53327",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53327"
+    },
+    {
+      "title": "CVE-2026-53337: net: bonding: fix NULL pointer dereference in bond_do_ioctl()",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53337",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53337"
+    },
+    {
+      "title": "CVE-2026-53356: drm/i915/gem: Fix phys BO pread/pwrite with offset",
+      "date": "2026-07-05",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53356",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53356"
+    },
+    {
+      "title": "CVE-2026-53353: hsr: Remove WARN_ONCE() in hsr_addr_is_self().",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53353",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53353"
+    },
+    {
+      "title": "CVE-2026-53339: i2c: qcom-cci: Fix NULL pointer dereference in cci_remove()",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53339",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53339"
+    },
+    {
+      "title": "CVE-2026-49090: Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-49090",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-49090"
+    },
+    {
+      "title": "CVE-2026-53357: Bluetooth: fix UAF in l2cap_sock_cleanup_listen() vs l2cap_conn_del()",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-53357",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53357"
+    },
+    {
+      "title": "CVE-2026-9079: stale proxy password leak",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-9079",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-9079"
+    },
+    {
+      "title": "CVE-2026-8927: env-set cross-proxy Digest auth state leak",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-8927",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-8927"
+    },
+    {
+      "title": "CVE-2026-12064: proto-default skips SSH verification",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-12064",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-12064"
+    },
+    {
+      "title": "CVE-2026-57100: Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
+      "date": "2026-07-05",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57100",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57100"
+    },
+    {
+      "title": "CVE-2026-45499: Azure OpenAI Elevation of Privilege Vulnerability",
+      "date": "2026-07-05",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45499",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45499"
+    },
+    {
+      "title": "CVE-2026-26145: Microsoft Azure Synapse Elevation of Privilege Vulnerability",
+      "date": "2026-07-05",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-26145",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26145"
+    },
+    {
+      "title": "CVE-2026-41106: Microsoft 365 Copilot Elevation of Privilege Vulnerability",
+      "date": "2026-07-05",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-41106",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-41106"
+    },
+    {
+      "title": "CVE-2026-13933: Chromium: CVE-2026-13933 Insufficient policy enforcement in Passwords",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13933",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13933"
+    },
+    {
+      "title": "CVE-2026-14153: Chromium: CVE-2026-14153 Inappropriate implementation in Glic",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-14153",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-14153"
+    },
+    {
+      "title": "CVE-2026-14125: Chromium: CVE-2026-14125 Uninitialized Use in ANGLE",
+      "date": "2026-07-05",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-14125",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-14125"
+    },
+    {
+      "title": "CVE-2026-55945: Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
+      "date": "2026-07-05",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-55945",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55945"
+    },
+    {
+      "title": "CVE-2026-56645: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "date": "2026-07-05",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-56645",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-56645"
+    },
     {
       "title": "CVE-2026-53355: net: rds: clear i_sends on setup unwind",
       "date": "2026-07-03",
