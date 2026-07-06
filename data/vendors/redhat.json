@@ -1,16 +1,27 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-07-06T10:49:02.068Z",
+  "lastUpdated": "2026-07-06T15:45:13.899Z",
   "health": {
-    "lastFetchAttempt": "2026-07-06T10:49:02.068Z",
+    "lastFetchAttempt": "2026-07-06T15:45:13.899Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 123,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-06T10:49:02.068Z",
+    "lastFetchParsedItems": 139,
+    "lastFetchNewPatches": 16,
+    "lastSuccessWithData": "2026-07-06T15:45:13.899Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-9165: stackrox: stackrox: Unbounded GraphQL query depth allows authenticated denial of service",
+      "date": "2026-07-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "stackrox: stackrox: Unbounded GraphQL query depth allows authenticated denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-9165.json",
+      "cve": "CVE-2026-9165",
+      "cvss": 7.7
+    },
     {
       "title": "CVE-2026-14781: keycloak-services: keycloak-services: OIDC email_verified claim incorrectly applied to userinfo email",
       "date": "2026-07-05",
@@ -21,6 +32,83 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14781.json",
       "cve": "CVE-2026-14781",
       "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-14651: grass: Grass: Denial of Service vulnerability via local manipulation of compiler functions",
+      "date": "2026-07-04",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grass: Grass: Denial of Service vulnerability via local manipulation of compiler functions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14651.json",
+      "cve": "CVE-2026-14651",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-14650: grass: Grass: Denial of Service in UTF-8 Character Handler",
+      "date": "2026-07-04",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grass: Grass: Denial of Service in UTF-8 Character Handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14650.json",
+      "cve": "CVE-2026-14650",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-12252: nltk: nltk: Arbitrary Code Execution via Untrusted JAR File Loading",
+      "date": "2026-07-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nltk: nltk: Arbitrary Code Execution via Untrusted JAR File Loading",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12252.json",
+      "cve": "CVE-2026-12252",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-53362: kernel: ipv6: account for fraggap on the paged allocation path",
+      "date": "2026-07-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ipv6: account for fraggap on the paged allocation path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53362.json",
+      "cve": "CVE-2026-53362",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-53360: kernel: KVM: SEV: Require in-GHCB scratch area if GHCB v2+ is in use",
+      "date": "2026-07-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: SEV: Require in-GHCB scratch area if GHCB v2+ is in use",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53360.json",
+      "cve": "CVE-2026-53360",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-53359: kernel: KVM: x86: Fix shadow paging use-after-free due to unexpected role",
+      "date": "2026-07-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: x86: Fix shadow paging use-after-free due to unexpected role",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53359.json",
+      "cve": "CVE-2026-53359",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-53361: kernel: af_unix: Set gc_in_progress to true in unix_gc()",
+      "date": "2026-07-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: af_unix: Set gc_in_progress to true in unix_gc()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53361.json",
+      "cve": "CVE-2026-53361",
+      "cvss": 7
     },
     {
       "title": "CVE-2026-14544: HPLIP: Incomplete Fix for CVE-2026-8631",
@@ -76,6 +164,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14612.json",
       "cve": "CVE-2026-14612",
       "cvss": 4.2
+    },
+    {
+      "title": "CVE-2026-12481: keras: Keras: Arbitrary code execution via deserialization vulnerability",
+      "date": "2026-07-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keras: Keras: Arbitrary code execution via deserialization vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12481.json",
+      "cve": "CVE-2026-12481",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-14631: webpack-dev-server: webpack-dev-server: Denial of Service via malformed headers",
+      "date": "2026-07-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "webpack-dev-server: webpack-dev-server: Denial of Service via malformed headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14631.json",
+      "cve": "CVE-2026-14631",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-14620: webpack-dev-server: webpack-dev-server: Arbitrary file opening and denial of service via exposed developer endpoints",
+      "date": "2026-07-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "webpack-dev-server: webpack-dev-server: Arbitrary file opening and denial of service via exposed developer endpoints",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14620.json",
+      "cve": "CVE-2026-14620",
+      "cvss": 4.7
     },
     {
       "title": "CVE-2026-11946: open62541: open62541: Denial of Service via unvalidated endpoint URL length",
@@ -186,6 +307,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-38969.json",
       "cve": "CVE-2026-38969",
       "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-58467: cockpit: Cockpit CMS: Arbitrary file read and code execution via path traversal",
+      "date": "2026-07-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit: Cockpit CMS: Arbitrary file read and code execution via path traversal",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58467.json",
+      "cve": "CVE-2026-58467",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-58031: MediaWiki: MediaWiki: Cross-site scripting vulnerability due to improper input neutralization",
@@ -914,6 +1046,17 @@
       "cvss": 7.5
     },
     {
+      "title": "CVE-2026-54399: org.apache.httpcomponents/httpcore: Apache HttpComponents Core: Denial of Service via excessive HTTP headers",
+      "date": "2026-07-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.httpcomponents/httpcore: Apache HttpComponents Core: Denial of Service via excessive HTTP headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54399.json",
+      "cve": "CVE-2026-54399",
+      "cvss": 7.5
+    },
+    {
       "title": "CVE-2026-13455: postgresql_anonymizer: PostgreSQL Anonymizer: Information Disclosure via brute-force attack on hash function",
       "date": "2026-06-30",
       "severity": "MEDIUM",
@@ -1198,6 +1341,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14209.json",
       "cve": "CVE-2026-14209",
       "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-56364: Magick.NET-Q8-x64: Magick.NET-Q8-arm64: Magick.NET-Q8-x86: Magick.NET-Q8-OpenMP-x64: Magick.NET-Q8-OpenMP-arm64: Magick.",
+      "date": "2026-06-30",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Magick.NET-Q8-x64: Magick.NET-Q8-arm64: Magick.NET-Q8-x86: Magick.NET-Q8-OpenMP-x64: Magick.NET-Q8-OpenMP-arm64: Magick.NET-Q16-x64: Magick.NET-Q16-arm64: Magick.NET-Q16-x86: Magick.NET-Q16-OpenMP-x64...",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56364.json",
+      "cve": "CVE-2026-56364",
+      "cvss": 1.9
+    },
+    {
+      "title": "CVE-2026-56363: Imagemagick: ImageMagick - Division by Zero in Binomial Kernel Processing",
+      "date": "2026-06-30",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "Imagemagick: ImageMagick - Division by Zero in Binomial Kernel Processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56363.json",
+      "cve": "CVE-2026-56363",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-56361: ImageMagick: ImageMagick: Heap buffer overflow via incorrect morphology parameters",
+      "date": "2026-06-30",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Heap buffer overflow via incorrect morphology parameters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56361.json",
+      "cve": "CVE-2026-56361",
+      "cvss": 3.3
     },
     {
       "title": "CVE-2026-53325: kernel: agp/amd64: Fix broken error propagation in agp_amd64_probe()",

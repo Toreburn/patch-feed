@@ -1,12 +1,12 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-07-06T10:49:23.421Z",
+  "lastUpdated": "2026-07-06T15:45:31.312Z",
   "health": {
-    "lastFetchAttempt": "2026-07-06T10:49:23.421Z",
+    "lastFetchAttempt": "2026-07-06T15:45:31.312Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 3,
-    "lastSuccessWithData": "2026-07-06T10:49:23.421Z",
+    "lastFetchNewPatches": 9,
+    "lastSuccessWithData": "2026-07-06T15:45:31.312Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -37,6 +37,87 @@
       "component": "Linux kernel (NVIDIA) vulnerabilities",
       "description": "It was discovered that some AMD processors did not properly clear data in\nthe floating point divider unit during speculative execution. A local\nattacker could use this to expose sensitive information....",
       "link": "https://ubuntu.com/security/notices/USN-8507-1"
+    },
+    {
+      "title": "USN-8514-1: OpenSSH vulnerability",
+      "date": "2026-07-06",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OpenSSH",
+      "description": "It was discovered that OpenSSH incorrectly handled file permissions when\ndownloading files as root using the legacy scp protocol without the\npreserve-mode option. An attacker could use this to install...",
+      "link": "https://ubuntu.com/security/notices/USN-8514-1"
+    },
+    {
+      "title": "USN-8502-1: GnuTLS vulnerabilities",
+      "date": "2026-07-06",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GnuTLS vulnerabilities",
+      "description": "It was discovered that GnuTLS had a timing side-channel when processing\nmalformed ciphertexts in RSA-PSK ClientKeyExchange. A remote attacker\ncould possibly use this issue to recover sensitive informa...",
+      "link": "https://ubuntu.com/security/notices/USN-8502-1"
+    },
+    {
+      "title": "USN-8513-1: PHP vulnerabilities",
+      "date": "2026-07-06",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "PHP vulnerabilities",
+      "description": "It was discovered that PHP incorrectly handled SOAP object deduplication\nwhen processing apache:Map nodes with duplicate keys. An attacker could\npossibly use this to cause a use-after-free, resulting ...",
+      "link": "https://ubuntu.com/security/notices/USN-8513-1"
+    },
+    {
+      "title": "USN-8512-1: Gzip vulnerabilities",
+      "date": "2026-07-06",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Gzip vulnerabilities",
+      "description": "It was discovered that Gzip's gzexe utility handled temporary files in an\ninsecure manner. When the mktemp utility was not available, gzexe\nconstructed a temporary file path based on the process ID, w...",
+      "link": "https://ubuntu.com/security/notices/USN-8512-1"
+    },
+    {
+      "title": "USN-8511-1: socat vulnerabilities",
+      "date": "2026-07-06",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "socat vulnerabilities",
+      "description": "It was discovered that socat incorrectly handled the SOCKS5 proxy server\nreply parser. A remote attacker could possibly use this issue to execute\narbitrary code. (CVE-2026-56123)\n\nIt was discovered th...",
+      "link": "https://ubuntu.com/security/notices/USN-8511-1"
+    },
+    {
+      "title": "USN-8510-1: tar vulnerability",
+      "date": "2026-07-06",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "tar",
+      "description": "It was discovered that tar incorrectly handled symlinks when extracting\narchives. An attacker could possibly use this issue to overwrite arbitrary\nfiles....",
+      "link": "https://ubuntu.com/security/notices/USN-8510-1"
+    },
+    {
+      "title": "USN-8509-1: Python vulnerabilities",
+      "date": "2026-07-06",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Python vulnerabilities",
+      "description": "It was discovered that Python incorrectly normalized paths in the tarfile\nmodule. An attacker could possibly use this issue to bypass path\nrestrictions. This issue only affected Ubuntu 22.04 LTS and U...",
+      "link": "https://ubuntu.com/security/notices/USN-8509-1"
+    },
+    {
+      "title": "USN-8506-1: Request Tracker vulnerabilities",
+      "date": "2026-07-06",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Request Tracker vulnerabilities",
+      "description": "Aleksander Iwicki discovered that Request Tracker did not properly sanitize\nthe search \"Page\" URL parameter. A remote attacker could possibly use this\nissue to conduct a reflected cross-site scripting...",
+      "link": "https://ubuntu.com/security/notices/USN-8506-1"
+    },
+    {
+      "title": "USN-8505-1: Parsl vulnerability",
+      "date": "2026-07-06",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Parsl",
+      "description": "It was discovered that Parsl incorrectly constructed SQL queries using\nunsafe string formatting with user-supplied input in the parsl-visualize\ncomponent. A remote attacker could possibly use this iss...",
+      "link": "https://ubuntu.com/security/notices/USN-8505-1"
     },
     {
       "title": "USN-8496-2: cifs-utils regression",
