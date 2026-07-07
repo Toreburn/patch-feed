@@ -1,7 +1,26 @@
 {
-  "lastUpdated": "2026-07-07T18:02:30.701Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-07T20:05:21.966Z",
+  "newPatches": 12,
   "patches": [
+    {
+      "title": "Stable Channel Update for Desktop",
+      "date": "2026-07-07",
+      "severity": "UNKNOWN",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "&nbsp;The Stable channel has been updated to 150.0.7871.100/.101 for Windows and Mac and&nbsp;150.0.7871.100&nbsp;for Linux, which will roll out over the coming days/weeks. A full list of changes in t...",
+      "link": "https://chromereleases.googleblog.com/feeds/6971953732160097084/comments/default"
+    },
+    {
+      "title": "Cloudflare proudly joins the UK government's Cyber Resilience Pledge",
+      "date": "2026-07-07",
+      "severity": "CRITICAL",
+      "vendor": "cloudflare",
+      "component": "DNS",
+      "description": "Today, the UK government launched the Cyber Resilience Pledge : a voluntary framework inviting organizations to commit to foundational cybersecurity governance, board-level accountability, and compreh...",
+      "link": "https://blog.cloudflare.com/cloudflare-joins-uk-cyber-resilience-pledge/",
+      "cve": ""
+    },
     {
       "title": "EGroupware Vulnerable to Local File Inclusion via file:// URI in Mail Compose",
       "date": "2026-07-07",
@@ -77,6 +96,83 @@
       "description": "EGroupware has a Remote Code Execution Vulnerability",
       "link": "https://github.com/advisories/GHSA-h9qx-v5xp-ph8p",
       "cve": "CVE-2026-27823",
+      "cvss": null
+    },
+    {
+      "title": "uutils coreutils: cp/install/mv/ln --suffix alone does not enable backup mode (silent data loss vs GNU)",
+      "date": "2026-07-07",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "uucore",
+      "description": "uutils coreutils: cp/install/mv/ln --suffix alone does not enable backup mode (silent data loss vs GNU)",
+      "link": "https://github.com/advisories/GHSA-fqf6-gxhh-2xhw",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "@aborruso/ckan-mcp-server: SSRF via base_url allows access to internal networks (Potential fix bypass of CVE-2026-33060)",
+      "date": "2026-07-07",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@aborruso/ckan-mcp-server",
+      "description": "@aborruso/ckan-mcp-server: SSRF via base_url allows access to internal networks (Potential fix bypass of CVE-2026-33060)",
+      "link": "https://github.com/advisories/GHSA-g84h-j7jj-x32p",
+      "cve": "CVE-2026-53509",
+      "cvss": 5.7
+    },
+    {
+      "title": "Open WebUI has Blind Server Side Request Forgery in its Image Edit Functionality",
+      "date": "2026-07-07",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI has Blind Server Side Request Forgery in its Image Edit Functionality",
+      "link": "https://github.com/advisories/GHSA-jgx9-jr5x-mvpv",
+      "cve": "CVE-2026-34225",
+      "cvss": 4.3
+    },
+    {
+      "title": "Open WebUI vulnerable to Stored XSS via iFrame embeds in response messages",
+      "date": "2026-07-07",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI vulnerable to Stored XSS via iFrame embeds in response messages",
+      "link": "https://github.com/advisories/GHSA-vjm7-m4xh-7wrc",
+      "cve": "CVE-2026-26193",
+      "cvss": 7.3
+    },
+    {
+      "title": "Open WebUI vulnerable to Stored XSS via iFrame in citations model",
+      "date": "2026-07-07",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI vulnerable to Stored XSS via iFrame in citations model",
+      "link": "https://github.com/advisories/GHSA-xc8p-9rr6-97r2",
+      "cve": "CVE-2026-26192",
+      "cvss": 7.3
+    },
+    {
+      "title": "Open WebUI vulnerable to stored XSS via unescaped markdown token in MarkdownTokens.svelte leading to full account takeover and RCE via functions",
+      "date": "2026-07-07",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI vulnerable to stored XSS via unescaped markdown token in MarkdownTokens.svelte leading to full account takeover and RCE via functions",
+      "link": "https://github.com/advisories/GHSA-9f4f-jv96-8766",
+      "cve": "CVE-2025-46719",
+      "cvss": null
+    },
+    {
+      "title": "Open WebUI  allows limited stored XSS vila uploaded html file",
+      "date": "2026-07-07",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI  allows limited stored XSS vila uploaded html file",
+      "link": "https://github.com/advisories/GHSA-8gh5-qqh8-hq3x",
+      "cve": "CVE-2025-46571",
       "cvss": null
     },
     {
@@ -561,6 +657,15 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14476.json",
       "cve": "CVE-2026-14476",
       "cvss": 8
+    },
+    {
+      "title": "USN-8515-1: Addressable vulnerability",
+      "date": "2026-07-07",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Addressable",
+      "description": "It was discovered that Addressable incorrectly handled certain URI\ntemplates, generating regular expressions vulnerable to catastrophic\nbacktracking. An attacker could use this issue to craft a URI th...",
+      "link": "https://ubuntu.com/security/notices/USN-8515-1"
     },
     {
       "title": "CVE-2026-14471 - Authenticated SQL injection in the metrics-service retention policy subsystem of mcp-gateway-registry",
@@ -3195,6 +3300,26 @@
     },
     {
       "title": "Microsoft Edge Security Update - July 2, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-07-02",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
+    },
+    {
+      "title": "Microsoft Edge Security Update - July 02, 2026 macOS",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-07-02",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
+    },
+    {
+      "title": "Microsoft Edge Security Update - July 02, 2026",
       "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
       "date": "2026-07-02",
       "description": "Security fixes for 0 vulnerabilities: ",
@@ -6513,6 +6638,117 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-07-07T20:05:21.966Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[SUCCESS] chrome - 2 patches (1 new)",
+        "[INFO] cisco - 7 patches, no changes",
+        "[SUCCESS] cloudflare - 2 patches (1 new)",
+        "[INFO] debian - 7 patches, no changes",
+        "[SUCCESS] edge - 4 patches (2 new)",
+        "[SUCCESS] github - 261 patches (7 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 192 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[INFO] redhat - 124 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[SUCCESS] ubuntu - 33 patches (1 new)"
+      ],
+      "newPatchCount": 12,
+      "totalPatches": 646,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "chrome",
+        "cloudflare",
+        "github",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "cisco",
+        "edge",
+        "postgresql",
+        "signal",
+        "debian",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "chrome",
+          "title": "Stable Channel Update for Desktop",
+          "date": "2026-07-07",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "cloudflare",
+          "title": "Cloudflare proudly joins the UK government's Cyber Resilience Pledge",
+          "date": "2026-07-07",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - July 02, 2026 macOS",
+          "date": "2026-07-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - July 02, 2026",
+          "date": "2026-07-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "uutils coreutils: cp/install/mv/ln --suffix alone does not enable backup mode (silent data loss vs GNU)",
+          "date": "2026-07-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "@aborruso/ckan-mcp-server: SSRF via base_url allows access to internal networks (Potential fix bypass of CVE-2026-33060)",
+          "date": "2026-07-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI has Blind Server Side Request Forgery in its Image Edit Functionality",
+          "date": "2026-07-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI vulnerable to Stored XSS via iFrame embeds in response messages",
+          "date": "2026-07-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI vulnerable to Stored XSS via iFrame in citations model",
+          "date": "2026-07-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI vulnerable to stored XSS via unescaped markdown token in MarkdownTokens.svelte leading to full account takeover and RCE via functions",
+          "date": "2026-07-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI  allows limited stored XSS vila uploaded html file",
+          "date": "2026-07-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8515-1: Addressable vulnerability",
+          "date": "2026-07-07",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-07-07T18:02:30.701Z",
       "logs": [
@@ -10353,127 +10589,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-03T14:22:27.880Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 4 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 221 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 246 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[SUCCESS] redhat - 120 patches (12 new)",
-        "[INFO] signal - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 29 patches (1 new)"
-      ],
-      "newPatchCount": 13,
-      "totalPatches": 642,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "redhat",
-        "cisco",
-        "debian",
-        "edge",
-        "github",
-        "signal",
-        "ubuntu",
-        "aws",
-        "cloudflare",
-        "gitlab",
-        "chrome",
-        "apple",
-        "crowdstrike",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-14544: HPLIP: Incomplete Fix for CVE-2026-8631",
-          "date": "2026-07-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54891: erlang: Erlang SSL: Unauthenticated data injection during TLS handshake",
-          "date": "2026-07-02",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54886: erlang: Erlang OTP ssh: Denial of Service via infinite loop in SFTP channel",
-          "date": "2026-07-02",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-55952: erlang: Erlang/OTP: Denial of Service in TLS 1.3 session ticket handling",
-          "date": "2026-07-02",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54431: liboauth2: liboauth2: DPoP verifier accepts malformed proof with private key material",
-          "date": "2026-07-02",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54430: liboauth2: liboauth2: Server-Side Request Forgery allows unauthorized internal network access",
-          "date": "2026-07-02",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-9563: org.eclipse.parsson/parsson: Eclipse Parsson: Denial of Service via uncontrolled resource consumption in JSON parsing",
-          "date": "2026-07-02",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-38969: webrick: rubygem-webrick: WEBrick: Request smuggling via re-parsing of Content-Length header",
-          "date": "2026-07-02",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-12480: keras: Keras: Information disclosure via malicious model archive with Virtual Dataset",
-          "date": "2026-07-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-20216: ClamAV: ClamAV: Denial of Service via crafted InstallShield file",
-          "date": "2026-07-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-58038: timeline: EasyTimeline: Wikimedia Foundation Timeline: Cross-site Scripting vulnerability",
-          "date": "2026-07-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-13574: llvm: llvm-project: LLVM: Denial of service via heap-based buffer overflow in Bitcode File Handler",
-          "date": "2026-06-29",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8503-1: ncurses vulnerability",
-          "date": "2026-07-02",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
