@@ -1,16 +1,49 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-07-07T09:52:14.568Z",
+  "lastUpdated": "2026-07-07T14:49:52.432Z",
   "health": {
-    "lastFetchAttempt": "2026-07-07T09:52:14.568Z",
+    "lastFetchAttempt": "2026-07-07T14:49:52.432Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 141,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-07T09:52:14.568Z",
+    "lastFetchParsedItems": 161,
+    "lastFetchNewPatches": 20,
+    "lastSuccessWithData": "2026-07-07T14:49:52.432Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-11610: 389-ds-base: 389-ds-base: Heap buffer overflow in sasl_io_recv() via padded SASL UNBIND",
+      "date": "2026-07-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "389-ds-base: 389-ds-base: Heap buffer overflow in sasl_io_recv() via padded SASL UNBIND",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-11610.json",
+      "cve": "CVE-2026-11610",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-14474: sssd: sssd: sudo LDAP provider searches entire directory tree for sudoRole objects by default, enabling privilege escala",
+      "date": "2026-07-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sssd: sssd: sudo LDAP provider searches entire directory tree for sudoRole objects by default, enabling privilege escalation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14474.json",
+      "cve": "CVE-2026-14474",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-14476: sssd: sssd: GPO cache path traversal via unsanitized gPCFileSysPath allows Kerberos authentication bypass",
+      "date": "2026-07-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sssd: sssd: GPO cache path traversal via unsanitized gPCFileSysPath allows Kerberos authentication bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14476.json",
+      "cve": "CVE-2026-14476",
+      "cvss": 8
+    },
     {
       "title": "CVE-2026-9165: stackrox: stackrox: Unbounded GraphQL query depth allows authenticated denial of service",
       "date": "2026-07-06",
@@ -43,6 +76,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14788.json",
       "cve": "CVE-2026-14788",
       "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-55379: python-pillow: Pillow: Denial of Service via crafted BDF font file",
+      "date": "2026-07-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python-pillow: Pillow: Denial of Service via crafted BDF font file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55379.json",
+      "cve": "CVE-2026-55379",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-55380: python-pillow: Pillow: Denial of Service via crafted GD 2.x image file",
+      "date": "2026-07-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python-pillow: Pillow: Denial of Service via crafted GD 2.x image file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55380.json",
+      "cve": "CVE-2026-55380",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-54060: python-pillow: Pillow: Denial of Service via excessive memory allocation when processing font files",
+      "date": "2026-07-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python-pillow: Pillow: Denial of Service via excessive memory allocation when processing font files",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54060.json",
+      "cve": "CVE-2026-54060",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-14781: keycloak-services: keycloak-services: OIDC email_verified claim incorrectly applied to userinfo email",
@@ -175,6 +241,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53361.json",
       "cve": "CVE-2026-53361",
       "cvss": 7
+    },
+    {
+      "title": "CVE-2026-14684: org.hdrhistogram/HdrHistogram: HdrHistogram: HdrHistogram: Denial of Service via uncontrolled memory allocation in decod",
+      "date": "2026-07-04",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.hdrhistogram/HdrHistogram: HdrHistogram: HdrHistogram: Denial of Service via uncontrolled memory allocation in decodeFromByteBuffer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14684.json",
+      "cve": "CVE-2026-14684",
+      "cvss": 5
     },
     {
       "title": "CVE-2026-14544: HPLIP: Incomplete Fix for CVE-2026-8631",
@@ -406,6 +483,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-11352.json",
       "cve": "CVE-2026-11352",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-14604: assimp: Assimp: Denial of Service vulnerability in PLY Model Handler",
+      "date": "2026-07-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "assimp: Assimp: Denial of Service vulnerability in PLY Model Handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14604.json",
+      "cve": "CVE-2026-14604",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-8924: curl: curl: Cookie injection via malicious HTTP server using super cookies",
+      "date": "2026-07-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "curl: curl: Cookie injection via malicious HTTP server using super cookies",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-8924.json",
+      "cve": "CVE-2026-8924",
+      "cvss": 6.5
     },
     {
       "title": "CVE-2026-11946: open62541: open62541: Denial of Service via unvalidated endpoint URL length",
@@ -1594,6 +1693,127 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56361.json",
       "cve": "CVE-2026-56361",
       "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-54903: oj: Oj: Heap corruption and Denial of Service via integer overflow in JSON parsing",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oj: Oj: Heap corruption and Denial of Service via integer overflow in JSON parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54903.json",
+      "cve": "CVE-2026-54903",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-54902: Oj: Use-After-Free in Oj::Parser SAJ Long Key Callback",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Oj: Use-After-Free in Oj::Parser SAJ Long Key Callback",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54902.json",
+      "cve": "CVE-2026-54902",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-54901: Oj: Use-After-Free in Oj::Parser array_class/hash_class GC Marking",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Oj: Use-After-Free in Oj::Parser array_class/hash_class GC Marking",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54901.json",
+      "cve": "CVE-2026-54901",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-54900: oj: Oj: Heap corruption via crafted JSON object key",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oj: Oj: Heap corruption via crafted JSON object key",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54900.json",
+      "cve": "CVE-2026-54900",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-54898: oj: Oj: Denial of Service via input string mutation during JSON parsing",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oj: Oj: Denial of Service via input string mutation during JSON parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54898.json",
+      "cve": "CVE-2026-54898",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-54897: oj: Oj: Use-After-Free in Oj::Doc Iterators via reentrant close",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oj: Oj: Use-After-Free in Oj::Doc Iterators via reentrant close",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54897.json",
+      "cve": "CVE-2026-54897",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-54896: oj: Oj: Heap buffer overflow in exception serialization",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oj: Oj: Heap buffer overflow in exception serialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54896.json",
+      "cve": "CVE-2026-54896",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-54592: oj: Oj: Denial of Service via deeply nested JSON input",
+      "date": "2026-06-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oj: Oj: Denial of Service via deeply nested JSON input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54592.json",
+      "cve": "CVE-2026-54592",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-54502: Oj: Stack Buffer Overflow in Oj.dump via Large Indent",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Oj: Stack Buffer Overflow in Oj.dump via Large Indent",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54502.json",
+      "cve": "CVE-2026-54502",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-54500: oj: Oj: Information disclosure via uninitialized stack memory read",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oj: Oj: Information disclosure via uninitialized stack memory read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54500.json",
+      "cve": "CVE-2026-54500",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-54899: oj: Oj: Use-After-Free in parser symbol key cache toggle",
+      "date": "2026-06-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oj: Oj: Use-After-Free in parser symbol key cache toggle",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54899.json",
+      "cve": "CVE-2026-54899",
+      "cvss": 6.5
     },
     {
       "title": "CVE-2026-53325: kernel: agp/amd64: Fix broken error propagation in agp_amd64_probe()",
