@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-07-08T19:41:55.561Z",
+  "lastUpdated": "2026-07-09T03:54:33.243Z",
   "health": {
-    "lastFetchAttempt": "2026-07-08T19:41:55.561Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-06T20:06:09.334Z",
-    "consecutiveEmptyFetches": 8,
+    "lastFetchAttempt": "2026-07-09T03:54:33.243Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-07-09T03:54:33.243Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Skipper: opaAuthorizeRequestWithBody filter bypasses OPA policy on Transfer-Encoding — chunked / HTTP/2 requests",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\n`zalando/skipper`'s OpenPolicyAgent integration silently bypasses request-body\ninspection on HTTP/1.1 `Transfer-Encoding: chunked` and HTTP/2 requests that\nomit the `content-length` pseud",
+      "link": "https://github.com/advisories/GHSA-659f-rgp5-w4wf",
+      "cves": [
+        "CVE-2026-50197"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
       "date": "2026-07-06",

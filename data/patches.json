@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-09T03:36:29.223Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-09T03:55:30.501Z",
+  "newPatches": 91,
   "patches": [
     {
       "title": "Chrome Stable for iOS Update",
@@ -10,6 +10,24 @@
       "component": "Chrome Browser",
       "description": "Hi everyone! We've just released Chrome Stable 150 (150.0.7871.113) for iOS; it'll become available on App Store in the next few hours.This release includes stability and performance improvements. You...",
       "link": "https://chromereleases.googleblog.com/feeds/2972763412828945397/comments/default"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "&nbsp; Hi, everyone! We've just released Chrome 150 (150.0.7871.114) for Android. It'll become available on Google Play over the next few days.&nbsp;This release includes stability and performance imp...",
+      "link": "https://chromereleases.googleblog.com/feeds/6509344221958902694/comments/default"
+    },
+    {
+      "title": "Stable Channel Update for Desktop",
+      "date": "2026-07-08",
+      "severity": "CRITICAL",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "The Stable channel has been updated to 150.0.7871.114/.115 for Windows and Mac and 150.0.7871.114 for Linux, which will roll out over the coming days/weeks. A full list of changes in this build is ava...",
+      "link": "https://chromereleases.googleblog.com/feeds/859791599703038408/comments/default"
     },
     {
       "title": "Cisco Advance Notification for Publication of July 15, 2026, Security Advisories",
@@ -22,6 +40,215 @@
       "cve": ""
     },
     {
+      "title": "DSA-6385-1 pgextwlist - security update",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "pgextwlist",
+      "description": "Guillaume Winter discovered that pgextwlist, an extension for PostgreSQL implementing a whitelist mechanism for PostgreSQL extensions, was susceptible to SQL injection via crafted schema and user name...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00296.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6384-1 chromium - security update",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6384-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00295.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "Serena: Unauthenticated Flask dashboard on fixed port enables DNS rebinding → memory poisoning → RCE",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "serena-agent",
+      "description": "Serena: Unauthenticated Flask dashboard on fixed port enables DNS rebinding → memory poisoning → RCE",
+      "link": "https://github.com/advisories/GHSA-37h2-6p4f-mp3q",
+      "cve": "CVE-2026-49471",
+      "cvss": 8.3
+    },
+    {
+      "title": "NL Portal: IDOR allows any authenticated user to complete and tamper with another user's taak",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nl.nl-portal:taak",
+      "description": "NL Portal: IDOR allows any authenticated user to complete and tamper with another user's taak",
+      "link": "https://github.com/advisories/GHSA-6h3c-r723-7fx3",
+      "cve": "CVE-2026-49464",
+      "cvss": 8.1
+    },
+    {
+      "title": "NL Portal: Missing per-user authorization on document and decision GraphQL queries in nl-portal-backend-libraries",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nl.nl-portal:documenten-api, nl.nl-portal:besluiten",
+      "description": "NL Portal: Missing per-user authorization on document and decision GraphQL queries in nl-portal-backend-libraries",
+      "link": "https://github.com/advisories/GHSA-qpm9-h556-mwxm",
+      "cve": "CVE-2026-49463",
+      "cvss": 6.5
+    },
+    {
+      "title": "Waku has an Open Redirect via `unstable_redirect` Helper",
+      "date": "2026-07-08",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "waku",
+      "description": "Waku has an Open Redirect via `unstable_redirect` Helper",
+      "link": "https://github.com/advisories/GHSA-43fc-v873-qw85",
+      "cve": "CVE-2026-49456",
+      "cvss": 3.1
+    },
+    {
+      "title": "Waku: Cross-Origin CSRF on RSC Server Action Dispatch",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "waku",
+      "description": "Waku: Cross-Origin CSRF on RSC Server Action Dispatch",
+      "link": "https://github.com/advisories/GHSA-75w3-gmqx-993q",
+      "cve": "CVE-2026-49455",
+      "cvss": 6.5
+    },
+    {
+      "title": "Joro: Unauthenticated Cross-Origin Plugin Upload Leads to RCE",
+      "date": "2026-07-08",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/BishopFox/joro",
+      "description": "Joro: Unauthenticated Cross-Origin Plugin Upload Leads to RCE",
+      "link": "https://github.com/advisories/GHSA-xqhv-chqm-fhcc",
+      "cve": "CVE-2026-53649",
+      "cvss": 9.6
+    },
+    {
+      "title": "OneRingBuf has a Use After Free Vulnerability",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "oneringbuf",
+      "description": "OneRingBuf has a Use After Free Vulnerability",
+      "link": "https://github.com/advisories/GHSA-q95x-7g78-rccv",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "DSpace: Path Traversal is possible through LDN message generation",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "org.dspace:dspace-api, org.dspace:dspace-api, org.dspace:dspace-api",
+      "description": "DSpace: Path Traversal is possible through LDN message generation",
+      "link": "https://github.com/advisories/GHSA-9qm4-rh6w-pq5x",
+      "cve": "CVE-2026-49833",
+      "cvss": 5.5
+    },
+    {
+      "title": "DSpace: ORE resource URI does not validate scheme for non-web resources",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "org.dspace:dspace-api, org.dspace:dspace-api, org.dspace:dspace-api",
+      "description": "DSpace: ORE resource URI does not validate scheme for non-web resources",
+      "link": "https://github.com/advisories/GHSA-c827-pw3m-67w7",
+      "cve": "CVE-2026-49830",
+      "cvss": 4.4
+    },
+    {
+      "title": "DSpace has a possible Path Traversal Vulnerability in its Curation Task Reporter output path",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "org.dspace:dspace-api, org.dspace:dspace-api, org.dspace:dspace-api",
+      "description": "DSpace has a possible Path Traversal Vulnerability in its Curation Task Reporter output path",
+      "link": "https://github.com/advisories/GHSA-v66x-68f2-pxf5",
+      "cve": "CVE-2026-49831",
+      "cvss": 5.5
+    },
+    {
+      "title": "DSpace has possible Remote Code Execution (RCE)  through Velocity Templates used by LDN",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.dspace:dspace-api, org.dspace:dspace-api, org.dspace:dspace-api",
+      "description": "DSpace has possible Remote Code Execution (RCE)  through Velocity Templates used by LDN",
+      "link": "https://github.com/advisories/GHSA-9x82-rm84-c6x7",
+      "cve": "CVE-2026-49832",
+      "cvss": 8
+    },
+    {
+      "title": "Trapster Community: Unauthenticated malformed DNS compression pointers crash per-packet honeypot handler",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "trapster",
+      "description": "Trapster Community: Unauthenticated malformed DNS compression pointers crash per-packet honeypot handler",
+      "link": "https://github.com/advisories/GHSA-mxwc-wh95-pw4g",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "Sharp Missing Authorization Check in Quick Creation Command Endpoints",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "code16/sharp",
+      "description": "Sharp Missing Authorization Check in Quick Creation Command Endpoints",
+      "link": "https://github.com/advisories/GHSA-vmwx-m75v-qvch",
+      "cve": "CVE-2026-53634",
+      "cvss": 4.3
+    },
+    {
+      "title": "Nuclio: Unsanitized cron trigger event headers/body injected into CronJob shell command leads to persistent RCE",
+      "date": "2026-07-08",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/nuclio/nuclio",
+      "description": "Nuclio: Unsanitized cron trigger event headers/body injected into CronJob shell command leads to persistent RCE",
+      "link": "https://github.com/advisories/GHSA-v5px-423j-pf7p",
+      "cve": "CVE-2026-52831",
+      "cvss": 10
+    },
+    {
+      "title": "async-tar PAX extension-header desync enables tar entry/content smuggling",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "async-tar",
+      "description": "async-tar PAX extension-header desync enables tar entry/content smuggling",
+      "link": "https://github.com/advisories/GHSA-35rm-7j9c-2f7m",
+      "cve": "CVE-2026-53600",
+      "cvss": null
+    },
+    {
+      "title": "Skipper: opaAuthorizeRequestWithBody filter bypasses OPA policy on Transfer-Encoding — chunked / HTTP/2 requests",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/zalando/skipper",
+      "description": "Skipper: opaAuthorizeRequestWithBody filter bypasses OPA policy on Transfer-Encoding — chunked / HTTP/2 requests",
+      "link": "https://github.com/advisories/GHSA-659f-rgp5-w4wf",
+      "cve": "CVE-2026-50197",
+      "cvss": 8.7
+    },
+    {
+      "title": "`lxml_html_clean.Cleaner` does not strip `javascript:` URLs from namespaced URL attributes",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "lxml_html_clean",
+      "description": "`lxml_html_clean.Cleaner` does not strip `javascript:` URLs from namespaced URL attributes",
+      "link": "https://github.com/advisories/GHSA-4jhm-jv67-739f",
+      "cve": "CVE-2026-49825",
+      "cvss": 8.2
+    },
+    {
       "title": "GitLab Patch Release: 19.1.2, 19.0.4, 18.11.7",
       "date": "2026-07-08",
       "severity": "CRITICAL",
@@ -29,6 +256,456 @@
       "component": "GitLab CE/EE",
       "description": "Security fixes for CVE-2026-6896, CVE-2026-6896, CVE-2026-13320...",
       "link": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-2-released/"
+    },
+    {
+      "title": "CVE-2026-57100: Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
+      "date": "2026-07-08",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57100",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57100"
+    },
+    {
+      "title": "CVE-2026-45499: Azure OpenAI Elevation of Privilege Vulnerability",
+      "date": "2026-07-08",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-45499",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-45499"
+    },
+    {
+      "title": "CVE-2026-26145: Microsoft Azure Synapse Elevation of Privilege Vulnerability",
+      "date": "2026-07-08",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-26145",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-26145"
+    },
+    {
+      "title": "CVE-2026-41106: Microsoft 365 Copilot Elevation of Privilege Vulnerability",
+      "date": "2026-07-08",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-41106",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-41106"
+    },
+    {
+      "title": "CVE-2026-13933: Chromium: CVE-2026-13933 Insufficient policy enforcement in Passwords",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13933",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13933"
+    },
+    {
+      "title": "CVE-2026-14153: Chromium: CVE-2026-14153 Inappropriate implementation in Glic",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-14153",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-14153"
+    },
+    {
+      "title": "CVE-2026-14125: Chromium: CVE-2026-14125 Uninitialized Use in ANGLE",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-14125",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-14125"
+    },
+    {
+      "title": "CVE-2026-55945: Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-55945",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55945"
+    },
+    {
+      "title": "CVE-2026-56645: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-56645",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-56645"
+    },
+    {
+      "title": "CVE-2026-57975: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57975",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57975"
+    },
+    {
+      "title": "CVE-2026-57983: Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57983",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57983"
+    },
+    {
+      "title": "CVE-2026-57984: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57984",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57984"
+    },
+    {
+      "title": "CVE-2026-57985: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57985",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57985"
+    },
+    {
+      "title": "CVE-2026-57987: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57987",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57987"
+    },
+    {
+      "title": "CVE-2026-57988: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57988",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57988"
+    },
+    {
+      "title": "CVE-2026-57992: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57992",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57992"
+    },
+    {
+      "title": "CVE-2026-57993: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57993",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57993"
+    },
+    {
+      "title": "CVE-2026-56646: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-56646",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-56646"
+    },
+    {
+      "title": "CVE-2026-58282: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-58282",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-58282"
+    },
+    {
+      "title": "CVE-2026-58283: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-58283",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-58283"
+    },
+    {
+      "title": "CVE-2026-58287: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-58287",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-58287"
+    },
+    {
+      "title": "CVE-2026-58299: Microsoft Edge for Android Remote Code Execution Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-58299",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-58299"
+    },
+    {
+      "title": "CVE-2026-58522: Microsoft Edge for Android Information Disclosure Vulnerability",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-58522",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-58522"
+    },
+    {
+      "title": "CVE-2026-13775: Chromium: CVE-2026-13775 Use after free in GPU",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13775",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13775"
+    },
+    {
+      "title": "CVE-2026-13776: Chromium: CVE-2026-13776 Type Confusion in Dawn",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13776",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13776"
+    },
+    {
+      "title": "CVE-2026-13779: Chromium: CVE-2026-13779 Use after free in Chromoting",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13779",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13779"
+    },
+    {
+      "title": "CVE-2026-13780: Chromium: CVE-2026-13780 Insufficient validation of untrusted input in ANGLE",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13780",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13780"
+    },
+    {
+      "title": "CVE-2026-13781: Chromium: CVE-2026-13781 Insufficient validation of untrusted input in Skia",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13781",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13781"
+    },
+    {
+      "title": "CVE-2026-13782: Chromium: CVE-2026-13782 Use after free in Browser",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13782",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13782"
+    },
+    {
+      "title": "CVE-2026-13783: Chromium: CVE-2026-13783 Use after free in Views",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13783",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13783"
+    },
+    {
+      "title": "CVE-2026-13784: Chromium: CVE-2026-13784 Use after free in Views",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13784",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13784"
+    },
+    {
+      "title": "CVE-2026-13786: Chromium: CVE-2026-13786 Use after free in Ozone",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13786",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13786"
+    },
+    {
+      "title": "CVE-2026-13787: Chromium: CVE-2026-13787 Use after free in Chromoting",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13787",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13787"
+    },
+    {
+      "title": "CVE-2026-13790: Chromium: CVE-2026-13790 Side-channel information leakage in Scroll",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13790",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13790"
+    },
+    {
+      "title": "CVE-2026-13793: Chromium: CVE-2026-13793 Insufficient policy enforcement in SVG",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13793",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13793"
+    },
+    {
+      "title": "CVE-2026-13794: Chromium: CVE-2026-13794 Insufficient validation of untrusted input in WebAppInstalls",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13794",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13794"
+    },
+    {
+      "title": "CVE-2026-13797: Chromium: CVE-2026-13797 Insufficient validation of untrusted input in Chromecast",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13797",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13797"
+    },
+    {
+      "title": "CVE-2026-13801: Chromium: CVE-2026-13801 Integer overflow in Chromecast",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13801",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13801"
+    },
+    {
+      "title": "CVE-2026-13802: Chromium: CVE-2026-13802 Use after free in Views",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13802",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13802"
+    },
+    {
+      "title": "CVE-2026-13803: Chromium: CVE-2026-13803 Type Confusion in Chrome Tabs",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13803",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13803"
+    },
+    {
+      "title": "CVE-2026-13804: Chromium: CVE-2026-13804 Use after free in Chromecast",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13804",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13804"
+    },
+    {
+      "title": "CVE-2026-13810: Chromium: CVE-2026-13810 Inappropriate implementation in Input",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13810",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13810"
+    },
+    {
+      "title": "CVE-2026-13811: Chromium: CVE-2026-13811 Use after free in IME",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13811",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13811"
+    },
+    {
+      "title": "CVE-2026-13814: Chromium: CVE-2026-13814 Use after free in Views",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13814",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13814"
+    },
+    {
+      "title": "CVE-2026-13817: Chromium: CVE-2026-13817 Insufficient validation of untrusted input in Glic",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13817",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13817"
+    },
+    {
+      "title": "CVE-2026-13815: Chromium: CVE-2026-13815 Use after free in Blink",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13815",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13815"
+    },
+    {
+      "title": "CVE-2026-13820: Chromium: CVE-2026-13820 Out of bounds read in Skia",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13820",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13820"
+    },
+    {
+      "title": "CVE-2026-13821: Chromium: CVE-2026-13821 Use after free in Canvas",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13821",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13821"
+    },
+    {
+      "title": "CVE-2026-13823: Chromium: CVE-2026-13823 Use after free in Glic",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13823",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13823"
+    },
+    {
+      "title": "CVE-2026-13818: Chromium: CVE-2026-13818 Inappropriate implementation in Passwords",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-13818",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13818"
     },
     {
       "title": "CVE-2026-0287 PAN-OS: Denial of Service Vulnerabilities in Network Traffic Processing (Severity: MEDIUM)",
@@ -259,6 +936,142 @@
       "cvss": 5.4
     },
     {
+      "title": "CVE-2026-55206: py7zr: py7zr: Denial of Service via crafted .7z archives due to inefficient algorithmic complexity",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "py7zr: py7zr: Denial of Service via crafted .7z archives due to inefficient algorithmic complexity",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55206.json",
+      "cve": "CVE-2026-55206",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-55195: py7zr: py7zr: Denial of Service via decompression bomb in 7zip archive extraction",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "py7zr: py7zr: Denial of Service via decompression bomb in 7zip archive extraction",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55195.json",
+      "cve": "CVE-2026-55195",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-15154: guardrails-detectors: guardrails-detectors: Unauthenticated Regular-Expression Denial of Service (ReDoS) via detector_pa",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "guardrails-detectors: guardrails-detectors: Unauthenticated Regular-Expression Denial of Service (ReDoS) via detector_params.regex",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15154.json",
+      "cve": "CVE-2026-15154",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-54423: openstack-ironic: openstack-ironic: Arbitrary IPMI command execution via send_raw deployment step",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openstack-ironic: openstack-ironic: Arbitrary IPMI command execution via send_raw deployment step",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54423.json",
+      "cve": "CVE-2026-54423",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-44918: openstack-ironic: Prevent rehoming resources to nodes with different owner",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openstack-ironic: Prevent rehoming resources to nodes with different owner",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44918.json",
+      "cve": "CVE-2026-44918",
+      "cvss": 8.7
+    },
+    {
+      "title": "CVE-2026-55999: xorg: X11: xserver: X.org: glamor Font Atlas Heap Buffer Overflow",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xorg: X11: xserver: X.org: glamor Font Atlas Heap Buffer Overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55999.json",
+      "cve": "CVE-2026-55999",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-56000: X.org: xorg-x11-server: GLX contextTags Use-After-Free in CommonMakeCurrent()",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "X.org: xorg-x11-server: GLX contextTags Use-After-Free in CommonMakeCurrent()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56000.json",
+      "cve": "CVE-2026-56000",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-56001: libXfont2: BitmapScaleBitmaps Integer Overflow Heap Buffer Overflow",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libXfont2: BitmapScaleBitmaps Integer Overflow Heap Buffer Overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56001.json",
+      "cve": "CVE-2026-56001",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-56002: libXfont2: PCF Font Parsing Heap Buffer Overflow",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libXfont2: PCF Font Parsing Heap Buffer Overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56002.json",
+      "cve": "CVE-2026-56002",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-15044: trustyai-service-operator: TrustyAI Service Operator: Unauthenticated access to AI guardrails and orchestrator APIs",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "trustyai-service-operator: TrustyAI Service Operator: Unauthenticated access to AI guardrails and orchestrator APIs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15044.json",
+      "cve": "CVE-2026-15044",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-15063: trustyai-service-operator: TrustyAI Service Operator: Gorch port bypass when auth IS enabled",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "trustyai-service-operator: TrustyAI Service Operator: Gorch port bypass when auth IS enabled",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15063.json",
+      "cve": "CVE-2026-15063",
+      "cvss": 6.3
+    },
+    {
+      "title": "Skipper: opaAuthorizeRequestWithBody filter bypasses OPA policy on Transfer-Encoding — chunked / HTTP/2 requests",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\n`zalando/skipper`'s OpenPolicyAgent integration silently bypasses request-body\ninspection on HTTP/1.1 `Transfer-Encoding: chunked` and HTTP/2 requests that\nomit the `content-length` pseud",
+      "link": "https://github.com/advisories/GHSA-659f-rgp5-w4wf",
+      "cves": [
+        "CVE-2026-50197"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
       "title": "USN-8517-1: ClamAV vulnerabilities",
       "date": "2026-07-08",
       "severity": "UNKNOWN",
@@ -275,6 +1088,15 @@
       "component": "Apache HTTP Server vulnerabilities",
       "description": "It was discovered that Apache HTTP Server's mod_ldap module incorrectly\nhandled memory when processing per-directory configurations. An attacker\ncould use this issue to cause the server to crash, resu...",
       "link": "https://ubuntu.com/security/notices/USN-8516-1"
+    },
+    {
+      "title": "USN-8518-1: mailcap vulnerability",
+      "date": "2026-07-08",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "mailcap",
+      "description": "Aaron Rainbolt discovered that the cautious-launcher utility in the\nmailcap package did not properly restrict the execution of certain\nfile types. An attacker could use this issue to escape a sandboxe...",
+      "link": "https://ubuntu.com/security/notices/USN-8518-1"
     },
     {
       "title": "CVE-2026-14904 - Improper Link Resolution in Auth.GetUserPrivateKey in AWS Research and Engineering Studio",
@@ -1303,6 +2125,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-12799.json",
       "cve": "CVE-2025-12799",
       "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-14740: DBI: DBI for Perl: Out-of-bounds read in SQL comment processing",
+      "date": "2026-07-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "DBI: DBI for Perl: Out-of-bounds read in SQL comment processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14740.json",
+      "cve": "CVE-2026-14740",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-14739: DBI: DBI: Heap overflow when preparsing SQL statements with excessive placeholders",
+      "date": "2026-07-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "DBI: DBI: Heap overflow when preparsing SQL statements with excessive placeholders",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14739.json",
+      "cve": "CVE-2026-14739",
+      "cvss": 8.1
     },
     {
       "title": "USN-8515-1: Addressable vulnerability",
@@ -2425,6 +3269,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40047.json",
       "cve": "CVE-2026-40047",
       "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-13122: openvpn: From CVEorg collector",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openvpn: From CVEorg collector",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13122.json",
+      "cve": "CVE-2026-13122",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-13698: openvpn: From CVEorg collector",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openvpn: From CVEorg collector",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13698.json",
+      "cve": "CVE-2026-13698",
+      "cvss": 4.9
     },
     {
       "title": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
@@ -4190,6 +5056,39 @@
       "cvss": 6.5
     },
     {
+      "title": "CVE-2026-11856: curl: curl: Information disclosure via incorrect Digest authentication header reuse",
+      "date": "2026-07-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "curl: curl: Information disclosure via incorrect Digest authentication header reuse",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-11856.json",
+      "cve": "CVE-2026-11856",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-11564: libcurl: libcurl: Certificate validation bypass due to incorrect connection reuse",
+      "date": "2026-07-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libcurl: libcurl: Certificate validation bypass due to incorrect connection reuse",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-11564.json",
+      "cve": "CVE-2026-11564",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-10536: libcurl: libcurl: Use-after-free vulnerability leading to Denial of Service",
+      "date": "2026-07-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libcurl: libcurl: Use-after-free vulnerability leading to Denial of Service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10536.json",
+      "cve": "CVE-2026-10536",
+      "cvss": 4.7
+    },
+    {
       "title": "USN-8496-2: cifs-utils regression",
       "date": "2026-07-03",
       "severity": "UNKNOWN",
@@ -4200,6 +5099,593 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-07-09T03:55:30.501Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[SUCCESS] chrome - 5 patches (2 new)",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] debian - 10 patches (2 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[SUCCESS] github - 126 patches (17 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[SUCCESS] microsoft - 221 patches (50 new)",
+        "[INFO] paloalto - 14 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 100 patches (18 new)",
+        "[SUCCESS] signal - 3 patches (1 new)",
+        "[SUCCESS] ubuntu - 17 patches (1 new)"
+      ],
+      "newPatchCount": 91,
+      "totalPatches": 509,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "chrome",
+        "cisco",
+        "debian",
+        "github",
+        "gitlab",
+        "microsoft",
+        "paloalto",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "aws",
+        "cloudflare",
+        "edge",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "chrome",
+          "title": "Chrome for Android Update",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "chrome",
+          "title": "Stable Channel Update for Desktop",
+          "date": "2026-07-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6385-1 pgextwlist - security update",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6384-1 chromium - security update",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Serena: Unauthenticated Flask dashboard on fixed port enables DNS rebinding → memory poisoning → RCE",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "NL Portal: IDOR allows any authenticated user to complete and tamper with another user's taak",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "NL Portal: Missing per-user authorization on document and decision GraphQL queries in nl-portal-backend-libraries",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Waku has an Open Redirect via `unstable_redirect` Helper",
+          "date": "2026-07-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Waku: Cross-Origin CSRF on RSC Server Action Dispatch",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Joro: Unauthenticated Cross-Origin Plugin Upload Leads to RCE",
+          "date": "2026-07-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "OneRingBuf has a Use After Free Vulnerability",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "DSpace: Path Traversal is possible through LDN message generation",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "DSpace: ORE resource URI does not validate scheme for non-web resources",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "DSpace has a possible Path Traversal Vulnerability in its Curation Task Reporter output path",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "DSpace has possible Remote Code Execution (RCE)  through Velocity Templates used by LDN",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Trapster Community: Unauthenticated malformed DNS compression pointers crash per-packet honeypot handler",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Sharp Missing Authorization Check in Quick Creation Command Endpoints",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Nuclio: Unsanitized cron trigger event headers/body injected into CronJob shell command leads to persistent RCE",
+          "date": "2026-07-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "async-tar PAX extension-header desync enables tar entry/content smuggling",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Skipper: opaAuthorizeRequestWithBody filter bypasses OPA policy on Transfer-Encoding — chunked / HTTP/2 requests",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "`lxml_html_clean.Cleaner` does not strip `javascript:` URLs from namespaced URL attributes",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57100: Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
+          "date": "2026-07-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-45499: Azure OpenAI Elevation of Privilege Vulnerability",
+          "date": "2026-07-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-26145: Microsoft Azure Synapse Elevation of Privilege Vulnerability",
+          "date": "2026-07-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-41106: Microsoft 365 Copilot Elevation of Privilege Vulnerability",
+          "date": "2026-07-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13933: Chromium: CVE-2026-13933 Insufficient policy enforcement in Passwords",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-14153: Chromium: CVE-2026-14153 Inappropriate implementation in Glic",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-14125: Chromium: CVE-2026-14125 Uninitialized Use in ANGLE",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-55945: Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-56645: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57975: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57983: Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57984: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57985: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57987: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57988: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57992: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57993: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-56646: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-58282: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-58283: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-58287: Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-58299: Microsoft Edge for Android Remote Code Execution Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-58522: Microsoft Edge for Android Information Disclosure Vulnerability",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13775: Chromium: CVE-2026-13775 Use after free in GPU",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13776: Chromium: CVE-2026-13776 Type Confusion in Dawn",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13779: Chromium: CVE-2026-13779 Use after free in Chromoting",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13780: Chromium: CVE-2026-13780 Insufficient validation of untrusted input in ANGLE",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13781: Chromium: CVE-2026-13781 Insufficient validation of untrusted input in Skia",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13782: Chromium: CVE-2026-13782 Use after free in Browser",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13783: Chromium: CVE-2026-13783 Use after free in Views",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13784: Chromium: CVE-2026-13784 Use after free in Views",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13786: Chromium: CVE-2026-13786 Use after free in Ozone",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13787: Chromium: CVE-2026-13787 Use after free in Chromoting",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13790: Chromium: CVE-2026-13790 Side-channel information leakage in Scroll",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13793: Chromium: CVE-2026-13793 Insufficient policy enforcement in SVG",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13794: Chromium: CVE-2026-13794 Insufficient validation of untrusted input in WebAppInstalls",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13797: Chromium: CVE-2026-13797 Insufficient validation of untrusted input in Chromecast",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13801: Chromium: CVE-2026-13801 Integer overflow in Chromecast",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13802: Chromium: CVE-2026-13802 Use after free in Views",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13803: Chromium: CVE-2026-13803 Type Confusion in Chrome Tabs",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13804: Chromium: CVE-2026-13804 Use after free in Chromecast",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13810: Chromium: CVE-2026-13810 Inappropriate implementation in Input",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13811: Chromium: CVE-2026-13811 Use after free in IME",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13814: Chromium: CVE-2026-13814 Use after free in Views",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13817: Chromium: CVE-2026-13817 Insufficient validation of untrusted input in Glic",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13815: Chromium: CVE-2026-13815 Use after free in Blink",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13820: Chromium: CVE-2026-13820 Out of bounds read in Skia",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13821: Chromium: CVE-2026-13821 Use after free in Canvas",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13823: Chromium: CVE-2026-13823 Use after free in Glic",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-13818: Chromium: CVE-2026-13818 Inappropriate implementation in Passwords",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55206: py7zr: py7zr: Denial of Service via crafted .7z archives due to inefficient algorithmic complexity",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55195: py7zr: py7zr: Denial of Service via decompression bomb in 7zip archive extraction",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15154: guardrails-detectors: guardrails-detectors: Unauthenticated Regular-Expression Denial of Service (ReDoS) via detector_pa",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-54423: openstack-ironic: openstack-ironic: Arbitrary IPMI command execution via send_raw deployment step",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-44918: openstack-ironic: Prevent rehoming resources to nodes with different owner",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55999: xorg: X11: xserver: X.org: glamor Font Atlas Heap Buffer Overflow",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-56000: X.org: xorg-x11-server: GLX contextTags Use-After-Free in CommonMakeCurrent()",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-56001: libXfont2: BitmapScaleBitmaps Integer Overflow Heap Buffer Overflow",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-56002: libXfont2: PCF Font Parsing Heap Buffer Overflow",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15044: trustyai-service-operator: TrustyAI Service Operator: Unauthenticated access to AI guardrails and orchestrator APIs",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15063: trustyai-service-operator: TrustyAI Service Operator: Gorch port bypass when auth IS enabled",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-14740: DBI: DBI for Perl: Out-of-bounds read in SQL comment processing",
+          "date": "2026-07-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-14739: DBI: DBI: Heap overflow when preparsing SQL statements with excessive placeholders",
+          "date": "2026-07-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-13122: openvpn: From CVEorg collector",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-13698: openvpn: From CVEorg collector",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-11856: curl: curl: Information disclosure via incorrect Digest authentication header reuse",
+          "date": "2026-07-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-11564: libcurl: libcurl: Certificate validation bypass due to incorrect connection reuse",
+          "date": "2026-07-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-10536: libcurl: libcurl: Use-after-free vulnerability leading to Denial of Service",
+          "date": "2026-07-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "signal",
+          "title": "Skipper: opaAuthorizeRequestWithBody filter bypasses OPA policy on Transfer-Encoding — chunked / HTTP/2 requests",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8518-1: mailcap vulnerability",
+          "date": "2026-07-08",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-07-09T03:36:29.223Z",
       "logs": [
@@ -8196,55 +9682,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-04T19:23:53.963Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[SUCCESS] debian - 6 patches (1 new)",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 218 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 292 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 132 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 1,
-      "totalPatches": 700,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "cisco",
-        "edge",
-        "github",
-        "signal",
-        "aws",
-        "cloudflare",
-        "gitlab",
-        "chrome",
-        "apple",
-        "crowdstrike",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6377-1 php8.4 - security update",
-          "date": "2026-07-04",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
