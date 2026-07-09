@@ -1,16 +1,44 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-07-09T10:00:21.151Z",
+  "lastUpdated": "2026-07-09T15:22:27.207Z",
   "health": {
-    "lastFetchAttempt": "2026-07-09T10:00:21.151Z",
+    "lastFetchAttempt": "2026-07-09T15:22:27.207Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-09T10:00:21.151Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-07-09T15:22:27.207Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Gittensory: Missing contributor-scoped access control on profile endpoint and MCP tool leaks miner financial data",
+      "date": "2026-07-09",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n \n`GET /v1/contributors/:login/profile` and the `gittensory_get_contributor_profile` MCP tool skip the contributor-scoped access check that every sibling endpoint enforces. Any authenticat",
+      "link": "https://github.com/advisories/GHSA-382c-vx95-w3p5",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Soup Sieve: Regular Expression Denial of Service (ReDoS) via Selector Parser",
+      "date": "2026-07-09",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nThe CSS selector parser in soupsieve (the CSS selector engine for Beautiful Soup 4) contains a regular expression vulnerable to catastrophic backtracking. When processing an attribute sel",
+      "link": "https://github.com/advisories/GHSA-836r-79rf-4m37",
+      "cves": [
+        "CVE-2026-49477"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Skipper: opaAuthorizeRequestWithBody filter bypasses OPA policy on Transfer-Encoding — chunked / HTTP/2 requests",
       "date": "2026-07-08",
