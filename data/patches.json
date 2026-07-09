@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-09T17:58:25.792Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-09T19:55:29.425Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "Why we cannot wait for better post-quantum signature algorithms",
@@ -719,6 +719,15 @@
       "component": "Go Cryptography vulnerabilities",
       "description": "Jakub Ciolek and Nicola Murino discovered that Go Cryptography incorrectly\nhandled SSH agent responses. An attacker could use this to cause a denial\nof service. (CVE-2025-47913)\n\nYuichi Watanabe disco...",
       "link": "https://ubuntu.com/security/notices/USN-8519-1"
+    },
+    {
+      "title": "USN-8524-1: Python vulnerability",
+      "date": "2026-07-09",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Python",
+      "description": "It was discovered that Python did not use sufficient entropy for Expat\nhash-flooding protection in the xml.parsers.expat and xml.etree.ElementTree\nmodules. An attacker could use this to cause a denial...",
+      "link": "https://ubuntu.com/security/notices/USN-8524-1"
     },
     {
       "title": "Chrome Stable for iOS Update",
@@ -6103,6 +6112,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-09T19:55:29.425Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 10 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 142 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 271 patches, no changes",
+        "[INFO] paloalto - 14 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[INFO] redhat - 125 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[SUCCESS] ubuntu - 24 patches (1 new)"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 611,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "cloudflare",
+        "github",
+        "microsoft",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "cisco",
+        "crowdstrike",
+        "debian",
+        "gitlab",
+        "paloalto",
+        "redhat",
+        "aws",
+        "edge",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8524-1: Python vulnerability",
+          "date": "2026-07-09",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-07-09T17:58:25.792Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
@@ -11222,46 +11280,6 @@
     },
     {
       "timestamp": "2026-07-05T13:46:47.545Z",
-      "logs": [
-        "[INFO] apple - 2 patches, no changes",
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 4 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 218 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 242 patches, no changes",
-        "[INFO] redhat - 124 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 29 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 638,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "cisco",
-        "edge",
-        "github",
-        "signal",
-        "aws",
-        "cloudflare",
-        "gitlab",
-        "chrome",
-        "apple",
-        "crowdstrike"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-05T10:17:45.202Z",
       "logs": [
         "[INFO] apple - 2 patches, no changes",
         "[INFO] aws - 4 patches, no changes",
