@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-07-09T19:54:14.880Z",
+  "lastUpdated": "2026-07-10T03:50:52.338Z",
   "health": {
-    "lastFetchAttempt": "2026-07-09T19:54:14.880Z",
+    "lastFetchAttempt": "2026-07-10T03:50:52.338Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-09T19:54:14.880Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-07-10T03:50:52.338Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -34,6 +34,36 @@
       "link": "https://github.com/advisories/GHSA-836r-79rf-4m37",
       "cves": [
         "CVE-2026-49477"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "GoBGP confederation validation panics on empty AS_PATH attribute",
+      "date": "2026-07-09",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "Found through variant analysis based on `CVE-2026-41643`\n\n## Summary\nGoBGP accepts a zero-length AS_PATH during UPDATE decoding and later panics while validating that attribute for a confederation eBG",
+      "link": "https://github.com/advisories/GHSA-frrj-87jh-2772",
+      "cves": [
+        "CVE-2026-49838"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "YesWiki has Unauthenticated Server-Side Request Forgery via ActivityPub `Signature.keyId`",
+      "date": "2026-07-09",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\nThe `POST /api/forms/{formId}/actor/inbox` route - exposed publicly with `acl:\"public\"` - accepts an HTTP `Signature` header whose `keyId` parameter is a URL. `HttpSignatureService::verifyS",
+      "link": "https://github.com/advisories/GHSA-vw42-752g-5mrp",
+      "cves": [
+        "CVE-2026-52769"
       ],
       "platform": [
         "All Platforms"
