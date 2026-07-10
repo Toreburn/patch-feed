@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-10T14:34:24.897Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-10T14:41:37.240Z",
+  "newPatches": 22,
   "patches": [
     {
       "title": "Tesla vulnerable to multipart part smuggling via unescaped `content-disposition` values",
@@ -56,6 +56,28 @@
       "link": "https://github.com/advisories/GHSA-q7jx-v53g-848w",
       "cve": "CVE-2026-48596",
       "cvss": null
+    },
+    {
+      "title": "morgan vulnerable to Log Forging via unneutralized control characters in :remote-user",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "morgan",
+      "description": "morgan vulnerable to Log Forging via unneutralized control characters in :remote-user",
+      "link": "https://github.com/advisories/GHSA-4vj7-5mj6-jm8m",
+      "cve": "CVE-2026-5078",
+      "cvss": 5.3
+    },
+    {
+      "title": "API Platform Core vulnerable to cross-user attribute leak in JSON:API and HAL item normalizers due to missing isCacheKeySafe gate",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "api-platform/core, api-platform/core, api-platform/core",
+      "description": "API Platform Core vulnerable to cross-user attribute leak in JSON:API and HAL item normalizers due to missing isCacheKeySafe gate",
+      "link": "https://github.com/advisories/GHSA-pjhx-3c3w-9v23",
+      "cve": "CVE-2026-49858",
+      "cvss": 5.9
     },
     {
       "title": "CVE-2026-53355: net: rds: clear i_sends on setup unwind",
@@ -508,6 +530,17 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-53337"
     },
     {
+      "title": "CVE-2026-15378: guardrails-detectors: guardrails-detectors: SSRF and local file read via user-supplied XML Schema (xml-with-schema:)",
+      "date": "2026-07-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "guardrails-detectors: guardrails-detectors: SSRF and local file read via user-supplied XML Schema (xml-with-schema:)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15378.json",
+      "cve": "CVE-2026-15378",
+      "cvss": 9.3
+    },
+    {
       "title": "USN-8492-5: Linux kernel (FIPS) vulnerabilities",
       "date": "2026-07-10",
       "severity": "LOW",
@@ -515,6 +548,42 @@
       "component": "Linux kernel (FIPS) vulnerabilities",
       "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architectu...",
       "link": "https://ubuntu.com/security/notices/USN-8492-5"
+    },
+    {
+      "title": "USN-8530-1: Linux kernel (AWS) vulnerabilities",
+      "date": "2026-07-10",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (AWS) vulnerabilities",
+      "description": "It was discovered that the Linux kernel did not properly handle shared page\nfragments during socket buffer operations, collectively known as Dirty\nFrag. A logic flaw existed in the XFRM ESP-in-TCP sub...",
+      "link": "https://ubuntu.com/security/notices/USN-8530-1"
+    },
+    {
+      "title": "USN-8529-1: Linux kernel vulnerabilities",
+      "date": "2026-07-10",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "It was discovered that a logic flaw existed in the XFRM ESP-in-TCP\nsubsystem in the Linux kernel when handling socket buffer fragments. This\nflaw is known as Fragnesia. A local attacker could use this...",
+      "link": "https://ubuntu.com/security/notices/USN-8529-1"
+    },
+    {
+      "title": "USN-8528-1: Linux kernel (Xilinx ZynqMP) vulnerabilities",
+      "date": "2026-07-10",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Xilinx ZynqMP) vulnerabilities",
+      "description": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privil...",
+      "link": "https://ubuntu.com/security/notices/USN-8528-1"
+    },
+    {
+      "title": "USN-8527-1: Linux kernel (Raspberry Pi) vulnerabilities",
+      "date": "2026-07-10",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Raspberry Pi) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - RISC-V architect...",
+      "link": "https://ubuntu.com/security/notices/USN-8527-1"
     },
     {
       "title": "Why we cannot wait for better post-quantum signature algorithms",
@@ -1524,6 +1593,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12590.json",
       "cve": "CVE-2026-12590",
       "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-55689: openfga: OpenFGA: OIDC audience validation skipped when --authn-oidc-audience is unset",
+      "date": "2026-07-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openfga: OpenFGA: OIDC audience validation skipped when --authn-oidc-audience is unset",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55689.json",
+      "cve": "CVE-2026-55689",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-58459: gpsd: gpsd: Command Injection via GPS device subtype allows arbitrary code execution",
+      "date": "2026-07-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gpsd: gpsd: Command Injection via GPS device subtype allows arbitrary code execution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58459.json",
+      "cve": "CVE-2026-58459",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-15187: enquirer: Enquirer: Prototype pollution vulnerability allows remote attackers to modify object attributes",
+      "date": "2026-07-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "enquirer: Enquirer: Prototype pollution vulnerability allows remote attackers to modify object attributes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15187.json",
+      "cve": "CVE-2026-15187",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-38076: jbig2dec: jbig2dec: Denial of Service via crafted input",
+      "date": "2026-07-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jbig2dec: jbig2dec: Denial of Service via crafted input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-38076.json",
+      "cve": "CVE-2026-38076",
+      "cvss": 6.5
     },
     {
       "title": "Gittensory: Missing contributor-scoped access control on profile endpoint and MCP tool leaks miner financial data",
@@ -3209,6 +3322,116 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56297.json",
       "cve": "CVE-2026-56297",
       "cvss": 5.6
+    },
+    {
+      "title": "CVE-2026-54528: jupyterlab-git: JupyterLab Git: Information disclosure via case-sensitivity bypass in excluded path enforcement",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jupyterlab-git: JupyterLab Git: Information disclosure via case-sensitivity bypass in excluded path enforcement",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54528.json",
+      "cve": "CVE-2026-54528",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-59935: pypdf: pypdf: Denial of Service via crafted PDF with unterminated inline image",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted PDF with unterminated inline image",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59935.json",
+      "cve": "CVE-2026-59935",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-44512: onnx: ONNX: Denial of Service via crafted untrusted models",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "onnx: ONNX: Denial of Service via crafted untrusted models",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44512.json",
+      "cve": "CVE-2026-44512",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-59923: mistune: Mistune: Arbitrary code execution through crafted Markdown links",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mistune: Mistune: Arbitrary code execution through crafted Markdown links",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59923.json",
+      "cve": "CVE-2026-59923",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-59930: mistune: Mistune: Same-page navigation redirection due to predictable heading IDs",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mistune: Mistune: Same-page navigation redirection due to predictable heading IDs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59930.json",
+      "cve": "CVE-2026-59930",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-39822: os: golang: Go os.Root: Symlink following vulnerability allows directory traversal",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "os: golang: Go os.Root: Symlink following vulnerability allows directory traversal",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-39822.json",
+      "cve": "CVE-2026-39822",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-59725: socket.io: engine.io: Socket.IO: Denial of Service via invalid binary POST requests",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "socket.io: engine.io: Socket.IO: Denial of Service via invalid binary POST requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59725.json",
+      "cve": "CVE-2026-59725",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-59724: engine.io: Engine.IO: Denial of Service via crafted WebTransport session ID",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "engine.io: Engine.IO: Denial of Service via crafted WebTransport session ID",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59724.json",
+      "cve": "CVE-2026-59724",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-59876: protobufjs: protobufjs: Prototype pollution vulnerability in Text Format extension",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "protobufjs: protobufjs: Prototype pollution vulnerability in Text Format extension",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59876.json",
+      "cve": "CVE-2026-59876",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-15028: libarchive: heap overflow OOB read while parsing a tar archive contains a PAX extended header",
+      "date": "2026-07-08",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libarchive: heap overflow OOB read while parsing a tar archive contains a PAX extended header",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15028.json",
+      "cve": "CVE-2026-15028",
+      "cvss": 3.9
     },
     {
       "title": "Skipper: opaAuthorizeRequestWithBody filter bypasses OPA policy on Transfer-Encoding — chunked / HTTP/2 requests",
@@ -5480,6 +5703,17 @@
       "cvss": 5.3
     },
     {
+      "title": "CVE-2026-59152: langsmith: LangSmith SDK TracingMiddleware: Information Disclosure via Arbitrary Server-Side File Read",
+      "date": "2026-07-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "langsmith: LangSmith SDK TracingMiddleware: Information Disclosure via Arbitrary Server-Side File Read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59152.json",
+      "cve": "CVE-2026-59152",
+      "cvss": 5
+    },
+    {
       "title": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
       "date": "2026-07-06",
       "severity": "MEDIUM",
@@ -6341,6 +6575,181 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-07-10T14:41:37.240Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 9 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[SUCCESS] github - 180 patches (2 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 250 patches, no changes",
+        "[INFO] paloalto - 14 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 138 patches (16 new)",
+        "[INFO] signal - 7 patches, no changes",
+        "[SUCCESS] ubuntu - 31 patches (4 new)"
+      ],
+      "newPatchCount": 22,
+      "totalPatches": 650,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "github",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "cloudflare",
+        "edge",
+        "signal",
+        "chrome",
+        "cisco",
+        "crowdstrike",
+        "debian",
+        "gitlab",
+        "paloalto",
+        "aws",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "morgan vulnerable to Log Forging via unneutralized control characters in :remote-user",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "API Platform Core vulnerable to cross-user attribute leak in JSON:API and HAL item normalizers due to missing isCacheKeySafe gate",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15378: guardrails-detectors: guardrails-detectors: SSRF and local file read via user-supplied XML Schema (xml-with-schema:)",
+          "date": "2026-07-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55689: openfga: OpenFGA: OIDC audience validation skipped when --authn-oidc-audience is unset",
+          "date": "2026-07-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-58459: gpsd: gpsd: Command Injection via GPS device subtype allows arbitrary code execution",
+          "date": "2026-07-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15187: enquirer: Enquirer: Prototype pollution vulnerability allows remote attackers to modify object attributes",
+          "date": "2026-07-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-38076: jbig2dec: jbig2dec: Denial of Service via crafted input",
+          "date": "2026-07-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-54528: jupyterlab-git: JupyterLab Git: Information disclosure via case-sensitivity bypass in excluded path enforcement",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59935: pypdf: pypdf: Denial of Service via crafted PDF with unterminated inline image",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-44512: onnx: ONNX: Denial of Service via crafted untrusted models",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59923: mistune: Mistune: Arbitrary code execution through crafted Markdown links",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59930: mistune: Mistune: Same-page navigation redirection due to predictable heading IDs",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-39822: os: golang: Go os.Root: Symlink following vulnerability allows directory traversal",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59725: socket.io: engine.io: Socket.IO: Denial of Service via invalid binary POST requests",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59724: engine.io: Engine.IO: Denial of Service via crafted WebTransport session ID",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59876: protobufjs: protobufjs: Prototype pollution vulnerability in Text Format extension",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15028: libarchive: heap overflow OOB read while parsing a tar archive contains a PAX extended header",
+          "date": "2026-07-08",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59152: langsmith: LangSmith SDK TracingMiddleware: Information Disclosure via Arbitrary Server-Side File Read",
+          "date": "2026-07-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8530-1: Linux kernel (AWS) vulnerabilities",
+          "date": "2026-07-10",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8529-1: Linux kernel vulnerabilities",
+          "date": "2026-07-10",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8528-1: Linux kernel (Xilinx ZynqMP) vulnerabilities",
+          "date": "2026-07-10",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8527-1: Linux kernel (Raspberry Pi) vulnerabilities",
+          "date": "2026-07-10",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-07-10T14:34:24.897Z",
       "logs": [
@@ -12164,57 +12573,6 @@
         "chrome"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-06T04:06:01.605Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[SUCCESS] debian - 8 patches (2 new)",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 214 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 192 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 108 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 26 patches, no changes"
-      ],
-      "newPatchCount": 2,
-      "totalPatches": 567,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "debian",
-        "postgresql",
-        "redhat",
-        "microsoft",
-        "ubuntu",
-        "cisco",
-        "edge",
-        "github",
-        "signal",
-        "aws",
-        "cloudflare",
-        "gitlab",
-        "chrome"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6381-1 linux - security update",
-          "date": "2026-07-05",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "debian",
-          "title": "DSA-6380-1 mediawiki - security update",
-          "date": "2026-07-05",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
