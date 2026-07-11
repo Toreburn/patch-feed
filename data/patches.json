@@ -1,7 +1,27 @@
 {
-  "lastUpdated": "2026-07-11T02:52:41.205Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-11T03:18:22.532Z",
+  "newPatches": 32,
   "patches": [
+    {
+      "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
+      "date": "2026-07-10",
+      "severity": "LOW",
+      "vendor": "chrome",
+      "component": "Chrome Browser",
+      "description": "The ChromeOS Stable channel is being updated to OS version 16667.62.0 (Browser version 149.0.7827.238) for most ChromeOS devices.If you find new issues, please let us know one of the following ways:Fi...",
+      "link": "https://chromereleases.googleblog.com/feeds/2493992227297434866/comments/default"
+    },
+    {
+      "title": "DSA-6386-1 opam - security update",
+      "date": "2026-07-10",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "opam",
+      "description": "Kate Deplaix reported that .install file directives were insufficiently restricted in OPAM, a package manager for OCaml. Installing files through .install files did not check symlinks resolution on th...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00297.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "Tesla vulnerable to multipart part smuggling via unescaped `content-disposition` values",
       "date": "2026-07-10",
@@ -320,6 +340,83 @@
       "link": "https://github.com/advisories/GHSA-pj8j-p4g4-4vw8",
       "cve": "CVE-2026-49865",
       "cvss": null
+    },
+    {
+      "title": "TSDProxy: Internal proxy auth token forwarded to backend services enables management API escalation",
+      "date": "2026-07-10",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/almeidapaulopt/tsdproxy",
+      "description": "TSDProxy: Internal proxy auth token forwarded to backend services enables management API escalation",
+      "link": "https://github.com/advisories/GHSA-g936-7jqj-mwv8",
+      "cve": "",
+      "cvss": 9
+    },
+    {
+      "title": "melange: Incomplete package integrity verification allows data section substitution",
+      "date": "2026-07-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "chainguard.dev/apko, chainguard.dev/melange",
+      "description": "melange: Incomplete package integrity verification allows data section substitution",
+      "link": "https://github.com/advisories/GHSA-fpg8-7664-jc5q",
+      "cve": "CVE-2026-54174",
+      "cvss": 8.3
+    },
+    {
+      "title": "Excon does not redact additional sensitive/risky headers when following redirects",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "excon",
+      "description": "Excon does not redact additional sensitive/risky headers when following redirects",
+      "link": "https://github.com/advisories/GHSA-48rx-c7pg-q66r",
+      "cve": "CVE-2026-54171",
+      "cvss": 6.5
+    },
+    {
+      "title": "Clauster: Non-loopback deployments can serve the dashboard unauthenticated when auth.enabled is unset",
+      "date": "2026-07-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "clauster",
+      "description": "Clauster: Non-loopback deployments can serve the dashboard unauthenticated when auth.enabled is unset",
+      "link": "https://github.com/advisories/GHSA-h4g2-xfmw-q2c9",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Secure Headers: CSP directive injection via sandbox, plugin_types, and report_to when given untrusted input",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "secure_headers",
+      "description": "Secure Headers: CSP directive injection via sandbox, plugin_types, and report_to when given untrusted input",
+      "link": "https://github.com/advisories/GHSA-rqq5-2gf9-4w4q",
+      "cve": "CVE-2026-54163",
+      "cvss": 4.7
+    },
+    {
+      "title": "SiYuan: Stored XSS to RCE via Unsanitized Attribute View Asset Cell Content",
+      "date": "2026-07-10",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Stored XSS to RCE via Unsanitized Attribute View Asset Cell Content",
+      "link": "https://github.com/advisories/GHSA-56mp-4f3v-fgj2",
+      "cve": "CVE-2026-50551",
+      "cvss": 9.9
+    },
+    {
+      "title": "prestashop/ps_facetedsearch: PHP Object Injection in faceted search cache allows unauthenticated RCE",
+      "date": "2026-07-10",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "prestashop/ps_facetedsearch",
+      "description": "prestashop/ps_facetedsearch: PHP Object Injection in faceted search cache allows unauthenticated RCE",
+      "link": "https://github.com/advisories/GHSA-m5f5-28qr-9g9r",
+      "cve": "CVE-2026-54159",
+      "cvss": 10
     },
     {
       "title": "CVE-2026-53355: net: rds: clear i_sends on setup unwind",
@@ -781,6 +878,127 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15378.json",
       "cve": "CVE-2026-15378",
       "cvss": 9.3
+    },
+    {
+      "title": "CVE-2026-57156: FreeRDP: FreeRDP: Arbitrary code execution or denial of service via integer overflow in RDP message processing",
+      "date": "2026-07-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FreeRDP: FreeRDP: Arbitrary code execution or denial of service via integer overflow in RDP message processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57156.json",
+      "cve": "CVE-2026-57156",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-57157: FreeRDP: FreeRDP: Out-of-bounds read leads to information disclosure and denial of service",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FreeRDP: FreeRDP: Out-of-bounds read leads to information disclosure and denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57157.json",
+      "cve": "CVE-2026-57157",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-57158: FreeRDP: FreeRDP: Information disclosure via truncated RDPGFX planar payload",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FreeRDP: FreeRDP: Information disclosure via truncated RDPGFX planar payload",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57158.json",
+      "cve": "CVE-2026-57158",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-55827: FreeRDP: FreeRDP: Remote code execution via heap out-of-bounds write in RemoteFX decoding",
+      "date": "2026-07-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FreeRDP: FreeRDP: Remote code execution via heap out-of-bounds write in RemoteFX decoding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55827.json",
+      "cve": "CVE-2026-55827",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-15146: wget: Wget: Server-Side Request Forgery via FTP PASV response IP address validation bypass",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wget: Wget: Server-Side Request Forgery via FTP PASV response IP address validation bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15146.json",
+      "cve": "CVE-2026-15146",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-53450: coturn: Coturn: Localhost services exposed via IPv4-mapped IPv6 address bypass",
+      "date": "2026-07-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "coturn: Coturn: Localhost services exposed via IPv4-mapped IPv6 address bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53450.json",
+      "cve": "CVE-2026-53450",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-53449: coturn: Coturn: Arbitrary file overwrite via CLI command",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "coturn: Coturn: Arbitrary file overwrite via CLI command",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53449.json",
+      "cve": "CVE-2026-53449",
+      "cvss": 6
+    },
+    {
+      "title": "CVE-2026-53448: coturn: Coturn: Arbitrary code execution via SQL injection in HTTPS admin panel",
+      "date": "2026-07-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "coturn: Coturn: Arbitrary code execution via SQL injection in HTTPS admin panel",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53448.json",
+      "cve": "CVE-2026-53448",
+      "cvss": 7.2
+    },
+    {
+      "title": "CVE-2026-59180: apprise: Apprise: Information disclosure via HTTP redirect following with credential resending",
+      "date": "2026-07-10",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "apprise: Apprise: Information disclosure via HTTP redirect following with credential resending",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59180.json",
+      "cve": "CVE-2026-59180",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-15143: guardrails-detectors: guardrails-detectors: SSRF and local file read via user-supplied XML Schema (xml-with-schema:)",
+      "date": "2026-07-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "guardrails-detectors: guardrails-detectors: SSRF and local file read via user-supplied XML Schema (xml-with-schema:)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15143.json",
+      "cve": "CVE-2026-15143",
+      "cvss": 9.3
+    },
+    {
+      "title": "CVE-2026-53363: kernel: xfrm: iptfs: preserve shared-frag marker in iptfs_consume_frags()",
+      "date": "2026-07-10",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfrm: iptfs: preserve shared-frag marker in iptfs_consume_frags()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53363.json",
+      "cve": "CVE-2026-53363",
+      "cvss": null
     },
     {
       "title": "USN-8492-5: Linux kernel (FIPS) vulnerabilities",
@@ -1879,6 +2097,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-38076.json",
       "cve": "CVE-2026-38076",
       "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-55170: github.com/openfga/openfga: OpenFGA: Incorrect authorization decisions due to case-insensitive comparisons in MySQL data",
+      "date": "2026-07-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/openfga/openfga: OpenFGA: Incorrect authorization decisions due to case-insensitive comparisons in MySQL datastore",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55170.json",
+      "cve": "CVE-2026-55170",
+      "cvss": 5.4
     },
     {
       "title": "Gittensory: Missing contributor-scoped access control on profile endpoint and MCP tool leaks miner financial data",
@@ -3676,6 +3905,94 @@
       "cvss": 3.9
     },
     {
+      "title": "CVE-2026-7492: gitlab-ee: gitlab: GitLab: Information disclosure of private project existence via improper authorization",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gitlab-ee: gitlab: GitLab: Information disclosure of private project existence via improper authorization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-7492.json",
+      "cve": "CVE-2026-7492",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-58207: github.com/nats-io/nats-server: NATS Server: Denial of Service via arithmetic overflow in connection monitoring paginati",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Denial of Service via arithmetic overflow in connection monitoring pagination",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58207.json",
+      "cve": "CVE-2026-58207",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-59937: pypdf: pypdf: Denial of Service via crafted PDF with malformed cross-reference streams",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted PDF with malformed cross-reference streams",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59937.json",
+      "cve": "CVE-2026-59937",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-59938: pypdf: pypdf: Possible large memory usage for wrong image dimensions",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Possible large memory usage for wrong image dimensions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59938.json",
+      "cve": "CVE-2026-59938",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-59929: mistune: Mistune: Cross-site scripting via incomplete URL scheme filtering",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mistune: Mistune: Cross-site scripting via incomplete URL scheme filtering",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59929.json",
+      "cve": "CVE-2026-59929",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-59890: setuptools: setuptools: MANIFEST.in exclusion bypass in sdist via Unicode normalization collision (NFC/NFD)",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "setuptools: setuptools: MANIFEST.in exclusion bypass in sdist via Unicode normalization collision (NFC/NFD)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59890.json",
+      "cve": "CVE-2026-59890",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-59262: AFFiNE: AFFiNE: Information disclosure via histories GraphQL field",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "AFFiNE: AFFiNE: Information disclosure via histories GraphQL field",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59262.json",
+      "cve": "CVE-2026-59262",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-59996: openssh: OpenSSH: `scp` file misplacement vulnerability during remote copy",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openssh: OpenSSH: `scp` file misplacement vulnerability during remote copy",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59996.json",
+      "cve": "CVE-2026-59996",
+      "cvss": 4.6
+    },
+    {
       "title": "Skipper: opaAuthorizeRequestWithBody filter bypasses OPA policy on Transfer-Encoding — chunked / HTTP/2 requests",
       "date": "2026-07-08",
       "severity": "HIGH",
@@ -4788,6 +5105,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58471.json",
       "cve": "CVE-2026-58471",
       "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-48588: django: Django: Information disclosure due to improper caching of Set-Cookie responses",
+      "date": "2026-07-07",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "django: Django: Information disclosure due to improper caching of Set-Cookie responses",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48588.json",
+      "cve": "CVE-2026-48588",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-53877: django: Django: Information disclosure via heap buffer over-read in GDALRaster",
+      "date": "2026-07-07",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "django: Django: Information disclosure via heap buffer over-read in GDALRaster",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53877.json",
+      "cve": "CVE-2026-53877",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-53878: django: Django: HTTP header injection via DomainNameValidator accepting newlines",
+      "date": "2026-07-07",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "django: Django: HTTP header injection via DomainNameValidator accepting newlines",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53878.json",
+      "cve": "CVE-2026-53878",
+      "cvss": 3.7
     },
     {
       "title": "USN-8515-1: Addressable vulnerability",
@@ -6685,6 +7035,241 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-07-11T03:18:22.532Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[SUCCESS] chrome - 6 patches (1 new)",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 9 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[SUCCESS] github - 209 patches (7 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 250 patches, no changes",
+        "[INFO] paloalto - 14 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 150 patches (23 new)",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 31 patches, no changes"
+      ],
+      "newPatchCount": 32,
+      "totalPatches": 692,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "chrome",
+        "debian",
+        "github",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "cloudflare",
+        "edge",
+        "signal",
+        "cisco",
+        "crowdstrike",
+        "gitlab",
+        "paloalto",
+        "aws",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "chrome",
+          "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
+          "date": "2026-07-10",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6386-1 opam - security update",
+          "date": "2026-07-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "TSDProxy: Internal proxy auth token forwarded to backend services enables management API escalation",
+          "date": "2026-07-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "melange: Incomplete package integrity verification allows data section substitution",
+          "date": "2026-07-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Excon does not redact additional sensitive/risky headers when following redirects",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Clauster: Non-loopback deployments can serve the dashboard unauthenticated when auth.enabled is unset",
+          "date": "2026-07-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Secure Headers: CSP directive injection via sandbox, plugin_types, and report_to when given untrusted input",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Stored XSS to RCE via Unsanitized Attribute View Asset Cell Content",
+          "date": "2026-07-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "prestashop/ps_facetedsearch: PHP Object Injection in faceted search cache allows unauthenticated RCE",
+          "date": "2026-07-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-57156: FreeRDP: FreeRDP: Arbitrary code execution or denial of service via integer overflow in RDP message processing",
+          "date": "2026-07-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-57157: FreeRDP: FreeRDP: Out-of-bounds read leads to information disclosure and denial of service",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-57158: FreeRDP: FreeRDP: Information disclosure via truncated RDPGFX planar payload",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55827: FreeRDP: FreeRDP: Remote code execution via heap out-of-bounds write in RemoteFX decoding",
+          "date": "2026-07-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15146: wget: Wget: Server-Side Request Forgery via FTP PASV response IP address validation bypass",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53450: coturn: Coturn: Localhost services exposed via IPv4-mapped IPv6 address bypass",
+          "date": "2026-07-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53449: coturn: Coturn: Arbitrary file overwrite via CLI command",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53448: coturn: Coturn: Arbitrary code execution via SQL injection in HTTPS admin panel",
+          "date": "2026-07-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59180: apprise: Apprise: Information disclosure via HTTP redirect following with credential resending",
+          "date": "2026-07-10",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15143: guardrails-detectors: guardrails-detectors: SSRF and local file read via user-supplied XML Schema (xml-with-schema:)",
+          "date": "2026-07-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53363: kernel: xfrm: iptfs: preserve shared-frag marker in iptfs_consume_frags()",
+          "date": "2026-07-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55170: github.com/openfga/openfga: OpenFGA: Incorrect authorization decisions due to case-insensitive comparisons in MySQL data",
+          "date": "2026-07-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-7492: gitlab-ee: gitlab: GitLab: Information disclosure of private project existence via improper authorization",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-58207: github.com/nats-io/nats-server: NATS Server: Denial of Service via arithmetic overflow in connection monitoring paginati",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59937: pypdf: pypdf: Denial of Service via crafted PDF with malformed cross-reference streams",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59938: pypdf: pypdf: Possible large memory usage for wrong image dimensions",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59929: mistune: Mistune: Cross-site scripting via incomplete URL scheme filtering",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59890: setuptools: setuptools: MANIFEST.in exclusion bypass in sdist via Unicode normalization collision (NFC/NFD)",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59262: AFFiNE: AFFiNE: Information disclosure via histories GraphQL field",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59996: openssh: OpenSSH: `scp` file misplacement vulnerability during remote copy",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-48588: django: Django: Information disclosure due to improper caching of Set-Cookie responses",
+          "date": "2026-07-07",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53877: django: Django: Information disclosure via heap buffer over-read in GDALRaster",
+          "date": "2026-07-07",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53878: django: Django: HTTP header injection via DomainNameValidator accepting newlines",
+          "date": "2026-07-07",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-07-11T02:52:41.205Z",
       "logs": [
@@ -12187,171 +12772,6 @@
         "chrome"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-06T20:07:21.686Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[SUCCESS] cisco - 7 patches (1 new)",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 232 patches (18 new)",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 242 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[INFO] redhat - 124 patches, no changes",
-        "[SUCCESS] signal - 3 patches (2 new)",
-        "[INFO] ubuntu - 38 patches, no changes"
-      ],
-      "newPatchCount": 21,
-      "totalPatches": 669,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "cisco",
-        "github",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "debian",
-        "microsoft",
-        "edge",
-        "aws",
-        "cloudflare",
-        "gitlab",
-        "chrome"
-      ],
-      "newPatches": [
-        {
-          "vendor": "cisco",
-          "title": "Cisco Identity Services Engine Remote Code Execution and Information Disclosure Vulnerabilities",
-          "date": "2026-07-06",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "id: pretty-print uses effective GID instead of effective UID for name lookup",
-          "date": "2026-07-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
-          "date": "2026-07-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "install -D: symlink race in directory creation allows arbitrary file overwrite",
-          "date": "2026-07-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "cut: -s (only-delimited) ignored when delimiter is a newline",
-          "date": "2026-07-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "install: TOCTOU symlink race (unlink-then-create without O_EXCL) allows arbitrary file overwrite",
-          "date": "2026-07-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "ln: rejects non-UTF-8 source filenames in target-directory mode",
-          "date": "2026-07-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "comm: lossy UTF-8 conversion silently corrupts non-UTF-8 output",
-          "date": "2026-07-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "mktemp: empty TMPDIR creates temp files in CWD instead of /tmp",
-          "date": "2026-07-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "chmod: recursive mode returns exit code 0 even when some files fail (last-file-wins)",
-          "date": "2026-07-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "chmod: --preserve-root bypassed by any path that resolves to root (e.g. /../)",
-          "date": "2026-07-06",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "flyto-core has Unauthenticated Command Execution via HTTP MCP `execute_module`",
-          "date": "2026-07-06",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "flyto-core has SSRF guard bypass via IPv6 transition addresses (IPv4-mapped / 6to4 / NAT64) in validate_url_ssrf",
-          "date": "2026-07-06",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Scriban: Template Writes to Arbitrary CLR Properties via `TypedObjectAccessor` (Mass Assignment + `private` / `init` / `internal` Setter Bypass)",
-          "date": "2026-07-06",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "WeasyPrint has CSS Injection via Presentational Hints",
-          "date": "2026-07-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Cilium vulnerable to sensitive information disclosure and cluster disruption via local Envoy admin socket access",
-          "date": "2026-07-06",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenRemote read-only asset users can write predicted datapoints",
-          "date": "2026-07-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Formie Hidden field defaults vulnerable to Server-Side Template Injection",
-          "date": "2026-07-06",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Open Babel has out-of-bounds write in MOPAC translationVectors[] (UNIT CELL TRANSLATION)",
-          "date": "2026-07-06",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "signal",
-          "title": "kill: 'kill -1' parsed as PID -1, sending SIGTERM to all processes (system crash / DoS)",
-          "date": "2026-07-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "chmod: recursive mode returns exit code 0 even when some files fail (last-file-wins)",
-          "date": "2026-07-06",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
