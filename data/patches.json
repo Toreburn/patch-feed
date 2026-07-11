@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-11T13:25:52.940Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-11T13:40:26.236Z",
+  "newPatches": 4,
   "patches": [
     {
       "title": "CVE-2026-53355: net: rds: clear i_sends on setup unwind",
@@ -1449,6 +1449,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53363.json",
       "cve": "CVE-2026-53363",
       "cvss": null
+    },
+    {
+      "title": "CVE-2026-52747: ModSecurity: ModSecurity: Security rule bypass due to incorrect handling of line breaks in form data",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ModSecurity: ModSecurity: Security rule bypass due to incorrect handling of line breaks in form data",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52747.json",
+      "cve": "CVE-2026-52747",
+      "cvss": 5.8
+    },
+    {
+      "title": "CVE-2026-52761: ModSecurity: ModSecurity: Web Application Firewall rules bypass due to incorrect UTF-8 to Unicode transformation",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ModSecurity: ModSecurity: Web Application Firewall rules bypass due to incorrect UTF-8 to Unicode transformation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52761.json",
+      "cve": "CVE-2026-52761",
+      "cvss": 5.8
+    },
+    {
+      "title": "CVE-2026-56366: ImageMagick: ImageMagick: Denial of Service via memory leak in APP1JPEG image processing",
+      "date": "2026-07-10",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via memory leak in APP1JPEG image processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56366.json",
+      "cve": "CVE-2026-56366",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-56373: ImageMagick: ImageMagick: Use-after-free vulnerability in PDB decoder allows denial of service or limited data corruptio",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Use-after-free vulnerability in PDB decoder allows denial of service or limited data corruption.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56373.json",
+      "cve": "CVE-2026-56373",
+      "cvss": 5.9
     },
     {
       "title": "USN-8492-5: Linux kernel (FIPS) vulnerabilities",
@@ -7486,6 +7530,73 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-11T13:40:26.236Z",
+      "logs": [
+        "[INFO] aws - 2 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 9 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 209 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 300 patches, no changes",
+        "[INFO] paloalto - 14 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 154 patches (4 new)",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 31 patches, no changes"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 746,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "chrome",
+        "debian",
+        "github",
+        "redhat",
+        "ubuntu",
+        "cloudflare",
+        "edge",
+        "signal",
+        "cisco",
+        "crowdstrike",
+        "gitlab",
+        "paloalto",
+        "aws",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-52747: ModSecurity: ModSecurity: Security rule bypass due to incorrect handling of line breaks in form data",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-52761: ModSecurity: ModSecurity: Web Application Firewall rules bypass due to incorrect UTF-8 to Unicode transformation",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-56366: ImageMagick: ImageMagick: Denial of Service via memory leak in APP1JPEG image processing",
+          "date": "2026-07-10",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-56373: ImageMagick: ImageMagick: Use-after-free vulnerability in PDB decoder allows denial of service or limited data corruptio",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-07-11T13:25:52.940Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
@@ -12732,44 +12843,6 @@
     },
     {
       "timestamp": "2026-07-07T14:43:22.259Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 1 patches, no changes",
-        "[INFO] cisco - 7 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 247 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 192 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[INFO] redhat - 115 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 32 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 618,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "chrome",
-        "cisco",
-        "edge",
-        "github",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "debian",
-        "cloudflare",
-        "gitlab"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-07T11:10:43.860Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
         "[INFO] chrome - 1 patches, no changes",
