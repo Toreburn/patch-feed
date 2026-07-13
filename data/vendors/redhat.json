@@ -1,12 +1,12 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-07-13T09:37:46.806Z",
+  "lastUpdated": "2026-07-13T14:47:03.173Z",
   "health": {
-    "lastFetchAttempt": "2026-07-13T09:37:46.806Z",
+    "lastFetchAttempt": "2026-07-13T14:47:03.173Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 154,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-13T09:37:46.806Z",
+    "lastFetchParsedItems": 163,
+    "lastFetchNewPatches": 9,
+    "lastSuccessWithData": "2026-07-13T14:47:03.173Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -254,6 +254,17 @@
       "cvss": 5.9
     },
     {
+      "title": "CVE-2026-15574: vllm-orchestrator-gateway: vllm-orchestrator-gateway: Authorization header and full chat payloads logged at hard-coded D",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm-orchestrator-gateway: vllm-orchestrator-gateway: Authorization header and full chat payloads logged at hard-coded DEBUG default",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15574.json",
+      "cve": "CVE-2026-15574",
+      "cvss": 7.5
+    },
+    {
       "title": "CVE-2026-15308: python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations",
       "date": "2026-07-09",
       "severity": "HIGH",
@@ -329,6 +340,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55170.json",
       "cve": "CVE-2026-55170",
       "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-59856: vim: Vim: Arbitrary code execution via crafted PHP file in omni-completion",
+      "date": "2026-07-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: Vim: Arbitrary code execution via crafted PHP file in omni-completion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59856.json",
+      "cve": "CVE-2026-59856",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-59857: vim: Vim: Denial of Service via out-of-bounds write in spell sound-folding",
+      "date": "2026-07-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: Vim: Denial of Service via out-of-bounds write in spell sound-folding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59857.json",
+      "cve": "CVE-2026-59857",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-12080: qemu-kvm: qemu-guest-agent: Local privilege escalation via symlink attack in guest-ssh-add-authorized-keys",
+      "date": "2026-07-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "qemu-kvm: qemu-guest-agent: Local privilege escalation via symlink attack in guest-ssh-add-authorized-keys",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12080.json",
+      "cve": "CVE-2026-12080",
+      "cvss": 7.3
     },
     {
       "title": "CVE-2026-15041: 389-ds-base: 389-ds-base: Non-constant-time comparison in PBKDF2-SHA256 password verification",
@@ -1209,6 +1253,61 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59996.json",
       "cve": "CVE-2026-59996",
       "cvss": 4.6
+    },
+    {
+      "title": "CVE-2026-58208: github.com/nats-io/nats-server: NATS Server: Denial of Service due to incorrect MQTT-over-WebSocket request routing",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Denial of Service due to incorrect MQTT-over-WebSocket request routing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58208.json",
+      "cve": "CVE-2026-58208",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-58250: github.com/nats-io/nats-server: NATS Server: Denial of Service via repeated leafnode INFO messages during pre-authentica",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Denial of Service via repeated leafnode INFO messages during pre-authentication",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58250.json",
+      "cve": "CVE-2026-58250",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-58252: github.com/nats-io/nats-server: NATS Server: Information disclosure via access control bypass in wildcard and queue subs",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Information disclosure via access control bypass in wildcard and queue subscriptions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58252.json",
+      "cve": "CVE-2026-58252",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-58253: github.com/nats-io/nats-server: NATS Server: Authentication bypass and privilege escalation via parser fast path",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Authentication bypass and privilege escalation via parser fast path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58253.json",
+      "cve": "CVE-2026-58253",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-58251: github.com/nats-io/nats-server: NATS Server: Information disclosure due to bypass of subject deny rules via queue subscr",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Information disclosure due to bypass of subject deny rules via queue subscriptions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58251.json",
+      "cve": "CVE-2026-58251",
+      "cvss": 6.5
     },
     {
       "title": "CVE-2026-11610: 389-ds-base: 389-ds-base: Heap buffer overflow in sasl_io_recv() via padded SASL UNBIND",

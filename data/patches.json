@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-13T14:41:04.701Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-13T14:48:19.501Z",
+  "newPatches": 14,
   "patches": [
     {
       "title": "CVE-2026-57100: Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
@@ -451,6 +451,52 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-13823",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-13823"
+    },
+    {
+      "title": "Introducing Precursor: detecting agentic behavior with continuous client-side signals",
+      "date": "2026-07-13",
+      "severity": "HIGH",
+      "vendor": "cloudflare",
+      "component": "Cloudflare",
+      "description": "Bot mitigation is an adversarial game: attackers adapt, defenders respond, and the cycle continues. At Cloudflare, we stay ahead by combining visibility across our global network with signals from the...",
+      "link": "https://blog.cloudflare.com/introducing-precursor/",
+      "cve": ""
+    },
+    {
+      "title": "USN-8533-1: OpenSSH vulnerabilities",
+      "date": "2026-07-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OpenSSH vulnerabilities",
+      "description": "It was discovered that OpenSSH sftp did not properly constrain the location\nof downloaded files when connecting to an attacker-controlled server. An\nattacker could possibly use this issue to write fil...",
+      "link": "https://ubuntu.com/security/notices/USN-8533-1"
+    },
+    {
+      "title": "USN-8532-1: libssh2 vulnerabilities",
+      "date": "2026-07-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libssh2 vulnerabilities",
+      "description": "It was discovered that libssh2 incorrectly handled certain publickey\nsubsystem attributes. A remote attacker controlling a malicious SSH server\ncould use this issue to cause a denial of service or pos...",
+      "link": "https://ubuntu.com/security/notices/USN-8532-1"
+    },
+    {
+      "title": "USN-8496-3: cifs-utils vulnerability",
+      "date": "2026-07-13",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "cifs-utils",
+      "description": "USN-8496-1 fixed vulnerabilities in cifs-utils. The update caused a\nregression and was backed out in USN-8496-2. This update reintroduces the\nsecurity fix, along with a fix for the regression.\n\nOrigin...",
+      "link": "https://ubuntu.com/security/notices/USN-8496-3"
+    },
+    {
+      "title": "USN-8531-1: libexif vulnerabilities",
+      "date": "2026-07-13",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "libexif vulnerabilities",
+      "description": "It was discovered that libexif had an integer overflow in its MakerNote\ndecoder when called with a zero-length buffer. An attacker could possibly\nuse this issue to cause a denial of service or obtain ...",
+      "link": "https://ubuntu.com/security/notices/USN-8531-1"
     },
     {
       "title": "CVE-2026-53355: net: rds: clear i_sends on setup unwind",
@@ -2932,6 +2978,17 @@
       "cvss": 5.9
     },
     {
+      "title": "CVE-2026-15574: vllm-orchestrator-gateway: vllm-orchestrator-gateway: Authorization header and full chat payloads logged at hard-coded D",
+      "date": "2026-07-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm-orchestrator-gateway: vllm-orchestrator-gateway: Authorization header and full chat payloads logged at hard-coded DEBUG default",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15574.json",
+      "cve": "CVE-2026-15574",
+      "cvss": 7.5
+    },
+    {
       "title": "USN-8492-5: Linux kernel (FIPS) vulnerabilities",
       "date": "2026-07-10",
       "severity": "LOW",
@@ -4039,6 +4096,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55170.json",
       "cve": "CVE-2026-55170",
       "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-59856: vim: Vim: Arbitrary code execution via crafted PHP file in omni-completion",
+      "date": "2026-07-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: Vim: Arbitrary code execution via crafted PHP file in omni-completion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59856.json",
+      "cve": "CVE-2026-59856",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-59857: vim: Vim: Denial of Service via out-of-bounds write in spell sound-folding",
+      "date": "2026-07-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: Vim: Denial of Service via out-of-bounds write in spell sound-folding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59857.json",
+      "cve": "CVE-2026-59857",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-12080: qemu-kvm: qemu-guest-agent: Local privilege escalation via symlink attack in guest-ssh-add-authorized-keys",
+      "date": "2026-07-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "qemu-kvm: qemu-guest-agent: Local privilege escalation via symlink attack in guest-ssh-add-authorized-keys",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12080.json",
+      "cve": "CVE-2026-12080",
+      "cvss": 7.3
     },
     {
       "title": "Gittensory: Missing contributor-scoped access control on profile endpoint and MCP tool leaks miner financial data",
@@ -5924,6 +6014,61 @@
       "cvss": 4.6
     },
     {
+      "title": "CVE-2026-58208: github.com/nats-io/nats-server: NATS Server: Denial of Service due to incorrect MQTT-over-WebSocket request routing",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Denial of Service due to incorrect MQTT-over-WebSocket request routing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58208.json",
+      "cve": "CVE-2026-58208",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-58250: github.com/nats-io/nats-server: NATS Server: Denial of Service via repeated leafnode INFO messages during pre-authentica",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Denial of Service via repeated leafnode INFO messages during pre-authentication",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58250.json",
+      "cve": "CVE-2026-58250",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-58252: github.com/nats-io/nats-server: NATS Server: Information disclosure via access control bypass in wildcard and queue subs",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Information disclosure via access control bypass in wildcard and queue subscriptions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58252.json",
+      "cve": "CVE-2026-58252",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-58253: github.com/nats-io/nats-server: NATS Server: Authentication bypass and privilege escalation via parser fast path",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Authentication bypass and privilege escalation via parser fast path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58253.json",
+      "cve": "CVE-2026-58253",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-58251: github.com/nats-io/nats-server: NATS Server: Information disclosure due to bypass of subject deny rules via queue subscr",
+      "date": "2026-07-08",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/nats-io/nats-server: NATS Server: Information disclosure due to bypass of subject deny rules via queue subscriptions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58251.json",
+      "cve": "CVE-2026-58251",
+      "cvss": 6.5
+    },
+    {
       "title": "Skipper: opaAuthorizeRequestWithBody filter bypasses OPA policy on Transfer-Encoding — chunked / HTTP/2 requests",
       "date": "2026-07-08",
       "severity": "HIGH",
@@ -7081,6 +7226,133 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-07-13T14:48:19.501Z",
+      "logs": [
+        "[INFO] aws - 1 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[SUCCESS] cloudflare - 3 patches (1 new)",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 6 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 141 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] paloalto - 14 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 132 patches (9 new)",
+        "[INFO] signal - 5 patches, no changes",
+        "[SUCCESS] ubuntu - 23 patches (4 new)"
+      ],
+      "newPatchCount": 14,
+      "totalPatches": 735,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "cloudflare",
+        "ubuntu",
+        "postgresql",
+        "debian",
+        "redhat",
+        "chrome",
+        "github",
+        "edge",
+        "signal",
+        "cisco",
+        "crowdstrike",
+        "gitlab",
+        "paloalto",
+        "aws"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cloudflare",
+          "title": "Introducing Precursor: detecting agentic behavior with continuous client-side signals",
+          "date": "2026-07-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15574: vllm-orchestrator-gateway: vllm-orchestrator-gateway: Authorization header and full chat payloads logged at hard-coded D",
+          "date": "2026-07-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59856: vim: Vim: Arbitrary code execution via crafted PHP file in omni-completion",
+          "date": "2026-07-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59857: vim: Vim: Denial of Service via out-of-bounds write in spell sound-folding",
+          "date": "2026-07-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-12080: qemu-kvm: qemu-guest-agent: Local privilege escalation via symlink attack in guest-ssh-add-authorized-keys",
+          "date": "2026-07-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-58208: github.com/nats-io/nats-server: NATS Server: Denial of Service due to incorrect MQTT-over-WebSocket request routing",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-58250: github.com/nats-io/nats-server: NATS Server: Denial of Service via repeated leafnode INFO messages during pre-authentica",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-58252: github.com/nats-io/nats-server: NATS Server: Information disclosure via access control bypass in wildcard and queue subs",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-58253: github.com/nats-io/nats-server: NATS Server: Authentication bypass and privilege escalation via parser fast path",
+          "date": "2026-07-08",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-58251: github.com/nats-io/nats-server: NATS Server: Information disclosure due to bypass of subject deny rules via queue subscr",
+          "date": "2026-07-08",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8533-1: OpenSSH vulnerabilities",
+          "date": "2026-07-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8532-1: libssh2 vulnerabilities",
+          "date": "2026-07-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8496-3: cifs-utils vulnerability",
+          "date": "2026-07-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8531-1: libexif vulnerabilities",
+          "date": "2026-07-13",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-07-13T14:41:04.701Z",
       "logs": [
@@ -11572,55 +11844,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-09T19:55:29.425Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 10 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 142 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 271 patches, no changes",
-        "[INFO] paloalto - 14 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[INFO] redhat - 125 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[SUCCESS] ubuntu - 24 patches (1 new)"
-      ],
-      "newPatchCount": 1,
-      "totalPatches": 611,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "cloudflare",
-        "github",
-        "microsoft",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "cisco",
-        "crowdstrike",
-        "debian",
-        "gitlab",
-        "paloalto",
-        "redhat",
-        "aws",
-        "edge",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8524-1: Python vulnerability",
-          "date": "2026-07-09",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
