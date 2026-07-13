@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-07-13T14:47:06.564Z",
+  "lastUpdated": "2026-07-13T19:36:29.324Z",
   "health": {
-    "lastFetchAttempt": "2026-07-13T14:47:06.564Z",
+    "lastFetchAttempt": "2026-07-13T19:36:29.324Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-13T14:47:06.564Z",
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-07-13T19:36:29.324Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Apollo Portal: There is a risk of unauthorized access to the Apollo configuration center",
+      "date": "2026-07-13",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nApollo Portal versions before 2.5.0 do not verify application and namespace permissions when an authenticated user requests a release by ID through `GET /envs/{env}/releases/{releaseId}`.",
+      "link": "https://github.com/advisories/GHSA-jxpj-9j24-w337",
+      "cves": [
+        "CVE-2025-32781"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Gittensory: Missing contributor-scoped access control on profile endpoint and MCP tool leaks miner financial data",
       "date": "2026-07-09",
