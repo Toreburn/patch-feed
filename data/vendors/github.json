@@ -1,16 +1,104 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-07-13T19:35:50.822Z",
+  "lastUpdated": "2026-07-14T02:52:40.882Z",
   "health": {
-    "lastFetchAttempt": "2026-07-13T19:35:50.822Z",
+    "lastFetchAttempt": "2026-07-14T02:52:40.882Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 22,
-    "lastSuccessWithData": "2026-07-13T19:35:50.822Z",
+    "lastFetchNewPatches": 14,
+    "lastSuccessWithData": "2026-07-14T02:52:40.882Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Kimai: ExportTemplate CRUD Missing Authorization Check Allows Unauthorized TEAMLEAD Access",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": "Kimai: ExportTemplate CRUD Missing Authorization Check Allows Unauthorized TEAMLEAD Access",
+      "link": "https://github.com/advisories/GHSA-rw46-qg69-vg6h",
+      "cve": "CVE-2026-52828",
+      "cvss": null
+    },
+    {
+      "title": "Kimai: Pre-2FA KIMAI_SESSION cookie grants full authenticated REST API access, bypassing TOTP",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": "Kimai: Pre-2FA KIMAI_SESSION cookie grants full authenticated REST API access, bypassing TOTP",
+      "link": "https://github.com/advisories/GHSA-v8hx-4vx8-wc96",
+      "cve": "CVE-2026-52827",
+      "cvss": null
+    },
+    {
+      "title": "Kimai: Improper Authorization in Project, Customer, and Activity Rate Edit Endpoints Allows Cross-Scope Rate Manipulation",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": "Kimai: Improper Authorization in Project, Customer, and Activity Rate Edit Endpoints Allows Cross-Scope Rate Manipulation",
+      "link": "https://github.com/advisories/GHSA-2xgg-2x8h-8xw4",
+      "cve": "CVE-2026-52826",
+      "cvss": null
+    },
+    {
+      "title": "Kimai has Improper Authorization in Team Member and Team Activity Assignment APIs Which Allows Expansion of Team Scope Beyond Authorized Visibility",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": "Kimai has Improper Authorization in Team Member and Team Activity Assignment APIs Which Allows Expansion of Team Scope Beyond Authorized Visibility",
+      "link": "https://github.com/advisories/GHSA-xv4r-4885-gwpg",
+      "cve": "CVE-2026-52825",
+      "cvss": null
+    },
+    {
+      "title": "Kimai: Default APP_SECRET in Docker Image Enables Cookie Forgery and Account Takeover",
+      "date": "2026-07-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": "Kimai: Default APP_SECRET in Docker Image Enables Cookie Forgery and Account Takeover",
+      "link": "https://github.com/advisories/GHSA-jr9p-4h4j-6c58",
+      "cve": "CVE-2026-52824",
+      "cvss": null
+    },
+    {
+      "title": "Kimai: Login CSRF in the Timesheet Stop and Restart API Endpoints Allows Unauthorized State Changes",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": "Kimai: Login CSRF in the Timesheet Stop and Restart API Endpoints Allows Unauthorized State Changes",
+      "link": "https://github.com/advisories/GHSA-r8vr-m544-qh4h",
+      "cve": "CVE-2026-52823",
+      "cvss": null
+    },
+    {
+      "title": "Improper Authorization in Kimai Timesheet Restart and Duplicate Allows New Timesheets After Project Access Revocation",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": "Improper Authorization in Kimai Timesheet Restart and Duplicate Allows New Timesheets After Project Access Revocation",
+      "link": "https://github.com/advisories/GHSA-c6w6-57jj-62vh",
+      "cve": "CVE-2026-52822",
+      "cvss": null
+    },
+    {
+      "title": "Kimai: Improper Authorization Through Activity Creation with Preset Project Allows Creation Under Unauthorized Projects",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": "Kimai: Improper Authorization Through Activity Creation with Preset Project Allows Creation Under Unauthorized Projects",
+      "link": "https://github.com/advisories/GHSA-3q6q-26vg-v97x",
+      "cve": "CVE-2026-52821",
+      "cvss": null
+    },
     {
       "title": "DIRAC: SQL injection and lack of access control in PilotManager service",
       "date": "2026-07-13",
@@ -252,6 +340,72 @@
       "link": "https://github.com/advisories/GHSA-rwcv-whm8-fmxm",
       "cve": "CVE-2024-27091",
       "cvss": 6.1
+    },
+    {
+      "title": "Kimai: Timesheet PATCH/POST allows assigning to project outside user's team via query_builder OR-bypass",
+      "date": "2026-07-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": "Kimai: Timesheet PATCH/POST allows assigning to project outside user's team via query_builder OR-bypass",
+      "link": "https://github.com/advisories/GHSA-vrr2-g9gh-c3jc",
+      "cve": "CVE-2026-52820",
+      "cvss": null
+    },
+    {
+      "title": "Kimai: Teamlead authorization bypass in GET /api/timesheets allows reading other users' timesheet records without being teamlead of the target",
+      "date": "2026-07-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": "Kimai: Teamlead authorization bypass in GET /api/timesheets allows reading other users' timesheet records without being teamlead of the target",
+      "link": "https://github.com/advisories/GHSA-4m8q-55qv-9pwp",
+      "cve": "CVE-2026-52819",
+      "cvss": null
+    },
+    {
+      "title": " Kimai: Login CSRF in Default Team Creation Endpoints Allows Unauthorized Team and Permission Structure Changes",
+      "date": "2026-07-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "kimai/kimai",
+      "description": " Kimai: Login CSRF in Default Team Creation Endpoints Allows Unauthorized Team and Permission Structure Changes",
+      "link": "https://github.com/advisories/GHSA-pgcc-vfmc-7cw5",
+      "cve": "CVE-2026-49992",
+      "cvss": null
+    },
+    {
+      "title": "Apple App Store Server Python Library: SignedDataVerifier accepts stale OCSP GOOD responses and can bypass certificate revocation checks",
+      "date": "2026-07-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "app-store-server-library",
+      "description": "Apple App Store Server Python Library: SignedDataVerifier accepts stale OCSP GOOD responses and can bypass certificate revocation checks",
+      "link": "https://github.com/advisories/GHSA-8f6j-263m-g72x",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "json_repair: Circular JSON Schema `$ref` causes unbounded CPU DoS",
+      "date": "2026-07-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "json-repair",
+      "description": "json_repair: Circular JSON Schema `$ref` causes unbounded CPU DoS",
+      "link": "https://github.com/advisories/GHSA-xf7x-x43h-rpqh",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "FacturaScripts: Account takeover of any 2FA-enabled user",
+      "date": "2026-07-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "facturascripts/facturascripts",
+      "description": "FacturaScripts: Account takeover of any 2FA-enabled user",
+      "link": "https://github.com/advisories/GHSA-c67f-gmxw-mj93",
+      "cve": "CVE-2026-47677",
+      "cvss": null
     },
     {
       "title": "Tesla vulnerable to multipart part smuggling via unescaped `content-disposition` values",
