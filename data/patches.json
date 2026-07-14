@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-14T08:19:27.344Z",
-  "newPatches": 50,
+  "lastUpdated": "2026-07-14T10:01:08.331Z",
+  "newPatches": 0,
   "patches": [
     {
       "title": "Kimai: ExportTemplate CRUD Missing Authorization Check Allows Unauthorized TEAMLEAD Access",
@@ -7068,6 +7068,46 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-14T10:01:08.331Z",
+      "logs": [
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 4 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 136 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 400 patches, no changes",
+        "[INFO] paloalto - 14 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 124 patches, no changes",
+        "[INFO] signal - 6 patches, no changes",
+        "[INFO] ubuntu - 24 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 720,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "github",
+        "microsoft",
+        "cloudflare",
+        "edge",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "postgresql",
+        "debian",
+        "chrome",
+        "cisco",
+        "crowdstrike",
+        "gitlab",
+        "paloalto"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-07-14T08:19:27.344Z",
       "logs": [
         "[INFO] chrome - 4 patches, no changes",
@@ -11383,181 +11423,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-10T14:41:37.240Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 180 patches (2 new)",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 250 patches, no changes",
-        "[INFO] paloalto - 14 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[SUCCESS] redhat - 138 patches (16 new)",
-        "[INFO] signal - 7 patches, no changes",
-        "[SUCCESS] ubuntu - 31 patches (4 new)"
-      ],
-      "newPatchCount": 22,
-      "totalPatches": 650,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "github",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "cloudflare",
-        "edge",
-        "signal",
-        "chrome",
-        "cisco",
-        "crowdstrike",
-        "debian",
-        "gitlab",
-        "paloalto",
-        "aws",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "github",
-          "title": "morgan vulnerable to Log Forging via unneutralized control characters in :remote-user",
-          "date": "2026-07-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "API Platform Core vulnerable to cross-user attribute leak in JSON:API and HAL item normalizers due to missing isCacheKeySafe gate",
-          "date": "2026-07-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-15378: guardrails-detectors: guardrails-detectors: SSRF and local file read via user-supplied XML Schema (xml-with-schema:)",
-          "date": "2026-07-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-55689: openfga: OpenFGA: OIDC audience validation skipped when --authn-oidc-audience is unset",
-          "date": "2026-07-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-58459: gpsd: gpsd: Command Injection via GPS device subtype allows arbitrary code execution",
-          "date": "2026-07-09",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-15187: enquirer: Enquirer: Prototype pollution vulnerability allows remote attackers to modify object attributes",
-          "date": "2026-07-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-38076: jbig2dec: jbig2dec: Denial of Service via crafted input",
-          "date": "2026-07-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54528: jupyterlab-git: JupyterLab Git: Information disclosure via case-sensitivity bypass in excluded path enforcement",
-          "date": "2026-07-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-59935: pypdf: pypdf: Denial of Service via crafted PDF with unterminated inline image",
-          "date": "2026-07-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-44512: onnx: ONNX: Denial of Service via crafted untrusted models",
-          "date": "2026-07-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-59923: mistune: Mistune: Arbitrary code execution through crafted Markdown links",
-          "date": "2026-07-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-59930: mistune: Mistune: Same-page navigation redirection due to predictable heading IDs",
-          "date": "2026-07-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-39822: os: golang: Go os.Root: Symlink following vulnerability allows directory traversal",
-          "date": "2026-07-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-59725: socket.io: engine.io: Socket.IO: Denial of Service via invalid binary POST requests",
-          "date": "2026-07-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-59724: engine.io: Engine.IO: Denial of Service via crafted WebTransport session ID",
-          "date": "2026-07-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-59876: protobufjs: protobufjs: Prototype pollution vulnerability in Text Format extension",
-          "date": "2026-07-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-15028: libarchive: heap overflow OOB read while parsing a tar archive contains a PAX extended header",
-          "date": "2026-07-08",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-59152: langsmith: LangSmith SDK TracingMiddleware: Information Disclosure via Arbitrary Server-Side File Read",
-          "date": "2026-07-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8530-1: Linux kernel (AWS) vulnerabilities",
-          "date": "2026-07-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8529-1: Linux kernel vulnerabilities",
-          "date": "2026-07-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8528-1: Linux kernel (Xilinx ZynqMP) vulnerabilities",
-          "date": "2026-07-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8527-1: Linux kernel (Raspberry Pi) vulnerabilities",
-          "date": "2026-07-10",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
