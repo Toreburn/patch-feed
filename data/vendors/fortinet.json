@@ -1,16 +1,126 @@
 {
   "vendor": "fortinet",
-  "lastUpdated": "2026-07-14T13:56:40.329Z",
+  "lastUpdated": "2026-07-14T19:26:47.813Z",
   "health": {
-    "lastFetchAttempt": "2026-07-14T13:56:40.329Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-06-15T21:11:12.125Z",
-    "consecutiveEmptyFetches": 112,
+    "lastFetchAttempt": "2026-07-14T19:26:47.813Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 11,
+    "lastFetchNewPatches": 11,
+    "lastSuccessWithData": "2026-07-14T19:26:47.813Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Buffer overread in authd and wad daemon",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 4.1 A buffer over-read vulnerability [CWE-126] in FortiOS, FortiProxy, and FortiSASE may allow an authenticated remote attacker to return a portion of device memory in the redirect respo...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-154",
+      "cve": ""
+    },
+    {
+      "title": "Cross-Site Scripting in Domain parameter",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 5.3 An Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability [CWE-80] in FortiSIEM may allow a privileged administrator to execute unauthorized comm...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-149",
+      "cve": ""
+    },
+    {
+      "title": "Header injection in Web Filter warning page",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 3.4 An Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting') vulnerability [CWE-113] in FortiOS and FortiProxy may allow an attacker in possession of a va...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-152",
+      "cve": ""
+    },
+    {
+      "title": "Header injection in captive portal authentication form",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 3.1 An Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting') vulnerability [CWE-113] in FortiOS and FortiProxy captive portal may allow an attacker able t...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-153",
+      "cve": ""
+    },
+    {
+      "title": "Missed certificate verification in AD Connector communication with FortiClient EMS",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "FortiClient",
+      "description": "CVSSv3 Score: 6.7 An Improper Certificate Validation vulnerability [CWE-295] in FortiClient EMS may allow a remote unauthenticated attacker to impersonate an AD Connector via a valid API Key. Revised ...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-147",
+      "cve": ""
+    },
+    {
+      "title": "Out of bounds read in GUI",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 7.0 An out of bounds read [CWE-125] vulnerability in FortiAuthenticator may allow a remote unauthenticated attacker to retrieve sensitive information via a specially crafted request. Rev...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-146",
+      "cve": ""
+    },
+    {
+      "title": "Path traversal in CLI command allows deletion of root file system",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 5.0 An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in FortiOS, FortiPAM, FortiProxy and FortiSwitch Manager may allow a privileg...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-151",
+      "cve": ""
+    },
+    {
+      "title": "SSL-VPN Reflected XSS",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 6.1 An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability [CWE-79] in FortiOS, FortiProxy, FortiPAM and FortiSwitch-Manager Agentless SSL-...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-150",
+      "cve": ""
+    },
+    {
+      "title": "Stack Buffer Overflow in Log Report",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 5.9 A Stack-based Buffer Overflow vulnerability [CWE-121] in FortiOS, FortiProxy and FortiPAM may allow a privileged authenticated attacker who can bypass stack protection and ASLR to ex...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-148",
+      "cve": ""
+    },
+    {
+      "title": "Supers override fails to properly override supervisor address",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 6.9 An Improper Restriction of Communication Channel to Intended Endpoints [CWE-923] vulnerability in FortiSIEM Windows Agent may allow an unauthorized attacker on the same local network...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-155",
+      "cve": ""
+    },
+    {
+      "title": "Unauthenticated VNC access exposed on all interfaces",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 7.7 An Exposure of Resource to Wrong Sphere vulnerability [CWE-668] in FortiSanbox may allow an unauthenticated attacker to access the VNC server of VMs performing scanning via network r...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-145",
+      "cve": ""
+    },
     {
       "title": "Improper access control in API endpoints",
       "date": "2026-06-09",

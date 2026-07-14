@@ -1,12 +1,12 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-07-14T13:56:40.638Z",
+  "lastUpdated": "2026-07-14T19:26:53.810Z",
   "health": {
-    "lastFetchAttempt": "2026-07-14T13:56:40.638Z",
+    "lastFetchAttempt": "2026-07-14T19:26:53.810Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-14T13:56:40.638Z",
+    "lastFetchNewPatches": 14,
+    "lastSuccessWithData": "2026-07-14T19:26:53.810Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -97,6 +97,160 @@
       "description": "Kimai: Improper Authorization Through Activity Creation with Preset Project Allows Creation Under Unauthorized Projects",
       "link": "https://github.com/advisories/GHSA-3q6q-26vg-v97x",
       "cve": "CVE-2026-52821",
+      "cvss": null
+    },
+    {
+      "title": "n8n-MCP: Cross-tenant access to workflow version backups in multi-tenant HTTP deployments",
+      "date": "2026-07-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "n8n-mcp",
+      "description": "n8n-MCP: Cross-tenant access to workflow version backups in multi-tenant HTTP deployments",
+      "link": "https://github.com/advisories/GHSA-j6r7-6fhx-77wx",
+      "cve": "CVE-2026-54052",
+      "cvss": 9.9
+    },
+    {
+      "title": "Woodpecker gRPC agent_id metadata can be spoofed- cross-tenant agent impersonation",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "go.woodpecker-ci.org/woodpecker/v3",
+      "description": "Woodpecker gRPC agent_id metadata can be spoofed- cross-tenant agent impersonation",
+      "link": "https://github.com/advisories/GHSA-g7mm-9vx7-jm7h",
+      "cve": "CVE-2026-50141",
+      "cvss": null
+    },
+    {
+      "title": "Anyquery: Arbitrary File Write (AFW) which could lead to Remote Code Execution (RCE) via Unrestricted ATTACH DATABASE in Server Mode",
+      "date": "2026-07-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/julien040/anyquery",
+      "description": "Anyquery: Arbitrary File Write (AFW) which could lead to Remote Code Execution (RCE) via Unrestricted ATTACH DATABASE in Server Mode",
+      "link": "https://github.com/advisories/GHSA-xrcf-6jh3-ggvx",
+      "cve": "CVE-2026-50006",
+      "cvss": 9.1
+    },
+    {
+      "title": "Fedify has an incomplete SSRF mitigation after GHSA-p9cg-vqcc-grcx: validatePublicUrl allows special-use IPv4 ranges",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@fedify/fedify, @fedify/fedify, @fedify/fedify",
+      "description": "Fedify has an incomplete SSRF mitigation after GHSA-p9cg-vqcc-grcx: validatePublicUrl allows special-use IPv4 ranges",
+      "link": "https://github.com/advisories/GHSA-xw9q-2mv6-9fr8",
+      "cve": "CVE-2026-50131",
+      "cvss": 8.6
+    },
+    {
+      "title": "MKP: Unbounded Pod Log Read via Attacker-Controlled `limitBytes`/`tailLines` Causes Memory Exhaustion",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/StacklokLabs/mkp",
+      "description": "MKP: Unbounded Pod Log Read via Attacker-Controlled `limitBytes`/`tailLines` Causes Memory Exhaustion",
+      "link": "https://github.com/advisories/GHSA-qw5r-ppcg-f8rj",
+      "cve": "CVE-2026-50125",
+      "cvss": 7.5
+    },
+    {
+      "title": "Hoverfly: Denial of Service via Goroutine Leak in Remote Post-Serve Actions",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/SpectoLabs/hoverfly",
+      "description": "Hoverfly: Denial of Service via Goroutine Leak in Remote Post-Serve Actions",
+      "link": "https://github.com/advisories/GHSA-42j2-w334-qxw7",
+      "cve": "CVE-2026-50018",
+      "cvss": 6.5
+    },
+    {
+      "title": "Hoverfly: Process Crash via Concurrent Map Write Race Condition in Diff Mode",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/SpectoLabs/hoverfly",
+      "description": "Hoverfly: Process Crash via Concurrent Map Write Race Condition in Diff Mode",
+      "link": "https://github.com/advisories/GHSA-qrh4-p6v4-mrfg",
+      "cve": "CVE-2026-50013",
+      "cvss": 7.5
+    },
+    {
+      "title": "K3s: ZIP Archive Path Traversal Vulnerability in etcd Snapshot Decompression",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/k3s-io/k3s, github.com/k3s-io/k3s, github.com/k3s-io/k3s",
+      "description": "K3s: ZIP Archive Path Traversal Vulnerability in etcd Snapshot Decompression",
+      "link": "https://github.com/advisories/GHSA-jxr7-mqhw-9p98",
+      "cve": "CVE-2026-54250",
+      "cvss": 5.8
+    },
+    {
+      "title": "Wasmtime: Memory leak in C API with `externref` and `anyref` types",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "wasmtime-c-api-impl, wasmtime-bin",
+      "description": "Wasmtime: Memory leak in C API with `externref` and `anyref` types",
+      "link": "https://github.com/advisories/GHSA-vvp9-h8p2-xwfc",
+      "cve": "CVE-2025-61670",
+      "cvss": 3.3
+    },
+    {
+      "title": "FacturaScripts: Stored XSS in WidgetVariante and WidgetSubcuenta modal lists via HTML-attribute decoding of `Tools::noHtml`-escaped quotes inside `onclick=`",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "facturascripts/facturascripts",
+      "description": "FacturaScripts: Stored XSS in WidgetVariante and WidgetSubcuenta modal lists via HTML-attribute decoding of `Tools::noHtml`-escaped quotes inside `onclick=`",
+      "link": "https://github.com/advisories/GHSA-3x7p-v8hj-xh5m",
+      "cve": "CVE-2026-45710",
+      "cvss": 3.5
+    },
+    {
+      "title": "FacturaScripts: CSV formula injection in CSVExport allows authenticated low-priv users to plant payloads that execute when an admin opens the export",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "facturascripts/facturascripts",
+      "description": "FacturaScripts: CSV formula injection in CSVExport allows authenticated low-priv users to plant payloads that execute when an admin opens the export",
+      "link": "https://github.com/advisories/GHSA-2p5x-4jr6-x5jg",
+      "cve": "CVE-2026-45263",
+      "cvss": 8
+    },
+    {
+      "title": "FacturaScripts: Unauthenticated Path Traversal in Static File Controllers Reads Private MyFiles Documents",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "facturascripts/facturascripts",
+      "description": "FacturaScripts: Unauthenticated Path Traversal in Static File Controllers Reads Private MyFiles Documents",
+      "link": "https://github.com/advisories/GHSA-cv65-7cg8-r623",
+      "cve": "CVE-2026-45693",
+      "cvss": 7.5
+    },
+    {
+      "title": "FacturaScripts: Authenticated SQL injection in the FacturaScripts REST API filter parameter via parenthesis bypass in `Where::sqlColumn`",
+      "date": "2026-07-14",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "facturascripts/facturascripts",
+      "description": "FacturaScripts: Authenticated SQL injection in the FacturaScripts REST API filter parameter via parenthesis bypass in `Where::sqlColumn`",
+      "link": "https://github.com/advisories/GHSA-5qmh-x653-g8qj",
+      "cve": "CVE-2026-45262",
+      "cvss": 9.9
+    },
+    {
+      "title": "OpenCost ServiceKey Endpoint Unauthorized Credential Overwrite/Injection",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/opencost/opencost",
+      "description": "OpenCost ServiceKey Endpoint Unauthorized Credential Overwrite/Injection",
+      "link": "https://github.com/advisories/GHSA-wmj8-9953-vff5",
+      "cve": "CVE-2026-44300",
       "cvss": null
     },
     {
