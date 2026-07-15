@@ -1,16 +1,104 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-07-14T19:27:23.485Z",
+  "lastUpdated": "2026-07-15T02:52:03.260Z",
   "health": {
-    "lastFetchAttempt": "2026-07-14T19:27:23.485Z",
+    "lastFetchAttempt": "2026-07-15T02:52:03.260Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 138,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-14T19:27:23.485Z",
+    "lastFetchParsedItems": 139,
+    "lastFetchNewPatches": 15,
+    "lastSuccessWithData": "2026-07-15T02:52:03.260Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-50651: dotnet: SocketsHttpHandler Http2Connection - HTTP/2 SETTINGS/PING ACK flood causing OOM",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: SocketsHttpHandler Http2Connection - HTTP/2 SETTINGS/PING ACK flood causing OOM",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50651.json",
+      "cve": "CVE-2026-50651",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-15713: libsoup: SoupCache: libsoup: HTTP/2 frame window exhaustion remote denial of service via memory leak",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libsoup: SoupCache: libsoup: HTTP/2 frame window exhaustion remote denial of service via memory leak",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15713.json",
+      "cve": "CVE-2026-15713",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-15714: libsoup: SoupMultipartInputStream: libsoup: Out-of-bounds read in soup_multipart_input_stream_read_headers via an oversi",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libsoup: SoupMultipartInputStream: libsoup: Out-of-bounds read in soup_multipart_input_stream_read_headers via an oversized multipart boundary string",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15714.json",
+      "cve": "CVE-2026-15714",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-15712: SoupClientMessageIOHTTP2: libsoup3: libsoup: HTTP/2 GOAWAY frame parsing heap buffer over-read via invalid NUL-terminati",
+      "date": "2026-07-14",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "SoupClientMessageIOHTTP2: libsoup3: libsoup: HTTP/2 GOAWAY frame parsing heap buffer over-read via invalid NUL-termination assumption",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15712.json",
+      "cve": "CVE-2026-15712",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-15711: libsoup: SoupWebsocketConnection: libsoup: WebSocket remote denial of service via oversized control frame protocol viola",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libsoup: SoupWebsocketConnection: libsoup: WebSocket remote denial of service via oversized control frame protocol violation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15711.json",
+      "cve": "CVE-2026-15711",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-15709: SoupWebsocketExtensionDeflate: libsoup: libsoup: WebSocket permessage-deflate Unbounded Decompression Remote Denial of S",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "SoupWebsocketExtensionDeflate: libsoup: libsoup: WebSocket permessage-deflate Unbounded Decompression Remote Denial of Service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15709.json",
+      "cve": "CVE-2026-15709",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-59674: suricata: Suricata: Privilege escalation via symbolic link following",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "suricata: Suricata: Privilege escalation via symbolic link following",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59674.json",
+      "cve": "CVE-2026-59674",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-12482: keras: Keras: Arbitrary File Operations via Malicious Tar Archive Processing",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keras: Keras: Arbitrary File Operations via Malicious Tar Archive Processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12482.json",
+      "cve": "CVE-2026-12482",
+      "cvss": 4.2
+    },
     {
       "title": "CVE-2026-60103: blender: Blender: Denial of Service and information disclosure via crafted .blend file",
       "date": "2026-07-13",
@@ -43,6 +131,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15538.json",
       "cve": "CVE-2026-15538",
       "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-15605: wandb: wandb: Information disclosure due to weak hash in artifact integrity validation",
+      "date": "2026-07-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wandb: wandb: Information disclosure due to weak hash in artifact integrity validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15605.json",
+      "cve": "CVE-2026-15605",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-53365: kernel: vsock/virtio: fix zerocopy completion for multi-skb sends",
+      "date": "2026-07-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: vsock/virtio: fix zerocopy completion for multi-skb sends",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53365.json",
+      "cve": "CVE-2026-53365",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-53364: kernel: Bluetooth: hci_conn: Fix memory leak in hci_le_big_terminate()",
+      "date": "2026-07-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Bluetooth: hci_conn: Fix memory leak in hci_le_big_terminate()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53364.json",
+      "cve": "CVE-2026-53364",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-51537: OpENer: OpENer: Out-of-bounds read via malformed ForwardOpen requests",
+      "date": "2026-07-13",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OpENer: OpENer: Out-of-bounds read via malformed ForwardOpen requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-51537.json",
+      "cve": "CVE-2026-51537",
+      "cvss": 8.2
     },
     {
       "title": "CVE-2026-61870: ImageMagick: ImageMagick: Denial of Service via specially crafted VIFF images",
@@ -298,6 +430,17 @@
       "cvss": 7.5
     },
     {
+      "title": "CVE-2026-42771: openssl: Possible Out of Bounds Read in X509_VERIFY_PARAM_set1_email()",
+      "date": "2026-07-10",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openssl: Possible Out of Bounds Read in X509_VERIFY_PARAM_set1_email()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42771.json",
+      "cve": "CVE-2026-42771",
+      "cvss": 6.5
+    },
+    {
       "title": "CVE-2026-15308: python: Python: CPU Denial of Service in HTML parser via repeated unterminated markup declarations",
       "date": "2026-07-09",
       "severity": "HIGH",
@@ -428,6 +571,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-39245.json",
       "cve": "CVE-2026-39245",
       "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-39246: decompress: decompress: arbitrary symlink creation during archive extraction leads to information disclosure",
+      "date": "2026-07-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "decompress: decompress: arbitrary symlink creation during archive extraction leads to information disclosure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-39246.json",
+      "cve": "CVE-2026-39246",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-15041: 389-ds-base: 389-ds-base: Non-constant-time comparison in PBKDF2-SHA256 password verification",
@@ -1374,6 +1528,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44024.json",
       "cve": "CVE-2026-44024",
       "cvss": 9.8
+    },
+    {
+      "title": "CVE-2026-59869: js-yaml: js-yaml: Denial of Service via crafted YAML documents",
+      "date": "2026-07-08",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "js-yaml: js-yaml: Denial of Service via crafted YAML documents",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59869.json",
+      "cve": "CVE-2026-59869",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-11610: 389-ds-base: 389-ds-base: Heap buffer overflow in sasl_io_recv() via padded SASL UNBIND",
