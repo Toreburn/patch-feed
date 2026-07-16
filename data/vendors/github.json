@@ -1,16 +1,71 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-07-16T14:05:08.953Z",
+  "lastUpdated": "2026-07-16T19:20:31.393Z",
   "health": {
-    "lastFetchAttempt": "2026-07-16T14:05:08.953Z",
+    "lastFetchAttempt": "2026-07-16T19:20:31.393Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-16T14:05:08.953Z",
+    "lastFetchNewPatches": 5,
+    "lastSuccessWithData": "2026-07-16T19:20:31.393Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Envoy Gateway: OCI layer extraction allocates make([]byte, h.Size) from untrusted tar header",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/envoyproxy/gateway, github.com/envoyproxy/gateway",
+      "description": "Envoy Gateway: OCI layer extraction allocates make([]byte, h.Size) from untrusted tar header",
+      "link": "https://github.com/advisories/GHSA-h7pq-86h8-rp5x",
+      "cve": "CVE-2026-53717",
+      "cvss": 6.5
+    },
+    {
+      "title": "Envoy Gateway: Nil-dereference when SecurityPolicy targets TCPRoute without spec.authorization",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/envoyproxy/gateway, github.com/envoyproxy/gateway",
+      "description": "Envoy Gateway: Nil-dereference when SecurityPolicy targets TCPRoute without spec.authorization",
+      "link": "https://github.com/advisories/GHSA-m2v6-2jmh-4c68",
+      "cve": "CVE-2026-53719",
+      "cvss": 6.5
+    },
+    {
+      "title": "Envoy Gateway: Wasm HTTP fetch decompresses gzip without output-size limit",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/envoyproxy/gateway, github.com/envoyproxy/gateway",
+      "description": "Envoy Gateway: Wasm HTTP fetch decompresses gzip without output-size limit",
+      "link": "https://github.com/advisories/GHSA-cxpq-8v7q-cg56",
+      "cve": "CVE-2026-53716",
+      "cvss": 6.5
+    },
+    {
+      "title": "Envoy Gateway custom backendRef cross-namespace ReferenceGrant bypass",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/envoyproxy/gateway, github.com/envoyproxy/gateway",
+      "description": "Envoy Gateway custom backendRef cross-namespace ReferenceGrant bypass",
+      "link": "https://github.com/advisories/GHSA-fcrp-7gc2-93g7",
+      "cve": "CVE-2026-53718",
+      "cvss": 6.4
+    },
+    {
+      "title": "kumactl connects to control plane without verifying TLS certificate when no CA is configured",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/kumahq/kuma/v2, github.com/kumahq/kuma/v2, github.com/kumahq/kuma/v2",
+      "description": "kumactl connects to control plane without verifying TLS certificate when no CA is configured",
+      "link": "https://github.com/advisories/GHSA-v95x-xhq5-4929",
+      "cve": "CVE-2026-50166",
+      "cvss": null
+    },
     {
       "title": "MantisBT: Stored XSS in print_all_bug_page_word.php",
       "date": "2026-07-15",

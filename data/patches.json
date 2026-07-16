@@ -1,7 +1,25 @@
 {
-  "lastUpdated": "2026-07-16T19:16:16.049Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-16T19:22:18.907Z",
+  "newPatches": 8,
   "patches": [
+    {
+      "title": "CVE-2026-15895: OS command injection in jsii-diff in AWS jsii",
+      "date": "2026-07-16",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "CVE-2026-15895:",
+      "description": "<p><b>Bulletin ID:</b> 2026-057-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 07/15/2026 12:00 PM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-057-aws/"
+    },
+    {
+      "title": "CVE-2026-15737 - Sensitive content disclosure via OpenTelemetry spans in AgentCore Python SDK",
+      "date": "2026-07-16",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "CVE-2026-15737",
+      "description": "<p><b>Bulletin ID:</b> 2026-058-AWS<br> <b>Scope:</b> AWS<br> <b>Content Type:</b> Important (requires attention)<br> <b>Publication Date:</b> 07/16/2026 10:15 AM PDT</p> \n<p><b>Description:</b></p> \n...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-058-aws/"
+    },
     {
       "title": "DSA-6390-1 chromium - security update",
       "date": "2026-07-16",
@@ -12,6 +30,61 @@
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00301.html",
       "cve": "",
       "cves": []
+    },
+    {
+      "title": "Envoy Gateway: OCI layer extraction allocates make([]byte, h.Size) from untrusted tar header",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/envoyproxy/gateway, github.com/envoyproxy/gateway",
+      "description": "Envoy Gateway: OCI layer extraction allocates make([]byte, h.Size) from untrusted tar header",
+      "link": "https://github.com/advisories/GHSA-h7pq-86h8-rp5x",
+      "cve": "CVE-2026-53717",
+      "cvss": 6.5
+    },
+    {
+      "title": "Envoy Gateway: Nil-dereference when SecurityPolicy targets TCPRoute without spec.authorization",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/envoyproxy/gateway, github.com/envoyproxy/gateway",
+      "description": "Envoy Gateway: Nil-dereference when SecurityPolicy targets TCPRoute without spec.authorization",
+      "link": "https://github.com/advisories/GHSA-m2v6-2jmh-4c68",
+      "cve": "CVE-2026-53719",
+      "cvss": 6.5
+    },
+    {
+      "title": "Envoy Gateway: Wasm HTTP fetch decompresses gzip without output-size limit",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/envoyproxy/gateway, github.com/envoyproxy/gateway",
+      "description": "Envoy Gateway: Wasm HTTP fetch decompresses gzip without output-size limit",
+      "link": "https://github.com/advisories/GHSA-cxpq-8v7q-cg56",
+      "cve": "CVE-2026-53716",
+      "cvss": 6.5
+    },
+    {
+      "title": "Envoy Gateway custom backendRef cross-namespace ReferenceGrant bypass",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/envoyproxy/gateway, github.com/envoyproxy/gateway",
+      "description": "Envoy Gateway custom backendRef cross-namespace ReferenceGrant bypass",
+      "link": "https://github.com/advisories/GHSA-fcrp-7gc2-93g7",
+      "cve": "CVE-2026-53718",
+      "cvss": 6.4
+    },
+    {
+      "title": "kumactl connects to control plane without verifying TLS certificate when no CA is configured",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/kumahq/kuma/v2, github.com/kumahq/kuma/v2, github.com/kumahq/kuma/v2",
+      "description": "kumactl connects to control plane without verifying TLS certificate when no CA is configured",
+      "link": "https://github.com/advisories/GHSA-v95x-xhq5-4929",
+      "cve": "CVE-2026-50166",
+      "cvss": null
     },
     {
       "title": "CVE-2026-53355: net: rds: clear i_sends on setup unwind",
@@ -491,6 +564,15 @@
       "component": "NTFS-3G vulnerabilities",
       "description": "It was discovered that NTFS-3G had a heap buffer overflow when reading\ncertain NTFS images. A local attacker could possibly use this issue to\nexecute arbitrary code. (CVE-2026-42616)\n\nIt was discovere...",
       "link": "https://ubuntu.com/security/notices/USN-8554-1"
+    },
+    {
+      "title": "USN-8556-1: Ruby vulnerabilities",
+      "date": "2026-07-16",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Ruby vulnerabilities",
+      "description": "It was discovered that the Net::IMAP client in Ruby did not properly\nsanitize Symbol arguments passed to IMAP commands. A remote attacker\ncontrolling a malicious IMAP server, or able to influence comm...",
+      "link": "https://ubuntu.com/security/notices/USN-8556-1"
     },
     {
       "title": "CVE-2026-15746 - Credential disclosure in Strands Agents Tools elasticsearch_memory tool",
@@ -7861,6 +7943,99 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-16T19:22:18.907Z",
+      "logs": [
+        "[SUCCESS] aws - 5 patches (2 new)",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 5 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 11 patches, no changes",
+        "[SUCCESS] github - 157 patches (5 new)",
+        "[INFO] microsoft - 499 patches, no changes",
+        "[INFO] mssql - 8 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 90 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 33 patches (1 new)"
+      ],
+      "newPatchCount": 8,
+      "totalPatches": 823,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "aws",
+        "debian",
+        "github",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "chrome",
+        "cisco",
+        "crowdstrike",
+        "edge",
+        "fortinet",
+        "mssql",
+        "slack",
+        "cloudflare",
+        "signal",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-15895: OS command injection in jsii-diff in AWS jsii",
+          "date": "2026-07-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-15737 - Sensitive content disclosure via OpenTelemetry spans in AgentCore Python SDK",
+          "date": "2026-07-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Envoy Gateway: OCI layer extraction allocates make([]byte, h.Size) from untrusted tar header",
+          "date": "2026-07-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Envoy Gateway: Nil-dereference when SecurityPolicy targets TCPRoute without spec.authorization",
+          "date": "2026-07-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Envoy Gateway: Wasm HTTP fetch decompresses gzip without output-size limit",
+          "date": "2026-07-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Envoy Gateway custom backendRef cross-namespace ReferenceGrant bypass",
+          "date": "2026-07-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "kumactl connects to control plane without verifying TLS certificate when no CA is configured",
+          "date": "2026-07-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8556-1: Ruby vulnerabilities",
+          "date": "2026-07-16",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-07-16T19:16:16.049Z",
       "logs": [
         "[INFO] aws - 3 patches, no changes",
@@ -12961,48 +13136,6 @@
     },
     {
       "timestamp": "2026-07-12T22:53:28.016Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 6 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 6 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 209 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] paloalto - 14 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 154 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 31 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 841,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "postgresql",
-        "debian",
-        "redhat",
-        "chrome",
-        "github",
-        "ubuntu",
-        "cloudflare",
-        "edge",
-        "signal",
-        "cisco",
-        "crowdstrike",
-        "gitlab",
-        "paloalto",
-        "aws"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-12T20:53:57.758Z",
       "logs": [
         "[INFO] aws - 2 patches, no changes",
         "[INFO] chrome - 6 patches, no changes",
