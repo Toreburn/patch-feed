@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-07-17T13:50:17.179Z",
+  "lastUpdated": "2026-07-17T19:18:48.533Z",
   "health": {
-    "lastFetchAttempt": "2026-07-17T13:50:17.178Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-14T19:27:29.070Z",
-    "consecutiveEmptyFetches": 11,
+    "lastFetchAttempt": "2026-07-17T19:18:48.533Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-07-17T19:18:48.533Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "vLLM: Processing differential in multi-channel audio downmixing enables hidden-input/moderation bypass for audio models",
+      "date": "2026-07-17",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Issue Description\nLibrosa defaults to using `numpy.mean` for mono downmixing (`to_mono`), while the international standard ITU-R BS.775-4 specifies a weighted downmixing algorithm. This discrepancy",
+      "link": "https://github.com/advisories/GHSA-6c4r-fmh3-7rh8",
+      "cves": [
+        "CVE-2026-34760"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Apollo Portal: There is a risk of unauthorized access to the Apollo configuration center",
       "date": "2026-07-13",
