@@ -1,16 +1,27 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-07-18T08:01:01.249Z",
+  "lastUpdated": "2026-07-18T13:27:20.362Z",
   "health": {
-    "lastFetchAttempt": "2026-07-18T08:01:01.249Z",
+    "lastFetchAttempt": "2026-07-18T13:27:20.362Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 77,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-18T08:01:01.249Z",
+    "lastFetchParsedItems": 117,
+    "lastFetchNewPatches": 40,
+    "lastSuccessWithData": "2026-07-18T13:27:20.362Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-16089: keycloak-services: keycloak-services: Authorization codes can be retargeted to another client session",
+      "date": "2026-07-17",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Authorization codes can be retargeted to another client session",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16089.json",
+      "cve": "CVE-2026-16089",
+      "cvss": 5.4
+    },
     {
       "title": "CVE-2026-15925: snowflake-connector-python: Snowflake Connector for Python: Arbitrary SQL execution and information disclosure via impro",
       "date": "2026-07-16",
@@ -21,6 +32,193 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15925.json",
       "cve": "CVE-2026-15925",
       "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-57077: YAML::Syck: YAML::Syck: Information disclosure via out-of-bounds read",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "YAML::Syck: YAML::Syck: Information disclosure via out-of-bounds read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57077.json",
+      "cve": "CVE-2026-57077",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-57076: YAML-Syck: YAML::Syck: Heap use-after-free via anchor name reuse",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "YAML-Syck: YAML::Syck: Heap use-after-free via anchor name reuse",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57076.json",
+      "cve": "CVE-2026-57076",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-57075: YAML::Syck: YAML::Syck: Information disclosure via out-of-bounds read in base64 decoder",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "YAML::Syck: YAML::Syck: Information disclosure via out-of-bounds read in base64 decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57075.json",
+      "cve": "CVE-2026-57075",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-13713: YAML-Syck: YAML::Syck: Denial of Service via crafted YAML document",
+      "date": "2026-07-16",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "YAML-Syck: YAML::Syck: Denial of Service via crafted YAML document",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13713.json",
+      "cve": "CVE-2026-13713",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-16072: keycloak-services: keycloak-services: Organization invitation link exposure allows unauthorized member creation",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Organization invitation link exposure allows unauthorized member creation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16072.json",
+      "cve": "CVE-2026-16072",
+      "cvss": 4.9
+    },
+    {
+      "title": "CVE-2026-16093: keycloak-services: keycloak-services: Required signed-JWT assertion policy can be bypassed with unsigned assertion heade",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Required signed-JWT assertion policy can be bypassed with unsigned assertion headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16093.json",
+      "cve": "CVE-2026-16093",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-16103: keycloak-services: keycloak-services: Incomplete fix for CIBA brute-force lockout bypass at token redemption",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Incomplete fix for CIBA brute-force lockout bypass at token redemption",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16103.json",
+      "cve": "CVE-2026-16103",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-15943: keycloak-services: keycloak-services: OIDC IdP update reuses masked client secret after token URL change",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: OIDC IdP update reuses masked client secret after token URL change",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15943.json",
+      "cve": "CVE-2026-15943",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-53366: kernel: ipv4: account for fraggap on the paged allocation path",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ipv4: account for fraggap on the paged allocation path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53366.json",
+      "cve": "CVE-2026-53366",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-47085: cyrus-imapd: Cyrus IMAP: Information disclosure via URLAUTH token forgery",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cyrus-imapd: Cyrus IMAP: Information disclosure via URLAUTH token forgery",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47085.json",
+      "cve": "CVE-2026-47085",
+      "cvss": 4
+    },
+    {
+      "title": "CVE-2026-47084: cyrus-imapd: Cyrus IMAP: Unauthorized mailbox deletion via ACL bypass",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cyrus-imapd: Cyrus IMAP: Unauthorized mailbox deletion via ACL bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47084.json",
+      "cve": "CVE-2026-47084",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-47082: cyrus-imapd: Cyrus IMAP: ACL bypass in vacation 'fcc' feature allows unauthorized mailbox writes",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cyrus-imapd: Cyrus IMAP: ACL bypass in vacation 'fcc' feature allows unauthorized mailbox writes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47082.json",
+      "cve": "CVE-2026-47082",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-47083: cyrus-imapd: Cyrus IMAP: Information disclosure via ESEARCH command",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cyrus-imapd: Cyrus IMAP: Information disclosure via ESEARCH command",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47083.json",
+      "cve": "CVE-2026-47083",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-47081: cyrus-imapd: Cyrus IMAP: Information disclosure of mailbox existence via XAPPLEPUSHSERVICE command",
+      "date": "2026-07-16",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cyrus-imapd: Cyrus IMAP: Information disclosure of mailbox existence via XAPPLEPUSHSERVICE command",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47081.json",
+      "cve": "CVE-2026-47081",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-47088: cyrus-imapd: Cyrus IMAP: Information disclosure via heap exposure in MIME comment parsing",
+      "date": "2026-07-16",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cyrus-imapd: Cyrus IMAP: Information disclosure via heap exposure in MIME comment parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47088.json",
+      "cve": "CVE-2026-47088",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-47089: cyrus-imapd: Cyrus IMAP: Information disclosure via LISTRIGHTS",
+      "date": "2026-07-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cyrus-imapd: Cyrus IMAP: Information disclosure via LISTRIGHTS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47089.json",
+      "cve": "CVE-2026-47089",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-47087: cyrus-imapd: Cyrus IMAP: Unauthorized access due to URLAUTH not honoring revoked authorizer access",
+      "date": "2026-07-16",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cyrus-imapd: Cyrus IMAP: Unauthorized access due to URLAUTH not honoring revoked authorizer access",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47087.json",
+      "cve": "CVE-2026-47087",
+      "cvss": 3.5
     },
     {
       "title": "CVE-2026-15809: cri-o: Fix Bypass for CVE-2022-4318 — /etc/passwd Injection via HOME env",
@@ -252,6 +450,72 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-38974.json",
       "cve": "CVE-2026-38974",
       "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-16104: keycloak-services: keycloak-services: Authenticator config endpoint exposes raw reCAPTCHA secrets to view-only admins",
+      "date": "2026-07-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Authenticator config endpoint exposes raw reCAPTCHA secrets to view-only admins",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16104.json",
+      "cve": "CVE-2026-16104",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-16106: keycloak-services: keycloak-services: Incorrect authorization in admin role-composite deletion allows delegated admin to",
+      "date": "2026-07-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Incorrect authorization in admin role-composite deletion allows delegated admin to remove privileged child roles",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16106.json",
+      "cve": "CVE-2026-16106",
+      "cvss": 4.9
+    },
+    {
+      "title": "CVE-2026-16108: keycloak-services: keycloak-services: Realm default-group reads disclose hidden groups under FGAP v2",
+      "date": "2026-07-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Realm default-group reads disclose hidden groups under FGAP v2",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16108.json",
+      "cve": "CVE-2026-16108",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-38755: busybox: Busybox: Denial of Service via heap overflow in evalcommand() function",
+      "date": "2026-07-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "busybox: Busybox: Denial of Service via heap overflow in evalcommand() function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-38755.json",
+      "cve": "CVE-2026-38755",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-38752: busybox: BusyBox: Denial of Service via crafted AWK script",
+      "date": "2026-07-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "busybox: BusyBox: Denial of Service via crafted AWK script",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-38752.json",
+      "cve": "CVE-2026-38752",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-14957: libreswan: badly formatted X.509 certificate can cause an assertion failure that crashes the daemon process",
+      "date": "2026-07-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libreswan: badly formatted X.509 certificate can cause an assertion failure that crashes the daemon process",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14957.json",
+      "cve": "CVE-2026-14957",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-50651: dotnet: SocketsHttpHandler Http2Connection - HTTP/2 SETTINGS/PING ACK flood causing OOM",
@@ -727,6 +991,171 @@
       "cvss": 4.3
     },
     {
+      "title": "CVE-2026-50650: dotnet: .NET Framework: Privilege escalation via code injection",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET Framework: Privilege escalation via code injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50650.json",
+      "cve": "CVE-2026-50650",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50649: dotnet: .NET: Local code execution via deserialization of untrusted data",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET: Local code execution via deserialization of untrusted data",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50649.json",
+      "cve": "CVE-2026-50649",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50648: dotnet: .NET Framework: Remote Denial of Service due to uncontrolled resource allocation",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET Framework: Remote Denial of Service due to uncontrolled resource allocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50648.json",
+      "cve": "CVE-2026-50648",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-50528: dotnet: .NET: Security feature bypass due to incorrect authorization",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET: Security feature bypass due to incorrect authorization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50528.json",
+      "cve": "CVE-2026-50528",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-50646: dotnet: .NET Framework: Local Code Execution via Protection Mechanism Failure",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET Framework: Local Code Execution via Protection Mechanism Failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50646.json",
+      "cve": "CVE-2026-50646",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-50527: dotnet: .NET Framework: Denial of Service via network-based buffer overflow",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET Framework: Denial of Service via network-based buffer overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50527.json",
+      "cve": "CVE-2026-50527",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-50526: dotnet: .NET: Local tampering via improper link resolution",
+      "date": "2026-07-14",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET: Local tampering via improper link resolution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50526.json",
+      "cve": "CVE-2026-50526",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-50525: dotnet: .NET: Denial of Service due to uncontrolled resource allocation",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET: Denial of Service due to uncontrolled resource allocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50525.json",
+      "cve": "CVE-2026-50525",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-50524: dotnet: .NET Framework: Denial of Service via improper input validation",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET Framework: Denial of Service via improper input validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50524.json",
+      "cve": "CVE-2026-50524",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-47303: ASP.NET Core: ASP.NET Core: Privilege Elevation via Authentication Bypass",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ASP.NET Core: ASP.NET Core: Privilege Elevation via Authentication Bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47303.json",
+      "cve": "CVE-2026-47303",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-47304: dotnet: .NET Security Feature Bypass Vulnerability",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET Security Feature Bypass Vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47304.json",
+      "cve": "CVE-2026-47304",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-47302: dotnet: .NET: Denial of Service vulnerability due to uncontrolled resource allocation",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET: Denial of Service vulnerability due to uncontrolled resource allocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47302.json",
+      "cve": "CVE-2026-47302",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-47300: ASP.NET Core: ASP.NET Core: Privilege Escalation via Incorrect Authentication Algorithm",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ASP.NET Core: ASP.NET Core: Privilege Escalation via Incorrect Authentication Algorithm",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47300.json",
+      "cve": "CVE-2026-47300",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-57108: dotnet: .NET Core: Denial of Service via type confusion",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dotnet: .NET Core: Denial of Service via type confusion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-57108.json",
+      "cve": "CVE-2026-57108",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-56170: ASP.NET Core: ASP.NET Core: Denial of Service via uncontrolled resource allocation",
+      "date": "2026-07-14",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ASP.NET Core: ASP.NET Core: Denial of Service via uncontrolled resource allocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56170.json",
+      "cve": "CVE-2026-56170",
+      "cvss": 7.5
+    },
+    {
       "title": "CVE-2026-60103: blender: Blender: Denial of Service and information disclosure via crafted .blend file",
       "date": "2026-07-13",
       "severity": "MEDIUM",
@@ -813,6 +1242,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15685.json",
       "cve": "CVE-2026-15685",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-40469: gawk: gawk: Denial of Service due to integer overflow",
+      "date": "2026-07-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gawk: gawk: Denial of Service due to integer overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40469.json",
+      "cve": "CVE-2026-40469",
+      "cvss": 2.8
     },
     {
       "title": "CVE-2026-61870: ImageMagick: ImageMagick: Denial of Service via specially crafted VIFF images",
