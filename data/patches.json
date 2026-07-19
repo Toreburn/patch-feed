@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-19T13:23:28.104Z",
+  "lastUpdated": "2026-07-19T13:38:03.217Z",
   "newPatches": 0,
   "patches": [
     {
@@ -8359,6 +8359,48 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-19T13:38:03.217Z",
+      "logs": [
+        "[INFO] aws - 7 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 3 patches, no changes",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] fortinet - 11 patches, no changes",
+        "[INFO] github - 168 patches, no changes",
+        "[INFO] microsoft - 499 patches, no changes",
+        "[INFO] mssql - 8 patches, no changes",
+        "[INFO] redhat - 114 patches, no changes",
+        "[INFO] signal - 2 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 32 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 861,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "aws",
+        "cisco",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "debian",
+        "crowdstrike",
+        "fortinet",
+        "mssql",
+        "slack",
+        "cloudflare"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-07-19T13:23:28.103Z",
       "logs": [
         "[INFO] aws - 7 patches, no changes",
@@ -13144,519 +13186,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-15T19:21:04.881Z",
-      "logs": [
-        "[SUCCESS] aws - 3 patches (1 new)",
-        "[SUCCESS] chrome - 4 patches (1 new)",
-        "[SUCCESS] cisco - 3 patches (3 new)",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 3 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 11 patches, no changes",
-        "[SUCCESS] github - 173 patches (18 new)",
-        "[SUCCESS] microsoft - 499 patches (50 new)",
-        "[INFO] mssql - 8 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 63 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 39 patches (5 new)"
-      ],
-      "newPatchCount": 78,
-      "totalPatches": 819,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "aws",
-        "chrome",
-        "cisco",
-        "debian",
-        "github",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "crowdstrike",
-        "edge",
-        "fortinet",
-        "mssql",
-        "slack",
-        "cloudflare",
-        "signal",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-15746 - Credential disclosure in Strands Agents Tools elasticsearch_memory tool",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Chrome Stable for iOS Update",
-          "date": "2026-07-15",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Advance Notification for Publication of July 15, 2026, Security Advisories",
-          "date": "2026-07-15",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco RoomOS Security Hardening Release: July 2026",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Identity Services Engine Path Traversal Vulnerability",
-          "date": "2026-07-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MantisBT: Stored XSS in print_all_bug_page_word.php",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "MantisBT: Injection of TIME_TRACKING and REMINDER Notes via REST and SOAP APIs",
-          "date": "2026-07-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MantisBT: REST and SOAP API Issue Update Accepts Unreleased Product Versions From Updaters",
-          "date": "2026-07-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MantisBT: Reflected XSS in admin/install.php via unescaped printf ",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "MantisBT: Reflected XSS in admin/install.php",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Koel: Full-read SSRF via podcast enclosure URL: isPublicHost() filter_var guard does not reject NAT64 (64:ff9b::/96) or 6to4 (2002::/16) IPv6-transition wrappers of internal IPv4",
-          "date": "2026-07-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Koel: Server-Side Request Forgery (SSRF) in radio station creation due to missing validation bail",
-          "date": "2026-07-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Koel: Incomplete fix for CVE-2026-47260 — systemic SSRF in podcast & radio fetch paths",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Protobuf: Unbounded recursion depth in embedded-message decoding",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "LangBot: Authenticated RCE Via MCP Configuration",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "garminconnect Has Insecure Permission Assignment for Garmin OAuth Token Store",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": " Koel has SSRF through Authenticated Subsonic podcast feed URLs",
-          "date": "2026-07-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Koel: Authenticated Full-Read SSRF via Subsonic Internet Radio Stations",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Koel: Authenticated Blind SSRF via Subsonic Podcast Channel Creation",
-          "date": "2026-07-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MantisBT: REST API unauthorized Issue status change",
-          "date": "2026-07-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MantisBT: Remote Code Execution via eval() Class Hoisting in adm_config_set.php",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "MantisBT: SOAP API Authentication Bypass with Privilege Escalation to Administrator",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "MantisBT: SQL Injection via history_order Configuration Value",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-45488: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-          "date": "2026-07-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-42982: Windows Secure Kernel Mode Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-47296: Microsoft SQL Server Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-26145: Microsoft Azure Synapse Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-45499: Azure OpenAI Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-57100: Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-54998: Microsoft Exchange Online Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-41106: Microsoft 365 Copilot Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34349: Windows Media Information Disclosure Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34346: Windows Ancillary Function Driver for WinSock Information Disclosure Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-42900: Microsoft Windows App Store Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-45489: Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-          "date": "2026-07-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-42975: Windows Bluetooth Port Driver Remote Code Execution",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-47300: ASP.NET Core Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-47302: .NET Denial of Service Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-47303: ASP.NET Core Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-42990: SQL Server ODBC driver Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-48572: Windows App Package Installer Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-48571: Windows App Package Installer Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49162: Microsoft Brokering File System Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49164: Windows Active Directory Domain Services Remote Code Execution Vulnerability",
-          "date": "2026-07-15",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49165: Microsoft Windows App Store Information Disclosure Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49166: Windows Print Configuration Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49167: Windows Kernel Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49168: Storage Spaces Direct Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49169: Windows DNS Server Remote Code Execution Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49170: Windows StateRepository API Server file Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49171: Windows Speech Runtime Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49176: Windows WalletService Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49175: Windows DNS Client Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49172: Windows FTP Service Remote Code Execution Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49173: Windows Kernel Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49174: DNS Client Tampering Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49177: Windows TCP/IP Information Disclosure Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49784: Microsoft Windows App Store Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50506: OData for ASP.NET and ASP.NET Core Denial of Service Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-47282: GitHub Copilot and Visual Studio Code Information Disclosure Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-45496: Visual Studio Code Security Feature Bypass Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50663: Game: Age of Empires II: Definitive Edition Remote Code Execution Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-54983: Windows Active Directory Federation Services Denial of Service Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50695: Windows Active Directory Federation Services Denial of Service Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-54129: Windows Hyper-V Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-54989: Quality Windows Audio/Video Experience (QWAVE) Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-54987: Windows Overlay Filter Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50696: Internet Key Exchange (IKE) Protocol Denial of Service Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-54990: Remote Desktop Client Remote Code Execution Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-50697: Windows Common Log File System Driver Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-55000: Windows USB Print Driver Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-54111: Universal Print Management Service Elevation of Privilege Vulnerability",
-          "date": "2026-07-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8552-1: Sympa vulnerability",
-          "date": "2026-07-15",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8551-1: Tomcat vulnerabilities",
-          "date": "2026-07-15",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8550-1: libslirp vulnerability",
-          "date": "2026-07-15",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8549-1: idna vulnerability",
-          "date": "2026-07-15",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8544-1: LuaJIT vulnerabilities",
-          "date": "2026-07-14",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
