@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-20T03:28:18.470Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-20T03:39:50.747Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -451,6 +451,28 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-55000",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55000"
+    },
+    {
+      "title": "DSA-6392-1 tiff - security update",
+      "date": "2026-07-19",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "tiff",
+      "description": "A flaw was discovered in tiff, a Tag Image File Format library, which may result in denial of service or the execution of arbitrary code if malformed image files are processed. https://security-tracke...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00303.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6391-1 roundcube - security update",
+      "date": "2026-07-19",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "roundcube",
+      "description": "Multiple vulnerabilities were discovered in roundcube, a skinnable AJAX based webmail solution for IMAP servers, which could result in account takeover, cross-site scripting, SSRF bypass, information ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00302.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "CVE-2026-53355: net: rds: clear i_sends on setup unwind",
@@ -7863,6 +7885,59 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-20T03:39:50.746Z",
+      "logs": [
+        "[INFO] aws - 7 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 5 patches (2 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 11 patches, no changes",
+        "[INFO] github - 140 patches, no changes",
+        "[INFO] microsoft - 499 patches, no changes",
+        "[INFO] mssql - 8 patches, no changes",
+        "[INFO] redhat - 105 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] slack - 1 patches, no changes",
+        "[INFO] ubuntu - 26 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 817,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "aws",
+        "cisco",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "crowdstrike",
+        "fortinet",
+        "mssql",
+        "slack"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6392-1 tiff - security update",
+          "date": "2026-07-19",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6391-1 roundcube - security update",
+          "date": "2026-07-19",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-07-20T03:28:18.470Z",
       "logs": [
         "[INFO] aws - 7 patches, no changes",
@@ -12088,50 +12163,6 @@
           "severity": "LOW"
         }
       ]
-    },
-    {
-      "timestamp": "2026-07-16T13:59:56.750Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 5 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 11 patches, no changes",
-        "[INFO] github - 152 patches, no changes",
-        "[INFO] microsoft - 499 patches, no changes",
-        "[INFO] mssql - 8 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 60 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] slack - 1 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 783,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "aws",
-        "chrome",
-        "cisco",
-        "github",
-        "redhat",
-        "ubuntu",
-        "crowdstrike",
-        "edge",
-        "fortinet",
-        "mssql",
-        "slack",
-        "cloudflare",
-        "signal",
-        "postgresql"
-      ],
-      "newPatches": []
     }
   ]
 }
