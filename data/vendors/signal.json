@@ -1,16 +1,44 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-07-20T19:49:37.286Z",
+  "lastUpdated": "2026-07-21T03:19:10.424Z",
   "health": {
-    "lastFetchAttempt": "2026-07-20T19:49:37.286Z",
+    "lastFetchAttempt": "2026-07-21T03:19:10.424Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-20T19:49:37.286Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-07-21T03:19:10.424Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Pillow: Controlled heap out-of-bounds write in Pillow `ImageCmsTransform.apply()` via output mode mismatch",
+      "date": "2026-07-20",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nPillow's public `ImageCms.ImageCmsTransform.apply(im, imOut)` API can trigger\ncontrolled native heap corruption when the caller supplies an output image whose\nmode does not match the tran",
+      "link": "https://github.com/advisories/GHSA-9hw9-ch79-4vh6",
+      "cves": [
+        "CVE-2026-59205"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Axios form serializer maxDepth bypass via {} metatoken",
+      "date": "2026-07-20",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nAxios versions in the fixed lines for GHSA-62hf-57xw-28j9 still contain an incomplete depth-limit bypass in `lib/helpers/toFormData.js`. When serializing an object with a top-level key end",
+      "link": "https://github.com/advisories/GHSA-hcpx-6fm6-wx23",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "vLLM: Processing differential in multi-channel audio downmixing enables hidden-input/moderation bypass for audio models",
       "date": "2026-07-17",

@@ -1,12 +1,12 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-07-20T19:49:54.211Z",
+  "lastUpdated": "2026-07-21T03:19:22.926Z",
   "health": {
-    "lastFetchAttempt": "2026-07-20T19:49:54.211Z",
+    "lastFetchAttempt": "2026-07-21T03:19:22.926Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 10,
-    "lastSuccessWithData": "2026-07-20T19:49:54.211Z",
+    "lastFetchNewPatches": 5,
+    "lastSuccessWithData": "2026-07-21T03:19:22.926Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -100,6 +100,51 @@
       "component": "nginx vulnerabilities",
       "description": "It was discovered that nginx incorrectly handled certain map directives\nusing regex matching and capture variables. A remote attacker could use\nthis issue to cause nginx to crash, resulting in a denia...",
       "link": "https://ubuntu.com/security/notices/USN-8563-1"
+    },
+    {
+      "title": "USN-8558-1: ImageMagick vulnerabilities",
+      "date": "2026-07-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "ImageMagick vulnerabilities",
+      "description": "It was discovered that ImageMagick did not limit mutual references between\nMVG files. An attacker could possibly use this issue to cause a stack\noverflow, resulting in a denial of service. This issue ...",
+      "link": "https://ubuntu.com/security/notices/USN-8558-1"
+    },
+    {
+      "title": "USN-8563-2: nginx regression",
+      "date": "2026-07-20",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "nginx regression",
+      "description": "USN-8563-1 fixed vulnerabilities in nginx. One of the fixes introduced ABI\nchanges that could cause issues with external modules. This update reverts\nthe fix for CVE-2026-42533 pending further investi...",
+      "link": "https://ubuntu.com/security/notices/USN-8563-2"
+    },
+    {
+      "title": "USN-8573-1: libde265 vulnerabilities",
+      "date": "2026-07-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "libde265 vulnerabilities",
+      "description": "It was discovered that libde265 did not properly manage memory under\ncertain circumstances. An attacker could possibly use this issue to\ncause libde265 to crash, resulting in a denial of service. This...",
+      "link": "https://ubuntu.com/security/notices/USN-8573-1"
+    },
+    {
+      "title": "USN-8572-1: Wget vulnerability",
+      "date": "2026-07-20",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Wget",
+      "description": "It was discovered that Wget did not properly validate the IP address\nprovided in an FTP PASV response when operating in FTP passive mode. A\nremote attacker controlling a malicious FTP server, or an HT...",
+      "link": "https://ubuntu.com/security/notices/USN-8572-1"
+    },
+    {
+      "title": "USN-8571-1: Apache HTTP Server vulnerabilities",
+      "date": "2026-07-20",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Apache HTTP Server vulnerabilities",
+      "description": "Pavel Kohout and Arkadi Vainbrand discovered that Apache HTTP Server\nincorrectly handled certain memory operations in mod_authn_socache. A\nremote attacker could possibly use this issue to cause a deni...",
+      "link": "https://ubuntu.com/security/notices/USN-8571-1"
     },
     {
       "title": "USN-8490-2: Linux kernel (Real-time) vulnerabilities",
