@@ -1,16 +1,148 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-07-23T08:37:58.472Z",
+  "lastUpdated": "2026-07-23T19:25:32.233Z",
   "health": {
-    "lastFetchAttempt": "2026-07-23T08:37:58.472Z",
+    "lastFetchAttempt": "2026-07-23T19:25:32.233Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 50,
-    "lastSuccessWithData": "2026-07-23T08:37:58.472Z",
+    "lastFetchNewPatches": 12,
+    "lastSuccessWithData": "2026-07-23T19:25:32.233Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "pypdf: Possible infinite loop for not terminated inline images (ASCII85 and ASCIIHex filter)",
+      "date": "2026-07-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible infinite loop for not terminated inline images (ASCII85 and ASCIIHex filter)",
+      "link": "https://github.com/advisories/GHSA-g867-7843-wf8q",
+      "cve": "CVE-2026-59935",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible infinite loop for not terminated inline images",
+      "date": "2026-07-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible infinite loop for not terminated inline images",
+      "link": "https://github.com/advisories/GHSA-5xf7-4p34-54qr",
+      "cve": "CVE-2026-59936",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible long runtimes for repeated malformed cross-reference entries ",
+      "date": "2026-07-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible long runtimes for repeated malformed cross-reference entries ",
+      "link": "https://github.com/advisories/GHSA-55h5-xmcq-c37v",
+      "cve": "CVE-2026-59937",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible large memory usage for wrong image dimensions",
+      "date": "2026-07-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible large memory usage for wrong image dimensions",
+      "link": "https://github.com/advisories/GHSA-5qjq-93h5-hrgp",
+      "cve": "CVE-2026-59938",
+      "cvss": null
+    },
+    {
+      "title": "PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments",
+      "date": "2026-07-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "postcss",
+      "description": "PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments",
+      "link": "https://github.com/advisories/GHSA-6g55-p6wh-862q",
+      "cve": "CVE-2026-45623",
+      "cvss": 7.5
+    },
+    {
+      "title": "PHPSpreadsheet: XLS/OLE sector-chain self-loop causes memory exhaustion",
+      "date": "2026-07-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "phpoffice/phpspreadsheet, phpoffice/phpspreadsheet, phpoffice/phpspreadsheet",
+      "description": "PHPSpreadsheet: XLS/OLE sector-chain self-loop causes memory exhaustion",
+      "link": "https://github.com/advisories/GHSA-xh5m-36r6-47m3",
+      "cve": "CVE-2026-59933",
+      "cvss": 7.5
+    },
+    {
+      "title": "PHPSpreadsheet: Gnumeric reader unbounded gzip expansion causes memory exhaustion",
+      "date": "2026-07-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "phpoffice/phpspreadsheet, phpoffice/phpspreadsheet, phpoffice/phpspreadsheet",
+      "description": "PHPSpreadsheet: Gnumeric reader unbounded gzip expansion causes memory exhaustion",
+      "link": "https://github.com/advisories/GHSA-2mrg-gjxq-2gvr",
+      "cve": "CVE-2026-59932",
+      "cvss": 7.5
+    },
+    {
+      "title": "PHPSpreadsheet: SSRF bypass via HTTP redirect in WEBSERVICE() domain whitelist",
+      "date": "2026-07-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "phpoffice/phpspreadsheet, phpoffice/phpspreadsheet, phpoffice/phpspreadsheet",
+      "description": "PHPSpreadsheet: SSRF bypass via HTTP redirect in WEBSERVICE() domain whitelist",
+      "link": "https://github.com/advisories/GHSA-6hq5-7373-42rg",
+      "cve": "CVE-2026-59931",
+      "cvss": 7.7
+    },
+    {
+      "title": "Auth.js: Configuration errors can cause existence-based auth checks to fail open (auth object populated with an error)",
+      "date": "2026-07-23",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "next-auth",
+      "description": "Auth.js: Configuration errors can cause existence-based auth checks to fail open (auth object populated with an error)",
+      "link": "https://github.com/advisories/GHSA-8fpg-xm3f-6cx3",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Auth.js: getToken() throws an uncaught exception on malformed Bearer authorization headers",
+      "date": "2026-07-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@auth/core, next-auth, next-auth",
+      "description": "Auth.js: getToken() throws an uncaught exception on malformed Bearer authorization headers",
+      "link": "https://github.com/advisories/GHSA-xmf8-cvqr-rfgj",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "Auth.js: Email normalizer validates the address before Unicode normalization, allowing a homoglyph @ bypass",
+      "date": "2026-07-23",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@auth/core, next-auth, next-auth",
+      "description": "Auth.js: Email normalizer validates the address before Unicode normalization, allowing a homoglyph @ bypass",
+      "link": "https://github.com/advisories/GHSA-7rqj-j65f-68wh",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Auth.js: OAuth state, nonce, and PKCE check cookies are not bound to the provider that created them",
+      "date": "2026-07-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@auth/core, next-auth, next-auth",
+      "description": "Auth.js: OAuth state, nonce, and PKCE check cookies are not bound to the provider that created them",
+      "link": "https://github.com/advisories/GHSA-x445-f3h2-j279",
+      "cve": "",
+      "cvss": 6.8
+    },
     {
       "title": "n8n: Google Service Account Private Key Exposed in JWT Header",
       "date": "2026-07-22",
