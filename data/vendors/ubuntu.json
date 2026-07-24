@@ -1,12 +1,12 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-07-23T19:26:20.526Z",
+  "lastUpdated": "2026-07-24T03:18:18.208Z",
   "health": {
-    "lastFetchAttempt": "2026-07-23T19:26:20.525Z",
+    "lastFetchAttempt": "2026-07-24T03:18:18.208Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-23T19:26:20.525Z",
+    "lastFetchNewPatches": 6,
+    "lastSuccessWithData": "2026-07-24T03:18:18.208Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -82,6 +82,60 @@
       "component": "Linux kernel vulnerabilities",
       "description": "It was discovered that some AMD Zen 2 processors did not properly isolate\nshared resources in the operation cache. A local attacker could possibly\nuse this issue to corrupt instructions executed at a ...",
       "link": "https://ubuntu.com/security/notices/USN-8593-1"
+    },
+    {
+      "title": "USN-8602-1: libinput vulnerability",
+      "date": "2026-07-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libinput",
+      "description": "It was discovered that libinput did not properly escape device\nproperties. A local attacker could possibly use this issue to inject\narbitrary udev properties and execute arbitrary code as root....",
+      "link": "https://ubuntu.com/security/notices/USN-8602-1"
+    },
+    {
+      "title": "USN-8601-1: PAM vulnerability",
+      "date": "2026-07-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "PAM",
+      "description": "It was discovered that PAM had a timing discrepancy in the pam_userdb\nmodule when comparing plaintext passwords. An attacker could possibly use\nthis issue to obtain sensitive information by measuring ...",
+      "link": "https://ubuntu.com/security/notices/USN-8601-1"
+    },
+    {
+      "title": "USN-8600-1: libXpm vulnerability",
+      "date": "2026-07-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libXpm",
+      "description": "Naoki Wakamatsu discovered that libXpm did not properly validate file\nboundaries when processing XPM image files. An attacker could possibly use\nthis issue to cause libXpm to crash, resulting in a den...",
+      "link": "https://ubuntu.com/security/notices/USN-8600-1"
+    },
+    {
+      "title": "USN-8599-1: HTTP-Date vulnerability",
+      "date": "2026-07-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "HTTP-Date",
+      "description": "It was discovered that HTTP-Date incorrectly handled parsing certain date\nstrings. An attacker could possibly use this issue to cause HTTP-Date to\nuse excessive resources, leading to a denial of servi...",
+      "link": "https://ubuntu.com/security/notices/USN-8599-1"
+    },
+    {
+      "title": "USN-8598-1: rsyslog vulnerabilities",
+      "date": "2026-07-23",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "rsyslog vulnerabilities",
+      "description": "It was discovered that rsyslog incorrectly handled regex-based TCP framing\nin the imptcp module. A remote attacker could possibly use this issue to\ncause rsyslog to crash, resulting in a denial of ser...",
+      "link": "https://ubuntu.com/security/notices/USN-8598-1"
+    },
+    {
+      "title": "USN-8322-2: Apache Commons BeanUtils regression",
+      "date": "2026-07-23",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Apache Commons BeanUtils regression",
+      "description": "USN-8322-1 fixed a vulnerability in Apache Commons BeanUtils. It was\ndiscovered that for Ubuntu 18.04 LTS, during the update preparation\nphase, a previous fix for CVE-2014-0114 and CVE-2019-10086 was\n...",
+      "link": "https://ubuntu.com/security/notices/USN-8322-2"
     },
     {
       "title": "USN-8590-1: Exim vulnerabilities",
