@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-07-24T19:37:20.959Z",
+  "lastUpdated": "2026-07-25T03:17:22.513Z",
   "health": {
-    "lastFetchAttempt": "2026-07-24T19:37:20.959Z",
+    "lastFetchAttempt": "2026-07-25T03:17:22.513Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 2,
-    "lastSuccessWithData": "2026-07-24T19:37:20.959Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-07-25T03:17:22.513Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -34,6 +34,19 @@
       "component": "Signal",
       "description": "### Summary\n`ValidationHandler.Load()` in `getkin/kin-openapi` silently replaces a nil `AuthenticationFunc` with `NoopAuthenticationFunc`, which always returns `nil` without performing any credential ",
       "link": "https://github.com/advisories/GHSA-r277-6w6q-xmqw",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "FrontMCP: Server-Side Request Forgery (SSRF) in the OpenAPI adapter spec-change poller",
+      "date": "2026-07-24",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe OpenAPI adapter's spec-change **poller** (`OpenApiSpecPoller`) re-fetched the\nconfigured spec `url` on a timer using a raw global `fetch()`, bypassing the SSRF\nguard (`safeFetch` / `as",
+      "link": "https://github.com/advisories/GHSA-8q49-2h5h-434x",
       "cves": [],
       "platform": [
         "All Platforms"

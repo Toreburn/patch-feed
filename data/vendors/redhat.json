@@ -1,16 +1,71 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-07-24T19:37:09.777Z",
+  "lastUpdated": "2026-07-25T03:17:17.019Z",
   "health": {
-    "lastFetchAttempt": "2026-07-24T19:37:09.776Z",
+    "lastFetchAttempt": "2026-07-25T03:17:17.019Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 535,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-24T19:37:09.776Z",
+    "lastFetchParsedItems": 547,
+    "lastFetchNewPatches": 17,
+    "lastSuccessWithData": "2026-07-25T03:17:17.019Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-17107: cluster-proxy: cluster-proxy: Impersonation header injection in service-proxy grants cluster-admin on every managed clus",
+      "date": "2026-07-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cluster-proxy: cluster-proxy: Impersonation header injection in service-proxy grants cluster-admin on every managed cluster",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-17107.json",
+      "cve": "CVE-2026-17107",
+      "cvss": 8.5
+    },
+    {
+      "title": "CVE-2026-17059: keycloak-services: keycloak-services: Information disclosure via role-users endpoint bypasses per-user view filter",
+      "date": "2026-07-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Information disclosure via role-users endpoint bypasses per-user view filter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-17059.json",
+      "cve": "CVE-2026-17059",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-66010: dompurify: DOMPurify: Cross-Site Scripting (XSS) via custom element attribute bypass",
+      "date": "2026-07-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dompurify: DOMPurify: Cross-Site Scripting (XSS) via custom element attribute bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-66010.json",
+      "cve": "CVE-2026-66010",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-56392: coreutils: GNU coreutils unexpand: Denial of Service via crafted tab stop values",
+      "date": "2026-07-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "coreutils: GNU coreutils unexpand: Denial of Service via crafted tab stop values",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56392.json",
+      "cve": "CVE-2026-56392",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-17039: pki-core: dogtag-pki: redhat-pki: pki-core: CA renewal request processing omits realm authorization check performed by e",
+      "date": "2026-07-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pki-core: dogtag-pki: redhat-pki: pki-core: CA renewal request processing omits realm authorization check performed by enrollment path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-17039.json",
+      "cve": "CVE-2026-17039",
+      "cvss": 3.1
+    },
     {
       "title": "CVE-2026-16804: chromium-browser: Google Chrome: Sandbox escape via crafted HTML page",
       "date": "2026-07-23",
@@ -53,6 +108,83 @@
       "description": "dbus-broker: dbus-broker: session bus denial of service via EMFILE during peer setup",
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16730.json",
       "cve": "CVE-2026-16730",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-65706: FFmpeg: FFmpeg: Arbitrary Code Execution via Crafted Video Frame",
+      "date": "2026-07-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FFmpeg: FFmpeg: Arbitrary Code Execution via Crafted Video Frame",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-65706.json",
+      "cve": "CVE-2026-65706",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-65705: FFmpeg: FFmpeg: Arbitrary code execution via out-of-bounds write in vf_floodfill video filter",
+      "date": "2026-07-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FFmpeg: FFmpeg: Arbitrary code execution via out-of-bounds write in vf_floodfill video filter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-65705.json",
+      "cve": "CVE-2026-65705",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-65704: ffmpeg: FFmpeg: Heap corruption via crafted ffconcat file can lead to arbitrary code execution",
+      "date": "2026-07-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: FFmpeg: Heap corruption via crafted ffconcat file can lead to arbitrary code execution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-65704.json",
+      "cve": "CVE-2026-65704",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-65703: FFmpeg: FFmpeg: Arbitrary code execution via crafted AVI file in TDSC video decoder",
+      "date": "2026-07-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FFmpeg: FFmpeg: Arbitrary code execution via crafted AVI file in TDSC video decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-65703.json",
+      "cve": "CVE-2026-65703",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-54422: ironic-python-agent: ironic-python-agent: Credential extraction from bootc container deployment via /proc/1/root",
+      "date": "2026-07-23",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "ironic-python-agent: ironic-python-agent: Credential extraction from bootc container deployment via /proc/1/root",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-54422.json",
+      "cve": "CVE-2026-54422",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-21723: grafana: Grafana: Denial of Service via uncontrolled memory usage in alertmanager templates",
+      "date": "2026-07-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grafana: Grafana: Denial of Service via uncontrolled memory usage in alertmanager templates",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-21723.json",
+      "cve": "CVE-2026-21723",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-16743: accountsservice: accountsservice: arbitrary file read via SetIconFile for systemd-homed users",
+      "date": "2026-07-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "accountsservice: accountsservice: arbitrary file read via SetIconFile for systemd-homed users",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16743.json",
+      "cve": "CVE-2026-16743",
       "cvss": 5.5
     },
     {
@@ -285,6 +417,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56416.json",
       "cve": "CVE-2026-56416",
       "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-64831: ffmpeg: FFmpeg: Arbitrary code execution via crafted HEVC/H.265 bitstream",
+      "date": "2026-07-22",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: FFmpeg: Arbitrary code execution via crafted HEVC/H.265 bitstream",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64831.json",
+      "cve": "CVE-2026-64831",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-14586: unbound: libngtcp2: Unbound: Denial of Service via assertion failure in DNS-over-QUIC environments",
+      "date": "2026-07-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "unbound: libngtcp2: Unbound: Denial of Service via assertion failure in DNS-over-QUIC environments",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-14586.json",
+      "cve": "CVE-2026-14586",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-65601: github.com/traefik/traefik/v3: traefik: Traefik: Privilege Escalation via Kubernetes Gateway API Namespace Confusion",
+      "date": "2026-07-22",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/traefik/traefik/v3: traefik: Traefik: Privilege Escalation via Kubernetes Gateway API Namespace Confusion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-65601.json",
+      "cve": "CVE-2026-65601",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-65600: traefik: Traefik: Authentication bypass via path traversal in ReplacePathRegex middleware",
+      "date": "2026-07-22",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "traefik: Traefik: Authentication bypass via path traversal in ReplacePathRegex middleware",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-65600.json",
+      "cve": "CVE-2026-65600",
+      "cvss": 10
     },
     {
       "title": "CVE-2026-15370: libssh: libssh: stack buffer overflow in SFTP server longname construction",
@@ -868,6 +1044,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16349.json",
       "cve": "CVE-2026-16349",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-17048: keycloak-services: keycloak-services: Vault-resolved rotated client secrets leaked via Admin REST API",
+      "date": "2026-07-21",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Vault-resolved rotated client secrets leaked via Admin REST API",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-17048.json",
+      "cve": "CVE-2026-17048",
+      "cvss": 5.5
     },
     {
       "title": "CVE-2026-16254: claircore: claircore: Denial of service via out-of-bounds slice in claircore's apk installed-database parser",
