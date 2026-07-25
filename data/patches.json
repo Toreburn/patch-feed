@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-25T13:40:49.174Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-25T13:48:27.393Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -4468,6 +4468,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16743.json",
       "cve": "CVE-2026-16743",
       "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-43823: swift-crypto: swift-crypto: Denial of Service due to double-free during RSA public key initialization",
+      "date": "2026-07-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "swift-crypto: swift-crypto: Denial of Service due to double-free during RSA public key initialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-43823.json",
+      "cve": "CVE-2026-43823",
+      "cvss": 6.2
     },
     {
       "title": "USN-8597-1: Linux kernel (IBM) vulnerabilities",
@@ -15915,6 +15926,51 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-25T13:48:27.393Z",
+      "logs": [
+        "[INFO] aws - 5 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 10 patches, no changes",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] github - 318 patches, no changes",
+        "[INFO] microsoft - 600 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[SUCCESS] redhat - 548 patches (1 new)",
+        "[INFO] signal - 10 patches, no changes",
+        "[INFO] ubuntu - 59 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1563,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "crowdstrike",
+        "cisco",
+        "nodejs",
+        "oracle-db"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-43823: swift-crypto: swift-crypto: Denial of Service due to double-free during RSA public key initialization",
+          "date": "2026-07-23",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-07-25T13:40:49.174Z",
       "logs": [
         "[INFO] aws - 5 patches, no changes",
@@ -23731,40 +23787,6 @@
     },
     {
       "timestamp": "2026-07-21T17:24:05.059Z",
-      "logs": [
-        "[INFO] aws - 5 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 6 patches, no changes",
-        "[INFO] debian - 5 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 156 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] redhat - 330 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 34 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1046,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 11,
-      "vendors": [
-        "microsoft",
-        "nodejs",
-        "redhat",
-        "ubuntu",
-        "cisco",
-        "edge",
-        "github",
-        "signal",
-        "debian",
-        "aws",
-        "chrome"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-21T15:48:28.198Z",
       "logs": [
         "[INFO] aws - 5 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",
