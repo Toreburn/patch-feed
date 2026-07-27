@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-27T14:42:12.585Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-27T14:49:49.550Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -901,6 +901,24 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-59998",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-59998"
+    },
+    {
+      "title": "USN-8612-1: Roc Toolkit vulnerability",
+      "date": "2026-07-27",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Roc Toolkit",
+      "description": "It was discovered that Roc Toolkit incorrectly handled WAV files with a\nmalformed \"smpl\" chunk. An attacker could use this issue to cause Roc\nToolkit to crash, resulting in a denial of service, or pos...",
+      "link": "https://ubuntu.com/security/notices/USN-8612-1"
+    },
+    {
+      "title": "USN-8611-1: GNU C Library vulnerabilities",
+      "date": "2026-07-27",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "GNU C Library vulnerabilities",
+      "description": "It was discovered that the GNU C Library iconv function incorrectly handled\ncertain IBM character sets. An attacker could possibly use this issue to\ncause a denial of service. (CVE-2026-4046)\n\nIt was ...",
+      "link": "https://ubuntu.com/security/notices/USN-8611-1"
     },
     {
       "title": "CVE-2026-48561: Microsoft Edge Copilot Remote Code Execution Vulnerability",
@@ -9639,6 +9657,57 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-27T14:49:49.550Z",
+      "logs": [
+        "[INFO] aws - 5 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 8 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 258 patches, no changes",
+        "[INFO] microsoft - 550 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] redhat - 96 patches, no changes",
+        "[INFO] signal - 8 patches, no changes",
+        "[SUCCESS] ubuntu - 46 patches (2 new)"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 982,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "microsoft",
+        "ubuntu",
+        "debian",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "aws",
+        "chrome",
+        "crowdstrike",
+        "cisco",
+        "nodejs",
+        "oracle-db"
+      ],
+      "newPatches": [
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8612-1: Roc Toolkit vulnerability",
+          "date": "2026-07-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8611-1: GNU C Library vulnerabilities",
+          "date": "2026-07-27",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-07-27T14:42:12.585Z",
       "logs": [
         "[INFO] aws - 5 patches, no changes",
@@ -14214,44 +14283,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-07-23T19:22:18.904Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 224 patches, no changes",
-        "[INFO] microsoft - 550 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] redhat - 501 patches, no changes",
-        "[INFO] signal - 8 patches, no changes",
-        "[INFO] ubuntu - 45 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1351,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "ubuntu",
-        "crowdstrike",
-        "github",
-        "redhat",
-        "signal",
-        "aws",
-        "chrome",
-        "cisco",
-        "edge",
-        "nodejs",
-        "oracle-db"
-      ],
-      "newPatches": []
     }
   ]
 }
