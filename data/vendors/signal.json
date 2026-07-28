@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-07-28T14:23:01.891Z",
+  "lastUpdated": "2026-07-28T19:40:36.402Z",
   "health": {
-    "lastFetchAttempt": "2026-07-28T14:23:01.890Z",
+    "lastFetchAttempt": "2026-07-28T19:40:36.402Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-07-28T14:23:01.890Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-07-28T19:40:36.402Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "GoPacket's Diameter AVP decoder: uint32 underflow on vendor header size leads to unbounded ~4 GiB allocation (unauthenticated remote DoS)",
+      "date": "2026-07-28",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe Diameter AVP decoder in `github.com/gopacket/gopacket` computes `dataLength := avp.Length - uint32(headerSize)` without first ensuring `avp.Length >= headerSize`. When the Vendor flag ",
+      "link": "https://github.com/advisories/GHSA-6r28-9ppf-4hj5",
+      "cves": [
+        "CVE-2026-54345"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Open WebUI: Account enumeration via observable login timing discrepancy",
       "date": "2026-07-24",
