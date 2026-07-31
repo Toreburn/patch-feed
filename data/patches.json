@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-31T14:13:56.578Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-07-31T14:22:49.134Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -451,6 +451,15 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-55000",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55000"
+    },
+    {
+      "title": "USN-8620-3: Linux kernel (Intel IoTG) vulnerabilities",
+      "date": "2026-07-31",
+      "severity": "HIGH",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Intel IoTG) vulnerabilities",
+      "description": "Maxim Suhanov discovered that the NTFS file system implementation in the\nLinux kernel did not properly validate file name length in certain\nsituations, leading to an out-of-bounds read. An attacker co...",
+      "link": "https://ubuntu.com/security/notices/USN-8620-3"
     },
     {
       "title": "Falcon AIDR Now Protects Copilot Studio Agents and Claude Code",
@@ -11258,6 +11267,51 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-07-31T14:22:49.133Z",
+      "logs": [
+        "[INFO] apple - 4 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[INFO] crowdstrike - 4 patches, no changes",
+        "[INFO] debian - 4 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 107 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 302 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] redhat - 628 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[SUCCESS] ubuntu - 22 patches (1 new)"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1084,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "microsoft",
+        "ubuntu",
+        "crowdstrike",
+        "debian",
+        "github",
+        "redhat",
+        "signal",
+        "chrome",
+        "cisco",
+        "gitlab",
+        "nodejs",
+        "apple",
+        "edge"
+      ],
+      "newPatches": [
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8620-3: Linux kernel (Intel IoTG) vulnerabilities",
+          "date": "2026-07-31",
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-07-31T14:13:56.577Z",
       "logs": [
         "[INFO] apple - 4 patches, no changes",
@@ -19062,44 +19116,6 @@
     },
     {
       "timestamp": "2026-07-27T14:42:12.585Z",
-      "logs": [
-        "[INFO] aws - 5 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 258 patches, no changes",
-        "[INFO] microsoft - 550 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] redhat - 96 patches, no changes",
-        "[INFO] signal - 8 patches, no changes",
-        "[INFO] ubuntu - 44 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 980,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "edge",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "crowdstrike",
-        "cisco",
-        "nodejs",
-        "oracle-db"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-27T11:27:17.136Z",
       "logs": [
         "[INFO] aws - 5 patches, no changes",
         "[INFO] chrome - 4 patches, no changes",
