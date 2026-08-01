@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-01T06:31:47.344Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-01T08:30:08.441Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -538,6 +538,17 @@
       "component": "php8.4",
       "description": "Multiple security issues were found in PHP, a widely-used open source general purpose scripting language, which could result in denial of service, SQL injection, information disclosure or the executio...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00317.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6408-1 chromium - security update",
+      "date": "2026-07-31",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6408-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00319.html",
       "cve": "",
       "cves": []
     },
@@ -9881,6 +9892,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-01T08:30:08.441Z",
+      "logs": [
+        "[INFO] apple - 4 patches, no changes",
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 4 patches, no changes",
+        "[SUCCESS] debian - 8 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 160 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 252 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 478 patches, no changes",
+        "[INFO] signal - 4 patches, no changes",
+        "[INFO] ubuntu - 23 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 951,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "aws",
+        "cisco",
+        "debian",
+        "edge",
+        "github",
+        "postgresql",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "crowdstrike",
+        "chrome",
+        "gitlab",
+        "nodejs",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6408-1 chromium - security update",
+          "date": "2026-07-31",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-08-01T06:31:47.344Z",
       "logs": [
         "[INFO] apple - 4 patches, no changes",
@@ -18026,497 +18086,6 @@
         "chrome"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-28T02:56:08.008Z",
-      "logs": [
-        "[INFO] apple - 4 patches, no changes",
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 1 patches, no changes",
-        "[SUCCESS] crowdstrike - 2 patches (1 new)",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 181 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[SUCCESS] redhat - 117 patches (75 new)",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 37 patches, no changes"
-      ],
-      "newPatchCount": 76,
-      "totalPatches": 859,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 11,
-      "vendors": [
-        "microsoft",
-        "apple",
-        "crowdstrike",
-        "edge",
-        "github",
-        "redhat",
-        "ubuntu",
-        "debian",
-        "signal",
-        "aws",
-        "chrome"
-      ],
-      "newPatches": [
-        {
-          "vendor": "crowdstrike",
-          "title": "5 High-Impact Use Cases for Falcon Onum",
-          "date": "2026-07-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-12383: eda-server: ExternalEventStreamViewSet trusts Subject header without validation and leaks expected DN",
-          "date": "2026-07-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-15003: binutils: GNU Binutils: Heap-buffer-overflow in linker leads to information disclosure and denial of service",
-          "date": "2026-07-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-17513: whisper.cpp: whisper.cpp: Denial of Service via ftype argument manipulation",
-          "date": "2026-07-27",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-17512: whisper.cpp: whisper.cpp: Information disclosure via out-of-bounds read",
-          "date": "2026-07-27",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-16554: cJSON: cJSON: Remote code execution due to integer overflow via crafted JSON",
-          "date": "2026-07-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64535: kernel: nvmet-tcp: Fix potential UAF when ddgst mismatch",
-          "date": "2026-07-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-17501: llama.cpp: llama.cpp: Denial of Service due to resource allocation manipulation in JSON-Schema-to-GBNF Conversion",
-          "date": "2026-07-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-17527: virt-cdi-operator: containerized-data-importer: cdi.kubevirt.io:view aggregated ClusterRole grants create on datavolumes",
-          "date": "2026-07-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64530: kernel: net/sched: cls_api: Handle TC_ACT_CONSUMED in tcf_qevent_handle",
-          "date": "2026-07-26",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2024-14040: kernel: net: nexthop: Increase weight to u16",
-          "date": "2026-07-26",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64269: kernel: RDMA/rtrs-srv: Bound RDMA-Write length to chunk size in rdma_write_sg",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64456: kernel: hwrng: virtio: clamp device-reported used.len at copy_data()",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64452: kernel: 6lowpan: fix NHC entry use-after-free on error path",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64285: kernel: KVM: SEV: Pin source page for write when adding CPUID data for SNP guest",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64342: kernel: USB: iowarrior: fix use-after-free on disconnect",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64314: kernel: crypto: chacha20poly1305 - validate poly1305 template argument",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64424: kernel: netpoll: fix a use-after-free on shutdown path",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64431: kernel: ntfs: avoid calling post_write_mst_fixup() for invalid index_block",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64349: kernel: usb: dwc3: fix dwc3_readl() and dwc3_writel() calls in dwc3_ulpi_setup()",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64346: kernel: usb: gadget: udc: Fix use-after-free in gadget_match_driver",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64293: kernel: iommufd: Use sizeof(*hdr) instead of sizeof(hdr) in veventq read",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64377: kernel: cpufreq: qcom-cpufreq-hw: Fix possible double free",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64437: kernel: ksmbd: fix use-after-free of a deferred file_lock on SMB2_CLOSE then SMB2_CANCEL",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64509: kernel: rust: block: fix GenDisk cleanup paths",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64362: kernel: HID: lg-g15: cancel pending work on remove to fix a use-after-free",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64442: kernel: staging: rtl8723bs: fix OOB reads in IE loops in issue_assocreq() and join_cmd_hdl()",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64393: kernel: ksmbd: run set info with opener credentials",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64373: kernel: cpufreq: Fix hotplug-suspend race during reboot",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64350: kernel: usb: cdnsp: fix stream context array leak in cdnsp_alloc_stream_info()",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64398: kernel: ksmbd: add a permission check for FSCTL_SET_ZERO_DATA",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64261: kernel: fuse-uring: Avoid use-after-free in fuse_uring_async_stop_queues",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64351: kernel: net: usb: kalmia: bound RX frame length in kalmia_rx_fixup()",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64485: kernel: ALSA: compress: Fix task creation error unwind",
-          "date": "2026-07-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64490: kernel: ALSA: virtio: Validate control metadata from the device",
-          "date": "2026-07-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64395: kernel: ksmbd: require source read access for duplicate extents",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64451: kernel: tracing: Fix NULL pointer dereference in func_set_flag()",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64309: kernel: crypto: ccp - Do not initialize SNP for ioctl(SNP_COMMIT)",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64363: kernel: HID: appleir: fix UAF on pending key_up_timer in remove()",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64477: kernel: x86,fs/resctrl: Prevent out-of-bounds access while offlining CPU when SNC enabled",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64331: kernel: usbip: vudc: fix NULL deref in vep_dequeue()",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64354: kernel: bpf: Validate BTF repeated field counts before expansion",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64418: kernel: mm: shrinker: fix shrinker_info teardown race with expansion",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64290: kernel: iommufd: Break the loop on failure in iommufd_fault_fops_read()",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64384: kernel: smb: client: fix change notify replay double-free",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64459: kernel: tcp: restore RCU grace period in tcp_ao_destroy_sock",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64433: kernel: Bluetooth: MGMT: Fix UAF of hci_conn_params in add_device_complete",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64277: kernel: Input: synaptics-rmi4 - bound the F3A keymap to the GPIO count",
-          "date": "2026-07-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64325: kernel: wifi: mt76: mt7921/mt7925: fix NULL dereference in CSA beacon",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64515: kernel: wifi: mac80211: fix MLE defragmentation",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64406: kernel: Bluetooth: fix UAF in bt_accept_dequeue()",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64427: kernel: HID: logitech-dj: Fix maxfield check in DJ short report validation",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64296: kernel: exfat: bound uniname advance in exfat_find_dir_entry()",
-          "date": "2026-07-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64378: kernel: writeback: fix race between cgroup_writeback_umount() and inode_switch_wbs()",
-          "date": "2026-07-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64479: kernel: ALSA: seq: Fix uninitialised heap leak in snd_seq_event_dup()",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64512: kernel: ACPI: CPPC: Suppress UBSAN warning caused by field misuse",
-          "date": "2026-07-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64321: kernel: nvme: target: rdma: fix ndev refcount leak on queue connect",
-          "date": "2026-07-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64397: kernel: ksmbd: serialize QUERY_DIRECTORY requests per file",
-          "date": "2026-07-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64276: kernel: Input: synaptics-rmi4 - bound the F30 keymap to the GPIO/LED count",
-          "date": "2026-07-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-66035: libssh2: libssh2: Arbitrary code execution via heap buffer overflow during SSH negotiation",
-          "date": "2026-07-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-66034: libssh2: libssh2: Information disclosure and potential arbitrary code execution via heap out-of-bounds read",
-          "date": "2026-07-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-66033: libssh2: libssh2: Denial of Service via integer underflow in AES-GCM cipher negotiation",
-          "date": "2026-07-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-66032: libssh2: libssh2: Arbitrary code execution via double-free in SFTP session",
-          "date": "2026-07-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-56391: coreutils: GNU coreutils uniq: Denial of Service and information disclosure via out-of-bounds read with multibyte input",
-          "date": "2026-07-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-16807: chromium-browser: Google Chrome Codecs: Sandbox escape via crafted HTML page",
-          "date": "2026-07-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-65010: datasets: Datasets: Arbitrary file write via symlink following",
-          "date": "2026-07-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-65920: diffusers: Diffusers: Information disclosure via path traversal vulnerability",
-          "date": "2026-07-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-65698: Void: Void: Sensitive file exfiltration via AI agent path traversal vulnerability",
-          "date": "2026-07-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-65903: dompurify: DOMPurify: Security bypass allows injection of malicious content",
-          "date": "2026-07-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-52686: pdns-recursor: pdns-recursor: DNSSEC validation bypass due to unsigned wildcard expansion proofs",
-          "date": "2026-07-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-14899: thunderbird: Off-by-one out of bounds read in MIME header parser for forwarding",
-          "date": "2026-07-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-55991: unbound: Unbound: Denial of Service via crafted DNS-over-QUIC connection",
-          "date": "2026-07-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-54478: unbound: Unbound: DNS Cookie security bypass via incorrect server cookie calculation",
-          "date": "2026-07-22",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-32665: unbound: Unbound: Denial of Service via improper validation of DNS-over-QUIC client length",
-          "date": "2026-07-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-44690: unbound: Unbound: Cache poisoning via insufficient RRSIG.Labels validation and premature cache writes",
-          "date": "2026-07-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-55973: unbound: Unbound: Denial of Service via malformed EDNS Report-Channel option",
-          "date": "2026-07-22",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
