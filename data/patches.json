@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-02T13:27:31.043Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-02T13:41:12.099Z",
+  "newPatches": 6,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -451,6 +451,17 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-55000",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55000"
+    },
+    {
+      "title": "DSA-6410-1 libssh - security update",
+      "date": "2026-08-02",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libssh",
+      "description": "Several vulnerabilities were discovered in libssh, a tiny C SSH library, which may result in denial of service, information disclosure and potentially the execution of arbitrary code. https://security...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00321.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "DSA-6409-1 libgd2 - security update",
@@ -1242,6 +1253,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15722.json",
       "cve": "CVE-2026-15722",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-18569: keycloak-services: keycloak-services: OIDC backchannel logout accepts unsigned forged logout tokens",
+      "date": "2026-07-31",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: OIDC backchannel logout accepts unsigned forged logout tokens",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18569.json",
+      "cve": "CVE-2026-18569",
+      "cvss": 3.7
     },
     {
       "title": "@dynatrace-oss/dynatrace-mcp-server has a DQL injection via parameters not documented as DQL",
@@ -5803,6 +5825,50 @@
       "cvss": 9
     },
     {
+      "title": "CVE-2026-18570: keycloak-services: keycloak-services: Full-scope-disabled client policy validation bypass via omitted fullScopeAllowed",
+      "date": "2026-07-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Full-scope-disabled client policy validation bypass via omitted fullScopeAllowed",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18570.json",
+      "cve": "CVE-2026-18570",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-18571: keycloak-services: keycloak-services: FGAP V2 group assignment bypass during user creation",
+      "date": "2026-07-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: FGAP V2 group assignment bypass during user creation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18571.json",
+      "cve": "CVE-2026-18571",
+      "cvss": 6.6
+    },
+    {
+      "title": "CVE-2026-18572: keycloak-services: keycloak-services: UMA claim token can override authorization time-policy evaluation attributes",
+      "date": "2026-07-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: UMA claim token can override authorization time-policy evaluation attributes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18572.json",
+      "cve": "CVE-2026-18572",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-18573: keycloak-services: keycloak-services: Client access-type policy condition bypass during client update",
+      "date": "2026-07-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Client access-type policy condition bypass during client update",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18573.json",
+      "cve": "CVE-2026-18573",
+      "cvss": 6.5
+    },
+    {
       "title": "Signal Desktop v8.22.0-beta.1",
       "date": "2026-07-30",
       "severity": "UNKNOWN",
@@ -9880,6 +9946,85 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-08-02T13:41:12.099Z",
+      "logs": [
+        "[INFO] apple - 4 patches, no changes",
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 4 patches, no changes",
+        "[SUCCESS] debian - 10 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 160 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 252 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 481 patches (5 new)",
+        "[INFO] signal - 4 patches, no changes",
+        "[INFO] ubuntu - 23 patches, no changes"
+      ],
+      "newPatchCount": 6,
+      "totalPatches": 956,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "aws",
+        "cisco",
+        "edge",
+        "github",
+        "postgresql",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "crowdstrike",
+        "chrome",
+        "gitlab",
+        "nodejs",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6410-1 libssh - security update",
+          "date": "2026-08-02",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-18569: keycloak-services: keycloak-services: OIDC backchannel logout accepts unsigned forged logout tokens",
+          "date": "2026-07-31",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-18570: keycloak-services: keycloak-services: Full-scope-disabled client policy validation bypass via omitted fullScopeAllowed",
+          "date": "2026-07-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-18571: keycloak-services: keycloak-services: FGAP V2 group assignment bypass during user creation",
+          "date": "2026-07-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-18572: keycloak-services: keycloak-services: UMA claim token can override authorization time-policy evaluation attributes",
+          "date": "2026-07-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-18573: keycloak-services: keycloak-services: Client access-type policy condition bypass during client update",
+          "date": "2026-07-30",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-08-02T13:27:31.043Z",
       "logs": [
@@ -16746,49 +16891,6 @@
         "aws"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-29T14:24:03.814Z",
-      "logs": [
-        "[INFO] apple - 4 patches, no changes",
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 6 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 174 patches, no changes",
-        "[SUCCESS] gitlab - 1 patches (1 new)",
-        "[INFO] microsoft - 451 patches, no changes",
-        "[INFO] redhat - 198 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 41 patches, no changes"
-      ],
-      "newPatchCount": 1,
-      "totalPatches": 889,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "microsoft",
-        "gitlab",
-        "ubuntu",
-        "chrome",
-        "debian",
-        "github",
-        "redhat",
-        "signal",
-        "apple",
-        "crowdstrike",
-        "edge",
-        "aws"
-      ],
-      "newPatches": [
-        {
-          "vendor": "gitlab",
-          "title": "GitLab Patch Release: 19.2.1, 19.1.3, 19.0.5",
-          "date": "2026-07-29",
-          "severity": "CRITICAL"
-        }
-      ]
     }
   ]
 }
