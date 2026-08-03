@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03T17:53:07.867Z",
+  "lastUpdated": "2026-08-03T19:41:13.238Z",
   "newPatches": 0,
   "patches": [
     {
@@ -8321,6 +8321,46 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-03T19:41:13.238Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 4 patches, no changes",
+        "[INFO] debian - 10 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 159 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 152 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 423 patches, no changes",
+        "[INFO] signal - 4 patches, no changes",
+        "[INFO] ubuntu - 20 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 789,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "crowdstrike",
+        "redhat",
+        "debian",
+        "aws",
+        "cisco",
+        "edge",
+        "github",
+        "postgresql",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "gitlab",
+        "nodejs"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-08-03T17:53:07.867Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -12700,177 +12740,6 @@
         "edge"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-30T19:42:50.324Z",
-      "logs": [
-        "[INFO] apple - 4 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] crowdstrike - 3 patches, no changes",
-        "[INFO] debian - 5 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 206 patches (18 new)",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[SUCCESS] microsoft - 402 patches (1 new)",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] redhat - 502 patches, no changes",
-        "[SUCCESS] signal - 6 patches (2 new)",
-        "[SUCCESS] ubuntu - 31 patches (1 new)"
-      ],
-      "newPatchCount": 22,
-      "totalPatches": 1170,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "cisco",
-        "crowdstrike",
-        "gitlab",
-        "nodejs",
-        "apple",
-        "edge"
-      ],
-      "newPatches": [
-        {
-          "vendor": "github",
-          "title": "Active Storage has possible arbitrary file read and remote code execution in Active Storage variant processing",
-          "date": "2026-07-30",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "MessagePack::Buffer#clear Use-After-Free that Enables Cross-Buffer Disclosure",
-          "date": "2026-07-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "dssrf has an SSRF bypass with remove_at_symbol_in_string",
-          "date": "2026-07-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flyto2 Core: Guarded HTTP modules follow redirects into internal space without per-hop SSRF revalidation",
-          "date": "2026-07-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flyto2 Core: Multiple HTTP-family modules fetch client-controlled URLs without the SSRF guard their siblings apply (SSRF to internal/metadata)",
-          "date": "2026-07-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flyto2 Core: Unauthenticated flyto-verification /run: callback_url SSRF and internal runner-secret exfiltration",
-          "date": "2026-07-30",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Flyto2 Core: LLM/API keys leak to an attacker-controlled base_url",
-          "date": "2026-07-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flyto2 Core: ${env.VAR} interpolation reads any env secret despite env.get being denylisted",
-          "date": "2026-07-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flyto2 Core: Arbitrary file write via image.download (and other file-writing modules)",
-          "date": "2026-07-30",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "linuxfabrik-lib: fetch() forwards credential headers across a cross-origin redirect",
-          "date": "2026-07-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MCP Ruby SDK: Ruby SSE Session Poisoning",
-          "date": "2026-07-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "MCP Ruby SDK: Unbounded JSON-RPC request body causes uncontrolled memory allocation in StreamableHTTPTransport",
-          "date": "2026-07-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "MCP Ruby SDK: Unbounded session retention in StreamableHTTPTransport allows memory exhaustion via initialize flood",
-          "date": "2026-07-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MCP Ruby SDK: Unbounded line buffer in stdio transports leads to memory exhaustion (DoS)",
-          "date": "2026-07-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MCP Ruby SDK: Streamable HTTP transport lacks DNS-rebinding (Host/Origin) protection",
-          "date": "2026-07-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OliveTin OS Command Injection via Custom regex: Argument Type Bypassing Shell Safety Check",
-          "date": "2026-07-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OliveTin: StartActionAndWait Endpoints Bypass `logs` Permission and Return Action Output",
-          "date": "2026-07-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "OliveTin: Unauthenticated DoS via OAuth2 State Memory Exhaustion (Unbounded Map Growth)",
-          "date": "2026-07-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-15767: Chromium: CVE-2026-15767 Heap buffer overflow in libyuv",
-          "date": "2026-07-30",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "signal",
-          "title": "Signal Desktop v8.22.0-beta.1",
-          "date": "2026-07-30",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "signal",
-          "title": "Signal Desktop v8.21.0",
-          "date": "2026-07-30",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8625-1: OpenSSL vulnerability",
-          "date": "2026-07-30",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
