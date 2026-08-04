@@ -1,16 +1,38 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-08-04T08:46:40.682Z",
+  "lastUpdated": "2026-08-04T14:27:57.876Z",
   "health": {
-    "lastFetchAttempt": "2026-08-04T08:46:40.682Z",
+    "lastFetchAttempt": "2026-08-04T14:27:57.876Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-04T08:46:40.682Z",
+    "lastFetchNewPatches": 6,
+    "lastSuccessWithData": "2026-08-04T14:27:57.876Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Flowise: Unauthenticated OAuth2 Refresh Enables Non-Blind SSRF and Secret Exfiltration",
+      "date": "2026-08-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise: Unauthenticated OAuth2 Refresh Enables Non-Blind SSRF and Secret Exfiltration",
+      "link": "https://github.com/advisories/GHSA-r745-8hwv-h473",
+      "cve": "CVE-2026-69250",
+      "cvss": null
+    },
+    {
+      "title": "Flowise: IDOR vulnerability exists at the GET /api/v1/organization/customer-default-source endpoint",
+      "date": "2026-08-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise: IDOR vulnerability exists at the GET /api/v1/organization/customer-default-source endpoint",
+      "link": "https://github.com/advisories/GHSA-2364-jh4q-m9vm",
+      "cve": "",
+      "cvss": null
+    },
     {
       "title": "undici vulnerable to CRLF Injection via blob-like body 'type' property",
       "date": "2026-08-03",
@@ -329,6 +351,50 @@
       "link": "https://github.com/advisories/GHSA-22jq-vg5j-6vgg",
       "cve": "CVE-2026-54272",
       "cvss": null
+    },
+    {
+      "title": "Duplicate Advisory: Guzzle: Host-only cookie scope is not preserved",
+      "date": "2026-08-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "guzzlehttp/guzzle",
+      "description": "Duplicate Advisory: Guzzle: Host-only cookie scope is not preserved",
+      "link": "https://github.com/advisories/GHSA-mjrx-74jh-7xgw",
+      "cve": "",
+      "cvss": 5.9
+    },
+    {
+      "title": "Duplicate Advisory: Guzzle: URI fragments disclosed in redirect Referer headers",
+      "date": "2026-08-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "guzzlehttp/guzzle",
+      "description": "Duplicate Advisory: Guzzle: URI fragments disclosed in redirect Referer headers",
+      "link": "https://github.com/advisories/GHSA-mqq9-gxg5-m58g",
+      "cve": "",
+      "cvss": 5.9
+    },
+    {
+      "title": "Duplicate Advisory: Guzzle: Unbounded response cookies risk denial of service",
+      "date": "2026-08-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "guzzlehttp/guzzle",
+      "description": "Duplicate Advisory: Guzzle: Unbounded response cookies risk denial of service",
+      "link": "https://github.com/advisories/GHSA-3fvr-2jw6-crq4",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "Duplicate Advisory: Guzzle: Proxy-Authorization headers can be sent to origin servers",
+      "date": "2026-08-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "guzzlehttp/guzzle",
+      "description": "Duplicate Advisory: Guzzle: Proxy-Authorization headers can be sent to origin servers",
+      "link": "https://github.com/advisories/GHSA-32rq-jhr7-m3hh",
+      "cve": "",
+      "cvss": 5.3
     },
     {
       "title": "ImageMagick: Heap Buffer Over-Read in XCF decoder due to integer conversion overflow",

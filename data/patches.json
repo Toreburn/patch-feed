@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-04T14:22:16.867Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-04T14:29:56.494Z",
+  "newPatches": 14,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -453,6 +453,28 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55000"
     },
     {
+      "title": "Flowise: Unauthenticated OAuth2 Refresh Enables Non-Blind SSRF and Secret Exfiltration",
+      "date": "2026-08-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise: Unauthenticated OAuth2 Refresh Enables Non-Blind SSRF and Secret Exfiltration",
+      "link": "https://github.com/advisories/GHSA-r745-8hwv-h473",
+      "cve": "CVE-2026-69250",
+      "cvss": null
+    },
+    {
+      "title": "Flowise: IDOR vulnerability exists at the GET /api/v1/organization/customer-default-source endpoint",
+      "date": "2026-08-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "flowise",
+      "description": "Flowise: IDOR vulnerability exists at the GET /api/v1/organization/customer-default-source endpoint",
+      "link": "https://github.com/advisories/GHSA-2364-jh4q-m9vm",
+      "cve": "",
+      "cvss": null
+    },
+    {
       "title": "pgAdmin 4 v9.17 Released",
       "date": "2026-08-04",
       "severity": "HIGH",
@@ -461,6 +483,72 @@
       "description": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.17. This release of pgAdmin 4 includes 28 bug fixes and new features, including fixes for seven security vulnerab...",
       "link": "https://www.postgresql.org/about/news/pgadmin-4-v917-released-3356/",
       "cve": "CVE-2026-17346"
+    },
+    {
+      "title": "CVE-2026-70368: stunnel: Stack-based out-of-bounds read/write in stunnel s_vlog via oversized log message",
+      "date": "2026-08-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "stunnel: Stack-based out-of-bounds read/write in stunnel s_vlog via oversized log message",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-70368.json",
+      "cve": "CVE-2026-70368",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-70367: stunnel: SSRF bypass in stunnel SOCKS proxy via IPv4-mapped IPv6 loopback and unspecified addresses allows access to loo",
+      "date": "2026-08-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "stunnel: SSRF bypass in stunnel SOCKS proxy via IPv4-mapped IPv6 loopback and unspecified addresses allows access to loopback-only services",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-70367.json",
+      "cve": "CVE-2026-70367",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-17614: wildfly-core: Path Traversal on WildFly Domain Controller",
+      "date": "2026-08-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wildfly-core: Path Traversal on WildFly Domain Controller",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-17614.json",
+      "cve": "CVE-2026-17614",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-42169: gimp: GIMP APNG loader heap-buffer-overflow when fcTL width exceeds IHDR width (file-png.c)",
+      "date": "2026-08-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gimp: GIMP APNG loader heap-buffer-overflow when fcTL width exceeds IHDR width (file-png.c)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42169.json",
+      "cve": "CVE-2026-42169",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-42170: gimp: GIMP DDS plug-in heap-based buffer overflow via BPP mismatch in load_layer() (ddsread.c)",
+      "date": "2026-08-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gimp: GIMP DDS plug-in heap-based buffer overflow via BPP mismatch in load_layer() (ddsread.c)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42170.json",
+      "cve": "CVE-2026-42170",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-64561: kernel: KVM: x86: Check for invalid/obsolete root *after* making MMU pages available",
+      "date": "2026-08-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: x86: Check for invalid/obsolete root *after* making MMU pages available",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64561.json",
+      "cve": "CVE-2026-64561",
+      "cvss": 7
     },
     {
       "title": "CVE-2026-18655 - Broker Credential and OAuth Token Disclosure in AWS Labs Amazon MQ MCP Server via Prompt Injection",
@@ -995,6 +1083,50 @@
       "cves": []
     },
     {
+      "title": "Duplicate Advisory: Guzzle: Host-only cookie scope is not preserved",
+      "date": "2026-08-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "guzzlehttp/guzzle",
+      "description": "Duplicate Advisory: Guzzle: Host-only cookie scope is not preserved",
+      "link": "https://github.com/advisories/GHSA-mjrx-74jh-7xgw",
+      "cve": "",
+      "cvss": 5.9
+    },
+    {
+      "title": "Duplicate Advisory: Guzzle: URI fragments disclosed in redirect Referer headers",
+      "date": "2026-08-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "guzzlehttp/guzzle",
+      "description": "Duplicate Advisory: Guzzle: URI fragments disclosed in redirect Referer headers",
+      "link": "https://github.com/advisories/GHSA-mqq9-gxg5-m58g",
+      "cve": "",
+      "cvss": 5.9
+    },
+    {
+      "title": "Duplicate Advisory: Guzzle: Unbounded response cookies risk denial of service",
+      "date": "2026-08-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "guzzlehttp/guzzle",
+      "description": "Duplicate Advisory: Guzzle: Unbounded response cookies risk denial of service",
+      "link": "https://github.com/advisories/GHSA-3fvr-2jw6-crq4",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "Duplicate Advisory: Guzzle: Proxy-Authorization headers can be sent to origin servers",
+      "date": "2026-08-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "guzzlehttp/guzzle",
+      "description": "Duplicate Advisory: Guzzle: Proxy-Authorization headers can be sent to origin servers",
+      "link": "https://github.com/advisories/GHSA-32rq-jhr7-m3hh",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
       "title": "CVE-2026-67302: FreeRDP: FreeRDP: Denial of service in camera redirection due to divide-by-zero",
       "date": "2026-08-01",
       "severity": "MEDIUM",
@@ -1268,6 +1400,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67317.json",
       "cve": "CVE-2026-67317",
       "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-67298: FreeRDP: FreeRDP: Denial of Service via integer underflow in RAIL channel handling",
+      "date": "2026-08-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FreeRDP: FreeRDP: Denial of Service via integer underflow in RAIL channel handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67298.json",
+      "cve": "CVE-2026-67298",
+      "cvss": 7.1
     },
     {
       "title": "Incomplete fix for CVE-2025-4318 code injection in Amazon &commat;aws-amplify/codegen-ui-react",
@@ -2092,6 +2235,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18508.json",
       "cve": "CVE-2026-18508",
       "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-18446: fast-uri: fast-uri: Host confusion vulnerability via backslash in URI authority",
+      "date": "2026-07-31",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fast-uri: fast-uri: Host confusion vulnerability via backslash in URI authority",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18446.json",
+      "cve": "CVE-2026-18446",
+      "cvss": 7.5
     },
     {
       "title": "@dynatrace-oss/dynatrace-mcp-server has a DQL injection via parameters not documented as DQL",
@@ -7516,6 +7670,133 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-04T14:29:56.494Z",
+      "logs": [
+        "[INFO] android - 1 patches, no changes",
+        "[INFO] aws - 7 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 7 patches, no changes",
+        "[INFO] crowdstrike - 4 patches, no changes",
+        "[INFO] debian - 8 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[SUCCESS] github - 141 patches (6 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 101 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 431 patches (8 new)",
+        "[INFO] signal - 4 patches, no changes",
+        "[INFO] ubuntu - 8 patches, no changes"
+      ],
+      "newPatchCount": 14,
+      "totalPatches": 719,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "github",
+        "postgresql",
+        "redhat",
+        "aws",
+        "cisco",
+        "crowdstrike",
+        "signal",
+        "debian",
+        "android",
+        "edge",
+        "ubuntu",
+        "chrome",
+        "gitlab",
+        "nodejs"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "Flowise: Unauthenticated OAuth2 Refresh Enables Non-Blind SSRF and Secret Exfiltration",
+          "date": "2026-08-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Flowise: IDOR vulnerability exists at the GET /api/v1/organization/customer-default-source endpoint",
+          "date": "2026-08-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Duplicate Advisory: Guzzle: Host-only cookie scope is not preserved",
+          "date": "2026-08-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Duplicate Advisory: Guzzle: URI fragments disclosed in redirect Referer headers",
+          "date": "2026-08-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Duplicate Advisory: Guzzle: Unbounded response cookies risk denial of service",
+          "date": "2026-08-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Duplicate Advisory: Guzzle: Proxy-Authorization headers can be sent to origin servers",
+          "date": "2026-08-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-70368: stunnel: Stack-based out-of-bounds read/write in stunnel s_vlog via oversized log message",
+          "date": "2026-08-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-70367: stunnel: SSRF bypass in stunnel SOCKS proxy via IPv4-mapped IPv6 loopback and unspecified addresses allows access to loo",
+          "date": "2026-08-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-17614: wildfly-core: Path Traversal on WildFly Domain Controller",
+          "date": "2026-08-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42169: gimp: GIMP APNG loader heap-buffer-overflow when fcTL width exceeds IHDR width (file-png.c)",
+          "date": "2026-08-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42170: gimp: GIMP DDS plug-in heap-based buffer overflow via BPP mismatch in load_layer() (ddsread.c)",
+          "date": "2026-08-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-64561: kernel: KVM: x86: Check for invalid/obsolete root *after* making MMU pages available",
+          "date": "2026-08-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-67298: FreeRDP: FreeRDP: Denial of Service via integer underflow in RAIL channel handling",
+          "date": "2026-08-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-18446: fast-uri: fast-uri: Host confusion vulnerability via backslash in URI authority",
+          "date": "2026-07-31",
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-08-04T14:22:16.867Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
@@ -11125,44 +11406,6 @@
     },
     {
       "timestamp": "2026-07-31T19:38:00.902Z",
-      "logs": [
-        "[INFO] apple - 4 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] crowdstrike - 4 patches, no changes",
-        "[INFO] debian - 4 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 107 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 302 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] redhat - 628 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 22 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1084,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "ubuntu",
-        "crowdstrike",
-        "debian",
-        "github",
-        "redhat",
-        "signal",
-        "chrome",
-        "cisco",
-        "gitlab",
-        "nodejs",
-        "apple",
-        "edge"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-07-31T17:41:47.761Z",
       "logs": [
         "[INFO] apple - 4 patches, no changes",
         "[INFO] chrome - 4 patches, no changes",
