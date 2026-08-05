@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-05T06:30:38.381Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-05T08:45:27.755Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -451,6 +451,33 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-55000",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55000"
+    },
+    {
+      "title": "DSA-6412-1 botan3 - security update",
+      "date": "2026-08-05",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "botan3",
+      "description": "Multiple security issues were discovered in Botan, a C++ cryptography library, which could result in denial of service, certificate validation bypass or authentication bypass. These issues have been a...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00323.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6411-1 aom - security update",
+      "date": "2026-08-05",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "aom",
+      "description": "Multiple vulnerabilities were discovered in aom, the reference implementation of the AV1 video codec. All of them affect the encoder; applications that only decode AV1 video are not affected. CVE-2026...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00322.html",
+      "cve": "CVE-2026-56208",
+      "cves": [
+        "CVE-2026-56208",
+        "CVE-2026-56209",
+        "CVE-2026-56210",
+        "CVE-2026-56211"
+      ]
     },
     {
       "title": "CVE-2026-18830 - Issue with Amazon Bedrock AgentCore harness – Insufficient Input Validation",
@@ -7550,6 +7577,57 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-05T08:45:27.755Z",
+      "logs": [
+        "[INFO] android - 1 patches, no changes",
+        "[INFO] aws - 9 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 9 patches (2 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 162 patches, no changes",
+        "[INFO] microsoft - 101 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 408 patches, no changes",
+        "[INFO] signal - 4 patches, no changes",
+        "[INFO] ubuntu - 3 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 709,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "aws",
+        "chrome",
+        "edge",
+        "github",
+        "postgresql",
+        "redhat",
+        "cisco",
+        "crowdstrike",
+        "signal",
+        "android",
+        "ubuntu"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6412-1 botan3 - security update",
+          "date": "2026-08-05",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6411-1 aom - security update",
+          "date": "2026-08-05",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-08-05T06:30:38.380Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
@@ -10501,48 +10579,6 @@
     },
     {
       "timestamp": "2026-08-01T13:27:12.560Z",
-      "logs": [
-        "[INFO] apple - 4 patches, no changes",
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] crowdstrike - 4 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 160 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 252 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 478 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 23 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 951,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "cisco",
-        "debian",
-        "edge",
-        "github",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "crowdstrike",
-        "chrome",
-        "gitlab",
-        "nodejs",
-        "apple"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-01T10:01:41.212Z",
       "logs": [
         "[INFO] apple - 4 patches, no changes",
         "[INFO] aws - 4 patches, no changes",

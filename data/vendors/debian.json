@@ -1,16 +1,43 @@
 {
   "vendor": "debian",
-  "lastUpdated": "2026-08-05T02:53:24.006Z",
+  "lastUpdated": "2026-08-05T08:43:10.565Z",
   "health": {
-    "lastFetchAttempt": "2026-08-05T02:53:24.006Z",
+    "lastFetchAttempt": "2026-08-05T08:43:10.565Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 7,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-05T02:53:24.006Z",
+    "lastFetchParsedItems": 9,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-08-05T08:43:10.565Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "DSA-6412-1 botan3 - security update",
+      "date": "2026-08-05",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "botan3",
+      "description": "Multiple security issues were discovered in Botan, a C++ cryptography library, which could result in denial of service, certificate validation bypass or authentication bypass. These issues have been a...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00323.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6411-1 aom - security update",
+      "date": "2026-08-05",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "aom",
+      "description": "Multiple vulnerabilities were discovered in aom, the reference implementation of the AV1 video codec. All of them affect the encoder; applications that only decode AV1 video are not affected. CVE-2026...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00322.html",
+      "cve": "CVE-2026-56208",
+      "cves": [
+        "CVE-2026-56208",
+        "CVE-2026-56209",
+        "CVE-2026-56210",
+        "CVE-2026-56211"
+      ]
+    },
     {
       "title": "DSA-6410-1 libssh - security update",
       "date": "2026-08-02",
