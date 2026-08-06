@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-06T14:18:53.959Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-06T14:32:18.043Z",
+  "newPatches": 23,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -451,6 +451,37 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-55000",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55000"
+    },
+    {
+      "title": "DSA-6413-1 libde265 - security update",
+      "date": "2026-08-06",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libde265",
+      "description": "Multiple security issues were discovered in libde265, an open source implementation of the H.265/HEVC video codec, which may result in denial of service, memory exhaustion or potentially the execution...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00324.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "GitLab Patch Release: 18.11.9",
+      "date": "2026-08-06",
+      "severity": "LOW",
+      "vendor": "gitlab",
+      "component": "GitLab CE/EE",
+      "description": "Security patch release for GitLab CE/EE",
+      "link": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-18-11-9-released/"
+    },
+    {
+      "title": "CVE-2026-18649: gst-plugins-good: gst-plugins-good: unbounded memory growth in rtph264depay and rtph265depay RTP depayloaders",
+      "date": "2026-08-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gst-plugins-good: gst-plugins-good: unbounded memory growth in rtph264depay and rtph265depay RTP depayloaders",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18649.json",
+      "cve": "CVE-2026-18649",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-18953 - Improper limitation of a pathname in AWS Transform MCP Server",
@@ -1360,6 +1391,204 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16442.json",
       "cve": "CVE-2026-16442",
       "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-71312: github.com/rclone/rclone: rclone: Server-Side Command Execution via Malicious SFTP Filenames",
+      "date": "2026-08-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/rclone/rclone: rclone: Server-Side Command Execution via Malicious SFTP Filenames",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71312.json",
+      "cve": "CVE-2026-71312",
+      "cvss": 8
+    },
+    {
+      "title": "CVE-2026-71311: github.com/rclone/rclone: rclone: FTP command injection via CRLF in filename encoding",
+      "date": "2026-08-05",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/rclone/rclone: rclone: FTP command injection via CRLF in filename encoding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71311.json",
+      "cve": "CVE-2026-71311",
+      "cvss": 6.4
+    },
+    {
+      "title": "CVE-2026-71310: github.com/rclone/rclone: rclone: Denial of Service via unbounded HTTP CONNECT response headers",
+      "date": "2026-08-05",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/rclone/rclone: rclone: Denial of Service via unbounded HTTP CONNECT response headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71310.json",
+      "cve": "CVE-2026-71310",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-71309: github.com/rclone/rclone: rclone: Backend Root Escape via Incomplete Path Validation",
+      "date": "2026-08-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/rclone/rclone: rclone: Backend Root Escape via Incomplete Path Validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71309.json",
+      "cve": "CVE-2026-71309",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-71267: microtar: microtar: Stack buffer overflow via overly long filenames",
+      "date": "2026-08-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "microtar: microtar: Stack buffer overflow via overly long filenames",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71267.json",
+      "cve": "CVE-2026-71267",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-59679: libxfont2: Font Server Client encoding[] Out-Of-Bounds Read/Write",
+      "date": "2026-08-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libxfont2: Font Server Client encoding[] Out-Of-Bounds Read/Write",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59679.json",
+      "cve": "CVE-2026-59679",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-44950: libxfonts2: libXfont2: Privilege Escalation via Heap Buffer Overflow in Font Server Client",
+      "date": "2026-08-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libxfonts2: libXfont2: Privilege Escalation via Heap Buffer Overflow in Font Server Client",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44950.json",
+      "cve": "CVE-2026-44950",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-64579: kernel: xfrm: policy: preallocate inexact bins before xfrm_hash_rebuild reinsert",
+      "date": "2026-08-05",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfrm: policy: preallocate inexact bins before xfrm_hash_rebuild reinsert",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64579.json",
+      "cve": "CVE-2026-64579",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-64569: kernel: mpls: fix NULL deref in mpls_valid_fib_dump_req() on CONFIG_INET=n",
+      "date": "2026-08-05",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mpls: fix NULL deref in mpls_valid_fib_dump_req() on CONFIG_INET=n",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64569.json",
+      "cve": "CVE-2026-64569",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-64574: kernel: wifi: mac80211: tear down new links on vif update error path",
+      "date": "2026-08-05",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: wifi: mac80211: tear down new links on vif update error path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64574.json",
+      "cve": "CVE-2026-64574",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-64567: kernel: btrfs: reject free space cache with more entries than pages",
+      "date": "2026-08-05",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: btrfs: reject free space cache with more entries than pages",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64567.json",
+      "cve": "CVE-2026-64567",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-64566: kernel: xfrm: iptfs: propagate SKBFL_SHARED_FRAG in iptfs_skb_add_frags()",
+      "date": "2026-08-05",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfrm: iptfs: propagate SKBFL_SHARED_FRAG in iptfs_skb_add_frags()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64566.json",
+      "cve": "CVE-2026-64566",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-64571: kernel: wifi: p54: validate RX frame length in p54_rx_eeprom_readback()",
+      "date": "2026-08-05",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: wifi: p54: validate RX frame length in p54_rx_eeprom_readback()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64571.json",
+      "cve": "CVE-2026-64571",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-64578: kernel: ksmbd: validate compound request size before reading StructureSize2",
+      "date": "2026-08-05",
+      "severity": "UNKNOWN",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ksmbd: validate compound request size before reading StructureSize2",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64578.json",
+      "cve": "CVE-2026-64578",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-64572: kernel: ipv4: fib: free fib_alias with kfree_rcu() on insert error path",
+      "date": "2026-08-05",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ipv4: fib: free fib_alias with kfree_rcu() on insert error path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64572.json",
+      "cve": "CVE-2026-64572",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-67863: open62541: open62541: Denial of Service via use-after-free vulnerability",
+      "date": "2026-08-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "open62541: open62541: Denial of Service via use-after-free vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67863.json",
+      "cve": "CVE-2026-67863",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-67870: open62541: open62541: Denial of Service via incomplete validation in AddReferences",
+      "date": "2026-08-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "open62541: open62541: Denial of Service via incomplete validation in AddReferences",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67870.json",
+      "cve": "CVE-2026-67870",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-67869: open62541: open62541: Denial of Service via buffer overflow in Service_Call",
+      "date": "2026-08-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "open62541: open62541: Denial of Service via buffer overflow in Service_Call",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67869.json",
+      "cve": "CVE-2026-67869",
+      "cvss": 7.5
     },
     {
       "title": "Signal Desktop v8.23.0-beta.1",
@@ -2766,6 +2995,17 @@
       "cvss": 8.6
     },
     {
+      "title": "CVE-2026-69240: sequelize: Sequelize: SQL Injection via improper handling of Oracle date functions",
+      "date": "2026-08-03",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sequelize: Sequelize: SQL Injection via improper handling of Oracle date functions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-69240.json",
+      "cve": "CVE-2026-69240",
+      "cvss": 9.8
+    },
+    {
       "title": "Russh: Channel-scoped server callbacks can be reached without an open channel",
       "date": "2026-08-03",
       "severity": "MEDIUM",
@@ -4043,6 +4283,17 @@
       "cvss": 4.4
     },
     {
+      "title": "CVE-2026-18967: keycloak-services: keycloak-services: SAML OneTimeUse assertion replay in IdP-Initiated broker flow",
+      "date": "2026-07-31",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: SAML OneTimeUse assertion replay in IdP-Initiated broker flow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18967.json",
+      "cve": "CVE-2026-18967",
+      "cvss": 6.4
+    },
+    {
       "title": "@dynatrace-oss/dynatrace-mcp-server has a DQL injection via parameters not documented as DQL",
       "date": "2026-07-31",
       "severity": "MEDIUM",
@@ -4075,6 +4326,185 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-08-06T14:32:18.043Z",
+      "logs": [
+        "[INFO] android - 1 patches, no changes",
+        "[INFO] aws - 11 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 18 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 9 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 186 patches, no changes",
+        "[SUCCESS] gitlab - 1 patches (1 new)",
+        "[INFO] microsoft - 50 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 116 patches (21 new)",
+        "[INFO] signal - 4 patches, no changes",
+        "[INFO] ubuntu - 2 patches, no changes"
+      ],
+      "newPatchCount": 23,
+      "totalPatches": 406,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "gitlab",
+        "redhat",
+        "aws",
+        "chrome",
+        "cisco",
+        "github",
+        "signal",
+        "edge",
+        "postgresql",
+        "crowdstrike",
+        "android",
+        "ubuntu"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6413-1 libde265 - security update",
+          "date": "2026-08-06",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "gitlab",
+          "title": "GitLab Patch Release: 18.11.9",
+          "date": "2026-08-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-18649: gst-plugins-good: gst-plugins-good: unbounded memory growth in rtph264depay and rtph265depay RTP depayloaders",
+          "date": "2026-08-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-71312: github.com/rclone/rclone: rclone: Server-Side Command Execution via Malicious SFTP Filenames",
+          "date": "2026-08-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-71311: github.com/rclone/rclone: rclone: FTP command injection via CRLF in filename encoding",
+          "date": "2026-08-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-71310: github.com/rclone/rclone: rclone: Denial of Service via unbounded HTTP CONNECT response headers",
+          "date": "2026-08-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-71309: github.com/rclone/rclone: rclone: Backend Root Escape via Incomplete Path Validation",
+          "date": "2026-08-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-71267: microtar: microtar: Stack buffer overflow via overly long filenames",
+          "date": "2026-08-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59679: libxfont2: Font Server Client encoding[] Out-Of-Bounds Read/Write",
+          "date": "2026-08-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-44950: libxfonts2: libXfont2: Privilege Escalation via Heap Buffer Overflow in Font Server Client",
+          "date": "2026-08-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-64579: kernel: xfrm: policy: preallocate inexact bins before xfrm_hash_rebuild reinsert",
+          "date": "2026-08-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-64569: kernel: mpls: fix NULL deref in mpls_valid_fib_dump_req() on CONFIG_INET=n",
+          "date": "2026-08-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-64574: kernel: wifi: mac80211: tear down new links on vif update error path",
+          "date": "2026-08-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-64567: kernel: btrfs: reject free space cache with more entries than pages",
+          "date": "2026-08-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-64566: kernel: xfrm: iptfs: propagate SKBFL_SHARED_FRAG in iptfs_skb_add_frags()",
+          "date": "2026-08-05",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-64571: kernel: wifi: p54: validate RX frame length in p54_rx_eeprom_readback()",
+          "date": "2026-08-05",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-64578: kernel: ksmbd: validate compound request size before reading StructureSize2",
+          "date": "2026-08-05",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-64572: kernel: ipv4: fib: free fib_alias with kfree_rcu() on insert error path",
+          "date": "2026-08-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-67863: open62541: open62541: Denial of Service via use-after-free vulnerability",
+          "date": "2026-08-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-67870: open62541: open62541: Denial of Service via incomplete validation in AddReferences",
+          "date": "2026-08-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-67869: open62541: open62541: Denial of Service via buffer overflow in Service_Call",
+          "date": "2026-08-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-69240: sequelize: Sequelize: SQL Injection via improper handling of Oracle date functions",
+          "date": "2026-08-03",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-18967: keycloak-services: keycloak-services: SAML OneTimeUse assertion replay in IdP-Initiated broker flow",
+          "date": "2026-07-31",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-08-06T14:18:53.959Z",
       "logs": [
@@ -7669,48 +8099,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-08-02T13:27:31.043Z",
-      "logs": [
-        "[INFO] apple - 4 patches, no changes",
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 5 patches, no changes",
-        "[INFO] crowdstrike - 4 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 160 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 252 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 476 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 23 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 950,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "aws",
-        "cisco",
-        "edge",
-        "github",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "crowdstrike",
-        "chrome",
-        "gitlab",
-        "nodejs",
-        "apple"
-      ],
-      "newPatches": []
     }
   ]
 }
