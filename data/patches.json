@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-08T01:49:37.414Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-08T01:59:37.316Z",
+  "newPatches": 11,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -463,6 +463,16 @@
       "cve": "CVE-2026-20337"
     },
     {
+      "title": "Cisco Catalyst SD-WAN Manager Information Disclosure Vulnerability",
+      "date": "2026-08-07",
+      "severity": "MEDIUM",
+      "vendor": "cisco",
+      "component": "SD-WAN",
+      "description": "A vulnerability in the web-based management interface of Cisco Catalyst SD-WAN Manager could allow an authenticated, remote attacker to view sensitive information in clear text on an affected system. ...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-infodis-SPuJBDCe",
+      "cve": "CVE-2026-20294"
+    },
+    {
       "title": "pypdf: Possible long runtimes/large memory usage for large CID font width ranges",
       "date": "2026-08-07",
       "severity": "MEDIUM",
@@ -768,6 +778,17 @@
       "description": "Craft CMS: Passkey login accepts replayed WebAuthn assertions",
       "link": "https://github.com/advisories/GHSA-wg23-69c2-gjc8",
       "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible large memory usage for large /ToUnicode streams",
+      "date": "2026-08-07",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible large memory usage for large /ToUnicode streams",
+      "link": "https://github.com/advisories/GHSA-fp3f-mc75-235c",
+      "cve": "CVE-2026-71870",
       "cvss": null
     },
     {
@@ -1230,6 +1251,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18938.json",
       "cve": "CVE-2026-18938",
       "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-71870: pypdf: pypdf: Denial of Service via crafted PDF with large /ToUnicode streams",
+      "date": "2026-08-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted PDF with large /ToUnicode streams",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71870.json",
+      "cve": "CVE-2026-71870",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-71852: pypdf: pypdf: Denial of Service via crafted PDF with large CID font width ranges",
+      "date": "2026-08-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted PDF with large CID font width ranges",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71852.json",
+      "cve": "CVE-2026-71852",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-12261: nltk: NLTK: Resource poisoning via improper package archive extraction",
+      "date": "2026-08-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nltk: NLTK: Resource poisoning via improper package archive extraction",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12261.json",
+      "cve": "CVE-2026-12261",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2025-63235: codepr sol: Sol: Denial of service via resource exhaustion from malformed CONNECT packets",
+      "date": "2026-08-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "codepr sol: Sol: Denial of service via resource exhaustion from malformed CONNECT packets",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-63235.json",
+      "cve": "CVE-2025-63235",
+      "cvss": 7.5
     },
     {
       "title": "pymdown-extensions: exponential-backtracking ReDoS in caret, tilde, betterem, and magiclink inline processors",
@@ -2234,6 +2299,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18427.json",
       "cve": "CVE-2026-18427",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-61477: libvirt: libvirt: newline injection in network XML DNS TXT/SRV fields allows dnsmasq config directive injection",
+      "date": "2026-08-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libvirt: libvirt: newline injection in network XML DNS TXT/SRV fields allows dnsmasq config directive injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-61477.json",
+      "cve": "CVE-2026-61477",
+      "cvss": 2.3
+    },
+    {
+      "title": "CVE-2026-68481: org.apache.cxf/cxf-rt-rs-security-oauth2: Apache CXF: Revocation bypass allows unauthorized access",
+      "date": "2026-08-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.cxf/cxf-rt-rs-security-oauth2: Apache CXF: Revocation bypass allows unauthorized access",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-68481.json",
+      "cve": "CVE-2026-68481",
+      "cvss": 5.4
     },
     {
       "title": "CVE-2026-18953 - Improper limitation of a pathname in AWS Transform MCP Server",
@@ -3453,6 +3540,17 @@
       "cvss": 8.8
     },
     {
+      "title": "CVE-2026-71235: github.com/absmach/magistrala: Magistrala IoT Platform: Arbitrary Code Execution via Unrestricted Script Execution",
+      "date": "2026-08-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/absmach/magistrala: Magistrala IoT Platform: Arbitrary Code Execution via Unrestricted Script Execution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71235.json",
+      "cve": "CVE-2026-71235",
+      "cvss": 8.8
+    },
+    {
       "title": "Signal Desktop v8.23.0-beta.1",
       "date": "2026-08-05",
       "severity": "UNKNOWN",
@@ -4382,6 +4480,28 @@
       "cvss": 7.5
     },
     {
+      "title": "CVE-2026-51400: vim: Vim: Arbitrary code execution via vms_fixfilename() function",
+      "date": "2026-08-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: Vim: Arbitrary code execution via vms_fixfilename() function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-51400.json",
+      "cve": "CVE-2026-51400",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-8400: java-1.8.0-ibm: Arbitrary class loading and instantiation via malicious IIOP server",
+      "date": "2026-08-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "java-1.8.0-ibm: Arbitrary class loading and instantiation via malicious IIOP server",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-8400.json",
+      "cve": "CVE-2026-8400",
+      "cvss": 8.1
+    },
+    {
       "title": "CVE-2026-18655 - Broker Credential and OAuth Token Disclosure in AWS Labs Amazon MQ MCP Server via Prompt Injection",
       "date": "2026-08-03",
       "severity": "HIGH",
@@ -4961,6 +5081,113 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-08-08T01:59:37.315Z",
+      "logs": [
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 8 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[SUCCESS] cisco - 18 patches (1 new)",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 6 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[SUCCESS] github - 208 patches (1 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 120 patches, no changes",
+        "[INFO] mssql - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 107 patches (9 new)",
+        "[INFO] signal - 4 patches, no changes"
+      ],
+      "newPatchCount": 11,
+      "totalPatches": 487,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "cisco",
+        "github",
+        "redhat",
+        "signal",
+        "apple",
+        "aws",
+        "chrome",
+        "crowdstrike",
+        "debian",
+        "gitlab",
+        "mssql",
+        "edge",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Cisco Catalyst SD-WAN Manager Information Disclosure Vulnerability",
+          "date": "2026-08-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "pypdf: Possible large memory usage for large /ToUnicode streams",
+          "date": "2026-08-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-71870: pypdf: pypdf: Denial of Service via crafted PDF with large /ToUnicode streams",
+          "date": "2026-08-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-71852: pypdf: pypdf: Denial of Service via crafted PDF with large CID font width ranges",
+          "date": "2026-08-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-12261: nltk: NLTK: Resource poisoning via improper package archive extraction",
+          "date": "2026-08-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-63235: codepr sol: Sol: Denial of service via resource exhaustion from malformed CONNECT packets",
+          "date": "2026-08-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-61477: libvirt: libvirt: newline injection in network XML DNS TXT/SRV fields allows dnsmasq config directive injection",
+          "date": "2026-08-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-68481: org.apache.cxf/cxf-rt-rs-security-oauth2: Apache CXF: Revocation bypass allows unauthorized access",
+          "date": "2026-08-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-71235: github.com/absmach/magistrala: Magistrala IoT Platform: Arbitrary Code Execution via Unrestricted Script Execution",
+          "date": "2026-08-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-51400: vim: Vim: Arbitrary code execution via vms_fixfilename() function",
+          "date": "2026-08-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-8400: java-1.8.0-ibm: Arbitrary class loading and instantiation via malicious IIOP server",
+          "date": "2026-08-04",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-08-08T01:49:37.413Z",
       "logs": [
@@ -9604,157 +9831,6 @@
         "nodejs"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-03T19:47:01.590Z",
-      "logs": [
-        "[SUCCESS] android - 1 patches (1 new)",
-        "[SUCCESS] aws - 5 patches (1 new)",
-        "[INFO] chrome - 4 patches, no changes",
-        "[SUCCESS] cisco - 7 patches (2 new)",
-        "[INFO] crowdstrike - 4 patches, no changes",
-        "[INFO] debian - 10 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[SUCCESS] github - 172 patches (13 new)",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 152 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 423 patches, no changes",
-        "[SUCCESS] signal - 5 patches (1 new)",
-        "[INFO] ubuntu - 20 patches, no changes"
-      ],
-      "newPatchCount": 18,
-      "totalPatches": 807,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "cisco",
-        "crowdstrike",
-        "github",
-        "redhat",
-        "signal",
-        "debian",
-        "android",
-        "edge",
-        "postgresql",
-        "ubuntu",
-        "chrome",
-        "gitlab",
-        "nodejs"
-      ],
-      "newPatches": [
-        {
-          "vendor": "android",
-          "title": "Android Security Bulletin: August",
-          "date": "2026-08-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-18655 - Broker Credential and OAuth Token Disclosure in AWS Labs Amazon MQ MCP Server via Prompt Injection",
-          "date": "2026-08-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Secure Firewall Management Center Software Authentication Bypass Vulnerability",
-          "date": "2026-08-03",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Secure Firewall Management Center Software Static Credential Vulnerability",
-          "date": "2026-08-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "undici vulnerable to CRLF Injection via blob-like body 'type' property",
-          "date": "2026-08-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "undici vulnerable to cross-user information disclosure via whitespace around equals in Cache-Control directives",
-          "date": "2026-08-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "undici vulnerable to cookie attribute injection via unsanitized domain and unparsed setCookie fields",
-          "date": "2026-08-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "undici vulnerable to downstream response desynchronization via retry interceptor",
-          "date": "2026-08-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "undici vulnerable to cross-user information disclosure and parse-time crash via degenerate private cache directives",
-          "date": "2026-08-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-uri vulnerable to host confusion via backslash authority introducer",
-          "date": "2026-08-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Socket.IO: Zero-attachment Memory Exhaustion",
-          "date": "2026-08-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PostCSS: incomplete fix of GHSA-6g55-p6wh-862q — attacker-controlled sourceMappingURL reads arbitrary .map files when `from` is unset",
-          "date": "2026-08-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "brace-expansion: DoS via unbounded intermediate arrays, bypassing the CVE-2026-14257 mitigation",
-          "date": "2026-08-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Angular i18n: Cross-Site Scripting (XSS) via event-handler attributes",
-          "date": "2026-08-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Angular SSR: Missing Fallback Raw-Content Serialization Escaping leads to Cross-Site Scripting (XSS)",
-          "date": "2026-08-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Angular: Cache-Key Ambiguity in HttpTransferCache Leading to Cross-Request Response Reuse and State Poisoning",
-          "date": "2026-08-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Russh: Channel-scoped server callbacks can be reached without an open channel",
-          "date": "2026-08-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "Russh: Channel-scoped server callbacks can be reached without an open channel",
-          "date": "2026-08-03",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
