@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-08T18:41:14.267Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-08T18:46:28.779Z",
+  "newPatches": 3,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -451,6 +451,19 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-55000",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55000"
+    },
+    {
+      "title": "DSA-6417-1 libheif - security update",
+      "date": "2026-08-08",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libheif",
+      "description": "Multiple security issues were discovered in libheif, an ISO/IEC 23008-12 HEIF and AVIF image file format decoder and encoder, which may result in denial of service, the disclosure of sensitive memory ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00328.html",
+      "cve": "CVE-2026-47178",
+      "cves": [
+        "CVE-2026-47178"
+      ]
     },
     {
       "title": "CVE-2024-26464: CVE-2024-26464",
@@ -921,6 +934,28 @@
       "description": "A vulnerability in the web-based management interface of Cisco Catalyst SD-WAN Manager could allow an authenticated, remote attacker to view sensitive information in clear text on an affected system. ...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-infodis-SPuJBDCe",
       "cve": "CVE-2026-20294"
+    },
+    {
+      "title": "DSA-6418-1 thunderbird - security update",
+      "date": "2026-08-07",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "thunderbird",
+      "description": "Multiple security issues were discovered in Thunderbird, which could result in the execution of arbitrary code. https://security-tracker.debian.org/tracker/DSA-6418-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00329.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6416-1 jq - security update",
+      "date": "2026-08-07",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "jq",
+      "description": "Multiple security issues were discovered in jq, a command-line JSON processor, which could result in denial of service or potentially the execution of arbitrary code when processing untrusted input. T...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00327.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "pypdf: Possible long runtimes/large memory usage for large CID font width ranges",
@@ -5532,6 +5567,65 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-08T18:46:28.779Z",
+      "logs": [
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 8 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 18 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 9 patches (3 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 208 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 170 patches, no changes",
+        "[INFO] mssql - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 107 patches, no changes",
+        "[INFO] signal - 4 patches, no changes"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 540,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "cisco",
+        "github",
+        "redhat",
+        "signal",
+        "apple",
+        "aws",
+        "chrome",
+        "crowdstrike",
+        "gitlab",
+        "mssql",
+        "edge",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6417-1 libheif - security update",
+          "date": "2026-08-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6418-1 thunderbird - security update",
+          "date": "2026-08-07",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6416-1 jq - security update",
+          "date": "2026-08-07",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-08-08T18:41:14.266Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
@@ -10010,211 +10104,6 @@
         "nodejs"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-04T19:46:06.577Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[SUCCESS] aws - 8 patches (1 new)",
-        "[SUCCESS] chrome - 3 patches (1 new)",
-        "[INFO] cisco - 7 patches, no changes",
-        "[INFO] crowdstrike - 4 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[SUCCESS] github - 166 patches (25 new)",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 101 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 431 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 8 patches, no changes"
-      ],
-      "newPatchCount": 27,
-      "totalPatches": 746,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "chrome",
-        "github",
-        "postgresql",
-        "redhat",
-        "cisco",
-        "crowdstrike",
-        "signal",
-        "debian",
-        "android",
-        "edge",
-        "ubuntu",
-        "gitlab",
-        "nodejs"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-18830 - Issue with Amazon Bedrock AgentCore harness – Insufficient Input Validation",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Chrome Stable for iOS Update",
-          "date": "2026-08-04",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "github",
-          "title": "Open WebUI: SSRF into internal services via unvalidated sub-resource requests in the Playwright web loader",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Unauthenticated OAuth2 token refresh endpoint returns access tokens — enables token theft for any connected service",
-          "date": "2026-08-04",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: CSV Agent Prompt Injection Remote Code Execution Vulnerability",
-          "date": "2026-08-04",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Broken Access Control in Stripe Subscription Endpoints Allows Cross-Tenant Billing Manipulation",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Unauthenticated Credential Abuse via Text-to-Speech Endpoint Allows Unauthorized Use of Private Chatflow TTS Credentials",
-          "date": "2026-08-04",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Missing Authorization on Execution Update Endpoint",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Cross-Workspace OAuth2 Credential Metadata Leak",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Incomplete Credential Redaction Exposes Secrets via API",
-          "date": "2026-08-04",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Information Disclosure in GET /api/v1/upsert-history returns the entire server-wide upsert history",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Cross-workspace credential IDOR in openai-assistants-vector-store",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: RCE via CSVAgent csvFile data URI base64 segment is interpolated into Python source without validation",
-          "date": "2026-08-04",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Authenticated arbitrary file write in the `S3 Directory` document loader via unsanitized S3 object keys                                                                                                  ",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: RBAC Bypass Leading to Unauthorized Workspace Variables Disclosure",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Pyodide validator Unicode homoglyph bypass leads to RCE",
-          "date": "2026-08-04",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: CVE-2025-8943 Patch Bypass: npm_config_yes bypasses MCP environment variable blocklist (Unauthenticated RCE)",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: `DELETE /api/v1/chatflows/:id` does not validate resource type, allowing `agentflows:delete` and `chatflows:delete` to delete each other’s flow type",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise RCE via SQLite Record Manager Node",
-          "date": "2026-08-04",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Unauthenticated Property Injection into Flow Execution Context via Ungated `overrideConfig` Spread in Prediction API",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: SSRF Protection Bypass via IPv4-Mapped IPv6 Addresses",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Remote Code Execution Vulnerability in CSVAgent",
-          "date": "2026-08-04",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: CSV Agent Remote Code Execution via Pyodide Code Injection — Root Shell Verified",
-          "date": "2026-08-04",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: RCE via NodeVM Sandbox Escape in executeJavaScriptCode() nodeVMOptions Override",
-          "date": "2026-08-04",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise Sandbox Escape to RCE",
-          "date": "2026-08-04",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: Missing authorization on `/api/v1/files` allows low-privileged API keys to list and delete files across workspaces within the same organization",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise RCE via TypeORM DataSource",
-          "date": "2026-08-04",
-          "severity": "CRITICAL"
-        }
-      ]
     }
   ]
 }
