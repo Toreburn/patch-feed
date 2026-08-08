@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-08T12:59:54.248Z",
+  "lastUpdated": "2026-08-08T14:33:51.334Z",
   "newPatches": 0,
   "patches": [
     {
@@ -5532,6 +5532,46 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-08T14:33:51.334Z",
+      "logs": [
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 8 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 18 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 6 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 208 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 170 patches, no changes",
+        "[INFO] mssql - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 107 patches, no changes",
+        "[INFO] signal - 4 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 537,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "cisco",
+        "github",
+        "redhat",
+        "signal",
+        "apple",
+        "aws",
+        "chrome",
+        "crowdstrike",
+        "debian",
+        "gitlab",
+        "mssql",
+        "edge",
+        "postgresql"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-08-08T12:59:54.248Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
@@ -10179,133 +10219,6 @@
         "nodejs"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-04T14:29:56.494Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[INFO] aws - 7 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 7 patches, no changes",
-        "[INFO] crowdstrike - 4 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[SUCCESS] github - 141 patches (6 new)",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 101 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[SUCCESS] redhat - 431 patches (8 new)",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 8 patches, no changes"
-      ],
-      "newPatchCount": 14,
-      "totalPatches": 719,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "github",
-        "postgresql",
-        "redhat",
-        "aws",
-        "cisco",
-        "crowdstrike",
-        "signal",
-        "debian",
-        "android",
-        "edge",
-        "ubuntu",
-        "chrome",
-        "gitlab",
-        "nodejs"
-      ],
-      "newPatches": [
-        {
-          "vendor": "github",
-          "title": "Flowise: Unauthenticated OAuth2 Refresh Enables Non-Blind SSRF and Secret Exfiltration",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Flowise: IDOR vulnerability exists at the GET /api/v1/organization/customer-default-source endpoint",
-          "date": "2026-08-04",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Duplicate Advisory: Guzzle: Host-only cookie scope is not preserved",
-          "date": "2026-08-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Duplicate Advisory: Guzzle: URI fragments disclosed in redirect Referer headers",
-          "date": "2026-08-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Duplicate Advisory: Guzzle: Unbounded response cookies risk denial of service",
-          "date": "2026-08-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Duplicate Advisory: Guzzle: Proxy-Authorization headers can be sent to origin servers",
-          "date": "2026-08-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-70368: stunnel: Stack-based out-of-bounds read/write in stunnel s_vlog via oversized log message",
-          "date": "2026-08-04",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-70367: stunnel: SSRF bypass in stunnel SOCKS proxy via IPv4-mapped IPv6 loopback and unspecified addresses allows access to loo",
-          "date": "2026-08-04",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-17614: wildfly-core: Path Traversal on WildFly Domain Controller",
-          "date": "2026-08-04",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-42169: gimp: GIMP APNG loader heap-buffer-overflow when fcTL width exceeds IHDR width (file-png.c)",
-          "date": "2026-08-04",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-42170: gimp: GIMP DDS plug-in heap-based buffer overflow via BPP mismatch in load_layer() (ddsread.c)",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64561: kernel: KVM: x86: Check for invalid/obsolete root *after* making MMU pages available",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-67298: FreeRDP: FreeRDP: Denial of Service via integer underflow in RAIL channel handling",
-          "date": "2026-08-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-18446: fast-uri: fast-uri: Host confusion vulnerability via backslash in URI authority",
-          "date": "2026-07-31",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
