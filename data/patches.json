@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-09T18:45:19.789Z",
+  "lastUpdated": "2026-08-09T18:50:35.530Z",
   "newPatches": 0,
   "patches": [
     {
@@ -6061,6 +6061,46 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-09T18:50:35.529Z",
+      "logs": [
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 8 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 18 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 12 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 208 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 220 patches, no changes",
+        "[INFO] mssql - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 108 patches, no changes",
+        "[INFO] signal - 4 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 594,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "cisco",
+        "github",
+        "redhat",
+        "signal",
+        "apple",
+        "aws",
+        "chrome",
+        "crowdstrike",
+        "gitlab",
+        "mssql",
+        "edge",
+        "postgresql"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-08-09T18:45:19.789Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
@@ -10057,339 +10097,6 @@
         "ubuntu"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-06T02:59:43.868Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[SUCCESS] aws - 11 patches (2 new)",
-        "[SUCCESS] chrome - 3 patches (1 new)",
-        "[INFO] cisco - 18 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 186 patches (24 new)",
-        "[INFO] microsoft - 50 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[SUCCESS] redhat - 95 patches (20 new)",
-        "[SUCCESS] signal - 4 patches (2 new)",
-        "[INFO] ubuntu - 2 patches, no changes"
-      ],
-      "newPatchCount": 49,
-      "totalPatches": 383,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "chrome",
-        "cisco",
-        "debian",
-        "github",
-        "redhat",
-        "signal",
-        "edge",
-        "postgresql",
-        "crowdstrike",
-        "android",
-        "ubuntu"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-18953 - Improper limitation of a pathname in AWS Transform MCP Server",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-18954 - Incorrect authorization in the aggregation pipeline tool in Amazon AWS Labs DocumentDB MCP Server",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Chrome for Android Update",
-          "date": "2026-08-05",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "github",
-          "title": "Traefik CRD IngressRouteTCP ServersTransport Cross-Provider Namespace Bypass",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Traefik Gateway API HTTPRoute BackendRef ExtensionRef Namespace Confusion",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt: Unauthenticated CPU exhaustion parsing and hashing the Nuxt island endpoint body before hash validation",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt: Server-Side Remote Code Execution via Runtime Template Injection in Nuxt Server Island Props",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Unauthenticated Nuxt DevTools RPC allows arbitrary command execution on the developer's host",
-          "date": "2026-08-05",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt: Unauthorized Component Instantiation via Server Island Props",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt runtime payload cache discloses another user's SSR data across users and to unauthenticated clients",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt route rules silently dropped for mixed-case paths, bypassing appMiddleware auth gates (incomplete fix for CVE-2026-53721)",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt: Unauthenticated out-of-memory crash via unbounded v-for expansion in island rendering",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: Local Encoding Path Traversal",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone archive extract allows S3 destination prefix escape via crafted archive paths",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: S3 backend does not strip X-Amz-Security-Token on a same-host HTTPS->HTTP redirect",
-          "date": "2026-08-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone `serve restic --private-repos` authorization bypass: `..` in the URL path lets an authenticated user read, overwrite and delete other users' repositories",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: PowerShell Smart-Quote Filename Injection Enables SFTP Server-Side Command Execution",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: WebDAV Credentials Survive a Same-Host HTTPS-to-HTTP Redirect",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: FTP Command Arguments Permit CRLF Injection When Custom Encoding Preserves Newlines",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: S3 Redirect Sanitization Omits IBM IAM Bearer Tokens and SSE-C Keys",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": " rclone: Path traversal in serve s3 allows reading and overwriting root-level files",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: Infinite Scale TUS Creation Transport Error Causes a Nil-Response Panic",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: Unbounded HTTP CONNECT Response Headers Can Exhaust rclone Memory",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: Unvalidated symlink target in local `--links` — arbitrary file write from an untrusted remote",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: Incomplete path validation allows backend root escape in serve restic",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone local `--metadata` applies attacker-controlled mode/uid - setuid binary planted from an untrusted remote",
-          "date": "2026-08-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "rclone: Verbose Stack Trace Disclosure in RC API Error Responses",
-          "date": "2026-08-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-18839: popt-devel: popt-static: size_t underflow in singleOptionHelp",
-          "date": "2026-08-05",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-49331: openshift/oauth-proxy: openshift/oauth-proxy: unauthenticated identity header injection on whitelisted paths",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-16443: keycloak-services: keycloak-services: SAML broker metadata import disables response signature validation",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-71227: libkcapi: Infinite loop denial of service in libkcapi _kcapi_aio_read_all() due to unhandled io_getevents() timeout retu",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-71281: peft: peft: Arbitrary Code Execution via Unsafe Deserialization in LoRA-GA and CorDA Modules",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-71226: libkcapi: Memory corruption via uncanceled AIO requests on error in libkcapi's one-shot AIO path",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-71225: libkcapi: IV reuse in libkcapi one-shot symmetric cipher chunking causes cipher state reset across chunk boundaries",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-71235: os: net/http: golang: github.com/absmach/magistrala: Magistrala IoT Platform: Arbitrary Code Execution via Unrestricted ",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-15572: keycloak-services: keycloak-services: DCR protocol mapper type-swap policy bypass allows privilege escalation",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-15573: keycloak-services: keycloak-services: Authorization bypass via unnormalized URI matching in PathMatcher",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-16071: keycloak-services: keycloak-services: LDAP entry-DN user search bypasses configured users DN boundary",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-16100: keycloak-services: keycloak-services: Unbounded metric cardinality in user event metrics via request-controlled error te",
-          "date": "2026-08-05",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-16102: keycloak-services: keycloak-services: Default DCR policy allows role forgery via User Property mappers",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-16442: keycloak-services: keycloak-services: SAML IdP-initiated broker login bypasses link-only restriction",
-          "date": "2026-08-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-68494: com.fasterxml.jackson.core/jackson-core: tools.jackson.core/jackson-core: jackson-core: Denial of Service via incomplete",
-          "date": "2026-08-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-69198: ip-address: ip-address: Server-Side Request Forgery (SSRF) and trust-boundary bypass",
-          "date": "2026-08-03",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-69192: ip-address: ip-address: Inconsistent IP address parsing leads to Server-Side Request Forgery (SSRF) and trust-boundary b",
-          "date": "2026-08-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-67291: FreeRDP: FreeRDP: Denial of Service via heap out-of-bounds read",
-          "date": "2026-08-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-67297: FreeRDP: FreeRDP: Resource exhaustion due to oversized chunked HTTP responses",
-          "date": "2026-08-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-67301: FreeRDP: FreeRDP: Memory disclosure or denial of service via crafted RDP update orders",
-          "date": "2026-08-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "Signal Desktop v8.23.0-beta.1",
-          "date": "2026-08-05",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "signal",
-          "title": "Signal Desktop v8.22.0",
-          "date": "2026-08-05",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
