@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-09T07:00:25.196Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-09T07:05:31.428Z",
+  "newPatches": 4,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -464,6 +464,50 @@
       "cves": [
         "CVE-2026-47178"
       ]
+    },
+    {
+      "title": "DSA-6422-1 chromium - security update",
+      "date": "2026-08-08",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6422-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00333.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6421-1 pdns-recursor - security update",
+      "date": "2026-08-08",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "pdns-recursor",
+      "description": "A vulnerability was discovered in PowerDNS Recursor (\"pdns-recursor\"), a resolving name server, which may result in denial of service (increased memory and CPU usage) when processing a specially craft...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00332.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6420-1 pdns - security update",
+      "date": "2026-08-08",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "pdns",
+      "description": "A vulnerability was discovered in PowerDNS Authoritative server (\"pdns\"), which may result in denial of service (increased memory and CPU usage) when processing a specially crafted DNS packet. https:/...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00331.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6419-1 dnsdist - security update",
+      "date": "2026-08-08",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "dnsdist",
+      "description": "A vulnerability was discovered in the dnsdist DNS loadbalancer, which may result in denial of service (increased memory and CPU usage) when processing a specially crafted DNS packet. https://security-...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00330.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "CVE-2024-26464: CVE-2024-26464",
@@ -5534,6 +5578,71 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-09T07:05:31.428Z",
+      "logs": [
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 8 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 18 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 12 patches (4 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 208 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 170 patches, no changes",
+        "[INFO] mssql - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 105 patches, no changes",
+        "[INFO] signal - 4 patches, no changes"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 541,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "cisco",
+        "github",
+        "redhat",
+        "signal",
+        "apple",
+        "aws",
+        "chrome",
+        "crowdstrike",
+        "gitlab",
+        "mssql",
+        "edge",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6422-1 chromium - security update",
+          "date": "2026-08-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6421-1 pdns-recursor - security update",
+          "date": "2026-08-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6420-1 pdns - security update",
+          "date": "2026-08-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6419-1 dnsdist - security update",
+          "date": "2026-08-08",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-08-09T07:00:25.196Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
@@ -9827,44 +9936,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-08-05T14:15:20.009Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[INFO] aws - 9 patches, no changes",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 162 patches, no changes",
-        "[INFO] microsoft - 101 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 408 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 3 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 709,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "aws",
-        "chrome",
-        "edge",
-        "github",
-        "postgresql",
-        "redhat",
-        "cisco",
-        "crowdstrike",
-        "signal",
-        "android",
-        "ubuntu"
-      ],
-      "newPatches": []
     }
   ]
 }
