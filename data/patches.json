@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-10T02:01:40.026Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-10T02:11:58.180Z",
+  "newPatches": 3,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -453,6 +453,28 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55000"
     },
     {
+      "title": "DSA-6424-1 xen - security update",
+      "date": "2026-08-09",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "xen",
+      "description": "Multiple vulnerabilities have been discovered in the Xen hypervisor, which could result in privilege escalation, information disclosure or denial of service. https://security-tracker.debian.org/tracke...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00335.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6423-1 kitty - security update",
+      "date": "2026-08-09",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "kitty",
+      "description": "Multiple security issues were discovered in kitty, a GPU based terminal emulator, which may result in the execution of arbitrary code, command injection into the shell running in the terminal, or the ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00334.html",
+      "cve": "",
+      "cves": []
+    },
+    {
       "title": "CVE-2026-64572: ipv4: fib: free fib_alias with kfree_rcu() on insert error path",
       "date": "2026-08-09",
       "severity": "MEDIUM",
@@ -901,6 +923,17 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-64565",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-64565"
+    },
+    {
+      "title": "CVE-2026-12372: nltk: NLTK: Server-Side Request Forgery via improper network URL validation",
+      "date": "2026-08-09",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nltk: NLTK: Server-Side Request Forgery via improper network URL validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12372.json",
+      "cve": "CVE-2026-12372",
+      "cvss": 3.7
     },
     {
       "title": "DSA-6417-1 libheif - security update",
@@ -5516,6 +5549,65 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-10T02:11:58.180Z",
+      "logs": [
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 5 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 16 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 14 patches (2 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 179 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 220 patches, no changes",
+        "[INFO] mssql - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 95 patches (1 new)",
+        "[INFO] signal - 3 patches, no changes"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 547,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "redhat",
+        "cisco",
+        "github",
+        "signal",
+        "apple",
+        "aws",
+        "chrome",
+        "crowdstrike",
+        "gitlab",
+        "mssql",
+        "edge",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6424-1 xen - security update",
+          "date": "2026-08-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6423-1 kitty - security update",
+          "date": "2026-08-09",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-12372: nltk: NLTK: Server-Side Request Forgery via improper network URL validation",
+          "date": "2026-08-09",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-08-10T02:01:40.026Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
@@ -9520,44 +9612,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-08-06T14:18:53.959Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[INFO] aws - 11 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 18 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 186 patches, no changes",
-        "[INFO] microsoft - 50 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 95 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 2 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 383,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "chrome",
-        "cisco",
-        "debian",
-        "github",
-        "redhat",
-        "signal",
-        "edge",
-        "postgresql",
-        "crowdstrike",
-        "android",
-        "ubuntu"
-      ],
-      "newPatches": []
     }
   ]
 }
