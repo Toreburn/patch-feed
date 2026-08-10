@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-10T19:00:46.455Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-10T19:05:55.462Z",
+  "newPatches": 4,
   "patches": [
     {
       "title": "CVE-2026-48561: Microsoft Copilot Remote Code Execution Vulnerability",
@@ -453,6 +453,40 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55000"
     },
     {
+      "title": "ClamAV Vulnerabilities Affecting Cisco Products: August 2026",
+      "date": "2026-08-10",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "Multiple vulnerabilities in ClamAV could allow a remote attacker to cause a denial of service (DoS) condition, interrupting scanning operations.&nbsp; For more information about these vulnerabilities,...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-WuuvVd26",
+      "cve": "CVE-2026-20337"
+    },
+    {
+      "title": "DSA-6426-1 icinga2 - security update",
+      "date": "2026-08-10",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "icinga2",
+      "description": "Multiple vulnerabilities were discovered in Icinga 2, a monitoring and alerting system, which may result in denial of service, information disclosure, privilege escalation or the compromise of a monit...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00337.html",
+      "cve": "CVE-2025-61909",
+      "cves": [
+        "CVE-2025-61909"
+      ]
+    },
+    {
+      "title": "DSA-6425-1 openjdk-21 - security update",
+      "date": "2026-08-10",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "openjdk-21",
+      "description": "Several vulnerabilities have been discovered in the OpenJDK Java runtime, which may result in incorrect validation of certificates or signed Jar files, denial of service or information disclosure. htt...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00336.html",
+      "cve": "",
+      "cves": []
+    },
+    {
       "title": "CVE-2026-64572: ipv4: fib: free fib_alias with kfree_rcu() on insert error path",
       "date": "2026-08-10",
       "severity": "MEDIUM",
@@ -901,6 +935,15 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-64565",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-64565"
+    },
+    {
+      "title": "USN-8626-1: systemd vulnerabilities",
+      "date": "2026-08-10",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "systemd vulnerabilities",
+      "description": "It was discovered that systemd-homed did not properly verify the signature\nof home records. A local attacker could possibly use this issue to add\narbitrary system groups to a logged-in user and gain e...",
+      "link": "https://ubuntu.com/security/notices/USN-8626-1"
     },
     {
       "title": "DSA-6424-1 xen - security update",
@@ -5999,6 +6042,73 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-10T19:05:55.462Z",
+      "logs": [
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 5 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[SUCCESS] cisco - 17 patches (1 new)",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 16 patches (2 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 179 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 270 patches, no changes",
+        "[INFO] mssql - 2 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 95 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[SUCCESS] ubuntu - 1 patches (1 new)"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 601,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "cisco",
+        "debian",
+        "ubuntu",
+        "redhat",
+        "github",
+        "signal",
+        "apple",
+        "aws",
+        "chrome",
+        "crowdstrike",
+        "gitlab",
+        "mssql",
+        "edge",
+        "postgresql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "ClamAV Vulnerabilities Affecting Cisco Products: August 2026",
+          "date": "2026-08-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6426-1 icinga2 - security update",
+          "date": "2026-08-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6425-1 openjdk-21 - security update",
+          "date": "2026-08-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8626-1: systemd vulnerabilities",
+          "date": "2026-08-10",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-08-10T19:00:46.455Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
@@ -9466,48 +9576,6 @@
     },
     {
       "timestamp": "2026-08-07T16:56:09.148Z",
-      "logs": [
-        "[INFO] android - 1 patches, no changes",
-        "[INFO] apple - 3 patches, no changes",
-        "[INFO] aws - 8 patches, no changes",
-        "[INFO] chrome - 6 patches, no changes",
-        "[INFO] cisco - 16 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 182 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 70 patches, no changes",
-        "[INFO] mssql - 2 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 132 patches, no changes",
-        "[INFO] signal - 3 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 435,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "redhat",
-        "apple",
-        "aws",
-        "chrome",
-        "crowdstrike",
-        "debian",
-        "github",
-        "gitlab",
-        "mssql",
-        "cisco",
-        "signal",
-        "edge",
-        "postgresql",
-        "android"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-07T14:55:01.266Z",
       "logs": [
         "[INFO] android - 1 patches, no changes",
         "[INFO] apple - 3 patches, no changes",
