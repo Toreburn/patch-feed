@@ -1,16 +1,137 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-08-12T13:20:22.275Z",
+  "lastUpdated": "2026-08-12T19:07:49.744Z",
   "health": {
-    "lastFetchAttempt": "2026-08-12T13:20:22.275Z",
+    "lastFetchAttempt": "2026-08-12T19:07:49.744Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-12T13:20:22.275Z",
+    "lastFetchNewPatches": 11,
+    "lastSuccessWithData": "2026-08-12T19:07:49.744Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "compliance-trestle has an URLSecurityValidator SSRF allowlist bypass via IPv4-mapped IPv6 and 0.0.0.0",
+      "date": "2026-08-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "compliance-trestle",
+      "description": "compliance-trestle has an URLSecurityValidator SSRF allowlist bypass via IPv4-mapped IPv6 and 0.0.0.0",
+      "link": "https://github.com/advisories/GHSA-h47f-gmjp-m7rr",
+      "cve": "CVE-2026-52776",
+      "cvss": null
+    },
+    {
+      "title": "SSH.NET: ScpClient Recursive Download Allows Arbitrary File Write via Server-Controlled SCP Filenames",
+      "date": "2026-08-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "SSH.NET",
+      "description": "SSH.NET: ScpClient Recursive Download Allows Arbitrary File Write via Server-Controlled SCP Filenames",
+      "link": "https://github.com/advisories/GHSA-q939-rpr3-3284",
+      "cve": "CVE-2026-48798",
+      "cvss": 7.1
+    },
+    {
+      "title": "Fleet: Observer-class users can view team enroll secrets and credential-bearing configuration via target search endpoint",
+      "date": "2026-08-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/fleetdm/fleet/v4",
+      "description": "Fleet: Observer-class users can view team enroll secrets and credential-bearing configuration via target search endpoint",
+      "link": "https://github.com/advisories/GHSA-88p2-jj8w-j8qg",
+      "cve": "CVE-2026-48786",
+      "cvss": 6.5
+    },
+    {
+      "title": "phpMyFAQ: SQL LIKE Wildcard Injection in Chat User Search Allows Authenticated User Enumeration",
+      "date": "2026-08-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "thorsten/phpmyfaq",
+      "description": "phpMyFAQ: SQL LIKE Wildcard Injection in Chat User Search Allows Authenticated User Enumeration",
+      "link": "https://github.com/advisories/GHSA-6pvm-2vjj-rx4w",
+      "cve": "CVE-2026-47132",
+      "cvss": 5.4
+    },
+    {
+      "title": "nimiq-blockchain: Validity store off by one error",
+      "date": "2026-08-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nimiq-blockchain",
+      "description": "nimiq-blockchain: Validity store off by one error",
+      "link": "https://github.com/advisories/GHSA-3763-qp59-59vf",
+      "cve": "CVE-2026-46369",
+      "cvss": 7.5
+    },
+    {
+      "title": "LibreNMS: Reflected XSS via Proxmox instance/vmid GET parameters injected into document.title JavaScript assignment",
+      "date": "2026-08-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "librenms/librenms",
+      "description": "LibreNMS: Reflected XSS via Proxmox instance/vmid GET parameters injected into document.title JavaScript assignment",
+      "link": "https://github.com/advisories/GHSA-jmqm-f8q4-v7wx",
+      "cve": "CVE-2026-45694",
+      "cvss": 5.4
+    },
+    {
+      "title": "Winter: Authenticated backend users can bypass Users controller permission checks",
+      "date": "2026-08-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "winter/wn-backend-module",
+      "description": "Winter: Authenticated backend users can bypass Users controller permission checks",
+      "link": "https://github.com/advisories/GHSA-j5jq-cr68-v2xx",
+      "cve": "CVE-2026-35445",
+      "cvss": null
+    },
+    {
+      "title": "Winter: Broken access control in `Cms\\Controllers\\Index` allows cross-template actions and unauthorized asset uploads",
+      "date": "2026-08-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "winter/wn-cms-module",
+      "description": "Winter: Broken access control in `Cms\\Controllers\\Index` allows cross-template actions and unauthorized asset uploads",
+      "link": "https://github.com/advisories/GHSA-5c4f-9pq9-6c77",
+      "cve": "CVE-2026-32639",
+      "cvss": 6.8
+    },
+    {
+      "title": "Winter: SQL Injection in Backend Filter Widget numberrange Scope via numbersFromAjax",
+      "date": "2026-08-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "winter/wn-backend-module",
+      "description": "Winter: SQL Injection in Backend Filter Widget numberrange Scope via numbersFromAjax",
+      "link": "https://github.com/advisories/GHSA-m7jc-g4rc-jmvh",
+      "cve": "CVE-2026-32593",
+      "cvss": 5.9
+    },
+    {
+      "title": "Winter: Stored XSS through Editor Settings custom styles",
+      "date": "2026-08-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "winter/wn-backend-module",
+      "description": "Winter: Stored XSS through Editor Settings custom styles",
+      "link": "https://github.com/advisories/GHSA-vgp4-2fc4-qff2",
+      "cve": "CVE-2026-32258",
+      "cvss": 8.1
+    },
+    {
+      "title": "Winter: Stored XSS through Brand Settings custom styles",
+      "date": "2026-08-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "winter/wn-backend-module",
+      "description": "Winter: Stored XSS through Brand Settings custom styles",
+      "link": "https://github.com/advisories/GHSA-v7cf-8gh9-gxmj",
+      "cve": "CVE-2026-32257",
+      "cvss": 8.1
+    },
     {
       "title": "Microsoft Security Advisory CVE-2026-62909 – .NET Elevation of Privilege Vulnerability",
       "date": "2026-08-11",
