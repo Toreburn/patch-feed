@@ -1,16 +1,115 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-08-13T13:22:37.732Z",
+  "lastUpdated": "2026-08-13T19:08:43.915Z",
   "health": {
-    "lastFetchAttempt": "2026-08-13T13:22:37.732Z",
+    "lastFetchAttempt": "2026-08-13T19:08:43.915Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-13T13:22:37.732Z",
+    "lastFetchNewPatches": 10,
+    "lastSuccessWithData": "2026-08-13T19:08:43.915Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "vLLM: Completion prompt lists fan out into unbounded engine requests",
+      "date": "2026-08-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vllm",
+      "description": "vLLM: Completion prompt lists fan out into unbounded engine requests",
+      "link": "https://github.com/advisories/GHSA-87x5-vmc3-756j",
+      "cve": "CVE-2026-73559",
+      "cvss": 6.5
+    },
+    {
+      "title": "atomic-agents-stack: Dashboard HTTP server path traversal allows arbitrary file read",
+      "date": "2026-08-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "atomic-agents-stack",
+      "description": "atomic-agents-stack: Dashboard HTTP server path traversal allows arbitrary file read",
+      "link": "https://github.com/advisories/GHSA-rm43-82j9-r4mj",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Pydantic AI: Unvalidated UploadedFile references in UI adapters allow server-side file access using the application's credentials",
+      "date": "2026-08-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "pydantic-ai-slim, pydantic-ai-slim, pydantic-ai",
+      "description": "Pydantic AI: Unvalidated UploadedFile references in UI adapters allow server-side file access using the application's credentials",
+      "link": "https://github.com/advisories/GHSA-h7p7-w5gc-xj3w",
+      "cve": "CVE-2026-54249",
+      "cvss": 6.8
+    },
+    {
+      "title": "Argo Workflows: ArtifactGC.PodSpecPatch bypasses Strict/Secure template reference allow-list (Incomplete fix for CVE-2026-31892)",
+      "date": "2026-08-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/argoproj/argo-workflows/v4, github.com/argoproj/argo-workflows/v3, github.com/argoproj/argo-workflows",
+      "description": "Argo Workflows: ArtifactGC.PodSpecPatch bypasses Strict/Secure template reference allow-list (Incomplete fix for CVE-2026-31892)",
+      "link": "https://github.com/advisories/GHSA-48p8-g2fx-3wwm",
+      "cve": "CVE-2026-54526",
+      "cvss": null
+    },
+    {
+      "title": "hashi-vault-js: Vault token and secret values exposed in thrown errors",
+      "date": "2026-08-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "hashi-vault-js",
+      "description": "hashi-vault-js: Vault token and secret values exposed in thrown errors",
+      "link": "https://github.com/advisories/GHSA-5pq8-3ffp-7w5m",
+      "cve": "CVE-2026-55102",
+      "cvss": null
+    },
+    {
+      "title": "ep_etherpad-lite: Device-to-device author-token transfer endpoint is replayable, never expires, and exposes the cleartext author token",
+      "date": "2026-08-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ep_etherpad-lite",
+      "description": "ep_etherpad-lite: Device-to-device author-token transfer endpoint is replayable, never expires, and exposes the cleartext author token",
+      "link": "https://github.com/advisories/GHSA-vqfp-p66c-xrp9",
+      "cve": "CVE-2026-55088",
+      "cvss": 6.8
+    },
+    {
+      "title": "ep_etherpad-lite: Import/export uses Math.random() for temp file paths; predictable paths on shared /tmp enable symlink-based file overwrite",
+      "date": "2026-08-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ep_etherpad-lite",
+      "description": "ep_etherpad-lite: Import/export uses Math.random() for temp file paths; predictable paths on shared /tmp enable symlink-based file overwrite",
+      "link": "https://github.com/advisories/GHSA-2jwf-f4xq-f24h",
+      "cve": "CVE-2026-55086",
+      "cvss": 4.2
+    },
+    {
+      "title": "ep_etherpad-lite: Cache-poisoning Cross-site Scripting and Open Redirect via x-proxy-path Header",
+      "date": "2026-08-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ep_etherpad-lite",
+      "description": "ep_etherpad-lite: Cache-poisoning Cross-site Scripting and Open Redirect via x-proxy-path Header",
+      "link": "https://github.com/advisories/GHSA-fjgc-3mj7-8rg8",
+      "cve": "CVE-2026-55087",
+      "cvss": 6.1
+    },
+    {
+      "title": "Pimcore: ClassDefinition UID regex missing end anchor allows SQL injection via Block.php unquoted table name",
+      "date": "2026-08-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pimcore/pimcore, pimcore/pimcore",
+      "description": "Pimcore: ClassDefinition UID regex missing end anchor allows SQL injection via Block.php unquoted table name",
+      "link": "https://github.com/advisories/GHSA-2mhj-fhvg-v428",
+      "cve": "CVE-2026-55072",
+      "cvss": 8.5
+    },
     {
       "title": "compliance-trestle has an URLSecurityValidator SSRF allowlist bypass via IPv4-mapped IPv6 and 0.0.0.0",
       "date": "2026-08-12",
@@ -307,6 +406,17 @@
       "link": "https://github.com/advisories/GHSA-gg8c-3338-xw2f",
       "cve": "CVE-2026-70354",
       "cvss": 7.8
+    },
+    {
+      "title": "Duplicate Advisory: Nuxt dev server discloses project root and workspace UUID via the Chrome DevTools workspace endpoint",
+      "date": "2026-08-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nuxt",
+      "description": "Duplicate Advisory: Nuxt dev server discloses project root and workspace UUID via the Chrome DevTools workspace endpoint",
+      "link": "https://github.com/advisories/GHSA-4jjw-pwvw-q6w3",
+      "cve": "",
+      "cvss": 6.2
     },
     {
       "title": "pypdf: Possible long runtimes/large memory usage for large CID font width ranges",
