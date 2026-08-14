@@ -1,16 +1,51 @@
 {
   "vendor": "debian",
-  "lastUpdated": "2026-08-13T19:08:37.720Z",
+  "lastUpdated": "2026-08-14T02:21:49.564Z",
   "health": {
-    "lastFetchAttempt": "2026-08-13T19:08:37.720Z",
+    "lastFetchAttempt": "2026-08-14T02:21:49.564Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 19,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-13T19:08:37.720Z",
+    "lastFetchParsedItems": 21,
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-08-14T02:21:49.564Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "DSA-6438-1 postgresql-17 - security update",
+      "date": "2026-08-13",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "postgresql-17",
+      "description": "Multiple security issues were discovered in PostgreSQL, which may result in execution of arbitrary code, incorrect authentication, information disclosure, or privilege escalation. The upstream fix to ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00349.html",
+      "cve": "CVE-2026-6471",
+      "cves": [
+        "CVE-2026-6471"
+      ]
+    },
+    {
+      "title": "DSA-6437-1 apr-util - security update",
+      "date": "2026-08-13",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "apr-util",
+      "description": "Several vulnerabilities were discovered in apr-util, the Apache Portable Runtime Utility library, which could result in denial of service or potentially the execution of arbitrary code. https://securi...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00348.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6436-1 chromium - security update",
+      "date": "2026-08-13",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6436-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00347.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "DSA-6435-1 spip - security update",
       "date": "2026-08-12",
@@ -41,6 +76,17 @@
       "component": "flatpak",
       "description": "Multiple security vulnerabilities were discovered in Flatpak, an application deployment framework for desktop apps, which could result in local privilege escalation, sandbox escape or information disc...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00343.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6433-1 xdg-dbus-proxy - security update",
+      "date": "2026-08-12",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "xdg-dbus-proxy",
+      "description": "It was discovered that incorrect validation of broadcast policy rules in xdg-dbus-proxy (a filtering proxy for D-Bus connections) allowed a malicious Flatpak application to monitor signals on the D-Bu...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00346.html",
       "cve": "",
       "cves": []
     },
