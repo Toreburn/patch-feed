@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-17T01:24:55.486Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-17T01:40:40.783Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "DSA-6443-1 docker.io - security update",
@@ -10,6 +10,17 @@
       "component": "docker.io",
       "description": "Multiple vulnerabilities were discovered in the Docker container engine and in the bundled BuildKit build toolkit, which may result in privilege escalation, arbitrary file access on the host, or bypas...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00354.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6444-1 neutron - security update",
+      "date": "2026-08-16",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "neutron",
+      "description": "Two vulnerabilities were discovered in Neutron, the OpenStack virtual network service, which could result in incorrect validation of API permissions. https://security-tracker.debian.org/tracker/DSA-64...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00355.html",
       "cve": "",
       "cves": []
     },
@@ -462,6 +473,15 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-61356",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-61356"
+    },
+    {
+      "title": "CVE-2026-61367: Windows Remote Desktop Services Elevation of Privilege Vulnerability",
+      "date": "2026-08-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-61367",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-61367"
     },
     {
       "title": "Cisco Advance Notification for Publication of August 19, 2026, Security Advisories",
@@ -6464,6 +6484,61 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-17T01:40:40.783Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 16 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 8 patches, no changes",
+        "[INFO] github - 51 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[SUCCESS] microsoft - 352 patches (1 new)",
+        "[INFO] paloalto - 11 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 184 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 19 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 660,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "cisco",
+        "edge",
+        "github",
+        "redhat",
+        "aws",
+        "postgresql",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "fortinet",
+        "gitlab",
+        "paloalto",
+        "crowdstrike"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6444-1 neutron - security update",
+          "date": "2026-08-16",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-61367: Windows Remote Desktop Services Elevation of Privilege Vulnerability",
+          "date": "2026-08-16",
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-08-17T01:24:55.485Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
@@ -10461,48 +10536,6 @@
     },
     {
       "timestamp": "2026-08-13T22:45:24.211Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 6 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 19 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 8 patches, no changes",
-        "[INFO] github - 66 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 451 patches, no changes",
-        "[INFO] paloalto - 11 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 594 patches, no changes",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] ubuntu - 15 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1185,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "aws",
-        "github",
-        "microsoft",
-        "postgresql",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "cisco",
-        "debian",
-        "edge",
-        "fortinet",
-        "gitlab",
-        "paloalto",
-        "redhat",
-        "crowdstrike"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-13T20:47:14.819Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",
