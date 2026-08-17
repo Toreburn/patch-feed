@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-08-17T12:53:50.586Z",
+  "lastUpdated": "2026-08-17T18:47:02.157Z",
   "health": {
-    "lastFetchAttempt": "2026-08-17T12:53:50.586Z",
+    "lastFetchAttempt": "2026-08-17T18:47:02.157Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-17T12:53:50.586Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-08-17T18:47:02.157Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "sqlparse: TokenList.__init__ materializes O(subtree) value per group, causing CPU DoS before depth/token caps trigger",
+      "date": "2026-08-17",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\n`sqlparse` ships hard limits (`MAX_GROUPING_DEPTH=100`, `MAX_GROUPING_TOKENS=10000`) intended to bound parsing work on attacker-supplied SQL, but the path that *reaches* those limits is i",
+      "link": "https://github.com/advisories/GHSA-pwgv-4x5q-6m9f",
+      "cves": [
+        "CVE-2026-54284"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.23.0",
       "date": "2026-08-13",
