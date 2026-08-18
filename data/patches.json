@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-08-18T06:48:03.716Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-18T06:53:27.388Z",
+  "newPatches": 1,
   "patches": [
+    {
+      "title": "DSA-6446-1 expat - security update",
+      "date": "2026-08-18",
+      "severity": "HIGH",
+      "vendor": "debian",
+      "component": "expat",
+      "description": "A flaw was discovered in the UTF-16 decoding support of expat, an XML parsing C library, where low surrogates were treated in the same way as high surrogates. Parsing crafted XML input may result in a...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00357.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "macOS 26.6.2",
       "date": "2026-08-17",
@@ -8056,6 +8067,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-18T06:53:27.388Z",
+      "logs": [
+        "[INFO] apple - 3 patches, no changes",
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 2 patches, no changes",
+        "[INFO] cisco - 3 patches, no changes",
+        "[SUCCESS] debian - 15 patches (1 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 8 patches, no changes",
+        "[INFO] github - 82 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 301 patches, no changes",
+        "[INFO] paloalto - 11 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 334 patches, no changes",
+        "[INFO] signal - 2 patches, no changes",
+        "[INFO] ubuntu - 22 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 795,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "debian",
+        "apple",
+        "edge",
+        "github",
+        "gitlab",
+        "microsoft",
+        "postgresql",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "cisco",
+        "aws",
+        "chrome",
+        "fortinet",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6446-1 expat - security update",
+          "date": "2026-08-18",
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-08-18T06:48:03.716Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
@@ -12437,48 +12497,6 @@
     },
     {
       "timestamp": "2026-08-15T06:42:01.084Z",
-      "logs": [
-        "[INFO] aws - 4 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 6 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 20 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 8 patches, no changes",
-        "[INFO] github - 51 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 401 patches, no changes",
-        "[INFO] paloalto - 11 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 774 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 21 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1307,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "cisco",
-        "debian",
-        "edge",
-        "github",
-        "microsoft",
-        "redhat",
-        "aws",
-        "postgresql",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "fortinet",
-        "gitlab",
-        "paloalto",
-        "crowdstrike"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-15T04:34:11.684Z",
       "logs": [
         "[INFO] aws - 4 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",
