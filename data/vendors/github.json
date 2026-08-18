@@ -1,12 +1,12 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-08-17T18:46:14.206Z",
+  "lastUpdated": "2026-08-18T01:34:15.478Z",
   "health": {
-    "lastFetchAttempt": "2026-08-17T18:46:14.206Z",
+    "lastFetchAttempt": "2026-08-18T01:34:15.477Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 30,
-    "lastSuccessWithData": "2026-08-17T18:46:14.206Z",
+    "lastFetchNewPatches": 12,
+    "lastSuccessWithData": "2026-08-18T01:34:15.477Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -339,6 +339,138 @@
       "description": "DeepmergeTS has stack exhaustion when merging recursive object graphs",
       "link": "https://github.com/advisories/GHSA-ggr8-5vv4-36mx",
       "cve": "CVE-2026-40345",
+      "cvss": null
+    },
+    {
+      "title": "MLflow: CreateModelVersion source validation does not check READ permission on referenced run_id",
+      "date": "2026-08-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "mlflow",
+      "description": "MLflow: CreateModelVersion source validation does not check READ permission on referenced run_id",
+      "link": "https://github.com/advisories/GHSA-gqch-g4w5-7qcw",
+      "cve": "CVE-2026-69148",
+      "cvss": 7.1
+    },
+    {
+      "title": "MLflow: LogInputs endpoint bypasses per-run UPDATE authorization in basic-auth",
+      "date": "2026-08-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "mlflow",
+      "description": "MLflow: LogInputs endpoint bypasses per-run UPDATE authorization in basic-auth",
+      "link": "https://github.com/advisories/GHSA-3p64-6gvh-82v5",
+      "cve": "CVE-2026-69146",
+      "cvss": 6.5
+    },
+    {
+      "title": "MLflow: Unauthenticated full-read SSRF in webhook delivery: _validate_webhook_url bypassed via unvalidated HTTP redirects (and DNS rebinding)",
+      "date": "2026-08-17",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "mlflow",
+      "description": "MLflow: Unauthenticated full-read SSRF in webhook delivery: _validate_webhook_url bypassed via unvalidated HTTP redirects (and DNS rebinding)",
+      "link": "https://github.com/advisories/GHSA-7gwp-5pfp-969j",
+      "cve": "CVE-2026-64849",
+      "cvss": 9.3
+    },
+    {
+      "title": "9Router: Authenticated Server-Side Request Forgery (SSRF) via OIDC Provider Test Endpoint",
+      "date": "2026-08-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "9router",
+      "description": "9Router: Authenticated Server-Side Request Forgery (SSRF) via OIDC Provider Test Endpoint",
+      "link": "https://github.com/advisories/GHSA-8g4w-4ffg-8vgx",
+      "cve": "CVE-2026-56677",
+      "cvss": 8.6
+    },
+    {
+      "title": "http4k: `DigestAuthProvider.verify` did not bind to request URI",
+      "date": "2026-08-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.http4k:http4k-security-digest, org.http4k:http4k-security-digest, org.http4k:http4k-security-digest",
+      "description": "http4k: `DigestAuthProvider.verify` did not bind to request URI",
+      "link": "https://github.com/advisories/GHSA-p28p-j94q-pg32",
+      "cve": "CVE-2026-54148",
+      "cvss": 8.1
+    },
+    {
+      "title": "http4k: `DigestAuthProvider.verify` ignored configured algorithm and did not bind to request URI",
+      "date": "2026-08-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "org.http4k:http4k-security-digest, org.http4k:http4k-security-digest, org.http4k:http4k-security-digest",
+      "description": "http4k: `DigestAuthProvider.verify` ignored configured algorithm and did not bind to request URI",
+      "link": "https://github.com/advisories/GHSA-vxxm-wwqh-mh47",
+      "cve": "CVE-2026-54147",
+      "cvss": 6.5
+    },
+    {
+      "title": "chrome-devtools-mcp: validatePath() does not canonicalize symlinks before enforcing roots",
+      "date": "2026-08-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "chrome-devtools-mcp",
+      "description": "chrome-devtools-mcp: validatePath() does not canonicalize symlinks before enforcing roots",
+      "link": "https://github.com/advisories/GHSA-8qf9-62x2-82pp",
+      "cve": "CVE-2026-53766",
+      "cvss": 6.1
+    },
+    {
+      "title": "package pkcs12: Authentication bypass in Decode functions",
+      "date": "2026-08-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "software.sslmate.com/src/go-pkcs12",
+      "description": "package pkcs12: Authentication bypass in Decode functions",
+      "link": "https://github.com/advisories/GHSA-mpwr-8vm7-h73f",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "docx4j: Stack Overflow via Cyclic `w:basedOn` Style Chain leads to Denial of Service",
+      "date": "2026-08-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.docx4j:docx4j-core",
+      "description": "docx4j: Stack Overflow via Cyclic `w:basedOn` Style Chain leads to Denial of Service",
+      "link": "https://github.com/advisories/GHSA-gc95-3vw8-vg43",
+      "cve": "CVE-2026-53752",
+      "cvss": 7.5
+    },
+    {
+      "title": "http4k: Unbounded gzip decompression in `ServerFilters.GZip` / `RequestFilters.GunZip` allowed memory-exhaustion DoS",
+      "date": "2026-08-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.http4k:http4k-core, org.http4k:http4k-core, org.http4k:http4k-core",
+      "description": "http4k: Unbounded gzip decompression in `ServerFilters.GZip` / `RequestFilters.GunZip` allowed memory-exhaustion DoS",
+      "link": "https://github.com/advisories/GHSA-g4w2-6h2r-3m3w",
+      "cve": "CVE-2026-53659",
+      "cvss": 7.5
+    },
+    {
+      "title": "atomic-agents-stack: Parallel helper/delegate batch reserves $0 for models absent from the pricing table, bypassing the cost-cap fan-out guard",
+      "date": "2026-08-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "atomic-agents-stack",
+      "description": "atomic-agents-stack: Parallel helper/delegate batch reserves $0 for models absent from the pricing table, bypassing the cost-cap fan-out guard",
+      "link": "https://github.com/advisories/GHSA-j659-8xh6-5pq5",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "atomic-agents-stack: HTTP MCP catalog accepts cleartext http and spawns catalog-supplied commands (MITM to RCE)",
+      "date": "2026-08-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "atomic-agents-stack",
+      "description": "atomic-agents-stack: HTTP MCP catalog accepts cleartext http and spawns catalog-supplied commands (MITM to RCE)",
+      "link": "https://github.com/advisories/GHSA-xhcr-cqfr-m3hv",
+      "cve": "",
       "cvss": null
     },
     {
