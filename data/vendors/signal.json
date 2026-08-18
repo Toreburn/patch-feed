@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-08-18T12:55:56.387Z",
+  "lastUpdated": "2026-08-18T18:45:24.170Z",
   "health": {
-    "lastFetchAttempt": "2026-08-18T12:55:56.387Z",
+    "lastFetchAttempt": "2026-08-18T18:45:24.170Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-18T12:55:56.387Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-08-18T18:45:24.170Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "LibreNMS Vulnerable to Remote Code Execution by Signal Alert Transportation module",
+      "date": "2026-08-18",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nA vulnerability has been identified that allows an authenticated administrator to execute arbitrary code on the host server. By adding an alert transport entry, an attacker with administra",
+      "link": "https://github.com/advisories/GHSA-c9fv-cgmm-2wg7",
+      "cves": [
+        "CVE-2026-55182"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "sqlparse: TokenList.__init__ materializes O(subtree) value per group, causing CPU DoS before depth/token caps trigger",
       "date": "2026-08-17",
