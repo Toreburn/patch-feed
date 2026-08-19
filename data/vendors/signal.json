@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-08-18T18:45:24.170Z",
+  "lastUpdated": "2026-08-19T01:36:41.047Z",
   "health": {
-    "lastFetchAttempt": "2026-08-18T18:45:24.170Z",
+    "lastFetchAttempt": "2026-08-19T01:36:41.047Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 3,
     "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-08-18T18:45:24.170Z",
+    "lastSuccessWithData": "2026-08-19T01:36:41.047Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -21,6 +21,21 @@
       "link": "https://github.com/advisories/GHSA-c9fv-cgmm-2wg7",
       "cves": [
         "CVE-2026-55182"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Lemur: Missing authorization check on POST /certificates/<id>/export for plugins with requires_key = False",
+      "date": "2026-08-18",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n \nThe `CertificateExport` handler in `lemur/certificates/views.py` nests its entire ownership / `CertificatePermission` check inside an `if plugin.requires_key:` branch. When the selected e",
+      "link": "https://github.com/advisories/GHSA-4h97-p9wq-chqj",
+      "cves": [
+        "CVE-2026-71322"
       ],
       "platform": [
         "All Platforms"
