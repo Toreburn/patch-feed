@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-08-21T18:43:17.682Z",
+  "lastUpdated": "2026-08-22T01:32:49.066Z",
   "health": {
-    "lastFetchAttempt": "2026-08-21T18:43:17.681Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-20T12:58:44.099Z",
-    "consecutiveEmptyFetches": 5,
+    "lastFetchAttempt": "2026-08-22T01:32:49.066Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-08-22T01:32:49.066Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "kin-openapi openai3filter: nil-pointer panic in ConvertErrors on malformed multipart/form-data body enables unauthenticated DoS",
+      "date": "2026-08-21",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nA nil-pointer dereference in `openapi3filter.ConvertErrors` lets any unauthenticated client crash a server with a single HTTP request. When an application validates a `multipart/form-data",
+      "link": "https://github.com/advisories/GHSA-mmfr-pmjx-hw9w",
+      "cves": [
+        "CVE-2026-76905"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "LibreNMS Vulnerable to Remote Code Execution by Signal Alert Transportation module",
       "date": "2026-08-18",
