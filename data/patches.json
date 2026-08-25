@@ -1,7 +1,37 @@
 {
-  "lastUpdated": "2026-08-25T01:23:56.726Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-25T01:37:38.033Z",
+  "newPatches": 17,
   "patches": [
+    {
+      "title": "DSA-6463-1 webkit2gtk - security update",
+      "date": "2026-08-24",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "webkit2gtk",
+      "description": "The following vulnerabilities have been discovered in the WebKitGTK web engine: CVE-2026-43804 Heiko Kiesel discovered that visiting a website may lead to an app denial-of-service. CVE-2026-64713 Kwak...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00374.html",
+      "cve": "CVE-2026-43804",
+      "cves": [
+        "CVE-2026-43804",
+        "CVE-2026-64713",
+        "CVE-2026-64719",
+        "CVE-2026-64728",
+        "CVE-2026-64730",
+        "CVE-2026-64757",
+        "CVE-2026-64783"
+      ]
+    },
+    {
+      "title": "DSA-6462-1 zfs-linux - security update",
+      "date": "2026-08-24",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "zfs-linux",
+      "description": "Erica Windisch reported several vulnerabilities in the Linux implementation of OpenZFS, a filesystem and volume manager. The administrative operations exposed by the /dev/zfs ioctl interface accepted ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00373.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "Microsoft Edge Security Update - August 24, 2026",
       "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
@@ -11,6 +41,149 @@
       "vendor": "edge",
       "component": "Microsoft Edge",
       "cves": []
+    },
+    {
+      "title": "vibeio-http has a DoS vulnerability in HTTP/1.x chunked encoding parser triggered by maliciously crafted chunk lengths",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vibeio-http",
+      "description": "vibeio-http has a DoS vulnerability in HTTP/1.x chunked encoding parser triggered by maliciously crafted chunk lengths",
+      "link": "https://github.com/advisories/GHSA-fx4f-mhw4-qm7j",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Cloudreve's remote download file paths can escape the selected destination directory",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/cloudreve/Cloudreve/v4",
+      "description": "Cloudreve's remote download file paths can escape the selected destination directory",
+      "link": "https://github.com/advisories/GHSA-w8j7-39hp-8x59",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Cloudreve has Broken Access Control - Revoked Share Access Still Allows Signed File URL Generation via Cached context_hint",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/cloudreve/Cloudreve/v4",
+      "description": "Cloudreve has Broken Access Control - Revoked Share Access Still Allows Signed File URL Generation via Cached context_hint",
+      "link": "https://github.com/advisories/GHSA-vx2m-jpxr-xv7w",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "3X-UI Vulnerable to Authenticated Arbitrary File Write via Database Import and Xray Log Path Manipulation",
+      "date": "2026-08-24",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/mhsanaei/3x-ui/v3, github.com/mhsanaei/3x-ui/v2",
+      "description": "3X-UI Vulnerable to Authenticated Arbitrary File Write via Database Import and Xray Log Path Manipulation",
+      "link": "https://github.com/advisories/GHSA-jm48-m3rr-9hgg",
+      "cve": "CVE-2026-55477",
+      "cvss": 7.2
+    },
+    {
+      "title": "Gorilla WebSocket Uses Cryptographically Weak PRNG for WebSocket Mask Key",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/gorilla/websocket",
+      "description": "Gorilla WebSocket Uses Cryptographically Weak PRNG for WebSocket Mask Key",
+      "link": "https://github.com/advisories/GHSA-w67g-5rqw-f597",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "netfoil vulnerable to improper handling of untrusted DoH response data",
+      "date": "2026-08-24",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/tinfoil-factory/netfoil",
+      "description": "netfoil vulnerable to improper handling of untrusted DoH response data",
+      "link": "https://github.com/advisories/GHSA-4ph6-mjv7-3fq6",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "django CMS: Page cache ignores plugin-declared Vary headers (disclosure & poisoning)",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "django-cms",
+      "description": "django CMS: Page cache ignores plugin-declared Vary headers (disclosure & poisoning)",
+      "link": "https://github.com/advisories/GHSA-fwjf-m4qw-9f2x",
+      "cve": "CVE-2026-54625",
+      "cvss": 4.8
+    },
+    {
+      "title": "django CMS: Plugin move endpoint allows cyclic reparenting (DoS)",
+      "date": "2026-08-24",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "django-cms",
+      "description": "django CMS: Plugin move endpoint allows cyclic reparenting (DoS)",
+      "link": "https://github.com/advisories/GHSA-8jj7-4v57-frf5",
+      "cve": "CVE-2026-54623",
+      "cvss": 7.1
+    },
+    {
+      "title": "tokio-postgres: Panic on a `DataRow` with fewer fields than columns allows denial of service",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "tokio-postgres",
+      "description": "tokio-postgres: Panic on a `DataRow` with fewer fields than columns allows denial of service",
+      "link": "https://github.com/advisories/GHSA-3gjw-f78c-vvpw",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "postgres-protocol: Panic decoding a malformed `hstore` value allows denial of service",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "postgres-protocol",
+      "description": "postgres-protocol: Panic decoding a malformed `hstore` value allows denial of service",
+      "link": "https://github.com/advisories/GHSA-rgqc-3x5p-6gwg",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "postgres-protocol: Unbounded SCRAM iteration count allows a malicious server to cause CPU-exhaustion denial of service",
+      "date": "2026-08-24",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "postgres-protocol",
+      "description": "postgres-protocol: Unbounded SCRAM iteration count allows a malicious server to cause CPU-exhaustion denial of service",
+      "link": "https://github.com/advisories/GHSA-5x78-73v4-xg6w",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Sakai Profile Image Deletion has an IDOR",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "org.sakaiproject.profile2:profile2-api, org.sakaiproject.profile2:profile2-api, org.sakaiproject.profile2:profile2-impl",
+      "description": "Sakai Profile Image Deletion has an IDOR",
+      "link": "https://github.com/advisories/GHSA-9284-fjc3-fmmj",
+      "cve": "CVE-2026-54050",
+      "cvss": 6.5
+    },
+    {
+      "title": "Sakai Conversations has a Stored XSS Issue",
+      "date": "2026-08-24",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.sakaiproject.conversations:sakai-conversations-impl, org.sakaiproject.kernel:sakai-kernel-impl, org.sakaiproject.rubrics:rubrics-impl",
+      "description": "Sakai Conversations has a Stored XSS Issue",
+      "link": "https://github.com/advisories/GHSA-w2x5-gv52-9ccv",
+      "cve": "CVE-2026-54049",
+      "cvss": 8.7
     },
     {
       "title": "CVE-2025-49506: Apache Portable Runtime Utility: apr_password_validate() vulnerable to timing attack",
@@ -931,6 +1104,24 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-78323.json",
       "cve": "CVE-2026-78323",
       "cvss": 6.5
+    },
+    {
+      "title": "USN-8671-1: FFmpeg vulnerabilities",
+      "date": "2026-08-24",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "FFmpeg vulnerabilities",
+      "description": "Adrian Junge was discovered that FFmpeg incorrectly handled certain media\nfiles. An attacker could possibly use this issue to cause a denial of\nservice or execute arbitrary code. (CVE-2026-66036, CVE-...",
+      "link": "https://ubuntu.com/security/notices/USN-8671-1"
+    },
+    {
+      "title": "USN-8670-1: curl vulnerability",
+      "date": "2026-08-24",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "curl",
+      "description": "Joshua Rogers discovered that curl incorrectly handled reusing connections\nwhen client certificate settings changed. This could result in the wrong\nclient certificates being used, contrary to expectat...",
+      "link": "https://ubuntu.com/security/notices/USN-8670-1"
     },
     {
       "title": "DSA-6461-1 thunderbird - security update",
@@ -7447,6 +7638,143 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-25T01:37:38.033Z",
+      "logs": [
+        "[INFO] aws - 87 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 10 patches, no changes",
+        "[SUCCESS] debian - 13 patches (2 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[SUCCESS] github - 108 patches (13 new)",
+        "[INFO] microsoft - 396 patches, no changes",
+        "[INFO] mssql - 7 patches, no changes",
+        "[INFO] redhat - 132 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 30 patches (2 new)"
+      ],
+      "newPatchCount": 17,
+      "totalPatches": 789,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 11,
+      "vendors": [
+        "debian",
+        "edge",
+        "github",
+        "microsoft",
+        "mssql",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "cisco",
+        "signal",
+        "chrome"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6463-1 webkit2gtk - security update",
+          "date": "2026-08-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6462-1 zfs-linux - security update",
+          "date": "2026-08-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "vibeio-http has a DoS vulnerability in HTTP/1.x chunked encoding parser triggered by maliciously crafted chunk lengths",
+          "date": "2026-08-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Cloudreve's remote download file paths can escape the selected destination directory",
+          "date": "2026-08-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Cloudreve has Broken Access Control - Revoked Share Access Still Allows Signed File URL Generation via Cached context_hint",
+          "date": "2026-08-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "3X-UI Vulnerable to Authenticated Arbitrary File Write via Database Import and Xray Log Path Manipulation",
+          "date": "2026-08-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Gorilla WebSocket Uses Cryptographically Weak PRNG for WebSocket Mask Key",
+          "date": "2026-08-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "netfoil vulnerable to improper handling of untrusted DoH response data",
+          "date": "2026-08-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "django CMS: Page cache ignores plugin-declared Vary headers (disclosure & poisoning)",
+          "date": "2026-08-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "django CMS: Plugin move endpoint allows cyclic reparenting (DoS)",
+          "date": "2026-08-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "tokio-postgres: Panic on a `DataRow` with fewer fields than columns allows denial of service",
+          "date": "2026-08-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "postgres-protocol: Panic decoding a malformed `hstore` value allows denial of service",
+          "date": "2026-08-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "postgres-protocol: Unbounded SCRAM iteration count allows a malicious server to cause CPU-exhaustion denial of service",
+          "date": "2026-08-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Sakai Profile Image Deletion has an IDOR",
+          "date": "2026-08-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Sakai Conversations has a Stored XSS Issue",
+          "date": "2026-08-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8671-1: FFmpeg vulnerabilities",
+          "date": "2026-08-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8670-1: curl vulnerability",
+          "date": "2026-08-24",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-08-25T01:23:56.726Z",
       "logs": [
         "[INFO] aws - 87 patches, no changes",
@@ -10963,48 +11291,6 @@
       ],
       "newPatchCount": 0,
       "totalPatches": 893,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "aws",
-        "cisco",
-        "microsoft",
-        "redhat",
-        "chrome",
-        "debian",
-        "edge",
-        "github",
-        "mssql",
-        "ubuntu",
-        "oracle-db",
-        "signal",
-        "apple",
-        "gitlab",
-        "postgresql"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-21T22:27:33.260Z",
-      "logs": [
-        "[INFO] apple - 3 patches, no changes",
-        "[INFO] aws - 87 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 10 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 171 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 397 patches, no changes",
-        "[INFO] mssql - 6 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 978 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 33 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1712,
       "vendorsScanned": 56,
       "vendorsWithPatches": 15,
       "vendors": [

@@ -1,16 +1,159 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-08-24T18:47:59.616Z",
+  "lastUpdated": "2026-08-25T01:35:50.544Z",
   "health": {
-    "lastFetchAttempt": "2026-08-24T18:47:59.616Z",
+    "lastFetchAttempt": "2026-08-25T01:35:50.544Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-24T18:47:59.616Z",
+    "lastFetchNewPatches": 13,
+    "lastSuccessWithData": "2026-08-25T01:35:50.544Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "vibeio-http has a DoS vulnerability in HTTP/1.x chunked encoding parser triggered by maliciously crafted chunk lengths",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vibeio-http",
+      "description": "vibeio-http has a DoS vulnerability in HTTP/1.x chunked encoding parser triggered by maliciously crafted chunk lengths",
+      "link": "https://github.com/advisories/GHSA-fx4f-mhw4-qm7j",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Cloudreve's remote download file paths can escape the selected destination directory",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/cloudreve/Cloudreve/v4",
+      "description": "Cloudreve's remote download file paths can escape the selected destination directory",
+      "link": "https://github.com/advisories/GHSA-w8j7-39hp-8x59",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Cloudreve has Broken Access Control - Revoked Share Access Still Allows Signed File URL Generation via Cached context_hint",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/cloudreve/Cloudreve/v4",
+      "description": "Cloudreve has Broken Access Control - Revoked Share Access Still Allows Signed File URL Generation via Cached context_hint",
+      "link": "https://github.com/advisories/GHSA-vx2m-jpxr-xv7w",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "3X-UI Vulnerable to Authenticated Arbitrary File Write via Database Import and Xray Log Path Manipulation",
+      "date": "2026-08-24",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/mhsanaei/3x-ui/v3, github.com/mhsanaei/3x-ui/v2",
+      "description": "3X-UI Vulnerable to Authenticated Arbitrary File Write via Database Import and Xray Log Path Manipulation",
+      "link": "https://github.com/advisories/GHSA-jm48-m3rr-9hgg",
+      "cve": "CVE-2026-55477",
+      "cvss": 7.2
+    },
+    {
+      "title": "Gorilla WebSocket Uses Cryptographically Weak PRNG for WebSocket Mask Key",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/gorilla/websocket",
+      "description": "Gorilla WebSocket Uses Cryptographically Weak PRNG for WebSocket Mask Key",
+      "link": "https://github.com/advisories/GHSA-w67g-5rqw-f597",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "netfoil vulnerable to improper handling of untrusted DoH response data",
+      "date": "2026-08-24",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/tinfoil-factory/netfoil",
+      "description": "netfoil vulnerable to improper handling of untrusted DoH response data",
+      "link": "https://github.com/advisories/GHSA-4ph6-mjv7-3fq6",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "django CMS: Page cache ignores plugin-declared Vary headers (disclosure & poisoning)",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "django-cms",
+      "description": "django CMS: Page cache ignores plugin-declared Vary headers (disclosure & poisoning)",
+      "link": "https://github.com/advisories/GHSA-fwjf-m4qw-9f2x",
+      "cve": "CVE-2026-54625",
+      "cvss": 4.8
+    },
+    {
+      "title": "django CMS: Plugin move endpoint allows cyclic reparenting (DoS)",
+      "date": "2026-08-24",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "django-cms",
+      "description": "django CMS: Plugin move endpoint allows cyclic reparenting (DoS)",
+      "link": "https://github.com/advisories/GHSA-8jj7-4v57-frf5",
+      "cve": "CVE-2026-54623",
+      "cvss": 7.1
+    },
+    {
+      "title": "tokio-postgres: Panic on a `DataRow` with fewer fields than columns allows denial of service",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "tokio-postgres",
+      "description": "tokio-postgres: Panic on a `DataRow` with fewer fields than columns allows denial of service",
+      "link": "https://github.com/advisories/GHSA-3gjw-f78c-vvpw",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "postgres-protocol: Panic decoding a malformed `hstore` value allows denial of service",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "postgres-protocol",
+      "description": "postgres-protocol: Panic decoding a malformed `hstore` value allows denial of service",
+      "link": "https://github.com/advisories/GHSA-rgqc-3x5p-6gwg",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "postgres-protocol: Unbounded SCRAM iteration count allows a malicious server to cause CPU-exhaustion denial of service",
+      "date": "2026-08-24",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "postgres-protocol",
+      "description": "postgres-protocol: Unbounded SCRAM iteration count allows a malicious server to cause CPU-exhaustion denial of service",
+      "link": "https://github.com/advisories/GHSA-5x78-73v4-xg6w",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Sakai Profile Image Deletion has an IDOR",
+      "date": "2026-08-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "org.sakaiproject.profile2:profile2-api, org.sakaiproject.profile2:profile2-api, org.sakaiproject.profile2:profile2-impl",
+      "description": "Sakai Profile Image Deletion has an IDOR",
+      "link": "https://github.com/advisories/GHSA-9284-fjc3-fmmj",
+      "cve": "CVE-2026-54050",
+      "cvss": 6.5
+    },
+    {
+      "title": "Sakai Conversations has a Stored XSS Issue",
+      "date": "2026-08-24",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.sakaiproject.conversations:sakai-conversations-impl, org.sakaiproject.kernel:sakai-kernel-impl, org.sakaiproject.rubrics:rubrics-impl",
+      "description": "Sakai Conversations has a Stored XSS Issue",
+      "link": "https://github.com/advisories/GHSA-w2x5-gv52-9ccv",
+      "cve": "CVE-2026-54049",
+      "cvss": 8.7
+    },
     {
       "title": "JSONata vulnerable to Arbitrary Code Execution via crafted JSONata expressions",
       "date": "2026-08-21",
