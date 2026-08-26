@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T14:47:18.580Z",
+  "lastUpdated": "2026-08-26T16:49:24.135Z",
   "newPatches": 0,
   "patches": [
     {
@@ -9798,6 +9798,42 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-08-26T16:49:24.135Z",
+      "logs": [
+        "[INFO] aws - 88 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] debian - 14 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 136 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 446 patches, no changes",
+        "[INFO] mssql - 7 patches, no changes",
+        "[INFO] redhat - 260 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 34 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 995,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 12,
+      "vendors": [
+        "gitlab",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "debian",
+        "edge",
+        "github",
+        "microsoft",
+        "mssql",
+        "cisco",
+        "signal"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-08-26T14:47:18.579Z",
       "logs": [
         "[INFO] aws - 88 patches, no changes",
@@ -14681,355 +14717,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-23T12:51:19.589Z",
-      "logs": [
-        "[INFO] apple - 3 patches, no changes",
-        "[INFO] aws - 89 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 10 patches, no changes",
-        "[INFO] debian - 14 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 187 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[SUCCESS] microsoft - 396 patches (50 new)",
-        "[INFO] mssql - 6 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[SUCCESS] redhat - 185 patches (1 new)",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 41 patches, no changes"
-      ],
-      "newPatchCount": 51,
-      "totalPatches": 946,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "cisco",
-        "debian",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "edge",
-        "mssql",
-        "oracle-db",
-        "apple",
-        "gitlab",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2025-49506: Apache Portable Runtime Utility: apr_password_validate() vulnerable to timing attack",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-12570: Denial of Service via HDF5 Shape Bomb in keras.models.load_model() in keras-team/keras",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-13002: Dnsmasq: infinite loop dos in dnssec nsec/nsec3 type bitmap parsing",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14456: Unbounded Memory Growth in QUIC Server Incoming Channel Queue",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14662: PostgreSQL tsvector and tsquery undersize allocations, via integer wraparound",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14663: PostgreSQL pgcrypto, for OpenSSL-disabled ciphers, silently encrypts to and decrypts from cleartext",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14664: PostgreSQL regexp heap buffer overflow executes arbitrary code",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14666: PostgreSQL row security caching disregards role modifications",
-          "date": "2026-08-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14668: PostgreSQL ctid type confusion in selectivity estimator discloses derivative of arbitrary read",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14670: PostgreSQL plperl tied object heap buffer overflow executes arbitrary code",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14671: PostgreSQL refint plan cache type confusion executes arbitrary code",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14672: PostgreSQL observable response discrepancy with non-default scram_iterations provides user existence oracle",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14677: PostgreSQL 32-bit pltcl and plperl undersize allocations, via integer wraparound",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14678: PostgreSQL pg_trgm picksplit reads past end of buffer",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14680: PostgreSQL type confusion via \"internal\" arguments",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-15059: systemd-oomd: unprivileged users can terminate arbitrary processes",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-15534: Perl versions through 5.45.1 have out-of-bounds heap reads and writes during regular expression matching via an undersized superlinear cache in S_regmatch",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-15741: PostgreSQL expression deparse allows SQL injection via EXTRACT argument",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-15742: PostgreSQL fuzzystrmatch writes effectively-arbitrary addresses, via integer wraparound",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-15806: `HTTPPasswordMgr` can send saved HTTPS credentials via HTTP because of incorrect scheme matching",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-16238: PostgreSQL type confusion in pg_restore_attribute_stats() executes arbitrary code",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-16239: PostgreSQL type confusion in cursor CLOSE + DECLARE executes arbitrary code",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-17084: stringprep.map_table_b2() deviates from RFC 3454 Table B.2",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18024: PostgreSQL ascii() function reads past end of buffer",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18408: PostgreSQL psql \\unrestrict lets superuser of pg_dump origin server execute arbitrary code in psql client",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18477: Tar: tar: toctou in incremental dumpdir 'x' rename handling allows restore path escape",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18503: Super-linear CPU usage for unbounded input to csv.Sniffer.sniff()",
-          "date": "2026-08-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18508: Tar: tar: --one-top-level hardlink targets not confined to top-level directory enabling arbitrary file overwrite",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18739: Popt-devel: popt-static: off-by-one in poptstuffargs",
-          "date": "2026-08-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18839: Popt-devel: popt-static: size_t underflow in singleoptionhelp",
-          "date": "2026-08-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19023: HDF5 h5dump Untrusted Pointer Dereference in Binary Output of Variable-Length String Datasets",
-          "date": "2026-08-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19024: HDF5 H5Pget_fill_value NULL Pointer Dereference via Malformed Fill Value Message",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19025: HDF5 divide-by-zero (SIGFPE) via mismatched chunk-layout dimensionality and dataspace rank on dataset open",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19026: Nbit filter NULL/short parameter-array dereference",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19027: HDF5 out-of-bounds heap read in N-Bit filter decompression",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19028: HDF5 integer underflow in Fletcher32 filter leads to massive out-of-bounds read",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19385: PostgreSQL pg_dump heap buffer overflow executes arbitrary code",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19411: Shim/dp.c library: null-pointer dereference in is_removable_media_path() when devicepathtostr() returns null",
-          "date": "2026-08-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19589: Packer vulnerable to arbitrary file write via crafted plugin archive during installation",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19617: Libdm: lvm2: libdm: denial of service via uncontrolled recursion in config parser",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-20337: ClamAV ZIP File Format Processing Memory Corruption Vulnerability",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-20338: ClamAV ZIP File Format Processing Memory Corruption Vulnerability",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-20339: ClamAV PESpin File Format Processing Integer Overflow Vulnerability",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-20345: ClamAV GPT File Format Processing Memory Corruption Vulnerability",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-20346: ClamAV PDF File Format Processing Memory Corruption Vulnerability",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-20347: ClamAV Mach-O File Format Processing Memory Corruption Vulnerability",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-20348: ClamAV XAR File Format Processing Memory Corruption Vulnerability",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-32327: Apache Portable Runtime Utility: apr-util XML stack recursion crash",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33818: Enforce maximum recursion depth in encoding/asn1",
-          "date": "2026-08-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-34501: Apache Portable Runtime Utility: Heap buffer overflow in APR redis client",
-          "date": "2026-08-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-43678: swift-nio: swift-nio: Denial of Service via specially crafted WebSocket frame",
-          "date": "2026-08-20",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
