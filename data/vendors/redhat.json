@@ -1,16 +1,27 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-08-26T06:57:28.922Z",
+  "lastUpdated": "2026-08-26T13:02:06.179Z",
   "health": {
-    "lastFetchAttempt": "2026-08-26T06:57:28.922Z",
+    "lastFetchAttempt": "2026-08-26T13:02:06.179Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 292,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-26T06:57:28.922Z",
+    "lastFetchParsedItems": 303,
+    "lastFetchNewPatches": 14,
+    "lastSuccessWithData": "2026-08-26T13:02:06.179Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-79654: ketello: Katello Content View History API Cross-Organization Authorization Bypass",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ketello: Katello Content View History API Cross-Organization Authorization Bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79654.json",
+      "cve": "CVE-2026-79654",
+      "cvss": 4.3
+    },
     {
       "title": "CVE-2026-77117: glibc: Non-progress DoS in SHIFT_JISX0213 -&gt",
       "date": "2026-08-25",
@@ -252,6 +263,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80185.json",
       "cve": "CVE-2026-80185",
       "cvss": 5.7
+    },
+    {
+      "title": "CVE-2026-80182: keystone: keystone: Delegated token scope restrictions not consistently enforced across trust, OAuth1, and application c",
+      "date": "2026-08-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keystone: keystone: Delegated token scope restrictions not consistently enforced across trust, OAuth1, and application credential endpoints",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80182.json",
+      "cve": "CVE-2026-80182",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-80184: keystone: keystone: Application credential tokens can escape project scope via token-method reauthentication",
+      "date": "2026-08-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keystone: keystone: Application credential tokens can escape project scope via token-method reauthentication",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80184.json",
+      "cve": "CVE-2026-80184",
+      "cvss": 7.1
     },
     {
       "title": "CVE-2026-78323: jss: jss: JSSTrustManager does not verify NSS trust flags on CA certificates",
@@ -2210,6 +2243,127 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79992.json",
       "cve": "CVE-2026-79992",
       "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-63125: incus: Incus vulnerable to root RCE via image backup.yaml symlink",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus vulnerable to root RCE via image backup.yaml symlink",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-63125.json",
+      "cve": "CVE-2026-63125",
+      "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-62941: incus: Incus: Cross-project instance copy bypasses target project restrictions via TOCTOU in config merge",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus: Cross-project instance copy bypasses target project restrictions via TOCTOU in config merge",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-62941.json",
+      "cve": "CVE-2026-62941",
+      "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-62940: incus: Incus has a project restriction bypass via instance migration config override",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus has a project restriction bypass via instance migration config override",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-62940.json",
+      "cve": "CVE-2026-62940",
+      "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-62867: incus: Incus has an argument injection in storage volume block.create_options that leads to arbitrary command execution",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus has an argument injection in storage volume block.create_options that leads to arbitrary command execution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-62867.json",
+      "cve": "CVE-2026-62867",
+      "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-48769: incus: Incus has an arbitrary file write on its client due to trusted image hash",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus has an arbitrary file write on its client due to trusted image hash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48769.json",
+      "cve": "CVE-2026-48769",
+      "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-48755: incus: Incus has an argument injection in backup compression algorithm leading to AFW and ACE",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus has an argument injection in backup compression algorithm leading to AFW and ACE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48755.json",
+      "cve": "CVE-2026-48755",
+      "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-48753: incus: Incus has an arbitrary file write via path traversal in S3 multipart upload",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus has an arbitrary file write via path traversal in S3 multipart upload",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48753.json",
+      "cve": "CVE-2026-48753",
+      "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-48752: incus: Incus has arbitrary file read+write on host via templates/ symlink in malicious image",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus has arbitrary file read+write on host via templates/ symlink in malicious image",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48752.json",
+      "cve": "CVE-2026-48752",
+      "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-48751: incus: Incus has a restricted project bypass leading to arbitrary command execution",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus has a restricted project bypass leading to arbitrary command execution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48751.json",
+      "cve": "CVE-2026-48751",
+      "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-48750: incus: Incus has an arbitrary file write on host via `exec-output` symlink in crafted image",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus has an arbitrary file write on host via `exec-output` symlink in crafted image",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48750.json",
+      "cve": "CVE-2026-48750",
+      "cvss": 9.9
+    },
+    {
+      "title": "CVE-2026-48749: incus: Incus has an arbitrary file read+write on host via rootfs/ symlink in malicious image",
+      "date": "2026-08-21",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "incus: Incus has an arbitrary file read+write on host via rootfs/ symlink in malicious image",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48749.json",
+      "cve": "CVE-2026-48749",
+      "cvss": 9.9
     },
     {
       "title": "CVE-2026-66785: submariner: submariner: unvalidated Endpoint.Spec.Subnets propagated into WireGuard AllowedIPs / IPsec enables traffic h",
