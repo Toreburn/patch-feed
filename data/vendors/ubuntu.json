@@ -1,16 +1,106 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-08-27T08:35:30.823Z",
+  "lastUpdated": "2026-08-27T22:05:41.405Z",
   "health": {
-    "lastFetchAttempt": "2026-08-27T08:35:30.823Z",
+    "lastFetchAttempt": "2026-08-27T22:05:41.405Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 2,
-    "lastSuccessWithData": "2026-08-27T08:35:30.823Z",
+    "lastFetchNewPatches": 10,
+    "lastSuccessWithData": "2026-08-27T22:05:41.405Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "USN-8666-3: Linux kernel (GCP FIPS) vulnerabilities",
+      "date": "2026-08-27",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (GCP FIPS) vulnerabilities",
+      "description": "Siebe Devroe, Héloïse Gollier, and Mathy Vanhoef discovered that the WiFi\nimplementation in the Linux kernel did not properly handle aggregated\nframes in mesh networks, due to an incorrect fix for CVE...",
+      "link": "https://ubuntu.com/security/notices/USN-8666-3"
+    },
+    {
+      "title": "USN-8644-3: Linux kernel (Azure) vulnerabilities",
+      "date": "2026-08-27",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Azure) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - File systems inf...",
+      "link": "https://ubuntu.com/security/notices/USN-8644-3"
+    },
+    {
+      "title": "USN-8661-3: Linux kernel vulnerabilities",
+      "date": "2026-08-27",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Siebe Devroe, Héloïse Gollier, and Mathy Vanhoef discovered that the WiFi\nimplementation in the Linux kernel did not properly handle aggregated\nframes in mesh networks, due to an incorrect fix for CVE...",
+      "link": "https://ubuntu.com/security/notices/USN-8661-3"
+    },
+    {
+      "title": "USN-8658-4: Linux kernel (Azure CVM) vulnerabilities",
+      "date": "2026-08-27",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Azure CVM) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Open vSwitch;\n  ...",
+      "link": "https://ubuntu.com/security/notices/USN-8658-4"
+    },
+    {
+      "title": "USN-8643-5: Linux kernel vulnerabilities",
+      "date": "2026-08-27",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Network drivers;...",
+      "link": "https://ubuntu.com/security/notices/USN-8643-5"
+    },
+    {
+      "title": "USN-8688-1: PAM vulnerability",
+      "date": "2026-08-27",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "PAM",
+      "description": "Juthawong Naisanguansee discovered that PAM incorrectly cleared failed\nlogin attempt records when certain services invoked the account phase\nwithout first performing authentication. An attacker could ...",
+      "link": "https://ubuntu.com/security/notices/USN-8688-1"
+    },
+    {
+      "title": "USN-8687-1: p11-kit vulnerabilities",
+      "date": "2026-08-27",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "p11-kit vulnerabilities",
+      "description": "It was discovered that p11-kit incorrectly handled certain RPC messages. A\nlocal attacker could use this issue to cause p11-kit to crash, resulting in\na denial of service. (CVE-2026-13757)\n\nIt was dis...",
+      "link": "https://ubuntu.com/security/notices/USN-8687-1"
+    },
+    {
+      "title": "USN-8686-1: openCryptoki vulnerabilities",
+      "date": "2026-08-27",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "openCryptoki vulnerabilities",
+      "description": "It was discovered that primitive decoders in openCryptoki produced integer\nunderflows when the encoded length was zero. An attacker could possibly use\nthis issue to trigger out-of-bounds reads. (CVE-2...",
+      "link": "https://ubuntu.com/security/notices/USN-8686-1"
+    },
+    {
+      "title": "USN-8684-1: Perl vulnerabilities",
+      "date": "2026-08-27",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Perl vulnerabilities",
+      "description": "It was discovered that Perl incorrectly handled certain arguments to\nSocket and pack/unpack functions. An attacker could possibly use this\nissue to read sensitive information from memory.\n(CVE-2026-12...",
+      "link": "https://ubuntu.com/security/notices/USN-8684-1"
+    },
+    {
+      "title": "LSN-0121-1: Kernel Live Patch Security Notice",
+      "date": "2026-08-27",
+      "severity": "CRITICAL",
+      "vendor": "ubuntu",
+      "component": "Multiple Products",
+      "description": "In the Linux kernel, the following vulnerability has been\nresolved: ksmbd: ipc: fix use-after-free in ipc_msg_send_request\nipc_msg_send_request() waits for a generic netlink reply using an\nipc_msg_tab...",
+      "link": "https://ubuntu.com/security/notices/LSN-0121-1"
+    },
     {
       "title": "USN-8659-4: Linux kernel (Oracle) vulnerability",
       "date": "2026-08-26",
