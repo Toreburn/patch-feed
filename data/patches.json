@@ -1,7 +1,32 @@
 {
-  "lastUpdated": "2026-08-27T08:18:15.084Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-27T08:36:28.561Z",
+  "newPatches": 22,
   "patches": [
+    {
+      "title": "DSA-6469-1 xrdp - security update",
+      "date": "2026-08-27",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "xrdp",
+      "description": "Multiple vulnerabilities were discovered in xrdp, a Remote Desktop Protocol (RDP) server, which may result in denial of service, information disclosure, privilege escalation or the execution of arbitr...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00380.html",
+      "cve": "CVE-2026-33145",
+      "cves": [
+        "CVE-2026-33145",
+        "CVE-2026-41252",
+        "CVE-2026-41521"
+      ]
+    },
+    {
+      "title": "CVE-2026-0251 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: HIGH)",
+      "date": "2026-08-27",
+      "severity": "HIGH",
+      "vendor": "paloalto",
+      "component": "GlobalProtect",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0251",
+      "cve": "CVE-2026-0251"
+    },
     {
       "title": "Chrome for Android Update",
       "date": "2026-08-26",
@@ -723,6 +748,138 @@
       "cvss": 4.3
     },
     {
+      "title": "CVE-2026-74749: kernel: rseq: Prevent hard lockup on granted time slice extension",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: rseq: Prevent hard lockup on granted time slice extension",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-74749.json",
+      "cve": "CVE-2026-74749",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80537: kernel: xfs: fix off-by-one in rtrefcount btree root level validation",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: fix off-by-one in rtrefcount btree root level validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80537.json",
+      "cve": "CVE-2026-80537",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-80529: kernel: xfs: don't swallow dquot recovery verification errors",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: don't swallow dquot recovery verification errors",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80529.json",
+      "cve": "CVE-2026-80529",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80531: kernel: xfs: avoid UAF on sc->tempip in xrep_tempfile_create",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: avoid UAF on sc->tempip in xrep_tempfile_create",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80531.json",
+      "cve": "CVE-2026-80531",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80538: kernel: xfs: propagate errors from xfs_rtginode_load",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: propagate errors from xfs_rtginode_load",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80538.json",
+      "cve": "CVE-2026-80538",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80535: kernel: xfs: don't double-lock when deleting a self-referential directory",
+      "date": "2026-08-26",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: don't double-lock when deleting a self-referential directory",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80535.json",
+      "cve": "CVE-2026-80535",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80533: kernel: xfs: don't walk off the end of a null sc->sa.agi_bp in AGI repair",
+      "date": "2026-08-26",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: don't walk off the end of a null sc->sa.agi_bp in AGI repair",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80533.json",
+      "cve": "CVE-2026-80533",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80532: kernel: xfs: fix another iunlink infinite loop bug in online fsck",
+      "date": "2026-08-26",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: fix another iunlink infinite loop bug in online fsck",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80532.json",
+      "cve": "CVE-2026-80532",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80530: kernel: xfs: fix exchange-range reflink flag clearing issue with INO1_WRITTEN",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: fix exchange-range reflink flag clearing issue with INO1_WRITTEN",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80530.json",
+      "cve": "CVE-2026-80530",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-80536: kernel: xfs: bounds-check buffer log item's dirty bitmap",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: bounds-check buffer log item's dirty bitmap",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80536.json",
+      "cve": "CVE-2026-80536",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-80534: kernel: xfs: fix ilock leak on error in xfs_dq_get_next_id",
+      "date": "2026-08-26",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: fix ilock leak on error in xfs_dq_get_next_id",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80534.json",
+      "cve": "CVE-2026-80534",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80158: ansible-collection-community-general: community.general: ipa_getkeytab does not set no_log on the bind_pw parameter, dis",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Ansible",
+      "description": "ansible-collection-community-general: community.general: ipa_getkeytab does not set no_log on the bind_pw parameter, disclosing the IPA bind password in logs and process listings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80158.json",
+      "cve": "CVE-2026-80158",
+      "cvss": 5.5
+    },
+    {
       "title": "USN-8659-4: Linux kernel (Oracle) vulnerability",
       "date": "2026-08-26",
       "severity": "LOW",
@@ -739,6 +896,24 @@
       "component": "OpenJDK 25 vulnerabilities",
       "description": "It was discovered that the JSSE component of OpenJDK 25 did not correctly\nauthenticate users. A remote attacker could possibly use this issue to read or\nmodify sensitive data. (CVE-2026-46968)\n\nIt was...",
       "link": "https://ubuntu.com/security/notices/USN-8681-1"
+    },
+    {
+      "title": "USN-8683-1: libheif vulnerabilities",
+      "date": "2026-08-26",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libheif vulnerabilities",
+      "description": "Feng Ning discovered that libheif incorrectly handled certain image\ntransforms. A remote attacker could possibly use this issue to cause a\ndenial of service. This issue only affected Ubuntu 18.04 LTS,...",
+      "link": "https://ubuntu.com/security/notices/USN-8683-1"
+    },
+    {
+      "title": "USN-8682-1: Bind vulnerabilities",
+      "date": "2026-08-26",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Bind vulnerabilities",
+      "description": "Vitaly Simonovich discovered that Bind could exhaust memory during\nGSS-API TKEY negotiation. A remote attacker could possibly use this\nissue to cause Bind to use excessive resources, leading to a deni...",
+      "link": "https://ubuntu.com/security/notices/USN-8682-1"
     },
     {
       "title": "CVE-2026-78379 - Consent bypass in Strands Agents Tools python_repl tool",
@@ -2567,6 +2742,61 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80184.json",
       "cve": "CVE-2026-80184",
       "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-79258: chromium-browser: Google Chrome WebXR: Information disclosure via incorrect authorization",
+      "date": "2026-08-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Google Chrome WebXR: Information disclosure via incorrect authorization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79258.json",
+      "cve": "CVE-2026-79258",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-79269: chromium-browser: Chromium: Web origin policy bypass via uninitialized resource in ANGLE",
+      "date": "2026-08-25",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Chromium: Web origin policy bypass via uninitialized resource in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79269.json",
+      "cve": "CVE-2026-79269",
+      "cvss": 9.3
+    },
+    {
+      "title": "CVE-2026-79276: chromium-browser: Google Chrome: Privilege management bypass via crafted HTML page",
+      "date": "2026-08-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Google Chrome: Privilege management bypass via crafted HTML page",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79276.json",
+      "cve": "CVE-2026-79276",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-16599: wget: wget: Denial of Service via crafted FTP OPIE/S-KEY authentication challenge",
+      "date": "2026-08-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wget: wget: Denial of Service via crafted FTP OPIE/S-KEY authentication challenge",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16599.json",
+      "cve": "CVE-2026-16599",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-52491: libtiff: libtiff: Arbitrary code execution via thumbnail.c: main() component",
+      "date": "2026-08-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libtiff: libtiff: Arbitrary code execution via thumbnail.c: main() component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52491.json",
+      "cve": "CVE-2026-52491",
+      "cvss": 7.3
     },
     {
       "title": "USN-8666-2: Linux kernel (Azure) vulnerabilities",
@@ -6034,6 +6264,17 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-74687: kernel: watchdog: at91sam9_wdt: prevent timer rearm during teardown",
+      "date": "2026-08-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: watchdog: at91sam9_wdt: prevent timer rearm during teardown",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-74687.json",
+      "cve": "CVE-2026-74687",
+      "cvss": 5.5
+    },
+    {
       "title": "Issue with FreeRTOS-Kernel - CVE-2026-77234, CVE-2026-77235, CVE-2026-77236, CVE-2026-77237",
       "date": "2026-08-21",
       "severity": "HIGH",
@@ -7115,6 +7356,177 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-08-27T08:36:28.561Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[SUCCESS] debian - 14 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 102 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 350 patches, no changes",
+        "[INFO] mssql - 1 patches, no changes",
+        "[SUCCESS] paloalto - 1 patches (1 new)",
+        "[SUCCESS] redhat - 232 patches (18 new)",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 24 patches (2 new)"
+      ],
+      "newPatchCount": 22,
+      "totalPatches": 737,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "debian",
+        "paloalto",
+        "chrome",
+        "cisco",
+        "github",
+        "gitlab",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "edge",
+        "mssql",
+        "signal"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6469-1 xrdp - security update",
+          "date": "2026-08-27",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-0251 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: HIGH)",
+          "date": "2026-08-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-74749: kernel: rseq: Prevent hard lockup on granted time slice extension",
+          "date": "2026-08-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80537: kernel: xfs: fix off-by-one in rtrefcount btree root level validation",
+          "date": "2026-08-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80529: kernel: xfs: don't swallow dquot recovery verification errors",
+          "date": "2026-08-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80531: kernel: xfs: avoid UAF on sc->tempip in xrep_tempfile_create",
+          "date": "2026-08-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80538: kernel: xfs: propagate errors from xfs_rtginode_load",
+          "date": "2026-08-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80535: kernel: xfs: don't double-lock when deleting a self-referential directory",
+          "date": "2026-08-26",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80533: kernel: xfs: don't walk off the end of a null sc->sa.agi_bp in AGI repair",
+          "date": "2026-08-26",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80532: kernel: xfs: fix another iunlink infinite loop bug in online fsck",
+          "date": "2026-08-26",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80530: kernel: xfs: fix exchange-range reflink flag clearing issue with INO1_WRITTEN",
+          "date": "2026-08-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80536: kernel: xfs: bounds-check buffer log item's dirty bitmap",
+          "date": "2026-08-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80534: kernel: xfs: fix ilock leak on error in xfs_dq_get_next_id",
+          "date": "2026-08-26",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80158: ansible-collection-community-general: community.general: ipa_getkeytab does not set no_log on the bind_pw parameter, dis",
+          "date": "2026-08-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-79258: chromium-browser: Google Chrome WebXR: Information disclosure via incorrect authorization",
+          "date": "2026-08-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-79269: chromium-browser: Chromium: Web origin policy bypass via uninitialized resource in ANGLE",
+          "date": "2026-08-25",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-79276: chromium-browser: Google Chrome: Privilege management bypass via crafted HTML page",
+          "date": "2026-08-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-16599: wget: wget: Denial of Service via crafted FTP OPIE/S-KEY authentication challenge",
+          "date": "2026-08-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-52491: libtiff: libtiff: Arbitrary code execution via thumbnail.c: main() component",
+          "date": "2026-08-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-74687: kernel: watchdog: at91sam9_wdt: prevent timer rearm during teardown",
+          "date": "2026-08-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8683-1: libheif vulnerabilities",
+          "date": "2026-08-26",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8682-1: Bind vulnerabilities",
+          "date": "2026-08-26",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-08-27T08:18:15.083Z",
       "logs": [
@@ -12369,48 +12781,6 @@
     },
     {
       "timestamp": "2026-08-23T22:24:43.419Z",
-      "logs": [
-        "[INFO] apple - 3 patches, no changes",
-        "[INFO] aws - 89 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 10 patches, no changes",
-        "[INFO] debian - 14 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 187 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 396 patches, no changes",
-        "[INFO] mssql - 6 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 185 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 41 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 946,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "cisco",
-        "debian",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "edge",
-        "mssql",
-        "oracle-db",
-        "apple",
-        "gitlab",
-        "postgresql"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-23T20:26:14.990Z",
       "logs": [
         "[INFO] apple - 3 patches, no changes",
         "[INFO] aws - 89 patches, no changes",

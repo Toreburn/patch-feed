@@ -1,12 +1,12 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-08-26T19:52:49.195Z",
+  "lastUpdated": "2026-08-27T08:35:10.949Z",
   "health": {
-    "lastFetchAttempt": "2026-08-26T19:52:49.195Z",
+    "lastFetchAttempt": "2026-08-27T08:35:10.949Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 303,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-26T19:52:49.195Z",
+    "lastFetchParsedItems": 275,
+    "lastFetchNewPatches": 21,
+    "lastSuccessWithData": "2026-08-27T08:35:10.949Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -21,6 +21,138 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79654.json",
       "cve": "CVE-2026-79654",
       "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-74749: kernel: rseq: Prevent hard lockup on granted time slice extension",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: rseq: Prevent hard lockup on granted time slice extension",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-74749.json",
+      "cve": "CVE-2026-74749",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80537: kernel: xfs: fix off-by-one in rtrefcount btree root level validation",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: fix off-by-one in rtrefcount btree root level validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80537.json",
+      "cve": "CVE-2026-80537",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-80529: kernel: xfs: don't swallow dquot recovery verification errors",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: don't swallow dquot recovery verification errors",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80529.json",
+      "cve": "CVE-2026-80529",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80531: kernel: xfs: avoid UAF on sc->tempip in xrep_tempfile_create",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: avoid UAF on sc->tempip in xrep_tempfile_create",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80531.json",
+      "cve": "CVE-2026-80531",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80538: kernel: xfs: propagate errors from xfs_rtginode_load",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: propagate errors from xfs_rtginode_load",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80538.json",
+      "cve": "CVE-2026-80538",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80535: kernel: xfs: don't double-lock when deleting a self-referential directory",
+      "date": "2026-08-26",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: don't double-lock when deleting a self-referential directory",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80535.json",
+      "cve": "CVE-2026-80535",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80533: kernel: xfs: don't walk off the end of a null sc->sa.agi_bp in AGI repair",
+      "date": "2026-08-26",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: don't walk off the end of a null sc->sa.agi_bp in AGI repair",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80533.json",
+      "cve": "CVE-2026-80533",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80532: kernel: xfs: fix another iunlink infinite loop bug in online fsck",
+      "date": "2026-08-26",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: fix another iunlink infinite loop bug in online fsck",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80532.json",
+      "cve": "CVE-2026-80532",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80530: kernel: xfs: fix exchange-range reflink flag clearing issue with INO1_WRITTEN",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: fix exchange-range reflink flag clearing issue with INO1_WRITTEN",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80530.json",
+      "cve": "CVE-2026-80530",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-80536: kernel: xfs: bounds-check buffer log item's dirty bitmap",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: bounds-check buffer log item's dirty bitmap",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80536.json",
+      "cve": "CVE-2026-80536",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-80534: kernel: xfs: fix ilock leak on error in xfs_dq_get_next_id",
+      "date": "2026-08-26",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: xfs: fix ilock leak on error in xfs_dq_get_next_id",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80534.json",
+      "cve": "CVE-2026-80534",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80158: ansible-collection-community-general: community.general: ipa_getkeytab does not set no_log on the bind_pw parameter, dis",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Ansible",
+      "description": "ansible-collection-community-general: community.general: ipa_getkeytab does not set no_log on the bind_pw parameter, disclosing the IPA bind password in logs and process listings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80158.json",
+      "cve": "CVE-2026-80158",
+      "cvss": 5.5
     },
     {
       "title": "CVE-2026-77117: glibc: Non-progress DoS in SHIFT_JISX0213 -&gt",
@@ -285,6 +417,61 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80184.json",
       "cve": "CVE-2026-80184",
       "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-79258: chromium-browser: Google Chrome WebXR: Information disclosure via incorrect authorization",
+      "date": "2026-08-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Google Chrome WebXR: Information disclosure via incorrect authorization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79258.json",
+      "cve": "CVE-2026-79258",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-79269: chromium-browser: Chromium: Web origin policy bypass via uninitialized resource in ANGLE",
+      "date": "2026-08-25",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Chromium: Web origin policy bypass via uninitialized resource in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79269.json",
+      "cve": "CVE-2026-79269",
+      "cvss": 9.3
+    },
+    {
+      "title": "CVE-2026-79276: chromium-browser: Google Chrome: Privilege management bypass via crafted HTML page",
+      "date": "2026-08-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Google Chrome: Privilege management bypass via crafted HTML page",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79276.json",
+      "cve": "CVE-2026-79276",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-16599: wget: wget: Denial of Service via crafted FTP OPIE/S-KEY authentication challenge",
+      "date": "2026-08-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wget: wget: Denial of Service via crafted FTP OPIE/S-KEY authentication challenge",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16599.json",
+      "cve": "CVE-2026-16599",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-52491: libtiff: libtiff: Arbitrary code execution via thumbnail.c: main() component",
+      "date": "2026-08-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libtiff: libtiff: Arbitrary code execution via thumbnail.c: main() component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-52491.json",
+      "cve": "CVE-2026-52491",
+      "cvss": 7.3
     },
     {
       "title": "CVE-2026-78323: jss: jss: JSSTrustManager does not verify NSS trust flags on CA certificates",
@@ -2069,6 +2256,17 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-74687: kernel: watchdog: at91sam9_wdt: prevent timer rearm during teardown",
+      "date": "2026-08-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: watchdog: at91sam9_wdt: prevent timer rearm during teardown",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-74687.json",
+      "cve": "CVE-2026-74687",
+      "cvss": 5.5
+    },
+    {
       "title": "CVE-2026-77682: epiphany: epiphany: JavaScript code injection in autofill via unsanitized CSS selector from element id",
       "date": "2026-08-21",
       "severity": "HIGH",
@@ -2870,6 +3068,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-77643.json",
       "cve": "CVE-2026-77643",
       "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-76018: chromium-browser: Google Chrome: Arbitrary Code Execution via crafted file in Import component",
+      "date": "2026-08-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Google Chrome: Arbitrary Code Execution via crafted file in Import component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-76018.json",
+      "cve": "CVE-2026-76018",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-76957: libexpat: libexpat: Memory corruption vulnerability allows arbitrary code execution or denial of service",
+      "date": "2026-08-20",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libexpat: libexpat: Memory corruption vulnerability allows arbitrary code execution or denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-76957.json",
+      "cve": "CVE-2026-76957",
+      "cvss": 4.9
+    },
+    {
+      "title": "CVE-2026-76956: libexpat: libexpat: Denial of Service via hash flooding attack with crafted XML",
+      "date": "2026-08-20",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libexpat: libexpat: Denial of Service via hash flooding attack with crafted XML",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-76956.json",
+      "cve": "CVE-2026-76956",
+      "cvss": 5.9
     },
     {
       "title": "CVE-2026-75900: swtpm: swtpm: Out-of-bounds read in SWTPM_NVRAM_CheckHeader due to sizeof(pointer) vs sizeof(struct) mismatch",
