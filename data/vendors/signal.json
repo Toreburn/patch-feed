@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-08-28T22:02:39.755Z",
+  "lastUpdated": "2026-08-29T06:35:20.392Z",
   "health": {
-    "lastFetchAttempt": "2026-08-28T22:02:39.755Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-25T12:56:23.058Z",
-    "consecutiveEmptyFetches": 9,
+    "lastFetchAttempt": "2026-08-29T06:35:20.392Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-08-29T06:35:20.392Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "free5GC AUSF uses non-constant-time authentication comparisons and logs XRES* in 5G-AKA",
+      "date": "2026-08-28",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nThe AUSF component of free5GC compares authentication response values with normal Go equality helpers instead of constant-time cryptographic comparison functions.\n\nTwo authentication flow",
+      "link": "https://github.com/advisories/GHSA-fp46-6vfw-gc9c",
+      "cves": [
+        "CVE-2026-55785"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "kin-openapi openai3filter: nil-pointer panic in ConvertErrors on malformed multipart/form-data body enables unauthenticated DoS",
       "date": "2026-08-21",
