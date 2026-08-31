@@ -1,7 +1,52 @@
 {
-  "lastUpdated": "2026-08-31T08:20:05.590Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-08-31T13:16:50.108Z",
+  "newPatches": 66,
   "patches": [
+    {
+      "title": "USN-8699-1: libssh vulnerabilities",
+      "date": "2026-08-31",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "libssh vulnerabilities",
+      "description": "It was discovered that libssh had a stack buffer overflow in its SFTP\nserver when constructing directory listing entries for long filenames. An\nattacker could possibly use this issue to cause libssh t...",
+      "link": "https://ubuntu.com/security/notices/USN-8699-1"
+    },
+    {
+      "title": "USN-8698-1: FreeRDP vulnerabilities",
+      "date": "2026-08-31",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "FreeRDP vulnerabilities",
+      "description": "It was discovered that FreeRDP contained multiple security issues. An\nattacker could possibly use these issues to obtain sensitive information,\ncause FreeRDP to crash, resulting in a denial of service...",
+      "link": "https://ubuntu.com/security/notices/USN-8698-1"
+    },
+    {
+      "title": "USN-8697-1: GNU Core Utilities vulnerabilities",
+      "date": "2026-08-31",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GNU Core Utilities vulnerabilities",
+      "description": "It was discovered that GNU Core Utilities sort had a heap buffer under-read\nin its begfield() function. A local attacker could possibly use this issue\nto cause GNU Core Utilities to crash, resulting i...",
+      "link": "https://ubuntu.com/security/notices/USN-8697-1"
+    },
+    {
+      "title": "USN-8696-1: Bind vulnerability",
+      "date": "2026-08-31",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Bind",
+      "description": "It was discovered that Bind incorrectly handled DNSSEC validation when a\ndomain was covered by both NSEC and NSEC3 records with only one type having\nan RRSIG. A remote attacker could possibly use this...",
+      "link": "https://ubuntu.com/security/notices/USN-8696-1"
+    },
+    {
+      "title": "USN-8689-1: OpenJDK 26 vulnerabilities",
+      "date": "2026-08-31",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OpenJDK 26 vulnerabilities",
+      "description": "It was discovered that the JSSE component of OpenJDK 26 did not correctly\nauthenticate users. A remote attacker could possibly use this issue to read\nor modify sensitive data. (CVE-2026-46968)\n\nIt was...",
+      "link": "https://ubuntu.com/security/notices/USN-8689-1"
+    },
     {
       "title": "DSA-6479-1 roundcube - security update",
       "date": "2026-08-30",
@@ -484,6 +529,17 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-49179",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-49179"
+    },
+    {
+      "title": "CVE-2026-80725: kernel: net: gro: properly validate BIG TCP aggregation criteria",
+      "date": "2026-08-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: gro: properly validate BIG TCP aggregation criteria",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80725.json",
+      "cve": "CVE-2026-80725",
+      "cvss": 7
     },
     {
       "title": "CVE-2026-81838 - Zip Slip path traversal in awsdac (diagram-as-code)",
@@ -1724,6 +1780,545 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-80612: kernel: net: lwtunnel: Drop skb metadata before LWT encapsulation",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: lwtunnel: Drop skb metadata before LWT encapsulation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80612.json",
+      "cve": "CVE-2026-80612",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80673: kernel: ntfs: bound the look-ahead attribute-list entry in ntfs_external_attr_find()",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ntfs: bound the look-ahead attribute-list entry in ntfs_external_attr_find()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80673.json",
+      "cve": "CVE-2026-80673",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80661: kernel: ufs: core: tracing: Do not dereference pointers in TP_printk()",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ufs: core: tracing: Do not dereference pointers in TP_printk()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80661.json",
+      "cve": "CVE-2026-80661",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80603: kernel: netfilter: nf_conntrack_irc: fix parse_dcc() off-by-one OOB read",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: nf_conntrack_irc: fix parse_dcc() off-by-one OOB read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80603.json",
+      "cve": "CVE-2026-80603",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-80677: kernel: driver core: use READ_ONCE() for dev->driver in dev_has_sync_state()",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: driver core: use READ_ONCE() for dev->driver in dev_has_sync_state()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80677.json",
+      "cve": "CVE-2026-80677",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80718: kernel: mm/percpu-km: fix bitmap overflow and accounting in pcpu_create_chunk()",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mm/percpu-km: fix bitmap overflow and accounting in pcpu_create_chunk()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80718.json",
+      "cve": "CVE-2026-80718",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-80697: kernel: erofs: ensure valid f_path for page cache sharing",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: erofs: ensure valid f_path for page cache sharing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80697.json",
+      "cve": "CVE-2026-80697",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80700: kernel: drm/vmwgfx: validate external BO copy bounds for both stride paths",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/vmwgfx: validate external BO copy bounds for both stride paths",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80700.json",
+      "cve": "CVE-2026-80700",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-80664: kernel: netfilter: xt_nat: reject unsupported target families",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: xt_nat: reject unsupported target families",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80664.json",
+      "cve": "CVE-2026-80664",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80689: kernel: tracing/mmiotrace: Add NULL check for mmio_trace_array in logging functions",
+      "date": "2026-08-28",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: tracing/mmiotrace: Add NULL check for mmio_trace_array in logging functions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80689.json",
+      "cve": "CVE-2026-80689",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80694: kernel: net: ethernet: mtk_eth_soc: pass eth to mtk_handle_irq_rx in poll_controller",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: ethernet: mtk_eth_soc: pass eth to mtk_handle_irq_rx in poll_controller",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80694.json",
+      "cve": "CVE-2026-80694",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80618: kernel: drm/amdkfd: Avoid double-unpin of DOORBELL/MMIO BOs on free",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/amdkfd: Avoid double-unpin of DOORBELL/MMIO BOs on free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80618.json",
+      "cve": "CVE-2026-80618",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80599: kernel: batman-adv: dat: ensure accessible eth_hdr proto field",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: batman-adv: dat: ensure accessible eth_hdr proto field",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80599.json",
+      "cve": "CVE-2026-80599",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80629: kernel: octeontx2-af: npc: Fix size of entry2cntr_map",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: octeontx2-af: npc: Fix size of entry2cntr_map",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80629.json",
+      "cve": "CVE-2026-80629",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80667: kernel: net/mlx5: LAG, MPESW, Fix missing complete() on devcom error",
+      "date": "2026-08-28",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net/mlx5: LAG, MPESW, Fix missing complete() on devcom error",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80667.json",
+      "cve": "CVE-2026-80667",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80600: kernel: batman-adv: dat: acquire ARP hw source only after skb realloc",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: batman-adv: dat: acquire ARP hw source only after skb realloc",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80600.json",
+      "cve": "CVE-2026-80600",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80598: kernel: ntfs3: fix out-of-bounds read in decompress_lznt",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ntfs3: fix out-of-bounds read in decompress_lznt",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80598.json",
+      "cve": "CVE-2026-80598",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80610: kernel: net: enetc: fix potential divide-by-zero when num_vsi is zero",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: enetc: fix potential divide-by-zero when num_vsi is zero",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80610.json",
+      "cve": "CVE-2026-80610",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80655: kernel: soc: xilinx: Fix race condition in event registration",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: soc: xilinx: Fix race condition in event registration",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80655.json",
+      "cve": "CVE-2026-80655",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80682: kernel: riscv/mm: use physical alignment for vmemmap_start_pfn",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: riscv/mm: use physical alignment for vmemmap_start_pfn",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80682.json",
+      "cve": "CVE-2026-80682",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80648: kernel: pinctrl: spacemit: fix NULL check in spacemit_pin_set_config",
+      "date": "2026-08-28",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: pinctrl: spacemit: fix NULL check in spacemit_pin_set_config",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80648.json",
+      "cve": "CVE-2026-80648",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80595: kernel: Input: ims-pcu - add response length checks",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Input: ims-pcu - add response length checks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80595.json",
+      "cve": "CVE-2026-80595",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80594: kernel: Input: ims-pcu - fix potential infinite loop in CDC union descriptor parsing",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Input: ims-pcu - fix potential infinite loop in CDC union descriptor parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80594.json",
+      "cve": "CVE-2026-80594",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80654: kernel: soc: xilinx: Shutdown and free rx mailbox channel",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: soc: xilinx: Shutdown and free rx mailbox channel",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80654.json",
+      "cve": "CVE-2026-80654",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80670: kernel: perf tools: Use perf_env__get_cpu_topology() in machine__resolve()",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: perf tools: Use perf_env__get_cpu_topology() in machine__resolve()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80670.json",
+      "cve": "CVE-2026-80670",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80653: kernel: scsi: hisi_sas: Add slave_destroy interface for v3 hw",
+      "date": "2026-08-28",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: scsi: hisi_sas: Add slave_destroy interface for v3 hw",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80653.json",
+      "cve": "CVE-2026-80653",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80712: kernel: spi: spi-qpic-snand: write the feature value before executing SET_FEATURE",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: spi: spi-qpic-snand: write the feature value before executing SET_FEATURE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80712.json",
+      "cve": "CVE-2026-80712",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80619: kernel: apparmor: fix potential UAF in aa_replace_profiles",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: apparmor: fix potential UAF in aa_replace_profiles",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80619.json",
+      "cve": "CVE-2026-80619",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80684: kernel: KVM: s390: pci: Fix NULL dereference on AIBV allocation failure",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: s390: pci: Fix NULL dereference on AIBV allocation failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80684.json",
+      "cve": "CVE-2026-80684",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80597: kernel: mtd: maps: vmu-flash: fix NULL pointer dereference in initialization",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mtd: maps: vmu-flash: fix NULL pointer dereference in initialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80597.json",
+      "cve": "CVE-2026-80597",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80591: kernel: f2fs: fix listxattr handling of corrupted xattr entries",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: f2fs: fix listxattr handling of corrupted xattr entries",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80591.json",
+      "cve": "CVE-2026-80591",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80676: kernel: Drivers: hv: vmbus: use generic driver_override infrastructure",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Drivers: hv: vmbus: use generic driver_override infrastructure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80676.json",
+      "cve": "CVE-2026-80676",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80707: kernel: can: j1939: transport: j1939_session_fresh_new(): initialize receive buffer",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: can: j1939: transport: j1939_session_fresh_new(): initialize receive buffer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80707.json",
+      "cve": "CVE-2026-80707",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80671: kernel: perf sched: Fix register_pid() overflow, strcpy, and BUG_ON",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: perf sched: Fix register_pid() overflow, strcpy, and BUG_ON",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80671.json",
+      "cve": "CVE-2026-80671",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80672: kernel: ntfs: fix u16 truncation of restart-area length check",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ntfs: fix u16 truncation of restart-area length check",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80672.json",
+      "cve": "CVE-2026-80672",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80652: kernel: crypto: ccp - Treat zero-length cert chain as query for blob lengths",
+      "date": "2026-08-28",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: crypto: ccp - Treat zero-length cert chain as query for blob lengths",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80652.json",
+      "cve": "CVE-2026-80652",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80674: kernel: ntfs: validate resident attribute lists and harden the validator",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ntfs: validate resident attribute lists and harden the validator",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80674.json",
+      "cve": "CVE-2026-80674",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80620: kernel: Revert \"PCI/MSI: Unmap MSI-X region on error\"",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Revert \"PCI/MSI: Unmap MSI-X region on error\"",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80620.json",
+      "cve": "CVE-2026-80620",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80662: kernel: cxl: Fix CXL_HEADERLOG_SIZE to match RAS Capability size",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: cxl: Fix CXL_HEADERLOG_SIZE to match RAS Capability size",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80662.json",
+      "cve": "CVE-2026-80662",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80711: kernel: power: supply: max17040: handle missing status supplier",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: power: supply: max17040: handle missing status supplier",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80711.json",
+      "cve": "CVE-2026-80711",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80639: kernel: cxl/test: Fix __fortify_panic",
+      "date": "2026-08-28",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: cxl/test: Fix __fortify_panic",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80639.json",
+      "cve": "CVE-2026-80639",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80604: kernel: HID: core: Fix OOB read in hid_get_report for numbered reports",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: HID: core: Fix OOB read in hid_get_report for numbered reports",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80604.json",
+      "cve": "CVE-2026-80604",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80592: kernel: samples/damon/mtier: fail early if address range parameters are invalid",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: samples/damon/mtier: fail early if address range parameters are invalid",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80592.json",
+      "cve": "CVE-2026-80592",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80636: kernel: netfilter: conntrack: revert ct extension genid infrastructure",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: conntrack: revert ct extension genid infrastructure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80636.json",
+      "cve": "CVE-2026-80636",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80693: kernel: idpf: bound interrupt-vector register fill to the allocated array",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: idpf: bound interrupt-vector register fill to the allocated array",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80693.json",
+      "cve": "CVE-2026-80693",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-80628: kernel: ALSA: seq: oss: Serialize readq reset state with q->lock",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ALSA: seq: oss: Serialize readq reset state with q->lock",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80628.json",
+      "cve": "CVE-2026-80628",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80621: kernel: PCI: dwc: Avoid dwc_pcie_rasdes_debugfs_deinit() NULL dereference when no RAS DES capability",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: PCI: dwc: Avoid dwc_pcie_rasdes_debugfs_deinit() NULL dereference when no RAS DES capability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80621.json",
+      "cve": "CVE-2026-80621",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80633: kernel: iommufd: Take dma_resv lock before dma_buf_unpin() in release path",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: iommufd: Take dma_resv lock before dma_buf_unpin() in release path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80633.json",
+      "cve": "CVE-2026-80633",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-80678: kernel: i2c: imx: Fix slave registration race and error handling",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: i2c: imx: Fix slave registration race and error handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80678.json",
+      "cve": "CVE-2026-80678",
+      "cvss": 5.5
+    },
+    {
       "title": "free5GC AUSF uses non-constant-time authentication comparisons and logs XRES* in 5G-AKA",
       "date": "2026-08-28",
       "severity": "LOW",
@@ -2549,6 +3144,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-38344.json",
       "cve": "CVE-2026-38344",
       "cvss": 5
+    },
+    {
+      "title": "CVE-2026-80489: glibc: Non-progress DoS in EUC_JISX0213 -&gt; UCS-4 conversion state",
+      "date": "2026-08-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "glibc: Non-progress DoS in EUC_JISX0213 -&gt; UCS-4 conversion state",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80489.json",
+      "cve": "CVE-2026-80489",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-81624: undertow-core: undertow: WebSocketContainer defaults for buffers and timeouts are infinite",
+      "date": "2026-08-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "undertow-core: undertow: WebSocketContainer defaults for buffers and timeouts are infinite",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-81624.json",
+      "cve": "CVE-2026-81624",
+      "cvss": 7.5
     },
     {
       "title": "USN-8666-3: Linux kernel (GCP FIPS) vulnerabilities",
@@ -4415,6 +5032,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80560.json",
       "cve": "CVE-2026-80560",
       "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-65642: Plesk: Plesk: Information disclosure and data modification via Insecure Direct Object Reference",
+      "date": "2026-08-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Plesk: Plesk: Information disclosure and data modification via Insecure Direct Object Reference",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-65642.json",
+      "cve": "CVE-2026-65642",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-65646: Plesk: Plesk: Remote Privilege Escalation and File Disclosure Vulnerability",
+      "date": "2026-08-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Plesk: Plesk: Remote Privilege Escalation and File Disclosure Vulnerability",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-65646.json",
+      "cve": "CVE-2026-65646",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-47842: org.springframework.security/spring-security-core: Spring Security: Information disclosure via deterministic AES/CBC enc",
+      "date": "2026-08-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.springframework.security/spring-security-core: Spring Security: Information disclosure via deterministic AES/CBC encryption",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47842.json",
+      "cve": "CVE-2026-47842",
+      "cvss": 6.5
     },
     {
       "title": "USN-8659-4: Linux kernel (Oracle) vulnerability",
@@ -6556,6 +7206,72 @@
       "cvss": 5.3
     },
     {
+      "title": "CVE-2026-72924: github.com/cli/cli: GitHub CLI: Forwarded services exposed on all network interfaces by default",
+      "date": "2026-08-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/cli/cli: GitHub CLI: Forwarded services exposed on all network interfaces by default",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-72924.json",
+      "cve": "CVE-2026-72924",
+      "cvss": 4.6
+    },
+    {
+      "title": "CVE-2026-19913: mwEmbed: html5lib: Kaltura HTML5 Player: Information disclosure via improper validation of ServiceUrl parameter",
+      "date": "2026-08-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mwEmbed: html5lib: Kaltura HTML5 Player: Information disclosure via improper validation of ServiceUrl parameter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-19913.json",
+      "cve": "CVE-2026-19913",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-79781: github.com/rclone/rclone: rclone: Path Traversal allows unauthorized file access",
+      "date": "2026-08-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/rclone/rclone: rclone: Path Traversal allows unauthorized file access",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79781.json",
+      "cve": "CVE-2026-79781",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-79779: github.com/rclone/rclone: rclone: Credential exposure via HTTPS-to-HTTP redirect downgrade.",
+      "date": "2026-08-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/rclone/rclone: rclone: Credential exposure via HTTPS-to-HTTP redirect downgrade.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79779.json",
+      "cve": "CVE-2026-79779",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-79780: github.com/rclone/rclone: rclone: Information disclosure via S3 redirect callbacks",
+      "date": "2026-08-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/rclone/rclone: rclone: Information disclosure via S3 redirect callbacks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79780.json",
+      "cve": "CVE-2026-79780",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-79776: github.com/rclone/rclone: rclone: Authentication bypass leads to backend credential disclosure",
+      "date": "2026-08-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/rclone/rclone: rclone: Authentication bypass leads to backend credential disclosure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79776.json",
+      "cve": "CVE-2026-79776",
+      "cvss": 7.5
+    },
+    {
       "title": "USN-8666-2: Linux kernel (Azure) vulnerabilities",
       "date": "2026-08-25",
       "severity": "LOW",
@@ -6647,6 +7363,439 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-08-31T13:16:50.107Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] debian - 16 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 151 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 300 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[SUCCESS] redhat - 221 patches (61 new)",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 29 patches (5 new)"
+      ],
+      "newPatchCount": 66,
+      "totalPatches": 729,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 12,
+      "vendors": [
+        "ubuntu",
+        "debian",
+        "microsoft",
+        "redhat",
+        "aws",
+        "github",
+        "signal",
+        "edge",
+        "paloalto",
+        "chrome",
+        "cisco",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80725: kernel: net: gro: properly validate BIG TCP aggregation criteria",
+          "date": "2026-08-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80612: kernel: net: lwtunnel: Drop skb metadata before LWT encapsulation",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80673: kernel: ntfs: bound the look-ahead attribute-list entry in ntfs_external_attr_find()",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80661: kernel: ufs: core: tracing: Do not dereference pointers in TP_printk()",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80603: kernel: netfilter: nf_conntrack_irc: fix parse_dcc() off-by-one OOB read",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80677: kernel: driver core: use READ_ONCE() for dev->driver in dev_has_sync_state()",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80718: kernel: mm/percpu-km: fix bitmap overflow and accounting in pcpu_create_chunk()",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80697: kernel: erofs: ensure valid f_path for page cache sharing",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80700: kernel: drm/vmwgfx: validate external BO copy bounds for both stride paths",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80664: kernel: netfilter: xt_nat: reject unsupported target families",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80689: kernel: tracing/mmiotrace: Add NULL check for mmio_trace_array in logging functions",
+          "date": "2026-08-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80694: kernel: net: ethernet: mtk_eth_soc: pass eth to mtk_handle_irq_rx in poll_controller",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80618: kernel: drm/amdkfd: Avoid double-unpin of DOORBELL/MMIO BOs on free",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80599: kernel: batman-adv: dat: ensure accessible eth_hdr proto field",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80629: kernel: octeontx2-af: npc: Fix size of entry2cntr_map",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80667: kernel: net/mlx5: LAG, MPESW, Fix missing complete() on devcom error",
+          "date": "2026-08-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80600: kernel: batman-adv: dat: acquire ARP hw source only after skb realloc",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80598: kernel: ntfs3: fix out-of-bounds read in decompress_lznt",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80610: kernel: net: enetc: fix potential divide-by-zero when num_vsi is zero",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80655: kernel: soc: xilinx: Fix race condition in event registration",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80682: kernel: riscv/mm: use physical alignment for vmemmap_start_pfn",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80648: kernel: pinctrl: spacemit: fix NULL check in spacemit_pin_set_config",
+          "date": "2026-08-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80595: kernel: Input: ims-pcu - add response length checks",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80594: kernel: Input: ims-pcu - fix potential infinite loop in CDC union descriptor parsing",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80654: kernel: soc: xilinx: Shutdown and free rx mailbox channel",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80670: kernel: perf tools: Use perf_env__get_cpu_topology() in machine__resolve()",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80653: kernel: scsi: hisi_sas: Add slave_destroy interface for v3 hw",
+          "date": "2026-08-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80712: kernel: spi: spi-qpic-snand: write the feature value before executing SET_FEATURE",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80619: kernel: apparmor: fix potential UAF in aa_replace_profiles",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80684: kernel: KVM: s390: pci: Fix NULL dereference on AIBV allocation failure",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80597: kernel: mtd: maps: vmu-flash: fix NULL pointer dereference in initialization",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80591: kernel: f2fs: fix listxattr handling of corrupted xattr entries",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80676: kernel: Drivers: hv: vmbus: use generic driver_override infrastructure",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80707: kernel: can: j1939: transport: j1939_session_fresh_new(): initialize receive buffer",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80671: kernel: perf sched: Fix register_pid() overflow, strcpy, and BUG_ON",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80672: kernel: ntfs: fix u16 truncation of restart-area length check",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80652: kernel: crypto: ccp - Treat zero-length cert chain as query for blob lengths",
+          "date": "2026-08-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80674: kernel: ntfs: validate resident attribute lists and harden the validator",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80620: kernel: Revert \"PCI/MSI: Unmap MSI-X region on error\"",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80662: kernel: cxl: Fix CXL_HEADERLOG_SIZE to match RAS Capability size",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80711: kernel: power: supply: max17040: handle missing status supplier",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80639: kernel: cxl/test: Fix __fortify_panic",
+          "date": "2026-08-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80604: kernel: HID: core: Fix OOB read in hid_get_report for numbered reports",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80592: kernel: samples/damon/mtier: fail early if address range parameters are invalid",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80636: kernel: netfilter: conntrack: revert ct extension genid infrastructure",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80693: kernel: idpf: bound interrupt-vector register fill to the allocated array",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80628: kernel: ALSA: seq: oss: Serialize readq reset state with q->lock",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80621: kernel: PCI: dwc: Avoid dwc_pcie_rasdes_debugfs_deinit() NULL dereference when no RAS DES capability",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80633: kernel: iommufd: Take dma_resv lock before dma_buf_unpin() in release path",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80678: kernel: i2c: imx: Fix slave registration race and error handling",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80489: glibc: Non-progress DoS in EUC_JISX0213 -&gt; UCS-4 conversion state",
+          "date": "2026-08-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-81624: undertow-core: undertow: WebSocketContainer defaults for buffers and timeouts are infinite",
+          "date": "2026-08-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-65642: Plesk: Plesk: Information disclosure and data modification via Insecure Direct Object Reference",
+          "date": "2026-08-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-65646: Plesk: Plesk: Remote Privilege Escalation and File Disclosure Vulnerability",
+          "date": "2026-08-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47842: org.springframework.security/spring-security-core: Spring Security: Information disclosure via deterministic AES/CBC enc",
+          "date": "2026-08-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-72924: github.com/cli/cli: GitHub CLI: Forwarded services exposed on all network interfaces by default",
+          "date": "2026-08-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-19913: mwEmbed: html5lib: Kaltura HTML5 Player: Information disclosure via improper validation of ServiceUrl parameter",
+          "date": "2026-08-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-79781: github.com/rclone/rclone: rclone: Path Traversal allows unauthorized file access",
+          "date": "2026-08-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-79779: github.com/rclone/rclone: rclone: Credential exposure via HTTPS-to-HTTP redirect downgrade.",
+          "date": "2026-08-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-79780: github.com/rclone/rclone: rclone: Information disclosure via S3 redirect callbacks",
+          "date": "2026-08-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-79776: github.com/rclone/rclone: rclone: Authentication bypass leads to backend credential disclosure",
+          "date": "2026-08-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8699-1: libssh vulnerabilities",
+          "date": "2026-08-31",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8698-1: FreeRDP vulnerabilities",
+          "date": "2026-08-31",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8697-1: GNU Core Utilities vulnerabilities",
+          "date": "2026-08-31",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8696-1: Bind vulnerability",
+          "date": "2026-08-31",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8689-1: OpenJDK 26 vulnerabilities",
+          "date": "2026-08-31",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-08-31T08:20:05.590Z",
       "logs": [
@@ -13401,40 +14550,6 @@
           "severity": "HIGH"
         }
       ]
-    },
-    {
-      "timestamp": "2026-08-25T12:51:54.537Z",
-      "logs": [
-        "[INFO] aws - 87 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 10 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 108 patches, no changes",
-        "[INFO] microsoft - 396 patches, no changes",
-        "[INFO] mssql - 7 patches, no changes",
-        "[INFO] redhat - 132 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 789,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 11,
-      "vendors": [
-        "debian",
-        "edge",
-        "github",
-        "microsoft",
-        "mssql",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "cisco",
-        "signal",
-        "chrome"
-      ],
-      "newPatches": []
     }
   ]
 }
