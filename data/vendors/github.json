@@ -1,16 +1,93 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-08-31T13:15:02.944Z",
+  "lastUpdated": "2026-08-31T22:41:31.817Z",
   "health": {
-    "lastFetchAttempt": "2026-08-31T13:15:02.944Z",
+    "lastFetchAttempt": "2026-08-31T22:41:31.817Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-31T13:15:02.944Z",
+    "lastFetchNewPatches": 7,
+    "lastSuccessWithData": "2026-08-31T22:41:31.817Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Kirby: File upload permissions are not checked during processing of chunk data",
+      "date": "2026-08-31",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "getkirby/cms",
+      "description": "Kirby: File upload permissions are not checked during processing of chunk data",
+      "link": "https://github.com/advisories/GHSA-67mx-6wf2-92xp",
+      "cve": "CVE-2026-71415",
+      "cvss": null
+    },
+    {
+      "title": "Kirby: Access to image files and limited access to JSON files outside of the site root via path traversal in the media handling",
+      "date": "2026-08-31",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "getkirby/cms, getkirby/cms",
+      "description": "Kirby: Access to image files and limited access to JSON files outside of the site root via path traversal in the media handling",
+      "link": "https://github.com/advisories/GHSA-9vx2-j98c-p72w",
+      "cve": "CVE-2026-75594",
+      "cvss": null
+    },
+    {
+      "title": "decode-uri-component: Denial of service via exponential decoding of malformed percent-encoded input",
+      "date": "2026-08-31",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "decode-uri-component",
+      "description": "decode-uri-component: Denial of service via exponential decoding of malformed percent-encoded input",
+      "link": "https://github.com/advisories/GHSA-vcc3-ghjq-m6fr",
+      "cve": "CVE-2026-45822",
+      "cvss": null
+    },
+    {
+      "title": "Socket.IO: Engine.IO WebTransport SID DoS",
+      "date": "2026-08-31",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "engine.io",
+      "description": "Socket.IO: Engine.IO WebTransport SID DoS",
+      "link": "https://github.com/advisories/GHSA-gr94-w7qr-f4j3",
+      "cve": "CVE-2026-59724",
+      "cvss": 7.5
+    },
+    {
+      "title": "@hono/oauth-providers: OAuth state check fails open on omitted state, enabling login CSRF and forced account linking",
+      "date": "2026-08-31",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@hono/oauth-providers",
+      "description": "@hono/oauth-providers: OAuth state check fails open on omitted state, enabling login CSRF and forced account linking",
+      "link": "https://github.com/advisories/GHSA-fm3f-ch8h-qw8q",
+      "cve": "CVE-2026-81888",
+      "cvss": 5.4
+    },
+    {
+      "title": "elFinder: SSRF protection bypass via DNS rebinding in the `fsock_get_contents()` fallback",
+      "date": "2026-08-31",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "studio-42/elfinder",
+      "description": "elFinder: SSRF protection bypass via DNS rebinding in the `fsock_get_contents()` fallback",
+      "link": "https://github.com/advisories/GHSA-8x3q-jpjh-qh5c",
+      "cve": "CVE-2026-81889",
+      "cvss": 8.6
+    },
+    {
+      "title": "TYPO3 CMS - Unrestricted File Upload in Form Framework",
+      "date": "2026-08-31",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "typo3/cms-form",
+      "description": "TYPO3 CMS - Unrestricted File Upload in Form Framework",
+      "link": "https://github.com/advisories/GHSA-mfqj-cqv3-h7xw",
+      "cve": "CVE-2026-15305",
+      "cvss": null
+    },
     {
       "title": "arc has unauthenticated cluster node admission when `cluster.shared_secret` is unset",
       "date": "2026-08-28",
