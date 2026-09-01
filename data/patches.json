@@ -1,7 +1,16 @@
 {
-  "lastUpdated": "2026-09-01T11:20:06.256Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-01T11:27:22.868Z",
+  "newPatches": 2,
   "patches": [
+    {
+      "title": "USN-8690-1: Pillow vulnerability",
+      "date": "2026-09-01",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Pillow",
+      "description": "It was discovered that Pillow did not properly manage memory when\nprocessing certain image files. An attacker could possibly use this  issue\nto cause a denial of service or read sensitive data....",
+      "link": "https://ubuntu.com/security/notices/USN-8690-1"
+    },
     {
       "title": "CVE-2026-83497 - OpenSearch SQL Plugin - Unrestricted Java Deserialization in Cursor Pagination",
       "date": "2026-08-31",
@@ -664,6 +673,15 @@
       "component": "OpenZFS",
       "description": "USN-8705-1 fixed vulnerabilities in OpenZFS. This update provides the\ncorresponding fix for OpenZFS on Ubuntu 18.04 LTS and Ubuntu 20.04 LTS.\n\nOriginal advisory details:\n\nIt was discovered that OpenZF...",
       "link": "https://ubuntu.com/security/notices/USN-8705-2"
+    },
+    {
+      "title": "USN-8706-1: zlib vulnerability",
+      "date": "2026-08-31",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "zlib",
+      "description": "It was discovered that zlib incorrectly handled negative length parameters\nin CRC32 combine functions. An attacker could use this issue to cause a denial\nof service via excessive CPU consumption....",
+      "link": "https://ubuntu.com/security/notices/USN-8706-1"
     },
     {
       "title": "DSA-6479-1 roundcube - security update",
@@ -5722,6 +5740,55 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-01T11:27:22.867Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 1 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] debian - 13 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 104 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 250 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] redhat - 166 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 29 patches (2 new)"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 572,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 12,
+      "vendors": [
+        "ubuntu",
+        "aws",
+        "edge",
+        "github",
+        "microsoft",
+        "debian",
+        "redhat",
+        "signal",
+        "paloalto",
+        "chrome",
+        "cisco",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8690-1: Pillow vulnerability",
+          "date": "2026-09-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8706-1: zlib vulnerability",
+          "date": "2026-08-31",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-01T11:20:06.256Z",
       "logs": [
@@ -11533,40 +11600,6 @@
       ],
       "newPatchCount": 0,
       "totalPatches": 934,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 11,
-      "vendors": [
-        "chrome",
-        "debian",
-        "github",
-        "microsoft",
-        "redhat",
-        "edge",
-        "mssql",
-        "ubuntu",
-        "aws",
-        "cisco",
-        "signal"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-25T22:30:03.385Z",
-      "logs": [
-        "[INFO] aws - 87 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 10 patches, no changes",
-        "[INFO] debian - 14 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 158 patches, no changes",
-        "[INFO] microsoft - 496 patches, no changes",
-        "[INFO] mssql - 7 patches, no changes",
-        "[INFO] redhat - 269 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1079,
       "vendorsScanned": 56,
       "vendorsWithPatches": 11,
       "vendors": [

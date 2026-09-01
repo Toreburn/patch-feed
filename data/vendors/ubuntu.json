@@ -1,16 +1,25 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-09-01T04:31:27.776Z",
+  "lastUpdated": "2026-09-01T11:26:24.298Z",
   "health": {
-    "lastFetchAttempt": "2026-09-01T04:31:27.776Z",
+    "lastFetchAttempt": "2026-09-01T11:26:24.298Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-09-01T04:31:27.776Z",
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-09-01T11:26:24.298Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "USN-8690-1: Pillow vulnerability",
+      "date": "2026-09-01",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Pillow",
+      "description": "It was discovered that Pillow did not properly manage memory when\nprocessing certain image files. An attacker could possibly use this  issue\nto cause a denial of service or read sensitive data....",
+      "link": "https://ubuntu.com/security/notices/USN-8690-1"
+    },
     {
       "title": "USN-8699-1: libssh vulnerabilities",
       "date": "2026-08-31",
@@ -127,6 +136,15 @@
       "component": "OpenZFS",
       "description": "USN-8705-1 fixed vulnerabilities in OpenZFS. This update provides the\ncorresponding fix for OpenZFS on Ubuntu 18.04 LTS and Ubuntu 20.04 LTS.\n\nOriginal advisory details:\n\nIt was discovered that OpenZF...",
       "link": "https://ubuntu.com/security/notices/USN-8705-2"
+    },
+    {
+      "title": "USN-8706-1: zlib vulnerability",
+      "date": "2026-08-31",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "zlib",
+      "description": "It was discovered that zlib incorrectly handled negative length parameters\nin CRC32 combine functions. An attacker could use this issue to cause a denial\nof service via excessive CPU consumption....",
+      "link": "https://ubuntu.com/security/notices/USN-8706-1"
     },
     {
       "title": "USN-8666-3: Linux kernel (GCP FIPS) vulnerabilities",
