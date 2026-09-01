@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-01T04:15:09.275Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-01T04:32:34.136Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "CVE-2026-83497 - OpenSearch SQL Plugin - Unrestricted Java Deserialization in Cursor Pagination",
@@ -655,6 +655,15 @@
       "component": "MySQL vulnerabilities",
       "description": "Multiple security issues were discovered in MySQL.\n\nMySQL has been updated to 8.4.11 in Ubuntu 26.04 LTS. Ubuntu 22.04 LTS and\nUbuntu 24.04 LTS packages have been updated with backported patches.\n\nIn ...",
       "link": "https://ubuntu.com/security/notices/USN-8700-1"
+    },
+    {
+      "title": "USN-8705-2: OpenZFS vulnerability",
+      "date": "2026-08-31",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OpenZFS",
+      "description": "USN-8705-1 fixed vulnerabilities in OpenZFS. This update provides the\ncorresponding fix for OpenZFS on Ubuntu 18.04 LTS and Ubuntu 20.04 LTS.\n\nOriginal advisory details:\n\nIt was discovered that OpenZF...",
+      "link": "https://ubuntu.com/security/notices/USN-8705-2"
     },
     {
       "title": "DSA-6479-1 roundcube - security update",
@@ -5713,6 +5722,49 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-01T04:32:34.136Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 1 patches, no changes",
+        "[INFO] cisco - 1 patches, no changes",
+        "[INFO] debian - 13 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 104 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 250 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] redhat - 166 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 27 patches (1 new)"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 570,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 12,
+      "vendors": [
+        "aws",
+        "edge",
+        "github",
+        "microsoft",
+        "ubuntu",
+        "debian",
+        "redhat",
+        "signal",
+        "paloalto",
+        "chrome",
+        "cisco",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8705-2: OpenZFS vulnerability",
+          "date": "2026-08-31",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-01T04:15:09.275Z",
       "logs": [
@@ -11529,653 +11581,6 @@
         "signal"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-25T18:47:46.053Z",
-      "logs": [
-        "[INFO] aws - 87 patches, no changes",
-        "[SUCCESS] chrome - 5 patches (2 new)",
-        "[INFO] cisco - 10 patches, no changes",
-        "[INFO] debian - 14 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 158 patches (50 new)",
-        "[SUCCESS] microsoft - 496 patches (50 new)",
-        "[INFO] mssql - 7 patches, no changes",
-        "[INFO] redhat - 269 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 102,
-      "totalPatches": 1079,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 11,
-      "vendors": [
-        "chrome",
-        "debian",
-        "github",
-        "microsoft",
-        "redhat",
-        "edge",
-        "mssql",
-        "ubuntu",
-        "aws",
-        "cisco",
-        "signal"
-      ],
-      "newPatches": [
-        {
-          "vendor": "chrome",
-          "title": "Stable Channel Update for Desktop",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Chrome Stable for iOS Update",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "github",
-          "title": "@arikusi/deepseek-mcp-server: Missing Authentication on Self-Hosted HTTP MCP Endpoint",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "@arikusi/deepseek-mcp-server has an Authorization Bypass Through User-Controlled Key",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "consciousness-explorer / sublinear-time-solver MCP export_state has an arbitrary file write",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Whistle vulnerable to path traversal",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "eml_parser vulnerable to DoS via deeply nested parens in Received headers",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "eml_parser has parser DoS via deeply nested parentheses in e-mail headers",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "eml_parser has a URL extraction bypass via HTML entities in URLs",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "AshAuthentication vulnerable to OAuth2/OIDC account takeover via email-based user matching",
-          "date": "2026-08-25",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "mediasoup: SCTP state cookie lacks cryptographic authentication, enabling unauthorized association establishment (RFC 9260 violation)",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "gRPC Erlang package has unbounded gzip decompression (decompression bomb)",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "gRPC Erlang package has unbounded request body accumulation in `read_full_body/3`",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "gRPC Erlang package's path bindings are overridable by query string and request body",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "gRPC Erlang package vulnerable to Remote Code Execution with attacker-controlled gRPC payloads",
-          "date": "2026-08-25",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "genieacs-mcp: DNS rebinding reaches local GenieACS MCP Streamable HTTP transport",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "mcp-contextforge-gateway has Server-Side Template Injection (SSTI) leading to Remote Code Execution in `PromptService._render_template` via unsandboxed Jinja2 Environment",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "reachy_mini Allows Unrestricted Upload of File with Dangerous Type",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Trivy has a path traversal via a crafted vulnerability database or other downloaded artifacts",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "phpMyFAQ privilege escalation: GroupController::updatePermissions lets a GROUP_EDIT admin grant rights they do not hold",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "phpMyFAQ public FAQ APIs expose inactive FAQ content",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "phpMyFAQ has Potential Authenticated Path Traversal in PDF Export",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Plate: Media embed provider metadata can bypass URL sanitization and execute iframe JavaScript",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "browse-mcp has an arbitrary file write via unconfined download and state paths",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "qwed Vulnerable to Authenticated Remote Code Execution via Unsafe SymPy `parse_expr()`",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "urllib's cross-origin redirects preserve credential-bearing request headers, leading to potential credential leakage",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Echo: Encoded slash (%2F) bypasses route-level protection and exposes static files",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "djust authentication bypass: a login_required / on_mount LiveView mount redirect does not close the WebSocket, allowing an unauthenticated client to dispatch event-handler calls",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "nextcloud-mcp-server: Unauthenticated `POST /webhooks/nextcloud` allows arbitrary vector data deletion when `WEBHOOK_SECRET` is unset ( default )",
-          "date": "2026-08-25",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "pickem vulnerable to terminal escape-sequence injection via unsanitized item text",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "utcp-http has an OAuth2 `tokenUrl` Trust Boundary Bypass in OpenAPI Conversion",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "utcp-gql SSRF: CVE-2026-44661 fix not applied to the GraphQL and WebSocket plugins",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "utcp-http SSRF: HTTP tool invocation follows redirects without re-validating the target",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "mcp-shell — Security Disabled by Default in Bare-Binary Deploy Path + Shell Interpreter in Secure-Mode Allowlist",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "mcp-shell has a Secure Mode Allowlist Bypass via Default `/bin/bash` Executable",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "mcp-shell has a Secure Mode Allowlist Bypass via Git Shell Alias",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "qwed-mcp has Unsafe SymPy `parse_expr()` Remote Code Execution via Unsanitized Math Expression Input",
-          "date": "2026-08-25",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI has a Browser Server WebSocket origin validation bypass via unanchored regex (patch bypass of CVE-2026-40289 / GHSA-8x8f-54wf-vv92)",
-          "date": "2026-08-25",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI: Origin-validation bypass (startswith prefix match) enables unauthenticated cross-site request forgery against the PraisonAI MCP HTTP server",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI: Authentication fail-open in Recipe server allows unauthenticated access when API key or JWT auth is configured without a secret",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI: [Auth Bypass] PraisonAI async Jobs API (`/api/v1/runs`) has no authentication — unauthenticated job execution, result theft, cancel and delete",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonaiagents vulnerable to arbitrary file write via unsanitized `user_id` in `FileMemory.__init__()` — path traversal to any writable location",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI: `--api-key` flag on `praisonai serve` is not properly enforced",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI vulnerable to Server-Side Request Forgery via DNS rebinding bypass in webhook_url validation",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI: Webhook SSRF via DNS fail-open in `JobSubmitRequest.validate_webhook_url()` — bypass of CVE-2026-40114",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI: [Auth Bypass] `praisonai serve agents --api-key` is silently ignored — agent-invocation routes (`POST /agents`, `POST /agents/{agent_name}`) run unauthenticated",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI: [Path Traversal] agent tools escape the configured workspace via symlinks",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonaiagents: ast_grep_rewrite rewrites arbitrary files without the @require_approval gate enforced on every sibling mutation tool",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonaiagents vulnerable to SSRF in web_crawl tool via redirect-following and DNS rebinding (validate-then-fetch gap)",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI serve agents --api-key is ignored, allowing unauthenticated remote agent execution",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "praisonaiagents has an SSRF protection bypass in `spider_tools._host_is_blocked()` via DNS-resolved hostnames (`127.0.0.1.nip.io`)",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI MCP HTTP server has unauthenticated unbounded session accumulation (memory exhaustion; session TTL never enforced)",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19137: CVE-2026-19137 Use after free in WebGL",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19138: CVE-2026-19138 Heap buffer overflow in CrashReporting",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19139: CVE-2026-19139 Race in CredentialProvider",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19140: CVE-2026-19140 Use after free in GPU",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19142: CVE-2026-19142 Use after free in Views",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19144: CVE-2026-19144 Use after free in HTML",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19145: CVE-2026-19145 Use after free in Translate",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19146: CVE-2026-19146 Uninitialized Use in GPU",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19147: CVE-2026-19147 Use after free in Aura",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19148: CVE-2026-19148 Out of bounds write in GPU",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19149: CVE-2026-19149 Use after free in Aura",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19150: CVE-2026-19150 Inappropriate implementation in V8",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19151: CVE-2026-19151 Use after free in V8",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19152: CVE-2026-19152 Inappropriate implementation in Navigation",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19153: CVE-2026-19153 Insufficient validation of untrusted input in Workers",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19155: CVE-2026-19155 Use after free in Payments",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19156: CVE-2026-19156 Heap buffer overflow in Base",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19157: CVE-2026-19157 Out of bounds write in ANGLE",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19158: CVE-2026-19158 Use after free in Views",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19159: CVE-2026-19159 Use after free in Views",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19160: CVE-2026-19160 Uninitialized Use in Skia",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19161: CVE-2026-19161 Uninitialized Use in Skia",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19162: CVE-2026-19162 Out of bounds write in V8",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19163: CVE-2026-19163 Use after free in Media",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19164: CVE-2026-19164 Insufficient validation of untrusted input in Codecs",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19165: CVE-2026-19165 Use after free in Extensions",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19166: CVE-2026-19166 Use after free in Web Authentication",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19167: CVE-2026-19167 Integer overflow in GPU",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19168: CVE-2026-19168 Inappropriate implementation in V8",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19169: CVE-2026-19169 Insufficient validation of untrusted input in Contextual Tasks",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19170: CVE-2026-19170 Use after free in WebGL",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19171: CVE-2026-19171 Use after free in Media",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19172: CVE-2026-19172 Use after free in Views",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19173: CVE-2026-19173 Out of bounds write in Skia",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19174: CVE-2026-19174 Integer overflow in V8",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19175: CVE-2026-19175 Use after free in Payments",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19176: CVE-2026-19176 Use after free in Skia",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19177: CVE-2026-19177 Insufficient validation of untrusted input in UI",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19556: Chromium: CVE-2026-19556 Use after free in V8",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19557: Chromium: CVE-2026-19557 Use after free in TabStrip",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19558: Chromium: CVE-2026-19558 Use after free in Extensions",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19559: Chromium: CVE-2026-19559 Use after free in HTML",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19560: Chromium: CVE-2026-19560 Use after free in Blink",
-          "date": "2026-08-25",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-24301: Microsoft Copilot Information Disclosure Vulnerability",
-          "date": "2026-08-25",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-40375: Microsoft Dynamics Business Central Information Disclosure Vulnerability",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-42976: Remote Access Management service/API (RPC server) Elevation of Privilege Vulnerability",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-47285: Visual Studio Code Information Disclosure Vulnerability",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-47299: Azure Monitor Agent Elevation of Privilege Vulnerability",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49163: Application Insights Profiler Elevation of Privilege Vulnerability",
-          "date": "2026-08-25",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-49179: Windows Active Directory Domain Services Remote Code Execution Vulnerability",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
