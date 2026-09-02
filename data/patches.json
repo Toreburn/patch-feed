@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T11:01:20.049Z",
+  "lastUpdated": "2026-09-02T14:10:47.193Z",
   "newPatches": 0,
   "patches": [
     {
@@ -6346,6 +6346,40 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-02T14:10:47.192Z",
+      "logs": [
+        "[INFO] aws - 4 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 12 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 115 patches, no changes",
+        "[INFO] microsoft - 200 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] redhat - 247 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 32 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 619,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 11,
+      "vendors": [
+        "aws",
+        "chrome",
+        "crowdstrike",
+        "debian",
+        "edge",
+        "github",
+        "redhat",
+        "ubuntu",
+        "microsoft",
+        "signal",
+        "paloalto"
+      ],
+      "newPatches": []
+    },
     {
       "timestamp": "2026-09-02T11:01:20.049Z",
       "logs": [
@@ -13311,145 +13345,6 @@
         "signal"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-26T13:03:34.614Z",
-      "logs": [
-        "[INFO] aws - 88 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] debian - 14 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 136 patches, no changes",
-        "[SUCCESS] gitlab - 1 patches (1 new)",
-        "[INFO] microsoft - 446 patches, no changes",
-        "[INFO] mssql - 7 patches, no changes",
-        "[SUCCESS] redhat - 260 patches (14 new)",
-        "[INFO] signal - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 34 patches (2 new)"
-      ],
-      "newPatchCount": 17,
-      "totalPatches": 995,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "gitlab",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "debian",
-        "edge",
-        "github",
-        "microsoft",
-        "mssql",
-        "cisco",
-        "signal"
-      ],
-      "newPatches": [
-        {
-          "vendor": "gitlab",
-          "title": "GitLab Patch Release: 19.3.1, 19.2.5, 19.1.7",
-          "date": "2026-08-26",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-79654: ketello: Katello Content View History API Cross-Organization Authorization Bypass",
-          "date": "2026-08-26",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80182: keystone: keystone: Delegated token scope restrictions not consistently enforced across trust, OAuth1, and application c",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80184: keystone: keystone: Application credential tokens can escape project scope via token-method reauthentication",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-63125: incus: Incus vulnerable to root RCE via image backup.yaml symlink",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-62941: incus: Incus: Cross-project instance copy bypasses target project restrictions via TOCTOU in config merge",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-62940: incus: Incus has a project restriction bypass via instance migration config override",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-62867: incus: Incus has an argument injection in storage volume block.create_options that leads to arbitrary command execution",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48769: incus: Incus has an arbitrary file write on its client due to trusted image hash",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48755: incus: Incus has an argument injection in backup compression algorithm leading to AFW and ACE",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48753: incus: Incus has an arbitrary file write via path traversal in S3 multipart upload",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48752: incus: Incus has arbitrary file read+write on host via templates/ symlink in malicious image",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48751: incus: Incus has a restricted project bypass leading to arbitrary command execution",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48750: incus: Incus has an arbitrary file write on host via `exec-output` symlink in crafted image",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-48749: incus: Incus has an arbitrary file read+write on host via rootfs/ symlink in malicious image",
-          "date": "2026-08-21",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8681-1: OpenJDK 25 vulnerabilities",
-          "date": "2026-08-26",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8678-2: OpenSSL, OpenSSL 1.0 vulnerabilities",
-          "date": "2026-08-25",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
