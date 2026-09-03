@@ -1,7 +1,51 @@
 {
-  "lastUpdated": "2026-09-03T14:14:08.064Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-03T16:12:38.083Z",
+  "newPatches": 47,
   "patches": [
+    {
+      "title": "SiYuan: path traversal via /export/temp/ short-circuit branch (incomplete fix for the export-disclosure hardening, GHSA-6865-qjcf-286f)",
+      "date": "2026-09-03",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: path traversal via /export/temp/ short-circuit branch (incomplete fix for the export-disclosure hardening, GHSA-6865-qjcf-286f)",
+      "link": "https://github.com/advisories/GHSA-gw25-m53r-qh88",
+      "cve": "",
+      "cvss": 6.5
+    },
+    {
+      "title": "SiYuan: Stored and reflected XSS in SiYuan through an SVG sanitizer bypass",
+      "date": "2026-09-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Stored and reflected XSS in SiYuan through an SVG sanitizer bypass",
+      "link": "https://github.com/advisories/GHSA-99rq-75j6-5j9f",
+      "cve": "",
+      "cvss": 8.7
+    },
+    {
+      "title": "CKAN MCP Server: Cache-key canonicalization collision enables cache confusion / poisoning",
+      "date": "2026-09-03",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@aborruso/ckan-mcp-server",
+      "description": "CKAN MCP Server: Cache-key canonicalization collision enables cache confusion / poisoning",
+      "link": "https://github.com/advisories/GHSA-78x9-fhhx-v2g6",
+      "cve": "CVE-2026-73846",
+      "cvss": 6.5
+    },
+    {
+      "title": "CKAN MCP Server: Information disclosure via verbose error reflection",
+      "date": "2026-09-03",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "@aborruso/ckan-mcp-server",
+      "description": "CKAN MCP Server: Information disclosure via verbose error reflection",
+      "link": "https://github.com/advisories/GHSA-6f9w-9hf2-5rg3",
+      "cve": "CVE-2026-73844",
+      "cvss": 3.7
+    },
     {
       "title": "CVE-2026-14957: FIPS mode assertion failure via malicious CERT payload",
       "date": "2026-09-03",
@@ -172,6 +216,111 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-78607",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-78607"
+    },
+    {
+      "title": "CVE-2026-85150: gstreamer1-plugins-base: gstreamer: NULL/invalid-pointer dereference in gst_rtsp_message_parse_auth_credentials() when p",
+      "date": "2026-09-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gstreamer1-plugins-base: gstreamer: NULL/invalid-pointer dereference in gst_rtsp_message_parse_auth_credentials() when parsing a crafted Digest Authorization/WWW-Authenticate header",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85150.json",
+      "cve": "CVE-2026-85150",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-85089: FreeRDP: freerdp-proxy: FreeRDP: Information disclosure via uninitialized heap memory in Save Session Info PDU",
+      "date": "2026-09-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FreeRDP: freerdp-proxy: FreeRDP: Information disclosure via uninitialized heap memory in Save Session Info PDU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85089.json",
+      "cve": "CVE-2026-85089",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-85090: FreeRDP: FreeRDP: Heap Out-of-Bounds Read in AVC444 Chroma Combine",
+      "date": "2026-09-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "FreeRDP: FreeRDP: Heap Out-of-Bounds Read in AVC444 Chroma Combine",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85090.json",
+      "cve": "CVE-2026-85090",
+      "cvss": 5.4
+    },
+    {
+      "title": "USN-8720-1: GnuPG vulnerability",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GnuPG",
+      "description": "It was discovered that GnuPG incorrectly validated authentication tag\nlengths when parsing CMS messages encrypted with AES-GCM. An attacker could\npossibly use this issue to bypass message integrity ch...",
+      "link": "https://ubuntu.com/security/notices/USN-8720-1"
+    },
+    {
+      "title": "USN-8723-1: SPICE vdagent vulnerabilities",
+      "date": "2026-09-03",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "SPICE vdagent vulnerabilities",
+      "description": "It was discovered that SPICE vdagent had an integer overflow in the buffer\nsize calculation used when writing to the daemon socket. A malicious or\ncompromised SPICE host could possibly use this issue ...",
+      "link": "https://ubuntu.com/security/notices/USN-8723-1"
+    },
+    {
+      "title": "USN-8722-1: libssh2 vulnerabilities",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libssh2 vulnerabilities",
+      "description": "It was discovered that libssh2 incorrectly handled certain SFTP server\nresponses. A remote attacker controlling an SSH server could use this issue\nto cause libssh2 to crash or possibly execute arbitra...",
+      "link": "https://ubuntu.com/security/notices/USN-8722-1"
+    },
+    {
+      "title": "USN-8719-1: APR-util vulnerabilities",
+      "date": "2026-09-03",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "APR-util vulnerabilities",
+      "description": "It was discovered that APR-util incorrectly performed password hash\ncomparisons in a way that was not constant-time.\nAn attacker could possibly use this issue to obtain sensitive information.\n(CVE-202...",
+      "link": "https://ubuntu.com/security/notices/USN-8719-1"
+    },
+    {
+      "title": "USN-8721-1: OpenSSH vulnerabilities",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OpenSSH vulnerabilities",
+      "description": "It was discovered that OpenSSH's ssh-agent incorrectly handled interactions\nbetween agent locking and the session-bind@openssh.com extension. A remote\nattacker with access to a forwarded agent connect...",
+      "link": "https://ubuntu.com/security/notices/USN-8721-1"
+    },
+    {
+      "title": "USN-8718-1: SSSD vulnerability",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "SSSD",
+      "description": "It was discovered that SSSD did not properly validate authentication token\nlengths when processing PAM responder requests. A local attacker could\npossibly use this issue to cause SSSD to crash, result...",
+      "link": "https://ubuntu.com/security/notices/USN-8718-1"
+    },
+    {
+      "title": "USN-8716-1: FFmpeg vulnerabilities",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "FFmpeg vulnerabilities",
+      "description": "It was discovered that FFmpeg incorrectly handled certain crafted media\nfiles in the VobSub subtitle demuxer. An attacker could possibly use\nthis issue to cause a denial of service or execute arbitrar...",
+      "link": "https://ubuntu.com/security/notices/USN-8716-1"
+    },
+    {
+      "title": "USN-8717-1: Apache Tika vulnerability",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Apache Tika",
+      "description": "It was discovered that Apache Tika's ISA-Tab parser incorrectly handled\nfile path resolution. An attacker who could place files in a directory that\nTika subsequently parses could use this issue to rea...",
+      "link": "https://ubuntu.com/security/notices/USN-8717-1"
     },
     {
       "title": "CVE-2026-84851- Uncontrolled recursion in the Ion reader in Amazon Ion-C before 1.1.6",
@@ -988,6 +1137,193 @@
       "link": "https://github.com/advisories/GHSA-cpjf-6666-r8fx",
       "cve": "CVE-2026-61704",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-84394: fast-uri: fast-uri: Host confusion via unbalanced URI brackets can bypass security policies",
+      "date": "2026-09-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fast-uri: fast-uri: Host confusion via unbalanced URI brackets can bypass security policies",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84394.json",
+      "cve": "CVE-2026-84394",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-84292: fast-uri: fast-uri: Authority Injection via Unvalidated Port Serialization",
+      "date": "2026-09-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fast-uri: fast-uri: Authority Injection via Unvalidated Port Serialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84292.json",
+      "cve": "CVE-2026-84292",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-84382: httpx2: HTTPX2: Denial of Service via streaming response decompression memory amplification",
+      "date": "2026-09-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpx2: HTTPX2: Denial of Service via streaming response decompression memory amplification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84382.json",
+      "cve": "CVE-2026-84382",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-84381: httpx2: httpcore2: HTTPX2: WebSocket traffic sent in plaintext via SOCKS5 proxy due to TLS failure",
+      "date": "2026-09-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpx2: httpcore2: HTTPX2: WebSocket traffic sent in plaintext via SOCKS5 proxy due to TLS failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84381.json",
+      "cve": "CVE-2026-84381",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-84380: httpx2: HTTPX2: Request Smuggling and Connection Desynchronization via Conflicting HTTP Headers",
+      "date": "2026-09-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpx2: HTTPX2: Request Smuggling and Connection Desynchronization via Conflicting HTTP Headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84380.json",
+      "cve": "CVE-2026-84380",
+      "cvss": 5.6
+    },
+    {
+      "title": "CVE-2026-84379: httpx2: HTTPX2: Multipart header injection via unvalidated input",
+      "date": "2026-09-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpx2: HTTPX2: Multipart header injection via unvalidated input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84379.json",
+      "cve": "CVE-2026-84379",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-84378: httpx2: HTTPX2: Denial of Service via crafted Server-Sent Events stream",
+      "date": "2026-09-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpx2: HTTPX2: Denial of Service via crafted Server-Sent Events stream",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84378.json",
+      "cve": "CVE-2026-84378",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-84377: litellm: LiteLLM: Authenticated Server-Side Request Forgery and credential exposure",
+      "date": "2026-09-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "litellm: LiteLLM: Authenticated Server-Side Request Forgery and credential exposure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84377.json",
+      "cve": "CVE-2026-84377",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-53600: async-tar: async-tar: Tar entry/content smuggling via PAX extension-header desynchronization",
+      "date": "2026-09-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "async-tar: async-tar: Tar entry/content smuggling via PAX extension-header desynchronization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53600.json",
+      "cve": "CVE-2026-53600",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-84837: rpm: Command Injection in `rpmbuild -t*` (`getTarSpec`) via Unescaped Tarball Path",
+      "date": "2026-09-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rpm: Command Injection in `rpmbuild -t*` (`getTarSpec`) via Unescaped Tarball Path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84837.json",
+      "cve": "CVE-2026-84837",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-84838: rpm: Command injection in rpmuncompress via unescaped filenames passed to popen()",
+      "date": "2026-09-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rpm: Command injection in rpmuncompress via unescaped filenames passed to popen()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84838.json",
+      "cve": "CVE-2026-84838",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-76594: advisor-backend: advisor-backend: Unauthenticated /private/import_content/ endpoint allows global rule-catalogue overwri",
+      "date": "2026-09-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "advisor-backend: advisor-backend: Unauthenticated /private/import_content/ endpoint allows global rule-catalogue overwrite",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-76594.json",
+      "cve": "CVE-2026-76594",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-76595: advisor-backend: Unsafe YAML deserialization of associate-editable Task playbook (yaml.Loader)",
+      "date": "2026-09-02",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "advisor-backend: Unsafe YAML deserialization of associate-editable Task playbook (yaml.Loader)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-76595.json",
+      "cve": "CVE-2026-76595",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-76642: util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
+      "date": "2026-09-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-76642.json",
+      "cve": "CVE-2026-76642",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-78408: util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
+      "date": "2026-09-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-78408.json",
+      "cve": "CVE-2026-78408",
+      "cvss": 7.9
+    },
+    {
+      "title": "CVE-2026-78409: util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
+      "date": "2026-09-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-78409.json",
+      "cve": "CVE-2026-78409",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-78410: util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
+      "date": "2026-09-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-78410.json",
+      "cve": "CVE-2026-78410",
+      "cvss": 7.8
     },
     {
       "title": "USN-8713-1: BioSig vulnerabilities",
@@ -1849,6 +2185,116 @@
       "description": "eldap: eldap: Denial of Service via long LDAP referral URL port",
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-70409.json",
       "cve": "CVE-2026-70409",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-84359: chromium-browser: skia: chromium-browser: Information leak in Skia",
+      "date": "2026-09-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: skia: chromium-browser: Information leak in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84359.json",
+      "cve": "CVE-2026-84359",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-84371: sanitize-html: stored XSS via SVG SMIL URI-list scheme-policy bypass",
+      "date": "2026-09-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sanitize-html: stored XSS via SVG SMIL URI-list scheme-policy bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84371.json",
+      "cve": "CVE-2026-84371",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-84368: joi: @hapi/joi: joi: Prototype pollution via untrusted input in schema configuration",
+      "date": "2026-09-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "joi: @hapi/joi: joi: Prototype pollution via untrusted input in schema configuration",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84368.json",
+      "cve": "CVE-2026-84368",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-84309: pypdf: pypdf: Denial of Service via crafted PDF with cyclic tree structure",
+      "date": "2026-09-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted PDF with cyclic tree structure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84309.json",
+      "cve": "CVE-2026-84309",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-69664: otp: inets: Erlang/OTP inets httpd: Denial of Service via malformed chunked HTTP request",
+      "date": "2026-09-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "otp: inets: Erlang/OTP inets httpd: Denial of Service via malformed chunked HTTP request",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-69664.json",
+      "cve": "CVE-2026-69664",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-83619: @xmldom/xmldom: xmldom: Denial of Service via crafted XML input",
+      "date": "2026-09-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@xmldom/xmldom: xmldom: Denial of Service via crafted XML input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-83619.json",
+      "cve": "CVE-2026-83619",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-74994: inets: otp: inets httpd mod_auth: Authentication Bypass via Directory Namespace Collapse",
+      "date": "2026-09-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "inets: otp: inets httpd mod_auth: Authentication Bypass via Directory Namespace Collapse",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-74994.json",
+      "cve": "CVE-2026-74994",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-74835: inets: httpd: otp: inets httpd: Denial of Service due to memory exhaustion via unenforced body-size limit",
+      "date": "2026-09-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "inets: httpd: otp: inets httpd: Denial of Service due to memory exhaustion via unenforced body-size limit",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-74835.json",
+      "cve": "CVE-2026-74835",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-73812: OTP: inets: inets: HTTP Request Smuggling allows bypassing security controls",
+      "date": "2026-09-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "OTP: inets: inets: HTTP Request Smuggling allows bypassing security controls",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-73812.json",
+      "cve": "CVE-2026-73812",
+      "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-19032: com.fasterxml.jackson.core/jackson-databind: tools.jackson.core/jackson-databind: Jackson-databind: Uncontrolled URI sch",
+      "date": "2026-09-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "com.fasterxml.jackson.core/jackson-databind: tools.jackson.core/jackson-databind: Jackson-databind: Uncontrolled URI scheme resolution in Path deserialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-19032.json",
+      "cve": "CVE-2026-19032",
       "cvss": 5.3
     },
     {
@@ -3396,6 +3842,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-82562.json",
       "cve": "CVE-2026-82562",
       "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-82417: qs: qs: Denial of Service via improper validation in stringify function",
+      "date": "2026-08-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "qs: qs: Denial of Service via improper validation in stringify function",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-82417.json",
+      "cve": "CVE-2026-82417",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-81838 - Zip Slip path traversal in awsdac (diagram-as-code)",
@@ -6440,6 +6897,50 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-55858: org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Silent data corruption due to character set mismatch",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Silent data corruption due to character set mismatch",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55858.json",
+      "cve": "CVE-2026-55858",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-55857: org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Information Disclosure via Insecure PAM Dialog Authentication",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Information Disclosure via Insecure PAM Dialog Authentication",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55857.json",
+      "cve": "CVE-2026-55857",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-55856: org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Cleartext password disclosure via man-in-the-middle during in",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Cleartext password disclosure via man-in-the-middle during initial handshake",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-55856.json",
+      "cve": "CVE-2026-55856",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-37236: github.com/grpc-ecosystem/grpc-gateway: grpc-gateway: Access control bypass via X-HTTP-Method-Override header",
+      "date": "2026-08-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/grpc-ecosystem/grpc-gateway: grpc-gateway: Access control bypass via X-HTTP-Method-Override header",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-37236.json",
+      "cve": "CVE-2026-37236",
+      "cvss": 5.4
+    },
+    {
       "title": "free5GC AUSF uses non-constant-time authentication comparisons and logs XRES* in 5G-AKA",
       "date": "2026-08-28",
       "severity": "LOW",
@@ -6456,6 +6957,325 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-03T16:12:38.083Z",
+      "logs": [
+        "[INFO] aws - 5 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 5 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 175 patches (4 new)",
+        "[INFO] microsoft - 169 patches, no changes",
+        "[SUCCESS] redhat - 269 patches (35 new)",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 34 patches (8 new)"
+      ],
+      "newPatchCount": 47,
+      "totalPatches": 671,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 12,
+      "vendors": [
+        "github",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "cisco",
+        "debian",
+        "edge",
+        "gcp",
+        "chrome",
+        "crowdstrike",
+        "signal"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "SiYuan: path traversal via /export/temp/ short-circuit branch (incomplete fix for the export-disclosure hardening, GHSA-6865-qjcf-286f)",
+          "date": "2026-09-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Stored and reflected XSS in SiYuan through an SVG sanitizer bypass",
+          "date": "2026-09-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CKAN MCP Server: Cache-key canonicalization collision enables cache confusion / poisoning",
+          "date": "2026-09-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "CKAN MCP Server: Information disclosure via verbose error reflection",
+          "date": "2026-09-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85150: gstreamer1-plugins-base: gstreamer: NULL/invalid-pointer dereference in gst_rtsp_message_parse_auth_credentials() when p",
+          "date": "2026-09-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85089: FreeRDP: freerdp-proxy: FreeRDP: Information disclosure via uninitialized heap memory in Save Session Info PDU",
+          "date": "2026-09-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85090: FreeRDP: FreeRDP: Heap Out-of-Bounds Read in AVC444 Chroma Combine",
+          "date": "2026-09-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84394: fast-uri: fast-uri: Host confusion via unbalanced URI brackets can bypass security policies",
+          "date": "2026-09-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84292: fast-uri: fast-uri: Authority Injection via Unvalidated Port Serialization",
+          "date": "2026-09-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84382: httpx2: HTTPX2: Denial of Service via streaming response decompression memory amplification",
+          "date": "2026-09-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84381: httpx2: httpcore2: HTTPX2: WebSocket traffic sent in plaintext via SOCKS5 proxy due to TLS failure",
+          "date": "2026-09-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84380: httpx2: HTTPX2: Request Smuggling and Connection Desynchronization via Conflicting HTTP Headers",
+          "date": "2026-09-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84379: httpx2: HTTPX2: Multipart header injection via unvalidated input",
+          "date": "2026-09-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84378: httpx2: HTTPX2: Denial of Service via crafted Server-Sent Events stream",
+          "date": "2026-09-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84377: litellm: LiteLLM: Authenticated Server-Side Request Forgery and credential exposure",
+          "date": "2026-09-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-53600: async-tar: async-tar: Tar entry/content smuggling via PAX extension-header desynchronization",
+          "date": "2026-09-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84837: rpm: Command Injection in `rpmbuild -t*` (`getTarSpec`) via Unescaped Tarball Path",
+          "date": "2026-09-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84838: rpm: Command injection in rpmuncompress via unescaped filenames passed to popen()",
+          "date": "2026-09-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-76594: advisor-backend: advisor-backend: Unauthenticated /private/import_content/ endpoint allows global rule-catalogue overwri",
+          "date": "2026-09-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-76595: advisor-backend: Unsafe YAML deserialization of associate-editable Task playbook (yaml.Loader)",
+          "date": "2026-09-02",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-76642: util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
+          "date": "2026-09-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-78408: util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
+          "date": "2026-09-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-78409: util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
+          "date": "2026-09-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-78410: util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
+          "date": "2026-09-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84359: chromium-browser: skia: chromium-browser: Information leak in Skia",
+          "date": "2026-09-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84371: sanitize-html: stored XSS via SVG SMIL URI-list scheme-policy bypass",
+          "date": "2026-09-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84368: joi: @hapi/joi: joi: Prototype pollution via untrusted input in schema configuration",
+          "date": "2026-09-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84309: pypdf: pypdf: Denial of Service via crafted PDF with cyclic tree structure",
+          "date": "2026-09-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-69664: otp: inets: Erlang/OTP inets httpd: Denial of Service via malformed chunked HTTP request",
+          "date": "2026-09-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-83619: @xmldom/xmldom: xmldom: Denial of Service via crafted XML input",
+          "date": "2026-09-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-74994: inets: otp: inets httpd mod_auth: Authentication Bypass via Directory Namespace Collapse",
+          "date": "2026-09-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-74835: inets: httpd: otp: inets httpd: Denial of Service due to memory exhaustion via unenforced body-size limit",
+          "date": "2026-09-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-73812: OTP: inets: inets: HTTP Request Smuggling allows bypassing security controls",
+          "date": "2026-09-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-19032: com.fasterxml.jackson.core/jackson-databind: tools.jackson.core/jackson-databind: Jackson-databind: Uncontrolled URI sch",
+          "date": "2026-09-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-82417: qs: qs: Denial of Service via improper validation in stringify function",
+          "date": "2026-08-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55858: org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Silent data corruption due to character set mismatch",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55857: org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Information Disclosure via Insecure PAM Dialog Authentication",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-55856: org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Cleartext password disclosure via man-in-the-middle during in",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-37236: github.com/grpc-ecosystem/grpc-gateway: grpc-gateway: Access control bypass via X-HTTP-Method-Override header",
+          "date": "2026-08-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8720-1: GnuPG vulnerability",
+          "date": "2026-09-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8723-1: SPICE vdagent vulnerabilities",
+          "date": "2026-09-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8722-1: libssh2 vulnerabilities",
+          "date": "2026-09-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8719-1: APR-util vulnerabilities",
+          "date": "2026-09-03",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8721-1: OpenSSH vulnerabilities",
+          "date": "2026-09-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8718-1: SSSD vulnerability",
+          "date": "2026-09-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8716-1: FFmpeg vulnerabilities",
+          "date": "2026-09-03",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8717-1: Apache Tika vulnerability",
+          "date": "2026-09-03",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-03T14:14:08.064Z",
       "logs": [
@@ -13070,42 +13890,6 @@
           "severity": "HIGH"
         }
       ]
-    },
-    {
-      "timestamp": "2026-08-28T06:00:34.142Z",
-      "logs": [
-        "[INFO] aws - 1 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] debian - 18 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 94 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 350 patches, no changes",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] redhat - 205 patches, no changes",
-        "[INFO] ubuntu - 26 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 703,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "debian",
-        "github",
-        "microsoft",
-        "paloalto",
-        "ubuntu",
-        "chrome",
-        "cisco",
-        "gitlab",
-        "redhat",
-        "aws",
-        "edge",
-        "mssql"
-      ],
-      "newPatches": []
     }
   ]
 }

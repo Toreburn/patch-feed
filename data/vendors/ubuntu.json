@@ -1,16 +1,88 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-09-03T10:59:13.420Z",
+  "lastUpdated": "2026-09-03T16:11:29.661Z",
   "health": {
-    "lastFetchAttempt": "2026-09-03T10:59:13.420Z",
+    "lastFetchAttempt": "2026-09-03T16:11:29.661Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-03T10:59:13.420Z",
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-09-03T16:11:29.661Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "USN-8720-1: GnuPG vulnerability",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GnuPG",
+      "description": "It was discovered that GnuPG incorrectly validated authentication tag\nlengths when parsing CMS messages encrypted with AES-GCM. An attacker could\npossibly use this issue to bypass message integrity ch...",
+      "link": "https://ubuntu.com/security/notices/USN-8720-1"
+    },
+    {
+      "title": "USN-8723-1: SPICE vdagent vulnerabilities",
+      "date": "2026-09-03",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "SPICE vdagent vulnerabilities",
+      "description": "It was discovered that SPICE vdagent had an integer overflow in the buffer\nsize calculation used when writing to the daemon socket. A malicious or\ncompromised SPICE host could possibly use this issue ...",
+      "link": "https://ubuntu.com/security/notices/USN-8723-1"
+    },
+    {
+      "title": "USN-8722-1: libssh2 vulnerabilities",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libssh2 vulnerabilities",
+      "description": "It was discovered that libssh2 incorrectly handled certain SFTP server\nresponses. A remote attacker controlling an SSH server could use this issue\nto cause libssh2 to crash or possibly execute arbitra...",
+      "link": "https://ubuntu.com/security/notices/USN-8722-1"
+    },
+    {
+      "title": "USN-8719-1: APR-util vulnerabilities",
+      "date": "2026-09-03",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "APR-util vulnerabilities",
+      "description": "It was discovered that APR-util incorrectly performed password hash\ncomparisons in a way that was not constant-time.\nAn attacker could possibly use this issue to obtain sensitive information.\n(CVE-202...",
+      "link": "https://ubuntu.com/security/notices/USN-8719-1"
+    },
+    {
+      "title": "USN-8721-1: OpenSSH vulnerabilities",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OpenSSH vulnerabilities",
+      "description": "It was discovered that OpenSSH's ssh-agent incorrectly handled interactions\nbetween agent locking and the session-bind@openssh.com extension. A remote\nattacker with access to a forwarded agent connect...",
+      "link": "https://ubuntu.com/security/notices/USN-8721-1"
+    },
+    {
+      "title": "USN-8718-1: SSSD vulnerability",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "SSSD",
+      "description": "It was discovered that SSSD did not properly validate authentication token\nlengths when processing PAM responder requests. A local attacker could\npossibly use this issue to cause SSSD to crash, result...",
+      "link": "https://ubuntu.com/security/notices/USN-8718-1"
+    },
+    {
+      "title": "USN-8716-1: FFmpeg vulnerabilities",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "FFmpeg vulnerabilities",
+      "description": "It was discovered that FFmpeg incorrectly handled certain crafted media\nfiles in the VobSub subtitle demuxer. An attacker could possibly use\nthis issue to cause a denial of service or execute arbitrar...",
+      "link": "https://ubuntu.com/security/notices/USN-8716-1"
+    },
+    {
+      "title": "USN-8717-1: Apache Tika vulnerability",
+      "date": "2026-09-03",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Apache Tika",
+      "description": "It was discovered that Apache Tika's ISA-Tab parser incorrectly handled\nfile path resolution. An attacker who could place files in a directory that\nTika subsequently parses could use this issue to rea...",
+      "link": "https://ubuntu.com/security/notices/USN-8717-1"
+    },
     {
       "title": "USN-8713-1: BioSig vulnerabilities",
       "date": "2026-09-02",
