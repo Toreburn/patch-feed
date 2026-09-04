@@ -1,16 +1,148 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-09-04T16:05:25.905Z",
+  "lastUpdated": "2026-09-04T20:35:24.450Z",
   "health": {
-    "lastFetchAttempt": "2026-09-04T16:05:25.905Z",
+    "lastFetchAttempt": "2026-09-04T20:35:24.450Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-04T16:05:25.905Z",
+    "lastFetchNewPatches": 12,
+    "lastSuccessWithData": "2026-09-04T20:35:24.450Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "SurrealDB: Custom API route lets authenticated callers override namespace/database scope via URL path",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "surrealdb",
+      "description": "SurrealDB: Custom API route lets authenticated callers override namespace/database scope via URL path",
+      "link": "https://github.com/advisories/GHSA-848m-r628-vrxw",
+      "cve": "CVE-2026-63735",
+      "cvss": 8.1
+    },
+    {
+      "title": "CodeWhale: Project config `allow_shell` override enables arbitrary shell command execution via cloned repository",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui, codewhale-tui",
+      "description": "CodeWhale: Project config `allow_shell` override enables arbitrary shell command execution via cloned repository",
+      "link": "https://github.com/advisories/GHSA-gx45-xrj5-g6c4",
+      "cve": "CVE-2026-75911",
+      "cvss": 7.8
+    },
+    {
+      "title": "CodeWhale: rlm_eval auto-approves arbitrary Python execution, bypassing the user's approval policy (RCE)",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui, codewhale-tui",
+      "description": "CodeWhale: rlm_eval auto-approves arbitrary Python execution, bypassing the user's approval policy (RCE)",
+      "link": "https://github.com/advisories/GHSA-wrj3-vj8c-784f",
+      "cve": "CVE-2026-75858",
+      "cvss": 7.8
+    },
+    {
+      "title": "CodeWhale: Argument Injection in `git_blame` Tool Allows Arbitrary File Read Without Approval",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui, codewhale-tui",
+      "description": "CodeWhale: Argument Injection in `git_blame` Tool Allows Arbitrary File Read Without Approval",
+      "link": "https://github.com/advisories/GHSA-c6mw-8xh8-gpq6",
+      "cve": "CVE-2026-75912",
+      "cvss": 7.4
+    },
+    {
+      "title": "CodeWhale: SSRF‌ bypass - TOCTOU on DNS failure for DNS pinning",
+      "date": "2026-09-04",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui, codewhale-tui",
+      "description": "CodeWhale: SSRF‌ bypass - TOCTOU on DNS failure for DNS pinning",
+      "link": "https://github.com/advisories/GHSA-6v2g-fpxh-pmmh",
+      "cve": "CVE-2026-75856",
+      "cvss": 8.6
+    },
+    {
+      "title": "CodeWhale: js_execution leaks parent environment to model context via missing env scrub",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui, codewhale-tui",
+      "description": "CodeWhale: js_execution leaks parent environment to model context via missing env scrub",
+      "link": "https://github.com/advisories/GHSA-h539-c7r8-3xq4",
+      "cve": "CVE-2026-75915",
+      "cvss": 7.5
+    },
+    {
+      "title": "CodeWhale: Argument Injection in `git_show` Tool Allows Arbitrary File Write Without Approval",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui, codewhale-tui",
+      "description": "CodeWhale: Argument Injection in `git_show` Tool Allows Arbitrary File Write Without Approval",
+      "link": "https://github.com/advisories/GHSA-7j5w-7r7x-9v27",
+      "cve": "CVE-2026-75913",
+      "cvss": 9.3
+    },
+    {
+      "title": "CodeWhale: exec_shell_interact sends LLM-controlled input to a running shell without an approval prompt (privilege escalation)",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui, codewhale-tui",
+      "description": "CodeWhale: exec_shell_interact sends LLM-controlled input to a running shell without an approval prompt (privilege escalation)",
+      "link": "https://github.com/advisories/GHSA-g29h-pfmp-qp9r",
+      "cve": "CVE-2026-75857",
+      "cvss": 7
+    },
+    {
+      "title": "CodeWhale: Project config `instructions` override enables arbitrary file read into AI system prompt via cloned repository",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui, codewhale-tui",
+      "description": "CodeWhale: Project config `instructions` override enables arbitrary file read into AI system prompt via cloned repository",
+      "link": "https://github.com/advisories/GHSA-62f5-cp2p-vq95",
+      "cve": "CVE-2026-75859",
+      "cvss": 7.5
+    },
+    {
+      "title": "CodeWhale: image_analyze follows workspace symlinks, leaking external file bytes",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "deepseek-tui, deepseek-tui, codewhale-tui",
+      "description": "CodeWhale: image_analyze follows workspace symlinks, leaking external file bytes",
+      "link": "https://github.com/advisories/GHSA-w7wx-5q49-r59w",
+      "cve": "CVE-2026-75914",
+      "cvss": 7.5
+    },
+    {
+      "title": "SimpleWebAuthn: Registration verification does not sufficiently ensure that attestation certificates chain to a trust anchor",
+      "date": "2026-09-04",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "@simplewebauthn/server",
+      "description": "SimpleWebAuthn: Registration verification does not sufficiently ensure that attestation certificates chain to a trust anchor",
+      "link": "https://github.com/advisories/GHSA-6hxq-p678-4hr2",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "SurrealDB allows bypass of deny-net flags via DNS resolution",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "SurrealDB, SurrealDB, SurrealDB",
+      "description": "SurrealDB allows bypass of deny-net flags via DNS resolution",
+      "link": "https://github.com/advisories/GHSA-m3c3-78fh-w3w7",
+      "cve": "CVE-2025-71390",
+      "cvss": null
+    },
     {
       "title": "SiYuan: path traversal via /export/temp/ short-circuit branch (incomplete fix for the export-disclosure hardening, GHSA-6865-qjcf-286f)",
       "date": "2026-09-03",
