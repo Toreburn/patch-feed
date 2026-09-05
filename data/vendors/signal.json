@@ -1,16 +1,29 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-09-04T20:36:07.557Z",
+  "lastUpdated": "2026-09-05T03:52:48.138Z",
   "health": {
-    "lastFetchAttempt": "2026-09-04T20:36:07.557Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-02T11:00:05.238Z",
-    "consecutiveEmptyFetches": 10,
+    "lastFetchAttempt": "2026-09-05T03:52:48.138Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-09-05T03:52:48.138Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "TypeSpec: Unauthenticated Remote Shutdown of Spector Mock Server via POST /.admin/stop",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\n`@typespec/spector` registers a `POST /.admin/stop` HTTP route with no authentication, authorization token, Origin check, or IP-source restriction. Any network-reachable client can send a",
+      "link": "https://github.com/advisories/GHSA-7q9c-hpx7-9cwm",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "free5GC AUSF uses non-constant-time authentication comparisons and logs XRES* in 5G-AKA",
       "date": "2026-08-28",

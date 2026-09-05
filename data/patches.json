@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-05T03:38:07.259Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-05T03:54:03.985Z",
+  "newPatches": 34,
   "patches": [
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -510,6 +510,16 @@
       "cves": []
     },
     {
+      "title": "Microsoft Edge Security Update - September 4, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-09-04",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
+    },
+    {
       "title": "SurrealDB: Custom API route lets authenticated callers override namespace/database scope via URL path",
       "date": "2026-09-04",
       "severity": "HIGH",
@@ -640,6 +650,171 @@
       "link": "https://github.com/advisories/GHSA-m3c3-78fh-w3w7",
       "cve": "CVE-2025-71390",
       "cvss": null
+    },
+    {
+      "title": "TypeSpec: Unauthenticated Remote Shutdown of Spector Mock Server via POST /.admin/stop",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@typespec/spector",
+      "description": "TypeSpec: Unauthenticated Remote Shutdown of Spector Mock Server via POST /.admin/stop",
+      "link": "https://github.com/advisories/GHSA-7q9c-hpx7-9cwm",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "OpenChoreo: cluster-gateway internal proxy performs no caller authentication and is not read-only — data-plane Secret disclosure and arbitrary Kubernetes mutation",
+      "date": "2026-09-04",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/openchoreo/openchoreo, github.com/openchoreo/openchoreo, github.com/openchoreo/openchoreo",
+      "description": "OpenChoreo: cluster-gateway internal proxy performs no caller authentication and is not read-only — data-plane Secret disclosure and arbitrary Kubernetes mutation",
+      "link": "https://github.com/advisories/GHSA-rh53-xvx2-j327",
+      "cve": "CVE-2026-73842",
+      "cvss": 9
+    },
+    {
+      "title": " vLLM: Incomplete CVE-2025-62164 remediation can be bypassed by concurrent prompt parts",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vllm",
+      "description": " vLLM: Incomplete CVE-2025-62164 remediation can be bypassed by concurrent prompt parts",
+      "link": "https://github.com/advisories/GHSA-pr7f-p5mw-fc87",
+      "cve": "CVE-2026-73557",
+      "cvss": null
+    },
+    {
+      "title": "vLLM: ReDoS via structured_outputs.regex in the lm-format-enforcer backend (no compile timeout) — missed sibling of GHSA-rwxx-mrjm-wc2m",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vllm",
+      "description": "vLLM: ReDoS via structured_outputs.regex in the lm-format-enforcer backend (no compile timeout) — missed sibling of GHSA-rwxx-mrjm-wc2m",
+      "link": "https://github.com/advisories/GHSA-48jh-3gj7-fg8v",
+      "cve": "CVE-2026-73556",
+      "cvss": 5.3
+    },
+    {
+      "title": "vLLM: Unauthenticated Internal Path and Username Disclosure via Validation Error Messages",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vllm",
+      "description": "vLLM: Unauthenticated Internal Path and Username Disclosure via Validation Error Messages",
+      "link": "https://github.com/advisories/GHSA-hwrm-c4cx-rf4j",
+      "cve": "CVE-2026-73555",
+      "cvss": 5.3
+    },
+    {
+      "title": "vLLM: Derender endpoints decode caller-supplied GenerateResponse token IDs without output bounds",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vllm",
+      "description": "vLLM: Derender endpoints decode caller-supplied GenerateResponse token IDs without output bounds",
+      "link": "https://github.com/advisories/GHSA-8737-qx52-hjff",
+      "cve": "CVE-2026-71486",
+      "cvss": 4.3
+    },
+    {
+      "title": "SiYuan: Tag labels from password-protected documents are returned to readers who have not entered the password",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Tag labels from password-protected documents are returned to readers who have not entered the password",
+      "link": "https://github.com/advisories/GHSA-mp7r-57w4-5qm3",
+      "cve": "CVE-2026-72792",
+      "cvss": 5.8
+    },
+    {
+      "title": "SiYuan: Non-administrator responses from /api/system/getConf omit three secrets that the configuration-export path explicitly strips, disclosing the session-cookie signing key and the OS username to anonymous readers",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Non-administrator responses from /api/system/getConf omit three secrets that the configuration-export path explicitly strips, disclosing the session-cookie signing key and the OS username to a...",
+      "link": "https://github.com/advisories/GHSA-h4v5-crx2-3cv4",
+      "cve": "CVE-2026-72793",
+      "cvss": 8.6
+    },
+    {
+      "title": "SiYuan: Embedded (transclusion) block content is returned without publish-access filtering, leaking private and password-protected document content to anonymous readers",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Embedded (transclusion) block content is returned without publish-access filtering, leaking private and password-protected document content to anonymous readers",
+      "link": "https://github.com/advisories/GHSA-h6w7-xxcf-w2mq",
+      "cve": "CVE-2026-72795",
+      "cvss": 8.6
+    },
+    {
+      "title": "SiYuan: The session-cookie signing key (Conf.CookieKey) is returned to anonymous readers by /api/system/getConf",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: The session-cookie signing key (Conf.CookieKey) is returned to anonymous readers by /api/system/getConf",
+      "link": "https://github.com/advisories/GHSA-34fj-mwm6-fjfg",
+      "cve": "CVE-2026-72794",
+      "cvss": 8.6
+    },
+    {
+      "title": "SiYuan: Static-file routes bypass the publish-access controls enforced on the REST API, exposing templates, snippets and export artifacts to anonymous readers",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Static-file routes bypass the publish-access controls enforced on the REST API, exposing templates, snippets and export artifacts to anonymous readers",
+      "link": "https://github.com/advisories/GHSA-fgmr-7w36-9qfq",
+      "cve": "CVE-2026-72796",
+      "cvss": 5.8
+    },
+    {
+      "title": "SiYuan: getEncryptedNotebookStatus discloses names and current lock/unlock state of all encrypted notebooks to anonymous readers",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: getEncryptedNotebookStatus discloses names and current lock/unlock state of all encrypted notebooks to anonymous readers",
+      "link": "https://github.com/advisories/GHSA-f2rw-w22v-54vh",
+      "cve": "CVE-2026-72797",
+      "cvss": 5.8
+    },
+    {
+      "title": "SiYuan: Publish-access filter on renderAttributeView leaves related-database content unfiltered and fails open on non-block first columns",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Publish-access filter on renderAttributeView leaves related-database content unfiltered and fails open on non-block first columns",
+      "link": "https://github.com/advisories/GHSA-mfrj-v65r-979c",
+      "cve": "CVE-2026-72798",
+      "cvss": 8.6
+    },
+    {
+      "title": "SiYuan: Missing publish-access filter on the HPath/path-resolution endpoints discloses the private document tree to anonymous readers",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Missing publish-access filter on the HPath/path-resolution endpoints discloses the private document tree to anonymous readers",
+      "link": "https://github.com/advisories/GHSA-5w7r-f4cg-rqq7",
+      "cve": "CVE-2026-72799",
+      "cvss": 5.8
+    },
+    {
+      "title": "SurrealDB: Writes in a PERMISSIONS clause bypass table permissions",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "surrealdb-core",
+      "description": "SurrealDB: Writes in a PERMISSIONS clause bypass table permissions",
+      "link": "https://github.com/advisories/GHSA-66r2-5gwj-gxm2",
+      "cve": "CVE-2026-63733",
+      "cvss": 4.3
     },
     {
       "title": "CVE-2026-84428: fastify: fastify: Header validation bypass via incomplete schema case normalization",
@@ -827,6 +1002,162 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85498.json",
       "cve": "CVE-2026-85498",
       "cvss": 3.5
+    },
+    {
+      "title": "CVE-2026-18149: undici: undici: Denial of Service due to orphaned response body in retry handler",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici: Denial of Service due to orphaned response body in retry handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18149.json",
+      "cve": "CVE-2026-18149",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-18540: undici: undici: HTTP response splitting via retry interceptor",
+      "date": "2026-09-04",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici: HTTP response splitting via retry interceptor",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-18540.json",
+      "cve": "CVE-2026-18540",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-19534: undici: undici: Denial of Service via unrequested WebSocket subprotocol",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici: Denial of Service via unrequested WebSocket subprotocol",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-19534.json",
+      "cve": "CVE-2026-19534",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-84890: undici: undici: Denial of Service via unbounded decompression of compressed responses",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici: Denial of Service via unbounded decompression of compressed responses",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84890.json",
+      "cve": "CVE-2026-84890",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-84933: undici: undici: Cross-user cookie disclosure via Set-Cookie caching",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici: Cross-user cookie disclosure via Set-Cookie caching",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84933.json",
+      "cve": "CVE-2026-84933",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-84947: undici: Undici: Response truncation and connection termination",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: Undici: Response truncation and connection termination",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84947.json",
+      "cve": "CVE-2026-84947",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-84961: undici: undici: TLS certificate validation bypass in BalancedPool via dropped connect options",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici: TLS certificate validation bypass in BalancedPool via dropped connect options",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84961.json",
+      "cve": "CVE-2026-84961",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-85008: undici: undici: Integrity failure due to caching of unsafe HTTP method responses",
+      "date": "2026-09-04",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici: Integrity failure due to caching of unsafe HTTP method responses",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85008.json",
+      "cve": "CVE-2026-85008",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-85152: undici: undici: Authentication bypass via cross-origin cache poisoning due to missing origin isolation",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici: Authentication bypass via cross-origin cache poisoning due to missing origin isolation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85152.json",
+      "cve": "CVE-2026-85152",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-85014: undici: undici: Denial of Service via WebSocketStream unclean close",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici: Denial of Service via WebSocketStream unclean close",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85014.json",
+      "cve": "CVE-2026-85014",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-85024: undici: undici: Denial of Service via unhandled error in WebSocket permessage-deflate decompression",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "undici: undici: Denial of Service via unhandled error in WebSocket permessage-deflate decompression",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85024.json",
+      "cve": "CVE-2026-85024",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-85730: smol-toml: smol-toml: Denial of Service via malformed TOML documents",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "smol-toml: smol-toml: Denial of Service via malformed TOML documents",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85730.json",
+      "cve": "CVE-2026-85730",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-85769: libtpms: libtpms: heap out-of-bounds read in TPM2 state unmarshalling via unchecked block_skip_read() blocksize",
+      "date": "2026-09-04",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libtpms: libtpms: heap out-of-bounds read in TPM2 state unmarshalling via unchecked block_skip_read() blocksize",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85769.json",
+      "cve": "CVE-2026-85769",
+      "cvss": 6.5
+    },
+    {
+      "title": "TypeSpec: Unauthenticated Remote Shutdown of Spector Mock Server via POST /.admin/stop",
+      "date": "2026-09-04",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\n`@typespec/spector` registers a `POST /.admin/stop` HTTP route with no authentication, authorization token, Origin check, or IP-source restriction. Any network-reachable client can send a",
+      "link": "https://github.com/advisories/GHSA-7q9c-hpx7-9cwm",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
     },
     {
       "title": "USN-8714-2: Linux kernel vulnerabilities",
@@ -1930,6 +2261,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85534.json",
       "cve": "CVE-2026-85534",
       "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-85062: colord: omgovich/colord: Colord: Denial of Service via oversized malformed color strings",
+      "date": "2026-09-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "colord: omgovich/colord: Colord: Denial of Service via oversized malformed color strings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85062.json",
+      "cve": "CVE-2026-85062",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-85049: chromium-browser: skia: chromium-browser: skia: Use after free in Skia",
+      "date": "2026-09-03",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: skia: chromium-browser: skia: Use after free in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85049.json",
+      "cve": "CVE-2026-85049",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-85242: PlaywrightCapture: PlaywrightCapture: Server-Side Request Forgery via favicon redirect",
+      "date": "2026-09-03",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "PlaywrightCapture: PlaywrightCapture: Server-Side Request Forgery via favicon redirect",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85242.json",
+      "cve": "CVE-2026-85242",
+      "cvss": 5.3
     },
     {
       "title": "USN-8720-1: GnuPG vulnerability",
@@ -5013,6 +5377,17 @@
       "cvss": 8.5
     },
     {
+      "title": "CVE-2026-12894: io.quarkus:quarkus-qute: quarkus-qute:Server-Side Template Injection (SSTI) vulnerability in ReflectionValueResolver of ",
+      "date": "2026-08-31",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "io.quarkus:quarkus-qute: quarkus-qute:Server-Side Template Injection (SSTI) vulnerability in ReflectionValueResolver of the Quarkus Qute template engine",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-12894.json",
+      "cve": "CVE-2026-12894",
+      "cvss": 8.8
+    },
+    {
       "title": "USN-8699-1: libssh vulnerabilities",
       "date": "2026-08-31",
       "severity": "LOW",
@@ -5184,6 +5559,249 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-05T03:54:03.984Z",
+      "logs": [
+        "[INFO] aws - 9 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 7 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 6 patches, no changes",
+        "[SUCCESS] edge - 4 patches (1 new)",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 184 patches (15 new)",
+        "[INFO] microsoft - 119 patches, no changes",
+        "[SUCCESS] redhat - 162 patches (17 new)",
+        "[SUCCESS] signal - 1 patches (1 new)",
+        "[INFO] ubuntu - 37 patches, no changes"
+      ],
+      "newPatchCount": 34,
+      "totalPatches": 537,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "microsoft",
+        "aws",
+        "cisco",
+        "debian",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "cloudflare",
+        "gcp",
+        "crowdstrike"
+      ],
+      "newPatches": [
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - September 4, 2026",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "TypeSpec: Unauthenticated Remote Shutdown of Spector Mock Server via POST /.admin/stop",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "OpenChoreo: cluster-gateway internal proxy performs no caller authentication and is not read-only — data-plane Secret disclosure and arbitrary Kubernetes mutation",
+          "date": "2026-09-04",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": " vLLM: Incomplete CVE-2025-62164 remediation can be bypassed by concurrent prompt parts",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "vLLM: ReDoS via structured_outputs.regex in the lm-format-enforcer backend (no compile timeout) — missed sibling of GHSA-rwxx-mrjm-wc2m",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "vLLM: Unauthenticated Internal Path and Username Disclosure via Validation Error Messages",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "vLLM: Derender endpoints decode caller-supplied GenerateResponse token IDs without output bounds",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Tag labels from password-protected documents are returned to readers who have not entered the password",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Non-administrator responses from /api/system/getConf omit three secrets that the configuration-export path explicitly strips, disclosing the session-cookie signing key and the OS username to anonymous readers",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Embedded (transclusion) block content is returned without publish-access filtering, leaking private and password-protected document content to anonymous readers",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: The session-cookie signing key (Conf.CookieKey) is returned to anonymous readers by /api/system/getConf",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Static-file routes bypass the publish-access controls enforced on the REST API, exposing templates, snippets and export artifacts to anonymous readers",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: getEncryptedNotebookStatus discloses names and current lock/unlock state of all encrypted notebooks to anonymous readers",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Publish-access filter on renderAttributeView leaves related-database content unfiltered and fails open on non-block first columns",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Missing publish-access filter on the HPath/path-resolution endpoints discloses the private document tree to anonymous readers",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SurrealDB: Writes in a PERMISSIONS clause bypass table permissions",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-18149: undici: undici: Denial of Service due to orphaned response body in retry handler",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-18540: undici: undici: HTTP response splitting via retry interceptor",
+          "date": "2026-09-04",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-19534: undici: undici: Denial of Service via unrequested WebSocket subprotocol",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84890: undici: undici: Denial of Service via unbounded decompression of compressed responses",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84933: undici: undici: Cross-user cookie disclosure via Set-Cookie caching",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84947: undici: Undici: Response truncation and connection termination",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84961: undici: undici: TLS certificate validation bypass in BalancedPool via dropped connect options",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85008: undici: undici: Integrity failure due to caching of unsafe HTTP method responses",
+          "date": "2026-09-04",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85152: undici: undici: Authentication bypass via cross-origin cache poisoning due to missing origin isolation",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85014: undici: undici: Denial of Service via WebSocketStream unclean close",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85024: undici: undici: Denial of Service via unhandled error in WebSocket permessage-deflate decompression",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85730: smol-toml: smol-toml: Denial of Service via malformed TOML documents",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85769: libtpms: libtpms: heap out-of-bounds read in TPM2 state unmarshalling via unchecked block_skip_read() blocksize",
+          "date": "2026-09-04",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85062: colord: omgovich/colord: Colord: Denial of Service via oversized malformed color strings",
+          "date": "2026-09-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85049: chromium-browser: skia: chromium-browser: skia: Use after free in Skia",
+          "date": "2026-09-03",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-85242: PlaywrightCapture: PlaywrightCapture: Server-Side Request Forgery via favicon redirect",
+          "date": "2026-09-03",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-12894: io.quarkus:quarkus-qute: quarkus-qute:Server-Side Template Injection (SSTI) vulnerability in ReflectionValueResolver of ",
+          "date": "2026-08-31",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "signal",
+          "title": "TypeSpec: Unauthenticated Remote Shutdown of Spector Mock Server via POST /.admin/stop",
+          "date": "2026-09-04",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-05T03:38:07.259Z",
       "logs": [
@@ -11249,44 +11867,6 @@
     },
     {
       "timestamp": "2026-08-30T11:40:52.772Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 164 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] mssql - 1 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] redhat - 185 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 26 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 805,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "aws",
-        "github",
-        "redhat",
-        "signal",
-        "edge",
-        "paloalto",
-        "ubuntu",
-        "chrome",
-        "cisco",
-        "gitlab",
-        "mssql"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-30T11:31:44.753Z",
       "logs": [
         "[INFO] aws - 3 patches, no changes",
         "[INFO] chrome - 3 patches, no changes",
