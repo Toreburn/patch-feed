@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-06T20:10:09.005Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-06T20:16:16.975Z",
+  "newPatches": 3,
   "patches": [
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -460,6 +460,17 @@
       "component": "tryton-server",
       "description": "Two security vulnerabilities were discovered in the server of the Tryton application platform, which could lead to arbitrary command execution via malformed email/report templates. https://security-tr...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00396.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6486-1 libde265 - security update",
+      "date": "2026-09-06",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libde265",
+      "description": "Two security issues were discovered in libde265, an implementation of the H.265 video codec which may result in denial of service or potentially the execution of arbitrary code if a malformed media fi...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00397.html",
       "cve": "",
       "cves": []
     },
@@ -4966,6 +4977,28 @@
       "cvss": 7.5
     },
     {
+      "title": "CVE-2026-84335: chromium-browser: chromium-browser: Incorrect authorization in TabStrip",
+      "date": "2026-09-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Incorrect authorization in TabStrip",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84335.json",
+      "cve": "CVE-2026-84335",
+      "cvss": 8
+    },
+    {
+      "title": "CVE-2026-84326: chromium-browser: chromium-browser: Uninitialized resource in V8",
+      "date": "2026-09-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Uninitialized resource in V8",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84326.json",
+      "cve": "CVE-2026-84326",
+      "cvss": 8.8
+    },
+    {
       "title": "USN-8690-1: Pillow vulnerability",
       "date": "2026-09-01",
       "severity": "LOW",
@@ -5997,6 +6030,65 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-06T20:16:16.975Z",
+      "logs": [
+        "[INFO] aws - 9 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 7 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 7 patches (1 new)",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 184 patches, no changes",
+        "[INFO] microsoft - 169 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 162 patches (2 new)",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 37 patches, no changes"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 589,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "postgresql",
+        "aws",
+        "cisco",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "cloudflare",
+        "gcp",
+        "crowdstrike"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6486-1 libde265 - security update",
+          "date": "2026-09-06",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84335: chromium-browser: chromium-browser: Incorrect authorization in TabStrip",
+          "date": "2026-09-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84326: chromium-browser: chromium-browser: Uninitialized resource in V8",
+          "date": "2026-09-01",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-06T20:10:09.005Z",
       "logs": [
@@ -11851,42 +11943,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-09-01T16:17:07.148Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 1 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 104 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 250 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] redhat - 166 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 29 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 572,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "ubuntu",
-        "aws",
-        "edge",
-        "github",
-        "microsoft",
-        "debian",
-        "redhat",
-        "signal",
-        "paloalto",
-        "chrome",
-        "cisco",
-        "gitlab"
-      ],
-      "newPatches": []
     }
   ]
 }
