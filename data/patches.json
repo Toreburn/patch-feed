@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-06T13:27:55.340Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-06T15:17:15.999Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -451,6 +451,17 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-75538",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-75538"
+    },
+    {
+      "title": "DSA-6485-1 tryton-server - security update",
+      "date": "2026-09-06",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "tryton-server",
+      "description": "Two security vulnerabilities were discovered in the server of the Tryton application platform, which could lead to arbitrary command execution via malformed email/report templates. https://security-tr...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00396.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "CVE-2026-14957: FIPS mode assertion failure via malicious CERT payload",
@@ -5986,6 +5997,53 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-06T15:17:15.999Z",
+      "logs": [
+        "[INFO] aws - 9 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 7 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 6 patches (1 new)",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 184 patches, no changes",
+        "[INFO] microsoft - 169 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 160 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 37 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 586,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "postgresql",
+        "aws",
+        "cisco",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "cloudflare",
+        "gcp",
+        "crowdstrike"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6485-1 tryton-server - security update",
+          "date": "2026-09-06",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-06T13:27:55.340Z",
       "logs": [
@@ -11834,49 +11892,6 @@
         "gitlab"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-09-01T04:32:34.136Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 1 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 104 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 250 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] redhat - 166 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 27 patches (1 new)"
-      ],
-      "newPatchCount": 1,
-      "totalPatches": 570,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "aws",
-        "edge",
-        "github",
-        "microsoft",
-        "ubuntu",
-        "debian",
-        "redhat",
-        "signal",
-        "paloalto",
-        "chrome",
-        "cisco",
-        "gitlab"
-      ],
-      "newPatches": [
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8705-2: OpenZFS vulnerability",
-          "date": "2026-08-31",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
