@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T23:37:31.257Z",
+  "lastUpdated": "2026-09-06T03:39:55.878Z",
   "newPatches": 0,
   "patches": [
     {
@@ -5522,53 +5522,49 @@
       "component": "zlib",
       "description": "It was discovered that zlib incorrectly handled negative length parameters\nin CRC32 combine functions. An attacker could use this issue to cause a denial\nof service via excessive CPU consumption....",
       "link": "https://ubuntu.com/security/notices/USN-8706-1"
-    },
-    {
-      "title": "DSA-6479-1 roundcube - security update",
-      "date": "2026-08-30",
-      "severity": "UNKNOWN",
-      "vendor": "debian",
-      "component": "roundcube",
-      "description": "Multiple vulnerabilities were discovered in roundcube, a skinnable AJAX based webmail solution for IMAP servers, which could result in cross-site scripting, SSRF bypass, information disclosure, privil...",
-      "link": "https://lists.debian.org/debian-security-announce/2026/msg00390.html",
-      "cve": "",
-      "cves": []
-    },
-    {
-      "title": "DSA-6478-1 starlette - security update",
-      "date": "2026-08-30",
-      "severity": "UNKNOWN",
-      "vendor": "debian",
-      "component": "starlette",
-      "description": "Several vulnerabilities were discovered in starlette, a lightweight ASGI framework/toolkit, which could result in bypass of authorization checks or denial of service. https://security-tracker.debian.o...",
-      "link": "https://lists.debian.org/debian-security-announce/2026/msg00389.html",
-      "cve": "",
-      "cves": []
-    },
-    {
-      "title": "CVE-2026-82556: net: golang: codeberg.org/forgejo/forgejo: Forgejo: Server-side request forgery via repository migration",
-      "date": "2026-08-30",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "net: golang: codeberg.org/forgejo/forgejo: Forgejo: Server-side request forgery via repository migration",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-82556.json",
-      "cve": "CVE-2026-82556",
-      "cvss": 6.3
-    },
-    {
-      "title": "CVE-2026-53683: FreeIPA: idm: IdM/FreeIPA Web UI - Client-side open redirect in reset_password.html",
-      "date": "2026-08-30",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "FreeIPA: idm: IdM/FreeIPA Web UI - Client-side open redirect in reset_password.html",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-53683.json",
-      "cve": "CVE-2026-53683",
-      "cvss": 4.3
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-06T03:39:55.878Z",
+      "logs": [
+        "[INFO] aws - 9 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 7 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 4 patches, no changes",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 184 patches, no changes",
+        "[INFO] microsoft - 119 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 160 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 37 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 534,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "postgresql",
+        "aws",
+        "cisco",
+        "debian",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "cloudflare",
+        "gcp",
+        "crowdstrike"
+      ],
+      "newPatches": []
+    },
     {
       "timestamp": "2026-09-05T23:37:31.257Z",
       "logs": [
@@ -11493,439 +11489,6 @@
         "gitlab"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-08-31T13:16:50.107Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 151 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 300 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[SUCCESS] redhat - 221 patches (61 new)",
-        "[INFO] signal - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 29 patches (5 new)"
-      ],
-      "newPatchCount": 66,
-      "totalPatches": 729,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "ubuntu",
-        "debian",
-        "microsoft",
-        "redhat",
-        "aws",
-        "github",
-        "signal",
-        "edge",
-        "paloalto",
-        "chrome",
-        "cisco",
-        "gitlab"
-      ],
-      "newPatches": [
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80725: kernel: net: gro: properly validate BIG TCP aggregation criteria",
-          "date": "2026-08-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80612: kernel: net: lwtunnel: Drop skb metadata before LWT encapsulation",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80673: kernel: ntfs: bound the look-ahead attribute-list entry in ntfs_external_attr_find()",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80661: kernel: ufs: core: tracing: Do not dereference pointers in TP_printk()",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80603: kernel: netfilter: nf_conntrack_irc: fix parse_dcc() off-by-one OOB read",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80677: kernel: driver core: use READ_ONCE() for dev->driver in dev_has_sync_state()",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80718: kernel: mm/percpu-km: fix bitmap overflow and accounting in pcpu_create_chunk()",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80697: kernel: erofs: ensure valid f_path for page cache sharing",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80700: kernel: drm/vmwgfx: validate external BO copy bounds for both stride paths",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80664: kernel: netfilter: xt_nat: reject unsupported target families",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80689: kernel: tracing/mmiotrace: Add NULL check for mmio_trace_array in logging functions",
-          "date": "2026-08-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80694: kernel: net: ethernet: mtk_eth_soc: pass eth to mtk_handle_irq_rx in poll_controller",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80618: kernel: drm/amdkfd: Avoid double-unpin of DOORBELL/MMIO BOs on free",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80599: kernel: batman-adv: dat: ensure accessible eth_hdr proto field",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80629: kernel: octeontx2-af: npc: Fix size of entry2cntr_map",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80667: kernel: net/mlx5: LAG, MPESW, Fix missing complete() on devcom error",
-          "date": "2026-08-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80600: kernel: batman-adv: dat: acquire ARP hw source only after skb realloc",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80598: kernel: ntfs3: fix out-of-bounds read in decompress_lznt",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80610: kernel: net: enetc: fix potential divide-by-zero when num_vsi is zero",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80655: kernel: soc: xilinx: Fix race condition in event registration",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80682: kernel: riscv/mm: use physical alignment for vmemmap_start_pfn",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80648: kernel: pinctrl: spacemit: fix NULL check in spacemit_pin_set_config",
-          "date": "2026-08-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80595: kernel: Input: ims-pcu - add response length checks",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80594: kernel: Input: ims-pcu - fix potential infinite loop in CDC union descriptor parsing",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80654: kernel: soc: xilinx: Shutdown and free rx mailbox channel",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80670: kernel: perf tools: Use perf_env__get_cpu_topology() in machine__resolve()",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80653: kernel: scsi: hisi_sas: Add slave_destroy interface for v3 hw",
-          "date": "2026-08-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80712: kernel: spi: spi-qpic-snand: write the feature value before executing SET_FEATURE",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80619: kernel: apparmor: fix potential UAF in aa_replace_profiles",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80684: kernel: KVM: s390: pci: Fix NULL dereference on AIBV allocation failure",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80597: kernel: mtd: maps: vmu-flash: fix NULL pointer dereference in initialization",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80591: kernel: f2fs: fix listxattr handling of corrupted xattr entries",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80676: kernel: Drivers: hv: vmbus: use generic driver_override infrastructure",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80707: kernel: can: j1939: transport: j1939_session_fresh_new(): initialize receive buffer",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80671: kernel: perf sched: Fix register_pid() overflow, strcpy, and BUG_ON",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80672: kernel: ntfs: fix u16 truncation of restart-area length check",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80652: kernel: crypto: ccp - Treat zero-length cert chain as query for blob lengths",
-          "date": "2026-08-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80674: kernel: ntfs: validate resident attribute lists and harden the validator",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80620: kernel: Revert \"PCI/MSI: Unmap MSI-X region on error\"",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80662: kernel: cxl: Fix CXL_HEADERLOG_SIZE to match RAS Capability size",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80711: kernel: power: supply: max17040: handle missing status supplier",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80639: kernel: cxl/test: Fix __fortify_panic",
-          "date": "2026-08-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80604: kernel: HID: core: Fix OOB read in hid_get_report for numbered reports",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80592: kernel: samples/damon/mtier: fail early if address range parameters are invalid",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80636: kernel: netfilter: conntrack: revert ct extension genid infrastructure",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80693: kernel: idpf: bound interrupt-vector register fill to the allocated array",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80628: kernel: ALSA: seq: oss: Serialize readq reset state with q->lock",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80621: kernel: PCI: dwc: Avoid dwc_pcie_rasdes_debugfs_deinit() NULL dereference when no RAS DES capability",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80633: kernel: iommufd: Take dma_resv lock before dma_buf_unpin() in release path",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80678: kernel: i2c: imx: Fix slave registration race and error handling",
-          "date": "2026-08-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-80489: glibc: Non-progress DoS in EUC_JISX0213 -&gt; UCS-4 conversion state",
-          "date": "2026-08-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-81624: undertow-core: undertow: WebSocketContainer defaults for buffers and timeouts are infinite",
-          "date": "2026-08-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-65642: Plesk: Plesk: Information disclosure and data modification via Insecure Direct Object Reference",
-          "date": "2026-08-26",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-65646: Plesk: Plesk: Remote Privilege Escalation and File Disclosure Vulnerability",
-          "date": "2026-08-26",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-47842: org.springframework.security/spring-security-core: Spring Security: Information disclosure via deterministic AES/CBC enc",
-          "date": "2026-08-26",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-72924: github.com/cli/cli: GitHub CLI: Forwarded services exposed on all network interfaces by default",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-19913: mwEmbed: html5lib: Kaltura HTML5 Player: Information disclosure via improper validation of ServiceUrl parameter",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-79781: github.com/rclone/rclone: rclone: Path Traversal allows unauthorized file access",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-79779: github.com/rclone/rclone: rclone: Credential exposure via HTTPS-to-HTTP redirect downgrade.",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-79780: github.com/rclone/rclone: rclone: Information disclosure via S3 redirect callbacks",
-          "date": "2026-08-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-79776: github.com/rclone/rclone: rclone: Authentication bypass leads to backend credential disclosure",
-          "date": "2026-08-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8699-1: libssh vulnerabilities",
-          "date": "2026-08-31",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8698-1: FreeRDP vulnerabilities",
-          "date": "2026-08-31",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8697-1: GNU Core Utilities vulnerabilities",
-          "date": "2026-08-31",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8696-1: Bind vulnerability",
-          "date": "2026-08-31",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8689-1: OpenJDK 26 vulnerabilities",
-          "date": "2026-08-31",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
