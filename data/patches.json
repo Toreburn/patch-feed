@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-07T03:39:23.428Z",
+  "lastUpdated": "2026-09-07T03:58:06.953Z",
   "newPatches": 0,
   "patches": [
     {
@@ -5073,6 +5073,46 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-09-07T03:58:06.953Z",
+      "logs": [
+        "[INFO] aws - 8 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 7 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 7 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 177 patches, no changes",
+        "[INFO] microsoft - 119 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 136 patches, no changes",
+        "[INFO] signal - 1 patches, no changes",
+        "[INFO] ubuntu - 23 patches, no changes"
+      ],
+      "newPatchCount": 0,
+      "totalPatches": 490,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "postgresql",
+        "aws",
+        "cisco",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "cloudflare",
+        "gcp",
+        "crowdstrike"
+      ],
+      "newPatches": []
+    },
+    {
       "timestamp": "2026-09-07T03:39:23.427Z",
       "logs": [
         "[INFO] aws - 8 patches, no changes",
@@ -9843,213 +9883,6 @@
         "gitlab"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-09-01T20:53:23.415Z",
-      "logs": [
-        "[SUCCESS] aws - 4 patches (1 new)",
-        "[INFO] chrome - 2 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[SUCCESS] crowdstrike - 1 patches (1 new)",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[SUCCESS] github - 124 patches (20 new)",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 250 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] redhat - 321 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[SUCCESS] ubuntu - 36 patches (6 new)"
-      ],
-      "newPatchCount": 28,
-      "totalPatches": 757,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "aws",
-        "chrome",
-        "crowdstrike",
-        "github",
-        "ubuntu",
-        "edge",
-        "microsoft",
-        "redhat",
-        "debian",
-        "signal",
-        "paloalto",
-        "cisco",
-        "gitlab"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-83551 - Cleartext storage of HMAC signing key in Amazon SageMaker Python SDK",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "crowdstrike",
-          "title": "CrowdStrike Falcon Guardian Defines the Next Generation of AI Security",
-          "date": "2026-09-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "github",
-          "title": "NLTK: JVM argument injection bypass via per-call options in the NLTK Stanford wrappers (incomplete fix of CVE-2026-12841)",
-          "date": "2026-09-01",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "league/commonmark: Denial of service via distinctly-named attributes in the Attributes extension",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "NLTK: Uncontrolled search path when invoking the Graphviz 'dot' binary",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "league/commonmark: Denial of service in the SmartPunct and Attributes extensions",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "league/commonmark XSS: `on*` event-handler filter in `AttributesExtension` bypassed with a U+000C form feed",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "league/commonmark: Denial of service via crafted code fences, reference links, and emphasis delimiters",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "tornado: multipart split() creates huge temp list before max_parts check -> memory amplification DoS (httputil.py:34)",
-          "date": "2026-09-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Tornado: Incomplete fix for CVE-2026-35536: cookie attribute injection re-opened via the legacy case-insensitive `**kwargs` path in `set_cookie`",
-          "date": "2026-09-01",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Django REST framework: Potential bypass of Django `DATA_UPLOAD_MAX_MEMORY_SIZE` when parsing oversized JSON and urlencoded request bodies via DRF `request.data`",
-          "date": "2026-09-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Django REST framework: AdminRenderer may disclose GET-protected data when rendering invalid write requests",
-          "date": "2026-09-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "nanoid: Integer Overflow or Wraparound",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pnpm: Environment secrets exfiltrated via env-placeholder expansion in proxy settings read from an untrusted pnpm-workspace.yaml",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pnpm: pacquet trust-lockfile install can create dependency symlinks outside the project",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Appium: Reflected XSS / arbitrary JS in @appium/base-driver /test/guinea-pig* routes",
-          "date": "2026-09-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MLFLOW_ALLOW_PICKLE_DESERIALIZATION=False safety control bypassed by mlflow.statsmodels flavor — RCE via crafted model artifact",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Browserslist: Unbounded memory growth (no cache eviction) via distinct query results, leading to eventual OOM",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Browserslist: Uncaught crash / prototype write via untrusted browserslist-stats.json custom stats (normalizeStats)",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "MySQL2: Auth Plugin Downgrade to mysql_clear_password Leaks Plaintext Credentials",
-          "date": "2026-09-01",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Smarty: SSRF via redirect bypass of trusted_uri using {fetch}",
-          "date": "2026-09-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Kirby: System path exposure from error messages in the REST API",
-          "date": "2026-09-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8712-1: pyasn1 vulnerabilities",
-          "date": "2026-09-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8711-1: Libgcrypt vulnerability",
-          "date": "2026-09-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8688-2: PAM vulnerability",
-          "date": "2026-09-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8555-2: Ubuntu Advantage Tools (pro client) regression",
-          "date": "2026-09-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8710-1: libevent vulnerabilities",
-          "date": "2026-09-01",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8709-1: ncurses vulnerability",
-          "date": "2026-09-01",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
