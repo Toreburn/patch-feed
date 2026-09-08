@@ -1,16 +1,574 @@
 {
   "vendor": "mssql",
-  "lastUpdated": "2026-09-08T16:23:34.469Z",
+  "lastUpdated": "2026-09-08T20:58:05.145Z",
   "health": {
-    "lastFetchAttempt": "2026-09-08T16:23:34.469Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-08-31T13:15:23.041Z",
-    "consecutiveEmptyFetches": 31,
+    "lastFetchAttempt": "2026-09-08T20:58:05.145Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 62,
+    "lastFetchNewPatches": 62,
+    "lastSuccessWithData": "2026-09-08T20:58:05.145Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "SQL Server Security Update: CVE-2026-62895 Azure Arc SQL Server Extension Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Permissive cross-domain policy with untrusted domains in Azure Arc allows an unauthorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62895"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-77482 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an unauthorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77482"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67368 Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Improper link resolution before file access ('link following') in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67368"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67370 Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Improper neutralization of special elements used in an sql command ('sql injection') in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67370"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67373 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67373"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67629 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67629"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67630 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67630"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67631 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network....",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67631"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67633 Microsoft SQL Server Denial of Service Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "Out-of-bounds read in SQL Server allows an authorized attacker to deny service over a network....",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67633"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68781 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68781"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68784 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68784"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68785 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68785"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68787 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code locally.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68787"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67378 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Untrusted pointer dereference in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67378"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67376 Microsoft SQL Server Denial of Service Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Integer overflow or wraparound in SQL Server allows an unauthorized attacker to deny service over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67376"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67379 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Stack-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67379"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67383 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Generation of error message containing sensitive information in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67383"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67384 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Integer overflow or wraparound in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67384"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67389 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67389"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67636 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67636"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67643 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67643"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68786 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68786"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-73029 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Buffer over-read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73029"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-65669 Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Improper neutralization of special elements in output used by a downstream component ('injection') in SQL Server allows an unauthorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-65669"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-66814 Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Insufficient granularity of access control in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66814"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-66816 Microsoft SQL Server Security Feature Bypass Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Insufficient logging in SQL Server allows an authorized attacker to bypass a security feature over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66816"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-66818 Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Improper privilege management in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66818"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-66820 SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Improper neutralization of special elements used in an sql command ('sql injection') in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66820"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67380 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67380"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67381 Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67381"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67385 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Use after free in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67385"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67386 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Use of uninitialized resource in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67386"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67388 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67388"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67390 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Buffer over-read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67390"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67393 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Buffer over-read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67393"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67638 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network....",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67638"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67639 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67639"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67641 Microsoft SQL Server Denial of Service Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Integer overflow or wraparound in SQL Server allows an authorized attacker to deny service over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67641"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67642 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67642"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67648 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Use of uninitialized resource in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67648"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68775 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network....",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68775"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68776 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "Use of uninitialized resource in SQL Server allows an authorized attacker to disclose information over a network....",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68776"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68777 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68777"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68778 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68778"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68779 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68779"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-68780 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68780"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-73028 SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Improper access control in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-73028"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-77480 SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Insufficient granularity of access control in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77480"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-77483 SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Weak authentication in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77483"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-77484 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Deserialization of untrusted data in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77484"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-77487 SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Improper access control in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77487"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-77485 SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Use after free in SQL Server allows an authorized attacker to elevate privileges locally.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77485"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-77486 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Integer overflow or wraparound in SQL Server allows an unauthorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77486"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-77488 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Integer underflow (wrap or wraparound) in SQL Server allows an authorized attacker to disclose information locally.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77488"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-69562 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an unauthorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69562"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-78456 SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78456"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-66819 Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Improper neutralization of special elements used in an sql command ('sql injection') in SQL Server allows an authorized attacker to elevate privileges over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66819"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67369 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67369"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67624 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67624"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-67645 Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Out-of-bounds read in SQL Server allows an authorized attacker to disclose information over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-67645"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-77481 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "<p>Heap-based buffer overflow in SQL Server allows an authorized attacker to execute code over a network.</p>...",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-77481"
+    },
+    {
+      "title": "SQL Server Security Update: CVE-2026-47297 Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-08",
+      "severity": "LOW",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "Deserialization of untrusted data in SQL Server allows an unauthorized attacker to execute code over a network....",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47297"
+    },
     {
       "title": "SQL Server Security Update: CVE-2026-47292 Visual Studio Code MSSQL Extension Remote Code Execution Vulnerability",
       "date": "2026-08-24",
