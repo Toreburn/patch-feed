@@ -1,16 +1,60 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-09-08T10:58:15.636Z",
+  "lastUpdated": "2026-09-08T16:23:09.057Z",
   "health": {
-    "lastFetchAttempt": "2026-09-08T10:58:15.636Z",
+    "lastFetchAttempt": "2026-09-08T16:23:09.057Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-08T10:58:15.636Z",
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-09-08T16:23:09.057Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "NLTK: Missing Post-Download Integrity Verification Allows Malicious Package Injection",
+      "date": "2026-09-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "NLTK: Missing Post-Download Integrity Verification Allows Malicious Package Injection",
+      "link": "https://github.com/advisories/GHSA-5wp5-5229-5g6q",
+      "cve": "CVE-2026-12259",
+      "cvss": 5.3
+    },
+    {
+      "title": "NLTK: StreamBackedCorpusView Bypasses pathsec.ENFORCE - Arbitrary Local File Read",
+      "date": "2026-09-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "NLTK: StreamBackedCorpusView Bypasses pathsec.ENFORCE - Arbitrary Local File Read",
+      "link": "https://github.com/advisories/GHSA-x5ph-mj9p-rfr8",
+      "cve": "CVE-2026-63312",
+      "cvss": null
+    },
+    {
+      "title": "NLTK: FileSystemPathPointer.open() sandbox check is dead code — arbitrary file read via file:// protocol",
+      "date": "2026-09-08",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "NLTK: FileSystemPathPointer.open() sandbox check is dead code — arbitrary file read via file:// protocol",
+      "link": "https://github.com/advisories/GHSA-72r2-7mfr-5xr9",
+      "cve": "CVE-2026-65915",
+      "cvss": 6.5
+    },
+    {
+      "title": "NLTK: Symlink escape in CorpusReader allows arbitrary local file read outside the corpus root",
+      "date": "2026-09-08",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "NLTK: Symlink escape in CorpusReader allows arbitrary local file read outside the corpus root",
+      "link": "https://github.com/advisories/GHSA-r6gq-whwq-mvg9",
+      "cve": "CVE-2026-70626",
+      "cvss": 6.2
+    },
     {
       "title": "SurrealDB: Custom API route lets authenticated callers override namespace/database scope via URL path",
       "date": "2026-09-04",
