@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-09-09T20:46:55.931Z",
+  "lastUpdated": "2026-09-10T04:03:19.691Z",
   "health": {
-    "lastFetchAttempt": "2026-09-09T20:46:55.931Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-08T16:23:52.696Z",
-    "consecutiveEmptyFetches": 5,
+    "lastFetchAttempt": "2026-09-10T04:03:19.691Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-09-10T04:03:19.691Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "@yeger/turbo-graph: Unauthenticated Network-Exposed Task Execution via /api/run",
+      "date": "2026-09-09",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Unauthenticated Network-Exposed Turborepo Task Execution via /api/run\n\n### Summary\n\n`@yeger/turbo-graph` starts its embedded Next.js server without binding to the loopback interface, causing it to ",
+      "link": "https://github.com/advisories/GHSA-2r5q-h53f-9rp3",
+      "cves": [
+        "CVE-2026-59160"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "TypeSpec: Unauthenticated Remote Shutdown of Spector Mock Server via POST /.admin/stop",
       "date": "2026-09-04",
