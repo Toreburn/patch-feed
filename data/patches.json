@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-11T03:44:52.636Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-11T04:01:27.473Z",
+  "newPatches": 106,
   "patches": [
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -491,6 +491,17 @@
       "cve": ""
     },
     {
+      "title": "DSA-6492-1 ruby-rack - security update",
+      "date": "2026-09-10",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "ruby-rack",
+      "description": "Multiple security issues were found in Rack, an interface for developing web applications in Ruby, which could result in denial of service, information disclosure, spoofing or bypass of access restric...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00403.html",
+      "cve": "",
+      "cves": []
+    },
+    {
       "title": "n8n: Domain-Restriction Bypass via Unguarded Model-Search Endpoint in OpenAI Chat Model Node",
       "date": "2026-09-10",
       "severity": "HIGH",
@@ -753,6 +764,400 @@
       "link": "https://github.com/advisories/GHSA-23rh-xw42-fq82",
       "cve": "CVE-2026-55416",
       "cvss": 8.8
+    },
+    {
+      "title": "Open WebUI: Users denied by the OAuth role policy can still sign in via token exchange",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Users denied by the OAuth role policy can still sign in via token exchange",
+      "link": "https://github.com/advisories/GHSA-wvm9-9g5j-623f",
+      "cve": "CVE-2026-88006",
+      "cvss": 6.5
+    },
+    {
+      "title": "Traefik: Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') and Incorrect Authorization",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/traefik/traefik/v3, github.com/traefik/traefik/v2",
+      "description": "Traefik: Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') and Incorrect Authorization",
+      "link": "https://github.com/advisories/GHSA-w4v4-9rw7-5326",
+      "cve": "CVE-2026-88008",
+      "cvss": null
+    },
+    {
+      "title": "Traefik entrypoint header-name sanitization bypassed via request trailers",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/traefik/traefik/v3",
+      "description": "Traefik entrypoint header-name sanitization bypassed via request trailers",
+      "link": "https://github.com/advisories/GHSA-v67p-phpq-fc8x",
+      "cve": "CVE-2026-88004",
+      "cvss": null
+    },
+    {
+      "title": "Traefik HTTP/3 Backend NTLM Connection Reuse",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/traefik/traefik/v3, github.com/traefik/traefik/v2",
+      "description": "Traefik HTTP/3 Backend NTLM Connection Reuse",
+      "link": "https://github.com/advisories/GHSA-qqjf-53cj-pwvv",
+      "cve": "CVE-2026-88007",
+      "cvss": null
+    },
+    {
+      "title": "Traefik: Rootless HTTP/1 request-target routes as \"/\" but is forwarded verbatim, bypassing path-scoped routing, middleware guards and access logging",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/traefik/traefik/v3, github.com/traefik/traefik/v2",
+      "description": "Traefik: Rootless HTTP/1 request-target routes as \"/\" but is forwarded verbatim, bypassing path-scoped routing, middleware guards and access logging",
+      "link": "https://github.com/advisories/GHSA-f52w-8j3h-j724",
+      "cve": "CVE-2026-88009",
+      "cvss": null
+    },
+    {
+      "title": "rclone archive/zip: Zip Slip via unsanitized zip entry names lets a malicious archive escape its own namespace",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/rclone/rclone",
+      "description": "rclone archive/zip: Zip Slip via unsanitized zip entry names lets a malicious archive escape its own namespace",
+      "link": "https://github.com/advisories/GHSA-66hp-wgxq-6f5q",
+      "cve": "CVE-2026-88014",
+      "cvss": 6.3
+    },
+    {
+      "title": "rclone: http backend forwards custom/auth headers to a different host on redirect",
+      "date": "2026-09-10",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/rclone/rclone",
+      "description": "rclone: http backend forwards custom/auth headers to a different host on redirect",
+      "link": "https://github.com/advisories/GHSA-486v-q2wf-fp2r",
+      "cve": "CVE-2026-88013",
+      "cvss": 3.7
+    },
+    {
+      "title": "rclone: Directory metadata (chmod/chown/chtimes) applied through a planted symlink in rclone local --links escapes the destination",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/rclone/rclone",
+      "description": "rclone: Directory metadata (chmod/chown/chtimes) applied through a planted symlink in rclone local --links escapes the destination",
+      "link": "https://github.com/advisories/GHSA-f8g7-2xjc-7mfh",
+      "cve": "CVE-2026-88016",
+      "cvss": 6.5
+    },
+    {
+      "title": "rclone local: crafted Range request against a translated symlink panics (DoS)",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/rclone/rclone",
+      "description": "rclone local: crafted Range request against a translated symlink panics (DoS)",
+      "link": "https://github.com/advisories/GHSA-p6m2-r3w9-mpxw",
+      "cve": "CVE-2026-88015",
+      "cvss": 5.3
+    },
+    {
+      "title": "rclone serve s3: --auth-proxy without --auth-key authenticates nobody - full SigV4 signature bypass",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/rclone/rclone",
+      "description": "rclone serve s3: --auth-proxy without --auth-key authenticates nobody - full SigV4 signature bypass",
+      "link": "https://github.com/advisories/GHSA-xwwr-4h3p-r22c",
+      "cve": "CVE-2026-88018",
+      "cvss": 9.8
+    },
+    {
+      "title": "rclone: RC per-server auth-proxy bypass",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/rclone/rclone",
+      "description": "rclone: RC per-server auth-proxy bypass",
+      "link": "https://github.com/advisories/GHSA-p569-5gjg-9cmj",
+      "cve": "CVE-2026-88044",
+      "cvss": 9.1
+    },
+    {
+      "title": "rclone: FTP cross-session auth-proxy backend confusion",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/rclone/rclone",
+      "description": "rclone: FTP cross-session auth-proxy backend confusion",
+      "link": "https://github.com/advisories/GHSA-c476-6w5q-jw77",
+      "cve": "CVE-2026-88017",
+      "cvss": 7.3
+    },
+    {
+      "title": "rclone: source object names can escape the configured root on upload",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/rclone/rclone",
+      "description": "rclone: source object names can escape the configured root on upload",
+      "link": "https://github.com/advisories/GHSA-38xv-hf3p-h7mq",
+      "cve": "CVE-2026-88046",
+      "cvss": 5.3
+    },
+    {
+      "title": "rclone: S3 multipart declared-length memory exhaustion",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/rclone/rclone",
+      "description": "rclone: S3 multipart declared-length memory exhaustion",
+      "link": "https://github.com/advisories/GHSA-2p48-j3qc-rx9f",
+      "cve": "CVE-2026-88045",
+      "cvss": 7.5
+    },
+    {
+      "title": "Open WebUI: Unauthenticated requests can stall the server via uncached OIDC fetches in back-channel logout",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Unauthenticated requests can stall the server via uncached OIDC fetches in back-channel logout",
+      "link": "https://github.com/advisories/GHSA-3g9q-v48f-hh9w",
+      "cve": "CVE-2026-87011",
+      "cvss": 7.5
+    },
+    {
+      "title": "Open WebUI: Any authenticated user can suppress calendar alerts instance-wide via a non-numeric alert value",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Any authenticated user can suppress calendar alerts instance-wide via a non-numeric alert value",
+      "link": "https://github.com/advisories/GHSA-v39v-59xw-j98g",
+      "cve": "CVE-2026-87012",
+      "cvss": 4.3
+    },
+    {
+      "title": "Open WebUI: Any authenticated user can start a non-terminating request via a folder parent cycle",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Any authenticated user can start a non-terminating request via a folder parent cycle",
+      "link": "https://github.com/advisories/GHSA-8r35-5x5r-hv74",
+      "cve": "CVE-2026-87013",
+      "cvss": 4.3
+    },
+    {
+      "title": "Open WebUI: Admin demoted through SSO role sync keeps read and write access to all users' notes",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Admin demoted through SSO role sync keeps read and write access to all users' notes",
+      "link": "https://github.com/advisories/GHSA-wjwr-xfp9-r66p",
+      "cve": "CVE-2026-87014",
+      "cvss": 6.5
+    },
+    {
+      "title": "@jhb.software/payload-alt-text-plugin: Alt Text Endpoint Authorization Bypass via Payload Local API `overrideAccess` Omission",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@jhb.software/payload-alt-text-plugin",
+      "description": "@jhb.software/payload-alt-text-plugin: Alt Text Endpoint Authorization Bypass via Payload Local API `overrideAccess` Omission",
+      "link": "https://github.com/advisories/GHSA-4qpv-39hg-f7fx",
+      "cve": "CVE-2026-59965",
+      "cvss": 7.1
+    },
+    {
+      "title": "@argos-ci/core: CI Branch Name OS Command Injection",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@argos-ci/core",
+      "description": "@argos-ci/core: CI Branch Name OS Command Injection",
+      "link": "https://github.com/advisories/GHSA-4x45-gxvp-6283",
+      "cve": "CVE-2026-59960",
+      "cvss": 7.5
+    },
+    {
+      "title": " mistral.rs: Unbounded Remote Media Fetch and Video Frame Expansion DoS",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "mistralrs-server-core",
+      "description": " mistral.rs: Unbounded Remote Media Fetch and Video Frame Expansion DoS",
+      "link": "https://github.com/advisories/GHSA-m3wp-48jr-vr4g",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "mistral.rs Media Loader: Unauthenticated SSRF and arbitrary local file read via image_url",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "mistralrs-server-core",
+      "description": "mistral.rs Media Loader: Unauthenticated SSRF and arbitrary local file read via image_url",
+      "link": "https://github.com/advisories/GHSA-wfgq-w7cq-qj7j",
+      "cve": "",
+      "cvss": 7.2
+    },
+    {
+      "title": "Open WebUI: A user's session cookies are sent to tool servers configured for bearer authentication",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: A user's session cookies are sent to tool servers configured for bearer authentication",
+      "link": "https://github.com/advisories/GHSA-p78m-89r6-pgf7",
+      "cve": "CVE-2026-87015",
+      "cvss": 6.8
+    },
+    {
+      "title": "Open WebUI: Sign-in as another user via wildcard characters in the OAuth subject claim on SQLite",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "open-webui",
+      "description": "Open WebUI: Sign-in as another user via wildcard characters in the OAuth subject claim on SQLite",
+      "link": "https://github.com/advisories/GHSA-wpmr-8h3q-fwj7",
+      "cve": "CVE-2026-87016",
+      "cvss": 8.1
+    },
+    {
+      "title": " OmniRoute ACP Custom-Agent Remote Code Execution (RCE)",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "omniroute",
+      "description": " OmniRoute ACP Custom-Agent Remote Code Execution (RCE)",
+      "link": "https://github.com/advisories/GHSA-hf57-cqmx-p4gr",
+      "cve": "CVE-2026-88062",
+      "cvss": null
+    },
+    {
+      "title": "n8n: Per-Resource OAuth Consent Bypass via Unbound Refresh Token Resource Substitution",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n",
+      "description": "n8n: Per-Resource OAuth Consent Bypass via Unbound Refresh Token Resource Substitution",
+      "link": "https://github.com/advisories/GHSA-cw9w-vv67-hf73",
+      "cve": "CVE-2026-86073",
+      "cvss": null
+    },
+    {
+      "title": "n8n: Instance AI Credential Setup Accepts Unvalidated Probe URL from Fetched Content",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n",
+      "description": "n8n: Instance AI Credential Setup Accepts Unvalidated Probe URL from Fetched Content",
+      "link": "https://github.com/advisories/GHSA-q5wm-mgqx-fv2f",
+      "cve": "CVE-2026-86074",
+      "cvss": null
+    },
+    {
+      "title": "n8n: Git Node branch.<name>.remote Config Key Bypasses Sandbox Path Restriction, Enabling Local Git Repository Read",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n, n8n",
+      "description": "n8n: Git Node branch.<name>.remote Config Key Bypasses Sandbox Path Restriction, Enabling Local Git Repository Read",
+      "link": "https://github.com/advisories/GHSA-qgpw-8g46-w95v",
+      "cve": "CVE-2026-86995",
+      "cvss": null
+    },
+    {
+      "title": "n8n: Cross-Tenant Project-Member PII Disclosure via Missing Per-Project Scope Check on Role Assignment Endpoints",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n",
+      "description": "n8n: Cross-Tenant Project-Member PII Disclosure via Missing Per-Project Scope Check on Role Assignment Endpoints",
+      "link": "https://github.com/advisories/GHSA-cqr2-h44g-v75v",
+      "cve": "CVE-2026-86085",
+      "cvss": null
+    },
+    {
+      "title": "n8n: Log Streaming Event Destinations Decrypt Generic-Auth Credentials Without Ownership Check",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n, n8n",
+      "description": "n8n: Log Streaming Event Destinations Decrypt Generic-Auth Credentials Without Ownership Check",
+      "link": "https://github.com/advisories/GHSA-pq6c-vh67-xpm3",
+      "cve": "CVE-2026-86993",
+      "cvss": null
+    },
+    {
+      "title": "n8n: Disabled OIDC SSO Endpoints Remain Active and Issue Valid Sessions",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n, n8n",
+      "description": "n8n: Disabled OIDC SSO Endpoints Remain Active and Issue Valid Sessions",
+      "link": "https://github.com/advisories/GHSA-pf83-w3f9-8m37",
+      "cve": "CVE-2026-86084",
+      "cvss": null
+    },
+    {
+      "title": "n8n: GitHub Trigger 422 Reuse Path Skips Webhook Secret Storage, Causing Signature Verification to Fail-Open",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n, n8n",
+      "description": "n8n: GitHub Trigger 422 Reuse Path Skips Webhook Secret Storage, Causing Signature Verification to Fail-Open",
+      "link": "https://github.com/advisories/GHSA-5m98-cgcr-xx3q",
+      "cve": "CVE-2026-86080",
+      "cvss": null
+    },
+    {
+      "title": "n8n: Path Injection in Elasticsearch and ElasticSecurity Nodes via Unencoded Identifiers",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n, n8n",
+      "description": "n8n: Path Injection in Elasticsearch and ElasticSecurity Nodes via Unencoded Identifiers",
+      "link": "https://github.com/advisories/GHSA-f2cp-m7mv-8jpv",
+      "cve": "CVE-2026-86079",
+      "cvss": null
+    },
+    {
+      "title": "n8n: Prototype Pollution via Workflow Structure Summary Can Lead to Denial of Service",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n",
+      "description": "n8n: Prototype Pollution via Workflow Structure Summary Can Lead to Denial of Service",
+      "link": "https://github.com/advisories/GHSA-679f-58pq-4v2c",
+      "cve": "CVE-2026-86078",
+      "cvss": null
+    },
+    {
+      "title": "n8n: Cross-User Active Workflow ID and Lifecycle Event Disclosure via Missing userId Filter",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "n8n, n8n, n8n",
+      "description": "n8n: Cross-User Active Workflow ID and Lifecycle Event Disclosure via Missing userId Filter",
+      "link": "https://github.com/advisories/GHSA-65xw-2v52-jhxc",
+      "cve": "CVE-2026-86994",
+      "cvss": null
+    },
+    {
+      "title": "GitLab Critical Patch Release: 19.3.2, 19.2.6, 19.1.8",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "gitlab",
+      "component": "GitLab CE/EE",
+      "description": "Security fixes for CVE-2026-85706, CVE-2026-85706, CVE-2026-87719...",
+      "link": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/"
     },
     {
       "title": "CVE-2026-0799: OOBR and OOBW in libpcap before 1.10.7",
@@ -1205,6 +1610,456 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-80731"
     },
     {
+      "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2025-70873",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-70873"
+    },
+    {
+      "title": "CVE-2026-34182: CMS AuthEnvelopedData Processing May Accept Forged Messages",
+      "date": "2026-09-10",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-34182",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-34182"
+    },
+    {
+      "title": "CVE-2026-47297: Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-47297",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47297"
+    },
+    {
+      "title": "CVE-2026-50349: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-50349",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-50349"
+    },
+    {
+      "title": "CVE-2026-55007: Microsoft Exchange Server Remote Code Execution Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-55007",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-55007"
+    },
+    {
+      "title": "CVE-2026-56172: Windows VHD miniport driver Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-56172",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-56172"
+    },
+    {
+      "title": "CVE-2026-56177: Windows Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-56177",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-56177"
+    },
+    {
+      "title": "CVE-2026-56198: Microsoft Trace Data Helper Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-56198",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-56198"
+    },
+    {
+      "title": "CVE-2026-57098: Microsoft Remote Desktop App for Windows Information Disclosure Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57098",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57098"
+    },
+    {
+      "title": "CVE-2026-57099: ASP.NET Core Denial of Service Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57099",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57099"
+    },
+    {
+      "title": "CVE-2026-58599: HEVC Video Extensions Remote Code Execution Vulnerability",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-58599",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-58599"
+    },
+    {
+      "title": "CVE-2026-58600: HEVC Video Extensions Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-58600",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-58600"
+    },
+    {
+      "title": "CVE-2026-58611: Xbox Gaming Services Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-58611",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-58611"
+    },
+    {
+      "title": "CVE-2026-58649: .NET Information Disclosure Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-58649",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-58649"
+    },
+    {
+      "title": "CVE-2026-62694: Windows Installer Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62694",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62694"
+    },
+    {
+      "title": "CVE-2026-62697: Windows Push Notifications Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62697",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62697"
+    },
+    {
+      "title": "CVE-2026-62706: Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62706",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62706"
+    },
+    {
+      "title": "CVE-2026-62744: Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62744",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62744"
+    },
+    {
+      "title": "CVE-2026-62759: Windows Netlogon Spoofing Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62759",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62759"
+    },
+    {
+      "title": "CVE-2026-62762: Windows Active Directory Domain Services Denial of Service Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62762",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62762"
+    },
+    {
+      "title": "CVE-2026-62801: Microsoft PowerShell Security Feature Bypass Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62801",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62801"
+    },
+    {
+      "title": "CVE-2026-62804: Microsoft Word Remote Code Execution Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62804",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62804"
+    },
+    {
+      "title": "CVE-2026-62810: Active Directory Certificate Services (AD CS) Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62810",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62810"
+    },
+    {
+      "title": "CVE-2026-62813: Windows Active Directory Domain Services Remote Code Execution Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62813",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62813"
+    },
+    {
+      "title": "CVE-2026-62895: Azure Arc SQL Server Extension Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62895",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62895"
+    },
+    {
+      "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62906",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62906"
+    },
+    {
+      "title": "CVE-2026-62916: Microsoft Entra ID Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-62916",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-62916"
+    },
+    {
+      "title": "CVE-2026-63523: Skype for Business Spoofing Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-63523",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-63523"
+    },
+    {
+      "title": "CVE-2026-64918: Microsoft Office Spoofing Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-64918",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-64918"
+    },
+    {
+      "title": "CVE-2026-65669: Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-65669",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-65669"
+    },
+    {
+      "title": "CVE-2026-65772: Microsoft Dynamics 365 On-Premises Remote Code Execution Vulnerability",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-65772",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-65772"
+    },
+    {
+      "title": "CVE-2026-65812: Microsoft Teams for Android Information Disclosure Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-65812",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-65812"
+    },
+    {
+      "title": "CVE-2026-65818: Power Automate Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-65818",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-65818"
+    },
+    {
+      "title": "CVE-2026-66302: Skype for Business Remote Code Execution Vulnerability",
+      "date": "2026-09-10",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66302",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66302"
+    },
+    {
+      "title": "CVE-2026-66303: Skype for Business and Lync Denial of Service Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66303",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66303"
+    },
+    {
+      "title": "CVE-2026-66304: Skype for Business Information Disclosure Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66304",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66304"
+    },
+    {
+      "title": "CVE-2026-66305: Skype for Business Spoofing Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66305",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66305"
+    },
+    {
+      "title": "CVE-2026-66306: Skype for Business Information Disclosure Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66306",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66306"
+    },
+    {
+      "title": "CVE-2026-66307: Skype for Business and Lync Denial of Service Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66307",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66307"
+    },
+    {
+      "title": "CVE-2026-66308: Skype for Business and Lync Denial of Service Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66308",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66308"
+    },
+    {
+      "title": "CVE-2026-66814: Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66814",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66814"
+    },
+    {
+      "title": "CVE-2026-66816: Microsoft SQL Server Security Feature Bypass Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66816",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66816"
+    },
+    {
+      "title": "CVE-2026-66818: Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66818",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66818"
+    },
+    {
+      "title": "CVE-2026-66819: Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66819",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66819"
+    },
+    {
+      "title": "CVE-2026-66820: SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66820",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66820"
+    },
+    {
+      "title": "CVE-2026-67368: Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-67368",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67368"
+    },
+    {
+      "title": "CVE-2026-67369: Microsoft SQL Server Information Disclosure Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-67369",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67369"
+    },
+    {
+      "title": "CVE-2026-67370: Microsoft SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-67370",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67370"
+    },
+    {
+      "title": "CVE-2026-67373: Microsoft SQL Server Remote Code Execution Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-67373",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67373"
+    },
+    {
+      "title": "CVE-2026-67376: Microsoft SQL Server Denial of Service Vulnerability",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-67376",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67376"
+    },
+    {
       "title": "CVE-2026-61915: cyrus-imapd: cyrus-imapd: VPATCH BYPARAM double-free in CalDAV",
       "date": "2026-09-10",
       "severity": "MEDIUM",
@@ -1359,6 +2214,199 @@
       "cvss": 5.6
     },
     {
+      "title": "CVE-2026-89011: isomorphic-git: isomorphic-git: Information disclosure via prototype pollution in getRemoteInfo function.",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "isomorphic-git: isomorphic-git: Information disclosure via prototype pollution in getRemoteInfo function.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-89011.json",
+      "cve": "CVE-2026-89011",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-88059: Angular: Angular: Information Leak via HttpTransferCache Bypass",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Angular: Angular: Information Leak via HttpTransferCache Bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88059.json",
+      "cve": "CVE-2026-88059",
+      "cvss": 4
+    },
+    {
+      "title": "CVE-2026-88029: pymongo: MongoDB Python Driver: Data disclosure and denial of service via query-operator injection",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pymongo: MongoDB Python Driver: Data disclosure and denial of service via query-operator injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88029.json",
+      "cve": "CVE-2026-88029",
+      "cvss": 8.3
+    },
+    {
+      "title": "CVE-2026-88024: rust-mongodb: MongoDB Rust Driver (GridFS): Data disclosure and deletion via query-operator injection in file IDs.",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rust-mongodb: MongoDB Rust Driver (GridFS): Data disclosure and deletion via query-operator injection in file IDs.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88024.json",
+      "cve": "CVE-2026-88024",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-88050: tesseract: Tesseract: Out-of-bounds write leads to Denial of Service",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "tesseract: Tesseract: Out-of-bounds write leads to Denial of Service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88050.json",
+      "cve": "CVE-2026-88050",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-88049: tesseract: Tesseract: Heap out-of-bounds write allows arbitrary code execution or denial of service",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "tesseract: Tesseract: Heap out-of-bounds write allows arbitrary code execution or denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88049.json",
+      "cve": "CVE-2026-88049",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-88048: tesseract: Tesseract: Heap out-of-bounds write/read leading to information disclosure via crafted data",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "tesseract: Tesseract: Heap out-of-bounds write/read leading to information disclosure via crafted data",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88048.json",
+      "cve": "CVE-2026-88048",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-88047: tesseract: Tesseract: Stack buffer overflow via crafted .traineddata file",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "tesseract: Tesseract: Stack buffer overflow via crafted .traineddata file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88047.json",
+      "cve": "CVE-2026-88047",
+      "cvss": 8.4
+    },
+    {
+      "title": "CVE-2026-88015: golang: net/http: github.com/rclone/rclone: rclone: Denial of Service via crafted Range request against translated symli",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "golang: net/http: github.com/rclone/rclone: rclone: Denial of Service via crafted Range request against translated symlink",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88015.json",
+      "cve": "CVE-2026-88015",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-88914: gstreamer1-plugins-good: gstreamer: integer overflow and out-of-bounds read in qtdemux CEA-608 closed-caption parser",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gstreamer1-plugins-good: gstreamer: integer overflow and out-of-bounds read in qtdemux CEA-608 closed-caption parser",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88914.json",
+      "cve": "CVE-2026-88914",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-88884: renovate: mend-renovate-ce: mend-renovate-enterprise-edition: Renovate: Security control bypass via digest updates",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "renovate: mend-renovate-ce: mend-renovate-enterprise-edition: Renovate: Security control bypass via digest updates",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88884.json",
+      "cve": "CVE-2026-88884",
+      "cvss": 5.8
+    },
+    {
+      "title": "CVE-2026-84828: pcs: pcs: non-root haclient users can read arbitrary files via pcs host auth --token",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pcs: pcs: non-root haclient users can read arbitrary files via pcs host auth --token",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84828.json",
+      "cve": "CVE-2026-84828",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-88859: evolution: evolution: javascript execution via spoofed vCard control bypasses mail script-markup restriction",
+      "date": "2026-09-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "evolution: evolution: javascript execution via spoofed vCard control bypasses mail script-markup restriction",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88859.json",
+      "cve": "CVE-2026-88859",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-87962: com.tdunning/t-digest: t-digest: t-digest: Denial of Service via unvalidated length fields",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "com.tdunning/t-digest: t-digest: t-digest: Denial of Service via unvalidated length fields",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-87962.json",
+      "cve": "CVE-2026-87962",
+      "cvss": 7.5
+    },
+    {
+      "title": "Signal Desktop v8.28.0-beta.2",
+      "date": "2026-09-10",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.28.0-beta.2",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "Signal Desktop v8.28.0-beta.1",
+      "date": "2026-09-10",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.28.0-beta.1",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": " mistral.rs: Unbounded Remote Media Fetch and Video Frame Expansion DoS",
+      "date": "2026-09-10",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Unbounded Remote Media Fetch and Video Frame Expansion DoS\n\n### Summary\nThe `POST /v1/chat/completions` endpoint in mistral.rs fetches attacker-supplied media URLs (image, audio, video) into server",
+      "link": "https://github.com/advisories/GHSA-m3wp-48jr-vr4g",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
       "title": "USN-8742-1: Netty vulnerability",
       "date": "2026-09-10",
       "severity": "UNKNOWN",
@@ -1447,6 +2495,15 @@
       "component": "Python vulnerabilities",
       "description": "It was discovered that Python's http.cookies module incorrectly handled\ncontrol characters in certain cookie operations. An attacker could possibly\nuse this issue to inject arbitrary content. This iss...",
       "link": "https://ubuntu.com/security/notices/USN-8744-1"
+    },
+    {
+      "title": "USN-8571-2: Apache HTTP Server regression",
+      "date": "2026-09-10",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Apache HTTP Server regression",
+      "description": "USN-8571-1 fixed vulnerabilities in Apache HTTP Server. That fix was\nincomplete due to a missing library symbol, resulting in a regression\nthat could cause Apache HTTP Server to fail to start when HTT...",
+      "link": "https://ubuntu.com/security/notices/USN-8571-2"
     },
     {
       "title": "CVE-2026-85788 - Issue with awslabs mysql-mcp-server",
@@ -3648,6 +4705,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88265.json",
       "cve": "CVE-2026-88265",
       "cvss": 5.6
+    },
+    {
+      "title": "CVE-2026-88924: gvfs: gvfs-admin socket ownership race permits local root",
+      "date": "2026-09-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gvfs: gvfs-admin socket ownership race permits local root",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88924.json",
+      "cve": "CVE-2026-88924",
+      "cvss": 7
     },
     {
       "title": "@yeger/turbo-graph: Unauthenticated Network-Exposed Task Execution via /api/run",
@@ -8273,6 +9341,693 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-11T04:01:27.473Z",
+      "logs": [
+        "[INFO] apple - 1 patches, no changes",
+        "[INFO] aws - 38 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 7 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 9 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 11 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 179 patches (35 new)",
+        "[SUCCESS] gitlab - 1 patches (1 new)",
+        "[SUCCESS] microsoft - 450 patches (50 new)",
+        "[INFO] mssql - 62 patches, no changes",
+        "[INFO] paloalto - 10 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 146 patches (15 new)",
+        "[SUCCESS] signal - 4 patches (3 new)",
+        "[SUCCESS] ubuntu - 29 patches (1 new)"
+      ],
+      "newPatchCount": 106,
+      "totalPatches": 956,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 19,
+      "vendors": [
+        "microsoft",
+        "aws",
+        "cisco",
+        "cloudflare",
+        "debian",
+        "github",
+        "gitlab",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "gcp",
+        "paloalto",
+        "postgresql",
+        "apple",
+        "chrome",
+        "crowdstrike",
+        "edge",
+        "fortinet",
+        "mssql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6492-1 ruby-rack - security update",
+          "date": "2026-09-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Users denied by the OAuth role policy can still sign in via token exchange",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Traefik: Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') and Incorrect Authorization",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Traefik entrypoint header-name sanitization bypassed via request trailers",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Traefik HTTP/3 Backend NTLM Connection Reuse",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "Traefik: Rootless HTTP/1 request-target routes as \"/\" but is forwarded verbatim, bypassing path-scoped routing, middleware guards and access logging",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "rclone archive/zip: Zip Slip via unsanitized zip entry names lets a malicious archive escape its own namespace",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "rclone: http backend forwards custom/auth headers to a different host on redirect",
+          "date": "2026-09-10",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "rclone: Directory metadata (chmod/chown/chtimes) applied through a planted symlink in rclone local --links escapes the destination",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "rclone local: crafted Range request against a translated symlink panics (DoS)",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "rclone serve s3: --auth-proxy without --auth-key authenticates nobody - full SigV4 signature bypass",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "rclone: RC per-server auth-proxy bypass",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "rclone: FTP cross-session auth-proxy backend confusion",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "rclone: source object names can escape the configured root on upload",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "rclone: S3 multipart declared-length memory exhaustion",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Unauthenticated requests can stall the server via uncached OIDC fetches in back-channel logout",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Any authenticated user can suppress calendar alerts instance-wide via a non-numeric alert value",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Any authenticated user can start a non-terminating request via a folder parent cycle",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Admin demoted through SSO role sync keeps read and write access to all users' notes",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "@jhb.software/payload-alt-text-plugin: Alt Text Endpoint Authorization Bypass via Payload Local API `overrideAccess` Omission",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "@argos-ci/core: CI Branch Name OS Command Injection",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": " mistral.rs: Unbounded Remote Media Fetch and Video Frame Expansion DoS",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "mistral.rs Media Loader: Unauthenticated SSRF and arbitrary local file read via image_url",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: A user's session cookies are sent to tool servers configured for bearer authentication",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Open WebUI: Sign-in as another user via wildcard characters in the OAuth subject claim on SQLite",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": " OmniRoute ACP Custom-Agent Remote Code Execution (RCE)",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Per-Resource OAuth Consent Bypass via Unbound Refresh Token Resource Substitution",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Instance AI Credential Setup Accepts Unvalidated Probe URL from Fetched Content",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Git Node branch.<name>.remote Config Key Bypasses Sandbox Path Restriction, Enabling Local Git Repository Read",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Cross-Tenant Project-Member PII Disclosure via Missing Per-Project Scope Check on Role Assignment Endpoints",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Log Streaming Event Destinations Decrypt Generic-Auth Credentials Without Ownership Check",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Disabled OIDC SSO Endpoints Remain Active and Issue Valid Sessions",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: GitHub Trigger 422 Reuse Path Skips Webhook Secret Storage, Causing Signature Verification to Fail-Open",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Path Injection in Elasticsearch and ElasticSecurity Nodes via Unencoded Identifiers",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Prototype Pollution via Workflow Structure Summary Can Lead to Denial of Service",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "n8n: Cross-User Active Workflow ID and Lifecycle Event Disclosure via Missing userId Filter",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "gitlab",
+          "title": "GitLab Critical Patch Release: 19.3.2, 19.2.6, 19.1.8",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-34182: CMS AuthEnvelopedData Processing May Accept Forged Messages",
+          "date": "2026-09-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-47297: Microsoft SQL Server Remote Code Execution Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-50349: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-55007: Microsoft Exchange Server Remote Code Execution Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-56172: Windows VHD miniport driver Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-56177: Windows Server Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-56198: Microsoft Trace Data Helper Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57098: Microsoft Remote Desktop App for Windows Information Disclosure Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57099: ASP.NET Core Denial of Service Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-58599: HEVC Video Extensions Remote Code Execution Vulnerability",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-58600: HEVC Video Extensions Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-58611: Xbox Gaming Services Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-58649: .NET Information Disclosure Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62694: Windows Installer Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62697: Windows Push Notifications Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62706: Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62744: Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62759: Windows Netlogon Spoofing Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62762: Windows Active Directory Domain Services Denial of Service Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62801: Microsoft PowerShell Security Feature Bypass Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62804: Microsoft Word Remote Code Execution Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62810: Active Directory Certificate Services (AD CS) Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62813: Windows Active Directory Domain Services Remote Code Execution Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62895: Azure Arc SQL Server Extension Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-62916: Microsoft Entra ID Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-63523: Skype for Business Spoofing Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-64918: Microsoft Office Spoofing Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-65669: Microsoft SQL Server Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-65772: Microsoft Dynamics 365 On-Premises Remote Code Execution Vulnerability",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-65812: Microsoft Teams for Android Information Disclosure Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-65818: Power Automate Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66302: Skype for Business Remote Code Execution Vulnerability",
+          "date": "2026-09-10",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66303: Skype for Business and Lync Denial of Service Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66304: Skype for Business Information Disclosure Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66305: Skype for Business Spoofing Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66306: Skype for Business Information Disclosure Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66307: Skype for Business and Lync Denial of Service Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66308: Skype for Business and Lync Denial of Service Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66814: Microsoft SQL Server Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66816: Microsoft SQL Server Security Feature Bypass Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66818: Microsoft SQL Server Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66819: Microsoft SQL Server Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66820: SQL Server Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-67368: Microsoft SQL Server Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-67369: Microsoft SQL Server Information Disclosure Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-67370: Microsoft SQL Server Elevation of Privilege Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-67373: Microsoft SQL Server Remote Code Execution Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-67376: Microsoft SQL Server Denial of Service Vulnerability",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-89011: isomorphic-git: isomorphic-git: Information disclosure via prototype pollution in getRemoteInfo function.",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88059: Angular: Angular: Information Leak via HttpTransferCache Bypass",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88029: pymongo: MongoDB Python Driver: Data disclosure and denial of service via query-operator injection",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88024: rust-mongodb: MongoDB Rust Driver (GridFS): Data disclosure and deletion via query-operator injection in file IDs.",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88050: tesseract: Tesseract: Out-of-bounds write leads to Denial of Service",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88049: tesseract: Tesseract: Heap out-of-bounds write allows arbitrary code execution or denial of service",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88048: tesseract: Tesseract: Heap out-of-bounds write/read leading to information disclosure via crafted data",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88047: tesseract: Tesseract: Stack buffer overflow via crafted .traineddata file",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88015: golang: net/http: github.com/rclone/rclone: rclone: Denial of Service via crafted Range request against translated symli",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88914: gstreamer1-plugins-good: gstreamer: integer overflow and out-of-bounds read in qtdemux CEA-608 closed-caption parser",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88884: renovate: mend-renovate-ce: mend-renovate-enterprise-edition: Renovate: Security control bypass via digest updates",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84828: pcs: pcs: non-root haclient users can read arbitrary files via pcs host auth --token",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88859: evolution: evolution: javascript execution via spoofed vCard control bypasses mail script-markup restriction",
+          "date": "2026-09-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-87962: com.tdunning/t-digest: t-digest: t-digest: Denial of Service via unvalidated length fields",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88924: gvfs: gvfs-admin socket ownership race permits local root",
+          "date": "2026-09-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal Desktop v8.28.0-beta.2",
+          "date": "2026-09-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal Desktop v8.28.0-beta.1",
+          "date": "2026-09-10",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "signal",
+          "title": " mistral.rs: Unbounded Remote Media Fetch and Video Frame Expansion DoS",
+          "date": "2026-09-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8571-2: Apache HTTP Server regression",
+          "date": "2026-09-10",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-11T03:44:52.636Z",
       "logs": [
@@ -15153,46 +16908,6 @@
     },
     {
       "timestamp": "2026-09-05T20:05:24.411Z",
-      "logs": [
-        "[INFO] aws - 9 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 7 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 6 patches, no changes",
-        "[INFO] edge - 4 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 184 patches, no changes",
-        "[INFO] microsoft - 119 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 162 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 37 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 538,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "postgresql",
-        "aws",
-        "cisco",
-        "debian",
-        "edge",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "cloudflare",
-        "gcp",
-        "crowdstrike"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-09-05T16:38:13.563Z",
       "logs": [
         "[INFO] aws - 9 patches, no changes",
         "[INFO] chrome - 5 patches, no changes",
