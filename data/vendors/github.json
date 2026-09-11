@@ -1,16 +1,60 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-09-11T16:13:10.495Z",
+  "lastUpdated": "2026-09-11T20:46:28.551Z",
   "health": {
-    "lastFetchAttempt": "2026-09-11T16:13:10.495Z",
+    "lastFetchAttempt": "2026-09-11T20:46:28.551Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-11T16:13:10.495Z",
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-09-11T20:46:28.551Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Central Dogma: SSH host-key verification permanently disabled in Git mirror (SshGitMirror)",
+      "date": "2026-09-11",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "com.linecorp.centraldogma:centraldogma-server-mirror-git",
+      "description": "Central Dogma: SSH host-key verification permanently disabled in Git mirror (SshGitMirror)",
+      "link": "https://github.com/advisories/GHSA-vjfw-cpmh-xwv3",
+      "cve": "CVE-2026-11745",
+      "cvss": null
+    },
+    {
+      "title": "Central Dogma: Hard-coded ZooKeeper replication secret 'ch4n63m3' with silent fallback enables cluster takeover",
+      "date": "2026-09-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "com.linecorp.centraldogma:centraldogma-server",
+      "description": "Central Dogma: Hard-coded ZooKeeper replication secret 'ch4n63m3' with silent fallback enables cluster takeover",
+      "link": "https://github.com/advisories/GHSA-2j95-gqxf-v3vg",
+      "cve": "CVE-2026-11746",
+      "cvss": null
+    },
+    {
+      "title": "Central Dogma: LDAP injection in SearchFirstActiveDirectoryRealm enables authentication confusion and audit log evasion",
+      "date": "2026-09-11",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "com.linecorp.centraldogma:centraldogma-server-auth-shiro",
+      "description": "Central Dogma: LDAP injection in SearchFirstActiveDirectoryRealm enables authentication confusion and audit log evasion",
+      "link": "https://github.com/advisories/GHSA-98q5-5qh2-7w75",
+      "cve": "CVE-2026-11748",
+      "cvss": null
+    },
+    {
+      "title": "MySQL MCP Server: Missing Origin/Host Validation in SSE Transport Enables Unauthenticated SQL Execution (DNS Rebinding / Direct Exposure)",
+      "date": "2026-09-11",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "mysql-mcp-server",
+      "description": "MySQL MCP Server: Missing Origin/Host Validation in SSE Transport Enables Unauthenticated SQL Execution (DNS Rebinding / Direct Exposure)",
+      "link": "https://github.com/advisories/GHSA-rqfv-2mw9-78g2",
+      "cve": "CVE-2026-59971",
+      "cvss": 10
+    },
     {
       "title": "n8n: Domain-Restriction Bypass via Unguarded Model-Search Endpoint in OpenAI Chat Model Node",
       "date": "2026-09-10",
