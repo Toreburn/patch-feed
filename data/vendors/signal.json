@@ -1,16 +1,44 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-09-14T12:21:48.580Z",
+  "lastUpdated": "2026-09-14T21:41:53.939Z",
   "health": {
-    "lastFetchAttempt": "2026-09-14T12:21:48.580Z",
+    "lastFetchAttempt": "2026-09-14T21:41:53.939Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-14T12:21:48.580Z",
+    "lastFetchParsedItems": 5,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-09-14T21:41:53.939Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Signal Desktop v8.28.0-beta.3",
+      "date": "2026-09-14",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.28.0-beta.3",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "ESPHome Device Builder: Renamed auth env vars silently disable dashboard authentication on upgrade",
+      "date": "2026-09-14",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe dashboard reads its authentication credentials from `$ESPHOME_USERNAME` and `$ESPHOME_PASSWORD`. Earlier versions, and the legacy `esphome` dashboard, read the bare `$USERNAME` and `$P",
+      "link": "https://github.com/advisories/GHSA-rrxg-g2pf-6hh4",
+      "cves": [
+        "CVE-2026-59178"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.28.0-beta.2",
       "date": "2026-09-10",
