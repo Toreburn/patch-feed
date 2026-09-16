@@ -1,16 +1,104 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-09-16T11:14:13.691Z",
+  "lastUpdated": "2026-09-16T16:33:44.026Z",
   "health": {
-    "lastFetchAttempt": "2026-09-16T11:14:13.691Z",
+    "lastFetchAttempt": "2026-09-16T16:33:44.026Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-16T11:14:13.691Z",
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-09-16T16:33:44.026Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "node-opcua: TCP Socket Leak (FIN-WAIT-2) via keepalive reconnection cycle - Resource Exhaustion",
+      "date": "2026-09-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "node-opcua-transport, node-opcua-client, node-opcua",
+      "description": "node-opcua: TCP Socket Leak (FIN-WAIT-2) via keepalive reconnection cycle - Resource Exhaustion",
+      "link": "https://github.com/advisories/GHSA-r2pf-9cw4-5j65",
+      "cve": "CVE-2026-68904",
+      "cvss": 7
+    },
+    {
+      "title": "djust has Cross-Site Request Forgery on the Server-Sent-Events transport: a cross-origin page can drive a victim-authenticated SSE session",
+      "date": "2026-09-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "djust",
+      "description": "djust has Cross-Site Request Forgery on the Server-Sent-Events transport: a cross-origin page can drive a victim-authenticated SSE session",
+      "link": "https://github.com/advisories/GHSA-pg97-jvmf-qfvc",
+      "cve": "CVE-2026-61593",
+      "cvss": 8.1
+    },
+    {
+      "title": "LMdeploy has Remote Code Execution by Pickle Deserialization via zmq_rpc.call_and_response() in InterLM/lmdeploy",
+      "date": "2026-09-16",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "lmdeploy",
+      "description": "LMdeploy has Remote Code Execution by Pickle Deserialization via zmq_rpc.call_and_response() in InterLM/lmdeploy",
+      "link": "https://github.com/advisories/GHSA-5h8j-6crg-7rmw",
+      "cve": "CVE-2025-59953",
+      "cvss": 9.8
+    },
+    {
+      "title": "djust: Multi-tenant isolation fails open on the WebSocket/SSE path, disclosing other tenants' data",
+      "date": "2026-09-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "djust",
+      "description": "djust: Multi-tenant isolation fails open on the WebSocket/SSE path, disclosing other tenants' data",
+      "link": "https://github.com/advisories/GHSA-3492-cvg7-9mr2",
+      "cve": "CVE-2026-61595",
+      "cvss": 7.7
+    },
+    {
+      "title": "djust: Client mass-assignment of arbitrary view attributes via the default dj-model update_model handler",
+      "date": "2026-09-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "djust",
+      "description": "djust: Client mass-assignment of arbitrary view attributes via the default dj-model update_model handler",
+      "link": "https://github.com/advisories/GHSA-cc7c-9jff-58wj",
+      "cve": "CVE-2026-61598",
+      "cvss": null
+    },
+    {
+      "title": "OpenTelemetry.Resources.Host vulnerable to arbitrary code execution via local PATH hijacking on macOS",
+      "date": "2026-09-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "OpenTelemetry.Resources.Host",
+      "description": "OpenTelemetry.Resources.Host vulnerable to arbitrary code execution via local PATH hijacking on macOS",
+      "link": "https://github.com/advisories/GHSA-v8pv-4842-x354",
+      "cve": "CVE-2026-81192",
+      "cvss": 7
+    },
+    {
+      "title": "djust's observability endpoints are network-exposed: the localhost gate is an opt-in middleware the docs omit, and the views enforce only DEBUG",
+      "date": "2026-09-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "djust",
+      "description": "djust's observability endpoints are network-exposed: the localhost gate is an opt-in middleware the docs omit, and the views enforce only DEBUG",
+      "link": "https://github.com/advisories/GHSA-8g2f-g3gq-5rjv",
+      "cve": "CVE-2026-61590",
+      "cvss": 7.4
+    },
+    {
+      "title": "@zereight/mcp-gitlab: Unauthenticated arbitrary file read via `upload_markdown` enables PAT exfiltration and full account takeover",
+      "date": "2026-09-16",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@zereight/mcp-gitlab",
+      "description": "@zereight/mcp-gitlab: Unauthenticated arbitrary file read via `upload_markdown` enables PAT exfiltration and full account takeover",
+      "link": "https://github.com/advisories/GHSA-cv3r-c5h8-f4g5",
+      "cve": "CVE-2026-61560",
+      "cvss": 9.8
+    },
     {
       "title": "@zereight/mcp-gitlab Vulnerable to Server-Side Request Forgery",
       "date": "2026-09-15",
