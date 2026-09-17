@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-09-17T16:39:39.578Z",
+  "lastUpdated": "2026-09-17T21:10:26.673Z",
   "health": {
-    "lastFetchAttempt": "2026-09-17T16:39:39.578Z",
+    "lastFetchAttempt": "2026-09-17T21:10:26.673Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 6,
+    "lastFetchParsedItems": 4,
     "lastFetchNewPatches": 2,
-    "lastSuccessWithData": "2026-09-17T16:39:39.578Z",
+    "lastSuccessWithData": "2026-09-17T21:10:26.673Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -36,6 +36,36 @@
       "link": "https://github.com/advisories/GHSA-q8hw-4fvp-9rwv",
       "cves": [
         "CVE-2026-61793"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Grav: Non constant time nonce comparison in Utils::verifyNonce() used for CSRF protection",
+      "date": "2026-09-17",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\n`Grav\\Common\\Utils::verifyNonce()`, the core function Grav and its plugins use to validate CSRF nonces, compares the submitted nonce to the expected value with PHP's `===` operator instead",
+      "link": "https://github.com/advisories/GHSA-38p6-h87p-r4cg",
+      "cves": [
+        "CVE-2026-72701"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "AsyncHttpClient doesn't verify SCRAM and Digest mutual-authentication responses",
+      "date": "2026-09-17",
+      "severity": "LOW",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\nFor SCRAM, and for Digest with mutual authentication, the client computes the server's verification value (the SCRAM ServerSignature, or the Digest rspauth) but does not act on the result. ",
+      "link": "https://github.com/advisories/GHSA-fj9w-c36g-h5x8",
+      "cves": [
+        "CVE-2026-85716"
       ],
       "platform": [
         "All Platforms"
