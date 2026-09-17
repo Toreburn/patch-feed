@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-09-16T21:07:45.922Z",
+  "lastUpdated": "2026-09-17T04:22:26.599Z",
   "health": {
-    "lastFetchAttempt": "2026-09-16T21:07:45.922Z",
+    "lastFetchAttempt": "2026-09-17T04:22:26.599Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 4,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-16T21:07:45.922Z",
+    "lastFetchParsedItems": 5,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-09-17T04:22:26.599Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "RMCP: Unauthenticated permanent session-table leak in rmcp Streamable HTTP server transport leads to remote denial-of-service",
+      "date": "2026-09-16",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nAn unauthenticated remote attacker can leak one entry per HTTP request out of the in-memory session table of `LocalSessionManager` by sending a well-formed JSON-RPC `POST` that is *not* a",
+      "link": "https://github.com/advisories/GHSA-9pj6-vhgr-3mwh",
+      "cves": [
+        "CVE-2026-63128"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.28.0-beta.3",
       "date": "2026-09-14",
