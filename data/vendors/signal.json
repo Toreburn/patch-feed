@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-09-17T11:22:25.419Z",
+  "lastUpdated": "2026-09-17T16:39:39.578Z",
   "health": {
-    "lastFetchAttempt": "2026-09-17T11:22:25.419Z",
+    "lastFetchAttempt": "2026-09-17T16:39:39.578Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 5,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-17T11:22:25.419Z",
+    "lastFetchParsedItems": 6,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-09-17T16:39:39.578Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Vendure: Unauthenticated ReDoS via `regex` filter on SQLite backends",
+      "date": "2026-09-17",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\n> [!IMPORTANT] \n> Only instances running on the SQLite driver (better-sqlite3) are affected; SQLite is usually used in development/testing backend, so production deployments on PostgreSQL",
+      "link": "https://github.com/advisories/GHSA-jgm3-qmp2-c4p7",
+      "cves": [
+        "CVE-2026-63460"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Nuxt OG Image has unauthenticated SSRF via `fonts[].path` URL parameter",
+      "date": "2026-09-17",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n`nuxt-og-image` exposes an **unauthenticated HTTP endpoint** at `/_og/d/**` that base64url-decodes and `JSON.parse`s a `fonts` URL segment, then passes each `fonts[i].path` value directly ",
+      "link": "https://github.com/advisories/GHSA-q8hw-4fvp-9rwv",
+      "cves": [
+        "CVE-2026-61793"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "RMCP: Unauthenticated permanent session-table leak in rmcp Streamable HTTP server transport leads to remote denial-of-service",
       "date": "2026-09-16",
