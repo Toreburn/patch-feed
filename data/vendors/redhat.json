@@ -1,16 +1,170 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-09-18T20:42:28.186Z",
+  "lastUpdated": "2026-09-19T04:03:09.471Z",
   "health": {
-    "lastFetchAttempt": "2026-09-18T20:42:28.186Z",
+    "lastFetchAttempt": "2026-09-19T04:03:09.471Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 726,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-18T20:42:28.186Z",
+    "lastFetchParsedItems": 298,
+    "lastFetchNewPatches": 15,
+    "lastSuccessWithData": "2026-09-19T04:03:09.471Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-92768: cockpit-machines: cockpit-machines: Sensitive data exposure via command-line arguments",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit-machines: cockpit-machines: Sensitive data exposure via command-line arguments",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-92768.json",
+      "cve": "CVE-2026-92768",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-92747: cockpit-machines: cockpit-machines: Sensitive Data Exposure of guest credentials via JSON argument in process list",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit-machines: cockpit-machines: Sensitive Data Exposure of guest credentials via JSON argument in process list",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-92747.json",
+      "cve": "CVE-2026-92747",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-92745: cockpit-machines: cockpit-machines: Information Disclosure of RHSM Offline Token via Process Arguments",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit-machines: cockpit-machines: Information Disclosure of RHSM Offline Token via Process Arguments",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-92745.json",
+      "cve": "CVE-2026-92745",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-91203: cockpit-files: cockpit-files: Arbitrary file ownership and permission modification via symlink race condition",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit-files: cockpit-files: Arbitrary file ownership and permission modification via symlink race condition",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-91203.json",
+      "cve": "CVE-2026-91203",
+      "cvss": 6
+    },
+    {
+      "title": "CVE-2026-91202: cockpit-files: cockpit-files: Arbitrary file ownership change via symlink following in privileged paste",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit-files: cockpit-files: Arbitrary file ownership change via symlink following in privileged paste",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-91202.json",
+      "cve": "CVE-2026-91202",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-91205: cockpit-files: cockpit-files: Local attacker can hijack file ownership via symlink race",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit-files: cockpit-files: Local attacker can hijack file ownership via symlink race",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-91205.json",
+      "cve": "CVE-2026-91205",
+      "cvss": 6
+    },
+    {
+      "title": "CVE-2026-91147: cockpit: Cockpit: Denial of Service in `cockpit-ws` due to URL-root handling without a trailing slash",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit: Cockpit: Denial of Service in `cockpit-ws` due to URL-root handling without a trailing slash",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-91147.json",
+      "cve": "CVE-2026-91147",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-91149: cockpit: Cockpit: Denial of Service via unbounded connection thread spawning",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit: Cockpit: Denial of Service via unbounded connection thread spawning",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-91149.json",
+      "cve": "CVE-2026-91149",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-91142: cockpit: Integer overflow in `do_lastlog()` offset calculation can misaddress `lastlog` entries on ILP32 builds",
+      "date": "2026-09-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit: Integer overflow in `do_lastlog()` offset calculation can misaddress `lastlog` entries on ILP32 builds",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-91142.json",
+      "cve": "CVE-2026-91142",
+      "cvss": 3.6
+    },
+    {
+      "title": "CVE-2026-93685: multicluster-observability-addon: multicluster-observability-addon: possible unauthenticated debug/metrics endpoint via ",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "multicluster-observability-addon: multicluster-observability-addon: possible unauthenticated debug/metrics endpoint via cmdfactory.NewControllerCommandConfig (confirmed exposed by engineering)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93685.json",
+      "cve": "CVE-2026-93685",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-85511: wildfly-elytron-realm-token: parameter injection in EAP's elytron oauth2",
+      "date": "2026-09-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wildfly-elytron-realm-token: parameter injection in EAP's elytron oauth2",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85511.json",
+      "cve": "CVE-2026-85511",
+      "cvss": 4.2
+    },
+    {
+      "title": "CVE-2026-10832: org.wildfly.security/wildfly-elytron-asn1: Unbounded Memory Allocation in WildFly Elytron ASN.1 DERDecoder via Crafted D",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.wildfly.security/wildfly-elytron-asn1: Unbounded Memory Allocation in WildFly Elytron ASN.1 DERDecoder via Crafted DER Payload",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-10832.json",
+      "cve": "CVE-2026-10832",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-93653: poppler: poppler: unbounded CPU loop in SplashOutputDev::tilingPatternFill via unvalidated tiling-pattern repeat count (",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "poppler: poppler: unbounded CPU loop in SplashOutputDev::tilingPatternFill via unvalidated tiling-pattern repeat count (denial of service)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93653.json",
+      "cve": "CVE-2026-93653",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-75885: openshift/console: openshift/console: Unauthenticated SSRF and resource exhaustion via devfile parser endpoint",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "OpenShift",
+      "description": "openshift/console: openshift/console: Unauthenticated SSRF and resource exhaustion via devfile parser endpoint",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-75885.json",
+      "cve": "CVE-2026-75885",
+      "cvss": 9.3
+    },
     {
       "title": "CVE-2026-92893: rubygem-foreman_ansible: Ansible inventory API ignores view_hosts permission filters, exposes hidden parameters",
       "date": "2026-09-17",
@@ -1209,6 +1363,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-92125.json",
       "cve": "CVE-2026-92125",
       "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-93432: io.quarkus.qute:quarkus-core: Cross-Site Scripting (XSS) and JSON Injection via Qute {#eval} Section in Quarkus",
+      "date": "2026-09-16",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "io.quarkus.qute:quarkus-core: Cross-Site Scripting (XSS) and JSON Injection via Qute {#eval} Section in Quarkus",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93432.json",
+      "cve": "CVE-2026-93432",
+      "cvss": 6.1
     },
     {
       "title": "CVE-2026-17495: moment: Moment: Path Traversal via crafted non-string input to locale function",
