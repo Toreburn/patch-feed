@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-20T18:33:20.156Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-20T20:37:05.596Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -451,6 +451,17 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-75538",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-75538"
+    },
+    {
+      "title": "DSA-6509-1 gimp - security update",
+      "date": "2026-09-20",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "gimp",
+      "description": "Several vulnerabilities were discovered in GIMP, the GNU Image Manipulation Program, which could result in denial of service or potentially the execution of arbitrary code if malformed PSD, light effe...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00421.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "CVE-2026-0799: OOBR and OOBW in libpcap before 1.10.7",
@@ -11439,6 +11450,55 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-09-20T20:37:05.595Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 50 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] debian - 13 patches (1 new)",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] github - 164 patches, no changes",
+        "[INFO] microsoft - 552 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 300 patches, no changes",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 46 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1154,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "cisco",
+        "edge",
+        "github",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "postgresql",
+        "signal",
+        "paloalto",
+        "cloudflare",
+        "oracle-db",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6509-1 gimp - security update",
+          "date": "2026-09-20",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-09-20T18:33:20.156Z",
       "logs": [
         "[INFO] apple - 5 patches, no changes",
@@ -21183,55 +21243,6 @@
         "gcp"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-09-15T04:21:25.572Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] aws - 42 patches, no changes",
-        "[INFO] cisco - 7 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 110 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 450 patches, no changes",
-        "[INFO] paloalto - 16 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 566 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[SUCCESS] ubuntu - 25 patches (1 new)"
-      ],
-      "newPatchCount": 1,
-      "totalPatches": 1242,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "apple",
-        "aws",
-        "cisco",
-        "debian",
-        "edge",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "paloalto",
-        "postgresql",
-        "cloudflare",
-        "gitlab",
-        "gcp"
-      ],
-      "newPatches": [
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8758-1: dracut vulnerability",
-          "date": "2026-09-14",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
