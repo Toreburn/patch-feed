@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-20T04:06:05.488Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-20T04:23:48.965Z",
+  "newPatches": 5,
   "patches": [
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -451,6 +451,28 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-75538",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-75538"
+    },
+    {
+      "title": "DSA-6508-1 chromium - security update",
+      "date": "2026-09-19",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6508-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00420.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6507-1 unbound - security update",
+      "date": "2026-09-19",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "unbound",
+      "description": "Multiple security vulnerabilities were discovered in Unbound, a validating, recursive, caching DNS resolver, which could result in denial of service, cache poisoning, DNS cookie bypass or potentially ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00419.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "CVE-2026-0799: OOBR and OOBW in libpcap before 1.10.7",
@@ -2475,6 +2497,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-75885.json",
       "cve": "CVE-2026-75885",
       "cvss": 9.3
+    },
+    {
+      "title": "CVE-2026-93999: keycloak-services: keycloak-services: Token refresh continues issuing tokens for disabled audience clients",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Token refresh continues issuing tokens for disabled audience clients",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93999.json",
+      "cve": "CVE-2026-93999",
+      "cvss": 4.2
+    },
+    {
+      "title": "CVE-2026-94000: keycloak-services: keycloak-services: Delegated admin with manage-users can escalate to realm-admin via group membership",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Delegated admin with manage-users can escalate to realm-admin via group membership",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94000.json",
+      "cve": "CVE-2026-94000",
+      "cvss": 6.6
+    },
+    {
+      "title": "CVE-2026-94001: keycloak-services: keycloak-services: Admin credential DELETE bypasses denied reset-password permission",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Admin credential DELETE bypasses denied reset-password permission",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94001.json",
+      "cve": "CVE-2026-94001",
+      "cvss": 6.5
     },
     {
       "title": "USN-8781-1: Linux kernel (NVIDIA Tegra) vulnerabilities",
@@ -10933,6 +10988,79 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-20T04:23:48.964Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 50 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] debian - 12 patches (2 new)",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] github - 164 patches, no changes",
+        "[INFO] microsoft - 502 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 300 patches (3 new)",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 46 patches, no changes"
+      ],
+      "newPatchCount": 5,
+      "totalPatches": 1103,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "cisco",
+        "edge",
+        "github",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "postgresql",
+        "signal",
+        "paloalto",
+        "cloudflare",
+        "oracle-db",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6508-1 chromium - security update",
+          "date": "2026-09-19",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6507-1 unbound - security update",
+          "date": "2026-09-19",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93999: keycloak-services: keycloak-services: Token refresh continues issuing tokens for disabled audience clients",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94000: keycloak-services: keycloak-services: Delegated admin with manage-users can escalate to realm-admin via group membership",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94001: keycloak-services: keycloak-services: Admin credential DELETE bypasses denied reset-password permission",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-20T04:06:05.488Z",
       "logs": [
@@ -21041,56 +21169,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-09-14T12:12:27.789Z",
-      "logs": [
-        "[INFO] apple - 1 patches, no changes",
-        "[INFO] aws - 42 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 8 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 11 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 197 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] mssql - 62 patches, no changes",
-        "[INFO] paloalto - 16 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 562 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 20 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1443,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 19,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "paloalto",
-        "redhat",
-        "aws",
-        "cisco",
-        "github",
-        "postgresql",
-        "cloudflare",
-        "edge",
-        "gitlab",
-        "signal",
-        "ubuntu",
-        "gcp",
-        "apple",
-        "chrome",
-        "crowdstrike",
-        "fortinet",
-        "mssql"
-      ],
-      "newPatches": []
     }
   ]
 }
