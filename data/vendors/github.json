@@ -1,16 +1,60 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-09-21T12:28:25.333Z",
+  "lastUpdated": "2026-09-21T21:51:52.156Z",
   "health": {
-    "lastFetchAttempt": "2026-09-21T12:28:25.333Z",
+    "lastFetchAttempt": "2026-09-21T21:51:52.156Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-21T12:28:25.333Z",
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-09-21T21:51:52.156Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "nginx ignition has  ParseAcceptLanguage `_` separator bypass that enables ~75x CPU amplification via Accept-Language header in i18nMiddleware",
+      "date": "2026-09-21",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/lucasdillmann/nginx-ignition",
+      "description": "nginx ignition has  ParseAcceptLanguage `_` separator bypass that enables ~75x CPU amplification via Accept-Language header in i18nMiddleware",
+      "link": "https://github.com/advisories/GHSA-jr34-h97m-9hpx",
+      "cve": "CVE-2026-61629",
+      "cvss": 7.5
+    },
+    {
+      "title": "nginx ignition has TOTP Reuse During Validity Window",
+      "date": "2026-09-21",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/lucasdillmann/nginx-ignition",
+      "description": "nginx ignition has TOTP Reuse During Validity Window",
+      "link": "https://github.com/advisories/GHSA-hf33-q6cf-c66f",
+      "cve": "CVE-2026-61630",
+      "cvss": 4.2
+    },
+    {
+      "title": "k8saudit shipped rules do not detect privileged/sensitive settings on init or ephemeral containers",
+      "date": "2026-09-21",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/falcosecurity/plugins/plugins/k8saudit, github.com/falcosecurity/plugins/plugins/k8saudit-eks, github.com/falcosecurity/plugins/plugins/k8saudit-gke",
+      "description": "k8saudit shipped rules do not detect privileged/sensitive settings on init or ephemeral containers",
+      "link": "https://github.com/advisories/GHSA-jhjp-4c2q-xmx4",
+      "cve": "",
+      "cvss": 4.3
+    },
+    {
+      "title": "Hatchet - Unauthenticated OAuth state CSRF / login-CSRF via empty-state collision in ValidateOAuthState",
+      "date": "2026-09-21",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "hatchet",
+      "description": "Hatchet - Unauthenticated OAuth state CSRF / login-CSRF via empty-state collision in ValidateOAuthState",
+      "link": "https://github.com/advisories/GHSA-phg3-3g28-wq9v",
+      "cve": "CVE-2026-61687",
+      "cvss": 7.1
+    },
     {
       "title": "Semantic MediaWiki vulnerable to stored XSS through wikitext via improper use of non-reserved data attributes",
       "date": "2026-09-18",
