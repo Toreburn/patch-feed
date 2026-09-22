@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-09-22T16:40:44.084Z",
+  "lastUpdated": "2026-09-22T21:06:29.693Z",
   "health": {
-    "lastFetchAttempt": "2026-09-22T16:40:44.084Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-21T12:29:03.236Z",
-    "consecutiveEmptyFetches": 4,
+    "lastFetchAttempt": "2026-09-22T21:06:29.693Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-09-22T21:06:29.693Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Traefik: BasicAuth singleflight coalescing reintroduces an unauthenticated username-enumeration timing oracle",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nTraefik's BasicAuth middleware coalesces concurrent credential checks through a `singleflight.Group` to avoid hashing the same password many times at once. Since v3.6.11 the deduplication ",
+      "link": "https://github.com/advisories/GHSA-8fcf-v89g-xpg6",
+      "cves": [
+        "CVE-2026-88010"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Tinyauth: Unauthenticated login attempts can trigger global login lockdown denial of service",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nTinyauth's login rate-limit bookkeeping can enter a global lockdown mode when its in-memory login-attempt map reaches 256 distinct identifiers. Because unauthenticated `POST /api/user/log",
+      "link": "https://github.com/advisories/GHSA-9xhm-w3wj-xhqh",
+      "cves": [
+        "CVE-2026-77561"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Vendure: Unauthenticated ReDoS via `regex` filter on SQLite backends",
       "date": "2026-09-17",
