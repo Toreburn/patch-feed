@@ -1,16 +1,104 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-09-22T11:18:01.038Z",
+  "lastUpdated": "2026-09-22T16:40:10.227Z",
   "health": {
-    "lastFetchAttempt": "2026-09-22T11:18:01.038Z",
+    "lastFetchAttempt": "2026-09-22T16:40:10.227Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-22T11:18:01.038Z",
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-09-22T16:40:10.227Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "9Router has a Login Brute-Force Lockout Bypass via Spoofable X-9r-Real-Ip Header",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "9router",
+      "description": "9Router has a Login Brute-Force Lockout Bypass via Spoofable X-9r-Real-Ip Header",
+      "link": "https://github.com/advisories/GHSA-32gc-64m7-hj7v",
+      "cve": "CVE-2026-56682",
+      "cvss": 5.3
+    },
+    {
+      "title": "9Router has an Authentication Bypass in Public LLM API via Spoofable X-9r-Real-Ip Header",
+      "date": "2026-09-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "9router",
+      "description": "9Router has an Authentication Bypass in Public LLM API via Spoofable X-9r-Real-Ip Header",
+      "link": "https://github.com/advisories/GHSA-5mj8-gf6m-fhw8",
+      "cve": "CVE-2026-56681",
+      "cvss": 7.3
+    },
+    {
+      "title": "@aborruso/ckan-mcp-server has SSRF via DNS-name → internal IP — incomplete fix of CVE-2026-53509",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@aborruso/ckan-mcp-server",
+      "description": "@aborruso/ckan-mcp-server has SSRF via DNS-name → internal IP — incomplete fix of CVE-2026-53509",
+      "link": "https://github.com/advisories/GHSA-798p-78g2-v556",
+      "cve": "CVE-2026-61612",
+      "cvss": 5.7
+    },
+    {
+      "title": "Sync-in Server has Username/Login Enumeration via Timing Side-Channel on POST /api/auth/login (incomplete fix of the prior timing-attack advisory)",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@sync-in/server",
+      "description": "Sync-in Server has Username/Login Enumeration via Timing Side-Channel on POST /api/auth/login (incomplete fix of the prior timing-attack advisory)",
+      "link": "https://github.com/advisories/GHSA-29hq-23m2-2j47",
+      "cve": "CVE-2026-58272",
+      "cvss": 5.3
+    },
+    {
+      "title": "Sync-in Server has a ReDoS via Unsanitized Regex in Sync Diff `pathFilters`",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@sync-in/server",
+      "description": "Sync-in Server has a ReDoS via Unsanitized Regex in Sync Diff `pathFilters`",
+      "link": "https://github.com/advisories/GHSA-jx63-h26r-8cph",
+      "cve": "CVE-2026-58270",
+      "cvss": 6.5
+    },
+    {
+      "title": "Sync-in Server has a complete 2FA Bypass via `POST /api/auth/token`",
+      "date": "2026-09-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@sync-in/server",
+      "description": "Sync-in Server has a complete 2FA Bypass via `POST /api/auth/token`",
+      "link": "https://github.com/advisories/GHSA-92cr-jxw4-5wjg",
+      "cve": "CVE-2026-58269",
+      "cvss": 8.1
+    },
+    {
+      "title": "@sync-in/server vulnerable to TOTP Brute-Force via `POST /api/app/sync/register`",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@sync-in/server",
+      "description": "@sync-in/server vulnerable to TOTP Brute-Force via `POST /api/app/sync/register`",
+      "link": "https://github.com/advisories/GHSA-274f-6w77-8qm9",
+      "cve": "CVE-2026-58271",
+      "cvss": 6.8
+    },
+    {
+      "title": "@roomi-fields/notebooklm-mcp has a path traversal in vault.batch tool that allows arbitrary file write outside intended vault directory",
+      "date": "2026-09-22",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@roomi-fields/notebooklm-mcp",
+      "description": "@roomi-fields/notebooklm-mcp has a path traversal in vault.batch tool that allows arbitrary file write outside intended vault directory",
+      "link": "https://github.com/advisories/GHSA-jjhp-8crj-mppq",
+      "cve": "CVE-2026-61647",
+      "cvss": null
+    },
     {
       "title": "nginx ignition has  ParseAcceptLanguage `_` separator bypass that enables ~75x CPU amplification via Accept-Language header in i18nMiddleware",
       "date": "2026-09-21",
