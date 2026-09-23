@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-23T00:07:56.177Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-23T04:14:05.818Z",
+  "newPatches": 44,
   "patches": [
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -453,6 +453,16 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-75538"
     },
     {
+      "title": "CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "paloalto",
+      "component": "GlobalProtect",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0307",
+      "cve": "CVE-2026-0307"
+    },
+    {
       "title": "CVE-2026-94450 - Potential denial of service when configured to send Retry packets in s2n-quic",
       "date": "2026-09-22",
       "severity": "HIGH",
@@ -496,6 +506,16 @@
       "component": "Chrome Browser",
       "description": "The Chrome team is delighted to announce the promotion of Chrome 154 to the stable channel for Windows, Mac and Linux. This will roll out over the coming days/weeks.Chrome 154.0.8037.57 (Linux)&nbsp;1...",
       "link": "https://chromereleases.googleblog.com/feeds/2937037625988113875/comments/default"
+    },
+    {
+      "title": "Microsoft Edge Security Update - September 22, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-09-22",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
     },
     {
       "title": "9Router has a Login Brute-Force Lockout Bypass via Spoofable X-9r-Real-Ip Header",
@@ -2100,6 +2120,61 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-95818: glibc: glibc: Local attacker can cause denial of service and information disclosure via stack-based buffer overflow.",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "glibc: glibc: Local attacker can cause denial of service and information disclosure via stack-based buffer overflow.",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-95818.json",
+      "cve": "CVE-2026-95818",
+      "cvss": 5.8
+    },
+    {
+      "title": "CVE-2026-86805: glibc: glibc: Privilege escalation and arbitrary code execution via TOCTOU race condition in dynamic loader",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "glibc: glibc: Privilege escalation and arbitrary code execution via TOCTOU race condition in dynamic loader",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-86805.json",
+      "cve": "CVE-2026-86805",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-13087: kernel: Heap out-of-bounds write in the Linux kernel RPC-over-RDMA server reply path...",
+      "date": "2026-09-22",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: Heap out-of-bounds write in the Linux kernel RPC-over-RDMA server reply path...",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13087.json",
+      "cve": "CVE-2026-13087",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-90462: sssd: SSSD: Fail-open in LDAP ppolicy access check allows continued authorization",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sssd: SSSD: Fail-open in LDAP ppolicy access check allows continued authorization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-90462.json",
+      "cve": "CVE-2026-90462",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-95619: gcc: libstdc++ integer overflow in `new` operator",
+      "date": "2026-09-22",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gcc: libstdc++ integer overflow in `new` operator",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-95619.json",
+      "cve": "CVE-2026-95619",
+      "cvss": 7.7
+    },
+    {
       "title": "Traefik: BasicAuth singleflight coalescing reintroduces an unauthenticated username-enumeration timing oracle",
       "date": "2026-09-22",
       "severity": "MEDIUM",
@@ -2826,6 +2901,83 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94368.json",
       "cve": "CVE-2026-94368",
       "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-94627: vllm: vLLM: Denial of Service via GPU memory exhaustion",
+      "date": "2026-09-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Denial of Service via GPU memory exhaustion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94627.json",
+      "cve": "CVE-2026-94627",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-94626: vllm: vLLM: Denial of Service via unvalidated memory allocation parameter",
+      "date": "2026-09-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Denial of Service via unvalidated memory allocation parameter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94626.json",
+      "cve": "CVE-2026-94626",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-94625: vllm: vLLM: Resource exhaustion via rejected prefill requests",
+      "date": "2026-09-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Resource exhaustion via rejected prefill requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94625.json",
+      "cve": "CVE-2026-94625",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-94624: vllm: vLLM: Denial of Service via unbounded P2P KV offloading sessions",
+      "date": "2026-09-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Denial of Service via unbounded P2P KV offloading sessions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94624.json",
+      "cve": "CVE-2026-94624",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-94623: vllm: vLLM: Denial of Service via NIXL multi-prompt assertion failure",
+      "date": "2026-09-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Denial of Service via NIXL multi-prompt assertion failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94623.json",
+      "cve": "CVE-2026-94623",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-94622: vllm: vLLM: Denial of Service via Incomplete NIXL KV Transfer Metadata",
+      "date": "2026-09-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Denial of Service via Incomplete NIXL KV Transfer Metadata",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94622.json",
+      "cve": "CVE-2026-94622",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-49811: Dell Command | Monitor: Dell Command | Monitor: Elevation of Privileges via Incorrect Permission Assignment",
+      "date": "2026-09-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Dell Command | Monitor: Dell Command | Monitor: Elevation of Privileges via Incorrect Permission Assignment",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-49811.json",
+      "cve": "CVE-2026-49811",
+      "cvss": 8.4
     },
     {
       "title": "USN-8798-1: GStreamer Good Plugins vulnerabilities",
@@ -3911,6 +4063,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94218.json",
       "cve": "CVE-2026-94218",
       "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-93990: expat: Expat: XML Injection via Malformed UTF-16 Input",
+      "date": "2026-09-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "expat: Expat: XML Injection via Malformed UTF-16 Input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93990.json",
+      "cve": "CVE-2026-93990",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-93989: vllm: vLLM: Cross-request logits corruption via out-of-bounds token indices",
+      "date": "2026-09-19",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Cross-request logits corruption via out-of-bounds token indices",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93989.json",
+      "cve": "CVE-2026-93989",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-93981: hono: hono/jsx: Cross-Site Scripting via Unescaped Strings",
+      "date": "2026-09-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "hono: hono/jsx: Cross-Site Scripting via Unescaped Strings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93981.json",
+      "cve": "CVE-2026-93981",
+      "cvss": 4.7
     },
     {
       "title": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Logging Denial of Service Vulnerability",
@@ -5529,6 +5714,248 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-95511.json",
       "cve": "CVE-2026-95511",
       "cvss": 8.2
+    },
+    {
+      "title": "CVE-2026-92708: devalue: devalue: Cross-request process memory disclosure",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "devalue: devalue: Cross-request process memory disclosure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-92708.json",
+      "cve": "CVE-2026-92708",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-93840: vllm: vLLM: Information disclosure via incorrect token ID validation",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Information disclosure via incorrect token ID validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93840.json",
+      "cve": "CVE-2026-93840",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-93841: vllm: vLLM: Memory corruption via unvalidated prompt token IDs",
+      "date": "2026-09-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Memory corruption via unvalidated prompt token IDs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93841.json",
+      "cve": "CVE-2026-93841",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-93752: CSSOM: CSSOM: Denial of Service due to improper property name validation",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "CSSOM: CSSOM: Denial of Service due to improper property name validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93752.json",
+      "cve": "CVE-2026-93752",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-93751: uri-js: uri-js: Improper UTF-8 decoding allows path traversal and CRLF injection",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "uri-js: uri-js: Improper UTF-8 decoding allows path traversal and CRLF injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93751.json",
+      "cve": "CVE-2026-93751",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-93750: http-cache-semantics: http-cache-semantics: Information disclosure via improper Vary header wildcard validation",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "http-cache-semantics: http-cache-semantics: Information disclosure via improper Vary header wildcard validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93750.json",
+      "cve": "CVE-2026-93750",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-93748: http-cache-semantics: http-cache-semantics: Information Disclosure via max-stale directive",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "http-cache-semantics: http-cache-semantics: Information Disclosure via max-stale directive",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93748.json",
+      "cve": "CVE-2026-93748",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-93749: source-map-js: source-map-js: Denial of Service via malformed indexed source maps",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "source-map-js: source-map-js: Denial of Service via malformed indexed source maps",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93749.json",
+      "cve": "CVE-2026-93749",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-63458: github.com/perses/perses: Perses: Information disclosure via query parameter authorization bypass",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/perses/perses: Perses: Information disclosure via query parameter authorization bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-63458.json",
+      "cve": "CVE-2026-63458",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-69184: c-ares: c-ares: CPU exhaustion denial of service via unbounded DNS name compression pointer chains",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "c-ares: c-ares: CPU exhaustion denial of service via unbounded DNS name compression pointer chains",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-69184.json",
+      "cve": "CVE-2026-69184",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-69186: c-ares: c-ares: Denial of Service via unvalidated DNS header record counts",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "c-ares: c-ares: Denial of Service via unvalidated DNS header record counts",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-69186.json",
+      "cve": "CVE-2026-69186",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-64847: anyio: AnyIO: Denial of Service due to undrained stderr in process-pool workers",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "anyio: AnyIO: Denial of Service due to undrained stderr in process-pool workers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-64847.json",
+      "cve": "CVE-2026-64847",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-63349: anyio: AnyIO: Privilege retention in child processes due to incorrect group handling",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "anyio: AnyIO: Privilege retention in child processes due to incorrect group handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-63349.json",
+      "cve": "CVE-2026-63349",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-77301: adm-zip: adm-zip: Denial of Service via uncontrolled memory allocation",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "adm-zip: adm-zip: Denial of Service via uncontrolled memory allocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-77301.json",
+      "cve": "CVE-2026-77301",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-93690: uri-js: uri-js: Denial of Service via malformed path segments",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "uri-js: uri-js: Denial of Service via malformed path segments",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93690.json",
+      "cve": "CVE-2026-93690",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-93687: braces: braces: Denial of Service via Stack Overflow from Deeply Nested Patterns",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "braces: braces: Denial of Service via Stack Overflow from Deeply Nested Patterns",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93687.json",
+      "cve": "CVE-2026-93687",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-93657: hickory-resolver: hickory-resolver: DNSSEC validation bypass allows forged DNS records",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "hickory-resolver: hickory-resolver: DNSSEC validation bypass allows forged DNS records",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93657.json",
+      "cve": "CVE-2026-93657",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-93602: rustls-webpki: rustls-webpki: Certificate Revocation Check Bypass via Faulty CRL Logic",
+      "date": "2026-09-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rustls-webpki: rustls-webpki: Certificate Revocation Check Bypass via Faulty CRL Logic",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93602.json",
+      "cve": "CVE-2026-93602",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-93601: rustls-webpki: rustls-webpki: Name Constraint Bypass in wildcard certificate validation",
+      "date": "2026-09-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rustls-webpki: rustls-webpki: Name Constraint Bypass in wildcard certificate validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93601.json",
+      "cve": "CVE-2026-93601",
+      "cvss": 2.2
+    },
+    {
+      "title": "CVE-2026-93600: rustls-webpki: rustls-webpki: URI Name Constraint Bypass via X.509 Certificate Misissue",
+      "date": "2026-09-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rustls-webpki: rustls-webpki: URI Name Constraint Bypass via X.509 Certificate Misissue",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93600.json",
+      "cve": "CVE-2026-93600",
+      "cvss": 2.2
+    },
+    {
+      "title": "CVE-2026-93599: rustls-webpki: rustls-webpki: Denial of Service via crafted Certificate Revocation List",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rustls-webpki: rustls-webpki: Denial of Service via crafted Certificate Revocation List",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93599.json",
+      "cve": "CVE-2026-93599",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-93592: vllm: vLLM: Denial of Service via negative token ID input",
+      "date": "2026-09-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Denial of Service via negative token ID input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93592.json",
+      "cve": "CVE-2026-93592",
+      "cvss": 7.5
     },
     {
       "title": "USN-8781-1: Linux kernel (NVIDIA Tegra) vulnerabilities",
@@ -7838,6 +8265,61 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-93436: vllm: vLLM: Denial of Service via memory exhaustion from rejected requests",
+      "date": "2026-09-17",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Denial of Service via memory exhaustion from rejected requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93436.json",
+      "cve": "CVE-2026-93436",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-93380: chromium-browser: chromium-browser: Race condition in FileSystem",
+      "date": "2026-09-17",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Race condition in FileSystem",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93380.json",
+      "cve": "CVE-2026-93380",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-86049: jupyter-server: Jupyter Server: Information disclosure via 5xx request logging",
+      "date": "2026-09-17",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "jupyter-server: Jupyter Server: Information disclosure via 5xx request logging",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-86049.json",
+      "cve": "CVE-2026-86049",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-44235: rabbitmq-c: github.com/alanxz/rabbitmq-c: rabbitmq-c: Denial of Service via AMQP frame length underflow",
+      "date": "2026-09-17",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq-c: github.com/alanxz/rabbitmq-c: rabbitmq-c: Denial of Service via AMQP frame length underflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44235.json",
+      "cve": "CVE-2026-44235",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-44236: rabbitmq-c: rabbitmq-c: Heap buffer overflow leading to denial of service",
+      "date": "2026-09-17",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq-c: rabbitmq-c: Heap buffer overflow leading to denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-44236.json",
+      "cve": "CVE-2026-44236",
+      "cvss": 6.5
+    },
+    {
       "title": "Vendure: Unauthenticated ReDoS via `regex` filter on SQLite backends",
       "date": "2026-09-17",
       "severity": "HIGH",
@@ -7944,6 +8426,307 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-23T04:14:05.817Z",
+      "logs": [
+        "[INFO] aws - 3 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 9 patches, no changes",
+        "[INFO] debian - 6 patches, no changes",
+        "[SUCCESS] edge - 4 patches (1 new)",
+        "[INFO] github - 177 patches, no changes",
+        "[INFO] microsoft - 502 patches, no changes",
+        "[SUCCESS] paloalto - 2 patches (1 new)",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 109 patches (42 new)",
+        "[INFO] signal - 6 patches, no changes",
+        "[INFO] ubuntu - 39 patches, no changes"
+      ],
+      "newPatchCount": 44,
+      "totalPatches": 865,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 12,
+      "vendors": [
+        "microsoft",
+        "paloalto",
+        "aws",
+        "chrome",
+        "edge",
+        "github",
+        "postgresql",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "debian",
+        "cisco"
+      ],
+      "newPatches": [
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - September 22, 2026",
+          "date": "2026-09-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
+          "date": "2026-09-23",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-95818: glibc: glibc: Local attacker can cause denial of service and information disclosure via stack-based buffer overflow.",
+          "date": "2026-09-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-86805: glibc: glibc: Privilege escalation and arbitrary code execution via TOCTOU race condition in dynamic loader",
+          "date": "2026-09-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-13087: kernel: Heap out-of-bounds write in the Linux kernel RPC-over-RDMA server reply path...",
+          "date": "2026-09-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-90462: sssd: SSSD: Fail-open in LDAP ppolicy access check allows continued authorization",
+          "date": "2026-09-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-95619: gcc: libstdc++ integer overflow in `new` operator",
+          "date": "2026-09-22",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94627: vllm: vLLM: Denial of Service via GPU memory exhaustion",
+          "date": "2026-09-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94626: vllm: vLLM: Denial of Service via unvalidated memory allocation parameter",
+          "date": "2026-09-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94625: vllm: vLLM: Resource exhaustion via rejected prefill requests",
+          "date": "2026-09-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94624: vllm: vLLM: Denial of Service via unbounded P2P KV offloading sessions",
+          "date": "2026-09-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94623: vllm: vLLM: Denial of Service via NIXL multi-prompt assertion failure",
+          "date": "2026-09-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94622: vllm: vLLM: Denial of Service via Incomplete NIXL KV Transfer Metadata",
+          "date": "2026-09-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-49811: Dell Command | Monitor: Dell Command | Monitor: Elevation of Privileges via Incorrect Permission Assignment",
+          "date": "2026-09-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93990: expat: Expat: XML Injection via Malformed UTF-16 Input",
+          "date": "2026-09-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93989: vllm: vLLM: Cross-request logits corruption via out-of-bounds token indices",
+          "date": "2026-09-19",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93981: hono: hono/jsx: Cross-Site Scripting via Unescaped Strings",
+          "date": "2026-09-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-92708: devalue: devalue: Cross-request process memory disclosure",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93840: vllm: vLLM: Information disclosure via incorrect token ID validation",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93841: vllm: vLLM: Memory corruption via unvalidated prompt token IDs",
+          "date": "2026-09-18",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93752: CSSOM: CSSOM: Denial of Service due to improper property name validation",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93751: uri-js: uri-js: Improper UTF-8 decoding allows path traversal and CRLF injection",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93750: http-cache-semantics: http-cache-semantics: Information disclosure via improper Vary header wildcard validation",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93748: http-cache-semantics: http-cache-semantics: Information Disclosure via max-stale directive",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93749: source-map-js: source-map-js: Denial of Service via malformed indexed source maps",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-63458: github.com/perses/perses: Perses: Information disclosure via query parameter authorization bypass",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-69184: c-ares: c-ares: CPU exhaustion denial of service via unbounded DNS name compression pointer chains",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-69186: c-ares: c-ares: Denial of Service via unvalidated DNS header record counts",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-64847: anyio: AnyIO: Denial of Service due to undrained stderr in process-pool workers",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-63349: anyio: AnyIO: Privilege retention in child processes due to incorrect group handling",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-77301: adm-zip: adm-zip: Denial of Service via uncontrolled memory allocation",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93690: uri-js: uri-js: Denial of Service via malformed path segments",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93687: braces: braces: Denial of Service via Stack Overflow from Deeply Nested Patterns",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93657: hickory-resolver: hickory-resolver: DNSSEC validation bypass allows forged DNS records",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93602: rustls-webpki: rustls-webpki: Certificate Revocation Check Bypass via Faulty CRL Logic",
+          "date": "2026-09-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93601: rustls-webpki: rustls-webpki: Name Constraint Bypass in wildcard certificate validation",
+          "date": "2026-09-18",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93600: rustls-webpki: rustls-webpki: URI Name Constraint Bypass via X.509 Certificate Misissue",
+          "date": "2026-09-18",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93599: rustls-webpki: rustls-webpki: Denial of Service via crafted Certificate Revocation List",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93592: vllm: vLLM: Denial of Service via negative token ID input",
+          "date": "2026-09-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93436: vllm: vLLM: Denial of Service via memory exhaustion from rejected requests",
+          "date": "2026-09-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93380: chromium-browser: chromium-browser: Race condition in FileSystem",
+          "date": "2026-09-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-86049: jupyter-server: Jupyter Server: Information disclosure via 5xx request logging",
+          "date": "2026-09-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-44235: rabbitmq-c: github.com/alanxz/rabbitmq-c: rabbitmq-c: Denial of Service via AMQP frame length underflow",
+          "date": "2026-09-17",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-44236: rabbitmq-c: rabbitmq-c: Heap buffer overflow leading to denial of service",
+          "date": "2026-09-17",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-23T00:07:56.177Z",
       "logs": [
@@ -15579,48 +16362,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-09-17T11:15:41.061Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] aws - 6 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 42 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 12 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 68 patches, no changes",
-        "[INFO] microsoft - 400 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 7 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 800 patches, no changes",
-        "[INFO] signal - 3 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1381,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "chrome",
-        "cisco",
-        "debian",
-        "github",
-        "paloalto",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "cloudflare",
-        "edge",
-        "oracle-db",
-        "apple",
-        "postgresql"
-      ],
-      "newPatches": []
     }
   ]
 }
