@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-09-23T16:33:41.309Z",
+  "lastUpdated": "2026-09-23T21:21:04.796Z",
   "health": {
-    "lastFetchAttempt": "2026-09-23T16:33:41.309Z",
+    "lastFetchAttempt": "2026-09-23T21:21:04.796Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-23T16:33:41.309Z",
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-09-23T21:21:04.796Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Wire Swift runtime: negative LENGTH_DELIMITED length in skipGroup() crashes any protobuf-decoding service",
+      "date": "2026-09-23",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nWire's Swift runtime (`Wire` SPM/CocoaPods product, implemented by\n`wire-runtime-swift`) did not reject a negative `LENGTH_DELIMITED` field length\nwhile skipping an unknown protobuf group",
+      "link": "https://github.com/advisories/GHSA-86wm-r4c5-2rc9",
+      "cves": [
+        "CVE-2026-61695"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Traefik: BasicAuth singleflight coalescing reintroduces an unauthenticated username-enumeration timing oracle",
       "date": "2026-09-22",
