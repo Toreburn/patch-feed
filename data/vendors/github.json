@@ -1,16 +1,126 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-09-23T11:11:16.766Z",
+  "lastUpdated": "2026-09-23T16:32:51.786Z",
   "health": {
-    "lastFetchAttempt": "2026-09-23T11:11:16.766Z",
+    "lastFetchAttempt": "2026-09-23T16:32:51.786Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-23T11:11:16.766Z",
+    "lastFetchNewPatches": 10,
+    "lastSuccessWithData": "2026-09-23T16:32:51.786Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Moquette: Pattern-ACL wildcard injection (cross-tenant authorization bypass) plus a remote-unauthenticated DoS cluster, a Will-message authorization bypass, and a cross-session durable-corruption bug",
+      "date": "2026-09-23",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "io.moquette:moquette-broker",
+      "description": "Moquette: Pattern-ACL wildcard injection (cross-tenant authorization bypass) plus a remote-unauthenticated DoS cluster, a Will-message authorization bypass, and a cross-session durable-corruption bug",
+      "link": "https://github.com/advisories/GHSA-5f42-97gr-vfhq",
+      "cve": "CVE-2026-85724",
+      "cvss": 9.6
+    },
+    {
+      "title": "Solspace Freeform: Limited Twig template injection via submitted field values",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "solspace/craft-freeform",
+      "description": "Solspace Freeform: Limited Twig template injection via submitted field values",
+      "link": "https://github.com/advisories/GHSA-gxrg-x694-283w",
+      "cve": "CVE-2026-73858",
+      "cvss": 5.3
+    },
+    {
+      "title": "WPGraphQL: Contributor can publish and modify posts without the required capabilities via updatePost",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wp-graphql/wp-graphql",
+      "description": "WPGraphQL: Contributor can publish and modify posts without the required capabilities via updatePost",
+      "link": "https://github.com/advisories/GHSA-5mmc-8pc9-wggg",
+      "cve": "CVE-2026-88974",
+      "cvss": 5.4
+    },
+    {
+      "title": "REDAXO: Missing CSRF Protection on Package Update Action Allows Forced Addon Updates",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "redaxo/source",
+      "description": "REDAXO: Missing CSRF Protection on Package Update Action Allows Forced Addon Updates",
+      "link": "https://github.com/advisories/GHSA-m8r3-22v6-g877",
+      "cve": "CVE-2026-63000",
+      "cvss": 6.4
+    },
+    {
+      "title": "REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "redaxo/source",
+      "description": "REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames",
+      "link": "https://github.com/advisories/GHSA-w998-qmw9-mf4m",
+      "cve": "CVE-2026-63002",
+      "cvss": 4.8
+    },
+    {
+      "title": "REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()`",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "redaxo/source",
+      "description": "REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()`",
+      "link": "https://github.com/advisories/GHSA-mf2p-wjp4-99pq",
+      "cve": "CVE-2026-63001",
+      "cvss": 4.8
+    },
+    {
+      "title": " Plug: quadratic-time decoding of nested query/body parameters enables denial of service",
+      "date": "2026-09-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "plug, plug, plug",
+      "description": " Plug: quadratic-time decoding of nested query/body parameters enables denial of service",
+      "link": "https://github.com/advisories/GHSA-j43x-5hjq-rgxf",
+      "cve": "CVE-2026-54892",
+      "cvss": null
+    },
+    {
+      "title": "Zapros has an Unbounded Content-Encoding decompression chain that allows denial of service",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "zapros",
+      "description": "Zapros has an Unbounded Content-Encoding decompression chain that allows denial of service",
+      "link": "https://github.com/advisories/GHSA-5vjj-2r48-q622",
+      "cve": "CVE-2026-61541",
+      "cvss": null
+    },
+    {
+      "title": "Zapros: Streaming decoders ignored the requested chunk size, allowing a single compressed response chunk to allocate unbounded memory (decompression bomb)",
+      "date": "2026-09-23",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "zapros",
+      "description": "Zapros: Streaming decoders ignored the requested chunk size, allowing a single compressed response chunk to allocate unbounded memory (decompression bomb)",
+      "link": "https://github.com/advisories/GHSA-6cp7-3m3c-5x5c",
+      "cve": "CVE-2026-61652",
+      "cvss": null
+    },
+    {
+      "title": "plone.app.portlets Vulnerable to Remote Code Execution via TALES Injection",
+      "date": "2026-09-23",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "plone.app.portlets, plone.app.portlets, plone.app.portlets",
+      "description": "plone.app.portlets Vulnerable to Remote Code Execution via TALES Injection",
+      "link": "https://github.com/advisories/GHSA-rr49-f9g6-c9r5",
+      "cve": "CVE-2026-57149",
+      "cvss": 9.9
+    },
     {
       "title": "9Router has a Login Brute-Force Lockout Bypass via Spoofable X-9r-Real-Ip Header",
       "date": "2026-09-22",
