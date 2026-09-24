@@ -1,16 +1,27 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-09-24T11:27:48.798Z",
+  "lastUpdated": "2026-09-24T16:53:21.699Z",
   "health": {
-    "lastFetchAttempt": "2026-09-24T11:27:48.798Z",
+    "lastFetchAttempt": "2026-09-24T16:53:21.699Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 227,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-24T11:27:48.798Z",
+    "lastFetchParsedItems": 242,
+    "lastFetchNewPatches": 15,
+    "lastSuccessWithData": "2026-09-24T16:53:21.699Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-97185: gimp: gimp: out-of-bounds write in GIMPressionist plugin via crafted preset file",
+      "date": "2026-09-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gimp: gimp: out-of-bounds write in GIMPressionist plugin via crafted preset file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-97185.json",
+      "cve": "CVE-2026-97185",
+      "cvss": 7.8
+    },
     {
       "title": "CVE-2026-89425: com.fasterxml.jackson.core/jackson-core: Jackson-core: Denial of Service via unbounded StringBuilder growth during malfo",
       "date": "2026-09-23",
@@ -747,6 +758,160 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85475.json",
       "cve": "CVE-2026-85475",
       "cvss": 7.2
+    },
+    {
+      "title": "CVE-2026-67221: rabbitmq: RabbitMQ: Information disclosure of AMQP 1.0 shovel URI passwords",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq: RabbitMQ: Information disclosure of AMQP 1.0 shovel URI passwords",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67221.json",
+      "cve": "CVE-2026-67221",
+      "cvss": 4.9
+    },
+    {
+      "title": "CVE-2026-67228: rabbitmq: RabbitMQ: Denial of Service via atom exhaustion in runtime-parameter component",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq: RabbitMQ: Denial of Service via atom exhaustion in runtime-parameter component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67228.json",
+      "cve": "CVE-2026-67228",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-66068: rabbitmq: RabbitMQ: Information disclosure of decrypted Shovel URIs in debug logs",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq: RabbitMQ: Information disclosure of decrypted Shovel URIs in debug logs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-66068.json",
+      "cve": "CVE-2026-66068",
+      "cvss": 4.1
+    },
+    {
+      "title": "CVE-2026-67229: RabbitMQ: RabbitMQ: Denial of Service via admin-only atom exhaustion from crafted vhost metadata",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "RabbitMQ: RabbitMQ: Denial of Service via admin-only atom exhaustion from crafted vhost metadata",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67229.json",
+      "cve": "CVE-2026-67229",
+      "cvss": 4.9
+    },
+    {
+      "title": "CVE-2026-67240: RabbitMQ: RabbitMQ: Denial of Service via crafted AMQP 1.0 SQL LIKE filter",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "RabbitMQ: RabbitMQ: Denial of Service via crafted AMQP 1.0 SQL LIKE filter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67240.json",
+      "cve": "CVE-2026-67240",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-67224: rabbitmq: RabbitMQ: Administrator path traversal allows arbitrary file write",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq: RabbitMQ: Administrator path traversal allows arbitrary file write",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67224.json",
+      "cve": "CVE-2026-67224",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-66077: RabbitMQ: RabbitMQ: Account takeover via stored Cross-Site Scripting in TLS peer-certificate DN",
+      "date": "2026-09-23",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "RabbitMQ: RabbitMQ: Account takeover via stored Cross-Site Scripting in TLS peer-certificate DN",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-66077.json",
+      "cve": "CVE-2026-66077",
+      "cvss": 8.7
+    },
+    {
+      "title": "CVE-2026-66076: rabbitmq: RabbitMQ: Information disclosure via cross-vhost authorization bypass",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq: RabbitMQ: Information disclosure via cross-vhost authorization bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-66076.json",
+      "cve": "CVE-2026-66076",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-77420: org.jline/jline-reader: JLine: Denial of Service vulnerability in history configuration processing",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.jline/jline-reader: JLine: Denial of Service vulnerability in history configuration processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-77420.json",
+      "cve": "CVE-2026-77420",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-77421: org.jline/jline-builtins: JLine: Denial of Service in Nano Editor Regex Search",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.jline/jline-builtins: JLine: Denial of Service in Nano Editor Regex Search",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-77421.json",
+      "cve": "CVE-2026-77421",
+      "cvss": 5.7
+    },
+    {
+      "title": "CVE-2026-88841: busybox: busybox: dpkg write_status_file() stale cursor causes out-of-bounds read and status file corruption",
+      "date": "2026-09-23",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "busybox: busybox: dpkg write_status_file() stale cursor causes out-of-bounds read and status file corruption",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88841.json",
+      "cve": "CVE-2026-88841",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-97176: keycloak-services: keycloak-services: Essential acr requirement silently bypassed via Cookie authenticator",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Essential acr requirement silently bypassed via Cookie authenticator",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-97176.json",
+      "cve": "CVE-2026-97176",
+      "cvss": 4.2
+    },
+    {
+      "title": "CVE-2026-96577: oc-mirror__release-4.21: Embedded local cache registry listens on all interfaces without authentication, with delete ena",
+      "date": "2026-09-23",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oc-mirror__release-4.21: Embedded local cache registry listens on all interfaces without authentication, with delete enabled",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-96577.json",
+      "cve": "CVE-2026-96577",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-97177: keycloak-services: keycloak-services: Generic user update bypasses denied reset-password permission",
+      "date": "2026-09-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Generic user update bypasses denied reset-password permission",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-97177.json",
+      "cve": "CVE-2026-97177",
+      "cvss": 6.6
     },
     {
       "title": "CVE-2026-95508: libslirp: libslirp: heap buffer overflow in DHCPv6/TFTP response builders on small interface MTU",
