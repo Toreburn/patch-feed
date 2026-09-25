@@ -1,16 +1,29 @@
 {
   "vendor": "debian",
-  "lastUpdated": "2026-09-25T11:32:31.817Z",
+  "lastUpdated": "2026-09-25T16:56:29.030Z",
   "health": {
-    "lastFetchAttempt": "2026-09-25T11:32:31.817Z",
+    "lastFetchAttempt": "2026-09-25T16:56:29.030Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 6,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-09-25T11:32:31.817Z",
+    "lastFetchParsedItems": 7,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-09-25T16:56:29.030Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "DSA-6416-2 jq - regression update",
+      "date": "2026-09-25",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "jq",
+      "description": "The update for jq released as DSA-6416-1 introduced a regression in the loading of modules. The fix for CVE-2026-44777 registered each library before its own dependencies, so a module reached only thr...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00425.html",
+      "cve": "CVE-2026-44777",
+      "cves": [
+        "CVE-2026-44777"
+      ]
+    },
     {
       "title": "DSA-6512-1 libreoffice - security update",
       "date": "2026-09-24",
