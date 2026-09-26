@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-26T00:25:35.686Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-26T04:27:39.202Z",
+  "newPatches": 33,
   "patches": [
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -669,6 +669,28 @@
       "cves": []
     },
     {
+      "title": "DSA-6516-1 ghostscript - security update",
+      "date": "2026-09-25",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "ghostscript",
+      "description": "Multiple security issues were discovered in Ghostscript, the GPL PostScript/PDF interpreter, which could result in denial of service and potentially the execution of arbitrary code if malformed docume...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00429.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6515-1 vlc - security update",
+      "date": "2026-09-25",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "vlc",
+      "description": "Multiple vulnerabilities were discovered in the VLC media player, which could result in the execution of arbitrary code or denial of service if a malformed media file is opened. https://security-track...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00428.html",
+      "cve": "",
+      "cves": []
+    },
+    {
       "title": "FriendsOfFlarum OAuth: Unauthenticated account takeover via unverified email trust in Discord OAuth provider",
       "date": "2026-09-25",
       "severity": "CRITICAL",
@@ -743,6 +765,83 @@
       "description": "Containerd has image-pull DoS via crafted OCI index graph amplification",
       "link": "https://github.com/advisories/GHSA-pg57-6jwg-q645",
       "cve": "CVE-2026-53493",
+      "cvss": null
+    },
+    {
+      "title": "SCBE-AETHERMOORE Unauthenticated AetherBrowser Ops API Exposes Operator Email Digests",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "scbe-aethermoore",
+      "description": "SCBE-AETHERMOORE Unauthenticated AetherBrowser Ops API Exposes Operator Email Digests",
+      "link": "https://github.com/advisories/GHSA-q986-4x7x-gx39",
+      "cve": "CVE-2026-57443",
+      "cvss": 7.5
+    },
+    {
+      "title": "mpp vulnerable to Gas Draining with low gas limit",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "mpp",
+      "description": "mpp vulnerable to Gas Draining with low gas limit",
+      "link": "https://github.com/advisories/GHSA-vj8p-hp9x-gh47",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "mpp vulnerable to Gas Draining with access list",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "mpp",
+      "description": "mpp vulnerable to Gas Draining with access list",
+      "link": "https://github.com/advisories/GHSA-qpxh-ff8m-c62v",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "mpp vulnerable to Gas Draining with no limit",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "mpp",
+      "description": "mpp vulnerable to Gas Draining with no limit",
+      "link": "https://github.com/advisories/GHSA-vv77-66rf-pm86",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "CliInvoke.Specializations has command injection in PowerShell and Cmd shell wrappers",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "CliInvoke.Specializations, CliInvoke.Specializations, CliInvoke.Specializations",
+      "description": "CliInvoke.Specializations has command injection in PowerShell and Cmd shell wrappers",
+      "link": "https://github.com/advisories/GHSA-wrvw-254r-wpmv",
+      "cve": "CVE-2026-100368",
+      "cvss": 8.4
+    },
+    {
+      "title": "CliInvoke: Argument Injection in Extensibility Runner Factory",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "CliInvoke, CliInvoke, CliInvoke",
+      "description": "CliInvoke: Argument Injection in Extensibility Runner Factory",
+      "link": "https://github.com/advisories/GHSA-j73w-8hfr-4gc9",
+      "cve": "CVE-2026-100369",
+      "cvss": 8.4
+    },
+    {
+      "title": "khoj has an unauthenticated path traversal in /home/ endpoint that allows file read from server filesystem",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "khoj",
+      "description": "khoj has an unauthenticated path traversal in /home/ endpoint that allows file read from server filesystem",
+      "link": "https://github.com/advisories/GHSA-62mm-xwmv-crhg",
+      "cve": "",
       "cvss": null
     },
     {
@@ -1655,6 +1754,226 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-96448.json",
       "cve": "CVE-2026-96448",
       "cvss": 6.6
+    },
+    {
+      "title": "CVE-2026-100419: gix-fs: gix-fs: Arbitrary code execution via symlink manipulation during checkout",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gix-fs: gix-fs: Arbitrary code execution via symlink manipulation during checkout",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100419.json",
+      "cve": "CVE-2026-100419",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-92842: php: php: Information disclosure via out-of-bounds read in stream filters",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "php: php: Information disclosure via out-of-bounds read in stream filters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-92842.json",
+      "cve": "CVE-2026-92842",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-91768: php: php: Access control bypass via partial IPv6 address comparison",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "php: php: Access control bypass via partial IPv6 address comparison",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-91768.json",
+      "cve": "CVE-2026-91768",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-91767: php: php: Information disclosure via crafted TLS server certificate",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "php: php: Information disclosure via crafted TLS server certificate",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-91767.json",
+      "cve": "CVE-2026-91767",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2025-1218: php: php: Denial of Service via out-of-bounds read in mysqlnd wire protocol parser",
+      "date": "2026-09-25",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "php: php: Denial of Service via out-of-bounds read in mysqlnd wire protocol parser",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2025-1218.json",
+      "cve": "CVE-2025-1218",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-91766: php: php: Credential disclosure via cross-origin HTTP redirects",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "php: php: Credential disclosure via cross-origin HTTP redirects",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-91766.json",
+      "cve": "CVE-2026-91766",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-91765: php: php: Denial of Service via unbounded recursion in SOAP parser",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "php: php: Denial of Service via unbounded recursion in SOAP parser",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-91765.json",
+      "cve": "CVE-2026-91765",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-17545: php: PHP: Denial of Service via reserved device names on Windows",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "php: PHP: Denial of Service via reserved device names on Windows",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-17545.json",
+      "cve": "CVE-2026-17545",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-6103: php: PHP: Archive entry injection via integer overflow in TAR parser",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "php: PHP: Archive entry injection via integer overflow in TAR parser",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-6103.json",
+      "cve": "CVE-2026-6103",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-93682: php: php: Out-of-bounds read via empty HTTP redirect Location header",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "php: php: Out-of-bounds read via empty HTTP redirect Location header",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93682.json",
+      "cve": "CVE-2026-93682",
+      "cvss": 5.8
+    },
+    {
+      "title": "CVE-2026-67420: rabbitmq-server: rabbitmq-server: Unauthorized user impersonation via stale OAuth token refresh",
+      "date": "2026-09-25",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq-server: rabbitmq-server: Unauthorized user impersonation via stale OAuth token refresh",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67420.json",
+      "cve": "CVE-2026-67420",
+      "cvss": 3.1
+    },
+    {
+      "title": "CVE-2026-67412: rabbitmq-server: RabbitMQ: Unauthorized cross-vhost message access via missing Federation upstream authorization",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq-server: RabbitMQ: Unauthorized cross-vhost message access via missing Federation upstream authorization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67412.json",
+      "cve": "CVE-2026-67412",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-67242: rabbitmq-server: rabbitmq-server: Authentication bypass via improper validation of floating-point token expiration times",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq-server: rabbitmq-server: Authentication bypass via improper validation of floating-point token expiration timestamps",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67242.json",
+      "cve": "CVE-2026-67242",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-67241: rabbitmq-server: rabbitmq-server: Unauthorized message routing via missing alternate-exchange permission check",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq-server: rabbitmq-server: Unauthorized message routing via missing alternate-exchange permission check",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-67241.json",
+      "cve": "CVE-2026-67241",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-89032: litellm: LiteLLM: Information disclosure via semantic cache metadata mismatch",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "litellm: LiteLLM: Information disclosure via semantic cache metadata mismatch",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-89032.json",
+      "cve": "CVE-2026-89032",
+      "cvss": 7.7
+    },
+    {
+      "title": "CVE-2026-92550: qpid-java: org.apache.qpid/qpid-broker-plugins-amqp-0-8-protocol: Apache Qpid Broker-J: Denial of Service via excessive ",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "qpid-java: org.apache.qpid/qpid-broker-plugins-amqp-0-8-protocol: Apache Qpid Broker-J: Denial of Service via excessive memory allocation in AMQP decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-92550.json",
+      "cve": "CVE-2026-92550",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-92560: org.apache.qpid/qpid-broker-plugins-amqp-0-10-protocol: Apache Qpid Broker-J: Denial of Service via excessive memory all",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.qpid/qpid-broker-plugins-amqp-0-10-protocol: Apache Qpid Broker-J: Denial of Service via excessive memory allocation in AMQP 0-10 decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-92560.json",
+      "cve": "CVE-2026-92560",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-92564: org.apache.qpid/qpid-broker-plugins-amqp-0-8-protocol: Apache Qpid Broker-J: Denial of Service via unbounded type nestin",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.qpid/qpid-broker-plugins-amqp-0-8-protocol: Apache Qpid Broker-J: Denial of Service via unbounded type nesting",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-92564.json",
+      "cve": "CVE-2026-92564",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-92609: apache-qpid-broker-j: org.apache.qpid/qpid-broker-plugins-management-http: Apache Qpid Broker-J: Unauthorized management",
+      "date": "2026-09-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "apache-qpid-broker-j: org.apache.qpid/qpid-broker-plugins-management-http: Apache Qpid Broker-J: Unauthorized management session access via session fixation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-92609.json",
+      "cve": "CVE-2026-92609",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-51773: glance-store: glance_store: glance_store: Information disclosure via unvalidated external image location URI",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "glance-store: glance_store: glance_store: Information disclosure via unvalidated external image location URI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-51773.json",
+      "cve": "CVE-2026-51773",
+      "cvss": 6.5
     },
     {
       "title": "USN-8824-1: libpcap vulnerability",
@@ -3520,6 +3839,17 @@
       "description": "LibRaw: LibRaw: Denial of Service via improper numeric conversion",
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88387.json",
       "cve": "CVE-2026-88387",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-88360: libvips: libvips: Denial of Service via Malformed PFM Image Processing",
+      "date": "2026-09-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libvips: libvips: Denial of Service via Malformed PFM Image Processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88360.json",
+      "cve": "CVE-2026-88360",
       "cvss": 5.5
     },
     {
@@ -6033,6 +6363,28 @@
       "cvss": 4.4
     },
     {
+      "title": "CVE-2026-96804: mlflow: MLflow: Arbitrary Code Execution via Insecure Deserialization",
+      "date": "2026-09-23",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mlflow: MLflow: Arbitrary Code Execution via Insecure Deserialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-96804.json",
+      "cve": "CVE-2026-96804",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-96775: mlflow: MLflow dspy: Arbitrary code execution via crafted MLmodel artifact",
+      "date": "2026-09-23",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mlflow: MLflow dspy: Arbitrary code execution via crafted MLmodel artifact",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-96775.json",
+      "cve": "CVE-2026-96775",
+      "cvss": 8.8
+    },
+    {
       "title": "Wire Swift runtime: negative LENGTH_DELIMITED length in skipGroup() crashes any protobuf-decoding service",
       "date": "2026-09-23",
       "severity": "HIGH",
@@ -8452,6 +8804,17 @@
       "cvss": 6.1
     },
     {
+      "title": "CVE-2026-93834: qemu-kvm: 9pfs: use-after-free race in Tlcreate/Twalk allows VM guest escape",
+      "date": "2026-09-22",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "qemu-kvm: 9pfs: use-after-free race in Tlcreate/Twalk allows VM guest escape",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93834.json",
+      "cve": "CVE-2026-93834",
+      "cvss": 8.8
+    },
+    {
       "title": "Traefik: BasicAuth singleflight coalescing reintroduces an unauthenticated username-enumeration timing oracle",
       "date": "2026-09-22",
       "severity": "MEDIUM",
@@ -9957,6 +10320,245 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-26T04:27:39.202Z",
+      "logs": [
+        "[INFO] aws - 77 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[SUCCESS] debian - 9 patches (2 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[SUCCESS] github - 156 patches (7 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 550 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 199 patches (24 new)",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 49 patches, no changes"
+      ],
+      "newPatchCount": 33,
+      "totalPatches": 1061,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "aws",
+        "cloudflare",
+        "debian",
+        "github",
+        "redhat",
+        "ubuntu",
+        "chrome",
+        "cisco",
+        "edge",
+        "gitlab",
+        "paloalto",
+        "postgresql",
+        "signal"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6516-1 ghostscript - security update",
+          "date": "2026-09-25",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6515-1 vlc - security update",
+          "date": "2026-09-25",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "SCBE-AETHERMOORE Unauthenticated AetherBrowser Ops API Exposes Operator Email Digests",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "mpp vulnerable to Gas Draining with low gas limit",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "mpp vulnerable to Gas Draining with access list",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "mpp vulnerable to Gas Draining with no limit",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CliInvoke.Specializations has command injection in PowerShell and Cmd shell wrappers",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "CliInvoke: Argument Injection in Extensibility Runner Factory",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "khoj has an unauthenticated path traversal in /home/ endpoint that allows file read from server filesystem",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100419: gix-fs: gix-fs: Arbitrary code execution via symlink manipulation during checkout",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-92842: php: php: Information disclosure via out-of-bounds read in stream filters",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-91768: php: php: Access control bypass via partial IPv6 address comparison",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-91767: php: php: Information disclosure via crafted TLS server certificate",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2025-1218: php: php: Denial of Service via out-of-bounds read in mysqlnd wire protocol parser",
+          "date": "2026-09-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-91766: php: php: Credential disclosure via cross-origin HTTP redirects",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-91765: php: php: Denial of Service via unbounded recursion in SOAP parser",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-17545: php: PHP: Denial of Service via reserved device names on Windows",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-6103: php: PHP: Archive entry injection via integer overflow in TAR parser",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93682: php: php: Out-of-bounds read via empty HTTP redirect Location header",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-67420: rabbitmq-server: rabbitmq-server: Unauthorized user impersonation via stale OAuth token refresh",
+          "date": "2026-09-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-67412: rabbitmq-server: RabbitMQ: Unauthorized cross-vhost message access via missing Federation upstream authorization",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-67242: rabbitmq-server: rabbitmq-server: Authentication bypass via improper validation of floating-point token expiration times",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-67241: rabbitmq-server: rabbitmq-server: Unauthorized message routing via missing alternate-exchange permission check",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-89032: litellm: LiteLLM: Information disclosure via semantic cache metadata mismatch",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-92550: qpid-java: org.apache.qpid/qpid-broker-plugins-amqp-0-8-protocol: Apache Qpid Broker-J: Denial of Service via excessive ",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-92560: org.apache.qpid/qpid-broker-plugins-amqp-0-10-protocol: Apache Qpid Broker-J: Denial of Service via excessive memory all",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-92564: org.apache.qpid/qpid-broker-plugins-amqp-0-8-protocol: Apache Qpid Broker-J: Denial of Service via unbounded type nestin",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-92609: apache-qpid-broker-j: org.apache.qpid/qpid-broker-plugins-management-http: Apache Qpid Broker-J: Unauthorized management",
+          "date": "2026-09-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-51773: glance-store: glance_store: glance_store: Information disclosure via unvalidated external image location URI",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88360: libvips: libvips: Denial of Service via Malformed PFM Image Processing",
+          "date": "2026-09-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-96804: mlflow: MLflow: Arbitrary Code Execution via Insecure Deserialization",
+          "date": "2026-09-23",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-96775: mlflow: MLflow dspy: Arbitrary code execution via crafted MLmodel artifact",
+          "date": "2026-09-23",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93834: qemu-kvm: 9pfs: use-after-free race in Tlcreate/Twalk allows VM guest escape",
+          "date": "2026-09-22",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-26T00:25:35.686Z",
       "logs": [
@@ -18076,79 +18678,6 @@
         "apple"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-09-20T04:23:48.964Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 6 patches, no changes",
-        "[INFO] cisco - 50 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[SUCCESS] debian - 12 patches (2 new)",
-        "[INFO] edge - 4 patches, no changes",
-        "[INFO] github - 164 patches, no changes",
-        "[INFO] microsoft - 502 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[SUCCESS] redhat - 300 patches (3 new)",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 46 patches, no changes"
-      ],
-      "newPatchCount": 5,
-      "totalPatches": 1103,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 15,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "cisco",
-        "edge",
-        "github",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "postgresql",
-        "signal",
-        "paloalto",
-        "cloudflare",
-        "oracle-db",
-        "apple"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6508-1 chromium - security update",
-          "date": "2026-09-19",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "debian",
-          "title": "DSA-6507-1 unbound - security update",
-          "date": "2026-09-19",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93999: keycloak-services: keycloak-services: Token refresh continues issuing tokens for disabled audience clients",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94000: keycloak-services: keycloak-services: Delegated admin with manage-users can escalate to realm-admin via group membership",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94001: keycloak-services: keycloak-services: Admin credential DELETE bypasses denied reset-password permission",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
