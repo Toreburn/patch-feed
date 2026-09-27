@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-27T18:07:26.939Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-27T21:12:04.989Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -451,6 +451,28 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-75538",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-75538"
+    },
+    {
+      "title": "DSA-6521-1 ruby-oj - security update",
+      "date": "2026-09-27",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "ruby-oj",
+      "description": "Multiple security vulnerabilities were discovered in Oj, a fast JSON parser and serializer for Ruby, which could result in denial of service or memory disclosure. https://security-tracker.debian.org/t...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00434.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6520-1 lemonldap-ng - security update",
+      "date": "2026-09-27",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "lemonldap-ng",
+      "description": "Multiple security vulnerabilities were discovered in the Lemonldap::NG web SSO system, which could result in a bypass of access controls, authorisation bypass in setups using PKCE or information discl...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00433.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "DSA-6519-1 swift - security update",
@@ -10102,6 +10124,59 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-09-27T21:12:04.989Z",
+      "logs": [
+        "[INFO] aws - 77 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[SUCCESS] debian - 13 patches (2 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 156 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 500 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 218 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 49 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 1034,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "redhat",
+        "aws",
+        "cloudflare",
+        "github",
+        "ubuntu",
+        "chrome",
+        "cisco",
+        "edge",
+        "gitlab",
+        "paloalto",
+        "postgresql",
+        "signal"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6521-1 ruby-oj - security update",
+          "date": "2026-09-27",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6520-1 lemonldap-ng - security update",
+          "date": "2026-09-27",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-09-27T18:07:26.939Z",
       "logs": [
         "[INFO] aws - 77 patches, no changes",
@@ -17808,42 +17883,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-09-22T04:00:31.020Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 45 patches, no changes",
-        "[INFO] debian - 11 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 142 patches, no changes",
-        "[INFO] microsoft - 452 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 133 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 32 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 831,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "microsoft",
-        "edge",
-        "github",
-        "redhat",
-        "ubuntu",
-        "debian",
-        "cisco",
-        "aws",
-        "chrome",
-        "postgresql",
-        "signal",
-        "paloalto"
-      ],
-      "newPatches": []
     }
   ]
 }
