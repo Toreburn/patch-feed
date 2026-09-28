@@ -1,12 +1,12 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-09-28T13:27:26.652Z",
+  "lastUpdated": "2026-09-28T23:06:57.721Z",
   "health": {
-    "lastFetchAttempt": "2026-09-28T13:27:26.652Z",
+    "lastFetchAttempt": "2026-09-28T23:06:57.721Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 6,
-    "lastSuccessWithData": "2026-09-28T13:27:26.652Z",
+    "lastFetchNewPatches": 9,
+    "lastSuccessWithData": "2026-09-28T23:06:57.721Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -64,6 +64,87 @@
       "component": "Requests",
       "description": "It was discovered that Requests did not correctly handle generating\nrandom temporary file paths. An attacker could possibly use this issue\nto execute arbitrary code....",
       "link": "https://ubuntu.com/security/notices/USN-8825-1"
+    },
+    {
+      "title": "USN-8839-1: Atril vulnerabilities",
+      "date": "2026-09-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Atril vulnerabilities",
+      "description": "It was discovered that Atril did not properly sanitize command-line\narguments in PDF /GoToR actions. If a user opened a specially crafted PDF\nfile, an attacker could possibly use this issue to execute...",
+      "link": "https://ubuntu.com/security/notices/USN-8839-1"
+    },
+    {
+      "title": "USN-8838-1: catdoc vulnerabilities",
+      "date": "2026-09-28",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "catdoc vulnerabilities",
+      "description": "It was discovered that catdoc had an integer overflow when processing\nshared string tables in malformed spreadsheet files. An attacker could\npossibly use this issue to cause catdoc to crash or execute...",
+      "link": "https://ubuntu.com/security/notices/USN-8838-1"
+    },
+    {
+      "title": "USN-8837-1: pdfminer vulnerabilities",
+      "date": "2026-09-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "pdfminer vulnerabilities",
+      "description": "It was discovered that pdfminer did not safely parse specially crafted\nPDF files. An attacker could possibly use these issues to execute\narbitrary code. (CVE-2025-64512, CVE-2025-70559)...",
+      "link": "https://ubuntu.com/security/notices/USN-8837-1"
+    },
+    {
+      "title": "USN-8835-1: Emacs vulnerability",
+      "date": "2026-09-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Emacs",
+      "description": "It was discovered that Emacs improperly handled specially crafted SVG\nimages, resulting in memory corruption. An attacker could possibly use\nthis issue to cause Emacs to crash, resulting in a denial o...",
+      "link": "https://ubuntu.com/security/notices/USN-8835-1"
+    },
+    {
+      "title": "USN-8832-1: Booth vulnerability",
+      "date": "2026-09-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Booth",
+      "description": "It was discovered that Booth did not properly validate message\nauthentication codes under certain circumstances. A remote attacker\ncould possibly use this issue to bypass authentication....",
+      "link": "https://ubuntu.com/security/notices/USN-8832-1"
+    },
+    {
+      "title": "USN-8830-1: phpseclib vulnerabilities",
+      "date": "2026-09-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "phpseclib vulnerabilities",
+      "description": "It was discovered that phpseclib did not perform constant-time padding\nvalidation when using AES in CBC mode. A remote attacker could possibly\nuse this issue to obtain sensitive information. (CVE-2026...",
+      "link": "https://ubuntu.com/security/notices/USN-8830-1"
+    },
+    {
+      "title": "USN-8829-1: Plasma Workspace vulnerability",
+      "date": "2026-09-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Plasma Workspace",
+      "description": "Fabian Vogt discovered that Plasma Workspace did not properly authenticate\nlocal clients connecting to the session manager. A local attacker could\npossibly use this issue to execute arbitrary code as ...",
+      "link": "https://ubuntu.com/security/notices/USN-8829-1"
+    },
+    {
+      "title": "USN-8828-1: dracut vulnerabilities",
+      "date": "2026-09-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "dracut vulnerabilities",
+      "description": "It was discovered that dracut created initramfs images with overly\npermissive permissions under certain circumstances. A local attacker could\npossibly use this issue to obtain sensitive information. T...",
+      "link": "https://ubuntu.com/security/notices/USN-8828-1"
+    },
+    {
+      "title": "USN-8827-1: Erlang vulnerabilities",
+      "date": "2026-09-28",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Erlang vulnerabilities",
+      "description": "It was discovered that the Erlang Port Mapper Daemon did not properly\nhandle slow connections. A remote attacker could possibly use this issue\nto cause a denial of service. (CVE-2026-42792)\n\nIt was di...",
+      "link": "https://ubuntu.com/security/notices/USN-8827-1"
     },
     {
       "title": "USN-8824-1: libpcap vulnerability",
