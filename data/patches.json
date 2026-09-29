@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-09-29T01:35:19.511Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-09-29T05:13:15.081Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -543,6 +543,17 @@
       "component": "flatpak",
       "description": "Multiple security vulnerabilities were discovered in Flatpak, an application deployment framework for desktop apps, which could result in denial service via malicious applications or information discl...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00437.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6527-1 rsync - security update",
+      "date": "2026-09-28",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "rsync",
+      "description": "Several vulnerabilities were discovered in rsync, a fast, versatile, remote (and local) file-copying tool, which could result in local privilege escalation, bypass of intended access restrictions, inf...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00440.html",
       "cve": "",
       "cves": []
     },
@@ -1876,6 +1887,15 @@
       "component": "Erlang vulnerabilities",
       "description": "It was discovered that the Erlang Port Mapper Daemon did not properly\nhandle slow connections. A remote attacker could possibly use this issue\nto cause a denial of service. (CVE-2026-42792)\n\nIt was di...",
       "link": "https://ubuntu.com/security/notices/USN-8827-1"
+    },
+    {
+      "title": "USN-8487-2: curl regression",
+      "date": "2026-09-28",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "curl regression",
+      "description": "USN-8487-1 fixed vulnerabilities in curl. Unfortunately that update\ncontained an incomplete fix for CVE-2026-8927. This update fixes the\nproblem.\n\nOriginal advisory details:\n\n Andrew Nesbitt discovere...",
+      "link": "https://ubuntu.com/security/notices/USN-8487-2"
     },
     {
       "title": "DSA-6521-1 ruby-oj - security update",
@@ -8827,6 +8847,61 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-09-29T05:13:15.081Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[INFO] aws - 29 patches, no changes",
+        "[INFO] chrome - 1 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[SUCCESS] debian - 19 patches (1 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 110 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 500 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 192 patches, no changes",
+        "[INFO] signal - 3 patches, no changes",
+        "[SUCCESS] ubuntu - 40 patches (1 new)"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 908,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "apple",
+        "debian",
+        "github",
+        "postgresql",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "cloudflare",
+        "chrome",
+        "cisco",
+        "edge",
+        "gitlab",
+        "paloalto",
+        "signal"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6527-1 rsync - security update",
+          "date": "2026-09-28",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8487-2: curl regression",
+          "date": "2026-09-28",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-09-29T01:35:19.511Z",
       "logs": [
@@ -16465,307 +16540,6 @@
         "cisco"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-09-23T04:14:05.817Z",
-      "logs": [
-        "[INFO] aws - 3 patches, no changes",
-        "[INFO] chrome - 6 patches, no changes",
-        "[INFO] cisco - 9 patches, no changes",
-        "[INFO] debian - 6 patches, no changes",
-        "[SUCCESS] edge - 4 patches (1 new)",
-        "[INFO] github - 177 patches, no changes",
-        "[INFO] microsoft - 502 patches, no changes",
-        "[SUCCESS] paloalto - 2 patches (1 new)",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[SUCCESS] redhat - 109 patches (42 new)",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 39 patches, no changes"
-      ],
-      "newPatchCount": 44,
-      "totalPatches": 865,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "microsoft",
-        "paloalto",
-        "aws",
-        "chrome",
-        "edge",
-        "github",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "debian",
-        "cisco"
-      ],
-      "newPatches": [
-        {
-          "vendor": "edge",
-          "title": "Microsoft Edge Security Update - September 22, 2026",
-          "date": "2026-09-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities (Severity: MEDIUM)",
-          "date": "2026-09-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-95818: glibc: glibc: Local attacker can cause denial of service and information disclosure via stack-based buffer overflow.",
-          "date": "2026-09-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-86805: glibc: glibc: Privilege escalation and arbitrary code execution via TOCTOU race condition in dynamic loader",
-          "date": "2026-09-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-13087: kernel: Heap out-of-bounds write in the Linux kernel RPC-over-RDMA server reply path...",
-          "date": "2026-09-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-90462: sssd: SSSD: Fail-open in LDAP ppolicy access check allows continued authorization",
-          "date": "2026-09-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-95619: gcc: libstdc++ integer overflow in `new` operator",
-          "date": "2026-09-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94627: vllm: vLLM: Denial of Service via GPU memory exhaustion",
-          "date": "2026-09-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94626: vllm: vLLM: Denial of Service via unvalidated memory allocation parameter",
-          "date": "2026-09-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94625: vllm: vLLM: Resource exhaustion via rejected prefill requests",
-          "date": "2026-09-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94624: vllm: vLLM: Denial of Service via unbounded P2P KV offloading sessions",
-          "date": "2026-09-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94623: vllm: vLLM: Denial of Service via NIXL multi-prompt assertion failure",
-          "date": "2026-09-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94622: vllm: vLLM: Denial of Service via Incomplete NIXL KV Transfer Metadata",
-          "date": "2026-09-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-49811: Dell Command | Monitor: Dell Command | Monitor: Elevation of Privileges via Incorrect Permission Assignment",
-          "date": "2026-09-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93990: expat: Expat: XML Injection via Malformed UTF-16 Input",
-          "date": "2026-09-19",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93989: vllm: vLLM: Cross-request logits corruption via out-of-bounds token indices",
-          "date": "2026-09-19",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93981: hono: hono/jsx: Cross-Site Scripting via Unescaped Strings",
-          "date": "2026-09-19",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-92708: devalue: devalue: Cross-request process memory disclosure",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93840: vllm: vLLM: Information disclosure via incorrect token ID validation",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93841: vllm: vLLM: Memory corruption via unvalidated prompt token IDs",
-          "date": "2026-09-18",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93752: CSSOM: CSSOM: Denial of Service due to improper property name validation",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93751: uri-js: uri-js: Improper UTF-8 decoding allows path traversal and CRLF injection",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93750: http-cache-semantics: http-cache-semantics: Information disclosure via improper Vary header wildcard validation",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93748: http-cache-semantics: http-cache-semantics: Information Disclosure via max-stale directive",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93749: source-map-js: source-map-js: Denial of Service via malformed indexed source maps",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-63458: github.com/perses/perses: Perses: Information disclosure via query parameter authorization bypass",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-69184: c-ares: c-ares: CPU exhaustion denial of service via unbounded DNS name compression pointer chains",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-69186: c-ares: c-ares: Denial of Service via unvalidated DNS header record counts",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-64847: anyio: AnyIO: Denial of Service due to undrained stderr in process-pool workers",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-63349: anyio: AnyIO: Privilege retention in child processes due to incorrect group handling",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-77301: adm-zip: adm-zip: Denial of Service via uncontrolled memory allocation",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93690: uri-js: uri-js: Denial of Service via malformed path segments",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93687: braces: braces: Denial of Service via Stack Overflow from Deeply Nested Patterns",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93657: hickory-resolver: hickory-resolver: DNSSEC validation bypass allows forged DNS records",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93602: rustls-webpki: rustls-webpki: Certificate Revocation Check Bypass via Faulty CRL Logic",
-          "date": "2026-09-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93601: rustls-webpki: rustls-webpki: Name Constraint Bypass in wildcard certificate validation",
-          "date": "2026-09-18",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93600: rustls-webpki: rustls-webpki: URI Name Constraint Bypass via X.509 Certificate Misissue",
-          "date": "2026-09-18",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93599: rustls-webpki: rustls-webpki: Denial of Service via crafted Certificate Revocation List",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93592: vllm: vLLM: Denial of Service via negative token ID input",
-          "date": "2026-09-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93436: vllm: vLLM: Denial of Service via memory exhaustion from rejected requests",
-          "date": "2026-09-17",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93380: chromium-browser: chromium-browser: Race condition in FileSystem",
-          "date": "2026-09-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-86049: jupyter-server: Jupyter Server: Information disclosure via 5xx request logging",
-          "date": "2026-09-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-44235: rabbitmq-c: github.com/alanxz/rabbitmq-c: rabbitmq-c: Denial of Service via AMQP frame length underflow",
-          "date": "2026-09-17",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-44236: rabbitmq-c: rabbitmq-c: Heap buffer overflow leading to denial of service",
-          "date": "2026-09-17",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
