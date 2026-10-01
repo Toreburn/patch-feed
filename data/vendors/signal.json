@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-09-30T22:04:43.203Z",
+  "lastUpdated": "2026-10-01T05:12:35.373Z",
   "health": {
-    "lastFetchAttempt": "2026-09-30T22:04:43.203Z",
+    "lastFetchAttempt": "2026-10-01T05:12:35.373Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 5,
-    "lastFetchNewPatches": 4,
-    "lastSuccessWithData": "2026-09-30T22:04:43.203Z",
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-10-01T05:12:35.373Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -65,6 +65,36 @@
       "description": "## Summary\n\nA peer that can open a TCP connection to a NestJS microservice using the built-in TCP\ntransport can make the server process allocate memory without limit, on either side of the\nconnection,",
       "link": "https://github.com/advisories/GHSA-96h4-vgxj-gvm2",
       "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "fastify vulnerable to request body replacement via an async validation result collision",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\n\nFastify runs a route's validator and, for a result shaped like `{ value, error }`, unwraps it: an `error` becomes a validation failure and `value` replaces the request part. This conventio",
+      "link": "https://github.com/advisories/GHSA-667r-xxjv-c9mm",
+      "cves": [
+        "CVE-2026-84504"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "russh: Client-side channel-scoped Handler callbacks fire for channel IDs the client never opened",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nCVE-2026-68930 was fixed by adding `Session::is_established_channel()` in `russh/src/server/encrypted.rs`, which gates every channel-scoped SERVER-side message (CHANNEL_REQUEST, CHANNEL_DA",
+      "link": "https://github.com/advisories/GHSA-47hw-gvq5-r2gm",
+      "cves": [
+        "CVE-2026-102823"
+      ],
       "platform": [
         "All Platforms"
       ]

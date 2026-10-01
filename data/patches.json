@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-01T04:55:56.363Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-01T05:13:47.419Z",
+  "newPatches": 147,
   "patches": [
     {
       "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
@@ -854,6 +854,270 @@
       "link": "https://github.com/advisories/GHSA-jwrc-g2q2-pq5p",
       "cve": "CVE-2026-102270",
       "cvss": 4.4
+    },
+    {
+      "title": "virtualenv: Downloaded seed wheels (pip/setuptools) are not integrity-checked before use",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "virtualenv",
+      "description": "virtualenv: Downloaded seed wheels (pip/setuptools) are not integrity-checked before use",
+      "link": "https://github.com/advisories/GHSA-94p9-xgh2-xp45",
+      "cve": "CVE-2026-102930",
+      "cvss": null
+    },
+    {
+      "title": "virtualenv writes prompt values into pyvenv.cfg without sanitizing line boundaries, allowing configuration injection",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "virtualenv",
+      "description": "virtualenv writes prompt values into pyvenv.cfg without sanitizing line boundaries, allowing configuration injection",
+      "link": "https://github.com/advisories/GHSA-9h9j-4vrj-gf7g",
+      "cve": "CVE-2026-102938",
+      "cvss": null
+    },
+    {
+      "title": "fastify vulnerable to Denial of Service via unhandled exception on HTTP/2 trailer responses",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "fastify",
+      "description": "fastify vulnerable to Denial of Service via unhandled exception on HTTP/2 trailer responses",
+      "link": "https://github.com/advisories/GHSA-4mh8-r7rc-xpvc",
+      "cve": "CVE-2026-92081",
+      "cvss": 5.9
+    },
+    {
+      "title": "PyJWT.decode() reintroduces options-dict mutation, enabling silent claim-verification bypass on dict reuse",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "PyJWT",
+      "description": "PyJWT.decode() reintroduces options-dict mutation, enabling silent claim-verification bypass on dict reuse",
+      "link": "https://github.com/advisories/GHSA-gvp8-978c-rx2q",
+      "cve": "CVE-2026-103001",
+      "cvss": 6.5
+    },
+    {
+      "title": "Tornado: Unbounded query-string argument count allows event-loop-stalling DoS",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "tornado",
+      "description": "Tornado: Unbounded query-string argument count allows event-loop-stalling DoS",
+      "link": "https://github.com/advisories/GHSA-3hv7-mjh2-fv65",
+      "cve": "",
+      "cvss": 5.3
+    },
+    {
+      "title": "tornado: CurlAsyncHTTPClient enforces no response-size limit — decompression bomb drives unbounded memory accumulation to OOM",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "tornado",
+      "description": "tornado: CurlAsyncHTTPClient enforces no response-size limit — decompression bomb drives unbounded memory accumulation to OOM",
+      "link": "https://github.com/advisories/GHSA-chx6-46f5-w4vp",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "Tornado: StaticFileHandler follows symlinks outside static root (path traversal)",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "tornado",
+      "description": "Tornado: StaticFileHandler follows symlinks outside static root (path traversal)",
+      "link": "https://github.com/advisories/GHSA-c2m8-h5v5-343r",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "GitPython submodule update path traversal can write outside the repository",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "GitPython",
+      "description": "GitPython submodule update path traversal can write outside the repository",
+      "link": "https://github.com/advisories/GHSA-59cr-6r3x-644w",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "hono/jsx renders plain strings unescaped in boundary components, leading to XSS",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "hono",
+      "description": "hono/jsx renders plain strings unescaped in boundary components, leading to XSS",
+      "link": "https://github.com/advisories/GHSA-hxh3-vqpv-xpqv",
+      "cve": "CVE-2026-93981",
+      "cvss": 4.7
+    },
+    {
+      "title": "fastify vulnerable to request body replacement via an async validation result collision",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "fastify",
+      "description": "fastify vulnerable to request body replacement via an async validation result collision",
+      "link": "https://github.com/advisories/GHSA-667r-xxjv-c9mm",
+      "cve": "CVE-2026-84504",
+      "cvss": 8.1
+    },
+    {
+      "title": "fastify vulnerable to authentication bypass via malformed URLs reaching encapsulated not-found handlers",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "fastify",
+      "description": "fastify vulnerable to authentication bypass via malformed URLs reaching encapsulated not-found handlers",
+      "link": "https://github.com/advisories/GHSA-p68q-wchp-6fh7",
+      "cve": "CVE-2026-76169",
+      "cvss": 7.5
+    },
+    {
+      "title": "fastify vulnerable to request validation bypass via skipped boolean false schemas",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "fastify",
+      "description": "fastify vulnerable to request validation bypass via skipped boolean false schemas",
+      "link": "https://github.com/advisories/GHSA-hwr6-493r-vm6h",
+      "cve": "CVE-2026-84469",
+      "cvss": 7.5
+    },
+    {
+      "title": "fastify vulnerable to header validation bypass via incomplete schema case normalization",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "fastify",
+      "description": "fastify vulnerable to header validation bypass via incomplete schema case normalization",
+      "link": "https://github.com/advisories/GHSA-9q9j-q6p8-xq58",
+      "cve": "CVE-2026-84428",
+      "cvss": 7.5
+    },
+    {
+      "title": "pageant: Out-of-bounds read / oversized allocation in `pageant` MemoryMap::read via a malicious Pageant agent (Windows)",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "pageant",
+      "description": "pageant: Out-of-bounds read / oversized allocation in `pageant` MemoryMap::read via a malicious Pageant agent (Windows)",
+      "link": "https://github.com/advisories/GHSA-g4mp-vgx3-xrvm",
+      "cve": "CVE-2026-102820",
+      "cvss": 6.2
+    },
+    {
+      "title": "Russh: Unbounded memory exhaustion via CHANNEL_OPEN flood during a client-stalled rekey",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "russh",
+      "description": "Russh: Unbounded memory exhaustion via CHANNEL_OPEN flood during a client-stalled rekey",
+      "link": "https://github.com/advisories/GHSA-35g8-35p8-c8fw",
+      "cve": "CVE-2026-102821",
+      "cvss": 6.5
+    },
+    {
+      "title": "Astro: Netlify Image CDN allowlist bypass enables SSRF",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@astrojs/netlify",
+      "description": "Astro: Netlify Image CDN allowlist bypass enables SSRF",
+      "link": "https://github.com/advisories/GHSA-4233-jc72-56c5",
+      "cve": "CVE-2026-102983",
+      "cvss": null
+    },
+    {
+      "title": "Astro: Malformed port in the Host header can crash the Node adapter",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@astrojs/node",
+      "description": "Astro: Malformed port in the Host header can crash the Node adapter",
+      "link": "https://github.com/advisories/GHSA-qh8j-hqjv-7m4x",
+      "cve": "CVE-2026-102984",
+      "cvss": null
+    },
+    {
+      "title": "GitPython: Denial of Service via catastrophic backtracking (ReDoS) in Actor.name_email_regex — commit author/committer field parsing",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "GitPython",
+      "description": "GitPython: Denial of Service via catastrophic backtracking (ReDoS) in Actor.name_email_regex — commit author/committer field parsing",
+      "link": "https://github.com/advisories/GHSA-g5vv-9gxw-82hx",
+      "cve": "CVE-2026-87819",
+      "cvss": 7.5
+    },
+    {
+      "title": "GitPython: --no-index bypasses diff unsafe-option protections and enables a blind local-file content oracle",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "gitpython",
+      "description": "GitPython: --no-index bypasses diff unsafe-option protections and enables a blind local-file content oracle",
+      "link": "https://github.com/advisories/GHSA-whh4-5q6c-9v3x",
+      "cve": "",
+      "cvss": 6.5
+    },
+    {
+      "title": "GitPython: Repository content can impersonate the git directory, leading to arbitrary code execution",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "gitpython",
+      "description": "GitPython: Repository content can impersonate the git directory, leading to arbitrary code execution",
+      "link": "https://github.com/advisories/GHSA-239g-whfq-7xj9",
+      "cve": "CVE-2026-87817",
+      "cvss": 8.8
+    },
+    {
+      "title": "russh: negotiating a MAC-requiring block cipher (CTR/CBC) with mac=none causes a slice-index-out-of-range panic",
+      "date": "2026-09-30",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "russh",
+      "description": "russh: negotiating a MAC-requiring block cipher (CTR/CBC) with mac=none causes a slice-index-out-of-range panic",
+      "link": "https://github.com/advisories/GHSA-p8qx-h547-fjw9",
+      "cve": "CVE-2026-102822",
+      "cvss": 3.7
+    },
+    {
+      "title": "russh: Client-side channel-scoped Handler callbacks fire for channel IDs the client never opened",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "russh",
+      "description": "russh: Client-side channel-scoped Handler callbacks fire for channel IDs the client never opened",
+      "link": "https://github.com/advisories/GHSA-47hw-gvq5-r2gm",
+      "cve": "CVE-2026-102823",
+      "cvss": 7.5
+    },
+    {
+      "title": "Russh: Missing X25519 zero-point validation in hybrid ML-KEM key exchange",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "russh",
+      "description": "Russh: Missing X25519 zero-point validation in hybrid ML-KEM key exchange",
+      "link": "https://github.com/advisories/GHSA-w3jg-pjxf-73p4",
+      "cve": "CVE-2026-102824",
+      "cvss": 4.3
+    },
+    {
+      "title": "Russh: Configured server auth-attempt cap is not enforced in the USERAUTH_REQUEST runtime path",
+      "date": "2026-09-30",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "russh",
+      "description": "Russh: Configured server auth-attempt cap is not enforced in the USERAUTH_REQUEST runtime path",
+      "link": "https://github.com/advisories/GHSA-g6xm-f9xp-qq35",
+      "cve": "CVE-2026-102825",
+      "cvss": 3.7
     },
     {
       "title": "CVE-2026-62906: Microsoft Discovery Studio Information Disclosure Vulnerability",
@@ -1741,6 +2005,1106 @@
       "cvss": 7.6
     },
     {
+      "title": "CVE-2026-103001: pyjwt: pyjwt: Token validation bypass via options dictionary mutation",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pyjwt: pyjwt: Token validation bypass via options dictionary mutation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103001.json",
+      "cve": "CVE-2026-103001",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-103000: pypdf: pypdf: Denial of Service via large alphabetical page labels",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via large alphabetical page labels",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103000.json",
+      "cve": "CVE-2026-103000",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-102999: pypdf: pypdf: Denial of Service via crafted PDF with numerous embedded files",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted PDF with numerous embedded files",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102999.json",
+      "cve": "CVE-2026-102999",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-102998: pypdf: pypdf: Denial of Service via crafted PDF form fields",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted PDF form fields",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102998.json",
+      "cve": "CVE-2026-102998",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-102997: pypdf: pypdf: Denial of Service via crafted FlateDecode stream",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted FlateDecode stream",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102997.json",
+      "cve": "CVE-2026-102997",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-102996: pypdf: pypdf: Denial of Service via excessive memory consumption during font parsing",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via excessive memory consumption during font parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102996.json",
+      "cve": "CVE-2026-102996",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-102995: pypdf: pypdf: Denial of Service via excessive memory consumption in font mapping",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via excessive memory consumption in font mapping",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102995.json",
+      "cve": "CVE-2026-102995",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-102994: pypdf: pypdf: Denial of Service via crafted indirect object tokens in PDF files",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted indirect object tokens in PDF files",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102994.json",
+      "cve": "CVE-2026-102994",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-102993: pypdf: pypdf: Denial of Service via crafted Roman page labels",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted Roman page labels",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102993.json",
+      "cve": "CVE-2026-102993",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-103387: uri-js: uri-js: Denial of Service via crafted mailto URI",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "uri-js: uri-js: Denial of Service via crafted mailto URI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103387.json",
+      "cve": "CVE-2026-103387",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-102990: basic-ftp: basic-ftp: Denial of Service via crafted Unix directory listings",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "basic-ftp: basic-ftp: Denial of Service via crafted Unix directory listings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102990.json",
+      "cve": "CVE-2026-102990",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-103500: thunderbird: thunderbird: Heap buffer overflow via opening large emails",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thunderbird: thunderbird: Heap buffer overflow via opening large emails",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103500.json",
+      "cve": "CVE-2026-103500",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-19553: python: python: Certificate verification bypass via missing server_hostname validation in SSLContext.wrap_bio()",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python: python: Certificate verification bypass via missing server_hostname validation in SSLContext.wrap_bio()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-19553.json",
+      "cve": "CVE-2026-19553",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-47496: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via crafted RPC in Virtual GPU Manager",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via crafted RPC in Virtual GPU Manager",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47496.json",
+      "cve": "CVE-2026-47496",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-47562: nvidia-driver: nvidia-driver: Denial of Service via kernel log injection",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Denial of Service via kernel log injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47562.json",
+      "cve": "CVE-2026-47562",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-47531: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Denial of Service via null pointer dereference in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Denial of Service via null pointer dereference in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47531.json",
+      "cve": "CVE-2026-47531",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-47526: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Denial of Service via null pointer dereference in firmware",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Denial of Service via null pointer dereference in firmware",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47526.json",
+      "cve": "CVE-2026-47526",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-47604: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Information disclosure via missing authorization checks",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Information disclosure via missing authorization checks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47604.json",
+      "cve": "CVE-2026-47604",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47603: nvidia-driver: nvidia-driver: Information disclosure via missing authorization in kernel mode driver",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Information disclosure via missing authorization in kernel mode driver",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47603.json",
+      "cve": "CVE-2026-47603",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47584: nvidia-driver: nvidia-driver: Denial of Service via NULL pointer dereference in kernel module",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Denial of Service via NULL pointer dereference in kernel module",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47584.json",
+      "cve": "CVE-2026-47584",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47568: nvidia-driver: nvidia-driver: Denial of Service via uncontrolled kernel logging",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Denial of Service via uncontrolled kernel logging",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47568.json",
+      "cve": "CVE-2026-47568",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47567: nvidia-driver: nvidia-driver: Denial of Service via DRM VMA address space exhaustion",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Denial of Service via DRM VMA address space exhaustion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47567.json",
+      "cve": "CVE-2026-47567",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47566: nvidia-driver: nvidia-driver: Denial of Service via kernel memory leak",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Denial of Service via kernel memory leak",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47566.json",
+      "cve": "CVE-2026-47566",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47557: nvidia-driver: nvidia-driver: Denial of Service via NULL pointer dereference in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Denial of Service via NULL pointer dereference in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47557.json",
+      "cve": "CVE-2026-47557",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47555: nvidia-driver: nvidia-driver: Information disclosure via uninitialized kernel memory copy",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Information disclosure via uninitialized kernel memory copy",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47555.json",
+      "cve": "CVE-2026-47555",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47549: nvidia-driver: nvidia-driver: Denial of Service via NULL pointer dereference in kernel module",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Denial of Service via NULL pointer dereference in kernel module",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47549.json",
+      "cve": "CVE-2026-47549",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47534: nvidia-driver: nvidia-driver: Denial of Service via divide-by-zero in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Denial of Service via divide-by-zero in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47534.json",
+      "cve": "CVE-2026-47534",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47517: nvidia-driver: nvidia-driver: Denial of Service via crafted ioctl request",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Denial of Service via crafted ioctl request",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47517.json",
+      "cve": "CVE-2026-47517",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-47518: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Code execution via improper permission assignment in secure microcont",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Code execution via improper permission assignment in secure microcontroller",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47518.json",
+      "cve": "CVE-2026-47518",
+      "cvss": 6
+    },
+    {
+      "title": "CVE-2026-47586: nvidia-driver: nvidia-driver: arbitrary code execution via kernel module use-after-free",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: arbitrary code execution via kernel module use-after-free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47586.json",
+      "cve": "CVE-2026-47586",
+      "cvss": 6.4
+    },
+    {
+      "title": "CVE-2026-47565: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via kernel mode race condition",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via kernel mode race condition",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47565.json",
+      "cve": "CVE-2026-47565",
+      "cvss": 6.4
+    },
+    {
+      "title": "CVE-2026-47537: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via out-of-bounds write in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via out-of-bounds write in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47537.json",
+      "cve": "CVE-2026-47537",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-47533: nvidia-driver: nvidia-driver: arbitrary code execution via kernel-mode array indexing flaw",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: arbitrary code execution via kernel-mode array indexing flaw",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47533.json",
+      "cve": "CVE-2026-47533",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-47529: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via out-of-bounds write in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via out-of-bounds write in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47529.json",
+      "cve": "CVE-2026-47529",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-47527: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via firmware out-of-bounds read",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via firmware out-of-bounds read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47527.json",
+      "cve": "CVE-2026-47527",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-47525: nvidia-driver: nvidia-driver: Arbitrary code execution via improper array index validation",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via improper array index validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47525.json",
+      "cve": "CVE-2026-47525",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-47524: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via out-of-bounds read",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via out-of-bounds read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47524.json",
+      "cve": "CVE-2026-47524",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-47515: nvidia-driver: nvidia-driver: Arbitrary code execution via kernel-mode unbounded string operation",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via kernel-mode unbounded string operation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47515.json",
+      "cve": "CVE-2026-47515",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-47509: nvidia-driver: nvidia-driver: Arbitrary code execution via out-of-bounds write in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via out-of-bounds write in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47509.json",
+      "cve": "CVE-2026-47509",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-47598: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via use-after-free in event delivery path",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via use-after-free in event delivery path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47598.json",
+      "cve": "CVE-2026-47598",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-47596: nvidia-driver: nvidia-driver: Privilege escalation via unpreserved memory permissions",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Privilege escalation via unpreserved memory permissions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47596.json",
+      "cve": "CVE-2026-47596",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47582: nvidia-driver: nvidia-driver: Code execution via out-of-bounds write in kernel module",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Code execution via out-of-bounds write in kernel module",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47582.json",
+      "cve": "CVE-2026-47582",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-47602: nvidia-driver: nvidia-driver: Denial of Service via untrusted pointer dereference",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Denial of Service via untrusted pointer dereference",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47602.json",
+      "cve": "CVE-2026-47602",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-47554: nvidia-driver: nvidia-driver: Data tampering via signature verification bypass under memory pressure",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Data tampering via signature verification bypass under memory pressure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47554.json",
+      "cve": "CVE-2026-47554",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-47601: nvidia-driver: nvidia-driver: Privilege escalation via improper memory access permissions in DMA-BUF import",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Privilege escalation via improper memory access permissions in DMA-BUF import",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47601.json",
+      "cve": "CVE-2026-47601",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47600: nvidia-driver: nvidia-driver: Arbitrary code execution via improperly initialized resource",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via improperly initialized resource",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47600.json",
+      "cve": "CVE-2026-47600",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47597: nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free in Resource Server",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free in Resource Server",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47597.json",
+      "cve": "CVE-2026-47597",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47595: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via write to read-only memory",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via write to read-only memory",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47595.json",
+      "cve": "CVE-2026-47595",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47594: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via use-after-free driver commands",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via use-after-free driver commands",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47594.json",
+      "cve": "CVE-2026-47594",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47592: nvidia-driver: nvidia-driver: Arbitrary code execution via out-of-bounds read in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via out-of-bounds read in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47592.json",
+      "cve": "CVE-2026-47592",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47591: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via read-only memory protection bypass",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via read-only memory protection bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47591.json",
+      "cve": "CVE-2026-47591",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47590: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via crafted driver commands",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via crafted driver commands",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47590.json",
+      "cve": "CVE-2026-47590",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47589: nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47589.json",
+      "cve": "CVE-2026-47589",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47588: nvidia-driver: nvidia-driver: arbitrary code execution via use-after-free",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: arbitrary code execution via use-after-free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47588.json",
+      "cve": "CVE-2026-47588",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47587: nvidia-driver: nvidia-driver: Privilege escalation via use-after-free",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Privilege escalation via use-after-free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47587.json",
+      "cve": "CVE-2026-47587",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47583: nvidia-driver: nvidia-driver: Privilege escalation via type confusion in the kernel module",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Privilege escalation via type confusion in the kernel module",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47583.json",
+      "cve": "CVE-2026-47583",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47579: nvidia-driver: nvidia-driver: arbitrary code execution via use-after-free in kernel mode driver",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: arbitrary code execution via use-after-free in kernel mode driver",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47579.json",
+      "cve": "CVE-2026-47579",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-47572: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via kernel-mode type confusion",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via kernel-mode type confusion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47572.json",
+      "cve": "CVE-2026-47572",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47569: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via handle recycling race condition",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via handle recycling race condition",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47569.json",
+      "cve": "CVE-2026-47569",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47561: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: privilege escalation via unvalidated ioctl buffer size",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: privilege escalation via unvalidated ioctl buffer size",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47561.json",
+      "cve": "CVE-2026-47561",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47560: nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47560.json",
+      "cve": "CVE-2026-47560",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47559: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via unauthorized cross-process memory access",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via unauthorized cross-process memory access",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47559.json",
+      "cve": "CVE-2026-47559",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47558: nvidia-driver: nvidia-driver: Privilege escalation via double-free of imported memory state",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Privilege escalation via double-free of imported memory state",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47558.json",
+      "cve": "CVE-2026-47558",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47556: nvidia-driver: nvidia-driver: arbitrary code execution via kernel-mode integer overflow",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: arbitrary code execution via kernel-mode integer overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47556.json",
+      "cve": "CVE-2026-47556",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47551: nvidia-driver: nvidia-driver: Arbitrary code execution via kernel-mode use-after-free",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via kernel-mode use-after-free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47551.json",
+      "cve": "CVE-2026-47551",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47550: nvidia-driver: nvidia-driver: Privilege escalation via untrusted pointer dereference",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Privilege escalation via untrusted pointer dereference",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47550.json",
+      "cve": "CVE-2026-47550",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47548: nvidia-driver: nvidia-driver: Arbitrary code execution via out-of-bounds write in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via out-of-bounds write in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47548.json",
+      "cve": "CVE-2026-47548",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47545: nvidia-driver: nvidia-driver: Privilege escalation via kernel-mode out-of-bounds read",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Privilege escalation via kernel-mode out-of-bounds read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47545.json",
+      "cve": "CVE-2026-47545",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47540: nvidia-driver: nvidia-driver: Arbitrary code execution via integer underflow in the kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via integer underflow in the kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47540.json",
+      "cve": "CVE-2026-47540",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47530: nvidia-driver: nvidia-driver: Privilege escalation via out-of-bounds write in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Privilege escalation via out-of-bounds write in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47530.json",
+      "cve": "CVE-2026-47530",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47528: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via uninitialized pointer access",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via uninitialized pointer access",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47528.json",
+      "cve": "CVE-2026-47528",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47523: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via out-of-bounds write in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via out-of-bounds write in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47523.json",
+      "cve": "CVE-2026-47523",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47514: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via kernel stack disclosure",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via kernel stack disclosure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47514.json",
+      "cve": "CVE-2026-47514",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47513: nvidia-driver: nvidia-driver: arbitrary code execution via kernel heap out-of-bounds read",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: arbitrary code execution via kernel heap out-of-bounds read",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47513.json",
+      "cve": "CVE-2026-47513",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47512: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: privilege escalation via out-of-bounds read in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: privilege escalation via out-of-bounds read in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47512.json",
+      "cve": "CVE-2026-47512",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47511: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via kernel-mode out-of-bounds write",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via kernel-mode out-of-bounds write",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47511.json",
+      "cve": "CVE-2026-47511",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47510: nvidia-driver: nvidia-driver: Arbitrary code execution via integer overflow in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via integer overflow in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47510.json",
+      "cve": "CVE-2026-47510",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47508: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Code execution via incorrect numeric type conversion",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Code execution via incorrect numeric type conversion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47508.json",
+      "cve": "CVE-2026-47508",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47507: nvidia-driver: nvidia-driver: Privilege escalation via out-of-bounds array access in the kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Privilege escalation via out-of-bounds array access in the kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47507.json",
+      "cve": "CVE-2026-47507",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47505: nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47505.json",
+      "cve": "CVE-2026-47505",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47504: nvidia-driver: nvidia-driver: Arbitrary code execution via type confusion in the NGX updater",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via type confusion in the NGX updater",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47504.json",
+      "cve": "CVE-2026-47504",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47501: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via out-of-bounds write during event buffer setu",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via out-of-bounds write during event buffer setup",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47501.json",
+      "cve": "CVE-2026-47501",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47500: nvidia-driver: nvidia-driver: arbitrary code execution via use-after-free in kernel mode layer",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "nvidia-driver: nvidia-driver: arbitrary code execution via use-after-free in kernel mode layer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47500.json",
+      "cve": "CVE-2026-47500",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47494: nvidia-driver: nvidia-driver: Arbitrary code execution via format string flaw",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: nvidia-driver: Arbitrary code execution via format string flaw",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47494.json",
+      "cve": "CVE-2026-47494",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47491: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via improper memory release",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via improper memory release",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47491.json",
+      "cve": "CVE-2026-47491",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-47489: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via unpreserved read-only memory permissions",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via unpreserved read-only memory permissions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47489.json",
+      "cve": "CVE-2026-47489",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-103431: collectl: collectl: colmux does not sanitize ANSI/VT100 terminal escape sequences in data received from remote collectl ",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "collectl: collectl: colmux does not sanitize ANSI/VT100 terminal escape sequences in data received from remote collectl instances",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103431.json",
+      "cve": "CVE-2026-103431",
+      "cvss": 7.7
+    },
+    {
+      "title": "CVE-2026-103226: ghostscript: ghostscript: stack-based buffer overflow in pdfwrite via crafted font data",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ghostscript: ghostscript: stack-based buffer overflow in pdfwrite via crafted font data",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103226.json",
+      "cve": "CVE-2026-103226",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-103118: GraphicsMagick: GraphicsMagick: Denial of Service via uncontrolled recursion in WPG file handler",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "GraphicsMagick: GraphicsMagick: Denial of Service via uncontrolled recursion in WPG file handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103118.json",
+      "cve": "CVE-2026-103118",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-101295: oc-mirror: oc-mirror: Path traversal / arbitrary file write in operator catalog image extraction",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oc-mirror: oc-mirror: Path traversal / arbitrary file write in operator catalog image extraction",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-101295.json",
+      "cve": "CVE-2026-101295",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-15815: grafana: PLUGIN ARCHIVE EXTRACTION ESCAPES THE PLUGIN DIRECTORY, ALLOWING CODE EXECUTION",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grafana: PLUGIN ARCHIVE EXTRACTION ESCAPES THE PLUGIN DIRECTORY, ALLOWING CODE EXECUTION",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15815.json",
+      "cve": "CVE-2026-15815",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-76154: grafana: Stored cross-site scripting in the Geomap panel allows privilege escalation",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grafana: Stored cross-site scripting in the Geomap panel allows privilege escalation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-76154.json",
+      "cve": "CVE-2026-76154",
+      "cvss": 7.3
+    },
+    {
+      "title": "CVE-2026-88920: org.apache.wss4j/wss4j-ws-security-dom: Apache WSS4J: Authentication bypass via unsigned SAML sender-vouches assertion",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.wss4j/wss4j-ws-security-dom: Apache WSS4J: Authentication bypass via unsigned SAML sender-vouches assertion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88920.json",
+      "cve": "CVE-2026-88920",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-103012: claude-code: claude-code: Security policy bypass via improper credential prioritization",
+      "date": "2026-09-30",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "claude-code: claude-code: Security policy bypass via improper credential prioritization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103012.json",
+      "cve": "CVE-2026-103012",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-13719: github.com/grafana/grafana: Grafana: Information disclosure via alert rules list API",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/grafana/grafana: Grafana: Information disclosure via alert rules list API",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13719.json",
+      "cve": "CVE-2026-13719",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-13720: grafana: grafana: Dashboard modification lockout via forged file-provisioning metadata",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grafana: grafana: Dashboard modification lockout via forged file-provisioning metadata",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-13720.json",
+      "cve": "CVE-2026-13720",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-103242: rpm: Heap-based buffer overflow write in hex2binv() via a mistyped RPMTAG_FILESIGNATURES header tag",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rpm: Heap-based buffer overflow write in hex2binv() via a mistyped RPMTAG_FILESIGNATURES header tag",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103242.json",
+      "cve": "CVE-2026-103242",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-93994: org.apache.sshd/sshd-core: Apache MINA SSHD: Authentication bypass via duplicate public key presentation",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.sshd/sshd-core: Apache MINA SSHD: Authentication bypass via duplicate public key presentation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93994.json",
+      "cve": "CVE-2026-93994",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-94002: org.apache.sshd/sshd-sftp: Apache MINA SSHD: Denial of Service via unsolicited SFTP replies",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.sshd/sshd-sftp: Apache MINA SSHD: Denial of Service via unsolicited SFTP replies",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94002.json",
+      "cve": "CVE-2026-94002",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-94029: org.apache.sshd/sshd-sftp: Apache MINA SSHD: Denial of Service via memory exhaustion in SFTP check-file extension",
+      "date": "2026-09-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.sshd/sshd-sftp: Apache MINA SSHD: Denial of Service via memory exhaustion in SFTP check-file extension",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94029.json",
+      "cve": "CVE-2026-94029",
+      "cvss": 6.5
+    },
+    {
       "title": "Axios: Node HTTP adapter prototype-pollution gadget allows request socket hijack via inherited createConnection",
       "date": "2026-09-30",
       "severity": "HIGH",
@@ -1794,6 +3158,36 @@
       "description": "## Summary\n\nA peer that can open a TCP connection to a NestJS microservice using the built-in TCP\ntransport can make the server process allocate memory without limit, on either side of the\nconnection,",
       "link": "https://github.com/advisories/GHSA-96h4-vgxj-gvm2",
       "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "fastify vulnerable to request body replacement via an async validation result collision",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\n\nFastify runs a route's validator and, for a result shaped like `{ value, error }`, unwraps it: an `error` becomes a validation failure and `value` replaces the request part. This conventio",
+      "link": "https://github.com/advisories/GHSA-667r-xxjv-c9mm",
+      "cves": [
+        "CVE-2026-84504"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "russh: Client-side channel-scoped Handler callbacks fire for channel IDs the client never opened",
+      "date": "2026-09-30",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nCVE-2026-68930 was fixed by adding `Session::is_established_channel()` in `russh/src/server/encrypted.rs`, which gates every channel-scoped SERVER-side message (CHANNEL_REQUEST, CHANNEL_DA",
+      "link": "https://github.com/advisories/GHSA-47hw-gvq5-r2gm",
+      "cves": [
+        "CVE-2026-102823"
+      ],
       "platform": [
         "All Platforms"
       ]
@@ -1941,6 +3335,15 @@
       "component": "OpenVPN vulnerabilities",
       "description": "It was discovered that OpenVPN had a use-after-free vulnerability in\nits TLS session handling. An attacker could possibly use this issue\nto cause OpenVPN to crash, resulting in a denial of service, or...",
       "link": "https://ubuntu.com/security/notices/USN-8852-1"
+    },
+    {
+      "title": "USN-8845-1: GVfs vulnerabilities",
+      "date": "2026-09-30",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "GVfs vulnerabilities",
+      "description": "Keith Linneman discovered that GVfs did not properly validate data\nreceived from SFTP servers. An attacker could possibly use this issue to\ncause a heap buffer overflow, resulting in arbitrary code ex...",
+      "link": "https://ubuntu.com/security/notices/USN-8845-1"
     },
     {
       "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
@@ -4508,6 +5911,116 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-95380.json",
       "cve": "CVE-2026-95380",
       "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-102938: virtualenv: virtualenv: Arbitrary code execution via configuration injection in prompt values",
+      "date": "2026-09-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "virtualenv: virtualenv: Arbitrary code execution via configuration injection in prompt values",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102938.json",
+      "cve": "CVE-2026-102938",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-102677: electron: Electron: Privilege escalation via sandboxed preload code cache poisoning",
+      "date": "2026-09-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "electron: Electron: Privilege escalation via sandboxed preload code cache poisoning",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102677.json",
+      "cve": "CVE-2026-102677",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-95274: chromium-browser: chromium-browser: Improper output encoding in DevTools",
+      "date": "2026-09-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Improper output encoding in DevTools",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-95274.json",
+      "cve": "CVE-2026-95274",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-95310: chromium-browser: chromium-browser: Use after free in AdFilter",
+      "date": "2026-09-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Use after free in AdFilter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-95310.json",
+      "cve": "CVE-2026-95310",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-95329: chromium-browser: chromium-browser: Out of bounds write in WebGL",
+      "date": "2026-09-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Out of bounds write in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-95329.json",
+      "cve": "CVE-2026-95329",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-95357: chromium-browser: chromium-browser: Out of bounds write in GPU",
+      "date": "2026-09-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Out of bounds write in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-95357.json",
+      "cve": "CVE-2026-95357",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-102676: electron: electron: Privilege escalation via unauthorized Node.js integration in web workers",
+      "date": "2026-09-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "electron: electron: Privilege escalation via unauthorized Node.js integration in web workers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102676.json",
+      "cve": "CVE-2026-102676",
+      "cvss": 8.3
+    },
+    {
+      "title": "CVE-2026-100811: firefox: firefox: Sandbox escape via use-after-free in DOM component",
+      "date": "2026-09-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: firefox: Sandbox escape via use-after-free in DOM component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100811.json",
+      "cve": "CVE-2026-100811",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-100786: firefox: firefox: Sandbox escape via use-after-free in Graphics component",
+      "date": "2026-09-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: firefox: Sandbox escape via use-after-free in Graphics component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100786.json",
+      "cve": "CVE-2026-100786",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-103399: libsoup: SoupServer: HTTP/1 request smuggling via undrained Expect: 100-continue body",
+      "date": "2026-09-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libsoup: SoupServer: HTTP/1 request smuggling via undrained Expect: 100-continue body",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103399.json",
+      "cve": "CVE-2026-103399",
+      "cvss": 5.3
     },
     {
       "title": "USN-8818-3: Linux kernel vulnerabilities",
@@ -12867,6 +14380,116 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-97959: kernel: net/sched: cls_route: free emptied bucket on filter move",
+      "date": "2026-09-25",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net/sched: cls_route: free emptied bucket on filter move",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-97959.json",
+      "cve": "CVE-2026-97959",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98082: kernel: btrfs: fix the possible bioc_list memory leak during error",
+      "date": "2026-09-25",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: btrfs: fix the possible bioc_list memory leak during error",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98082.json",
+      "cve": "CVE-2026-98082",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-100076: kernel: staging: rtl8723bs: fix xmit_frame/xmit_buf leaks on mgnt-frame error paths",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: staging: rtl8723bs: fix xmit_frame/xmit_buf leaks on mgnt-frame error paths",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100076.json",
+      "cve": "CVE-2026-100076",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-100071: kernel: net: hsr: free learned nodes on device setup failure",
+      "date": "2026-09-25",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net: hsr: free learned nodes on device setup failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100071.json",
+      "cve": "CVE-2026-100071",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-100079: kernel: usb: typec: ucsi: unregister debugfs entries on teardown",
+      "date": "2026-09-25",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: usb: typec: ucsi: unregister debugfs entries on teardown",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100079.json",
+      "cve": "CVE-2026-100079",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-100070: kernel: netfilter: nf_nat_sip: rewind offset when NAT shrinks the packet",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: netfilter: nf_nat_sip: rewind offset when NAT shrinks the packet",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100070.json",
+      "cve": "CVE-2026-100070",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-100072: kernel: ACPI: platform: Use acpi_bus_get_primary_device()",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ACPI: platform: Use acpi_bus_get_primary_device()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100072.json",
+      "cve": "CVE-2026-100072",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-100073: kernel: ext4: fix transaction overflow during writeback",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ext4: fix transaction overflow during writeback",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100073.json",
+      "cve": "CVE-2026-100073",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-100075: kernel: RDMA/srpt: Fix srpt_alloc_rw_ctxs() unwind counters",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/srpt: Fix srpt_alloc_rw_ctxs() unwind counters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100075.json",
+      "cve": "CVE-2026-100075",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-100077: kernel: drm/msm: Recover HW before retire hung submit",
+      "date": "2026-09-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/msm: Recover HW before retire hung submit",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100077.json",
+      "cve": "CVE-2026-100077",
+      "cvss": 5.5
+    },
+    {
       "title": "USN-8824-1: libpcap vulnerability",
       "date": "2026-09-25",
       "severity": "UNKNOWN",
@@ -12922,6 +14545,929 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-01T05:13:47.419Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[INFO] aws - 38 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 7 patches, no changes",
+        "[INFO] debian - 22 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[SUCCESS] github - 143 patches (24 new)",
+        "[INFO] microsoft - 446 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 693 patches (120 new)",
+        "[SUCCESS] signal - 6 patches (2 new)",
+        "[SUCCESS] ubuntu - 50 patches (1 new)"
+      ],
+      "newPatchCount": 147,
+      "totalPatches": 1419,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "chrome",
+        "cisco",
+        "debian",
+        "github",
+        "paloalto",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "aws",
+        "cloudflare",
+        "edge",
+        "postgresql",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "virtualenv: Downloaded seed wheels (pip/setuptools) are not integrity-checked before use",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "virtualenv writes prompt values into pyvenv.cfg without sanitizing line boundaries, allowing configuration injection",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "fastify vulnerable to Denial of Service via unhandled exception on HTTP/2 trailer responses",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "PyJWT.decode() reintroduces options-dict mutation, enabling silent claim-verification bypass on dict reuse",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Tornado: Unbounded query-string argument count allows event-loop-stalling DoS",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "tornado: CurlAsyncHTTPClient enforces no response-size limit — decompression bomb drives unbounded memory accumulation to OOM",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Tornado: StaticFileHandler follows symlinks outside static root (path traversal)",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "GitPython submodule update path traversal can write outside the repository",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "hono/jsx renders plain strings unescaped in boundary components, leading to XSS",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "fastify vulnerable to request body replacement via an async validation result collision",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "fastify vulnerable to authentication bypass via malformed URLs reaching encapsulated not-found handlers",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "fastify vulnerable to request validation bypass via skipped boolean false schemas",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "fastify vulnerable to header validation bypass via incomplete schema case normalization",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pageant: Out-of-bounds read / oversized allocation in `pageant` MemoryMap::read via a malicious Pageant agent (Windows)",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Russh: Unbounded memory exhaustion via CHANNEL_OPEN flood during a client-stalled rekey",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Astro: Netlify Image CDN allowlist bypass enables SSRF",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Astro: Malformed port in the Host header can crash the Node adapter",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "GitPython: Denial of Service via catastrophic backtracking (ReDoS) in Actor.name_email_regex — commit author/committer field parsing",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "GitPython: --no-index bypasses diff unsafe-option protections and enables a blind local-file content oracle",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "GitPython: Repository content can impersonate the git directory, leading to arbitrary code execution",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "russh: negotiating a MAC-requiring block cipher (CTR/CBC) with mac=none causes a slice-index-out-of-range panic",
+          "date": "2026-09-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "russh: Client-side channel-scoped Handler callbacks fire for channel IDs the client never opened",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Russh: Missing X25519 zero-point validation in hybrid ML-KEM key exchange",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Russh: Configured server auth-attempt cap is not enforced in the USERAUTH_REQUEST runtime path",
+          "date": "2026-09-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103001: pyjwt: pyjwt: Token validation bypass via options dictionary mutation",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103000: pypdf: pypdf: Denial of Service via large alphabetical page labels",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102999: pypdf: pypdf: Denial of Service via crafted PDF with numerous embedded files",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102998: pypdf: pypdf: Denial of Service via crafted PDF form fields",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102997: pypdf: pypdf: Denial of Service via crafted FlateDecode stream",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102996: pypdf: pypdf: Denial of Service via excessive memory consumption during font parsing",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102995: pypdf: pypdf: Denial of Service via excessive memory consumption in font mapping",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102994: pypdf: pypdf: Denial of Service via crafted indirect object tokens in PDF files",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102993: pypdf: pypdf: Denial of Service via crafted Roman page labels",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103387: uri-js: uri-js: Denial of Service via crafted mailto URI",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102990: basic-ftp: basic-ftp: Denial of Service via crafted Unix directory listings",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103500: thunderbird: thunderbird: Heap buffer overflow via opening large emails",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-19553: python: python: Certificate verification bypass via missing server_hostname validation in SSLContext.wrap_bio()",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47496: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via crafted RPC in Virtual GPU Manager",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47562: nvidia-driver: nvidia-driver: Denial of Service via kernel log injection",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47531: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Denial of Service via null pointer dereference in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47526: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Denial of Service via null pointer dereference in firmware",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47604: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Information disclosure via missing authorization checks",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47603: nvidia-driver: nvidia-driver: Information disclosure via missing authorization in kernel mode driver",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47584: nvidia-driver: nvidia-driver: Denial of Service via NULL pointer dereference in kernel module",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47568: nvidia-driver: nvidia-driver: Denial of Service via uncontrolled kernel logging",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47567: nvidia-driver: nvidia-driver: Denial of Service via DRM VMA address space exhaustion",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47566: nvidia-driver: nvidia-driver: Denial of Service via kernel memory leak",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47557: nvidia-driver: nvidia-driver: Denial of Service via NULL pointer dereference in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47555: nvidia-driver: nvidia-driver: Information disclosure via uninitialized kernel memory copy",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47549: nvidia-driver: nvidia-driver: Denial of Service via NULL pointer dereference in kernel module",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47534: nvidia-driver: nvidia-driver: Denial of Service via divide-by-zero in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47517: nvidia-driver: nvidia-driver: Denial of Service via crafted ioctl request",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47518: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Code execution via improper permission assignment in secure microcont",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47586: nvidia-driver: nvidia-driver: arbitrary code execution via kernel module use-after-free",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47565: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via kernel mode race condition",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47537: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via out-of-bounds write in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47533: nvidia-driver: nvidia-driver: arbitrary code execution via kernel-mode array indexing flaw",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47529: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via out-of-bounds write in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47527: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via firmware out-of-bounds read",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47525: nvidia-driver: nvidia-driver: Arbitrary code execution via improper array index validation",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47524: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via out-of-bounds read",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47515: nvidia-driver: nvidia-driver: Arbitrary code execution via kernel-mode unbounded string operation",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47509: nvidia-driver: nvidia-driver: Arbitrary code execution via out-of-bounds write in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47598: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via use-after-free in event delivery path",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47596: nvidia-driver: nvidia-driver: Privilege escalation via unpreserved memory permissions",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47582: nvidia-driver: nvidia-driver: Code execution via out-of-bounds write in kernel module",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47602: nvidia-driver: nvidia-driver: Denial of Service via untrusted pointer dereference",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47554: nvidia-driver: nvidia-driver: Data tampering via signature verification bypass under memory pressure",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47601: nvidia-driver: nvidia-driver: Privilege escalation via improper memory access permissions in DMA-BUF import",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47600: nvidia-driver: nvidia-driver: Arbitrary code execution via improperly initialized resource",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47597: nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free in Resource Server",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47595: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via write to read-only memory",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47594: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via use-after-free driver commands",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47592: nvidia-driver: nvidia-driver: Arbitrary code execution via out-of-bounds read in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47591: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via read-only memory protection bypass",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47590: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via crafted driver commands",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47589: nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47588: nvidia-driver: nvidia-driver: arbitrary code execution via use-after-free",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47587: nvidia-driver: nvidia-driver: Privilege escalation via use-after-free",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47583: nvidia-driver: nvidia-driver: Privilege escalation via type confusion in the kernel module",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47579: nvidia-driver: nvidia-driver: arbitrary code execution via use-after-free in kernel mode driver",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47572: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via kernel-mode type confusion",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47569: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via handle recycling race condition",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47561: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: privilege escalation via unvalidated ioctl buffer size",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47560: nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47559: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via unauthorized cross-process memory access",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47558: nvidia-driver: nvidia-driver: Privilege escalation via double-free of imported memory state",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47556: nvidia-driver: nvidia-driver: arbitrary code execution via kernel-mode integer overflow",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47551: nvidia-driver: nvidia-driver: Arbitrary code execution via kernel-mode use-after-free",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47550: nvidia-driver: nvidia-driver: Privilege escalation via untrusted pointer dereference",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47548: nvidia-driver: nvidia-driver: Arbitrary code execution via out-of-bounds write in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47545: nvidia-driver: nvidia-driver: Privilege escalation via kernel-mode out-of-bounds read",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47540: nvidia-driver: nvidia-driver: Arbitrary code execution via integer underflow in the kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47530: nvidia-driver: nvidia-driver: Privilege escalation via out-of-bounds write in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47528: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via uninitialized pointer access",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47523: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via out-of-bounds write in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47514: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: arbitrary code execution via kernel stack disclosure",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47513: nvidia-driver: nvidia-driver: arbitrary code execution via kernel heap out-of-bounds read",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47512: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: privilege escalation via out-of-bounds read in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47511: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Arbitrary code execution via kernel-mode out-of-bounds write",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47510: nvidia-driver: nvidia-driver: Arbitrary code execution via integer overflow in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47508: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Code execution via incorrect numeric type conversion",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47507: nvidia-driver: nvidia-driver: Privilege escalation via out-of-bounds array access in the kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47505: nvidia-driver: nvidia-driver: Arbitrary code execution via use-after-free in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47504: nvidia-driver: nvidia-driver: Arbitrary code execution via type confusion in the NGX updater",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47501: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via out-of-bounds write during event buffer setu",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47500: nvidia-driver: nvidia-driver: arbitrary code execution via use-after-free in kernel mode layer",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47494: nvidia-driver: nvidia-driver: Arbitrary code execution via format string flaw",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47491: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via improper memory release",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47489: nvidia-driver: xorg-x11-drv-nvidia: nvidia-driver: Privilege escalation via unpreserved read-only memory permissions",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103431: collectl: collectl: colmux does not sanitize ANSI/VT100 terminal escape sequences in data received from remote collectl ",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103226: ghostscript: ghostscript: stack-based buffer overflow in pdfwrite via crafted font data",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103118: GraphicsMagick: GraphicsMagick: Denial of Service via uncontrolled recursion in WPG file handler",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-101295: oc-mirror: oc-mirror: Path traversal / arbitrary file write in operator catalog image extraction",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15815: grafana: PLUGIN ARCHIVE EXTRACTION ESCAPES THE PLUGIN DIRECTORY, ALLOWING CODE EXECUTION",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-76154: grafana: Stored cross-site scripting in the Geomap panel allows privilege escalation",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88920: org.apache.wss4j/wss4j-ws-security-dom: Apache WSS4J: Authentication bypass via unsigned SAML sender-vouches assertion",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103012: claude-code: claude-code: Security policy bypass via improper credential prioritization",
+          "date": "2026-09-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-13719: github.com/grafana/grafana: Grafana: Information disclosure via alert rules list API",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-13720: grafana: grafana: Dashboard modification lockout via forged file-provisioning metadata",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103242: rpm: Heap-based buffer overflow write in hex2binv() via a mistyped RPMTAG_FILESIGNATURES header tag",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93994: org.apache.sshd/sshd-core: Apache MINA SSHD: Authentication bypass via duplicate public key presentation",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94002: org.apache.sshd/sshd-sftp: Apache MINA SSHD: Denial of Service via unsolicited SFTP replies",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94029: org.apache.sshd/sshd-sftp: Apache MINA SSHD: Denial of Service via memory exhaustion in SFTP check-file extension",
+          "date": "2026-09-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102938: virtualenv: virtualenv: Arbitrary code execution via configuration injection in prompt values",
+          "date": "2026-09-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102677: electron: Electron: Privilege escalation via sandboxed preload code cache poisoning",
+          "date": "2026-09-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-95274: chromium-browser: chromium-browser: Improper output encoding in DevTools",
+          "date": "2026-09-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-95310: chromium-browser: chromium-browser: Use after free in AdFilter",
+          "date": "2026-09-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-95329: chromium-browser: chromium-browser: Out of bounds write in WebGL",
+          "date": "2026-09-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-95357: chromium-browser: chromium-browser: Out of bounds write in GPU",
+          "date": "2026-09-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102676: electron: electron: Privilege escalation via unauthorized Node.js integration in web workers",
+          "date": "2026-09-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100811: firefox: firefox: Sandbox escape via use-after-free in DOM component",
+          "date": "2026-09-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100786: firefox: firefox: Sandbox escape via use-after-free in Graphics component",
+          "date": "2026-09-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103399: libsoup: SoupServer: HTTP/1 request smuggling via undrained Expect: 100-continue body",
+          "date": "2026-09-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-97959: kernel: net/sched: cls_route: free emptied bucket on filter move",
+          "date": "2026-09-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98082: kernel: btrfs: fix the possible bioc_list memory leak during error",
+          "date": "2026-09-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100076: kernel: staging: rtl8723bs: fix xmit_frame/xmit_buf leaks on mgnt-frame error paths",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100071: kernel: net: hsr: free learned nodes on device setup failure",
+          "date": "2026-09-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100079: kernel: usb: typec: ucsi: unregister debugfs entries on teardown",
+          "date": "2026-09-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100070: kernel: netfilter: nf_nat_sip: rewind offset when NAT shrinks the packet",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100072: kernel: ACPI: platform: Use acpi_bus_get_primary_device()",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100073: kernel: ext4: fix transaction overflow during writeback",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100075: kernel: RDMA/srpt: Fix srpt_alloc_rw_ctxs() unwind counters",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-100077: kernel: drm/msm: Recover HW before retire hung submit",
+          "date": "2026-09-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "signal",
+          "title": "fastify vulnerable to request body replacement via an async validation result collision",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "signal",
+          "title": "russh: Client-side channel-scoped Handler callbacks fire for channel IDs the client never opened",
+          "date": "2026-09-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8845-1: GVfs vulnerabilities",
+          "date": "2026-09-30",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-01T04:55:56.362Z",
       "logs": [
@@ -24212,44 +26758,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-09-24T19:52:37.088Z",
-      "logs": [
-        "[INFO] aws - 2 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 8 patches, no changes",
-        "[INFO] debian - 5 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 146 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 600 patches, no changes",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 193 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 48 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1018,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "github",
-        "redhat",
-        "ubuntu",
-        "cisco",
-        "debian",
-        "gitlab",
-        "paloalto",
-        "postgresql",
-        "signal",
-        "aws",
-        "chrome",
-        "edge"
-      ],
-      "newPatches": []
     }
   ]
 }
