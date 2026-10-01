@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-01T12:43:13.579Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-01T12:51:45.378Z",
+  "newPatches": 3,
   "patches": [
     {
       "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
@@ -451,6 +451,25 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-67370",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67370"
+    },
+    {
+      "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
+      "date": "2026-10-01",
+      "severity": "LOW",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group i...",
+      "link": "https://www.postgresql.org/about/news/pgpool-ii-473-468-4513-4418-and-4321-released-3390/",
+      "cve": "CVE-2026-92867"
+    },
+    {
+      "title": "USN-8860-1: OpenStack Designate vulnerability",
+      "date": "2026-10-01",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OpenStack Designate",
+      "description": "It was discovered that OpenStack Designate did not properly validate\noverlapping zones under certain circumstances. An authenticated user could\npossibly use this issue to redirect DNS traffic to attac...",
+      "link": "https://ubuntu.com/security/notices/USN-8860-1"
     },
     {
       "title": "Chrome Stable for iOS Update",
@@ -3344,6 +3363,15 @@
       "component": "GVfs vulnerabilities",
       "description": "Keith Linneman discovered that GVfs did not properly validate data\nreceived from SFTP servers. An attacker could possibly use this issue to\ncause a heap buffer overflow, resulting in arbitrary code ex...",
       "link": "https://ubuntu.com/security/notices/USN-8845-1"
+    },
+    {
+      "title": "USN-8855-1: GStreamer Bad Plugins vulnerability",
+      "date": "2026-09-30",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GStreamer Bad Plugins",
+      "description": "It was discovered that GStreamer Bad Plugins incorrectly validated the size\nof multi-channel audio blocks. An attacker could possibly use this  issue\nwith a specially crafted WAV file to cause the pro...",
+      "link": "https://ubuntu.com/security/notices/USN-8855-1"
     },
     {
       "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
@@ -14545,6 +14573,65 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-01T12:51:45.378Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[INFO] aws - 38 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 7 patches, no changes",
+        "[INFO] debian - 22 patches, no changes",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] github - 143 patches, no changes",
+        "[INFO] microsoft - 446 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[SUCCESS] postgresql - 3 patches (1 new)",
+        "[INFO] redhat - 693 patches, no changes",
+        "[INFO] signal - 6 patches, no changes",
+        "[SUCCESS] ubuntu - 52 patches (2 new)"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 1422,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 14,
+      "vendors": [
+        "microsoft",
+        "postgresql",
+        "ubuntu",
+        "chrome",
+        "cisco",
+        "debian",
+        "github",
+        "paloalto",
+        "redhat",
+        "signal",
+        "aws",
+        "cloudflare",
+        "edge",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "postgresql",
+          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
+          "date": "2026-10-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8860-1: OpenStack Designate vulnerability",
+          "date": "2026-10-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8855-1: GStreamer Bad Plugins vulnerability",
+          "date": "2026-09-30",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-01T12:43:13.579Z",
       "logs": [
@@ -26163,44 +26250,6 @@
       ],
       "newPatchCount": 0,
       "totalPatches": 897,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "cisco",
-        "debian",
-        "github",
-        "redhat",
-        "ubuntu",
-        "gitlab",
-        "paloalto",
-        "postgresql",
-        "signal",
-        "chrome",
-        "edge"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-09-24T23:05:26.131Z",
-      "logs": [
-        "[INFO] aws - 50 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 9 patches, no changes",
-        "[INFO] debian - 6 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 182 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 600 patches, no changes",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 193 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 52 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1108,
       "vendorsScanned": 56,
       "vendorsWithPatches": 13,
       "vendors": [
