@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-01T19:19:47.963Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-01T22:33:29.547Z",
+  "newPatches": 55,
   "patches": [
     {
       "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
@@ -453,6 +453,548 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67370"
     },
     {
+      "title": "CVE-2026-104002: Fail-open error handling in the data masking utility in Powertools for AWS Lambda (Python)",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "CVE-2026-104002:",
+      "description": "<p><b>Bulletin ID:</b> 2026-123-AWS\n <br>\n <b>Scope:</b> AWS\n <br>\n <b>Content Type:</b> Important (requires attention)\n <br>\n <b>Publication Date:</b> 10/01/2026 14:00 PM PDT</p>\n<p><b>Description:</...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-123-aws/"
+    },
+    {
+      "title": "CVE-2026-97662 - Argument injection in AWS security-agent-mcp-server diff scan",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "CVE-2026-97662",
+      "description": "<p><b>Bulletin ID:</b> 2026-121-AWS\n <br>\n <b>Scope:</b> AWS\n <br>\n <b>Content Type:</b> Important (requires attention)\n <br>\n <b>Publication Date:</b> 10/01/2026 10:30 AM PDT</p>\n<p><b>Description:</...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-121-aws/"
+    },
+    {
+      "title": "CVE-2026-104020 - Uncontrolled recursion in the Ion reader in Amazon Ion Python",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "aws",
+      "component": "CVE-2026-104020",
+      "description": "<p><b>Bulletin ID:</b> 2026-122-AWS\n <br>\n <b>Scope:</b> AWS\n <br>\n <b>Content Type:</b> Important (requires attention)\n <br>\n <b>Publication Date:</b> 10/01/2026 13:30 PM PDT</p>\n<p><b>Description:</...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-122-aws/"
+    },
+    {
+      "title": "Microsoft Edge Security Update - October 01, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-10-01",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
+    },
+    {
+      "title": "Improper limitation of a pathname to a restricted directory",
+      "date": "2026-10-01",
+      "severity": "LOW",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 9.8 An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') [CWE-22] and Improper Neutralization of NULL Byte or NULL Character [CWE-158] vulnerability may allo...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-175",
+      "cve": ""
+    },
+    {
+      "title": "SiYuan: The reference filter for getRefIDs checks visibility but not the password tier, disclosing that password-protected documents reference a given block",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: The reference filter for getRefIDs checks visibility but not the password tier, disclosing that password-protected documents reference a given block",
+      "link": "https://github.com/advisories/GHSA-vg99-7gj7-2fr5",
+      "cve": "CVE-2026-73606",
+      "cvss": 5.8
+    },
+    {
+      "title": "SiYuan: getAttributeViewSearchTarget returns database row content to anonymous readers with no publish-access check, reopening the class closed one day earlier at the adjacent route",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: getAttributeViewSearchTarget returns database row content to anonymous readers with no publish-access check, reopening the class closed one day earlier at the adjacent route",
+      "link": "https://github.com/advisories/GHSA-9cqf-hhrq-7v45",
+      "cve": "",
+      "cvss": 8.6
+    },
+    {
+      "title": "SiYuan: getBookmarkLabels returns every bookmark label in the workspace to anonymous readers, with no publish-access filtering",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: getBookmarkLabels returns every bookmark label in the workspace to anonymous readers, with no publish-access filtering",
+      "link": "https://github.com/advisories/GHSA-j4ph-9xwf-wcj4",
+      "cve": "CVE-2026-73609",
+      "cvss": 5.8
+    },
+    {
+      "title": "SiYuan: getUniqueFilename passes an unvalidated client-supplied path to the filesystem, giving anonymous readers an existence oracle over the entire host filesystem",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: getUniqueFilename passes an unvalidated client-supplied path to the filesystem, giving anonymous readers an existence oracle over the entire host filesystem",
+      "link": "https://github.com/advisories/GHSA-hf8h-97gm-4x2p",
+      "cve": "CVE-2026-73605",
+      "cvss": 5.8
+    },
+    {
+      "title": "SiYuan: Outline state for any document, including documents forbidden to readers, is returned by /api/storage/getOutlineStorage with no access check",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Outline state for any document, including documents forbidden to readers, is returned by /api/storage/getOutlineStorage with no access check",
+      "link": "https://github.com/advisories/GHSA-53fp-9jmv-227g",
+      "cve": "CVE-2026-73607",
+      "cvss": 5.8
+    },
+    {
+      "title": "vm2: Incomplete nodejs.* symbol filtering lets sandbox override host WebStream state checks",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2: Incomplete nodejs.* symbol filtering lets sandbox override host WebStream state checks",
+      "link": "https://github.com/advisories/GHSA-jf8q-945g-9q4c",
+      "cve": "CVE-2026-92952",
+      "cvss": 6.8
+    },
+    {
+      "title": "vm2: NodeVM builtin allowlist bypass via node:test.run() execArgv allows sandbox escape",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2: NodeVM builtin allowlist bypass via node:test.run() execArgv allows sandbox escape",
+      "link": "https://github.com/advisories/GHSA-qhwx-74w5-xhxq",
+      "cve": "CVE-2026-92948",
+      "cvss": 9.9
+    },
+    {
+      "title": "vm2 CLI provides no sandbox isolation - host-realm require() is reachable from sandboxed scripts",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 CLI provides no sandbox isolation - host-realm require() is reachable from sandboxed scripts",
+      "link": "https://github.com/advisories/GHSA-jxxv-8r27-vm4p",
+      "cve": "CVE-2026-92950",
+      "cvss": 8.6
+    },
+    {
+      "title": "vm2 exposes host HTTPS credentials and TLS traffic through globalAgent",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 exposes host HTTPS credentials and TLS traffic through globalAgent",
+      "link": "https://github.com/advisories/GHSA-h85j-hv3c-qfgq",
+      "cve": "CVE-2026-92940",
+      "cvss": 10
+    },
+    {
+      "title": "vm2 Custom Module Resolver Can Bypass the External Package Allowlist by Loading a Colliding Host Package",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 Custom Module Resolver Can Bypass the External Package Allowlist by Loading a Colliding Host Package",
+      "link": "https://github.com/advisories/GHSA-c48m-32m9-vx93",
+      "cve": "CVE-2026-92951",
+      "cvss": 9.9
+    },
+    {
+      "title": "vm2: NodeVM builtin denylist bypass via fs/promises despite -fs, allowing host filesystem writes",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2: NodeVM builtin denylist bypass via fs/promises despite -fs, allowing host filesystem writes",
+      "link": "https://github.com/advisories/GHSA-6rh5-qq4q-97xh",
+      "cve": "CVE-2026-92958",
+      "cvss": 8.5
+    },
+    {
+      "title": "vm2: NodeVM node:-prefixed negative builtin deny bypass exposes child_process",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2: NodeVM node:-prefixed negative builtin deny bypass exposes child_process",
+      "link": "https://github.com/advisories/GHSA-8686-vhfx-7r3j",
+      "cve": "CVE-2026-92957",
+      "cvss": 9.9
+    },
+    {
+      "title": "vm2: vm.freeze()/vm.readonly() bypass via accessor descriptor",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2: vm.freeze()/vm.readonly() bypass via accessor descriptor",
+      "link": "https://github.com/advisories/GHSA-633r-hq9m-c4ff",
+      "cve": "CVE-2026-92949",
+      "cvss": 4
+    },
+    {
+      "title": "vm2: NodeVM nesting guard accepts array-shaped require and permits host RCE",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2: NodeVM nesting guard accepts array-shaped require and permits host RCE",
+      "link": "https://github.com/advisories/GHSA-8hr7-r645-pc6w",
+      "cve": "CVE-2026-92935",
+      "cvss": 9
+    },
+    {
+      "title": "vm2: GHSA-m283-3h24-438v fix bypass leads to host RCE via call/apply indirection",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2: GHSA-m283-3h24-438v fix bypass leads to host RCE via call/apply indirection",
+      "link": "https://github.com/advisories/GHSA-647f-g98j-qq25",
+      "cve": "CVE-2026-92937",
+      "cvss": 10
+    },
+    {
+      "title": "vm2 allows a sandboxed plugin to execute native code through `node:sqlite`",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 allows a sandboxed plugin to execute native code through `node:sqlite`",
+      "link": "https://github.com/advisories/GHSA-6w8r-xxw2-g3hx",
+      "cve": "CVE-2026-92938",
+      "cvss": 9.9
+    },
+    {
+      "title": "vm2 crypto builtin loads attacker native code through setEngine",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 crypto builtin loads attacker native code through setEngine",
+      "link": "https://github.com/advisories/GHSA-46pr-c5wc-xffx",
+      "cve": "CVE-2026-92939",
+      "cvss": 9.9
+    },
+    {
+      "title": "vm2 sandbox escape on Node.js 26 through a stale PromiseThenLookupChain protector",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 sandbox escape on Node.js 26 through a stale PromiseThenLookupChain protector",
+      "link": "https://github.com/advisories/GHSA-27g9-p43v-cw3v",
+      "cve": "CVE-2026-92944",
+      "cvss": 9.8
+    },
+    {
+      "title": "vm2 NodeVM can replace the host process TLS trust store",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2 NodeVM can replace the host process TLS trust store",
+      "link": "https://github.com/advisories/GHSA-98xx-8mx4-x7cm",
+      "cve": "CVE-2026-92941",
+      "cvss": 10
+    },
+    {
+      "title": "vm2: External module allowlist uses a raw prefix test, so a prefix-sharing sibling package is treated as allowlisted",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "vm2",
+      "description": "vm2: External module allowlist uses a raw prefix test, so a prefix-sharing sibling package is treated as allowlisted",
+      "link": "https://github.com/advisories/GHSA-7q3f-wx44-378m",
+      "cve": "CVE-2026-92945",
+      "cvss": 4.2
+    },
+    {
+      "title": "JupyterLab: Cross-site scripting (XSS) in JupyterLab via crafted language package (jupyterlab.json)",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "jupyterlab, jupyterlab, jupyterlite-core",
+      "description": "JupyterLab: Cross-site scripting (XSS) in JupyterLab via crafted language package (jupyterlab.json)",
+      "link": "https://github.com/advisories/GHSA-3jqq-pw4j-pqcj",
+      "cve": "CVE-2026-102830",
+      "cvss": 6.8
+    },
+    {
+      "title": "JupyterLab: Argument injection in JupyterLab extension uninstall exposes server-readable files and internal URLs",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "jupyterlab, jupyterlab",
+      "description": "JupyterLab: Argument injection in JupyterLab extension uninstall exposes server-readable files and internal URLs",
+      "link": "https://github.com/advisories/GHSA-3325-v43h-43rv",
+      "cve": "CVE-2026-102904",
+      "cvss": 5.4
+    },
+    {
+      "title": "JupyterLab: Cross-site scripting (XSS) in JupyterLab via notebook cells pasted from the system clipboard",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "jupyterlab, jupyterlab, notebook",
+      "description": "JupyterLab: Cross-site scripting (XSS) in JupyterLab via notebook cells pasted from the system clipboard",
+      "link": "https://github.com/advisories/GHSA-6966-vjj6-99xv",
+      "cve": "CVE-2026-102831",
+      "cvss": 8.1
+    },
+    {
+      "title": "jackson-core: UTF8DataInputJsonParser._reportInvalidToken() missing maxErrorTokenLength limit -> unbounded StringBuilder growth (DoS)",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "com.fasterxml.jackson.core:jackson-core, com.fasterxml.jackson.core:jackson-core, tools.jackson.core:jackson-core",
+      "description": "jackson-core: UTF8DataInputJsonParser._reportInvalidToken() missing maxErrorTokenLength limit -> unbounded StringBuilder growth (DoS)",
+      "link": "https://github.com/advisories/GHSA-7hhh-6rmp-j9qf",
+      "cve": "CVE-2026-89425",
+      "cvss": 7.5
+    },
+    {
+      "title": " jackson-core: ReDoS: quadratic backtracking in NumberInput.PATTERN_FLOAT via looksLikeValidNumber()",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "com.fasterxml.jackson.core:jackson-core, com.fasterxml.jackson.core:jackson-core, com.fasterxml.jackson.core:jackson-core",
+      "description": " jackson-core: ReDoS: quadratic backtracking in NumberInput.PATTERN_FLOAT via looksLikeValidNumber()",
+      "link": "https://github.com/advisories/GHSA-p6pp-m3f8-5c89",
+      "cve": "CVE-2026-89407",
+      "cvss": 7.5
+    },
+    {
+      "title": "devalue: `stringify`/`uneval` serialize shared memory",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "devalue",
+      "description": "devalue: `stringify`/`uneval` serialize shared memory",
+      "link": "https://github.com/advisories/GHSA-j22f-vq7h-c4qm",
+      "cve": "CVE-2026-92708",
+      "cvss": 7.5
+    },
+    {
+      "title": "devalue: Residual sparse-array CPU amplification in uneval",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "devalue",
+      "description": "devalue: Residual sparse-array CPU amplification in uneval",
+      "link": "https://github.com/advisories/GHSA-hx4r-w6wj-j8fg",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "devalue: Repeated primitive strings cause quadratic expansion in uneval",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "devalue",
+      "description": "devalue: Repeated primitive strings cause quadratic expansion in uneval",
+      "link": "https://github.com/advisories/GHSA-mcm9-63f2-9j32",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "devalue: Sparse arrays emitted by uneval cause eager allocation when evaluated",
+      "date": "2026-10-01",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "devalue",
+      "description": "devalue: Sparse arrays emitted by uneval cause eager allocation when evaluated",
+      "link": "https://github.com/advisories/GHSA-wf3x-273g-mvxv",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "devalue: stringifyAsync can cause an unhandled rejection despite a caught returned promise",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "devalue",
+      "description": "devalue: stringifyAsync can cause an unhandled rejection despite a caught returned promise",
+      "link": "https://github.com/advisories/GHSA-x5rw-q4pp-hg5g",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "devalue: Malformed null-prototype object keys bypass __proto__ rejection via property-key coercion",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "devalue",
+      "description": "devalue: Malformed null-prototype object keys bypass __proto__ rejection via property-key coercion",
+      "link": "https://github.com/advisories/GHSA-4q55-j62x-fr9h",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "virtualenv bash and fish activation scripts execute commands embedded in paths",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "virtualenv",
+      "description": "virtualenv bash and fish activation scripts execute commands embedded in paths",
+      "link": "https://github.com/advisories/GHSA-p58f-9548-mpm2",
+      "cve": "CVE-2026-102925",
+      "cvss": 7.8
+    },
+    {
+      "title": "virtualenv: Command injection via --prompt in activate.bat (batch activator)",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "virtualenv",
+      "description": "virtualenv: Command injection via --prompt in activate.bat (batch activator)",
+      "link": "https://github.com/advisories/GHSA-x78j-v8h9-3j2q",
+      "cve": "CVE-2026-102937",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible long runtimes with large amount of embedded files",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible long runtimes with large amount of embedded files",
+      "link": "https://github.com/advisories/GHSA-v247-6f48-mgcj",
+      "cve": "CVE-2026-102999",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible long runtimes when generating appearance streams",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible long runtimes when generating appearance streams",
+      "link": "https://github.com/advisories/GHSA-php9-fj8v-98fj",
+      "cve": "CVE-2026-102998",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible large memory usage when retrieving alphabetical page labels",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible large memory usage when retrieving alphabetical page labels",
+      "link": "https://github.com/advisories/GHSA-w23x-9jrw-r45c",
+      "cve": "CVE-2026-103000",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible long runtimes for partially malformed FlateDecode streams (Follow-up)",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible long runtimes for partially malformed FlateDecode streams (Follow-up)",
+      "link": "https://github.com/advisories/GHSA-jw7q-gvrg-4vj3",
+      "cve": "CVE-2026-102997",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible large memory usage when parsing font data",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible large memory usage when parsing font data",
+      "link": "https://github.com/advisories/GHSA-g9cg-prrw-2r8q",
+      "cve": "CVE-2026-102996",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible large memory usage for large /ToUnicode streams (Follow-up 2)",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible large memory usage for large /ToUnicode streams (Follow-up 2)",
+      "link": "https://github.com/advisories/GHSA-fp3h-c4fm-7vvf",
+      "cve": "CVE-2026-102995",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible long runtimes/large memory usage when parsing indirect objects",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible long runtimes/large memory usage when parsing indirect objects",
+      "link": "https://github.com/advisories/GHSA-5jq2-8x83-x246",
+      "cve": "CVE-2026-102994",
+      "cvss": null
+    },
+    {
+      "title": "pypdf: Possible large memory usage when retrieving Roman page labels",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "pypdf",
+      "description": "pypdf: Possible large memory usage when retrieving Roman page labels",
+      "link": "https://github.com/advisories/GHSA-qv6h-rv94-w285",
+      "cve": "CVE-2026-102993",
+      "cvss": null
+    },
+    {
+      "title": "piscina: Prototype-pollution gadget in ThreadPool.options allows RCE via execArgv / loadBalancer / env",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "piscina, piscina, piscina",
+      "description": "piscina: Prototype-pollution gadget in ThreadPool.options allows RCE via execArgv / loadBalancer / env",
+      "link": "https://github.com/advisories/GHSA-67c8-pqhq-4rmx",
+      "cve": "CVE-2026-102992",
+      "cvss": null
+    },
+    {
+      "title": "basic-ftp: Quadratic-time CPU denial of service in Client.list() Unix directory-listing parser (RE_LINE backtracking)",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "basic-ftp",
+      "description": "basic-ftp: Quadratic-time CPU denial of service in Client.list() Unix directory-listing parser (RE_LINE backtracking)",
+      "link": "https://github.com/advisories/GHSA-c475-qrg2-pj4r",
+      "cve": "CVE-2026-102990",
+      "cvss": null
+    },
+    {
+      "title": "SiYuan discloses an administrator's open documents and search terms to anonymous readers",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan discloses an administrator's open documents and search terms to anonymous readers",
+      "link": "https://github.com/advisories/GHSA-hgfg-j9pg-43xw",
+      "cve": "CVE-2026-72788",
+      "cvss": 5.8
+    },
+    {
+      "title": "SiYuan: Unauthenticated SQL injection in searchDocs via unescaped keyword (publish mode): cross-notebook read/write with statement stacking",
+      "date": "2026-10-01",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/siyuan-note/siyuan/kernel",
+      "description": "SiYuan: Unauthenticated SQL injection in searchDocs via unescaped keyword (publish mode): cross-notebook read/write with statement stacking",
+      "link": "https://github.com/advisories/GHSA-33jq-p8c2-q3q4",
+      "cve": "CVE-2026-69085",
+      "cvss": 10
+    },
+    {
       "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
       "date": "2026-10-01",
       "severity": "LOW",
@@ -463,6 +1005,19 @@
       "cve": "CVE-2026-92867"
     },
     {
+      "title": "Signal Desktop v8.29.0",
+      "date": "2026-10-01",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Additional small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.29.0",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
       "title": "USN-8860-1: OpenStack Designate vulnerability",
       "date": "2026-10-01",
       "severity": "UNKNOWN",
@@ -470,6 +1025,42 @@
       "component": "OpenStack Designate",
       "description": "It was discovered that OpenStack Designate did not properly validate\noverlapping zones under certain circumstances. An authenticated user could\npossibly use this issue to redirect DNS traffic to attac...",
       "link": "https://ubuntu.com/security/notices/USN-8860-1"
+    },
+    {
+      "title": "USN-8863-1: GStreamer Good Plugins vulnerabilities",
+      "date": "2026-10-01",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "GStreamer Good Plugins vulnerabilities",
+      "description": "Yazan Balawneh discovered that GStreamer Good Plugins incorrectly handled\ncertain FLAC audio streams. An attacker could possibly use this issue to\nobtain sensitive information. (CVE-2026-17072)\n\nSeonw...",
+      "link": "https://ubuntu.com/security/notices/USN-8863-1"
+    },
+    {
+      "title": "USN-8862-1: libXpm vulnerability",
+      "date": "2026-10-01",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libXpm",
+      "description": "It was discovered that libXpm did not correctly handle XPM images with\nzero-dimension values. A local attacker could possibly use this issue to\ncause libXpm to use excessive resources, leading to a de...",
+      "link": "https://ubuntu.com/security/notices/USN-8862-1"
+    },
+    {
+      "title": "USN-8861-1: OpenSSL vulnerabilities",
+      "date": "2026-10-01",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OpenSSL vulnerabilities",
+      "description": "It was discovered that OpenSSL had an inefficient algorithm in its QUIC\nstream reassembly implementation. A remote attacker could possibly use this\nissue to cause OpenSSL to use excessive CPU resource...",
+      "link": "https://ubuntu.com/security/notices/USN-8861-1"
+    },
+    {
+      "title": "USN-8857-1: KCoreAddons vulnerability",
+      "date": "2026-10-01",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "KCoreAddons",
+      "description": "It was discovered that KCoreAddons incorrectly handled shell argument\nquoting in KShell::quoteArgs. The parsing did not adequately handle shell\nmetacharacters, which could lead to a shell escape. An a...",
+      "link": "https://ubuntu.com/security/notices/USN-8857-1"
     },
     {
       "title": "Chrome Stable for iOS Update",
@@ -14574,6 +15165,379 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-10-01T22:33:29.547Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[SUCCESS] aws - 41 patches (3 new)",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 7 patches, no changes",
+        "[INFO] debian - 22 patches, no changes",
+        "[SUCCESS] edge - 2 patches (1 new)",
+        "[SUCCESS] fortinet - 1 patches (1 new)",
+        "[SUCCESS] github - 188 patches (45 new)",
+        "[INFO] microsoft - 446 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 693 patches, no changes",
+        "[SUCCESS] signal - 7 patches (1 new)",
+        "[SUCCESS] ubuntu - 56 patches (4 new)"
+      ],
+      "newPatchCount": 55,
+      "totalPatches": 1477,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "aws",
+        "edge",
+        "fortinet",
+        "github",
+        "postgresql",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "cisco",
+        "debian",
+        "paloalto",
+        "redhat",
+        "cloudflare",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-104002: Fail-open error handling in the data masking utility in Powertools for AWS Lambda (Python)",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-97662 - Argument injection in AWS security-agent-mcp-server diff scan",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-104020 - Uncontrolled recursion in the Ion reader in Amazon Ion Python",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - October 01, 2026",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "fortinet",
+          "title": "Improper limitation of a pathname to a restricted directory",
+          "date": "2026-10-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: The reference filter for getRefIDs checks visibility but not the password tier, disclosing that password-protected documents reference a given block",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: getAttributeViewSearchTarget returns database row content to anonymous readers with no publish-access check, reopening the class closed one day earlier at the adjacent route",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: getBookmarkLabels returns every bookmark label in the workspace to anonymous readers, with no publish-access filtering",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: getUniqueFilename passes an unvalidated client-supplied path to the filesystem, giving anonymous readers an existence oracle over the entire host filesystem",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Outline state for any document, including documents forbidden to readers, is returned by /api/storage/getOutlineStorage with no access check",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2: Incomplete nodejs.* symbol filtering lets sandbox override host WebStream state checks",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2: NodeVM builtin allowlist bypass via node:test.run() execArgv allows sandbox escape",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 CLI provides no sandbox isolation - host-realm require() is reachable from sandboxed scripts",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 exposes host HTTPS credentials and TLS traffic through globalAgent",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 Custom Module Resolver Can Bypass the External Package Allowlist by Loading a Colliding Host Package",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2: NodeVM builtin denylist bypass via fs/promises despite -fs, allowing host filesystem writes",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2: NodeVM node:-prefixed negative builtin deny bypass exposes child_process",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2: vm.freeze()/vm.readonly() bypass via accessor descriptor",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2: NodeVM nesting guard accepts array-shaped require and permits host RCE",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2: GHSA-m283-3h24-438v fix bypass leads to host RCE via call/apply indirection",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 allows a sandboxed plugin to execute native code through `node:sqlite`",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 crypto builtin loads attacker native code through setEngine",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 sandbox escape on Node.js 26 through a stale PromiseThenLookupChain protector",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2 NodeVM can replace the host process TLS trust store",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "vm2: External module allowlist uses a raw prefix test, so a prefix-sharing sibling package is treated as allowlisted",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "JupyterLab: Cross-site scripting (XSS) in JupyterLab via crafted language package (jupyterlab.json)",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "JupyterLab: Argument injection in JupyterLab extension uninstall exposes server-readable files and internal URLs",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "JupyterLab: Cross-site scripting (XSS) in JupyterLab via notebook cells pasted from the system clipboard",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "jackson-core: UTF8DataInputJsonParser._reportInvalidToken() missing maxErrorTokenLength limit -> unbounded StringBuilder growth (DoS)",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": " jackson-core: ReDoS: quadratic backtracking in NumberInput.PATTERN_FLOAT via looksLikeValidNumber()",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "devalue: `stringify`/`uneval` serialize shared memory",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "devalue: Residual sparse-array CPU amplification in uneval",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "devalue: Repeated primitive strings cause quadratic expansion in uneval",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "devalue: Sparse arrays emitted by uneval cause eager allocation when evaluated",
+          "date": "2026-10-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "devalue: stringifyAsync can cause an unhandled rejection despite a caught returned promise",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "devalue: Malformed null-prototype object keys bypass __proto__ rejection via property-key coercion",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "virtualenv bash and fish activation scripts execute commands embedded in paths",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "virtualenv: Command injection via --prompt in activate.bat (batch activator)",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pypdf: Possible long runtimes with large amount of embedded files",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pypdf: Possible long runtimes when generating appearance streams",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pypdf: Possible large memory usage when retrieving alphabetical page labels",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pypdf: Possible long runtimes for partially malformed FlateDecode streams (Follow-up)",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pypdf: Possible large memory usage when parsing font data",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pypdf: Possible large memory usage for large /ToUnicode streams (Follow-up 2)",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pypdf: Possible long runtimes/large memory usage when parsing indirect objects",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "pypdf: Possible large memory usage when retrieving Roman page labels",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "piscina: Prototype-pollution gadget in ThreadPool.options allows RCE via execArgv / loadBalancer / env",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "basic-ftp: Quadratic-time CPU denial of service in Client.list() Unix directory-listing parser (RE_LINE backtracking)",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan discloses an administrator's open documents and search terms to anonymous readers",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SiYuan: Unauthenticated SQL injection in searchDocs via unescaped keyword (publish mode): cross-notebook read/write with statement stacking",
+          "date": "2026-10-01",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "signal",
+          "title": "Signal Desktop v8.29.0",
+          "date": "2026-10-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8863-1: GStreamer Good Plugins vulnerabilities",
+          "date": "2026-10-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8862-1: libXpm vulnerability",
+          "date": "2026-10-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8861-1: OpenSSL vulnerabilities",
+          "date": "2026-10-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8857-1: KCoreAddons vulnerability",
+          "date": "2026-10-01",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-10-01T19:19:47.963Z",
       "logs": [
         "[INFO] apple - 5 patches, no changes",
@@ -26163,113 +27127,6 @@
         "signal"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-09-25T04:23:03.456Z",
-      "logs": [
-        "[SUCCESS] aws - 58 patches (8 new)",
-        "[SUCCESS] chrome - 4 patches (1 new)",
-        "[INFO] cisco - 2 patches, no changes",
-        "[SUCCESS] cloudflare - 1 patches (1 new)",
-        "[INFO] debian - 6 patches, no changes",
-        "[SUCCESS] edge - 3 patches (1 new)",
-        "[INFO] github - 142 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 139 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 43 patches, no changes"
-      ],
-      "newPatchCount": 11,
-      "totalPatches": 908,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "chrome",
-        "cisco",
-        "cloudflare",
-        "debian",
-        "edge",
-        "github",
-        "redhat",
-        "ubuntu",
-        "gitlab",
-        "paloalto",
-        "postgresql",
-        "signal"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-16756 - Allocation of resources without limits in the default aws-smithy-http-server serve() path allows unauthenticated Slowloris denial of service",
-          "date": "2026-09-22",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "aws",
-          "title": "Incomplete fix for CVE-2025-4318 code injection in Amazon &commat;aws-amplify/codegen-ui-react",
-          "date": "2026-09-22",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-16317 and CVE-2026-16318: Issues with s2n-tls: an open-source implementation of the TLS/SSL protocols",
-          "date": "2026-09-22",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-18394 - Incorrect authorization in Strands Agents Tools http_request tool",
-          "date": "2026-09-22",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-16796 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
-          "date": "2026-09-22",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-16584 - AWS API MCP Server Security Policy Bypass via Startup Failure",
-          "date": "2026-09-22",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-18655 - Broker Credential and OAuth Token Disclosure in AWS Labs Amazon MQ MCP Server via Prompt Injection",
-          "date": "2026-09-22",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-18481 - Stored XSS in Participant URL Field leads to Account Takeover via Session Token Theft",
-          "date": "2026-09-22",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
-          "date": "2026-09-24",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "cloudflare",
-          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
-          "date": "2026-09-24",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "edge",
-          "title": "Microsoft Edge Security Update - September 24, 2026",
-          "date": "2026-09-24",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
