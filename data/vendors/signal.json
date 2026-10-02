@@ -1,16 +1,29 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-02T12:14:02.219Z",
+  "lastUpdated": "2026-10-02T22:02:03.577Z",
   "health": {
-    "lastFetchAttempt": "2026-10-02T12:14:02.219Z",
+    "lastFetchAttempt": "2026-10-02T22:02:03.577Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-02T12:14:02.219Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-10-02T22:02:03.577Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Trigger.dev: Server-side request forgery via unvalidated webhook alert-channel URL",
+      "date": "2026-10-02",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nA project member can create a webhook alert channel whose delivery URL points at an internal address, and trigger.dev's control plane will send the alert there with no SSRF protection. The",
+      "link": "https://github.com/advisories/GHSA-xxv7-2vv3-h682",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.29.0",
       "date": "2026-10-01",
