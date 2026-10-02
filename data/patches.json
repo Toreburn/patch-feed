@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-02T12:07:25.398Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-02T12:15:15.020Z",
+  "newPatches": 40,
   "patches": [
     {
       "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
@@ -471,6 +471,121 @@
       "link": "https://chromereleases.googleblog.com/feeds/6766445691312943866/comments/default"
     },
     {
+      "title": "DSA-6538-1 redis - security update",
+      "date": "2026-10-02",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "redis",
+      "description": "Multiple vulnerabilities were discovered in Redis, a persistent key-value database, which could result in denial of service or the execution of arbitrary code. This update also includes fixes for seve...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00451.html",
+      "cve": "CVE-2026-66373",
+      "cves": [
+        "CVE-2026-66373",
+        "CVE-2026-25243"
+      ]
+    },
+    {
+      "title": "CVE-2026-0250 GlobalProtect App: Buffer Overflow Vulnerability during connection to Portal or Gateway (Severity: MEDIUM)",
+      "date": "2026-10-02",
+      "severity": "MEDIUM",
+      "vendor": "paloalto",
+      "component": "GlobalProtect",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-0250",
+      "cve": "CVE-2026-0250"
+    },
+    {
+      "title": "CVE-2026-93925: thrift: thrift: Denial of Service via stack-based buffer overflow in THeaderProtocol",
+      "date": "2026-10-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thrift: thrift: Denial of Service via stack-based buffer overflow in THeaderProtocol",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93925.json",
+      "cve": "CVE-2026-93925",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-93926: thrift: thrift: Denial of Service via memory leak in THeaderTransport",
+      "date": "2026-10-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thrift: thrift: Denial of Service via memory leak in THeaderTransport",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93926.json",
+      "cve": "CVE-2026-93926",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-94633: thrift: thrift: Denial of Service via excessive memory allocation in Dart bindings",
+      "date": "2026-10-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thrift: thrift: Denial of Service via excessive memory allocation in Dart bindings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94633.json",
+      "cve": "CVE-2026-94633",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-94635: thrift: thrift: Denial of Service via improper length parameter handling in Lua bindings",
+      "date": "2026-10-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thrift: thrift: Denial of Service via improper length parameter handling in Lua bindings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94635.json",
+      "cve": "CVE-2026-94635",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-95512: freetype: FreeType: Denial of Service via repeated subroutine allocations in CID font loader",
+      "date": "2026-10-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freetype: FreeType: Denial of Service via repeated subroutine allocations in CID font loader",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-95512.json",
+      "cve": "CVE-2026-95512",
+      "cvss": 5.5
+    },
+    {
+      "title": "USN-8864-1: Linux kernel vulnerabilities",
+      "date": "2026-10-02",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Network file sys...",
+      "link": "https://ubuntu.com/security/notices/USN-8864-1"
+    },
+    {
+      "title": "USN-8816-4: Linux kernel (GKE) vulnerabilities",
+      "date": "2026-10-02",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (GKE) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architectu...",
+      "link": "https://ubuntu.com/security/notices/USN-8816-4"
+    },
+    {
+      "title": "USN-8818-6: Linux kernel (FIPS) vulnerabilities",
+      "date": "2026-10-02",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (FIPS) vulnerabilities",
+      "description": "It was discovered that some Arm processors could complete a broadcast\ntranslation lookaside buffer (TLB) invalidation before memory writes made\nthrough the invalidated translation were globally observ...",
+      "link": "https://ubuntu.com/security/notices/USN-8818-6"
+    },
+    {
+      "title": "USN-8851-2: Linux kernel (Raspberry Pi) vulnerabilities",
+      "date": "2026-10-02",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Raspberry Pi) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Network file sys...",
+      "link": "https://ubuntu.com/security/notices/USN-8851-2"
+    },
+    {
       "title": "CVE-2026-104002: Fail-open error handling in the data masking utility in Powertools for AWS Lambda (Python)",
       "date": "2026-10-01",
       "severity": "HIGH",
@@ -496,6 +611,50 @@
       "component": "CVE-2026-104020",
       "description": "<p><b>Bulletin ID:</b> 2026-122-AWS\n <br>\n <b>Scope:</b> AWS\n <br>\n <b>Content Type:</b> Important (requires attention)\n <br>\n <b>Publication Date:</b> 10/01/2026 13:30 PM PDT</p>\n<p><b>Description:</...",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-122-aws/"
+    },
+    {
+      "title": "DSA-6537-1 libpng1.6 - security update",
+      "date": "2026-10-01",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libpng1.6",
+      "description": "A use-after-free was discovered in libpng, a library implementing an interface for reading and writing PNG (Portable Network Graphics), which could result in denial of service. https://security-tracke...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00450.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6536-1 thunderbird - security update",
+      "date": "2026-10-01",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "thunderbird",
+      "description": "Multiple security issues were discovered in Thunderbird, which could result in the execution of arbitrary code. https://security-tracker.debian.org/tracker/DSA-6536-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00449.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6535-1 chromium - security update",
+      "date": "2026-10-01",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6535-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00448.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6534-1 webkit2gtk - security update",
+      "date": "2026-10-01",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "webkit2gtk",
+      "description": "Several vulnerabilities have been discovered in the WebKitGTK web engine, that may lead to heap corruption, local privilege escalation, remote code execution, out-of-bounds memory access, cross-origin...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00447.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "Microsoft Edge Security Update - October 01, 2026",
@@ -1241,6 +1400,281 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103641.json",
       "cve": "CVE-2026-103641",
       "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-104183: stream-json: stream-json: Object prototype manipulation via crafted JSON input",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "stream-json: stream-json: Object prototype manipulation via crafted JSON input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104183.json",
+      "cve": "CVE-2026-104183",
+      "cvss": 5.1
+    },
+    {
+      "title": "CVE-2026-104182: stream-json: stream-json: Denial of Service via inefficient comment scanning",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "stream-json: stream-json: Denial of Service via inefficient comment scanning",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104182.json",
+      "cve": "CVE-2026-104182",
+      "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-103484: pgvector: pgvector: Arbitrary code execution via out-of-bounds write during IVFFlat index build",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pgvector: pgvector: Arbitrary code execution via out-of-bounds write during IVFFlat index build",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103484.json",
+      "cve": "CVE-2026-103484",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-15911: confluent-kafka: confluent-kafka: Information disclosure via improper TLS certificate validation in HashiCorp Vault inte",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "confluent-kafka: confluent-kafka: Information disclosure via improper TLS certificate validation in HashiCorp Vault integration",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-15911.json",
+      "cve": "CVE-2026-15911",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-104056: authlib: authlib: Information disclosure via unvalidated discovery metadata",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "authlib: authlib: Information disclosure via unvalidated discovery metadata",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104056.json",
+      "cve": "CVE-2026-104056",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-103923: katex: katex: Cross-site scripting via prototype pollution inheritance",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "katex: katex: Cross-site scripting via prototype pollution inheritance",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103923.json",
+      "cve": "CVE-2026-103923",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2023-54404: zod: zod: Denial of service via unbounded array validation",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "zod: zod: Denial of service via unbounded array validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2023-54404.json",
+      "cve": "CVE-2023-54404",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-77387: geopy: geopy: Denial of Service via inefficient regular expression coordinate parsing",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "geopy: geopy: Denial of Service via inefficient regular expression coordinate parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-77387.json",
+      "cve": "CVE-2026-77387",
+      "cvss": 4
+    },
+    {
+      "title": "CVE-2026-63686: httpd: httpd: Denial of Service via charset conversion failure in mod_xml2enc",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Denial of Service via charset conversion failure in mod_xml2enc",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-63686.json",
+      "cve": "CVE-2026-63686",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-79768: httpd: httpd: Information disclosure in mod_userdir via single-dot path equivalence",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Information disclosure in mod_userdir via single-dot path equivalence",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-79768.json",
+      "cve": "CVE-2026-79768",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-73637: httpd: httpd: Authentication state corruption via concurrent Digest authentication requests",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Authentication state corruption via concurrent Digest authentication requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-73637.json",
+      "cve": "CVE-2026-73637",
+      "cvss": 5.6
+    },
+    {
+      "title": "CVE-2026-73636: httpd: httpd: Authentication bypass via credential replay in mod_auth_digest",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Authentication bypass via credential replay in mod_auth_digest",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-73636.json",
+      "cve": "CVE-2026-73636",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-63718: httpd: httpd: HTTP response smuggling via crafted Transfer-Encoding response in mod_proxy_uwsgi",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: HTTP response smuggling via crafted Transfer-Encoding response in mod_proxy_uwsgi",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-63718.json",
+      "cve": "CVE-2026-63718",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-63292: httpd: httpd: Arbitrary code execution via oversized Host header in mod_vhost_alias",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Arbitrary code execution via oversized Host header in mod_vhost_alias",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-63292.json",
+      "cve": "CVE-2026-63292",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-63045: httpd: httpd: unauthorized connection to arbitrary hosts via crafted FTP PASV response",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: unauthorized connection to arbitrary hosts via crafted FTP PASV response",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-63045.json",
+      "cve": "CVE-2026-63045",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-59685: httpd: httpd: Denial of Service via out-of-bounds write during Windows path expansion",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Denial of Service via out-of-bounds write during Windows path expansion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-59685.json",
+      "cve": "CVE-2026-59685",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-58415: httpd: httpd: Information disclosure via direct request to the WebDAV state directory",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Information disclosure via direct request to the WebDAV state directory",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58415.json",
+      "cve": "CVE-2026-58415",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-56449: httpd: httpd: Denial of Service via crafted HTTP response bodies in mod_proxy_html",
+      "date": "2026-10-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Denial of Service via crafted HTTP response bodies in mod_proxy_html",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56449.json",
+      "cve": "CVE-2026-56449",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-56153: httpd: httpd: Denial of Service via heap-based buffer overflow in mod_charset_lite",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Denial of Service via heap-based buffer overflow in mod_charset_lite",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-56153.json",
+      "cve": "CVE-2026-56153",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-48005: httpd: httpd: Denial of service via forged Authorization headers in mod_auth_digest",
+      "date": "2026-10-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Denial of service via forged Authorization headers in mod_auth_digest",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-48005.json",
+      "cve": "CVE-2026-48005",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-47360: httpd: httpd: Information disclosure via session cookie leakage during internal redirects",
+      "date": "2026-10-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Information disclosure via session cookie leakage during internal redirects",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-47360.json",
+      "cve": "CVE-2026-47360",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-46729: httpd: httpd: mod_heartmonitor: Denial of Service via NULL pointer dereference",
+      "date": "2026-10-01",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: mod_heartmonitor: Denial of Service via NULL pointer dereference",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46729.json",
+      "cve": "CVE-2026-46729",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-42356: httpd: httpd: arbitrary code execution via incorrect handler assignment during internal CGI redirects",
+      "date": "2026-10-01",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: arbitrary code execution via incorrect handler assignment during internal CGI redirects",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42356.json",
+      "cve": "CVE-2026-42356",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-42528: httpd: httpd: Denial of Service via mod_dav shared lock memory calculation error",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "httpd: httpd: Denial of Service via mod_dav shared lock memory calculation error",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42528.json",
+      "cve": "CVE-2026-42528",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-103505: github.com/kubernetes-sigs/aws-efs-csi-driver: AWS EFS CSI Driver: Arbitrary mount option injection via mounttargetipmap",
+      "date": "2026-10-01",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/kubernetes-sigs/aws-efs-csi-driver: AWS EFS CSI Driver: Arbitrary mount option injection via mounttargetipmap attribute",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103505.json",
+      "cve": "CVE-2026-103505",
+      "cvss": 6.5
     },
     {
       "title": "Signal Desktop v8.29.0",
@@ -10338,6 +10772,289 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-02T12:15:15.020Z",
+      "logs": [
+        "[INFO] apple - 5 patches, no changes",
+        "[INFO] aws - 22 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 6 patches, no changes",
+        "[SUCCESS] debian - 22 patches (5 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] github - 174 patches, no changes",
+        "[INFO] microsoft - 346 patches, no changes",
+        "[SUCCESS] paloalto - 2 patches (1 new)",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[SUCCESS] redhat - 405 patches (30 new)",
+        "[INFO] signal - 7 patches, no changes",
+        "[SUCCESS] ubuntu - 54 patches (4 new)"
+      ],
+      "newPatchCount": 40,
+      "totalPatches": 1056,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "chrome",
+        "debian",
+        "paloalto",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "edge",
+        "fortinet",
+        "github",
+        "postgresql",
+        "signal",
+        "cisco",
+        "cloudflare",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6538-1 redis - security update",
+          "date": "2026-10-02",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6537-1 libpng1.6 - security update",
+          "date": "2026-10-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6536-1 thunderbird - security update",
+          "date": "2026-10-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6535-1 chromium - security update",
+          "date": "2026-10-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6534-1 webkit2gtk - security update",
+          "date": "2026-10-01",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-0250 GlobalProtect App: Buffer Overflow Vulnerability during connection to Portal or Gateway (Severity: MEDIUM)",
+          "date": "2026-10-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93925: thrift: thrift: Denial of Service via stack-based buffer overflow in THeaderProtocol",
+          "date": "2026-10-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-93926: thrift: thrift: Denial of Service via memory leak in THeaderTransport",
+          "date": "2026-10-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94633: thrift: thrift: Denial of Service via excessive memory allocation in Dart bindings",
+          "date": "2026-10-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94635: thrift: thrift: Denial of Service via improper length parameter handling in Lua bindings",
+          "date": "2026-10-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-95512: freetype: FreeType: Denial of Service via repeated subroutine allocations in CID font loader",
+          "date": "2026-10-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104183: stream-json: stream-json: Object prototype manipulation via crafted JSON input",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104182: stream-json: stream-json: Denial of Service via inefficient comment scanning",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103484: pgvector: pgvector: Arbitrary code execution via out-of-bounds write during IVFFlat index build",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-15911: confluent-kafka: confluent-kafka: Information disclosure via improper TLS certificate validation in HashiCorp Vault inte",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104056: authlib: authlib: Information disclosure via unvalidated discovery metadata",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103923: katex: katex: Cross-site scripting via prototype pollution inheritance",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2023-54404: zod: zod: Denial of service via unbounded array validation",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-77387: geopy: geopy: Denial of Service via inefficient regular expression coordinate parsing",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-63686: httpd: httpd: Denial of Service via charset conversion failure in mod_xml2enc",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-79768: httpd: httpd: Information disclosure in mod_userdir via single-dot path equivalence",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-73637: httpd: httpd: Authentication state corruption via concurrent Digest authentication requests",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-73636: httpd: httpd: Authentication bypass via credential replay in mod_auth_digest",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-63718: httpd: httpd: HTTP response smuggling via crafted Transfer-Encoding response in mod_proxy_uwsgi",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-63292: httpd: httpd: Arbitrary code execution via oversized Host header in mod_vhost_alias",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-63045: httpd: httpd: unauthorized connection to arbitrary hosts via crafted FTP PASV response",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-59685: httpd: httpd: Denial of Service via out-of-bounds write during Windows path expansion",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-58415: httpd: httpd: Information disclosure via direct request to the WebDAV state directory",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-56449: httpd: httpd: Denial of Service via crafted HTTP response bodies in mod_proxy_html",
+          "date": "2026-10-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-56153: httpd: httpd: Denial of Service via heap-based buffer overflow in mod_charset_lite",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-48005: httpd: httpd: Denial of service via forged Authorization headers in mod_auth_digest",
+          "date": "2026-10-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-47360: httpd: httpd: Information disclosure via session cookie leakage during internal redirects",
+          "date": "2026-10-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-46729: httpd: httpd: mod_heartmonitor: Denial of Service via NULL pointer dereference",
+          "date": "2026-10-01",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42356: httpd: httpd: arbitrary code execution via incorrect handler assignment during internal CGI redirects",
+          "date": "2026-10-01",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42528: httpd: httpd: Denial of Service via mod_dav shared lock memory calculation error",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103505: github.com/kubernetes-sigs/aws-efs-csi-driver: AWS EFS CSI Driver: Arbitrary mount option injection via mounttargetipmap",
+          "date": "2026-10-01",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8864-1: Linux kernel vulnerabilities",
+          "date": "2026-10-02",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8816-4: Linux kernel (GKE) vulnerabilities",
+          "date": "2026-10-02",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8818-6: Linux kernel (FIPS) vulnerabilities",
+          "date": "2026-10-02",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8851-2: Linux kernel (Raspberry Pi) vulnerabilities",
+          "date": "2026-10-02",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-02T12:07:25.398Z",
       "logs": [
@@ -21638,46 +22355,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-09-25T21:15:56.500Z",
-      "logs": [
-        "[INFO] aws - 58 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[INFO] debian - 7 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 146 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 600 patches, no changes",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 186 patches, no changes",
-        "[INFO] signal - 5 patches, no changes",
-        "[INFO] ubuntu - 49 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1067,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "cloudflare",
-        "debian",
-        "github",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "cisco",
-        "edge",
-        "gitlab",
-        "paloalto",
-        "postgresql",
-        "signal"
-      ],
-      "newPatches": []
     }
   ]
 }
