@@ -1,16 +1,36 @@
 {
   "vendor": "postgresql",
-  "lastUpdated": "2026-10-04T21:07:13.535Z",
+  "lastUpdated": "2026-10-05T05:00:14.164Z",
   "health": {
-    "lastFetchAttempt": "2026-10-04T21:07:13.535Z",
+    "lastFetchAttempt": "2026-10-05T05:00:14.164Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-04T21:07:13.535Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-10-05T05:00:14.164Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+      "date": "2026-10-05",
+      "severity": "CRITICAL",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() ....",
+      "link": "https://www.postgresql.org/about/news/pg_vault_tde-v172-critical-crash-fixes-new-on-disk-format-and-stability-improvements-3393/",
+      "cve": ""
+    },
+    {
+      "title": "pgvector 0.8.7 Released",
+      "date": "2026-10-05",
+      "severity": "LOW",
+      "vendor": "postgresql",
+      "component": "PostgreSQL",
+      "description": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when poss...",
+      "link": "https://www.postgresql.org/about/news/pgvector-087-released-3392/",
+      "cve": "CVE-2026-103484"
+    },
     {
       "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
       "date": "2026-10-01",
