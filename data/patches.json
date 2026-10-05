@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-05T08:38:04.341Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-05T14:11:33.763Z",
+  "newPatches": 13,
   "patches": [
     {
       "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
@@ -473,6 +473,46 @@
       "cve": "CVE-2026-103484"
     },
     {
+      "title": "CVE-2019-25777: perl-yaml: perl-yaml: Arbitrary code execution via unrestricted package variable assignment",
+      "date": "2026-10-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-yaml: perl-yaml: Arbitrary code execution via unrestricted package variable assignment",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-25777.json",
+      "cve": "CVE-2019-25777",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2017-20285: perl-yaml: perl-yaml: Arbitrary destructor method execution via crafted YAML document",
+      "date": "2026-10-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-yaml: perl-yaml: Arbitrary destructor method execution via crafted YAML document",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2017-20285.json",
+      "cve": "CVE-2017-20285",
+      "cvss": 7.4
+    },
+    {
+      "title": "USN-8867-1: Ceph vulnerability",
+      "date": "2026-10-05",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Ceph",
+      "description": "It was discovered that the Ceph Object Gateway (RGW) SigV4 handler did not\nreject requests carrying x-amz-* headers that were absent from the signed\nheader set. An attacker holding a presigned URL cou...",
+      "link": "https://ubuntu.com/security/notices/USN-8867-1"
+    },
+    {
+      "title": "USN-8865-1: EDK II vulnerabilities",
+      "date": "2026-10-05",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "EDK II vulnerabilities",
+      "description": "It was discovered that EDK II incorrectly handled CMS key unwrapping in the\nembedded OpenSSL library. An attacker could possibly use this issue to\ncause a heap buffer overflow, resulting in a denial o...",
+      "link": "https://ubuntu.com/security/notices/USN-8865-1"
+    },
+    {
       "title": "DSA-6542-1 ruby-rack-session - security update",
       "date": "2026-10-04",
       "severity": "UNKNOWN",
@@ -504,6 +544,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105217.json",
       "cve": "CVE-2026-105217",
       "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-105163: github.com/crossplane/crossplane-runtime: crossplane-runtime: Signature verification bypass via separate image tag resol",
+      "date": "2026-10-04",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/crossplane/crossplane-runtime: crossplane-runtime: Signature verification bypass via separate image tag resolution",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105163.json",
+      "cve": "CVE-2026-105163",
+      "cvss": 8.1
     },
     {
       "title": "CVE-2026-105083: ImageMagick: ImageMagick: Security policy bypass via alternate XML DOCTYPE declaration",
@@ -1676,6 +1727,72 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104477.json",
       "cve": "CVE-2026-104477",
       "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-104872: @opentelemetry/instrumentation-cassandra-driver: @opentelemetry/instrumentation-knex: @opentelemetry/instrumentation-mon",
+      "date": "2026-10-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@opentelemetry/instrumentation-cassandra-driver: @opentelemetry/instrumentation-knex: @opentelemetry/instrumentation-mongoose: @opentelemetry/instrumentation-mysql: @opentelemetry/instrumentation-mysq...",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104872.json",
+      "cve": "CVE-2026-104872",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-104854: nx: Nx: Arbitrary code execution via insecure socket permissions",
+      "date": "2026-10-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nx: Nx: Arbitrary code execution via insecure socket permissions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104854.json",
+      "cve": "CVE-2026-104854",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-104853: nx: Nx: Arbitrary file write via path traversal in migration planning",
+      "date": "2026-10-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nx: Nx: Arbitrary file write via path traversal in migration planning",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104853.json",
+      "cve": "CVE-2026-104853",
+      "cvss": 5.8
+    },
+    {
+      "title": "CVE-2026-105301: keycloak-services: keycloak-services: Blind SSRF via X.509 authenticator fetching attacker-controlled CRL-DP/OCSP URLs",
+      "date": "2026-10-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Blind SSRF via X.509 authenticator fetching attacker-controlled CRL-DP/OCSP URLs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105301.json",
+      "cve": "CVE-2026-105301",
+      "cvss": 4
+    },
+    {
+      "title": "CVE-2026-105302: keycloak-services: keycloak-services: User Session Note mapper exposes upstream IdP access tokens",
+      "date": "2026-10-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: User Session Note mapper exposes upstream IdP access tokens",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105302.json",
+      "cve": "CVE-2026-105302",
+      "cvss": 5.7
+    },
+    {
+      "title": "CVE-2026-105306: keycloak-services: keycloak-services: Token introspection audience bypass via Dynamic Client Registration",
+      "date": "2026-10-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Token introspection audience bypass via Dynamic Client Registration",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105306.json",
+      "cve": "CVE-2026-105306",
+      "cvss": 6.5
     },
     {
       "title": "Trigger.dev: Server-side request forgery via unvalidated webhook alert-channel URL",
@@ -9282,6 +9399,28 @@
       "cvss": 9.6
     },
     {
+      "title": "CVE-2026-81841: grafana: grafana: Information disclosure via unrevoked access tokens in paused shared dashboards",
+      "date": "2026-09-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grafana: grafana: Information disclosure via unrevoked access tokens in paused shared dashboards",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-81841.json",
+      "cve": "CVE-2026-81841",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-102317: chromium-browser: chromium-browser: Improper privilege management in Mojo",
+      "date": "2026-09-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Improper privilege management in Mojo",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102317.json",
+      "cve": "CVE-2026-102317",
+      "cvss": 8.8
+    },
+    {
       "title": "USN-8818-3: Linux kernel vulnerabilities",
       "date": "2026-09-29",
       "severity": "LOW",
@@ -9382,6 +9521,127 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-05T14:11:33.763Z",
+      "logs": [
+        "[INFO] aws - 25 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] cloudflare - 8 patches, no changes",
+        "[INFO] debian - 16 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] github - 197 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 197 patches, no changes",
+        "[INFO] paloalto - 2 patches, no changes",
+        "[INFO] postgresql - 4 patches, no changes",
+        "[SUCCESS] redhat - 402 patches (11 new)",
+        "[INFO] signal - 9 patches, no changes",
+        "[SUCCESS] ubuntu - 40 patches (2 new)"
+      ],
+      "newPatchCount": 13,
+      "totalPatches": 913,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "postgresql",
+        "redhat",
+        "ubuntu",
+        "debian",
+        "aws",
+        "chrome",
+        "cisco",
+        "cloudflare",
+        "github",
+        "gitlab",
+        "paloalto",
+        "signal",
+        "edge",
+        "fortinet"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2019-25777: perl-yaml: perl-yaml: Arbitrary code execution via unrestricted package variable assignment",
+          "date": "2026-10-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2017-20285: perl-yaml: perl-yaml: Arbitrary destructor method execution via crafted YAML document",
+          "date": "2026-10-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-105163: github.com/crossplane/crossplane-runtime: crossplane-runtime: Signature verification bypass via separate image tag resol",
+          "date": "2026-10-04",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104872: @opentelemetry/instrumentation-cassandra-driver: @opentelemetry/instrumentation-knex: @opentelemetry/instrumentation-mon",
+          "date": "2026-10-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104854: nx: Nx: Arbitrary code execution via insecure socket permissions",
+          "date": "2026-10-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104853: nx: Nx: Arbitrary file write via path traversal in migration planning",
+          "date": "2026-10-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-105301: keycloak-services: keycloak-services: Blind SSRF via X.509 authenticator fetching attacker-controlled CRL-DP/OCSP URLs",
+          "date": "2026-10-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-105302: keycloak-services: keycloak-services: User Session Note mapper exposes upstream IdP access tokens",
+          "date": "2026-10-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-105306: keycloak-services: keycloak-services: Token introspection audience bypass via Dynamic Client Registration",
+          "date": "2026-10-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-81841: grafana: grafana: Information disclosure via unrevoked access tokens in paused shared dashboards",
+          "date": "2026-09-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102317: chromium-browser: chromium-browser: Improper privilege management in Mojo",
+          "date": "2026-09-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8867-1: Ceph vulnerability",
+          "date": "2026-10-05",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8865-1: EDK II vulnerabilities",
+          "date": "2026-10-05",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-05T08:38:04.341Z",
       "logs": [
@@ -20606,521 +20866,6 @@
         "signal"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-09-28T13:28:26.351Z",
-      "logs": [
-        "[INFO] aws - 77 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 2 patches, no changes",
-        "[INFO] cloudflare - 2 patches, no changes",
-        "[SUCCESS] debian - 15 patches (2 new)",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 151 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[SUCCESS] microsoft - 550 patches (50 new)",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[SUCCESS] redhat - 220 patches (21 new)",
-        "[INFO] signal - 5 patches, no changes",
-        "[SUCCESS] ubuntu - 44 patches (6 new)"
-      ],
-      "newPatchCount": 79,
-      "totalPatches": 1077,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "cloudflare",
-        "github",
-        "chrome",
-        "cisco",
-        "edge",
-        "gitlab",
-        "paloalto",
-        "postgresql",
-        "signal"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6523-1 libheif - security update",
-          "date": "2026-09-28",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "debian",
-          "title": "DSA-6522-1 exim4 - security update",
-          "date": "2026-09-27",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-0799: OOBR and OOBW in libpcap before 1.10.7",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100070: netfilter: nf_nat_sip: rewind offset when NAT shrinks the packet",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100071: net: hsr: free learned nodes on device setup failure",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100072: ACPI: platform: Use acpi_bus_get_primary_device()",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100074: bpf: Mark bpf_refcount field as unique",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100075: RDMA/srpt: Fix srpt_alloc_rw_ctxs() unwind counters",
-          "date": "2026-09-28",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100077: drm/msm: Recover HW before retire hung submit",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100078: wifi: iwlwifi: mei: pass correct argument to function",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100079: usb: typec: ucsi: unregister debugfs entries on teardown",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-11573: Uncontrolled recursion in QDomDocument/QDomNode serialization causes stack exhaustion (QtXml)",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-13608: OpenLDAP SASL authentication bypass",
-          "date": "2026-09-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-14957: FIPS mode assertion failure via malicious CERT payload",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18090: Gdk-pixbuf: gdk-pixbuf: heap out-of-bounds read in uncompress() via crafted icns rle block",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18149: undici vulnerable to Denial of Service via orphaned RetryHandler response body",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18238: OOBR in rpcap client in libpcap before 1.10.7",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18313: rpcapd memory leak in libpcap before 1.10.7",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18329: NGINX ngx_http_js_module vulnerability",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18540: undici vulnerable to downstream response splitting via retry interceptor",
-          "date": "2026-09-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18743: Popt-devel: popt-static: short realloc in poptconfigfiletostring",
-          "date": "2026-09-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-18924: HTTP/2 server push UAF",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19499: Buffer overflow in strfmon and strfmon_l right-justification padding",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19542: Stack-based out-of-bounds write in tdelete during tree rebalancing",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19662: qpcache NOQNAME proof use-after-free crashes recursive resolver",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19666: Use-after-free in query_addnoqnameproof() via the DNS64 filter64 path",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19667: Remote assertion failure via 16-bit length truncation in `dns_ncache_add()`",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19668: Resource Exhaustion via Excessive DNSSEC Cryptographic Material Matching",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19774: BlueZ A2DP Stack-based Buffer Overflow Remote Code Execution Vulnerability",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19888: NULL pointer dereference in SCRAM client-final-message parsing in PgBouncer",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19931: Negotiate ambient user conn reuse",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-19941: checkwildcard() accepts an out-of-zone NSEC as a wildcard-nonexistence proof",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31911: abort() in libpcap before 1.10.7 on an invalid BPF opcode",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-31912: OOBR in libpcap before 1.10.7",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-33630: c-ares : Use-after-free / double-free in c-ares query-completion handling, remotely triggerable via ares_getaddrinfo() over TCP",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-44950: fs_read_glyphs() heap buffer overflow via cumulative glyph data overflow in libXfont2",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-53493: Containerd has image-pull DoS via crafted OCI index graph amplification",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-53495: containerd CRI ExecSync Goroutine Leak Leading to Node-Level Denial of Service",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-53940: Conda: Entry-point path traversal in noarch:python install (arbitrary file write) — canonical Python implementation",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-55951: httpc memory exhaustion via unbounded response header accumulation",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-56855: Prevent DoS on deadlocked established channel in golang.org/x/crypto/ssh",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-59679: fs_read_glyphs() heap OOB read/write via encoding array index mismatch in libXfont2",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-59696: uri_string does not bound the port component of a URI before integer conversion",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-6244: division by zero in libpcap before 1.10.7",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-6554: infinte loop in libpcap before 1.10.7",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-65634: Superlinear CPU denial of service in Erlang/OTP ASN.1 OBJECT IDENTIFIER decoder",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-66357: inets,httpd:HTTP Request Smuggling via obs-fold Header Continuation",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-6668: Integer overflow causes an infinite loop in packet buffer growth in PgBouncer",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-66835: httpd mod_auth directory protection bypassed by a doubled slash in the request path",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-68956: SSH daemon allocates unbounded idle session channels, bypassing max_channels",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-69184: c-ares: CPU-exhaustion denial of service via unbounded DNS name compression pointer chains",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-69186: c-ares: Memory-amplification denial of service via unvalidated DNS header record counts",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101017: opendmarc: OpenDMARC: Denial of Service via NULL pointer dereference during subdomain walking in opendmarc_policy.c",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94287: libXpm: libXpm: Denial of Service via unsigned integer underflow",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94286: libXtst: libXtst: Denial of Service via out-of-bounds read in RECORD reply parser",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94285: libX11: libX11: Denial of Service via out-of-bounds read in byte-oriented codeset parser",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101016: opendmarc: OpenDMARC: Improper policy enforcement via malformed DMARC record tags",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94284: libX11: libX11: Denial of Service via out-of-bounds read in XIM trigger-key registration parser",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94283: libX11: libX11: Denial of Service via out-of-bounds read in XIM attribute parser",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101014: opendmarc: OpenDMARC: Denial of Service via off-by-one error in opendmarc_util_cleanup",
-          "date": "2026-09-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101003: mongoose: mongoose: Denial of Service via stack-based buffer overflow in MQTT broker",
-          "date": "2026-09-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94408: elasticsearch: Uncontrolled Resource Consumption in Elasticsearch Leading to denial of service",
-          "date": "2026-09-26",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94398: elasticsearch: Uncontrolled Resource Consumption in Elasticsearch Leading to denial of service",
-          "date": "2026-09-26",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-100656: io.netty/netty-codec-http: Netty: Denial of Service via unbounded queue growth during HTTP request pipelining",
-          "date": "2026-09-26",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-100655: io.netty/netty-codec-http: Netty: Denial of Service via unbounded SPDY concurrent streams",
-          "date": "2026-09-26",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98163: kernel: cgroup: Avoid iteration of dying tasks with zero refcount",
-          "date": "2026-09-26",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93789: kernel: wifi: iwlwifi: bound aligned TLV advance in FW parser",
-          "date": "2026-09-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93790: kernel: wifi: iwlwifi: mvm: fix out-of-bounds tid_data access in BA notif",
-          "date": "2026-09-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93786: kernel: ksmbd: preserve VFS inherited POSIX ACL mask",
-          "date": "2026-09-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93782: kernel: vhost-scsi: flush backend after device ioctls",
-          "date": "2026-09-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93788: kernel: wifi: iwlwifi: acpi: validate WGDS table revision index",
-          "date": "2026-09-24",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93785: kernel: cifs: validate idmap key payload length",
-          "date": "2026-09-24",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-93787: kernel: smb: client: bound dirent name against end of SMB response in cifs_filldir",
-          "date": "2026-09-24",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8836-1: FreeRDP vulnerabilities",
-          "date": "2026-09-28",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8834-1: Exim vulnerabilities",
-          "date": "2026-09-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8833-1: libvirt vulnerabilities",
-          "date": "2026-09-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8831-1: libvirt vulnerabilities",
-          "date": "2026-09-28",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8826-1: LXC vulnerabilities",
-          "date": "2026-09-28",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8825-1: Requests vulnerability",
-          "date": "2026-09-28",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
