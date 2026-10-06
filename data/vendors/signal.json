@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-05T14:10:16.761Z",
+  "lastUpdated": "2026-10-06T05:47:59.518Z",
   "health": {
-    "lastFetchAttempt": "2026-10-05T14:10:16.761Z",
+    "lastFetchAttempt": "2026-10-06T05:47:59.518Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-05T14:10:16.761Z",
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-10-06T05:47:59.518Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "vm2: NodeVM custom resolution bypasses external path boundaries",
+      "date": "2026-10-05",
+      "severity": "CRITICAL",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nAt source revision `91034466bfb7f56b95fd48083ec6ca36d058f164` of vm2 3.11.8, an untrusted `NodeVM` guest can turn one allowlisted custom-resolved module into authorization for a separate f",
+      "link": "https://github.com/advisories/GHSA-5h3f-q97h-ccvc",
+      "cves": [
+        "CVE-2026-100721"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "vm2: Host Promise rejection from an exposed constructor can terminate the vm2 host process",
+      "date": "2026-10-05",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nAn untrusted script run by `VM.run` can construct an embedder-exposed host function that returns a rejected native Promise and ignore the result. The sandbox-to-host `construct` trap forwa",
+      "link": "https://github.com/advisories/GHSA-2v2p-6j97-cjg9",
+      "cves": [
+        "CVE-2026-100722"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Trigger.dev: Server-side request forgery via unvalidated webhook alert-channel URL",
       "date": "2026-10-02",
