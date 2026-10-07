@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-07T05:03:16.720Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-07T05:21:01.620Z",
+  "newPatches": 47,
   "patches": [
     {
       "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
@@ -496,6 +496,39 @@
       "component": "roundcube",
       "description": "Multiple vulnerabilities were discovered in roundcube, a skinnable AJAX based webmail solution for IMAP servers, which could result in cross-site scripting, SRF bypass, email header injection, css pro...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00459.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6548-1 node-shell-quote - security update",
+      "date": "2026-10-06",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "node-shell-quote",
+      "description": "Two vulnerabilities were discovered in node-shell-quote, a Node.js module to quote and parse shell commands, which could result in denial of service or shell command injection. https://security-tracke...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00462.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6547-1 ruby-jwt - security update",
+      "date": "2026-10-06",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "ruby-jwt",
+      "description": "It was discovered that ruby-jwt, a JSON Web Token implementation in Ruby, insufficiently validated the HMAC of some tokens. https://security-tracker.debian.org/tracker/DSA-6547-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00461.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6546-1 rails - security update",
+      "date": "2026-10-06",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "rails",
+      "description": "Multiple security issues were discovered in the Rails web framework which could result in cross-site scripting, denial of service, path traversal or the execution of arbitrary code. https://security-t...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00460.html",
       "cve": "",
       "cves": []
     },
@@ -1038,6 +1071,424 @@
       "cvss": 4.7
     },
     {
+      "title": "CVE-2026-80048: sssd: sssd-kcm: Local Denial of Service via excessive memory preallocation",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sssd: sssd-kcm: Local Denial of Service via excessive memory preallocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-80048.json",
+      "cve": "CVE-2026-80048",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-106439: hydra-core: hydra-core: Arbitrary code execution via mutable execution policy manipulation",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "hydra-core: hydra-core: Arbitrary code execution via mutable execution policy manipulation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106439.json",
+      "cve": "CVE-2026-106439",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-106221: chromium-browser: chromium-browser: Confused deputy in WebAPKs",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Confused deputy in WebAPKs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106221.json",
+      "cve": "CVE-2026-106221",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106186: chromium-browser: chromium-browser: Uncontrolled search path element in CredentialProvider",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Uncontrolled search path element in CredentialProvider",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106186.json",
+      "cve": "CVE-2026-106186",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-106250: chromium-browser: chromium-browser: Missing authorization in Actor",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Missing authorization in Actor",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106250.json",
+      "cve": "CVE-2026-106250",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106384: chromium-browser: chromium-browser: Missing authorization in SiteIsolation",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Missing authorization in SiteIsolation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106384.json",
+      "cve": "CVE-2026-106384",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-106304: chromium-browser: chromium-browser: Out of bounds read in ANGLE",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Out of bounds read in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106304.json",
+      "cve": "CVE-2026-106304",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-106403: chromium-browser: chromium-browser: Incorrect authorization in Accessibility",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Incorrect authorization in Accessibility",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106403.json",
+      "cve": "CVE-2026-106403",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-106405: chromium-browser: chromium-browser: Race condition in CustomTabs",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Race condition in CustomTabs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106405.json",
+      "cve": "CVE-2026-106405",
+      "cvss": 6
+    },
+    {
+      "title": "CVE-2026-106356: chromium-browser: chromium-browser: Clickjacking in EVP",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Clickjacking in EVP",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106356.json",
+      "cve": "CVE-2026-106356",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106290: chromium-browser: chromium-browser: Uninitialized resource in GPU",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Uninitialized resource in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106290.json",
+      "cve": "CVE-2026-106290",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-104045: sssd: sssd: Denial of Service via race condition in autofs responder",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sssd: sssd: Denial of Service via race condition in autofs responder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104045.json",
+      "cve": "CVE-2026-104045",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-88252: sssd: sssd: Denial of Service via responder connection retry loop during file descriptor exhaustion",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sssd: sssd: Denial of Service via responder connection retry loop during file descriptor exhaustion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88252.json",
+      "cve": "CVE-2026-88252",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-83550: postgres-exporter: net/http/pprof exposed on metrics listener",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "postgres-exporter: net/http/pprof exposed on metrics listener",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-83550.json",
+      "cve": "CVE-2026-83550",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-101258: ghostscript: ghostscript: -dSAFER sandbox bypass via Type 5 shading OOB write and procedure-stream use-after-free",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ghostscript: ghostscript: -dSAFER sandbox bypass via Type 5 shading OOB write and procedure-stream use-after-free",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-101258.json",
+      "cve": "CVE-2026-101258",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-104046: sssd: sssd: Denial of Service via incomplete Identity Provider authentication requests",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sssd: sssd: Denial of Service via incomplete Identity Provider authentication requests",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104046.json",
+      "cve": "CVE-2026-104046",
+      "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-104047: sssd: sssd: Information disclosure via query injection in Entra ID lookups",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sssd: sssd: Information disclosure via query injection in Entra ID lookups",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104047.json",
+      "cve": "CVE-2026-104047",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-104048: sssd: sssd: Authorization bypass via cross-domain username collision in HBAC evaluation",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "sssd: sssd: Authorization bypass via cross-domain username collision in HBAC evaluation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104048.json",
+      "cve": "CVE-2026-104048",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-105800: i18next-http-backend: i18next-http-backend: Server-Side Request Forgery via crafted path template parameters",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "i18next-http-backend: i18next-http-backend: Server-Side Request Forgery via crafted path template parameters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105800.json",
+      "cve": "CVE-2026-105800",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-105922: vllm: vLLM: Denial of Service via crafted input to penalty handler",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vllm: vLLM: Denial of Service via crafted input to penalty handler",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105922.json",
+      "cve": "CVE-2026-105922",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-77050: django: Denial of service via unbounded caching of long language codes in get_supported_language_variant()",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "django: Denial of service via unbounded caching of long language codes in get_supported_language_variant()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-77050.json",
+      "cve": "CVE-2026-77050",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-84429: django: Denial of service via quadratic parsing complexity in parse_header_parameters()",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "django: Denial of service via quadratic parsing complexity in parse_header_parameters()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-84429.json",
+      "cve": "CVE-2026-84429",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-87890: django: Server-side request forgery via unvalidated bytes in spatial lookups",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "django: Server-side request forgery via unvalidated bytes in spatial lookups",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-87890.json",
+      "cve": "CVE-2026-87890",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-87975: django: Privilege abuse in model formsets with editable primary keys",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "django: Privilege abuse in model formsets with editable primary keys",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-87975.json",
+      "cve": "CVE-2026-87975",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-105842: lrzsz: lrzsz: Denial of Service via heap-based buffer overflow from oversized filenames",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "lrzsz: lrzsz: Denial of Service via heap-based buffer overflow from oversized filenames",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105842.json",
+      "cve": "CVE-2026-105842",
+      "cvss": 6.4
+    },
+    {
+      "title": "CVE-2026-105840: lrzsz: lrzsz: Arbitrary file overwrite via absolute path traversal in restricted mode",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "lrzsz: lrzsz: Arbitrary file overwrite via absolute path traversal in restricted mode",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105840.json",
+      "cve": "CVE-2026-105840",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-105841: lrzsz: lrzsz: Arbitrary command execution via crafted file names in pipe mode",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "lrzsz: lrzsz: Arbitrary command execution via crafted file names in pipe mode",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105841.json",
+      "cve": "CVE-2026-105841",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-75820: aspell: aspell: Denial of Service via integer truncation in wordlist processing",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aspell: aspell: Denial of Service via integer truncation in wordlist processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-75820.json",
+      "cve": "CVE-2026-75820",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-75819: aspell: aspell: Denial of Service via crafted dictionary file",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aspell: aspell: Denial of Service via crafted dictionary file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-75819.json",
+      "cve": "CVE-2026-75819",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-75818: aspell: aspell: Denial of Service via crafted compressed file in prezip-bin",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "aspell: aspell: Denial of Service via crafted compressed file in prezip-bin",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-75818.json",
+      "cve": "CVE-2026-75818",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-98170: kernel: smb: client: fix OOB struct field reads in move_smb2_ea_to_cifs()",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: smb: client: fix OOB struct field reads in move_smb2_ea_to_cifs()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98170.json",
+      "cve": "CVE-2026-98170",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98169: kernel: smb: client: fix potential OOB read in smb3_enum_snapshots()",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: smb: client: fix potential OOB read in smb3_enum_snapshots()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98169.json",
+      "cve": "CVE-2026-98169",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98166: kernel: drm/ttm: fix swapped-out resources never leaving their bulk_move range",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: drm/ttm: fix swapped-out resources never leaving their bulk_move range",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98166.json",
+      "cve": "CVE-2026-98166",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98168: kernel: smb: client: fix reparse buffer bounds in cifs_query_reparse_point()",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: smb: client: fix reparse buffer bounds in cifs_query_reparse_point()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98168.json",
+      "cve": "CVE-2026-98168",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98167: kernel: smb: client: fix server->total_read for compound encrypted PDUs",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: smb: client: fix server->total_read for compound encrypted PDUs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98167.json",
+      "cve": "CVE-2026-98167",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-106033: ansible: ansible-ui: Ansible UI DOM XSS in /redirect next parameter",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Ansible",
+      "description": "ansible: ansible-ui: Ansible UI DOM XSS in /redirect next parameter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106033.json",
+      "cve": "CVE-2026-106033",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-106062: gimp: GIMP: heap buffer overflow in DDS loader on crafted DirectDraw Surface file",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gimp: GIMP: heap buffer overflow in DDS loader on crafted DirectDraw Surface file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106062.json",
+      "cve": "CVE-2026-106062",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-106063: GIMP: GIMP: heap buffer overflow in DICOM export on oversized image dimensions",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "GIMP: GIMP: heap buffer overflow in DICOM export on oversized image dimensions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106063.json",
+      "cve": "CVE-2026-106063",
+      "cvss": 6.3
+    },
+    {
       "title": "Coraza: Silent argument drop at ArgumentLimit allows bypass of ARGS-targeted rules via parameter flooding",
       "date": "2026-10-06",
       "severity": "HIGH",
@@ -1219,6 +1670,15 @@
       "component": "FreeType",
       "description": "It was discovered that FreeType had a flaw in its CID font loader. An\nattacker could possibly use this issue to cause FreeType to consume\nexcessive memory and CPU resources, leading to a denial of ser...",
       "link": "https://ubuntu.com/security/notices/USN-8881-1"
+    },
+    {
+      "title": "USN-8892-1: Ubuntu Pro for WSL vulnerability",
+      "date": "2026-10-06",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Ubuntu Pro for WSL",
+      "description": "Darshan U discovered that Ubuntu Pro for WSL exposed the attach token in\ncommand-line arguments when enabling a subscription on a WSL instance.\nAn attacker could possibly use this issue to obtain sens...",
+      "link": "https://ubuntu.com/security/notices/USN-8892-1"
     },
     {
       "title": "Falcon Data Security for SaaS Secures Sensitive Data in Microsoft 365",
@@ -2720,6 +3180,39 @@
       "cvss": 8.1
     },
     {
+      "title": "CVE-2026-104852: @graphql-tools/utils: @graphql-tools/utils: Denial of Service (DoS) via prototype pollution in mergeDeep",
+      "date": "2026-10-05",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@graphql-tools/utils: @graphql-tools/utils: Denial of Service (DoS) via prototype pollution in mergeDeep",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104852.json",
+      "cve": "CVE-2026-104852",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-63270: libreoffice: LibreOffice: Information disclosure via crafted document URLs",
+      "date": "2026-10-05",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libreoffice: LibreOffice: Information disclosure via crafted document URLs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-63270.json",
+      "cve": "CVE-2026-63270",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-63269: libreoffice: LibreOffice: Information disclosure via malicious HLS media playlists",
+      "date": "2026-10-05",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libreoffice: LibreOffice: Information disclosure via malicious HLS media playlists",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-63269.json",
+      "cve": "CVE-2026-63269",
+      "cvss": 5.5
+    },
+    {
       "title": "vm2: NodeVM custom resolution bypasses external path boundaries",
       "date": "2026-10-05",
       "severity": "CRITICAL",
@@ -4106,6 +4599,28 @@
       "cvss": 6.5
     },
     {
+      "title": "CVE-2026-102795: trafficserver: trafficserver: Security restriction bypass via improper access control",
+      "date": "2026-10-02",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "trafficserver: trafficserver: Security restriction bypass via improper access control",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102795.json",
+      "cve": "CVE-2026-102795",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-103629: chromium-browser: skia: Integer overflow in Skia",
+      "date": "2026-10-02",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: skia: Integer overflow in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103629.json",
+      "cve": "CVE-2026-103629",
+      "cvss": 8.8
+    },
+    {
       "title": "Trigger.dev: Server-side request forgery via unvalidated webhook alert-channel URL",
       "date": "2026-10-02",
       "severity": "HIGH",
@@ -5318,6 +5833,333 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-07T05:21:01.620Z",
+      "logs": [
+        "[INFO] aws - 7 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 16 patches (3 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] github - 172 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 80 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[SUCCESS] redhat - 216 patches (43 new)",
+        "[INFO] signal - 7 patches, no changes",
+        "[SUCCESS] ubuntu - 34 patches (1 new)"
+      ],
+      "newPatchCount": 47,
+      "totalPatches": 552,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "microsoft",
+        "aws",
+        "chrome",
+        "debian",
+        "edge",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "crowdstrike",
+        "postgresql",
+        "cisco",
+        "cloudflare",
+        "gitlab",
+        "paloalto",
+        "fortinet"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6548-1 node-shell-quote - security update",
+          "date": "2026-10-06",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6547-1 ruby-jwt - security update",
+          "date": "2026-10-06",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6546-1 rails - security update",
+          "date": "2026-10-06",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-80048: sssd: sssd-kcm: Local Denial of Service via excessive memory preallocation",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106439: hydra-core: hydra-core: Arbitrary code execution via mutable execution policy manipulation",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106221: chromium-browser: chromium-browser: Confused deputy in WebAPKs",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106186: chromium-browser: chromium-browser: Uncontrolled search path element in CredentialProvider",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106250: chromium-browser: chromium-browser: Missing authorization in Actor",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106384: chromium-browser: chromium-browser: Missing authorization in SiteIsolation",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106304: chromium-browser: chromium-browser: Out of bounds read in ANGLE",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106403: chromium-browser: chromium-browser: Incorrect authorization in Accessibility",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106405: chromium-browser: chromium-browser: Race condition in CustomTabs",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106356: chromium-browser: chromium-browser: Clickjacking in EVP",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106290: chromium-browser: chromium-browser: Uninitialized resource in GPU",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104045: sssd: sssd: Denial of Service via race condition in autofs responder",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-88252: sssd: sssd: Denial of Service via responder connection retry loop during file descriptor exhaustion",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-83550: postgres-exporter: net/http/pprof exposed on metrics listener",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-101258: ghostscript: ghostscript: -dSAFER sandbox bypass via Type 5 shading OOB write and procedure-stream use-after-free",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104046: sssd: sssd: Denial of Service via incomplete Identity Provider authentication requests",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104047: sssd: sssd: Information disclosure via query injection in Entra ID lookups",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104048: sssd: sssd: Authorization bypass via cross-domain username collision in HBAC evaluation",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-105800: i18next-http-backend: i18next-http-backend: Server-Side Request Forgery via crafted path template parameters",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-105922: vllm: vLLM: Denial of Service via crafted input to penalty handler",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-77050: django: Denial of service via unbounded caching of long language codes in get_supported_language_variant()",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-84429: django: Denial of service via quadratic parsing complexity in parse_header_parameters()",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-87890: django: Server-side request forgery via unvalidated bytes in spatial lookups",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-87975: django: Privilege abuse in model formsets with editable primary keys",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-105842: lrzsz: lrzsz: Denial of Service via heap-based buffer overflow from oversized filenames",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-105840: lrzsz: lrzsz: Arbitrary file overwrite via absolute path traversal in restricted mode",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-105841: lrzsz: lrzsz: Arbitrary command execution via crafted file names in pipe mode",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-75820: aspell: aspell: Denial of Service via integer truncation in wordlist processing",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-75819: aspell: aspell: Denial of Service via crafted dictionary file",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-75818: aspell: aspell: Denial of Service via crafted compressed file in prezip-bin",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98170: kernel: smb: client: fix OOB struct field reads in move_smb2_ea_to_cifs()",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98169: kernel: smb: client: fix potential OOB read in smb3_enum_snapshots()",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98166: kernel: drm/ttm: fix swapped-out resources never leaving their bulk_move range",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98168: kernel: smb: client: fix reparse buffer bounds in cifs_query_reparse_point()",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98167: kernel: smb: client: fix server->total_read for compound encrypted PDUs",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106033: ansible: ansible-ui: Ansible UI DOM XSS in /redirect next parameter",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106062: gimp: GIMP: heap buffer overflow in DDS loader on crafted DirectDraw Surface file",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106063: GIMP: GIMP: heap buffer overflow in DICOM export on oversized image dimensions",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104852: @graphql-tools/utils: @graphql-tools/utils: Denial of Service (DoS) via prototype pollution in mergeDeep",
+          "date": "2026-10-05",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-63270: libreoffice: LibreOffice: Information disclosure via crafted document URLs",
+          "date": "2026-10-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-63269: libreoffice: LibreOffice: Information disclosure via malicious HLS media playlists",
+          "date": "2026-10-05",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102795: trafficserver: trafficserver: Security restriction bypass via improper access control",
+          "date": "2026-10-02",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103629: chromium-browser: skia: Integer overflow in Skia",
+          "date": "2026-10-02",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8892-1: Ubuntu Pro for WSL vulnerability",
+          "date": "2026-10-06",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-07T05:03:16.720Z",
       "logs": [
@@ -14074,42 +14916,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-09-30T04:43:43.526Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] aws - 48 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] cloudflare - 8 patches, no changes",
-        "[INFO] debian - 18 patches, no changes",
-        "[INFO] edge - 1 patches, no changes",
-        "[INFO] github - 103 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 490 patches, no changes",
-        "[INFO] ubuntu - 44 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1223,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "chrome",
-        "cloudflare",
-        "debian",
-        "github",
-        "postgresql",
-        "redhat",
-        "ubuntu",
-        "apple",
-        "cisco",
-        "edge"
-      ],
-      "newPatches": []
     }
   ]
 }
