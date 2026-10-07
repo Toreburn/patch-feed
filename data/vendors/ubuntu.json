@@ -1,12 +1,12 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-10-07T13:02:01.022Z",
+  "lastUpdated": "2026-10-07T22:57:12.990Z",
   "health": {
-    "lastFetchAttempt": "2026-10-07T13:02:01.022Z",
+    "lastFetchAttempt": "2026-10-07T22:57:12.990Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 2,
-    "lastSuccessWithData": "2026-10-07T13:02:01.022Z",
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-10-07T22:57:12.990Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -19,6 +19,42 @@
       "component": "Libwebsockets vulnerabilities",
       "description": "It was discovered that libwebsockets did not properly validate\nuser-supplied data when parsing HTTP/2 HPACK path headers, which could\nresult in a write past the end of an allocated buffer. An attacker...",
       "link": "https://ubuntu.com/security/notices/USN-8893-1"
+    },
+    {
+      "title": "USN-8900-1: Go Networking vulnerabilities",
+      "date": "2026-10-07",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Go Networking vulnerabilities",
+      "description": "It was discovered that Go Networking did not properly handle server\nerrors after sending a GOAWAY frame during HTTP/2 connection shutdown,\nwhich could cause the connection to hang. A remote attacker c...",
+      "link": "https://ubuntu.com/security/notices/USN-8900-1"
+    },
+    {
+      "title": "USN-8895-1: Sudo vulnerability",
+      "date": "2026-10-07",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Sudo",
+      "description": "It was discovered that Sudo did not properly handle time-based access\nrestrictions when sudoers rules used NOTBEFORE or NOTAFTER with\ntimestamps omitting the trailing timezone indicator. A local attac...",
+      "link": "https://ubuntu.com/security/notices/USN-8895-1"
+    },
+    {
+      "title": "USN-8894-1: poppler vulnerabilities",
+      "date": "2026-10-07",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "poppler vulnerabilities",
+      "description": "It was discovered that Poppler had an integer overflow in\nFoFiTrueType::cvtSfnts. An attacker could possibly use this issue to\ncause Poppler to crash, resulting in a denial of service, or execute\narbi...",
+      "link": "https://ubuntu.com/security/notices/USN-8894-1"
+    },
+    {
+      "title": "LSN-0122-1: Kernel Live Patch Security Notice",
+      "date": "2026-10-07",
+      "severity": "CRITICAL",
+      "vendor": "ubuntu",
+      "component": "Multiple Products",
+      "description": "In the Linux kernel, the following vulnerability has been\nresolved: fs: dlm: fix use after free in midcomms commit While working on\nprocessing dlm message in softirq context I experienced the followin...",
+      "link": "https://ubuntu.com/security/notices/LSN-0122-1"
     },
     {
       "title": "USN-8875-1: Linux kernel vulnerabilities",

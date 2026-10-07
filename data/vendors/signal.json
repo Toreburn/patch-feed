@@ -1,16 +1,44 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-07T13:01:48.221Z",
+  "lastUpdated": "2026-10-07T22:57:03.254Z",
   "health": {
-    "lastFetchAttempt": "2026-10-07T13:01:48.221Z",
+    "lastFetchAttempt": "2026-10-07T22:57:03.254Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-07T13:01:48.221Z",
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-10-07T22:57:03.254Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Signal Desktop v8.31.0-beta.1",
+      "date": "2026-10-07",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Handful of bug fixes to keep your app running smoothly. More exciting changes on the horizon!",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.31.0-beta.1",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "RabbitMQ: Malformed UTF-8 in shortstr properties permanently disables RPC consumers",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nA single AMQP message with malformed UTF-8 in a shortstr property (for example `correlation-id`) can permanently disable a Java client RPC consumer.\n\nThe client decodes malformed bytes in",
+      "link": "https://github.com/advisories/GHSA-7822-rcf6-97fx",
+      "cves": [
+        "CVE-2026-106122"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Coraza: Silent argument drop at ArgumentLimit allows bypass of ARGS-targeted rules via parameter flooding",
       "date": "2026-10-06",
