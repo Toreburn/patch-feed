@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-07T12:54:40.322Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-07T13:03:02.981Z",
+  "newPatches": 131,
   "patches": [
     {
       "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
@@ -451,6 +451,520 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-67370",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67370"
+    },
+    {
+      "title": "CVE-2026-103531: OpenSC card-setcos.c setcos_construct_fci_44 stack-based overflow",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-103531",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-103531"
+    },
+    {
+      "title": "CVE-2026-105712: gpgtar in GnuPG before 2.5.19 can allow file overwrite via crafted data in an archive. When extracting an untrusted archive with --directory (aka -C) into an existing directory containing a pre-existing symlink, gpgtar can follow that symlink and create or overwrite a file outside the selected extraction directory. The write is limited by the extraction user's filesystem permissions. An archive extracted into a fresh empty directory does not have this risk.",
+      "date": "2026-10-07",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105712",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105712"
+    },
+    {
+      "title": "CVE-2026-105773: Canimaan Software ClamXAV local privilege escalation",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105773",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105773"
+    },
+    {
+      "title": "CVE-2026-57941: Apache HTTP Server: mod_http2 use-after-free / wild write via shared session->bbtmp re-entrancy",
+      "date": "2026-10-07",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-57941",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-57941"
+    },
+    {
+      "title": "CVE-2026-59685: Apache HTTP Server: Out-of-Bounds Write in ap_directory_walk() Canonical-Name Rewrite on CASE_BLIND_FILESYSTEM",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-59685",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-59685"
+    },
+    {
+      "title": "CVE-2026-61373: Apache Thrift: Java TSaslNonblockingServer pre-auth unbounded SASL frame allocation",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-61373",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-61373"
+    },
+    {
+      "title": "CVE-2026-61374: Apache Thrift: Java TSaslTransport post-auth data-frame missing size limit",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-61374",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-61374"
+    },
+    {
+      "title": "CVE-2026-63292: Apache HTTP Server: mod_vhost_alias stack overflow",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-63292",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-63292"
+    },
+    {
+      "title": "CVE-2026-63772: Apache Thrift: Unauthenticated single-packet crash of Go Thrift servers via the THeader transform count",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-63772",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-63772"
+    },
+    {
+      "title": "CVE-2026-66054: Apache Thrift: C++ THeaderTransport does not enforce configured maxFrameSize",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66054",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66054"
+    },
+    {
+      "title": "CVE-2026-66055: Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift: TJSONProtocol accepts a single JSON string/number exceeding the configured size limit (multi-language)",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66055",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66055"
+    },
+    {
+      "title": "CVE-2026-66081: Apache Thrift: c_glib read_message_begin leaves output parameters unset for non-versioned messages",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66081",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66081"
+    },
+    {
+      "title": "CVE-2026-66331: Apache Thrift: Buffered transport reads are not accounted against MaxMessageSize",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66331",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66331"
+    },
+    {
+      "title": "CVE-2026-66837: Apache Thrift: PHP accelerator sizes a stack buffer from a wire-controlled string length",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66837",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66837"
+    },
+    {
+      "title": "CVE-2026-66858: Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift: skip() does not apply the recursion limit (Python accelerator, PHP, Perl, Lua, Smalltalk, OCaml)",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66858",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66858"
+    },
+    {
+      "title": "CVE-2026-66859: Apache Thrift: c_glib multiplexed processor crashes on a message it cannot route",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-66859",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-66859"
+    },
+    {
+      "title": "CVE-2026-75818: Heap Buffer Overflow in GNU Aspell's prezip utility",
+      "date": "2026-10-07",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-75818",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-75818"
+    },
+    {
+      "title": "CVE-2026-75819: Out-of-bounds Read in GNU Aspell",
+      "date": "2026-10-07",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-75819",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-75819"
+    },
+    {
+      "title": "CVE-2026-75820: Integer Truncation Leading to Heap Corruption in GNU Aspell",
+      "date": "2026-10-07",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-75820",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-75820"
+    },
+    {
+      "title": "CVE-2026-82458: Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift: Container element count not bounded by the bytes available",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-82458",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-82458"
+    },
+    {
+      "title": "CVE-2026-82459: Apache Thrift: Integer underflow in C++ THeaderTransport allows an unauthenticated remote peer to terminate a 32-bit process",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-82459",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-82459"
+    },
+    {
+      "title": "CVE-2026-83632: Apache Thrift: C++ THttpTransport grows its line buffer without bound",
+      "date": "2026-10-07",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-83632",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-83632"
+    },
+    {
+      "title": "CVE-2026-83663: Apache Thrift: TFramedTransport and THeaderTransport re-enter Read once per frame that carries no payload (Go)",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-83663",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-83663"
+    },
+    {
+      "title": "CVE-2026-83745: Apache Thrift, Apache Thrift: WebSocket frame decoders allocate the payload buffer from the declared length, not the bytes received (Node.js, D)",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-83745",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-83745"
+    },
+    {
+      "title": "CVE-2026-85086: Apache Thrift: Perl TLS client disables certificate verification by default",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-85086",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-85086"
+    },
+    {
+      "title": "CVE-2026-85087: Apache Thrift: Python ≥3.12 host-name check silently becomes a no-op",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-85087",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-85087"
+    },
+    {
+      "title": "CVE-2026-85088: Apache Thrift, Apache Thrift: The C++ and D clients fall back to the certificate Common Name when subjectAltName entries are present but do not match",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-85088",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-85088"
+    },
+    {
+      "title": "CVE-2026-85476: Apache Thrift: c_glib `read_all` spins when the underlying read returns 0",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-85476",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-85476"
+    },
+    {
+      "title": "CVE-2026-85483: Apache Thrift: c_glib TZlibTransport reports a full read after a premature stream end",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-85483",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-85483"
+    },
+    {
+      "title": "CVE-2026-85493: Apache Thrift, Apache Thrift: TProtocolUtil.skip follows peer-chosen nesting to any depth the stack allows (Dart, Java ME)",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-85493",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-85493"
+    },
+    {
+      "title": "CVE-2026-85494: Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift: Framed transport and binary protocol size read buffers from a peer-declared length without a limit (multi-language)",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-85494",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-85494"
+    },
+    {
+      "title": "CVE-2026-86535: Apache Thrift: A JSON member name can stall the Node server's event loop indefinitely",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-86535",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-86535"
+    },
+    {
+      "title": "CVE-2026-86536: Apache Thrift, Apache Thrift, Apache Thrift: A map key from the wire can replace a decoded object's prototype in generated JavaScript",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-86536",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-86536"
+    },
+    {
+      "title": "CVE-2026-86537: Apache Thrift: A truncated HTTP request stops the D library's server, allowing an unauthenticated remote attacker to deny service",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-86537",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-86537"
+    },
+    {
+      "title": "CVE-2026-87117: Apache Thrift: PHP `thrift_protocol` accelerator dereferences a missing container-element spec",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-87117",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-87117"
+    },
+    {
+      "title": "CVE-2026-90440: Apache Thrift: An exception escaping a libevent callback stops the D library's non-blocking server, allowing an unauthenticated remote attacker to deny service",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-90440",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-90440"
+    },
+    {
+      "title": "CVE-2026-91135: Apache Thrift: C++ `THeaderTransport::transform()` heap buffer overflow (write direction)",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-91135",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-91135"
+    },
+    {
+      "title": "CVE-2026-91137: Apache Thrift: PHP `thrift_protocol` accelerator: zero-byte container elements",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-91137",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-91137"
+    },
+    {
+      "title": "CVE-2026-92834: Apache Thrift: C++ WebSocket server transport does not read a full request length",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-92834",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-92834"
+    },
+    {
+      "title": "CVE-2026-93925: Apache Thrift: C++ `THeaderTransport::writeVarint32()` stack buffer overflow on a negative protocol id",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-93925",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-93925"
+    },
+    {
+      "title": "CVE-2026-93926: Apache Thrift: C++ `THeaderTransport::untransform()` leaks the zlib stream on the error path",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-93926",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-93926"
+    },
+    {
+      "title": "CVE-2026-94633: Apache Thrift: Dart `TBinaryProtocol.readMessageBegin` allocates from the pre-versioned name length",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-94633",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-94633"
+    },
+    {
+      "title": "CVE-2026-94634: Apache Thrift: Python `TJSONProtocol` has a string length limit that is off by default",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-94634",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-94634"
+    },
+    {
+      "title": "CVE-2026-94635: Apache Thrift: Lua `TBinaryProtocol:readMessageBegin` bypasses `checkStringSize` on the pre-versioned name",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-94635",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-94635"
+    },
+    {
+      "title": "CVE-2026-94636: Apache Thrift: Python `TZlibTransport` stops enforcing its decompressed-size limit once the limit is exactly used up",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-94636",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-94636"
+    },
+    {
+      "title": "CVE-2026-94637: Apache Thrift: Go `THeaderTransport` does not bound the inflated size of a ZLIB frame",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-94637",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-94637"
+    },
+    {
+      "title": "CVE-2026-94638: Apache Thrift: PHP `thrift_protocol` C extension ignores the configured `maxStringSize`",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-94638",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-94638"
+    },
+    {
+      "title": "CVE-2026-94639: Apache Thrift: Java `TSaslNonblockingServer`: residual of CVE-2026-61373 (thread-death black hole + no cross-connection budget)",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-94639",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-94639"
+    },
+    {
+      "title": "CVE-2026-94642: Apache Thrift: PHP `TSimpleServer` exits the whole process on any non-transport exception",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-94642",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-94642"
+    },
+    {
+      "title": "CVE-2026-94644: Apache Thrift: PHP `TJSONProtocol` string/number readers have no size bound",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-94644",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-94644"
+    },
+    {
+      "title": "CVE-2026-103868: pulp-container: Registry credentials are reused across remotes in a worker",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "pulp-container: Registry credentials are reused across remotes in a worker",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103868.json",
+      "cve": "CVE-2026-103868",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-103869: pulp-ansible: Bearer tokens are reused across remotes in a worker",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Ansible",
+      "description": "pulp-ansible: Bearer tokens are reused across remotes in a worker",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103869.json",
+      "cve": "CVE-2026-103869",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-103870: pulp-rpm: Distribution tree publish creates directories from .treeinfo ids",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pulp-rpm: Distribution tree publish creates directories from .treeinfo ids",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103870.json",
+      "cve": "CVE-2026-103870",
+      "cvss": 5
+    },
+    {
+      "title": "CVE-2026-103871: pulp_python: Simple index renders project names without HTML escaping",
+      "date": "2026-10-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pulp_python: Simple index renders project names without HTML escaping",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103871.json",
+      "cve": "CVE-2026-103871",
+      "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-106471: candlepin: candlepin: broken object-level authorization via VerifyAuthorizationFilter multi-@Verify hasAccess latching",
+      "date": "2026-10-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "candlepin: candlepin: broken object-level authorization via VerifyAuthorizationFilter multi-@Verify hasAccess latching",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106471.json",
+      "cve": "CVE-2026-106471",
+      "cvss": 8.1
+    },
+    {
+      "title": "USN-8893-1: Libwebsockets vulnerabilities",
+      "date": "2026-10-07",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Libwebsockets vulnerabilities",
+      "description": "It was discovered that libwebsockets did not properly validate\nuser-supplied data when parsing HTTP/2 HPACK path headers, which could\nresult in a write past the end of an allocated buffer. An attacker...",
+      "link": "https://ubuntu.com/security/notices/USN-8893-1"
     },
     {
       "title": "CVE-2026-105812 and CVE-2026-106032: Issue with Bedrock AgentCore Starter Toolkit - Import Agent Code Injection and SSRF",
@@ -1489,6 +2003,809 @@
       "cvss": 6.3
     },
     {
+      "title": "CVE-2026-106505: plugin-techdocs-node: @backstage/plugin-techdocs-node: Backstage plugin-techdocs-node: Arbitrary code execution via MkDo",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "plugin-techdocs-node: @backstage/plugin-techdocs-node: Backstage plugin-techdocs-node: Arbitrary code execution via MkDocs configuration sanitizer bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106505.json",
+      "cve": "CVE-2026-106505",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-106501: @backstage/plugin-scaffolder-backend: Backstage: Sensitive information exposure in Scaffolder",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@backstage/plugin-scaffolder-backend: Backstage: Sensitive information exposure in Scaffolder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106501.json",
+      "cve": "CVE-2026-106501",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-106500: @backstage/plugin-scaffolder-backend: @backstage/plugin-scaffolder-backend: Unauthorized file manipulation via improper ",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@backstage/plugin-scaffolder-backend: @backstage/plugin-scaffolder-backend: Unauthorized file manipulation via improper task state validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106500.json",
+      "cve": "CVE-2026-106500",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-106499: plugin-scaffolder-backend: Backstage: Information disclosure via secret leakage in Scaffolder task logs",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "plugin-scaffolder-backend: Backstage: Information disclosure via secret leakage in Scaffolder task logs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106499.json",
+      "cve": "CVE-2026-106499",
+      "cvss": 4.9
+    },
+    {
+      "title": "CVE-2026-106498: @backstage/plugin-catalog-backend: @backstage/plugin-catalog-backend: Information disclosure via improper URL validation",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@backstage/plugin-catalog-backend: @backstage/plugin-catalog-backend: Information disclosure via improper URL validation in entity placeholders",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106498.json",
+      "cve": "CVE-2026-106498",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106494: @backstage/backend-defaults: @backstage/backend-defaults: Content injection via crafted cloud storage object names",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@backstage/backend-defaults: @backstage/backend-defaults: Content injection via crafted cloud storage object names",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106494.json",
+      "cve": "CVE-2026-106494",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-106493: backstage: Backstage: Information disclosure via improper object path validation in cloud storage catalog providers",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "backstage: Backstage: Information disclosure via improper object path validation in cloud storage catalog providers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106493.json",
+      "cve": "CVE-2026-106493",
+      "cvss": 2.2
+    },
+    {
+      "title": "CVE-2026-106492: @backstage/backend-defaults: @backstage/backend-defaults: Access control bypass via improper service credential delegati",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@backstage/backend-defaults: @backstage/backend-defaults: Access control bypass via improper service credential delegation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106492.json",
+      "cve": "CVE-2026-106492",
+      "cvss": 7.6
+    },
+    {
+      "title": "CVE-2026-106489: @backstage/plugin-techdocs-backend: Backstage: Information disclosure via improper authorization in TechDocs backend",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@backstage/plugin-techdocs-backend: Backstage: Information disclosure via improper authorization in TechDocs backend",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106489.json",
+      "cve": "CVE-2026-106489",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106460: @backstage/plugin-auth-node: @backstage/plugin-auth-node: Privilege escalation via improper email verification",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@backstage/plugin-auth-node: @backstage/plugin-auth-node: Privilege escalation via improper email verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106460.json",
+      "cve": "CVE-2026-106460",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-106550: convict: convict: Denial of Service via prototype pollution in config.set()",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "convict: convict: Denial of Service via prototype pollution in config.set()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106550.json",
+      "cve": "CVE-2026-106550",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-106455: @backstage/plugin-techdocs-node: @backstage/plugin-techdocs-node: Information disclosure via improper MkDocs configurati",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@backstage/plugin-techdocs-node: @backstage/plugin-techdocs-node: Information disclosure via improper MkDocs configuration validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106455.json",
+      "cve": "CVE-2026-106455",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106454: twisted: Twisted: Denial of Service via regular expression backtracking in IMAP search patterns",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "twisted: Twisted: Denial of Service via regular expression backtracking in IMAP search patterns",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106454.json",
+      "cve": "CVE-2026-106454",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106453: org.lz4/lz4-java: lz4-java: Denial of Service via untrusted decompressed length header",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.lz4/lz4-java: lz4-java: Denial of Service via untrusted decompressed length header",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106453.json",
+      "cve": "CVE-2026-106453",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-106452: org.lz4/lz4-java: lz4-java: Denial of Service via excessive memory allocation",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.lz4/lz4-java: lz4-java: Denial of Service via excessive memory allocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106452.json",
+      "cve": "CVE-2026-106452",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-106451: org.lz4/lz4-java: lz4-java: Arbitrary code execution via insecure temporary file handling",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.lz4/lz4-java: lz4-java: Arbitrary code execution via insecure temporary file handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106451.json",
+      "cve": "CVE-2026-106451",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-106450: org.lz4/lz4-java: lz4-java: Denial of Service via excessive memory allocation from crafted compressed streams",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.lz4/lz4-java: lz4-java: Denial of Service via excessive memory allocation from crafted compressed streams",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106450.json",
+      "cve": "CVE-2026-106450",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-106449: org.lz4/lz4-java: lz4-java: Denial of Service via stack exhaustion from empty blocks",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.lz4/lz4-java: lz4-java: Denial of Service via stack exhaustion from empty blocks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106449.json",
+      "cve": "CVE-2026-106449",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-105111: org.apache.bcel/bcel: Apache Commons BCEL: Stored Cross-Site Scripting via untrusted class files in Class2HTML",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.bcel/bcel: Apache Commons BCEL: Stored Cross-Site Scripting via untrusted class files in Class2HTML",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105111.json",
+      "cve": "CVE-2026-105111",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-94114: org.apache.bcel/bcel: Apache Commons BCEL: Security verification bypass via unvalidated class caching",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.bcel/bcel: Apache Commons BCEL: Security verification bypass via unvalidated class caching",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94114.json",
+      "cve": "CVE-2026-94114",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-106444: handlebars: Handlebars: Cross-Site Scripting via unescaped closing script tags in precompiled templates",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "handlebars: Handlebars: Cross-Site Scripting via unescaped closing script tags in precompiled templates",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106444.json",
+      "cve": "CVE-2026-106444",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-106443: weasyprint: WeasyPrint: Arbitrary code execution via unsafe PostScript image processing",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "weasyprint: WeasyPrint: Arbitrary code execution via unsafe PostScript image processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106443.json",
+      "cve": "CVE-2026-106443",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-106272: chromium-browser: UI misrepresentation in Chromoting",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: UI misrepresentation in Chromoting",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106272.json",
+      "cve": "CVE-2026-106272",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106345: chromium-browser: Use of released resource in Session",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use of released resource in Session",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106345.json",
+      "cve": "CVE-2026-106345",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106251: chromium-browser: UI misrepresentation in Chromoting",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: UI misrepresentation in Chromoting",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106251.json",
+      "cve": "CVE-2026-106251",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106269: chromium-browser: Use after free in CSS",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Use after free in CSS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106269.json",
+      "cve": "CVE-2026-106269",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106355: chromium-browser: Missing authorization in Media",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Missing authorization in Media",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106355.json",
+      "cve": "CVE-2026-106355",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106236: chromium-browser: UI misrepresentation in Chromoting",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: UI misrepresentation in Chromoting",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106236.json",
+      "cve": "CVE-2026-106236",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106334: chromium-browser: Information leak in Payments",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Information leak in Payments",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106334.json",
+      "cve": "CVE-2026-106334",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106256: chromium-browser: Information leak in Passwords",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Information leak in Passwords",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106256.json",
+      "cve": "CVE-2026-106256",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106371: chromium-browser: Incorrect authorization in Transactions Platform",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Incorrect authorization in Transactions Platform",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106371.json",
+      "cve": "CVE-2026-106371",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106350: chromium-browser: Incorrect authorization in Browser",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Incorrect authorization in Browser",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106350.json",
+      "cve": "CVE-2026-106350",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106288: chromium-browser: Missing authorization in Browser",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Missing authorization in Browser",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106288.json",
+      "cve": "CVE-2026-106288",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106270: chromium-browser: Incorrect authorization in WebAppInstalls",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Incorrect authorization in WebAppInstalls",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106270.json",
+      "cve": "CVE-2026-106270",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106237: chromium-browser: Information leak in Permissions",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Information leak in Permissions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106237.json",
+      "cve": "CVE-2026-106237",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106249: chromium-browser: Incorrect authorization in Autofill",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Incorrect authorization in Autofill",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106249.json",
+      "cve": "CVE-2026-106249",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106368: chromium-browser: UI misrepresentation in UI",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: UI misrepresentation in UI",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106368.json",
+      "cve": "CVE-2026-106368",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106179: chromium-browser: UI misrepresentation in WebAppInstalls",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: UI misrepresentation in WebAppInstalls",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106179.json",
+      "cve": "CVE-2026-106179",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106221: chromium-browser: Confused deputy in WebAPKs",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Confused deputy in WebAPKs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106221.json",
+      "cve": "CVE-2026-106221",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106259: chromium-browser: Incorrect authorization in PermissionElement",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Incorrect authorization in PermissionElement",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106259.json",
+      "cve": "CVE-2026-106259",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106186: chromium-browser: Uncontrolled search path element in CredentialProvider",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Uncontrolled search path element in CredentialProvider",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106186.json",
+      "cve": "CVE-2026-106186",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106422: chromium-browser: Incorrect authorization in API",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Incorrect authorization in API",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106422.json",
+      "cve": "CVE-2026-106422",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106247: chromium-browser: Buffer overflow in ANGLE",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Buffer overflow in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106247.json",
+      "cve": "CVE-2026-106247",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106299: chromium-browser: Improper input validation in WebAudio",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Improper input validation in WebAudio",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106299.json",
+      "cve": "CVE-2026-106299",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106250: chromium-browser: Missing authorization in Actor",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Missing authorization in Actor",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106250.json",
+      "cve": "CVE-2026-106250",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106191: chromium-browser: Missing authorization in Actor",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Missing authorization in Actor",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106191.json",
+      "cve": "CVE-2026-106191",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-106210: chromium-browser: Observable discrepancy in Scroll",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Observable discrepancy in Scroll",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106210.json",
+      "cve": "CVE-2026-106210",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106384: chromium-browser: Missing authorization in SiteIsolation",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Missing authorization in SiteIsolation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106384.json",
+      "cve": "CVE-2026-106384",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106352: chromium-browser: Incorrect authorization in WebProtect",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Incorrect authorization in WebProtect",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106352.json",
+      "cve": "CVE-2026-106352",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106304: chromium-browser: Out of bounds read in ANGLE",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Out of bounds read in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106304.json",
+      "cve": "CVE-2026-106304",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106403: chromium-browser: Incorrect authorization in Accessibility",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Incorrect authorization in Accessibility",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106403.json",
+      "cve": "CVE-2026-106403",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106405: chromium-browser: Race condition in CustomTabs",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Race condition in CustomTabs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106405.json",
+      "cve": "CVE-2026-106405",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106356: chromium-browser: Clickjacking in EVP",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Clickjacking in EVP",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106356.json",
+      "cve": "CVE-2026-106356",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106279: chromium-browser: Incorrect reference resolution in Passwords",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Incorrect reference resolution in Passwords",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106279.json",
+      "cve": "CVE-2026-106279",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106290: chromium-browser: Uninitialized resource in GPU",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Uninitialized resource in GPU",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106290.json",
+      "cve": "CVE-2026-106290",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106408: chromium-browser: Protection mechanism failure in Mobile",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Protection mechanism failure in Mobile",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106408.json",
+      "cve": "CVE-2026-106408",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106225: chromium-browser: Missing authorization in Autofill",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Missing authorization in Autofill",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106225.json",
+      "cve": "CVE-2026-106225",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-106239: chromium-browser: Integer overflow in WebGL",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Integer overflow in WebGL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106239.json",
+      "cve": "CVE-2026-106239",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-106214: chromium-browser: Information leak in Proxy",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Information leak in Proxy",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106214.json",
+      "cve": "CVE-2026-106214",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-107121: keycloak-services: keycloak-services: SMTP STARTTLS plaintext credential and message downgrade",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: SMTP STARTTLS plaintext credential and message downgrade",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-107121.json",
+      "cve": "CVE-2026-107121",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-104850: @modelcontextprotocol/sdk: @modelcontextprotocol/client: MCP TypeScript SDK: Information disclosure via unbound OAuth cr",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "@modelcontextprotocol/sdk: @modelcontextprotocol/client: MCP TypeScript SDK: Information disclosure via unbound OAuth credentials",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104850.json",
+      "cve": "CVE-2026-104850",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-26287: github.com/external-secrets/external-secrets: external-secrets: Sensitive information disclosure via webhook generator l",
+      "date": "2026-10-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/external-secrets/external-secrets: external-secrets: Sensitive information disclosure via webhook generator label enforcement bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-26287.json",
+      "cve": "CVE-2026-26287",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-98355: kernel: RDMA/rtrs: guard against null kobj name",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/rtrs: guard against null kobj name",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98355.json",
+      "cve": "CVE-2026-98355",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98354: kernel: RDMA/mad: Fix receive buffer leak when PKey enforcement fails",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/mad: Fix receive buffer leak when PKey enforcement fails",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98354.json",
+      "cve": "CVE-2026-98354",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98358: kernel: IB/iser: reject a remote invalidation of an unregistered direction",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: IB/iser: reject a remote invalidation of an unregistered direction",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98358.json",
+      "cve": "CVE-2026-98358",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98357: kernel: IB/isert: wait for deferred control PDU completions before releasing the connection",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: IB/isert: wait for deferred control PDU completions before releasing the connection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98357.json",
+      "cve": "CVE-2026-98357",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-98361: kernel: RDMA/rxe: Restore HMM_PFN_WRITE check in ODP write paths",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/rxe: Restore HMM_PFN_WRITE check in ODP write paths",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98361.json",
+      "cve": "CVE-2026-98361",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98353: kernel: RDMA/erdma: Use IRQ-safe XArray helpers for QP and CQ tables",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/erdma: Use IRQ-safe XArray helpers for QP and CQ tables",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98353.json",
+      "cve": "CVE-2026-98353",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98359: kernel: RDMA/core: Reject unregistering netdevs in ib_get_eth_speed",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/core: Reject unregistering netdevs in ib_get_eth_speed",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98359.json",
+      "cve": "CVE-2026-98359",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98356: kernel: RDMA/bnxt_re: check create_singlethread_workqueue() in DCB setup",
+      "date": "2026-10-06",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/bnxt_re: check create_singlethread_workqueue() in DCB setup",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98356.json",
+      "cve": "CVE-2026-98356",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-98172: kernel: smb: client: fix smbd_connection leak on cifs_get_tcp_session() error",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: smb: client: fix smbd_connection leak on cifs_get_tcp_session() error",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98172.json",
+      "cve": "CVE-2026-98172",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98360: kernel: RDMA/rxe: insert mcg into mcg_tree only after rxe_mcast_add() succeeds",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: RDMA/rxe: insert mcg into mcg_tree only after rxe_mcast_add() succeeds",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98360.json",
+      "cve": "CVE-2026-98360",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-106061: gimp: GIMP: heap buffer over-read in X cursor (XMC) thumbnail loader on crafted file",
+      "date": "2026-10-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gimp: GIMP: heap buffer over-read in X cursor (XMC) thumbnail loader on crafted file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-106061.json",
+      "cve": "CVE-2026-106061",
+      "cvss": 5.5
+    },
+    {
       "title": "Coraza: Silent argument drop at ArgumentLimit allows bypass of ARGS-targeted rules via parameter flooding",
       "date": "2026-10-06",
       "severity": "HIGH",
@@ -1679,6 +2996,15 @@
       "component": "Ubuntu Pro for WSL",
       "description": "Darshan U discovered that Ubuntu Pro for WSL exposed the attach token in\ncommand-line arguments when enabling a subscription on a WSL instance.\nAn attacker could possibly use this issue to obtain sens...",
       "link": "https://ubuntu.com/security/notices/USN-8892-1"
+    },
+    {
+      "title": "USN-8891-1: librsvg vulnerability",
+      "date": "2026-10-06",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "librsvg",
+      "description": "It was discovered that librsvg incorrectly handled duplicate XML entity\ndeclarations while processing SVG documents containing nested XML\ninclusions. An attacker could possibly use this issue to cause...",
+      "link": "https://ubuntu.com/security/notices/USN-8891-1"
     },
     {
       "title": "Falcon Data Security for SaaS Secures Sensitive Data in Microsoft 365",
@@ -4621,6 +5947,17 @@
       "cvss": 8.8
     },
     {
+      "title": "CVE-2026-104849: tinypool: Tinypool: Prototype Pollution Gadget to RCE in run() options",
+      "date": "2026-10-02",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "tinypool: Tinypool: Prototype Pollution Gadget to RCE in run() options",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104849.json",
+      "cve": "CVE-2026-104849",
+      "cvss": 8.1
+    },
+    {
       "title": "Trigger.dev: Server-side request forgery via unvalidated webhook alert-channel URL",
       "date": "2026-10-02",
       "severity": "HIGH",
@@ -5833,6 +7170,837 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-07T13:03:02.981Z",
+      "logs": [
+        "[INFO] aws - 7 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 2 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 16 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] github - 172 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[SUCCESS] microsoft - 130 patches (50 new)",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[SUCCESS] redhat - 295 patches (79 new)",
+        "[INFO] signal - 7 patches, no changes",
+        "[SUCCESS] ubuntu - 36 patches (2 new)"
+      ],
+      "newPatchCount": 131,
+      "totalPatches": 683,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "debian",
+        "edge",
+        "github",
+        "signal",
+        "crowdstrike",
+        "postgresql",
+        "cisco",
+        "cloudflare",
+        "gitlab",
+        "paloalto",
+        "fortinet"
+      ],
+      "newPatches": [
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-103531: OpenSC card-setcos.c setcos_construct_fci_44 stack-based overflow",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105712: gpgtar in GnuPG before 2.5.19 can allow file overwrite via crafted data in an archive. When extracting an untrusted archive with --directory (aka -C) into an existing directory containing a pre-existing symlink, gpgtar can follow that symlink and create or overwrite a file outside the selected extraction directory. The write is limited by the extraction user's filesystem permissions. An archive extracted into a fresh empty directory does not have this risk.",
+          "date": "2026-10-07",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105773: Canimaan Software ClamXAV local privilege escalation",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-57941: Apache HTTP Server: mod_http2 use-after-free / wild write via shared session->bbtmp re-entrancy",
+          "date": "2026-10-07",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-59685: Apache HTTP Server: Out-of-Bounds Write in ap_directory_walk() Canonical-Name Rewrite on CASE_BLIND_FILESYSTEM",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-61373: Apache Thrift: Java TSaslNonblockingServer pre-auth unbounded SASL frame allocation",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-61374: Apache Thrift: Java TSaslTransport post-auth data-frame missing size limit",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-63292: Apache HTTP Server: mod_vhost_alias stack overflow",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-63772: Apache Thrift: Unauthenticated single-packet crash of Go Thrift servers via the THeader transform count",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66054: Apache Thrift: C++ THeaderTransport does not enforce configured maxFrameSize",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66055: Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift: TJSONProtocol accepts a single JSON string/number exceeding the configured size limit (multi-language)",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66081: Apache Thrift: c_glib read_message_begin leaves output parameters unset for non-versioned messages",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66331: Apache Thrift: Buffered transport reads are not accounted against MaxMessageSize",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66837: Apache Thrift: PHP accelerator sizes a stack buffer from a wire-controlled string length",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66858: Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift: skip() does not apply the recursion limit (Python accelerator, PHP, Perl, Lua, Smalltalk, OCaml)",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-66859: Apache Thrift: c_glib multiplexed processor crashes on a message it cannot route",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-75818: Heap Buffer Overflow in GNU Aspell's prezip utility",
+          "date": "2026-10-07",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-75819: Out-of-bounds Read in GNU Aspell",
+          "date": "2026-10-07",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-75820: Integer Truncation Leading to Heap Corruption in GNU Aspell",
+          "date": "2026-10-07",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-82458: Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift: Container element count not bounded by the bytes available",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-82459: Apache Thrift: Integer underflow in C++ THeaderTransport allows an unauthenticated remote peer to terminate a 32-bit process",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-83632: Apache Thrift: C++ THttpTransport grows its line buffer without bound",
+          "date": "2026-10-07",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-83663: Apache Thrift: TFramedTransport and THeaderTransport re-enter Read once per frame that carries no payload (Go)",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-83745: Apache Thrift, Apache Thrift: WebSocket frame decoders allocate the payload buffer from the declared length, not the bytes received (Node.js, D)",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-85086: Apache Thrift: Perl TLS client disables certificate verification by default",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-85087: Apache Thrift: Python ≥3.12 host-name check silently becomes a no-op",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-85088: Apache Thrift, Apache Thrift: The C++ and D clients fall back to the certificate Common Name when subjectAltName entries are present but do not match",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-85476: Apache Thrift: c_glib `read_all` spins when the underlying read returns 0",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-85483: Apache Thrift: c_glib TZlibTransport reports a full read after a premature stream end",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-85493: Apache Thrift, Apache Thrift: TProtocolUtil.skip follows peer-chosen nesting to any depth the stack allows (Dart, Java ME)",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-85494: Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift, Apache Thrift: Framed transport and binary protocol size read buffers from a peer-declared length without a limit (multi-language)",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-86535: Apache Thrift: A JSON member name can stall the Node server's event loop indefinitely",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-86536: Apache Thrift, Apache Thrift, Apache Thrift: A map key from the wire can replace a decoded object's prototype in generated JavaScript",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-86537: Apache Thrift: A truncated HTTP request stops the D library's server, allowing an unauthenticated remote attacker to deny service",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-87117: Apache Thrift: PHP `thrift_protocol` accelerator dereferences a missing container-element spec",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-90440: Apache Thrift: An exception escaping a libevent callback stops the D library's non-blocking server, allowing an unauthenticated remote attacker to deny service",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-91135: Apache Thrift: C++ `THeaderTransport::transform()` heap buffer overflow (write direction)",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-91137: Apache Thrift: PHP `thrift_protocol` accelerator: zero-byte container elements",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-92834: Apache Thrift: C++ WebSocket server transport does not read a full request length",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-93925: Apache Thrift: C++ `THeaderTransport::writeVarint32()` stack buffer overflow on a negative protocol id",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-93926: Apache Thrift: C++ `THeaderTransport::untransform()` leaks the zlib stream on the error path",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-94633: Apache Thrift: Dart `TBinaryProtocol.readMessageBegin` allocates from the pre-versioned name length",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-94634: Apache Thrift: Python `TJSONProtocol` has a string length limit that is off by default",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-94635: Apache Thrift: Lua `TBinaryProtocol:readMessageBegin` bypasses `checkStringSize` on the pre-versioned name",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-94636: Apache Thrift: Python `TZlibTransport` stops enforcing its decompressed-size limit once the limit is exactly used up",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-94637: Apache Thrift: Go `THeaderTransport` does not bound the inflated size of a ZLIB frame",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-94638: Apache Thrift: PHP `thrift_protocol` C extension ignores the configured `maxStringSize`",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-94639: Apache Thrift: Java `TSaslNonblockingServer`: residual of CVE-2026-61373 (thread-death black hole + no cross-connection budget)",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-94642: Apache Thrift: PHP `TSimpleServer` exits the whole process on any non-transport exception",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-94644: Apache Thrift: PHP `TJSONProtocol` string/number readers have no size bound",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103868: pulp-container: Registry credentials are reused across remotes in a worker",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103869: pulp-ansible: Bearer tokens are reused across remotes in a worker",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103870: pulp-rpm: Distribution tree publish creates directories from .treeinfo ids",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103871: pulp_python: Simple index renders project names without HTML escaping",
+          "date": "2026-10-07",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106471: candlepin: candlepin: broken object-level authorization via VerifyAuthorizationFilter multi-@Verify hasAccess latching",
+          "date": "2026-10-07",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106505: plugin-techdocs-node: @backstage/plugin-techdocs-node: Backstage plugin-techdocs-node: Arbitrary code execution via MkDo",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106501: @backstage/plugin-scaffolder-backend: Backstage: Sensitive information exposure in Scaffolder",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106500: @backstage/plugin-scaffolder-backend: @backstage/plugin-scaffolder-backend: Unauthorized file manipulation via improper ",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106499: plugin-scaffolder-backend: Backstage: Information disclosure via secret leakage in Scaffolder task logs",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106498: @backstage/plugin-catalog-backend: @backstage/plugin-catalog-backend: Information disclosure via improper URL validation",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106494: @backstage/backend-defaults: @backstage/backend-defaults: Content injection via crafted cloud storage object names",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106493: backstage: Backstage: Information disclosure via improper object path validation in cloud storage catalog providers",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106492: @backstage/backend-defaults: @backstage/backend-defaults: Access control bypass via improper service credential delegati",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106489: @backstage/plugin-techdocs-backend: Backstage: Information disclosure via improper authorization in TechDocs backend",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106460: @backstage/plugin-auth-node: @backstage/plugin-auth-node: Privilege escalation via improper email verification",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106550: convict: convict: Denial of Service via prototype pollution in config.set()",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106455: @backstage/plugin-techdocs-node: @backstage/plugin-techdocs-node: Information disclosure via improper MkDocs configurati",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106454: twisted: Twisted: Denial of Service via regular expression backtracking in IMAP search patterns",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106453: org.lz4/lz4-java: lz4-java: Denial of Service via untrusted decompressed length header",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106452: org.lz4/lz4-java: lz4-java: Denial of Service via excessive memory allocation",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106451: org.lz4/lz4-java: lz4-java: Arbitrary code execution via insecure temporary file handling",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106450: org.lz4/lz4-java: lz4-java: Denial of Service via excessive memory allocation from crafted compressed streams",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106449: org.lz4/lz4-java: lz4-java: Denial of Service via stack exhaustion from empty blocks",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-105111: org.apache.bcel/bcel: Apache Commons BCEL: Stored Cross-Site Scripting via untrusted class files in Class2HTML",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-94114: org.apache.bcel/bcel: Apache Commons BCEL: Security verification bypass via unvalidated class caching",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106444: handlebars: Handlebars: Cross-Site Scripting via unescaped closing script tags in precompiled templates",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106443: weasyprint: WeasyPrint: Arbitrary code execution via unsafe PostScript image processing",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106272: chromium-browser: UI misrepresentation in Chromoting",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106345: chromium-browser: Use of released resource in Session",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106251: chromium-browser: UI misrepresentation in Chromoting",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106269: chromium-browser: Use after free in CSS",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106355: chromium-browser: Missing authorization in Media",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106236: chromium-browser: UI misrepresentation in Chromoting",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106334: chromium-browser: Information leak in Payments",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106256: chromium-browser: Information leak in Passwords",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106371: chromium-browser: Incorrect authorization in Transactions Platform",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106350: chromium-browser: Incorrect authorization in Browser",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106288: chromium-browser: Missing authorization in Browser",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106270: chromium-browser: Incorrect authorization in WebAppInstalls",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106237: chromium-browser: Information leak in Permissions",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106249: chromium-browser: Incorrect authorization in Autofill",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106368: chromium-browser: UI misrepresentation in UI",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106179: chromium-browser: UI misrepresentation in WebAppInstalls",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106221: chromium-browser: Confused deputy in WebAPKs",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106259: chromium-browser: Incorrect authorization in PermissionElement",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106186: chromium-browser: Uncontrolled search path element in CredentialProvider",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106422: chromium-browser: Incorrect authorization in API",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106247: chromium-browser: Buffer overflow in ANGLE",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106299: chromium-browser: Improper input validation in WebAudio",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106250: chromium-browser: Missing authorization in Actor",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106191: chromium-browser: Missing authorization in Actor",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106210: chromium-browser: Observable discrepancy in Scroll",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106384: chromium-browser: Missing authorization in SiteIsolation",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106352: chromium-browser: Incorrect authorization in WebProtect",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106304: chromium-browser: Out of bounds read in ANGLE",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106403: chromium-browser: Incorrect authorization in Accessibility",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106405: chromium-browser: Race condition in CustomTabs",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106356: chromium-browser: Clickjacking in EVP",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106279: chromium-browser: Incorrect reference resolution in Passwords",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106290: chromium-browser: Uninitialized resource in GPU",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106408: chromium-browser: Protection mechanism failure in Mobile",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106225: chromium-browser: Missing authorization in Autofill",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106239: chromium-browser: Integer overflow in WebGL",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106214: chromium-browser: Information leak in Proxy",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-107121: keycloak-services: keycloak-services: SMTP STARTTLS plaintext credential and message downgrade",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104850: @modelcontextprotocol/sdk: @modelcontextprotocol/client: MCP TypeScript SDK: Information disclosure via unbound OAuth cr",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-26287: github.com/external-secrets/external-secrets: external-secrets: Sensitive information disclosure via webhook generator l",
+          "date": "2026-10-06",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98355: kernel: RDMA/rtrs: guard against null kobj name",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98354: kernel: RDMA/mad: Fix receive buffer leak when PKey enforcement fails",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98358: kernel: IB/iser: reject a remote invalidation of an unregistered direction",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98357: kernel: IB/isert: wait for deferred control PDU completions before releasing the connection",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98361: kernel: RDMA/rxe: Restore HMM_PFN_WRITE check in ODP write paths",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98353: kernel: RDMA/erdma: Use IRQ-safe XArray helpers for QP and CQ tables",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98359: kernel: RDMA/core: Reject unregistering netdevs in ib_get_eth_speed",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98356: kernel: RDMA/bnxt_re: check create_singlethread_workqueue() in DCB setup",
+          "date": "2026-10-06",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98172: kernel: smb: client: fix smbd_connection leak on cifs_get_tcp_session() error",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98360: kernel: RDMA/rxe: insert mcg into mcg_tree only after rxe_mcast_add() succeeds",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-106061: gimp: GIMP: heap buffer over-read in X cursor (XMC) thumbnail loader on crafted file",
+          "date": "2026-10-06",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104849: tinypool: Tinypool: Prototype Pollution Gadget to RCE in run() options",
+          "date": "2026-10-02",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8893-1: Libwebsockets vulnerabilities",
+          "date": "2026-10-07",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8891-1: librsvg vulnerability",
+          "date": "2026-10-06",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-07T12:54:40.322Z",
       "logs": [
@@ -13555,42 +15723,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-09-30T12:09:26.384Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] aws - 48 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 1 patches, no changes",
-        "[INFO] cloudflare - 8 patches, no changes",
-        "[INFO] debian - 20 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 103 patches, no changes",
-        "[INFO] microsoft - 500 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 709 patches, no changes",
-        "[INFO] ubuntu - 44 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1445,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 12,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "chrome",
-        "cloudflare",
-        "debian",
-        "edge",
-        "github",
-        "postgresql",
-        "redhat",
-        "ubuntu",
-        "apple",
-        "cisco"
-      ],
-      "newPatches": []
     }
   ]
 }
