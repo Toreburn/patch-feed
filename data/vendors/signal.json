@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-08T13:09:17.279Z",
+  "lastUpdated": "2026-10-08T23:09:46.631Z",
   "health": {
-    "lastFetchAttempt": "2026-10-08T13:09:17.279Z",
+    "lastFetchAttempt": "2026-10-08T23:09:46.631Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-08T13:09:17.279Z",
+    "lastFetchParsedItems": 2,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-10-08T23:09:46.631Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "enshrined/svg-sanitize: Denial of Service via DTD Attribute Declaration Crash",
+      "date": "2026-10-08",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nA crafted SVG file (1009 bytes) crashes the PHP process when sanitized by `enshrined/svg-sanitize` (any version through 0.22.x). The sanitizer's `cleanAttributesOnWhitelist()` method calls",
+      "link": "https://github.com/advisories/GHSA-v383-3rw5-q8rf",
+      "cves": [
+        "CVE-2026-107379"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.31.0-beta.1",
       "date": "2026-10-07",
