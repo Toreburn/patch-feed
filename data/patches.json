@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-08T00:03:38.753Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-08T05:30:23.288Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
@@ -453,6 +453,16 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67370"
     },
     {
+      "title": "Cisco Meraki Security Hardening Release: October 2026",
+      "date": "2026-10-08",
+      "severity": "CRITICAL",
+      "vendor": "cisco",
+      "component": "Meraki",
+      "description": "As part of Cisco's ongoing commitment to proactive security and product quality, engineering teams conducted a comprehensive internal security review. This review resulted in software hardening releas...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-meraki-os-drbEX9GH",
+      "cve": "CVE-2026-76463"
+    },
+    {
       "title": "CVE-2026-107352 - Missing authorization checks in Amazon Athena engine version 3 request handling",
       "date": "2026-10-07",
       "severity": "HIGH",
@@ -629,6 +639,17 @@
       "description": "Security alerts rarely arrive one at a time. A single alert can cause a spike across the environment, requiring a human analyst to decide which alerts are related and what they mean. When multiple arr...",
       "link": "https://blog.cloudflare.com/agentic-security-operations/",
       "cve": ""
+    },
+    {
+      "title": "DSA-6549-1 xz-utils - security update",
+      "date": "2026-10-07",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "xz-utils",
+      "description": "It was discovered that an invalid memory write in the LZMA1 decoders of xz-utils, the XZ-format compression utilities, could result in denial of service or potentially the execution of arbitrary code....",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00463.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "PraisonAI: Prompt Injection Defense Bypassed for HIGH-Level Threats",
@@ -6840,6 +6861,61 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-08T05:30:23.288Z",
+      "logs": [
+        "[INFO] aws - 9 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[SUCCESS] cisco - 18 patches (1 new)",
+        "[INFO] cloudflare - 3 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 13 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 177 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 130 patches, no changes",
+        "[INFO] paloalto - 1 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 250 patches, no changes",
+        "[INFO] signal - 8 patches, no changes",
+        "[INFO] ubuntu - 35 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 656,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 15,
+      "vendors": [
+        "microsoft",
+        "cisco",
+        "aws",
+        "cloudflare",
+        "debian",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "edge",
+        "crowdstrike",
+        "postgresql",
+        "gitlab",
+        "paloalto"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Cisco Meraki Security Hardening Release: October 2026",
+          "date": "2026-10-08",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6549-1 xz-utils - security update",
+          "date": "2026-10-07",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-08T00:03:38.753Z",
       "logs": [
@@ -14669,46 +14745,6 @@
       ],
       "newPatchCount": 0,
       "totalPatches": 1272,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "microsoft",
-        "chrome",
-        "cisco",
-        "debian",
-        "github",
-        "paloalto",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "aws",
-        "cloudflare",
-        "edge",
-        "postgresql",
-        "apple"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-09-30T23:33:34.906Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] aws - 49 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] cloudflare - 8 patches, no changes",
-        "[INFO] debian - 23 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 160 patches, no changes",
-        "[INFO] microsoft - 546 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 767 patches, no changes",
-        "[INFO] signal - 4 patches, no changes",
-        "[INFO] ubuntu - 61 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1635,
       "vendorsScanned": 56,
       "vendorsWithPatches": 14,
       "vendors": [
