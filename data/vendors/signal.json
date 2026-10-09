@@ -1,16 +1,76 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-09T12:55:55.192Z",
+  "lastUpdated": "2026-10-09T22:29:09.898Z",
   "health": {
-    "lastFetchAttempt": "2026-10-09T12:55:55.192Z",
+    "lastFetchAttempt": "2026-10-09T22:29:09.898Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-09T12:55:55.192Z",
+    "lastFetchParsedItems": 5,
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-10-09T22:29:09.898Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Vikunja: Planka migration retains an unbounded aggregate of attacker-served attachments and can OOM the API",
+      "date": "2026-10-09",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# Planka migration retains an unbounded aggregate of attacker-served attachments and can OOM the API\n\n## Summary\n\nThe always-registered Planka migration lets any ordinary user select a Planka server. ",
+      "link": "https://github.com/advisories/GHSA-wq92-8x3r-fm38",
+      "cves": [
+        "CVE-2026-91970"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Vikunja: Unbounded CSV row cardinality permits API process termination",
+      "date": "2026-10-09",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# Unbounded CSV row cardinality permits API process termination\n\n## Summary\n\nThe authenticated v2 CSV migration route caps upload bytes but not parsed row cardinality. It reads every record into a [][",
+      "link": "https://github.com/advisories/GHSA-pqf9-h8g4-8gmh",
+      "cves": [
+        "CVE-2026-91969"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Vikunja: Unbounded nested task-filter recursion permits API process termination",
+      "date": "2026-10-09",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "# Unbounded nested task-filter recursion permits API process termination\n\n## Summary\n\nAuthenticated task-list routes accept a filter expression without a length or nesting-depth bound, preprocess it, ",
+      "link": "https://github.com/advisories/GHSA-xxc3-xpmc-vmvr",
+      "cves": [
+        "CVE-2026-91968"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "pacioli: A submit consent marker licensed cancellation of caller-named pre-existing documents",
+      "date": "2026-10-09",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\n\n`pacioli-guard`'s document-layer consent gate requires a human-minted, single-use, document-bound and **act-bound** marker before a credential carrying `API Key Scope.require_consent` may ",
+      "link": "https://github.com/advisories/GHSA-3hj7-6vmj-h8v4",
+      "cves": [
+        "CVE-2026-107841"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "enshrined/svg-sanitize: Denial of Service via DTD Attribute Declaration Crash",
       "date": "2026-10-08",
