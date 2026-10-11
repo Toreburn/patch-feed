@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-11T18:41:31.647Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-11T21:44:04.778Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
@@ -451,6 +451,17 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-67370",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67370"
+    },
+    {
+      "title": "DSA-6552-1 vips - security update",
+      "date": "2026-10-11",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "vips",
+      "description": "Several vulnerabilities have been discovered in vips, a fast image processing library. These vulnerabilities could result in denial of service, memory safety issues, or other security impact when proc...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00466.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "CVE-2026-102404: Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
@@ -921,6 +932,17 @@
       "component": "ghostscript",
       "description": "Multiple security issues were discovered in Ghostscript, the GPL PostScript/PDF interpreter, which could result in denial of service and potentially the execution of arbitrary code if malformed docume...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00464.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6551-1 tor - security update",
+      "date": "2026-10-10",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "tor",
+      "description": "Multiple security vulnerabilities were discovered in Tor, a connection- based low-latency anonymous communication system. https://security-tracker.debian.org/tracker/DSA-6551-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00465.html",
       "cve": "",
       "cves": []
     },
@@ -14988,6 +15010,57 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-10-11T21:44:04.778Z",
+      "logs": [
+        "[INFO] aws - 41 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 17 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 10 patches (2 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] github - 237 patches, no changes",
+        "[INFO] microsoft - 229 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 816 patches, no changes",
+        "[INFO] signal - 11 patches, no changes",
+        "[INFO] ubuntu - 47 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 1421,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 13,
+      "vendors": [
+        "microsoft",
+        "debian",
+        "redhat",
+        "aws",
+        "chrome",
+        "github",
+        "postgresql",
+        "signal",
+        "ubuntu",
+        "cisco",
+        "edge",
+        "cloudflare",
+        "crowdstrike"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6552-1 vips - security update",
+          "date": "2026-10-11",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6551-1 tor - security update",
+          "date": "2026-10-10",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-10-11T18:41:31.647Z",
       "logs": [
         "[INFO] aws - 41 patches, no changes",
@@ -25530,50 +25603,6 @@
     },
     {
       "timestamp": "2026-10-04T11:59:06.683Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] aws - 25 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 8 patches, no changes",
-        "[INFO] debian - 19 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] github - 214 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 297 patches, no changes",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 442 patches, no changes",
-        "[INFO] signal - 9 patches, no changes",
-        "[INFO] ubuntu - 54 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1091,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "microsoft",
-        "redhat",
-        "aws",
-        "chrome",
-        "cisco",
-        "cloudflare",
-        "debian",
-        "github",
-        "gitlab",
-        "paloalto",
-        "signal",
-        "ubuntu",
-        "edge",
-        "fortinet",
-        "postgresql",
-        "apple"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-10-04T05:17:28.100Z",
       "logs": [
         "[INFO] apple - 5 patches, no changes",
         "[INFO] aws - 25 patches, no changes",
