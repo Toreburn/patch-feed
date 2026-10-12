@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-12T05:05:04.256Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-12T05:22:24.692Z",
+  "newPatches": 4,
   "patches": [
     {
       "title": "CVE-2025-70873: An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file.",
@@ -451,6 +451,15 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-67370",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-67370"
+    },
+    {
+      "title": "USN-8912-1: Perl DBI module vulnerabilities",
+      "date": "2026-10-12",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Perl DBI module vulnerabilities",
+      "description": "Harsh Raj Singhania discovered that the Perl DBI module did not\ncorrectly validate certain attributes. An attacker could possibly use\nthis issue to execute arbitrary code. (CVE-2026-78030)\n\nHarsh Raj ...",
+      "link": "https://ubuntu.com/security/notices/USN-8912-1"
     },
     {
       "title": "DSA-6552-1 vips - security update",
@@ -923,6 +932,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-108693.json",
       "cve": "CVE-2026-108693",
       "cvss": 7
+    },
+    {
+      "title": "CVE-2026-108858: lorax: lorax: Information disclosure via API token logging",
+      "date": "2026-10-11",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "lorax: lorax: Information disclosure via API token logging",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-108858.json",
+      "cve": "CVE-2026-108858",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-108749: docling-serve: docling-serve: Information disclosure via missing authentication on memory endpoints",
+      "date": "2026-10-11",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "docling-serve: docling-serve: Information disclosure via missing authentication on memory endpoints",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-108749.json",
+      "cve": "CVE-2026-108749",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-108575: litellm: LiteLLM: Improper authorization via api_key parameter manipulation",
+      "date": "2026-10-11",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "litellm: LiteLLM: Improper authorization via api_key parameter manipulation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-108575.json",
+      "cve": "CVE-2026-108575",
+      "cvss": 6.3
     },
     {
       "title": "DSA-6550-1 ghostscript - security update",
@@ -13385,6 +13427,67 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-10-12T05:22:24.692Z",
+      "logs": [
+        "[INFO] aws - 41 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 17 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] debian - 8 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] github - 190 patches, no changes",
+        "[INFO] microsoft - 200 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 757 patches (3 new)",
+        "[INFO] signal - 9 patches, no changes",
+        "[SUCCESS] ubuntu - 41 patches (1 new)"
+      ],
+      "newPatchCount": 4,
+      "totalPatches": 1271,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 12,
+      "vendors": [
+        "microsoft",
+        "ubuntu",
+        "debian",
+        "redhat",
+        "aws",
+        "chrome",
+        "github",
+        "postgresql",
+        "signal",
+        "cisco",
+        "edge",
+        "cloudflare"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-108858: lorax: lorax: Information disclosure via API token logging",
+          "date": "2026-10-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-108749: docling-serve: docling-serve: Information disclosure via missing authentication on memory endpoints",
+          "date": "2026-10-11",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-108575: litellm: LiteLLM: Improper authorization via api_key parameter manipulation",
+          "date": "2026-10-11",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8912-1: Perl DBI module vulnerabilities",
+          "date": "2026-10-12",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-10-12T05:05:04.255Z",
       "logs": [
         "[INFO] aws - 41 patches, no changes",
@@ -23920,50 +24023,6 @@
     },
     {
       "timestamp": "2026-10-04T21:02:25.924Z",
-      "logs": [
-        "[INFO] apple - 5 patches, no changes",
-        "[INFO] aws - 25 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 4 patches, no changes",
-        "[INFO] cloudflare - 8 patches, no changes",
-        "[INFO] debian - 19 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] github - 214 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 297 patches, no changes",
-        "[INFO] paloalto - 2 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 442 patches, no changes",
-        "[INFO] signal - 9 patches, no changes",
-        "[INFO] ubuntu - 54 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1091,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "microsoft",
-        "redhat",
-        "aws",
-        "chrome",
-        "cisco",
-        "cloudflare",
-        "debian",
-        "github",
-        "gitlab",
-        "paloalto",
-        "signal",
-        "ubuntu",
-        "edge",
-        "fortinet",
-        "postgresql",
-        "apple"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-10-04T16:47:41.487Z",
       "logs": [
         "[INFO] apple - 5 patches, no changes",
         "[INFO] aws - 25 patches, no changes",
