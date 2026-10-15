@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-15T03:50:36.983Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-15T04:04:47.436Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "CVE-2026-13762 and CVE-2026-13763 - Issue with HTTP/2 multi-frame request body inspection in AWS WAF",
@@ -1417,6 +1417,15 @@
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102220"
     },
     {
+      "title": "SQL Server Security Update: CVE-2026-32176 SQL Server Elevation of Privilege Vulnerability",
+      "date": "2026-10-14",
+      "severity": "UNKNOWN",
+      "vendor": "mssql",
+      "component": "Microsoft SQL Server",
+      "description": "Added SQL software to the Security Updates table.  Customers that are running supported version of SQL are encouraged to update to the indicated version to be protected from this vulnerability....",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32176"
+    },
+    {
       "title": "Wednesday, October 21, 2026 Security Releases",
       "date": "2026-10-14",
       "severity": "UNKNOWN",
@@ -1706,6 +1715,15 @@
       "component": "U-Boot vulnerabilities",
       "description": "Shahriyar Jalayeri and Mehrun P. Hunter discovered that U-Boot\nincorrectly handled certain NFS READ and NFS READLINK responses. An\nattacker could possibly use this issue to trigger a buffer overflow,\n...",
       "link": "https://ubuntu.com/security/notices/USN-8930-1"
+    },
+    {
+      "title": "USN-8926-1: urllib3 vulnerabilities",
+      "date": "2026-10-14",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "urllib3 vulnerabilities",
+      "description": "Yu-Fu Fu, Seth Larson and Yonatan Magier discovered that urllib3 did not\ncorrectly handle certain certificate validations. An attacker could\npossibly use this issue to observe or modify forwarded traf...",
+      "link": "https://ubuntu.com/security/notices/USN-8926-1"
     },
     {
       "title": "Chrome for Android Update",
@@ -7820,6 +7838,65 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-15T04:04:47.435Z",
+      "logs": [
+        "[INFO] aws - 54 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 4 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 12 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 11 patches, no changes",
+        "[INFO] github - 94 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 350 patches, no changes",
+        "[SUCCESS] mssql - 24 patches (1 new)",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] paloalto - 12 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 190 patches, no changes",
+        "[INFO] signal - 6 patches, no changes",
+        "[SUCCESS] ubuntu - 27 patches (1 new)"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 797,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "aws",
+        "cisco",
+        "debian",
+        "github",
+        "microsoft",
+        "mssql",
+        "nodejs",
+        "paloalto",
+        "postgresql",
+        "redhat",
+        "ubuntu",
+        "chrome",
+        "crowdstrike",
+        "edge",
+        "fortinet",
+        "signal",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "mssql",
+          "title": "SQL Server Security Update: CVE-2026-32176 SQL Server Elevation of Privilege Vulnerability",
+          "date": "2026-10-14",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-8926-1: urllib3 vulnerabilities",
+          "date": "2026-10-14",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-15T03:50:36.982Z",
       "logs": [
@@ -18763,513 +18840,6 @@
         "paloalto"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-10-07T22:58:15.310Z",
-      "logs": [
-        "[SUCCESS] aws - 12 patches (5 new)",
-        "[INFO] chrome - 5 patches, no changes",
-        "[SUCCESS] cisco - 17 patches (15 new)",
-        "[SUCCESS] cloudflare - 3 patches (1 new)",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 16 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[SUCCESS] github - 222 patches (50 new)",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 130 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 3 patches, no changes",
-        "[INFO] redhat - 295 patches, no changes",
-        "[SUCCESS] signal - 9 patches (2 new)",
-        "[SUCCESS] ubuntu - 40 patches (4 new)"
-      ],
-      "newPatchCount": 77,
-      "totalPatches": 760,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 16,
-      "vendors": [
-        "microsoft",
-        "aws",
-        "cisco",
-        "cloudflare",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "debian",
-        "edge",
-        "crowdstrike",
-        "postgresql",
-        "gitlab",
-        "paloalto",
-        "fortinet"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-107352 - Missing authorization checks in Amazon Athena engine version 3 request handling",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-105811 - Authorization bypass through a user-controlled key in the Amazon Q Business Lambda hook sample in QnABot on AWS",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "aws",
-          "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 &amp; CVE-2026-8597)",
-          "date": "2026-10-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-8838 - Remote Code Execution in amazon-redshift-python-driver",
-          "date": "2026-10-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-8686 - Heap out-of-bounds read in coreMQTT MQTT5 property parsing",
-          "date": "2026-10-06",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Advance Notification for Publication of October 7, 2026, Security Advisories",
-          "date": "2026-10-07",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco NX-OS Software Python Sandbox Escape Vulnerability",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Finesse Server-Side Request Forgery Vulnerability",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Nexus 3000 and 9000 Series Switches MPLS OAM Remote Code Execution Vulnerability",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Application Policy Infrastructure Controller Unauthorized File Access Vulnerability",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Application Policy Infrastructure Controller API Command Injection Vulnerability",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco License (Smart Software Manager) On-Prem Security Hardening Release: October 2026",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Nexus 9000 Series Fabric Switches in ACI Mode Endpoint Group Contract Bypass Vulnerability",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Meraki Security Hardening Release: October 2026",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Nexus 3000 and 9000 Series Switches NGOAM Remote Code Execution Vulnerabilities",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco Application Policy Infrastructure Controller Security Hardening Release: October 2026",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco NX-OS Software NX-API Remote Code Execution Vulnerability",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco NX-OS Software Control Plane Denial of Service Vulnerability",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco License (Smart Software Manager) On-Prem Vulnerabilities",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "cisco",
-          "title": "Cisco NX-OS Software Security Hardening Release: October 2026",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "cloudflare",
-          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PraisonAI: Prompt Injection Defense Bypassed for HIGH-Level Threats",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Remote Code Execution via Bookmark Card Images",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Stored XSS via Embed Card Previews",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost : Stored XSS via SVG Files in Content Imports",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Regular Expression Denial of Service in External Media Inliner",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Regular Expression Denial of Service in Content Import",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "RabbitMQ: JSONReader in the default JSON-RPC mapper never terminates on truncated input, causing DoS",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Docling: Configured HTTP headers sent to every remote image host named by a document",
-          "date": "2026-10-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Docling has SSRF guard bypass in remote resource fetching (DNS rebinding / multi-record resolution; no IP validation in HTML render mode)",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Docling has arbitrary file read/write (and command execution when shell-escape is enabled) when rendering untrusted TikZ with the opt-in Tectonic engine",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Docling: Crafted DoclingDocument JSON embeds local image files into converted output",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Docling: Unbounded table rowspan/colspan in HTML, JATS, ODS and BoxNote backends causes CPU/memory exhaustion",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Docling imports plugin entry points before the allow_external_plugins check",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Langflow: OS command injection (RCE) via arbitrary command in MCP stdio server configuration",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Langflow : Cross-user flow access and vertex execution via deprecated /api/v1/build/{flow_id}/vertices endpoints",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "yawkat LZ4 Java: Native library extraction to a shared temporary directory is vulnerable to file replacement by another local user",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "yawkat LZ4 Java: LZ4BlockInputStream with stopOnEmptyBlock=false recurses once per empty block, causing StackOverflowError",
-          "date": "2026-10-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "yawkat LZ4 Java: LZ4FrameInputStream reallocates block buffers for every frame, allowing CPU and GC amplification from small inputs",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Server-Side Request Forgery in Bookmark Fetching",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Private IP Filtering Bypass via IPv6 Transition Addresses",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Stored XSS via SVG Uploads Bypassing Sanitization",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Langflow has Authenticated Cross-Project File Disclosure via Unscoped MCP Resource Handlers",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Next.js: Pending `use cache` fill can leak Draft Mode content into regular responses and persisted pages",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Next.js has cache poisoning of SSG and ISR pages in self-hosted applications",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Next.js has information disclosure in development server's Model Context Protocol endpoint",
-          "date": "2026-10-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Next.js has information disclosure in App Router metadata image routes via dynamicParams bypass",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Next.js has cache poisoning in SSG/ISR rendering that leads to cross-user content substitution and persistent denial of service",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Next.js has Server-Side Request Forgery in Image Optimization",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload: SQL injection in SQLite/Postgres",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload: Remote Code Execution through first-register",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload has a tenant authorization bypass in Multi-Tenant Plugin",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload external upload trust validation issue",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload: Bypassed sanitization of user uploaded SVGs",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "@payloadcms/plugin-multi-tenant has a cross-tenant create issue",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload: Incomplete validation during the upload file lifecycle",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload: Unauthenticated account-lockout denial of service",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload: Client uploads could overwrite S3 objects",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload: Uploaded XML files could execute same-origin JavaScript",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload Form Builder has an RCE issue",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload: Unauthorized update to collection documents",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Payload authentication token field handling issue",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Stored XSS via oEmbed Photo Responses",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Stored XSS via Bookmark Card Images",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Password Hash Ordering Disclosure in Ghost Admin API",
-          "date": "2026-10-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Invite Token Disclosure in Ghost Admin API",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Path Traversal via Locale Setting",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Remote Code Execution via Theme Translation Files",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Editors Could Promote Staff Users to Their Own Role",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Ghost: Stored XSS via File Uploads on Local Storage",
-          "date": "2026-10-07",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "RabbitMQ: Malformed UTF-8 in shortstr properties permanently disables RPC consumers",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "Signal Desktop v8.31.0-beta.1",
-          "date": "2026-10-07",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "signal",
-          "title": "RabbitMQ: Malformed UTF-8 in shortstr properties permanently disables RPC consumers",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8900-1: Go Networking vulnerabilities",
-          "date": "2026-10-07",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8895-1: Sudo vulnerability",
-          "date": "2026-10-07",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8894-1: poppler vulnerabilities",
-          "date": "2026-10-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "LSN-0122-1: Kernel Live Patch Security Notice",
-          "date": "2026-10-07",
-          "severity": "CRITICAL"
-        }
-      ]
     }
   ]
 }
