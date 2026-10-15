@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-15T16:41:56.787Z",
+  "lastUpdated": "2026-10-15T21:10:08.100Z",
   "health": {
-    "lastFetchAttempt": "2026-10-15T16:41:56.787Z",
+    "lastFetchAttempt": "2026-10-15T21:10:08.100Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 4,
     "lastFetchNewPatches": 2,
-    "lastSuccessWithData": "2026-10-15T16:41:56.787Z",
+    "lastSuccessWithData": "2026-10-15T21:10:08.100Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -35,6 +35,36 @@
       "cves": [],
       "platform": [
         "Desktop"
+      ]
+    },
+    {
+      "title": "kin-openapi: Incomplete Fix for GHSA-p6wj-qrr4-pgh5: Three Unpatched nil-Items Panic Paths in openapi3filter",
+      "date": "2026-10-15",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nThe fix for GHSA-p6wj-qrr4-pgh5 addressed a nil-pointer dereference that occurs when an OpenAPI 3.1 array schema omits the `items` keyword (which is legal under JSON Schema 2020-12). That ",
+      "link": "https://github.com/advisories/GHSA-vrcc-3ch7-hppw",
+      "cves": [
+        "CVE-2026-100353"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Nezha Monitoring: Whole-instance DoS in Nezha dashboard: a member can crash the process for every tenant",
+      "date": "2026-10-15",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nA single low-privilege `RoleMember` can take the entire Nezha dashboard offline, and with it every tenant's web UI, REST API, and agent connections, by racing two ordinary operations on th",
+      "link": "https://github.com/advisories/GHSA-qjpp-gffx-2wm9",
+      "cves": [
+        "CVE-2026-100394"
+      ],
+      "platform": [
+        "All Platforms"
       ]
     },
     {
