@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-16T16:24:26.039Z",
+  "lastUpdated": "2026-10-16T20:47:14.044Z",
   "health": {
-    "lastFetchAttempt": "2026-10-16T16:24:26.039Z",
+    "lastFetchAttempt": "2026-10-16T20:47:14.044Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 5,
+    "lastFetchParsedItems": 6,
     "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-10-16T16:24:26.039Z",
+    "lastSuccessWithData": "2026-10-16T20:47:14.044Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -21,6 +21,21 @@
       "link": "https://github.com/advisories/GHSA-cv23-7vc5-jfh7",
       "cves": [
         "CVE-2026-102941"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "kin-openapi openapi3filter: nil-pointer panic in ValidateResponse on a response header declared with content",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\n`ValidateResponse` panics on a nil pointer when a spec declares a response header with `content` instead of `schema`. `doc.Validate()` accepts that document, so the crash comes from a spec",
+      "link": "https://github.com/advisories/GHSA-74vm-87hj-r66f",
+      "cves": [
+        "CVE-2026-100349"
       ],
       "platform": [
         "All Platforms"
