@@ -1,7 +1,479 @@
 {
-  "lastUpdated": "2026-10-16T08:50:34.173Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-16T11:06:42.934Z",
+  "newPatches": 52,
   "patches": [
+    {
+      "title": "DSA-6566-1 expat - security update",
+      "date": "2026-10-16",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "expat",
+      "description": "Several vulnerabilities have been discovered in Expat, an XML parsing C library, which could result in denial of service or potentially the execution of arbitrary code, if a malformed XML file is proc...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00480.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6565-1 spip - security update",
+      "date": "2026-10-16",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "spip",
+      "description": "A vulnerability was discovered in SPIP, a website engine for publishing, which could result in unauthenticated remote code execution. https://security-tracker.debian.org/tracker/DSA-6565-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00479.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "CVE-2026-102554: Denial of Service via Eager Array Allocation During Deserialization in Guava",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102554",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102554"
+    },
+    {
+      "title": "CVE-2026-103531: OpenSC card-setcos.c setcos_construct_fci_44 stack-based overflow",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-103531",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-103531"
+    },
+    {
+      "title": "CVE-2026-103658: GNU Aspell 0.60.8.2 (first vulnerable version is not known) contains a heap-based buffer overflow write (CWE-122) in its read-only dictionary loader. String::reserve() in common/string.hpp computes its capacity check with a signed int ((int)s + 1), so a requested size of 0x7FFFFFFF wraps negative and the backing buffer is never grown. ReadOnlyDict::load() in modules/speller/default/readonly_ws.cpp passes the unvalidated 32-bit size fields from a .rws dictionary header into this path, so a crafted .rws file with a valid endian marker (12345678) and an oversized length field (e.g. lang_name_size = 0x7FFFFFFF) causes attacker-controlled data to be written out of bounds past an undersized heap allocation. An attacker who induces a victim to load a malicious dictionary — for example via aspell dump master <file> — can corrupt heap memory, resulting in denial of service and potentially code execution. Fixed in b830b6e and will be fixed in release 0.60.8.3.",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-103658",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-103658"
+    },
+    {
+      "title": "CVE-2026-104252: Vitess vttablet /twopcz reflected XSS",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-104252",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-104252"
+    },
+    {
+      "title": "CVE-2026-105236: TLS 1.2 session resumption in ssl crosses SNI virtual-host client-certificate trust boundaries",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105236",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105236"
+    },
+    {
+      "title": "CVE-2026-105326: Cups: cups: argument injection in mailto notifier via notify-recipient-uri",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105326",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105326"
+    },
+    {
+      "title": "CVE-2026-105712: gpgtar in GnuPG before 2.5.19 can allow file overwrite via crafted data in an archive. When extracting an untrusted archive with --directory (aka -C) into an existing directory containing a pre-existing symlink, gpgtar can follow that symlink and create or overwrite a file outside the selected extraction directory. The write is limited by the extraction user's filesystem permissions. An archive extracted into a fresh empty directory does not have this risk.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105712",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105712"
+    },
+    {
+      "title": "CVE-2026-106454: Twisted: IMAP wildcardToRegexp() ReDoS",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106454",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106454"
+    },
+    {
+      "title": "CVE-2026-106547: HDF5 heap buffer overflow in H5VM_array_fill via crafted fill-value metadata",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106547",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106547"
+    },
+    {
+      "title": "CVE-2026-106552: In sftp in OpenSSH before 10.6, a server can trigger directory traversal (causing files to be written to unintended locations) during a recursive copy operation.",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106552",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106552"
+    },
+    {
+      "title": "CVE-2026-106553: In sshd in OpenSSH before 10.6, credentials can incorrectly persist after failure of a GSSAPIAuthentication authentication attempt.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106553",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106553"
+    },
+    {
+      "title": "CVE-2026-106555: In sshd in OpenSSH before 10.6, GSSAPIAuthentication authentication state can incorrectly be persisted across authentication attempts.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106555",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106555"
+    },
+    {
+      "title": "CVE-2026-106582: In sshd and ssh in OpenSSH before 10.6, an LZ77 dictionary coder can be used even though this is contraindicated by the arXiv 2609.07709 \"Crossing the Streams\" findings.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106582",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106582"
+    },
+    {
+      "title": "CVE-2026-106583: In ssh in OpenSSH before 10.6, a $ or \\ character can occur in a command-line username, leading to injection.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106583",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106583"
+    },
+    {
+      "title": "CVE-2026-106584: In ssh-keygen in OpenSSH before 10.6, certificates could have incorrect expiration times because of Daylight Saving mishandling. There can be a slightly more severe effect on users in certain Antarctic locations.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106584",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106584"
+    },
+    {
+      "title": "CVE-2026-106585: In sshd and ssh in OpenSSH before 10.6, there is no check for whether the maximum packet length is exceeded during decompression of highly compressed data.",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106585",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106585"
+    },
+    {
+      "title": "CVE-2026-106586: In sshd in OpenSSH before 10.6, the restrict keyword (in authorized_keys) was supposed to be applicable to tunnel forwarding but was not, a different vulnerability than CVE-2026-73283.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106586",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106586"
+    },
+    {
+      "title": "CVE-2026-106587: In sshd in OpenSSH before 10.6, the value \"none\" for a configuration option is sometimes interpreted as a filename but was intended to mean that a feature is disabled.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106587",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106587"
+    },
+    {
+      "title": "CVE-2026-107161: Cyrus-sasl: heap buffer overflow in cyrus-sasl add_to_challenge() allows malicious server to crash or compromise digest-md5 clients",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107161",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107161"
+    },
+    {
+      "title": "CVE-2026-107324: Application denial of service via integer overflow in BSON value-length validation in MongoDB Go Driver",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107324",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107324"
+    },
+    {
+      "title": "CVE-2026-107325: Application denial of service via missing BSON array length validation in MongoDB Go Driver",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107325",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107325"
+    },
+    {
+      "title": "CVE-2026-107348: Integer overflow causes an infinite loop in message buffer growth in PgBouncer",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107348",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107348"
+    },
+    {
+      "title": "CVE-2026-107349: Infinite loop on empty option name in startup options parameter in PgBouncer",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107349",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107349"
+    },
+    {
+      "title": "CVE-2026-107350: Authentication bypass via second StartupMessage during SCRAM authentication in PgBouncer",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107350",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107350"
+    },
+    {
+      "title": "CVE-2026-107655: Cups: null pointer dereference via embedded job ticket comments allows remote denial of service",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107655",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107655"
+    },
+    {
+      "title": "CVE-2026-107778: MIT krb5 through 1.22.2 NULL Pointer Dereference via krb5_rd_cred()",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107778",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107778"
+    },
+    {
+      "title": "CVE-2026-107885: OpenPrinting CUPS through 2.4.20 contains a resource-exhaustion vulnerability in the submission-timeout handling of cupsdCheckJobs(). The scheduler suppresses timeout processing for all pending jobs whenever any client connection has an in-flight Send-Document operation, without matching that connection to the job being examined. A client allowed to reach the IPP service can hold an incomplete HTTP request containing parsed Send-Document headers before operation authorization, preventing unrelated incomplete jobs from expiring. Where Create-Job submission is allowed, incomplete jobs can accumulate until MaxJobs is exhausted and further legitimate print submissions are rejected. The suppression ends when the held connection closes.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107885",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107885"
+    },
+    {
+      "title": "CVE-2026-107886: OpenPrinting CUPS before 2.4.20 contains a double-free in printer-class management. When CUPS-Add-Modify-Class replaces an existing class member list, add_class() frees pclass->printers without clearing the pointer. If subsequent validation fails, the class retains the dangling pointer; CUPS-Delete-Class subsequently frees the same allocation in cupsdDeletePrinter(). A client authorized to modify and delete classes can cause scheduler-wide denial of service. The default policy requires @SYSTEM privileges.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107886",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107886"
+    },
+    {
+      "title": "CVE-2026-107888: OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference in cupsdCheckJobs() when a job marked job-held-on-create refers to a temporary printer that has been automatically deleted. Temporary-printer cleanup can remove the destination without canceling its held jobs, and the scheduler dereferences the NULL result of cupsdFindDest() while checking holding_new_jobs. This terminates cupsd and interrupts all queues managed by that process. In some plausible scenarios, an unprivileged submission can trigger this.",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107888",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107888"
+    },
+    {
+      "title": "CVE-2026-107890: OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference caused by repeated IPP group tags in job-creation requests. IPP parsing creates unnamed separator attributes with IPP_TAG_ZERO, but add_job() converts these separators to IPP_TAG_JOB. During job startup, get_options()/ipp_length() subsequently calls strlen() on a NULL attribute name, terminating cupsd and disrupting all queues. A single crafted Print-Job request can trigger the crash when the client can reach the scheduler and submit jobs to an accepting, enabled queue supporting the submitted document format. Anonymous submission is possible when permitted by listener and access-control configuration.",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107890",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107890"
+    },
+    {
+      "title": "CVE-2026-108119: Busybox: busybox: tar extraction-root escape via deferred symlink/hardlink creation bypasses cve-2026-26158 fix",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-108119",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-108119"
+    },
+    {
+      "title": "CVE-2026-108976: GNU Emacs before 31.2 (and TRAMP through 2.8.2) allows OS command injection via a filename because tramp-user-regexp has an incomplete list of disallowed inputs. NOTE: this issue exists because of an incomplete fix for CVE-2026-79992.",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-108976",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-108976"
+    },
+    {
+      "title": "CVE-2026-108985: ZDR decoding in libnfs through 6.0.2 before 7613236 has an out-of-bounds write related to lib/libnfs-zdr.c with libnfs_zdr_bytes(), libnfs_zdr_string(), and libnfs_zdr_array(). The caller-supplied maxsize value is not honored.",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-108985",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-108985"
+    },
+    {
+      "title": "CVE-2026-109349: gix-pack before 0.75.0 Reachable Assertion DoS via Pack Version 3 Header",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-109349",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-109349"
+    },
+    {
+      "title": "CVE-2026-109828: libsndfile WAV Parsing wavlike.c wavlike_subchunk_parse uninitialized variable",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-109828",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-109828"
+    },
+    {
+      "title": "CVE-2026-19029: HDF5 scale-offset filter heap buffer over-read via crafted chunk",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-19029",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-19029"
+    },
+    {
+      "title": "CVE-2026-19585: Go-getter vulnerable to a path traversal in S3/GCS directory download handling",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-19585",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-19585"
+    },
+    {
+      "title": "CVE-2026-42356: Apache HTTP Server: limited RCE for some internal redirects to non-CGI files in CGI directories",
+      "date": "2026-10-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42356",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42356"
+    },
+    {
+      "title": "CVE-2026-42528: Apache HTTP Server: mod_dav shared lock overflow",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42528",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42528"
+    },
+    {
+      "title": "CVE-2026-42616: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in cat() in ntfscat.c that allows an attacker to corrupt heap memory in the ntfscat binary by crafting a malicious NTFS image. The overflow is triggered by reading a file.",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42616",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42616"
+    },
+    {
+      "title": "CVE-2026-42617: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ir_to_ib() in index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by extending a directory, e.g., by creating a file.",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42617",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42617"
+    },
+    {
+      "title": "CVE-2026-42618: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_decompress() in compress.c that allows an attacker to corrupt one byte of heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by reading the special crafted file.",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-42618",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42618"
+    },
+    {
+      "title": "CVE-2026-46569: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ib_copy_tail(), in libntfs-3g/index.c, that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by extending a directory, e.g., by creating a file.",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-46569",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46569"
+    },
+    {
+      "title": "CVE-2026-46570: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_index_walk_down() in libntfs-3g/index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by reading the special crafted file metadata.",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-46570",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46570"
+    },
+    {
+      "title": "CVE-2026-46571: In NTFS-3G before 2026.7.7, a out-of-bounds read exists in ntfs_fix_file_name() in libntfs-3g/reparse.c that allows an attacker to read possibly confidential information in ntfs-3g process memory by crafting a malicious NTFS image. The out-of-bounds read is triggered by a readlink on a corrupted file.",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-46571",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46571"
+    },
+    {
+      "title": "CVE-2026-46572: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ib_cut_tail() in libntfs-3g/index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by creating a file in a specially crafted directory.",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-46572",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46572"
+    },
+    {
+      "title": "CVE-2026-46729: Apache HTTP Server: mod_heartmonitor denial of service",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-46729",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46729"
+    },
+    {
+      "title": "CVE-2026-47360: Apache HTTP Server: mod_session: Session cookie not removed during internal redirect",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-47360",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47360"
+    },
+    {
+      "title": "CVE-2026-48005: Apache HTTP Server: mod_auth_digest reauthentication attack",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-48005",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-48005"
+    },
+    {
+      "title": "CVE-2026-49264: OAuthLib: Unsafe JSONP callback injection in RevocationEndpoint allows arbitrary JavaScript response generation",
+      "date": "2026-10-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-49264",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-49264"
+    },
     {
       "title": "Issue in the Linux kernel virtio-net/TAP networking path affecting KVM-based hypervisors",
       "date": "2026-10-15",
@@ -10023,6 +10495,365 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-16T11:06:42.934Z",
+      "logs": [
+        "[INFO] aws - 51 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 17 patches (2 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 11 patches, no changes",
+        "[INFO] github - 94 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[SUCCESS] microsoft - 500 patches (50 new)",
+        "[INFO] mssql - 24 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] paloalto - 16 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 302 patches, no changes",
+        "[INFO] signal - 6 patches, no changes",
+        "[INFO] ubuntu - 25 patches, no changes"
+      ],
+      "newPatchCount": 52,
+      "totalPatches": 1066,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "aws",
+        "chrome",
+        "cisco",
+        "edge",
+        "github",
+        "paloalto",
+        "postgresql",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "mssql",
+        "nodejs",
+        "crowdstrike",
+        "fortinet",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6566-1 expat - security update",
+          "date": "2026-10-16",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6565-1 spip - security update",
+          "date": "2026-10-16",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102554: Denial of Service via Eager Array Allocation During Deserialization in Guava",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-103531: OpenSC card-setcos.c setcos_construct_fci_44 stack-based overflow",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-103658: GNU Aspell 0.60.8.2 (first vulnerable version is not known) contains a heap-based buffer overflow write (CWE-122) in its read-only dictionary loader. String::reserve() in common/string.hpp computes its capacity check with a signed int ((int)s + 1), so a requested size of 0x7FFFFFFF wraps negative and the backing buffer is never grown. ReadOnlyDict::load() in modules/speller/default/readonly_ws.cpp passes the unvalidated 32-bit size fields from a .rws dictionary header into this path, so a crafted .rws file with a valid endian marker (12345678) and an oversized length field (e.g. lang_name_size = 0x7FFFFFFF) causes attacker-controlled data to be written out of bounds past an undersized heap allocation. An attacker who induces a victim to load a malicious dictionary — for example via aspell dump master <file> — can corrupt heap memory, resulting in denial of service and potentially code execution. Fixed in b830b6e and will be fixed in release 0.60.8.3.",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-104252: Vitess vttablet /twopcz reflected XSS",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105236: TLS 1.2 session resumption in ssl crosses SNI virtual-host client-certificate trust boundaries",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105326: Cups: cups: argument injection in mailto notifier via notify-recipient-uri",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105712: gpgtar in GnuPG before 2.5.19 can allow file overwrite via crafted data in an archive. When extracting an untrusted archive with --directory (aka -C) into an existing directory containing a pre-existing symlink, gpgtar can follow that symlink and create or overwrite a file outside the selected extraction directory. The write is limited by the extraction user's filesystem permissions. An archive extracted into a fresh empty directory does not have this risk.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106454: Twisted: IMAP wildcardToRegexp() ReDoS",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106547: HDF5 heap buffer overflow in H5VM_array_fill via crafted fill-value metadata",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106552: In sftp in OpenSSH before 10.6, a server can trigger directory traversal (causing files to be written to unintended locations) during a recursive copy operation.",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106553: In sshd in OpenSSH before 10.6, credentials can incorrectly persist after failure of a GSSAPIAuthentication authentication attempt.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106555: In sshd in OpenSSH before 10.6, GSSAPIAuthentication authentication state can incorrectly be persisted across authentication attempts.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106582: In sshd and ssh in OpenSSH before 10.6, an LZ77 dictionary coder can be used even though this is contraindicated by the arXiv 2609.07709 \"Crossing the Streams\" findings.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106583: In ssh in OpenSSH before 10.6, a $ or \\ character can occur in a command-line username, leading to injection.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106584: In ssh-keygen in OpenSSH before 10.6, certificates could have incorrect expiration times because of Daylight Saving mishandling. There can be a slightly more severe effect on users in certain Antarctic locations.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106585: In sshd and ssh in OpenSSH before 10.6, there is no check for whether the maximum packet length is exceeded during decompression of highly compressed data.",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106586: In sshd in OpenSSH before 10.6, the restrict keyword (in authorized_keys) was supposed to be applicable to tunnel forwarding but was not, a different vulnerability than CVE-2026-73283.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106587: In sshd in OpenSSH before 10.6, the value \"none\" for a configuration option is sometimes interpreted as a filename but was intended to mean that a feature is disabled.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107161: Cyrus-sasl: heap buffer overflow in cyrus-sasl add_to_challenge() allows malicious server to crash or compromise digest-md5 clients",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107324: Application denial of service via integer overflow in BSON value-length validation in MongoDB Go Driver",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107325: Application denial of service via missing BSON array length validation in MongoDB Go Driver",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107348: Integer overflow causes an infinite loop in message buffer growth in PgBouncer",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107349: Infinite loop on empty option name in startup options parameter in PgBouncer",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107350: Authentication bypass via second StartupMessage during SCRAM authentication in PgBouncer",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107655: Cups: null pointer dereference via embedded job ticket comments allows remote denial of service",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107778: MIT krb5 through 1.22.2 NULL Pointer Dereference via krb5_rd_cred()",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107885: OpenPrinting CUPS through 2.4.20 contains a resource-exhaustion vulnerability in the submission-timeout handling of cupsdCheckJobs(). The scheduler suppresses timeout processing for all pending jobs whenever any client connection has an in-flight Send-Document operation, without matching that connection to the job being examined. A client allowed to reach the IPP service can hold an incomplete HTTP request containing parsed Send-Document headers before operation authorization, preventing unrelated incomplete jobs from expiring. Where Create-Job submission is allowed, incomplete jobs can accumulate until MaxJobs is exhausted and further legitimate print submissions are rejected. The suppression ends when the held connection closes.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107886: OpenPrinting CUPS before 2.4.20 contains a double-free in printer-class management. When CUPS-Add-Modify-Class replaces an existing class member list, add_class() frees pclass->printers without clearing the pointer. If subsequent validation fails, the class retains the dangling pointer; CUPS-Delete-Class subsequently frees the same allocation in cupsdDeletePrinter(). A client authorized to modify and delete classes can cause scheduler-wide denial of service. The default policy requires @SYSTEM privileges.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107888: OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference in cupsdCheckJobs() when a job marked job-held-on-create refers to a temporary printer that has been automatically deleted. Temporary-printer cleanup can remove the destination without canceling its held jobs, and the scheduler dereferences the NULL result of cupsdFindDest() while checking holding_new_jobs. This terminates cupsd and interrupts all queues managed by that process. In some plausible scenarios, an unprivileged submission can trigger this.",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107890: OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference caused by repeated IPP group tags in job-creation requests. IPP parsing creates unnamed separator attributes with IPP_TAG_ZERO, but add_job() converts these separators to IPP_TAG_JOB. During job startup, get_options()/ipp_length() subsequently calls strlen() on a NULL attribute name, terminating cupsd and disrupting all queues. A single crafted Print-Job request can trigger the crash when the client can reach the scheduler and submit jobs to an accepting, enabled queue supporting the submitted document format. Anonymous submission is possible when permitted by listener and access-control configuration.",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-108119: Busybox: busybox: tar extraction-root escape via deferred symlink/hardlink creation bypasses cve-2026-26158 fix",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-108976: GNU Emacs before 31.2 (and TRAMP through 2.8.2) allows OS command injection via a filename because tramp-user-regexp has an incomplete list of disallowed inputs. NOTE: this issue exists because of an incomplete fix for CVE-2026-79992.",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-108985: ZDR decoding in libnfs through 6.0.2 before 7613236 has an out-of-bounds write related to lib/libnfs-zdr.c with libnfs_zdr_bytes(), libnfs_zdr_string(), and libnfs_zdr_array(). The caller-supplied maxsize value is not honored.",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-109349: gix-pack before 0.75.0 Reachable Assertion DoS via Pack Version 3 Header",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-109828: libsndfile WAV Parsing wavlike.c wavlike_subchunk_parse uninitialized variable",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-19029: HDF5 scale-offset filter heap buffer over-read via crafted chunk",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-19585: Go-getter vulnerable to a path traversal in S3/GCS directory download handling",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42356: Apache HTTP Server: limited RCE for some internal redirects to non-CGI files in CGI directories",
+          "date": "2026-10-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42528: Apache HTTP Server: mod_dav shared lock overflow",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42616: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in cat() in ntfscat.c that allows an attacker to corrupt heap memory in the ntfscat binary by crafting a malicious NTFS image. The overflow is triggered by reading a file.",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42617: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ir_to_ib() in index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by extending a directory, e.g., by creating a file.",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-42618: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_decompress() in compress.c that allows an attacker to corrupt one byte of heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by reading the special crafted file.",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-46569: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ib_copy_tail(), in libntfs-3g/index.c, that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by extending a directory, e.g., by creating a file.",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-46570: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_index_walk_down() in libntfs-3g/index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by reading the special crafted file metadata.",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-46571: In NTFS-3G before 2026.7.7, a out-of-bounds read exists in ntfs_fix_file_name() in libntfs-3g/reparse.c that allows an attacker to read possibly confidential information in ntfs-3g process memory by crafting a malicious NTFS image. The out-of-bounds read is triggered by a readlink on a corrupted file.",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-46572: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ib_cut_tail() in libntfs-3g/index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by creating a file in a specially crafted directory.",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-46729: Apache HTTP Server: mod_heartmonitor denial of service",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-47360: Apache HTTP Server: mod_session: Session cookie not removed during internal redirect",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-48005: Apache HTTP Server: mod_auth_digest reauthentication attack",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-49264: OAuthLib: Unsafe JSONP callback injection in RevocationEndpoint allows arbitrary JavaScript response generation",
+          "date": "2026-10-16",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-16T08:50:34.173Z",
       "logs": [
@@ -20408,417 +21239,6 @@
         "postgresql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-10-09T12:57:14.790Z",
-      "logs": [
-        "[INFO] aws - 9 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 17 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] github - 187 patches, no changes",
-        "[INFO] microsoft - 179 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[SUCCESS] redhat - 487 patches (56 new)",
-        "[INFO] signal - 7 patches, no changes",
-        "[SUCCESS] ubuntu - 47 patches (6 new)"
-      ],
-      "newPatchCount": 62,
-      "totalPatches": 953,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "cisco",
-        "edge",
-        "github",
-        "signal",
-        "cloudflare",
-        "debian",
-        "chrome",
-        "crowdstrike",
-        "postgresql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-104635: protobuf: protobuf: Denial of Service via deeply nested JSON input",
-          "date": "2026-10-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-107655: cups: NULL pointer dereference via embedded job ticket comments allows remote denial of service",
-          "date": "2026-10-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-78669: net/http: net/http/internal/http2: golang: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETT",
-          "date": "2026-10-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-78663: net/http: net/http/internal/http2: golang: golang.org/x/net/http2: golang: flow control limit bypass via double refund i",
-          "date": "2026-10-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-56866: net/http: golang: golang: Cross-user response poisoning via desynchronized HTTP CONNECT connections",
-          "date": "2026-10-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-56857: os: golang: golang: Directory traversal via Windows junction handling",
-          "date": "2026-10-08",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94447: cmd/go: golang: cmd/go: Toolchain checksum verification bypass via crafted project configuration",
-          "date": "2026-10-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94444: cmd/go: golang: cmd/go: arbitrary code execution via untrusted module proxy",
-          "date": "2026-10-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94448: html/template: golang: golang: cross-site scripting via consecutive expressions in JavaScript template literals",
-          "date": "2026-10-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-107726: com.hazelcast/hazelcast: Hazelcast: Arbitrary member memory access by low-privileged client",
-          "date": "2026-10-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-107725: com.hazelcast/hazelcast: Hazelcast: arbitrary code execution via missing authorization checks in IMap Predicates API",
-          "date": "2026-10-08",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-106436: php-pecl-mongodb: php-pecl-mongodb: Denial of Service via oversized BSON encoding",
-          "date": "2026-10-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-106432: php-pecl-mongodb: php-pecl-mongodb: Denial of Service via heap buffer overflow in BSON encoder",
-          "date": "2026-10-08",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-61801: github.com/moby/sys/user: moby/sys/user: Denial of Service via crafted user or group database files",
-          "date": "2026-10-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-107889: keycloak-services: keycloak-services: Stored XSS on login page via kcSanitize bypass",
-          "date": "2026-10-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-19585: github.com/hashicorp/go-getter: go-getter: arbitrary file write via path traversal in S3 and GCS directory downloads",
-          "date": "2026-10-08",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98373: kernel: mm/hugetlb: preserve mremap address delta when skipping page tables",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98374: kernel: tcp: fix use-after-free of retransmit_skb_hint in tcp_send_synack()",
-          "date": "2026-10-07",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-106506: plugin-scaffolder-backend: plugin-scaffolder-backend: Information disclosure via improper task list ordering",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-106491: plugin-proxy-backend: plugin-proxy-backend: Request forwarding outside configured base path via crafted URL",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-106488: plugin-auth-backend-module-oidc-provider: plugin-auth-backend-module-oidc-provider: Privilege escalation via unverified ",
-          "date": "2026-10-06",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-106203: chromium-browser: Incomplete cleanup in Autofill",
-          "date": "2026-10-06",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-106193: chromium-browser: Use after free in Parser",
-          "date": "2026-10-06",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-106332: chromium-browser: Integer overflow in Compositing",
-          "date": "2026-10-06",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-106323: chromium-browser: Missing authorization in Chrome for iOS",
-          "date": "2026-10-06",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98215: kernel: selinux: preserve user SID across nested backing files",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98203: kernel: Input: soc_button_array - check btns_desc->package.count",
-          "date": "2026-10-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98211: kernel: mmc: mmci: Fix use-after-free in busy-timeout work",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98206: kernel: Input: cyttsp5 - clamp the HID report size before memcpy",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98216: kernel: IB/hfi1: Fix the PIO_CRED credit-return mmap",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98205: kernel: Input: evdev - zero absinfo before partial copy in EVIOCSABS",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98204: kernel: Input: rmi_smbus - fix out-of-bounds read in rmi_smb_write_block()",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98207: kernel: mmc: spi: reset bytes_xfered before retrying CRC failures",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98209: kernel: mmc: sdhci-of-aspeed: Remove children before releasing SDC resources",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98213: kernel: mmc: core: Cancel SDIO IRQ work before freeing host",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98212: kernel: mmc: hsq: Fix use-after-free in retry work",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98208: kernel: mmc: sdio_uart: fix xmit_fifo leak when the port table is full",
-          "date": "2026-10-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98210: kernel: mmc: mxcmmc: cancel data work and watchdog on remove",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98202: kernel: Input: synaptics-rmi4 - fix GPF in suspend and resume when unbound",
-          "date": "2026-10-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98326: kernel: wifi: mac80211: mesh: release the channel if start fails",
-          "date": "2026-10-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98227: kernel: memstick: ms_block: destroy io_queue workqueue on removal",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98219: kernel: sched_ext: Close the pre-enable ops error claim window",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98234: kernel: net/sched: hhf: cap hh_flows_limit at change time",
-          "date": "2026-10-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98289: kernel: af_unix: Unify scc_index when finalising SCC in __unix_walk_scc()",
-          "date": "2026-10-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98239: kernel: net: lan743x: fix RX checksum use-after-free",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98224: kernel: mm/vma: correctly unaccount on mmap_prepare() failure",
-          "date": "2026-10-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98303: kernel: ipv4: icmp: reject RTN_UNREACHABLE input routes in icmp_route_lookup",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98262: kernel: ata: libahci: clear PxCLBU and PxFBU for AHCI_HFLAG_32BIT_ONLY",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98272: kernel: net: mvpp2: prevent buffer overflow in page_pool allocation",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98287: kernel: pppoatm: ensure a writable skb header and linear data",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98214: kernel: selinux: recheck intermediate backing files on mprotect()",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98220: kernel: sched_ext: Fix NULL sched deref in kfunc sub-sched error paths",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98278: kernel: net: remove WARN_ON_ONCE() from the dev_fill_forward_path() loop check",
-          "date": "2026-10-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98253: kernel: RDMA/ucma: Serialize join and leave on copy_to_user failure",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98201: kernel: Input: zero ff_effect before compat copy in input_ff_effect_from_user",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98238: kernel: net: wwan: t7xx: validate the netif index in t7xx_ccmni_recv_skb()",
-          "date": "2026-10-06",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8911-1: Linux kernel (OEM) vulnerabilities",
-          "date": "2026-10-09",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8887-3: Linux kernel vulnerabilities",
-          "date": "2026-10-09",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8875-2: Linux kernel (NVIDIA) vulnerabilities",
-          "date": "2026-10-09",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8903-2: Linux kernel vulnerabilities",
-          "date": "2026-10-09",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8905-2: Linux kernel (GCP) vulnerabilities",
-          "date": "2026-10-09",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-8908-1: BlueZ vulnerabilities",
-          "date": "2026-10-08",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
