@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-16T11:05:33.179Z",
+  "lastUpdated": "2026-10-16T16:24:26.039Z",
   "health": {
-    "lastFetchAttempt": "2026-10-16T11:05:33.179Z",
+    "lastFetchAttempt": "2026-10-16T16:24:26.039Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 4,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-16T11:05:33.179Z",
+    "lastFetchParsedItems": 5,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-10-16T16:24:26.039Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "gomarkdown/markdown IsSafeURL panics on short URLs",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\nIsSafeURL slices url[:nPath] before checking that len(url) >= nPath, so a URL shorter than a path prefix (0, 1 or 2 bytes) triggers a slice-bounds panic, and this is reached end to end whe",
+      "link": "https://github.com/advisories/GHSA-cv23-7vc5-jfh7",
+      "cves": [
+        "CVE-2026-102941"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.32.0-beta.1",
       "date": "2026-10-15",
