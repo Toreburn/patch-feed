@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-10-18T20:18:09.933Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-18T20:24:55.780Z",
+  "newPatches": 3,
   "patches": [
+    {
+      "title": "DSA-6571-1 xen - security update",
+      "date": "2026-10-18",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "xen",
+      "description": "Multiple vulnerabilities have been discovered in the Xen hypervisor, which could result in privilege escalation, information disclosure or denial of service. https://security-tracker.debian.org/tracke...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00486.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6570-1 haproxy - security update",
+      "date": "2026-10-18",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "haproxy",
+      "description": "Two vulnerabilities were discovered in HAProxy, a fast and reliable load balancing reverse proxy, which could result in denial of service. https://security-tracker.debian.org/tracker/DSA-6570-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00485.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6567-2 cifs-utils - regression update",
+      "date": "2026-10-18",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "cifs-utils",
+      "description": "The update for cifs-utils announced in DSA 6567-1 introduced a regression when using the sec=krb5 and cruid mount options. Updated packages are now available to correct this issue. https://security-tr...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00484.html",
+      "cve": "",
+      "cves": []
+    },
     {
       "title": "CVE-2026-100236: Dpdk: dpdk: heap out-of-bounds read/write in gso header copy",
       "date": "2026-10-18",
@@ -13141,6 +13174,71 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-10-18T20:24:55.780Z",
+      "logs": [
+        "[INFO] aws - 76 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[SUCCESS] debian - 20 patches (3 new)",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] fortinet - 11 patches, no changes",
+        "[INFO] github - 107 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 600 patches, no changes",
+        "[INFO] mssql - 25 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] paloalto - 17 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[INFO] redhat - 420 patches, no changes",
+        "[INFO] signal - 8 patches, no changes",
+        "[INFO] ubuntu - 25 patches, no changes"
+      ],
+      "newPatchCount": 3,
+      "totalPatches": 1332,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "postgresql",
+        "redhat",
+        "paloalto",
+        "aws",
+        "edge",
+        "github",
+        "mssql",
+        "signal",
+        "chrome",
+        "cisco",
+        "ubuntu",
+        "nodejs",
+        "crowdstrike",
+        "fortinet",
+        "gitlab"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6571-1 xen - security update",
+          "date": "2026-10-18",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6570-1 haproxy - security update",
+          "date": "2026-10-18",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6567-2 cifs-utils - regression update",
+          "date": "2026-10-18",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-10-18T20:18:09.933Z",
       "logs": [
         "[INFO] aws - 76 patches, no changes",
@@ -22438,44 +22536,6 @@
           "severity": "UNKNOWN"
         }
       ]
-    },
-    {
-      "timestamp": "2026-10-13T06:04:46.227Z",
-      "logs": [
-        "[INFO] aws - 37 patches, no changes",
-        "[INFO] chrome - 1 patches, no changes",
-        "[INFO] cisco - 17 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 150 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 250 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 255 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 24 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 756,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "debian",
-        "edge",
-        "gitlab",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "github",
-        "postgresql",
-        "signal",
-        "cisco",
-        "cloudflare"
-      ],
-      "newPatches": []
     }
   ]
 }
