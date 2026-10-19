@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-18T23:59:03.676Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-19T04:07:00.530Z",
+  "newPatches": 6,
   "patches": [
     {
       "title": "DSA-6571-1 xen - security update",
@@ -515,6 +515,72 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-111997.json",
       "cve": "CVE-2026-111997",
       "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-112057: libdvdnav: libdvdnav: Denial of Service via crafted disc image",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libdvdnav: libdvdnav: Denial of Service via crafted disc image",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112057.json",
+      "cve": "CVE-2026-112057",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-112058: libdvdnav: libdvdnav: Denial of Service via out-of-bounds read in set_PTT",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libdvdnav: libdvdnav: Denial of Service via out-of-bounds read in set_PTT",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112058.json",
+      "cve": "CVE-2026-112058",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-112052: libspatialite: libspatialite: Denial of Service via integer overflow during geometry parsing",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libspatialite: libspatialite: Denial of Service via integer overflow during geometry parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112052.json",
+      "cve": "CVE-2026-112052",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-112048: libspatialite: libspatialite: Denial of Service via uncontrolled memory allocation during polygon parsing",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libspatialite: libspatialite: Denial of Service via uncontrolled memory allocation during polygon parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112048.json",
+      "cve": "CVE-2026-112048",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-112008: libmng: libmng: Denial of Service via heap-based buffer overflow in mng_read_ordr()",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libmng: libmng: Denial of Service via heap-based buffer overflow in mng_read_ordr()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112008.json",
+      "cve": "CVE-2026-112008",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-112006: opentelemetry-exporter-otlp-proto-http: opentelemetry-exporter-otlp-proto-http: Information disclosure via improper TLS ",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "opentelemetry-exporter-otlp-proto-http: opentelemetry-exporter-otlp-proto-http: Information disclosure via improper TLS certificate validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112006.json",
+      "cve": "CVE-2026-112006",
+      "cvss": 6.5
     },
     {
       "title": "CVE-2026-100236: Dpdk: dpdk: heap out-of-bounds read/write in gso header copy",
@@ -11809,1370 +11875,90 @@
       "component": "BlueZ regression",
       "description": "USN-8908-1 fixed vulnerabilities in BlueZ. Unfortunately, that update introduced a\nregression in the A2DP profile: cached remote stream endpoints were no\nlonger loaded at startup, which could cause Bl...",
       "link": "https://ubuntu.com/security/notices/USN-8908-2"
-    },
-    {
-      "title": "DSA-6553-1 chromium - security update",
-      "date": "2026-10-12",
-      "severity": "UNKNOWN",
-      "vendor": "debian",
-      "component": "chromium",
-      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6553-1",
-      "link": "https://lists.debian.org/debian-security-announce/2026/msg00467.html",
-      "cve": "",
-      "cves": []
-    },
-    {
-      "title": "DSA-6557-1 ntfs-3g - security update",
-      "date": "2026-10-12",
-      "severity": "UNKNOWN",
-      "vendor": "debian",
-      "component": "ntfs-3g",
-      "description": "Several vulnerabilities were discovered in NTFS-3G, a read-write NTFS driver for FUSE, which could result in denial of service, information leak or potentially local root privilege escalation. https:/...",
-      "link": "https://lists.debian.org/debian-security-announce/2026/msg00471.html",
-      "cve": "",
-      "cves": []
-    },
-    {
-      "title": "DSA-6556-1 nagios4 - security update",
-      "date": "2026-10-12",
-      "severity": "UNKNOWN",
-      "vendor": "debian",
-      "component": "nagios4",
-      "description": "Multiple security vulnerabilities were discovered in the Nagios monitoring system, which could result in cross-site request forgery, cross-site scripting or the execution of arbitrary commands. https:...",
-      "link": "https://lists.debian.org/debian-security-announce/2026/msg00470.html",
-      "cve": "",
-      "cves": []
-    },
-    {
-      "title": "DSA-6555-1 librsvg - security update",
-      "date": "2026-10-12",
-      "severity": "UNKNOWN",
-      "vendor": "debian",
-      "component": "librsvg",
-      "description": "It was discovered that librsvg, a library to render Scalable Vector Graphics, incorrectly parsed files with nested XML includes, which could result in denial of service or potentially the execution of...",
-      "link": "https://lists.debian.org/debian-security-announce/2026/msg00469.html",
-      "cve": "",
-      "cves": []
-    },
-    {
-      "title": "DSA-6554-1 keystone - security update",
-      "date": "2026-10-12",
-      "severity": "UNKNOWN",
-      "vendor": "debian",
-      "component": "keystone",
-      "description": "A vulnerability was discovered in the handling of delegated authentication in Keystone, the OpenStack identity service, which may result in information disclosure of privilege escalation. https://secu...",
-      "link": "https://lists.debian.org/debian-security-announce/2026/msg00468.html",
-      "cve": "",
-      "cves": []
-    },
-    {
-      "title": "Microsoft Edge Security Update - October 12, 2026",
-      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
-      "date": "2026-10-12",
-      "description": "Security fixes for 0 vulnerabilities: ",
-      "severity": "HIGH",
-      "vendor": "edge",
-      "component": "Microsoft Edge",
-      "cves": []
-    },
-    {
-      "title": "GitLab Critical Patch Release: 19.4.2, 19.3.4, 19.2.8",
-      "date": "2026-10-12",
-      "severity": "CRITICAL",
-      "vendor": "gitlab",
-      "component": "GitLab CE/EE",
-      "description": "Security fixes for CVE-2026-97229, CVE-2026-97229, CVE-2026-92883...",
-      "link": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/"
-    },
-    {
-      "title": "GitLab Critical Patch Release: 19.4.2, 19.3.5, 19.2.8",
-      "date": "2026-10-12",
-      "severity": "CRITICAL",
-      "vendor": "gitlab",
-      "component": "GitLab CE/EE",
-      "description": "Security fixes for CVE-2026-97229, CVE-2026-97229, CVE-2026-92883...",
-      "link": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/"
-    },
-    {
-      "title": "CVE-2026-102404: Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-102404",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102404"
-    },
-    {
-      "title": "CVE-2026-102407: Incorrect Authorization in Elasticsearch Leading to Unauthorized Data Stream Modification",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-102407",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102407"
-    },
-    {
-      "title": "CVE-2026-102411: Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-102411",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102411"
-    },
-    {
-      "title": "CVE-2026-103006: Uncontrolled Recursion in Elasticsearch Leading to Denial of Service",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-103006",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-103006"
-    },
-    {
-      "title": "CVE-2026-103531: OpenSC card-setcos.c setcos_construct_fci_44 stack-based overflow",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-103531",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-103531"
-    },
-    {
-      "title": "CVE-2026-105326: Cups: cups: argument injection in mailto notifier via notify-recipient-uri",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-105326",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105326"
-    },
-    {
-      "title": "CVE-2026-105712: gpgtar in GnuPG before 2.5.19 can allow file overwrite via crafted data in an archive. When extracting an untrusted archive with --directory (aka -C) into an existing directory containing a pre-existing symlink, gpgtar can follow that symlink and create or overwrite a file outside the selected extraction directory. The write is limited by the extraction user's filesystem permissions. An archive extracted into a fresh empty directory does not have this risk.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-105712",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105712"
-    },
-    {
-      "title": "CVE-2026-105773: Canimaan Software ClamXAV local privilege escalation",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-105773",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105773"
-    },
-    {
-      "title": "CVE-2026-106454: Twisted: IMAP wildcardToRegexp() ReDoS",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106454",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106454"
-    },
-    {
-      "title": "CVE-2026-106547: HDF5 heap buffer overflow in H5VM_array_fill via crafted fill-value metadata",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106547",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106547"
-    },
-    {
-      "title": "CVE-2026-106552: In sftp in OpenSSH before 10.6, a server can trigger directory traversal (causing files to be written to unintended locations) during a recursive copy operation.",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106552",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106552"
-    },
-    {
-      "title": "CVE-2026-106553: In sshd in OpenSSH before 10.6, credentials can incorrectly persist after failure of a GSSAPIAuthentication authentication attempt.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106553",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106553"
-    },
-    {
-      "title": "CVE-2026-106555: In sshd in OpenSSH before 10.6, GSSAPIAuthentication authentication state can incorrectly be persisted across authentication attempts.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106555",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106555"
-    },
-    {
-      "title": "CVE-2026-106582: In sshd and ssh in OpenSSH before 10.6, an LZ77 dictionary coder can be used even though this is contraindicated by the arXiv 2609.07709 \"Crossing the Streams\" findings.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106582",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106582"
-    },
-    {
-      "title": "CVE-2026-106583: In ssh in OpenSSH before 10.6, a $ or \\ character can occur in a command-line username, leading to injection.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106583",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106583"
-    },
-    {
-      "title": "CVE-2026-106584: In ssh-keygen in OpenSSH before 10.6, certificates could have incorrect expiration times because of Daylight Saving mishandling. There can be a slightly more severe effect on users in certain Antarctic locations.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106584",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106584"
-    },
-    {
-      "title": "CVE-2026-106585: In sshd and ssh in OpenSSH before 10.6, there is no check for whether the maximum packet length is exceeded during decompression of highly compressed data.",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106585",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106585"
-    },
-    {
-      "title": "CVE-2026-106586: In sshd in OpenSSH before 10.6, the restrict keyword (in authorized_keys) was supposed to be applicable to tunnel forwarding but was not, a different vulnerability than CVE-2026-73283.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106586",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106586"
-    },
-    {
-      "title": "CVE-2026-106587: In sshd in OpenSSH before 10.6, the value \"none\" for a configuration option is sometimes interpreted as a filename but was intended to mean that a feature is disabled.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106587",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106587"
-    },
-    {
-      "title": "CVE-2026-106589: In sshd in OpenSSH through 10.6, in certain environments such as QNX 6 and SCO OpenServer 5, sshd-session can unexpectedly have root privileges. This is related to the GatewayPorts and StreamLocalForwarding configuration options, and lack of support for file-descriptor passing and unprivileged allocation of PTY devices.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-106589",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106589"
-    },
-    {
-      "title": "CVE-2026-107296: msgpack5: Decoding negative int64 values mutates the input buffer",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107296",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107296"
-    },
-    {
-      "title": "CVE-2026-107297: msgpack5: Quadratic parsing in the streaming decoder",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107297",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107297"
-    },
-    {
-      "title": "CVE-2026-107298: msgpack5: Deeply nested input can exhaust the decoder stack",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107298",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107298"
-    },
-    {
-      "title": "CVE-2026-107299: msgpack5: Reserved byte can cause unbounded stream buffering",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107299",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107299"
-    },
-    {
-      "title": "CVE-2026-107300: msgpack5: Many buffered values can exhaust the streaming decoder stack",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107300",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107300"
-    },
-    {
-      "title": "CVE-2026-107301: msgpack5: Partial options disable prototype protection",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107301",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107301"
-    },
-    {
-      "title": "CVE-2026-107302: msgpack5: Truncated map32 headers throw an unexpected error",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107302",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107302"
-    },
-    {
-      "title": "CVE-2026-107324: Application denial of service via integer overflow in BSON value-length validation in MongoDB Go Driver",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107324",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107324"
-    },
-    {
-      "title": "CVE-2026-107325: Application denial of service via missing BSON array length validation in MongoDB Go Driver",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107325",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107325"
-    },
-    {
-      "title": "CVE-2026-107708: MIT krb5 through 1.22.2 KDC NULL Pointer Dereference via S4U2Proxy PAC",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107708",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107708"
-    },
-    {
-      "title": "CVE-2026-107718: AdonisJS: Unencoded route parameters can produce open redirects",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107718",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107718"
-    },
-    {
-      "title": "CVE-2026-107778: MIT krb5 through 1.22.2 NULL Pointer Dereference via krb5_rd_cred()",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107778",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107778"
-    },
-    {
-      "title": "CVE-2026-107885: OpenPrinting CUPS through 2.4.20 contains a resource-exhaustion vulnerability in the submission-timeout handling of cupsdCheckJobs(). The scheduler suppresses timeout processing for all pending jobs whenever any client connection has an in-flight Send-Document operation, without matching that connection to the job being examined. A client allowed to reach the IPP service can hold an incomplete HTTP request containing parsed Send-Document headers before operation authorization, preventing unrelated incomplete jobs from expiring. Where Create-Job submission is allowed, incomplete jobs can accumulate until MaxJobs is exhausted and further legitimate print submissions are rejected. The suppression ends when the held connection closes.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107885",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107885"
-    },
-    {
-      "title": "CVE-2026-107886: OpenPrinting CUPS before 2.4.20 contains a double-free in printer-class management. When CUPS-Add-Modify-Class replaces an existing class member list, add_class() frees pclass->printers without clearing the pointer. If subsequent validation fails, the class retains the dangling pointer; CUPS-Delete-Class subsequently frees the same allocation in cupsdDeletePrinter(). A client authorized to modify and delete classes can cause scheduler-wide denial of service. The default policy requires @SYSTEM privileges.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107886",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107886"
-    },
-    {
-      "title": "CVE-2026-107888: OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference in cupsdCheckJobs() when a job marked job-held-on-create refers to a temporary printer that has been automatically deleted. Temporary-printer cleanup can remove the destination without canceling its held jobs, and the scheduler dereferences the NULL result of cupsdFindDest() while checking holding_new_jobs. This terminates cupsd and interrupts all queues managed by that process. In some plausible scenarios, an unprivileged submission can trigger this.",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107888",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107888"
-    },
-    {
-      "title": "CVE-2026-107890: OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference caused by repeated IPP group tags in job-creation requests. IPP parsing creates unnamed separator attributes with IPP_TAG_ZERO, but add_job() converts these separators to IPP_TAG_JOB. During job startup, get_options()/ipp_length() subsequently calls strlen() on a NULL attribute name, terminating cupsd and disrupting all queues. A single crafted Print-Job request can trigger the crash when the client can reach the scheduler and submit jobs to an accepting, enabled queue supporting the submitted document format. Anonymous submission is possible when permitted by listener and access-control configuration.",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-107890",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107890"
-    },
-    {
-      "title": "CVE-2026-19029: HDF5 scale-offset filter heap buffer over-read via crafted chunk",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-19029",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-19029"
-    },
-    {
-      "title": "CVE-2026-42356: Apache HTTP Server: limited RCE for some internal redirects to non-CGI files in CGI directories",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-42356",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42356"
-    },
-    {
-      "title": "CVE-2026-42528: Apache HTTP Server: mod_dav shared lock overflow",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-42528",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42528"
-    },
-    {
-      "title": "CVE-2026-42616: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in cat() in ntfscat.c that allows an attacker to corrupt heap memory in the ntfscat binary by crafting a malicious NTFS image. The overflow is triggered by reading a file.",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-42616",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42616"
-    },
-    {
-      "title": "CVE-2026-42617: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ir_to_ib() in index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by extending a directory, e.g., by creating a file.",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-42617",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42617"
-    },
-    {
-      "title": "CVE-2026-42618: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_decompress() in compress.c that allows an attacker to corrupt one byte of heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by reading the special crafted file.",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-42618",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42618"
-    },
-    {
-      "title": "CVE-2026-46569: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ib_copy_tail(), in libntfs-3g/index.c, that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by extending a directory, e.g., by creating a file.",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-46569",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46569"
-    },
-    {
-      "title": "CVE-2026-46570: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_index_walk_down() in libntfs-3g/index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by reading the special crafted file metadata.",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-46570",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46570"
-    },
-    {
-      "title": "CVE-2026-46571: In NTFS-3G before 2026.7.7, a out-of-bounds read exists in ntfs_fix_file_name() in libntfs-3g/reparse.c that allows an attacker to read possibly confidential information in ntfs-3g process memory by crafting a malicious NTFS image. The out-of-bounds read is triggered by a readlink on a corrupted file.",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-46571",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46571"
-    },
-    {
-      "title": "CVE-2026-46572: In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_ib_cut_tail() in libntfs-3g/index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a malicious NTFS image. The overflow is triggered by creating a file in a specially crafted directory.",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-46572",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46572"
-    },
-    {
-      "title": "CVE-2026-46729: Apache HTTP Server: mod_heartmonitor denial of service",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-46729",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-46729"
-    },
-    {
-      "title": "CVE-2026-47360: Apache HTTP Server: mod_session: Session cookie not removed during internal redirect",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-47360",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-47360"
-    },
-    {
-      "title": "CVE-2026-48005: Apache HTTP Server: mod_auth_digest reauthentication attack",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-48005",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-48005"
-    },
-    {
-      "title": "CVE-2026-56153: Apache HTTP Server: mod_charset_lite: Heap overflow in finish_partial_char",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "microsoft",
-      "component": "Multiple Microsoft Products",
-      "description": "Security update for CVE-2026-56153",
-      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-56153"
-    },
-    {
-      "title": "CVE-2026-103658: aspell: aspell: Arbitrary code execution via crafted dictionary file",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "aspell: aspell: Arbitrary code execution via crafted dictionary file",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103658.json",
-      "cve": "CVE-2026-103658",
-      "cvss": 7.8
-    },
-    {
-      "title": "CVE-2026-109561: goose: goose: Authorization bypass via uncleared read-only tool annotations",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "goose: goose: Authorization bypass via uncleared read-only tool annotations",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109561.json",
-      "cve": "CVE-2026-109561",
-      "cvss": 4.2
-    },
-    {
-      "title": "CVE-2026-109380: modern-tar: modern-tar: Denial of Service via memory exhaustion from crafted archives",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "modern-tar: modern-tar: Denial of Service via memory exhaustion from crafted archives",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109380.json",
-      "cve": "CVE-2026-109380",
-      "cvss": 7.5
-    },
-    {
-      "title": "CVE-2026-109379: cockpit: Cockpit: User enumeration via timing discrepancy",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "cockpit: Cockpit: User enumeration via timing discrepancy",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109379.json",
-      "cve": "CVE-2026-109379",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-83535: openstack-network-exporter: Basic-auth uses plaintext password storage and non-constant-time comparison",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "openstack-network-exporter: Basic-auth uses plaintext password storage and non-constant-time comparison",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-83535.json",
-      "cve": "CVE-2026-83535",
-      "cvss": 7.4
-    },
-    {
-      "title": "CVE-2026-83536: openstack-network-exporter: http.Server has no ReadHeaderTimeout / ReadTimeout (Slowloris)",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "openstack-network-exporter: http.Server has no ReadHeaderTimeout / ReadTimeout (Slowloris)",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-83536.json",
-      "cve": "CVE-2026-83536",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-103061: gleam: gleam: Arbitrary directory deletion via path traversal in package metadata",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "gleam: gleam: Arbitrary directory deletion via path traversal in package metadata",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103061.json",
-      "cve": "CVE-2026-103061",
-      "cvss": 7.1
-    },
-    {
-      "title": "CVE-2026-85471: quay: quay: Webhook notification SSRF -- hostname-string blocklist trivially bypassable",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "quay: quay: Webhook notification SSRF -- hostname-string blocklist trivially bypassable",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-85471.json",
-      "cve": "CVE-2026-85471",
-      "cvss": 6.4
-    },
-    {
-      "title": "CVE-2026-87744: io.quarkus:quarkus-hibernate-orm-rest-data-panache: Missing Authorization in Quarkus REST Data Panache via Dropped Secur",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "io.quarkus:quarkus-hibernate-orm-rest-data-panache: Missing Authorization in Quarkus REST Data Panache via Dropped Security Annotations",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-87744.json",
-      "cve": "CVE-2026-87744",
-      "cvss": 9.1
-    },
-    {
-      "title": "CVE-2026-109448: postgresql-odbc: postgresql-odbc: Denial of Service via integer wraparound in SQLBindParameter",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "postgresql-odbc: postgresql-odbc: Denial of Service via integer wraparound in SQLBindParameter",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109448.json",
-      "cve": "CVE-2026-109448",
-      "cvss": 5.9
-    },
-    {
-      "title": "CVE-2026-93879: org.hibernate.validator:hibernate-validator: Hibernate Validator - unescaped {duplicates} message parameter is re-evalua",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "org.hibernate.validator:hibernate-validator: Hibernate Validator - unescaped {duplicates} message parameter is re-evaluated as  Expression Language (unauthenticated DoS)",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-93879.json",
-      "cve": "CVE-2026-93879",
-      "cvss": 7.5
-    },
-    {
-      "title": "CVE-2026-94451: quarkus-hibernate-orm-rest-data-panache: quarkus-hibernate-orm-rest-data-panache: Information Disclosure and DoS via Unv",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "quarkus-hibernate-orm-rest-data-panache: quarkus-hibernate-orm-rest-data-panache: Information Disclosure and DoS via Unvalidated Sort Parameter in REST Data Panache",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-94451.json",
-      "cve": "CVE-2026-94451",
-      "cvss": 6.5
-    },
-    {
-      "title": "CVE-2026-109351: gix-pack: gix-pack: Denial of Service via crafted pack-header object count",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "gix-pack: gix-pack: Denial of Service via crafted pack-header object count",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109351.json",
-      "cve": "CVE-2026-109351",
-      "cvss": 6.5
-    },
-    {
-      "title": "CVE-2026-109350: gix-pack: gix-pack: Denial of Service via malformed packfile delta entries",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "gix-pack: gix-pack: Denial of Service via malformed packfile delta entries",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109350.json",
-      "cve": "CVE-2026-109350",
-      "cvss": 6.5
-    },
-    {
-      "title": "CVE-2026-109349: gix-pack: gix-pack: Denial of Service via crafted pack header",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "gix-pack: gix-pack: Denial of Service via crafted pack header",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109349.json",
-      "cve": "CVE-2026-109349",
-      "cvss": 6.5
-    },
-    {
-      "title": "CVE-2026-109344: dompurify: DOMPurify: Cross-Site Scripting via unneutralized elements detached during in-place sanitization",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "dompurify: DOMPurify: Cross-Site Scripting via unneutralized elements detached during in-place sanitization",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109344.json",
-      "cve": "CVE-2026-109344",
-      "cvss": 6.1
-    },
-    {
-      "title": "CVE-2026-109345: dompurify: DOMPurify: Cross-site scripting via unsanitized raw text in in-place mode",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "dompurify: DOMPurify: Cross-site scripting via unsanitized raw text in in-place mode",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109345.json",
-      "cve": "CVE-2026-109345",
-      "cvss": 6.1
-    },
-    {
-      "title": "CVE-2026-109282: ImageMagick: ImageMagick: Denial of Service via type confusion in INFO, JSON, and YAML encoders",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via type confusion in INFO, JSON, and YAML encoders",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109282.json",
-      "cve": "CVE-2026-109282",
-      "cvss": 2.5
-    },
-    {
-      "title": "CVE-2026-109280: ImageMagick: ImageMagick: Denial of Service via use-after-free in -fx option",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via use-after-free in -fx option",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109280.json",
-      "cve": "CVE-2026-109280",
-      "cvss": 2.5
-    },
-    {
-      "title": "CVE-2026-109281: ImageMagick: ImageMagick: Information disclosure via crafted -fx expression",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Information disclosure via crafted -fx expression",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109281.json",
-      "cve": "CVE-2026-109281",
-      "cvss": 4.4
-    },
-    {
-      "title": "CVE-2026-109278: ImageMagick: ImageMagick: Denial of Service via memory leak in wavelet-denoise operation",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via memory leak in wavelet-denoise operation",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109278.json",
-      "cve": "CVE-2026-109278",
-      "cvss": 2.9
-    },
-    {
-      "title": "CVE-2026-109277: ImageMagick: ImageMagick: Security policy bypass via -script operation",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Security policy bypass via -script operation",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109277.json",
-      "cve": "CVE-2026-109277",
-      "cvss": 3.3
-    },
-    {
-      "title": "CVE-2026-109276: ImageMagick: ImageMagick: Denial of Service via temporary file leak in JNG decoder",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via temporary file leak in JNG decoder",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109276.json",
-      "cve": "CVE-2026-109276",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-109274: ImageMagick: ImageMagick: Security policy bypass via TOCTOU symlink race condition",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Security policy bypass via TOCTOU symlink race condition",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109274.json",
-      "cve": "CVE-2026-109274",
-      "cvss": 2.5
-    },
-    {
-      "title": "CVE-2026-109275: ImageMagick: ImageMagick: Code injection via crafted MVG file",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Code injection via crafted MVG file",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109275.json",
-      "cve": "CVE-2026-109275",
-      "cvss": 4.8
-    },
-    {
-      "title": "CVE-2026-109273: ImageMagick: ImageMagick: Information disclosure via crafted PostScript file",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Information disclosure via crafted PostScript file",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109273.json",
-      "cve": "CVE-2026-109273",
-      "cvss": 3.3
-    },
-    {
-      "title": "CVE-2026-109271: ImageMagick: ImageMagick: Denial of service via use-after-free in the WBINFO decoder",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of service via use-after-free in the WBINFO decoder",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109271.json",
-      "cve": "CVE-2026-109271",
-      "cvss": 3.7
-    },
-    {
-      "title": "CVE-2026-109272: ImageMagick: ImageMagick: Denial of Service via crafted PostScript file",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via crafted PostScript file",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109272.json",
-      "cve": "CVE-2026-109272",
-      "cvss": 2.5
-    },
-    {
-      "title": "CVE-2026-109270: ImageMagick: ImageMagick: Denial of Service via memory leak in the -process option",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via memory leak in the -process option",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109270.json",
-      "cve": "CVE-2026-109270",
-      "cvss": 3.3
-    },
-    {
-      "title": "CVE-2026-109269: ImageMagick: ImageMagick: Information disclosure via crafted JPEG file",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Information disclosure via crafted JPEG file",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109269.json",
-      "cve": "CVE-2026-109269",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-109268: ImageMagick: ImageMagick: Denial of Service via use-after-free in PDF writer",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via use-after-free in PDF writer",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109268.json",
-      "cve": "CVE-2026-109268",
-      "cvss": 3.7
-    },
-    {
-      "title": "CVE-2026-109267: ImageMagick: ImageMagick: Denial of Service via stack overflow in MSL decoder",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via stack overflow in MSL decoder",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109267.json",
-      "cve": "CVE-2026-109267",
-      "cvss": 3.3
-    },
-    {
-      "title": "CVE-2026-109265: ImageMagick: ImageMagick: Denial of Service via malformed XMP profile",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via malformed XMP profile",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109265.json",
-      "cve": "CVE-2026-109265",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-109264: ImageMagick: ImageMagick: Denial of Service via uncontrolled recursion in MVG decoder",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via uncontrolled recursion in MVG decoder",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109264.json",
-      "cve": "CVE-2026-109264",
-      "cvss": 3.7
-    },
-    {
-      "title": "CVE-2026-109263: ImageMagick: ImageMagick: Denial of Service via memory leak in YUV encoder",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via memory leak in YUV encoder",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109263.json",
-      "cve": "CVE-2026-109263",
-      "cvss": 3.7
-    },
-    {
-      "title": "CVE-2026-109262: ImageMagick: ImageMagick: Denial of Service via memory leak in SVG encoder",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via memory leak in SVG encoder",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109262.json",
-      "cve": "CVE-2026-109262",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-109261: ImageMagick: ImageMagick: Denial of Service via memory leak in GIF encoder",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via memory leak in GIF encoder",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109261.json",
-      "cve": "CVE-2026-109261",
-      "cvss": 3.7
-    },
-    {
-      "title": "CVE-2026-109260: ImageMagick: ImageMagick: Denial of Service via memory leak in PNG encoder",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via memory leak in PNG encoder",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109260.json",
-      "cve": "CVE-2026-109260",
-      "cvss": 3.7
-    },
-    {
-      "title": "CVE-2026-109259: ImageMagick: ImageMagick: Information disclosure via crafted TGA image",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Information disclosure via crafted TGA image",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109259.json",
-      "cve": "CVE-2026-109259",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-109258: ImageMagick: ImageMagick: Denial of Service via invalid memory free in fx operation",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via invalid memory free in fx operation",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109258.json",
-      "cve": "CVE-2026-109258",
-      "cvss": 2.5
-    },
-    {
-      "title": "CVE-2026-75888: openshift/console: openshift/console: Authenticated SSRF via Helm chart URL fetch",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "redhat",
-      "component": "OpenShift",
-      "description": "openshift/console: openshift/console: Authenticated SSRF via Helm chart URL fetch",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-75888.json",
-      "cve": "CVE-2026-75888",
-      "cvss": 7.7
-    },
-    {
-      "title": "CVE-2026-105081: ImageMagick: ImageMagick: Security policy bypass via symbolic link",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Security policy bypass via symbolic link",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105081.json",
-      "cve": "CVE-2026-105081",
-      "cvss": 3.6
-    },
-    {
-      "title": "CVE-2026-107203: foreman: domain and subnet interface API skips host search filters",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "foreman: domain and subnet interface API skips host search filters",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-107203.json",
-      "cve": "CVE-2026-107203",
-      "cvss": 5.4
-    },
-    {
-      "title": "CVE-2026-107193: foreman: API filter lookup ignores a search-limited filter permission",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "foreman: API filter lookup ignores a search-limited filter permission",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-107193.json",
-      "cve": "CVE-2026-107193",
-      "cvss": 6.5
-    },
-    {
-      "title": "CVE-2026-98385: kernel: sched/cache: Decouple sched_cache_group from mm to fix UAF",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Kernel",
-      "description": "kernel: sched/cache: Decouple sched_cache_group from mm to fix UAF",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98385.json",
-      "cve": "CVE-2026-98385",
-      "cvss": 7
-    },
-    {
-      "title": "CVE-2026-109194: quay: Build trigger UUID IDOR in Quay API",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "quay: Build trigger UUID IDOR in Quay API",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109194.json",
-      "cve": "CVE-2026-109194",
-      "cvss": 6.4
-    },
-    {
-      "title": "CVE-2026-109195: quay: Repository auto-prune policy UUID IDOR in Quay API",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "quay: Repository auto-prune policy UUID IDOR in Quay API",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109195.json",
-      "cve": "CVE-2026-109195",
-      "cvss": 3.1
-    },
-    {
-      "title": "CVE-2026-109279: ImageMagick: ImageMagick: Denial of Service via race condition during security policy access",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "ImageMagick: ImageMagick: Denial of Service via race condition during security policy access",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109279.json",
-      "cve": "CVE-2026-109279",
-      "cvss": 2.5
-    },
-    {
-      "title": "CVE-2026-109257: freerdp: freerdp: Denial of Service via double-free in NSCodec",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Denial of Service via double-free in NSCodec",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109257.json",
-      "cve": "CVE-2026-109257",
-      "cvss": 5.9
-    },
-    {
-      "title": "CVE-2026-109255: freerdp: freerdp: Arbitrary code execution via integer truncation in license stream validation",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Arbitrary code execution via integer truncation in license stream validation",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109255.json",
-      "cve": "CVE-2026-109255",
-      "cvss": 6.8
-    },
-    {
-      "title": "CVE-2026-109254: freerdp: freerdp: Denial of Service via use-after-free during audio channel disconnect",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Denial of Service via use-after-free during audio channel disconnect",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109254.json",
-      "cve": "CVE-2026-109254",
-      "cvss": 5.9
-    },
-    {
-      "title": "CVE-2026-109252: freerdp: freerdp: Denial of Service via truncated authentication data",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Denial of Service via truncated authentication data",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109252.json",
-      "cve": "CVE-2026-109252",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-109248: freerdp: freerdp: Denial of Service via heap out-of-bounds read in clipboard handling",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Denial of Service via heap out-of-bounds read in clipboard handling",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109248.json",
-      "cve": "CVE-2026-109248",
-      "cvss": 6.5
-    },
-    {
-      "title": "CVE-2026-105274: hex_core: hex: rebar3: hex_core: Denial of Service via uncontrolled decompression of repository responses",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "hex_core: hex: rebar3: hex_core: Denial of Service via uncontrolled decompression of repository responses",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105274.json",
-      "cve": "CVE-2026-105274",
-      "cvss": 3.1
-    },
-    {
-      "title": "CVE-2026-109256: freerdp: FreeRDP: Denial of Service via heap buffer overflow during clipboard image conversion",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: FreeRDP: Denial of Service via heap buffer overflow during clipboard image conversion",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109256.json",
-      "cve": "CVE-2026-109256",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-109253: freerdp: freerdp: Denial of Service via out-of-bounds read in RDPEAR",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Denial of Service via out-of-bounds read in RDPEAR",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109253.json",
-      "cve": "CVE-2026-109253",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-109251: freerdp: FreeRDP: Denial of Service via invalid video geometry coordinates",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: FreeRDP: Denial of Service via invalid video geometry coordinates",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109251.json",
-      "cve": "CVE-2026-109251",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-109250: freerdp: FreeRDP: arbitrary code execution via heap buffer overflow during smartcard key enumeration",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: FreeRDP: arbitrary code execution via heap buffer overflow during smartcard key enumeration",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109250.json",
-      "cve": "CVE-2026-109250",
-      "cvss": 6.6
-    },
-    {
-      "title": "CVE-2026-109249: freerdp: FreeRDP: Denial of Service via crafted Remote Assistance file",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: FreeRDP: Denial of Service via crafted Remote Assistance file",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109249.json",
-      "cve": "CVE-2026-109249",
-      "cvss": 5.5
-    },
-    {
-      "title": "CVE-2026-109247: freerdp: freerdp: Information disclosure via clipboard path traversal",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Information disclosure via clipboard path traversal",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109247.json",
-      "cve": "CVE-2026-109247",
-      "cvss": 3.1
-    },
-    {
-      "title": "CVE-2026-109246: freerdp: freerdp: Denial of Service via divide-by-zero error in shadow server",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Denial of Service via divide-by-zero error in shadow server",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109246.json",
-      "cve": "CVE-2026-109246",
-      "cvss": 6.5
-    },
-    {
-      "title": "CVE-2026-109245: freerdp: freerdp: Information disclosure via improper TLS certificate validation",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Information disclosure via improper TLS certificate validation",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109245.json",
-      "cve": "CVE-2026-109245",
-      "cvss": 6.8
-    },
-    {
-      "title": "CVE-2026-109244: freerdp: freerdp: Information disclosure via insecure file permissions in winpr-makecert",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Information disclosure via insecure file permissions in winpr-makecert",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109244.json",
-      "cve": "CVE-2026-109244",
-      "cvss": 6.6
-    },
-    {
-      "title": "CVE-2026-109242: freerdp: FreeRDP: Denial of Service via uninitialized progressive tile handling",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: FreeRDP: Denial of Service via uninitialized progressive tile handling",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109242.json",
-      "cve": "CVE-2026-109242",
-      "cvss": 7.1
-    },
-    {
-      "title": "CVE-2026-109243: freerdp: freerdp: Information disclosure via insecure private key permissions",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Information disclosure via insecure private key permissions",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109243.json",
-      "cve": "CVE-2026-109243",
-      "cvss": 4.4
-    },
-    {
-      "title": "CVE-2026-109240: freerdp: freerdp: Denial of Service via unvalidated buffer size in USB redirection",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Denial of Service via unvalidated buffer size in USB redirection",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109240.json",
-      "cve": "CVE-2026-109240",
-      "cvss": 3.1
-    },
-    {
-      "title": "CVE-2026-109241: freerdp: freerdp: Denial of Service via NULL pointer dereference in video redirection channel",
-      "date": "2026-10-12",
-      "severity": "LOW",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "freerdp: freerdp: Denial of Service via NULL pointer dereference in video redirection channel",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109241.json",
-      "cve": "CVE-2026-109241",
-      "cvss": 3.1
-    },
-    {
-      "title": "CVE-2026-109833: gnome-remote-desktop: Heap buffer overflow in gnome-remote-desktop VNC TLS peek buffer handling allows remote denial of ",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "gnome-remote-desktop: Heap buffer overflow in gnome-remote-desktop VNC TLS peek buffer handling allows remote denial of service",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-109833.json",
-      "cve": "CVE-2026-109833",
-      "cvss": 5.9
-    },
-    {
-      "title": "CVE-2026-105668: hex: hex: Release cooldown protection bypass via retired package releases",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "hex: hex: Release cooldown protection bypass via retired package releases",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105668.json",
-      "cve": "CVE-2026-105668",
-      "cvss": 6.8
-    },
-    {
-      "title": "CVE-2026-105280: hex: hex: Integrity check bypass via standard output package fetch",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "hex: hex: Integrity check bypass via standard output package fetch",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-105280.json",
-      "cve": "CVE-2026-105280",
-      "cvss": 5.3
-    },
-    {
-      "title": "CVE-2026-103503: hex: hex: Host impersonation via improper CA certificate store validation",
-      "date": "2026-10-12",
-      "severity": "MEDIUM",
-      "vendor": "redhat",
-      "component": "Red Hat Enterprise Linux",
-      "description": "hex: hex: Host impersonation via improper CA certificate store validation",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103503.json",
-      "cve": "CVE-2026-103503",
-      "cvss": 6.8
-    },
-    {
-      "title": "CVE-2026-95837: github.com/containerd/containerd: containerd: Privilege escalation via crafted container checkpoint restore",
-      "date": "2026-10-12",
-      "severity": "HIGH",
-      "vendor": "redhat",
-      "component": "Containers",
-      "description": "github.com/containerd/containerd: containerd: Privilege escalation via crafted container checkpoint restore",
-      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-95837.json",
-      "cve": "CVE-2026-95837",
-      "cvss": 7.8
-    },
-    {
-      "title": "USN-8912-1: Perl DBI module vulnerabilities",
-      "date": "2026-10-12",
-      "severity": "UNKNOWN",
-      "vendor": "ubuntu",
-      "component": "Perl DBI module vulnerabilities",
-      "description": "Harsh Raj Singhania discovered that the Perl DBI module did not\ncorrectly validate certain attributes. An attacker could possibly use\nthis issue to execute arbitrary code. (CVE-2026-78030)\n\nHarsh Raj ...",
-      "link": "https://ubuntu.com/security/notices/USN-8912-1"
-    },
-    {
-      "title": "USN-8914-1: Google Guest Agent, Google OS Config Agent vulnerability",
-      "date": "2026-10-12",
-      "severity": "UNKNOWN",
-      "vendor": "ubuntu",
-      "component": "Google Guest Agent, Google OS Config Agent",
-      "description": "It was discovered that the Go x/net/idna package, vendored in Google Guest\nAgent and Google OS Config Agent, incorrectly accepted Punycode-encoded\nlabels that decoded to ASCII-only labels when process...",
-      "link": "https://ubuntu.com/security/notices/USN-8914-1"
-    },
-    {
-      "title": "USN-8913-1: libx11 vulnerabilities",
-      "date": "2026-10-12",
-      "severity": "UNKNOWN",
-      "vendor": "ubuntu",
-      "component": "libx11 vulnerabilities",
-      "description": "Adam Bedard discovered that libx11 incorrectly handled certain XKB keyboard\nmap replies. If a user were tricked into connecting to a malicious X\nserver, a remote attacker could possibly use this issue...",
-      "link": "https://ubuntu.com/security/notices/USN-8913-1"
-    },
-    {
-      "title": "USN-8915-1: FFmpeg vulnerabilities",
-      "date": "2026-10-12",
-      "severity": "UNKNOWN",
-      "vendor": "ubuntu",
-      "component": "FFmpeg vulnerabilities",
-      "description": "Momoko Shiraishi discovered that FFmpeg did not correctly handle certain\nmemory operations. An attacker could possibly use this issue to execute\narbitrary code. This issue only affected Ubuntu 16.04 L...",
-      "link": "https://ubuntu.com/security/notices/USN-8915-1"
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-19T04:07:00.530Z",
+      "logs": [
+        "[INFO] aws - 76 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 15 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 11 patches, no changes",
+        "[INFO] github - 107 patches, no changes",
+        "[INFO] microsoft - 550 patches, no changes",
+        "[INFO] mssql - 25 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] paloalto - 17 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 354 patches (6 new)",
+        "[INFO] signal - 8 patches, no changes",
+        "[INFO] ubuntu - 21 patches, no changes"
+      ],
+      "newPatchCount": 6,
+      "totalPatches": 1204,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "postgresql",
+        "redhat",
+        "paloalto",
+        "aws",
+        "edge",
+        "github",
+        "mssql",
+        "signal",
+        "chrome",
+        "cisco",
+        "ubuntu",
+        "nodejs",
+        "crowdstrike",
+        "fortinet"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-112057: libdvdnav: libdvdnav: Denial of Service via crafted disc image",
+          "date": "2026-10-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-112058: libdvdnav: libdvdnav: Denial of Service via out-of-bounds read in set_PTT",
+          "date": "2026-10-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-112052: libspatialite: libspatialite: Denial of Service via integer overflow during geometry parsing",
+          "date": "2026-10-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-112048: libspatialite: libspatialite: Denial of Service via uncontrolled memory allocation during polygon parsing",
+          "date": "2026-10-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-112008: libmng: libmng: Denial of Service via heap-based buffer overflow in mng_read_ordr()",
+          "date": "2026-10-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-112006: opentelemetry-exporter-otlp-proto-http: opentelemetry-exporter-otlp-proto-http: Information disclosure via improper TLS ",
+          "date": "2026-10-18",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-18T23:59:03.676Z",
       "logs": [
@@ -22110,44 +20896,6 @@
     },
     {
       "timestamp": "2026-10-13T21:02:38.007Z",
-      "logs": [
-        "[INFO] aws - 37 patches, no changes",
-        "[INFO] chrome - 1 patches, no changes",
-        "[INFO] cisco - 17 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] debian - 9 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] github - 150 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 300 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 264 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 25 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 816,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 13,
-      "vendors": [
-        "microsoft",
-        "redhat",
-        "debian",
-        "edge",
-        "gitlab",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "github",
-        "postgresql",
-        "signal",
-        "cisco",
-        "cloudflare"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-10-13T15:41:36.221Z",
       "logs": [
         "[INFO] aws - 37 patches, no changes",
         "[INFO] chrome - 1 patches, no changes",
