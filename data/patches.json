@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-10-19T12:34:04.352Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-19T12:47:13.016Z",
+  "newPatches": 11,
   "patches": [
+    {
+      "title": "CVE-2026-112075: unsloth: unsloth: Arbitrary code execution via unsafe class selection",
+      "date": "2026-10-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "unsloth: unsloth: Arbitrary code execution via unsafe class selection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112075.json",
+      "cve": "CVE-2026-112075",
+      "cvss": 7.8
+    },
     {
       "title": "DSA-6571-1 xen - security update",
       "date": "2026-10-18",
@@ -583,6 +594,72 @@
       "cvss": 6.5
     },
     {
+      "title": "CVE-2026-16460: bootc: ostree: bootc/ostree: staged deployments not revalidated against container signature policy before finalization",
+      "date": "2026-10-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "bootc: ostree: bootc/ostree: staged deployments not revalidated against container signature policy before finalization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16460.json",
+      "cve": "CVE-2026-16460",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-98437: kernel: media: qcom: iris: fix runtime PM reference leaks",
+      "date": "2026-10-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: qcom: iris: fix runtime PM reference leaks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98437.json",
+      "cve": "CVE-2026-98437",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-98438: kernel: mptcp: options: fix uninit-value in mptcp_write_data_fin",
+      "date": "2026-10-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mptcp: options: fix uninit-value in mptcp_write_data_fin",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98438.json",
+      "cve": "CVE-2026-98438",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-98435: kernel: EDAC/altera: Use parent device for devres in altr_portb_setup()",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: EDAC/altera: Use parent device for devres in altr_portb_setup()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98435.json",
+      "cve": "CVE-2026-98435",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-98434: kernel: sysctl: Check range in  proc_dointvec_ms_jiffies_minmax",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: sysctl: Check range in  proc_dointvec_ms_jiffies_minmax",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98434.json",
+      "cve": "CVE-2026-98434",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98433: kernel: KVM: PPC: Book3S HV: fix secure device page leak on uv_page_in() failure",
+      "date": "2026-10-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: PPC: Book3S HV: fix secure device page leak on uv_page_in() failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98433.json",
+      "cve": "CVE-2026-98433",
+      "cvss": 2.5
+    },
+    {
       "title": "CVE-2026-100236: Dpdk: dpdk: heap out-of-bounds read/write in gso header copy",
       "date": "2026-10-17",
       "severity": "HIGH",
@@ -1041,6 +1118,28 @@
       "description": "",
       "link": "https://security.paloaltonetworks.com/CVE-2026-0307",
       "cve": "CVE-2026-0307"
+    },
+    {
+      "title": "CVE-2026-111881: freerdp: freerdp: Denial of Service via crafted clipboard bitmap image",
+      "date": "2026-10-17",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: freerdp: Denial of Service via crafted clipboard bitmap image",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-111881.json",
+      "cve": "CVE-2026-111881",
+      "cvss": 7.6
+    },
+    {
+      "title": "CVE-2026-111880: freerdp: freerdp: Denial of Service via heap out-of-bounds write in NTLM authentication",
+      "date": "2026-10-17",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: freerdp: Denial of Service via heap out-of-bounds write in NTLM authentication",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-111880.json",
+      "cve": "CVE-2026-111880",
+      "cvss": 7.4
     },
     {
       "title": "CVE-2026-16756 - Allocation of resources without limits in the default aws-smithy-http-server serve() path allows unauthenticated Slowloris denial of service",
@@ -2580,6 +2679,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46472.json",
       "cve": "CVE-2026-46472",
       "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-102941: github.com/gomarkdown/markdown: github.com/gomarkdown/markdown: Denial of Service via short URL parsing",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/gomarkdown/markdown: github.com/gomarkdown/markdown: Denial of Service via short URL parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102941.json",
+      "cve": "CVE-2026-102941",
+      "cvss": 7.5
     },
     {
       "title": "gomarkdown/markdown IsSafeURL panics on short URLs",
@@ -5190,6 +5300,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102946.json",
       "cve": "CVE-2026-102946",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-112210: rhc: rhc: local privilege escalation via symlink following in rhc-canonical-facts.service",
+      "date": "2026-10-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rhc: rhc: local privilege escalation via symlink following in rhc-canonical-facts.service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112210.json",
+      "cve": "CVE-2026-112210",
+      "cvss": 6
     },
     {
       "title": "Signal Desktop v8.32.0-beta.1",
@@ -11878,6 +11999,117 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-19T12:47:13.016Z",
+      "logs": [
+        "[INFO] aws - 76 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 5 patches, no changes",
+        "[INFO] crowdstrike - 1 patches, no changes",
+        "[INFO] debian - 15 patches, no changes",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 11 patches, no changes",
+        "[INFO] github - 107 patches, no changes",
+        "[INFO] microsoft - 550 patches, no changes",
+        "[INFO] mssql - 25 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] paloalto - 17 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 365 patches (11 new)",
+        "[INFO] signal - 8 patches, no changes",
+        "[INFO] ubuntu - 21 patches, no changes"
+      ],
+      "newPatchCount": 11,
+      "totalPatches": 1215,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "redhat",
+        "debian",
+        "microsoft",
+        "postgresql",
+        "paloalto",
+        "aws",
+        "edge",
+        "github",
+        "mssql",
+        "signal",
+        "chrome",
+        "cisco",
+        "ubuntu",
+        "nodejs",
+        "crowdstrike",
+        "fortinet"
+      ],
+      "newPatches": [
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-112075: unsloth: unsloth: Arbitrary code execution via unsafe class selection",
+          "date": "2026-10-19",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-16460: bootc: ostree: bootc/ostree: staged deployments not revalidated against container signature policy before finalization",
+          "date": "2026-10-18",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98437: kernel: media: qcom: iris: fix runtime PM reference leaks",
+          "date": "2026-10-18",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98438: kernel: mptcp: options: fix uninit-value in mptcp_write_data_fin",
+          "date": "2026-10-18",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98435: kernel: EDAC/altera: Use parent device for devres in altr_portb_setup()",
+          "date": "2026-10-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98434: kernel: sysctl: Check range in  proc_dointvec_ms_jiffies_minmax",
+          "date": "2026-10-18",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-98433: kernel: KVM: PPC: Book3S HV: fix secure device page leak on uv_page_in() failure",
+          "date": "2026-10-18",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-111881: freerdp: freerdp: Denial of Service via crafted clipboard bitmap image",
+          "date": "2026-10-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-111880: freerdp: freerdp: Denial of Service via heap out-of-bounds write in NTLM authentication",
+          "date": "2026-10-17",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-102941: github.com/gomarkdown/markdown: github.com/gomarkdown/markdown: Denial of Service via short URL parsing",
+          "date": "2026-10-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-112210: rhc: rhc: local privilege escalation via symlink following in rhc-canonical-facts.service",
+          "date": "2026-10-15",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-19T12:34:04.352Z",
       "logs": [
@@ -20070,46 +20302,6 @@
           "severity": "HIGH"
         }
       ]
-    },
-    {
-      "timestamp": "2026-10-14T00:57:26.356Z",
-      "logs": [
-        "[INFO] aws - 19 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 3 patches, no changes",
-        "[INFO] debian - 8 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 11 patches, no changes",
-        "[INFO] github - 140 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 300 patches, no changes",
-        "[INFO] mssql - 23 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 183 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 28 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 731,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 14,
-      "vendors": [
-        "chrome",
-        "cisco",
-        "fortinet",
-        "github",
-        "microsoft",
-        "mssql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "debian",
-        "edge",
-        "gitlab",
-        "aws",
-        "postgresql"
-      ],
-      "newPatches": []
     }
   ]
 }

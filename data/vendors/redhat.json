@@ -1,16 +1,27 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-10-19T04:05:36.770Z",
+  "lastUpdated": "2026-10-19T12:42:55.651Z",
   "health": {
-    "lastFetchAttempt": "2026-10-19T04:05:36.770Z",
+    "lastFetchAttempt": "2026-10-19T12:42:55.650Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 419,
-    "lastFetchNewPatches": 7,
-    "lastSuccessWithData": "2026-10-19T04:05:36.770Z",
+    "lastFetchParsedItems": 430,
+    "lastFetchNewPatches": 11,
+    "lastSuccessWithData": "2026-10-19T12:42:55.650Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-112075: unsloth: unsloth: Arbitrary code execution via unsafe class selection",
+      "date": "2026-10-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "unsloth: unsloth: Arbitrary code execution via unsafe class selection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112075.json",
+      "cve": "CVE-2026-112075",
+      "cvss": 7.8
+    },
     {
       "title": "CVE-2026-111997: ip-address: ip-address: Denial of Service via excessive percent characters in IPv6 address input",
       "date": "2026-10-18",
@@ -87,6 +98,94 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112006.json",
       "cve": "CVE-2026-112006",
       "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-16460: bootc: ostree: bootc/ostree: staged deployments not revalidated against container signature policy before finalization",
+      "date": "2026-10-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "bootc: ostree: bootc/ostree: staged deployments not revalidated against container signature policy before finalization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-16460.json",
+      "cve": "CVE-2026-16460",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-98437: kernel: media: qcom: iris: fix runtime PM reference leaks",
+      "date": "2026-10-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: media: qcom: iris: fix runtime PM reference leaks",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98437.json",
+      "cve": "CVE-2026-98437",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-98438: kernel: mptcp: options: fix uninit-value in mptcp_write_data_fin",
+      "date": "2026-10-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: mptcp: options: fix uninit-value in mptcp_write_data_fin",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98438.json",
+      "cve": "CVE-2026-98438",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-98435: kernel: EDAC/altera: Use parent device for devres in altr_portb_setup()",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: EDAC/altera: Use parent device for devres in altr_portb_setup()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98435.json",
+      "cve": "CVE-2026-98435",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-98434: kernel: sysctl: Check range in  proc_dointvec_ms_jiffies_minmax",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: sysctl: Check range in  proc_dointvec_ms_jiffies_minmax",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98434.json",
+      "cve": "CVE-2026-98434",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98433: kernel: KVM: PPC: Book3S HV: fix secure device page leak on uv_page_in() failure",
+      "date": "2026-10-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: PPC: Book3S HV: fix secure device page leak on uv_page_in() failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98433.json",
+      "cve": "CVE-2026-98433",
+      "cvss": 2.5
+    },
+    {
+      "title": "CVE-2026-111881: freerdp: freerdp: Denial of Service via crafted clipboard bitmap image",
+      "date": "2026-10-17",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: freerdp: Denial of Service via crafted clipboard bitmap image",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-111881.json",
+      "cve": "CVE-2026-111881",
+      "cvss": 7.6
+    },
+    {
+      "title": "CVE-2026-111880: freerdp: freerdp: Denial of Service via heap out-of-bounds write in NTLM authentication",
+      "date": "2026-10-17",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "freerdp: freerdp: Denial of Service via heap out-of-bounds write in NTLM authentication",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-111880.json",
+      "cve": "CVE-2026-111880",
+      "cvss": 7.4
     },
     {
       "title": "CVE-2026-111382: freerdp: freerdp: Arbitrary code execution via crafted display frames",
@@ -428,6 +527,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-46472.json",
       "cve": "CVE-2026-46472",
       "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-102941: github.com/gomarkdown/markdown: github.com/gomarkdown/markdown: Denial of Service via short URL parsing",
+      "date": "2026-10-16",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/gomarkdown/markdown: github.com/gomarkdown/markdown: Denial of Service via short URL parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102941.json",
+      "cve": "CVE-2026-102941",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-79824: python: python: Arbitrary file overwrite via directory traversal in TAR archives",
@@ -1275,6 +1385,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-102946.json",
       "cve": "CVE-2026-102946",
       "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-112210: rhc: rhc: local privilege escalation via symlink following in rhc-canonical-facts.service",
+      "date": "2026-10-15",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rhc: rhc: local privilege escalation via symlink following in rhc-canonical-facts.service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112210.json",
+      "cve": "CVE-2026-112210",
+      "cvss": 6
     },
     {
       "title": "CVE-2026-88842: busybox: busybox: dpkg stale field_start pointer causes out-of-bounds read and status file corruption",
