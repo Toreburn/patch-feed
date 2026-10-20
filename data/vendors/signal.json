@@ -1,16 +1,57 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-20T16:38:48.966Z",
+  "lastUpdated": "2026-10-20T21:26:38.136Z",
   "health": {
-    "lastFetchAttempt": "2026-10-20T16:38:48.966Z",
+    "lastFetchAttempt": "2026-10-20T21:26:38.136Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 5,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-20T16:38:48.966Z",
+    "lastFetchNewPatches": 3,
+    "lastSuccessWithData": "2026-10-20T21:26:38.136Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Signal Desktop v8.33.0-beta.1",
+      "date": "2026-10-20",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Additional small tweaks, bug fixes, and assorted plans for the future.",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.33.0-beta.1",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "Signal Desktop v8.32.0",
+      "date": "2026-10-20",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- The unread filter is now also supported in message folders and the search interface, so you can easily see what you've been missing.\r - Improved upload reliability under poor network conditions. Tha",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.32.0",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "Pillow: TiffDecode returns uninitialized memory as pixels for short JPEG strips",
+      "date": "2026-10-20",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "```\n============================================================================\nTiffDecode returns uninitialized memory as pixels for short JPEG strips\nLocation: src/libImaging/TiffDecode.c:554  in _",
+      "link": "https://github.com/advisories/GHSA-q45j-58j2-45rg",
+      "cves": [
+        "CVE-2026-112897"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "gomarkdown/markdown IsSafeURL panics on short URLs",
       "date": "2026-10-16",
