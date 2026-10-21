@@ -1,16 +1,61 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-21T16:57:30.633Z",
+  "lastUpdated": "2026-10-21T21:27:56.465Z",
   "health": {
-    "lastFetchAttempt": "2026-10-21T16:57:30.633Z",
+    "lastFetchAttempt": "2026-10-21T21:27:56.465Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 5,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-21T16:57:30.633Z",
+    "lastFetchParsedItems": 7,
+    "lastFetchNewPatches": 3,
+    "lastSuccessWithData": "2026-10-21T21:27:56.465Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Pillow: Infinite loop in PdfParser.rewrite_pages on page tree Parent cycle",
+      "date": "2026-10-21",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "```\n============================================================================\nInfinite loop in PdfParser.rewrite_pages on page tree Parent cycle\nLocation: src/PIL/PdfParser.py:505  in PdfParser.rew",
+      "link": "https://github.com/advisories/GHSA-f2g6-542v-9j58",
+      "cves": [
+        "CVE-2026-112406"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Pillow: NULL dereference in ImagingExpand via rank filters on zero-size images",
+      "date": "2026-10-21",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "```\n============================================================================\nNULL dereference in ImagingExpand via rank filters on zero-size images\nLocation: src/libImaging/Filter.c:79  in Imaging",
+      "link": "https://github.com/advisories/GHSA-27h8-gf7j-v5hc",
+      "cves": [
+        "CVE-2026-112392"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Pillow: Double free in ImagingScaleAffine on calloc failure via Image.transform",
+      "date": "2026-10-21",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "```\n============================================================================\nDouble free in ImagingScaleAffine on calloc failure via Image.transform\nLocation: src/libImaging/Geometry.c:866  in Ima",
+      "link": "https://github.com/advisories/GHSA-7mwm-ghpf-9vrm",
+      "cves": [
+        "CVE-2026-112402"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.33.0-beta.1",
       "date": "2026-10-20",
