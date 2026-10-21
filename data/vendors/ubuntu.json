@@ -1,16 +1,106 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-10-20T21:26:50.687Z",
+  "lastUpdated": "2026-10-21T04:07:31.539Z",
   "health": {
-    "lastFetchAttempt": "2026-10-20T21:26:50.686Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-16T16:24:41.197Z",
-    "consecutiveEmptyFetches": 16,
+    "lastFetchAttempt": "2026-10-21T04:07:31.539Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 10,
+    "lastFetchNewPatches": 10,
+    "lastSuccessWithData": "2026-10-21T04:07:31.539Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "USN-8945-1: XZ Utils vulnerability",
+      "date": "2026-10-20",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "XZ Utils",
+      "description": "It was discovered that XZ Utils incorrectly handled certain memory\nallocation failures when reinitializing decoders for specific compressed\nfile formats. An attacker could possibly use this issue to t...",
+      "link": "https://ubuntu.com/security/notices/USN-8945-1"
+    },
+    {
+      "title": "USN-8944-1: ca-certificates update",
+      "date": "2026-10-20",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "ca-certificates",
+      "description": "This update removes the \"emSign ECC Root CA - G3\" CA certificate due to\nintermediate CA certificates being compromised.\n\nIn addition, in Ubuntu 22.04 LTS, Ubuntu 24.04 LTS, and Ubuntu 26.04 LTS,\nthe c...",
+      "link": "https://ubuntu.com/security/notices/USN-8944-1"
+    },
+    {
+      "title": "USN-8942-1: .NET vulnerabilities",
+      "date": "2026-10-20",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": ".NET vulnerabilities",
+      "description": "Multiple security issues were discovered in .NET and this update includes\nnew upstream .NET versions to fix these issues.\n\n.NET 8 has been updated to 8.0.32 in Ubuntu 22.04 LTS and Ubuntu 24.04 LTS.\n....",
+      "link": "https://ubuntu.com/security/notices/USN-8942-1"
+    },
+    {
+      "title": "USN-8943-1: Protocol Buffers vulnerability",
+      "date": "2026-10-20",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Protocol Buffers",
+      "description": "It was discovered that Protocol Buffers did not properly handle negative\nvarint lengths or enforce recursion limits when parsing input in the PHP\nlibrary. An attacker could possibly use this issue to ...",
+      "link": "https://ubuntu.com/security/notices/USN-8943-1"
+    },
+    {
+      "title": "USN-8708-2: sudo-rs vulnerability",
+      "date": "2026-10-20",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "sudo-rs",
+      "description": "USN-8708-1 fixed a vulnerability in sudo-rs. This update provides the\ncorresponding fix for Ubuntu 26.10.\n\nOriginal advisory details:\n\n It was discovered that sudo-rs incorrectly handled time-of-check...",
+      "link": "https://ubuntu.com/security/notices/USN-8708-2"
+    },
+    {
+      "title": "USN-8941-1: Squid vulnerabilities",
+      "date": "2026-10-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Squid vulnerabilities",
+      "description": "It was discovered that Squid incorrectly handled certain HTTP Transfer-\nEncoding headers. An attacker could possibly use this issue to perform HTTP\nrequest smuggling attacks, bypass security mechanism...",
+      "link": "https://ubuntu.com/security/notices/USN-8941-1"
+    },
+    {
+      "title": "USN-8940-1: Perl XS::Parse::Keyword module vulnerability",
+      "date": "2026-10-20",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Multiple Products",
+      "description": "It was discovered that the Perl XS::Parse::Keyword module did not\ncorrectly handle certain inputs. If a user or automated system were\ntricked into receiving specially crafted input, an attacker could ...",
+      "link": "https://ubuntu.com/security/notices/USN-8940-1"
+    },
+    {
+      "title": "USN-8939-1: libXtst vulnerabilities",
+      "date": "2026-10-19",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libXtst vulnerabilities",
+      "description": "It was discovered that libXtst did not properly handle certain RECORD\nreplies from the X server. A malicious X server could possibly use this\nissue to cause libXtst clients to crash, resulting in a de...",
+      "link": "https://ubuntu.com/security/notices/USN-8939-1"
+    },
+    {
+      "title": "USN-8927-2: curl vulnerabilities",
+      "date": "2026-10-19",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "curl vulnerabilities",
+      "description": "USN-8927-1 fixed vulnerabilities in curl. This update provides the\ncorresponding fixes for Ubuntu 26.10.\n\nOriginal advisory details:\n\n It was discovered that curl, when built with GnuTLS support, had ...",
+      "link": "https://ubuntu.com/security/notices/USN-8927-2"
+    },
+    {
+      "title": "USN-8938-1: cifs-utils vulnerability",
+      "date": "2026-10-19",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "cifs-utils",
+      "description": "It was discovered that cifs-utils incorrectly handled credentials files\nused by privileged mount.cifs invocations. A local attacker could\npossibly use this issue to inject arbitrary mount options into...",
+      "link": "https://ubuntu.com/security/notices/USN-8938-1"
+    },
     {
       "title": "USN-8922-2: Linux kernel (Azure) vulnerabilities",
       "date": "2026-10-15",
