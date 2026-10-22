@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-22T11:30:26.734Z",
+  "lastUpdated": "2026-10-22T16:57:00.237Z",
   "health": {
-    "lastFetchAttempt": "2026-10-22T11:30:26.734Z",
+    "lastFetchAttempt": "2026-10-22T16:57:00.237Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 8,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-22T11:30:26.734Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-10-22T16:57:00.237Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Django REST framework: TokenProxy.delete() reports success and revokes nothing",
+      "date": "2026-10-22",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nDeleting an authentication token through `TokenProxy` silently deletes nothing. The call raises no\nexception and reports success, the database row survives, and the token keeps authentica",
+      "link": "https://github.com/advisories/GHSA-xw6w-gcfp-cf8m",
+      "cves": [
+        "CVE-2026-114137"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "Pillow: Heap buffer overflow writing JPEG comment after ICC profile fills buffer",
+      "date": "2026-10-22",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "```\n============================================================================\nHeap buffer overflow writing JPEG comment after ICC profile fills buffer\nLocation: src/libImaging/JpegEncode.c:330  in ",
+      "link": "https://github.com/advisories/GHSA-g7cr-3p24-7wf7",
+      "cves": [
+        "CVE-2026-96778"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Pillow: Infinite loop in PdfParser.rewrite_pages on page tree Parent cycle",
       "date": "2026-10-21",
