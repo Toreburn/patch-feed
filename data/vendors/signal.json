@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-23T16:49:05.997Z",
+  "lastUpdated": "2026-10-23T21:14:22.354Z",
   "health": {
-    "lastFetchAttempt": "2026-10-23T16:49:05.997Z",
+    "lastFetchAttempt": "2026-10-23T21:14:22.354Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 4,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-23T16:49:05.997Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-10-23T21:14:22.354Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "SiYuan: authFilePublishAccess distinguishes hidden and forbidden documents from public and nonexistent ones, and issues a publish-auth cookie for documents it reports as forbidden",
+      "date": "2026-10-23",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\n`/api/filetree/authFilePublishAccess` is registered with `CheckAuth` only and is reachable anonymously. It never sets a failure code, so its outcome is signalled entirely by the response ",
+      "link": "https://github.com/advisories/GHSA-4pjg-x8qj-33j5",
+      "cves": [
+        "CVE-2026-73630"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Django REST framework: TokenProxy.delete() reports success and revokes nothing",
       "date": "2026-10-22",
