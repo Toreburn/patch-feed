@@ -1,12 +1,12 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-23T21:14:22.354Z",
+  "lastUpdated": "2026-10-24T04:03:43.473Z",
   "health": {
-    "lastFetchAttempt": "2026-10-23T21:14:22.354Z",
+    "lastFetchAttempt": "2026-10-24T04:03:43.473Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 3,
     "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-10-23T21:14:22.354Z",
+    "lastSuccessWithData": "2026-10-24T04:03:43.473Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -21,6 +21,21 @@
       "link": "https://github.com/advisories/GHSA-4pjg-x8qj-33j5",
       "cves": [
         "CVE-2026-73630"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "filelock ReadWriteLock: SQLite reopens the lock database by name, so a planted symlink or journal file makes the lock user's process overwrite or unlink its own files",
+      "date": "2026-10-23",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "`ReadWriteLock` and `AsyncReadWriteLock` (the SQLite-backed reader/writer lock) hand SQLite a name they do not control. On Linux the lock validates its database through a descriptor (the number the ke",
+      "link": "https://github.com/advisories/GHSA-v4x8-3wr5-3wq8",
+      "cves": [
+        "CVE-2026-112940"
       ],
       "platform": [
         "All Platforms"
