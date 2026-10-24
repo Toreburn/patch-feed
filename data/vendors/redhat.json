@@ -1,12 +1,12 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-10-24T10:39:24.497Z",
+  "lastUpdated": "2026-10-24T15:41:33.023Z",
   "health": {
-    "lastFetchAttempt": "2026-10-24T10:39:24.496Z",
+    "lastFetchAttempt": "2026-10-24T15:41:33.023Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 949,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-24T10:39:24.496Z",
+    "lastFetchParsedItems": 961,
+    "lastFetchNewPatches": 12,
+    "lastSuccessWithData": "2026-10-24T15:41:33.023Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -1825,6 +1825,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-115683.json",
       "cve": "CVE-2026-115683",
       "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-98869: kernel: bpf: Infer zext_dst based on static register liveness analysis",
+      "date": "2026-10-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: bpf: Infer zext_dst based on static register liveness analysis",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98869.json",
+      "cve": "CVE-2026-98869",
+      "cvss": 7.8
     },
     {
       "title": "CVE-2026-113495: cockpit-machines: RHSM access-token disclosure through image helper command-line arguments",
@@ -10845,6 +10856,127 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98839.json",
       "cve": "CVE-2026-98839",
       "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-98864: kernel: sched_ext: Wait for SCX_OPSS_DISPATCHING before reenqueueing a task",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: sched_ext: Wait for SCX_OPSS_DISPATCHING before reenqueueing a task",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98864.json",
+      "cve": "CVE-2026-98864",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-98866: kernel: sched/cache: Introduce task_struct->sched_cache_grp to fix UAF",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: sched/cache: Introduce task_struct->sched_cache_grp to fix UAF",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98866.json",
+      "cve": "CVE-2026-98866",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-98868: kernel: dm-pcache: reject a kset that overruns its segment",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: dm-pcache: reject a kset that overruns its segment",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98868.json",
+      "cve": "CVE-2026-98868",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-98850: kernel: net/packet: prevent TX_RING byte count overflow",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: net/packet: prevent TX_RING byte count overflow",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98850.json",
+      "cve": "CVE-2026-98850",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98863: kernel: KVM: x86: Re-pend GET_NESTED_STATE_PAGES if getting said pages fails",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: KVM: x86: Re-pend GET_NESTED_STATE_PAGES if getting said pages fails",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98863.json",
+      "cve": "CVE-2026-98863",
+      "cvss": 5.6
+    },
+    {
+      "title": "CVE-2026-98860: kernel: HID: bpf: cast size to ssize_t when checking hid_bpf_hw_request",
+      "date": "2026-10-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: HID: bpf: cast size to ssize_t when checking hid_bpf_hw_request",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98860.json",
+      "cve": "CVE-2026-98860",
+      "cvss": 1.9
+    },
+    {
+      "title": "CVE-2026-98857: kernel: ipvs: bound LBLCR and LBLC cache growth",
+      "date": "2026-10-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: ipvs: bound LBLCR and LBLC cache growth",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98857.json",
+      "cve": "CVE-2026-98857",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-98862: kernel: audit: fix exe mark UAF in kill_rules()",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: audit: fix exe mark UAF in kill_rules()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98862.json",
+      "cve": "CVE-2026-98862",
+      "cvss": 4.1
+    },
+    {
+      "title": "CVE-2026-98858: kernel: io_uring: fix task_work add use-after-free with SQPOLL",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: io_uring: fix task_work add use-after-free with SQPOLL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98858.json",
+      "cve": "CVE-2026-98858",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-98867: kernel: dm-pcache: bound the logical key offset from persistent memory",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: dm-pcache: bound the logical key offset from persistent memory",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98867.json",
+      "cve": "CVE-2026-98867",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-98865: kernel: sched_ext: Don't run ops.dequeue() with a DSQ lock held",
+      "date": "2026-10-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: sched_ext: Don't run ops.dequeue() with a DSQ lock held",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-98865.json",
+      "cve": "CVE-2026-98865",
+      "cvss": 4.4
     },
     {
       "title": "CVE-2026-111881: freerdp: freerdp: Denial of Service via crafted clipboard bitmap image",
