@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-27T17:47:54.505Z",
+  "lastUpdated": "2026-10-27T22:00:15.862Z",
   "health": {
-    "lastFetchAttempt": "2026-10-27T17:47:54.505Z",
+    "lastFetchAttempt": "2026-10-27T22:00:15.862Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-27T17:47:54.505Z",
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-10-27T22:00:15.862Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "undici WebSocket client vulnerable to Denial of Service via unbounded automatic PONG buffering",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\n\nundici's WebSocket client (including Node.js's bundled `globalThis.WebSocket`) can be driven to exhaust process memory by a malicious or compromised WebSocket server. For every PING frame ",
+      "link": "https://github.com/advisories/GHSA-9fm3-97px-rjf6",
+      "cves": [
+        "CVE-2026-109932"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "SiYuan: authFilePublishAccess distinguishes hidden and forbidden documents from public and nonexistent ones, and issues a publish-auth cookie for documents it reports as forbidden",
       "date": "2026-10-23",
