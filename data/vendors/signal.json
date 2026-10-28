@@ -1,16 +1,74 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-10-28T12:29:27.341Z",
+  "lastUpdated": "2026-10-28T22:24:58.750Z",
   "health": {
-    "lastFetchAttempt": "2026-10-28T12:29:27.341Z",
+    "lastFetchAttempt": "2026-10-28T22:24:58.749Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-10-28T12:29:27.341Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-10-28T22:24:58.749Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Signal Desktop v8.33.0",
+      "date": "2026-10-28",
+      "severity": "UNKNOWN",
+      "vendor": "signal",
+      "component": "Signal Desktop",
+      "description": "- Additional small tweaks, bug fixes, and assorted plans for the future.",
+      "link": "https://github.com/signalapp/Signal-Desktop/releases/tag/v8.33.0",
+      "cves": [],
+      "platform": [
+        "Desktop"
+      ]
+    },
+    {
+      "title": "filelock: StrictSoftFileLock creates its claim directories without the lock mode, so another local user with a write bit on them can end a live hold",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "`StrictSoftFileLock` and `AsyncStrictSoftFileLock` apply the caller's `mode` to the sentinel (the lock file at `<path>`) and to both claim files (the files whose presence says a process wants or holds",
+      "link": "https://github.com/advisories/GHSA-6627-m3xw-93mp",
+      "cves": [
+        "CVE-2026-112908"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "filelock: StrictSoftFileLock and SoftReadWriteLock adopt a protocol directory another user created first, losing mutual exclusion",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "`StrictSoftFileLock`, `AsyncStrictSoftFileLock`, `SoftReadWriteLock` and `AsyncSoftReadWriteLock` keep their whole ownership state as files in a directory derived from the lock path (`<path>.filelock/",
+      "link": "https://github.com/advisories/GHSA-9c4x-gm8v-wgc4",
+      "cves": [
+        "CVE-2026-112911"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "filelock: SoftFileLock removes a live holder's marker when another user forges the PID in a writable marker",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "`SoftFileLock`, `MarkerSoftFileLock`, `SoftFileLease`, their async variants and a `FileLock` that has fallen back to a soft lock on `ENOSYS` decide from the record inside the marker file whether its o",
+      "link": "https://github.com/advisories/GHSA-rfpc-qcw5-3pc4",
+      "cves": [
+        "CVE-2026-112939"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "undici WebSocket client vulnerable to Denial of Service via unbounded automatic PONG buffering",
       "date": "2026-10-27",
