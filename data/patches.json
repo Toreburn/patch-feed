@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-29T04:57:16.746Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-29T05:13:48.515Z",
+  "newPatches": 59,
   "patches": [
     {
       "title": "CVE-2026-118029 - Unverified ownership of the default Athena query result location in AWS SDK for pandas",
@@ -88,6 +88,39 @@
       "description": "On November 4, 2026, the Cisco Product Security Incident Response Team (PSIRT) will publish advisories to disclose security vulnerability information along with fixed software releases for the followi...",
       "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-I8z3n6lK",
       "cve": ""
+    },
+    {
+      "title": "DSA-6592-1 chromium - security update",
+      "date": "2026-10-28",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "chromium",
+      "description": "Security issues were discovered in Chromium which could result in the execution of arbitrary code, denial of service, or information disclosure. https://security-tracker.debian.org/tracker/DSA-6592-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00511.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6591-1 openjdk-25 - security update",
+      "date": "2026-10-28",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "openjdk-25",
+      "description": "Several vulnerabilities have been discovered in the OpenJDK Java runtime, which may result in denial of service, sandbox breakout, incomplete certificate checks or information disclosure. https://secu...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00510.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6590-1 firefox-esr - security update",
+      "date": "2026-10-28",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "firefox-esr",
+      "description": "Multiple security issues have been found in the Mozilla Firefox web browser, which could potentially result in the execution of arbitrary code, sandbox escape, bypass of the same-origin policy, privil...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00509.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "Electrum: Malicious server can replace a just-broadcast tx and try to trick user into RBF-ing it",
@@ -640,6 +673,72 @@
       "cvss": null
     },
     {
+      "title": "Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "tornado",
+      "description": "Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks",
+      "link": "https://github.com/advisories/GHSA-r4j5-9xpp-3985",
+      "cve": "CVE-2026-115927",
+      "cvss": 5.3
+    },
+    {
+      "title": "Tornado: Open redirect in RedirectHandler via protocol-relative URLs",
+      "date": "2026-10-28",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "tornado",
+      "description": "Tornado: Open redirect in RedirectHandler via protocol-relative URLs",
+      "link": "https://github.com/advisories/GHSA-pw9p-v7r6-gx4p",
+      "cve": "CVE-2026-116578",
+      "cvss": null
+    },
+    {
+      "title": "Tornado: Quadratic CPU usage when parsing HTTP headers with line folding",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "tornado",
+      "description": "Tornado: Quadratic CPU usage when parsing HTTP headers with line folding",
+      "link": "https://github.com/advisories/GHSA-pcg2-g6cj-q92c",
+      "cve": "CVE-2026-116577",
+      "cvss": 5.3
+    },
+    {
+      "title": "Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "crass",
+      "description": "Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass",
+      "link": "https://github.com/advisories/GHSA-pq4g-8rxf-4g29",
+      "cve": "CVE-2026-116695",
+      "cvss": null
+    },
+    {
+      "title": "systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "systeminformation",
+      "description": "systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks",
+      "link": "https://github.com/advisories/GHSA-3f7j-7jwc-fxfj",
+      "cve": "CVE-2026-116576",
+      "cvss": 7.8
+    },
+    {
+      "title": "Backstage catalog rules can be bypassed for URL locations using encoded path segments",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@backstage/plugin-catalog-backend, @backstage/plugin-catalog-backend",
+      "description": "Backstage catalog rules can be bypassed for URL locations using encoded path segments",
+      "link": "https://github.com/advisories/GHSA-w658-mh9p-ww8f",
+      "cve": "CVE-2026-115923",
+      "cvss": 6.5
+    },
+    {
       "title": "CVE-2026-100236: Dpdk: dpdk: heap out-of-bounds read/write in gso header copy",
       "date": "2026-10-28",
       "severity": "HIGH",
@@ -1088,6 +1187,456 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-110260",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-110260"
+    },
+    {
+      "title": "ADV260001: ADV260001 Hardening changes for ReFS volumes on removable media",
+      "date": "2026-10-28",
+      "severity": "UNKNOWN",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for ADV260001",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/ADV260001"
+    },
+    {
+      "title": "CVE-2026-100200: Windows Update Service Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100200",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100200"
+    },
+    {
+      "title": "CVE-2026-100201: Windows Client License Service Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100201",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100201"
+    },
+    {
+      "title": "CVE-2026-100202: Windows Message Queuing Queue Manager Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100202",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100202"
+    },
+    {
+      "title": "CVE-2026-100203: Windows Update Service Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100203",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100203"
+    },
+    {
+      "title": "CVE-2026-100205: SysInternals Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100205",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100205"
+    },
+    {
+      "title": "CVE-2026-100207: Azure CycleCloud Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100207",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100207"
+    },
+    {
+      "title": "CVE-2026-100209: Microsoft Office Excel Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100209",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100209"
+    },
+    {
+      "title": "CVE-2026-100210: Microsoft Office Excel Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100210",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100210"
+    },
+    {
+      "title": "CVE-2026-100211: Microsoft Office Excel Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100211",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100211"
+    },
+    {
+      "title": "CVE-2026-100212: Microsoft Office Excel Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100212",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100212"
+    },
+    {
+      "title": "CVE-2026-100214: Microsoft Dynamics 365 Business Central Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100214",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100214"
+    },
+    {
+      "title": "CVE-2026-100215: Microsoft Graphics Component Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100215",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100215"
+    },
+    {
+      "title": "CVE-2026-100216: Windows Storage Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100216",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100216"
+    },
+    {
+      "title": "CVE-2026-100217: Windows Group Policy Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100217",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100217"
+    },
+    {
+      "title": "CVE-2026-100218: Remote Desktop Gateway Service Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100218",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100218"
+    },
+    {
+      "title": "CVE-2026-100219: Microsoft QUIC Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100219",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100219"
+    },
+    {
+      "title": "CVE-2026-100220: Windows Media Video Decoder Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100220",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100220"
+    },
+    {
+      "title": "CVE-2026-100222: Network Policy Server (NPS) Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100222",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100222"
+    },
+    {
+      "title": "CVE-2026-100225: Windows Storage Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100225",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100225"
+    },
+    {
+      "title": "CVE-2026-102186: Windows Network File System Information Disclosure Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102186",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102186"
+    },
+    {
+      "title": "CVE-2026-102187: Windows Kernel Information Disclosure Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102187",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102187"
+    },
+    {
+      "title": "CVE-2026-102188: Windows Storage Port Driver Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102188",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102188"
+    },
+    {
+      "title": "CVE-2026-102189: Windows Storage Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102189",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102189"
+    },
+    {
+      "title": "CVE-2026-102191: Windows Storage Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102191",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102191"
+    },
+    {
+      "title": "CVE-2026-102192: Windows Failover Cluster Denial of Service Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102192",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102192"
+    },
+    {
+      "title": "CVE-2026-102193: Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102193",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102193"
+    },
+    {
+      "title": "CVE-2026-102194: Windows Graphics Kernel Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102194",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102194"
+    },
+    {
+      "title": "CVE-2026-102195: Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102195",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102195"
+    },
+    {
+      "title": "CVE-2026-102196: Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102196",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102196"
+    },
+    {
+      "title": "CVE-2026-102197: Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102197",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102197"
+    },
+    {
+      "title": "CVE-2026-102198: Windows Remote Desktop Protocol Information Disclosure Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102198",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102198"
+    },
+    {
+      "title": "CVE-2026-102199: Microsoft Windows Codecs Library Denial of Service Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102199",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102199"
+    },
+    {
+      "title": "CVE-2026-102201: Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102201",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102201"
+    },
+    {
+      "title": "CVE-2026-102202: Windows Container Isolation FS Filter Driver (unionfs.sys) Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102202",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102202"
+    },
+    {
+      "title": "CVE-2026-102203: RPC Runtime Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102203",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102203"
+    },
+    {
+      "title": "CVE-2026-102204: Windows Subsystem for Linux Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102204",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102204"
+    },
+    {
+      "title": "CVE-2026-102205: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102205",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102205"
+    },
+    {
+      "title": "CVE-2026-102206: Windows Portable Device MTP Driver Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102206",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102206"
+    },
+    {
+      "title": "CVE-2026-102207: Windows Kernel Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102207",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102207"
+    },
+    {
+      "title": "CVE-2026-102208: Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102208",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102208"
+    },
+    {
+      "title": "CVE-2026-102209: Microsoft Graphics Component Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102209",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102209"
+    },
+    {
+      "title": "CVE-2026-102210: Windows Text Shaping Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102210",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102210"
+    },
+    {
+      "title": "CVE-2026-102211: Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102211",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102211"
+    },
+    {
+      "title": "CVE-2026-102214: Windows Hyper-V Remote Code Execution Vulnerability",
+      "date": "2026-10-28",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102214",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102214"
+    },
+    {
+      "title": "CVE-2026-102215: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102215",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102215"
+    },
+    {
+      "title": "CVE-2026-102216: Windows StateRepository API Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102216",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102216"
+    },
+    {
+      "title": "CVE-2026-102217: WebDAV Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102217",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102217"
+    },
+    {
+      "title": "CVE-2026-102218: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102218",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102218"
+    },
+    {
+      "title": "CVE-2026-102220: Windows VHD miniport driver Elevation of Privilege Vulnerability",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102220",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102220"
     },
     {
       "title": "CVE-2026-111497 Portfolio Status: Impact of Brotli Vulnerability (CVE-2026-111497) on Palo Alto Networks Products (Severity: CRITICAL)",
@@ -9752,6 +10301,409 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-29T05:13:48.515Z",
+      "logs": [
+        "[INFO] apple - 7 patches, no changes",
+        "[INFO] aws - 23 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 16 patches, no changes",
+        "[INFO] cloudflare - 2 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 15 patches (3 new)",
+        "[INFO] edge - 1 patches, no changes",
+        "[INFO] fortinet - 2 patches, no changes",
+        "[INFO] gcp - 2 patches, no changes",
+        "[SUCCESS] github - 211 patches (6 new)",
+        "[SUCCESS] microsoft - 550 patches (50 new)",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 10 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[INFO] redhat - 182 patches, no changes",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 4 patches, no changes"
+      ],
+      "newPatchCount": 59,
+      "totalPatches": 1042,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "aws",
+        "cisco",
+        "debian",
+        "github",
+        "microsoft",
+        "paloalto",
+        "postgresql",
+        "signal",
+        "chrome",
+        "cloudflare",
+        "edge",
+        "gcp",
+        "redhat",
+        "ubuntu",
+        "apple",
+        "fortinet",
+        "oracle-db",
+        "crowdstrike"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6592-1 chromium - security update",
+          "date": "2026-10-28",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6591-1 openjdk-25 - security update",
+          "date": "2026-10-28",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6590-1 firefox-esr - security update",
+          "date": "2026-10-28",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Tornado: Open redirect in RedirectHandler via protocol-relative URLs",
+          "date": "2026-10-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Tornado: Quadratic CPU usage when parsing HTTP headers with line folding",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Crass: Incorrect tokenization of bad URLs enables CSS sanitizer bypass",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Backstage catalog rules can be bypassed for URL locations using encoded path segments",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "ADV260001: ADV260001 Hardening changes for ReFS volumes on removable media",
+          "date": "2026-10-28",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100200: Windows Update Service Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100201: Windows Client License Service Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100202: Windows Message Queuing Queue Manager Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100203: Windows Update Service Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100205: SysInternals Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100207: Azure CycleCloud Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100209: Microsoft Office Excel Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100210: Microsoft Office Excel Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100211: Microsoft Office Excel Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100212: Microsoft Office Excel Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100214: Microsoft Dynamics 365 Business Central Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100215: Microsoft Graphics Component Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100216: Windows Storage Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100217: Windows Group Policy Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100218: Remote Desktop Gateway Service Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100219: Microsoft QUIC Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100220: Windows Media Video Decoder Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100222: Network Policy Server (NPS) Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100225: Windows Storage Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102186: Windows Network File System Information Disclosure Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102187: Windows Kernel Information Disclosure Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102188: Windows Storage Port Driver Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102189: Windows Storage Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102191: Windows Storage Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102192: Windows Failover Cluster Denial of Service Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102193: Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102194: Windows Graphics Kernel Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102195: Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102196: Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102197: Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102198: Windows Remote Desktop Protocol Information Disclosure Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102199: Microsoft Windows Codecs Library Denial of Service Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102201: Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102202: Windows Container Isolation FS Filter Driver (unionfs.sys) Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102203: RPC Runtime Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102204: Windows Subsystem for Linux Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102205: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102206: Windows Portable Device MTP Driver Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102207: Windows Kernel Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102208: Windows Win32 Kernel Subsystem Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102209: Microsoft Graphics Component Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102210: Windows Text Shaping Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102211: Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102214: Windows Hyper-V Remote Code Execution Vulnerability",
+          "date": "2026-10-28",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102215: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102216: Windows StateRepository API Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102217: WebDAV Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102218: Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102220: Windows VHD miniport driver Elevation of Privilege Vulnerability",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-29T04:57:16.746Z",
       "logs": [
@@ -19140,935 +20092,6 @@
         "oracle-db"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-10-23T04:12:44.496Z",
-      "logs": [
-        "[INFO] aws - 82 patches, no changes",
-        "[INFO] chrome - 3 patches, no changes",
-        "[INFO] cisco - 24 patches, no changes",
-        "[INFO] cloudflare - 5 patches, no changes",
-        "[SUCCESS] debian - 11 patches (1 new)",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] github - 178 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 451 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[SUCCESS] paloalto - 3 patches (1 new)",
-        "[INFO] postgresql - 4 patches, no changes",
-        "[SUCCESS] redhat - 821 patches (145 new)",
-        "[INFO] signal - 9 patches, no changes",
-        "[INFO] ubuntu - 23 patches, no changes"
-      ],
-      "newPatchCount": 147,
-      "totalPatches": 1621,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 17,
-      "vendors": [
-        "paloalto",
-        "aws",
-        "cisco",
-        "cloudflare",
-        "debian",
-        "edge",
-        "github",
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "fortinet",
-        "gitlab",
-        "nodejs",
-        "chrome",
-        "oracle-db"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6578-1 aide - security update",
-          "date": "2026-10-22",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products  (Severity: HIGH)",
-          "date": "2026-10-23",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115393: wasmtime: wasmtime: Memory corruption via cross-engine object validation failure",
-          "date": "2026-10-22",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115390: wasmtime: wasmtime: Denial of Service via fuel accounting flaw",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115383: wasmtime: wasmtime: Denial of Service via improper validation of WebAssembly tag imports",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115382: wasmtime: wasmtime: Denial of Service via zero timeout in HTTP request option",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115379: wasmtime: Wasmtime: Denial of Service via missing garbage collection rooting",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115352: mistune: mistune: Denial of Service via unmatched brackets in inline link parser",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115349: mistune: mistune: Denial of Service via deeply nested square brackets",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114608: pylint: pylint: Arbitrary code execution via untrusted cache deserialization",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114605: dnspython: dnspython: Denial of Service via excessive DNS compression pointer traversal",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-75507: graphql-core: graphql-core: Denial of Service via nested inline fragments during query validation",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-75508: graphql-core: graphql-core: Denial of Service via token limit bypass using comments",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114603: opentelemetry-api: opentelemetry-api: Denial of Service via regular expression backtracking in header parsing",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-94482: next: Next.js: Denial of Service via crafted requests targeting Server Actions",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-90458: openstack-ironic: openstack-ironic: Redfish vendor_passthru subscription id path traversal",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-89419: openstack-ironic: openstack-ironic: maintenance state update bypasses set_maintenance policy via generic PATCH",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-111181: body-parser: body-parser: Denial of Service via unhandled decompression stream error",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-92709: rsyslog: rsyslog: Path traversal via unsanitized dynaFile templates",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115221: ipa: freeIPA: FreeIPA uses subject CN as proof of certificate ownership",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115327: libyang: libyang: Denial of Service via crafted NETCONF RPC action envelope",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-112085: webpack-dev-server: webpack-dev-server: unauthorized backend access via unvalidated WebSocket proxy requests",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114570: wordpress: WordPress: Stored Cross-Site Scripting via unescaped display names in Quick Edit",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114732: roundcubemail: roundcubemail: Unauthorized account access via alias login in multi-host environments",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114727: roundcubemail: roundcubemail: Arbitrary code execution via unsafe image resizing",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114663: vyper: Vyper: Contract logic corruption via improper name resolution of imported constants",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115449: libslirp: libslirp: ICMP echo reply length desynchronization leaks host IP to guest",
-          "date": "2026-10-22",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115424: oc: oc: Symlink/hardlink target validation bypass in oc image extract allows file write outside destination",
-          "date": "2026-10-21",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101803: mysql: mysql: unauthorized data modification via XML component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101802: mysql: mysql: Denial of Service via the Server Parser",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101800: mysql: mysql: unauthorized data access via improper privilege controls",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101801: mysql: mysql: Denial of Service in Server Optimizer",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101799: mysql: mysql: Denial of Service via Group Replication GCS",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101798: mysql: mysql: Denial of Service in the server optimizer",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101797: mysql: mysql: system takeover via mysqldump component",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101796: mysql: mysql: Complete server takeover via replication component",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101795: mysql: mysql: Complete service compromise by a local privileged attacker",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101794: mysql: mysql: Denial of Service via XML component flaw",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101789: mysql: mysql: Denial of Service via the Optimizer component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101788: mysql: mysql: Denial of Service via Server Components Services",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101787: mysql: mysql: Denial of Service via Server Optimizer flaw",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101786: mysql: mysql: Server takeover by a privileged network attacker",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101785: mysql: MySQL: Unauthorized data modification in JSON component",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101784: mysql: mysql: Denial of service in query optimizer",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101780: mysql: mysql: Denial of Service via X Plugin",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101778: mysql: mysql: Denial of Service",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101777: mysql: mysql: Denial of Service via security encryption component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101779: mysql: mysql: Partial Denial of Service via Telemetry component",
-          "date": "2026-10-20",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101776: mysql: mysql: Denial of Service in Group Replication plugin",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101775: mysql: mysql: unauthorized data modification via replication component",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101772: mysql: mysql: unauthorized server takeover",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101773: mysql: MySQL: Denial of Service via the Group Replication plugin",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101771: mysql: mysql: complete service takeover via network access",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101770: mysql: mysql: System takeover via client programs",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101766: mysql: mysql: Denial of service in replication component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101762: mysql: mysql: Denial of Service via security encryption component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101761: mysql: mysql: Denial of Service via security encryption component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101760: mysql: mysql: Denial of service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101756: mysql: mysql: Denial of Service via GIS component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101754: mysql: mysql: Denial of Service via client programs",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101755: mysql: mysql: Denial of Service via client programs",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101752: mysql: mysql: Denial of Service in Server: Components Services",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101753: mysql: mysql: Denial of Service in RAPID component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101751: mysql: mysql: Denial of Service in Group Replication",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101750: mysql: mysql: Denial of Service in Clone Plugin",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101749: mysql: mysql: Denial of Service via security encryption component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101748: mysql: mysql: Denial of Service via the audit component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101747: mysql: mysql: Denial of Service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101743: mysql: mysql: Denial of Service in Server GIS component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101733: mysql: mysql: Denial of Service via JSON component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101732: mysql: mysql: Denial of Service in Server Optimizer",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101731: mysql: MySQL Server: Denial of service in the Server Optimizer",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101729: mysql: mysql: Denial of Service via the Server Replication component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101730: mysql: mysql: Denial of Service via Server Optimizer component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101728: mysql: mysql: Denial of Service in Pluggable Auth",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101727: mysql: mysql: Denial of Service via the Replication component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101726: mysql: mysql: Denial of Service via the C API",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101725: mysql: From CVEorg collector",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101724: mysql: mysql: Denial of Service in InnoDB component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101722: mysql: mysql: unauthorized read access via connection handling",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101721: mysql: mysql: Denial of Service in Server Components Services",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101720: mysql: mysql: unauthorized data modification via connection handling",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101679: mysql: mysql: Denial of Service via multiple protocols",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101637: mysql: mysql: Denial of Service via InnoDB component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101629: mysql: mysql: Denial of Service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101627: mysql: mysql: Denial of Service in InnoDB component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101623: mysql: mysql: Denial of Service via server optimizer flaw",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101624: mysql: mysql: Denial of service via InnoDB storage engine",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101620: mysql: mysql: Denial of Service in Server Optimizer",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101622: mysql: mysql: Denial of Service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101621: mysql: mysql: Denial of Service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101619: mysql: mysql: Denial of Service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101618: mysql: mysql: Denial of Service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101617: mysql: mysql: Denial of Service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101615: mysql: mysql: Denial of service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101616: mysql: MySQL: Denial of Service via JSON component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101613: mysql: mysql: Denial of service via DDL component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101612: mysql: mysql: Denial of Service in InnoDB component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101614: mysql: mysql: Denial of Service in InnoDB component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101610: mysql: mysql: Denial of Service via Server Optimizer component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101611: mysql: mysql: Denial of Service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101607: mysql: mysql: Denial of Service in Server Optimizer",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101609: mysql: mysql: Denial of service in InnoDB",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101608: mysql: mysql: Denial of Service via Server Optimizer component",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-101513: mysql: mysql: Denial of Service via physical access",
-          "date": "2026-10-20",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113140: chromium-browser: angle: Use after free in ANGLE",
-          "date": "2026-10-20",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113029: chromium-browser: angle: Improper access control in ANGLE",
-          "date": "2026-10-20",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113143: chromium-browser: angle: Memory corruption in ANGLE",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113157: chromium-browser: angle: Information leak in ANGLE",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113200: chromium-browser: angle: Use after free in ANGLE",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113106: chromium-browser: skia: Memory corruption in Skia",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113250: chromium-browser: angle: Use after free in ANGLE",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113295: chromium-browser: angle: Out of bounds read in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113334: chromium-browser: angle: Improper input validation in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113285: chromium-browser: angle: Memory corruption in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113293: chromium-browser: angle: Use after free in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113210: chromium-browser: angle: Use after free in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113252: chromium-browser: angle: Improper input validation in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113266: chromium-browser: angle: Memory corruption in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113273: chromium-browser: angle: Memory corruption in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113234: chromium-browser: angle: Memory corruption in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113315: chromium-browser: angle: Memory corruption in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113117: chromium-browser: angle: Improper input validation in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113134: chromium-browser: angle: Memory corruption in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113082: chromium-browser: angle: Memory corruption in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113242: chromium-browser: angle: Memory corruption in ANGLE",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-113341: chromium-browser: skia: Memory corruption in Skia",
-          "date": "2026-10-20",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115484: open-iscsi: open-iscsi: DHCPv4 option parser heap out-of-bounds read in iscsiuio parse_msg",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115485: open-iscsi: open-iscsi: DHCPv6 vendor option strlen heap out-of-bounds read and 1-byte write in iscsiuio",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115486: open-iscsi: open-iscsi: IPv6 Neighbor Discovery missing option length validation in iscsiuio allows ARP table poisoning",
-          "date": "2026-10-20",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98717: kernel: KVM: x86/mmu: Bail from shadow walks if the root is invalid or a dummy",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98721: kernel: mtd: rawnand: cadence: Initialize IRQ state before requesting IRQ",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98712: kernel: KVM: arm64: vgic: Take a refcount on IRQs referenced by last_lr_irq",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98725: kernel: nvmet-auth: fix out-of-bounds write in nvmet_auth_challenge()",
-          "date": "2026-10-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98710: kernel: wifi: iwlegacy: 3945: free EEPROM data on remove",
-          "date": "2026-10-18",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98716: kernel: KVM: SVM: Use the active VMCB's MSR bitmap when checking if MSR is intercepted",
-          "date": "2026-10-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98723: kernel: nvmet: copy the hostid into the ctrl before creating PR pc_refs",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98719: kernel: KVM: SEV: Nullify \"have run CPUs\" mask pointer when freeing it",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98706: kernel: wifi: mac80211: drain PS delivery work during station teardown",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98713: kernel: KVM: arm64: Apply the fine-grained UNDEFs without FEAT_FGT",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98718: kernel: KVM: SEV: Do cache maintenance on the source VM *before* clearing SEV state",
-          "date": "2026-10-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98715: kernel: KVM: SVM: Preserve TLB control (i.e. pending TLB flush) on failed VMRUN",
-          "date": "2026-10-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98707: kernel: wifi: mac80211: shut down RX BA session timer on teardown",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98720: kernel: KVM: nVMX: Force MSR bitmap refresh if runtime eVMCS controls are modified",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98722: kernel: mtd: block2mtd: Fix divide error when erase_size is zero",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98724: kernel: nvmet: pci-epf: reject too-short SGL segments",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98714: kernel: KVM: SVM: Update control fields on #VMEXIT if and only if VMRUN succeeded",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
