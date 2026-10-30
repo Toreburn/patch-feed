@@ -1,7 +1,501 @@
 {
-  "lastUpdated": "2026-10-30T12:23:19.416Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-10-30T12:32:27.809Z",
+  "newPatches": 193,
   "patches": [
+    {
+      "title": "CVE-2026-100236: Dpdk: dpdk: heap out-of-bounds read/write in gso header copy",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100236",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100236"
+    },
+    {
+      "title": "CVE-2026-101019: NGINX ngx_http_js_module vulnerability",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-101019",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-101019"
+    },
+    {
+      "title": "CVE-2026-102554: Denial of Service via Eager Array Allocation During Deserialization in Guava",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-102554",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-102554"
+    },
+    {
+      "title": "CVE-2026-103531: OpenSC card-setcos.c setcos_construct_fci_44 stack-based overflow",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-103531",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-103531"
+    },
+    {
+      "title": "CVE-2026-103658: GNU Aspell 0.60.8.2 (first vulnerable version is not known) contains a heap-based buffer overflow write (CWE-122) in its read-only dictionary loader. String::reserve() in common/string.hpp computes its capacity check with a signed int ((int)s + 1), so a requested size of 0x7FFFFFFF wraps negative and the backing buffer is never grown. ReadOnlyDict::load() in modules/speller/default/readonly_ws.cpp passes the unvalidated 32-bit size fields from a .rws dictionary header into this path, so a crafted .rws file with a valid endian marker (12345678) and an oversized length field (e.g. lang_name_size = 0x7FFFFFFF) causes attacker-controlled data to be written out of bounds past an undersized heap allocation. An attacker who induces a victim to load a malicious dictionary — for example via aspell dump master <file> — can corrupt heap memory, resulting in denial of service and potentially code execution. Fixed in b830b6e and will be fixed in release 0.60.8.3.",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-103658",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-103658"
+    },
+    {
+      "title": "CVE-2026-103995: Lenient parsing of integers for response body and chunk framing",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-103995",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-103995"
+    },
+    {
+      "title": "CVE-2026-104252: Vitess vttablet /twopcz reflected XSS",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-104252",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-104252"
+    },
+    {
+      "title": "CVE-2026-104715: Cifs-utils: mount.cifs credential-file option injection allows local privilege boundary bypass",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-104715",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-104715"
+    },
+    {
+      "title": "CVE-2026-105236: TLS 1.2 session resumption in ssl crosses SNI virtual-host client-certificate trust boundaries",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105236",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105236"
+    },
+    {
+      "title": "CVE-2026-105326: Cups: cups: argument injection in mailto notifier via notify-recipient-uri",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105326",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105326"
+    },
+    {
+      "title": "CVE-2026-105481: A flaw in Node.js HTTP Agent connection reuse can cause a client to accept as valid a response that was sent before the client has sent the request. This is an incomplete fix of CVE-2026-48931.\n\nThe guard that destroys idle keep-alive sockets when unexpected data arrives only runs when the event loop polls for I/O. If an unsolicited response has already reached the socket but has not been read yet when the socket is handed to a new request, for example because the event loop was busy with synchronous work, the guard is removed without seeing it and the data is parsed as the response to the new request.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105481",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105481"
+    },
+    {
+      "title": "CVE-2026-105482: A flaw in Node.js DNS resolution allows hostnames containing a NUL byte to be silently truncated by the dns.resolve*() functions and dns.reverse(). This is an incomplete fix of CVE-2026-48930, which only covered dns.lookup() and the net/tls host options.\n\nBecause the name is passed to c-ares as a C string, resolving attacker.example\\0.trusted.example queries attacker.example and returns its records without any error. Applications that validate a hostname, for example against a domain allowlist, and then resolve it with dns.resolve*() can act on records for a different name than the one they validated.\n\nThis vulnerability affects Node.js 26.x, 24.x, and 22.x.",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105482",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105482"
+    },
+    {
+      "title": "CVE-2026-105483: A flaw in Node.js TLS hostname verification allows a certificate without a matching IP address SAN to authenticate a connection to an IPv4 address when the host is written with non-ASCII characters, such as fullwidth digits (`１２７.0.0.1`).\n\n`tls.checkServerIdentity()` did not recognize such hosts as IP addresses, even though they normalize and resolve to a regular IPv4 address, and matched them against the certificate DNS names and Common Name instead. A certificate containing `DNS:127.0.0.1` or `DNS:*.0.0.1` could therefore be accepted for an IP endpoint it was not issued for. This is a regression introduced after the fix for CVE-2026-48618.\n\nThis vulnerability affects Node.js **26.x** and **24.x**.",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105483",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105483"
+    },
+    {
+      "title": "CVE-2026-105712: gpgtar in GnuPG before 2.5.19 can allow file overwrite via crafted data in an archive. When extracting an untrusted archive with --directory (aka -C) into an existing directory containing a pre-existing symlink, gpgtar can follow that symlink and create or overwrite a file outside the selected extraction directory. The write is limited by the extraction user's filesystem permissions. An archive extracted into a fresh empty directory does not have this risk.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105712",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105712"
+    },
+    {
+      "title": "CVE-2026-106069: A flaw in Node.js TLS hostname verification can cause a server certificate to be validated against a different IP address than the one the client connected to, when the host is a non-canonical IPv4 literal with a leading zero, such as `0127.0.0.1`.\n\n`tls.checkServerIdentity()` normalizes the host following the WHATWG URL rules, which read a leading-zero octet as octal (`0127.0.0.1` becomes `87.0.0.1`), while the connection is made through the operating system resolver, which on some platforms such as macOS reads it as decimal (`127.0.0.1`). A server at the connected address can then be authenticated with a certificate issued for another IP address.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106069",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106069"
+    },
+    {
+      "title": "CVE-2026-106071: A flaw in Node.js Permission Model filesystem enforcement can grant access to paths that do not match a wildcard `--allow-fs-read` or `--allow-fs-write` rule.\n\nWhen the requested path is shorter than the prefix of a wildcard grant, the radix tree lookup stops comparing early and treats the path as a match. For example, `--allow-fs-read=/etc/passwd.*` also allows reading `/etc/passwd`. This requires the wildcard grant to sit directly under the root of the permission tree, for example when it is the only grant for that scope. This is a different root cause from CVE-2026-58043.\n\nThis vulnerability affects Node.js **26.x**.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106071",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106071"
+    },
+    {
+      "title": "CVE-2026-106072: A flaw in Node.js TLS hostname verification allows a certificate with only a DNS SAN to authenticate an IP endpoint when the client connects using a non-canonical IPv4 spelling, such as `0177.0.0.1`, `0x7f.0.0.1`, `2130706433` or `127.1`.\n\n`tls.checkServerIdentity()` did not classify these hosts as IP addresses, but normalized them to their canonical form and matched the result against the certificate DNS names. A certificate containing `DNS:127.0.0.1` and no `IP Address:127.0.0.1` SAN was therefore accepted, while the same certificate is correctly rejected for `127.0.0.1`. Exploitation requires a certificate with a numeric DNS SAN issued by a CA trusted by the client, and a platform resolver that accepts these spellings, such as glibc.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106072",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106072"
+    },
+    {
+      "title": "CVE-2026-106073: A flaw in Node.js Permission Model filesystem enforcement leaves `fs.realpathSync()` without the required read permission checks. This is an incomplete fix of CVE-2026-21715, which only covered `fs.realpathSync.native()`.\n\nAs a result, code running under `--permission` with restricted `--allow-fs-read` can still use `fs.realpathSync()` to check file existence, resolve symlink targets, and enumerate filesystem paths outside of permitted directories.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106073",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106073"
+    },
+    {
+      "title": "CVE-2026-106074: A flaw in Node.js `crypto` causes the internal entropy caches used by `crypto.randomUUID()`, `crypto.randomUUIDv7()`, and `crypto.randomInt()` to be saved into user-land startup snapshots (`--build-snapshot`) and single executable applications built with `useSnapshot`.\n\nIf any of these functions, or an API that relies on them such as `URL.createObjectURL()`, is called while the snapshot is built, every process started from that snapshot returns the same values until the cache is refilled: up to 127 UUIDs and about 1,000 `randomInt()` values. Identifiers expected to be unique can collide across processes, and values issued by one process can be predicted by observing another.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106074",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106074"
+    },
+    {
+      "title": "CVE-2026-106454: Twisted: IMAP wildcardToRegexp() ReDoS",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106454",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106454"
+    },
+    {
+      "title": "CVE-2026-106547: HDF5 heap buffer overflow in H5VM_array_fill via crafted fill-value metadata",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106547",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106547"
+    },
+    {
+      "title": "CVE-2026-106552: In sftp in OpenSSH before 10.6, a server can trigger directory traversal (causing files to be written to unintended locations) during a recursive copy operation.",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106552",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106552"
+    },
+    {
+      "title": "CVE-2026-106553: In sshd in OpenSSH before 10.6, credentials can incorrectly persist after failure of a GSSAPIAuthentication authentication attempt.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106553",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106553"
+    },
+    {
+      "title": "CVE-2026-106555: In sshd in OpenSSH before 10.6, GSSAPIAuthentication authentication state can incorrectly be persisted across authentication attempts.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106555",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106555"
+    },
+    {
+      "title": "CVE-2026-106582: In sshd and ssh in OpenSSH before 10.6, an LZ77 dictionary coder can be used even though this is contraindicated by the arXiv 2609.07709 \"Crossing the Streams\" findings.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106582",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106582"
+    },
+    {
+      "title": "CVE-2026-106583: In ssh in OpenSSH before 10.6, a $ or \\ character can occur in a command-line username, leading to injection.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106583",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106583"
+    },
+    {
+      "title": "CVE-2026-106584: In ssh-keygen in OpenSSH before 10.6, certificates could have incorrect expiration times because of Daylight Saving mishandling. There can be a slightly more severe effect on users in certain Antarctic locations.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106584",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106584"
+    },
+    {
+      "title": "CVE-2026-106585: In sshd and ssh in OpenSSH before 10.6, there is no check for whether the maximum packet length is exceeded during decompression of highly compressed data.",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106585",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106585"
+    },
+    {
+      "title": "CVE-2026-106586: In sshd in OpenSSH before 10.6, the restrict keyword (in authorized_keys) was supposed to be applicable to tunnel forwarding but was not, a different vulnerability than CVE-2026-73283.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106586",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106586"
+    },
+    {
+      "title": "CVE-2026-106587: In sshd in OpenSSH before 10.6, the value \"none\" for a configuration option is sometimes interpreted as a filename but was intended to mean that a feature is disabled.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-106587",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-106587"
+    },
+    {
+      "title": "CVE-2026-107161: Cyrus-sasl: heap buffer overflow in cyrus-sasl add_to_challenge() allows malicious server to crash or compromise digest-md5 clients",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107161",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107161"
+    },
+    {
+      "title": "CVE-2026-107324: Application denial of service via integer overflow in BSON value-length validation in MongoDB Go Driver",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107324",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107324"
+    },
+    {
+      "title": "CVE-2026-107325: Application denial of service via missing BSON array length validation in MongoDB Go Driver",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107325",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107325"
+    },
+    {
+      "title": "CVE-2026-107348: Integer overflow causes an infinite loop in message buffer growth in PgBouncer",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107348",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107348"
+    },
+    {
+      "title": "CVE-2026-107349: Infinite loop on empty option name in startup options parameter in PgBouncer",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107349",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107349"
+    },
+    {
+      "title": "CVE-2026-107350: Authentication bypass via second StartupMessage during SCRAM authentication in PgBouncer",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107350",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107350"
+    },
+    {
+      "title": "CVE-2026-107655: Cups: null pointer dereference via embedded job ticket comments allows remote denial of service",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107655",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107655"
+    },
+    {
+      "title": "CVE-2026-107778: MIT krb5 through 1.22.2 NULL Pointer Dereference via krb5_rd_cred()",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107778",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107778"
+    },
+    {
+      "title": "CVE-2026-107885: OpenPrinting CUPS through 2.4.20 contains a resource-exhaustion vulnerability in the submission-timeout handling of cupsdCheckJobs(). The scheduler suppresses timeout processing for all pending jobs whenever any client connection has an in-flight Send-Document operation, without matching that connection to the job being examined. A client allowed to reach the IPP service can hold an incomplete HTTP request containing parsed Send-Document headers before operation authorization, preventing unrelated incomplete jobs from expiring. Where Create-Job submission is allowed, incomplete jobs can accumulate until MaxJobs is exhausted and further legitimate print submissions are rejected. The suppression ends when the held connection closes.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107885",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107885"
+    },
+    {
+      "title": "CVE-2026-107886: OpenPrinting CUPS before 2.4.20 contains a double-free in printer-class management. When CUPS-Add-Modify-Class replaces an existing class member list, add_class() frees pclass->printers without clearing the pointer. If subsequent validation fails, the class retains the dangling pointer; CUPS-Delete-Class subsequently frees the same allocation in cupsdDeletePrinter(). A client authorized to modify and delete classes can cause scheduler-wide denial of service. The default policy requires @SYSTEM privileges.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107886",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107886"
+    },
+    {
+      "title": "CVE-2026-107888: OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference in cupsdCheckJobs() when a job marked job-held-on-create refers to a temporary printer that has been automatically deleted. Temporary-printer cleanup can remove the destination without canceling its held jobs, and the scheduler dereferences the NULL result of cupsdFindDest() while checking holding_new_jobs. This terminates cupsd and interrupts all queues managed by that process. In some plausible scenarios, an unprivileged submission can trigger this.",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107888",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107888"
+    },
+    {
+      "title": "CVE-2026-107890: OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference caused by repeated IPP group tags in job-creation requests. IPP parsing creates unnamed separator attributes with IPP_TAG_ZERO, but add_job() converts these separators to IPP_TAG_JOB. During job startup, get_options()/ipp_length() subsequently calls strlen() on a NULL attribute name, terminating cupsd and disrupting all queues. A single crafted Print-Job request can trigger the crash when the client can reach the scheduler and submit jobs to an accepting, enabled queue supporting the submitted document format. Anonymous submission is possible when permitted by listener and access-control configuration.",
+      "date": "2026-10-30",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-107890",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-107890"
+    },
+    {
+      "title": "CVE-2026-108119: Busybox: busybox: tar extraction-root escape via deferred symlink/hardlink creation bypasses cve-2026-26158 fix",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-108119",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-108119"
+    },
+    {
+      "title": "CVE-2026-108976: GNU Emacs before 31.2 (and TRAMP through 2.8.2) allows OS command injection via a filename because tramp-user-regexp has an incomplete list of disallowed inputs. NOTE: this issue exists because of an incomplete fix for CVE-2026-79992.",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-108976",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-108976"
+    },
+    {
+      "title": "CVE-2026-108985: ZDR decoding in libnfs through 6.0.2 before 7613236 has an out-of-bounds write related to lib/libnfs-zdr.c with libnfs_zdr_bytes(), libnfs_zdr_string(), and libnfs_zdr_array(). The caller-supplied maxsize value is not honored.",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-108985",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-108985"
+    },
+    {
+      "title": "CVE-2026-109088: libXtst RECORD EnableContext Reply Endless Loop",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-109088",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-109088"
+    },
+    {
+      "title": "CVE-2026-109089: libXi XGetDeviceControl Control Type Mismatch Heap Buffer Overflow",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-109089",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-109089"
+    },
+    {
+      "title": "CVE-2026-109090: libXi XGetDeviceControl DEVICE_ENABLE Heap Buffer Overflow",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-109090",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-109090"
+    },
+    {
+      "title": "CVE-2026-109349: gix-pack before 0.75.0 Reachable Assertion DoS via Pack Version 3 Header",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-109349",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-109349"
+    },
+    {
+      "title": "CVE-2026-109351: Gitoxide gix-pack before 0.75.0 Denial of Service via Pack Header Object Count",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-109351",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-109351"
+    },
+    {
+      "title": "CVE-2026-119272: chromium-browser: chromium-browser: Out of bounds read in FileSystem",
+      "date": "2026-10-30",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Out of bounds read in FileSystem",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119272.json",
+      "cve": "CVE-2026-119272",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-119271: chromium-browser: chromium-browser: Use after free in Skia",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Use after free in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119271.json",
+      "cve": "CVE-2026-119271",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-119269: chromium-browser: chromium-browser: Use after free in Blink",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Use after free in Blink",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119269.json",
+      "cve": "CVE-2026-119269",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-76025: chromium-browser: chromium-browser: Use after free in FileSystem",
+      "date": "2026-10-30",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: chromium-browser: Use after free in FileSystem",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-76025.json",
+      "cve": "CVE-2026-76025",
+      "cvss": 8.8
+    },
     {
       "title": "CVE-2026-119115 - Incorrect authorization in issuer resolution in AWS Private CA Connector for Kubernetes",
       "date": "2026-10-29",
@@ -1360,6 +1854,424 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-112922.json",
       "cve": "CVE-2026-112922",
       "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-119286: graphql-core: graphql-core: Denial of Service via unbounded memory growth during document validation",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "graphql-core: graphql-core: Denial of Service via unbounded memory growth during document validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119286.json",
+      "cve": "CVE-2026-119286",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-119284: joserfc: joserfc: Denial of Service via excessive memory allocation during JWS deserialization",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "joserfc: joserfc: Denial of Service via excessive memory allocation during JWS deserialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119284.json",
+      "cve": "CVE-2026-119284",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-119283: joserfc: joserfc: Denial of Service via unbounded recipient processing during JWE decryption",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "joserfc: joserfc: Denial of Service via unbounded recipient processing during JWE decryption",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119283.json",
+      "cve": "CVE-2026-119283",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-119280: org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Denial of Service via unvalidated lengths during XA recovery",
+      "date": "2026-10-29",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Denial of Service via unvalidated lengths during XA recovery",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119280.json",
+      "cve": "CVE-2026-119280",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-119209: pypdf: pypdf: Denial of Service via crafted cross-reference streams",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted cross-reference streams",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119209.json",
+      "cve": "CVE-2026-119209",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-119208: pypdf: pypdf: Denial of Service via forged page count in encrypted PDFs",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via forged page count in encrypted PDFs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119208.json",
+      "cve": "CVE-2026-119208",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-119207: pypdf: pypdf: Denial of Service via crafted invalid PDF dictionary",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted invalid PDF dictionary",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119207.json",
+      "cve": "CVE-2026-119207",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-119206: pypdf: pypdf: Denial of Service via crafted PDF page labels",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via crafted PDF page labels",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119206.json",
+      "cve": "CVE-2026-119206",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-119205: pypdf: pypdf: Denial of Service via infinite loop during dictionary cloning",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via infinite loop during dictionary cloning",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119205.json",
+      "cve": "CVE-2026-119205",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-119204: pypdf: pypdf: Denial of Service via excessive memory consumption during PDF parsing",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via excessive memory consumption during PDF parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119204.json",
+      "cve": "CVE-2026-119204",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-119203: pypdf: pypdf: Denial of Service via infinite loop on crafted incomplete PDF",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pypdf: pypdf: Denial of Service via infinite loop on crafted incomplete PDF",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119203.json",
+      "cve": "CVE-2026-119203",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-119196: pyasn1: pyasn1: Denial of Service via constructed bit string decoding",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pyasn1: pyasn1: Denial of Service via constructed bit string decoding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119196.json",
+      "cve": "CVE-2026-119196",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-119195: pyasn1: pyasn1: Denial of Service via quadratic processing of fragmented ASN.1 data",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pyasn1: pyasn1: Denial of Service via quadratic processing of fragmented ASN.1 data",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119195.json",
+      "cve": "CVE-2026-119195",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-119194: pyasn1: pyasn1: Denial of Service via hash collisions in schemaless decoding",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pyasn1: pyasn1: Denial of Service via hash collisions in schemaless decoding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119194.json",
+      "cve": "CVE-2026-119194",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-119189: node-forge: node-forge: Certificate validation bypass via unenforced path length constraints",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "node-forge: node-forge: Certificate validation bypass via unenforced path length constraints",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119189.json",
+      "cve": "CVE-2026-119189",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-119188: node-forge: node-forge: Denial of Service via interleaved record during fragmented TLS handshake",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "node-forge: node-forge: Denial of Service via interleaved record during fragmented TLS handshake",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119188.json",
+      "cve": "CVE-2026-119188",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-119187: node-forge: node-forge: Denial of Service via call stack exhaustion in TLS record processing",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "node-forge: node-forge: Denial of Service via call stack exhaustion in TLS record processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119187.json",
+      "cve": "CVE-2026-119187",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-118778: node-forge: node-forge: Denial of Service via missing TLS server certificate",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "node-forge: node-forge: Denial of Service via missing TLS server certificate",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118778.json",
+      "cve": "CVE-2026-118778",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-118773: glob: glob: Denial of Service (DoS) via incomplete traversal cancellation",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "glob: glob: Denial of Service (DoS) via incomplete traversal cancellation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118773.json",
+      "cve": "CVE-2026-118773",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-118772: joi: joi: Denial of Service via inefficient regular expression in email validation",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "joi: joi: Denial of Service via inefficient regular expression in email validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118772.json",
+      "cve": "CVE-2026-118772",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-118764: minimatch: minimatch: Denial of Service via crafted glob pattern expansion",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "minimatch: minimatch: Denial of Service via crafted glob pattern expansion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118764.json",
+      "cve": "CVE-2026-118764",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-119143: wasmtime: Wasmtime: Denial of Service via unvalidated zero-length stream operations",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Denial of Service via unvalidated zero-length stream operations",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119143.json",
+      "cve": "CVE-2026-119143",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-119142: wasmtime: Wasmtime: Denial of Service via canceled asynchronous function calls",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Denial of Service via canceled asynchronous function calls",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119142.json",
+      "cve": "CVE-2026-119142",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-119141: wasmtime: Wasmtime: Denial of Service via host panic during memory reallocation",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Denial of Service via host panic during memory reallocation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119141.json",
+      "cve": "CVE-2026-119141",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-119140: wasmtime: wasmtime: Denial of Service via thread.yield in start functions",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: wasmtime: Denial of Service via thread.yield in start functions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119140.json",
+      "cve": "CVE-2026-119140",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-119139: wasmtime: wasmtime: Denial of Service via unhandled assertion in component function call",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: wasmtime: Denial of Service via unhandled assertion in component function call",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119139.json",
+      "cve": "CVE-2026-119139",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-119138: wasmtime: wasmtime: Denial of Service via assertion failure after runtime trap",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: wasmtime: Denial of Service via assertion failure after runtime trap",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119138.json",
+      "cve": "CVE-2026-119138",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-119137: wasmtime: Wasmtime: Denial of Service via recursive type drops",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Denial of Service via recursive type drops",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119137.json",
+      "cve": "CVE-2026-119137",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-119136: wasmtime: wasmtime: Denial of Service via mixed synchronous and asynchronous calls",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: wasmtime: Denial of Service via mixed synchronous and asynchronous calls",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119136.json",
+      "cve": "CVE-2026-119136",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-119134: wasmtime: Wasmtime: Denial of Service via unbounded memory growth in resource handle tables",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Denial of Service via unbounded memory growth in resource handle tables",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119134.json",
+      "cve": "CVE-2026-119134",
+      "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-119135: wasmtime: Wasmtime: Denial of Service via component stream type mismatch",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: Wasmtime: Denial of Service via component stream type mismatch",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119135.json",
+      "cve": "CVE-2026-119135",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-119133: wasmtime: wasmtime: Undefined behavior via misaligned VMContext layout",
+      "date": "2026-10-29",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: wasmtime: Undefined behavior via misaligned VMContext layout",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119133.json",
+      "cve": "CVE-2026-119133",
+      "cvss": 2.6
+    },
+    {
+      "title": "CVE-2026-119132: wasmtime: wasmtime: Denial of Service via overlapping string transcoding in fused adapters",
+      "date": "2026-10-29",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "wasmtime: wasmtime: Denial of Service via overlapping string transcoding in fused adapters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119132.json",
+      "cve": "CVE-2026-119132",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-119124: ImageMagick: ImageMagick: Denial of service via heap-based buffer overflow in -morph option",
+      "date": "2026-10-29",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of service via heap-based buffer overflow in -morph option",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119124.json",
+      "cve": "CVE-2026-119124",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-119123: ImageMagick: ImageMagick: Denial of Service via stack overflow in TIFF decoder",
+      "date": "2026-10-29",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ImageMagick: ImageMagick: Denial of Service via stack overflow in TIFF decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119123.json",
+      "cve": "CVE-2026-119123",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-115642: keystonemiddleware: keystonemiddleware: application credential access_rules bypass via X-Service-Token header presence c",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keystonemiddleware: keystonemiddleware: application credential access_rules bypass via X-Service-Token header presence check",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-115642.json",
+      "cve": "CVE-2026-115642",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2019-25781: markdown: python-markdown: Denial of Service via inefficient inline link parsing",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "markdown: python-markdown: Denial of Service via inefficient inline link parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-25781.json",
+      "cve": "CVE-2019-25781",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-103963: glib-networking: Unbounded TLS 1.3 session ticket queue growth in glib-networking allows remote denial of service",
+      "date": "2026-10-29",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "glib-networking: Unbounded TLS 1.3 session ticket queue growth in glib-networking allows remote denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103963.json",
+      "cve": "CVE-2026-103963",
+      "cvss": 7.5
     },
     {
       "title": "USN-8958-1: .NET vulnerabilities",
@@ -4310,6 +5222,325 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-88858.json",
       "cve": "CVE-2026-88858",
       "cvss": 6.4
+    },
+    {
+      "title": "CVE-2026-118694: markdown2: markdown2: Denial of Service via unclosed inline link destinations",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "markdown2: markdown2: Denial of Service via unclosed inline link destinations",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118694.json",
+      "cve": "CVE-2026-118694",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-118669: oauthlib: oauthlib: privilege escalation via client identity confusion in token grant handlers",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "oauthlib: oauthlib: privilege escalation via client identity confusion in token grant handlers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118669.json",
+      "cve": "CVE-2026-118669",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-118667: langgraph-sdk: langgraph: LangGraph: Information disclosure via path traversal in streaming helpers",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "langgraph-sdk: langgraph: LangGraph: Information disclosure via path traversal in streaming helpers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118667.json",
+      "cve": "CVE-2026-118667",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-118664: decode-uri-component: decode-uri-component: Denial of Service via malformed percent-encoded input",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "decode-uri-component: decode-uri-component: Denial of Service via malformed percent-encoded input",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118664.json",
+      "cve": "CVE-2026-118664",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-118661: happy-dom: happy-dom: Cookie injection via improper cookie domain validation",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "happy-dom: happy-dom: Cookie injection via improper cookie domain validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118661.json",
+      "cve": "CVE-2026-118661",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-118660: happy-dom: happy-dom: Server-Side Request Forgery via default loading of external resources",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "happy-dom: happy-dom: Server-Side Request Forgery via default loading of external resources",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118660.json",
+      "cve": "CVE-2026-118660",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-114691: gcc: Integer wrap in `std",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gcc: Integer wrap in `std",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-114691.json",
+      "cve": "CVE-2026-114691",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-114690: gcc: Confirmed out-of-bounds read/write in libstdc++ parallel `std",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gcc: Confirmed out-of-bounds read/write in libstdc++ parallel `std",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-114690.json",
+      "cve": "CVE-2026-114690",
+      "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-118257: vue-i18n: core-base: vue-i18n: Cross-Site Scripting via improper iframe srcdoc sanitization",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vue-i18n: core-base: vue-i18n: Cross-Site Scripting via improper iframe srcdoc sanitization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118257.json",
+      "cve": "CVE-2026-118257",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-118256: vue-i18n: vue-i18n: HTML injection via unescaped named interpolation parameters",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vue-i18n: vue-i18n: HTML injection via unescaped named interpolation parameters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118256.json",
+      "cve": "CVE-2026-118256",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-115456: gcc: Out-of-bounds read in std::from_chars",
+      "date": "2026-10-28",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gcc: Out-of-bounds read in std::from_chars",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-115456.json",
+      "cve": "CVE-2026-115456",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-116273: perl-mime-tools: perl-mime-tools: Denial of Service via memory exhaustion from excessive message parts",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-mime-tools: perl-mime-tools: Denial of Service via memory exhaustion from excessive message parts",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116273.json",
+      "cve": "CVE-2026-116273",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-116272: perl-mime-tools: perl-mime-tools: Security filter bypass via nested comments in boundary parameters",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-mime-tools: perl-mime-tools: Security filter bypass via nested comments in boundary parameters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116272.json",
+      "cve": "CVE-2026-116272",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-116271: perl-mime-tools: perl-mime-tools: Arbitrary file overwrite via symbolic link following",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-mime-tools: perl-mime-tools: Arbitrary file overwrite via symbolic link following",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116271.json",
+      "cve": "CVE-2026-116271",
+      "cvss": 6.3
+    },
+    {
+      "title": "CVE-2026-116270: perl-MIME-tools: perl-MIME-tools: Denial of Service via memory exhaustion from crafted MIME headers",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-MIME-tools: perl-MIME-tools: Denial of Service via memory exhaustion from crafted MIME headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116270.json",
+      "cve": "CVE-2026-116270",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-116269: perl-MIME-tools: perl-MIME-tools: Attachment filter bypass via improper filename decoding",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-MIME-tools: perl-MIME-tools: Attachment filter bypass via improper filename decoding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116269.json",
+      "cve": "CVE-2026-116269",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-116268: perl-MIME-tools: perl-MIME-tools: Denial of Service via unclosed comments in header parameters",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-MIME-tools: perl-MIME-tools: Denial of Service via unclosed comments in header parameters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116268.json",
+      "cve": "CVE-2026-116268",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-116267: perl-MIME-tools: perl-MIME-tools: Denial of Service via memory exhaustion from deeply nested messages",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-MIME-tools: perl-MIME-tools: Denial of Service via memory exhaustion from deeply nested messages",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116267.json",
+      "cve": "CVE-2026-116267",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-116266: perl-mime-tools: perl-mime-tools: Security filter bypass via partially encoded multipart boundary",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-mime-tools: perl-mime-tools: Security filter bypass via partially encoded multipart boundary",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116266.json",
+      "cve": "CVE-2026-116266",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-116265: perl-MIME-tools: perl-MIME-tools: Security filter bypass via ambiguous multipart boundary continuations",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-MIME-tools: perl-MIME-tools: Security filter bypass via ambiguous multipart boundary continuations",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116265.json",
+      "cve": "CVE-2026-116265",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-116264: perl-MIME-tools: perl-MIME-tools: Security filter bypass via invalid Content-Type parameter",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "perl-MIME-tools: perl-MIME-tools: Security filter bypass via invalid Content-Type parameter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116264.json",
+      "cve": "CVE-2026-116264",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-116796: highcharts: highcharts: Arbitrary script execution via unsanitized SVG link attributes",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "highcharts: highcharts: Arbitrary script execution via unsanitized SVG link attributes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116796.json",
+      "cve": "CVE-2026-116796",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-111551: org.apache.kafka/kafka-streams: org.apache.kafka/kafka-clients: Apache Kafka: Denial of Service via memory exhaustion du",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.kafka/kafka-streams: org.apache.kafka/kafka-clients: Apache Kafka: Denial of Service via memory exhaustion during deserialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-111551.json",
+      "cve": "CVE-2026-111551",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-111115: org.apache.kafka/kafka-clients: Apache Kafka: Denial of Service via uncontrolled memory allocation in flexible request h",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.kafka/kafka-clients: Apache Kafka: Denial of Service via uncontrolled memory allocation in flexible request headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-111115.json",
+      "cve": "CVE-2026-111115",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-111108: org.apache.kafka/kafka-clients: Apache kafka: Denial of Service via excessive memory allocation during request parsing",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.kafka/kafka-clients: Apache kafka: Denial of Service via excessive memory allocation during request parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-111108.json",
+      "cve": "CVE-2026-111108",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-110985: org.apache.kafka/kafka-clients: Apache Kafka: Authentication bypass via missing JWT signature verification",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "org.apache.kafka/kafka-clients: Apache Kafka: Authentication bypass via missing JWT signature verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-110985.json",
+      "cve": "CVE-2026-110985",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-115455: gcc: Stack overflow in std::bitset on libstdc++",
+      "date": "2026-10-28",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gcc: Stack overflow in std::bitset on libstdc++",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-115455.json",
+      "cve": "CVE-2026-115455",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-118952: kroxylicious-authorizer-acl: Kroxylicious: ACL prefix matching can bypass authorization rules",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "kroxylicious-authorizer-acl: Kroxylicious: ACL prefix matching can bypass authorization rules",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118952.json",
+      "cve": "CVE-2026-118952",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-103506: grafana: SSO secrets readable by low-privileged users when an experimental feature is enabled",
+      "date": "2026-10-28",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "grafana: SSO secrets readable by low-privileged users when an experimental feature is enabled",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-103506.json",
+      "cve": "CVE-2026-103506",
+      "cvss": 8.6
     },
     {
       "title": "Signal Desktop v8.33.0",
@@ -7642,6 +8873,655 @@
       "cvss": 7.5
     },
     {
+      "title": "CVE-2026-118319: chromium-browser: skia: Memory corruption in Skia",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: skia: Memory corruption in Skia",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118319.json",
+      "cve": "CVE-2026-118319",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-118322: chromium-browser: angle: Memory corruption in ANGLE",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: angle: Memory corruption in ANGLE",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118322.json",
+      "cve": "CVE-2026-118322",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-118318: chromium-browser: Improper access control in V8",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Improper access control in V8",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118318.json",
+      "cve": "CVE-2026-118318",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-58496: thorvg: thorvg: Information disclosure via undersized font data",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thorvg: thorvg: Information disclosure via undersized font data",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-58496.json",
+      "cve": "CVE-2026-58496",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-118180: thunderbird: Matrix homeserver could redirect the chat session to a local file or network share",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thunderbird: Matrix homeserver could redirect the chat session to a local file or network share",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118180.json",
+      "cve": "CVE-2026-118180",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-118179: thunderbird: Request forgery via news: links",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thunderbird: Request forgery via news: links",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118179.json",
+      "cve": "CVE-2026-118179",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-118177: thunderbird: Calendar discovery accepted local file and remote network share locations",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thunderbird: Calendar discovery accepted local file and remote network share locations",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118177.json",
+      "cve": "CVE-2026-118177",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-118176: thunderbird: Bypass of remote UNC path restriction in mailbox: URLs",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thunderbird: Bypass of remote UNC path restriction in mailbox: URLs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118176.json",
+      "cve": "CVE-2026-118176",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-118175: thunderbird: Content of other messages could be included when replying to a crafted message",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thunderbird: Content of other messages could be included when replying to a crafted message",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118175.json",
+      "cve": "CVE-2026-118175",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-118174: thunderbird: Displaying a message could load an attacker-chosen URL through an OpenPGP key attachment",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "thunderbird: Displaying a message could load an attacker-chosen URL through an OpenPGP key attachment",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118174.json",
+      "cve": "CVE-2026-118174",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117997: firefox: thunderbird: Sandbox escape due to use-after-free in the Widget component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Sandbox escape due to use-after-free in the Widget component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117997.json",
+      "cve": "CVE-2026-117997",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117987: firefox: thunderbird: Use-after-free in the Graphics component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Graphics component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117987.json",
+      "cve": "CVE-2026-117987",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117988: firefox: thunderbird: Sandbox escape due to incorrect boundary conditions in the Graphics: CanvasWebGL component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Sandbox escape due to incorrect boundary conditions in the Graphics: CanvasWebGL component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117988.json",
+      "cve": "CVE-2026-117988",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117985: firefox: thunderbird: Sandbox escape due to use-after-free in the Graphics component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Sandbox escape due to use-after-free in the Graphics component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117985.json",
+      "cve": "CVE-2026-117985",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117986: firefox: thunderbird: Use-after-free in the Graphics component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Graphics component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117986.json",
+      "cve": "CVE-2026-117986",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117980: firefox: thunderbird: Use-after-free in the Graphics component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Graphics component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117980.json",
+      "cve": "CVE-2026-117980",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117973: firefox: thunderbird: Use-after-free in the Networking: DNS component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Networking: DNS component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117973.json",
+      "cve": "CVE-2026-117973",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117974: firefox: thunderbird: Use-after-free in the XML component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the XML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117974.json",
+      "cve": "CVE-2026-117974",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117971: firefox: thunderbird: Sandbox escape due to use-after-free in the Print Preview component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Sandbox escape due to use-after-free in the Print Preview component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117971.json",
+      "cve": "CVE-2026-117971",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117965: firefox: thunderbird: Same-origin policy bypass in the Address Bar component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Same-origin policy bypass in the Address Bar component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117965.json",
+      "cve": "CVE-2026-117965",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117964: firefox: thunderbird: Use-after-free in the Panning and Zooming component",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Panning and Zooming component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117964.json",
+      "cve": "CVE-2026-117964",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117954: firefox: thunderbird: Use-after-free in the Layout: Positioned component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Layout: Positioned component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117954.json",
+      "cve": "CVE-2026-117954",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117951: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117951.json",
+      "cve": "CVE-2026-117951",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117949: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117949.json",
+      "cve": "CVE-2026-117949",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117941: firefox: thunderbird: Use-after-free in the DOM: CSS Object Model component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: CSS Object Model component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117941.json",
+      "cve": "CVE-2026-117941",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117936: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117936.json",
+      "cve": "CVE-2026-117936",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117935: firefox: thunderbird: Use-after-free in the DOM: Bindings (WebIDL) component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Bindings (WebIDL) component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117935.json",
+      "cve": "CVE-2026-117935",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117931: firefox: thunderbird: Use-after-free in the DOM: Events component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Events component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117931.json",
+      "cve": "CVE-2026-117931",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117930: firefox: thunderbird: Use-after-free in the DOM: Bindings (WebIDL) component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Bindings (WebIDL) component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117930.json",
+      "cve": "CVE-2026-117930",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117927: firefox: thunderbird: Use-after-free in the SVG component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the SVG component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117927.json",
+      "cve": "CVE-2026-117927",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117925: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117925.json",
+      "cve": "CVE-2026-117925",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117920: firefox: thunderbird: Use-after-free in the DOM: HTML Parser component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: HTML Parser component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117920.json",
+      "cve": "CVE-2026-117920",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117919: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117919.json",
+      "cve": "CVE-2026-117919",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117916: firefox: thunderbird: Use-after-free in the XSLT component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the XSLT component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117916.json",
+      "cve": "CVE-2026-117916",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117913: firefox: thunderbird: Use-after-free in the SVG component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the SVG component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117913.json",
+      "cve": "CVE-2026-117913",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117906: firefox: thunderbird: Use-after-free in the CSS Parsing and Computation component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the CSS Parsing and Computation component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117906.json",
+      "cve": "CVE-2026-117906",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117900: firefox: thunderbird: Use-after-free in the DOM: Editor component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Editor component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117900.json",
+      "cve": "CVE-2026-117900",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117902: firefox: thunderbird: Use-after-free in the Layout: Text and Fonts component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Layout: Text and Fonts component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117902.json",
+      "cve": "CVE-2026-117902",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117898: firefox: thunderbird: Use-after-free in the JavaScript Engine: JIT component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the JavaScript Engine: JIT component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117898.json",
+      "cve": "CVE-2026-117898",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117896: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117896.json",
+      "cve": "CVE-2026-117896",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117892: firefox: thunderbird: Privilege escalation due to use-after-free in the WebRTC: Networking component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Privilege escalation due to use-after-free in the WebRTC: Networking component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117892.json",
+      "cve": "CVE-2026-117892",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117891: firefox: thunderbird: Use-after-free in the JavaScript Engine: JIT component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the JavaScript Engine: JIT component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117891.json",
+      "cve": "CVE-2026-117891",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117887: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117887.json",
+      "cve": "CVE-2026-117887",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117882: firefox: thunderbird: Use-after-free in the Layout component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Layout component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117882.json",
+      "cve": "CVE-2026-117882",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117881: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117881.json",
+      "cve": "CVE-2026-117881",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117883: firefox: thunderbird: Use-after-free in the DOM: HTML Parser component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: HTML Parser component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117883.json",
+      "cve": "CVE-2026-117883",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117880: firefox: thunderbird: Use-after-free in the XML component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the XML component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117880.json",
+      "cve": "CVE-2026-117880",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117878: firefox: thunderbird: Other issue, use-after-free in the Storage: IndexedDB component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Other issue, use-after-free in the Storage: IndexedDB component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117878.json",
+      "cve": "CVE-2026-117878",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117876: firefox: thunderbird: Use-after-free in the Layout: Text and Fonts component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Layout: Text and Fonts component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117876.json",
+      "cve": "CVE-2026-117876",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117877: firefox: thunderbird: Use-after-free in the Layout: Text and Fonts component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Layout: Text and Fonts component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117877.json",
+      "cve": "CVE-2026-117877",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117875: firefox: thunderbird: Use-after-free in the Layout: Scrolling and Overflow component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Layout: Scrolling and Overflow component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117875.json",
+      "cve": "CVE-2026-117875",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117874: firefox: thunderbird: Use-after-free in the Internationalization component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Internationalization component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117874.json",
+      "cve": "CVE-2026-117874",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117872: firefox: thunderbird: Use-after-free in the JavaScript: Standard Library component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the JavaScript: Standard Library component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117872.json",
+      "cve": "CVE-2026-117872",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117866: firefox: thunderbird: Privilege escalation due to use-after-free in the Graphics: Canvas2D component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Privilege escalation due to use-after-free in the Graphics: Canvas2D component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117866.json",
+      "cve": "CVE-2026-117866",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117865: firefox: thunderbird: Use-after-free in the JavaScript: GC component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the JavaScript: GC component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117865.json",
+      "cve": "CVE-2026-117865",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117860: firefox: thunderbird: Same-origin policy bypass in the DOM: Navigation component",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Same-origin policy bypass in the DOM: Navigation component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117860.json",
+      "cve": "CVE-2026-117860",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-117602: electrum: Electrum: Arbitrary code execution via external plugin authorization bypass",
+      "date": "2026-10-27",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "electrum: Electrum: Arbitrary code execution via external plugin authorization bypass",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117602.json",
+      "cve": "CVE-2026-117602",
+      "cvss": 8.4
+    },
+    {
+      "title": "CVE-2026-117557: SDL2_image: SDL3_image: SDL_image: Denial of Service via crafted ILBM image file",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "SDL2_image: SDL3_image: SDL_image: Denial of Service via crafted ILBM image file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117557.json",
+      "cve": "CVE-2026-117557",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-117555: cimg: cimg: Denial of Service via crafted BMP image",
+      "date": "2026-10-27",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cimg: cimg: Denial of Service via crafted BMP image",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117555.json",
+      "cve": "CVE-2026-117555",
+      "cvss": 6.1
+    },
+    {
       "title": "undici WebSocket client vulnerable to Denial of Service via unbounded automatic PONG buffering",
       "date": "2026-10-27",
       "severity": "MEDIUM",
@@ -9450,6 +11330,138 @@
       "cvss": 8.1
     },
     {
+      "title": "CVE-2026-116748: transmission: Transmission: Arbitrary code execution via overly permissive CORS policy",
+      "date": "2026-10-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "transmission: Transmission: Arbitrary code execution via overly permissive CORS policy",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116748.json",
+      "cve": "CVE-2026-116748",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-116740: libcss: libcss: Denial of Service via media list trailing comma",
+      "date": "2026-10-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libcss: libcss: Denial of Service via media list trailing comma",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116740.json",
+      "cve": "CVE-2026-116740",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-116730: furnace: Furnace: Denial of Service via crafted FamiTracker module import",
+      "date": "2026-10-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "furnace: Furnace: Denial of Service via crafted FamiTracker module import",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116730.json",
+      "cve": "CVE-2026-116730",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-116731: furnace: Furnace: Denial of Service via out-of-bounds write during FamiTracker module parsing",
+      "date": "2026-10-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "furnace: Furnace: Denial of Service via out-of-bounds write during FamiTracker module parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116731.json",
+      "cve": "CVE-2026-116731",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-116589: ddtrace: ddtrace: Denial of Service via unhandled error in IAST string formatting",
+      "date": "2026-10-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ddtrace: ddtrace: Denial of Service via unhandled error in IAST string formatting",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116589.json",
+      "cve": "CVE-2026-116589",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-116588: ddtrace: dd-trace-py: Denial of Service via regular expression backtracking",
+      "date": "2026-10-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ddtrace: dd-trace-py: Denial of Service via regular expression backtracking",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116588.json",
+      "cve": "CVE-2026-116588",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-116671: xpdf: Xpdf: Denial of Service via infinite loop during JPEG 2000 image processing",
+      "date": "2026-10-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "xpdf: Xpdf: Denial of Service via infinite loop during JPEG 2000 image processing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116671.json",
+      "cve": "CVE-2026-116671",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-104591: libosmocore: libosmocore: Denial of Service via buffer overflow in osmo_iuup_compute_payload_crc()",
+      "date": "2026-10-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libosmocore: libosmocore: Denial of Service via buffer overflow in osmo_iuup_compute_payload_crc()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104591.json",
+      "cve": "CVE-2026-104591",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-104594: libosmocore: libosmocore: Information disclosure via out-of-bounds read in IPA CCM parser",
+      "date": "2026-10-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libosmocore: libosmocore: Information disclosure via out-of-bounds read in IPA CCM parser",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104594.json",
+      "cve": "CVE-2026-104594",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-104592: libosmocore: libosmocore: Denial of Service via out-of-bounds read in CBSP decoder",
+      "date": "2026-10-26",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libosmocore: libosmocore: Denial of Service via out-of-bounds read in CBSP decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104592.json",
+      "cve": "CVE-2026-104592",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-104597: libosmocore: libosmocore: Information disclosure via out-of-bounds read in iuup_rx_initialization",
+      "date": "2026-10-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libosmocore: libosmocore: Information disclosure via out-of-bounds read in iuup_rx_initialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104597.json",
+      "cve": "CVE-2026-104597",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-104596: libosmocore: libosmocore: Information disclosure via out-of-bounds read in GSM 04.80 parser",
+      "date": "2026-10-26",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libosmocore: libosmocore: Information disclosure via out-of-bounds read in GSM 04.80 parser",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104596.json",
+      "cve": "CVE-2026-104596",
+      "cvss": 5.3
+    },
+    {
       "title": "USN-8956-1: Brotli vulnerability",
       "date": "2026-10-26",
       "severity": "UNKNOWN",
@@ -10986,6 +12998,17 @@
       "cvss": 3.3
     },
     {
+      "title": "CVE-2026-114214: ash: Ash: Information disclosure via missing source filter in relationship queries",
+      "date": "2026-10-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ash: Ash: Information disclosure via missing source filter in relationship queries",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-114214.json",
+      "cve": "CVE-2026-114214",
+      "cvss": 6.5
+    },
+    {
       "title": "Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities",
       "date": "2026-10-24",
       "severity": "UNKNOWN",
@@ -11511,6 +13534,1213 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-10-30T12:32:27.809Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[INFO] aws - 17 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 16 patches, no changes",
+        "[INFO] cloudflare - 3 patches, no changes",
+        "[INFO] debian - 15 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 154 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[SUCCESS] microsoft - 600 patches (50 new)",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 11 patches, no changes",
+        "[INFO] postgresql - 3 patches, no changes",
+        "[SUCCESS] redhat - 499 patches (143 new)",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 5 patches, no changes"
+      ],
+      "newPatchCount": 193,
+      "totalPatches": 1346,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "microsoft",
+        "redhat",
+        "aws",
+        "chrome",
+        "cisco",
+        "cloudflare",
+        "debian",
+        "edge",
+        "github",
+        "gitlab",
+        "paloalto",
+        "ubuntu",
+        "postgresql",
+        "signal",
+        "gcp",
+        "apple",
+        "fortinet",
+        "oracle-db"
+      ],
+      "newPatches": [
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100236: Dpdk: dpdk: heap out-of-bounds read/write in gso header copy",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-101019: NGINX ngx_http_js_module vulnerability",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-102554: Denial of Service via Eager Array Allocation During Deserialization in Guava",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-103531: OpenSC card-setcos.c setcos_construct_fci_44 stack-based overflow",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-103658: GNU Aspell 0.60.8.2 (first vulnerable version is not known) contains a heap-based buffer overflow write (CWE-122) in its read-only dictionary loader. String::reserve() in common/string.hpp computes its capacity check with a signed int ((int)s + 1), so a requested size of 0x7FFFFFFF wraps negative and the backing buffer is never grown. ReadOnlyDict::load() in modules/speller/default/readonly_ws.cpp passes the unvalidated 32-bit size fields from a .rws dictionary header into this path, so a crafted .rws file with a valid endian marker (12345678) and an oversized length field (e.g. lang_name_size = 0x7FFFFFFF) causes attacker-controlled data to be written out of bounds past an undersized heap allocation. An attacker who induces a victim to load a malicious dictionary — for example via aspell dump master <file> — can corrupt heap memory, resulting in denial of service and potentially code execution. Fixed in b830b6e and will be fixed in release 0.60.8.3.",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-103995: Lenient parsing of integers for response body and chunk framing",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-104252: Vitess vttablet /twopcz reflected XSS",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-104715: Cifs-utils: mount.cifs credential-file option injection allows local privilege boundary bypass",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105236: TLS 1.2 session resumption in ssl crosses SNI virtual-host client-certificate trust boundaries",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105326: Cups: cups: argument injection in mailto notifier via notify-recipient-uri",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105481: A flaw in Node.js HTTP Agent connection reuse can cause a client to accept as valid a response that was sent before the client has sent the request. This is an incomplete fix of CVE-2026-48931.\n\nThe guard that destroys idle keep-alive sockets when unexpected data arrives only runs when the event loop polls for I/O. If an unsolicited response has already reached the socket but has not been read yet when the socket is handed to a new request, for example because the event loop was busy with synchronous work, the guard is removed without seeing it and the data is parsed as the response to the new request.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105482: A flaw in Node.js DNS resolution allows hostnames containing a NUL byte to be silently truncated by the dns.resolve*() functions and dns.reverse(). This is an incomplete fix of CVE-2026-48930, which only covered dns.lookup() and the net/tls host options.\n\nBecause the name is passed to c-ares as a C string, resolving attacker.example\\0.trusted.example queries attacker.example and returns its records without any error. Applications that validate a hostname, for example against a domain allowlist, and then resolve it with dns.resolve*() can act on records for a different name than the one they validated.\n\nThis vulnerability affects Node.js 26.x, 24.x, and 22.x.",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105483: A flaw in Node.js TLS hostname verification allows a certificate without a matching IP address SAN to authenticate a connection to an IPv4 address when the host is written with non-ASCII characters, such as fullwidth digits (`１２７.0.0.1`).\n\n`tls.checkServerIdentity()` did not recognize such hosts as IP addresses, even though they normalize and resolve to a regular IPv4 address, and matched them against the certificate DNS names and Common Name instead. A certificate containing `DNS:127.0.0.1` or `DNS:*.0.0.1` could therefore be accepted for an IP endpoint it was not issued for. This is a regression introduced after the fix for CVE-2026-48618.\n\nThis vulnerability affects Node.js **26.x** and **24.x**.",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105712: gpgtar in GnuPG before 2.5.19 can allow file overwrite via crafted data in an archive. When extracting an untrusted archive with --directory (aka -C) into an existing directory containing a pre-existing symlink, gpgtar can follow that symlink and create or overwrite a file outside the selected extraction directory. The write is limited by the extraction user's filesystem permissions. An archive extracted into a fresh empty directory does not have this risk.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106069: A flaw in Node.js TLS hostname verification can cause a server certificate to be validated against a different IP address than the one the client connected to, when the host is a non-canonical IPv4 literal with a leading zero, such as `0127.0.0.1`.\n\n`tls.checkServerIdentity()` normalizes the host following the WHATWG URL rules, which read a leading-zero octet as octal (`0127.0.0.1` becomes `87.0.0.1`), while the connection is made through the operating system resolver, which on some platforms such as macOS reads it as decimal (`127.0.0.1`). A server at the connected address can then be authenticated with a certificate issued for another IP address.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106071: A flaw in Node.js Permission Model filesystem enforcement can grant access to paths that do not match a wildcard `--allow-fs-read` or `--allow-fs-write` rule.\n\nWhen the requested path is shorter than the prefix of a wildcard grant, the radix tree lookup stops comparing early and treats the path as a match. For example, `--allow-fs-read=/etc/passwd.*` also allows reading `/etc/passwd`. This requires the wildcard grant to sit directly under the root of the permission tree, for example when it is the only grant for that scope. This is a different root cause from CVE-2026-58043.\n\nThis vulnerability affects Node.js **26.x**.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106072: A flaw in Node.js TLS hostname verification allows a certificate with only a DNS SAN to authenticate an IP endpoint when the client connects using a non-canonical IPv4 spelling, such as `0177.0.0.1`, `0x7f.0.0.1`, `2130706433` or `127.1`.\n\n`tls.checkServerIdentity()` did not classify these hosts as IP addresses, but normalized them to their canonical form and matched the result against the certificate DNS names. A certificate containing `DNS:127.0.0.1` and no `IP Address:127.0.0.1` SAN was therefore accepted, while the same certificate is correctly rejected for `127.0.0.1`. Exploitation requires a certificate with a numeric DNS SAN issued by a CA trusted by the client, and a platform resolver that accepts these spellings, such as glibc.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106073: A flaw in Node.js Permission Model filesystem enforcement leaves `fs.realpathSync()` without the required read permission checks. This is an incomplete fix of CVE-2026-21715, which only covered `fs.realpathSync.native()`.\n\nAs a result, code running under `--permission` with restricted `--allow-fs-read` can still use `fs.realpathSync()` to check file existence, resolve symlink targets, and enumerate filesystem paths outside of permitted directories.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106074: A flaw in Node.js `crypto` causes the internal entropy caches used by `crypto.randomUUID()`, `crypto.randomUUIDv7()`, and `crypto.randomInt()` to be saved into user-land startup snapshots (`--build-snapshot`) and single executable applications built with `useSnapshot`.\n\nIf any of these functions, or an API that relies on them such as `URL.createObjectURL()`, is called while the snapshot is built, every process started from that snapshot returns the same values until the cache is refilled: up to 127 UUIDs and about 1,000 `randomInt()` values. Identifiers expected to be unique can collide across processes, and values issued by one process can be predicted by observing another.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106454: Twisted: IMAP wildcardToRegexp() ReDoS",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106547: HDF5 heap buffer overflow in H5VM_array_fill via crafted fill-value metadata",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106552: In sftp in OpenSSH before 10.6, a server can trigger directory traversal (causing files to be written to unintended locations) during a recursive copy operation.",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106553: In sshd in OpenSSH before 10.6, credentials can incorrectly persist after failure of a GSSAPIAuthentication authentication attempt.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106555: In sshd in OpenSSH before 10.6, GSSAPIAuthentication authentication state can incorrectly be persisted across authentication attempts.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106582: In sshd and ssh in OpenSSH before 10.6, an LZ77 dictionary coder can be used even though this is contraindicated by the arXiv 2609.07709 \"Crossing the Streams\" findings.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106583: In ssh in OpenSSH before 10.6, a $ or \\ character can occur in a command-line username, leading to injection.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106584: In ssh-keygen in OpenSSH before 10.6, certificates could have incorrect expiration times because of Daylight Saving mishandling. There can be a slightly more severe effect on users in certain Antarctic locations.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106585: In sshd and ssh in OpenSSH before 10.6, there is no check for whether the maximum packet length is exceeded during decompression of highly compressed data.",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106586: In sshd in OpenSSH before 10.6, the restrict keyword (in authorized_keys) was supposed to be applicable to tunnel forwarding but was not, a different vulnerability than CVE-2026-73283.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-106587: In sshd in OpenSSH before 10.6, the value \"none\" for a configuration option is sometimes interpreted as a filename but was intended to mean that a feature is disabled.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107161: Cyrus-sasl: heap buffer overflow in cyrus-sasl add_to_challenge() allows malicious server to crash or compromise digest-md5 clients",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107324: Application denial of service via integer overflow in BSON value-length validation in MongoDB Go Driver",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107325: Application denial of service via missing BSON array length validation in MongoDB Go Driver",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107348: Integer overflow causes an infinite loop in message buffer growth in PgBouncer",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107349: Infinite loop on empty option name in startup options parameter in PgBouncer",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107350: Authentication bypass via second StartupMessage during SCRAM authentication in PgBouncer",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107655: Cups: null pointer dereference via embedded job ticket comments allows remote denial of service",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107778: MIT krb5 through 1.22.2 NULL Pointer Dereference via krb5_rd_cred()",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107885: OpenPrinting CUPS through 2.4.20 contains a resource-exhaustion vulnerability in the submission-timeout handling of cupsdCheckJobs(). The scheduler suppresses timeout processing for all pending jobs whenever any client connection has an in-flight Send-Document operation, without matching that connection to the job being examined. A client allowed to reach the IPP service can hold an incomplete HTTP request containing parsed Send-Document headers before operation authorization, preventing unrelated incomplete jobs from expiring. Where Create-Job submission is allowed, incomplete jobs can accumulate until MaxJobs is exhausted and further legitimate print submissions are rejected. The suppression ends when the held connection closes.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107886: OpenPrinting CUPS before 2.4.20 contains a double-free in printer-class management. When CUPS-Add-Modify-Class replaces an existing class member list, add_class() frees pclass->printers without clearing the pointer. If subsequent validation fails, the class retains the dangling pointer; CUPS-Delete-Class subsequently frees the same allocation in cupsdDeletePrinter(). A client authorized to modify and delete classes can cause scheduler-wide denial of service. The default policy requires @SYSTEM privileges.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107888: OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference in cupsdCheckJobs() when a job marked job-held-on-create refers to a temporary printer that has been automatically deleted. Temporary-printer cleanup can remove the destination without canceling its held jobs, and the scheduler dereferences the NULL result of cupsdFindDest() while checking holding_new_jobs. This terminates cupsd and interrupts all queues managed by that process. In some plausible scenarios, an unprivileged submission can trigger this.",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-107890: OpenPrinting CUPS before 2.4.20 contains a NULL pointer dereference caused by repeated IPP group tags in job-creation requests. IPP parsing creates unnamed separator attributes with IPP_TAG_ZERO, but add_job() converts these separators to IPP_TAG_JOB. During job startup, get_options()/ipp_length() subsequently calls strlen() on a NULL attribute name, terminating cupsd and disrupting all queues. A single crafted Print-Job request can trigger the crash when the client can reach the scheduler and submit jobs to an accepting, enabled queue supporting the submitted document format. Anonymous submission is possible when permitted by listener and access-control configuration.",
+          "date": "2026-10-30",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-108119: Busybox: busybox: tar extraction-root escape via deferred symlink/hardlink creation bypasses cve-2026-26158 fix",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-108976: GNU Emacs before 31.2 (and TRAMP through 2.8.2) allows OS command injection via a filename because tramp-user-regexp has an incomplete list of disallowed inputs. NOTE: this issue exists because of an incomplete fix for CVE-2026-79992.",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-108985: ZDR decoding in libnfs through 6.0.2 before 7613236 has an out-of-bounds write related to lib/libnfs-zdr.c with libnfs_zdr_bytes(), libnfs_zdr_string(), and libnfs_zdr_array(). The caller-supplied maxsize value is not honored.",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-109088: libXtst RECORD EnableContext Reply Endless Loop",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-109089: libXi XGetDeviceControl Control Type Mismatch Heap Buffer Overflow",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-109090: libXi XGetDeviceControl DEVICE_ENABLE Heap Buffer Overflow",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-109349: gix-pack before 0.75.0 Reachable Assertion DoS via Pack Version 3 Header",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-109351: Gitoxide gix-pack before 0.75.0 Denial of Service via Pack Header Object Count",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119272: chromium-browser: chromium-browser: Out of bounds read in FileSystem",
+          "date": "2026-10-30",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119271: chromium-browser: chromium-browser: Use after free in Skia",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119269: chromium-browser: chromium-browser: Use after free in Blink",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-76025: chromium-browser: chromium-browser: Use after free in FileSystem",
+          "date": "2026-10-30",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119286: graphql-core: graphql-core: Denial of Service via unbounded memory growth during document validation",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119284: joserfc: joserfc: Denial of Service via excessive memory allocation during JWS deserialization",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119283: joserfc: joserfc: Denial of Service via unbounded recipient processing during JWE decryption",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119280: org.mariadb.jdbc/mariadb-java-client: MariaDB Connector/J: Denial of Service via unvalidated lengths during XA recovery",
+          "date": "2026-10-29",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119209: pypdf: pypdf: Denial of Service via crafted cross-reference streams",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119208: pypdf: pypdf: Denial of Service via forged page count in encrypted PDFs",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119207: pypdf: pypdf: Denial of Service via crafted invalid PDF dictionary",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119206: pypdf: pypdf: Denial of Service via crafted PDF page labels",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119205: pypdf: pypdf: Denial of Service via infinite loop during dictionary cloning",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119204: pypdf: pypdf: Denial of Service via excessive memory consumption during PDF parsing",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119203: pypdf: pypdf: Denial of Service via infinite loop on crafted incomplete PDF",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119196: pyasn1: pyasn1: Denial of Service via constructed bit string decoding",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119195: pyasn1: pyasn1: Denial of Service via quadratic processing of fragmented ASN.1 data",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119194: pyasn1: pyasn1: Denial of Service via hash collisions in schemaless decoding",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119189: node-forge: node-forge: Certificate validation bypass via unenforced path length constraints",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119188: node-forge: node-forge: Denial of Service via interleaved record during fragmented TLS handshake",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119187: node-forge: node-forge: Denial of Service via call stack exhaustion in TLS record processing",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118778: node-forge: node-forge: Denial of Service via missing TLS server certificate",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118773: glob: glob: Denial of Service (DoS) via incomplete traversal cancellation",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118772: joi: joi: Denial of Service via inefficient regular expression in email validation",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118764: minimatch: minimatch: Denial of Service via crafted glob pattern expansion",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119143: wasmtime: Wasmtime: Denial of Service via unvalidated zero-length stream operations",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119142: wasmtime: Wasmtime: Denial of Service via canceled asynchronous function calls",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119141: wasmtime: Wasmtime: Denial of Service via host panic during memory reallocation",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119140: wasmtime: wasmtime: Denial of Service via thread.yield in start functions",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119139: wasmtime: wasmtime: Denial of Service via unhandled assertion in component function call",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119138: wasmtime: wasmtime: Denial of Service via assertion failure after runtime trap",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119137: wasmtime: Wasmtime: Denial of Service via recursive type drops",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119136: wasmtime: wasmtime: Denial of Service via mixed synchronous and asynchronous calls",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119134: wasmtime: Wasmtime: Denial of Service via unbounded memory growth in resource handle tables",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119135: wasmtime: Wasmtime: Denial of Service via component stream type mismatch",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119133: wasmtime: wasmtime: Undefined behavior via misaligned VMContext layout",
+          "date": "2026-10-29",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119132: wasmtime: wasmtime: Denial of Service via overlapping string transcoding in fused adapters",
+          "date": "2026-10-29",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119124: ImageMagick: ImageMagick: Denial of service via heap-based buffer overflow in -morph option",
+          "date": "2026-10-29",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119123: ImageMagick: ImageMagick: Denial of Service via stack overflow in TIFF decoder",
+          "date": "2026-10-29",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-115642: keystonemiddleware: keystonemiddleware: application credential access_rules bypass via X-Service-Token header presence c",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2019-25781: markdown: python-markdown: Denial of Service via inefficient inline link parsing",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103963: glib-networking: Unbounded TLS 1.3 session ticket queue growth in glib-networking allows remote denial of service",
+          "date": "2026-10-29",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118694: markdown2: markdown2: Denial of Service via unclosed inline link destinations",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118669: oauthlib: oauthlib: privilege escalation via client identity confusion in token grant handlers",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118667: langgraph-sdk: langgraph: LangGraph: Information disclosure via path traversal in streaming helpers",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118664: decode-uri-component: decode-uri-component: Denial of Service via malformed percent-encoded input",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118661: happy-dom: happy-dom: Cookie injection via improper cookie domain validation",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118660: happy-dom: happy-dom: Server-Side Request Forgery via default loading of external resources",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-114691: gcc: Integer wrap in `std",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-114690: gcc: Confirmed out-of-bounds read/write in libstdc++ parallel `std",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118257: vue-i18n: core-base: vue-i18n: Cross-Site Scripting via improper iframe srcdoc sanitization",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118256: vue-i18n: vue-i18n: HTML injection via unescaped named interpolation parameters",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-115456: gcc: Out-of-bounds read in std::from_chars",
+          "date": "2026-10-28",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116273: perl-mime-tools: perl-mime-tools: Denial of Service via memory exhaustion from excessive message parts",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116272: perl-mime-tools: perl-mime-tools: Security filter bypass via nested comments in boundary parameters",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116271: perl-mime-tools: perl-mime-tools: Arbitrary file overwrite via symbolic link following",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116270: perl-MIME-tools: perl-MIME-tools: Denial of Service via memory exhaustion from crafted MIME headers",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116269: perl-MIME-tools: perl-MIME-tools: Attachment filter bypass via improper filename decoding",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116268: perl-MIME-tools: perl-MIME-tools: Denial of Service via unclosed comments in header parameters",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116267: perl-MIME-tools: perl-MIME-tools: Denial of Service via memory exhaustion from deeply nested messages",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116266: perl-mime-tools: perl-mime-tools: Security filter bypass via partially encoded multipart boundary",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116265: perl-MIME-tools: perl-MIME-tools: Security filter bypass via ambiguous multipart boundary continuations",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116264: perl-MIME-tools: perl-MIME-tools: Security filter bypass via invalid Content-Type parameter",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116796: highcharts: highcharts: Arbitrary script execution via unsanitized SVG link attributes",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-111551: org.apache.kafka/kafka-streams: org.apache.kafka/kafka-clients: Apache Kafka: Denial of Service via memory exhaustion du",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-111115: org.apache.kafka/kafka-clients: Apache Kafka: Denial of Service via uncontrolled memory allocation in flexible request h",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-111108: org.apache.kafka/kafka-clients: Apache kafka: Denial of Service via excessive memory allocation during request parsing",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-110985: org.apache.kafka/kafka-clients: Apache Kafka: Authentication bypass via missing JWT signature verification",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-115455: gcc: Stack overflow in std::bitset on libstdc++",
+          "date": "2026-10-28",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118952: kroxylicious-authorizer-acl: Kroxylicious: ACL prefix matching can bypass authorization rules",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-103506: grafana: SSO secrets readable by low-privileged users when an experimental feature is enabled",
+          "date": "2026-10-28",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118319: chromium-browser: skia: Memory corruption in Skia",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118322: chromium-browser: angle: Memory corruption in ANGLE",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118318: chromium-browser: Improper access control in V8",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-58496: thorvg: thorvg: Information disclosure via undersized font data",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118180: thunderbird: Matrix homeserver could redirect the chat session to a local file or network share",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118179: thunderbird: Request forgery via news: links",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118177: thunderbird: Calendar discovery accepted local file and remote network share locations",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118176: thunderbird: Bypass of remote UNC path restriction in mailbox: URLs",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118175: thunderbird: Content of other messages could be included when replying to a crafted message",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-118174: thunderbird: Displaying a message could load an attacker-chosen URL through an OpenPGP key attachment",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117997: firefox: thunderbird: Sandbox escape due to use-after-free in the Widget component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117987: firefox: thunderbird: Use-after-free in the Graphics component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117988: firefox: thunderbird: Sandbox escape due to incorrect boundary conditions in the Graphics: CanvasWebGL component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117985: firefox: thunderbird: Sandbox escape due to use-after-free in the Graphics component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117986: firefox: thunderbird: Use-after-free in the Graphics component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117980: firefox: thunderbird: Use-after-free in the Graphics component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117973: firefox: thunderbird: Use-after-free in the Networking: DNS component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117974: firefox: thunderbird: Use-after-free in the XML component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117971: firefox: thunderbird: Sandbox escape due to use-after-free in the Print Preview component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117965: firefox: thunderbird: Same-origin policy bypass in the Address Bar component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117964: firefox: thunderbird: Use-after-free in the Panning and Zooming component",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117954: firefox: thunderbird: Use-after-free in the Layout: Positioned component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117951: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117949: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117941: firefox: thunderbird: Use-after-free in the DOM: CSS Object Model component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117936: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117935: firefox: thunderbird: Use-after-free in the DOM: Bindings (WebIDL) component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117931: firefox: thunderbird: Use-after-free in the DOM: Events component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117930: firefox: thunderbird: Use-after-free in the DOM: Bindings (WebIDL) component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117927: firefox: thunderbird: Use-after-free in the SVG component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117925: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117920: firefox: thunderbird: Use-after-free in the DOM: HTML Parser component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117919: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117916: firefox: thunderbird: Use-after-free in the XSLT component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117913: firefox: thunderbird: Use-after-free in the SVG component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117906: firefox: thunderbird: Use-after-free in the CSS Parsing and Computation component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117900: firefox: thunderbird: Use-after-free in the DOM: Editor component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117902: firefox: thunderbird: Use-after-free in the Layout: Text and Fonts component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117898: firefox: thunderbird: Use-after-free in the JavaScript Engine: JIT component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117896: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117892: firefox: thunderbird: Privilege escalation due to use-after-free in the WebRTC: Networking component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117891: firefox: thunderbird: Use-after-free in the JavaScript Engine: JIT component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117887: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117882: firefox: thunderbird: Use-after-free in the Layout component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117881: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117883: firefox: thunderbird: Use-after-free in the DOM: HTML Parser component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117880: firefox: thunderbird: Use-after-free in the XML component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117878: firefox: thunderbird: Other issue, use-after-free in the Storage: IndexedDB component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117876: firefox: thunderbird: Use-after-free in the Layout: Text and Fonts component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117877: firefox: thunderbird: Use-after-free in the Layout: Text and Fonts component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117875: firefox: thunderbird: Use-after-free in the Layout: Scrolling and Overflow component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117874: firefox: thunderbird: Use-after-free in the Internationalization component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117872: firefox: thunderbird: Use-after-free in the JavaScript: Standard Library component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117866: firefox: thunderbird: Privilege escalation due to use-after-free in the Graphics: Canvas2D component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117865: firefox: thunderbird: Use-after-free in the JavaScript: GC component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117860: firefox: thunderbird: Same-origin policy bypass in the DOM: Navigation component",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117602: electrum: Electrum: Arbitrary code execution via external plugin authorization bypass",
+          "date": "2026-10-27",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117557: SDL2_image: SDL3_image: SDL_image: Denial of Service via crafted ILBM image file",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117555: cimg: cimg: Denial of Service via crafted BMP image",
+          "date": "2026-10-27",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116748: transmission: Transmission: Arbitrary code execution via overly permissive CORS policy",
+          "date": "2026-10-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116740: libcss: libcss: Denial of Service via media list trailing comma",
+          "date": "2026-10-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116730: furnace: Furnace: Denial of Service via crafted FamiTracker module import",
+          "date": "2026-10-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116731: furnace: Furnace: Denial of Service via out-of-bounds write during FamiTracker module parsing",
+          "date": "2026-10-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116589: ddtrace: ddtrace: Denial of Service via unhandled error in IAST string formatting",
+          "date": "2026-10-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116588: ddtrace: dd-trace-py: Denial of Service via regular expression backtracking",
+          "date": "2026-10-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116671: xpdf: Xpdf: Denial of Service via infinite loop during JPEG 2000 image processing",
+          "date": "2026-10-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104591: libosmocore: libosmocore: Denial of Service via buffer overflow in osmo_iuup_compute_payload_crc()",
+          "date": "2026-10-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104594: libosmocore: libosmocore: Information disclosure via out-of-bounds read in IPA CCM parser",
+          "date": "2026-10-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104592: libosmocore: libosmocore: Denial of Service via out-of-bounds read in CBSP decoder",
+          "date": "2026-10-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104597: libosmocore: libosmocore: Information disclosure via out-of-bounds read in iuup_rx_initialization",
+          "date": "2026-10-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-104596: libosmocore: libosmocore: Information disclosure via out-of-bounds read in GSM 04.80 parser",
+          "date": "2026-10-26",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-114214: ash: Ash: Information disclosure via missing source filter in relationship queries",
+          "date": "2026-10-25",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-10-30T12:23:19.416Z",
       "logs": [
@@ -22323,911 +25553,6 @@
         "oracle-db"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-10-24T04:05:02.602Z",
-      "logs": [
-        "[INFO] apple - 1 patches, no changes",
-        "[INFO] aws - 89 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[SUCCESS] cisco - 26 patches (1 new)",
-        "[INFO] cloudflare - 5 patches, no changes",
-        "[SUCCESS] crowdstrike - 2 patches (1 new)",
-        "[SUCCESS] debian - 15 patches (1 new)",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[SUCCESS] gcp - 1 patches (1 new)",
-        "[SUCCESS] github - 261 patches (42 new)",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 501 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 1 patches, no changes",
-        "[SUCCESS] paloalto - 3 patches (1 new)",
-        "[INFO] postgresql - 4 patches, no changes",
-        "[SUCCESS] redhat - 985 patches (94 new)",
-        "[SUCCESS] signal - 11 patches (1 new)",
-        "[INFO] ubuntu - 23 patches, no changes"
-      ],
-      "newPatchCount": 142,
-      "totalPatches": 1938,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 20,
-      "vendors": [
-        "paloalto",
-        "apple",
-        "aws",
-        "chrome",
-        "cisco",
-        "crowdstrike",
-        "debian",
-        "gcp",
-        "github",
-        "microsoft",
-        "redhat",
-        "signal",
-        "cloudflare",
-        "edge",
-        "postgresql",
-        "ubuntu",
-        "fortinet",
-        "gitlab",
-        "nodejs",
-        "oracle-db"
-      ],
-      "newPatches": [
-        {
-          "vendor": "cisco",
-          "title": "Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities",
-          "date": "2026-10-23",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "crowdstrike",
-          "title": "Obstacles to Weaponizing PHP2Shell Likely Constrain Immediate Widespread Exploitation",
-          "date": "2026-10-23",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "debian",
-          "title": "DSA-6582-1 brotli - security update",
-          "date": "2026-10-23",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "gcp",
-          "title": "GKE: GCP-2026-071",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "filelock: ReadWriteLock on the hard-link route deletes any directory another user renames onto its .filelock-* link directory name",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "filelock: ReadWriteLock on Windows acts on SQLite side files another local user places beside its database",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "filelock: On Windows an oplock on a soft lock's marker holds SoftFileLock.acquire() past its timeout and blocks the stale break",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "virtualenv: Temporary app-data can leave dangling seed package links",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "virtualenv: Pip seeding with download omits wheel digest verification",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "virtualenv: Downloaded wheel selection and caching precede verification",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "virtualenv: Xonsh activation literals depend on the script decoding codec",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "virtualenv: Seeded files retain permissions from an older cache",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "virtualenv: Bash prompt values can change meaning under older compatibility modes",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "virtualenv: Venv configuration readback can reinterpret path boundaries",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "virtualenv: Seed replacement does not contain metadata deletion paths",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MSAL Node authorization code flow may disclose parameters to an attacker-controlled endpoint",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "undici vulnerable to Denial of Service via unhandled error on excessive content-encodings",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "undici vulnerable to Denial of Service via unbounded memory in the EventSource parser",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Serialize JavaScript: Cross-site scripting (XSS) via unescaped </script at the end of a serialized function body",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "multer vulnerable to Denial of Service via a pending asynchronous fileFilter after request teardown",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "MLflow: SSRF on unauthenticated MLflow servers via third-party scorer kwargs in the scorer invoke, register, and GenAI evaluate endpoints",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "LangGraph: Namespace labels containing `.` reach other namespaces in Postgres and SQLite stores",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Wasmtime: Panic lowering a host-created component model stream into a guest that expects a different payload type",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Wasmtime: Bit-packing in Cranelift compiler causes silent overflow and miscompilation",
-          "date": "2026-10-23",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "filelock: SoftFileLock evicts a fresh lock file whose watched age another local user's pre-dated file passed on through inode reuse",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "filelock: SoftFileLock stale-break restore follows a swapped-in symbolic link and hard-links a file of the user running the lock into the lock directory",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "filelock ReadWriteLock: SQLite reopens the lock database by name, so a planted symlink or journal file makes the lock user's process overwrite or unlink its own files",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Fallow: A `.*` glob segment let an analyzed repository make Fallow test paths in the parent of the project root",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Fallow: Jest and Vitest `projects` entries let an analyzed repository make Fallow read files outside the project root",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Pillow: Heap buffer overflow in FlashPix (FPX) JPEG decoding leads to code execution",
-          "date": "2026-10-23",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "postal-mime: Quadratic CPU consumption when decoding a header of many joinable RFC 2047 base64 encoded words",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Pillow: Arrow export leaks stale heap memory when PILLOW_ALIGNMENT > 1",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Nodemailer: A nested comment ends early in addressparser, releasing the rest of the comment as a recipient",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Nodemailer: A \";\" inside a quoted string or comment ends an address group early in addressparser, turning display text into a recipient",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Nodemailer: A \">\" inside a quoted local part ends an angle-addr early in addressparser, delivering to a domain the header does not name",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Laravel TokenGuard authentication bypass through non-string API credentials",
-          "date": "2026-10-23",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "github",
-          "title": "Laravel relationship inclusion can trigger unauthorized data destruction",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "setuptools: Windows path escape via namespace_packages.txt during legacy wheel installation  Description",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-uri vulnerable to URI scheme spoofing via percent-encoded scheme decoding",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-uri vulnerable to improper path equivalence in relative reference normalization",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-uri vulnerable to host confusion via unchecked WHATWG host canonicalization",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "fast-uri vulnerable to scheme injection via an unescaped first-segment colon in suffix references",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "FastMCP: Post-transform component authorization is skipped on direct calls",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "FastMCP MCP client wrappers construct M2M OAuth providers without issuer binding — client secret redirectable to attacker-advertised authorization server",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products  (Severity: HIGH)",
-          "date": "2026-10-24",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115897: serialize-javascript: serialize-javascript: Cross-Site Scripting via improper function escaping",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115895: happy-dom: happy-dom: Arbitrary code execution via unvalidated ECMAScript Module import alias",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115892: wasmtime: Wasmtime: Denial of Service via missing payload type validation in guest returns",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115886: mlflow: mlflow: Server-Side Request Forgery via insecure scorer deserialization",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115877: twisted: Twisted: HTTP request smuggling via improper header delimiter handling",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-83813: twisted: twisted: DNS spoofing via missing response source verification",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115778: twisted: twisted: Denial of Service via memory exhaustion during Telnet negotiation",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115776: twisted: Twisted: Denial of Service via unbounded IRC buffer",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115775: twisted: twisted: Denial of Service via memory exhaustion in XML stream parser",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115774: twisted: twisted: Denial of Service via negative size in IMAP search command",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115586: virtualenv: virtualenv: Arbitrary code execution via unescaped prompt in bash activation script",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115585: pypdf: pypdf: Denial of Service via malformed cross-reference streams",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115580: pypdf: pypdf: Denial of Service via excessive cross-reference table entries",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115572: pypdf: pypdf: Denial of Service via repeated nonexistent object references",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-57845: datasets: datasets: Arbitrary code execution via insecure pickle deserialization",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115754: serialize-javascript: serialize-javascript: Cross-site scripting via unescaped function serialization",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115730: i18next-http-backend: i18next-http-backend: Cross-site scripting via protocol-relative URL injection",
-          "date": "2026-10-23",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-55888: xdg-desktop-portal: xdg-desktop-portal: Unauthorized host file access via unvalidated FileChooser filenames",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-55889: xdg-desktop-portal: xdg-desktop-portal: unauthorized data disclosure via predictable token generation",
-          "date": "2026-10-23",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115378: github.com/lxc/incus: Incus: Arbitrary file write on the host via recursive file pull",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115373: github.com/lxc/incus: Incus: Information disclosure via missing authorization check in operations endpoint",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115374: github.com/lxc/incus: incus: Information disclosure via unsigned headers in presigned S3 URLs",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115372: github.com/lxc/incus: Incus 7.3.0 before 7.5.0 Project Restriction Bypass via block.create_options",
-          "date": "2026-10-22",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115365: github.com/openbao/openbao: OpenBao: Privilege escalation via ACL policy cache namespace traversal",
-          "date": "2026-10-22",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114612: litellm: LiteLLM: Privilege Escalation to Proxy Admin via Cross-Domain Reuse of the Salt Key",
-          "date": "2026-10-22",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-97631: edk2: Pre-boot RCE in EDK II PXE driver",
-          "date": "2026-10-22",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115319: github.com/junegunn/fzf: fzf: Denial of Service via inefficient string concatenation",
-          "date": "2026-10-22",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2023-7356: kernel: Bluetooth: ISO: Copy BASE if service data matches EIR_BAA_SERVICE_UUID",
-          "date": "2026-10-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-105483: nodejs: nodejs: TLS certificate hostname bypass via fullwidth-digit IP hostnames",
-          "date": "2026-10-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-106069: nodejs: nodejs: TLS certificate hostname bypass via non-canonical IP hostnames",
-          "date": "2026-10-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-105482: nodejs: nodejs: dns.resolve truncates hostnames containing a NUL character",
-          "date": "2026-10-21",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115683: epiphany: epiphany: TLS certificate warning bypass via race in tlsErrorPage message handler",
-          "date": "2026-10-21",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98796: kernel: net: ethernet: mtk_eth_soc: allocate dummy netdev sooner",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98798: kernel: net: bcmgenet: fix NULL dereference in set_coalesce before first open",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98803: kernel: net: stmmac: fix rx Scatter-Gather support",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98791: kernel: net/mlx5e: Fix AF_XDP TX timestamp teardown NULL dereference",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98789: kernel: bpf: Fix objects stuck in free_by_rcu_ttrace",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98802: kernel: seg6: ensure packet data is writable before modifying SRH and IPv6 DA",
-          "date": "2026-10-18",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98804: kernel: net: page_pool: fix use-after-free in page_pool_recycle_ring_bulk()",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98792: kernel: netfilter: flowtable: generalize pending status bit",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98793: kernel: netfilter: bpf: reject invalid NAT manipulation types",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98787: kernel: bpf: Fix missing migration protection in __rhtab_map_lookup_and_delete_batch()",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98805: kernel: tipc: prevent GCM nonce reuse on peer key changes",
-          "date": "2026-10-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98794: kernel: ipvs: filter some flags received in the backup server",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98799: kernel: bpf: Skip detached progs in trampoline images that are still in use",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98795: kernel: net: sparx5: skip ptp deinit if init was skipped",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98797: kernel: net: cap skb->queue_mapping when the tx queue is picked",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98790: kernel: perf: Fix race between perf_event_exit_task() and perf_pending_task()",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98829: kernel: wifi: mac80211: drop oversized fragments to avoid extra_len overflow",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98846: kernel: sctp: check RCV_SHUTDOWN after the sendmsg connect wait",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98816: kernel: bpf: Fix overflow of jump offset in constant blinding",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98844: kernel: netfs: clear post-EOF pagecache when extending a file via write",
-          "date": "2026-10-18",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98810: kernel: wifi: mac80211: fix slab-out-of-bounds read in ieee80211_monitor_select_queue()",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98812: kernel: net/mctp: publish the mctp_dev only after it is initialised",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98828: kernel: wifi: ath9k: reject short WMI command responses",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98853: kernel: net: gso: limit recursive IP-in-IP segmentation",
-          "date": "2026-10-18",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98807: kernel: net/mlx5: Fix slab-out-of-bounds when handling team device events",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98818: kernel: mm/slab: do not wake up kswapd in __kfree_rcu_sheaf()",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98835: kernel: iio: accel: kionix-kx022a: Fix array boundary check",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98824: kernel: wifi: mac80211: validate TX status rate metadata",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98848: kernel: rtc: ac100: Assign .num before accessing .hws",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98811: kernel: net/sched: cls_api: reclaim an empty proto on the error path",
-          "date": "2026-10-18",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98843: kernel: netfs: zero gaps in read-gaps folio to avoid writing back stale data",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98842: kernel: module: fix lost error code from codetag_load_module()",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98845: kernel: tpm: Disable TPM on null key name mismatch",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98856: kernel: kprobes: Skip disarmed probes when checking optkprobe overlap",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98831: kernel: of/overlay: don't leak fragment references when changeset init fails",
-          "date": "2026-10-18",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98836: kernel: ALSA: line6: reject oversized playback packets",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98809: kernel: Bluetooth: hci_sync: don't drain cmd_sync backlog on unregister",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98851: kernel: netfilter: nft_flow_offload: drop flowtable reference on init error path",
-          "date": "2026-10-18",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98825: kernel: rtc: mpfs: fix unchecked devm_clk_get() error pointer in probe()",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98823: kernel: wifi: cfg80211: preserve hidden-group beacon IE ownership",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98814: kernel: nvme: fix command effects log lifetime for multipath heads",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98837: kernel: ALSA: caiaq: unregister the input device when probe fails",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98854: kernel: of/overlay: only treat a positive changeset id as registered",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98813: kernel: bpf: Hold map BTF for the memory allocator destructor record",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98832: kernel: blk-cgroup: save IRQ state in blkg_tryget_closest()",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98820: kernel: blk-mq: set RQF_USE_SCHED when the operation is known",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98821: kernel: block: reject polled dio with user integrity metadata",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98852: kernel: net: extend IPv6 exthdr detection of tunneled packets",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98855: kernel: of/overlay: put property on deadprops only after changeset add succeeds",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98806: kernel: octeontx2-pf: Fix aura BPID assignment when CONFIG_DCB is enabled",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98827: kernel: wifi: ath9k_htc: bound TX aggregation to MAX_TX_BUF_SIZE",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98847: kernel: rtc: spear: initialize IRQ state before requesting alarm IRQ",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98834: kernel: mtd: core: avoid double-free of OTP NVMEM device",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98819: kernel: Bluetooth: btintel: validate DDC record lengths",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98815: kernel: nvme: fix cdev lifetime",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98833: kernel: mtd: core: call _get_device() with the master MTD",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98849: kernel: pfcp: fix socket lifetime on netdevice registration failure",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98838: kernel: vt: skip screen update for DEC alignment test on backgroup consoles",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98808: kernel: net: systemport: Fix buffer overflow in bcm_sysport_get_stats()",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98822: kernel: wifi: mac80211: prevent AP VLAN tx from other interfaces",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98841: kernel: virt: vmgenid: set driver_data before registering notification handlers",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-98839: kernel: vt: selection: Fix unsigned underflow and slab-out-of-bounds read in paste_selection()",
-          "date": "2026-10-18",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "filelock ReadWriteLock: SQLite reopens the lock database by name, so a planted symlink or journal file makes the lock user's process overwrite or unlink its own files",
-          "date": "2026-10-23",
-          "severity": "HIGH"
-        }
-      ]
     }
   ]
 }
