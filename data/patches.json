@@ -1,7 +1,59 @@
 {
-  "lastUpdated": "2026-11-01T21:49:21.738Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-01T21:55:02.738Z",
+  "newPatches": 1,
   "patches": [
+    {
+      "title": "DSA-6600-1 vim - security update",
+      "date": "2026-11-01",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "vim",
+      "description": "Multiple vulnerabilities were found and fixed in Vim, an enhanced version of the standard UNIX editor Vi (Vi IMproved). A remote attacker could trigger arbitrary code execution, command injection, or ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00519.html",
+      "cve": "CVE-2025-53905",
+      "cves": [
+        "CVE-2025-53905",
+        "CVE-2025-53906",
+        "CVE-2026-25749",
+        "CVE-2026-26269",
+        "CVE-2026-28417",
+        "CVE-2026-28418",
+        "CVE-2026-28419",
+        "CVE-2026-28420",
+        "CVE-2026-28421",
+        "CVE-2026-28422",
+        "CVE-2026-32249",
+        "CVE-2026-33412",
+        "CVE-2026-34982",
+        "CVE-2026-35177",
+        "CVE-2026-39881",
+        "CVE-2026-41411",
+        "CVE-2026-42307",
+        "CVE-2026-43961",
+        "CVE-2026-44656",
+        "CVE-2026-45130",
+        "CVE-2026-46483",
+        "CVE-2026-47162",
+        "CVE-2026-47167",
+        "CVE-2026-52858",
+        "CVE-2026-52859",
+        "CVE-2026-52860",
+        "CVE-2026-55693",
+        "CVE-2026-55892",
+        "CVE-2026-55895",
+        "CVE-2026-57452",
+        "CVE-2026-57455",
+        "CVE-2026-57456",
+        "CVE-2026-59856",
+        "CVE-2026-59857",
+        "CVE-2026-59858",
+        "CVE-2026-73072",
+        "CVE-2026-73073",
+        "CVE-2026-73076",
+        "CVE-2026-73077",
+        "CVE-2026-73078"
+      ]
+    },
     {
       "title": "CVE-2026-120217: loguru: loguru: Denial of Service via inefficient regular expression complexity",
       "date": "2026-11-01",
@@ -14532,6 +14584,63 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-11-01T21:55:02.738Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[INFO] aws - 10 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 18 patches, no changes",
+        "[INFO] cloudflare - 4 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 16 patches (1 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 211 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] jetbrains - 2 patches, no changes",
+        "[INFO] microsoft - 600 patches, no changes",
+        "[INFO] paloalto - 10 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[INFO] redhat - 530 patches, no changes",
+        "[INFO] signal - 6 patches, no changes",
+        "[INFO] ubuntu - 5 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1437,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 19,
+      "vendors": [
+        "debian",
+        "redhat",
+        "aws",
+        "microsoft",
+        "paloalto",
+        "postgresql",
+        "cisco",
+        "cloudflare",
+        "crowdstrike",
+        "edge",
+        "github",
+        "jetbrains",
+        "signal",
+        "chrome",
+        "gitlab",
+        "ubuntu",
+        "gcp",
+        "apple",
+        "fortinet"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6600-1 vim - security update",
+          "date": "2026-11-01",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-11-01T21:49:21.738Z",
       "logs": [
         "[INFO] apple - 6 patches, no changes",
@@ -27054,239 +27163,6 @@
         "nodejs"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-10-26T04:10:45.549Z",
-      "logs": [
-        "[INFO] apple - 1 patches, no changes",
-        "[INFO] aws - 56 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 27 patches, no changes",
-        "[INFO] cloudflare - 4 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 250 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 551 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 3 patches, no changes",
-        "[INFO] paloalto - 4 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[SUCCESS] redhat - 506 patches (30 new)",
-        "[INFO] signal - 11 patches, no changes",
-        "[INFO] ubuntu - 20 patches, no changes"
-      ],
-      "newPatchCount": 30,
-      "totalPatches": 1460,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 20,
-      "vendors": [
-        "aws",
-        "microsoft",
-        "paloalto",
-        "redhat",
-        "cisco",
-        "debian",
-        "oracle-db",
-        "apple",
-        "chrome",
-        "crowdstrike",
-        "gcp",
-        "github",
-        "signal",
-        "cloudflare",
-        "edge",
-        "postgresql",
-        "ubuntu",
-        "fortinet",
-        "gitlab",
-        "nodejs"
-      ],
-      "newPatches": [
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116181: vllm: vllm: Denial of Service via unvalidated stop token identifiers",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116180: vllm: vLLM: Denial of Service via uninitialized log probability tensors",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116179: vllm: vLLM: Denial of Service via video frame limit bypass",
-          "date": "2026-10-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116177: vllm: vllm: Denial of Service via unconstrained image decompression",
-          "date": "2026-10-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116178: vllm: vLLM: Denial of Service via inconsistent multimodal metadata",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116176: vllm: vllm: Information disclosure via SSRF in X-Request-Id header",
-          "date": "2026-10-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116174: vllm: vllm: Denial of Service via invalid prompt token IDs in gRPC service",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116175: vllm: vllm: Denial of Service via audio decompression bomb in chat completions",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116173: vllm: vllm: Denial of Service via excessive candidate token IDs in gRPC interface",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116172: vllm: vLLM: Denial of Service via improper input validation in Rust gRPC interface",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116160: ImageMagick: ImageMagick: Denial of Service via crafted image in X11 animate operation",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116158: ImageMagick: ImageMagick: Denial of Service via memory leak in compare command",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116159: ImageMagick: ImageMagick: Denial of Service via memory leak in the -cdl option",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116157: ImageMagick: ImageMagick: Denial of Service via memory leak in PerlMagick",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116155: ImageMagick: ImageMagick: Denial of Service via crafted XMP profile memory leak",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116156: ImageMagick: ImageMagick: Denial of Service via memory leak in -set profile option",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116154: ImageMagick: ImageMagick: Denial of Service via XML parsing memory leak",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116153: ImageMagick: ImageMagick: Denial of Service via heap-based buffer overflow in convex-hull calculations",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116152: ImageMagick: ImageMagick: Denial of Service via memory leak in MAT decoder",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116150: ImageMagick: ImageMagick: Denial of Service via memory leak in FPX encoder",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116151: ImageMagick: ImageMagick: Denial of Service via memory leak in JNG encoder",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116149: ImageMagick: ImageMagick: Memory corruption via crafted bzip2 compressed images",
-          "date": "2026-10-25",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116148: ImageMagick: ImageMagick: Command injection via unvalidated drawing options in MVG encoder",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116147: ImageMagick: ImageMagick: Denial of service via unchecked memory allocation in DJVU decoder",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116146: ImageMagick: ImageMagick: Denial of Service via MSL decoder memory leak",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116144: ImageMagick: ImageMagick: Denial of Service via uncontrolled recursion in MVG decoder",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116143: ImageMagick: ImageMagick: Denial of Service via scene selection policy bypass",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116141: ImageMagick: ImageMagick: Denial of Service via policy bypass in UHDR decoder",
-          "date": "2026-10-25",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116140: ImageMagick: ImageMagick: Security policy bypass via flawed delegate invocation parsing",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116137: adm-zip: adm-zip: File integrity check bypass via duplicate archive entries",
-          "date": "2026-10-25",
-          "severity": "LOW"
-        }
-      ]
     }
   ]
 }
