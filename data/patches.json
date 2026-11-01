@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-01T00:47:52.220Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-01T05:26:48.090Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "CVE-2026-98432 - Linux kernel IPv4 TCP use-after-free Issue",
@@ -19,6 +19,17 @@
       "component": "dpdk",
       "description": "Several vulnerabilities were discovered in DPDK, a set of libraries for fast packet processing. Depending on enabled functionality, crafted packets or malicious guest requests could cause denial of se...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00516.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6599-1 nss - security update",
+      "date": "2026-10-31",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "nss",
+      "description": "It was discovered that several eMudhra intermediate CA certificates have been compromised. Updated nss packages are provided to remove the \"eMudhra emSign Root CA - G3\", \"eMudhra emSign Root CA - C1\" ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00518.html",
       "cve": "",
       "cves": []
     },
@@ -951,6 +962,17 @@
       "description": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026...",
       "link": "https://www.postgresql.org/about/news/pgadmin-4-v919-released-3426/",
       "cve": "CVE-2026-116238"
+    },
+    {
+      "title": "CVE-2026-120210: ffmpeg: ffmpeg: Information disclosure via path traversal in IMF demuxer",
+      "date": "2026-10-31",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Information disclosure via path traversal in IMF demuxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-120210.json",
+      "cve": "CVE-2026-120210",
+      "cvss": 4.3
     },
     {
       "title": "CVE-2026-119117 - Insertion of sensitive information into a log file and process argument list in the Amazon Kinesis Producer Library for Java",
@@ -14444,6 +14466,69 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-11-01T05:26:48.090Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[INFO] aws - 10 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[INFO] cisco - 18 patches, no changes",
+        "[INFO] cloudflare - 4 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 15 patches (1 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 211 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] jetbrains - 2 patches, no changes",
+        "[INFO] microsoft - 600 patches, no changes",
+        "[INFO] paloalto - 10 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 524 patches (1 new)",
+        "[INFO] signal - 6 patches, no changes",
+        "[INFO] ubuntu - 5 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 1430,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 19,
+      "vendors": [
+        "aws",
+        "debian",
+        "microsoft",
+        "paloalto",
+        "postgresql",
+        "redhat",
+        "cisco",
+        "cloudflare",
+        "crowdstrike",
+        "edge",
+        "github",
+        "jetbrains",
+        "signal",
+        "chrome",
+        "gitlab",
+        "ubuntu",
+        "gcp",
+        "apple",
+        "fortinet"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6599-1 nss - security update",
+          "date": "2026-10-31",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-120210: ffmpeg: ffmpeg: Information disclosure via path traversal in IMF demuxer",
+          "date": "2026-10-31",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-11-01T00:47:52.220Z",
       "logs": [
         "[INFO] apple - 6 patches, no changes",
@@ -27359,58 +27444,6 @@
     },
     {
       "timestamp": "2026-10-25T17:29:02.090Z",
-      "logs": [
-        "[INFO] apple - 1 patches, no changes",
-        "[INFO] aws - 100 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 27 patches, no changes",
-        "[INFO] cloudflare - 5 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 261 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 551 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] oracle-db - 3 patches, no changes",
-        "[INFO] paloalto - 4 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 546 patches, no changes",
-        "[INFO] signal - 11 patches, no changes",
-        "[INFO] ubuntu - 23 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1560,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 20,
-      "vendors": [
-        "aws",
-        "microsoft",
-        "paloalto",
-        "cisco",
-        "debian",
-        "oracle-db",
-        "apple",
-        "chrome",
-        "crowdstrike",
-        "gcp",
-        "github",
-        "redhat",
-        "signal",
-        "cloudflare",
-        "edge",
-        "postgresql",
-        "ubuntu",
-        "fortinet",
-        "gitlab",
-        "nodejs"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-10-25T15:53:29.867Z",
       "logs": [
         "[INFO] apple - 1 patches, no changes",
         "[INFO] aws - 100 patches, no changes",
