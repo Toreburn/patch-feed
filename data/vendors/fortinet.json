@@ -1,16 +1,26 @@
 {
   "vendor": "fortinet",
-  "lastUpdated": "2026-11-02T15:17:59.438Z",
+  "lastUpdated": "2026-11-03T00:47:30.110Z",
   "health": {
-    "lastFetchAttempt": "2026-11-02T15:17:59.438Z",
-    "lastFetchResult": "empty",
-    "lastFetchParsedItems": 0,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-11-02T05:23:40.769Z",
-    "consecutiveEmptyFetches": 1,
+    "lastFetchAttempt": "2026-11-03T00:47:30.110Z",
+    "lastFetchResult": "ok",
+    "lastFetchParsedItems": 1,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-11-03T00:47:30.110Z",
+    "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Linux kernel RCE CVE-2026-98432",
+      "date": "2026-11-02",
+      "severity": "UNKNOWN",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 9.8 CVE-2026-98432:ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_recv_sock() transfers ownership of ireq- ireq_opt to the child socket (newinet- inet_opt) without...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-188",
+      "cve": "CVE-2026-98432"
+    },
     {
       "title": "Multiple Node.js CVEs",
       "date": "2026-10-26",
