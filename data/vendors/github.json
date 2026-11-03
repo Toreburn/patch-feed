@@ -1,16 +1,126 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-11-03T13:55:08.141Z",
+  "lastUpdated": "2026-11-03T23:03:50.028Z",
   "health": {
-    "lastFetchAttempt": "2026-11-03T13:55:08.141Z",
+    "lastFetchAttempt": "2026-11-03T23:03:50.028Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-11-03T13:55:08.141Z",
+    "lastFetchNewPatches": 10,
+    "lastSuccessWithData": "2026-11-03T23:03:50.028Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Stanza: RCE via pickle deserialization in the lemmatizer",
+      "date": "2026-11-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "stanza",
+      "description": "Stanza: RCE via pickle deserialization in the lemmatizer",
+      "link": "https://github.com/advisories/GHSA-gh9r-c94j-cmp5",
+      "cve": "CVE-2026-115878",
+      "cvss": 7.8
+    },
+    {
+      "title": "Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access",
+      "date": "2026-11-03",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@enspirit/elo",
+      "description": "Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access",
+      "link": "https://github.com/advisories/GHSA-33r5-xmm8-v6x5",
+      "cve": "CVE-2026-44267",
+      "cvss": 9.8
+    },
+    {
+      "title": "Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels",
+      "date": "2026-11-03",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "@enspirit/elo",
+      "description": "Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels",
+      "link": "https://github.com/advisories/GHSA-7w38-ggh5-v542",
+      "cve": "CVE-2026-44266",
+      "cvss": 9.8
+    },
+    {
+      "title": "Elo backends have code injection via unvalidated emission of programmatic AST fields",
+      "date": "2026-11-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@enspirit/elo",
+      "description": "Elo backends have code injection via unvalidated emission of programmatic AST fields",
+      "link": "https://github.com/advisories/GHSA-x9rp-7wh3-2rj5",
+      "cve": "CVE-2026-44265",
+      "cvss": 7.4
+    },
+    {
+      "title": "Microsoft Security Advisory CVE-2026-111497 - .NET Brotli Decoder Out-of-bounds Write Vulnerability",
+      "date": "2026-11-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "Microsoft.DotNet.ILCompiler, Microsoft.NETCore.App.Runtime.NativeAOT.ios-arm64, Microsoft.NETCore.App.Runtime.NativeAOT.iossimulator-arm64",
+      "description": "Microsoft Security Advisory CVE-2026-111497 - .NET Brotli Decoder Out-of-bounds Write Vulnerability",
+      "link": "https://github.com/advisories/GHSA-p3jp-9v83-76w9",
+      "cve": "",
+      "cvss": 8.1
+    },
+    {
+      "title": "praktor: Path traversal in Telegram file uploads allows writing outside the agent workspace uploads/ directory (stored instruction injection)",
+      "date": "2026-11-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/mtzanidakis/praktor",
+      "description": "praktor: Path traversal in Telegram file uploads allows writing outside the agent workspace uploads/ directory (stored instruction injection)",
+      "link": "https://github.com/advisories/GHSA-48v2-6jcm-fc99",
+      "cve": "CVE-2026-62331",
+      "cvss": 8.2
+    },
+    {
+      "title": "Keycloak has authentication bypass via jwt algorithm confusion",
+      "date": "2026-11-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "org.keycloak:keycloak-services",
+      "description": "Keycloak has authentication bypass via jwt algorithm confusion",
+      "link": "https://github.com/advisories/GHSA-j97h-3f8r-mrjr",
+      "cve": "CVE-2026-11800",
+      "cvss": 8.1
+    },
+    {
+      "title": "Netfoil doesn't decrement TTL",
+      "date": "2026-11-03",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/tinfoil-factory/netfoil",
+      "description": "Netfoil doesn't decrement TTL",
+      "link": "https://github.com/advisories/GHSA-9ppr-wfw9-xvr2",
+      "cve": "",
+      "cvss": null
+    },
+    {
+      "title": "Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution",
+      "date": "2026-11-03",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "Metalama.Framework, Metalama.Framework, Metalama.Framework",
+      "description": "Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution",
+      "link": "https://github.com/advisories/GHSA-h26j-4vp7-x9w2",
+      "cve": "CVE-2026-62848",
+      "cvss": 7.3
+    },
+    {
+      "title": "Arc has unauthenticated application log disclosure via `/api/v1/logs`",
+      "date": "2026-11-03",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "github.com/basekick-labs/arc",
+      "description": "Arc has unauthenticated application log disclosure via `/api/v1/logs`",
+      "link": "https://github.com/advisories/GHSA-m3qr-fvp4-78xj",
+      "cve": "",
+      "cvss": null
+    },
     {
       "title": "DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation",
       "date": "2026-11-02",
