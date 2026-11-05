@@ -1,16 +1,60 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-11-05T14:31:08.149Z",
+  "lastUpdated": "2026-11-05T23:29:06.906Z",
   "health": {
-    "lastFetchAttempt": "2026-11-05T14:31:08.149Z",
+    "lastFetchAttempt": "2026-11-05T23:29:06.906Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-11-05T14:31:08.149Z",
+    "lastFetchNewPatches": 4,
+    "lastSuccessWithData": "2026-11-05T23:29:06.906Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "filecoin-pin: Unbounded DAG pinning can exhaust server resources",
+      "date": "2026-11-05",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "filecoin-pin",
+      "description": "filecoin-pin: Unbounded DAG pinning can exhaust server resources",
+      "link": "https://github.com/advisories/GHSA-m5ph-mmg5-6w5h",
+      "cve": "CVE-2026-62300",
+      "cvss": 6.5
+    },
+    {
+      "title": "Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE",
+      "date": "2026-11-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "banks",
+      "description": "Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE",
+      "link": "https://github.com/advisories/GHSA-64vx-6h2c-rjh7",
+      "cve": "CVE-2026-61536",
+      "cvss": 7.5
+    },
+    {
+      "title": "kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts",
+      "date": "2026-11-05",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "github.com/chainguard-dev/kaniko",
+      "description": "kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts",
+      "link": "https://github.com/advisories/GHSA-5q7h-w9jf-cx97",
+      "cve": "CVE-2026-105769",
+      "cvss": 9.3
+    },
+    {
+      "title": "lxd allows Cross-guest volume hijack via DevLXD device patch",
+      "date": "2026-11-05",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "github.com/canonical/lxd",
+      "description": "lxd allows Cross-guest volume hijack via DevLXD device patch",
+      "link": "https://github.com/advisories/GHSA-hhf9-qw4v-72xp",
+      "cve": "CVE-2026-12411",
+      "cvss": 8.4
+    },
     {
       "title": "Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735",
       "date": "2026-11-04",
