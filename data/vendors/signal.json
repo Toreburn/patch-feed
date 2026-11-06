@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-11-06T14:02:19.669Z",
+  "lastUpdated": "2026-11-06T22:55:28.386Z",
   "health": {
-    "lastFetchAttempt": "2026-11-06T14:02:19.669Z",
+    "lastFetchAttempt": "2026-11-06T22:55:28.386Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 2,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-11-06T14:02:19.669Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-11-06T22:55:28.386Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "LXD has CreateCustomVolumeFromBackup nil-pointer dereference on volumes[0].snapshots[*].expires_at",
+      "date": "2026-11-06",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "## Summary\n\n(sibling-field variant of CVE-2026-40197 fix 05bc272)\n\n`(*lxdBackend).CreateCustomVolumeFromBackup` in [`lxd/storage/backend_lxd.go`](https://github.com/canonical/lxd/blob/05bc272/lxd/stor",
+      "link": "https://github.com/advisories/GHSA-j93m-3j9p-m5m8",
+      "cves": [
+        "CVE-2026-9639"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal Desktop v8.35.0-beta.1",
       "date": "2026-11-05",
