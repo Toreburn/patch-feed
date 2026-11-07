@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-07T18:30:35.872Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-07T21:40:44.208Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "DSA-6613-1 zlib - security update",
@@ -10,6 +10,17 @@
       "component": "zlib",
       "description": "Several vulnerabilities were discovered in the zlib compression library, which could result in denial of service or potentially the execution of arbitrary code if specially crafted input is processed....",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00532.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6614-1 ruby3.3 - security update",
+      "date": "2026-11-07",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "ruby3.3",
+      "description": "Several vulnerabilities have been discovered in the interpreter for the Ruby language, which may result in IMAP command injection, denial of service, information disclosure or the execution of arbitra...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00533.html",
       "cve": "",
       "cves": []
     },
@@ -10129,6 +10140,59 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-11-07T21:40:44.208Z",
+      "logs": [
+        "[INFO] aws - 15 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 13 patches, no changes",
+        "[INFO] cloudflare - 4 patches, no changes",
+        "[INFO] crowdstrike - 5 patches, no changes",
+        "[SUCCESS] debian - 15 patches (1 new)",
+        "[INFO] edge - 3 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 35 patches, no changes",
+        "[INFO] kubernetes - 1 patches, no changes",
+        "[INFO] microsoft - 126 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] postgresql - 7 patches, no changes",
+        "[INFO] redhat - 686 patches, no changes",
+        "[INFO] signal - 2 patches, no changes",
+        "[INFO] ubuntu - 33 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 952,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 17,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "postgresql",
+        "aws",
+        "cisco",
+        "cloudflare",
+        "github",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "crowdstrike",
+        "edge",
+        "kubernetes",
+        "gcp",
+        "nodejs",
+        "fortinet"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6614-1 ruby3.3 - security update",
+          "date": "2026-11-07",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-11-07T18:30:35.872Z",
       "logs": [
         "[INFO] aws - 15 patches, no changes",
@@ -19464,795 +19528,6 @@
         "fortinet"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-10-31T04:58:05.457Z",
-      "logs": [
-        "[INFO] apple - 6 patches, no changes",
-        "[INFO] aws - 20 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 18 patches, no changes",
-        "[INFO] cloudflare - 4 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[SUCCESS] debian - 16 patches (1 new)",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 2 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[SUCCESS] github - 211 patches (50 new)",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] jetbrains - 2 patches, no changes",
-        "[INFO] microsoft - 600 patches, no changes",
-        "[SUCCESS] paloalto - 11 patches (1 new)",
-        "[SUCCESS] postgresql - 5 patches (2 new)",
-        "[SUCCESS] redhat - 564 patches (68 new)",
-        "[SUCCESS] signal - 6 patches (1 new)",
-        "[INFO] ubuntu - 5 patches, no changes"
-      ],
-      "newPatchCount": 123,
-      "totalPatches": 1482,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 19,
-      "vendors": [
-        "debian",
-        "paloalto",
-        "postgresql",
-        "aws",
-        "cisco",
-        "cloudflare",
-        "crowdstrike",
-        "edge",
-        "github",
-        "jetbrains",
-        "microsoft",
-        "redhat",
-        "signal",
-        "chrome",
-        "gitlab",
-        "ubuntu",
-        "gcp",
-        "apple",
-        "fortinet"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6598-1 thunderbird - security update",
-          "date": "2026-10-30",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "github",
-          "title": "Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Kubeflow Pipelines: Run-log endpoint permits unauthorized access to pod logs",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pypdf has possible large memory usage when parsing page tree",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pypdf has possible infinite loop when cloning dictionaries",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "@hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "minimatch has potential denial of service via globparts amplification",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Authlib RFC 7592 examples omit registration-access-token client binding",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pypdf has possible long runtimes when retrieving page labels",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pypdf has possible large memory usage for exceptions in strict mode",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pypdf has possible long runtimes/large memory usage for encrypted PDF files",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pypdf has possible large memory usage when parsing cross-reference streams",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: ASN.1 OID first arc truncation in asn1.oidToDer",
-          "date": "2026-10-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: TLS client crash when the server sends no certificate",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: Regular expression denial of service in PEM decoding (pem.decode)",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891)",
-          "date": "2026-10-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: verifyCertificateChain() removes trusted CA certificates with the same subject from the CA store",
-          "date": "2026-10-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: AES-GCM authentication bypass via unvalidated tagLength option",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: PKCS#12 MAC forgery and constant-key PBE via zero iteration count",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: Denial of service in TLS record processing via call stack exhaustion",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "Forge: X.509 basicConstraints bypass in verifyCertificateChain() via deprecated extension OIDs 2.5.29.10 and 2.5.29.13",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt dev server exposes generated appSecret through Vite file serving",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt: Dot segments in the request path bypass `server/middleware` path checks and server route rules on page routes",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt dev server arbitrary file read through client error reports",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Nuxt dev server exposes private runtime config through the Nitro dev bundle",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "@sigstore/oci sends the registry Authorization header to a cross-host blob-upload Location",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "MariaDB Connector/J: Rogue server can drive large heap allocations from server-declared lengths in OK packets",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MariaDB Connector/J: Length-encoded integers larger than Integer.MAX_VALUE were truncated before being used as lengths",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MariaDB Connector/J: XA recover() trusted server-supplied gtrid and bqual lengths",
-          "date": "2026-10-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "MariaDB Connector/J: LOAD DATA LOCAL INFILE file check could be satisfied by text inside quoted identifiers, letting a malicious server read client files",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "MariaDB Connector/J: Server could switch character_set_results away from UTF-8 without the client noticing",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "follow-redirects: Cross-realm sensitiveHeaders arrays are discarded and custom credentials can follow redirects",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "russh: Agent server never calls `Agent::confirm`, so keys added with the confirm constraint (`ssh-add -c`) sign without confirmation",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "pageant: unbounded frame buffering on peer-controlled 4-byte length prefix (memory-exhaustion DoS)",
-          "date": "2026-10-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "russh: peer-declared zero maximum packet size permanently stalls channel writes (silent AsyncWrite hang)",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "russh's SSH agent server is susceptible to unbound allocations via repeated SSH_AGENT_CONSTRAIN_CONFIRM messages",
-          "date": "2026-10-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "github",
-          "title": "russh's SSH client is susceptible to unbounded allocations via EXT_INFO packets",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "GraphQL-core has denial of service via memory leak in aborted validations",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OAuthLib: Token grants can use attacker-supplied client_id for authorization after authenticating a different client",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "github",
-          "title": "OpenWISP Controller CA CRL REST API does not scope requests to managed organizations",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "github",
-          "title": "Fiber: CORS wildcard origins matched without a dot boundary, allowing credentialed cross-origin reads",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-111497 Portfolio Status: Impact of Brotli Vulnerability (CVE-2026-111497) on Palo Alto Networks Products (Severity: CRITICAL)",
-          "date": "2026-10-31",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "postgresql",
-          "title": "E-Maj 5.0.1 : Major Security Update.",
-          "date": "2026-10-31",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "postgresql",
-          "title": "pgAdmin 4 v9.19 Released",
-          "date": "2026-10-31",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-118938: fickling: fickling: Arbitrary code execution via safety analysis bypass for dotted attribute paths",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-16760: fickling: fickling: Arbitrary code execution via safety check bypass",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119341: tesseract: tesseract: Denial of service via crafted template files",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119340: tesseract: tesseract: Denial of Service via crafted traineddata file",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119339: tesseract: Tesseract: Denial of service via crafted trained model file",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119338: tesseract: tesseract: Denial of Service via crafted right-to-left text rendering",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-61848: crass: crass: Denial of Service via crafted non-ASCII CSS input",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-61847: crass: crass: Denial of Service via excessive recursion when processing comments",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-61846: crass: crass: Denial of Service via deeply nested CSS structures",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-61845: crass: crass: Denial of Service via crafted scientific notation in CSS",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-84243: glibc: glibc: Arbitrary code execution via directory traversal in LANGUAGE environment variable",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-111487: qt: qt: arbitrary code execution via out-of-bounds write in Qt3D assimp plugin",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119602: libmspack: libmspack: Information disclosure via unchecked back-references in MS-ZIP decompressor",
-          "date": "2026-10-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-105924: qt: qt: Denial of Service via NULL pointer dereference during QCborValue to JSON conversion",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119586: sqlite: sqlite: Arbitrary command execution via .recover command",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119591: sqlite: sqlite: Denial of Service via stack exhaustion in countOfViewOptimization()",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119567: vsftpd: vsftpd: access control bypass via RFC 775 command aliases",
-          "date": "2026-10-30",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119378: sqlite: sqlite: Denial of Service via use-after-free in R-Tree extension",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119373: sqlite: sqlite: Denial of service via heap-based buffer overflow in FTS5",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119542: org.infinispan/infinispan-query: Infinispan: Deeply nested Ickle queries can trigger a StackOverflowError",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-59386: capi: capi: Privilege escalation via unauthorized application configuration modification",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119272: chromium-browser: Out of bounds read in FileSystem",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119271: chromium-browser: skia: Use after free in Skia",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119270: chromium-browser: Improper input validation in CacheStorage",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119263: chromium-browser: Memory corruption in GarbageCollection",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119268: chromium-browser: Integer overflow in Editing",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119266: chromium-browser: Use after free in Quota",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119269: chromium-browser: Use after free in Blink",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119264: chromium-browser: Memory corruption in Dawn",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119265: chromium-browser: Memory corruption in Quota",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119267: chromium-browser: Memory corruption in DOM",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-76029: chromium-browser: Memory corruption in Network",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-76030: chromium-browser: Memory corruption in FileSystem",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119260: chromium-browser: Use after free in Frames",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119262: chromium-browser: Improper input validation in V8",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-76031: chromium-browser: Use after free in Input",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-76028: chromium-browser: Use after free in FileSystem",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119261: chromium-browser: skia: Improper input validation in Skia",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-76025: chromium-browser: Use after free in FileSystem",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-76027: chromium-browser: Memory corruption in CacheStorage",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-76026: chromium-browser: Memory corruption in Autofill",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-76024: chromium-browser: Memory corruption in MediaStream",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116958: konflux-ci: Unquoted Variable Expansion in Shell Command Execution",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116964: konflux-ci: Remote Code Execution via eval() in Manifest Scripts",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114217: konflux-ci: GitHub Token Plaintext Exposure in CI/CD Scripts",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116086: konflux-ci: jq Filter Injection in GitHub Workflow Issue Management",
-          "date": "2026-10-30",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119197: pyasn1: pyasn1: Denial of Service via quadratic complexity in binary REAL decoding",
-          "date": "2026-10-29",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-75520: domoticz: domoticz: Unauthorized script execution via missing permission checks",
-          "date": "2026-10-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-118752: freeimage: FreeImage: Arbitrary code execution via heap-based buffer overflow in image decoder",
-          "date": "2026-10-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-117501: perl-http-body: HTTP::Body: Denial of Service via unbounded buffering of chunked requests",
-          "date": "2026-10-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-117500: perl-HTTP-Body: perl-HTTP-Body: Denial of Service via regular expression backtracking",
-          "date": "2026-10-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116531: perl-http-body: HTTP::Body: Denial of Service via improper chunked request body parsing",
-          "date": "2026-10-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116285: perl-http-body: HTTP::Body: Denial of Service via quadratic regular expression backtracking",
-          "date": "2026-10-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116135: perl-http-body: HTTP::Body: Security filter bypass via improper handling of mixed-case percent-encoding",
-          "date": "2026-10-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116134: perl-http-body: perl-http-body: Denial of Service via unbounded multipart header block",
-          "date": "2026-10-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116133: perl-http-body: HTTP::Body: Denial of Service via malformed multipart request body",
-          "date": "2026-10-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116132: perl-http-body: HTTP::Body: Denial of Service via incomplete multipart uploads",
-          "date": "2026-10-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116131: perl-http-body: HTTP::Body: Denial of Service via unbounded form fields and multipart parts",
-          "date": "2026-10-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-116795: re2js: re2js: Denial of service via repeated regular expression matching with lookbehinds",
-          "date": "2026-10-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-118029: awswrangler: awswrangler: Information disclosure via unverified query result bucket ownership",
-          "date": "2026-10-28",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-117681: konflux-ci: UI proxy skips backend TLS verification on non-OpenShift clusters, leaking a token that can impersonate anyo",
-          "date": "2026-10-28",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-118021: firefox: thunderbird: Sandbox escape due to use-after-free in the XPCOM component",
-          "date": "2026-10-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-118023: firefox: thunderbird: Sandbox escape due to use-after-free in the Graphics: WebRender component",
-          "date": "2026-10-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-118022: firefox: Sandbox escape due to use-after-free in the Disability Access APIs component",
-          "date": "2026-10-27",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-118015: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
-          "date": "2026-10-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-118006: firefox: Privilege escalation due to use-after-free in the WebRTC: Signaling component",
-          "date": "2026-10-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-118005: firefox: thunderbird: Use-after-free in the WebRTC: Signaling component",
-          "date": "2026-10-27",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115804: github.com/hashicorp/consul: Consul: Authorization bypass via health check registration",
-          "date": "2026-10-26",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "signal",
-          "title": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
-          "date": "2026-10-30",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
