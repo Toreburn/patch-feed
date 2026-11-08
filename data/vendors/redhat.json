@@ -1,16 +1,159 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-11-07T21:39:25.000Z",
+  "lastUpdated": "2026-11-08T05:27:54.348Z",
   "health": {
-    "lastFetchAttempt": "2026-11-07T21:39:25.000Z",
+    "lastFetchAttempt": "2026-11-08T05:27:54.348Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 647,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-11-07T21:39:25.000Z",
+    "lastFetchParsedItems": 660,
+    "lastFetchNewPatches": 16,
+    "lastSuccessWithData": "2026-11-08T05:27:54.348Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-99283: kernel: kernel: Denial of Service via premature connection tracking expiration on TCP RST packets",
+      "date": "2026-11-07",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: Denial of Service via premature connection tracking expiration on TCP RST packets",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99283.json",
+      "cve": "CVE-2026-99283",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-99279: kernel: kernel: ksmbd: Denial of Service via unreclaimed expired sessions",
+      "date": "2026-11-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: ksmbd: Denial of Service via unreclaimed expired sessions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99279.json",
+      "cve": "CVE-2026-99279",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-99282: kernel: kernel: Denial of Service via use-after-free in sch_teql",
+      "date": "2026-11-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: Denial of Service via use-after-free in sch_teql",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99282.json",
+      "cve": "CVE-2026-99282",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-99281: kernel: kernel: Unauthorized network device access via missing permission checks on ownerless TUN/TAP devices",
+      "date": "2026-11-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: Unauthorized network device access via missing permission checks on ownerless TUN/TAP devices",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99281.json",
+      "cve": "CVE-2026-99281",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-99280: kernel: kernel: Denial of Service via improper session cleanup in ksmbd",
+      "date": "2026-11-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: Denial of Service via improper session cleanup in ksmbd",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99280.json",
+      "cve": "CVE-2026-99280",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-99275: kernel: kernel: Information disclosure via crafted SMB session setup responses",
+      "date": "2026-11-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: Information disclosure via crafted SMB session setup responses",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99275.json",
+      "cve": "CVE-2026-99275",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-99278: kernel: kernel: ksmbd: Denial of Service via unbounded sessions per connection",
+      "date": "2026-11-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: ksmbd: Denial of Service via unbounded sessions per connection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99278.json",
+      "cve": "CVE-2026-99278",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-99276: kernel: kernel: Denial of Service in ksmbd via deadlock during session cleanup",
+      "date": "2026-11-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: Denial of Service in ksmbd via deadlock during session cleanup",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99276.json",
+      "cve": "CVE-2026-99276",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-99277: kernel: kernel: ksmbd: Denial of Service via use-after-free in session channel handling",
+      "date": "2026-11-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: ksmbd: Denial of Service via use-after-free in session channel handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99277.json",
+      "cve": "CVE-2026-99277",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-99273: kernel: kernel: ksmbd: Denial of Service via out-of-bounds write in get_file_stream_info()",
+      "date": "2026-11-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: ksmbd: Denial of Service via out-of-bounds write in get_file_stream_info()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99273.json",
+      "cve": "CVE-2026-99273",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-99272: kernel: kernel: out-of-bounds read in SMB client via crafted read response",
+      "date": "2026-11-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: out-of-bounds read in SMB client via crafted read response",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99272.json",
+      "cve": "CVE-2026-99272",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-99271: kernel: kernel: Denial of service via use-after-free in ALSA Line 6 audio driver",
+      "date": "2026-11-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: Denial of service via use-after-free in ALSA Line 6 audio driver",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99271.json",
+      "cve": "CVE-2026-99271",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-99274: kernel: kernel: Denial of service via empty truncated responses in SMB client",
+      "date": "2026-11-07",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: Denial of service via empty truncated responses in SMB client",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99274.json",
+      "cve": "CVE-2026-99274",
+      "cvss": 6.5
+    },
     {
       "title": "CVE-2026-121820: com.linecorp.armeria/armeria-saml: armeria-saml: Denial of Service via decompression of untrusted SAML messages",
       "date": "2026-11-06",
@@ -65,6 +208,39 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-114366.json",
       "cve": "CVE-2026-114366",
       "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-100082: kernel: kernel: xen-blkback: Denial of Service via race condition reading I/O statistics",
+      "date": "2026-11-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: xen-blkback: Denial of Service via race condition reading I/O statistics",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100082.json",
+      "cve": "CVE-2026-100082",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-100081: kernel: kernel: xen-netback: Denial of Service via race condition during interface disconnect",
+      "date": "2026-11-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: xen-netback: Denial of Service via race condition during interface disconnect",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100081.json",
+      "cve": "CVE-2026-100081",
+      "cvss": 6
+    },
+    {
+      "title": "CVE-2026-100080: kernel: kernel: xen-netback: Denial of Service via use-after-free during queue teardown",
+      "date": "2026-11-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: xen-netback: Denial of Service via use-after-free during queue teardown",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-100080.json",
+      "cve": "CVE-2026-100080",
+      "cvss": 5.6
     },
     {
       "title": "CVE-2026-123037: ansible-core: user module generate_ssh_key follows a symlinked ~/.ssh enabling local privilege escalation (incomplete fi",
