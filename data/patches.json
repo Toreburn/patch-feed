@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-09T05:22:16.218Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-09T05:42:50.963Z",
+  "newPatches": 2,
   "patches": [
     {
       "title": "DSA-6600-2 vim - regression update",
@@ -10,6 +10,17 @@
       "component": "vim",
       "description": "The update for vim in DSA 6600-1 did not correctly built binary packages for the s390x architecture due to test failures during during build. This update corrects that problem. https://security-tracke...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00535.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6616-1 linux - security update",
+      "date": "2026-11-08",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "linux",
+      "description": "Several vulnerabilities have been discovered in the Linux kernel that may lead to a privilege escalation, denial of service or information leaks. https://security-tracker.debian.org/tracker/DSA-6616-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00536.html",
       "cve": "",
       "cves": []
     },
@@ -658,6 +669,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99274.json",
       "cve": "CVE-2026-99274",
       "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-99284: kernel: kernel: privilege escalation via missing shared fragment flag in skb_zerocopy",
+      "date": "2026-11-07",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: privilege escalation via missing shared fragment flag in skb_zerocopy",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99284.json",
+      "cve": "CVE-2026-99284",
+      "cvss": 7.8
     },
     {
       "title": "CVE-2026-109518 - APT package manager that affects Ubuntu and Debian operating systems",
@@ -9233,6 +9255,63 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-11-09T05:42:50.963Z",
+      "logs": [
+        "[INFO] aws - 10 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 12 patches, no changes",
+        "[INFO] cloudflare - 4 patches, no changes",
+        "[INFO] crowdstrike - 5 patches, no changes",
+        "[SUCCESS] debian - 12 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 33 patches, no changes",
+        "[INFO] kubernetes - 1 patches, no changes",
+        "[INFO] microsoft - 126 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[SUCCESS] redhat - 623 patches (1 new)",
+        "[INFO] signal - 2 patches, no changes",
+        "[INFO] ubuntu - 33 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 874,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "debian",
+        "microsoft",
+        "postgresql",
+        "redhat",
+        "aws",
+        "cisco",
+        "cloudflare",
+        "github",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "crowdstrike",
+        "edge",
+        "kubernetes",
+        "gcp",
+        "nodejs"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6616-1 linux - security update",
+          "date": "2026-11-08",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-99284: kernel: kernel: privilege escalation via missing shared fragment flag in skb_zerocopy",
+          "date": "2026-11-07",
+          "severity": "HIGH"
+        }
+      ]
+    },
     {
       "timestamp": "2026-11-09T05:22:16.218Z",
       "logs": [
@@ -17962,93 +18041,6 @@
         "fortinet"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-11-01T13:00:11.123Z",
-      "logs": [
-        "[INFO] apple - 6 patches, no changes",
-        "[INFO] aws - 10 patches, no changes",
-        "[INFO] chrome - 5 patches, no changes",
-        "[INFO] cisco - 18 patches, no changes",
-        "[INFO] cloudflare - 4 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 15 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 2 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 211 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] jetbrains - 2 patches, no changes",
-        "[INFO] microsoft - 600 patches, no changes",
-        "[INFO] paloalto - 10 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[SUCCESS] redhat - 530 patches (6 new)",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 5 patches, no changes"
-      ],
-      "newPatchCount": 6,
-      "totalPatches": 1436,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 19,
-      "vendors": [
-        "redhat",
-        "aws",
-        "debian",
-        "microsoft",
-        "paloalto",
-        "postgresql",
-        "cisco",
-        "cloudflare",
-        "crowdstrike",
-        "edge",
-        "github",
-        "jetbrains",
-        "signal",
-        "chrome",
-        "gitlab",
-        "ubuntu",
-        "gcp",
-        "apple",
-        "fortinet"
-      ],
-      "newPatches": [
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-120217: loguru: loguru: Denial of Service via inefficient regular expression complexity",
-          "date": "2026-11-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-120247: ffmpeg: ffmpeg: Information disclosure via uninitialized heap memory in Huffyuv decoder",
-          "date": "2026-11-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-120246: ffmpeg: ffmpeg: Information disclosure via uninitialized palette entries in CDXL decoder",
-          "date": "2026-11-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-120244: ffmpeg: ffmpeg: Information disclosure via truncated PCX image",
-          "date": "2026-11-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-120245: ffmpeg: ffmpeg: Information disclosure via crafted Sun Raster image",
-          "date": "2026-11-01",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-120243: ffmpeg: ffmpeg: information disclosure via crafted Go2Meeting stream",
-          "date": "2026-11-01",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
