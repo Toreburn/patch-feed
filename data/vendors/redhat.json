@@ -1,16 +1,49 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-11-10T01:22:11.908Z",
+  "lastUpdated": "2026-11-10T14:39:18.752Z",
   "health": {
-    "lastFetchAttempt": "2026-11-10T01:22:11.908Z",
+    "lastFetchAttempt": "2026-11-10T14:39:18.752Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 556,
-    "lastFetchNewPatches": 21,
-    "lastSuccessWithData": "2026-11-10T01:22:11.908Z",
+    "lastFetchParsedItems": 563,
+    "lastFetchNewPatches": 11,
+    "lastSuccessWithData": "2026-11-10T14:39:18.752Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-125672: cockpit: cockpit-storaged: Tang keyserver address from an untrusted LUKS header clevis token reaches curl's argument vec",
+      "date": "2026-11-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cockpit: cockpit-storaged: Tang keyserver address from an untrusted LUKS header clevis token reaches curl's argument vector as an option",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125672.json",
+      "cve": "CVE-2026-125672",
+      "cvss": 6.6
+    },
+    {
+      "title": "CVE-2026-107364: krb5: Unauthenticated KDC DoS based on ASN.1 decoder read overrun",
+      "date": "2026-11-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "krb5: Unauthenticated KDC DoS based on ASN.1 decoder read overrun",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-107364.json",
+      "cve": "CVE-2026-107364",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-125637: konflux-ci: Unvalidated hostname fields enable Caddyfile config injection in the Konflux UI proxy generator, allowing an",
+      "date": "2026-11-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "konflux-ci: Unvalidated hostname fields enable Caddyfile config injection in the Konflux UI proxy generator, allowing an unauthenticated route to be spliced ahead of the forward_auth/impersonate autho...",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125637.json",
+      "cve": "CVE-2026-125637",
+      "cvss": 7.2
+    },
     {
       "title": "CVE-2026-122056: openscap: One-byte heap buffer overflow in sds-compose may lead to Denial-of-Service",
       "date": "2026-11-09",
@@ -230,6 +263,72 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116337.json",
       "cve": "CVE-2026-116337",
       "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-71200: krb5: Unauthenticated KDC NULL pointer dereference KDC DoS via crafted PKINIT pre-auth request",
+      "date": "2026-11-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "krb5: Unauthenticated KDC NULL pointer dereference KDC DoS via crafted PKINIT pre-auth request",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71200.json",
+      "cve": "CVE-2026-71200",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-107884: krb5: Unauthorized key reset of protected principal via kpasswd",
+      "date": "2026-11-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "krb5: Unauthorized key reset of protected principal via kpasswd",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-107884.json",
+      "cve": "CVE-2026-107884",
+      "cvss": 6.7
+    },
+    {
+      "title": "CVE-2026-111423: krb5: Improper authorization via flawed PAC checksum verification",
+      "date": "2026-11-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "krb5: Improper authorization via flawed PAC checksum verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-111423.json",
+      "cve": "CVE-2026-111423",
+      "cvss": 4.2
+    },
+    {
+      "title": "CVE-2026-71199: krb5: Alteration of authentication indicators in CAMMAC container",
+      "date": "2026-11-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "krb5: Alteration of authentication indicators in CAMMAC container",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71199.json",
+      "cve": "CVE-2026-71199",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-118380: krb5: kadmind: request alteration and protected information disclosure",
+      "date": "2026-11-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "krb5: kadmind: request alteration and protected information disclosure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118380.json",
+      "cve": "CVE-2026-118380",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-125652: keycloak-services: keycloak-services: Client-level mandatory PKCE bypass via login-actions entry point",
+      "date": "2026-11-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-services: keycloak-services: Client-level mandatory PKCE bypass via login-actions entry point",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125652.json",
+      "cve": "CVE-2026-125652",
+      "cvss": 6.8
     },
     {
       "title": "CVE-2026-114713: unrealircd: unrealircd: Command injection via unescaped message tag",
@@ -494,6 +593,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116592.json",
       "cve": "CVE-2026-116592",
       "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-123785: fluxbox: fluxbox: Denial of Service via crafted style geometry values",
+      "date": "2026-11-06",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fluxbox: fluxbox: Denial of Service via crafted style geometry values",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-123785.json",
+      "cve": "CVE-2026-123785",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-123784: fluxbox: fluxbox: Arbitrary command execution via crafted style background values",
+      "date": "2026-11-06",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fluxbox: fluxbox: Arbitrary command execution via crafted style background values",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-123784.json",
+      "cve": "CVE-2026-123784",
+      "cvss": 7.8
     },
     {
       "title": "CVE-2026-123037: ansible-core: user module generate_ssh_key follows a symlinked ~/.ssh enabling local privilege escalation (incomplete fi",
