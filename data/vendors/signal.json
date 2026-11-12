@@ -1,16 +1,29 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-11-12T14:55:52.928Z",
+  "lastUpdated": "2026-11-12T23:24:42.382Z",
   "health": {
-    "lastFetchAttempt": "2026-11-12T14:55:52.928Z",
+    "lastFetchAttempt": "2026-11-12T23:24:42.382Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 5,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-11-12T14:55:52.928Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-11-12T23:24:42.382Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\n\nAn unauthenticated WebSocket client can subscribe to the log path and receive buffered server logs.\n\nWebSocket connections are intentionally permitted before authentication because login ",
+      "link": "https://github.com/advisories/GHSA-7m8x-x364-m26j",
+      "cves": [],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Microsoft Security Advisory CVE-2026-114147 - ASP.NET Core Denial of Service Vulnerability",
       "date": "2026-11-11",
