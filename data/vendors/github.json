@@ -1,16 +1,49 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-11-12T23:24:09.777Z",
+  "lastUpdated": "2026-11-13T05:57:58.503Z",
   "health": {
-    "lastFetchAttempt": "2026-11-12T23:24:09.777Z",
+    "lastFetchAttempt": "2026-11-13T05:57:58.503Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 34,
-    "lastSuccessWithData": "2026-11-12T23:24:09.777Z",
+    "lastFetchNewPatches": 16,
+    "lastSuccessWithData": "2026-11-13T05:57:58.503Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "Rucio: Unauthenticated administrator impersonation through SSH challenge tokens",
+      "date": "2026-11-13",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "rucio, rucio, rucio",
+      "description": "Rucio: Unauthenticated administrator impersonation through SSH challenge tokens",
+      "link": "https://github.com/advisories/GHSA-x585-4vv8-2mh2",
+      "cve": "CVE-2026-100397",
+      "cvss": 9.8
+    },
+    {
+      "title": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "soupsieve",
+      "description": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
+      "link": "https://github.com/advisories/GHSA-mmhr-3c5m-f64f",
+      "cve": "CVE-2026-126190",
+      "cvss": 7.5
+    },
+    {
+      "title": "Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "soupsieve",
+      "description": "Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time",
+      "link": "https://github.com/advisories/GHSA-4j63-6c4x-wfg4",
+      "cve": "CVE-2026-126192",
+      "cvss": null
+    },
     {
       "title": "Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator",
       "date": "2026-11-12",
@@ -384,6 +417,149 @@
       "link": "https://github.com/advisories/GHSA-4g86-54fm-h9h8",
       "cve": "CVE-2026-118740",
       "cvss": 9.1
+    },
+    {
+      "title": "Active Storage: Possible arbitrary file write and read in image analysis",
+      "date": "2026-11-12",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "activestorage, activestorage",
+      "description": "Active Storage: Possible arbitrary file write and read in image analysis",
+      "link": "https://github.com/advisories/GHSA-f3w6-w445-fwh9",
+      "cve": "CVE-2026-122006",
+      "cvss": 9.8
+    },
+    {
+      "title": "Action Pack: Possible DoS vulnerability in Action Controller Live streaming",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "actionpack, actionpack",
+      "description": "Action Pack: Possible DoS vulnerability in Action Controller Live streaming",
+      "link": "https://github.com/advisories/GHSA-rwvh-fw6r-pwvp",
+      "cve": "CVE-2026-126072",
+      "cvss": 5.9
+    },
+    {
+      "title": "Action Pack: Possible sensitive session information leak in Active Storage proxy mode",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "actionpack, actionpack",
+      "description": "Action Pack: Possible sensitive session information leak in Active Storage proxy mode",
+      "link": "https://github.com/advisories/GHSA-x6mj-8jx9-qhqv",
+      "cve": "CVE-2026-126077",
+      "cvss": 6.8
+    },
+    {
+      "title": "Action View: Possible XSS vulnerability in highlight helper",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "actionview, actionview",
+      "description": "Action View: Possible XSS vulnerability in highlight helper",
+      "link": "https://github.com/advisories/GHSA-v6rj-xm57-3p59",
+      "cve": "CVE-2026-126078",
+      "cvss": 6.1
+    },
+    {
+      "title": "Action View: Possible XSS vulnerability in strip_tags",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "actionview, actionview",
+      "description": "Action View: Possible XSS vulnerability in strip_tags",
+      "link": "https://github.com/advisories/GHSA-rq8q-p985-fjq7",
+      "cve": "CVE-2026-126070",
+      "cvss": 6.1
+    },
+    {
+      "title": "Action View: Possible XSS vulnerability in text helpers",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "actionview, actionview",
+      "description": "Action View: Possible XSS vulnerability in text helpers",
+      "link": "https://github.com/advisories/GHSA-2p2f-4rq4-gjwc",
+      "cve": "CVE-2026-126079",
+      "cvss": 6.1
+    },
+    {
+      "title": "Active Storage: Unsigned Content-Type in GCS direct uploads with cache_control",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "activestorage, activestorage",
+      "description": "Active Storage: Unsigned Content-Type in GCS direct uploads with cache_control",
+      "link": "https://github.com/advisories/GHSA-3w93-6hmw-whh4",
+      "cve": "CVE-2026-126084",
+      "cvss": 4.7
+    },
+    {
+      "title": "Action Pack: Possible Strong Parameters Bypass in Parameters#each_key",
+      "date": "2026-11-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "actionpack, actionpack",
+      "description": "Action Pack: Possible Strong Parameters Bypass in Parameters#each_key",
+      "link": "https://github.com/advisories/GHSA-wm3x-v3qw-4jh3",
+      "cve": "CVE-2026-126081",
+      "cvss": 7.5
+    },
+    {
+      "title": "Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "Pillow",
+      "description": "Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data",
+      "link": "https://github.com/advisories/GHSA-wqgw-9xfh-qf2g",
+      "cve": "CVE-2026-128066",
+      "cvss": null
+    },
+    {
+      "title": "Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size",
+      "date": "2026-11-12",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "Pillow",
+      "description": "Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size",
+      "link": "https://github.com/advisories/GHSA-xcvg-w56q-r89m",
+      "cve": "CVE-2026-128067",
+      "cvss": null
+    },
+    {
+      "title": "Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "hono",
+      "description": "Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
+      "link": "https://github.com/advisories/GHSA-46wx-v44x-9hh2",
+      "cve": "CVE-2026-126355",
+      "cvss": 5.3
+    },
+    {
+      "title": "Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "hono",
+      "description": "Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters",
+      "link": "https://github.com/advisories/GHSA-4h7h-rv7c-7m2v",
+      "cve": "CVE-2026-126356",
+      "cvss": 5.3
+    },
+    {
+      "title": "Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix",
+      "date": "2026-11-12",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "hono",
+      "description": "Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix",
+      "link": "https://github.com/advisories/GHSA-4m76-xfj5-7975",
+      "cve": "CVE-2026-126357",
+      "cvss": 5.3
     },
     {
       "title": "Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability",

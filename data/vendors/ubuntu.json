@@ -1,12 +1,12 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-11-12T23:24:55.514Z",
+  "lastUpdated": "2026-11-13T05:58:46.530Z",
   "health": {
-    "lastFetchAttempt": "2026-11-12T23:24:55.514Z",
+    "lastFetchAttempt": "2026-11-13T05:58:46.530Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 6,
-    "lastSuccessWithData": "2026-11-12T23:24:55.514Z",
+    "lastFetchNewPatches": 9,
+    "lastSuccessWithData": "2026-11-13T05:58:46.530Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -64,6 +64,87 @@
       "component": "GNU C Library vulnerabilities",
       "description": "It was discovered that the GNU C Library incorrectly handled the ccs=\noption in the fopen function. An attacker could possibly use this issue\nto cause GNU C Library to crash or execute arbitrary code....",
       "link": "https://ubuntu.com/security/notices/USN-9065-1"
+    },
+    {
+      "title": "USN-9068-1: Debian-LAN vulnerability",
+      "date": "2026-11-12",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Debian-LAN",
+      "description": "Wolfgang Schweer discovered that Debian-LAN configured overly permissive\nACLs for the Kerberos admin server. An authenticated user could possibly\nuse this issue to change the credentials of other user...",
+      "link": "https://ubuntu.com/security/notices/USN-9068-1"
+    },
+    {
+      "title": "USN-9089-1: x11vnc vulnerability",
+      "date": "2026-11-12",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "x11vnc",
+      "description": "It was discovered that x11vnc created shared memory segments with insecure\npermissions. A local attacker could possibly use this issue to obtain\nsensitive information or modify screen contents....",
+      "link": "https://ubuntu.com/security/notices/USN-9089-1"
+    },
+    {
+      "title": "USN-9088-1: TigerVNC vulnerability",
+      "date": "2026-11-12",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "TigerVNC",
+      "description": "It was discovered that the TigerVNC viewer stored TLS certificate\nexceptions as trusted certificate authorities. A remote attacker could\npossibly use this issue to impersonate any VNC server after a u...",
+      "link": "https://ubuntu.com/security/notices/USN-9088-1"
+    },
+    {
+      "title": "USN-9087-1: signing-party vulnerability",
+      "date": "2026-11-12",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "signing-party",
+      "description": "It was discovered that the gpg-key2ps tool in signing-party did not\nproperly sanitize user IDs before passing them to a shell. If a user were\ntricked into processing a specially crafted OpenPGP key, a...",
+      "link": "https://ubuntu.com/security/notices/USN-9087-1"
+    },
+    {
+      "title": "USN-9086-1: SA-Exim vulnerability",
+      "date": "2026-11-12",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "SA-Exim",
+      "description": "It was discovered that SA-Exim unsafely evaluated the parameters of its\ngreylisting SpamAssassin rule. An attacker able to write SpamAssassin\nconfiguration files or rules could possibly use this issue...",
+      "link": "https://ubuntu.com/security/notices/USN-9086-1"
+    },
+    {
+      "title": "USN-9085-1: Ruby OpenID vulnerability",
+      "date": "2026-11-12",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Ruby OpenID",
+      "description": "It was discovered that Ruby OpenID sent a request to the claimed identifier\nURL before verifying the signature of an OpenID response. A remote attacker\ncould possibly use this issue to perform server-...",
+      "link": "https://ubuntu.com/security/notices/USN-9085-1"
+    },
+    {
+      "title": "USN-9084-1: Radicale vulnerability",
+      "date": "2026-11-12",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Radicale",
+      "description": "It was discovered that Radicale did not delay failed authentication\nattempts when using htpasswd authentication. A remote attacker could\npossibly use this issue to obtain user passwords through timing...",
+      "link": "https://ubuntu.com/security/notices/USN-9084-1"
+    },
+    {
+      "title": "USN-9083-1: gevent vulnerability",
+      "date": "2026-11-12",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "gevent",
+      "description": "It was discovered that the gevent WSGI server incorrectly validated chunked\ntransfer encoding trailers in HTTP requests. A remote attacker could\npossibly use this issue to perform HTTP request smuggli...",
+      "link": "https://ubuntu.com/security/notices/USN-9083-1"
+    },
+    {
+      "title": "USN-9082-1: pngquant vulnerability",
+      "date": "2026-11-12",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "pngquant",
+      "description": "Choi Jaeseung discovered that pngquant incorrectly handled certain PNG\nimages, leading to a buffer overflow. An attacker could possibly use this\nissue to cause pngquant to crash or execute arbitrary c...",
+      "link": "https://ubuntu.com/security/notices/USN-9082-1"
     },
     {
       "title": "USN-9063-1: Yodl vulnerability",
