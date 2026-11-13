@@ -1,16 +1,466 @@
 {
   "vendor": "microsoft",
-  "lastUpdated": "2026-11-13T05:58:13.595Z",
+  "lastUpdated": "2026-11-13T14:27:42.243Z",
   "health": {
-    "lastFetchAttempt": "2026-11-13T05:58:13.595Z",
+    "lastFetchAttempt": "2026-11-13T14:27:42.242Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-11-13T05:58:13.595Z",
+    "lastFetchNewPatches": 50,
+    "lastSuccessWithData": "2026-11-13T14:27:42.242Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-100080: xen-netback: Fix UAF when reading statistics data",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100080",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100080"
+    },
+    {
+      "title": "CVE-2026-100081: xen-netback: defer xenvif_mcast_addr_list_free()",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100081",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100081"
+    },
+    {
+      "title": "CVE-2026-100082: xen-blkback: Avoid UAF when reading I/O statistics",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100082",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100082"
+    },
+    {
+      "title": "CVE-2026-100290: Double free after allocation failure in regcomp and regexec",
+      "date": "2026-11-13",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100290",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100290"
+    },
+    {
+      "title": "CVE-2026-100407: Git for Windows: git-credential-wincred OAuth Store Heap Overflow",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100407",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100407"
+    },
+    {
+      "title": "CVE-2026-100408: Git for Windows: git-credential-wincred Erase Path Heap Overflow",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100408",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100408"
+    },
+    {
+      "title": "CVE-2026-105437: Heap-based Buffer Overflow in Git",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105437",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105437"
+    },
+    {
+      "title": "CVE-2026-112314: Krb5: mit krb5 gss-rpc client memory leak on xid mismatch retries",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112314",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112314"
+    },
+    {
+      "title": "CVE-2026-112320: Krb5: mit krb5 kadmind unauthenticated memory leak dos via gss-rpc auth flavor switching",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112320",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112320"
+    },
+    {
+      "title": "CVE-2026-112321: Krb5: mit krb5 kadmind unauthenticated memory leak dos via auth_gssapi_init error paths",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112321",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112321"
+    },
+    {
+      "title": "CVE-2026-112322: Krb5: mit krb5 kadmind unauthenticated cpu dos via auth_gssapi client states cleanup",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112322",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112322"
+    },
+    {
+      "title": "CVE-2026-112323: Krb5: mit krb5 kadmind unauthenticated memory exhaustion via failed auth_gssapi_init requests",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112323",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112323"
+    },
+    {
+      "title": "CVE-2026-112910: filelock: WindowsFileLock ignores mode: a 0o600 lock file and the ReadWriteLock database inherit the directory ACL",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112910",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112910"
+    },
+    {
+      "title": "CVE-2026-113431: Unbounded decoded HTTP/2 header-list size in cowlib cow_http2_machine enables HPACK amplification memory exhaustion",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-113431",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-113431"
+    },
+    {
+      "title": "CVE-2026-114456: Missing origin validation for the externalbrowser authenticator callback in multiple Snowflake client drivers",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-114456",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-114456"
+    },
+    {
+      "title": "CVE-2026-115298: Incorrect Authorization in Elasticsearch Leading to Information Disclosure",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115298",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115298"
+    },
+    {
+      "title": "CVE-2026-115538: Docker Engine overlay-network encryption rules are not restored after a firewalld reload",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115538",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115538"
+    },
+    {
+      "title": "CVE-2026-115539: Cluster-API proxy overwrites forwarded client identity with its own",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115539",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115539"
+    },
+    {
+      "title": "CVE-2026-115559: imaplib STARTTLS serves plaintext bytes buffered before the handshake as if they came over TLS",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115559",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115559"
+    },
+    {
+      "title": "CVE-2026-115710: Use of Cache Containing Sensitive Information in Elasticsearch Leading to Information Disclosure",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115710",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115710"
+    },
+    {
+      "title": "CVE-2026-115715: Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115715",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115715"
+    },
+    {
+      "title": "CVE-2026-115791: Prevent shadowing stdlib in gzip/tarfile/zipfile CLI during extraction",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115791",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115791"
+    },
+    {
+      "title": "CVE-2026-115819: One-byte buffer overflow in wide scanf %s and %[ conversions",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115819",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115819"
+    },
+    {
+      "title": "CVE-2026-116592: undici vulnerable to cache poisoning and cross-user disclosure via intermediate redirect hops",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116592",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116592"
+    },
+    {
+      "title": "CVE-2026-116630: undici vulnerable to cross-user information disclosure via cross-origin redirect revalidation",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116630",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116630"
+    },
+    {
+      "title": "CVE-2026-119078: Apache Commons Codec: Blake3 doFinalize is stateless; the documented KDF example derives identical keys",
+      "date": "2026-11-13",
+      "severity": "CRITICAL",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-119078",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-119078"
+    },
+    {
+      "title": "CVE-2026-119079: Krb5: mit krb5 kdc unauthenticated cpu dos via quadratic asn.1 sequence of decoding",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-119079",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-119079"
+    },
+    {
+      "title": "CVE-2026-119741: rsync < 3.5.2 Denial of Service via hash_search() Checksum Collisions",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-119741",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-119741"
+    },
+    {
+      "title": "CVE-2026-119776: frr: ospf6d fails to enforce all OSPFv3 packets use IPv6 link-local addresses",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-119776",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-119776"
+    },
+    {
+      "title": "CVE-2026-120222: undici vulnerable to Denial of Service via unhandled exception in cache-interceptor response replay",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120222",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120222"
+    },
+    {
+      "title": "CVE-2026-120415: undici vulnerable to cross-origin credential disclosure via array-of-tuples headers bypassing redirect stripping",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120415",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120415"
+    },
+    {
+      "title": "CVE-2026-120423: undici vulnerable to Subresource Integrity bypass via whitespace in integrity metadata",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120423",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120423"
+    },
+    {
+      "title": "CVE-2026-120453: The Sleuth Kit through 4.15.0 Heap Out-of-Bounds Read via HFS+ decmpfs Header",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120453",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120453"
+    },
+    {
+      "title": "CVE-2026-120454: The Sleuth Kit through 4.15.0 NULL Pointer Dereference via decmpfs LZVN Decompression",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120454",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120454"
+    },
+    {
+      "title": "CVE-2026-120457: libaec through 1.1.7 Out-of-Bounds Read via m_se_decode() Second Extension Decoder",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120457",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120457"
+    },
+    {
+      "title": "CVE-2026-120474: undici vulnerable to cross-user cache disclosure via same-origin redirect",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120474",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120474"
+    },
+    {
+      "title": "CVE-2026-120632: CGI versions before 5.00 for Perl allow CPU exhaustion via a backtracking regex on the XForms multipart/related Content-Type",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120632",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120632"
+    },
+    {
+      "title": "CVE-2026-120633: CGI versions before 5.00 for Perl trust the client X-Forwarded-Host header in url, self_url, virtual_host and virtual_port",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120633",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120633"
+    },
+    {
+      "title": "CVE-2026-120635: CGI versions before 5.00 for Perl allow form fields to be smuggled past proxies and WAFs via multipart parsing that differs from the RFCs",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120635",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120635"
+    },
+    {
+      "title": "CVE-2026-120636: CGI versions before 5.00 for Perl allow open redirects and script injection via URLs built from REQUEST_URI in url and start_form",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120636",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120636"
+    },
+    {
+      "title": "CVE-2026-120638: CGI versions before 5.00 for Perl allow open redirects via HTML entity decoding of the URL after application validation in redirect",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120638",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120638"
+    },
+    {
+      "title": "CVE-2026-120639: CGI versions before 5.00 for Perl allow HTTP header injection via entity decoding after the newline check in header and unchecked values in multipart_start and do_push",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120639",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120639"
+    },
+    {
+      "title": "CVE-2026-120640: CGI versions before 5.00 for Perl allow the POSTDATA, PUTDATA, PATCHDATA and XForms:Model parameters to be set from the query string or form fields",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120640",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120640"
+    },
+    {
+      "title": "CVE-2026-120641: CGI versions before 5.00 for Perl return upload filenames with any client-supplied path, including ../ and Windows paths",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120641",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120641"
+    },
+    {
+      "title": "CVE-2026-120642: CGI versions before 5.00 for Perl return request-derived values untainted under taint mode",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120642",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120642"
+    },
+    {
+      "title": "CVE-2026-120644: CGI::Cookie versions before 5.00 for Perl allow cookie attribute injection via unvalidated path, domain and expires values",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120644",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120644"
+    },
+    {
+      "title": "CVE-2026-120645: CGI versions before 5.00 for Perl allow denial of service via submitted values used as a regex for optgroup selection in scrolling_list",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120645",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120645"
+    },
+    {
+      "title": "CVE-2026-120647: CGI versions before 5.00 for Perl allow Content-Disposition parameter injection via unescaped double quotes in the header attachment filename",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120647",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120647"
+    },
+    {
+      "title": "CVE-2026-120648: CGI versions before 5.00 for Perl allow HTML injection via text containing --> in comment",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120648",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120648"
+    },
+    {
+      "title": "CVE-2026-120650: CGI versions before 5.00 for Perl allow memory, CPU and disk exhaustion via missing or unenforced request size, parameter and upload limits",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-120650",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-120650"
+    },
     {
       "title": "CVE-2026-100080: xen-netback: Fix UAF when reading statistics data",
       "date": "2026-11-12",
