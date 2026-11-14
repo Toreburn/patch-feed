@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-11-14T00:46:09.015Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-14T05:48:24.900Z",
+  "newPatches": 29,
   "patches": [
+    {
+      "title": "NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+      "date": "2026-11-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+      "link": "https://github.com/advisories/GHSA-89p3-fcch-88ph",
+      "cve": "CVE-2026-126299",
+      "cvss": 7.5
+    },
+    {
+      "title": "NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+      "date": "2026-11-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+      "link": "https://github.com/advisories/GHSA-r53h-rw34-8h97",
+      "cve": "CVE-2026-126298",
+      "cvss": 7.5
+    },
+    {
+      "title": "NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+      "date": "2026-11-14",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+      "link": "https://github.com/advisories/GHSA-v8f3-6phw-6mh9",
+      "cve": "CVE-2026-126297",
+      "cvss": 7.5
+    },
     {
       "title": "Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026",
       "date": "2026-11-13",
@@ -40,6 +73,16 @@
       "component": "WAF",
       "description": "Over the last month, the number of Large Language Model (LLM) penetration testing and orchestration frameworks has exploded. Just a few weeks ago, ARTEX — an open source agentic penetration testing sy...",
       "link": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
+      "cve": ""
+    },
+    {
+      "title": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
+      "date": "2026-11-13",
+      "severity": "UNKNOWN",
+      "vendor": "crowdstrike",
+      "component": "CrowdStrike Falcon",
+      "description": "",
+      "link": "https://www.crowdstrike.com/en-us/blog/falcon-ai-gateway-one-control-point-for-ai-traffic/",
       "cve": ""
     },
     {
@@ -96,6 +139,17 @@
       "component": "c-ares",
       "description": "Several vulnerabilities have been discovered in c-ares, an asynchronous DNS resolver library, which may result in denial of service, DNS spoofing, or information disclosure, depending on how the libra...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00546.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6628-1 linux - security update",
+      "date": "2026-11-13",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "linux",
+      "description": "Several vulnerabilities have been discovered in the Linux kernel that may lead to a privilege escalation, denial of service or information leaks. https://security-tracker.debian.org/tracker/DSA-6628-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00548.html",
       "cve": "",
       "cves": []
     },
@@ -559,6 +613,28 @@
       "link": "https://github.com/advisories/GHSA-f7j6-hf97-9v99",
       "cve": "",
       "cvss": 6.8
+    },
+    {
+      "title": "Duplicate Advisory: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "Duplicate Advisory: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+      "link": "https://github.com/advisories/GHSA-6665-2vj3-h76r",
+      "cve": "",
+      "cvss": 7.5
+    },
+    {
+      "title": "Duplicate Advisory: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "Duplicate Advisory: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+      "link": "https://github.com/advisories/GHSA-qvhx-rvgc-jhwf",
+      "cve": "",
+      "cvss": 7.5
     },
     {
       "title": "CVE-2026-100080: xen-netback: Fix UAF when reading statistics data",
@@ -1470,6 +1546,83 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-128824.json",
       "cve": "CVE-2026-128824",
       "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-110331: abrt: abrt: incomplete CVE-2026-54228/54229 fix — completeness gate bypassed via attacker-supplied count element",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "abrt: abrt: incomplete CVE-2026-54228/54229 fix — completeness gate bypassed via attacker-supplied count element",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-110331.json",
+      "cve": "CVE-2026-110331",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-110330: abrt: abrt: abrt-server trusts client-supplied PID= allowing unprivileged read of other processes' /proc environ",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "abrt: abrt: abrt-server trusts client-supplied PID= allowing unprivileged read of other processes' /proc environ",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-110330.json",
+      "cve": "CVE-2026-110330",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-128088: russh: russh: SSH agent lock bypass via unverified state during confirmation",
+      "date": "2026-11-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "russh: russh: SSH agent lock bypass via unverified state during confirmation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-128088.json",
+      "cve": "CVE-2026-128088",
+      "cvss": 2.2
+    },
+    {
+      "title": "CVE-2026-128087: russh: russh: Information disclosure via premature callback execution prior to host verification",
+      "date": "2026-11-13",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "russh: russh: Information disclosure via premature callback execution prior to host verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-128087.json",
+      "cve": "CVE-2026-128087",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-128086: go.opentelemetry.io/otel: go.opentelemetry.io/otel/baggage: go.opentelemetry.io/otel/propagation: OpenTelemetry Go: Deni",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "go.opentelemetry.io/otel: go.opentelemetry.io/otel/baggage: go.opentelemetry.io/otel/propagation: OpenTelemetry Go: Denial of Service via crafted baggage headers",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-128086.json",
+      "cve": "CVE-2026-128086",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-128085: go.opentelemetry.io/otel/sdk: go.opentelemetry.io/otel/sdk/log: go.opentelemetry.io/otel/trace: OpenTelemetry-Go: Denial",
+      "date": "2026-11-13",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "go.opentelemetry.io/otel/sdk: go.opentelemetry.io/otel/sdk/log: go.opentelemetry.io/otel/trace: OpenTelemetry-Go: Denial of Service via attribute truncation bypass using Unicode replacement characters",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-128085.json",
+      "cve": "CVE-2026-128085",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-123177: dnf5: dnf5daemon-server: dnf5daemon-server: unauthenticated privileged cmdline package fetch/open via add_cmdline_packag",
+      "date": "2026-11-13",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "dnf5: dnf5daemon-server: dnf5daemon-server: unauthenticated privileged cmdline package fetch/open via add_cmdline_packages",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-123177.json",
+      "cve": "CVE-2026-123177",
+      "cvss": 8.4
     },
     {
       "title": "USN-9027-2: Linux kernel (FIPS) vulnerabilities",
@@ -11438,6 +11591,72 @@
       "cvss": 8.1
     },
     {
+      "title": "CVE-2026-126063: nokogiri: nokogiri: Cross-site scripting via unescaped content in HTML5 serializer",
+      "date": "2026-11-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nokogiri: nokogiri: Cross-site scripting via unescaped content in HTML5 serializer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-126063.json",
+      "cve": "CVE-2026-126063",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-50177: neural-compressor: neural-compressor: Denial of Service via untrusted data deserialization",
+      "date": "2026-11-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "neural-compressor: neural-compressor: Denial of Service via untrusted data deserialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-50177.json",
+      "cve": "CVE-2026-50177",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-42966: neural-compressor: neural-compressor: Privilege escalation via uncaught exception",
+      "date": "2026-11-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "neural-compressor: neural-compressor: Privilege escalation via uncaught exception",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42966.json",
+      "cve": "CVE-2026-42966",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-42917: neural-compressor: neural-compressor: Denial of Service via untrusted data deserialization",
+      "date": "2026-11-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "neural-compressor: neural-compressor: Denial of Service via untrusted data deserialization",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-42917.json",
+      "cve": "CVE-2026-42917",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-41214: neural-compressor: neural-compressor: Denial of Service via improper input validation",
+      "date": "2026-11-10",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "neural-compressor: neural-compressor: Denial of Service via improper input validation",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-41214.json",
+      "cve": "CVE-2026-41214",
+      "cvss": 4.4
+    },
+    {
+      "title": "CVE-2026-40704: neural-compressor: neural-compressor: Privilege escalation via protection mechanism failure",
+      "date": "2026-11-10",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "neural-compressor: neural-compressor: Privilege escalation via protection mechanism failure",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-40704.json",
+      "cve": "CVE-2026-40704",
+      "cvss": 7.3
+    },
+    {
       "title": "Microsoft Security Advisory CVE-2026-109481 - ASP.NET Core Elevation of Privilege Vulnerability",
       "date": "2026-11-10",
       "severity": "MEDIUM",
@@ -12649,6 +12868,105 @@
       "cvss": 5.5
     },
     {
+      "title": "CVE-2026-73857: modsecurity: ModSecurity: Denial of Service via crafted XML request",
+      "date": "2026-11-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "modsecurity: ModSecurity: Denial of Service via crafted XML request",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-73857.json",
+      "cve": "CVE-2026-73857",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-125264: ffmpeg: CPU exhaustion via JPEG XL parser TOC count",
+      "date": "2026-11-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: CPU exhaustion via JPEG XL parser TOC count",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125264.json",
+      "cve": "CVE-2026-125264",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-125262: ffmpeg: heap buffer overflow via LCEVC enhancement decoding",
+      "date": "2026-11-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: heap buffer overflow via LCEVC enhancement decoding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125262.json",
+      "cve": "CVE-2026-125262",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-125250: ffmpeg: heap buffer overflow via GIF encoder",
+      "date": "2026-11-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: heap buffer overflow via GIF encoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125250.json",
+      "cve": "CVE-2026-125250",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-125233: ffmpeg: heap buffer overflow via DVB subtitle encoder",
+      "date": "2026-11-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: heap buffer overflow via DVB subtitle encoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125233.json",
+      "cve": "CVE-2026-125233",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-125229: ffmpeg: out-of-bounds memory access in Huffyuv/FFVHUFF median predictor",
+      "date": "2026-11-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: out-of-bounds memory access in Huffyuv/FFVHUFF median predictor",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125229.json",
+      "cve": "CVE-2026-125229",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-125209: ffmpeg: heap buffer overflow via DVD subtitle encoder",
+      "date": "2026-11-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: heap buffer overflow via DVD subtitle encoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125209.json",
+      "cve": "CVE-2026-125209",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-125204: ffmpeg: heap buffer overflow in libwebp encoder conditional replenishment",
+      "date": "2026-11-09",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: heap buffer overflow in libwebp encoder conditional replenishment",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125204.json",
+      "cve": "CVE-2026-125204",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-125171: ffmpeg: out-of-bounds read in Musepack SV7 decoder",
+      "date": "2026-11-09",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: out-of-bounds read in Musepack SV7 decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125171.json",
+      "cve": "CVE-2026-125171",
+      "cvss": 6.1
+    },
+    {
       "title": "GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin",
       "date": "2026-11-09",
       "severity": "CRITICAL",
@@ -12797,6 +13115,231 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-11-14T05:48:24.899Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[INFO] aws - 9 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 11 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[SUCCESS] crowdstrike - 2 patches (1 new)",
+        "[SUCCESS] debian - 14 patches (1 new)",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] fortinet - 34 patches, no changes",
+        "[SUCCESS] github - 222 patches (5 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 351 patches, no changes",
+        "[INFO] mssql - 54 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] paloalto - 12 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 493 patches (22 new)",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 52 patches, no changes"
+      ],
+      "newPatchCount": 29,
+      "totalPatches": 1282,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 19,
+      "vendors": [
+        "github",
+        "cisco",
+        "cloudflare",
+        "crowdstrike",
+        "debian",
+        "edge",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "gitlab",
+        "postgresql",
+        "signal",
+        "nodejs",
+        "paloalto",
+        "fortinet",
+        "mssql",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "crowdstrike",
+          "title": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
+          "date": "2026-11-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6628-1 linux - security update",
+          "date": "2026-11-13",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+          "date": "2026-11-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+          "date": "2026-11-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+          "date": "2026-11-14",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Duplicate Advisory: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+          "date": "2026-11-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Duplicate Advisory: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+          "date": "2026-11-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-110331: abrt: abrt: incomplete CVE-2026-54228/54229 fix — completeness gate bypassed via attacker-supplied count element",
+          "date": "2026-11-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-110330: abrt: abrt: abrt-server trusts client-supplied PID= allowing unprivileged read of other processes' /proc environ",
+          "date": "2026-11-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-128088: russh: russh: SSH agent lock bypass via unverified state during confirmation",
+          "date": "2026-11-13",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-128087: russh: russh: Information disclosure via premature callback execution prior to host verification",
+          "date": "2026-11-13",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-128086: go.opentelemetry.io/otel: go.opentelemetry.io/otel/baggage: go.opentelemetry.io/otel/propagation: OpenTelemetry Go: Deni",
+          "date": "2026-11-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-128085: go.opentelemetry.io/otel/sdk: go.opentelemetry.io/otel/sdk/log: go.opentelemetry.io/otel/trace: OpenTelemetry-Go: Denial",
+          "date": "2026-11-13",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-123177: dnf5: dnf5daemon-server: dnf5daemon-server: unauthenticated privileged cmdline package fetch/open via add_cmdline_packag",
+          "date": "2026-11-13",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-126063: nokogiri: nokogiri: Cross-site scripting via unescaped content in HTML5 serializer",
+          "date": "2026-11-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-50177: neural-compressor: neural-compressor: Denial of Service via untrusted data deserialization",
+          "date": "2026-11-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42966: neural-compressor: neural-compressor: Privilege escalation via uncaught exception",
+          "date": "2026-11-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-42917: neural-compressor: neural-compressor: Denial of Service via untrusted data deserialization",
+          "date": "2026-11-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-41214: neural-compressor: neural-compressor: Denial of Service via improper input validation",
+          "date": "2026-11-10",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-40704: neural-compressor: neural-compressor: Privilege escalation via protection mechanism failure",
+          "date": "2026-11-10",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-73857: modsecurity: ModSecurity: Denial of Service via crafted XML request",
+          "date": "2026-11-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-125264: ffmpeg: CPU exhaustion via JPEG XL parser TOC count",
+          "date": "2026-11-09",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-125262: ffmpeg: heap buffer overflow via LCEVC enhancement decoding",
+          "date": "2026-11-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-125250: ffmpeg: heap buffer overflow via GIF encoder",
+          "date": "2026-11-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-125233: ffmpeg: heap buffer overflow via DVB subtitle encoder",
+          "date": "2026-11-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-125229: ffmpeg: out-of-bounds memory access in Huffyuv/FFVHUFF median predictor",
+          "date": "2026-11-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-125209: ffmpeg: heap buffer overflow via DVD subtitle encoder",
+          "date": "2026-11-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-125204: ffmpeg: heap buffer overflow in libwebp encoder conditional replenishment",
+          "date": "2026-11-09",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-125171: ffmpeg: out-of-bounds read in Musepack SV7 decoder",
+          "date": "2026-11-09",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-11-14T00:46:09.014Z",
       "logs": [
@@ -25075,54 +25618,6 @@
           "severity": "HIGH"
         }
       ]
-    },
-    {
-      "timestamp": "2026-11-06T02:03:28.205Z",
-      "logs": [
-        "[INFO] aws - 13 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 10 patches, no changes",
-        "[INFO] cloudflare - 3 patches, no changes",
-        "[INFO] crowdstrike - 5 patches, no changes",
-        "[INFO] debian - 15 patches, no changes",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 19 patches, no changes",
-        "[INFO] kubernetes - 1 patches, no changes",
-        "[INFO] microsoft - 175 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] paloalto - 1 patches, no changes",
-        "[INFO] postgresql - 7 patches, no changes",
-        "[INFO] redhat - 395 patches, no changes",
-        "[INFO] signal - 1 patches, no changes",
-        "[INFO] ubuntu - 30 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 684,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 18,
-      "vendors": [
-        "aws",
-        "chrome",
-        "cisco",
-        "cloudflare",
-        "crowdstrike",
-        "github",
-        "kubernetes",
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "debian",
-        "gcp",
-        "edge",
-        "nodejs",
-        "fortinet",
-        "paloalto"
-      ],
-      "newPatches": []
     }
   ]
 }
