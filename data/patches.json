@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-15T05:32:39.291Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-15T05:48:51.603Z",
+  "newPatches": 1,
   "patches": [
     {
       "title": "DSA-6629-1 network-manager-iodine - security update",
@@ -10,6 +10,17 @@
       "component": "network-manager-iodine",
       "description": "Andreas Gabriel Berbescu discovered that network-manager-iodine, the iodine VPN plugin for NetworkManager, did not properly validate the nameserver setting when establishing a connection, allowing a l...",
       "link": "https://lists.debian.org/debian-security-announce/2026/msg00549.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6630-1 pdns-recursor - security update",
+      "date": "2026-11-14",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "pdns-recursor",
+      "description": "Multiple vulnerabilities have been discovered in PDNS Recursor, a resolving name server which could result in denial of service or DNSSEC validation bypass Debian trixie previously provided the 5.2 re...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00550.html",
       "cve": "",
       "cves": []
     },
@@ -13553,6 +13564,63 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-11-15T05:48:51.603Z",
+      "logs": [
+        "[INFO] apple - 6 patches, no changes",
+        "[INFO] aws - 9 patches, no changes",
+        "[INFO] chrome - 6 patches, no changes",
+        "[INFO] cisco - 11 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 14 patches (1 new)",
+        "[INFO] edge - 4 patches, no changes",
+        "[INFO] fortinet - 34 patches, no changes",
+        "[INFO] github - 222 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 402 patches, no changes",
+        "[INFO] mssql - 54 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] paloalto - 12 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[INFO] redhat - 492 patches, no changes",
+        "[INFO] signal - 7 patches, no changes",
+        "[INFO] ubuntu - 52 patches, no changes"
+      ],
+      "newPatchCount": 1,
+      "totalPatches": 1332,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 19,
+      "vendors": [
+        "debian",
+        "github",
+        "microsoft",
+        "cisco",
+        "cloudflare",
+        "crowdstrike",
+        "edge",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "gitlab",
+        "postgresql",
+        "signal",
+        "nodejs",
+        "paloalto",
+        "fortinet",
+        "mssql",
+        "apple"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6630-1 pdns-recursor - security update",
+          "date": "2026-11-14",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-11-15T05:32:39.291Z",
       "logs": [
         "[INFO] apple - 6 patches, no changes",
@@ -24393,95 +24461,6 @@
         "fortinet"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-11-07T05:29:19.468Z",
-      "logs": [
-        "[INFO] aws - 15 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 13 patches, no changes",
-        "[INFO] cloudflare - 4 patches, no changes",
-        "[INFO] crowdstrike - 5 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 35 patches, no changes",
-        "[INFO] kubernetes - 1 patches, no changes",
-        "[SUCCESS] microsoft - 76 patches (1 new)",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] postgresql - 5 patches, no changes",
-        "[SUCCESS] redhat - 686 patches (6 new)",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] ubuntu - 33 patches, no changes"
-      ],
-      "newPatchCount": 7,
-      "totalPatches": 898,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 17,
-      "vendors": [
-        "aws",
-        "cisco",
-        "cloudflare",
-        "github",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "crowdstrike",
-        "edge",
-        "kubernetes",
-        "microsoft",
-        "postgresql",
-        "debian",
-        "gcp",
-        "nodejs",
-        "fortinet"
-      ],
-      "newPatches": [
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-109469: Entra Device Registration Elevation of Privilege Vulnerability",
-          "date": "2026-11-05",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114366: qt6-qtwebsockets: Information disclosure vulnerability in authentication handling of QWebSocket impacts Qt Framework",
-          "date": "2026-11-06",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-68984: kernel: kernel: Memory corruption via integer overflow in Samsung Exynos NPU driver",
-          "date": "2026-11-05",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-121952: freerdp: freerdp: Out-of-bounds write in proxy bitmap cache v2 capability handling",
-          "date": "2026-11-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-121953: freerdp: freerdp: Use-after-free via rdpgfx dynamic virtual channel close",
-          "date": "2026-11-04",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-115290: elasticsearch: elasticsearch: Denial of Service via deeply nested serialized payloads",
-          "date": "2026-11-03",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-99261: kernel: drm/amdgpu: correct reservation fence slots for userq per-vm BOs eviction",
-          "date": "2026-11-03",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
