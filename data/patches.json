@@ -1,7 +1,677 @@
 {
-  "lastUpdated": "2026-11-16T15:12:21.069Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-16T15:23:05.157Z",
+  "newPatches": 70,
   "patches": [
+    {
+      "title": "Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
+      "date": "2026-11-16",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "nuxt, nuxt, @nuxt/nitro-server",
+      "description": "Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
+      "link": "https://github.com/advisories/GHSA-hf59-9xwc-2g4p",
+      "cve": "CVE-2026-128076",
+      "cvss": 3.1
+    },
+    {
+      "title": "Nuxt exposes the message and data of unhandled errors thrown during server rendering",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nuxt, nuxt",
+      "description": "Nuxt exposes the message and data of unhandled errors thrown during server rendering",
+      "link": "https://github.com/advisories/GHSA-96x6-fvhx-49hg",
+      "cve": "CVE-2026-128075",
+      "cvss": 5.3
+    },
+    {
+      "title": "Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nuxt",
+      "description": "Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
+      "link": "https://github.com/advisories/GHSA-r9jc-w898-3fv6",
+      "cve": "CVE-2026-128074",
+      "cvss": null
+    },
+    {
+      "title": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages",
+      "date": "2026-11-16",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "@nuxt/webpack-builder, @nuxt/webpack-builder, @nuxt/rspack-builder",
+      "description": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages",
+      "link": "https://github.com/advisories/GHSA-x2wv-5868-p7v2",
+      "cve": "CVE-2026-128072",
+      "cvss": 3.1
+    },
+    {
+      "title": "Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nuxt, nuxt, @nuxt/nitro-server",
+      "description": "Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
+      "link": "https://github.com/advisories/GHSA-f3x9-2chm-73c8",
+      "cve": "CVE-2026-128071",
+      "cvss": 6.5
+    },
+    {
+      "title": "SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@sveltejs/kit",
+      "description": "SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
+      "link": "https://github.com/advisories/GHSA-m9j8-jcmv-hp69",
+      "cve": "CVE-2026-128118",
+      "cvss": 7.5
+    },
+    {
+      "title": "SvelteKit: DoS while parsing form data from a remote functions `form`",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@sveltejs/kit",
+      "description": "SvelteKit: DoS while parsing form data from a remote functions `form`",
+      "link": "https://github.com/advisories/GHSA-3r8g-jcqq-3p5j",
+      "cve": "CVE-2026-128120",
+      "cvss": 7.5
+    },
+    {
+      "title": "AIOHTTP: Event loop stall in add_domain() wildcard matching",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "aiohttp",
+      "description": "AIOHTTP: Event loop stall in add_domain() wildcard matching",
+      "link": "https://github.com/advisories/GHSA-jm3w-gw2p-xjfj",
+      "cve": "CVE-2026-128124",
+      "cvss": null
+    },
+    {
+      "title": "AIOHTTP: Unbounded cookie storage in client CookieJar",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "aiohttp",
+      "description": "AIOHTTP: Unbounded cookie storage in client CookieJar",
+      "link": "https://github.com/advisories/GHSA-5pv8-vvhc-h7jv",
+      "cve": "CVE-2026-128125",
+      "cvss": null
+    },
+    {
+      "title": "AIOHTTP: Too many URL-encoded form fields block the event loop",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "aiohttp",
+      "description": "AIOHTTP: Too many URL-encoded form fields block the event loop",
+      "link": "https://github.com/advisories/GHSA-xgw8-8ccx-rmqh",
+      "cve": "CVE-2026-128126",
+      "cvss": null
+    },
+    {
+      "title": "AIOHTTP: Base64 multipart parts bypass client_max_size",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "aiohttp",
+      "description": "AIOHTTP: Base64 multipart parts bypass client_max_size",
+      "link": "https://github.com/advisories/GHSA-24c4-3p7v-29cm",
+      "cve": "CVE-2026-128127",
+      "cvss": 7.5
+    },
+    {
+      "title": "AIOHTTP: WebSocket max_msg_size bypass via integer overflow",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "aiohttp",
+      "description": "AIOHTTP: WebSocket max_msg_size bypass via integer overflow",
+      "link": "https://github.com/advisories/GHSA-3rp8-rxj8-mvjw",
+      "cve": "CVE-2026-128128",
+      "cvss": 7.5
+    },
+    {
+      "title": "AIOHTTP: Unbounded buffering of data received during an upgrade request",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "aiohttp",
+      "description": "AIOHTTP: Unbounded buffering of data received during an upgrade request",
+      "link": "https://github.com/advisories/GHSA-pw86-h8fm-j323",
+      "cve": "CVE-2026-128129",
+      "cvss": null
+    },
+    {
+      "title": "AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "aiohttp",
+      "description": "AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
+      "link": "https://github.com/advisories/GHSA-28qf-cpwq-vmc2",
+      "cve": "CVE-2026-128130",
+      "cvss": 8.2
+    },
+    {
+      "title": "AIOHTTP: Concatenated compressed streams cause excessive CPU use",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "aiohttp",
+      "description": "AIOHTTP: Concatenated compressed streams cause excessive CPU use",
+      "link": "https://github.com/advisories/GHSA-h4cc-hm5h-fmm9",
+      "cve": "CVE-2026-128131",
+      "cvss": 7.5
+    },
+    {
+      "title": "AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "aiohttp",
+      "description": "AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
+      "link": "https://github.com/advisories/GHSA-5rmc-48h2-hvcm",
+      "cve": "CVE-2026-128132",
+      "cvss": null
+    },
+    {
+      "title": "SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@sveltejs/kit",
+      "description": "SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",
+      "link": "https://github.com/advisories/GHSA-6cf5-gc4q-fm3x",
+      "cve": "CVE-2026-128119",
+      "cvss": 5.9
+    },
+    {
+      "title": "SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "@sveltejs/kit, @sveltejs/kit",
+      "description": "SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution",
+      "link": "https://github.com/advisories/GHSA-rqp5-r3wg-vg35",
+      "cve": "CVE-2026-128116",
+      "cvss": 5.3
+    },
+    {
+      "title": "NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+      "link": "https://github.com/advisories/GHSA-xmfg-f9cm-w86q",
+      "cve": "CVE-2026-126302",
+      "cvss": 6.5
+    },
+    {
+      "title": "NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "nltk",
+      "description": "NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+      "link": "https://github.com/advisories/GHSA-59f9-gqg8-mqpj",
+      "cve": "CVE-2026-126296",
+      "cvss": null
+    },
+    {
+      "title": "CVE-2026-100080: xen-netback: Fix UAF when reading statistics data",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100080",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100080"
+    },
+    {
+      "title": "CVE-2026-100081: xen-netback: defer xenvif_mcast_addr_list_free()",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100081",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100081"
+    },
+    {
+      "title": "CVE-2026-100082: xen-blkback: Avoid UAF when reading I/O statistics",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100082",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100082"
+    },
+    {
+      "title": "CVE-2026-100290: Double free after allocation failure in regcomp and regexec",
+      "date": "2026-11-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100290",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100290"
+    },
+    {
+      "title": "CVE-2026-100407: Git for Windows: git-credential-wincred OAuth Store Heap Overflow",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100407",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100407"
+    },
+    {
+      "title": "CVE-2026-100408: Git for Windows: git-credential-wincred Erase Path Heap Overflow",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-100408",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-100408"
+    },
+    {
+      "title": "CVE-2026-105437: Heap-based Buffer Overflow in Git",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-105437",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-105437"
+    },
+    {
+      "title": "CVE-2026-109903: X.Org Server XvQueryImageAttributes Negative Size Reply",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-109903",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-109903"
+    },
+    {
+      "title": "CVE-2026-109904: X.Org Server XRes QueryClientIds Request Size Overflow",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-109904",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-109904"
+    },
+    {
+      "title": "CVE-2026-111253: Dnf5daemon-server: dnf5: dnf5daemon-server: missing session-owner check allows foreign d-bus callers to replace another client's resolved transaction",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-111253",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-111253"
+    },
+    {
+      "title": "CVE-2026-112314: Krb5: mit krb5 gss-rpc client memory leak on xid mismatch retries",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112314",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112314"
+    },
+    {
+      "title": "CVE-2026-112315: Krb5: mit krb5 kadmind unauthenticated memory leak dos in rpcsec_gss buffer decode failure",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112315",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112315"
+    },
+    {
+      "title": "CVE-2026-112316: Krb5: mit krb5 kadmind authenticated memory leak dos in xdr_krb5_tl_data() decode failure",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112316",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112316"
+    },
+    {
+      "title": "CVE-2026-112317: Krb5: mit krb5 kdc unauthenticated memory leak dos in kdb keytab key decryption error path",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112317",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112317"
+    },
+    {
+      "title": "CVE-2026-112318: Krb5: mit krb5 kadmind authenticated dos exploiting dereference of null policy name pointers",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112318",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112318"
+    },
+    {
+      "title": "CVE-2026-112319: Krb5: mit krb5 kadmind authenticated memory exhaustion dos via unbounded rpc xdr allocation",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112319",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112319"
+    },
+    {
+      "title": "CVE-2026-112320: Krb5: mit krb5 kadmind unauthenticated memory leak dos via gss-rpc auth flavor switching",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112320",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112320"
+    },
+    {
+      "title": "CVE-2026-112321: Krb5: mit krb5 kadmind unauthenticated memory leak dos via auth_gssapi_init error paths",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112321",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112321"
+    },
+    {
+      "title": "CVE-2026-112322: Krb5: mit krb5 kadmind unauthenticated cpu dos via auth_gssapi client states cleanup",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112322",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112322"
+    },
+    {
+      "title": "CVE-2026-112323: Krb5: mit krb5 kadmind unauthenticated memory exhaustion via failed auth_gssapi_init requests",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112323",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112323"
+    },
+    {
+      "title": "CVE-2026-112910: filelock: WindowsFileLock ignores mode: a 0o600 lock file and the ReadWriteLock database inherit the directory ACL",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-112910",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-112910"
+    },
+    {
+      "title": "CVE-2026-113408: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') in Git",
+      "date": "2026-11-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-113408",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-113408"
+    },
+    {
+      "title": "CVE-2026-113431: Unbounded decoded HTTP/2 header-list size in cowlib cow_http2_machine enables HPACK amplification memory exhaustion",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-113431",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-113431"
+    },
+    {
+      "title": "CVE-2026-114456: Missing origin validation for the externalbrowser authenticator callback in multiple Snowflake client drivers",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-114456",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-114456"
+    },
+    {
+      "title": "CVE-2026-114469: Out-of-bounds Read in Git",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-114469",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-114469"
+    },
+    {
+      "title": "CVE-2026-115298: Incorrect Authorization in Elasticsearch Leading to Information Disclosure",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115298",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115298"
+    },
+    {
+      "title": "CVE-2026-115538: Docker Engine overlay-network encryption rules are not restored after a firewalld reload",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115538",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115538"
+    },
+    {
+      "title": "CVE-2026-115539: Cluster-API proxy overwrites forwarded client identity with its own",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115539",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115539"
+    },
+    {
+      "title": "CVE-2026-115559: imaplib STARTTLS serves plaintext bytes buffered before the handshake as if they came over TLS",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115559",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115559"
+    },
+    {
+      "title": "CVE-2026-115710: Use of Cache Containing Sensitive Information in Elasticsearch Leading to Information Disclosure",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115710",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115710"
+    },
+    {
+      "title": "CVE-2026-115715: Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115715",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115715"
+    },
+    {
+      "title": "CVE-2026-115791: Prevent shadowing stdlib in gzip/tarfile/zipfile CLI during extraction",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115791",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115791"
+    },
+    {
+      "title": "CVE-2026-115819: One-byte buffer overflow in wide scanf %s and %[ conversions",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-115819",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-115819"
+    },
+    {
+      "title": "CVE-2026-116303: PostgreSQL foreign key and JSON conversions bypass EXECUTE privilege on cast functions",
+      "date": "2026-11-16",
+      "severity": "LOW",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116303",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116303"
+    },
+    {
+      "title": "CVE-2026-116304: PostgreSQL parallel RECORD typmod use-after-free executes arbitrary code",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116304",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116304"
+    },
+    {
+      "title": "CVE-2026-116306: PostgreSQL composite-type change during field assignment executes arbitrary code",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116306",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116306"
+    },
+    {
+      "title": "CVE-2026-116307: PostgreSQL plperl prepared-query use-after-free executes arbitrary code",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116307",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116307"
+    },
+    {
+      "title": "CVE-2026-116308: PostgreSQL dict_int reads beyond zero-length tokens",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116308",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116308"
+    },
+    {
+      "title": "CVE-2026-116309: PostgreSQL plperl blessed-reference type confusion may execute arbitrary code",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116309",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116309"
+    },
+    {
+      "title": "CVE-2026-116311: PostgreSQL DROP OWNED can remove restrictive row security policies from non-owned tables",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116311",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116311"
+    },
+    {
+      "title": "CVE-2026-116312: PostgreSQL MERGE can place the wrong row in a trigger transition table",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116312",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116312"
+    },
+    {
+      "title": "CVE-2026-116313: PostgreSQL \"vacuumdb --missing-stats-only\" lets a database owner execute code as the vacuumdb user",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116313",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116313"
+    },
+    {
+      "title": "CVE-2026-116314: PostgreSQL pg_restore executes arbitrary code due to missing non-plain archive validation",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116314",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116314"
+    },
+    {
+      "title": "CVE-2026-116315: PostgreSQL tsvector_delete() heap buffer overflow executes arbitrary code",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116315",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116315"
+    },
+    {
+      "title": "CVE-2026-116316: PostgreSQL security-restricted operations can create types in pg_temp, which later queries of the session find",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116316",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116316"
+    },
+    {
+      "title": "CVE-2026-116317: PostgreSQL ts_rank_cd() heap buffer overflow may execute arbitrary code",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116317",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116317"
+    },
+    {
+      "title": "CVE-2026-116318: PostgreSQL pg_dump not-null constraint name allows SQL injection",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116318",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116318"
+    },
+    {
+      "title": "CVE-2026-116319: PostgreSQL plperl reentrant return_next() use-after-free executes arbitrary code",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116319",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116319"
+    },
+    {
+      "title": "CVE-2026-116320: PostgreSQL plperl array and hash conversion use-after-free executes arbitrary code",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116320",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116320"
+    },
+    {
+      "title": "CVE-2026-116321: PostgreSQL unterminated name value discloses server memory",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "microsoft",
+      "component": "Multiple Microsoft Products",
+      "description": "Security update for CVE-2026-116321",
+      "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-116321"
+    },
     {
       "title": "DSA-6629-1 network-manager-iodine - security update",
       "date": "2026-11-15",
@@ -12763,6 +13433,475 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-11-16T15:23:05.157Z",
+      "logs": [
+        "[INFO] aws - 7 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[INFO] cisco - 9 patches, no changes",
+        "[INFO] cloudflare - 1 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[INFO] debian - 15 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 34 patches, no changes",
+        "[SUCCESS] github - 197 patches (20 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[SUCCESS] microsoft - 502 patches (50 new)",
+        "[INFO] mssql - 54 patches, no changes",
+        "[INFO] nodejs - 1 patches, no changes",
+        "[INFO] paloalto - 11 patches, no changes",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[INFO] redhat - 445 patches, no changes",
+        "[INFO] signal - 6 patches, no changes",
+        "[INFO] ubuntu - 41 patches, no changes"
+      ],
+      "newPatchCount": 70,
+      "totalPatches": 1335,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "github",
+        "microsoft",
+        "debian",
+        "postgresql",
+        "cisco",
+        "cloudflare",
+        "crowdstrike",
+        "edge",
+        "redhat",
+        "ubuntu",
+        "aws",
+        "chrome",
+        "gitlab",
+        "signal",
+        "nodejs",
+        "paloalto",
+        "fortinet",
+        "mssql"
+      ],
+      "newPatches": [
+        {
+          "vendor": "github",
+          "title": "Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
+          "date": "2026-11-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Nuxt exposes the message and data of unhandled errors thrown during server rendering",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages",
+          "date": "2026-11-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SvelteKit: DoS while parsing form data from a remote functions `form`",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AIOHTTP: Event loop stall in add_domain() wildcard matching",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AIOHTTP: Unbounded cookie storage in client CookieJar",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "AIOHTTP: Too many URL-encoded form fields block the event loop",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AIOHTTP: Base64 multipart parts bypass client_max_size",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AIOHTTP: WebSocket max_msg_size bypass via integer overflow",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AIOHTTP: Unbounded buffering of data received during an upgrade request",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AIOHTTP: Concatenated compressed streams cause excessive CPU use",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100080: xen-netback: Fix UAF when reading statistics data",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100081: xen-netback: defer xenvif_mcast_addr_list_free()",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100082: xen-blkback: Avoid UAF when reading I/O statistics",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100290: Double free after allocation failure in regcomp and regexec",
+          "date": "2026-11-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100407: Git for Windows: git-credential-wincred OAuth Store Heap Overflow",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-100408: Git for Windows: git-credential-wincred Erase Path Heap Overflow",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-105437: Heap-based Buffer Overflow in Git",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-109903: X.Org Server XvQueryImageAttributes Negative Size Reply",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-109904: X.Org Server XRes QueryClientIds Request Size Overflow",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-111253: Dnf5daemon-server: dnf5: dnf5daemon-server: missing session-owner check allows foreign d-bus callers to replace another client's resolved transaction",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112314: Krb5: mit krb5 gss-rpc client memory leak on xid mismatch retries",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112315: Krb5: mit krb5 kadmind unauthenticated memory leak dos in rpcsec_gss buffer decode failure",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112316: Krb5: mit krb5 kadmind authenticated memory leak dos in xdr_krb5_tl_data() decode failure",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112317: Krb5: mit krb5 kdc unauthenticated memory leak dos in kdb keytab key decryption error path",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112318: Krb5: mit krb5 kadmind authenticated dos exploiting dereference of null policy name pointers",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112319: Krb5: mit krb5 kadmind authenticated memory exhaustion dos via unbounded rpc xdr allocation",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112320: Krb5: mit krb5 kadmind unauthenticated memory leak dos via gss-rpc auth flavor switching",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112321: Krb5: mit krb5 kadmind unauthenticated memory leak dos via auth_gssapi_init error paths",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112322: Krb5: mit krb5 kadmind unauthenticated cpu dos via auth_gssapi client states cleanup",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112323: Krb5: mit krb5 kadmind unauthenticated memory exhaustion via failed auth_gssapi_init requests",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-112910: filelock: WindowsFileLock ignores mode: a 0o600 lock file and the ReadWriteLock database inherit the directory ACL",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-113408: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') in Git",
+          "date": "2026-11-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-113431: Unbounded decoded HTTP/2 header-list size in cowlib cow_http2_machine enables HPACK amplification memory exhaustion",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-114456: Missing origin validation for the externalbrowser authenticator callback in multiple Snowflake client drivers",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-114469: Out-of-bounds Read in Git",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-115298: Incorrect Authorization in Elasticsearch Leading to Information Disclosure",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-115538: Docker Engine overlay-network encryption rules are not restored after a firewalld reload",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-115539: Cluster-API proxy overwrites forwarded client identity with its own",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-115559: imaplib STARTTLS serves plaintext bytes buffered before the handshake as if they came over TLS",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-115710: Use of Cache Containing Sensitive Information in Elasticsearch Leading to Information Disclosure",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-115715: Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-115791: Prevent shadowing stdlib in gzip/tarfile/zipfile CLI during extraction",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-115819: One-byte buffer overflow in wide scanf %s and %[ conversions",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116303: PostgreSQL foreign key and JSON conversions bypass EXECUTE privilege on cast functions",
+          "date": "2026-11-16",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116304: PostgreSQL parallel RECORD typmod use-after-free executes arbitrary code",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116306: PostgreSQL composite-type change during field assignment executes arbitrary code",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116307: PostgreSQL plperl prepared-query use-after-free executes arbitrary code",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116308: PostgreSQL dict_int reads beyond zero-length tokens",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116309: PostgreSQL plperl blessed-reference type confusion may execute arbitrary code",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116311: PostgreSQL DROP OWNED can remove restrictive row security policies from non-owned tables",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116312: PostgreSQL MERGE can place the wrong row in a trigger transition table",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116313: PostgreSQL \"vacuumdb --missing-stats-only\" lets a database owner execute code as the vacuumdb user",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116314: PostgreSQL pg_restore executes arbitrary code due to missing non-plain archive validation",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116315: PostgreSQL tsvector_delete() heap buffer overflow executes arbitrary code",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116316: PostgreSQL security-restricted operations can create types in pg_temp, which later queries of the session find",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116317: PostgreSQL ts_rank_cd() heap buffer overflow may execute arbitrary code",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116318: PostgreSQL pg_dump not-null constraint name allows SQL injection",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116319: PostgreSQL plperl reentrant return_next() use-after-free executes arbitrary code",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116320: PostgreSQL plperl array and hash conversion use-after-free executes arbitrary code",
+          "date": "2026-11-16",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "microsoft",
+          "title": "CVE-2026-116321: PostgreSQL unterminated name value discloses server memory",
+          "date": "2026-11-16",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-11-16T15:12:21.069Z",
       "logs": [
         "[INFO] aws - 7 patches, no changes",
@@ -23489,52 +24628,6 @@
     },
     {
       "timestamp": "2026-11-08T13:04:00.787Z",
-      "logs": [
-        "[INFO] aws - 15 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 13 patches, no changes",
-        "[INFO] cloudflare - 4 patches, no changes",
-        "[INFO] crowdstrike - 5 patches, no changes",
-        "[INFO] debian - 14 patches, no changes",
-        "[INFO] edge - 3 patches, no changes",
-        "[INFO] fortinet - 1 patches, no changes",
-        "[INFO] gcp - 1 patches, no changes",
-        "[INFO] github - 35 patches, no changes",
-        "[INFO] kubernetes - 1 patches, no changes",
-        "[INFO] microsoft - 126 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] postgresql - 7 patches, no changes",
-        "[INFO] redhat - 686 patches, no changes",
-        "[INFO] signal - 2 patches, no changes",
-        "[INFO] ubuntu - 33 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 951,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 17,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "postgresql",
-        "redhat",
-        "aws",
-        "cisco",
-        "cloudflare",
-        "github",
-        "signal",
-        "ubuntu",
-        "chrome",
-        "crowdstrike",
-        "edge",
-        "kubernetes",
-        "gcp",
-        "nodejs",
-        "fortinet"
-      ],
-      "newPatches": []
-    },
-    {
-      "timestamp": "2026-11-08T12:57:37.983Z",
       "logs": [
         "[INFO] aws - 15 patches, no changes",
         "[INFO] chrome - 4 patches, no changes",
