@@ -1,16 +1,106 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-11-17T01:46:54.882Z",
+  "lastUpdated": "2026-11-17T15:46:17.764Z",
   "health": {
-    "lastFetchAttempt": "2026-11-17T01:46:54.882Z",
+    "lastFetchAttempt": "2026-11-17T15:46:17.764Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 4,
-    "lastSuccessWithData": "2026-11-17T01:46:54.882Z",
+    "lastFetchNewPatches": 10,
+    "lastSuccessWithData": "2026-11-17T15:46:17.764Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "USN-9131-1: CRaC JDK 25 vulnerabilities",
+      "date": "2026-11-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "CRaC JDK 25 vulnerabilities",
+      "description": "It was discovered that the Security component of CRaC JDK 25 did not\ncorrectly authenticate users. A remote attacker could possibly use this\nissue to read or modify sensitive data. (CVE-2026-114820)\n\n...",
+      "link": "https://ubuntu.com/security/notices/USN-9131-1"
+    },
+    {
+      "title": "USN-9115-1: Mini-XML vulnerabilities",
+      "date": "2026-11-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Mini-XML vulnerabilities",
+      "description": "It was discovered that Mini-XML used unbounded recursion when deleting and\nwriting XML nodes. An attacker could possibly use these issues to cause\nMini-XML to crash, resulting in a denial of service. ...",
+      "link": "https://ubuntu.com/security/notices/USN-9115-1"
+    },
+    {
+      "title": "USN-8979-2: Deluge vulnerabilities",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Deluge vulnerabilities",
+      "description": "USN-8979-1 fixed vulnerabilities in Deluge. Due to a packaging error, the\nfixes were not applied in the update for Ubuntu 16.04 LTS. This update\nfixes the problem.\n\nOriginal advisory details:\n\n It was...",
+      "link": "https://ubuntu.com/security/notices/USN-8979-2"
+    },
+    {
+      "title": "USN-9130-1: zutils vulnerability",
+      "date": "2026-11-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "zutils",
+      "description": "It was discovered that zcat in zutils incorrectly handled the -v option,\nleading to a buffer overflow. If a user were tricked into opening a\nspecially crafted compressed file, an attacker could possib...",
+      "link": "https://ubuntu.com/security/notices/USN-9130-1"
+    },
+    {
+      "title": "USN-9129-1: ZBar vulnerability",
+      "date": "2026-11-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "ZBar",
+      "description": "It was discovered that ZBar incorrectly handled certain QR codes, leading\nto a heap-based buffer overflow. If a user or automated system were tricked\ninto scanning a specially crafted QR code, an atta...",
+      "link": "https://ubuntu.com/security/notices/USN-9129-1"
+    },
+    {
+      "title": "USN-9128-1: YADIFA vulnerability",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "YADIFA",
+      "description": "It was discovered that YADIFA did not check for infinite pointer loops when\nparsing DNS packets. A remote attacker could possibly use this issue to\ncause YADIFA to consume excessive CPU resources, lea...",
+      "link": "https://ubuntu.com/security/notices/USN-9128-1"
+    },
+    {
+      "title": "USN-9127-1: Syntastic vulnerability",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Syntastic",
+      "description": "It was discovered that Syntastic searched the current directory and its\nparents for checker configuration files. If a user were tricked into\nchecking a file in a directory controlled by an attacker, t...",
+      "link": "https://ubuntu.com/security/notices/USN-9127-1"
+    },
+    {
+      "title": "USN-9126-1: tmpreaper vulnerability",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "tmpreaper",
+      "description": "It was discovered that tmpreaper incorrectly handled certain mount\noperations, leading to a race condition. A local attacker could possibly\nuse this issue to create arbitrary files, leading to privile...",
+      "link": "https://ubuntu.com/security/notices/USN-9126-1"
+    },
+    {
+      "title": "USN-9124-1: RenderDoc vulnerabilities",
+      "date": "2026-11-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "RenderDoc vulnerabilities",
+      "description": "It was discovered that RenderDoc did not properly verify array sizes when\nserialising strings, leading to an integer overflow. An attacker could\npossibly use this issue to cause a buffer overflow, res...",
+      "link": "https://ubuntu.com/security/notices/USN-9124-1"
+    },
+    {
+      "title": "USN-9123-1: mechanize vulnerability",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "mechanize",
+      "description": "Erik Krogh Kristensen and Rasmus Petersen discovered that mechanize used an\ninefficient regular expression to parse authentication headers. A malicious\nserver could possibly use this issue to cause me...",
+      "link": "https://ubuntu.com/security/notices/USN-9123-1"
+    },
     {
       "title": "USN-9064-2: Pillow regression",
       "date": "2026-11-16",
