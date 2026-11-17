@@ -1,16 +1,46 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-11-16T15:21:56.352Z",
+  "lastUpdated": "2026-11-17T01:46:42.157Z",
   "health": {
-    "lastFetchAttempt": "2026-11-16T15:21:56.352Z",
+    "lastFetchAttempt": "2026-11-17T01:46:42.157Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 1,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-11-16T15:21:56.352Z",
+    "lastFetchParsedItems": 3,
+    "lastFetchNewPatches": 2,
+    "lastSuccessWithData": "2026-11-17T01:46:42.157Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
+      "date": "2026-11-16",
+      "severity": "MEDIUM",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Impact\n\nTwo effects, sharing the root cause of Advisory 1 — header names chosen by the sender were\nresolved through Python attribute lookup and rewritten before lookup.\n\n**Uncaught exceptions.** A",
+      "link": "https://github.com/advisories/GHSA-24mq-4vc6-2prf",
+      "cves": [
+        "CVE-2026-129299"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
+    {
+      "title": "mail-parser: Sender IP address spoofing in get_server_ipaddress()",
+      "date": "2026-11-16",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Patches\n\nFixed in **4.6.2**. Upgrade with `pip install --upgrade mail-parser`.\n\nCandidate addresses are now selected by position, not by appearance — a bracketed address\nthe sender wrote is byte-i",
+      "link": "https://github.com/advisories/GHSA-72px-j8gh-p79x",
+      "cves": [
+        "CVE-2026-129297"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients",
       "date": "2026-11-12",
