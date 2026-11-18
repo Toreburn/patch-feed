@@ -1,16 +1,31 @@
 {
   "vendor": "signal",
-  "lastUpdated": "2026-11-17T15:46:10.938Z",
+  "lastUpdated": "2026-11-18T00:48:43.987Z",
   "health": {
-    "lastFetchAttempt": "2026-11-17T15:46:10.938Z",
+    "lastFetchAttempt": "2026-11-18T00:48:43.987Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 3,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-11-17T15:46:10.938Z",
+    "lastFetchParsedItems": 4,
+    "lastFetchNewPatches": 1,
+    "lastSuccessWithData": "2026-11-18T00:48:43.987Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
+      "date": "2026-11-17",
+      "severity": "HIGH",
+      "vendor": "signal",
+      "component": "Signal",
+      "description": "### Summary\nA remote peer can stall a js-libp2p node's entire event loop for ~4–5 seconds per connection (and transiently allocate ~2 GB) by sending a ~15-byte crafted `publicKey` inside an Identify m",
+      "link": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j",
+      "cves": [
+        "CVE-2026-110789"
+      ],
+      "platform": [
+        "All Platforms"
+      ]
+    },
     {
       "title": "mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
       "date": "2026-11-16",
