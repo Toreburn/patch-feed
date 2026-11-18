@@ -1,16 +1,25 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-11-18T00:48:59.137Z",
+  "lastUpdated": "2026-11-18T15:26:34.778Z",
   "health": {
-    "lastFetchAttempt": "2026-11-18T00:48:59.137Z",
+    "lastFetchAttempt": "2026-11-18T15:26:34.778Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 1,
-    "lastSuccessWithData": "2026-11-18T00:48:59.137Z",
+    "lastFetchNewPatches": 10,
+    "lastSuccessWithData": "2026-11-18T15:26:34.778Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "USN-9151-1: needrestart vulnerability",
+      "date": "2026-11-18",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "needrestart",
+      "description": "Armaan Sandhu discovered that needrestart did not properly handle systemd\ncgroup paths and process names. A local attacker could possibly use these\nissues to escalate privileges....",
+      "link": "https://ubuntu.com/security/notices/USN-9151-1"
+    },
     {
       "title": "USN-9131-1: CRaC JDK 25 vulnerabilities",
       "date": "2026-11-17",
@@ -109,6 +118,87 @@
       "component": "OpenJDK 25 regression",
       "description": "USN-9004-1 fixed vulnerabilities in OpenJDK 25. Unfortunately, the fix\nincluded an unnecessary debuginfo file. This update fixes the problem.\n\nWe apologize for the inconvenience.\n\nOriginal advisory de...",
       "link": "https://ubuntu.com/security/notices/USN-9004-2"
+    },
+    {
+      "title": "USN-9132-1: apng2gif vulnerabilities",
+      "date": "2026-11-17",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "apng2gif vulnerabilities",
+      "description": "Dileep Kumar Jallepalli discovered that apng2gif incorrectly handled\nloading APNG files, leading to an integer overflow and a heap-based buffer\nover-read. If a user or automated system were tricked in...",
+      "link": "https://ubuntu.com/security/notices/USN-9132-1"
+    },
+    {
+      "title": "USN-9150-1: SWUpdate vulnerabilities",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "SWUpdate vulnerabilities",
+      "description": "It was discovered that SWUpdate did not verify that a path was a directory\nbefore cleaning it up, leading to a race condition. A local attacker could\npossibly use this issue to escalate privileges or ...",
+      "link": "https://ubuntu.com/security/notices/USN-9150-1"
+    },
+    {
+      "title": "USN-9149-1: MiniMagick vulnerability",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "MiniMagick",
+      "description": "It was discovered that MiniMagick passed the file names and URLs given to\nImage.open directly to Kernel#open. If an application opened an image from\nan untrusted file name or URL, an attacker could po...",
+      "link": "https://ubuntu.com/security/notices/USN-9149-1"
+    },
+    {
+      "title": "USN-9148-1: Mechanize vulnerability",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Mechanize",
+      "description": "It was discovered that Mechanize used Kernel#open to open local files in\nseveral methods. If an application passed untrusted input as a local file\nname to one of these methods, an attacker could possi...",
+      "link": "https://ubuntu.com/security/notices/USN-9148-1"
+    },
+    {
+      "title": "USN-9147-1: PyWPS vulnerability",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "PyWPS",
+      "description": "It was discovered that PyWPS did not disable the resolution of XML external\nentities when parsing requests. A remote attacker could possibly use this\nissue to read arbitrary files on the server....",
+      "link": "https://ubuntu.com/security/notices/USN-9147-1"
+    },
+    {
+      "title": "USN-9146-1: Privoxy vulnerabilities",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Privoxy vulnerabilities",
+      "description": "Joshua Rogers discovered that Privoxy incorrectly handled memory\nallocation, leading to a memory leak. An attacker could possibly use this\nissue to cause Privoxy to consume excessive resources, leadin...",
+      "link": "https://ubuntu.com/security/notices/USN-9146-1"
+    },
+    {
+      "title": "USN-9145-1: OAR vulnerability",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "OAR",
+      "description": "It was discovered that the oarsh script in OAR did not properly filter\nOpenSSH options. An authenticated user could possibly use this issue to\nobtain sensitive information or escalate privileges....",
+      "link": "https://ubuntu.com/security/notices/USN-9145-1"
+    },
+    {
+      "title": "USN-9144-1: ngIRCd vulnerability",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "ngIRCd",
+      "description": "It was discovered that ngIRCd incorrectly handled SERVER commands without a\nprefix, leading to an out-of-bounds read. A remote attacker could possibly\nuse this issue to cause ngIRCd to crash, resultin...",
+      "link": "https://ubuntu.com/security/notices/USN-9144-1"
+    },
+    {
+      "title": "USN-9143-1: Mumble vulnerability",
+      "date": "2026-11-17",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Mumble",
+      "description": "It was discovered that the Murmur server in Mumble did not rate limit\ncertain client messages. A remote attacker could possibly use this issue to\ncause Murmur to hang or crash, resulting in a denial o...",
+      "link": "https://ubuntu.com/security/notices/USN-9143-1"
     },
     {
       "title": "USN-9064-2: Pillow regression",

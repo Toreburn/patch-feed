@@ -1,16 +1,137 @@
 {
   "vendor": "github",
-  "lastUpdated": "2026-11-17T15:45:21.883Z",
+  "lastUpdated": "2026-11-18T15:25:41.182Z",
   "health": {
-    "lastFetchAttempt": "2026-11-17T15:45:21.883Z",
+    "lastFetchAttempt": "2026-11-18T15:25:41.182Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 50,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-11-17T15:45:21.883Z",
+    "lastFetchNewPatches": 11,
+    "lastSuccessWithData": "2026-11-18T15:25:41.182Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
+      "date": "2026-11-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@libp2p/gossipsub",
+      "description": "libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
+      "link": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8",
+      "cve": "CVE-2026-119793",
+      "cvss": 7.5
+    },
+    {
+      "title": "libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
+      "date": "2026-11-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@libp2p/crypto",
+      "description": "libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
+      "link": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j",
+      "cve": "CVE-2026-110789",
+      "cvss": 7.5
+    },
+    {
+      "title": "SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
+      "date": "2026-11-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "simplesamlphp/saml2, simplesamlphp/saml2",
+      "description": "SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
+      "link": "https://github.com/advisories/GHSA-r7hw-jx6r-756g",
+      "cve": "CVE-2026-110782",
+      "cvss": 8.7
+    },
+    {
+      "title": "Filament Curator: Stored XSS via unsanitized SVG upload served inline",
+      "date": "2026-11-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "awcodes/filament-curator, awcodes/filament-curator, awcodes/filament-curator",
+      "description": "Filament Curator: Stored XSS via unsanitized SVG upload served inline",
+      "link": "https://github.com/advisories/GHSA-8vm9-f75m-5h2m",
+      "cve": "CVE-2026-69241",
+      "cvss": 5.4
+    },
+    {
+      "title": "Filament Curator: Cross-tenant media metadata disclosure via Curator picker search",
+      "date": "2026-11-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "awcodes/filament-curator, awcodes/filament-curator, awcodes/filament-curator",
+      "description": "Filament Curator: Cross-tenant media metadata disclosure via Curator picker search",
+      "link": "https://github.com/advisories/GHSA-828w-6qgx-3rcf",
+      "cve": "CVE-2026-63389",
+      "cvss": 5
+    },
+    {
+      "title": "qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper",
+      "date": "2026-11-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "go.qbee.io/agent",
+      "description": "qbee-agent: Local Privilege Escalation and Arbitrary File Tampering via Symlink Following in createFile helper",
+      "link": "https://github.com/advisories/GHSA-xhv5-8fpq-g7hf",
+      "cve": "CVE-2026-62336",
+      "cvss": null
+    },
+    {
+      "title": "EGroupware: User-Controlled Identity Provider Selection in SAML Authentication",
+      "date": "2026-11-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "egroupware/egroupware, egroupware/egroupware",
+      "description": "EGroupware: User-Controlled Identity Provider Selection in SAML Authentication",
+      "link": "https://github.com/advisories/GHSA-pr4x-6fj4-gm4h",
+      "cve": "CVE-2026-63672",
+      "cvss": 6.1
+    },
+    {
+      "title": "AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning",
+      "date": "2026-11-17",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "software.amazon.jdbc:aws-advanced-jdbc-wrapper",
+      "description": "AWS-advanced-jdbc-wrapper: Java Deserialization RCE via Cache Poisoning",
+      "link": "https://github.com/advisories/GHSA-c5q4-97jw-jggh",
+      "cve": "CVE-2026-14265",
+      "cvss": 7.5
+    },
+    {
+      "title": "pympp allows excessive sponsored transaction fees through padded calldata",
+      "date": "2026-11-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "pympp",
+      "description": "pympp allows excessive sponsored transaction fees through padded calldata",
+      "link": "https://github.com/advisories/GHSA-v858-xh7w-8jr5",
+      "cve": "CVE-2026-63634",
+      "cvss": null
+    },
+    {
+      "title": "Phoenix: Format String Injection in applyChatTemplate",
+      "date": "2026-11-17",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "arize-phoenix",
+      "description": "Phoenix: Format String Injection in applyChatTemplate",
+      "link": "https://github.com/advisories/GHSA-gfv3-m769-5xm3",
+      "cve": "CVE-2026-53998",
+      "cvss": 10
+    },
+    {
+      "title": "Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata",
+      "date": "2026-11-17",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "next",
+      "description": "Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata",
+      "link": "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8",
+      "cve": "CVE-2026-119351",
+      "cvss": null
+    },
     {
       "title": "Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
       "date": "2026-11-16",
