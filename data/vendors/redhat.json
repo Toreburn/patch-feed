@@ -1,16 +1,82 @@
 {
   "vendor": "redhat",
-  "lastUpdated": "2026-11-19T00:06:27.599Z",
+  "lastUpdated": "2026-11-19T15:31:44.053Z",
   "health": {
-    "lastFetchAttempt": "2026-11-19T00:06:27.599Z",
+    "lastFetchAttempt": "2026-11-19T15:31:44.053Z",
     "lastFetchResult": "ok",
-    "lastFetchParsedItems": 380,
-    "lastFetchNewPatches": 57,
-    "lastSuccessWithData": "2026-11-19T00:06:27.599Z",
+    "lastFetchParsedItems": 389,
+    "lastFetchNewPatches": 13,
+    "lastSuccessWithData": "2026-11-19T15:31:44.053Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "CVE-2026-132858: gdm: Missing authorization on CreateRemoteDisplay allows autologin as arbitrary users, including root",
+      "date": "2026-11-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gdm: Missing authorization on CreateRemoteDisplay allows autologin as arbitrary users, including root",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-132858.json",
+      "cve": "CVE-2026-132858",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-126631: openscap: Symlink escape in offline scanning mode allows reading host files outside the scanned root",
+      "date": "2026-11-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "openscap: Symlink escape in offline scanning mode allows reading host files outside the scanned root",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-126631.json",
+      "cve": "CVE-2026-126631",
+      "cvss": 7.1
+    },
+    {
+      "title": "CVE-2026-99320: kernel: kernel: Denial of Service via use-after-free in IPv6 raw socket handling",
+      "date": "2026-11-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Kernel",
+      "description": "kernel: kernel: Denial of Service via use-after-free in IPv6 raw socket handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-99320.json",
+      "cve": "CVE-2026-99320",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-117678: idna: idna: Denial of Service via oversized domain labels",
+      "date": "2026-11-19",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "idna: idna: Denial of Service via oversized domain labels",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117678.json",
+      "cve": "CVE-2026-117678",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-104357: libtirpc: libtirpc: SunRPC UDP datagram-boundary violation (stale buffer bytes decoded as current request)",
+      "date": "2026-11-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libtirpc: libtirpc: SunRPC UDP datagram-boundary violation (stale buffer bytes decoded as current request)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-104357.json",
+      "cve": "CVE-2026-104357",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-133004: pipewire: pipewire: pipewire-pulse client can overwrite the server-computed access label to bypass audio access restrict",
+      "date": "2026-11-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pipewire: pipewire: pipewire-pulse client can overwrite the server-computed access label to bypass audio access restrictions",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-133004.json",
+      "cve": "CVE-2026-133004",
+      "cvss": 5.3
+    },
     {
       "title": "CVE-2026-114939: OpenJDK: OpenJDK: The acceptor does not properly implement RFC 4120 requirements for handling cross-realm tickets.",
       "date": "2026-11-18",
@@ -329,6 +395,83 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-132177.json",
       "cve": "CVE-2026-132177",
       "cvss": 5.4
+    },
+    {
+      "title": "CVE-2026-113425: nginx: NGINX use-after-free in worker process in the mail proxy server",
+      "date": "2026-11-18",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nginx: NGINX use-after-free in worker process in the mail proxy server",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-113425.json",
+      "cve": "CVE-2026-113425",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-123633: nginx: NGINX use-after-free in worker process when using HTTP/2",
+      "date": "2026-11-18",
+      "severity": "CRITICAL",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nginx: NGINX use-after-free in worker process when using HTTP/2",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-123633.json",
+      "cve": "CVE-2026-123633",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-118899: nginx: nginx: Denial of Service via crafted TLS connection",
+      "date": "2026-11-18",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nginx: nginx: Denial of Service via crafted TLS connection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-118899.json",
+      "cve": "CVE-2026-118899",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-131922: keystonemiddleware: keystonemiddleware: Denial of Service via crafted regular expression in access rules",
+      "date": "2026-11-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keystonemiddleware: keystonemiddleware: Denial of Service via crafted regular expression in access rules",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-131922.json",
+      "cve": "CVE-2026-131922",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-132138: cyrus-sasl: SCRAM channel-binding NULL dereference allows remote denial of service",
+      "date": "2026-11-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cyrus-sasl: SCRAM channel-binding NULL dereference allows remote denial of service",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-132138.json",
+      "cve": "CVE-2026-132138",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-132857: flac: flac: stack buffer overflow in the flac CLI via crafted metadata blocks and --picture options",
+      "date": "2026-11-18",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "flac: flac: stack buffer overflow in the flac CLI via crafted metadata blocks and --picture options",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-132857.json",
+      "cve": "CVE-2026-132857",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-132999: libeot: libeot: use-after-free in parseCTF",
+      "date": "2026-11-18",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "libeot: libeot: use-after-free in parseCTF",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-132999.json",
+      "cve": "CVE-2026-132999",
+      "cvss": 6.5
     },
     {
       "title": "CVE-2026-130020: firefox: Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component on Android",
