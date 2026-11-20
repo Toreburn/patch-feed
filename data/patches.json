@@ -1,7 +1,55 @@
 {
-  "lastUpdated": "2026-11-20T21:42:37.959Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-20T23:53:12.027Z",
+  "newPatches": 36,
   "patches": [
+    {
+      "title": "CVE-2026-133199 - Incorrect privilege assignment on reused e-mail addresses or group names in AWS ssosync",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "aws",
+      "component": "CVE-2026-133199",
+      "description": "<p><b>Bulletin ID:</b> 2026-194-AWS<br> <b>Publication Date:</b> 11/20/2026 08:30 AM PST</p> \n<p><b>Description:</b></p> \n<p>Incorrect privilege assignment in the user and group reconciliation logic i...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/"
+    },
+    {
+      "title": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "aws",
+      "component": "CVE-2026-130901",
+      "description": "<p><b>Bulletin ID:</b> 2026-195-AWS<br> <b>Publication Date:</b> 11/20/2026 10:30 AM PST</p> \n<p><b>Description:</b></p> \n<p>Improper limitation of a pathname to a restricted directory in the file acc...",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-195-aws/"
+    },
+    {
+      "title": "Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "On November 17, 2026, Oracle announced the availability of fixes for a vulnerability in OpenJDK that could lead to remote code execution identified by CVE-2026-114938. The vulnerability affects OpenJD...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z",
+      "cve": "CVE-2026-114938"
+    },
+    {
+      "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
+      "date": "2026-11-20",
+      "severity": "CRITICAL",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "On November 18, 2026, nginx announced the availability of a fix for multiple critical vulnerabilities in nginx that could lead to remote code execution. These vulnerabilities affect nginx releases 1.9...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s",
+      "cve": "CVE-2026-113425"
+    },
+    {
+      "title": "Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities",
+      "date": "2026-11-20",
+      "severity": "UNKNOWN",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "Between October 17 and October 20, 2026, a critical security compromise involving Certificate Authorities that are managed by&nbsp; eMudhra was uncovered. A security researcher demonstrated that the p...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r",
+      "cve": ""
+    },
     {
       "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
       "date": "2026-11-20",
@@ -10,6 +58,36 @@
       "component": "WAF",
       "description": "On November 18, 2026, F5 and nginx.org disclosed ten vulnerabilities in nginx. Five of them, detailed by the Xint research team and published under the name nginx2root , are memory corruption flaws th...",
       "link": "https://blog.cloudflare.com/nginx2root/",
+      "cve": "CVE-2026-123007"
+    },
+    {
+      "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
+      "date": "2026-11-20",
+      "severity": "CRITICAL",
+      "vendor": "cloudflare",
+      "component": "WAF",
+      "description": "On November 19, 2026, the Ruby team disclosed ruby2shell ( CVE-2026-132825 ), a heap buffer overflow in the way Ruby changes the case of strings. Ruby rates the flaw Critical and says it is aware of p...",
+      "link": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
+      "cve": "CVE-2026-132825"
+    },
+    {
+      "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+      "date": "2026-11-20",
+      "severity": "CRITICAL",
+      "vendor": "cloudflare",
+      "component": "WAF",
+      "description": "On November 19, 2026, the security research company depthfirst disclosed phpAfterShell (CVE-2026-126714) , a vulnerability in PHP&#x27;s default file-based session handler that can lead to remote code...",
+      "link": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
+      "cve": "CVE-2026-126714"
+    },
+    {
+      "title": "NGINX vulnerabilities",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "fortinet",
+      "component": "Fortinet Products",
+      "description": "CVSSv3 Score: 8.1 CVE-2026-123007 (high)This vulnerability affects NGINX OSS versions 1.31.0 - 1.31.8, 1.9.5 - 1.30.6. NGINX Plus 37.1.0 - 37.2.0.1, 37.0.0 - 37.0.7.1.CVE-2026-123633 (high)This vulner...",
+      "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-279",
       "cve": "CVE-2026-123007"
     },
     {
@@ -519,6 +597,226 @@
       "cvss": 8.6
     },
     {
+      "title": "Budibase: Unauthenticated global-admin & database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`)",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase: Unauthenticated global-admin & database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`)",
+      "link": "https://github.com/advisories/GHSA-25qc-m4pw-2w8r",
+      "cve": "CVE-2026-122247",
+      "cvss": 8.2
+    },
+    {
+      "title": "Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "@budibase/server",
+      "description": "Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin",
+      "link": "https://github.com/advisories/GHSA-r2q3-7m4h-63qg",
+      "cve": "CVE-2026-122244",
+      "cvss": 7.7
+    },
+    {
+      "title": "wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags)",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "wcmatch",
+      "description": "wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags)",
+      "link": "https://github.com/advisories/GHSA-53pm-wgxf-c6qf",
+      "cve": "CVE-2026-132276",
+      "cvss": 5.9
+    },
+    {
+      "title": "Inscriptis: Quadratic memory growth from sibling <table> elements in get_text()",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "inscriptis",
+      "description": "Inscriptis: Quadratic memory growth from sibling <table> elements in get_text()",
+      "link": "https://github.com/advisories/GHSA-q87h-c5m7-659j",
+      "cve": "CVE-2026-132277",
+      "cvss": 5.3
+    },
+    {
+      "title": "svglib: Exponential resource consumption via nested <use> references in svg2rlg",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "svglib",
+      "description": "svglib: Exponential resource consumption via nested <use> references in svg2rlg",
+      "link": "https://github.com/advisories/GHSA-555j-qj3j-c8jv",
+      "cve": "CVE-2026-132275",
+      "cvss": 7.5
+    },
+    {
+      "title": "contao/core-bundle: Cross-site scripting in the frontend search results",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "contao/core-bundle, contao/core-bundle",
+      "description": "contao/core-bundle: Cross-site scripting in the frontend search results",
+      "link": "https://github.com/advisories/GHSA-h57j-5f5m-789v",
+      "cve": "CVE-2026-104884",
+      "cvss": 5.4
+    },
+    {
+      "title": "contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "contao/core-bundle, contao/core-bundle",
+      "description": "contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators",
+      "link": "https://github.com/advisories/GHSA-r9qp-pqx5-8369",
+      "cve": "CVE-2026-104883",
+      "cvss": 7.2
+    },
+    {
+      "title": "contao/core-bundle: Improper access control in the CSV import wizard",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "contao/core-bundle, contao/core-bundle",
+      "description": "contao/core-bundle: Improper access control in the CSV import wizard",
+      "link": "https://github.com/advisories/GHSA-23w9-4pg3-xwm3",
+      "cve": "CVE-2026-104882",
+      "cvss": 6.5
+    },
+    {
+      "title": "contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "contao/newsletter-bundle, contao/newsletter-bundle",
+      "description": "contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization",
+      "link": "https://github.com/advisories/GHSA-3r9g-pfhv-3228",
+      "cve": "CVE-2026-104881",
+      "cvss": 4.3
+    },
+    {
+      "title": "memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "memtomem-stm",
+      "description": "memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
+      "link": "https://github.com/advisories/GHSA-72jh-722p-rqr3",
+      "cve": "CVE-2026-77331",
+      "cvss": null
+    },
+    {
+      "title": "memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "memtomem-stm",
+      "description": "memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary",
+      "link": "https://github.com/advisories/GHSA-43hx-xm7w-3mhj",
+      "cve": "CVE-2026-77332",
+      "cvss": null
+    },
+    {
+      "title": "AIT-GUI route chain allows unauthenticated Python execution in server process",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "ait-gui",
+      "description": "AIT-GUI route chain allows unauthenticated Python execution in server process",
+      "link": "https://github.com/advisories/GHSA-jrjx-9jjw-747m",
+      "cve": "CVE-2026-77309",
+      "cvss": 8.8
+    },
+    {
+      "title": "sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "sevenz-rust2",
+      "description": "sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",
+      "link": "https://github.com/advisories/GHSA-qh76-45cr-8xrc",
+      "cve": "CVE-2026-61725",
+      "cvss": 6.1
+    },
+    {
+      "title": "Aedes has Uncaught Exception and Uncontrolled Resource Consumption",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "aedes",
+      "description": "Aedes has Uncaught Exception and Uncontrolled Resource Consumption",
+      "link": "https://github.com/advisories/GHSA-xxqp-5qx8-gj5q",
+      "cve": "CVE-2026-63341",
+      "cvss": 7.5
+    },
+    {
+      "title": "nats-server Leaf node connections bypass Nats-Trace-Dest permission check",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/nats-io/nats-server/v2, github.com/nats-io/nats-server/v2",
+      "description": "nats-server Leaf node connections bypass Nats-Trace-Dest permission check",
+      "link": "https://github.com/advisories/GHSA-p3j5-5hrq-p75h",
+      "cve": "CVE-2026-58254",
+      "cvss": 6.5
+    },
+    {
+      "title": "chcon: recursive relabel not anchored to traversal dirfd (TOCTOU)",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "uu_chcon",
+      "description": "chcon: recursive relabel not anchored to traversal dirfd (TOCTOU)",
+      "link": "https://github.com/advisories/GHSA-9rv8-9hvg-92mq",
+      "cve": "CVE-2026-35376",
+      "cvss": 4.5
+    },
+    {
+      "title": " uu_env incorrectly rejects backslashes within single-quoted strings accepted by GNU env",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "github",
+      "component": "uu_env",
+      "description": " uu_env incorrectly rejects backslashes within single-quoted strings accepted by GNU env",
+      "link": "https://github.com/advisories/GHSA-xhrc-7f76-vh96",
+      "cve": "CVE-2026-35377",
+      "cvss": 3.3
+    },
+    {
+      "title": "split: TOCTOU output-open allows truncating a swapped file",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "uu_split",
+      "description": "split: TOCTOU output-open allows truncating a swapped file",
+      "link": "https://github.com/advisories/GHSA-fjjq-8hw5-cf9f",
+      "cve": "CVE-2026-35374",
+      "cvss": 6.3
+    },
+    {
+      "title": "CKAN: Session Fixation in Registration View",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "ckan, ckan",
+      "description": "CKAN: Session Fixation in Registration View",
+      "link": "https://github.com/advisories/GHSA-6499-jgj4-2wpf",
+      "cve": "CVE-2026-104773",
+      "cvss": 6.8
+    },
+    {
+      "title": "netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "io.netty.incubator:netty-incubator-codec-ohttp",
+      "description": "netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges",
+      "link": "https://github.com/advisories/GHSA-cg26-4c6j-2x8h",
+      "cve": "CVE-2026-69133",
+      "cvss": 5.3
+    },
+    {
       "title": "GitLab Critical Patch Release: 19.6.1, 19.5.8, 19.4.10",
       "date": "2026-11-20",
       "severity": "CRITICAL",
@@ -976,6 +1274,16 @@
       "component": "Multiple Microsoft Products",
       "description": "Security update for CVE-2026-114582",
       "link": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-114582"
+    },
+    {
+      "title": "CVE-2026-114938 Portfolio Status: Impact of Java Vulnerability (CVE-2026-114938) on Palo Alto Networks Products (Severity: CRITICAL)",
+      "date": "2026-11-20",
+      "severity": "CRITICAL",
+      "vendor": "paloalto",
+      "component": "Palo Alto Networks",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/CVE-2026-114938",
+      "cve": "CVE-2026-114938"
     },
     {
       "title": "CVE-2026-133622: certmonger: Missing size limits and timeouts in SCEP CA reply handling lead to denial of service",
@@ -2277,6 +2585,69 @@
       "component": "PyJWT",
       "description": "It was discovered that PyJWT incorrectly accepted non-canonical encodings\nof token signature segments. An attacker could possibly use this issue to\nbypass token revocation checks....",
       "link": "https://ubuntu.com/security/notices/USN-9177-1"
+    },
+    {
+      "title": "USN-9184-1: Linux kernel (NVIDIA Tegra IGX) vulnerabilities",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (NVIDIA Tegra IGX) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - x86 architecture...",
+      "link": "https://ubuntu.com/security/notices/USN-9184-1"
+    },
+    {
+      "title": "USN-9183-1: Linux kernel (FIPS) vulnerabilities",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (FIPS) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - USB Gadget drive...",
+      "link": "https://ubuntu.com/security/notices/USN-9183-1"
+    },
+    {
+      "title": "USN-9173-2: Linux kernel vulnerabilities",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Multiple devices...",
+      "link": "https://ubuntu.com/security/notices/USN-9173-2"
+    },
+    {
+      "title": "USN-9168-3: Linux kernel vulnerabilities",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Stream parser;\n ...",
+      "link": "https://ubuntu.com/security/notices/USN-9168-3"
+    },
+    {
+      "title": "USN-9167-2: Linux kernel vulnerabilities",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Stream parser;\n ...",
+      "link": "https://ubuntu.com/security/notices/USN-9167-2"
+    },
+    {
+      "title": "USN-9169-2: Linux kernel vulnerabilities",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Stream parser;\n ...",
+      "link": "https://ubuntu.com/security/notices/USN-9169-2"
+    },
+    {
+      "title": "USN-9170-3: Linux kernel (Oracle) vulnerabilities",
+      "date": "2026-11-20",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Linux kernel (Oracle) vulnerabilities",
+      "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - IPv4 networking;...",
+      "link": "https://ubuntu.com/security/notices/USN-9170-3"
     },
     {
       "title": "CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue",
@@ -15354,6 +15725,271 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-11-20T23:53:12.027Z",
+      "logs": [
+        "[SUCCESS] aws - 13 patches (2 new)",
+        "[INFO] chrome - 3 patches, no changes",
+        "[SUCCESS] cisco - 8 patches (3 new)",
+        "[SUCCESS] cloudflare - 5 patches (2 new)",
+        "[INFO] crowdstrike - 3 patches, no changes",
+        "[INFO] debian - 17 patches, no changes",
+        "[INFO] edge - 2 patches, no changes",
+        "[SUCCESS] fortinet - 2 patches (1 new)",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 161 patches (20 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 503 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[SUCCESS] paloalto - 2 patches (1 new)",
+        "[INFO] postgresql - 5 patches, no changes",
+        "[INFO] redhat - 740 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[SUCCESS] ubuntu - 63 patches (7 new)"
+      ],
+      "newPatchCount": 36,
+      "totalPatches": 1536,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "aws",
+        "cisco",
+        "cloudflare",
+        "fortinet",
+        "github",
+        "gitlab",
+        "microsoft",
+        "paloalto",
+        "redhat",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "crowdstrike",
+        "debian",
+        "edge",
+        "gcp",
+        "postgresql",
+        "oracle-db"
+      ],
+      "newPatches": [
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-133199 - Incorrect privilege assignment on reused e-mail addresses or group names in AWS ssosync",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "aws",
+          "title": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Vulnerability in Oracle OpenJDK (Java4Shell) Affecting Cisco Products: November 2026",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
+          "date": "2026-11-20",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "cisco",
+          "title": "Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities",
+          "date": "2026-11-20",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "cloudflare",
+          "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
+          "date": "2026-11-20",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "cloudflare",
+          "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+          "date": "2026-11-20",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "fortinet",
+          "title": "NGINX vulnerabilities",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase: Unauthenticated global-admin & database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`)",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags)",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Inscriptis: Quadratic memory growth from sibling <table> elements in get_text()",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "svglib: Exponential resource consumption via nested <use> references in svg2rlg",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "contao/core-bundle: Cross-site scripting in the frontend search results",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "contao/core-bundle: Improper access control in the CSV import wizard",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "AIT-GUI route chain allows unauthenticated Python execution in server process",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "sevenz-rust2: decompress builds each output path as dest.join(entry.name()) with no traversal guard, allowing a crafted .7z to write files outside the destination (Zip-Slip)",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "Aedes has Uncaught Exception and Uncontrolled Resource Consumption",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "nats-server Leaf node connections bypass Nats-Trace-Dest permission check",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "chcon: recursive relabel not anchored to traversal dirfd (TOCTOU)",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": " uu_env incorrectly rejects backslashes within single-quoted strings accepted by GNU env",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "github",
+          "title": "split: TOCTOU output-open allows truncating a swapped file",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "CKAN: Session Fixation in Registration View",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "netty-incubator-codec-ohttp: OHTTP codecs retain consumed outer cumulation buffers after completed exchanges",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "CVE-2026-114938 Portfolio Status: Impact of Java Vulnerability (CVE-2026-114938) on Palo Alto Networks Products (Severity: CRITICAL)",
+          "date": "2026-11-20",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-9184-1: Linux kernel (NVIDIA Tegra IGX) vulnerabilities",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-9183-1: Linux kernel (FIPS) vulnerabilities",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-9173-2: Linux kernel vulnerabilities",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-9168-3: Linux kernel vulnerabilities",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-9167-2: Linux kernel vulnerabilities",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-9169-2: Linux kernel vulnerabilities",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-9170-3: Linux kernel (Oracle) vulnerabilities",
+          "date": "2026-11-20",
+          "severity": "LOW"
+        }
+      ]
+    },
     {
       "timestamp": "2026-11-20T21:42:37.959Z",
       "logs": [
@@ -30284,1065 +30920,6 @@
         "cloudflare"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-11-12T00:21:25.018Z",
-      "logs": [
-        "[INFO] apple - 6 patches, no changes",
-        "[SUCCESS] aws - 10 patches (2 new)",
-        "[SUCCESS] chrome - 5 patches (2 new)",
-        "[INFO] cisco - 8 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[SUCCESS] debian - 8 patches (1 new)",
-        "[SUCCESS] edge - 3 patches (1 new)",
-        "[INFO] fortinet - 32 patches, no changes",
-        "[INFO] github - 145 patches, no changes",
-        "[INFO] gitlab - 1 patches, no changes",
-        "[INFO] microsoft - 200 patches, no changes",
-        "[INFO] mssql - 54 patches, no changes",
-        "[SUCCESS] nodejs - 1 patches (1 new)",
-        "[SUCCESS] paloalto - 12 patches (10 new)",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[SUCCESS] redhat - 259 patches (140 new)",
-        "[SUCCESS] signal - 6 patches (1 new)",
-        "[SUCCESS] ubuntu - 38 patches (10 new)"
-      ],
-      "newPatchCount": 168,
-      "totalPatches": 792,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 19,
-      "vendors": [
-        "aws",
-        "chrome",
-        "debian",
-        "edge",
-        "github",
-        "microsoft",
-        "nodejs",
-        "paloalto",
-        "redhat",
-        "signal",
-        "ubuntu",
-        "cisco",
-        "crowdstrike",
-        "fortinet",
-        "gitlab",
-        "mssql",
-        "apple",
-        "postgresql",
-        "cloudflare"
-      ],
-      "newPatches": [
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-125926 - Server-side request forgery in the server registration and update API in mcp-gateway-registry",
-          "date": "2026-11-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "aws",
-          "title": "CVE-2026-100307 - Missing authorization on the external management API in mcp-gateway-registry enables privilege escalation to registry administrator",
-          "date": "2026-11-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Chrome for Android Update",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "chrome",
-          "title": "Stable Channel Update for Desktop",
-          "date": "2026-11-11",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "debian",
-          "title": "DSA-6619-1 spip - security update",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "edge",
-          "title": "Microsoft Edge Security Update - November 11, 2026",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "nodejs",
-          "title": "Wednesday, November 11, 2026 Security Releases",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0329 PAN-OS: Buffer Overflow Vulnerability (Severity: MEDIUM)",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0327 PAN-OS: Privilege Escalation Vulnerability in GlobalProtect (Severity: LOW)",
-          "date": "2026-11-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0330 PAN-OS: Authenticated Remote Code Execution (RCE) in Panorama (Severity: MEDIUM)",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "PAN-SA-2026-0014 Chromium: Monthly Vulnerability Update (November 2026) (Severity: HIGH)",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0325 PAN-OS: GlobalProtect Authorization Bypass Vulnerability (Severity: LOW)",
-          "date": "2026-11-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0323 Checkov by Prisma Cloud: Server-Side Request Forgery Vulnerability (Severity: LOW)",
-          "date": "2026-11-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0331 PAN-OS: Sensitive Information Disclosure Vulnerability (Severity: MEDIUM)",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0328 PAN-OS: User Impersonation through GlobalProtect Portal (Severity: LOW)",
-          "date": "2026-11-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0326 PAN-OS: Buffer Overflow Vulnerability in Protocol and Service Processing (Severity: LOW)",
-          "date": "2026-11-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "paloalto",
-          "title": "CVE-2026-0324 GlobalProtect App: Incorrect Privilege Management Vulnerability in OPSWAT MetaDefender Endpoint Security SDK on Windows (Severity: MEDIUM)",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-126051: nodejs: nodejs: Denial of service via premature socket closure during TLS handshake",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123875: nodejs: nodejs: Denial of Service via cancelled HTTP/2 file downloads",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123874: nodejs: nodejs: Denial of Service via HTTP/2 use-after-free",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123872: nodejs: Node.js: Client certificate authentication bypass via TLS renegotiation",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123877: nodejs: nodejs: Certificate validation bypass via TLS session cache reuse",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123871: nodejs: Node.js: Information disclosure via invalid proxy configuration error messages",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123868: nodejs: nodejs: Denial of service via HTTP/2 memory exhaustion",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123867: nodejs: Node.js: Mutual TLS authorization bypass via incomplete SNI context configuration",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123866: nodejs: Node.js: Information disclosure via use-after-free during HTTP/2 stream teardown",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123865: nodejs: Node.js: Denial of service via HTTP/2 session resource leak during shutdown",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123864: nodejs: nodejs: Information disclosure via HTTPS parser re-entrancy",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123863: nodejs: Node.js: Denial of Service via improper HTTP/2 session teardown",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123862: nodejs: Node.js: Denial of service via abrupt disconnection during zlib compression",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123829: nodejs: Node.js: Information disclosure via improper permission checks in recursive file watching",
-          "date": "2026-11-11",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123828: nodejs: nodejs: Denial of Service via HTTP/2 Alt-Svc heap buffer overflow",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-109163: httpd: httpd: Denial of Service via stack-based buffer overflow in mod_vhost_alias",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-110697: quay: quay: SQL LIKE wildcard injection in robot listing leaks cross-tenant robot tokens",
-          "date": "2026-11-11",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123710: quay: Red Hat Quay: unauthenticated registry signing-key takeover via service key rotation",
-          "date": "2026-11-11",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-119618: httpd:2.4/mod_http2: mod_http2: httpd: Remote code execution in mod_http2",
-          "date": "2026-11-11",
-          "severity": "CRITICAL"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-123747: pappl-retrofit: Directory traversal in the add-ppdfiles and delete-ppdfiles actions",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-90993: org.apache.xmlgraphics/batik-dom: Apache XML Graphics Batik: Harden validation in SAXDocumentFactory",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124744: busybox: cpio hardlink target not sanitized under FEATURE_PATH_TRAVERSAL_PROTECTION",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124745: busybox: tar deferred hardlink target resolved through a deferred symlink escapes the extraction directory",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124746: busybox: Out-of-bounds read in volume_id_get_buffer() via an offset+length wraparound",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-126497: librecad: librecad: Arbitrary code execution via crafted DWG file",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-108472: xfsprogs: xfsprogs: Local privilege escalation via command injection in xfs_admin",
-          "date": "2026-11-11",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-126136: thunderbird: OAuth2 access token could be sent over an unencrypted connection with Exchange accounts",
-          "date": "2026-11-11",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-91151: cockpit: Cockpit: Local privilege escalation via insecure symlink handling in public key addition helper",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-91150: cockpit: cockpit: Denial of Service via unbounded fragmented WebSocket messages",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-126135: thunderbird: SMTP and POP3 response injection when using STARTTLS",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-126134: thunderbird: Feed subscriptions could leak NTLM credentials on Windows",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-126133: thunderbird: Calendar server credentials could be sent to an HTTP proxy",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-126132: thunderbird: Attachments could be replaced with local file content when forwarding",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-114467: git: git: Denial of service via commit messages with multiple GPG signatures",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-125350: chromium-browser: Use after free in XML",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-125349: chromium-browser: Uninitialized resource in GPU",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-125342: chromium-browser: Uninitialized resource in GPU",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-125348: chromium-browser: Out of bounds write in GPU",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-125344: chromium-browser: Type confusion in V8",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-125343: chromium-browser: Buffer overflow in Compositing",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-125347: chromium-browser: Incorrect authorization in FileSystem",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-125345: chromium-browser: Uninitialized resource in WebGL",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124952: firefox: Use-after-free in the Audio/Video component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124950: firefox: thunderbird: Same-origin policy bypass in the CSS Parsing and Computation component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124949: firefox: thunderbird: Other issue in the SVG component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124947: firefox: thunderbird: Incorrect boundary conditions in the Graphics component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124946: firefox: thunderbird: Invalid pointer in the JavaScript Engine: JIT component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124945: firefox: thunderbird: Invalid pointer in the Layout: Text and Fonts component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124943: firefox: thunderbird: Use-after-free in the Layout component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124944: firefox: thunderbird: Information disclosure in the Marionette component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124937: firefox: Other issue in the Media component in Firefox for Android",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124936: firefox: thunderbird: Spoofing issue in the Address Bar component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124928: firefox: thunderbird: Mitigation bypass in the SVG component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124923: firefox: thunderbird: Sandbox escape in the Agent component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124925: firefox: thunderbird: Information disclosure in the Layout component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124920: firefox: thunderbird: Uninitialized memory in the Graphics: WebGPU component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124921: firefox: thunderbird: Sandbox escape in the Graphics: WebGPU component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124908: firefox: thunderbird: Use-after-free in the CSS Parsing and Computation component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124911: firefox: Clickjacking issue in the Autofill component in Firefox for Android",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124904: firefox: thunderbird: Use-after-free in the SVG component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124900: firefox: thunderbird: Sandbox escape due to use-after-free in the DOM: Service Workers component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124878: firefox: thunderbird: Use-after-free in the Layout: Positioned component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124871: firefox: thunderbird: Use-after-free in the DOM: HTML Parser component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124867: firefox: thunderbird: Use-after-free in the DOM: Editor component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124852: firefox: thunderbird: Incorrect boundary conditions in the Graphics: CanvasWebGL component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124951: firefox: thunderbird: Privilege escalation in the Nimbus Desktop Client component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124948: firefox: thunderbird: Incorrect boundary conditions, use-after-free in the Graphics component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124941: firefox: thunderbird: Information disclosure in the Security: RLBox component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124942: firefox: thunderbird: Invalid pointer in the DOM: Streams component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124940: firefox: thunderbird: Mitigation bypass in the File Handling component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124939: firefox: thunderbird: JIT miscompilation in the JavaScript Engine: JIT component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124935: firefox: thunderbird: Undefined behavior in the WebRTC: Networking component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124938: firefox: thunderbird: Mitigation bypass in the Add-ons Manager component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124934: firefox: thunderbird: Spoofing issue in the Security component",
-          "date": "2026-11-10",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124933: firefox: thunderbird: Sandbox escape in the Console component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124932: firefox: thunderbird: Use-after-free in the Graphics component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124931: firefox: thunderbird: Same-origin policy bypass in the DOM: Core & HTML component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124929: firefox: thunderbird: Information disclosure in the Layout: Form Controls component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124930: firefox: thunderbird: Information disclosure in the Address Bar component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124927: firefox: thunderbird: Site isolation issue in the Graphics: WebRender component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124926: firefox: thunderbird: Incorrect boundary conditions in the WebRTC component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124924: firefox: thunderbird: Incorrect boundary conditions in the Graphics: WebRender component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124922: firefox: thunderbird: Use-after-free in the CSS Transitions and Animations component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124918: firefox: thunderbird: Privilege escalation due to incorrect boundary conditions in the Graphics: WebRender component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124919: firefox: thunderbird: Privilege escalation due to use-after-free in the WebRTC: Networking component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124917: firefox: thunderbird: Sandbox escape due to use-after-free in the Widget: Gtk component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124914: firefox: thunderbird: Site isolation issue in the DOM: Navigation component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124915: firefox: thunderbird: Incorrect boundary conditions in the Graphics: WebGPU component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124912: firefox: thunderbird: Spoofing issue in the DOM: Security component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124913: firefox: thunderbird: Site isolation issue in the Networking component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124910: firefox: thunderbird: Mitigation bypass in the WebExtensions component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124909: firefox: thunderbird: Information disclosure in the Private Browsing component",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124907: firefox: thunderbird: Privilege escalation, sandbox escape due to use-after-free in the Graphics: CanvasWebGL component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124905: firefox: thunderbird: Sandbox escape in the DOM: Navigation component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124906: firefox: thunderbird: Use-after-free in the Graphics: WebRender component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124903: firefox: thunderbird: Sandbox escape due to use-after-free in the IPC component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124902: firefox: thunderbird: Same-origin policy bypass due to race condition in the Audio/Video component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124901: firefox: thunderbird: Other issue in the Networking: JAR component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124899: firefox: thunderbird: Use-after-free in the Layout: Text and Fonts component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124898: firefox: thunderbird: Use-after-free in the DOM: Editor component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124897: firefox: thunderbird: Use-after-free in the JavaScript: GC component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124895: firefox: thunderbird: Use-after-free in the Storage: localStorage & sessionStorage component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124896: firefox: thunderbird: Invalid pointer in the Layout: Text and Fonts component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124893: firefox: thunderbird: Use-after-free in the DOM: Workers component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124894: firefox: thunderbird: Use-after-free in the Networking: Cookies component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124891: firefox: thunderbird: Incorrect boundary conditions in the DOM: Selection component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124892: firefox: thunderbird: Use-after-free in the JavaScript: GC component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124890: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124889: firefox: thunderbird: Use-after-free in the CSS Parsing and Computation component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124888: firefox: thunderbird: Incorrect boundary conditions in the Layout: Text and Fonts component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124887: firefox: thunderbird: Incorrect boundary conditions in the Layout: Text and Fonts component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124886: firefox: thunderbird: Invalid pointer in the Layout: Text and Fonts component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124885: firefox: thunderbird: Use-after-free in the Graphics: Text component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124884: firefox: thunderbird: Use-after-free in the JavaScript: GC component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124883: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124879: firefox: thunderbird: Invalid pointer in the Networking: Cache component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124880: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124877: firefox: thunderbird: Use-after-free in the Layout: Positioned component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124875: firefox: thunderbird: Incorrect boundary conditions in the DOM: CSS Object Model component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124874: firefox: thunderbird: Same-origin policy bypass in the Networking: HTTP component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124873: firefox: thunderbird: Invalid pointer in the DOM: Editor component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124870: firefox: thunderbird: Incorrect boundary conditions in the JavaScript: GC component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124872: firefox: thunderbird: Use-after-free in the Cycle Collector component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124868: firefox: thunderbird: Incorrect boundary conditions in the DOM: Core & HTML component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124866: firefox: thunderbird: Use-after-free in the Layout component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124865: firefox: thunderbird: Use-after-free in the Audio/Video component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124864: firefox: thunderbird: Sandbox escape due to use-after-free in the DOM: Service Workers component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124862: firefox: thunderbird: Use-after-free in the DOM: Core & HTML component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124863: firefox: thunderbird: Use-after-free in the DOM: HTML Parser component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124861: firefox: thunderbird: Sandbox escape due to use-after-free in the Audio/Video: cubeb component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124859: firefox: thunderbird: Sandbox escape due to incorrect boundary conditions in the Storage: Cache API component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124857: firefox: thunderbird: Use-after-free in the Graphics: Canvas2D component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124858: firefox: thunderbird: Use-after-free in the DOM: HTML Parser component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124855: firefox: thunderbird: Sandbox escape in the DOM: Navigation component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124856: firefox: thunderbird: Incorrect boundary conditions in the Networking: HTTP component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124854: firefox: thunderbird: Privilege escalation in the DOM: Navigation component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-124853: firefox: thunderbird: Sandbox escape due to incorrect boundary conditions in the Graphics: Text component",
-          "date": "2026-11-10",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-112201: keycloak-services: keycloak-services: Login-failure upsert trusts MySQL/MariaDB affected-row count",
-          "date": "2026-11-10",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-125261: ffmpeg: SGI encoder out-of-bounds read",
-          "date": "2026-11-09",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "redhat",
-          "title": "CVE-2026-126820: cpio: cpio: out-of-bounds read in from_ascii() when parsing newc/crc archive headers",
-          "date": "2026-11-07",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "signal",
-          "title": "Signal Desktop v8.35.0",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-9063-1: Yodl vulnerability",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-9062-1: SNMPTT vulnerability",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-9060-1: kramdown vulnerability",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-9059-1: ruby-jwt vulnerability",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-9058-1: Action Pack Page Caching vulnerability",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-9057-1: rkhunter vulnerability",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-9056-1: Prosody Community Modules vulnerability",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-9055-1: pecl_http vulnerability",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-9054-1: Babel vulnerability",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        },
-        {
-          "vendor": "ubuntu",
-          "title": "USN-9053-1: NetworkManager-ssh vulnerability",
-          "date": "2026-11-11",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }
