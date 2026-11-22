@@ -1,7 +1,54 @@
 {
-  "lastUpdated": "2026-11-22T23:24:03.121Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-22T23:29:10.188Z",
+  "newPatches": 2,
   "patches": [
+    {
+      "title": "DSA-6648-1 python-django - security update",
+      "date": "2026-11-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "python-django",
+      "description": "Multiple security issues were found in Django, a Python web development framework, which could result in denial of service, spoofing, permission bypass, cross-site scripting or information disclosure....",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00570.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6647-1 webkit2gtk - security update",
+      "date": "2026-11-22",
+      "severity": "LOW",
+      "vendor": "debian",
+      "component": "webkit2gtk",
+      "description": "The following vulnerabilities have been discovered in the WebKitGTK web engine: CVE-2026-86973 Narendra Singh and an anonymous researcher discovered that processing maliciously crafted web content may...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00569.html",
+      "cve": "CVE-2026-86973",
+      "cves": [
+        "CVE-2026-86973",
+        "CVE-2026-86974",
+        "CVE-2026-86985",
+        "CVE-2026-86986",
+        "CVE-2026-112615",
+        "CVE-2026-112623",
+        "CVE-2026-112626",
+        "CVE-2026-112637",
+        "CVE-2026-112639",
+        "CVE-2026-112640",
+        "CVE-2026-112651",
+        "CVE-2026-112653",
+        "CVE-2026-112654",
+        "CVE-2026-112655",
+        "CVE-2026-112666",
+        "CVE-2026-112673",
+        "CVE-2026-112684",
+        "CVE-2026-112686",
+        "CVE-2026-112693",
+        "CVE-2026-112695",
+        "CVE-2026-113897",
+        "CVE-2026-113901",
+        "CVE-2026-113903",
+        "CVE-2026-113904"
+      ]
+    },
     {
       "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
       "date": "2026-11-21",
@@ -17928,6 +17975,67 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-11-22T23:29:10.188Z",
+      "logs": [
+        "[INFO] aws - 13 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 9 patches, no changes",
+        "[INFO] cloudflare - 5 patches, no changes",
+        "[INFO] crowdstrike - 3 patches, no changes",
+        "[SUCCESS] debian - 18 patches (2 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 158 patches, no changes",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] microsoft - 452 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 3 patches, no changes",
+        "[INFO] postgresql - 4 patches, no changes",
+        "[INFO] redhat - 985 patches, no changes",
+        "[INFO] signal - 5 patches, no changes",
+        "[INFO] ubuntu - 63 patches, no changes"
+      ],
+      "newPatchCount": 2,
+      "totalPatches": 1729,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "debian",
+        "cisco",
+        "microsoft",
+        "redhat",
+        "aws",
+        "cloudflare",
+        "fortinet",
+        "github",
+        "gitlab",
+        "paloalto",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "crowdstrike",
+        "edge",
+        "gcp",
+        "postgresql",
+        "oracle-db"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6648-1 python-django - security update",
+          "date": "2026-11-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6647-1 webkit2gtk - security update",
+          "date": "2026-11-22",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-11-22T23:24:03.121Z",
       "logs": [
         "[INFO] aws - 13 patches, no changes",
@@ -31457,56 +31565,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-11-14T00:46:09.014Z",
-      "logs": [
-        "[INFO] apple - 6 patches, no changes",
-        "[INFO] aws - 9 patches, no changes",
-        "[INFO] chrome - 6 patches, no changes",
-        "[INFO] cisco - 11 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 1 patches, no changes",
-        "[INFO] debian - 13 patches, no changes",
-        "[INFO] edge - 4 patches, no changes",
-        "[INFO] fortinet - 34 patches, no changes",
-        "[INFO] github - 217 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 351 patches, no changes",
-        "[INFO] mssql - 54 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] paloalto - 12 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 471 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 52 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1253,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 19,
-      "vendors": [
-        "cisco",
-        "cloudflare",
-        "debian",
-        "edge",
-        "github",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "gitlab",
-        "postgresql",
-        "signal",
-        "nodejs",
-        "paloalto",
-        "crowdstrike",
-        "fortinet",
-        "mssql",
-        "apple"
-      ],
-      "newPatches": []
     }
   ]
 }
