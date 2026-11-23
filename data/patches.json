@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-23T06:33:18.147Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-23T06:53:39.695Z",
+  "newPatches": 5,
   "patches": [
     {
       "title": "DSA-6648-1 python-django - security update",
@@ -48,6 +48,61 @@
         "CVE-2026-113903",
         "CVE-2026-113904"
       ]
+    },
+    {
+      "title": "DSA-6652-1 linux - security update",
+      "date": "2026-11-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "linux",
+      "description": "Several vulnerabilities have been discovered in the Linux kernel that may lead to a privilege escalation, denial of service or information leaks. https://security-tracker.debian.org/tracker/DSA-6652-1",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00574.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6651-1 libeot - security update",
+      "date": "2026-11-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libeot",
+      "description": "Multiple security vulnerabilities were discovered in Libeot, a library for parsing Embedded OpenType files and converting them to other formats, which could result in denial of service or potentially ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00573.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6650-1 krb5 - security update",
+      "date": "2026-11-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "krb5",
+      "description": "Multiple security vulnerabilities were discovered in the MIT reference implementation of Kerberos, which could result in authorisation bypass, denial of service or information disclosure. https://secu...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00572.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6649-1 anope - security update",
+      "date": "2026-11-22",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "anope",
+      "description": "Several vulnerabilities were discovered in anope, a set of IRC services designed for flexibility and ease of use, which could result in nickname impersonation/takeover, account takeovers, information ...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00571.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "CVE-2026-134832: vim: vim: Information disclosure via escaped URL in tags file",
+      "date": "2026-11-22",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "vim: vim: Information disclosure via escaped URL in tags file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-134832.json",
+      "cve": "CVE-2026-134832",
+      "cvss": 3.3
     },
     {
       "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
@@ -16039,6 +16094,85 @@
   ],
   "fetchLogs": [
     {
+      "timestamp": "2026-11-23T06:53:39.695Z",
+      "logs": [
+        "[INFO] aws - 10 patches, no changes",
+        "[INFO] chrome - 3 patches, no changes",
+        "[INFO] cisco - 8 patches, no changes",
+        "[INFO] cloudflare - 5 patches, no changes",
+        "[INFO] crowdstrike - 3 patches, no changes",
+        "[SUCCESS] debian - 21 patches (4 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 2 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[INFO] github - 117 patches, no changes",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] microsoft - 352 patches, no changes",
+        "[INFO] oracle-db - 1 patches, no changes",
+        "[INFO] paloalto - 3 patches, no changes",
+        "[INFO] postgresql - 4 patches, no changes",
+        "[SUCCESS] redhat - 944 patches (1 new)",
+        "[INFO] signal - 3 patches, no changes",
+        "[INFO] ubuntu - 59 patches, no changes"
+      ],
+      "newPatchCount": 5,
+      "totalPatches": 1539,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "debian",
+        "redhat",
+        "cisco",
+        "microsoft",
+        "aws",
+        "cloudflare",
+        "fortinet",
+        "github",
+        "gitlab",
+        "paloalto",
+        "signal",
+        "ubuntu",
+        "chrome",
+        "crowdstrike",
+        "edge",
+        "gcp",
+        "postgresql",
+        "oracle-db"
+      ],
+      "newPatches": [
+        {
+          "vendor": "debian",
+          "title": "DSA-6652-1 linux - security update",
+          "date": "2026-11-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6651-1 libeot - security update",
+          "date": "2026-11-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6650-1 krb5 - security update",
+          "date": "2026-11-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6649-1 anope - security update",
+          "date": "2026-11-22",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-134832: vim: vim: Information disclosure via escaped URL in tags file",
+          "date": "2026-11-22",
+          "severity": "LOW"
+        }
+      ]
+    },
+    {
       "timestamp": "2026-11-23T06:33:18.147Z",
       "logs": [
         "[INFO] aws - 10 patches, no changes",
@@ -29402,56 +29536,6 @@
           "severity": "MEDIUM"
         }
       ]
-    },
-    {
-      "timestamp": "2026-11-14T08:44:16.898Z",
-      "logs": [
-        "[INFO] apple - 6 patches, no changes",
-        "[INFO] aws - 9 patches, no changes",
-        "[INFO] chrome - 6 patches, no changes",
-        "[INFO] cisco - 11 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 14 patches, no changes",
-        "[INFO] edge - 4 patches, no changes",
-        "[INFO] fortinet - 34 patches, no changes",
-        "[INFO] github - 222 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 351 patches, no changes",
-        "[INFO] mssql - 54 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] paloalto - 12 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 493 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 52 patches, no changes"
-      ],
-      "newPatchCount": 0,
-      "totalPatches": 1282,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 19,
-      "vendors": [
-        "github",
-        "cisco",
-        "cloudflare",
-        "crowdstrike",
-        "debian",
-        "edge",
-        "microsoft",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "gitlab",
-        "postgresql",
-        "signal",
-        "nodejs",
-        "paloalto",
-        "fortinet",
-        "mssql",
-        "apple"
-      ],
-      "newPatches": []
     }
   ]
 }
