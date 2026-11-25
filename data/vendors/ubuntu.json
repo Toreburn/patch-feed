@@ -1,16 +1,70 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-11-25T07:53:28.212Z",
+  "lastUpdated": "2026-11-25T21:27:39.354Z",
   "health": {
-    "lastFetchAttempt": "2026-11-25T07:53:28.212Z",
+    "lastFetchAttempt": "2026-11-25T21:27:39.354Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 0,
-    "lastSuccessWithData": "2026-11-25T07:53:28.212Z",
+    "lastFetchNewPatches": 8,
+    "lastSuccessWithData": "2026-11-25T21:27:39.354Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
   "patches": [
+    {
+      "title": "USN-9202-1: Kerberos vulnerabilities",
+      "date": "2026-11-25",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Kerberos vulnerabilities",
+      "description": "It was discovered that the Kerberos KDC incorrectly handled certain ASN.1\nencodings in requests. A remote attacker could possibly use this issue to\ncause the KDC to crash, resulting in a denial of ser...",
+      "link": "https://ubuntu.com/security/notices/USN-9202-1"
+    },
+    {
+      "title": "USN-9200-1: elfutils vulnerabilities",
+      "date": "2026-11-25",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "elfutils vulnerabilities",
+      "description": "It was discovered that elfutils incorrectly handled memory when processing\ncertain malformed DWARF data. If a user or automated system were tricked\ninto running readelf on a specially crafted file, an...",
+      "link": "https://ubuntu.com/security/notices/USN-9200-1"
+    },
+    {
+      "title": "USN-9199-1: authd vulnerability",
+      "date": "2026-11-25",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "authd",
+      "description": "Adrian Dombeck discovered that authd incorrectly assigned user and group\nidentifiers during first-time SSH logins. A remote authenticated user could\npossibly use this issue to access or modify files b...",
+      "link": "https://ubuntu.com/security/notices/USN-9199-1"
+    },
+    {
+      "title": "USN-9197-1: Speex vulnerability",
+      "date": "2026-11-25",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "Speex",
+      "description": "It was discovered that Speex incorrectly handled oversize input when\nappending data to a bit buffer not owned by the library. An attacker\ncould possibly use this issue to cause Speex to crash, resulti...",
+      "link": "https://ubuntu.com/security/notices/USN-9197-1"
+    },
+    {
+      "title": "USN-9196-1: Expat vulnerabilities",
+      "date": "2026-11-25",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Expat vulnerabilities",
+      "description": "It was discovered that Expat did not properly validate UTF-16 surrogate\npairs. An attacker could possibly use this issue to pass malformed\ncharacters to applications using Expat, resulting in unexpect...",
+      "link": "https://ubuntu.com/security/notices/USN-9196-1"
+    },
+    {
+      "title": "USN-9194-1: libxrender vulnerabilities",
+      "date": "2026-11-25",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "libxrender vulnerabilities",
+      "description": "Adam Bedard discovered that libXrender incorrectly handled certain\nresponses from an X server, resulting in a heap buffer overflow. If a user\nwere tricked into connecting to a malicious X server, an a...",
+      "link": "https://ubuntu.com/security/notices/USN-9194-1"
+    },
     {
       "title": "USN-9192-1: Linux kernel (NVIDIA) vulnerabilities",
       "date": "2026-11-24",
@@ -91,6 +145,24 @@
       "component": "Linux kernel vulnerabilities",
       "description": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - Cryptographic AP...",
       "link": "https://ubuntu.com/security/notices/USN-9165-2"
+    },
+    {
+      "title": "USN-9193-1: PCRE vulnerability",
+      "date": "2026-11-24",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "PCRE",
+      "description": "Yunho Kim discovered that PCRE incorrectly handled memory when processing\ncertain regular expressions with JIT compilation enabled. An attacker\ncould possibly use this issue to cause applications usin...",
+      "link": "https://ubuntu.com/security/notices/USN-9193-1"
+    },
+    {
+      "title": "USN-8846-2: libheif vulnerabilities",
+      "date": "2026-11-24",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libheif vulnerabilities",
+      "description": "USN-8846-1 fixed vulnerabilities in libheif. This update provides the\ncorresponding fixes for CVE-2026-84447 on Ubuntu 22.04 LTS and Ubuntu 24.04\nLTS.\n\nOriginal advisory details:\n\n Yuqi Qiu and Xiang ...",
+      "link": "https://ubuntu.com/security/notices/USN-8846-2"
     },
     {
       "title": "USN-9188-1: OAuthLib vulnerabilities",
