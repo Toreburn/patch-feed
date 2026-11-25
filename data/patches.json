@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-25T02:00:30.146Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-25T07:54:29.478Z",
+  "newPatches": 69,
   "patches": [
     {
       "title": "DSA-6656-1 runc - security update",
@@ -89,6 +89,16 @@
       "cve": "CVE-2026-76411"
     },
     {
+      "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "On November 18, 2026, nginx announced the availability of a fix for multiple critical vulnerabilities in nginx that could lead to remote code execution. These vulnerabilities affect nginx releases 1.9...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s",
+      "cve": "CVE-2026-113425"
+    },
+    {
       "title": "DSA-6655-1 flatpak - security update",
       "date": "2026-11-24",
       "severity": "LOW",
@@ -101,6 +111,17 @@
         "CVE-2026-133842",
         "CVE-2026-133845"
       ]
+    },
+    {
+      "title": "DSA-6657-1 libzstd - security update",
+      "date": "2026-11-24",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "libzstd",
+      "description": "It was discovered that incorrect buffer management in the implementation of the Zstandard compression algorithm could result in information disclosure. https://security-tracker.debian.org/tracker/DSA-...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00579.html",
+      "cve": "",
+      "cves": []
     },
     {
       "title": "github.com/insomniacslk/dhcp permits denial of service through a malformed IPv4 payload length",
@@ -156,6 +177,39 @@
       "link": "https://github.com/advisories/GHSA-48qj-5wxh-m8hc",
       "cve": "CVE-2026-59192",
       "cvss": null
+    },
+    {
+      "title": "soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "soapbar",
+      "description": "soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)",
+      "link": "https://github.com/advisories/GHSA-859w-52fx-hcm6",
+      "cve": "CVE-2026-64855",
+      "cvss": 8.2
+    },
+    {
+      "title": "TwigView FileLoader may allow arbitrary file reads through user-controlled template paths",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "cakephp/twig-view, cakephp/twig-view",
+      "description": "TwigView FileLoader may allow arbitrary file reads through user-controlled template paths",
+      "link": "https://github.com/advisories/GHSA-hq9r-72jq-2pxp",
+      "cve": "CVE-2026-59191",
+      "cvss": null
+    },
+    {
+      "title": "GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "github.com/cli/cli/v2",
+      "description": "GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces",
+      "link": "https://github.com/advisories/GHSA-8cg3-r6g9-fpg2",
+      "cve": "CVE-2026-59831",
+      "cvss": 4.4
     },
     {
       "title": "Java4Shell Vulnerability: Update Your JetBrains IDEs, ReSharper, .NET Tools, Toolbox App, and Gateway Now",
@@ -1078,6 +1132,26 @@
       "cve": "CVE-2026-123633"
     },
     {
+      "title": "PAN-SA-2026-0015 Security Bulletin: OSS CVEs Fixed in PAN-OS (Severity: INFORMATIONAL)",
+      "date": "2026-11-24",
+      "severity": "UNKNOWN",
+      "vendor": "paloalto",
+      "component": "PAN-OS",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/PAN-SA-2026-0015",
+      "cve": ""
+    },
+    {
+      "title": "PAN-SA-2026-0005 Informational Bulletin: Precautionary Fixes for Non-Exploitable OSS CVEs in PAN-OS (Severity: INFORMATIONAL)",
+      "date": "2026-11-24",
+      "severity": "UNKNOWN",
+      "vendor": "paloalto",
+      "component": "PAN-OS",
+      "description": "",
+      "link": "https://security.paloaltonetworks.com/PAN-SA-2026-0005",
+      "cve": ""
+    },
+    {
       "title": "CVE-2026-135736: ffmpeg: ffmpeg: Heap out-of-bounds write via deband filter coupling command",
       "date": "2026-11-24",
       "severity": "HIGH",
@@ -1098,6 +1172,556 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135743.json",
       "cve": "CVE-2026-135743",
       "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-136451: keycloak-operator: keycloak-operator: Secret-derived hashes exposed in StatefulSet metadata and KeycloakOIDCClient statu",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "keycloak-operator: keycloak-operator: Secret-derived hashes exposed in StatefulSet metadata and KeycloakOIDCClient status",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-136451.json",
+      "cve": "CVE-2026-136451",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-136442: busybox: busybox: Arbitrary file access via directory traversal in ftpd",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "busybox: busybox: Arbitrary file access via directory traversal in ftpd",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-136442.json",
+      "cve": "CVE-2026-136442",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-115747: erlang: Erlang OTP: Denial of Service via improper AArch64 JIT register cache handling",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: Erlang OTP: Denial of Service via improper AArch64 JIT register cache handling",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-115747.json",
+      "cve": "CVE-2026-115747",
+      "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-125658: erlang: erlang: Denial of Service via crafted Unicode file names on macOS",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: erlang: Denial of Service via crafted Unicode file names on macOS",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-125658.json",
+      "cve": "CVE-2026-125658",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-120961: erlang: Erlang: Denial of Service via out-of-bounds read in term decoder",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: Erlang: Denial of Service via out-of-bounds read in term decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-120961.json",
+      "cve": "CVE-2026-120961",
+      "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-117642: erlang: erlang: Denial of Service via uncontrolled recursion in external term decoder",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: erlang: Denial of Service via uncontrolled recursion in external term decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-117642.json",
+      "cve": "CVE-2026-117642",
+      "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-116293: erlang: erlang: Denial of Service via out-of-bounds write in external term format decoder",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: erlang: Denial of Service via out-of-bounds write in external term format decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116293.json",
+      "cve": "CVE-2026-116293",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-116225: erlang: erlang: Denial of Service via CPU exhaustion in SNMP BER decoder",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: erlang: Denial of Service via CPU exhaustion in SNMP BER decoder",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116225.json",
+      "cve": "CVE-2026-116225",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-116382: erlang: erlang: Denial of Service via atom table exhaustion in inets",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: erlang: Denial of Service via atom table exhaustion in inets",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116382.json",
+      "cve": "CVE-2026-116382",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-116295: erlang: erlang: HTTP request splitting via CRLF injection in httpc",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: erlang: HTTP request splitting via CRLF injection in httpc",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-116295.json",
+      "cve": "CVE-2026-116295",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-119443: erlang: erlang: Denial of Service via external DTD processing in xmerl",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "erlang: erlang: Denial of Service via external DTD processing in xmerl",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-119443.json",
+      "cve": "CVE-2026-119443",
+      "cvss": 6.2
+    },
+    {
+      "title": "CVE-2026-136156: valkey: valkey: Arbitrary code execution via integer truncation in cluster mode",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "valkey: valkey: Arbitrary code execution via integer truncation in cluster mode",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-136156.json",
+      "cve": "CVE-2026-136156",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-136157: valkey: valkey: Arbitrary code execution via use-after-free in RDMA transport",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "valkey: valkey: Arbitrary code execution via use-after-free in RDMA transport",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-136157.json",
+      "cve": "CVE-2026-136157",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-136155: valkey: Valkey: Arbitrary code execution via use-after-free in Lua script debugger",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "valkey: Valkey: Arbitrary code execution via use-after-free in Lua script debugger",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-136155.json",
+      "cve": "CVE-2026-136155",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-130822: Valkey: Valkey: Use-after-free when client eviction frees the client whose command is still executing",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "Valkey: Valkey: Use-after-free when client eviction frees the client whose command is still executing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-130822.json",
+      "cve": "CVE-2026-130822",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-135703: ffmpeg: ffmpeg: Information disclosure via oversized ASF packet in RTP stream",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Information disclosure via oversized ASF packet in RTP stream",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135703.json",
+      "cve": "CVE-2026-135703",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-135704: ffmpeg: ffmpeg: Information disclosure via truncated MXG marker segments",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Information disclosure via truncated MXG marker segments",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135704.json",
+      "cve": "CVE-2026-135704",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-135705: ffmpeg: ffmpeg: Denial of Service via malformed SDP framesize attribute",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via malformed SDP framesize attribute",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135705.json",
+      "cve": "CVE-2026-135705",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-135706: ffmpeg: ffmpeg: Arbitrary code execution via heap buffer overflow in ModPlug demuxer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Arbitrary code execution via heap buffer overflow in ModPlug demuxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135706.json",
+      "cve": "CVE-2026-135706",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-135707: ffmpeg: ffmpeg: Information disclosure via crafted NIST SPHERE audio file",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Information disclosure via crafted NIST SPHERE audio file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135707.json",
+      "cve": "CVE-2026-135707",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-135708: ffmpeg: ffmpeg: Arbitrary file destruction via improper URL validation in WHIP muxer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Arbitrary file destruction via improper URL validation in WHIP muxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135708.json",
+      "cve": "CVE-2026-135708",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-135709: ffmpeg: FFmpeg: Arbitrary code execution via out-of-bounds write in Ogg muxer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: FFmpeg: Arbitrary code execution via out-of-bounds write in Ogg muxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135709.json",
+      "cve": "CVE-2026-135709",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-135710: ffmpeg: ffmpeg: Information disclosure via uninitialized memory in Sierra VMD demuxer",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Information disclosure via uninitialized memory in Sierra VMD demuxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135710.json",
+      "cve": "CVE-2026-135710",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-135711: ffmpeg: ffmpeg: XML injection via unescaped subtitle language metadata",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: XML injection via unescaped subtitle language metadata",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135711.json",
+      "cve": "CVE-2026-135711",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-135712: ffmpeg: ffmpeg: Denial of Service via integer overflow in img2enc",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via integer overflow in img2enc",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135712.json",
+      "cve": "CVE-2026-135712",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-135713: ffmpeg: ffmpeg: Denial of Service via malformed ASF headers in MMS protocol",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via malformed ASF headers in MMS protocol",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135713.json",
+      "cve": "CVE-2026-135713",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-135714: ffmpeg: ffmpeg: Information disclosure via truncated RTMP AMF strings",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Information disclosure via truncated RTMP AMF strings",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135714.json",
+      "cve": "CVE-2026-135714",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-135715: ffmpeg: ffmpeg: Denial of Service via crafted stream in AVIF muxer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via crafted stream in AVIF muxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135715.json",
+      "cve": "CVE-2026-135715",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-135716: ffmpeg: ffmpeg: Denial of Service via out-of-bounds write in NUT muxer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via out-of-bounds write in NUT muxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135716.json",
+      "cve": "CVE-2026-135716",
+      "cvss": 6.6
+    },
+    {
+      "title": "CVE-2026-135717: ffmpeg: ffmpeg: Information disclosure via empty Opus RTP payloads",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Information disclosure via empty Opus RTP payloads",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135717.json",
+      "cve": "CVE-2026-135717",
+      "cvss": 2.5
+    },
+    {
+      "title": "CVE-2026-135718: ffmpeg: ffmpeg: Denial of service via out-of-bounds read in DVD video demuxer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of service via out-of-bounds read in DVD video demuxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135718.json",
+      "cve": "CVE-2026-135718",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-135719: ffmpeg: ffmpeg: Information disclosure via uninitialized memory in DXA demuxer",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Information disclosure via uninitialized memory in DXA demuxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135719.json",
+      "cve": "CVE-2026-135719",
+      "cvss": 2.5
+    },
+    {
+      "title": "CVE-2026-135720: ffmpeg: ffmpeg: Denial of Service via NULL pointer dereference in DASH demuxer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via NULL pointer dereference in DASH demuxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135720.json",
+      "cve": "CVE-2026-135720",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-135721: ffmpeg: FFmpeg: Denial of Service via infinite loop in Dirac/VC-2 RTP packetizer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: FFmpeg: Denial of Service via infinite loop in Dirac/VC-2 RTP packetizer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135721.json",
+      "cve": "CVE-2026-135721",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-135723: ffmpeg: ffmpeg: Memory corruption via crafted IMF Composition Playlist",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Memory corruption via crafted IMF Composition Playlist",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135723.json",
+      "cve": "CVE-2026-135723",
+      "cvss": 7
+    },
+    {
+      "title": "CVE-2026-135724: ffmpeg: FFmpeg: Denial of Service via crafted HEIF/AVIF image file",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: FFmpeg: Denial of Service via crafted HEIF/AVIF image file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135724.json",
+      "cve": "CVE-2026-135724",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-135726: ffmpeg: ffmpeg: Denial of Service via NULL pointer dereference in rdt_parse_packet",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via NULL pointer dereference in rdt_parse_packet",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135726.json",
+      "cve": "CVE-2026-135726",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-135727: ffmpeg: ffmpeg: Information disclosure via uninitialized frame buffers in RTP streams",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Information disclosure via uninitialized frame buffers in RTP streams",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135727.json",
+      "cve": "CVE-2026-135727",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-135728: ffmpeg: ffmpeg: Denial of Service via integer overflow in DASH demuxer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via integer overflow in DASH demuxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135728.json",
+      "cve": "CVE-2026-135728",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-135729: ffmpeg: ffmpeg: XML injection via crafted WebM track language metadata",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: XML injection via crafted WebM track language metadata",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135729.json",
+      "cve": "CVE-2026-135729",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-135730: ffmpeg: ffmpeg: Information disclosure via crafted VPK file",
+      "date": "2026-11-24",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Information disclosure via crafted VPK file",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135730.json",
+      "cve": "CVE-2026-135730",
+      "cvss": 3.3
+    },
+    {
+      "title": "CVE-2026-135731: ffmpeg: ffmpeg: Denial of Service via integer overflow in RTP packetizer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via integer overflow in RTP packetizer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135731.json",
+      "cve": "CVE-2026-135731",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-135732: ffmpeg: ffmpeg: Denial of Service via out-of-bounds read in D-10 MXF muxer",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via out-of-bounds read in D-10 MXF muxer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135732.json",
+      "cve": "CVE-2026-135732",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-135733: ffmpeg: ffmpeg: Unauthorized media manipulation via insecure ZeroMQ socket binding",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Unauthorized media manipulation via insecure ZeroMQ socket binding",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135733.json",
+      "cve": "CVE-2026-135733",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-135735: ffmpeg: ffmpeg: Denial of Service via heap out-of-bounds read in filter_slice_rgba_planar()",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via heap out-of-bounds read in filter_slice_rgba_planar()",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135735.json",
+      "cve": "CVE-2026-135735",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-135739: ffmpeg: ffmpeg: Denial of Service via out-of-bounds read in scale filter",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via out-of-bounds read in scale filter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135739.json",
+      "cve": "CVE-2026-135739",
+      "cvss": 5.9
+    },
+    {
+      "title": "CVE-2026-135741: ffmpeg: FFmpeg: Denial of Service via heap out-of-bounds read in lut2 filter",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: FFmpeg: Denial of Service via heap out-of-bounds read in lut2 filter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135741.json",
+      "cve": "CVE-2026-135741",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-135744: ffmpeg: ffmpeg: Denial of Service via out-of-bounds read in lut1d filter",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via out-of-bounds read in lut1d filter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135744.json",
+      "cve": "CVE-2026-135744",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-135745: ffmpeg: ffmpeg: Denial of Service via heap out-of-bounds read in the curves filter",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ffmpeg: ffmpeg: Denial of Service via heap out-of-bounds read in the curves filter",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135745.json",
+      "cve": "CVE-2026-135745",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-135328: kubevirt: containerized-data-importer: CDI: upload client certificate identity injection via uploadClientName PVC annota",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Containers",
+      "description": "kubevirt: containerized-data-importer: CDI: upload client certificate identity injection via uploadClientName PVC annotation enables cross-namespace writes",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135328.json",
+      "cve": "CVE-2026-135328",
+      "cvss": 5.8
     },
     {
       "title": "USN-9192-1: Linux kernel (NVIDIA) vulnerabilities",
@@ -1934,6 +2558,28 @@
       "cvss": 6.8
     },
     {
+      "title": "CVE-2026-134401: chromium-browser: Improper input validation in Variations",
+      "date": "2026-11-23",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "chromium-browser: Improper input validation in Variations",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-134401.json",
+      "cve": "CVE-2026-134401",
+      "cvss": 9.6
+    },
+    {
+      "title": "CVE-2026-107784: python: python: Arbitrary file write via tarfile path traversal on Windows",
+      "date": "2026-11-23",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "python: python: Arbitrary file write via tarfile path traversal on Windows",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-107784.json",
+      "cve": "CVE-2026-107784",
+      "cvss": 5.3
+    },
+    {
       "title": "USN-9188-1: OAuthLib vulnerabilities",
       "date": "2026-11-23",
       "severity": "LOW",
@@ -2125,6 +2771,28 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-134763.json",
       "cve": "CVE-2026-134763",
       "cvss": 4
+    },
+    {
+      "title": "CVE-2026-136328: gimp: heap-based buffer overflow in the PSD merged-image LAB path",
+      "date": "2026-11-22",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gimp: heap-based buffer overflow in the PSD merged-image LAB path",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-136328.json",
+      "cve": "CVE-2026-136328",
+      "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-136329: gimp: heap-based buffer overflow in the JIF loader",
+      "date": "2026-11-22",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "gimp: heap-based buffer overflow in the JIF loader",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-136329.json",
+      "cve": "CVE-2026-136329",
+      "cvss": 7.8
     },
     {
       "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
@@ -2672,6 +3340,17 @@
       "description": "actix-files: actix-files: Information disclosure via Windows 8.3 short-name bypass",
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-134347.json",
       "cve": "CVE-2026-134347",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-124851: zstd: Zstandard Information Disclosure via Uninitialized Buffer",
+      "date": "2026-11-21",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "zstd: Zstandard Information Disclosure via Uninitialized Buffer",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-124851.json",
+      "cve": "CVE-2026-124851",
       "cvss": 7.5
     },
     {
@@ -7376,6 +8055,50 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-130435.json",
       "cve": "CVE-2026-130435",
       "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-121714: rabbitmq-server: RabbitMQ: User identity spoofing via out-of-order AMQP message sections",
+      "date": "2026-11-20",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "rabbitmq-server: RabbitMQ: User identity spoofing via out-of-order AMQP message sections",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-121714.json",
+      "cve": "CVE-2026-121714",
+      "cvss": 4.3
+    },
+    {
+      "title": "CVE-2026-86017: isomorphic-git: isomorphic-git: Arbitrary file write via symlink following during cherry-pick operations",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "isomorphic-git: isomorphic-git: Arbitrary file write via symlink following during cherry-pick operations",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-86017.json",
+      "cve": "CVE-2026-86017",
+      "cvss": 8
+    },
+    {
+      "title": "CVE-2026-77355: isomorphic-git: isomorphic-git: Arbitrary code execution via Windows NTFS reserved path alias",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "isomorphic-git: isomorphic-git: Arbitrary code execution via Windows NTFS reserved path alias",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-77355.json",
+      "cve": "CVE-2026-77355",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-132275: svglib: svglib: Denial of Service (DoS) via nested SVG references",
+      "date": "2026-11-20",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "svglib: svglib: Denial of Service (DoS) via nested SVG references",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-132275.json",
+      "cve": "CVE-2026-132275",
+      "cvss": 7.5
     },
     {
       "title": "js-toml allows uncontrolled recursion in `load()` leading `RangeError` (stack exhaustion) on deeply nested input",
@@ -12420,6 +13143,39 @@
       "cvss": 7.5
     },
     {
+      "title": "CVE-2026-129930: mongodb: mongodb: Information disclosure via connection string parsing error",
+      "date": "2026-11-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mongodb: mongodb: Information disclosure via connection string parsing error",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-129930.json",
+      "cve": "CVE-2026-129930",
+      "cvss": 4.7
+    },
+    {
+      "title": "CVE-2026-129929: mongodb: MongoDB Node.js Driver: Authentication message tampering via null character injection",
+      "date": "2026-11-19",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mongodb: MongoDB Node.js Driver: Authentication message tampering via null character injection",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-129929.json",
+      "cve": "CVE-2026-129929",
+      "cvss": 3.7
+    },
+    {
+      "title": "CVE-2026-133244: parse5-html-rewriting-stream: parse5-html-rewriting-stream: Cross-site scripting via stale tag state during text escapin",
+      "date": "2026-11-19",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "parse5-html-rewriting-stream: parse5-html-rewriting-stream: Cross-site scripting via stale tag state during text escaping",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-133244.json",
+      "cve": "CVE-2026-133244",
+      "cvss": 6.1
+    },
+    {
       "title": "Signal Desktop v8.37.0-beta.1",
       "date": "2026-11-19",
       "severity": "UNKNOWN",
@@ -12587,6 +13343,469 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-11-25T07:54:29.477Z",
+      "logs": [
+        "[INFO] aws - 13 patches, no changes",
+        "[INFO] chrome - 5 patches, no changes",
+        "[SUCCESS] cisco - 13 patches (1 new)",
+        "[INFO] cloudflare - 4 patches, no changes",
+        "[INFO] crowdstrike - 2 patches, no changes",
+        "[SUCCESS] debian - 20 patches (1 new)",
+        "[INFO] edge - 2 patches, no changes",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[INFO] gcp - 1 patches, no changes",
+        "[SUCCESS] github - 108 patches (3 new)",
+        "[INFO] gitlab - 1 patches, no changes",
+        "[INFO] jetbrains - 1 patches, no changes",
+        "[INFO] microsoft - 350 patches, no changes",
+        "[SUCCESS] paloalto - 6 patches (2 new)",
+        "[INFO] postgresql - 2 patches, no changes",
+        "[SUCCESS] redhat - 713 patches (62 new)",
+        "[INFO] signal - 2 patches, no changes",
+        "[INFO] ubuntu - 43 patches, no changes"
+      ],
+      "newPatchCount": 69,
+      "totalPatches": 1287,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 18,
+      "vendors": [
+        "debian",
+        "aws",
+        "chrome",
+        "cisco",
+        "github",
+        "jetbrains",
+        "microsoft",
+        "paloalto",
+        "redhat",
+        "ubuntu",
+        "edge",
+        "postgresql",
+        "cloudflare",
+        "fortinet",
+        "gitlab",
+        "signal",
+        "crowdstrike",
+        "gcp"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6657-1 libzstd - security update",
+          "date": "2026-11-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "github",
+          "title": "soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "TwigView FileLoader may allow arbitrary file reads through user-controlled template paths",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "github",
+          "title": "GitHub CLI gh codespace jupyter may allow code execution via unvalidated URLs from malicious Codespaces",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "PAN-SA-2026-0015 Security Bulletin: OSS CVEs Fixed in PAN-OS (Severity: INFORMATIONAL)",
+          "date": "2026-11-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "paloalto",
+          "title": "PAN-SA-2026-0005 Informational Bulletin: Precautionary Fixes for Non-Exploitable OSS CVEs in PAN-OS (Severity: INFORMATIONAL)",
+          "date": "2026-11-24",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-136451: keycloak-operator: keycloak-operator: Secret-derived hashes exposed in StatefulSet metadata and KeycloakOIDCClient statu",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-136442: busybox: busybox: Arbitrary file access via directory traversal in ftpd",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-115747: erlang: Erlang OTP: Denial of Service via improper AArch64 JIT register cache handling",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-125658: erlang: erlang: Denial of Service via crafted Unicode file names on macOS",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-120961: erlang: Erlang: Denial of Service via out-of-bounds read in term decoder",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-117642: erlang: erlang: Denial of Service via uncontrolled recursion in external term decoder",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116293: erlang: erlang: Denial of Service via out-of-bounds write in external term format decoder",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116225: erlang: erlang: Denial of Service via CPU exhaustion in SNMP BER decoder",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116382: erlang: erlang: Denial of Service via atom table exhaustion in inets",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-116295: erlang: erlang: HTTP request splitting via CRLF injection in httpc",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-119443: erlang: erlang: Denial of Service via external DTD processing in xmerl",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-136156: valkey: valkey: Arbitrary code execution via integer truncation in cluster mode",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-136157: valkey: valkey: Arbitrary code execution via use-after-free in RDMA transport",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-136155: valkey: Valkey: Arbitrary code execution via use-after-free in Lua script debugger",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-130822: Valkey: Valkey: Use-after-free when client eviction frees the client whose command is still executing",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135703: ffmpeg: ffmpeg: Information disclosure via oversized ASF packet in RTP stream",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135704: ffmpeg: ffmpeg: Information disclosure via truncated MXG marker segments",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135705: ffmpeg: ffmpeg: Denial of Service via malformed SDP framesize attribute",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135706: ffmpeg: ffmpeg: Arbitrary code execution via heap buffer overflow in ModPlug demuxer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135707: ffmpeg: ffmpeg: Information disclosure via crafted NIST SPHERE audio file",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135708: ffmpeg: ffmpeg: Arbitrary file destruction via improper URL validation in WHIP muxer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135709: ffmpeg: FFmpeg: Arbitrary code execution via out-of-bounds write in Ogg muxer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135710: ffmpeg: ffmpeg: Information disclosure via uninitialized memory in Sierra VMD demuxer",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135711: ffmpeg: ffmpeg: XML injection via unescaped subtitle language metadata",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135712: ffmpeg: ffmpeg: Denial of Service via integer overflow in img2enc",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135713: ffmpeg: ffmpeg: Denial of Service via malformed ASF headers in MMS protocol",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135714: ffmpeg: ffmpeg: Information disclosure via truncated RTMP AMF strings",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135715: ffmpeg: ffmpeg: Denial of Service via crafted stream in AVIF muxer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135716: ffmpeg: ffmpeg: Denial of Service via out-of-bounds write in NUT muxer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135717: ffmpeg: ffmpeg: Information disclosure via empty Opus RTP payloads",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135718: ffmpeg: ffmpeg: Denial of service via out-of-bounds read in DVD video demuxer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135719: ffmpeg: ffmpeg: Information disclosure via uninitialized memory in DXA demuxer",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135720: ffmpeg: ffmpeg: Denial of Service via NULL pointer dereference in DASH demuxer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135721: ffmpeg: FFmpeg: Denial of Service via infinite loop in Dirac/VC-2 RTP packetizer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135723: ffmpeg: ffmpeg: Memory corruption via crafted IMF Composition Playlist",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135724: ffmpeg: FFmpeg: Denial of Service via crafted HEIF/AVIF image file",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135726: ffmpeg: ffmpeg: Denial of Service via NULL pointer dereference in rdt_parse_packet",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135727: ffmpeg: ffmpeg: Information disclosure via uninitialized frame buffers in RTP streams",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135728: ffmpeg: ffmpeg: Denial of Service via integer overflow in DASH demuxer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135729: ffmpeg: ffmpeg: XML injection via crafted WebM track language metadata",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135730: ffmpeg: ffmpeg: Information disclosure via crafted VPK file",
+          "date": "2026-11-24",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135731: ffmpeg: ffmpeg: Denial of Service via integer overflow in RTP packetizer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135732: ffmpeg: ffmpeg: Denial of Service via out-of-bounds read in D-10 MXF muxer",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135733: ffmpeg: ffmpeg: Unauthorized media manipulation via insecure ZeroMQ socket binding",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135735: ffmpeg: ffmpeg: Denial of Service via heap out-of-bounds read in filter_slice_rgba_planar()",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135739: ffmpeg: ffmpeg: Denial of Service via out-of-bounds read in scale filter",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135741: ffmpeg: FFmpeg: Denial of Service via heap out-of-bounds read in lut2 filter",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135744: ffmpeg: ffmpeg: Denial of Service via out-of-bounds read in lut1d filter",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135745: ffmpeg: ffmpeg: Denial of Service via heap out-of-bounds read in the curves filter",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135328: kubevirt: containerized-data-importer: CDI: upload client certificate identity injection via uploadClientName PVC annota",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-134401: chromium-browser: Improper input validation in Variations",
+          "date": "2026-11-23",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-107784: python: python: Arbitrary file write via tarfile path traversal on Windows",
+          "date": "2026-11-23",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-136328: gimp: heap-based buffer overflow in the PSD merged-image LAB path",
+          "date": "2026-11-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-136329: gimp: heap-based buffer overflow in the JIF loader",
+          "date": "2026-11-22",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-124851: zstd: Zstandard Information Disclosure via Uninitialized Buffer",
+          "date": "2026-11-21",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-121714: rabbitmq-server: RabbitMQ: User identity spoofing via out-of-order AMQP message sections",
+          "date": "2026-11-20",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-86017: isomorphic-git: isomorphic-git: Arbitrary file write via symlink following during cherry-pick operations",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-77355: isomorphic-git: isomorphic-git: Arbitrary code execution via Windows NTFS reserved path alias",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-132275: svglib: svglib: Denial of Service (DoS) via nested SVG references",
+          "date": "2026-11-20",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-129930: mongodb: mongodb: Information disclosure via connection string parsing error",
+          "date": "2026-11-19",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-129929: mongodb: MongoDB Node.js Driver: Authentication message tampering via null character injection",
+          "date": "2026-11-19",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-133244: parse5-html-rewriting-stream: parse5-html-rewriting-stream: Cross-site scripting via stale tag state during text escapin",
+          "date": "2026-11-19",
+          "severity": "MEDIUM"
+        }
+      ]
+    },
     {
       "timestamp": "2026-11-25T02:00:30.145Z",
       "logs": [
@@ -26787,357 +28006,6 @@
         "apple"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-11-15T13:46:26.575Z",
-      "logs": [
-        "[INFO] apple - 6 patches, no changes",
-        "[INFO] aws - 9 patches, no changes",
-        "[INFO] chrome - 6 patches, no changes",
-        "[INFO] cisco - 11 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[INFO] debian - 14 patches, no changes",
-        "[INFO] edge - 4 patches, no changes",
-        "[INFO] fortinet - 34 patches, no changes",
-        "[INFO] github - 222 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[SUCCESS] microsoft - 452 patches (50 new)",
-        "[INFO] mssql - 54 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] paloalto - 12 patches, no changes",
-        "[INFO] postgresql - 1 patches, no changes",
-        "[INFO] redhat - 492 patches, no changes",
-        "[INFO] signal - 7 patches, no changes",
-        "[INFO] ubuntu - 52 patches, no changes"
-      ],
-      "newPatchCount": 50,
-      "totalPatches": 1382,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 19,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "github",
-        "cisco",
-        "cloudflare",
-        "crowdstrike",
-        "edge",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "gitlab",
-        "postgresql",
-        "signal",
-        "nodejs",
-        "paloalto",
-        "fortinet",
-        "mssql",
-        "apple"
-      ],
-      "newPatches": [
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100080: xen-netback: Fix UAF when reading statistics data",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100081: xen-netback: defer xenvif_mcast_addr_list_free()",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100082: xen-blkback: Avoid UAF when reading I/O statistics",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100290: Double free after allocation failure in regcomp and regexec",
-          "date": "2026-11-15",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100407: Git for Windows: git-credential-wincred OAuth Store Heap Overflow",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-100408: Git for Windows: git-credential-wincred Erase Path Heap Overflow",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-105437: Heap-based Buffer Overflow in Git",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-109903: X.Org Server XvQueryImageAttributes Negative Size Reply",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-109904: X.Org Server XRes QueryClientIds Request Size Overflow",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-111253: Dnf5daemon-server: dnf5: dnf5daemon-server: missing session-owner check allows foreign d-bus callers to replace another client's resolved transaction",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112314: Krb5: mit krb5 gss-rpc client memory leak on xid mismatch retries",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112315: Krb5: mit krb5 kadmind unauthenticated memory leak dos in rpcsec_gss buffer decode failure",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112316: Krb5: mit krb5 kadmind authenticated memory leak dos in xdr_krb5_tl_data() decode failure",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112317: Krb5: mit krb5 kdc unauthenticated memory leak dos in kdb keytab key decryption error path",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112318: Krb5: mit krb5 kadmind authenticated dos exploiting dereference of null policy name pointers",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112319: Krb5: mit krb5 kadmind authenticated memory exhaustion dos via unbounded rpc xdr allocation",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112320: Krb5: mit krb5 kadmind unauthenticated memory leak dos via gss-rpc auth flavor switching",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112321: Krb5: mit krb5 kadmind unauthenticated memory leak dos via auth_gssapi_init error paths",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112322: Krb5: mit krb5 kadmind unauthenticated cpu dos via auth_gssapi client states cleanup",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112323: Krb5: mit krb5 kadmind unauthenticated memory exhaustion via failed auth_gssapi_init requests",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-112910: filelock: WindowsFileLock ignores mode: a 0o600 lock file and the ReadWriteLock database inherit the directory ACL",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-113408: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') in Git",
-          "date": "2026-11-15",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-113431: Unbounded decoded HTTP/2 header-list size in cowlib cow_http2_machine enables HPACK amplification memory exhaustion",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-114456: Missing origin validation for the externalbrowser authenticator callback in multiple Snowflake client drivers",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-114469: Out-of-bounds Read in Git",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-115298: Incorrect Authorization in Elasticsearch Leading to Information Disclosure",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-115538: Docker Engine overlay-network encryption rules are not restored after a firewalld reload",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-115539: Cluster-API proxy overwrites forwarded client identity with its own",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-115559: imaplib STARTTLS serves plaintext bytes buffered before the handshake as if they came over TLS",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-115710: Use of Cache Containing Sensitive Information in Elasticsearch Leading to Information Disclosure",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-115715: Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-115791: Prevent shadowing stdlib in gzip/tarfile/zipfile CLI during extraction",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-115819: One-byte buffer overflow in wide scanf %s and %[ conversions",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116303: PostgreSQL foreign key and JSON conversions bypass EXECUTE privilege on cast functions",
-          "date": "2026-11-15",
-          "severity": "LOW"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116304: PostgreSQL parallel RECORD typmod use-after-free executes arbitrary code",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116306: PostgreSQL composite-type change during field assignment executes arbitrary code",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116307: PostgreSQL plperl prepared-query use-after-free executes arbitrary code",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116308: PostgreSQL dict_int reads beyond zero-length tokens",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116309: PostgreSQL plperl blessed-reference type confusion may execute arbitrary code",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116311: PostgreSQL DROP OWNED can remove restrictive row security policies from non-owned tables",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116312: PostgreSQL MERGE can place the wrong row in a trigger transition table",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116313: PostgreSQL \"vacuumdb --missing-stats-only\" lets a database owner execute code as the vacuumdb user",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116314: PostgreSQL pg_restore executes arbitrary code due to missing non-plain archive validation",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116315: PostgreSQL tsvector_delete() heap buffer overflow executes arbitrary code",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116316: PostgreSQL security-restricted operations can create types in pg_temp, which later queries of the session find",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116317: PostgreSQL ts_rank_cd() heap buffer overflow may execute arbitrary code",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116318: PostgreSQL pg_dump not-null constraint name allows SQL injection",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116319: PostgreSQL plperl reentrant return_next() use-after-free executes arbitrary code",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116320: PostgreSQL plperl array and hash conversion use-after-free executes arbitrary code",
-          "date": "2026-11-15",
-          "severity": "HIGH"
-        },
-        {
-          "vendor": "microsoft",
-          "title": "CVE-2026-116321: PostgreSQL unterminated name value discloses server memory",
-          "date": "2026-11-15",
-          "severity": "MEDIUM"
-        }
-      ]
     }
   ]
 }
