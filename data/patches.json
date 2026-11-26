@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-11-26T07:29:45.902Z",
-  "newPatches": 0,
+  "lastUpdated": "2026-11-26T07:45:13.234Z",
+  "newPatches": 37,
   "patches": [
+    {
+      "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
+      "date": "2026-11-26",
+      "severity": "HIGH",
+      "vendor": "cisco",
+      "component": "Cisco Products",
+      "description": "On November 18, 2026, nginx announced the availability of a fix for multiple critical vulnerabilities in nginx that could lead to remote code execution. These vulnerabilities affect nginx releases 1.9...",
+      "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s",
+      "cve": "CVE-2026-113425"
+    },
     {
       "title": "CVE-2026-136267 - Improper neutralization of special elements used in an OS command in Kiro Web",
       "date": "2026-11-25",
@@ -96,6 +106,38 @@
       "cves": []
     },
     {
+      "title": "DSA-6663-1 thunderbird - security update",
+      "date": "2026-11-25",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "thunderbird",
+      "description": "Multiple security issues were discovered in Thunderbird, which could result in the execution of arbitrary code, spoofing of sender addresses in PGP-signed mails, bypass of email signature checks or in...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00585.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "DSA-6662-1 firefox-esr - security update",
+      "date": "2026-11-25",
+      "severity": "UNKNOWN",
+      "vendor": "debian",
+      "component": "firefox-esr",
+      "description": "Multiple security issues have been found in the Mozilla Firefox web browser, which could potentially result in the execution of arbitrary code, sandbox escape, privilege escalation, spoofing or inform...",
+      "link": "https://lists.debian.org/debian-security-announce/2026/msg00584.html",
+      "cve": "",
+      "cves": []
+    },
+    {
+      "title": "Microsoft Edge Security Update - November 25, 2026",
+      "link": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+      "date": "2026-11-25",
+      "description": "Security fixes for 0 vulnerabilities: ",
+      "severity": "HIGH",
+      "vendor": "edge",
+      "component": "Microsoft Edge",
+      "cves": []
+    },
+    {
       "title": "fulgur allows Unbounded string-set value accumulation causes memory/CPU exhaustion (denial of service)",
       "date": "2026-11-25",
       "severity": "HIGH",
@@ -138,6 +180,50 @@
       "link": "https://github.com/advisories/GHSA-crj3-q72p-ggqm",
       "cve": "CVE-2026-64670",
       "cvss": 9.3
+    },
+    {
+      "title": "TastyIgniter permits Path Traversal in Media Upload",
+      "date": "2026-11-25",
+      "severity": "HIGH",
+      "vendor": "github",
+      "component": "tastyigniter/tastyigniter",
+      "description": "TastyIgniter permits Path Traversal in Media Upload",
+      "link": "https://github.com/advisories/GHSA-rj59-9f77-mvg5",
+      "cve": "CVE-2026-69181",
+      "cvss": 7.6
+    },
+    {
+      "title": "TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager",
+      "date": "2026-11-25",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "tastyigniter/tastyigniter",
+      "description": "TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager",
+      "link": "https://github.com/advisories/GHSA-7wwv-x6mc-pxqx",
+      "cve": "CVE-2026-69179",
+      "cvss": 9.1
+    },
+    {
+      "title": "TastyIgniter mail template editor allows remote code execution via server-side template injection",
+      "date": "2026-11-25",
+      "severity": "CRITICAL",
+      "vendor": "github",
+      "component": "tastyigniter/tastyigniter",
+      "description": "TastyIgniter mail template editor allows remote code execution via server-side template injection",
+      "link": "https://github.com/advisories/GHSA-743w-g9pf-8p94",
+      "cve": "CVE-2026-69178",
+      "cvss": 9.1
+    },
+    {
+      "title": "TastyIgniter allows stored XSS via file upload",
+      "date": "2026-11-25",
+      "severity": "MEDIUM",
+      "vendor": "github",
+      "component": "tastyigniter/tastyigniter",
+      "description": "TastyIgniter allows stored XSS via file upload",
+      "link": "https://github.com/advisories/GHSA-mqg7-fw3f-mhp7",
+      "cve": "CVE-2026-69177",
+      "cvss": 6.8
     },
     {
       "title": "GitLab Patch Release: 19.6.2, 19.5.9, 19.4.11, 19.3.10, 19.2.11, 19.1.11, 19.0.12, 18.11.15",
@@ -610,6 +696,160 @@
       "cvss": 5.9
     },
     {
+      "title": "CVE-2026-71296: maestro: gRPC server authentication defaults to 'mock' (allow-all authorizer)",
+      "date": "2026-11-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "maestro: gRPC server authentication defaults to 'mock' (allow-all authorizer)",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-71296.json",
+      "cve": "CVE-2026-71296",
+      "cvss": 6.8
+    },
+    {
+      "title": "CVE-2026-74025: ironic-image: CoreOS rootfs and Ignition config always served over plaintext HTTP",
+      "date": "2026-11-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "ironic-image: CoreOS rootfs and Ignition config always served over plaintext HTTP",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-74025.json",
+      "cve": "CVE-2026-74025",
+      "cvss": 6.9
+    },
+    {
+      "title": "CVE-2026-19443: cri-o: cri-o: checkpoint restore path traversal in deleted.files allows host filesystem deletion",
+      "date": "2026-11-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "cri-o: cri-o: checkpoint restore path traversal in deleted.files allows host filesystem deletion",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-19443.json",
+      "cve": "CVE-2026-19443",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-66784: submariner: submariner: shared cluster-set IPsec PSK with self-asserted IKE identities enables cross-cluster traffic int",
+      "date": "2026-11-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "submariner: submariner: shared cluster-set IPsec PSK with self-asserted IKE identities enables cross-cluster traffic interception",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-66784.json",
+      "cve": "CVE-2026-66784",
+      "cvss": 8.7
+    },
+    {
+      "title": "CVE-2026-135146: pymongo: Improper certificate revocation check for stapled OCSP responses in the Python Driver",
+      "date": "2026-11-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "pymongo: Improper certificate revocation check for stapled OCSP responses in the Python Driver",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135146.json",
+      "cve": "CVE-2026-135146",
+      "cvss": 7.4
+    },
+    {
+      "title": "CVE-2026-81418: nmap: nmap: Denial of Service via crafted EIGRP packet",
+      "date": "2026-11-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nmap: nmap: Denial of Service via crafted EIGRP packet",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-81418.json",
+      "cve": "CVE-2026-81418",
+      "cvss": 4.8
+    },
+    {
+      "title": "CVE-2026-81416: nmap: nmap: Denial of Service via infinite loop in tn3270 library",
+      "date": "2026-11-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nmap: nmap: Denial of Service via infinite loop in tn3270 library",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-81416.json",
+      "cve": "CVE-2026-81416",
+      "cvss": 5.3
+    },
+    {
+      "title": "CVE-2026-81411: nmap: nmap: Denial of Service via infinite loop in RDP response parser",
+      "date": "2026-11-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nmap: nmap: Denial of Service via infinite loop in RDP response parser",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-81411.json",
+      "cve": "CVE-2026-81411",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-81410: nmap: Nmap: Server-Side Request Forgery via unvalidated UPnP location URL",
+      "date": "2026-11-25",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "nmap: Nmap: Server-Side Request Forgery via unvalidated UPnP location URL",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-81410.json",
+      "cve": "CVE-2026-81410",
+      "cvss": 3.5
+    },
+    {
+      "title": "CVE-2026-135844: github.com/moby/sys/user: github.com/moby/sys/user: Denial of Service via unbounded file parsing",
+      "date": "2026-11-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "github.com/moby/sys/user: github.com/moby/sys/user: Denial of Service via unbounded file parsing",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135844.json",
+      "cve": "CVE-2026-135844",
+      "cvss": 5.5
+    },
+    {
+      "title": "CVE-2026-132889: librelp: Process termination on a malformed TLS record",
+      "date": "2026-11-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "librelp: Process termination on a malformed TLS record",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-132889.json",
+      "cve": "CVE-2026-132889",
+      "cvss": 6.5
+    },
+    {
+      "title": "CVE-2026-132888: librelp: Certificate validation bypass in certvalid TLS authentication mode",
+      "date": "2026-11-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "librelp: Certificate validation bypass in certvalid TLS authentication mode",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-132888.json",
+      "cve": "CVE-2026-132888",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-136830: mirrormanager2: mirrormanager2: Arbitrary command execution via unsanitized mirror URLs",
+      "date": "2026-11-25",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mirrormanager2: mirrormanager2: Arbitrary command execution via unsanitized mirror URLs",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-136830.json",
+      "cve": "CVE-2026-136830",
+      "cvss": 8.8
+    },
+    {
+      "title": "CVE-2026-136833: mirrormanager2: mirrormanager2: Unauthorized deletion of arbitrary host sub-resources via missing ownership verification",
+      "date": "2026-11-25",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "mirrormanager2: mirrormanager2: Unauthorized deletion of arbitrary host sub-resources via missing ownership verification",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-136833.json",
+      "cve": "CVE-2026-136833",
+      "cvss": 7.1
+    },
+    {
       "title": "USN-9202-1: Kerberos vulnerabilities",
       "date": "2026-11-25",
       "severity": "LOW",
@@ -662,6 +902,33 @@
       "component": "libxrender vulnerabilities",
       "description": "Adam Bedard discovered that libXrender incorrectly handled certain\nresponses from an X server, resulting in a heap buffer overflow. If a user\nwere tricked into connecting to a malicious X server, an a...",
       "link": "https://ubuntu.com/security/notices/USN-9194-1"
+    },
+    {
+      "title": "USN-9203-1: libpcap vulnerabilities",
+      "date": "2026-11-25",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libpcap vulnerabilities",
+      "description": "Jin Wei, Kunwei Qian, and Ping Chen discovered that libpcap did not\nproperly validate the format of MAC addresses passed to the\npcap_ether_aton() function, leading to an out-of-bounds read and write. ...",
+      "link": "https://ubuntu.com/security/notices/USN-9203-1"
+    },
+    {
+      "title": "USN-9198-1: HTTP::Tiny vulnerability",
+      "date": "2026-11-25",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Multiple Products",
+      "description": "It was discovered that HTTP::Tiny incorrectly forwarded credential headers\nsupplied by the caller, such as Authorization, Cookie and\nProxy-Authorization, when following cross-origin redirects, includi...",
+      "link": "https://ubuntu.com/security/notices/USN-9198-1"
+    },
+    {
+      "title": "USN-9201-1: NetworkManager vulnerability",
+      "date": "2026-11-25",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "NetworkManager",
+      "description": "Juthawong Naisanguansee discovered that NetworkManager on Ubuntu\nincorrectly granted the whoopsie user unrestricted D-Bus access to\nroot-only methods. A local attacker who can execute code as the whoo...",
+      "link": "https://ubuntu.com/security/notices/USN-9201-1"
     },
     {
       "title": "CVE-2026-134068 - Stack-based buffer overflow in replication origin name parsing in AWS pgactive",
@@ -2440,6 +2707,127 @@
       "cvss": 8.1
     },
     {
+      "title": "CVE-2026-65320: fastcore: fastcore through 2.2.44 Path Traversal via untar_dir Tar Extraction",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "fastcore: fastcore through 2.2.44 Path Traversal via untar_dir Tar Extraction",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-65320.json",
+      "cve": "CVE-2026-65320",
+      "cvss": 8.1
+    },
+    {
+      "title": "CVE-2026-135581: firefox: thunderbird: Use-after-free in the Audio/Video: Playback component",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Audio/Video: Playback component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135581.json",
+      "cve": "CVE-2026-135581",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-135568: firefox: thunderbird: Use-after-free in the Graphics: CanvasWebGL component",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Graphics: CanvasWebGL component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135568.json",
+      "cve": "CVE-2026-135568",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-135524: firefox: thunderbird: Use-after-free in the JavaScript Engine component",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the JavaScript Engine component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135524.json",
+      "cve": "CVE-2026-135524",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-135519: firefox: thunderbird: Sandbox escape due to use-after-free in the Networking component",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Sandbox escape due to use-after-free in the Networking component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135519.json",
+      "cve": "CVE-2026-135519",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-135560: firefox: thunderbird: Use-after-free in the Gecko Profiler component",
+      "date": "2026-11-24",
+      "severity": "MEDIUM",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Gecko Profiler component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135560.json",
+      "cve": "CVE-2026-135560",
+      "cvss": 6.1
+    },
+    {
+      "title": "CVE-2026-135554: firefox: thunderbird: Use-after-free in the DOM: Navigation component",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the DOM: Navigation component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135554.json",
+      "cve": "CVE-2026-135554",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-135549: firefox: thunderbird: Use-after-free in the XSLT component",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the XSLT component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135549.json",
+      "cve": "CVE-2026-135549",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-135517: firefox: thunderbird: Use-after-free in the Networking: Cache component",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Networking: Cache component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135517.json",
+      "cve": "CVE-2026-135517",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-135514: firefox: thunderbird: Use-after-free in the Cycle Collector component",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Cycle Collector component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135514.json",
+      "cve": "CVE-2026-135514",
+      "cvss": 7.5
+    },
+    {
+      "title": "CVE-2026-135507: firefox: thunderbird: Use-after-free in the Disability Access APIs component",
+      "date": "2026-11-24",
+      "severity": "HIGH",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "firefox: thunderbird: Use-after-free in the Disability Access APIs component",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-135507.json",
+      "cve": "CVE-2026-135507",
+      "cvss": 7.5
+    },
+    {
       "title": "USN-9192-1: Linux kernel (NVIDIA) vulnerabilities",
       "date": "2026-11-24",
       "severity": "LOW",
@@ -3527,6 +3915,17 @@
       "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-136329.json",
       "cve": "CVE-2026-136329",
       "cvss": 7.8
+    },
+    {
+      "title": "CVE-2026-134823: kitty: kitty: Terminal escape sequence injection via choose-files preview",
+      "date": "2026-11-22",
+      "severity": "LOW",
+      "vendor": "redhat",
+      "component": "Red Hat Enterprise Linux",
+      "description": "kitty: kitty: Terminal escape sequence injection via choose-files preview",
+      "link": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-134823.json",
+      "cve": "CVE-2026-134823",
+      "cvss": 3.3
     },
     {
       "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
@@ -9045,6 +9444,273 @@
     }
   ],
   "fetchLogs": [
+    {
+      "timestamp": "2026-11-26T07:45:13.234Z",
+      "logs": [
+        "[INFO] aws - 10 patches, no changes",
+        "[INFO] chrome - 4 patches, no changes",
+        "[SUCCESS] cisco - 15 patches (1 new)",
+        "[INFO] cloudflare - 3 patches, no changes",
+        "[SUCCESS] debian - 20 patches (2 new)",
+        "[SUCCESS] edge - 2 patches (1 new)",
+        "[INFO] fortinet - 1 patches, no changes",
+        "[SUCCESS] github - 91 patches (4 new)",
+        "[INFO] gitlab - 2 patches, no changes",
+        "[INFO] jetbrains - 1 patches, no changes",
+        "[INFO] microsoft - 300 patches, no changes",
+        "[INFO] paloalto - 5 patches, no changes",
+        "[INFO] postgresql - 1 patches, no changes",
+        "[SUCCESS] redhat - 429 patches (26 new)",
+        "[INFO] signal - 1 patches, no changes",
+        "[SUCCESS] ubuntu - 37 patches (3 new)"
+      ],
+      "newPatchCount": 37,
+      "totalPatches": 922,
+      "vendorsScanned": 56,
+      "vendorsWithPatches": 16,
+      "vendors": [
+        "cisco",
+        "aws",
+        "debian",
+        "edge",
+        "github",
+        "gitlab",
+        "microsoft",
+        "redhat",
+        "ubuntu",
+        "chrome",
+        "jetbrains",
+        "paloalto",
+        "postgresql",
+        "cloudflare",
+        "fortinet",
+        "signal"
+      ],
+      "newPatches": [
+        {
+          "vendor": "cisco",
+          "title": "Vulnerabilities in nginx Affecting Cisco Products: November 2026",
+          "date": "2026-11-26",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6663-1 thunderbird - security update",
+          "date": "2026-11-25",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "debian",
+          "title": "DSA-6662-1 firefox-esr - security update",
+          "date": "2026-11-25",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "edge",
+          "title": "Microsoft Edge Security Update - November 25, 2026",
+          "date": "2026-11-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "TastyIgniter permits Path Traversal in Media Upload",
+          "date": "2026-11-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "github",
+          "title": "TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager",
+          "date": "2026-11-25",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "TastyIgniter mail template editor allows remote code execution via server-side template injection",
+          "date": "2026-11-25",
+          "severity": "CRITICAL"
+        },
+        {
+          "vendor": "github",
+          "title": "TastyIgniter allows stored XSS via file upload",
+          "date": "2026-11-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-71296: maestro: gRPC server authentication defaults to 'mock' (allow-all authorizer)",
+          "date": "2026-11-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-74025: ironic-image: CoreOS rootfs and Ignition config always served over plaintext HTTP",
+          "date": "2026-11-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-19443: cri-o: cri-o: checkpoint restore path traversal in deleted.files allows host filesystem deletion",
+          "date": "2026-11-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-66784: submariner: submariner: shared cluster-set IPsec PSK with self-asserted IKE identities enables cross-cluster traffic int",
+          "date": "2026-11-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135146: pymongo: Improper certificate revocation check for stapled OCSP responses in the Python Driver",
+          "date": "2026-11-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-81418: nmap: nmap: Denial of Service via crafted EIGRP packet",
+          "date": "2026-11-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-81416: nmap: nmap: Denial of Service via infinite loop in tn3270 library",
+          "date": "2026-11-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-81411: nmap: nmap: Denial of Service via infinite loop in RDP response parser",
+          "date": "2026-11-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-81410: nmap: Nmap: Server-Side Request Forgery via unvalidated UPnP location URL",
+          "date": "2026-11-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135844: github.com/moby/sys/user: github.com/moby/sys/user: Denial of Service via unbounded file parsing",
+          "date": "2026-11-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-132889: librelp: Process termination on a malformed TLS record",
+          "date": "2026-11-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-132888: librelp: Certificate validation bypass in certvalid TLS authentication mode",
+          "date": "2026-11-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-136830: mirrormanager2: mirrormanager2: Arbitrary command execution via unsanitized mirror URLs",
+          "date": "2026-11-25",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-136833: mirrormanager2: mirrormanager2: Unauthorized deletion of arbitrary host sub-resources via missing ownership verification",
+          "date": "2026-11-25",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-65320: fastcore: fastcore through 2.2.44 Path Traversal via untar_dir Tar Extraction",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135581: firefox: thunderbird: Use-after-free in the Audio/Video: Playback component",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135568: firefox: thunderbird: Use-after-free in the Graphics: CanvasWebGL component",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135524: firefox: thunderbird: Use-after-free in the JavaScript Engine component",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135519: firefox: thunderbird: Sandbox escape due to use-after-free in the Networking component",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135560: firefox: thunderbird: Use-after-free in the Gecko Profiler component",
+          "date": "2026-11-24",
+          "severity": "MEDIUM"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135554: firefox: thunderbird: Use-after-free in the DOM: Navigation component",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135549: firefox: thunderbird: Use-after-free in the XSLT component",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135517: firefox: thunderbird: Use-after-free in the Networking: Cache component",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135514: firefox: thunderbird: Use-after-free in the Cycle Collector component",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-135507: firefox: thunderbird: Use-after-free in the Disability Access APIs component",
+          "date": "2026-11-24",
+          "severity": "HIGH"
+        },
+        {
+          "vendor": "redhat",
+          "title": "CVE-2026-134823: kitty: kitty: Terminal escape sequence injection via choose-files preview",
+          "date": "2026-11-22",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-9203-1: libpcap vulnerabilities",
+          "date": "2026-11-25",
+          "severity": "UNKNOWN"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-9198-1: HTTP::Tiny vulnerability",
+          "date": "2026-11-25",
+          "severity": "LOW"
+        },
+        {
+          "vendor": "ubuntu",
+          "title": "USN-9201-1: NetworkManager vulnerability",
+          "date": "2026-11-25",
+          "severity": "UNKNOWN"
+        }
+      ]
+    },
     {
       "timestamp": "2026-11-26T07:29:45.902Z",
       "logs": [
@@ -24141,61 +24807,6 @@
         "mssql"
       ],
       "newPatches": []
-    },
-    {
-      "timestamp": "2026-11-16T05:48:39.967Z",
-      "logs": [
-        "[INFO] aws - 7 patches, no changes",
-        "[INFO] chrome - 4 patches, no changes",
-        "[INFO] cisco - 9 patches, no changes",
-        "[INFO] cloudflare - 1 patches, no changes",
-        "[INFO] crowdstrike - 2 patches, no changes",
-        "[SUCCESS] debian - 15 patches (1 new)",
-        "[INFO] edge - 2 patches, no changes",
-        "[INFO] fortinet - 34 patches, no changes",
-        "[INFO] github - 177 patches, no changes",
-        "[INFO] gitlab - 2 patches, no changes",
-        "[INFO] microsoft - 452 patches, no changes",
-        "[INFO] mssql - 54 patches, no changes",
-        "[INFO] nodejs - 1 patches, no changes",
-        "[INFO] paloalto - 11 patches, no changes",
-        "[INFO] postgresql - 2 patches, no changes",
-        "[INFO] redhat - 445 patches, no changes",
-        "[INFO] signal - 6 patches, no changes",
-        "[INFO] ubuntu - 41 patches, no changes"
-      ],
-      "newPatchCount": 1,
-      "totalPatches": 1265,
-      "vendorsScanned": 56,
-      "vendorsWithPatches": 18,
-      "vendors": [
-        "debian",
-        "microsoft",
-        "postgresql",
-        "github",
-        "cisco",
-        "cloudflare",
-        "crowdstrike",
-        "edge",
-        "redhat",
-        "ubuntu",
-        "aws",
-        "chrome",
-        "gitlab",
-        "signal",
-        "nodejs",
-        "paloalto",
-        "fortinet",
-        "mssql"
-      ],
-      "newPatches": [
-        {
-          "vendor": "debian",
-          "title": "DSA-6632-1 radsecproxy - security update",
-          "date": "2026-11-15",
-          "severity": "UNKNOWN"
-        }
-      ]
     }
   ]
 }

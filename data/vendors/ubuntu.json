@@ -1,12 +1,12 @@
 {
   "vendor": "ubuntu",
-  "lastUpdated": "2026-11-25T21:27:39.354Z",
+  "lastUpdated": "2026-11-26T07:44:13.584Z",
   "health": {
-    "lastFetchAttempt": "2026-11-25T21:27:39.354Z",
+    "lastFetchAttempt": "2026-11-26T07:44:13.584Z",
     "lastFetchResult": "ok",
     "lastFetchParsedItems": 10,
-    "lastFetchNewPatches": 8,
-    "lastSuccessWithData": "2026-11-25T21:27:39.354Z",
+    "lastFetchNewPatches": 3,
+    "lastSuccessWithData": "2026-11-26T07:44:13.584Z",
     "consecutiveEmptyFetches": 0,
     "error": null
   },
@@ -64,6 +64,33 @@
       "component": "libxrender vulnerabilities",
       "description": "Adam Bedard discovered that libXrender incorrectly handled certain\nresponses from an X server, resulting in a heap buffer overflow. If a user\nwere tricked into connecting to a malicious X server, an a...",
       "link": "https://ubuntu.com/security/notices/USN-9194-1"
+    },
+    {
+      "title": "USN-9203-1: libpcap vulnerabilities",
+      "date": "2026-11-25",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "libpcap vulnerabilities",
+      "description": "Jin Wei, Kunwei Qian, and Ping Chen discovered that libpcap did not\nproperly validate the format of MAC addresses passed to the\npcap_ether_aton() function, leading to an out-of-bounds read and write. ...",
+      "link": "https://ubuntu.com/security/notices/USN-9203-1"
+    },
+    {
+      "title": "USN-9198-1: HTTP::Tiny vulnerability",
+      "date": "2026-11-25",
+      "severity": "LOW",
+      "vendor": "ubuntu",
+      "component": "Multiple Products",
+      "description": "It was discovered that HTTP::Tiny incorrectly forwarded credential headers\nsupplied by the caller, such as Authorization, Cookie and\nProxy-Authorization, when following cross-origin redirects, includi...",
+      "link": "https://ubuntu.com/security/notices/USN-9198-1"
+    },
+    {
+      "title": "USN-9201-1: NetworkManager vulnerability",
+      "date": "2026-11-25",
+      "severity": "UNKNOWN",
+      "vendor": "ubuntu",
+      "component": "NetworkManager",
+      "description": "Juthawong Naisanguansee discovered that NetworkManager on Ubuntu\nincorrectly granted the whoopsie user unrestricted D-Bus access to\nroot-only methods. A local attacker who can execute code as the whoo...",
+      "link": "https://ubuntu.com/security/notices/USN-9201-1"
     },
     {
       "title": "USN-9192-1: Linux kernel (NVIDIA) vulnerabilities",
